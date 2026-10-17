@@ -1061,6 +1061,24 @@
     });
     return ytReady;
   }
+  // X's embed script, loaded once on first use
+  let xWidgets = null;
+  const loadXWidgets = () => xWidgets ||= new Promise(res => {
+    if (window.twttr?.widgets) return res(window.twttr);
+    const sc = document.createElement('script');
+    sc.src = 'https://platform.twitter.com/widgets.js'; sc.async = true;
+    sc.onload = () => (window.twttr?.ready ? twttr.ready(t => res(t)) : res(window.twttr));
+    sc.onerror = () => res(null);
+    document.head.append(sc);
+  });
+  // brief non-blocking notice at the bottom of the screen
+  let toastTimer;
+  function toast(msg) {
+    let el = $('#toast');
+    if (!el) { el = document.createElement('div'); el.id = 'toast'; el.className = 'toast'; document.body.append(el); }
+    el.textContent = msg; el.classList.add('on');
+    clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove('on'), 4000);
+  }
   const usingLocal = () => !$('#local-video').hidden;
   function currentTime() { return usingLocal() ? $('#local-video').currentTime : (yt?.getCurrentTime?.() || 0); }
 
@@ -1073,6 +1091,7 @@
     if (state.view !== 'videos') go('videos', { keepSel: true });
     setHash({ replace });
     $('#player-empty').hidden = true;
+    $('#player-wrap').classList.remove('x-embed');
     $$('.vl-item').forEach(el => el.classList.toggle('on', el.dataset.openVideo === id));
     // show title, moments and transcript at once; the YouTube player loads in parallel
     if (!same) { curTab = v.moments?.length ? 'moments' : v.chapters?.length ? 'chapters' : 'transcript'; renderVideoDetail(v); }
@@ -1086,8 +1105,26 @@
       // non-YouTube video without a local copy (e.g. on the public site): link to the original post
       $('#local-video').hidden = true; $('#yt').hidden = true;
       const src = vsource(v);
+      const xId = (v.url || '').match(/(?:x|twitter)\.com\/[^/]+\/status\/(\d+)/)?.[1];
       $('#player-empty').hidden = false;
-      $('#player-empty').innerHTML = `This video is hosted on ${esc(src.label)}.<br><br>${src.url ? `<a href="${esc(src.url)}" target="_blank" rel="noopener">Watch it on ${esc(src.label)} ↗</a>` : ''}<br><br><span class="small">The transcript and moments below are searchable here.</span>`;
+      if (xId) {
+        // X posts play in place through X's official embed (X serves the video; the archive never re-hosts it).
+        // The embed has no seek API, so moment timestamps show the time to skip to instead of jumping.
+        $('#player-wrap').classList.add('x-embed');
+        yt?.pauseVideo?.();
+        if (!same || !$('#player-empty .x-post')) {
+          $('#player-empty').innerHTML = `<div class="x-post" data-x="${xId}"><a href="${esc(v.url)}" target="_blank" rel="noopener">Loading the post from X… ↗</a></div>`;
+          loadXWidgets().then(tw => {
+            const box = $(`#player-empty .x-post[data-x="${xId}"]`);
+            if (!tw || !box) return;
+            tw.widgets.createTweet(xId, box, { theme: document.documentElement.dataset.theme === 'light' ? 'light' : 'dark', dnt: true, conversation: 'none', align: 'center', width: 550 })
+              .then(el => { if (el) box.querySelector('a')?.remove(); });
+          });
+        }
+        if (t > 0) toast(`Skip to ${fmtT(t)} in the X player`);
+      } else {
+        $('#player-empty').innerHTML = `This video is hosted on ${esc(src.label)}.<br><br>${src.url ? `<a href="${esc(src.url)}" target="_blank" rel="noopener">Watch it on ${esc(src.label)} ↗</a>` : ''}<br><br><span class="small">The transcript and moments below are searchable here.</span>`;
+      }
     } else if (location.protocol === 'file:') {
       $('#player-empty').hidden = false;
       $('#player-empty').innerHTML = `Embedded playback needs the local server (<code>npm run dev</code>).<br><br><a href="https://www.youtube.com/watch?v=${v.youtube}&t=${Math.floor(t)}s" target="_blank" rel="noopener">Open on YouTube at ${fmtT(t)} ↗</a>`;
