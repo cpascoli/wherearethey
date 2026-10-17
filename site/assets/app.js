@@ -483,7 +483,7 @@
     const res = searchEntities(q);
     ddIndex = -1;
     dd.innerHTML = res.map(e => `<div class="dd-item" data-goto="${e.id}">${dot(e.id)}<div><div class="t">${esc(e.name)} <span class="muted small">${TYPES[e.type].label}</span></div><div class="s">${esc(subtitle(e))}</div></div></div>`).join('') +
-      `${res.length ? '<div class="dd-sep"></div>' : ''}<div class="dd-item" data-tsearch="${esc(q)}"><span>🔎</span><div><div class="t">Search all transcripts for “${esc(q)}”</div><div class="s">${KB.stats.transcripts} videos · ${KB.stats.transcriptHours} hours of speech</div></div></div>`;
+      `${res.length ? '<div class="dd-sep"></div>' : ''}<div class="dd-item" data-tsearch="${esc(q)}"><span>🔎</span><div><div class="t">Search transcripts and documents for “${esc(q)}”</div><div class="s">${KB.stats.transcripts} videos · ${KB.stats.transcriptHours} h of speech · ${KB.stats.documents} documents · ${KB.stats.documentPages} pages</div></div></div>`;
     dd.hidden = false;
   }
   $('#q').addEventListener('input', renderDropdown);
@@ -863,18 +863,43 @@
     if ($('#tq').value.trim().length >= 2) $('#tq-info').textContent = 'Searching…';
     tqTimer = setTimeout(runTranscriptSearch, 300);
   });
+  // document full text (extracted PDFs), loaded lazily like transcripts
+  const DT = new Map();
+  const dtWaiters = new Map();
+  window.KBD = (id, parts) => { DT.set(id, parts); dtWaiters.get(id)?.forEach(r => r(parts)); dtWaiters.delete(id); };
+  function loadDocText(id) {
+    if (DT.has(id)) return Promise.resolve(DT.get(id));
+    return new Promise(res => {
+      if (!dtWaiters.has(id)) {
+        dtWaiters.set(id, []);
+        const s = document.createElement('script');
+        s.src = `data/doctext/${encodeURIComponent(id)}.js`;
+        s.onerror = () => { dtWaiters.get(id)?.forEach(r => r(null)); dtWaiters.delete(id); };
+        document.head.append(s);
+      }
+      dtWaiters.get(id).push(res);
+    });
+  }
+  const docEnts = ents.filter(e => e.doctext);
+  // one-to-one character normalisation, so match offsets point back into the original page text
+  const normCache = new Map();
+  const normPage = (key, txt) => { let n = normCache.get(key); if (n === undefined) { n = txt.toLowerCase().replace(/[^\p{L}\p{N}']/gu, ' '); normCache.set(key, n); } return n; };
+  let tqScope = store.get('tqScope', 'videos');
+  let lastSearch = null;
+
   async function runTranscriptSearch() {
     const q = $('#tq').value.trim();
-    if (q.length < 2) { renderVideoList(); return; }
-    if (TR.size < videos.filter(v => v.transcript).length) $('#tq-info').textContent = 'Loading transcripts (first search only)…';
+    if (q.length < 2) { lastSearch = null; renderVideoList(); return; }
     const vids = videos.filter(v => v.transcript && !(state.credibleOnly && v.cred === 'outside'));
-    await Promise.all(vids.map(v => loadTranscript(v.id)));
+    const docs = docEnts.filter(e => !(state.credibleOnly && e.cred === 'outside'));
+    if (TR.size < vids.length || DT.size < docs.length) $('#tq-info').textContent = 'Loading transcripts and documents (first search only)…';
+    await Promise.all([...vids.map(v => loadTranscript(v.id)), ...docs.map(d => loadDocText(d.id))]);
     if ($('#tq').value.trim() !== q) return;
     const needle = q.toLowerCase().replace(/[^\p{L}\p{N}' ]+/gu, ' ').replace(/\s+/g, ' ').trim();
     // "non-human" should also match "non human" and "nonhuman" in auto-captions
     const re = new RegExp(needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/ /g, '\\s*'), 'i');
-    let total = 0;
-    const out = [];
+    const vOut = [];
+    let vTotal = 0;
     for (const v of vids) {
       const segs = TR.get(v.id)?.segments || [];
       const hits = [];
@@ -883,15 +908,55 @@
         const win = segs[i][1] + ' ' + (segs[i + 1]?.[1] || '');
         if (re.test(win.toLowerCase().replace(/[^\p{L}\p{N}' ]+/gu, ' ')) && !(hits.length && segs[i][0] - hits[hits.length - 1][0] < 8)) hits.push([segs[i][0], win]);
       }
-      if (hits.length) { total += hits.length; out.push([v, hits]); }
+      if (hits.length) { vTotal += hits.length; vOut.push([v, hits]); }
     }
-    out.sort((a, b) => b[1].length - a[1].length);
-    const hl = s => esc(s).replace(new RegExp(`(${needle.split(' ').map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi'), '<mark>$1</mark>');
-    $('#tq-info').textContent = total ? `${total} matches in ${out.length} videos` : 'No matches';
-    $('#vid-list').innerHTML = out.map(([v, hits]) => `<div class="hit-video" data-open-video="${v.id}" style="cursor:pointer">${esc(v.name)}<span>${hits.length}</span></div>` +
-      hits.slice(0, 40).map(([t, s]) => `<div class="hit" data-play="${v.id}@${t}"><button class="ts">${fmtT(t)}</button><span>${hl(s)}</span></div>`).join('') +
-      (hits.length > 40 ? `<div class="small muted" style="padding:2px 8px 6px">+${hits.length - 40} more — open the video and search its transcript</div>` : '')).join('');
+    vOut.sort((a, b) => b[1].length - a[1].length);
+    // documents: one hit per matching page, with a snippet around the first match
+    const reG = new RegExp(re.source, 'gi');
+    const dOut = [];
+    let dTotal = 0;
+    for (const d of docs) {
+      const hits = [];
+      (DT.get(d.id) || []).forEach((part, pi) => part.pages.forEach((txt, i) => {
+        if (!txt) return;
+        const norm = normPage(`${d.id}|${pi}|${i}`, txt);
+        reG.lastIndex = 0;
+        const m = reG.exec(norm);
+        if (!m) return;
+        let n = 1;
+        while (reG.exec(norm) && n < 99) n++;
+        const a = Math.max(0, m.index - 90), b = Math.min(txt.length, m.index + m[0].length + 110);
+        hits.push({ file: part.file, page: i + 1, n, snip: (a ? '…' : '') + txt.slice(a, b) + (b < txt.length ? '…' : '') });
+      }));
+      if (hits.length) { dTotal += hits.reduce((s, h) => s + h.n, 0); dOut.push([d, hits]); }
+    }
+    dOut.sort((a, b) => b[1].length - a[1].length);
+    lastSearch = { q, needle, vOut, vTotal, dOut, dTotal };
+    renderSearchResults();
   }
+  function renderSearchResults() {
+    const r = lastSearch;
+    if (!r) return;
+    if (tqScope === 'videos' && !r.vOut.length && r.dOut.length) tqScope = 'docs';
+    if (tqScope === 'docs' && !r.dOut.length && r.vOut.length) tqScope = 'videos';
+    const hl = s => esc(s).replace(new RegExp(`(${r.needle.split(' ').map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi'), '<mark>$1</mark>');
+    $('#tq-info').innerHTML = `<div class="seg tq-scope"><button data-scope="videos" class="${tqScope === 'videos' ? 'on' : ''}">Videos ${r.vTotal}</button><button data-scope="docs" class="${tqScope === 'docs' ? 'on' : ''}">Documents ${r.dTotal}</button></div>
+      <div>${tqScope === 'videos' ? (r.vTotal ? `${r.vTotal} matches in ${r.vOut.length} videos` : 'No matches in transcripts') : (r.dTotal ? `${r.dTotal} matches on ${r.dOut.reduce((s, x) => s + x[1].length, 0)} pages in ${r.dOut.length} documents` : 'No matches in documents')}</div>`;
+    if (tqScope === 'videos') {
+      $('#vid-list').innerHTML = r.vOut.map(([v, hits]) => `<div class="hit-video" data-open-video="${v.id}" style="cursor:pointer">${esc(v.name)}<span>${hits.length}</span></div>` +
+        hits.slice(0, 40).map(([t, s]) => `<div class="hit" data-play="${v.id}@${t}"><button class="ts">${fmtT(t)}</button><span>${hl(s)}</span></div>`).join('') +
+        (hits.length > 40 ? `<div class="small muted" style="padding:2px 8px 6px">+${hits.length - 40} more — open the video and search its transcript</div>` : '')).join('');
+    } else {
+      $('#vid-list').innerHTML = r.dOut.map(([d, hits]) => `<div class="hit-video" data-goto="${d.id}" style="cursor:pointer" title="Open the file card">${esc(d.name)}<span>${hits.length} p.</span></div>` +
+        hits.slice(0, 30).map(h => `<a class="hit doc-hit" href="${esc(fileUrl(h.file))}#page=${h.page}" target="_blank" title="Open the PDF at page ${h.page}"><span class="ts">p.${h.page}</span><span>${hl(h.snip)}${h.n > 1 ? ` <span class="muted">(${h.n}×)</span>` : ''}</span></a>`).join('') +
+        (hits.length > 30 ? `<div class="small muted" style="padding:2px 8px 6px">+${hits.length - 30} more pages</div>` : '')).join('');
+    }
+  }
+  $('#tq-info').addEventListener('click', e => {
+    const b = e.target.closest('[data-scope]'); if (!b) return;
+    tqScope = b.dataset.scope; store.set('tqScope', tqScope);
+    renderSearchResults();
+  });
 
   let yt = null, ytReady = null, ytPending = null, ytReadyFlag = false, syncTimer = null, curTab = 'moments';
   const playYT = ({ id, t, autoplay }) => (autoplay ? yt.loadVideoById({ videoId: id, startSeconds: t }) : yt.cueVideoById({ videoId: id, startSeconds: t }));
@@ -1403,7 +1468,7 @@
     const res = searchEntities(e.target.value, 8);
     const dd = $('#hq-dd');
     dd.innerHTML = res.map(x => `<div class="dd-item" data-hq="${x.id}">${dot(x.id)}<div><div class="t">${esc(x.name)} <span class="muted small">${TYPES[x.type].label}</span></div><div class="s">${esc(subtitle(x))}</div></div></div>`).join('')
-      + (e.target.value.trim() ? `<div class="dd-sep"></div><div class="dd-item" data-hq-t="1"><span>🔎</span><div><div class="t">Search all transcripts for “${esc(e.target.value)}”</div></div></div>` : '');
+      + (e.target.value.trim() ? `<div class="dd-sep"></div><div class="dd-item" data-hq-t="1"><span>🔎</span><div><div class="t">Search transcripts and documents for “${esc(e.target.value)}”</div></div></div>` : '');
     dd.hidden = !e.target.value.trim();
   });
   $('#view-home').addEventListener('keydown', e => {

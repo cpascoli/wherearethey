@@ -120,6 +120,24 @@ export function build({ check = false, quiet = false } = {}) {
     }
     if (fs.existsSync(path.join(dir, 'video.mp4'))) e.local = `media/${mid}/video.mp4`;
   }
+  // ── Document full text: the extracted .txt next to each file (pdftotext/OCR), split into pages on form feeds ──
+  const doctexts = new Map();
+  let docPages = 0;
+  for (const e of entities) {
+    const parts = [];
+    for (const f of e.files) {
+      const txt = path.join(ROOT, f.replace(/\.[^./]+$/, '.txt'));
+      if (!fs.existsSync(txt)) continue;
+      const pages = fs.readFileSync(txt, 'utf8').split('\f').map(p => p.replace(/(?:\s*[.·…_]){5,}/g, ' … ').replace(/\s+/g, ' ').trim());
+      while (pages.length && !pages[pages.length - 1]) pages.pop();
+      if (pages.some(Boolean)) parts.push({ file: f, pages });
+    }
+    if (!parts.length) continue;
+    doctexts.set(e.id, parts);
+    const n = parts.reduce((a, p) => a + p.pages.length, 0);
+    docPages += n;
+    e.doctext = { pages: n };
+  }
   if (fs.existsSync(path.join(ROOT, 'media'))) {
     for (const yt of fs.readdirSync(path.join(ROOT, 'media'))) {
       if (fs.existsSync(path.join(ROOT, 'media', yt, 'meta.json')) && !videoByYt.has(yt)) warnings.push(`media/${yt} has no content/video entry`);
@@ -281,6 +299,7 @@ export function build({ check = false, quiet = false } = {}) {
     entities: entities.length,
     byType: Object.fromEntries([...TYPES, 'source'].map(t => [t, entities.filter(e => e.type === t).length])),
     edges: edges.size, videos: videoByYt.size, transcripts: transcripts.size, mentions: mentionCount, textLinks,
+    documents: doctexts.size, documentPages: docPages,
     transcriptHours: Math.round(entities.filter(e => e.transcript).reduce((a, e) => a + (e.duration || 0), 0) / 360) / 10,
   };
 
@@ -294,14 +313,18 @@ export function build({ check = false, quiet = false } = {}) {
   const out = path.join(ROOT, 'site', 'data');
   fs.rmSync(out, { recursive: true, force: true });
   fs.mkdirSync(path.join(out, 'transcripts'), { recursive: true });
+  fs.mkdirSync(path.join(out, 'doctext'), { recursive: true });
   const kb = { built: new Date().toISOString(), filesBase: process.env.FILES_BASE || null, entities, edges: [...edges.values()], stats, warnings, errors };
   fs.writeFileSync(path.join(out, 'kb.js'), `window.KB=${JSON.stringify(kb)};\n`);
   fs.writeFileSync(path.join(out, 'mentions.js'), `window.KB_MENTIONS=${JSON.stringify(mentions)};\nwindow.KB_TOGETHER=${JSON.stringify(together)};\n`);
   for (const [vid, t] of transcripts) {
     fs.writeFileSync(path.join(out, 'transcripts', `${vid}.js`), `window.KBT&&KBT(${JSON.stringify(vid)},${JSON.stringify(t)});\n`);
   }
+  for (const [id, parts] of doctexts) {
+    fs.writeFileSync(path.join(out, 'doctext', `${id}.js`), `window.KBD&&KBD(${JSON.stringify(id)},${JSON.stringify(parts)});\n`);
+  }
   if (!quiet) {
-    console.log(`built ${stats.entities} entries, ${stats.edges} links, ${stats.transcripts} transcripts (${stats.transcriptHours} h), ${stats.mentions} mentions — ${Date.now() - t0} ms`);
+    console.log(`built ${stats.entities} entries, ${stats.edges} links, ${stats.transcripts} transcripts (${stats.transcriptHours} h), ${stats.documents} documents (${stats.documentPages} pages), ${stats.mentions} mentions — ${Date.now() - t0} ms`);
   }
   return { errors, warnings, stats };
 }
