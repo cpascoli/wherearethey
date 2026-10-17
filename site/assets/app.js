@@ -88,6 +88,8 @@
 
   const PREFIX = { record: 'R', person: 'P', incident: 'I', hearing: 'H', program: 'PG', organization: 'O', document: 'D', video: 'V', event: 'E', concept: 'C', place: 'L', source: 'S' };
   const fileNo = e => { let h = 2166136261; for (const c of e.id) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return `${PREFIX[e.type] || 'X'}-${(h >>> 0).toString(16).toUpperCase().slice(-4).padStart(4, '0')}`; };
+  // Library files: served locally by the dev server, or from Cloudflare R2 on the hosted site (FILES_BASE at build time)
+  const fileUrl = f => (KB.filesBase ? `${KB.filesBase.replace(/\/$/, '')}/${f}` : `../${f}`);
   const fmtT = s => { s = Math.max(0, Math.floor(s)); const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60; return (h ? h + ':' + String(m).padStart(2, '0') : m) + ':' + String(x).padStart(2, '0'); };
   const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const fmtD = d => { if (!d) return ''; const [y, m, day] = String(d).split('-'); return [day && +day, m && MONTHS[+m - 1], y].filter(Boolean).join(' '); };
@@ -428,7 +430,7 @@
     rows.sort((a, b) => order[a.f.status] - order[b.f.status] || String(b.e.date || '').localeCompare(String(a.e.date || '')));
     $('#cq-count').textContent = `${rows.length} claims`;
     $('#claims').innerHTML = rows.map(({ e, f, by }) => {
-      const src = f.source ? (f.source.file ? `<a href="../${esc(f.source.file)}" target="_blank">📄 ${esc(f.source.file.split('/').pop())}</a>` : f.source.url ? `<a href="${esc(f.source.url)}" target="_blank" rel="noopener">source ↗</a>`
+      const src = f.source ? (f.source.file ? `<a href="${esc(fileUrl(f.source.file))}" target="_blank">📄 ${esc(f.source.file.split('/').pop())}</a>` : f.source.url ? `<a href="${esc(f.source.url)}" target="_blank" rel="noopener">source ↗</a>`
         : byId.get(f.source.id)?.type === 'video' ? `<button class="ts" data-play="${f.source.id}@${f.source.t || 0}">▶ ${f.source.t != null ? fmtT(f.source.t) : 'video'}</button>` : chip(f.source.id)) : (f.status !== 'documented' ? '<span class="needs">needs source</span>' : '');
       return `<div class="claim" style="--st:var(--${f.status})"><div>${esc(f.text)}</div>
         <div class="meta"><span class="stamp" style="--st:var(--${f.status})">${STATUS[f.status].label}</span><span>re: ${chip(e.id)}</span>${by && by.id !== e.id ? `<span>by ${chip(by.id)}</span>` : by ? '<span>self-reported</span>' : ''}${src}</div></div>`;
@@ -545,7 +547,7 @@
       h.push(`<div class="record-card">${pu.thumbnail ? `<a href="${esc(pu.file || pu.thumbnail)}" target="_blank" rel="noopener"><img src="${esc(pu.thumbnail)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></a>` : ''}
         <dl class="rec-meta"><dt>Agency</dt><dd>${esc(pu.agency || '—')}</dd><dt>Released</dt><dd>${esc(fmtD(pu.released))} · Release ${String(pu.release).padStart(2, '0')}</dd>
         <dt>Incident</dt><dd>${esc([pu.incident_date, pu.incident_location].filter(Boolean).join(' · ') || '—')}</dd><dt>Format</dt><dd>${esc((pu.format || '').toUpperCase())}${pu.redaction ? ' · redacted' : ''}</dd></dl>
-        <div class="rec-actions">${pu.file ? `<a class="btn small" href="${esc(pu.file)}" target="_blank" rel="noopener">Official file ↗</a>` : ''}${local ? `<a class="btn small primary" href="../${esc(local)}" target="_blank">Local copy</a>` : ''}${pu.dvids ? `<a class="btn small" href="${esc(pu.dvids)}" target="_blank" rel="noopener">DVIDS video ↗</a>` : ''}</div></div>`);
+        <div class="rec-actions">${pu.file ? `<a class="btn small" href="${esc(pu.file)}" target="_blank" rel="noopener">Official file ↗</a>` : ''}${local ? `<a class="btn small primary" href="${esc(fileUrl(local))}" target="_blank">Local copy</a>` : ''}${pu.dvids ? `<a class="btn small" href="${esc(pu.dvids)}" target="_blank" rel="noopener">DVIDS video ↗</a>` : ''}</div></div>`);
     }
     if (e.credentials?.length) {
       h.push(`<div class="p-sec"><h4>Credentials</h4><ul class="cred-list">${e.credentials.map(c => `<li><span class="cred-cat">${esc(CRED_CAT[c.category] || c.category)}</span><span>${esc(c.role)}</span></li>`).join('')}</ul></div>`);
@@ -553,7 +555,7 @@
     if (e.body) h.push(`<div class="p-sec"><h4>${e.type === 'person' ? 'Profile' : 'Summary'}</h4><div class="p-body p-bio">${e.body}</div></div>`);
     if (e.facts.length) {
       h.push(`<div class="p-sec"><h4>Notes & claims <span>${e.facts.length}</span></h4><ul class="facts">${e.facts.map(f => {
-        const src = f.source ? (f.source.file ? `<a href="../${esc(f.source.file)}" target="_blank">📄 ${esc(f.source.file.split('/').pop())}</a>` : f.source.url ? `<a href="${esc(f.source.url)}" target="_blank" rel="noopener">source ↗</a>`
+        const src = f.source ? (f.source.file ? `<a href="${esc(fileUrl(f.source.file))}" target="_blank">📄 ${esc(f.source.file.split('/').pop())}</a>` : f.source.url ? `<a href="${esc(f.source.url)}" target="_blank" rel="noopener">source ↗</a>`
           : byId.get(f.source.id)?.type === 'video' ? `<button class="ts" data-play="${f.source.id}@${f.source.t || 0}">▶ ${f.source.t != null ? fmtT(f.source.t) : 'video'}</button> ${chip(f.source.id)}`
           : `source: ${chip(f.source.id)}`) : '';
         const needs = !f.source && f.status !== 'documented' ? `<span class="needs" title="Add a source: video timestamp, document or link">needs source</span>` : '';
@@ -600,7 +602,7 @@
     }
     h.push(renderDots(e));
     if (e.links.length || e.files.length) {
-      h.push(`<div class="p-sec"><h4>Links & files</h4><ul class="p-links">${e.links.map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.url)} ↗</a></li>`).join('')}${e.files.map(f => `<li><a href="../${esc(f)}" target="_blank">📄 ${esc(f.split('/').pop())}</a></li>`).join('')}</ul></div>`);
+      h.push(`<div class="p-sec"><h4>Links & files</h4><ul class="p-links">${e.links.map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.url)} ↗</a></li>`).join('')}${e.files.map(f => `<li><a href="${esc(fileUrl(f))}" target="_blank">📄 ${esc(f.split('/').pop())}</a></li>`).join('')}</ul></div>`);
     }
     if (e.tags.length) h.push(`<div class="p-sec"><h4>Themes</h4><div class="chips">${e.tags.map(t => `<button class="chip ${state.tags.has(t) ? 'on' : ''}" data-filter-tag="${esc(t)}">${esc(t)}</button>`).join('')}</div></div>`);
     h.push(`<div class="p-edit">Edit <code>${esc(e.file)}</code><button class="link" data-copy="${esc(e.file)}">copy path</button></div>`);
@@ -824,7 +826,7 @@
     if (v.local) {
       const el = $('#local-video');
       $('#yt').hidden = true; el.hidden = false;
-      if (!same) el.src = '../' + v.local;
+      if (!same) el.src = fileUrl(v.local);
       el.currentTime = t;
       if (autoplay) el.play().catch(() => {});
     } else if (location.protocol === 'file:') {
@@ -1388,7 +1390,7 @@
   $('#btn-theme').addEventListener('click', () => applyTheme(isDark() ? 'light' : 'dark'));
 
   // live reload from the dev server
-  if (location.protocol.startsWith('http')) {
+  if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
     try { const es = new EventSource('/__events'); es.onmessage = ev => { if (ev.data === 'reload') location.reload(); }; es.onerror = () => es.close(); } catch { /* no dev server */ }
   }
 

@@ -283,7 +283,7 @@ export function build({ check = false, quiet = false } = {}) {
   const out = path.join(ROOT, 'site', 'data');
   fs.rmSync(out, { recursive: true, force: true });
   fs.mkdirSync(path.join(out, 'transcripts'), { recursive: true });
-  const kb = { built: new Date().toISOString(), entities, edges: [...edges.values()], stats, warnings, errors };
+  const kb = { built: new Date().toISOString(), filesBase: process.env.FILES_BASE || null, entities, edges: [...edges.values()], stats, warnings, errors };
   fs.writeFileSync(path.join(out, 'kb.js'), `window.KB=${JSON.stringify(kb)};\n`);
   fs.writeFileSync(path.join(out, 'mentions.js'), `window.KB_MENTIONS=${JSON.stringify(mentions)};\nwindow.KB_TOGETHER=${JSON.stringify(together)};\n`);
   for (const [vid, t] of transcripts) {

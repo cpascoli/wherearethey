@@ -1,0 +1,20 @@
+# Netlify: build the static site from content/ + media/ and publish site/.
+[build]
+  command = "npm run build"
+  publish = "site"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Puppeteer is only used by local import tools; never download a browser on Netlify.
+  PUPPETEER_SKIP_DOWNLOAD = "true"
+  # Set FILES_BASE in the Netlify UI (Site settings → Environment variables) to the public
+  # R2 URL, e.g. https://pub-xxxx.r2.dev, so document links point at Cloudflare R2.
+
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
