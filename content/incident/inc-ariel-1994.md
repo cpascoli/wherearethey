@@ -14,6 +14,8 @@ tags:
   - international
   - consciousness
 rel:
+  - [ witness, colin-mackie ]
+  - [ investigated by, cynthia-hind ]
   - [ subject of, doc-ariel-phenomenon-2022 ]
   - [ reported by, tim-leach ]
   - [ investigated by, john-mack ]

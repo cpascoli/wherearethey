@@ -74,8 +74,11 @@ export function build({ check = false, quiet = false } = {}) {
     if (d.witnesses != null) e.witnesses = Number(d.witnesses);
     if (d.coverage) e.coverage = arr(d.coverage).map(c => (typeof c === 'string' ? { outlet: c } : c));
     if (r.type === 'video') {
-      e.youtube = youtubeId(d.youtube);
-      if (!e.youtube) errors.push(`${r.file}: video needs a valid "youtube" id or URL`);
+      e.youtube = d.youtube ? youtubeId(d.youtube) : null;
+      // non-YouTube videos (X, news sites, local files): `media:` names the folder under media/, `url:` the original post
+      if (!e.youtube && d.media) { e.media = String(d.media); e.url = d.url ? String(d.url) : null; }
+      if (!e.youtube && !e.media) errors.push(`${r.file}: video needs a "youtube" id/URL or a "media" folder`);
+      if (d.youtube && !e.youtube) errors.push(`${r.file}: invalid "youtube" value`);
       e.moments = arr(d.moments).map(m => ({
         t: toSeconds(m.t), text: m.text || '', speaker: m.speaker || null, refs: arr(m.refs).map(String),
       }));
@@ -94,26 +97,28 @@ export function build({ check = false, quiet = false } = {}) {
   // ── Video metadata + transcripts from media/<youtubeId>/ ──
   const transcripts = new Map();
   const videoByYt = new Map();
-  for (const e of entities.filter(e => e.type === 'video' && e.youtube)) {
-    videoByYt.set(e.youtube, e);
-    const dir = path.join(ROOT, 'media', e.youtube);
+  for (const e of entities.filter(e => e.type === 'video' && (e.youtube || e.media))) {
+    const mid = e.youtube || e.media;
+    videoByYt.set(mid, e);
+    const dir = path.join(ROOT, 'media', mid);
     const metaPath = path.join(dir, 'meta.json');
     if (fs.existsSync(metaPath)) {
       const m = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
       if (e.name === e.id) e.name = m.title;
       e.date ||= m.date;
       e.channel = m.channel;
+      if (!e.url && m.url) e.url = m.url;
       e.duration = m.duration;
       e.chapters = m.chapters || [];
       e.description = m.description || '';
-    } else warnings.push(`${e.file}: not fetched yet — run: npm run fetch -- ${e.youtube}`);
+    } else warnings.push(`${e.file}: not fetched yet — run: npm run fetch -- ${mid}`);
     const tPath = path.join(dir, 'transcript.json');
     if (fs.existsSync(tPath)) {
       const t = JSON.parse(fs.readFileSync(tPath, 'utf8'));
       transcripts.set(e.id, t);
       e.transcript = { source: t.source, segments: t.segments.length };
     }
-    if (fs.existsSync(path.join(dir, 'video.mp4'))) e.local = `media/${e.youtube}/video.mp4`;
+    if (fs.existsSync(path.join(dir, 'video.mp4'))) e.local = `media/${mid}/video.mp4`;
   }
   if (fs.existsSync(path.join(ROOT, 'media'))) {
     for (const yt of fs.readdirSync(path.join(ROOT, 'media'))) {

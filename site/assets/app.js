@@ -95,8 +95,12 @@
   const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const fmtD = d => { if (!d) return ''; const [y, m, day] = String(d).split('-'); return [day && +day, m && MONTHS[+m - 1], y].filter(Boolean).join(' '); };
   const fmtRange = e => (e.end && e.end !== e.date ? `${fmtD(e.date)} – ${fmtD(e.end)}` : fmtD(e.date));
-  const fmtDur = s => (s ? (s >= 3600 ? `${Math.floor(s / 3600)} h ${Math.round(s % 3600 / 60)} min` : `${Math.round(s / 60)} min`) : '');
+  const fmtDur = s => { if (!s) return ''; const m = Math.round(s / 60); return m >= 60 ? `${Math.floor(m / 60)} h ${m % 60} min` : `${m} min`; };
   const thumb = yt => `https://i.ytimg.com/vi/${yt}/mqdefault.jpg`;
+  // thumbnail for any video entry (non-YouTube videos get a neutral placeholder)
+  const VIDEO_PLACEHOLDER = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180"><rect width="320" height="180" fill="#131a1f"/><circle cx="160" cy="90" r="26" fill="none" stroke="#6fcfbf" stroke-width="3"/><path d="M152 76 L174 90 L152 104 Z" fill="#6fcfbf"/></svg>')}`;
+  const vthumb = v => (v.youtube ? thumb(v.youtube) : VIDEO_PLACEHOLDER);
+  const vsource = v => (v.youtube ? { url: `https://www.youtube.com/watch?v=${v.youtube}`, label: 'YouTube' } : { url: v.url, label: v.url && /x\.com|twitter\.com/.test(v.url) ? 'X' : 'Source' });
   const subtitle = e => {
     if (e.credentials?.length) return e.credentials[0].role;
     if (e.type === 'video') return [e.channel, fmtD(e.date), fmtDur(e.duration)].filter(Boolean).join(' · ');
@@ -524,9 +528,9 @@
       }).join(' · ')}</div>` : ''}</div>`);
     }
     if (e.type === 'video') {
-      h.push(`<div class="play-card"><img src="${thumb(e.youtube)}" alt="" data-play="${e.id}@0" loading="lazy"><div>
+      h.push(`<div class="play-card"><img src="${vthumb(e)}" alt="" data-play="${e.id}@0" loading="lazy"><div>
         <button class="btn primary" data-play="${e.id}@0">▶ Play with transcript</button>
-        <div class="small muted" style="margin-top:6px">${e.transcript ? `${e.transcript.segments.toLocaleString()} transcript lines (${e.transcript.source === 'youtube-auto' ? 'auto captions' : 'subtitles'})` : 'No transcript yet'}${e.local ? ' · local copy' : ''}</div></div></div>`);
+        <div class="small muted" style="margin-top:6px">${e.transcript ? `${e.transcript.segments.toLocaleString()} transcript lines (${({ 'youtube-auto': 'auto captions', youtube: 'subtitles', whisper: 'Whisper transcript', 'whisper-translated': 'Whisper translation' })[e.transcript.source] || 'transcript'})` : 'No transcript yet'}${e.local ? ' · local copy' : ''}</div></div></div>`);
     }
     // Watch: videos that record, feature or are about this entry — playable straight from the dossier
     if (e.type !== 'video') {
@@ -543,9 +547,9 @@
           .sort((a, b) => (a[1] === 'Recording' ? -1 : 0) - (b[1] === 'Recording' ? -1 : 0) || String(b[0].date).localeCompare(String(a[0].date)));
         h.push(`<div class="p-sec"><h4>Watch <span>${list.length} video${list.length > 1 ? 's' : ''}</span></h4><div class="watch">${list.map(([v, label]) => `
           <div class="watch-item" data-play="${v.id}@0" title="Play with synced transcript">
-            <div class="wthumb"><img src="${thumb(v.youtube)}" alt="" loading="lazy"><span class="wplay">▶</span>${v.duration ? `<span class="wdur">${fmtDur(v.duration)}</span>` : ''}</div>
+            <div class="wthumb"><img src="${vthumb(v)}" alt="" loading="lazy"><span class="wplay">▶</span>${v.duration ? `<span class="wdur">${fmtDur(v.duration)}</span>` : ''}</div>
             <div><div class="wt">${esc(v.name)}</div><div class="ws">${esc([label, v.channel, fmtD(v.date)].filter(Boolean).join(' · '))}</div>
-            <div class="wlinks"><button class="ts" data-play="${v.id}@0">▶ Play</button><a href="https://www.youtube.com/watch?v=${v.youtube}" target="_blank" rel="noopener" onclick="event.stopPropagation()">YouTube ↗</a></div></div>
+            <div class="wlinks"><button class="ts" data-play="${v.id}@0">▶ Play</button>${vsource(v).url ? `<a href="${esc(vsource(v).url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${vsource(v).label} ↗</a>` : ''}</div></div>
           </div>`).join('')}</div></div>`);
       }
     }
@@ -846,7 +850,7 @@
     const list = videos.filter(v => !(state.credibleOnly && v.cred === 'outside')).sort((a, b) => String(b.date).localeCompare(String(a.date)));
     $('#tq-info').textContent = `${list.length} videos · ${KB.stats.transcriptHours} hours transcribed`;
     $('#vid-list').innerHTML = list.map(v => `<div class="vl-item ${state.video === v.id ? 'on' : ''}" data-open-video="${v.id}">
-      <img src="${thumb(v.youtube)}" alt="" loading="lazy"><div><div class="t">${esc(v.name)}</div><div class="s">${esc([v.channel, fmtD(v.date), fmtDur(v.duration)].filter(Boolean).join(' · '))}</div></div></div>`).join('');
+      <img src="${vthumb(v)}" alt="" loading="lazy"><div><div class="t">${esc(v.name)}</div><div class="s">${esc([v.channel, fmtD(v.date), fmtDur(v.duration)].filter(Boolean).join(' · '))}</div></div></div>`).join('');
   }
   $('#vid-list').addEventListener('click', e => {
     const o = e.target.closest('[data-open-video]');
@@ -919,9 +923,15 @@
     if (v.local) {
       const el = $('#local-video');
       $('#yt').hidden = true; el.hidden = false;
-      if (!same) el.src = fileUrl(v.local);
+      if (!same) el.src = '../' + v.local; // local copies live in media/ (served by the dev server; never published)
       el.currentTime = t;
       if (autoplay) el.play().catch(() => {});
+    } else if (!v.youtube) {
+      // non-YouTube video without a local copy (e.g. on the public site): link to the original post
+      $('#local-video').hidden = true; $('#yt').hidden = true;
+      const src = vsource(v);
+      $('#player-empty').hidden = false;
+      $('#player-empty').innerHTML = `This video is hosted on ${esc(src.label)}.<br><br>${src.url ? `<a href="${esc(src.url)}" target="_blank" rel="noopener">Watch it on ${esc(src.label)} ↗</a>` : ''}<br><br><span class="small">The transcript and moments below are searchable here.</span>`;
     } else if (location.protocol === 'file:') {
       $('#player-empty').hidden = false;
       $('#player-empty').innerHTML = `Embedded playback needs the local server (<code>npm run dev</code>).<br><br><a href="https://www.youtube.com/watch?v=${v.youtube}&t=${Math.floor(t)}s" target="_blank" rel="noopener">Open on YouTube at ${fmtT(t)} ↗</a>`;
@@ -961,7 +971,7 @@
     const people = adj.get(v.id).filter(x => x.kind !== 'mention' && x.label !== 'mentions').map(x => x.other);
     $('#vid-detail').innerHTML = `<div class="vd-head"><h2>${esc(v.name)}</h2>
       <div class="vd-meta"><span>${esc([v.channel, fmtD(v.date), fmtDur(v.duration)].filter(Boolean).join(' · '))}</span>
-      <a href="https://www.youtube.com/watch?v=${v.youtube}" target="_blank" rel="noopener">YouTube ↗</a>
+      ${vsource(v).url ? `<a href="${esc(vsource(v).url)}" target="_blank" rel="noopener">${vsource(v).label} ↗</a>` : ''}
       <a href="#" data-goto="${v.id}">Details</a></div>
       ${people.length ? `<div class="chips" style="margin-top:8px">${[...new Set(people)].map(id => chip(id)).join('')}</div>` : ''}</div>
       <div class="tabs">${tabs.map(([k, l]) => `<button data-tab="${k}" class="${curTab === k ? 'on' : ''}">${l}</button>`).join('')}</div>
@@ -1024,7 +1034,7 @@
         const last = paras[paras.length - 1];
         if (!last || t - last.t >= 20) paras.push({ t, text: s }); else last.text += ' ' + s;
       }
-      body.innerHTML = `<div class="transcript-tools"><input id="tfind" type="search" placeholder="Find in this transcript…"><label class="check" style="margin:0"><input type="checkbox" id="tfollow" checked> Follow playback</label><span class="small muted">${tr.source === 'youtube-auto' ? 'Auto-generated captions' : 'Subtitles'}</span></div>
+      body.innerHTML = `<div class="transcript-tools"><input id="tfind" type="search" placeholder="Find in this transcript…"><label class="check" style="margin:0"><input type="checkbox" id="tfollow" checked> Follow playback</label><span class="small muted">${({ 'youtube-auto': 'Auto-generated captions', youtube: 'Subtitles', whisper: 'Whisper transcript (local AI)', 'whisper-translated': 'Whisper translation to English (local AI)' })[tr.source] || 'Transcript'}</span></div>
         <div class="transcript" id="transcript">${paras.map(p => `<p data-t="${p.t}"><button class="ts">${fmtT(p.t)}</button><span>${esc(p.text)}</span></p>`).join('')}</div>`;
       $('#tfind').addEventListener('input', ev => {
         const q = ev.target.value.trim();
