@@ -226,7 +226,7 @@ mark { background: rgba(227, 179, 65, .4); color: inherit; border-radius: 3px; p
 .tq-scope { margin: 6px 0 4px; }
 
 /* ── Index ── */
-#view-index { overflow: auto; }
+#view-index, #view-shelf { overflow: auto; }
 .index-bar { position: sticky; top: 0; z-index: 2; background: var(--bg); padding: 16px 24px 10px; display: flex; gap: 12px; align-items: center; }
 .index-bar input { max-width: 420px; }
 .index { padding: 0 24px 60px; }
@@ -306,7 +306,7 @@ mark { background: rgba(227, 179, 65, .4); color: inherit; border-radius: 3px; p
 .f-block h4, .p-sec h4, .tl-type, .badge, .vl-group, .ix-group h3, .st, .cred-cat, .tabs button { font-family: var(--mono); }
 .top { background: color-mix(in srgb, var(--panel) 92%, transparent); }
 #view-graph, #view-map { background: var(--bg); }
-#view-graph::before, .timeline, #view-index, #view-claims, #view-videos {
+#view-graph::before, .timeline, #view-index, #view-claims, #view-videos, #view-shelf {
   background-image:
     linear-gradient(var(--bg-grid) 1px, transparent 1px),
     linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
