@@ -10,5 +10,6 @@ rel:
 facts:
   - text: A SAP whose existence is denied or hidden from the public and most government officials.
     status: documented
+    source: library/docs/doc-cdse-sap-types.pdf
 ---
 

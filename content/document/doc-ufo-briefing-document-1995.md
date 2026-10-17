@@ -23,6 +23,7 @@ facts:
     source: library/docs/doc-ufo-briefing-document-1995.pdf
   - text: It collects official statements and military cases from open sources, including the Twining memo, as “the best available evidence” for policymakers.
     status: documented
+    source: library/docs/doc-ufo-briefing-document-1995.pdf
 ---
 
 **Secondary source.** Compiled by civilian researchers rather than issued by government, so it is useful as an index of cases and official quotations, which should then be traced to the primary documents (as done here for the Twining memo).

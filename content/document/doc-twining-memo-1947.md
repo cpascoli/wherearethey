@@ -32,6 +32,7 @@ facts:
     source: library/docs/doc-twining-memo-1947.pdf
   - text: It also notes the lack of physical evidence such as “crash recovered exhibits”. That wording is cited both by skeptics and by researchers who argue some recoveries were compartmented.
     status: documented
+    source: library/docs/doc-twining-memo-1947.pdf
   - text: According to researcher Jan Aldrich, the opinion was likely drafted by Col. Howard McCoy’s T-2 Intelligence staff in reply to a request from A-2 (Brig. Gen. George Schulgen), and copies exist in several Air Force files, despite later Air Force denials that the letter existed.
     status: claimed
     source: https://www.nicap.org/twining_letter.htm

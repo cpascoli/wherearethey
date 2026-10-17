@@ -27,10 +27,13 @@ rel:
 facts:
   - text: A CIA-convened panel of scientists, chaired by Caltech physicist H.P. Robertson, met on January 14–18, 1953 to review UFO reports. It concluded that UFOs posed no direct threat to national security.
     status: documented
+    source: library/docs/doc-robertson-panel-1953.pdf
   - text: The panel warned that the volume of reports could clog military communications and be exploited psychologically. It recommended a public “debunking” and education effort to strip UFOs of their mystique. Critics see this as the origin of official stigma around reporting.
     status: documented
+    source: library/docs/doc-robertson-panel-1953.pdf
   - text: Declassified and approved for release in 2013 (CIA reading room). Earlier versions were released in redacted form from the 1970s.
     status: documented
+    source: https://www.cia.gov/readingroom/document/cia-rdp79b00752a000300100010-4
 ---
 
 The key Cold War document for understanding why UAP reporting carried a stigma for decades: a national-security panel that recommended managing public perception rather than investigating further. A PURSUE record (CIA-UAP-D021, 1955) still cites Robertson’s finding.

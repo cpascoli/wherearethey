@@ -16,6 +16,8 @@ rel:
 facts:
   - text: A memo from the Assistant Director of the CIA’s Office of Scientific Intelligence asking whether “unidentified flying objects” had national-security implications, whether they were being studied adequately, and what further research should be done. It reviews the work of the Air Technical Intelligence Center at Wright-Patterson AFB.
     status: documented
+    source: library/docs/doc-cia-osi-flying-saucers-1952.pdf
   - text: It led to the January 1953 Robertson Panel. Note that this is the CIA document at the link sometimes labelled “Robertson Panel report”; it is the precursor memo, not the report itself.
     status: documented
+    source: doc-robertson-panel-1953
 ---

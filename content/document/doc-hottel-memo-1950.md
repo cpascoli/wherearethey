@@ -22,7 +22,9 @@ facts:
     source: library/docs/doc-hottel-memo-1950.pdf
   - text: The information is third-hand. Hottel was passing on what an Air Force investigator said an informant told him. The memo itself notes that the government’s high-powered radar in the area was believed to interfere with the craft’s controls. The FBI says it never investigated further, and the memo is not evidence that the story is true.
     status: documented
+    source: https://www.fbi.gov/news/stories/ufos-and-the-guy-hottel-memo
   - text: The most-viewed file in the FBI Vault. It is often misreported as proof of the Roswell recovery, but the FBI has noted it does not mention Roswell and was never followed up.
     status: claimed
     by: fbi
+    source: https://www.fbi.gov/news/stories/ufos-and-the-guy-hottel-memo
 ---

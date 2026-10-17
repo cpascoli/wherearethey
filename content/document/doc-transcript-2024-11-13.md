@@ -12,5 +12,6 @@ rel:
 facts:
   - text: Includes discussion of a 2015 Navy exercise involving the USS Theodore Roosevelt.
     status: documented
+    source: v-2024-11-13-hearing-a@25:19
 ---
 

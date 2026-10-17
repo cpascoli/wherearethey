@@ -1,0 +1,354 @@
+                                   Student Guide
+
+Short: Special Access Program (SAP) Types and
+Categories
+                                 • Identify and distinguish between the two types of Special
+ Objective
+                                   Access Programs (SAPs)
+                                 • Identify and distinguish between the three categories of
+                                   Special Access Programs (SAPs)
+ Estimated completion time      10 minutes
+
+
+Welcome Briefing
+When you first start a new job, do you ever feel like everything around you is a blur?
+
+It might sound something like this.
+
+       Welcome to the Security Program office. We’re glad to have you joining us for
+       your orientation today. Before you get started, we wanted to take a moment to
+       brief you on some of the types of programs that you may be working on in your
+       new job here.
+
+       You should already be familiar with the concept of a Special Access Program,
+       otherwise known as a SAP. But let’s review the definition just to be sure.
+
+       A SAP is a classified wa-waa-wa-wa-waa. SAPs safeguard national security by
+       protecting wa-waa-wa-waa, wa-waa-wa-waa, and wa-waa-wa-waa.These are the
+       general categories of SAPs, but there are also three distinct types of SAPs that
+       you may find yourself working on. You might be assigned to wa-waa-wa-wa-waa,
+       you could be assigned to wa-waa-wa-waa, or you could be assigned to wa-waa-
+       wa-wa-waa.
+
+       Depending on what kind of SAP you work on, your program will fall under the
+       purview of one of several wa-waa-wa-wa-waa wa-waa-wa-waa offices.
+
+You may not be completely familiar with some of the terms you heard in this briefing,
+therefore, you may have found some parts difficult to understand. On the following page
+is a job aid that you can use to complete the activities that follow. Think of this job aid as
+a decoder that will help you to decipher these unfamiliar terms and develop a greater
+understanding of the types and categories of Special Access Programs.
+                                                                                  Student Guide
+
+
+
+Special Access Program (SAP)
+        “A program established for a specific class of classified information that
+        imposes safeguarding and access requirements that exceed those normally
+        required for information at the same classification level” (DoDD 5205.07)
+
+SAP Types
+Type:             Acknowledged                               Unacknowledged
+Description:    • Existence is            • Enhanced security                  Waived
+                  acknowledged,             measures ensure that
+                                                                       • Type of
+                  affirmed, or made         the existence of the
+                                                                         unacknowledged SAP
+                  known to others           program is not
+                                                                         in which access is
+                  (that is, it may be       acknowledged,
+                                                                         extremely limited in
+                  openly recognized         affirmed, or made
+                                                                         accordance with the
+                  or publically             known to any person
+                                                                         statutory authority of
+                  acknowledged)             not authorized for such
+                                                                         10 U.S.C. Section 119
+                • Purpose is identified     information (that is, it
+                                            is not openly              • Reporting and access
+                                            recognized or                controls are more
+                                            publically                   restrictive
+                                            acknowledged)              • Reporting
+                                          • Purpose is not               requirements are
+                                            identified                   waived by Secretary of
+                                                                         Defense
+                                          • Reported annually to
+                                            applicable
+                                            congressional
+                                            committees
+
+Program         • Classified as           • Classified as specified    • Classified as specified
+Details:          specified in the          in the applicable            in the applicable
+                  applicable security       security classification      security classification
+                  classification guide      guide                        guide
+
+Program         • Generally               • Unacknowledged,            • Unacknowledged,
+Funding:          unclassified              classified, or not           classified, or not
+                                            directly linked to the       directly linked to the
+                                            program                      program
+
+
+
+
+Special Access Program (SAP) Types and Categories                                         Page 2
+                                                                                Student Guide
+
+
+
+SAP Categories
+Category:            Acquisition               Intelligence           Operations and Support
+Description:    • SAP established to      • SAP established            • SAP established to
+                  protect sensitive         primarily to protect         protect the planning
+                  research,                 the planning and             for, execution of, and
+                  development, testing      execution of especially      support to especially
+                  and evaluation,           sensitive intelligence       sensitive military
+                  modification, and         or counterintelligence       operations
+                  procurement               operations or
+                  activities                collection activities
+                • May involve the
+                  purchase or
+                  development of
+                  weapons systems or
+                  other military
+                  technology
+                • Most common
+                  category of SAP,
+                  making up 75-80% of
+                  all SAPs
+
+SAP Central     • Office of the Under     • Office of the Under        • Office of the Under
+Office            Secretary of Defense      Secretary of Defense         Secretary of Defense
+(SAPCO):          for Acquisition,          for Intelligence             for Policy [USD(P)]
+                  Technology, and           [USD(I)]
+                  Logistics [USD(AT&L)]
+
+
+
+
+Special Access Program (SAP) Types and Categories                                      Page 3
+                                                                             Student Guide
+
+
+Activity
+Take a few minutes to practice identifying the types and categories of Special Access
+Programs. Read the description of each SAP and identify what type of SAP was
+described and what category or SAP central office it falls under.
+
+            1. Program Echo IV
+
+Program Echo IV is an openly recognized DoD program developing a new technology to
+be used in various weapons systems. Although its purpose is known outside of the DoD,
+and its funding is unclassified, the details of the program are classified within the SAP.
+
+What type and category of SAP is Program Echo IV?
+
+                   Type                                    Category
+         Acknowledged                         Acquisition
+         Unacknowledged                       Intelligence
+         Waived                               Operations and support
+
+
+
+            2. Program Foxtrot
+
+Program Foxtrot was formed to develop logistical training exercises for military ground
+personnel positioned in enemy combat zones. The details of this program are classified
+within the SAP, but because of the highly sensitive nature of these training plans, the
+existence of the program and its funding source are both classified as well. This SAP is
+known only to those who work on it and those who receive SAP reports from the
+Secretary of Defense.
+
+What type of SAP is Program Foxtrot?
+
+                     Type                                    SAPCO
+           Acknowledged                       USD(AT&L) -Under Secretary of
+                                                Defense for Acquisition,
+                                                Technology, and Logistics
+           Unacknowledged                     USD(I) - Under Secretary of
+                                                Defense for Intelligence
+           Waived                             USD(P) - Under Secretary of
+                                                Defense for Policy
+
+
+
+
+Special Access Program (SAP) Types and Categories                                  Page 4
+                                                                              Student Guide
+
+
+            3. Program Tango
+
+Program Tango is in the process of developing a new technology that could be
+incorporated into many aspects of military combat planning and logistics. There have
+been public hearings regarding the purpose of this SAP, and the
+program’s funding is unclassified but the details of the program are classified within the
+SAP.
+
+What type of SAP is Program Tango? Which SAPCO oversees its operations?
+
+                     Type                                     SAPCO
+           Acknowledged                        USD(AT&L) -Under Secretary of
+                                                 Defense for Acquisition,
+                                                 Technology, and Logistics
+           Unacknowledged                      USD(I) - Under Secretary of
+                                                 Defense for Intelligence
+           Waived                              USD(P) - Under Secretary of
+                                                 Defense for Policy
+
+            4. Program Zulu 13
+
+Years ago, Program Zulu 13 was a tightly protected program that maintained evacuation
+plans and emergency safe-house facilities for the highest ranking senior Pentagon
+officials. The program ended following a media leak, but while it was active, it was
+subject to the strictest possible access controls, and for years, you never heard anyone
+speak of it. Due to the highly sensitive nature of the program, Zulu 13 was kept under
+extremely tight wraps. It was subject to the most restrictive reporting requirements, and it
+was funded through numerous false programs that existed solely to funnel money to
+Zulu 13. Nobody outside of the program knew of its existence.
+
+What type and category of SAP was Program Zulu 13?
+
+                   Type                                     Category
+         Acknowledged                          Acquisition
+         Unacknowledged                        Intelligence
+         Waived                                Operations and support
+
+
+
+
+Special Access Program (SAP) Types and Categories                                    Page 5
+                                                                            Student Guide
+
+
+            5. Program Romeo
+
+Program Romeo exists to gather military intelligence on suspected foreign threats. Like
+with all SAPs, the details of the program are classified within the SAP. But in this case,
+the program is subject to enhanced security measures and is not openly recognized, and
+the funding is not associated with the program. Furthermore, outside of the program, this
+SAP is known only to the defense and intelligence committees who receive SAP reports
+from the Secretary of Defense.
+
+What type and category of SAP is Program Romeo?
+
+                   Type                                    Category
+         Acknowledged                         Acquisition
+         Unacknowledged                       Intelligence
+         Waived                               Operations and support
+
+
+
+
+Special Access Program (SAP) Types and Categories                                  Page 6
+                                                                        Student Guide
+
+
+Answer Key
+            1. Program Echo IV
+
+What type and category of SAP is Program Echo IV?
+
+                   Type                                   Category
+         Acknowledged                        Acquisition
+         Unacknowledged                      Intelligence
+         Waived                              Operations and support
+
+
+            2. Program Foxtrot
+
+What type of SAP is Program Foxtrot?
+
+                   Type                                   SAPCO
+         Acknowledged                        USD(AT&L) -Under Secretary of
+                                               Defense for Acquisition,
+                                               Technology, and Logistics
+           Unacknowledged                    USD(I) - Under Secretary of
+                                               Defense for Intelligence
+           Waived                            USD(P) - Under Secretary of
+                                               Defense for Policy
+
+            3. Program Tango
+
+What type of SAP is Program Tango? Which SAPCO oversees its operations?
+
+                  Type                                    SAPCO
+         Acknowledged                        USD(AT&L) -Under Secretary
+                                               of Defense for Acquisition,
+                                               Technology, and Logistics
+           Unacknowledged                    USD(I) - Under Secretary of
+                                               Defense for Intelligence
+           Waived                            USD(P) - Under Secretary of
+                                               Defense for Policy
+
+
+            4. Program Zulu 13
+
+What type and category of SAP was Program Zulu 13?
+
+                   Type                                   Category
+         Acknowledged                        Acquisition
+         Unacknowledged                      Intelligence
+         Waived                              Operations and support
+
+
+
+
+Special Access Program (SAP) Types and Categories                              Page 7
+                                                                      Student Guide
+
+
+            5. Program Romeo
+
+What type and category of SAP is Program Romeo?
+
+                   Type                                   SAPCO
+         Acknowledged                        USD(AT&L) -Under Secretary of
+                                               Defense for Acquisition,
+                                               Technology, and Logistics
+           Unacknowledged                    USD(I) - Under Secretary of
+                                               Defense for Intelligence
+           Waived                            USD(P) - Under Secretary of
+                                               Defense for Policy
+
+
+
+
+Special Access Program (SAP) Types and Categories                              Page 8
+                                                                            Student Guide
+
+
+Conclusion
+Now that you’ve had an opportunity to practice identifying the types and categories of
+SAPs, let’s see if you are better equipped to fully understand your Welcome briefing.
+
+       Welcome to the Security Program office. We’re glad to have you joining us for
+       your orientation today. Before you get started, we wanted to take a moment to
+       brief you on some of the types of programs that you may be working on in your
+       new job here.
+
+       You should already be familiar with the concept of a Special Access Program,
+       otherwise known as a SAP. But let’s review the definition just to be sure.
+
+       A SAP is a classified program with special safeguarding and access
+       requirements. SAPs safeguard national security by protecting technological
+       breakthroughs and acquisitions, intelligence on U.S. force capabilities, and
+       sensitive operational plans.
+
+       These are the general categories of SAPs, but there are also three distinct types
+       of SAPs that you may find yourself working on. You might be assigned to an
+       acknowledged SAP, you could be assigned to an unacknowledged SAP, or you
+       could be assigned to a waived SAP.
+
+       Depending on what kind of SAP you work on, your program will fall under the
+       purview of one of several Office of the Secretary of Defense-level SAP central
+       offices.
+
+Congratulations! You have completed the SAP Types and Categories Short. You should
+now have the knowledge that you need to understand the types and categories of SAPs
+that you may encounter in your new job.
+
+
+
+
+Special Access Program (SAP) Types and Categories                                  Page 9
+

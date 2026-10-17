@@ -10,5 +10,6 @@ rel:
 facts:
   - text: The first unclassified U.S. government report on UAP (144 reports examined; 143 unexplained).
     status: documented
+    source: library/docs/doc-odni-2021-preliminary-assessment.pdf
 ---
 

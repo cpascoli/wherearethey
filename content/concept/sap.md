@@ -8,5 +8,6 @@ tags:
 facts:
   - text: A U.S. government security protocol that restricts access to sensitive information on a strict need-to-know basis, beyond a standard Top Secret clearance.
     status: documented
+    source: https://www.archives.gov/isoo/policy-documents/cnsi-eo.html
 ---
 
