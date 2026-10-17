@@ -7,8 +7,9 @@
   NODE_VERSION = "22"
   # Puppeteer is only used by local import tools; never download a browser on Netlify.
   PUPPETEER_SKIP_DOWNLOAD = "true"
-  # Set FILES_BASE in the Netlify UI (Site settings → Environment variables) to the public
-  # R2 URL, e.g. https://pub-xxxx.r2.dev, so document links point at Cloudflare R2.
+  # Public Cloudflare R2 bucket holding library PDFs/images (see README → Heavy files).
+  # Switch to a custom domain later by changing this one value.
+  FILES_BASE = "https://pub-86f038fb92684457b9683cd2fd44620e.r2.dev"
 
 [[headers]]
   for = "/data/*"
