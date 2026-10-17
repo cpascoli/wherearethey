@@ -807,7 +807,8 @@
       (hits.length > 40 ? `<div class="small muted" style="padding:2px 8px 6px">+${hits.length - 40} more — open the video and search its transcript</div>` : '')).join('');
   }
 
-  let yt = null, ytReady = null, ytPending = null, syncTimer = null, curTab = 'moments';
+  let yt = null, ytReady = null, ytPending = null, ytReadyFlag = false, syncTimer = null, curTab = 'moments';
+  const playYT = ({ id, t, autoplay }) => (autoplay ? yt.loadVideoById({ videoId: id, startSeconds: t }) : yt.cueVideoById({ videoId: id, startSeconds: t }));
   function ensureYT() {
     if (ytReady) return ytReady;
     ytReady = new Promise(res => {
@@ -821,15 +822,18 @@
   const usingLocal = () => !$('#local-video').hidden;
   function currentTime() { return usingLocal() ? $('#local-video').currentTime : (yt?.getCurrentTime?.() || 0); }
 
-  async function openVideo(id, t = 0, autoplay = true) {
+  async function openVideo(id, t = 0, autoplay = true, { replace = false } = {}) {
     const v = byId.get(id);
     if (!v) return;
     const same = state.video === id;
     state.video = id;
+    store.set('lastVideo', id);
     if (state.view !== 'videos') go('videos', { keepSel: true });
-    setHash();
+    setHash({ replace });
     $('#player-empty').hidden = true;
     $$('.vl-item').forEach(el => el.classList.toggle('on', el.dataset.openVideo === id));
+    // show title, moments and transcript at once; the YouTube player loads in parallel
+    if (!same) { curTab = v.moments?.length ? 'moments' : v.chapters?.length ? 'chapters' : 'transcript'; renderVideoDetail(v); }
     if (v.local) {
       const el = $('#local-video');
       $('#yt').hidden = true; el.hidden = false;
@@ -842,19 +846,25 @@
     } else {
       $('#local-video').hidden = true; $('#local-video').pause?.(); $('#yt').hidden = false;
       await ensureYT();
+      const want = { id: v.youtube, t, autoplay };
       if (!yt) {
-        ytPending = { id: v.youtube, t };
+        ytReadyFlag = false;
         yt = new YT.Player('yt', {
           videoId: v.youtube, playerVars: { start: Math.floor(t), autoplay: autoplay ? 1 : 0, rel: 0, modestbranding: 1, playsinline: 1 },
-          events: { onReady: () => { ytPending = null; } },
+          events: { onReady: () => {
+            ytReadyFlag = true;
+            // a different video may have been requested while the player was still loading
+            const p = ytPending; ytPending = null;
+            if (p && p.id !== v.youtube) playYT(p);
+          } },
         });
+      } else if (!ytReadyFlag) {
+        ytPending = want; // player still initialising: apply once ready
       } else if (same) {
         yt.seekTo(t, true); if (autoplay) yt.playVideo();
-      } else if (autoplay) yt.loadVideoById({ videoId: v.youtube, startSeconds: t });
-      else yt.cueVideoById({ videoId: v.youtube, startSeconds: t });
+      } else playYT(want);
     }
-    if (!same) { curTab = v.moments?.length ? 'moments' : v.chapters?.length ? 'chapters' : 'transcript'; await renderVideoDetail(v); }
-    else if (curTab === 'transcript') syncTranscript(true);
+    if (same && curTab === 'transcript') syncTranscript(true);
   }
 
   async function renderVideoDetail(v) {
@@ -1314,12 +1324,40 @@
     if (tq) { e.preventDefault(); $('#tq').value = $('#hq').value; go('videos'); runTranscriptSearch(); }
   });
 
+  // Leaving the app for the landing page: stop media and free the heavy views (rebuilt on return)
+  function teardownApp() {
+    try { yt?.stopVideo?.(); yt?.destroy?.(); } catch { /* player not ready */ }
+    yt = null; ytReadyFlag = false; ytPending = null;
+    const wrap = $('#player-wrap');
+    if (!$('#yt')) wrap.insertAdjacentHTML('afterbegin', '<div id="yt"></div>');
+    const lv = $('#local-video');
+    lv.pause(); lv.removeAttribute('src'); lv.load(); lv.hidden = true;
+    state.video = null;
+    $('#vid-detail').innerHTML = '';
+    $('#player-empty').hidden = false;
+    if (cy) { cy.destroy(); cy = null; $('#hud')?.remove(); }
+    if (map) { map.remove(); map = null; mapLayer = null; tileLayer = null; mapFitted = false; }
+  }
+
+  // Videos view opens on the most recent video with curated moments (recent *and* annotated)
+  function defaultVideo() {
+    const withMoments = videos.filter(v => v.moments?.length && v.transcript).sort((a, b) => String(b.date).localeCompare(String(a.date)));
+    return (withMoments[0] || videos.slice().sort((a, b) => String(b.date).localeCompare(String(a.date)))[0])?.id;
+  }
+
   // ───────────── navigation ─────────────
-  function setHash() {
-    const parts = ['', state.view];
-    if (state.view === 'videos' && state.video) parts.push(state.video);
-    const h = '#' + parts.join('/') + (state.sel ? `?sel=${encodeURIComponent(state.sel)}` : '');
-    if (location.hash !== h) history.pushState(null, '', h);
+  function setHash({ replace = false } = {}) {
+    let target;
+    if (state.view === 'home' && !state.sel) {
+      if (!location.hash) return; // home lives at the bare URL
+      target = location.pathname + location.search;
+    } else {
+      const parts = ['', state.view];
+      if (state.view === 'videos' && state.video) parts.push(state.video);
+      target = '#' + parts.join('/') + (state.sel ? `?sel=${encodeURIComponent(state.sel)}` : '');
+      if (location.hash === target) return;
+    }
+    history[replace ? 'replaceState' : 'pushState'](null, '', target);
   }
   function select(id, { from } = {}) {
     state.sel = id;
@@ -1329,6 +1367,7 @@
     setHash();
   }
   function go(view, { keepSel = true } = {}) {
+    if (view === 'home' && state.view !== 'home') teardownApp();
     state.view = view;
     $('#side').classList.remove('open'); // close the mobile filter drawer on navigation
     store.set('view', view);
@@ -1341,8 +1380,8 @@
     $('#vid-side').hidden = view !== 'videos';
     $$('.only-graph').forEach(el => el.hidden = view !== 'graph');
     if (!keepSel) select(null);
+    setHash(); // push the new view's history entry first, so views that adjust it (e.g. default video) replace their own entry
     refreshView(false);
-    setHash();
   }
   function refreshView(filtersChangedFlag) {
     if (state.view === 'graph') {
@@ -1357,7 +1396,14 @@
     else if (state.view === 'index') renderIndex();
     else if (state.view === 'claims') renderClaims();
     else if (state.view === 'home') renderHome();
-    else if (state.view === 'videos') renderVideoList();
+    else if (state.view === 'videos') {
+      renderVideoList();
+      if (!state.video) {
+        const last = store.get('lastVideo', null);
+        const def = (last && byId.get(last)?.type === 'video' && last) || defaultVideo();
+        if (def) openVideo(def, 0, false, { replace: true });
+      }
+    }
     if (filtersChangedFlag && cy && state.view !== 'graph') applyGraphFilter();
   }
 
@@ -1417,11 +1463,14 @@
     const [path, qs] = location.hash.replace(/^#\/?/, '').split('?');
     const [view, vid] = path.split('/');
     const sel = new URLSearchParams(qs || '').get('sel');
-    const v = VIEWS.includes(view) ? view : (initial ? 'home' : state.view);
+    const v = VIEWS.includes(view) ? view : (!path ? 'home' : initial ? 'home' : state.view);
     if (v !== state.view || initial) go(v);
     if ((sel || null) !== state.sel) select(sel && byId.has(sel) ? sel : null);
     if (v === 'videos' && vid && byId.has(vid) && vid !== state.video) openVideo(vid, 0, false);
   }
   window.addEventListener('hashchange', () => applyRoute(false));
+  window.addEventListener('popstate', () => applyRoute(false));
+  // the logo returns home without a page reload
+  $('.brand').addEventListener('click', e => { e.preventDefault(); go('home'); });
   applyRoute(true);
 })();
