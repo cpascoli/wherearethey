@@ -13,11 +13,13 @@ import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { ROOT } from './lib.mjs';
 
-const args = process.argv.slice(2);
-const id = args.find(a => !a.startsWith('--'));
+const args = process.argv.slice(2).filter(a => a !== '--');
 const translate = args.includes('--translate');
 const force = args.includes('--force');
 const lang = args.includes('--lang') ? args[args.indexOf('--lang') + 1] : 'auto';
+// the media id is whatever isn't one of our options (YouTube ids may themselves start with "-" or "--")
+const OPTS = new Set(['--translate', '--force', '--lang']);
+const id = args.find((a, i) => !OPTS.has(a) && args[i - 1] !== '--lang');
 if (!id) { console.log('usage: node scripts/transcribe.mjs <media-id> [--translate] [--lang xx] [--force]'); process.exit(1); }
 
 const dir = path.join(ROOT, 'media', id);
@@ -29,6 +31,11 @@ if (fs.existsSync(out) && !force) {
   if (String(cur.source).startsWith('whisper')) { console.log(`✓ media/${id}: already transcribed with Whisper (use --force)`); process.exit(0); }
 }
 const model = process.env.WHISPER_MODEL || path.join(os.homedir(), '.cache', 'whisper-cpp', 'ggml-large-v3-turbo-q5_0.bin');
+if (translate && /turbo/.test(model)) {
+  // large-v3-turbo was trained without the translation task: it silently returns the original language
+  console.error('The turbo model cannot translate. Transcribe in the original language (omit --translate), or set WHISPER_MODEL to a full multilingual model (e.g. ggml-large-v3).');
+  process.exit(1);
+}
 if (!fs.existsSync(model)) { console.error(`Whisper model not found: ${model}`); process.exit(1); }
 
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'wat-whisper-'));
