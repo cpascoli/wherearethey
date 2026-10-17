@@ -1,0 +1,21 @@
+---
+name: Project Sign
+aka:
+  - Project Saucer
+date: 1948
+end: 1949
+tags:
+  - air-force
+  - foia
+rel:
+  - [ run by, department-of-war ]
+  - [ succeeded by, project-blue-book ]
+  - [ related to, dow-uap-d097 ]
+links:
+  - label: Wikipedia
+    url: https://en.wikipedia.org/wiki/Project_Sign
+facts:
+  - text: A 1948–1949 U.S. Air Force program to investigate the nature and origin of UFOs, run by Air Materiel Command. It was succeeded by Project Grudge and then Project Blue Book.
+    status: documented
+    source: dow-uap-d097
+---

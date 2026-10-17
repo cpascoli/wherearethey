@@ -1,0 +1,36 @@
+---
+name: "Robertson Panel report (Durant Report): Report of Meetings of Scientific Advisory Panel on Unidentified Flying Objects"
+aka:
+  - Robertson Panel
+  - Robertson Panel report
+  - Durant Report
+date: 1953-01-14
+end: 1953-01-18
+tags:
+  - intelligence
+  - secrecy
+  - science
+files:
+  - library/docs/doc-robertson-panel-1953.pdf
+links:
+  - label: CIA reading room record CIA-RDP79B00752A000300100010-4
+    url: https://www.cia.gov/readingroom/document/cia-rdp79b00752a000300100010-4
+  - label: The Black Vault (PDF mirror)
+    url: https://documents2.theblackvault.com/documents/cia/CIA-RDP79B00752A000300100010-4.pdf
+rel:
+  - [ produced by, cia ]
+  - [ chaired by, hp-robertson ]
+  - [ authored by, fc-durant ]
+  - [ follows, doc-cia-osi-flying-saucers-1952 ]
+  - [ related to, project-blue-book ]
+  - [ related to, cia-uap-d021 ]
+facts:
+  - text: A CIA-convened panel of scientists, chaired by Caltech physicist H.P. Robertson, met on January 14–18, 1953 to review UFO reports. It concluded that UFOs posed no direct threat to national security.
+    status: documented
+  - text: The panel warned that the volume of reports could clog military communications and be exploited psychologically. It recommended a public “debunking” and education effort to strip UFOs of their mystique. Critics see this as the origin of official stigma around reporting.
+    status: documented
+  - text: Declassified and approved for release in 2013 (CIA reading room). Earlier versions were released in redacted form from the 1970s.
+    status: documented
+---
+
+The key Cold War document for understanding why UAP reporting carried a stigma for decades: a national-security panel that recommended managing public perception rather than investigating further. A PURSUE record (CIA-UAP-D021, 1955) still cites Robertson’s finding.

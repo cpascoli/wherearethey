@@ -1,0 +1,22 @@
+{
+  "name": "wherearethey",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A navigable knowledge map of UAP / NHI research notes",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check",
+    "fetch": "node scripts/fetch-video.mjs",
+    "find": "node scripts/find.mjs",
+    "import:pursue": "node scripts/import-pursue.mjs",
+    "add:doc": "node scripts/add-document.mjs"
+  },
+  "dependencies": {
+    "csv-parse": "^7.0.3",
+    "marked": "^14.1.0",
+    "puppeteer-core": "^23.11.1",
+    "yaml": "^2.6.0"
+  }
+}

@@ -1,0 +1,33 @@
+---
+rel:
+  - [ released in, ev-pursue-release-01 ]
+  - [ released by, department-of-war ]
+tags:
+  - pursue
+name: DOW-UAP-D044 — Range Fouler Reporting Form, Gulf of Aden, October 2020
+date: 2020-10-15
+place: { name: Arabian Sea, lat: 20, lng: 65 }
+pursue:
+  code: DOW-UAP-D044
+  title: Range Fouler Reporting Form, Gulf of Aden, October 2020
+  agency: Department of War
+  release: 1
+  released: 2026-05-08
+  format: pdf
+  incident_date: 10/15/20
+  incident_location: Arabian Sea
+  redaction: "TRUE"
+  file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d44-range-fouler-arabian-sea-october-2020.pdf
+  thumbnail: https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d44-range-fouler-arabian-sea-october-2020.jpg
+links:
+  - label: Official file (PDF) — war.gov
+    url: https://www.war.gov/medialink/ufo/release_1/dow-uap-d44-range-fouler-arabian-sea-october-2020.pdf
+---
+
+**Official PURSUE description** (Department of War / AARO, release 01):
+
+This document is a Range Fouler Reporting Form, a standardized reporting form the U.S. Navy uses to record the circumstances surrounding an unauthorized intrusion into controlled airspace during active military operations or training. These reports contain a narrative description of the observer’s experiences. 
+A U.S. military operator reported observing a “round, cold object” via infrared sensor, traveling at 319 degrees (northwest) at approximately 20 mph. The report describes the UAP making “abrupt directional changes” during the event.
+All descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.
+
+<!-- your notes below this line are kept on re-import -->

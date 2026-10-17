@@ -1,0 +1,18 @@
+# dependencies & build output
+node_modules/
+site/data/
+
+# heavy binaries live in Cloudflare R2, not git (text extractions *.txt stay in git)
+library/**/*.pdf
+library/**/*.png
+library/**/*.jpg
+library/**/*.jpeg
+library/**/*.gif
+library/**/*.mp4
+library/**/.incoming/
+media/*/video.mp4
+media/*/*.part
+media/*/src.*
+
+# OS / editor
+.DS_Store

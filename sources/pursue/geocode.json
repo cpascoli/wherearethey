@@ -1,0 +1,362 @@
+{
+ "Tremonton, Utah": {
+  "lat": 41.7121,
+  "lng": -112.1658,
+  "resolved": "Tremonton, Box Elder County, Utah, United States"
+ },
+ "Washington, D.C.": {
+  "lat": 38.8951,
+  "lng": -77.0364,
+  "resolved": "Washington, District of Columbia, United States"
+ },
+ "Las Vegas, Nevada": {
+  "lat": 36.1674,
+  "lng": -115.1484,
+  "resolved": "Las Vegas, Clark County, Nevada, United States"
+ },
+ "Boston, Massachusetts": {
+  "lat": 42.3588,
+  "lng": -71.0578,
+  "resolved": "Boston, Suffolk County, Massachusetts, United States"
+ },
+ "Colorado": {
+  "lat": 38.7252,
+  "lng": -105.6077,
+  "resolved": "Colorado, United States"
+ },
+ "Germany": {
+  "lat": 51.1638,
+  "lng": 10.4478,
+  "resolved": "Deutschland"
+ },
+ "Netherlands": {
+  "lat": 52.2435,
+  "lng": 5.6343,
+  "resolved": "Nederland"
+ },
+ "Azerbaijan": {
+  "lat": 40.3936,
+  "lng": 47.7873,
+  "resolved": "Azərbaycan"
+ },
+ "Detroit, MI": {
+  "lat": 42.3316,
+  "lng": -83.0466,
+  "resolved": "Detroit, Wayne County, Michigan, United States"
+ },
+ "Baku, Azerbaijan": {
+  "lat": 40.3756,
+  "lng": 49.8328,
+  "resolved": "Bakı, Azərbaycan"
+ },
+ "Budapest, Hungary": {
+  "lat": 47.4818,
+  "lng": 19.1449,
+  "resolved": "Budapest, Magyarország"
+ },
+ "USSR": {
+  "lat": 46.3422,
+  "lng": 48.0254,
+  "resolved": "СССР, 1/2/5, Казанская улица, Кировский район, Астрахань, городской округ Астрахань, Астраханская область, Южный федеральный округ, 414024, Россия"
+ },
+ "Ladakh, Nepal | Sikkim, India | Bhutam": null,
+ "Harare, Zimbabwe": {
+  "lat": -17.8567,
+  "lng": 31.0602,
+  "resolved": "Harare Province, Zimbabwe"
+ },
+ "Hungary": {
+  "lat": 47.1818,
+  "lng": 19.5061,
+  "resolved": "Magyarország"
+ },
+ "Australia": {
+  "lat": -24.7761,
+  "lng": 134.755,
+  "resolved": "Australia"
+ },
+ "Caribbean Sea": {
+  "lat": 15,
+  "lng": -75,
+  "resolved": "Caribbean Sea"
+ },
+ "New Mexico": {
+  "lat": 34.5802,
+  "lng": -105.996,
+  "resolved": "New Mexico, United States"
+ },
+ "Texas": {
+  "lat": 31.2639,
+  "lng": -98.5456,
+  "resolved": "Texas, United States"
+ },
+ "Bahia, Brazil": {
+  "lat": -12.2853,
+  "lng": -41.9295,
+  "resolved": "Bahia, Região Nordeste, Brasil"
+ },
+ "Mediterranean Sea": {
+  "lat": 35,
+  "lng": 20,
+  "resolved": "Mediterranean Sea"
+ },
+ "Pacific Ocean": {
+  "lat": -0.7031,
+  "lng": -120.9375,
+  "resolved": "المحيط الهادئ"
+ },
+ "Iraq": {
+  "lat": 33.0956,
+  "lng": 44.175,
+  "resolved": "العراق"
+ },
+ "Syria": {
+  "lat": 34.6402,
+  "lng": 39.0494,
+  "resolved": "سوريا"
+ },
+ "Arabian Gulf": {
+  "lat": 27.2381,
+  "lng": 51.1972,
+  "resolved": "الخليج العربي"
+ },
+ "Gulf of Oman": {
+  "lat": 24.2138,
+  "lng": 58.9846,
+  "resolved": "دریای عمان - بحر عمان"
+ },
+ "Aegean Sea": {
+  "lat": 38.0622,
+  "lng": 25.7206,
+  "resolved": "Αιγαίον Πέλαγος / Ege Denizi"
+ },
+ "Arabian Sea": {
+  "lat": 20,
+  "lng": 65,
+  "resolved": "Arabian Sea"
+ },
+ "Pacific Time Zone": {
+  "lat": -29.0668,
+  "lng": 167.9553,
+  "resolved": "Pacific/Norfolk Time Zone, Norfolk Island, 2899, Australia"
+ },
+ "Gulf of Aden": {
+  "lat": 12.6147,
+  "lng": 47.5063,
+  "resolved": "خليج عدن"
+ },
+ "Strait of Hormuz": {
+  "lat": 26.4494,
+  "lng": 56.2028,
+  "resolved": "تنگه هرمز, عمان"
+ },
+ "Iran": {
+  "lat": 32.6475,
+  "lng": 54.5644,
+  "resolved": "ایران"
+ },
+ "Western United States": {
+  "lat": 43.3381,
+  "lng": -75.3897,
+  "resolved": "Town of Western, Oneida County, New York, United States"
+ },
+ "Westen United States": {
+  "lat": 43.4733,
+  "lng": -71.2892,
+  "resolved": "Westen / Frohok Conservation Area, Alton, Belknap County, New Hampshire, United States"
+ },
+ "United States": {
+  "lat": 39.7837,
+  "lng": -100.4459,
+  "resolved": "United States"
+ },
+ "Eastern United States": {
+  "lat": 39.0058,
+  "lng": -84.1404,
+  "resolved": "Eastern United States, Perimeter Trail, Bantam, Tate Township, Clermont County, Ohio, United States"
+ },
+ "Atlantic Ocean": {
+  "lat": 13.5819,
+  "lng": -38.3203,
+  "resolved": "Атлантикатә аокеан"
+ },
+ "Virginia": {
+  "lat": 37.1232,
+  "lng": -78.4928,
+  "resolved": "Virginia, United States"
+ },
+ "Montana, Utah": {
+  "lat": 40.5138,
+  "lng": -111.9438,
+  "resolved": "Pueblo Del Montana, Riverton, Salt Lake County, Utah, 84065, United States"
+ },
+ "Sweden": {
+  "lat": 59.675,
+  "lng": 14.5209,
+  "resolved": "Sverige"
+ },
+ "Middle East": {
+  "lat": 39.3014,
+  "lng": -76.5888,
+  "resolved": "Middle East, Baltimore, Maryland, United States"
+ },
+ "United Arab Emirates": {
+  "lat": 24.0002,
+  "lng": 53.9995,
+  "resolved": "الإمارات العربية المتحدة"
+ },
+ "Greece": {
+  "lat": 38.9954,
+  "lng": 21.9877,
+  "resolved": "Ελλάς"
+ },
+ "Djibouti": {
+  "lat": 11.8146,
+  "lng": 42.8453,
+  "resolved": "Djibouti جيبوتي"
+ },
+ "Southern United States": {
+  "lat": 34.0219,
+  "lng": -118.2859,
+  "resolved": "University of Southern California, West Jefferson Boulevard, University Park, Exposition Park, Los Angeles, Los Angeles County, California, 90089, United States"
+ },
+ "East China Sea": {
+  "lat": 29,
+  "lng": 125,
+  "resolved": "东海 / 東海 / 東シナ海 / 동중국해"
+ },
+ "Japan": {
+  "lat": 36.5748,
+  "lng": 139.2394,
+  "resolved": "日本"
+ },
+ "Indo-PACOM": null,
+ "North America": {
+  "lat": 51,
+  "lng": -109,
+  "resolved": "North America"
+ },
+ "CENTCOM": {
+  "lat": 10.3357,
+  "lng": 123.9012,
+  "resolved": "CENTCOM, Torralba Street, Sun-oc, Lahug, Cebu City, Central Visayas, 6000, Philippines"
+ },
+ "EUCOM": {
+  "lat": 48.7359,
+  "lng": 9.0838,
+  "resolved": "US EUCOM Plans and Operations, 7, Texasstraße, Lauchäcker, Vaihingen, Stuttgart, Baden-Württemberg, 70569, Deutschland"
+ },
+ "Yellow Sea": {
+  "lat": 36,
+  "lng": 124,
+  "resolved": "黄海 / 황해 / 조선서해"
+ },
+ "INDOPACOM": {
+  "lat": 21.3608,
+  "lng": -157.9357,
+  "resolved": "INDOPACOM Guest House, Maklalapa Drive, Makalapa Housing, Āliamanu, Waipahu, Honolulu County, Hawaii, 96860, United States"
+ },
+ "Southeastern United States": {
+  "lat": 31.5856,
+  "lng": -102.8827,
+  "resolved": "Southeastern, Monahans, Ward County, Texas, 79756, United States"
+ },
+ "NORTHCOM": {
+  "lat": -35.744,
+  "lng": 174.3453,
+  "resolved": "NorthCom, Port Road, Port Whangārei, Whangārei, Whangārei District, Northland, 0110, New Zealand / Aotearoa"
+ },
+ "Kazakhstan": {
+  "lat": 48.1013,
+  "lng": 66.7781,
+  "resolved": "Қазақстан"
+ },
+ "Midwestern United States": {
+  "lat": 33.8712,
+  "lng": -98.5221,
+  "resolved": "Midwestern State University, 3410, Taft Boulevard, Wichita Falls, Wichita County, Texas, 76308, United States"
+ },
+ "AFRICOM": {
+  "lat": -4.3026,
+  "lng": 15.3137,
+  "resolved": "Africom, 1, Boulevard du 30 Juin, Révolution, Gombe, Kinshasa, République démocratique du Congo"
+ },
+ "South China Sea": {
+  "lat": 15,
+  "lng": 115,
+  "resolved": "南海/Biển Đông/South China Sea"
+ },
+ "Gulf of America": {
+  "lat": 25.2834,
+  "lng": -89.9066,
+  "resolved": "Golfo de México"
+ },
+ "Colorado Springs, Colorado, U.S.": {
+  "lat": 38.834,
+  "lng": -104.8253,
+  "resolved": "Colorado Springs, El Paso County, Colorado, United States"
+ },
+ "Northeastern United States": {
+  "lat": 42.3401,
+  "lng": -71.0897,
+  "resolved": "Northeastern, 360, Huntington Avenue, Fenway-Kenmore, Boston, Suffolk County, Massachusetts, 02115, United States"
+ },
+ "New Jersey, United States": {
+  "lat": 40.0757,
+  "lng": -74.4042,
+  "resolved": "New Jersey, United States"
+ },
+ "Washington State, United States": {
+  "lat": 47.2868,
+  "lng": -120.2126,
+  "resolved": "Washington, United States"
+ },
+ "Northeastern U.S.; Afghanistan": null,
+ "Afghanistan": {
+  "lat": 33.768,
+  "lng": 66.2385,
+  "resolved": "افغانستان"
+ },
+ "Colorado Springs, Colorado": {
+  "lat": 38.834,
+  "lng": -104.8253,
+  "resolved": "Colorado Springs, El Paso County, Colorado, United States"
+ },
+ "Cislunar Space": null,
+ "North Atlantic Ocean": {
+  "lat": 40,
+  "lng": -40,
+  "resolved": "North Atlantic Ocean"
+ },
+ "Cape Kennedy, Florida": {
+  "lat": 28.4514,
+  "lng": -80.5283,
+  "resolved": "Cape Canaveral, Brevard County, Florida, United States"
+ },
+ "Houston, Texas": {
+  "lat": 29.7589,
+  "lng": -95.3677,
+  "resolved": "Houston, Harris County, Texas, United States"
+ },
+ "Low-Earth Orbit": null,
+ "Papua New Guinea": {
+  "lat": -5.6816,
+  "lng": 144.2489,
+  "resolved": "Papua Niugini"
+ },
+ "Georgia": {
+  "lat": 32.3294,
+  "lng": -83.1137,
+  "resolved": "Georgia, United States"
+ },
+ "Turkmenistan": {
+  "lat": 39.3764,
+  "lng": 59.3925,
+  "resolved": "Türkmenistan"
+ },
+ "Mexico": {
+  "lat": 23.6585,
+  "lng": -102.0077,
+  "resolved": "México"
+ }
+}
