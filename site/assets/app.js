@@ -101,7 +101,7 @@
   const thumb = yt => `https://i.ytimg.com/vi/${yt}/mqdefault.jpg`;
   // thumbnail for any video entry (non-YouTube videos get a neutral placeholder)
   const VIDEO_PLACEHOLDER = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180"><rect width="320" height="180" fill="#131a1f"/><circle cx="160" cy="90" r="26" fill="none" stroke="#6fcfbf" stroke-width="3"/><path d="M152 76 L174 90 L152 104 Z" fill="#6fcfbf"/></svg>')}`;
-  const vthumb = v => (v.youtube ? thumb(v.youtube) : VIDEO_PLACEHOLDER);
+  const vthumb = v => (v.youtube ? thumb(v.youtube) : v.thumb ? fileUrl(v.thumb) : VIDEO_PLACEHOLDER);
   const vsource = v => (v.youtube ? { url: `https://www.youtube.com/watch?v=${v.youtube}`, label: 'YouTube' } : { url: v.url, label: v.url && /x\.com|twitter\.com/.test(v.url) ? 'X' : 'Source' });
   const subtitle = e => {
     if (e.credentials?.length) return e.credentials[0].role;
@@ -943,6 +943,7 @@
     $('#vid-list').innerHTML = list.map(v => `<div class="vl-item ${state.video === v.id ? 'on' : ''}" data-open-video="${v.id}">
       <img src="${vthumb(v)}" alt="" loading="lazy"><div><div class="t">${esc(v.name)}</div><div class="s">${esc([v.channel, fmtD(v.date), fmtDur(v.duration)].filter(Boolean).join(' · '))}</div></div></div>`).join('');
   }
+  document.addEventListener('click', e => { if (e.target.closest('[data-close-video]')) { e.preventDefault(); closeVideo(); } });
   $('#vid-list').addEventListener('click', e => {
     const o = e.target.closest('[data-open-video]');
     if (o) { openVideo(o.dataset.openVideo, 0, false); return; }
@@ -1087,18 +1088,20 @@
     if (!v) return;
     const same = state.video === id;
     state.video = id;
-    store.set('lastVideo', id);
-    if (state.view !== 'videos') go('videos', { keepSel: true });
+    if (state.view !== 'videos') go('videos', { keepSel: true, keepVideo: true });
     setHash({ replace });
     $('#player-empty').hidden = true;
+    $('#vid-browse').hidden = true; $('#player-col').hidden = false;
     $('#player-wrap').classList.remove('x-embed');
     $$('.vl-item').forEach(el => el.classList.toggle('on', el.dataset.openVideo === id));
     // show title, moments and transcript at once; the YouTube player loads in parallel
     if (!same) { curTab = v.moments?.length ? 'moments' : v.chapters?.length ? 'chapters' : 'transcript'; renderVideoDetail(v); }
-    if (v.local) {
+    if (v.local || v.stream) {
       const el = $('#local-video');
       $('#yt').hidden = true; el.hidden = false;
-      if (!same) el.src = '../' + v.local; // local copies live in media/ (served by the dev server; never published)
+      try { yt?.pauseVideo?.(); } catch { /* not ready */ }
+      // dev server: local copy in media/; public site: our own copy streamed from R2 (videos with `stream:`)
+      if (!same) { el.src = v.local ? '../' + v.local : fileUrl(v.stream); if (v.thumb) el.poster = fileUrl(v.thumb); }
       el.currentTime = t;
       if (autoplay) el.play().catch(() => {});
     } else if (!v.youtube) {
@@ -1162,7 +1165,7 @@
       ['about', 'About'],
     ];
     const people = adj.get(v.id).filter(x => x.kind !== 'mention' && x.label !== 'mentions').map(x => x.other);
-    $('#vid-detail').innerHTML = `<div class="vd-head"><h2>${esc(v.name)}</h2>
+    $('#vid-detail').innerHTML = `<div class="vd-head"><button class="link vd-back" data-close-video>← All videos</button><h2>${esc(v.name)}</h2>
       <div class="vd-meta"><span>${esc([v.channel, fmtD(v.date), fmtDur(v.duration)].filter(Boolean).join(' · '))}</span>
       ${vsource(v).url ? `<a href="${esc(vsource(v).url)}" target="_blank" rel="noopener">${vsource(v).label} ↗</a>` : ''}
       <a href="#" data-goto="${v.id}">Details</a></div>
@@ -1630,10 +1633,67 @@
     if (map) { map.remove(); map = null; mapLayer = null; tileLayer = null; mapFitted = false; }
   }
 
-  // Videos view opens on the most recent video with curated moments (recent *and* annotated)
-  function defaultVideo() {
-    const withMoments = videos.filter(v => v.moments?.length && v.transcript).sort((a, b) => String(b.date).localeCompare(String(a.date)));
-    return (withMoments[0] || videos.slice().sort((a, b) => String(b.date).localeCompare(String(a.date)))[0])?.id;
+  // ───────────── video browser (the Videos view when no video is open) ─────────────
+  const NEWS = /\b(CBS|CNN|NBC|ABC|BBC|CTV|FOX ?\d*|NewsNation|7NEWS|Sky News|i24NEWS|CBC|KLAS|8 News|PBS|60 Minutes)\b/i;
+  function vidKind(v) {
+    const rels = adj.get(v.id).filter(x => x.dir === 'out');
+    if (rels.some(x => x.label === 'trailer of')) return 'trailer';
+    if (rels.some(x => x.label === 'recording of' && ['hearing', 'event'].includes(byId.get(x.other)?.type)) || /hearing|testimony before|subcommittee|committee/i.test(v.name)) return 'hearing';
+    if ((v.y0 && v.y0 < 2005) || NEWS.test(v.channel || '') || NEWS.test(v.name)) return 'news';
+    return 'interview';
+  }
+  const VKINDS = [['all', 'All'], ['hearing', 'Hearings'], ['interview', 'Interviews & podcasts'], ['news', 'News & archive'], ['trailer', 'Trailers']];
+  let vbKind = 'all', vbSort = 'new', vbQ = '';
+  const vidPeople = v => [...new Set([...(v.moments || []).map(m => m.speaker), ...adj.get(v.id).filter(x => x.dir === 'out' && x.label === 'features').map(x => x.other)].filter(id => byId.get(id)?.type === 'person'))];
+  const vidCard = v => {
+    const ppl = vidPeople(v);
+    return `<div class="vb-card" data-open-video="${v.id}"><div class="vb-thumb"><img src="${vthumb(v)}" alt="" loading="lazy">${v.duration ? `<span class="wdur">${fmtDur(v.duration)}</span>` : ''}${v.moments?.length ? `<span class="vb-mom">${v.moments.length} moments</span>` : ''}</div>
+      <div class="vb-t">${esc(v.name)}</div><div class="vb-s">${esc([v.channel, fmtD(v.date)].filter(Boolean).join(' · '))}</div>
+      ${ppl.length ? `<div class="vb-p">${ppl.slice(0, 3).map(id => esc(byId.get(id).name)).join(' · ')}${ppl.length > 3 ? ` +${ppl.length - 3}` : ''}</div>` : ''}</div>`;
+  };
+  function showBrowse() {
+    $('#vid-browse').hidden = false; $('#player-col').hidden = true;
+    try { yt?.pauseVideo?.(); } catch { /* not ready */ }
+    $('#local-video').pause?.();
+    renderBrowse();
+  }
+  function renderBrowse() {
+    const base = videos.filter(v => !(state.credibleOnly && v.cred === 'outside'));
+    const q = vbQ.trim().toLowerCase();
+    let list = base.filter(v => (vbKind === 'all' || vidKind(v) === vbKind) && (!q || q.split(/\s+/).every(w => searchText(v).includes(w))));
+    const sorters = { new: (a, b) => String(b.date || '').localeCompare(String(a.date || '')), old: (a, b) => String(a.date || '9').localeCompare(String(b.date || '9')), moments: (a, b) => (b.moments?.length || 0) - (a.moments?.length || 0), long: (a, b) => (b.duration || 0) - (a.duration || 0) };
+    list.sort(sorters[vbSort]);
+    const counts = Object.fromEntries(VKINDS.map(([k]) => [k, k === 'all' ? base.length : base.filter(v => vidKind(v) === k).length]));
+    const featured = base.filter(v => v.moments?.length >= 5).sort((a, b) => b.moments.length - a.moments.length || String(b.date).localeCompare(String(a.date))).slice(0, 6);
+    const showFeatured = vbKind === 'all' && !q;
+    $('#vid-browse').innerHTML = `<div class="vb-head"><h2>Testimony</h2><p class="muted">Hearings, interviews and archival footage, with synced transcripts and curated moments. ${base.length} videos · ${KB.stats.transcriptHours} hours transcribed.</p>
+      <div class="vb-bar"><input id="vb-q" type="search" placeholder="Filter by title, person, case…" value="${esc(vbQ)}" autocomplete="off">
+        <select id="vb-sort"><option value="new">Newest</option><option value="old">Oldest</option><option value="moments">Most moments</option><option value="long">Longest</option></select>
+        <button class="btn small" data-tsearch-open>Search inside transcripts</button></div>
+      <div class="seg vb-kinds">${VKINDS.map(([k, l]) => `<button data-vkind="${k}" class="${vbKind === k ? 'on' : ''}">${l} ${counts[k]}</button>`).join('')}</div></div>
+      ${showFeatured && featured.length ? `<h3 class="vb-sec">Start here <span class="muted small">most annotated</span></h3><div class="vb-grid">${featured.map(vidCard).join('')}</div>` : ''}
+      <h3 class="vb-sec">${showFeatured ? 'All videos' : `${list.length} video${list.length === 1 ? '' : 's'}`}</h3>
+      <div class="vb-grid">${list.map(vidCard).join('') || '<p class="muted">No videos match.</p>'}</div>`;
+    $('#vb-sort').value = vbSort;
+  }
+  $('#vid-browse').addEventListener('input', e => {
+    if (e.target.id !== 'vb-q') return;
+    vbQ = e.target.value;
+    clearTimeout(renderBrowse.t);
+    renderBrowse.t = setTimeout(() => { const pos = e.target.selectionStart; renderBrowse(); const el = $('#vb-q'); el.focus(); el.setSelectionRange(pos, pos); }, 200);
+  });
+  $('#vid-browse').addEventListener('change', e => { if (e.target.id === 'vb-sort') { vbSort = e.target.value; renderBrowse(); } });
+  $('#vid-browse').addEventListener('click', e => {
+    const k = e.target.closest('[data-vkind]'); if (k) { vbKind = k.dataset.vkind; renderBrowse(); return; }
+    if (e.target.closest('[data-tsearch-open]')) { $('#side').classList.add('open'); $('#tq').focus(); return; }
+    const c = e.target.closest('[data-open-video]'); if (c) openVideo(c.dataset.openVideo, 0, false);
+  });
+  function closeVideo() {
+    state.video = null;
+    $$('.vl-item').forEach(el => el.classList.remove('on'));
+    showBrowse();
+    setHash();
+    $('#view-videos').scrollTop = 0;
   }
 
   // ───────────── navigation ─────────────
@@ -1657,7 +1717,9 @@
     if (state.view === 'timeline') $$('.tl-item').forEach(el => el.classList.toggle('sel', el.dataset.goto === id));
     setHash();
   }
-  function go(view, { keepSel = true } = {}) {
+  function go(view, { keepSel = true, keepVideo = false } = {}) {
+    // entering Videos from elsewhere opens the grid, unless a specific video is being played
+    if (view === 'videos' && state.view !== 'videos' && !keepVideo && state.video) { state.video = null; $$('.vl-item').forEach(el => el.classList.remove('on')); }
     if (view === 'home' && state.view !== 'home') teardownApp();
     if (state.reading && view !== state.view) { state.reading = false; $('#app').classList.remove('reading'); } // e.g. ▶ from reading view
     state.view = view;
@@ -1691,11 +1753,7 @@
     else if (state.view === 'home') renderHome();
     else if (state.view === 'videos') {
       renderVideoList();
-      if (!state.video) {
-        const last = store.get('lastVideo', null);
-        const def = (last && byId.get(last)?.type === 'video' && last) || defaultVideo();
-        if (def) openVideo(def, 0, false, { replace: true });
-      }
+      if (!state.video) showBrowse();
     }
     if (filtersChangedFlag && cy && state.view !== 'graph') applyGraphFilter();
   }
@@ -1760,6 +1818,7 @@
     if (v !== state.view || initial) go(v);
     if ((sel || null) !== state.sel) select(sel && byId.has(sel) ? sel : null);
     if (v === 'videos' && vid && byId.has(vid) && vid !== state.video) openVideo(vid, 0, false);
+    else if (v === 'videos' && !vid && state.video) closeVideo();
   }
   window.addEventListener('hashchange', () => applyRoute(false));
   window.addEventListener('popstate', () => applyRoute(false));

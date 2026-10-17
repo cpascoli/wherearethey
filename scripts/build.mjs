@@ -76,6 +76,9 @@ export async function build({ check = false, quiet = false } = {}) {
     // books & films: free-text credits plus bibliographic / runtime metadata
     for (const k of ['credits', 'publisher', 'isbn', 'pages']) if (d[k] != null) e[k] = String(d[k]);
     if (d.runtime != null) e.runtime = Number(d.runtime);
+    // videos we host ourselves on R2 (only with an explicit decision): stream file and thumbnail, relative to FILES_BASE
+    if (d.stream) e.stream = String(d.stream);
+    if (d.thumb) e.thumb = String(d.thumb);
     if (d.coverage) e.coverage = arr(d.coverage).map(c => (typeof c === 'string' ? { outlet: c } : c));
     if (r.type === 'video') {
       e.youtube = d.youtube ? youtubeId(d.youtube) : null;

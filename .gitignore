@@ -18,3 +18,4 @@ media/*/src.*
 .DS_Store
 media/*/audio.*
 .cache/
+media/*/thumb.jpg

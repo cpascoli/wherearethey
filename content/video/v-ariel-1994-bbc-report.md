@@ -2,6 +2,8 @@
 name: "Ariel School, 1994: original BBC news report"
 media: x-1797043031121801547
 url: https://x.com/Vinod_r108/status/1797043031121801547
+stream: media/x-1797043031121801547/video.mp4
+thumb: media/x-1797043031121801547/thumb.jpg
 rel:
   - [ about, inc-ariel-1994 ]
   - [ features, colin-mackie ]
@@ -33,4 +35,4 @@ moments:
     refs: [ inc-ariel-1994, inc-broad-haven-1977 ]
 ---
 
-Original 1994 **BBC** news footage (the BBC logo is on screen), reposted on X in 2024. The dateline (September 19, 1994), the reporter's questions and the reference to “Tim” match BBC reporter Tim Leach's visit to the school; that he filmed this report is very likely, though he is not named on screen. Transcribed locally with Whisper. The public site links to the X post rather than re-hosting the video.
+Original 1994 **BBC** news footage (the BBC logo is on screen), reposted on X in 2024. The dateline (September 19, 1994), the reporter's questions and the reference to “Tim” match BBC reporter Tim Leach's visit to the school; that he filmed this report is very likely, though he is not named on screen. Transcribed locally with Whisper. The archive plays its own copy, streamed from its file storage, with the original X post linked as the source.
