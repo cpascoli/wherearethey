@@ -16,7 +16,7 @@ tags:
 rel:
   - [ witness, colin-mackie ]
   - [ investigated by, cynthia-hind ]
-  - [ subject of, doc-ariel-phenomenon-2022 ]
+  - [ subject of, film-ariel-phenomenon ]
   - [ reported by, tim-leach ]
   - [ investigated by, john-mack ]
 facts:

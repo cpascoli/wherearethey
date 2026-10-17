@@ -72,6 +72,9 @@ export function build({ check = false, quiet = false } = {}) {
     if (d.channels) e.channels = arr(d.channels).map(String);
     if (d.pursue) e.pursue = d.pursue;
     if (d.witnesses != null) e.witnesses = Number(d.witnesses);
+    // books & films: free-text credits plus bibliographic / runtime metadata
+    for (const k of ['credits', 'publisher', 'isbn', 'pages']) if (d[k] != null) e[k] = String(d[k]);
+    if (d.runtime != null) e.runtime = Number(d.runtime);
     if (d.coverage) e.coverage = arr(d.coverage).map(c => (typeof c === 'string' ? { outlet: c } : c));
     if (r.type === 'video') {
       e.youtube = d.youtube ? youtubeId(d.youtube) : null;

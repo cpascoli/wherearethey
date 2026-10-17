@@ -11,7 +11,8 @@ military personnel, pilots, radar/sensor operators, intelligence officers, acade
 - Never upgrade a status without a source. Prefer the counter-evidence too (e.g. Kirkpatrick, AARO resolutions) — balance is part of credibility.
 
 ## Entry format — `content/<type>/<id>.md`
-Types: person, incident, hearing, program, organization, document, record (PURSUE, generated), video, event, concept, place, source.
+Types: person, incident, hearing, program, organization, document, film, book, record (PURSUE, generated), video, event, concept, place, source.
+`document` is for official records and primary documents only; documentaries go in `film/` and books in `book/` (shown in the Books & Films view). Give them `credits:` (free text), `runtime:` (minutes) or `publisher:`/`isbn:`/`pages:`, link people with `features`/`authored by`/`narrated by`, and attach an official trailer as a video with `[ trailer of, film-… ]`. Their contents are testimony: `claimed` unless an official record backs it; link out, never host.
 The id is the filename. Frontmatter (YAML) + optional Markdown body (bio/summary).
 ```yaml
 name: David Fravor

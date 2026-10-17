@@ -9,7 +9,7 @@ links:
   - label: DoD FOIA reading room — 24-F-0088 (PDF, esd.whs.mil)
     url: https://www.esd.whs.mil/Portals/54/Documents/FOID/Reading%20Room/UFOsandUAPs/24-F-0088_DOPSR_Case_22-SB-0151_2023.pdf
 rel:
-  - [ about, doc-lacatski-2023 ]
+  - [ about, book-inside-covert-ufo-program ]
   - [ about, james-lacatski ]
   - [ reviewed by, dia ]
   - [ about, aawsap ]

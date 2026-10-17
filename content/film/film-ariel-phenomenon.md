@@ -1,7 +1,8 @@
 ---
-name: Ariel Phenomenon (documentary)
+name: Ariel Phenomenon
 aka: [Ariel Phenomenon]
 date: 2022-05-20
+credits: "Directed by Randall Nickerson"
 tags: [school, international, disclosure]
 rel:
   - [ about, inc-ariel-1994 ]

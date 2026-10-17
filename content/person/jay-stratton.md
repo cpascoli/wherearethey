@@ -8,7 +8,7 @@ credentials:
 tags:
   - intelligence
 rel:
-  - [ authored, doc-stratton-out-of-the-shadows ]
+  - [ authored, book-out-of-the-shadows ]
   - [ investigated, inc-nimitz-2004 ]
   - [ led, uaptf ]
   - [ worked at, dia ]

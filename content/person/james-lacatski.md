@@ -16,7 +16,7 @@ facts:
   - text: "His 2023 book says that at a 2011 meeting in the Capitol he told a U.S. Senator and an agency Under Secretary that the United States “was in possession of a craft of unknown origin and had successfully gained access to its interior.” He repeated that the government holds such a craft in interviews in October 2023 and November 2025."
     status: claimed
     by: james-lacatski
-    source: doc-lacatski-2023
+    source: book-inside-covert-ufo-program
   - text: "The Pentagon's DOPSR cleared the book's manuscript on April 24, 2023, stating that clearance does not imply DoD endorsement or factual accuracy."
     status: documented
     source: library/docs/doc-dopsr-22-sb-0151.pdf

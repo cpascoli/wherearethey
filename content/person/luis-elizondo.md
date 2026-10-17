@@ -15,7 +15,7 @@ tags:
   - intelligence
   - whistleblower
 rel:
-  - [ authored, doc-imminent-2024 ]
+  - [ authored, book-imminent ]
   - [ led, aatip ]
 facts:
   - text: Says he led AATIP at the Pentagon until he resigned in October 2017.

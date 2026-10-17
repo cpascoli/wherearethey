@@ -8,7 +8,7 @@ tags: [aerospace, aawsap, skinwalker]
 rel:
   - [ worked on, aawsap ]
   - [ worked at, bigelow-aerospace ]
-  - [ co-author of, doc-lacatski-2023 ]
+  - [ co-author of, book-inside-covert-ufo-program ]
 facts:
   - text: "Co-author with James Lacatski and George Knapp of “Skinwalkers at the Pentagon” (2021) and “Inside the US Government Covert UFO Program: Initial Revelations” (2023), a manuscript the Pentagon cleared in April 2023."
     status: documented

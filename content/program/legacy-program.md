@@ -10,7 +10,7 @@ rel:
   - [ related to, usap ]
   - [ related to, cap ]
   - [ subject of, ev-grusch-icig-complaint-2022 ]
-  - [ subject of, doc-imminent-2024 ]
+  - [ subject of, book-imminent ]
   - [ subject of, doc-grusch-statement-2023-07-26 ]
   - [ allegedly involves, lockheed-martin ]
   - [ allegedly involves, northrop-grumman ]
@@ -43,7 +43,7 @@ facts:
   - text: In his 2024 memoir “Imminent”, Luis Elizondo calls these efforts “Legacy Programs”, dates them to the Roswell recovery, and names aerospace contractors (Lockheed Martin, McDonnell Douglas, Northrop Grumman, Boeing, Raytheon, BAE Systems) he says worked on retrieved technology.
     status: claimed
     by: luis-elizondo
-    source: doc-imminent-2024
+    source: book-imminent
   - text: The alleged structure is an unacknowledged and possibly waived SAP, or an intelligence-community Controlled Access Program, run largely inside private contractors. Proponents argue this would put it beyond FOIA, which does not apply to private companies, and beyond routine congressional reporting.
     status: claimed
   - text: Eric Davis said that “the legacy program has been very insulated and insular”, that recovered craft are “not of this Earth”, and that he briefed Grusch on legacy programs.

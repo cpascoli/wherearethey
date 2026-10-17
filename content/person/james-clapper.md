@@ -18,7 +18,7 @@ facts:
   - text: In The Age of Disclosure, confirms that the activity over Area 51 is real.
     status: claimed
     by: james-clapper
-    source: doc-age-of-disclosure
+    source: film-age-of-disclosure
 ---
 
 Retired U.S. Air Force lieutenant general who directed the Defense Intelligence Agency (1992–1995) and the National Geospatial-Intelligence Agency (2001–2006), and served as Director of National Intelligence (2010–2017). He has publicly acknowledged UAP as a real and unresolved issue and appears in *The Age of Disclosure* (2025).

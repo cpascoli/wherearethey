@@ -4,7 +4,7 @@ name: "#490 - ’Ariel Phenomenon’ director Randall Nickerson | Matt's Movie
 youtube: SmfqpsVHtKU
 rel:
   - [ features, randall-nickerson ]
-  - [ about, doc-ariel-phenomenon-2022 ]
+  - [ about, film-ariel-phenomenon ]
   - [ about, inc-ariel-1994 ]
 moments: []
 ---

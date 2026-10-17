@@ -7,7 +7,7 @@ credentials:
 tags: [journalist, international, school]
 rel:
   - [ reported on, inc-ariel-1994 ]
-  - [ appears in, doc-ariel-phenomenon-2022 ]
+  - [ appears in, film-ariel-phenomenon ]
 links:
   - label: Wikipedia — Ariel School UFO incident
     url: https://en.wikipedia.org/wiki/Ariel_School_UFO_incident

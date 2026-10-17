@@ -30,6 +30,6 @@ facts:
   - text: Lacatski has stated, in books cleared by the Pentagon’s DOPSR, that the U.S. possesses a UFO and has gained access to its interior.
     status: claimed
     by: james-lacatski
-    source: doc-lacatski-2023
+    source: book-inside-covert-ufo-program
 ---
 

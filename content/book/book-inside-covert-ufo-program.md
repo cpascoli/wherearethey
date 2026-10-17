@@ -2,10 +2,12 @@
 name: "Inside the US Government Covert UFO Program: Initial Revelations"
 aka: [Inside the U.S. Government Covert UFO Program, Initial Revelations]
 date: 2023-10-07
+credits: "James T. Lacatski, Colm A. Kelleher & George Knapp"
+publisher: RTMA, LLC
+isbn: 979-8-9891146-1-0
 tags:
   - crash-retrieval
   - disclosure
-  - book
 rel:
   - [ authored by, james-lacatski ]
   - [ authored by, colm-kelleher ]
@@ -13,9 +15,9 @@ rel:
   - [ about, aawsap ]
   - [ cleared in, doc-dopsr-22-sb-0151 ]
 links:
-  - label: Google Books — bibliographic record (ISBN 979-8-9891146-1-0)
+  - label: Google Books
     url: https://books.google.com/books/about/Inside_the_U_S_Government_Covert_UFO_Pro.html?id=Yt5a0AEACAAJ
-  - label: Find in a library (WorldCat, by ISBN)
+  - label: Find in a library (WorldCat)
     url: https://search.worldcat.org/search?q=bn:9798989114610
   - label: Liberation Times — excerpt and WEAPONIZED interview (October 17, 2023)
     url: https://www.liberationtimes.com/home/former-head-of-us-government-ufo-program-confirms-government-possesses-advanced-craft-of-unknown-origin

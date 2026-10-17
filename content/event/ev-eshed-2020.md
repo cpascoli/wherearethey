@@ -5,7 +5,7 @@ date: 2020-12-02
 tags: [international, disclosure]
 rel:
   - [ about, haim-eshed ]
-  - [ about, doc-eshed-book-2020 ]
+  - [ about, book-universe-beyond-the-horizon ]
   - [ disputed by, isaac-ben-israel ]
 links:
   - label: Global News — Aliens and ‘Galactic Federation’ exist, ex-Israeli space chief claims

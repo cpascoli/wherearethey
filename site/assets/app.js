@@ -19,7 +19,9 @@
     hearing: { label: 'Hearing', plural: 'Hearings & briefings', color: '#E5636B', shape: 'diamond' },
     program: { label: 'Program', plural: 'Programs', color: '#4EA8DE', shape: 'hexagon' },
     organization: { label: 'Organization', plural: 'Organizations', color: '#8E7DDB', shape: 'round-rectangle' },
-    document: { label: 'Document', plural: 'Documents & media', color: '#B49A78', shape: 'rectangle' },
+    document: { label: 'Document', plural: 'Documents', color: '#B49A78', shape: 'rectangle' },
+    film: { label: 'Documentary', plural: 'Documentaries', color: '#E07B53', shape: 'barrel' },
+    book: { label: 'Book', plural: 'Books', color: '#9CB86B', shape: 'tag' },
     record: { label: 'Official record', plural: 'Official records (PURSUE)', color: '#8FB3C9', shape: 'rectangle' },
     video: { label: 'Video', plural: 'Videos', color: '#D978B0', shape: 'round-tag' },
     event: { label: 'Event', plural: 'Events', color: '#38B2AC', shape: 'round-diamond' },
@@ -87,7 +89,7 @@
     }
   }
 
-  const PREFIX = { record: 'R', person: 'P', incident: 'I', hearing: 'H', program: 'PG', organization: 'O', document: 'D', video: 'V', event: 'E', concept: 'C', place: 'L', source: 'S' };
+  const PREFIX = { record: 'R', person: 'P', incident: 'I', hearing: 'H', program: 'PG', organization: 'O', document: 'D', film: 'F', book: 'B', video: 'V', event: 'E', concept: 'C', place: 'L', source: 'S' };
   const fileNo = e => { let h = 2166136261; for (const c of e.id) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return `${PREFIX[e.type] || 'X'}-${(h >>> 0).toString(16).toUpperCase().slice(-4).padStart(4, '0')}`; };
   // Library files: served locally by the dev server, or from Cloudflare R2 on the hosted site (FILES_BASE at build time)
   const fileUrl = f => (KB.filesBase ? `${KB.filesBase.replace(/\/$/, '')}/${f}` : `../${f}`);
@@ -116,10 +118,12 @@
 
   // ───────────── state ─────────────
   const allTypes = Object.keys(TYPES);
+  const TYPES_BEFORE_SHELF = ['person', 'incident', 'hearing', 'program', 'organization', 'document', 'record', 'video', 'event', 'concept', 'place', 'source'];
   const state = {
     view: 'graph', sel: null,
     credibleOnly: store.get('credibleOnly', true),
-    types: new Set(store.get('types', allTypes.filter(t => t !== 'record'))),
+    // types added since a visitor saved their filters (e.g. film, book) are switched on for them
+    types: new Set(store.get('types', null) ? [...store.get('types'), ...allTypes.filter(t => t !== 'record' && !store.get('typesSeen', TYPES_BEFORE_SHELF).includes(t))] : allTypes.filter(t => t !== 'record')),
     tags: new Set(store.get('tags', [])),
     yr: store.get('yr', [MIN_Y, MAX_Y]),
     showMentions: store.get('showMentions', false),
@@ -190,7 +194,7 @@
     $('#f-yr-label').textContent = (state.yr[0] <= MIN_Y && state.yr[1] >= MAX_Y ? 'all' : `${state.yr[0]}–${state.yr[1]}`) + ` · ${total} dated`;
   }
   function filtersChanged() {
-    store.set('credibleOnly', state.credibleOnly); store.set('types', [...state.types]); store.set('tags', [...state.tags]);
+    store.set('credibleOnly', state.credibleOnly); store.set('types', [...state.types]); store.set('typesSeen', allTypes); store.set('tags', [...state.tags]);
     store.set('yr', state.yr); store.set('showMentions', state.showMentions);
     computeVisible();
     renderFilters();
@@ -416,6 +420,43 @@
   }
   $('#iq').addEventListener('input', renderIndex);
 
+  // ───────────── books & films ─────────────
+  let shelfTab = store.get('shelfTab', 'film');
+  const PEOPLE_RELS = new Set(['features', 'authored by', 'narrated by', 'directed by', 'co-author of', 'authored', 'appears in']);
+  function shelfPeople(e) {
+    const ids = new Set();
+    for (const x of adj.get(e.id)) if (PEOPLE_RELS.has(x.label) && byId.get(x.other)?.type === 'person') ids.add(x.other);
+    return [...ids].map(id => byId.get(id)).sort((a, b) => (a.cred === 'credible' ? 0 : 1) - (b.cred === 'credible' ? 0 : 1));
+  }
+  const trailerOf = e => adj.get(e.id).map(x => x.dir === 'in' && x.label === 'trailer of' && byId.get(x.other)).find(v => v?.type === 'video');
+  const shelfMeta = e => [e.y0, e.runtime ? `${e.runtime} min` : '', e.publisher, e.pages ? `${e.pages} pp.` : ''].filter(Boolean).join(' · ');
+  function renderShelf() {
+    const count = t => ents.filter(e => e.type === t).length;
+    $('#shelf-tabs').innerHTML = ['film', 'book'].map(t => `<button data-shelf="${t}" class="${shelfTab === t ? 'on' : ''}">${TYPES[t].plural} ${count(t)}</button>`).join('');
+    const items = ents.filter(e => e.type === shelfTab).sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
+    $('#shelf').innerHTML = items.map(e => {
+      const tr = trailerOf(e);
+      const people = shelfPeople(e), official = people.filter(p => p.cred === 'credible').length;
+      const sum = e.facts[0]?.text || ''; // first fact as the blurb
+      const cover = tr ? `<img src="${vthumb(tr)}" alt="" loading="lazy"><span class="wplay">▶</span>`
+        : `<div class="sc-spine" style="--c:${TYPES[e.type].color}"><b>${esc(e.name)}</b><span>${esc(e.credits || '')}</span></div>`;
+      return `<article class="shelf-card ${e.type}">
+        <div class="sc-cover" ${tr ? `data-play="${tr.id}@0" title="Play the trailer"` : `data-goto="${e.id}"`}>${cover}</div>
+        <div class="sc-body">
+          <div class="sc-kicker">${esc(shelfMeta(e))}</div>
+          <h3 data-goto="${e.id}">${esc(e.name)}</h3>
+          ${e.credits ? `<div class="sc-credits">${esc(e.credits)}</div>` : ''}
+          <p class="sc-sum">${esc(sum.length > 260 ? sum.slice(0, 257).replace(/\s+\S*$/, '') + '…' : sum)}</p>
+          ${people.length ? `<div class="sc-people"><span class="small muted">${official ? `${official} official source${official > 1 ? 's' : ''} on record` : 'People'}:</span> ${people.slice(0, 8).map(p => chip(p.id)).join('')}${people.length > 8 ? `<span class="small muted">+${people.length - 8} more</span>` : ''}</div>` : ''}
+          <div class="sc-actions">${tr ? `<button class="btn small primary" data-play="${tr.id}@0">▶ Trailer</button>` : ''}<button class="btn small" data-goto="${e.id}">File card</button>${e.links.slice(0, 2).map(l => `<a class="btn small" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join('')}</div>
+        </div></article>`;
+    }).join('') || '<p class="muted">Nothing here yet.</p>';
+  }
+  $('#shelf-tabs').addEventListener('click', e => {
+    const b = e.target.closest('[data-shelf]'); if (!b) return;
+    shelfTab = b.dataset.shelf; store.set('shelfTab', shelfTab); renderShelf();
+  });
+
   // ───────────── claims ledger ─────────────
   const claimStatus = new Set(store.get('claimStatus', ['documented', 'claimed', 'unverified']));
   function renderClaims() {
@@ -518,6 +559,7 @@
     h.push(`<div class="p-kicker"><span class="badge type" style="background:${t.color}">${t.label}</span>${e.cred ? `<span class="badge ${e.cred}" title="${esc(CRED[e.cred].hint)}">${CRED[e.cred].label}</span>` : ''}</div>`);
     h.push(`<h2 class="p-title">${esc(e.name)}</h2>`);
     if (e.aka.length) h.push(`<div class="p-aka">Also: ${e.aka.map(esc).join(' · ')}</div>`);
+    if (e.type === 'film' || e.type === 'book') h.push(`<div class="p-meta">${esc([e.credits, shelfMeta(e), e.isbn ? `ISBN ${e.isbn}` : ''].filter(Boolean).join(' · '))}</div>`);
     const meta = [fmtRange(e) && (e.type === 'video' ? 'Published ' : '') + fmtRange(e), e.place?.name, e.type === 'video' && [e.channel, fmtDur(e.duration)].filter(Boolean).join(' · ')].filter(Boolean);
     if (meta.length) h.push(`<div class="p-meta">${meta.map(m => `<span>${esc(m)}</span>`).join('')}</div>`);
     if (e.type === 'incident' && e.credVia?.length) h.push(`<div class="p-meta"><span>On record via ${e.credVia.map(id => chip(id)).join(' ')}</span></div>`);
@@ -1185,6 +1227,7 @@
     ['timeline', 'Timeline', 'Eighty years of events, documents and hearings, decade by decade.'],
     ['map', 'World', 'Where it happened: bases, ships, schools and hearing rooms.'],
     ['videos', 'Testimony', 'Hearings and interviews with synced transcripts. Search every word spoken.'],
+    ['shelf', 'Books & films', 'Documentaries and books by the people on record, with trailers and where to find them.'],
     ['claims', 'Claims ledger', 'Every claim with its status: documented, on record, or still unverified.'],
     ['index', 'Index', 'All files, by type, filterable.'],
   ];
@@ -1534,7 +1577,7 @@
     state.view = view;
     $('#side').classList.remove('open'); // close the mobile filter drawer on navigation
     store.set('view', view);
-    for (const v of ['home', 'graph', 'timeline', 'map', 'videos', 'index', 'claims']) $('#view-' + v).hidden = v !== view;
+    for (const v of VIEWS) $('#view-' + v).hidden = v !== view;
     $$('#views a').forEach(a => a.classList.toggle('active', a.dataset.view === view));
     $('#app').classList.toggle('is-home', view === 'home');
     if (view === 'home') { $('#panel').hidden = true; $('#app').classList.remove('has-panel'); }
@@ -1557,6 +1600,7 @@
     } else if (state.view === 'timeline') renderTimeline();
     else if (state.view === 'map') renderMap();
     else if (state.view === 'index') renderIndex();
+    else if (state.view === 'shelf') renderShelf();
     else if (state.view === 'claims') renderClaims();
     else if (state.view === 'home') renderHome();
     else if (state.view === 'videos') {
@@ -1621,7 +1665,7 @@
   if (theme) document.documentElement.dataset.theme = theme;
   computeVisible();
   renderFilters();
-  const VIEWS = ['home', 'graph', 'timeline', 'map', 'videos', 'index', 'claims'];
+  const VIEWS = ['home', 'graph', 'timeline', 'map', 'videos', 'shelf', 'index', 'claims'];
   function applyRoute(initial) {
     const [path, qs] = location.hash.replace(/^#\/?/, '').split('?');
     const [view, vid] = path.split('/');

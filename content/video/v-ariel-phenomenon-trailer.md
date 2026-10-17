@@ -2,7 +2,7 @@
 name: "Ariel Phenomenon: official trailer"
 youtube: OnFI1dDG6ZI
 rel:
-  - [ trailer of, doc-ariel-phenomenon-2022 ]
+  - [ trailer of, film-ariel-phenomenon ]
   - [ about, inc-ariel-1994 ]
   - [ features, tim-leach ]
   - [ features, john-mack ]
