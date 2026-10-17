@@ -4,7 +4,7 @@ date: 1994-09-16
 place: { name: "Ruwa, Zimbabwe", lat: -17.8897, lng: 31.2447 }
 witnesses: 62
 coverage:
-  - outlet: BBC (reporter Tim Leach, filmed interviews at the school)
+  - outlet: BBC (reporter Tim Leach, filmed interviews with the children at the school)
     date: 1994-09-19
   - outlet: ZBC Radio (Zimbabwe)
     date: 1994-09
@@ -14,6 +14,7 @@ tags:
   - international
   - consciousness
 rel:
+  - [ reported by, tim-leach ]
   - [ investigated by, john-mack ]
 facts:
   - text: More than 60 schoolchildren at Ariel School saw one or more silver disc-shaped craft land in the brush during mid-morning break, along with short beings with large eyes.
