@@ -17,9 +17,14 @@ tags:
   - crash-retrieval
   - intelligence
 rel:
+  - [ filed, ev-grusch-icig-complaint-2022 ]
   - [ worked at, uaptf ]
   - [ related to, crash-retrieval ]
 facts:
+  - text: Represented the National Reconnaissance Office on the UAP Task Force from 2019 to 2021, and later co-led UAP analysis at the National Geospatial-Intelligence Agency.
+    status: claimed
+    by: david-grusch
+    source: v-2023-07-26-hearing-a@31:12
   - text: Testified under oath that the U.S. has run a decades-long program to recover and reverse-engineer crashed craft, and has recovered non-human “biologics”.
     status: claimed
     by: david-grusch

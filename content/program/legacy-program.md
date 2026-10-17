@@ -8,12 +8,18 @@ rel:
   - [ disputed by, sean-kirkpatrick ]
   - [ related to, crash-retrieval ]
   - [ related to, usap ]
+  - [ related to, cap ]
+  - [ subject of, ev-grusch-icig-complaint-2022 ]
+  - [ subject of, doc-imminent-2024 ]
+  - [ allegedly involves, lockheed-martin ]
+  - [ allegedly involves, northrop-grumman ]
+  - [ allegedly involves, boeing ]
+  - [ allegedly involves, rtx ]
   - [ related to, waived-sap ]
   - [ related to, kona-blue ]
   - [ related to, doc-wilson-memo ]
   - [ related to, immaculate-constellation ]
   - [ related to, aawsap ]
-  - [ related to, lockheed-martin ]
 facts:
   - text: "The UAP Disclosure Act defined it in proposed law: “all Federal, State, and local government, commercial industry, academic, and private sector endeavors to collect, exploit, or reverse engineer technologies of unknown origin or examine biological evidence of living or deceased non-human intelligence that pre-dates the date of the enactment of this Act.”"
     status: documented
@@ -26,6 +32,16 @@ facts:
     status: claimed
     by: david-grusch
     source: v-2023-07-26-hearing-a@1:59:04
+  - text: Grusch testified that his knowledge came from interviewing more than 40 witnesses over four years, that he knew the exact locations, and that those were given to the Intelligence Community Inspector General and in part to the intelligence committees. He says the ICIG found his 2022 complaint “credible and urgent”.
+    status: claimed
+    by: david-grusch
+    source: v-2023-07-26-hearing-a@49:27
+  - text: In his 2024 memoir “Imminent”, Luis Elizondo calls these efforts “Legacy Programs”, dates them to the Roswell recovery, and names aerospace contractors (Lockheed Martin, McDonnell Douglas, Northrop Grumman, Boeing, Raytheon, BAE Systems) he says worked on retrieved technology.
+    status: claimed
+    by: luis-elizondo
+    source: doc-imminent-2024
+  - text: The alleged structure is an unacknowledged and possibly waived SAP, or an intelligence-community Controlled Access Program, run largely inside private contractors. Proponents argue this would put it beyond FOIA, which does not apply to private companies, and beyond routine congressional reporting.
+    status: claimed
   - text: Eric Davis said that “the legacy program has been very insulated and insular”, that recovered craft are “not of this Earth”, and that he briefed Grusch on legacy programs.
     status: claimed
     by: eric-davis
@@ -37,7 +53,7 @@ facts:
   - text: According to the Admiral Wilson memo, Vice Adm. Thomas Wilson was refused access to a contractor-run reverse-engineering program. Jay Stratton, James Lacatski and Jake Barber have also said the U.S. holds or has retrieved non-human craft.
     status: claimed
     source: doc-wilson-memo
-  - text: "AARO's Historical Record Report, Volume 1 (March 2024): “AARO found no empirical evidence for claims that the USG and private companies have been reverse-engineering extraterrestrial technology.” It concluded that claims involving specific people, places, tests and documents were inaccurate or misidentified authentic programs."
+  - text: "AARO's Historical Record Report, Volume 1 (March 2024): “AARO found no empirical evidence for claims that the USG and private companies have been reverse-engineering extraterrestrial technology.” It found that interviewees had “mistakenly associated” authentic, classified U.S. programs with alien activity (in one example, a claimed touch of an alien craft traced back to an officer's story about touching an F-117 stealth fighter), and attributed the modern claims largely to “circular reporting from a group of individuals who believe this to be the case”."
     status: documented
     source: library/docs/doc-aaro-historical-record-report-v1.pdf
 ---
