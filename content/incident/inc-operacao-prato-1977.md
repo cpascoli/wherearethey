@@ -1,0 +1,25 @@
+---
+name: Operação Prato (Colares)
+aka:
+  - Operation Saucer
+  - Operação Prato
+  - Colares
+date: 1977-10
+end: 1978
+place: { name: "Colares, Pará, Brazil", lat: -0.9369, lng: -48.2836 }
+tags: [military, air-force, international]
+rel:
+  - [ investigated by, uyrange-hollanda ]
+links:
+  - label: Arquivo Nacional — UFOs at the National Archives (Portuguese)
+    url: https://querepublicaeessa.an.gov.br/index.php/que-republica-e-essa/assuntos/temas/302-os-ovnis-no-arquivo-nacional
+facts:
+  - text: The Brazilian Air Force (FAB) sent a team under Capt. Uyrangê Hollanda to investigate months of reports of lights and beams around Colares and the Amazon delta, including residents with burn-like marks. The team investigated at least 130 cases and gathered photographs and film.
+    status: documented
+  - text: The operation's records, transferred to the National Archives of Brazil from 2009 and expanded by FAB releases in 2013, are part of the public “UFO Fund” in the SIAN system.
+    status: documented
+    source: https://querepublicaeessa.an.gov.br/index.php/que-republica-e-essa/assuntos/temas/302-os-ovnis-no-arquivo-nacional
+  - text: Hollanda's official final report found no indication of extraterrestrial beings. Twenty years later, in a 1997 interview, he said he and his team had seen structured craft and that he believed they were not of human origin. He died months later.
+    status: claimed
+    by: uyrange-hollanda
+---
