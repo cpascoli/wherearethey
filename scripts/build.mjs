@@ -10,6 +10,7 @@ import { ROOT, TYPES, STATUSES, readEntries, toSeconds, youtubeId } from './lib.
 
 export const CREDIBLE = ['congress', 'government', 'intelligence', 'military', 'aviator', 'sensor-operator', 'academia', 'astronaut', 'aerospace'];
 const REPORTER = ['journalist', 'policy-expert'];
+export const MASS_MIN_WITNESSES = 50;
 
 export function build({ check = false, quiet = false } = {}) {
   const t0 = Date.now();
@@ -70,6 +71,8 @@ export function build({ check = false, quiet = false } = {}) {
     if (d.nomatch) e.nomatch = true;
     if (d.channels) e.channels = arr(d.channels).map(String);
     if (d.pursue) e.pursue = d.pursue;
+    if (d.witnesses != null) e.witnesses = Number(d.witnesses);
+    if (d.coverage) e.coverage = arr(d.coverage).map(c => (typeof c === 'string' ? { outlet: c } : c));
     if (r.type === 'video') {
       e.youtube = youtubeId(d.youtube);
       if (!e.youtube) errors.push(`${r.file}: video needs a valid "youtube" id or URL`);
@@ -154,8 +157,11 @@ export function build({ check = false, quiet = false } = {}) {
   for (const e of entities.filter(e => e.type === 'incident')) {
     const via = neighbors(e.id).filter(n => ent.get(n)?.cred === 'credible');
     const documented = e.facts.some(f => f.status === 'documented');
-    e.cred = via.length || documented ? 'credible' : 'outside';
+    // Mass-sighting rule: 50+ independent witnesses AND contemporary press/TV/radio coverage
+    const mass = (e.witnesses || 0) >= MASS_MIN_WITNESSES && (e.coverage || []).length > 0;
+    e.cred = via.length || documented ? 'credible' : mass ? 'mass' : 'outside';
     e.credVia = [...new Set(via)];
+    if (e.coverage?.length && !(e.witnesses >= 1)) warnings.push(`${e.file}: coverage listed but no witnesses count`);
   }
 
   // ── Transcript mentions: find every name/alias in every transcript ──

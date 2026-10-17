@@ -1,0 +1,17 @@
+---
+name: Westall UFO 1966. Mr Greenwood's Story Now... and Back Then
+youtube: CZKiNuqyS2g
+rel:
+  - [ features, andrew-greenwood ]
+  - [ about, inc-westall-1966 ]
+moments:
+  - t: "1:39"
+    text: "Greenwood says he was told he would lose his job if he talked: “I was threatened.”"
+    speaker: andrew-greenwood
+    refs: [ inc-westall-1966 ]
+  - t: "3:13"
+    text: "An older interview with Greenwood, recorded much closer to the time, for comparison with his recent account."
+    speaker: andrew-greenwood
+    refs: [ inc-westall-1966 ]
+---
+

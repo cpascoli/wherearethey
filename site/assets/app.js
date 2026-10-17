@@ -34,6 +34,7 @@
   };
   const CRED = {
     credible: { label: 'Official source', hint: 'Meets the project rule: an official role in government, Congress, the military (incl. pilots and sensor operators), intelligence or academia' },
+    mass: { label: 'Mass sighting', hint: 'Included by the mass-sighting rule: 50+ independent witnesses with contemporary press, TV or radio coverage' },
     reporter: { label: 'Reporter / expert', hint: 'Journalist or policy expert: relays or analyses testimony, not a primary witness' },
     outside: { label: 'Outside criteria', hint: 'Civilian, disputed or unknown credentials — hidden when “Official sources only” is on' },
   };
@@ -515,6 +516,12 @@
     const meta = [fmtRange(e) && (e.type === 'video' ? 'Published ' : '') + fmtRange(e), e.place?.name, e.type === 'video' && [e.channel, fmtDur(e.duration)].filter(Boolean).join(' · ')].filter(Boolean);
     if (meta.length) h.push(`<div class="p-meta">${meta.map(m => `<span>${esc(m)}</span>`).join('')}</div>`);
     if (e.type === 'incident' && e.credVia?.length) h.push(`<div class="p-meta"><span>On record via ${e.credVia.map(id => chip(id)).join(' ')}</span></div>`);
+    if (e.witnesses || e.coverage?.length) {
+      h.push(`<div class="mass-box"><div class="mb-head"><span class="mb-n">${e.witnesses ? `~${e.witnesses.toLocaleString()}` : '?'}</span> witnesses${e.cred === 'mass' ? ' · <b>included as a mass sighting</b>' : ''}</div>${e.coverage?.length ? `<div class="mb-cov">Contemporary coverage: ${e.coverage.map(c => {
+        const label = [c.outlet, c.title && `“${c.title}”`, c.date && fmtD(String(c.date))].filter(Boolean).join(', ');
+        return c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(label)} ↗</a>` : esc(label);
+      }).join(' · ')}</div>` : ''}</div>`);
+    }
     if (e.type === 'video') {
       h.push(`<div class="play-card"><img src="${thumb(e.youtube)}" alt="" data-play="${e.id}@0" loading="lazy"><div>
         <button class="btn primary" data-play="${e.id}@0">▶ Play with transcript</button>

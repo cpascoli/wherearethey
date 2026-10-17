@@ -499,3 +499,9 @@ mark { background: rgba(227, 179, 65, .4); color: inherit; border-radius: 3px; p
 .hc-actions { display: flex; gap: 8px; align-items: center; margin-top: 12px; }
 .hc-actions .hc-random { margin-left: auto; font-size: 12px; font-family: var(--mono); }
 .hero h1 { max-width: none; white-space: nowrap; font-size: clamp(38px, 6.6vw, 96px); }
+.badge.mass { color: var(--accent); border-color: currentColor; background: transparent; border-width: 1.5px; }
+.mass-box { margin-top: 10px; padding: 10px 12px; border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 4px; background: var(--panel-2); font-size: 13px; }
+.mb-head { font-family: var(--mono); font-size: 11.5px; letter-spacing: .04em; color: var(--muted); }
+.mb-n { font-size: 17px; color: var(--text); font-weight: 600; font-family: var(--sans); margin-right: 2px; }
+.mb-head b { color: var(--accent); font-weight: 500; }
+.mb-cov { margin-top: 5px; color: var(--muted); line-height: 1.5; }
