@@ -34,3 +34,22 @@ The filters (official sources only, types, years, themes) apply across all views
 - **New PURSUE releases** — `npm run import:pursue`; add `-- --download "AAWSAP|Blue Book"` to keep PDFs locally (with extracted text).
 - **Documents you find** — drop them in `library/` and reference them from an entry’s `files:`.
 - **Raw notes** — drop them in `inbox/` and ask Claude to file them.
+
+## Heavy files (Cloudflare R2)
+
+PDFs, images and videos (≈2 GB) are **not** in git. Their extracted text is, so everything stays searchable. The binaries live in a Cloudflare R2 bucket.
+
+**One-time setup**
+1. Cloudflare dashboard → **R2** → *Create bucket* → name it `wherearethey`.
+2. R2 → *Manage R2 API Tokens* → *Create API token* with **Object Read & Write** on that bucket. Note the *Access Key ID*, *Secret Access Key* and your *Account ID*.
+3. In your own terminal (so the keys never leave your machine):
+   ```bash
+   rclone config create r2 s3 provider=Cloudflare \
+     access_key_id=YOUR_ACCESS_KEY_ID secret_access_key=YOUR_SECRET_ACCESS_KEY \
+     endpoint=https://YOUR_ACCOUNT_ID.r2.cloudflarestorage.com acl=private
+   ```
+
+**Day to day**
+- `npm run r2:push`: upload new or changed files (never deletes anything in R2)
+- `npm run r2:pull`: restore all files into `library/` (new machine, fresh clone)
+- `npm run r2:check`: list what's missing from R2

@@ -11,7 +11,10 @@
     "fetch": "node scripts/fetch-video.mjs",
     "find": "node scripts/find.mjs",
     "import:pursue": "node scripts/import-pursue.mjs",
-    "add:doc": "node scripts/add-document.mjs"
+    "add:doc": "node scripts/add-document.mjs",
+    "r2:push": "scripts/r2.sh push",
+    "r2:pull": "scripts/r2.sh pull",
+    "r2:check": "scripts/r2.sh check"
   },
   "dependencies": {
     "csv-parse": "^7.0.3",

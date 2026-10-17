@@ -42,4 +42,5 @@ Bios: 2–3 short factual paragraphs, then an italic `*Sources: …*` line. Veri
 - `npm run add:doc -- <url> <id>` — download a document into `library/docs/` (falls back to Chrome when sites block scripts), extract text, OCR scans; then write `content/document/<id>.md` with `files:` and facts citing `source: library/docs/<id>.pdf`
 - `node scripts/ocr.mjs <pdf>` — OCR a scanned PDF into a sibling `.txt`
 - Documents: verify every supplied link by reading the downloaded text before filing (links from lists are often wrong). Record provenance (who released it, when, record ID). Mark compilations and mirrors as secondary sources and trace their claims to primary documents.
+- Heavy binaries (library PDFs/images, media video) are gitignored and synced to Cloudflare R2 with `npm run r2:push` / `r2:pull` (rclone remote `r2`, bucket `wherearethey`). Commit the `.txt` extractions, never the binaries.
 - Original seed notes: `notes/original-notes.md`. Raw PURSUE catalog snapshot: `sources/pursue/`.
