@@ -8,7 +8,7 @@ import path from 'node:path';
 import { marked } from 'marked';
 import { ROOT, TYPES, STATUSES, readEntries, toSeconds, youtubeId } from './lib.mjs';
 
-export const CREDIBLE = ['congress', 'government', 'intelligence', 'military', 'aviator', 'sensor-operator', 'academia', 'astronaut', 'aerospace'];
+export const CREDIBLE = ['congress', 'government', 'intelligence', 'military', 'aviator', 'sensor-operator', 'academia', 'astronaut', 'aerospace', 'law-enforcement'];
 const REPORTER = ['journalist', 'policy-expert'];
 export const MASS_MIN_WITNESSES = 50;
 

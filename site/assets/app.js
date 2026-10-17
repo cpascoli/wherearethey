@@ -40,7 +40,7 @@
   };
   const CRED_CAT = {
     congress: 'Congress', government: 'Government', intelligence: 'Intelligence', military: 'Military', aviator: 'Aviator',
-    'sensor-operator': 'Radar / sensor', academia: 'Academia', astronaut: 'Astronaut', aerospace: 'Aerospace',
+    'sensor-operator': 'Radar / sensor', academia: 'Academia', astronaut: 'Astronaut', aerospace: 'Aerospace', 'law-enforcement': 'Law enforcement',
     journalist: 'Journalist', 'policy-expert': 'Policy expert', civilian: 'Civilian', disputed: 'Disputed', unknown: 'Unknown',
   };
   const INVERSE = {

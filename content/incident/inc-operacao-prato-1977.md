@@ -4,6 +4,8 @@ aka:
   - Operation Saucer
   - Operação Prato
   - Colares
+  - chupa-chupa
+  - Chupa-Chupa
 date: 1977-10
 end: 1978
 place: { name: "Colares, Pará, Brazil", lat: -0.9369, lng: -48.2836 }
@@ -22,4 +24,6 @@ facts:
   - text: Hollanda's official final report found no indication of extraterrestrial beings. Twenty years later, in a 1997 interview, he said he and his team had seen structured craft and that he believed they were not of human origin. He died months later.
     status: claimed
     by: uyrange-hollanda
+  - text: The operation followed a wave of reports in Maranhão and Pará of small, fast lights that residents called “chupa-chupa” (“suck-suck”), which they said fired beams that left burns, weakness and puncture-like marks. Local authorities asked for military help.
+    status: claimed
 ---

@@ -6,7 +6,7 @@ Plain files in `content/` are the source of truth; `scripts/build.mjs` compiles 
 ## The sourcing rule (most important)
 Only facts and testimony from **credible, on-record people**: current/former government officials, members of Congress and staff,
 military personnel, pilots, radar/sensor operators, intelligence officers, academics, astronauts, aerospace-industry insiders.
-- Every person needs `credentials` (category + role). Categories: `congress government intelligence military aviator sensor-operator academia astronaut aerospace` (credible), `journalist`, `policy-expert` (reporter tier — relays or analyses, not a witness), `civilian disputed unknown` (outside criteria → hidden by default).
+- Every person needs `credentials` (category + role). Categories: `congress government intelligence military aviator sensor-operator academia astronaut aerospace law-enforcement` (credible), `journalist`, `policy-expert` (reporter tier — relays or analyses, not a witness), `civilian disputed unknown` (outside criteria → hidden by default).
 - Incidents count as credible when linked to a credible person or a documented fact. **Mass-sighting rule:** an incident with `witnesses: <n>` ≥ 50 *and* at least one contemporary `coverage:` entry (outlet + date, from the time of the event) is included with the “Mass sighting” badge. Only cite coverage that actually dates from the event, and never mark Wikipedia-sourced facts as `documented`.
 - Never upgrade a status without a source. Prefer the counter-evidence too (e.g. Kirkpatrick, AARO resolutions) — balance is part of credibility.
 
