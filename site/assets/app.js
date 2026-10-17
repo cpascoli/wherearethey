@@ -1028,9 +1028,9 @@
         <div class="hero-inner">
           <div class="hero-kicker"><span class="dot-live"></span> Case archive · UAP · NHI · <b>${ents.length}</b> files</div>
           <h1>Where are they?</h1>
-          <p class="hero-tagline">Connecting the dots.</p>
+          <p class="hero-tagline">Connecting the dots</p>
           <p class="hero-qualifier">All that we know so far.</p>
-          <p class="hero-lede">An open, sourced archive of what officials, pilots, radar operators, intelligence officers and scientists have said <em>on the record</em> about unidentified anomalous phenomena, each claim linked to the hearing, document or exact moment of video where it was said.</p>
+          <p class="hero-lede">An open-source archive of what officials, pilots, radar operators, intelligence officers, and scientists have said <em>on the record</em> about unidentified anomalous phenomena and non-human intelligence.</p>
           <div class="hero-search">
             <input id="hq" type="search" placeholder="Search a name, program or incident: Grusch, AAWSAP, Malmstrom…" autocomplete="off" spellcheck="false">
             <div id="hq-dd" class="dropdown" hidden></div>
