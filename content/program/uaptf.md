@@ -10,6 +10,7 @@ tags:
   - navy
   - intelligence
 rel:
+  - [ continued the work of, aatip ]
   - [ succeeded by, aoimsg ]
   - [ run by, ousd-is ]
   - [ run by, oni ]
@@ -19,6 +20,11 @@ facts:
   - text: Run by the Under Secretary of Defense for Intelligence together with the Office of Naval Intelligence.
     status: documented
   - text: "Key figures: director Jay Stratton and whistleblower David Grusch."
+    status: unverified
+  - text: The UAPTF is generally described as AATIP's functional successor rather than a formal continuation. AATIP's funding ended in 2012. According to Luis Elizondo, the work continued informally inside the intelligence under-secretariat until 2017. After the December 2017 revelations the Navy and ONI led collection, until the task force was formalized in August 2020.
+    status: claimed
+    source: https://en.wikipedia.org/wiki/Unidentified_Aerial_Phenomena_Task_Force
+  - text: Jay Stratton was named the task force's first director when it was formalized in 2020. Wikipedia also lists Brennan McKernan as a director of the UAPTF, apparently later, though the dates are unconfirmed.
     status: unverified
 ---
 
