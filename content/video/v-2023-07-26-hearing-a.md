@@ -22,6 +22,6 @@ moments:
   - t: "1:59:04"
     text: "Grusch says he has personal knowledge of people injured working on legacy UAP reverse-engineering."
     speaker: david-grusch
-    refs: [ crash-retrieval ]
+    refs: [ crash-retrieval , legacy-program ]
 ---
 

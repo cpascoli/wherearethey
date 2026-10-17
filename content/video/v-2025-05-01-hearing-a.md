@@ -16,7 +16,7 @@ moments:
   - t: "1:00:39"
     text: "Dr. Davis on briefing David Grusch and on legacy programs."
     speaker: eric-davis
-    refs: [ david-grusch, crash-retrieval ]
+    refs: [ david-grusch, crash-retrieval , legacy-program ]
   - t: "1:04:11"
     text: "Dr. Davis: recovered craft are “not of this Earth.”"
     speaker: eric-davis

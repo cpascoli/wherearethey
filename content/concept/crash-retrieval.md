@@ -4,7 +4,8 @@ aka:
   - crash retrieval
   - reverse engineering
   - reverse-engineering
-  - legacy program
+rel:
+  - [ alleged program, legacy-program ]
 tags:
   - crash-retrieval
   - secrecy
