@@ -9,7 +9,9 @@ tags:
 facts:
   - text: 14 schoolchildren reported a yellow, cigar-shaped craft hovering in a nearby field in broad daylight.
     status: claimed
+    source: https://drclarke.substack.com/p/did-the-village-see-aliens
   - text: When the headmaster separated them, the children drew nearly identical pictures of the metallic craft. The case became part of the “Dyfed Triangle” wave.
     status: claimed
+    source: https://drclarke.substack.com/p/did-the-village-see-aliens
 ---
 

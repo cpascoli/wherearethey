@@ -32,6 +32,7 @@ facts:
     by: luis-elizondo
     source: https://www.newsnationnow.com/space/ufo/special-report-confessions-of-a-ufo-hunter/
   - text: The book was cleared for publication by the Pentagon's prepublication review (DOPSR). Clearance means it contains no classified information; it does not confirm the claims.
-    status: unverified
+    status: claimed
+    source: https://www.kqed.org/arts/13962929/a-former-pentagon-insider-reveals-all-he-knows-about-ufos-in-new-book
 nomatch: true
 ---
