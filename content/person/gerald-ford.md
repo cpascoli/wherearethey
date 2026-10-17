@@ -10,4 +10,5 @@ tags:
 facts:
   - text: After the March 1966 Michigan sightings, which the Air Force attributed to “swamp gas”, he called for a congressional investigation. This led to the April 5, 1966 House Armed Services hearing.
     status: documented
+    source: https://www.fordlibrarymuseum.gov/library/document/0054/4525586.pdf
 ---

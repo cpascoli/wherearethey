@@ -21,5 +21,6 @@ facts:
     status: documented
     source: https://www.kxan.com/business/press-releases/ein-presswire/667434341/the-definitive-documentary-of-ariel-school-ufo-sighting-now-streaming/
   - text: Its cast includes many former Ariel School students who were present in 1994, interviewed as adults.
-    status: documented
+    status: claimed
+    source: https://www.kxan.com/business/press-releases/ein-presswire/667434341/the-definitive-documentary-of-ariel-school-ufo-sighting-now-streaming/
 ---

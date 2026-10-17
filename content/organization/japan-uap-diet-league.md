@@ -18,7 +18,9 @@ facts:
     status: documented
     source: https://www.scmp.com/week-asia/politics/article/3264559/japan-sets-parliamentary-group-probe-ufo-sightings-move-research-mainstream
   - text: Its founding statement calls UAP a potential national-security threat (possibly unknown-technology weapons or spy drones), and urges the government to create an AARO-like office and share data with the United States.
-    status: documented
+    status: claimed
+    source: https://www.scmp.com/week-asia/politics/article/3264559/japan-sets-parliamentary-group-probe-ufo-sightings-move-research-mainstream
   - text: At the launch press conference, members Kei Endo and Yoshiharu Asakawa said they had personally seen UFOs.
     status: claimed
+    source: https://www.scmp.com/week-asia/politics/article/3264559/japan-sets-parliamentary-group-probe-ufo-sightings-move-research-mainstream
 ---

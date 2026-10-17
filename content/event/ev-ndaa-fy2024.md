@@ -8,6 +8,7 @@ rel:
   - [ related to, kirsten-gillibrand ]
 facts:
   - text: Language requiring the government to collect, declassify and release UAP records, aimed at reducing the stigma around reporting.
-    status: unverified
+    status: documented
+    source: https://www.congress.gov/bill/118th-congress/house-bill/2670
 ---
 

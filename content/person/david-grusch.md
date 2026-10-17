@@ -31,7 +31,8 @@ facts:
     by: david-grusch
     source: v-2023-07-26-hearing-a@32:06
   - text: Cleared for presidential-level material.
-    status: unverified
+    status: claimed
+    source: v-jre-hal-puthoff-2025@1:11:12
 ---
 
 Former U.S. Air Force intelligence officer and Afghanistan combat veteran who later worked at the National Reconnaissance Office and the National Geospatial-Intelligence Agency, where he co-led UAP analysis and represented the NRO on the UAP Task Force.

@@ -15,10 +15,12 @@ rel:
   - [ run by, ousd-is ]
   - [ run by, oni ]
 facts:
-  - text: Formally established by the Deputy Secretary of Defense in August 2020. Your notes date its work from 2017.
+  - text: Formally established by the Deputy Secretary of Defense in August 2020 (approved August 4, announced August 14).
     status: documented
+    source: https://www.navy.mil/Press-Office/Press-Releases/display-pressreleases/Article/2314280/establishment-of-unidentified-aerial-phenomena-task-force/
   - text: Run by the Under Secretary of Defense for Intelligence together with the Office of Naval Intelligence.
     status: documented
+    source: https://www.navy.mil/Press-Office/Press-Releases/display-pressreleases/Article/2314280/establishment-of-unidentified-aerial-phenomena-task-force/
   - text: "Key figures: director Jay Stratton and whistleblower David Grusch."
     status: unverified
   - text: The UAPTF is generally described as AATIP's functional successor rather than a formal continuation. AATIP's funding ended in 2012. According to Luis Elizondo, the work continued informally inside the intelligence under-secretariat until 2017. After the December 2017 revelations the Navy and ONI led collection, until the task force was formalized in August 2020.

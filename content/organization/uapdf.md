@@ -8,4 +8,5 @@ tags:
 facts:
   - text: Advocacy organization that hosted the May 1, 2025 congressional briefing on UAP.
     status: documented
+    source: h-2025-05-01
 ---

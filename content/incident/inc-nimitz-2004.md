@@ -33,5 +33,6 @@ facts:
     source: v-2023-07-26-hearing-a@34:29
   - text: Lt. Chad Underwood’s FLIR video of the object was later released (2017) and officially acknowledged by the DoD (2020).
     status: documented
+    source: https://www.war.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/
 ---
 

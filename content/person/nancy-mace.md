@@ -16,6 +16,7 @@ tags:
 facts:
   - text: Co-chaired the November 13, 2024 joint UAP hearing and published the Immaculate Constellation report on her House website.
     status: documented
+    source: https://www.congress.gov/118/chrg/CHRG-118hhrg57440/CHRG-118hhrg57440.pdf
 ---
 
 U.S. Representative from South Carolina (R) since 2021. She chaired the Oversight subcommittee that co-hosted the November 13, 2024 hearing and published the whistleblower report on “Immaculate Constellation” on her House website.

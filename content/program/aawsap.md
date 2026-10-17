@@ -18,15 +18,19 @@ rel:
 facts:
   - text: A $22 million Defense Intelligence Agency program (2008–2012), contracted to Bigelow Aerospace’s BAASS subsidiary.
     status: documented
+    source: library/docs/doc-aaro-historical-record-report-v1.pdf
   - text: Initiated by DIA scientist Dr. James Lacatski with Senate Majority Leader Harry Reid (D-NV).
     status: claimed
     by: james-lacatski
+    source: book-skinwalkers-at-the-pentagon
   - text: "Alleged purpose: to transfer a recovered craft (“Tic Tac”) from Lockheed Martin to Bigelow Aerospace. The transfer was reportedly blocked."
     status: unverified
   - text: Commissioned technical papers (the DIRDs) on traversable wormholes, warp drives, negative energy and high-frequency gravitational-wave communications.
     status: documented
+    source: doc-dirds
   - text: Became public through The New York Times on December 16, 2017.
     status: documented
+    source: ev-nyt-2017
   - text: Lacatski has stated, in books cleared by the Pentagon’s DOPSR, that the U.S. possesses a UFO and has gained access to its interior.
     status: claimed
     by: james-lacatski

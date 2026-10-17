@@ -17,6 +17,7 @@ facts:
   - text: According to Grusch and The Debrief, the ICIG found the complaint “credible and urgent” in July 2022, and a summary was sent to the DNI and both congressional intelligence committees. The ICIG has not published its determination.
     status: claimed
     by: david-grusch
+    source: https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/
   - text: At the July 2023 hearing Grusch testified that the exact locations he identified, based on more than 40 witnesses interviewed over four years, were given to the Inspector General and in part to the intelligence committees.
     status: claimed
     by: david-grusch

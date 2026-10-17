@@ -10,7 +10,8 @@ links:
     url: https://chile.travel/en/blog/ufology-in-chile-the-best-destinations-for-the-sighting-of-ufos-2/
 facts:
   - text: More than a hundred sightings have been reported around San Clemente since 1995. The municipality and Chile's tourism service launched a 30 km “UFO route” in 2008, including the El Enladrillado plateau.
-    status: documented
+    status: claimed
+    source: https://chile.travel/en/blog/ufology-in-chile-the-best-destinations-for-the-sighting-of-ufos-2/
   - text: CEFAA specialists suggested that some sightings could be military aircraft on secret manoeuvres or reflected lights.
     status: claimed
 ---

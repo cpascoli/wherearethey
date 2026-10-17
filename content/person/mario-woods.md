@@ -13,5 +13,6 @@ facts:
   - text: Came forward decades later and in 2023 was invited to give testimony under oath to AARO.
     status: claimed
     by: mario-woods
+    source: v-michels-mario-woods-2025@55:36
 ---
 

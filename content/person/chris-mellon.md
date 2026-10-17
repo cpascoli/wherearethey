@@ -21,7 +21,8 @@ rel:
   - [ related to, luis-elizondo ]
 facts:
   - text: Spent nearly a decade on Capitol Hill, finishing as Minority Staff Director of the Senate Select Committee on Intelligence.
-    status: documented
+    status: claimed
+    source: https://www.christophermellon.net/
   - text: Helped provide authentic Pentagon UFO footage to The New York Times in 2017.
     status: claimed
     by: chris-mellon

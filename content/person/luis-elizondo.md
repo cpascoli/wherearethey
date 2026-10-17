@@ -21,6 +21,7 @@ facts:
   - text: Says he led AATIP at the Pentagon until he resigned in October 2017.
     status: claimed
     by: luis-elizondo
+    source: https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html
 ---
 
 Former U.S. Army counterintelligence special agent who worked in the Office of the Under Secretary of Defense for Intelligence. He says he ran AATIP from about 2010 until he resigned in October 2017 in protest at the secrecy around the subject. The Pentagon has given conflicting statements about his role.

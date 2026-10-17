@@ -7,5 +7,6 @@ tags:
 facts:
   - text: Builds advanced, classified and unconventional-looking aircraft such as the B-21 Raider stealth bomber and the X-47B uncrewed demonstrator.
     status: documented
+    source: https://www.northropgrumman.com/what-we-do/air/b-21-raider
 ---
 

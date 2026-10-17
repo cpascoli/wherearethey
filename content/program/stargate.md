@@ -19,5 +19,6 @@ rel:
 facts:
   - text: A U.S. government remote-viewing research effort that began at SRI International in 1972 and was terminated in 1995. The CIA released its records under declassification.
     status: documented
+    source: https://www.cia.gov/readingroom/document/cia-rdp96-00791r000100030062-7
 ---
 

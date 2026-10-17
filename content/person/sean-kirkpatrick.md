@@ -12,6 +12,7 @@ rel:
 facts:
   - text: AARO’s first director. He set up the office before stepping down in December 2023.
     status: documented
+    source: https://thedebrief.org/pentagon-confirms-retirement-of-aaro-director-sean-kirkpatrick-as-new-deputy-director-is-named/
 ---
 
 Physicist and the founding director of AARO (July 2022 – December 2023). Under his leadership AARO prepared the first volume of its Historical Record Report (March 2024), which found no verifiable evidence that the U.S. government has recovered extraterrestrial technology. Since leaving he has publicly disputed crash-retrieval claims, which makes him an important counterpoint in this archive.
