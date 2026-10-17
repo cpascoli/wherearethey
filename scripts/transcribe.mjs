@@ -47,7 +47,7 @@ execFileSync('whisper-cli', ['-m', model, '-f', wav, '-l', lang, ...(translate ?
 const res = JSON.parse(fs.readFileSync(`${prefix}.json`, 'utf8'));
 const segments = (res.transcription || [])
   .map(s => [Math.round((s.offsets?.from || 0) / 100) / 10, String(s.text || '').trim()])
-  .filter(([, t]) => t && !/^\[.*\]$/.test(t));
+  .filter(([, t]) => t && !/^\[.*\]$/.test(t) && !/^\(?(music( playing)?|applause|silence)\)?\.?$/i.test(t)); // drop non-speech fillers
 const detected = res.result?.language || lang;
 fs.writeFileSync(out, JSON.stringify({ source: translate ? 'whisper-translated' : 'whisper', language: detected, segments }));
 fs.rmSync(tmp, { recursive: true, force: true });

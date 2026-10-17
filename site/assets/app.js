@@ -1092,7 +1092,12 @@
       body.innerHTML = '<p class="muted">Loading transcript…</p>';
       const tr = await loadTranscript(v.id);
       if (state.video !== v.id || curTab !== 'transcript') return;
-      if (!tr) { body.innerHTML = `<p class="muted">No transcript. Run <code>npm run fetch -- ${v.youtube}</code>.</p>`; return; }
+      if (!tr) {
+        const id = v.youtube || v.media;
+        // the how-to is only useful on the dev server
+        body.innerHTML = `<p class="muted">No transcript yet for this video.</p>` + (/^(localhost|127\.0\.0\.1)$/.test(location.hostname) ? `<p class="small muted">Try <code>npm run fetch -- ${esc(id)}</code>. If YouTube has no captions for it, download the audio and transcribe it locally: <code>yt-dlp -f bestaudio[ext=m4a] -o media/${esc(id)}/audio.m4a -- ${esc(id)}</code> then <code>node scripts/transcribe.mjs -- ${esc(id)}</code>.</p>` : '');
+        return;
+      }
       // group caption lines into ~20-second paragraphs
       const paras = [];
       for (const [t, s] of tr.segments) {
