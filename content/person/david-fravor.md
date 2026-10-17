@@ -15,6 +15,8 @@ credentials:
 tags:
   - aviator
   - navy
+rel:
+  - [ authored, doc-fravor-statement-2023-07-26 ]
 facts:
   - text: Led the November 2004 intercept of the “Tic Tac” object off San Diego.
     status: claimed

@@ -8,6 +8,8 @@ credentials:
 tags:
   - aviator
   - navy
+rel:
+  - [ authored, doc-graves-statement-2023-07-26 ]
 facts:
   - text: Reported that his squadron saw UAP almost daily off the U.S. East Coast in 2014–2015.
     status: claimed

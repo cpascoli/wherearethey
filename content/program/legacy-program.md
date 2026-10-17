@@ -11,6 +11,7 @@ rel:
   - [ related to, cap ]
   - [ subject of, ev-grusch-icig-complaint-2022 ]
   - [ subject of, doc-imminent-2024 ]
+  - [ subject of, doc-grusch-statement-2023-07-26 ]
   - [ allegedly involves, lockheed-martin ]
   - [ allegedly involves, northrop-grumman ]
   - [ allegedly involves, boeing ]
@@ -28,6 +29,9 @@ facts:
     status: claimed
     by: david-grusch
     source: v-2023-07-26-hearing-a@32:06
+  - text: Grusch's official written statement to the committee refers to “the Non-Human Reverse Engineering Programs I have reported”.
+    status: documented
+    source: library/docs/doc-grusch-statement-2023-07-26.pdf
   - text: Grusch said he had personal knowledge of people injured while working on “legacy UAP reverse engineering”.
     status: claimed
     by: david-grusch

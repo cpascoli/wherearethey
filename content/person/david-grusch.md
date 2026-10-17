@@ -17,6 +17,7 @@ tags:
   - crash-retrieval
   - intelligence
 rel:
+  - [ authored, doc-grusch-statement-2023-07-26 ]
   - [ filed, ev-grusch-icig-complaint-2022 ]
   - [ worked at, uaptf ]
   - [ related to, crash-retrieval ]

@@ -6,6 +6,8 @@ tags: [aaro, foia, crash-retrieval]
 files:
   - library/docs/doc-aaro-historical-record-report-v1.pdf
 links:
+  - label: aaro.mil (official PDF)
+    url: https://www.aaro.mil/Portals/136/PDFs/AARO_Historical_Record_Report_Vol_1_2024.pdf
   - label: Department of Defense (PDF)
     url: https://media.defense.gov/2024/Mar/08/2003409233/-1/-1/0/DOPSR-2024-0263-AARO-HISTORICAL-RECORD-REPORT-VOLUME-1-2024.PDF
 rel:
