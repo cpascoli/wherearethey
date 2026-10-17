@@ -32,10 +32,10 @@ facts:
   - text: Grusch's official written statement to the committee refers to “the Non-Human Reverse Engineering Programs I have reported”.
     status: documented
     source: library/docs/doc-grusch-statement-2023-07-26.pdf
-  - text: Grusch said he had personal knowledge of people injured while working on “legacy UAP reverse engineering”.
+  - text: Asked at the hearing whether he had personal knowledge of anyone injured “working on legacy UAP reverse engineering” (the questioner's phrase), Grusch answered “yes”.
     status: claimed
     by: david-grusch
-    source: v-2023-07-26-hearing-a@1:59:04
+    source: v-2023-07-26-hearing-a@1:58:40
   - text: Grusch testified that his knowledge came from interviewing more than 40 witnesses over four years, that he knew the exact locations, and that those were given to the Intelligence Community Inspector General and in part to the intelligence committees. He says the ICIG found his 2022 complaint “credible and urgent”.
     status: claimed
     by: david-grusch
@@ -54,6 +54,9 @@ facts:
     status: claimed
     by: dylan-borland
     source: v-jm-dylan-borland@1:19:11
+  - text: "According to the Admiral Wilson notes, Wilson was told by a defense contractor's program manager that “they were a reverse engineering program — something recovered years ago”, part of “a special subset of the unacknowledged/carve-outs/waived programs… buried/covered by conventional SAPs”, and was refused access."
+    status: unverified
+    source: library/docs/doc-wilson-davis-notes.pdf
   - text: According to the Admiral Wilson memo, Vice Adm. Thomas Wilson was refused access to a contractor-run reverse-engineering program. Jay Stratton, James Lacatski and Jake Barber have also said the U.S. holds or has retrieved non-human craft.
     status: claimed
     source: doc-wilson-memo

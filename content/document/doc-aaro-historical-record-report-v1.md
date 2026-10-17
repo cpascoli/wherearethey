@@ -6,6 +6,8 @@ tags: [aaro, foia, crash-retrieval]
 files:
   - library/docs/doc-aaro-historical-record-report-v1.pdf
 links:
+  - label: Wayback Machine snapshot of the original release URL (March 8, 2024)
+    url: https://web.archive.org/web/20240308172457/https://www.aaro.mil/Portals/136/PDFs/AARO_Historical_Record_Report_Volume_1_2024.pdf
   - label: aaro.mil (official PDF)
     url: https://www.aaro.mil/Portals/136/PDFs/AARO_Historical_Record_Report_Vol_1_2024.pdf
   - label: Department of Defense (PDF)
@@ -24,6 +26,9 @@ facts:
     status: documented
     source: library/docs/doc-aaro-historical-record-report-v1.pdf
   - text: It found no empirical evidence of reverse-engineering of extraterrestrial technology by the U.S. government or private companies, and no evidence of UAP non-disclosure agreements threatening violence. Many reported claims, it concluded, came from misidentified authentic programs and circular reporting among a small group of proponents.
+    status: documented
+    source: library/docs/doc-aaro-historical-record-report-v1.pdf
+  - text: The report never uses the phrase “legacy program”. It addresses the same allegations as claims that the U.S. government recovered off-world craft and biological remains and runs “a program or programs to reverse engineer the recovered technology”.
     status: documented
     source: library/docs/doc-aaro-historical-record-report-v1.pdf
 ---
