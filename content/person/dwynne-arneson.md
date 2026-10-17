@@ -1,6 +1,7 @@
 ---
 name: Dwynne Arneson
 aka: [Col. Dwynne Arneson, Arneson]
+match: [dwne arnson]
 credentials:
   - category: military
     role: Colonel, U.S. Air Force (ret.); communications-electronics officer for 26 years, top secret SCI clearance (self-described, 2001)

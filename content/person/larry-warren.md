@@ -16,3 +16,5 @@ facts:
 ---
 
 Warren's account of Rendlesham differs from those of other base personnel, and some of them dispute it.
+
+*Sources: his own testimony at the Disclosure Project press conference, May 9, 2001.*

@@ -1,6 +1,7 @@
 ---
 name: Graham Bethune
 aka: [Cmdr. Graham Bethune, Bethune]
+match: [Graham bethon]
 credentials:
   - category: aviator
     role: Commander, U.S. Navy (ret.), pilot with a top secret clearance

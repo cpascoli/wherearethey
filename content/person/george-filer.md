@@ -1,6 +1,7 @@
 ---
 name: George Filer III
 aka: [George Filer, Filer]
+match: [George filer]
 credentials:
   - category: military
     role: U.S. Air Force intelligence officer and aircrew (ret.), with nearly 5,000 flying hours (self-described, 2001)

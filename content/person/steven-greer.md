@@ -40,3 +40,5 @@ facts:
 ---
 
 Greer is the best-known organiser of witness-based "disclosure" campaigns, and the main promoter of CE-5. He holds no official role, so he is **outside the archive's criteria**. His importance here is that he gathered and recorded testimony from people who did hold official roles, most visibly at the 2001 National Press Club event. His own claims, about contact with extraterrestrials or about whom he briefed, are his account only. Critics have challenged his films and his CE-5 claims.
+
+*Sources: Wikipedia (Steven M. Greer); Disclosure Project press conference, May 9, 2001; Hellyer (2017) and Mitchell interviews.*
