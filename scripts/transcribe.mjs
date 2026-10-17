@@ -48,6 +48,11 @@ const res = JSON.parse(fs.readFileSync(`${prefix}.json`, 'utf8'));
 const segments = (res.transcription || [])
   .map(s => [Math.round((s.offsets?.from || 0) / 100) / 10, String(s.text || '').trim()])
   .filter(([, t]) => t && !/^\[.*\]$/.test(t) && !/^\(?(music( playing)?|applause|silence)\)?\.?$/i.test(t)); // drop non-speech fillers
+// Whisper sometimes loops on a phrase (especially over silence): collapse a sentence repeated within a
+// segment, then drop segments identical to one of the previous few
+const dedupe = t => { const parts = t.split(/(?<=[.!?])\s+/); return parts.filter((p, i) => i < 1 || p !== parts[i - 1]).join(' '); };
+for (let i = 0; i < segments.length; i++) segments[i][1] = dedupe(segments[i][1]);
+for (let i = segments.length - 1; i > 0; i--) if (segments.slice(Math.max(0, i - 3), i).some(s => s[1] === segments[i][1])) segments.splice(i, 1);
 const detected = res.result?.language || lang;
 fs.writeFileSync(out, JSON.stringify({ source: translate ? 'whisper-translated' : 'whisper', language: detected, segments }));
 fs.rmSync(tmp, { recursive: true, force: true });
