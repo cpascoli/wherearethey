@@ -14,6 +14,7 @@ tags:
   - international
   - consciousness
 rel:
+  - [ subject of, doc-ariel-phenomenon-2022 ]
   - [ reported by, tim-leach ]
   - [ investigated by, john-mack ]
 facts:
