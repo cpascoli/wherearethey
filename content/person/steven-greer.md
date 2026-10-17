@@ -12,6 +12,7 @@ rel:
   - [ created, ce-5 ]
   - [ briefed, paul-hellyer ]
   - [ worked with, edgar-mitchell ]
+  - [ testified at, h-2013-citizen-hearing ]
 links:
   - label: Wikipedia — Steven M. Greer
     url: https://en.wikipedia.org/wiki/Steven_M._Greer
