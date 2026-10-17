@@ -9,4 +9,5 @@ facts:
   - text: Speaking at the Exopolitics Toronto symposium at the University of Toronto, the former Defence Minister said UFOs “are as real as the airplanes that fly over your head.” It became a widely quoted moment in the disclosure movement.
     status: claimed
     by: paul-hellyer
+    source: v-hellyer-sse-talk@3:00
 ---

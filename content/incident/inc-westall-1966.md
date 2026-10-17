@@ -21,8 +21,10 @@ rel:
 facts:
   - text: More than 200 students and teachers at Westall High School and the neighbouring Grange saw a silver, metallic object descend, hover near a grassy field, then leave quickly. The schools are close to RAAF Laverton.
     status: claimed
+    source: v-abc-westall-australian-story@15:05
   - text: School administrators and military officials reportedly told students and staff not to discuss it.
     status: claimed
+    source: v-abc-westall-australian-story@3:08
   - text: Science teacher Andrew Greenwood later said that RAAF officers visited him after the sighting and warned him not to discuss it, and that the headmaster told the RAAF to “go and jump in the lake.”
     status: claimed
     by: andrew-greenwood

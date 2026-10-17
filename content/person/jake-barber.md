@@ -12,5 +12,6 @@ facts:
   - text: Says he flew a helicopter on a classified mission to retrieve a UAP.
     status: claimed
     by: jake-barber
+    source: v-jm-jake-barber@2:45
 ---
 

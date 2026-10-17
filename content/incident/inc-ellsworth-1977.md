@@ -14,6 +14,7 @@ facts:
   - text: Woods and Sgt. Michael Johnson answered a security alarm at the November-5 (N-5) missile silo and saw a massive, pulsating, spherical craft hovering over the site, “the size of a Walmart building”.
     status: claimed
     by: mario-woods
+    source: v-michels-mario-woods-2025@0:11
   - text: "Both men describe hours of missing time, waking at a reservoir, being recovered, interrogated apart and medically examined. The Air Force then separated the two men and one was discharged. A joint hypnotic regression in 2026 describes beings and an examination aboard the craft."
     status: claimed
     by: mario-woods

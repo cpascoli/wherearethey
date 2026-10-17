@@ -17,6 +17,7 @@ facts:
   - text: At the Toronto exopolitics symposium on September 25, 2005 he said “UFOs are as real as the airplanes that fly over your head,” and that he had once seen a UFO with his wife and friends.
     status: claimed
     by: paul-hellyer
+    source: v-hellyer-sse-talk@3:00
   - text: He warned that U.S. military preparations to fight extraterrestrials could drag the world into an “intergalactic war”, and later called on governments to disclose alien technology that could help with climate change.
     status: claimed
     by: paul-hellyer

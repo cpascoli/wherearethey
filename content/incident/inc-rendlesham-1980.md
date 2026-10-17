@@ -24,4 +24,5 @@ facts:
   - text: Sgt. Jim Penniston says he approached and touched a small, triangular craft with symbols on its surface.
     status: claimed
     by: jim-penniston
+    source: v-2013-chd-rendlesham-1@1:07:10
 ---

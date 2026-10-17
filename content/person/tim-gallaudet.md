@@ -28,6 +28,7 @@ facts:
   - text: Among the first officials to see the “GoFast” video. He said the object’s flight and structure went far beyond any known human technology.
     status: claimed
     by: tim-gallaudet
+    source: v-jm-tim-gallaudet@5:10
 ---
 
 Retired U.S. Navy rear admiral and PhD oceanographer who commanded the Navy Meteorology and Oceanography Command, then served as Assistant Secretary of Commerce and acting NOAA Administrator (2017–2021).

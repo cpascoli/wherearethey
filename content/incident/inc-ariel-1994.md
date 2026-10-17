@@ -22,11 +22,14 @@ rel:
 facts:
   - text: More than 60 schoolchildren at Ariel School saw one or more silver disc-shaped craft land in the brush during mid-morning break, along with short beings with large eyes.
     status: claimed
+    source: v-ariel-1994-bbc-report@1:00
   - text: Some children said the beings communicated with them telepathically.
     status: claimed
+    source: v-lex-fridman-garry-nolan-2022@12:28
   - text: Harvard psychiatrist John Mack interviewed the children later that year.
     status: claimed
     by: john-mack
+    source: v-nickerson-ariel-phenomenon-podcast@1:28
   - text: Ufologist Cynthia Hind visited the school on September 20, 1994, interviewed the children and collected their drawings. John Mack followed in November 1994.
     status: claimed
     source: https://en.wikipedia.org/wiki/Ariel_School_UFO_incident

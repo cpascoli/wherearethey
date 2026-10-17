@@ -18,12 +18,15 @@ facts:
   - text: Has stated that the U.S. government, along with several foreign adversaries, has recovered off-world craft.
     status: claimed
     by: eric-davis
+    source: https://www.nytimes.com/2020/07/23/us/politics/pentagon-ufo-harry-reid-navy.html
   - text: Has said that defense contractors such as Lockheed Martin hold retrieved craft inside unacknowledged special access programs kept from congressional oversight.
     status: claimed
     by: eric-davis
+    source: doc-wilson-memo
   - text: Has described recovered “exotic materials” with properties far beyond current human materials science.
     status: claimed
     by: eric-davis
+    source: https://www.nytimes.com/2020/07/23/us/politics/pentagon-ufo-harry-reid-navy.html
 ---
 
 Astrophysicist specializing in advanced propulsion and “breakthrough physics”. He worked with Hal Puthoff at EarthTech International and contributed research to AAWSAP, including the DIRD “Traversable Wormholes, Stargates, and Negative Energy”.

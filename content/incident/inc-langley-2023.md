@@ -12,5 +12,6 @@ facts:
   - text: Unidentified drones or aircraft violated restricted airspace over Langley for 17 nights in a row in December 2023.
     status: claimed
     by: gregory-guillot
+    source: https://thehill.com/policy/defense/4937166-drone-flights-virginia-base/
 ---
 
