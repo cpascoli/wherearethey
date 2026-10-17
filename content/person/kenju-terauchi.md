@@ -17,5 +17,6 @@ facts:
     by: kenju-terauchi
     source: library/docs/doc-faa-jal1628-terauchi-interview.pdf
   - text: After speaking to Kyodo News in December 1986, he was grounded by Japan Air Lines and moved to a desk job.
-    status: unverified
+    status: claimed
+    source: https://en.wikipedia.org/wiki/Japan_Air_Lines_Cargo_Flight_1628_incident
 ---

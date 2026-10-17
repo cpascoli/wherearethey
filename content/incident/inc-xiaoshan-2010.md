@@ -14,5 +14,6 @@ facts:
     status: documented
     source: http://www.china.org.cn/china/2010-07/08/content_20449696.htm
   - text: Chinese experts quoted by state media, including the Beijing Planetarium's curator, said photos circulating online most likely showed an aircraft's lights. Later reports suggested the object may have been a military aircraft.
-    status: documented
+    status: claimed
+    source: http://www.china.org.cn/china/2010-07/08/content_20449696.htm
 ---

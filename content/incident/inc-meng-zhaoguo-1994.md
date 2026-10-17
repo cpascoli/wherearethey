@@ -13,4 +13,5 @@ facts:
   - text: Forestry worker Meng Zhaoguo said he saw an object crash on a mountainside, was struck by a beam of light when he approached, and later had repeated encounters with beings. The case was investigated by Chinese UFO researchers.
     status: claimed
     by: meng-zhaoguo
+    source: https://en.wikipedia.org/wiki/UFO_sightings_in_China
 ---

@@ -19,12 +19,15 @@ facts:
     status: documented
     source: https://www.upi.com/Odd_News/2013/08/18/UFOs-spotted-along-India-China-border/1121376858272/
   - text: The Army set up a mobile ground radar and a spectrum analyser near Pangong Lake that detected no signals, and a drone sent towards an object lost sight of it. Officials ruled out UAVs, Chinese drones and low-orbit satellites. By February 2013 the military had logged 329 sightings.
-    status: documented
+    status: claimed
+    source: https://www.upi.com/Odd_News/2013/08/18/UFOs-spotted-along-India-China-border/1121376858272/
   - text: Astronomers from the Indian Astronomical Observatory at Hanle watched for three days. They saw the objects but could not identify them, calling them “non celestial” and ruling out meteors and planets.
-    status: documented
+    status: claimed
+    source: https://www.upi.com/Odd_News/2013/08/18/UFOs-spotted-along-India-China-border/1121376858272/
   - text: Defence Minister A.K. Antony told Parliament there was no conclusive proof of UFOs, and an earlier assessment attributed some sightings to Jupiter and Venus.
-    status: documented
+    status: claimed
     by: ak-antony
+    source: https://en.wikipedia.org/wiki/UFO_sightings_in_India
 ---
 
 A CIA document in the PURSUE release (CIA-UAP-016) records earlier reports of UFO sightings in Ladakh, Nepal, Sikkim and Bhutan, showing that the region has a long history of such reports.

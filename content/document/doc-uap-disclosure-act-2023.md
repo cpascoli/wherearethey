@@ -20,4 +20,5 @@ facts:
     source: library/docs/doc-uap-disclosure-act-2023.pdf
   - text: The House stripped the review board and eminent-domain provisions. The enacted FY2024 NDAA kept a narrower requirement for agencies to collect UAP records at the National Archives. The senators reintroduced the full text in July 2024 (Congressional Record, July 11, 2024, S.Amdt. 2610).
     status: documented
+    source: https://www.congress.gov/amendment/118th-congress/senate-amendment/2610
 ---

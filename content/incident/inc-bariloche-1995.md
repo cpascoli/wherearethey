@@ -15,6 +15,7 @@ facts:
   - text: On approach to Bariloche, Capt. Jorge Polanco of Aerolíneas Argentinas flight 674 (a Boeing 727) saw a white light rush towards the aircraft and stop about 100 m away. During the renewed approach an object with three lights, red in the centre, flew parallel to the plane for about 17 minutes.
     status: claimed
     by: jorge-polanco
+    source: https://ufologie.patrickgross.org/press/clarin2aug1995.htm
   - text: Polanco and the airport staff said the airport and city lights went out as the object passed, and the control tower reported its instruments behaving abnormally at the same time. The case was widely covered in the Argentine press (Clarín, August 2, 1995).
     status: claimed
     source: https://ufologie.patrickgross.org/press/clarin2aug1995.htm

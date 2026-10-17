@@ -12,4 +12,5 @@ rel:
 facts:
   - text: An official memo from Deputy Base Commander Lt. Col. Charles Halt to the UK Ministry of Defence describing the Rendlesham events, including radiation readings at the reported landing site. Released through FOIA in 1983.
     status: documented
+    source: https://commons.wikimedia.org/wiki/File:Halt_Memorandum.jpg
 ---

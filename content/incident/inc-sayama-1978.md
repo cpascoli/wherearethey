@@ -13,4 +13,5 @@ facts:
   - text: Hideichi Amano, parked on a hill above Sayama with his two-year-old daughter, said a bright light filled the car, the engine and headlights failed, and a humanoid figure appeared for several minutes. He said his watch had stopped at 21:57. Police did not believe his report.
     status: claimed
     by: hideichi-amano
+    source: https://en.wikipedia.org/wiki/Sayama_incident
 ---

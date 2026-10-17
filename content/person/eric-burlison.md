@@ -16,7 +16,8 @@ tags:
   - crash-retrieval
 facts:
   - text: A lead investigator tracking crash-retrieval allegations.
-    status: unverified
+    status: claimed
+    source: h-2025-09-09
 ---
 
 U.S. Representative from Missouri (R) since 2023 and a member of the Oversight Committee. He has questioned witnesses about crash-retrieval allegations, and transcripts show Bob Lazar’s story coming up repeatedly alongside his remarks.

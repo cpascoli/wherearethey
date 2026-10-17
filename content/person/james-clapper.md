@@ -15,6 +15,7 @@ facts:
   - text: Has publicly acknowledged the existence of UAP.
     status: claimed
     by: james-clapper
+    source: v-age-of-disclosure-trailer@0:30
   - text: In The Age of Disclosure, confirms that the activity over Area 51 is real.
     status: claimed
     by: james-clapper

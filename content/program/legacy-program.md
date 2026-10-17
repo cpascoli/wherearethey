@@ -46,6 +46,7 @@ facts:
     source: book-imminent
   - text: The alleged structure is an unacknowledged and possibly waived SAP, or an intelligence-community Controlled Access Program, run largely inside private contractors. Proponents argue this would put it beyond FOIA, which does not apply to private companies, and beyond routine congressional reporting.
     status: claimed
+    source: library/docs/doc-uap-disclosure-act-2023.pdf
   - text: Eric Davis said that “the legacy program has been very insulated and insular”, that recovered craft are “not of this Earth”, and that he briefed Grusch on legacy programs.
     status: claimed
     by: eric-davis

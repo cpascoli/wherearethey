@@ -11,5 +11,6 @@ facts:
   - text: Air Force medic Terry Lovelace and an airman named Toby saw a silent, triangular craft directly above one of the base’s active nuclear missile silos.
     status: claimed
     by: terry-lovelace
+    source: https://search.worldcat.org/search?q=Incident+at+Devils+Den+Lovelace
 ---
 

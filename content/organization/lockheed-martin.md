@@ -8,6 +8,7 @@ tags:
   - crash-retrieval
 facts:
   - text: Alleged to hold retrieved UAP material. See the Eric Davis and James Ryder entries.
-    status: unverified
+    status: claimed
+    source: doc-wilson-memo
 ---
 

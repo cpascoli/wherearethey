@@ -11,11 +11,14 @@ rel:
   - [ witness, s-c-pierman ]
 facts:
   - text: Unexplained radar and visual sightings over the capital across consecutive weekends in July 1952 (July 12–14, 18–19 and 26–27).
-    status: documented
+    status: claimed
+    source: https://www.gutenberg.org/ebooks/17346
   - text: Airline pilots, including Capt. S.C. Pierman of Capital Airlines, and ground witnesses reported glowing orange or white balls and fast-moving lights.
     status: claimed
     by: s-c-pierman
+    source: "https://en.wikipedia.org/wiki/1952_Washington,_D.C._UFO_incident"
   - text: U.S. Air Force F-94 Starfire interceptors were scrambled. The objects reportedly vanished or outran the jets as they approached.
-    status: documented
+    status: claimed
+    source: "https://en.wikipedia.org/wiki/1952_Washington,_D.C._UFO_incident"
 ---
 

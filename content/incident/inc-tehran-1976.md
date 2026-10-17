@@ -25,6 +25,8 @@ facts:
     source: library/docs/doc-dia-tehran-1976.pdf
   - text: The report was sent through U.S. defense attaché channels and circulated by the DIA, the National Security Council, the White House and the CIA. The DIA evaluator called it an outstanding case that met all criteria for a valid study of the UFO phenomenon.
     status: documented
+    source: library/docs/doc-dia-tehran-1976.pdf
   - text: Skeptic Philip Klass argued the object was the planet Jupiter and that the aircraft problems were ordinary equipment failures.
     status: claimed
+    source: https://en.wikipedia.org/wiki/1976_Tehran_UFO_incident
 ---

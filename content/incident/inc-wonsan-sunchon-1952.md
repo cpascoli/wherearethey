@@ -17,4 +17,5 @@ facts:
   - text: Far East Air Forces commander Lt. Gen. Otto P. Weyland told the press, “We can't say there's nothing to it, but unless we can get more data, I don't think we can expect a conclusive answer” (Stars and Stripes, February 22, 1952).
     status: claimed
     by: otto-weyland
+    source: https://en.wikipedia.org/wiki/Wonsan-Sunchon_UFO_incident
 ---

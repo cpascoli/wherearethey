@@ -11,5 +11,6 @@ tags:
 facts:
   - text: Responsible for securing the hard-drive data recorders from the E-2 Hawkeye that Kevin Day first tried to use to intercept the objects.
     status: claimed
+    source: https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/
 ---
 

@@ -21,9 +21,11 @@ facts:
   - text: He warned that U.S. military preparations to fight extraterrestrials could drag the world into an “intergalactic war”, and later called on governments to disclose alien technology that could help with climate change.
     status: claimed
     by: paul-hellyer
+    source: https://en.wikipedia.org/wiki/Paul_Hellyer
   - text: In a 2014 RT interview he said at least four species of aliens had been visiting Earth for thousands of years.
     status: claimed
     by: paul-hellyer
+    source: https://en.wikipedia.org/wiki/Paul_Hellyer
   - text: He repeated the “Project Serpo” alien-exchange story, which originated with former AFOSI agent Richard Doty, who later admitted to spreading disinformation. His later claims relied on secondhand sources he did not identify.
     status: documented
     source: https://en.wikipedia.org/wiki/Paul_Hellyer

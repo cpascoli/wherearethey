@@ -26,8 +26,10 @@ facts:
   - text: Helped provide authentic Pentagon UFO footage to The New York Times in 2017.
     status: claimed
     by: chris-mellon
+    source: https://en.wikipedia.org/wiki/Christopher_Mellon
   - text: Has worked closely with Luis Elizondo to push for UAP transparency.
     status: claimed
+    source: https://en.wikipedia.org/wiki/Christopher_Mellon
 ---
 
 Deputy Assistant Secretary of Defense for Intelligence in the Clinton and George W. Bush administrations, and earlier Minority Staff Director of the Senate Select Committee on Intelligence.

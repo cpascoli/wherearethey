@@ -16,9 +16,12 @@ links:
     url: https://discovery.nationalarchives.gov.uk/results/r?_q=DEFE%2024%2F2081
 facts:
   - text: Capt. Ray Bowyer of Aurigny Air Services, flying a Trislander from Southampton to Alderney, saw two very bright, sharply defined yellow objects, which he estimated to be very large, hanging stationary over the sea. Passengers also saw them, and the pilot of another aircraft reported a similar object.
-    status: documented
+    status: claimed
+    source: v-ray-bowyer-interview@19:52
   - text: Bowyer filed a report with the UK Civil Aviation Authority, which with radar recordings was passed to the Ministry of Defence. The MoD declined to investigate because the sighting was in French airspace. Its file (DEFE 24/2081) was released through the National Archives in 2011.
     status: documented
+    source: https://discovery.nationalarchives.gov.uk/results/r?_q=DEFE%2024%2F2081
   - text: An independent study (Baure, Clarke, Fuller and Shough, 2008) examined weather, radar and witness data and could not identify the objects with confidence.
-    status: documented
+    status: claimed
+    source: https://en.wikipedia.org/wiki/2007_Alderney_UFO_sighting
 ---

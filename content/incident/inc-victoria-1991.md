@@ -10,6 +10,7 @@ links:
 facts:
   - text: From mid-1991 the Argentine press reported strange lights over Laguna del Pescado. A local cable channel filmed lights from the La Pepita estancia, and the footage was broadcast nationally.
     status: claimed
+    source: https://www.visionovni.com.ar/archivos/618
   - text: Later stories of a 1992 crash, with recovered metal and Argentine Air Force involvement, are not substantiated by any official record located so far.
     status: unverified
 ---

@@ -18,6 +18,7 @@ facts:
   - text: Navy F/A-18 crews in a pre-deployment exercise reported frequent UAP encounters, including near-midair collisions.
     status: claimed
     by: ryan-graves
+    source: library/docs/doc-graves-statement-2023-07-26.pdf
   - text: A secure email about the flight-safety concerns vanished from Rear Adm. Gallaudet’s inbox, and from the other recipients’, the day after it arrived.
     status: claimed
     by: tim-gallaudet

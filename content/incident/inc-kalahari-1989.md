@@ -7,8 +7,10 @@ tags: [crash-retrieval, international]
 facts:
   - text: The claim was that South African Air Force Mirages shot down a disc that crashed in the Kalahari, and that the craft and two occupants were recovered.
     status: unverified
+    source: https://en.wikipedia.org/wiki/UFO_sightings_in_South_Africa
   - text: The story rests on documents supplied by James van Greunen, which were found to be forged; he admitted fabricating details. Researcher Cynthia Hind exposed it in “Anatomy of a hoax”. It is one of the most thoroughly debunked crash-retrieval stories.
-    status: documented
+    status: claimed
+    source: https://en.wikipedia.org/wiki/UFO_sightings_in_South_Africa
 ---
 
 **Known hoax.** Filed so it can be recognised and kept apart from genuine cases, like MJ-12.

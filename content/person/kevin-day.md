@@ -10,5 +10,6 @@ facts:
   - text: “My job was to man the radars and ID everything that flew in the skies.”
     status: claimed
     by: kevin-day
+    source: https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/
 ---
 

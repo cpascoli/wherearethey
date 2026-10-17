@@ -11,5 +11,6 @@ tags:
 facts:
   - text: The Princeton’s only system technician for its Cooperative Engagement Capability and AEGIS Combat System.
     status: claimed
+    source: https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/
 ---
 

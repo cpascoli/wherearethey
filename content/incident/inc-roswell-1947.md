@@ -12,5 +12,6 @@ rel:
 facts:
   - text: In July 1947 the Roswell Army Air Field announced it had recovered a “flying disc”, then retracted the statement and called it a weather balloon.
     status: documented
+    source: https://www.gao.gov/products/nsiad-95-187
 ---
 

@@ -12,8 +12,10 @@ facts:
   - text: Terry Lovelace and a friend had a UFO encounter and missing time while camping.
     status: claimed
     by: terry-lovelace
+    source: https://search.worldcat.org/search?q=Incident+at+Devils+Den+Lovelace
   - text: In 2012, an X-ray taken for a knee injury showed a square-shaped electronic object deep in Lovelace’s thigh with no surgical scar. It later vanished without explanation.
     status: claimed
     by: terry-lovelace
+    source: https://search.worldcat.org/search?q=Incident+at+Devils+Den+Lovelace
 ---
 

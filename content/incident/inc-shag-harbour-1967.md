@@ -13,9 +13,11 @@ links:
 facts:
   - text: Several witnesses, including RCMP officers, saw a lit object about 60 feet across descend into the water off Shag Harbour. Rescuers, fishermen and RCMP found a large patch of yellowish foam but no aircraft wreckage.
     status: documented
+    source: http://www.roswellproof.com/shag_harbour/shag_harbour_documents.html
   - text: A priority telex from the Rescue Coordination Centre in Halifax to Canadian Forces Headquarters (October 5, 1967) logged it as a “UFO report”. The Royal Canadian Navy searched the area with divers and found nothing. No aircraft was reported missing.
     status: documented
     source: http://www.roswellproof.com/shag_harbour/shag_harbour_documents.html
   - text: Records are held in Department of National Defence files at Library and Archives Canada. It is often called Canada's best-documented UFO case.
     status: documented
+    source: http://www.roswellproof.com/shag_harbour/shag_harbour_documents.html
 ---

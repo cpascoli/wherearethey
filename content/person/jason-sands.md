@@ -7,7 +7,8 @@ tags:
   - consciousness
 facts:
   - text: Described telepathic communication with a being that had no ears and white/bluish skin.
-    status: unverified
+    status: claimed
     by: jason-sands
+    source: https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/
 ---
 

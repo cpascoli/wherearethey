@@ -11,7 +11,9 @@ links:
 facts:
   - text: Residents saw a bright light zig-zag across the sky and seem to descend on a school tennis court. Afterwards scorch marks and holes were found in the tar, and nearby trees died.
     status: claimed
+    source: https://en.wikipedia.org/wiki/UFO_sightings_in_South_Africa
   - text: Samples went to the South African Police forensic laboratory in Pretoria. Its head, Col. Lothar Neethling, said nothing unusual was found and suggested vandals with pick-axes.
     status: claimed
     by: lothar-neethling
+    source: https://en.wikipedia.org/wiki/UFO_sightings_in_South_Africa
 ---

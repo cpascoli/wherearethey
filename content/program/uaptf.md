@@ -22,11 +22,13 @@ facts:
     status: documented
     source: https://www.navy.mil/Press-Office/Press-Releases/display-pressreleases/Article/2314280/establishment-of-unidentified-aerial-phenomena-task-force/
   - text: "Key figures: director Jay Stratton and whistleblower David Grusch."
-    status: unverified
+    status: claimed
+    source: library/docs/doc-grusch-statement-2023-07-26.pdf
   - text: The UAPTF is generally described as AATIP's functional successor rather than a formal continuation. AATIP's funding ended in 2012. According to Luis Elizondo, the work continued informally inside the intelligence under-secretariat until 2017. After the December 2017 revelations the Navy and ONI led collection, until the task force was formalized in August 2020.
     status: claimed
     source: https://en.wikipedia.org/wiki/Unidentified_Aerial_Phenomena_Task_Force
   - text: Jay Stratton was named the task force's first director when it was formalized in 2020. Wikipedia also lists Brennan McKernan as a director of the UAPTF, apparently later, though the dates are unconfirmed.
-    status: unverified
+    status: claimed
+    source: https://www.hollywoodreporter.com/news/general-news/jay-stratton-ufo-memoir-1235996607/
 ---
 

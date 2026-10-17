@@ -11,5 +11,6 @@ links:
 facts:
   - text: Two F-16s were scrambled after a bright blue light.
     status: claimed
+    source: https://www.latimes.com/archives/la-xpm-2002-jul-28-adna-ufo28-story.html
 ---
 

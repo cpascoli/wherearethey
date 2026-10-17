@@ -21,6 +21,8 @@ facts:
   - text: In November 2004, near the Arak heavy-water plant, an armed F-14A crew reported a spherical object with a green, afterburner-like glow. When they illuminated it with radar, the radar scope became disrupted.
     status: claimed
     by: tom-cooper
+    source: https://theaviationist.com/2013/11/10/f-14-vs-ufo/
   - text: The accounts come from Iranian aircrew via aviation historian Tom Cooper. No official Iranian documents are available. U.S. military UAP reports over Iran from 2020–2022 appear in the PURSUE releases.
-    status: documented
+    status: claimed
+    source: https://theaviationist.com/2013/11/10/f-14-vs-ufo/
 ---
