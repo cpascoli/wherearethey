@@ -851,8 +851,8 @@
   // Drag the panel's left edge to resize (desktop); width remembered per browser
   function applyPanelWidth() {
     const w = store.get('panelW', null);
-    if (w && !state.reading && innerWidth > 860) $('#app').style.setProperty('--panel-w', `${w}px`);
-    else $('#app').style.removeProperty('--panel-w');
+    if (w && !state.reading && innerWidth > 860) $('#app').style.setProperty('--panel-user-w', `${w}px`);
+    else $('#app').style.removeProperty('--panel-user-w');
   }
   document.addEventListener('input', ev => {
     if (ev.target.id !== 'trace-q') return;
@@ -880,13 +880,13 @@
     let startX = 0, startW = 0;
     const move = ev => {
       const w = Math.max(320, Math.min(innerWidth - 360, startW + (startX - ev.clientX)));
-      $('#app').style.setProperty('--panel-w', `${w}px`);
+      $('#app').style.setProperty('--panel-user-w', `${w}px`);
       cy?.resize(); map?.invalidateSize();
     };
     const up = () => {
       document.removeEventListener('pointermove', move); document.removeEventListener('pointerup', up);
       document.body.classList.remove('resizing');
-      store.set('panelW', parseInt(getComputedStyle($('#app')).getPropertyValue('--panel-w')));
+      store.set('panelW', parseInt($('#app').style.getPropertyValue('--panel-user-w')) || null);
       afterResize();
     };
     handle.addEventListener('pointerdown', ev => {
