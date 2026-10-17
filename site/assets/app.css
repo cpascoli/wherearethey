@@ -505,3 +505,18 @@ mark { background: rgba(227, 179, 65, .4); color: inherit; border-radius: 3px; p
 .mb-n { font-size: 17px; color: var(--text); font-weight: 600; font-family: var(--sans); margin-right: 2px; }
 .mb-head b { color: var(--accent); font-weight: 500; }
 .mb-cov { margin-top: 5px; color: var(--muted); line-height: 1.5; }
+
+/* Small screens: the sidebar drawer and the dossier panel are position:fixed (out of the grid),
+   so the main view must be the only grid column — otherwise it lands in the 0-width sidebar column. */
+@media (max-width: 860px) {
+  .app, .app.has-panel, .app.is-home { grid-template-columns: 1fr; }
+}
+@media (max-width: 860px) {
+  /* keep the drawer, dossier and nav above Leaflet's panes/controls (z-index up to 1000) */
+  .side { z-index: 1100; }
+  .panel { z-index: 1100; }
+  .views { z-index: 1200; }
+  .top { z-index: 1300; }
+  .side.open { box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .45), var(--shadow); }
+}
+@media (max-width: 860px) { .side { padding-bottom: 76px; } }

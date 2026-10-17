@@ -1330,6 +1330,7 @@
   }
   function go(view, { keepSel = true } = {}) {
     state.view = view;
+    $('#side').classList.remove('open'); // close the mobile filter drawer on navigation
     store.set('view', view);
     for (const v of ['home', 'graph', 'timeline', 'map', 'videos', 'index', 'claims']) $('#view-' + v).hidden = v !== view;
     $$('#views a').forEach(a => a.classList.toggle('active', a.dataset.view === view));
@@ -1384,7 +1385,12 @@
     e.preventDefault();
     go(a.dataset.view);
   });
-  $('#btn-side').addEventListener('click', () => $('#side').classList.toggle('open'));
+  $('#btn-side').addEventListener('click', e => { e.stopPropagation(); $('#side').classList.toggle('open'); });
+  // tapping outside the open drawer closes it
+  document.addEventListener('click', e => {
+    const side = $('#side');
+    if (side.classList.contains('open') && !e.target.closest('#side, #btn-side')) side.classList.remove('open');
+  });
 
   // theme
   function applyTheme(t) {
