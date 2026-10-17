@@ -1,15 +1,35 @@
 ---
 name: Paul Hellyer
-aka:
-  - Hellyer
+aka: [Hellyer, Paul T. Hellyer, The Honourable Paul Hellyer]
 credentials:
   - category: government
-    role: Minister of National Defence, Canada (1963–1967)
-tags:
-  - international
-  - disclosure
+    role: Minister of National Defence of Canada (1963–1967); Minister of Transport and Senior Minister (1967–1969)
+  - category: congress
+    role: Member of Parliament (Davenport 1949–1957; Trinity 1958–1974)
+tags: [international, disclosure]
+links:
+  - label: Wikipedia
+    url: https://en.wikipedia.org/wiki/Paul_Hellyer
+facts:
+  - text: As Defence Minister he inaugurated a “UFO landing pad” built as a centennial project in St. Paul, Alberta, on June 3, 1967.
+    status: documented
+    source: https://en.wikipedia.org/wiki/Paul_Hellyer
+  - text: At the Toronto exopolitics symposium on September 25, 2005 he said “UFOs are as real as the airplanes that fly over your head,” and that he had once seen a UFO with his wife and friends.
+    status: claimed
+    by: paul-hellyer
+  - text: He warned that U.S. military preparations to fight extraterrestrials could drag the world into an “intergalactic war”, and later called on governments to disclose alien technology that could help with climate change.
+    status: claimed
+    by: paul-hellyer
+  - text: In a 2014 RT interview he said at least four species of aliens had been visiting Earth for thousands of years.
+    status: claimed
+    by: paul-hellyer
+  - text: He repeated the “Project Serpo” alien-exchange story, which originated with former AFOSI agent Richard Doty, who later admitted to spreading disinformation. His later claims relied on secondhand sources he did not identify.
+    status: documented
+    source: https://en.wikipedia.org/wiki/Paul_Hellyer
 ---
 
-Canadian Minister of National Defence (1963–1967) under Lester Pearson, who oversaw the unification of the Canadian Armed Forces. From 2005 he said publicly that extraterrestrials visit Earth, and he testified at the 2013 Citizen Hearing on Disclosure. He died in 2021.
+Canada's Minister of National Defence during the unification of the armed forces. Decades after leaving office, he became one of the highest-ranking former officials anywhere to say publicly that extraterrestrials visit Earth, beginning with his September 2005 Toronto speech and continuing at the 2013 Citizen Hearing until his death in 2021.
 
-*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Paul_Hellyer)*
+His official rank makes him an official source, but there is a caveat: he never claimed first-hand access to classified UFO information as minister. His statements came later and leaned on secondhand sources, some of which (such as Serpo) are known disinformation. Treat his testimony as an opinion on the record, not as evidence.
+
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Paul_Hellyer) · Toronto, 2005 · Citizen Hearing, 2013*
