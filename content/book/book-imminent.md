@@ -31,4 +31,5 @@ facts:
     by: luis-elizondo
   - text: The book was cleared for publication by the Pentagon's prepublication review (DOPSR). Clearance means it contains no classified information; it does not confirm the claims.
     status: unverified
+nomatch: true
 ---

@@ -29,6 +29,7 @@ facts:
   - text: "CNN's Brian Lowry called it “an earnest documentary most notable for the former officials that lend credence to the notion the government knows much more than it has shared”, if “a little too breathless”."
     status: claimed
     source: https://en.wikipedia.org/wiki/The_Phenomenon_(film)
+nomatch: true
 ---
 
 Fox's best-known film, and the one that brought senior former officials such as Reid, Podesta and Richardson on camera.

@@ -24,6 +24,7 @@ facts:
   - text: "It features interviews with insiders, elected officials, physicists, intelligence officers and military whistleblowers, among them former Deputy Assistant Secretary of Defense for Intelligence Christopher Mellon and Stanford's Garry Nolan."
     status: claimed
     source: https://www.firstshowing.net/2024/official-trailer-for-the-program-yet-another-new-ufo-documentary/
+nomatch: true
 ---
 
 A behind-the-scenes account of the 2022–2023 congressional hearings. The official trailer plays here from a Film Threat upload, since the filmmakers have not posted one on YouTube.

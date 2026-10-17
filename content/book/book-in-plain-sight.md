@@ -18,6 +18,7 @@ facts:
   - text: "An investigation into UFOs and alleged crash-retrieval programs by Australian investigative journalist Ross Coulthart, published by HarperCollins Australia in 2021 and reprinted in 2023."
     status: claimed
     source: https://en.wikipedia.org/wiki/Ross_Coulthart
+nomatch: true
 ---
 
 Coulthart later interviewed David Grusch for NewsNation (June 2023). He openly advocates for disclosure, so his book is reporting and advocacy, not testimony.

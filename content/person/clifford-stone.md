@@ -1,6 +1,5 @@
 ---
 name: Clifford Stone
-aka: [Stone]
 credentials:
   - category: military
     role: Sergeant First Class, U.S. Army (ret.)
