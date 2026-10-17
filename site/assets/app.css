@@ -520,3 +520,32 @@ mark { background: rgba(227, 179, 65, .4); color: inherit; border-radius: 3px; p
   .side.open { box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .45), var(--shadow); }
 }
 @media (max-width: 860px) { .side { padding-bottom: 76px; } }
+
+/* ───────── Panel: resize, tools, reading view, collapsing ───────── */
+.panel-tools { position: absolute; top: 10px; right: 10px; z-index: 3; display: flex; gap: 2px; }
+.panel-close { position: static; }
+.dossier-strip { padding-right: 76px; }
+.panel-resize { position: absolute; left: -3px; top: 0; bottom: 0; width: 7px; cursor: col-resize; z-index: 4; }
+.panel-resize:hover, body.resizing .panel-resize { background: linear-gradient(90deg, transparent 2px, var(--accent) 2px, var(--accent) 4px, transparent 4px); }
+body.resizing { cursor: col-resize; user-select: none; }
+body.resizing iframe { pointer-events: none; }
+.panel { position: relative; }
+.collapsed { display: none !important; }
+.show-all { margin-top: 6px; font-family: var(--mono); font-size: 11.5px; display: inline-block; }
+/* reading view: dossier takes over the main area */
+.app.reading { grid-template-columns: 1fr !important; }
+.app.reading .side, .app.reading .main { display: none; }
+.app.reading .panel { border-left: 0; }
+.app.reading .panel-resize { display: none; }
+#panel-body.reading { max-width: 1240px; margin: 0 auto; padding: 28px 40px 80px; }
+#panel-body.reading .p-title { font-size: 32px; }
+#panel-body.reading .p-bio { font-size: 15.5px; max-width: 72ch; }
+.rd-nav { position: sticky; top: 0; z-index: 2; display: flex; flex-wrap: wrap; gap: 4px 16px; padding: 12px 0; margin: 14px 0 6px; background: var(--panel); border-bottom: 1px solid var(--border); font-family: var(--mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; }
+.rd-nav a { color: var(--muted); }
+.rd-nav a:hover { color: var(--accent); text-decoration: none; }
+.rd-nav a span { color: var(--accent); }
+.rd-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 0 48px; align-items: start; }
+.rd-side { border-left: 1px dashed var(--border-strong); padding-left: 32px; }
+.rd-grid .p-sec { scroll-margin-top: 60px; }
+@media (max-width: 1000px) { .rd-grid { grid-template-columns: 1fr; } .rd-side { border-left: 0; padding-left: 0; } }
+@media (max-width: 860px) { #panel-expand, .panel-resize { display: none; } }

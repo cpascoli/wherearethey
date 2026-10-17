@@ -501,7 +501,8 @@
   });
   document.addEventListener('keydown', e => {
     if (e.key === '/' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); $('#q').focus(); }
-    if (e.key === 'Escape' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName) && state.sel) select(null);
+    if (e.key === 'Escape' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName) && state.sel) { if (state.reading) setReading(false); else select(null); }
+    if ((e.key === 'r' || e.key === 'R') && !e.metaKey && !e.ctrlKey && !/INPUT|TEXTAREA/.test(document.activeElement.tagName) && state.sel && state.view !== 'home') setReading(!state.reading);
   });
 
   // ───────────── detail panel ─────────────
@@ -561,7 +562,7 @@
     }
     if (e.body) h.push(`<div class="p-sec"><h4>${e.type === 'person' ? 'Profile' : 'Summary'}</h4><div class="p-body p-bio">${e.body}</div></div>`);
     if (e.facts.length) {
-      h.push(`<div class="p-sec"><h4>Notes & claims <span>${e.facts.length}</span></h4><ul class="facts">${e.facts.map(f => {
+      h.push(`<div class="p-sec" id="sec-claims"><h4>Notes & claims <span>${e.facts.length}</span></h4><ul class="facts" data-collapse="8">${e.facts.map(f => {
         const src = f.source ? (f.source.file ? `<a href="${esc(fileUrl(f.source.file))}" target="_blank">📄 ${esc(f.source.file.split('/').pop())}</a>` : f.source.url ? `<a href="${esc(f.source.url)}" target="_blank" rel="noopener">source ↗</a>`
           : byId.get(f.source.id)?.type === 'video' ? `<button class="ts" data-play="${f.source.id}@${f.source.t || 0}">▶ ${f.source.t != null ? fmtT(f.source.t) : 'video'}</button> ${chip(f.source.id)}`
           : `source: ${chip(f.source.id)}`) : '';
@@ -585,7 +586,8 @@
       groups.get(label).add(x.other);
     }
     if (groups.size) {
-      h.push(`<div class="p-sec"><h4>Connections</h4>${[...groups].map(([label, ids]) => `<div class="conn-group"><div class="lbl">${esc(label)}</div><div class="chips">${[...ids].map(id => chip(id)).join('')}</div></div>`).join('')}</div>`);
+      const nConn = [...groups.values()].reduce((a, ids) => a + ids.size, 0);
+      h.push(`<div class="p-sec p-side" id="sec-connections"><h4>Connections <span>${nConn}</span></h4>${[...groups].map(([label, ids]) => `<div class="conn-group"><div class="lbl">${esc(label)}</div><div class="chips" data-collapse="10">${[...ids].map(id => chip(id)).join('')}</div></div>`).join('')}</div>`);
     }
     // transcript mentions
     if (e.type === 'video') {
@@ -597,21 +599,21 @@
         const byVid = new Map();
         for (const [vid, t, snip] of list) { if (!byVid.has(vid)) byVid.set(vid, []); byVid.get(vid).push([t, snip]); }
         const sorted = [...byVid].sort((a, b) => b[1].length - a[1].length);
-        h.push(`<div class="p-sec"><h4>Mentioned in transcripts <span>${list.length} in ${byVid.size} video${byVid.size > 1 ? 's' : ''}</span></h4>
+        h.push(`<div class="p-sec p-side" id="sec-mentions"><h4>Mentioned in transcripts <span>${list.length} in ${byVid.size} video${byVid.size > 1 ? 's' : ''}</span></h4>
           <div class="small muted" style="margin:-4px 0 6px">Automatic name matches; click a time to jump there.</div>
-          ${sorted.map(([vid, hits]) => {
+          <div data-collapse="3">${sorted.map(([vid, hits]) => {
             const v = byId.get(vid);
             return `<div class="mention-video"><div class="mv-t" data-goto="${vid}">${esc(v.name)}<span>${hits.length}×</span></div>
             <div class="mv-ts">${hits.slice(0, 12).map(([t, s]) => `<button class="ts" data-play="${vid}@${t}" title="${esc(s)}">${fmtT(t)}</button>`).join('')}${hits.length > 12 ? `<button class="link" data-more="${vid}">+${hits.length - 12} more</button>` : ''}</div>
             <div class="snip"><button class="ts" data-play="${vid}@${hits[0][0]}">${fmtT(hits[0][0])}</button><span>“…${esc(hits[0][1])}…”</span></div></div>`;
-          }).join('')}</div>`);
+          }).join('')}</div></div>`);
       }
     }
     h.push(renderDots(e));
     if (e.links.length || e.files.length) {
-      h.push(`<div class="p-sec"><h4>Links & files</h4><ul class="p-links">${e.links.map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.url)} ↗</a></li>`).join('')}${e.files.map(f => `<li><a href="${esc(fileUrl(f))}" target="_blank">📄 ${esc(f.split('/').pop())}</a></li>`).join('')}</ul></div>`);
+      h.push(`<div class="p-sec p-side" id="sec-links"><h4>Links & files</h4><ul class="p-links">${e.links.map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.url)} ↗</a></li>`).join('')}${e.files.map(f => `<li><a href="${esc(fileUrl(f))}" target="_blank">📄 ${esc(f.split('/').pop())}</a></li>`).join('')}</ul></div>`);
     }
-    if (e.tags.length) h.push(`<div class="p-sec"><h4>Themes</h4><div class="chips">${e.tags.map(t => `<button class="chip ${state.tags.has(t) ? 'on' : ''}" data-filter-tag="${esc(t)}">${esc(t)}</button>`).join('')}</div></div>`);
+    if (e.tags.length) h.push(`<div class="p-sec p-side"><h4>Themes</h4><div class="chips">${e.tags.map(t => `<button class="chip ${state.tags.has(t) ? 'on' : ''}" data-filter-tag="${esc(t)}">${esc(t)}</button>`).join('')}</div></div>`);
     h.push(`<div class="p-edit">Edit <code>${esc(e.file)}</code><button class="link" data-copy="${esc(e.file)}">copy path</button></div>`);
     return h.join('');
   }
@@ -656,16 +658,16 @@
     const out = [];
     const tog = (TOGETHER[e.id] || []).filter(r => byId.has(r[0]) && !(state.credibleOnly && byId.get(r[0]).cred === 'outside')).slice(0, 8);
     if (tog.length) {
-      out.push(`<div class="p-sec"><h4>Mentioned together <span>in transcripts</span></h4>
+      out.push(`<div class="p-sec p-side"><h4>Mentioned together <span>in transcripts</span></h4>
         <div class="small muted" style="margin:-4px 0 4px">Named within the same minute of video. <span class="new" style="font-family:var(--mono);font-size:9.5px;color:var(--accent);border:1px solid var(--accent);padding:0 4px;border-radius:2px">NEW</span> = not yet linked in the archive.</div>
         ${tog.map(([o, n, nv, vid, t, linked]) => `<div class="dots-item"><div>${chip(o)}${linked ? '' : '<span class="new">NEW</span>'}<div class="why">${n}× in ${nv} video${nv > 1 ? 's' : ''}</div></div><button class="ts" data-play="${vid}@${t}" title="First time they come up together">▶ ${fmtT(t)}</button></div>`).join('')}</div>`);
     }
     const pc = possibleConnections(e);
     if (pc.length) {
-      out.push(`<div class="p-sec"><h4>Possible connections <span>shared links</span></h4>
+      out.push(`<div class="p-sec p-side"><h4>Possible connections <span>shared links</span></h4>
         ${pc.map(([o, s]) => `<div class="dots-item"><div>${chip(o)}<div class="why">via ${[...s.via].slice(0, 4).map(v => esc(byId.get(v).name)).join(', ')}${s.via.size > 4 ? ` +${s.via.size - 4}` : ''}</div></div><button class="link" data-trace-to="${o}">trace</button></div>`).join('')}</div>`);
     }
-    out.push(`<div class="p-sec"><h4>Trace a connection</h4><div class="trace"><input id="trace-q" type="search" placeholder="From ${esc(e.name)} to…" autocomplete="off"><div class="dropdown" id="trace-dd" hidden></div></div>
+    out.push(`<div class="p-sec p-side"><h4>Trace a connection</h4><div class="trace"><input id="trace-q" type="search" placeholder="From ${esc(e.name)} to…" autocomplete="off"><div class="dropdown" id="trace-dd" hidden></div></div>
       <label class="check small" style="margin:8px 0 0"><input type="checkbox" id="trace-mentions"> include transcript mentions</label><div id="trace-out"></div></div>`);
     return out.join('');
   }
@@ -700,11 +702,62 @@
   function openPanel(id) {
     const e = byId.get(id);
     if (!e) { closePanel(); return; }
-    $('#panel-body').innerHTML = renderPanel(e);
+    const body = $('#panel-body');
+    body.innerHTML = renderPanel(e);
+    if (state.reading) layoutReading(body); else body.classList.remove('reading');
+    applyCollapse(body, state.reading ? 2 : 1);
     $('#panel').hidden = false;
     $('#panel').scrollTop = 0;
     $('#app').classList.add('has-panel');
+    $('#app').classList.toggle('reading', !!state.reading);
+    $('#panel-expand').textContent = state.reading ? '⤡' : '⤢';
+    $('#panel-expand').title = state.reading ? 'Back to side panel (R)' : 'Reading view (R)';
+    applyPanelWidth();
     afterResize();
+  }
+  // Long lists start collapsed: show the first N items (×factor in reading view) with a “show all” toggle
+  function applyCollapse(root, factor = 1) {
+    for (const box of root.querySelectorAll('[data-collapse]')) {
+      const n = +box.dataset.collapse * factor;
+      const items = [...box.children];
+      if (items.length <= n + 1) continue;
+      items.slice(n).forEach(el => el.classList.add('collapsed'));
+      const btn = document.createElement('button');
+      btn.className = 'link show-all';
+      btn.textContent = `show all ${items.length} ▾`;
+      btn.onclick = () => { items.forEach(el => el.classList.remove('collapsed')); btn.remove(); };
+      box.after(btn);
+    }
+  }
+  // Reading view: header across the top, jump links, main content left, connections/mentions right
+  function layoutReading(body) {
+    body.classList.add('reading');
+    const secs = [...body.querySelectorAll(':scope > .p-sec')];
+    const left = document.createElement('div'), right = document.createElement('div');
+    left.className = 'rd-main'; right.className = 'rd-side';
+    const nav = document.createElement('nav');
+    nav.className = 'rd-nav';
+    nav.innerHTML = secs.map((sec, i) => { sec.id ||= `sec-${i}`; const h = sec.querySelector('h4'); return h ? `<a href="#" data-jump="${sec.id}">${esc(h.childNodes[0].textContent.trim())}${h.querySelector('span') ? ` <span>${esc(h.querySelector('span').textContent)}</span>` : ''}</a>` : ''; }).join('');
+    const firstSec = secs[0];
+    if (firstSec) body.insertBefore(nav, firstSec);
+    const grid = document.createElement('div');
+    grid.className = 'rd-grid';
+    grid.append(left, right);
+    body.append(grid);
+    for (const sec of secs) (sec.classList.contains('p-side') ? right : left).append(sec);
+    const edit = body.querySelector(':scope > .p-edit');
+    if (edit) left.append(edit); // keep the edit hint at the end of the main column
+  }
+  function setReading(on) {
+    state.reading = on;
+    if (state.sel) openPanel(state.sel);
+    if (!on) afterResize();
+  }
+  // Drag the panel's left edge to resize (desktop); width remembered per browser
+  function applyPanelWidth() {
+    const w = store.get('panelW', null);
+    if (w && !state.reading && innerWidth > 860) $('#app').style.setProperty('--panel-w', `${w}px`);
+    else $('#app').style.removeProperty('--panel-w');
   }
   document.addEventListener('input', ev => {
     if (ev.target.id !== 'trace-q') return;
@@ -714,12 +767,41 @@
     dd.hidden = !res.length;
   });
   function closePanel() {
+    state.reading = false;
+    $('#app').classList.remove('reading');
     $('#panel').hidden = true;
     $('#app').classList.remove('has-panel');
     afterResize();
   }
   function afterResize() { requestAnimationFrame(() => { cy?.resize(); map?.invalidateSize(); }); }
   $('#panel-close').addEventListener('click', () => select(null));
+  $('#panel-expand').addEventListener('click', () => setReading(!state.reading));
+  $('#panel').addEventListener('click', e => {
+    const j = e.target.closest('[data-jump]');
+    if (j) { e.preventDefault(); $('#' + j.dataset.jump)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+  (() => {
+    const handle = $('#panel-resize');
+    let startX = 0, startW = 0;
+    const move = ev => {
+      const w = Math.max(320, Math.min(innerWidth - 360, startW + (startX - ev.clientX)));
+      $('#app').style.setProperty('--panel-w', `${w}px`);
+      cy?.resize(); map?.invalidateSize();
+    };
+    const up = () => {
+      document.removeEventListener('pointermove', move); document.removeEventListener('pointerup', up);
+      document.body.classList.remove('resizing');
+      store.set('panelW', parseInt(getComputedStyle($('#app')).getPropertyValue('--panel-w')));
+      afterResize();
+    };
+    handle.addEventListener('pointerdown', ev => {
+      ev.preventDefault();
+      startX = ev.clientX; startW = $('#panel').getBoundingClientRect().width;
+      document.body.classList.add('resizing');
+      document.addEventListener('pointermove', move); document.addEventListener('pointerup', up);
+    });
+    handle.addEventListener('dblclick', () => { store.set('panelW', null); applyPanelWidth(); afterResize(); });
+  })();
   $('#panel').addEventListener('click', e => {
     const more = e.target.closest('[data-more]');
     if (more) {
@@ -1368,6 +1450,7 @@
   }
   function go(view, { keepSel = true } = {}) {
     if (view === 'home' && state.view !== 'home') teardownApp();
+    if (state.reading && view !== state.view) { state.reading = false; $('#app').classList.remove('reading'); } // e.g. ▶ from reading view
     state.view = view;
     $('#side').classList.remove('open'); // close the mobile filter drawer on navigation
     store.set('view', view);

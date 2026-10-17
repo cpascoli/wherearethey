@@ -101,7 +101,11 @@
     </main>
 
     <aside class="panel" id="panel" hidden>
-      <button class="icon-btn panel-close" id="panel-close" aria-label="Close">✕</button>
+      <div class="panel-resize" id="panel-resize" title="Drag to resize · double-click to reset" aria-hidden="true"></div>
+      <div class="panel-tools">
+        <button class="icon-btn" id="panel-expand" aria-label="Open in reading view" title="Reading view (R)">⤢</button>
+        <button class="icon-btn" id="panel-close" aria-label="Close" title="Close (Esc)">✕</button>
+      </div>
       <div id="panel-body"></div>
     </aside>
   </div>
