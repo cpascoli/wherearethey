@@ -298,6 +298,12 @@ export function build({ check = false, quiet = false } = {}) {
   }
   for (const id in mentions) mentions[id].sort((a, b) => (a[0] === b[0] ? a[1] - b[1] : a[0] < b[0] ? -1 : 1));
 
+  // PURSUE "paired with" links: keep genuine pairs (e.g. a video and its report), drop release-wide cliques
+  // (a record "paired with" dozens of others says no more than "released together")
+  const pairCount = new Map();
+  for (const x of edges.values()) if (x.label === 'paired with') for (const id of [x.s, x.t]) pairCount.set(id, (pairCount.get(id) || 0) + 1);
+  for (const [k, x] of edges) if (x.label === 'paired with' && (pairCount.get(x.s) > 8 || pairCount.get(x.t) > 8)) edges.delete(k);
+
   const stats = {
     entities: entities.length,
     byType: Object.fromEntries([...TYPES, 'source'].map(t => [t, entities.filter(e => e.type === t).length])),

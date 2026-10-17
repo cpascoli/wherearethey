@@ -118,6 +118,8 @@
 
   // ───────────── state ─────────────
   const allTypes = Object.keys(TYPES);
+  // PURSUE records stay out of the graph and the type filter; they appear in context (dossiers, index, search)
+  const graphTypes = allTypes.filter(t => t !== 'record');
   const TYPES_BEFORE_SHELF = ['person', 'incident', 'hearing', 'program', 'organization', 'document', 'record', 'video', 'event', 'concept', 'place', 'source'];
   const state = {
     view: 'graph', sel: null,
@@ -129,6 +131,7 @@
     showMentions: store.get('showMentions', false),
     video: null,
   };
+  state.types.delete('record');
   let visible = new Set();
 
   function computeVisible() {
@@ -157,7 +160,7 @@
     const tagOk = e => !state.tags.size || e.tags.some(t => state.tags.has(t));
     const counts = {};
     for (const e of ents) if (credOk(e) && tagOk(e)) counts[e.type] = (counts[e.type] || 0) + 1;
-    $('#f-types').innerHTML = allTypes.filter(t => counts[t]).map(t => `
+    $('#f-types').innerHTML = graphTypes.filter(t => counts[t]).map(t => `
       <label class="f-type ${state.types.has(t) ? '' : 'off'}" data-type="${t}" title="Click to toggle · double-click to show only this type">
         <span class="sw" style="background:${TYPES[t].color}"></span>${TYPES[t].plural}<span class="n">${counts[t]}</span>
       </label>`).join('') || '<p class="muted small">No types match the selected themes.</p>';
@@ -212,7 +215,7 @@
       // judge by the selection *before* the first click of the pair
       const b = lastTypeClick.before;
       const wasOnlyThis = b.size === 1 && b.has(t);
-      state.types = wasOnlyThis ? new Set(allTypes) : new Set([t]);
+      state.types = wasOnlyThis ? new Set(graphTypes) : new Set([t]);
       lastTypeClick = { t: null, at: 0, before: null };
     } else {
       lastTypeClick = { t, at: now, before: new Set(state.types) };
@@ -290,11 +293,12 @@
   function initGraph() {
     const degree = id => adj.get(id).filter(x => x.kind !== 'mention').length;
     const elements = [
-      ...ents.map(e => ({ data: {
+      ...ents.filter(e => e.type !== 'record').map(e => ({ data: {
         id: e.id, label: twoLines(e.name), type: e.type,
         color: TYPES[e.type]?.color || '#999', shape: TYPES[e.type]?.shape || 'ellipse', size: Math.min(48, 12 + Math.sqrt(degree(e.id)) * 6),
       }, classes: e.cred === 'outside' ? 'outside' : '' })),
-      ...KB.edges.map((x, i) => ({ data: { id: 'e' + i, source: x.s, target: x.t, label: x.label, kind: x.kind } })),
+      ...KB.edges.map((x, i) => [x, i]).filter(([x]) => byId.get(x.s)?.type !== 'record' && byId.get(x.t)?.type !== 'record')
+        .map(([x, i]) => ({ data: { id: 'e' + i, source: x.s, target: x.t, label: x.label, kind: x.kind } })),
     ];
     cy = cytoscape({ container: $('#cy'), elements, style: graphStyle(), wheelSensitivity: 0.25, minZoom: 0.15, maxZoom: 3.5, boxSelectionEnabled: false });
     cy.on('tap', 'node', ev => select(ev.target.id(), { from: 'graph' }));
@@ -302,7 +306,7 @@
     cy.on('mouseover', 'node', ev => { $('#cy').style.cursor = 'pointer'; if (!state.sel) highlight(ev.target.id(), true); });
     cy.on('mouseout', 'node', () => { $('#cy').style.cursor = ''; if (!state.sel) highlight(null); });
     $('#view-graph').insertAdjacentHTML('beforeend', '<div class="graph-hud" id="hud"></div>');
-    $('#legend').innerHTML = allTypes.map(t => `<span><i style="background:${TYPES[t].color}"></i>${TYPES[t].plural}</span>`).join('');
+    $('#legend').innerHTML = graphTypes.map(t => `<span><i style="background:${TYPES[t].color}"></i>${TYPES[t].plural}</span>`).join('');
     applyGraphFilter();
     layoutGraph(false);
   }
@@ -417,6 +421,9 @@
         <div class="ix-grid">${list.map(e => `<div class="card ${e.cred === 'outside' ? 'outside' : ''}" data-goto="${e.id}">
           <div class="t">${esc(e.name)}</div><div class="s">${esc(subtitle(e))}</div></div>`).join('')}</div></div>`;
     }).join('') || '<p class="muted">No matches.</p>';
+    const recs = ents.filter(e => e.type === 'record' && (!q || searchText(e).includes(q))).sort((a, b) => a.name.localeCompare(b.name));
+    if (recs.length) $('#index').insertAdjacentHTML('beforeend', `<details class="ix-group ix-records" ${q ? 'open' : ''}><summary><h3><i style="background:${TYPES.record.color}"></i>${TYPES.record.plural} <span class="muted">${recs.length}</span></h3></summary>
+      <div class="ix-grid">${recs.map(e => `<div class="card" data-goto="${e.id}"><div class="t">${esc(e.name)}</div><div class="s">${esc(subtitle(e))}</div></div>`).join('')}</div></details>`);
   }
   $('#iq').addEventListener('input', renderIndex);
 
@@ -623,10 +630,19 @@
         <div class="moment"><button class="ts" data-play="${m.video}@${m.t}">▶ ${fmtT(m.t)}</button><div><div>${esc(m.text)}</div>
         <div class="who">${m.speaker && m.speaker !== e.id ? chip(m.speaker) : ''}${e.type !== 'video' ? chip(m.video) : m.refs.map(r => chip(r)).join('')}</div></div></div>`).join('')}</div>`);
     }
+    // official records (PURSUE) linked to this entry
+    const recs = [...new Set(adj.get(e.id).filter(x => x.kind !== 'mention' && byId.get(x.other)?.type === 'record').map(x => x.other))]
+      .map(id => byId.get(id)).sort((a, b) => String(a.pursue?.released || a.date || '').localeCompare(String(b.pursue?.released || b.date || '')) || a.name.localeCompare(b.name));
+    if (recs.length) {
+      h.push(`<div class="p-sec p-side" id="sec-records"><h4>${e.type === 'record' ? 'Related records' : 'Official records'} <span>${recs.length}</span></h4><ul class="rec-list" data-collapse="8">${recs.map(r => {
+        const pu = r.pursue || {};
+        return `<li><a href="#" data-goto="${esc(r.id)}">${esc(r.name)}</a><div class="small muted">${esc([pu.agency, pu.released && `released ${fmtD(pu.released)}`].filter(Boolean).join(' · '))}${pu.file ? ` · <a href="${esc(pu.file)}" target="_blank" rel="noopener">official file ↗</a>` : ''}</div></li>`;
+      }).join('')}</ul></div>`);
+    }
     // connections
     const groups = new Map();
     for (const x of adj.get(e.id)) {
-      if (x.kind === 'mention') continue;
+      if (x.kind === 'mention' || byId.get(x.other)?.type === 'record') continue;
       const label = x.dir === 'out' ? x.label : (INVERSE[x.label] || x.label);
       if (!groups.has(label)) groups.set(label, new Set());
       groups.get(label).add(x.other);
@@ -664,7 +680,7 @@
     return h.join('');
   }
   // ── connecting the dots ──
-  const strongAdj = id => adj.get(id).filter(x => x.kind !== 'mention');
+  const strongAdj = id => adj.get(id).filter(x => x.kind !== 'mention' && byId.get(x.other)?.type !== 'record');
   function possibleConnections(e, limit = 8) {
     const direct = new Set(strongAdj(e.id).map(x => x.other));
     const score = new Map();

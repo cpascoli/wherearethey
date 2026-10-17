@@ -12,6 +12,7 @@ military personnel, pilots, radar/sensor operators, intelligence officers, acade
 
 ## Entry format — `content/<type>/<id>.md`
 Types: person, incident, hearing, program, organization, document, film, book, record (PURSUE, generated), video, event, concept, place, source.
+PURSUE `record`s are not graph nodes and not in the type filter: they appear as an “Official records” list in the dossier of whatever they link to, in the Index (own group), in search and in full-text search. Link a record to the entity it documents (`rel`), and it will surface there.
 `document` is for official records and primary documents only; documentaries go in `film/` and books in `book/` (shown in the Books & Films view). Give them `credits:` (free text), `runtime:` (minutes) or `publisher:`/`isbn:`/`pages:`, link people with `features`/`authored by`/`narrated by`, and attach an official trailer as a video with `[ trailer of, film-… ]`. Their contents are testimony: `claimed` unless an official record backs it; link out, never host.
 The id is the filename. Frontmatter (YAML) + optional Markdown body (bio/summary).
 ```yaml

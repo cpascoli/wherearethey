@@ -579,3 +579,13 @@ body.resizing iframe { pointer-events: none; }
   #view-shelf .index-bar { flex-wrap: wrap; }
   .sc-cover:has(.sc-spine) { display: none; } /* text covers just repeat the title on small screens */
 }
+
+/* official records in dossiers and index */
+.rec-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.rec-list li { font-size: 13px; line-height: 1.35; }
+.rec-list li > a { color: var(--text); text-decoration: none; }
+.rec-list li > a:hover { color: var(--accent); }
+.ix-records summary { cursor: pointer; list-style: none; }
+.ix-records summary::-webkit-details-marker { display: none; }
+.ix-records summary h3::after { content: ' ▸'; color: var(--muted); }
+.ix-records[open] summary h3::after { content: ' ▾'; }
