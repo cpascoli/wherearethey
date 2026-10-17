@@ -18,6 +18,8 @@
   },
   "dependencies": {
     "csv-parse": "^7.0.3",
+    "cytoscape": "^3.30.2",
+    "cytoscape-fcose": "^2.2.0",
     "marked": "^14.1.0",
     "puppeteer-core": "^23.11.1",
     "yaml": "^2.6.0"

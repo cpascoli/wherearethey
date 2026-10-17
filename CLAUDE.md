@@ -37,7 +37,8 @@ Videos add `youtube:` and curated `moments:` (`t`, `text`, `speaker`, `refs`). U
 Bios: 2–3 short factual paragraphs, then an italic `*Sources: …*` line. Verify Wikipedia links point to the right person (many names redirect to topic pages).
 
 ## Commands
-- `npm run dev` — build + serve http://localhost:4321 with rebuild/live-reload on changes
+- `npm run dev` — build + serve http://localhost:4321 with rebuild/live-reload on changes (re-imports the build script each time, so build changes need no restart)
+- The graph layout is precomputed at build time (`scripts/layout.mjs`, cytoscape + fcose headless) for the default view and the full network, cached in `.cache/layout.json`; keep its options in sync with `layoutGraph()` in `app.js`. PURSUE record summaries ship separately in `site/data/records.js`, loaded on demand.
 - `npm run check` — validate (dangling ids, bad statuses, missing files)
 - `npm run fetch -- <youtube url|id> [--download]` — metadata + transcript into `media/<id>/`, creates a stub `content/video/` entry. YouTube rate-limits (HTTP 429): fetch in small batches.
 - `npm run import:pursue [-- --download "regex"]` — refresh the war.gov/UFO PURSUE catalog into `content/record/` (drives local Chrome; importer-owned fields refresh, user notes below the marker are kept)

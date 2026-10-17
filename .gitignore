@@ -17,3 +17,4 @@ media/*/src.*
 # OS / editor
 .DS_Store
 media/*/audio.*
+.cache/

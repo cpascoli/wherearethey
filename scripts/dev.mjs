@@ -5,7 +5,6 @@ import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT } from './lib.mjs';
-import { build } from './build.mjs';
 
 const PORT = +(process.env.PORT || 4321);
 const TYPES = {
@@ -50,9 +49,15 @@ const server = http.createServer((req, res) => {
   }
 });
 
+// re-import build.mjs on every rebuild, so edits to the build script itself take effect without a restart
+let building = Promise.resolve();
 function rebuild(reason) {
+  building = building.then(() => doRebuild(reason));
+}
+async function doRebuild(reason) {
   try {
-    const { errors } = build({ quiet: false });
+    const { build } = await import(`./build.mjs?t=${Date.now()}`);
+    const { errors } = await build({ quiet: false });
     if (!errors.length) for (const c of clients) c.write('data: reload\n\n');
   } catch (e) {
     console.error(`build failed (${reason}):`, e.message);

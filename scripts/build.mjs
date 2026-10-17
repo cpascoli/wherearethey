@@ -7,12 +7,13 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { marked } from 'marked';
 import { ROOT, TYPES, STATUSES, readEntries, toSeconds, youtubeId } from './lib.mjs';
+import { computeLayouts } from './layout.mjs';
 
 export const CREDIBLE = ['congress', 'government', 'intelligence', 'military', 'aviator', 'sensor-operator', 'academia', 'astronaut', 'aerospace', 'law-enforcement'];
 const REPORTER = ['journalist', 'policy-expert'];
 export const MASS_MIN_WITNESSES = 50;
 
-export function build({ check = false, quiet = false } = {}) {
+export async function build({ check = false, quiet = false } = {}) {
   const t0 = Date.now();
   const errors = [];
   const warnings = [];
@@ -323,7 +324,22 @@ export function build({ check = false, quiet = false } = {}) {
   fs.rmSync(out, { recursive: true, force: true });
   fs.mkdirSync(path.join(out, 'transcripts'), { recursive: true });
   fs.mkdirSync(path.join(out, 'doctext'), { recursive: true });
-  const kb = { built: new Date().toISOString(), filesBase: process.env.FILES_BASE || null, entities, edges: [...edges.values()], stats, warnings, errors };
+  const edgeList = [...edges.values()];
+  // graph layout, precomputed (node size = links to other graph nodes, as in the app)
+  const isRecord = new Set(entities.filter(e => e.type === 'record').map(e => e.id));
+  const degree = new Map();
+  for (const x of edgeList) if (x.kind !== 'mention' && !isRecord.has(x.s) && !isRecord.has(x.t)) for (const id of [x.s, x.t]) degree.set(id, (degree.get(id) || 0) + 1);
+  const layouts = await computeLayouts(entities, edgeList, id => degree.get(id) || 0);
+  fs.writeFileSync(path.join(out, 'layout.js'), `window.KB_LAYOUT=${JSON.stringify(layouts)};\n`);
+  // PURSUE record summaries load on demand (records.js), keeping the first download small
+  const recordBodies = {};
+  const kbEntities = entities.map(e => {
+    if (e.type !== 'record' || !e.body) return e;
+    recordBodies[e.id] = e.body;
+    return { ...e, body: '', bodyLazy: true };
+  });
+  fs.writeFileSync(path.join(out, 'records.js'), `window.KB_RECORD_BODIES=${JSON.stringify(recordBodies)};window.KBR&&KBR();\n`);
+  const kb = { built: new Date().toISOString(), filesBase: process.env.FILES_BASE || null, entities: kbEntities, edges: edgeList, stats, warnings, errors };
   fs.writeFileSync(path.join(out, 'kb.js'), `window.KB=${JSON.stringify(kb)};\n`);
   fs.writeFileSync(path.join(out, 'mentions.js'), `window.KB_MENTIONS=${JSON.stringify(mentions)};\nwindow.KB_TOGETHER=${JSON.stringify(together)};\n`);
   for (const [vid, t] of transcripts) {
@@ -340,7 +356,7 @@ export function build({ check = false, quiet = false } = {}) {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const check = process.argv.includes('--check');
-  const { errors, warnings, stats } = build({ check });
+  const { errors, warnings, stats } = await build({ check });
   if (check) console.log(`${stats.entities} entries · ${warnings.length} warnings · ${errors.length} errors`);
   process.exit(errors.length ? 1 : 0);
 }

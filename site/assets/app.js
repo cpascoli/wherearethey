@@ -242,7 +242,7 @@
     });
   }
   $('#f-mentions').addEventListener('change', e => { state.showMentions = e.target.checked; filtersChanged(); });
-  $('#btn-relayout').addEventListener('click', () => layoutGraph(true));
+  $('#btn-relayout').addEventListener('click', () => layoutGraph(true, { fresh: true }));
 
   // ───────────── graph ─────────────
   let cy = null, layoutTimer = null, hasFcose = false;
@@ -291,7 +291,7 @@
     return `${best.a}\n${b}`;
   }
   function initGraph() {
-    const degree = id => adj.get(id).filter(x => x.kind !== 'mention').length;
+    const degree = id => adj.get(id).filter(x => x.kind !== 'mention' && byId.get(x.other)?.type !== 'record').length;
     const elements = [
       ...ents.filter(e => e.type !== 'record').map(e => ({ data: {
         id: e.id, label: twoLines(e.name), type: e.type,
@@ -319,11 +319,27 @@
       cy.edges().forEach(ed => ed.toggleClass('hidden', (ed.data('kind') === 'mention' && !state.showMentions) || !visible.has(ed.data('source')) || !visible.has(ed.data('target'))));
     });
   }
-  function layoutGraph(animate) {
+  // Positions computed at build time (scripts/layout.mjs) for the default view and the full network
+  const LAYOUT = window.KB_LAYOUT || null;
+  function presetFor(eles) {
+    if (!LAYOUT || state.showMentions) return null;
+    const ids = eles.nodes().map(n => n.id());
+    for (const pos of [LAYOUT.official, LAYOUT.all]) if (pos && ids.length === Object.keys(pos).length && ids.every(id => pos[id])) return pos;
+    return null;
+  }
+  function layoutGraph(animate, { fresh = false } = {}) {
     if (!cy) return;
     const eles = cy.elements().not('.hidden');
+    const preset = !fresh && presetFor(eles);
+    if (preset) {
+      eles.layout({ name: 'preset', positions: n => ({ x: preset[n.id()][0], y: preset[n.id()][1] }), fit: true, padding: 40, animate: !!animate, animationDuration: 500 }).run();
+      return;
+    }
+    // first draw of a filtered view: start from the precomputed full-network positions so the force layout settles fast
+    const seeded = !animate && !fresh && LAYOUT?.all;
+    if (seeded) cy.batch(() => eles.nodes().forEach(n => { const p = LAYOUT.all[n.id()]; if (p) n.position({ x: p[0], y: p[1] }); }));
     eles.layout(hasFcose ? {
-      name: 'fcose', quality: 'proof', randomize: !animate, animate: !!animate, animationDuration: 700, fit: true, padding: 40,
+      name: 'fcose', quality: seeded ? 'default' : 'proof', randomize: !animate && !seeded, animate: !!animate, animationDuration: 700, fit: true, padding: 40,
       nodeRepulsion: n => 9000, idealEdgeLength: ed => (ed.data('kind') === 'mention' ? 160 : 75), edgeElasticity: () => 0.4,
       gravity: 0.3, gravityRangeCompound: 1.5, numIter: 3000, nodeSeparation: 90, packComponents: true, tile: true,
       tilingPaddingVertical: 38, tilingPaddingHorizontal: 90, // room for two-line labels on unconnected nodes
@@ -761,9 +777,26 @@
     cy.animate({ fit: { eles: cy.$('.path'), padding: 80 }, duration: 500 });
   }
 
+  // PURSUE record summaries live in data/records.js, fetched on first need (or when the browser is idle)
+  let recordsLoading = null;
+  function loadRecordBodies() {
+    if (!recordsLoading) recordsLoading = new Promise(res => {
+      window.KBR = () => {
+        for (const [id, html] of Object.entries(window.KB_RECORD_BODIES || {})) { const e = byId.get(id); if (e) { e.body = html; e.bodyLazy = false; searchCache.delete(id); } }
+        res();
+      };
+      const s = document.createElement('script');
+      s.src = 'data/records.js';
+      s.onerror = () => res();
+      document.head.append(s);
+    });
+    return recordsLoading;
+  }
+  (window.requestIdleCallback || (f => setTimeout(f, 2500)))(() => loadRecordBodies(), { timeout: 8000 });
   function openPanel(id) {
     const e = byId.get(id);
     if (!e) { closePanel(); return; }
+    if (e.bodyLazy) loadRecordBodies().then(() => { if (state.sel === id && !$('#panel').hidden) openPanel(id); });
     const body = $('#panel-body');
     body.innerHTML = renderPanel(e);
     if (state.reading) layoutReading(body); else body.classList.remove('reading');
