@@ -630,6 +630,9 @@
       h.push(`<div class="p-sec"><h4>Credentials</h4><ul class="cred-list">${e.credentials.map(c => `<li><span class="cred-cat">${esc(CRED_CAT[c.category] || c.category)}</span><span>${esc(c.role)}</span></li>`).join('')}</ul></div>`);
     }
     if (e.body) h.push(`<div class="p-sec"><h4>${e.type === 'person' ? 'Profile' : 'Summary'}</h4><div class="p-body p-bio">${e.body}</div></div>`);
+    if (e.links.length || e.files.length) {
+      h.push(`<div class="p-sec p-side" id="sec-links"><h4>Sources, links & files</h4><ul class="p-links">${e.links.map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.url)} ↗</a></li>`).join('')}${e.files.map(f => `<li><a href="${esc(fileUrl(f))}" target="_blank">📄 ${esc(f.split('/').pop())}</a></li>`).join('')}</ul></div>`);
+    }
     if (e.facts.length) {
       h.push(`<div class="p-sec" id="sec-claims"><h4>Notes & claims <span>${e.facts.length}</span></h4><ul class="facts" data-collapse="8">${e.facts.map(f => {
         const src = f.source ? (f.source.file ? `<a href="${esc(fileUrl(f.source.file))}" target="_blank">📄 ${esc(f.source.file.split('/').pop())}</a>` : f.source.url ? `<a href="${esc(f.source.url)}" target="_blank" rel="noopener">source ↗</a>`
@@ -688,9 +691,6 @@
       }
     }
     h.push(renderDots(e));
-    if (e.links.length || e.files.length) {
-      h.push(`<div class="p-sec p-side" id="sec-links"><h4>Links & files</h4><ul class="p-links">${e.links.map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.url)} ↗</a></li>`).join('')}${e.files.map(f => `<li><a href="${esc(fileUrl(f))}" target="_blank">📄 ${esc(f.split('/').pop())}</a></li>`).join('')}</ul></div>`);
-    }
     if (e.tags.length) h.push(`<div class="p-sec p-side"><h4>Themes</h4><div class="chips">${e.tags.map(t => `<button class="chip ${state.tags.has(t) ? 'on' : ''}" data-filter-tag="${esc(t)}">${esc(t)}</button>`).join('')}</div></div>`);
     h.push(`<div class="p-edit">Edit <code>${esc(e.file)}</code><button class="link" data-copy="${esc(e.file)}">copy path</button></div>`);
     return h.join('');
