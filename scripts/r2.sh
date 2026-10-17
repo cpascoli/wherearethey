@@ -11,7 +11,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 REMOTE="${R2_REMOTE:-r2}"
 BUCKET="${R2_BUCKET:-wherearethey}"
-FILTERS=(--include "*.pdf" --include "*.png" --include "*.jpg" --include "*.jpeg" --include "*.gif" --include "*.mp4" --exclude ".incoming/**")
+FILTERS=(--filter "- .incoming/**" --filter "+ *.pdf" --filter "+ *.png" --filter "+ *.jpg" --filter "+ *.jpeg" --filter "+ *.gif" --filter "+ *.mp4" --filter "- *")
 
 if ! rclone listremotes | grep -qx "${REMOTE}:"; then
   echo "No rclone remote called '${REMOTE}'. Run the one-time setup in README.md (Heavy files → R2)." >&2
