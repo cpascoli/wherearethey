@@ -534,7 +534,7 @@
     }
     // Watch: videos that record, feature or are about this entry — playable straight from the dossier
     if (e.type !== 'video') {
-      const WATCH = { 'recording of': 'Recording', features: 'Appearance', about: 'About this', 'speaks in': 'Speaks in' };
+      const WATCH = { 'trailer of': 'Trailer', 'recording of': 'Recording', features: 'Appearance', about: 'About this', 'speaks in': 'Speaks in' };
       const vids = new Map();
       for (const x of adj.get(e.id)) {
         const v = byId.get(x.other);
@@ -544,7 +544,7 @@
       }
       if (vids.size) {
         const list = [...vids].map(([id, label]) => [byId.get(id), label])
-          .sort((a, b) => (a[1] === 'Recording' ? -1 : 0) - (b[1] === 'Recording' ? -1 : 0) || String(b[0].date).localeCompare(String(a[0].date)));
+          .sort((a, b) => { const rank = l => (l === 'Trailer' ? 0 : l === 'Recording' ? 1 : 2); return rank(a[1]) - rank(b[1]) || String(b[0].date).localeCompare(String(a[0].date)); });
         h.push(`<div class="p-sec"><h4>Watch <span>${list.length} video${list.length > 1 ? 's' : ''}</span></h4><div class="watch">${list.map(([v, label]) => `
           <div class="watch-item" data-play="${v.id}@0" title="Play with synced transcript">
             <div class="wthumb"><img src="${vthumb(v)}" alt="" loading="lazy"><span class="wplay">▶</span>${v.duration ? `<span class="wdur">${fmtDur(v.duration)}</span>` : ''}</div>

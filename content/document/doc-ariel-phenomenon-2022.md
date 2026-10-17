@@ -11,6 +11,8 @@ rel:
 links:
   - label: IMDb
     url: https://www.imdb.com/title/tt20216382/
+  - label: Official trailer (IMDb)
+    url: https://www.imdb.com/video/vi4025926169/
   - label: Apple TV
     url: https://tv.apple.com/us/movie/ariel-phenomenon/umc.cmc.5dio1rn9o19nmh14lbew4tzoq
 facts:
