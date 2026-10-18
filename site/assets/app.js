@@ -443,19 +443,80 @@
     for (const id of T.open) for (const o of graphNeighbours(id, bridges)) shown.add(o);
     return shown;
   }
-  let trailPrev = null; // files on screen before the last change: new ones start next to the file that revealed them
-  function trailChanged(anchorId) {
+  // Extending a trail must not reshuffle it: files already on screen keep their place, new ones fan out around the
+  // file that revealed them (away from the previous step), a short settle pass moves only the new ones, and the
+  // camera pans just enough to show them. A full layout happens only for a new trail (or a filter change).
+  function trailChanged(anchorId, { relayout = false } = {}) {
     if (!cy) return;
-    trailPrev = new Set(cy.nodes().not('.hidden').map(n => n.id()));
+    const before = cy.nodes().not('.hidden');
+    const prev = new Set(before.map(n => n.id()));
     applyGraphFilter();
-    const anchor = anchorId && cy.getElementById(anchorId);
-    if (state.trail && anchor?.length && trailPrev.has(anchorId)) {
-      const fresh = cy.nodes().not('.hidden').filter(n => !trailPrev.has(n.id())), c = anchor.position();
-      fresh.forEach((n, i) => { const a = (2 * Math.PI * i) / fresh.length; n.position({ x: c.x + 140 * Math.cos(a), y: c.y + 140 * Math.sin(a) }); });
-    }
     highlight(state.sel);
-    clearTimeout(layoutTimer);
-    layoutTimer = setTimeout(() => layoutGraph(true), 60);
+    if (relayout) { clearTimeout(layoutTimer); layoutTimer = setTimeout(() => layoutGraph(true), 60); return; }
+    const fresh = cy.nodes().not('.hidden').filter(n => !prev.has(n.id()));
+    if (!fresh.length) return; // only removals: nothing moves
+    const anchor = anchorId ? cy.getElementById(anchorId) : null;
+    if (!state.trail || prev.size === 0) { clearTimeout(layoutTimer); layoutTimer = setTimeout(() => layoutGraph(true), 60); return; }
+    let head = anchor?.length && prev.has(anchorId) ? anchor : null;
+    if (!head) {
+      // a file pinned from search: put it in the free space at the edge of what's on screen, then settle
+      const bb = before.boundingBox();
+      fresh.forEach((n, k) => n.position({ x: bb.x2 + 140, y: (bb.y1 + bb.y2) / 2 + k * 70 }));
+      head = fresh[0];
+    } else fanOut(head, fresh.not(head));
+    settle(before.filter(n => !n.hasClass('hidden')), fresh, head);
+  }
+  // new neighbours on an arc facing away from the previous step (or from the centre of what's already shown)
+  function fanOut(head, nodes) {
+    if (!nodes.length) return;
+    const c = head.position(), steps = state.trail.steps, i = steps.indexOf(head.id());
+    const from = i > 0 ? cy.getElementById(steps[i - 1]) : null;
+    const others = cy.nodes().not('.hidden').not(nodes).not(head);
+    const ref = from?.length ? from.position() : others.length ? (b => ({ x: (b.x1 + b.x2) / 2, y: (b.y1 + b.y2) / 2 }))(others.boundingBox()) : { x: c.x, y: c.y + 1 };
+    const dir = Math.atan2(c.y - ref.y, c.x - ref.x) || 0;
+    // stay on the far side (a half circle at most): more files go on further rings rather than wrapping round
+    const arc = nodes.length <= 3 ? Math.PI / 2 : Math.PI * 0.9;
+    let k = 0, ring = 0;
+    while (k < nodes.length) {
+      const r = 160 + ring * 110, cap = Math.max(1, Math.floor((arc * r) / 85)), n = Math.min(cap, nodes.length - k);
+      for (let j = 0; j < n; j++, k++) {
+        const a = dir + (n === 1 ? 0 : -arc / 2 + (arc * j) / (n - 1));
+        nodes[k].position({ x: c.x + r * Math.cos(a), y: c.y + r * Math.sin(a) });
+      }
+      ring++;
+    }
+  }
+  // settle overlaps by moving only the new files; everything already on screen is pinned in place
+  function settle(fixed, fresh, head) {
+    const done = () => showNew(fresh.union(head));
+    if (!hasFcose) { done(); return; }
+    cy.elements().not('.hidden').layout({
+      name: 'fcose', randomize: false, animate: true, animationDuration: 450, fit: false, quality: 'default', numIter: 800,
+      fixedNodeConstraint: fixed.map(n => ({ nodeId: n.id(), position: { ...n.position() } })),
+      nodeRepulsion: () => 9000, idealEdgeLength: () => 90, edgeElasticity: () => 0.45, gravity: 0.05, nodeSeparation: 90, packComponents: false, tile: false,
+    }).one('layoutstop', done).run();
+  }
+  // the area the graph is visible in (left of the side panel on desktop)
+  function viewArea() {
+    cy.resize();
+    const cr = cy.container().getBoundingClientRect(), panel = $('#panel');
+    const pr = !panel.hidden && window.innerWidth > 860 ? panel.getBoundingClientRect() : null;
+    return { w: pr && pr.left < cr.right ? Math.max(200, pr.left - cr.left) : cy.width(), h: cy.height() };
+  }
+  // bring files into view with the smallest move: no move if visible, else a pan, else zoom out just enough
+  function showNew(eles) {
+    const { w, h } = viewArea(), m = 40, top = state.trail ? 90 : m; // leave room for the trail bar…
+    const legend = $('#legend'), bottom = legend && legend.offsetParent ? Math.max(m, cy.container().getBoundingClientRect().bottom - legend.getBoundingClientRect().top + 16) : m; // …and the legend
+    const rb = eles.renderedBoundingBox();
+    const scale = Math.min(1, (w - 2 * m) / Math.max(rb.w, 1), (h - top - bottom) / Math.max(rb.h, 1));
+    if (scale < 1) {
+      const z = cy.zoom() * scale, bb = eles.boundingBox();
+      cy.animate({ zoom: z, pan: { x: w / 2 - z * (bb.x1 + bb.x2) / 2, y: top + (h - top - bottom) / 2 - z * (bb.y1 + bb.y2) / 2 } }, { duration: 350 });
+      return;
+    }
+    const dx = rb.x1 < m ? m - rb.x1 : rb.x2 > w - m ? w - m - rb.x2 : 0;
+    const dy = rb.y1 < top ? top - rb.y1 : rb.y2 > h - bottom ? h - bottom - rb.y2 : 0;
+    if (dx || dy) cy.animate({ panBy: { x: dx, y: dy } }, { duration: 350 });
   }
   function startTrail(id) {
     if (!byId.has(id)) return;
@@ -464,7 +525,7 @@
     if (state.view !== 'graph') go('graph');
     if (state.sel !== id) select(id, { from: 'trail' });
     if (window.innerWidth <= 860) closePanel(); // on a phone the panel would cover the graph you're exploring
-    trailChanged(id);
+    trailChanged(id, { relayout: true });
   }
   function expandFile(id) {
     const T = state.trail;
@@ -531,7 +592,7 @@
     const op = e.target.closest('[data-trail-open]'); if (op) { select(op.dataset.trailOpen, { from: 'trail' }); return; }
     const pp = e.target.closest('[data-trail-pop]'); if (pp) { popStep(pp.dataset.trailPop); return; }
     if (e.target.closest('[data-trail-exit]')) { exitTrail(); return; }
-    if (e.target.closest('[data-unhide]')) { state.hiddenIds.clear(); trailChanged(); return; }
+    if (e.target.closest('[data-unhide]')) { state.hiddenIds.clear(); trailChanged(null, { relayout: true }); return; }
   });
 
   // right-click (long-press on touch) menu on a file
@@ -587,6 +648,7 @@
   };
   function layoutGraph(animate, { fresh = false } = {}) {
     if (!cy) return;
+    cy.resize(); // the side panel may have just opened or closed
     const eles = cy.elements().not('.hidden');
     const preset = !fresh && presetFor(eles);
     if (preset) {
@@ -598,7 +660,7 @@
     const seeded = !animate && !fresh && LAYOUT?.all;
     if (seeded) cy.batch(() => eles.nodes().forEach(n => { const p = LAYOUT.all[n.id()]; if (p) n.position({ x: p[0], y: p[1] }); }));
     eles.layout(hasFcose ? {
-      name: 'fcose', quality: seeded ? 'default' : 'proof', randomize: !animate && !seeded, animate: !!animate, animationDuration: 700, fit: true, padding: 40,
+      name: 'fcose', quality: seeded ? 'default' : 'proof', randomize: !animate && !seeded, animate: !!animate, animationDuration: 700, fit: !state.trail, padding: 40, // a trail is framed afterwards, in the area left of the panel
       nodeRepulsion: n => 9000, idealEdgeLength: ed => (ed.data('kind') === 'mention' ? 160 : 75), edgeElasticity: () => 0.4,
       gravity: 0.3, gravityRangeCompound: 1.5, numIter: 3000, nodeSeparation: 90, packComponents: true, tile: true,
       tilingPaddingVertical: 38, tilingPaddingHorizontal: 90, // room for two-line labels on unconnected nodes
@@ -615,10 +677,7 @@
   }
   function frameEles(hood, always = false) {
     if (!cy || !hood.length) return;
-    cy.resize();
-    const cr = cy.container().getBoundingClientRect(), panel = $('#panel');
-    const pr = !panel.hidden && window.innerWidth > 860 ? panel.getBoundingClientRect() : null;
-    const w = pr && pr.left < cr.right ? Math.max(200, pr.left - cr.left) : cy.width(), h = cy.height();
+    const { w, h } = viewArea();
     const rb = hood.renderedBoundingBox(), m = 24, bb = hood.boundingBox(), pad = 60;
     const z = Math.min(1.4, Math.max(0.3, Math.min((w - 2 * pad) / Math.max(bb.w, 1), (h - 2 * pad) / Math.max(bb.h, 1))));
     // leave it alone when it's in view and big enough to read
