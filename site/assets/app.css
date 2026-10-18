@@ -693,6 +693,7 @@ body.resizing iframe { pointer-events: none; }
 .more-menu a:hover { background: var(--panel-2); text-decoration: none; }
 .more-menu a small { color: var(--muted); font-size: 12px; }
 .more-menu .mm-sep { height: 1px; background: var(--border); margin: 6px 4px; }
+@media (min-width: 861px) { .more-menu .mm-about { display: none; } } /* desktop shows About in the top bar */
 .lib-tabs { margin-bottom: 14px; }
 @media (max-width: 860px) {
   .views { grid-template-columns: repeat(5, 1fr) !important; }
