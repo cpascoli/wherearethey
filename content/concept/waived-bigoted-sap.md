@@ -11,3 +11,6 @@ facts:
     status: unverified
 ---
 
+"Waived and bigoted" describes a waived special access program in which access is also limited to a named roster of individuals, the "bigot list", who have been formally cleared and briefed into the compartment. The term is used in UAP whistleblower accounts; its precise official usage has not been confirmed from a primary source here.
+
+*Sources: unverified*

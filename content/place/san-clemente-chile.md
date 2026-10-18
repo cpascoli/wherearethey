@@ -15,3 +15,9 @@ facts:
   - text: CEFAA specialists suggested that some sightings could be military aircraft on secret manoeuvres or reflected lights.
     status: claimed
 ---
+
+San Clemente, in Chile's Maule Region, is known for reports of UFO sightings: more than a hundred have been reported around the town since 1995. In 2008 the municipality and Chile's tourism service launched a 30 km "UFO route", which includes the El Enladrillado plateau, a flat basalt formation in the Andes.
+
+Specialists from CEFAA, Chile's official UAP committee, have suggested that some of the sightings could be military aircraft on secret manoeuvres or reflected lights.
+
+*Sources: [Chile Travel](https://chile.travel/en/blog/ufology-in-chile-the-best-destinations-for-the-sighting-of-ufos-2/)*
