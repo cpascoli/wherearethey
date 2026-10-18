@@ -13,3 +13,7 @@ facts:
     status: claimed
     source: https://en.wikipedia.org/wiki/Jeremy_Corbell
 ---
+
+Jeremy Corbell is a filmmaker and UFO investigative reporter who hosts the WEAPONIZED podcast with George Knapp. He directed *Bob Lazar: Area 51 & Flying Saucers* (2018) and has released leaked U.S. Navy UAP footage, including the USS Omaha video and images of triangular objects later explained as a lens artefact. He is a reporter rather than a witness under this archive's criteria.
+
+*Sources: Lex Fridman Podcast #262*

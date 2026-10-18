@@ -25,3 +25,8 @@ facts:
     source: https://www.hollywoodreporter.com/news/general-news/jay-stratton-ufo-memoir-1235996607/
 ---
 
+Jay Stratton was chief of air and space warfare at the Defense Intelligence Agency and the first director of the Pentagon's UAP Task Force when it was formalised in August 2020, after more than 16 years leading U.S. government UAP investigations, including the 2004 Nimitz "Tic Tac" case.
+
+In his memoir *Out of the Shadows* (2026) and in *The Age of Disclosure* (2025) he says the United States holds craft of non-human origin. Claims that he co-founded AATIP with Luis Elizondo are unverified.
+
+*Sources: Out of the Shadows · The Age of Disclosure*

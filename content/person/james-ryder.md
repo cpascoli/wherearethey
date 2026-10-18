@@ -25,3 +25,6 @@ facts:
     status: unverified
 ---
 
+James T. Ryder was a vice president at Lockheed Martin. A remark attributed to him, "Absolutely I know there's telepathy. Dr. Targ worked for me for years", circulates online, and UAP accounts claim he was at Lockheed when an alleged transfer of a non-human craft to Bigelow Aerospace was blocked; these claims are unverified.
+
+*Sources: unverified online accounts*

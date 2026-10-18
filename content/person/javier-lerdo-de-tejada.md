@@ -9,3 +9,7 @@ tags: [aviator, international]
 rel:
   - [ witness, inc-manises-1979 ]
 ---
+
+Francisco Javier Lerdo de Tejada was the captain of Transportes Aéreos Españoles flight 297 on 11 November 1979. After the crew saw red lights that seemed to approach and follow the aircraft, he diverted to Valencia-Manises, an event often described as the first emergency landing of a commercial flight because of a UFO.
+
+*Sources: Manises incident record*

@@ -20,3 +20,9 @@ facts:
     status: claimed
     source: https://www.cufos.org/
 ---
+
+J. Allen Hynek (1910–1986) was an astronomer at Ohio State and later Northwestern University who served as the U.S. Air Force's scientific consultant on UFOs for Projects Sign, Grudge and Blue Book from 1948 to 1969. He began as a sceptic and became an advocate of serious scientific study of the reports.
+
+He coined the "close encounters" classification and founded the Center for UFO Studies (CUFOS) in 1973. He testified at the House Armed Services hearing in 1966 and the House science committee symposium in 1968.
+
+*Sources: House hearing records (1966, 1968) · [Wikipedia](https://en.wikipedia.org/wiki/J._Allen_Hynek)*
