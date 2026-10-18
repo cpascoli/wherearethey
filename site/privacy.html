@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy &amp; cookies · Where Are They</title>
+  <meta name="description" content="What Where Are They collects, what it doesn't, and how to change your cookie choice.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='5' fill='%237cc4ff'/><circle cx='16' cy='16' r='13' fill='none' stroke='%237cc4ff' stroke-width='2' stroke-dasharray='4 4'/></svg>">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <style>
+    :root { --bg: #0b1014; --panel: #121a20; --text: #e6edf1; --muted: #9aa8b2; --border: #22303a; --accent: #6fcfbf; color-scheme: dark; }
+    @media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) { --bg: #f6f7f5; --panel: #fff; --text: #142027; --muted: #5b6a73; --border: #dfe4e2; --accent: #0f766e; color-scheme: light; } }
+    :root[data-theme="light"] { --bg: #f6f7f5; --panel: #fff; --text: #142027; --muted: #5b6a73; --border: #dfe4e2; --accent: #0f766e; color-scheme: light; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 'IBM Plex Sans', system-ui, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+    a { color: var(--accent); }
+    h1 { font-size: 30px; margin: 18px 0 6px; } h2 { font-size: 18px; margin: 30px 0 6px; }
+    .kicker, .back { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+    .back { text-decoration: none; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 8px 0; }
+    td, th { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    button { font: inherit; background: var(--panel); color: var(--text); border: 1px solid var(--border); border-radius: 4px; padding: 7px 12px; cursor: pointer; }
+    button:hover { border-color: var(--accent); }
+    .muted { color: var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="./">← Where Are They</a>
+  <div class="kicker" style="margin-top:22px">Privacy &amp; cookies</div>
+  <h1>What this site collects</h1>
+  <p>Where Are They is a personal, non-commercial research archive. It has no accounts, no ads and no newsletter, and sells or shares no data.</p>
+
+  <h2>Analytics</h2>
+  <p><b>In the EU/EEA, the UK and Switzerland</b>, analytics is off unless you click <b>Accept</b> on the cookie banner. <b>Elsewhere</b>, analytics is on by default and you can switch it off at any time with the button below or the “Cookie settings” link. Your country is worked out from your connection by our host (Netlify) only to decide whether to show the banner; it is not stored.</p>
+  <p>When analytics is on, the site loads <b>Google Analytics 4</b> to count visits and see which pages and videos are used, so the archive can be improved. Google Analytics sets first-party cookies (<code>_ga</code>, <code>_ga_*</code>) and receives your approximate location (country/city), device and browser type, and the pages you view. Google Analytics 4 does not log or store IP addresses. Advertising features are switched off. If you click <b>Reject</b>, Google Analytics is not loaded and its cookies are removed.</p>
+  <p>Your current choice: <b id="current">…</b> <button id="change">Change cookie settings</button></p>
+
+  <h2>Stored in your browser (no consent needed)</h2>
+  <p>The site keeps a few preferences in your browser's local storage so it works the way you left it: light/dark theme, filters, panel width, and your cookie choice. They never leave your device.</p>
+
+  <h2>Content from other services</h2>
+  <table>
+    <tr><th>Service</th><th>When</th><th>Why</th></tr>
+    <tr><td>YouTube (privacy-enhanced mode, <code>youtube-nocookie.com</code>)</td><td>When you open a YouTube video</td><td>Plays the video. YouTube sets cookies only once you play it.</td></tr>
+    <tr><td>X (Twitter) embed</td><td>When you open a video hosted on X</td><td>Shows the original post; X may set its own cookies.</td></tr>
+    <tr><td>Cloudflare R2</td><td>When you open a document or a self-hosted video</td><td>Serves the archive's files.</td></tr>
+    <tr><td>Google Fonts, cdnjs, jsDelivr, map tiles (Esri)</td><td>On page load</td><td>Fonts, code libraries and map imagery. Like any web request, these providers see your IP address.</td></tr>
+    <tr><td>Netlify</td><td>Every visit</td><td>Hosts the site; keeps standard server logs.</td></tr>
+  </table>
+
+  <h2>Questions</h2>
+  <p>The archive's source is public on <a href="https://github.com/cpascoli/wherearethey">GitHub</a>; open an issue there for questions or requests about this policy.</p>
+  <p class="muted">Last updated: October 2026.</p>
+</main>
+<script>
+  var cur = null; try { cur = localStorage.getItem('wat:consent'); } catch (e) {}
+  document.getElementById('current').textContent = cur === 'granted' ? 'analytics accepted' : cur === 'denied' ? 'analytics rejected' : 'no choice yet (default for your region)';
+  document.getElementById('change').addEventListener('click', function () {
+    try { localStorage.removeItem('wat:consent'); } catch (e) {}
+    location.href = './'; // the banner appears again on the main page
+  });
+  try { var th = localStorage.getItem('wat:theme'); if (th) document.documentElement.dataset.theme = JSON.parse(th); } catch (e) {}
+</script>
+</body>
+</html>

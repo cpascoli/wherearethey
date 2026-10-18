@@ -178,7 +178,7 @@
     renderHist();
     $('#f-mentions').checked = state.showMentions;
     const s = KB.stats;
-    $('#f-stats').innerHTML = `<b>${s.entities}</b> entries · <b>${s.edges}</b> links<br><b>${s.transcripts}</b> transcripts · <b>${s.transcriptHours}</b> hours · <b>${s.mentions.toLocaleString()}</b> mentions<br>Built ${new Date(KB.built).toLocaleString()}` +
+    $('#f-stats').innerHTML = `<b>${s.entities}</b> entries · <b>${s.edges}</b> links<br><b>${s.transcripts}</b> transcripts · <b>${s.transcriptHours}</b> hours · <b>${s.mentions.toLocaleString()}</b> mentions<br>Built ${new Date(KB.built).toLocaleString()}${window.GA_ID ? ' · <a href="privacy.html">Privacy</a> · <a href="#" data-open-consent>Cookie settings</a>' : ''}` +
       (KB.warnings.length ? `<details><summary>${KB.warnings.length} build warning${KB.warnings.length > 1 ? 's' : ''}</summary><ul>${KB.warnings.map(w => `<li>${esc(w)}</li>`).join('')}</ul></details>` : '');
   }
   function renderHist() {
@@ -1138,6 +1138,7 @@
       if (!yt) {
         ytReadyFlag = false;
         yt = new YT.Player('yt', {
+          host: 'https://www.youtube-nocookie.com', // privacy-enhanced mode: no YouTube cookies until a video is played
           videoId: v.youtube, playerVars: { start: Math.floor(t), autoplay: autoplay ? 1 : 0, rel: 0, modestbranding: 1, playsinline: 1 },
           events: { onReady: () => {
             ytReadyFlag = true;
@@ -1392,7 +1393,7 @@
 
         <footer class="home-foot">
           <div><b>WHERE ARE THEY</b> is a personal research archive. It collects public, on-record statements and official documents. It does not make claims of its own: every statement is attributed, and every status can be checked against its source.</div>
-          <div class="muted">Built ${new Date(KB.built).toLocaleDateString()} · ${KB.stats.entities} files · ${KB.stats.edges.toLocaleString()} links · sources include congressional records, war.gov/UFO (PURSUE), the CIA and FBI reading rooms, NARA and The Black Vault.</div>
+          <div class="muted">Built ${new Date(KB.built).toLocaleDateString()} · ${KB.stats.entities} files · ${KB.stats.edges.toLocaleString()} links · sources include congressional records, war.gov/UFO (PURSUE), the CIA and FBI reading rooms, NARA and The Black Vault. <a href="privacy.html">Privacy &amp; cookies</a> · <a href="#" data-open-consent>Cookie settings</a></div>
         </footer>
       </div>`;
     startHero();
@@ -1714,10 +1715,10 @@
   // Google Analytics: one page_view per in-app view, with the hash route turned into a readable path
   // (e.g. /videos/v-jre-hal-puthoff-2025, /graph?sel=aawsap). Replaced history entries don't count twice.
   let lastTracked = null;
-  function trackView() {
-    if (!window.GA_ID || typeof gtag !== 'function') return;
+  function trackView(force) {
+    if (!window.GA_ON || typeof gtag !== 'function') return; // only after consent
     const route = location.hash.replace(/^#/, '') || '/';
-    if (route === lastTracked) return;
+    if (route === lastTracked && !force) return;
     lastTracked = route;
     const [path, qs] = route.split('?');
     const sel = new URLSearchParams(qs || '').get('sel');
@@ -1839,5 +1840,6 @@
   // the logo returns home without a page reload
   $('.brand').addEventListener('click', e => { e.preventDefault(); go('home'); });
   applyRoute(true);
+  window.trackView = trackView; // the consent banner records the current page once the visitor accepts
   trackView();
 })();

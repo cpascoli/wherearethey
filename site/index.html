@@ -4,16 +4,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Where Are They</title>
-  <!-- Google tag (gtag.js) — skipped on local dev; page views are sent by app.js for each in-app view -->
+  <!--GEO-->
+  <!-- Google Analytics with consent: nothing loads until the visitor accepts (Consent Mode, "basic").
+       Skipped entirely on local dev. The banner lives at the end of <body>; page views come from app.js. -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     window.GA_ID = /^(localhost|127\.0\.0\.1|0\.0\.0\.0)$/.test(location.hostname) || location.protocol === 'file:' ? null : 'G-GHW5QGX5DH';
-    if (window.GA_ID) {
+    gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+    window.GA_ON = false;
+    // Consent is required in the EEA, the UK and Switzerland. The country comes from the Netlify edge function
+    // (netlify/edge-functions/geo.js); if it's unknown we play safe and ask.
+    var CONSENT_COUNTRIES = 'AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE IS LI NO GB CH'.split(' ');
+    window.CONSENT_REQUIRED = !window.VISITOR_COUNTRY || CONSENT_COUNTRIES.indexOf(window.VISITOR_COUNTRY) >= 0;
+    window.startAnalytics = function () {
+      if (!window.GA_ID || window.GA_ON) return;
+      window.GA_ON = true;
+      gtag('consent', 'update', { analytics_storage: 'granted' });
       var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID; document.head.appendChild(s);
       gtag('js', new Date());
-      gtag('config', window.GA_ID, { send_page_view: false });
-    }
+      gtag('config', window.GA_ID, { send_page_view: false, ad_storage: 'denied' });
+    };
+    var saved = null; try { saved = localStorage.getItem('wat:consent'); } catch (e) {}
+    // accepted earlier, or no choice yet in a country where analytics doesn't need prior consent (opt-out via Cookie settings)
+    if (saved === 'granted' || (saved === null && !window.CONSENT_REQUIRED)) window.startAnalytics();
   </script>
   <meta name="description" content="A navigable knowledge map of UAP / NHI testimony, programs, hearings and incidents.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='5' fill='%237cc4ff'/><circle cx='16' cy='16' r='13' fill='none' stroke='%237cc4ff' stroke-width='2' stroke-dasharray='4 4'/></svg>">
@@ -136,5 +150,30 @@
   <script src="data/mentions.js"></script>
   <script src="data/layout.js"></script>
   <script src="assets/app.js"></script>
+  <div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden>
+    <p>We'd like to use Google Analytics cookies to count visits and see which pages are useful. No ads, no selling of data. Analytics stays off unless you accept. <a href="privacy.html">Privacy &amp; cookies</a></p>
+    <div class="consent-actions"><button class="btn small" data-consent="denied">Reject</button><button class="btn small primary" data-consent="granted">Accept</button></div>
+  </div>
+  <script>
+    (function () {
+      var box = document.getElementById('consent');
+      var choice = null; try { choice = localStorage.getItem('wat:consent'); } catch (e) {}
+      window.openConsent = function () { box.hidden = false; };
+      if (window.GA_ID && !choice && window.CONSENT_REQUIRED) box.hidden = false;
+      box.addEventListener('click', function (e) {
+        var b = e.target.closest('[data-consent]'); if (!b) return;
+        var v = b.getAttribute('data-consent');
+        try { localStorage.setItem('wat:consent', v); } catch (err) {}
+        box.hidden = true;
+        if (v === 'granted') { window.startAnalytics(); window.trackView && window.trackView(true); }
+        else {
+          // rejecting or withdrawing consent: stop storage and clear any GA cookies from an earlier "Accept"
+          if (window.GA_ON) { gtag('consent', 'update', { analytics_storage: 'denied' }); window.GA_ON = false; }
+          document.cookie.split(';').forEach(function (c) { var n = c.split('=')[0].trim(); if (/^_ga/.test(n)) document.cookie = n + '=; Max-Age=0; path=/; domain=.' + location.hostname.replace(/^www\./, ''); });
+        }
+      });
+      document.addEventListener('click', function (e) { if (e.target.closest('[data-open-consent]')) { e.preventDefault(); window.openConsent(); } });
+    })();
+  </script>
 </body>
 </html>
