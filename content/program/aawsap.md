@@ -37,3 +37,8 @@ facts:
     source: book-inside-covert-ufo-program
 ---
 
+The Advanced Aerospace Weapon System Applications Program was a $22 million Defense Intelligence Agency programme (2008–2012), contracted to BAASS, a subsidiary of Robert Bigelow's Bigelow Aerospace. It was initiated by DIA scientist James Lacatski with the backing of Senate Majority Leader Harry Reid, and studied reports of UFOs and related phenomena, including at Bigelow's Skinwalker Ranch in Utah.
+
+It commissioned 38 technical papers, the DIRDs, on subjects such as traversable wormholes, warp drives, negative energy and high-frequency gravitational-wave communications, and became public through *The New York Times* on 16 December 2017. In books cleared by the Pentagon's pre-publication review, Lacatski has stated that the U.S. possesses a UFO and has gained access to its interior; an alleged plan to transfer a recovered craft to Bigelow Aerospace remains unverified.
+
+*Sources: AARO Historical Record Report, Vol. 1 (2024) · Lacatski, Kelleher & Knapp, Skinwalkers at the Pentagon (2021)*

@@ -16,3 +16,9 @@ facts:
     status: documented
     source: library/docs/doc-aaro-historical-record-report-v1.pdf
 ---
+
+KONA BLUE was a special access programme proposed to the Department of Homeland Security around 2011 by people involved in the DIA's AAWSAP/AATIP work. Interviewees told AARO it was a sensitive DHS compartment created to hide the retrieval and exploitation of "non-human biologics".
+
+AARO's 2024 historical review found that it was only a proposal: it was never approved or established, and no data or material was ever transferred to DHS. Because it was never set up it was not reported to Congress at the time, though the Deputy Secretary of Defense later notified Congress once AARO identified it.
+
+*Sources: AARO Historical Record Report, Vol. 1 (2024)*

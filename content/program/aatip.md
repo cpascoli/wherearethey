@@ -28,3 +28,8 @@ facts:
     source: library/docs/doc-aaro-historical-record-report-v1.pdf
 ---
 
+The Advanced Aerospace Threat Identification Program was a smaller, military-focused offshoot of the Defense Intelligence Agency's AAWSAP, and the unclassified name under which the Pentagon's UFO work became known when *The New York Times* revealed it in December 2017. Its scope was narrowed to threats to national security and military aviation reported by U.S. personnel, such as the 2004 Nimitz "Tic Tac" encounter.
+
+According to AARO's 2024 historical review, AATIP had no separate congressional budget; after AAWSAP funding ended in 2012, a small unfunded effort under the AATIP name kept tracking military encounters. Luis Elizondo says he later led it; his account and the official record are both filed below.
+
+*Sources: AARO Historical Record Report, Vol. 1 (2024) · [The New York Times (2017)](https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html)*

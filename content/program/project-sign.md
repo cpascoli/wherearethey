@@ -19,3 +19,9 @@ facts:
     status: documented
     source: dow-uap-d097
 ---
+
+Project Sign (1948–1949) was the U.S. Air Force's first formal study of unidentified flying objects, run by Air Materiel Command. It was succeeded by Project Grudge and then, in 1952, by Project Blue Book.
+
+Records from the period appear in the PURSUE releases, linked below.
+
+*Sources: PURSUE records · [Wikipedia](https://en.wikipedia.org/wiki/Project_Sign)*

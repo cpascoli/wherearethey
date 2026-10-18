@@ -32,3 +32,8 @@ facts:
     source: https://www.hollywoodreporter.com/news/general-news/jay-stratton-ufo-memoir-1235996607/
 ---
 
+The Unidentified Aerial Phenomena Task Force was formally established by the Deputy Secretary of Defense in August 2020, approved on 4 August and announced on 14 August, under the Under Secretary of Defense for Intelligence and Security with the Office of Naval Intelligence. Its job was to detect, analyse and catalogue UAP that could threaten U.S. national security, and its work produced the ODNI's *Preliminary Assessment* of June 2021.
+
+It is generally described as AATIP's functional successor rather than a formal continuation. Jay Stratton was its first director, and David Grusch served as its reconnaissance-office representative before his whistleblower complaint. In November 2021 it was succeeded by the AOIMSG, and in 2022 by AARO.
+
+*Sources: [U.S. Navy announcement (2020)](https://www.navy.mil/Press-Office/Press-Releases/display-pressreleases/Article/2314280/) · Grusch's written statement (2023)*
