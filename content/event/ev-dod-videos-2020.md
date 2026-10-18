@@ -13,3 +13,8 @@ facts:
     source: https://www.war.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/
 ---
 
+On 27 April 2020, the U.S. Department of Defense officially released three short infrared videos taken by Navy pilots: "FLIR1", recorded during the 2004 USS Nimitz encounter, and "Gimbal" and "GoFast", from USS Theodore Roosevelt operations in 2015. The videos had circulated publicly since *The New York Times* and others published them in 2017–2018; the Navy confirmed that they show unidentified aerial phenomena.
+
+The release was the first time the Pentagon formally put its name to UAP footage, and it prompted reactions abroad, including Japan's decision that September to issue a UAP protocol to its Self-Defense Forces.
+
+*Sources: [DoD statement (2020)](https://www.war.gov/News/Releases/Release/Article/2165713/) · [Wikipedia](https://en.wikipedia.org/wiki/Pentagon_UFO_videos)*

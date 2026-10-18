@@ -23,3 +23,11 @@ facts:
     by: david-grusch
     source: v-2023-07-26-hearing-a@49:27
 ---
+
+In May 2022, David Grusch, a former Air Force and National Reconnaissance Office intelligence officer, filed a "Disclosure of Urgent Concern" and a reprisal complaint with the Intelligence Community Inspector General, alleging that information about UAP crash-retrieval programmes was being withheld from Congress.
+
+According to Grusch and *The Debrief*, which broke the story in June 2023, the ICIG found the complaint "credible and urgent" in July 2022 and sent a summary to the Director of National Intelligence and both congressional intelligence committees; the ICIG has not published its determination. At the July 2023 House hearing Grusch testified that the specific locations he had identified, based on interviews with more than 40 witnesses over four years, were given to the Inspector General and in part to the committees.
+
+The Pentagon's AARO later said it had found no verifiable evidence of such programmes; Grusch's claims and the counter-evidence are set out in the linked files.
+
+*Sources: [The Debrief (2023)](https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/) · House Oversight hearing (26 July 2023)*

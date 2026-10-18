@@ -10,3 +10,9 @@ facts:
     status: claimed
     source: https://www.scmp.com/news/china/science/article/3136078/china-military-uses-ai-track-rapidly-increasing-ufos
 ---
+
+In June 2021, the *South China Morning Post* reported on a paper by People's Liberation Army researchers describing artificial-intelligence methods for analysing a rapidly growing number of UAP reports, which they framed as a potential security issue for China.
+
+The report came weeks before the U.S. ODNI published its preliminary assessment on UAP, and is one of the few public indications of how China's military approaches the subject.
+
+*Sources: [South China Morning Post (2021)](https://www.scmp.com/news/china/science/article/3136078/china-military-uses-ai-track-rapidly-increasing-ufos)*

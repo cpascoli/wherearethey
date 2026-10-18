@@ -21,3 +21,9 @@ facts:
     status: unverified
     source: https://www.sentinel-news.org/p/congress-eyes-a-new-uap-hearing
 ---
+
+House Oversight Committee chairman James Comer has said he wants to revive a UAP hearing planned for the third week of September 2026, which fell through when the House cancelled session days, and hopes to "pick it back up in November". No date or witnesses have been announced.
+
+Possible witnesses reportedly include intelligence personnel involved in a late-2025 orb encounter near a Western U.S. military facility. This entry will be updated if a hearing is scheduled.
+
+*Sources: [Sentinel News](https://www.sentinel-news.org/p/congress-eyes-a-new-uap-hearing)*

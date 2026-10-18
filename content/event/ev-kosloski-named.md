@@ -8,3 +8,8 @@ rel:
   - [ about, aaro ]
 ---
 
+On 26 August 2024, Jon T. Kosloski, a physicist and engineer from the intelligence community, was named director of the Pentagon's All-domain Anomaly Resolution Office (AARO). He succeeded the founding director, Sean Kirkpatrick, who left in December 2023, after Tim Phillips served as acting director.
+
+In November 2024 Kosloski said AARO was analysing several "true anomalies" that it did not understand. His statements to Congress are filed with his record.
+
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/All-domain_Anomaly_Resolution_Office)*
