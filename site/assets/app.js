@@ -171,6 +171,7 @@
     $('#f-tags').innerHTML = tags.map(([t, n]) => `<button class="chip ${state.tags.has(t) ? 'on' : ''} ${n ? '' : 'dim'}" data-tag="${esc(t)}">${esc(t)}<span class="n">${n}</span></button>`).join('')
       || '<p class="muted small">No themes for the selected types.</p>';
     $('#f-tags-clear').hidden = !state.tags.size;
+    $('#f-types-clear').hidden = graphTypes.every(t => state.types.has(t)); // shown once any type is switched off
     // years
     const a = $('#f-yr-a'), b = $('#f-yr-b');
     for (const el of [a, b]) { el.min = MIN_Y; el.max = MAX_Y; el.step = 1; }
@@ -230,6 +231,8 @@
     filtersChanged();
   });
   $('#f-tags-clear').addEventListener('click', () => { state.tags.clear(); filtersChanged(); });
+  // like the themes' "clear": drop the type filter, i.e. show every type again
+  $('#f-types-clear').addEventListener('click', () => { state.types = new Set(graphTypes); filtersChanged(); });
   let yrTimer;
   for (const id of ['#f-yr-a', '#f-yr-b']) {
     $(id).addEventListener('input', () => {
