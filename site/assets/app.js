@@ -1803,6 +1803,7 @@
     for (const v of VIEWS) $('#view-' + v).hidden = v !== view;
     $$('#views [data-group], #views [data-view]').forEach(a => a.classList.toggle('active', (a.dataset.group || a.dataset.view).split(' ').includes(view)));
     $('#app').classList.toggle('is-home', view === 'home');
+    document.body.classList.toggle('is-home', view === 'home'); // the header sits outside #app
     if (view === 'home') { $('#panel').hidden = true; $('#app').classList.remove('has-panel'); }
     else if (state.sel) openPanel(state.sel);
     $('#filters').hidden = view === 'videos';
