@@ -15,3 +15,11 @@ facts:
     status: documented
     source: library/docs/doc-faa-jal1628-terauchi-interview.pdf
 ---
+
+This is the FAA's record of its interview, on 2 January 1987 at JAL Operations in Anchorage, with Capt. Kenju Terauchi about the sighting of 17 November 1986. It was conducted by inspector Richard Gordon, manager of the FAA's Flight Standards District Office, with Japanese interpreters, to gather first-hand testimony.
+
+Through the interpreters Terauchi describes three unidentified objects over Alaska: two that came close in front of the 747's cockpit with bright lights, and a much larger "mothership" he estimates at "two times carrier" in size, and he says he had seen similar lights before, including after a night departure near Taiwan. The transcript shows the investigators working through his account and the timing of the sighting.
+
+It is part of the FAA's investigation file released under FOIA (this copy via The Black Vault).
+
+*Sources: FAA record of interview (1987)*

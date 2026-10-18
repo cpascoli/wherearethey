@@ -33,4 +33,10 @@ facts:
     source: library/docs/doc-aaro-historical-record-report-v1.pdf
 ---
 
-Prepared under Sean Kirkpatrick and published after he left. Critics, including Grusch's supporters and several members of Congress, argued it did not engage with the classified testimony given to the Intelligence Community Inspector General and to Congress. It is the main official counterpoint to the legacy-program allegations.
+AARO's *Historical Record Report, Volume 1* (March 2024), mandated by the FY2022 and FY2023 NDAAs, reviews U.S. government involvement with UAP since 1945, covering about two dozen investigative efforts from Project Blue Book to the present, and interviews with people who claimed knowledge of secret programmes.
+
+Its central finding: "AARO found no evidence that any USG investigation, academic-sponsored research, or official review panel has confirmed that any sighting of a UAP represented extraterrestrial technology." It found no empirical evidence that the government or private companies have reverse-engineered extraterrestrial technology, no authentic UAP non-disclosure agreements threatening violence, and that executives of companies named by interviewees denied the claims on the record. It attributes many claims to misidentified authentic programmes and circular reporting among a small group of people. It also explains episodes such as the KONA BLUE proposal.
+
+The report never uses the phrase "legacy program". Prepared under Sean Kirkpatrick and published after he left, it was criticised by Grusch's supporters and several members of Congress for not engaging with the classified testimony given to the Inspector General and to Congress.
+
+*Sources: AARO Historical Record Report, Vol. 1 (2024)*

@@ -36,4 +36,10 @@ facts:
     source: https://www.cia.gov/readingroom/document/cia-rdp79b00752a000300100010-4
 ---
 
-The key Cold War document for understanding why UAP reporting carried a stigma for decades: a national-security panel that recommended managing public perception rather than investigating further. A PURSUE record (CIA-UAP-D021, 1955) still cites Robertson’s finding.
+The report of the CIA's Scientific Advisory Panel on Unidentified Flying Objects, chaired by the Caltech physicist H. P. Robertson, which met on 14–18 January 1953 to review Air Force UFO cases and films, written up by Frederick C. Durant.
+
+The panel concluded that the evidence showed no indication that UFOs were a direct physical threat to national security. Its concern was indirect: the volume of reports could clog military communication channels during an attack and be exploited psychologically by an enemy. It therefore recommended a public education programme with two aims, "training" people to recognise ordinary objects and "debunking" to reduce public interest in "flying saucers", to be carried out through mass media such as television, films and popular articles.
+
+The report is the key Cold War document for understanding why UAP reporting carried a stigma for decades. Redacted versions were released from the 1970s; the CIA approved a fuller release in 2013, and the panel's findings are still cited in later records such as a 1955 PURSUE file.
+
+*Sources: Robertson Panel report (1953)*

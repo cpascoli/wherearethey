@@ -21,3 +21,11 @@ facts:
     status: documented
     source: doc-robertson-panel-1953
 ---
+
+This memorandum of 2 October 1952 from the Assistant Director of the CIA's Office of Scientific Intelligence to the Director of Central Intelligence sets out three questions: whether "unidentified flying objects" have national-security implications, whether they are being adequately studied, and what further research should be done and by whom.
+
+It reports that the Air Force's Air Technical Intelligence Center at Wright-Patterson was the only group giving the subject serious effort, and that its case-by-case explanations could not resolve the problem as a whole. It concludes that "flying saucers" posed two dangers with national-security implications, mass psychological effects and the vulnerability of the United States to air attack, and recommends that the DCI brief the National Security Council and the Psychological Strategy Board and that research be started.
+
+The memo led directly to the CIA's convening of the Robertson Panel in January 1953. It is sometimes mislabelled online as the Robertson Panel report itself; it is the precursor.
+
+*Sources: CIA memorandum (1952)*

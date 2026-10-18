@@ -27,8 +27,10 @@ facts:
     source: dow-uap-d128
 ---
 
-The DIRDs are the most concrete surviving output of AAWSAP. They are technical papers commissioned through Bigelow Aerospace's BAASS contract with the DIA, written by outside physicists and engineers, and issued under the DIA's "Acquisition Threat Support" and "Defense Futures" headings. The released copies redact the authors' names under FOIA exemption 6.
+The Defense Intelligence Reference Documents (DIRDs) are the 38 technical papers commissioned in 2009–2011 under the DIA's AAWSAP programme through Bigelow Aerospace's BAASS contract, written by outside physicists and engineers. A DIRD is a reference format the DIA used to capture baseline knowledge on a subject for later analysis, a synthesis rather than original research.
 
-Every DIRD is in the archive as an official PURSUE record, with the full text extracted and searchable. Open any record linked below to read the PDF.
+Their topics range from conventional subjects (metallic glasses, biomaterials, ultracapacitors, high-energy lasers) to speculative physics: warp drive, traversable wormholes, antigravity, negative mass and energy from the quantum vacuum, and one report on the effects of anomalous fields on human tissue. They are the most concrete surviving output of AAWSAP.
 
-*Sources: DIA FOIA response FOIA-00159-2018 (March 25, 2022); PURSUE release 06 record descriptions (Department of War / AARO).*
+The DIA released 37 of them (1,473 pages) in March 2022 in answer to John Greenewald's FOIA request, with authors' names redacted, and the Department of War republished all 37 in PURSUE release 06, each with an AARO summary warning that it "should not be read as implying current validation of the concepts discussed."
+
+*Sources: DIA FOIA release (2022) · PURSUE release 06*

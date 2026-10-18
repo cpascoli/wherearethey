@@ -29,4 +29,10 @@ facts:
     source: https://www.nicap.org/bolender2.htm
 ---
 
-The surviving scan is a poor-quality copy (from the Fund for UFO Research’s “U.S. Government Documents” package). The OCR text is rough, but the key passages match NICAP’s clean transcription (by Brad Sparks).
+Brig. Gen. Carroll H. Bolender's internal Air Force memo of 20 October 1969 recommends ending Project Blue Book. It restates Blue Book's two objectives, to determine whether UFOs threaten U.S. security and whether they show any unique scientific or technological information, and then argues that neither has been served: drawing on the University of Colorado (Condon) study, its review by a National Academy of Sciences panel and the 1953 Robertson Panel, it concludes that continuing the project "cannot be justified, either on the ground of national security or in the interest of science."
+
+Its most cited sentence is almost an aside: "reports of unidentified flying objects which could affect national security are made in accordance with JANAP 146 or Air Force Manual 55-11, and are not part of the Blue Book system." In other words, security-relevant sightings already went through separate military reporting channels, so closing Blue Book would not end the military's handling of them. Researchers cite this as evidence that Blue Book was never the whole story; sceptics read it as routine procedure.
+
+The memo was released under FOIA to the researcher Robert Todd in 1979. Our copy is a poor scan; the passages quoted match NICAP's transcription.
+
+*Sources: Bolender memo (1969) · NICAP transcription*

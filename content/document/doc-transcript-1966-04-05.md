@@ -17,3 +17,9 @@ links:
 rel:
   - [ transcript of, h-1966-04-05 ]
 ---
+
+The printed record of the House Armed Services Committee hearing on UFOs on 5 April 1966, called after the March 1966 Michigan sightings that the Air Force consultant J. Allen Hynek had partly attributed to "swamp gas". It includes House Minority Leader Gerald Ford's statement that he did not agree all the reports could be "so easily explained away", testimony from Air Force Secretary Harold Brown, Hynek and Blue Book chief Maj. Hector Quintanilla, and Air Force case material.
+
+Its most consequential content is the report of the Air Force Scientific Advisory Board's ad hoc committee chaired by Brian O'Brien (with Carl Sagan as a member), which recommended contracting university teams to investigate perhaps 100 sightings a year in coordination with Project Blue Book. That recommendation led to the Air Force's contract with the University of Colorado, the Condon study, whose 1968 report was used to close Blue Book.
+
+*Sources: House Armed Services hearing record (1966)*

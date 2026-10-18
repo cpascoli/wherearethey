@@ -22,3 +22,11 @@ facts:
     status: documented
     source: https://www.congress.gov/amendment/118th-congress/senate-amendment/2610
 ---
+
+The UAP Disclosure Act, introduced in July 2023 by Senators Chuck Schumer and Mike Rounds as an amendment to the FY2024 NDAA and modelled on the JFK Records Act, would have required the release of government UAP records under a presumption of disclosure.
+
+It defined "non-human intelligence" as "any sentient intelligent non-human lifeform regardless of nature or ultimate origin that may be presumed responsible for unidentified anomalous phenomena or of which the Federal Government has become aware", and "technologies of unknown origin" as materials, debris and mechanisms of non-human origin. It would have created a presidentially appointed UAP Records Review Board to oversee declassification, and directed that "the Federal Government shall exercise eminent domain over any and all recovered technologies of unknown origin and biological evidence of non-human intelligence that may be controlled by private persons or entities."
+
+The House stripped the review board and eminent-domain provisions; the enacted FY2024 NDAA kept only a narrower requirement for agencies to collect UAP records at the National Archives. The senators reintroduced the full text in July 2024.
+
+*Sources: UAP Disclosure Act text (2023)*

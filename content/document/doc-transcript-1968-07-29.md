@@ -21,3 +21,11 @@ facts:
   - text: No audio or video recording of the symposium is known to survive. The printed proceedings, with prepared papers from the participants, are the primary record.
     status: unverified
 ---
+
+The printed proceedings of the House Committee on Science and Astronautics' Symposium on Unidentified Flying Objects on 29 July 1968, chaired by Rep. J. Edward Roush. Six scientists testified: the astronomer J. Allen Hynek, the atmospheric physicist James E. McDonald, the astronomer Carl Sagan, the sociologist Robert L. Hall, the civil engineer James A. Harder and Robert M. L. Baker Jr.
+
+The participants presented prepared papers and then held a roundtable discussion with the committee. Roush also invited other scientists to submit written papers, which are printed in the record. Coming months before the Condon report, the symposium was the most serious congressional airing of the scientific case for studying UFOs in that era.
+
+No recording of the symposium is known to survive; the printed proceedings are the primary record.
+
+*Sources: 1968 House symposium proceedings*

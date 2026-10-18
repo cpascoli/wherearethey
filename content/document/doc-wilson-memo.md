@@ -39,3 +39,10 @@ facts:
     source: library/docs/doc-wilson-davis-notes.pdf
 ---
 
+Fifteen pages of notes headed "EWD NOTES: 10/16/02 — Eric Davis Meeting with Adm. Wilson", presented as the physicist Eric Davis's record of a conversation with retired Vice Adm. Thomas R. Wilson, former director of the Defense Intelligence Agency, held in a car outside an EG&G building.
+
+According to the notes, after an April 1997 Pentagon briefing by Steven Greer, Edgar Mitchell and Will Miller, Wilson searched for an unacknowledged UFO programme, traced it to one of the top U.S. aerospace contractors and met its programme manager, security director and lawyer. They told him it was a reverse-engineering programme built around an intact craft that was "technology that was not of this Earth — not made by man", with very slow progress and 400–800 people on its access list, but refused to read him in; he says he complained to the Pentagon's special-access oversight group to no avail.
+
+The notes were reportedly found among Edgar Mitchell's papers and circulated online from 2019. In May 2022 Rep. Mike Gallagher had them entered into the record of a House Intelligence hearing, which confirms their provenance, not their accuracy; neither Davis nor Wilson has confirmed them.
+
+*Sources: Wilson–Davis notes (House record, 2022)*

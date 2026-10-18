@@ -28,3 +28,11 @@ facts:
     by: fbi
     source: https://www.fbi.gov/news/stories/ufos-and-the-guy-hottel-memo
 ---
+
+A one-page memo of 22 March 1950 from Guy Hottel, Special Agent in Charge of the FBI's Washington Field Office, to Director J. Edgar Hoover. It relays a story passed to the FBI by an Air Force investigator from an informant: that "three so-called flying saucers had been recovered in New Mexico… circular in shape with raised centers, approximately 50 feet in diameter. Each one was occupied by three bodies of human shape but only 3 feet tall, dressed in metallic cloth of a very fine texture." It adds that the government's high-powered radar in the area was believed to have interfered with the craft's controls.
+
+The information is third-hand, and the memo records no investigation. The FBI says it never followed the claim up and notes that the memo does not mention Roswell.
+
+It is the most-viewed file in the FBI Vault and is often misreported as proof of the Roswell recovery; it is evidence that the story was circulating in 1950, not that it is true.
+
+*Sources: FBI "Guy Hottel" memo (1950)*

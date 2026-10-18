@@ -26,4 +26,10 @@ facts:
     source: library/docs/doc-ufo-briefing-document-1995.pdf
 ---
 
-**Secondary source.** Compiled by civilian researchers rather than issued by government, so it is useful as an index of cases and official quotations, which should then be traced to the primary documents (as done here for the Twining memo).
+*UFO Briefing Document: The Best Available Evidence* (December 1995) is a 148-page compilation by Don Berliner with Marie Galbraith and Antonio Huneeus, presented by three civilian research organisations, CUFOS, FUFOR and MUFON, with financial support credited to Laurance S. Rockefeller. It was intended as a concise case for policymakers that UFOs deserve serious attention.
+
+It collects official statements, such as the 1947 Twining memo, and summaries of military and pilot cases from around the world drawn from open sources, presented as the strongest evidence then available.
+
+**Secondary source.** Because it was compiled by private researchers rather than issued by government, it is useful as an index of cases and official quotations, which should be traced to the primary documents, as done here for the Twining memo.
+
+*Sources: UFO Briefing Document (1995)*

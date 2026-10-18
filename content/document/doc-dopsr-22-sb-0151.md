@@ -25,4 +25,10 @@ facts:
     source: library/docs/doc-dopsr-22-sb-0151.pdf
 ---
 
-The Department of Defense released this file under FOIA (request 24-F-0088) in its UFOs and UAPs reading room. It is 22 pages of the clearance letter, the manuscript cover and review emails between DOPSR, the DIA and Lacatski.
+This 22-page Pentagon file records the prepublication clearance of the second book by former DIA scientist James Lacatski with Colm Kelleher and George Knapp. In a letter of 24 April 2023, the Defense Office of Prepublication and Security Review (DOPSR) answers Lacatski's request of July 2022: the manuscript "The U.S. Government's Secret UAP/UFO Program: The Beginning - Initial Planning and Investigations" is "CLEARED for public release", published later in 2023 as *Inside the US Government Covert UFO Program*.
+
+The letter stresses that clearance does not "imply Department of Defense (DoD) endorsement or factual accuracy of the material". Internal emails describe it as a 143-page manuscript by a former DIA employee that also went through DIA review, and note that some of the authors' earlier work was cleared in May 2021.
+
+The file matters because the book contains Lacatski's statement that the U.S. possesses a UFO and has gained access to its interior: clearance shows the Pentagon allowed that statement to be published, not that it verified it. The Department of Defense released the file under FOIA.
+
+*Sources: DOPSR case 22-SB-0151 (2023)*

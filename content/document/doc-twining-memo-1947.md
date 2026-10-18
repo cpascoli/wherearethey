@@ -38,4 +38,10 @@ facts:
     source: https://www.nicap.org/twining_letter.htm
 ---
 
-The earliest high-level official U.S. statement that UFOs were a real physical phenomenon. Classified SECRET at the time; it became public in the late 1960s.
+Lt. Gen. Nathan Twining's letter of 23 September 1947, from Air Materiel Command at Wright Field to the Commanding General of the Army Air Forces, gives AMC's opinion on the "flying discs" reported that summer. It states that "the phenomenon reported is something real and not visionary or fictitious", describing objects "probably approximating the shape of a disc, of such appreciable size as to appear to be as large as man-made aircraft", with extreme rates of climb, manoeuvrability and evasive action.
+
+It considers whether they could be a secret domestic project or a foreign nation's craft with propulsion "outside of our domestic knowledge", notes the lack of physical evidence such as "crash recovered exhibits", and recommends that Army Air Forces headquarters assign "a priority, security classification and Code Name for a detailed study". That study became Project Sign.
+
+Classified SECRET at the time, it became public in the late 1960s and is the earliest high-level official U.S. statement that UFOs were a real physical phenomenon. The "crash recovered exhibits" phrase is cited both by sceptics and by researchers who argue some recoveries were compartmented.
+
+*Sources: Twining memo (1947)*

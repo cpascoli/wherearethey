@@ -26,4 +26,10 @@ facts:
     source: library/docs/doc-dia-foia-00159-2018.pdf
 ---
 
-The DIA's response to FOIA requester John Greenewald (The Black Vault), which released the AAWSAP DIRDs to the public. This copy comes from The Black Vault. It is the requester's own copy of the DIA letter, not a DIA reading-room file.
+This is the Defense Intelligence Agency's letter of 25 March 2022 answering a FOIA request filed on 31 January 2018 by John Greenewald of The Black Vault, who asked for all "Defense Intelligence Reference Documents" produced by Bigelow Aerospace, its BAASS subsidiary or anyone involved with AATIP, citing Eric Davis's radio interview of 28 January 2018 about the papers.
+
+The DIA reports that a search "located 37 documents (1473 pages) responsive to your request" and releases them, withholding parts under FOIA exemption 3 (10 U.S.C. § 424, which protects DIA employees' identities) and exemption 6 (personal privacy), so the authors' names are redacted. It adds that the DIA was reviewing all its AATIP holdings for release on its website.
+
+The letter is the official confirmation that the AAWSAP technical papers existed and were held by the DIA. This copy is the requester's, published by The Black Vault.
+
+*Sources: DIA FOIA letter FOIA-00159-2018 (2022)*
