@@ -208,10 +208,30 @@
   // Click toggles a type; a second click on the same type within 400 ms shows only that type
   // (the list re-renders on every click, so the browser's native dblclick never fires).
   let lastTypeClick = { t: null, at: 0, before: null };
+  // "only this type": double-click/double-tap, or long-press (hold ~0.5 s), which is the natural gesture on touchscreens.
+  // A second long-press on the type already shown alone brings all types back.
+  const onlyType = t => { state.types = state.types.size === 1 && state.types.has(t) ? new Set(graphTypes) : new Set([t]); filtersChanged(); };
+  let pressTimer = null, pressStart = null, suppressClick = false, lastDown = 0;
+  $('#f-types').addEventListener('pointerdown', e => {
+    const el = e.target.closest('.f-type'); if (!el || e.button > 0) return;
+    pressStart = { x: e.clientX, y: e.clientY };
+    lastDown = e.timeStamp; // double-taps are timed from when the finger touched down, not from when the (possibly busy) page handled it
+    clearTimeout(pressTimer);
+    pressTimer = setTimeout(() => {
+      pressTimer = null; suppressClick = true; // the click that follows the release must not toggle again
+      navigator.vibrate?.(12);
+      lastTypeClick = { t: null, at: 0, before: null };
+      onlyType(el.dataset.type);
+    }, 500);
+  });
+  const cancelPress = e => { if (pressTimer && (e.type !== 'pointermove' || Math.hypot(e.clientX - pressStart.x, e.clientY - pressStart.y) > 10)) { clearTimeout(pressTimer); pressTimer = null; } };
+  for (const ev of ['pointerup', 'pointercancel', 'pointerleave', 'pointermove']) $('#f-types').addEventListener(ev, cancelPress);
+  $('#f-types').addEventListener('contextmenu', e => { if (e.target.closest('.f-type')) e.preventDefault(); }); // no long-press menu
   $('#f-types').addEventListener('click', e => {
     const el = e.target.closest('.f-type'); if (!el) return;
     e.preventDefault();
-    const t = el.dataset.type, now = Date.now();
+    if (suppressClick) { suppressClick = false; return; }
+    const t = el.dataset.type, now = lastDown || e.timeStamp;
     if (lastTypeClick.t === t && now - lastTypeClick.at < 400) {
       // judge by the selection *before* the first click of the pair
       const b = lastTypeClick.before;
@@ -1760,7 +1780,7 @@
       if (!cy) initGraph();
       else {
         cy.resize();
-        if (filtersChangedFlag) { applyGraphFilter(); clearTimeout(layoutTimer); layoutTimer = setTimeout(() => layoutGraph(true), 120); }
+        if (filtersChangedFlag) { applyGraphFilter(); clearTimeout(layoutTimer); layoutTimer = setTimeout(() => layoutGraph(true), 350); }
       }
       highlight(state.sel);
     } else if (state.view === 'timeline') renderTimeline();
@@ -1801,10 +1821,13 @@
     go(a.dataset.view);
   });
   $('#btn-side').addEventListener('click', e => { e.stopPropagation(); $('#side').classList.toggle('open'); });
-  // tapping outside the open drawer closes it
+  // tapping outside the open drawer closes it. Use the event path recorded at dispatch: filter clicks re-render the
+  // list, so by now e.target may be detached and closest('#side') would wrongly say "outside".
   document.addEventListener('click', e => {
     const side = $('#side');
-    if (side.classList.contains('open') && !e.target.closest('#side, #btn-side')) side.classList.remove('open');
+    if (!side.classList.contains('open')) return;
+    const path = e.composedPath();
+    if (!path.includes(side) && !path.includes($('#btn-side'))) side.classList.remove('open');
   });
 
   // theme
