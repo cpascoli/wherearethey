@@ -23,5 +23,17 @@ moments:
     text: "Nuccetelli confirms AARO followed up with him about the Red Square incident."
     speaker: jeffrey-nuccetelli
     refs: [ aaro, inc-vandenberg-2003 ]
+  - t: "48:09"
+    text: "Knapp, opening statement: in 1989 he reported on Bob Lazar, who claimed he had worked at a facility called S4 near Area 51 in a program reverse-engineering alien craft."
+    speaker: george-knapp
+    refs: [ area-51, bob-lazar ]
+  - t: "1:23:01"
+    text: "Knapp: governments have used UFO stories to cover secret projects, but he calls “preposterous” a recent newspaper report that an Air Force colonel started the Area 51 UFO lore by handing fake UFO photos to a bar in Rachel, Nevada."
+    speaker: george-knapp
+    refs: [ area-51 ]
+  - t: "1:59:32"
+    text: "Knapp: congressional investigator Richard D'Amato, sent by Senators Robert Byrd and Harry Reid, got into Area 51 and came to believe the reverse-engineering program had moved inside corporations."
+    speaker: george-knapp
+    refs: [ area-51, harry-reid, crash-retrieval ]
 ---
 

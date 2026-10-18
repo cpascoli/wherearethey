@@ -23,5 +23,17 @@ moments:
     text: "Grusch says he has personal knowledge of people injured working on legacy UAP reverse-engineering."
     speaker: david-grusch
     refs: [ crash-retrieval , legacy-program ]
+  - t: "22:40"
+    text: "Moskowitz, closing his opening statement: if there's nothing to conceal, military leaders should let Congress go to Wright-Patterson Air Force Base, the Dugway Proving Ground or Groom Lake (Area 51)."
+    speaker: jared-moskowitz
+    refs: [ area-51 ]
+  - t: "55:04"
+    text: "Burchett credits George Knapp's reporting for what he knows of Area 51, and Leslie Kean's New York Times article for the Tic Tac."
+    speaker: tim-burchett
+    refs: [ area-51, george-knapp, leslie-kean, ev-nyt-2017 ]
+  - t: "1:20:06"
+    text: "Burchett asks Grusch which facilities hold recovered material, remarking that Congress keeps talking about going to Area 51 but “there's nothing there anymore”; Grusch says he can't say publicly but gave the information to the intelligence committees and the Inspector General."
+    speaker: tim-burchett
+    refs: [ area-51, david-grusch, crash-retrieval ]
 ---
 
