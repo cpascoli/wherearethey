@@ -131,7 +131,9 @@
     // types added since a visitor saved their filters (e.g. film, book) are switched on for them
     types: new Set(store.get('types', null) ? [...store.get('types'), ...allTypes.filter(t => t !== 'record' && !store.get('typesSeen', TYPES_BEFORE_SHELF).includes(t))] : allTypes.filter(t => t !== 'record')),
     tags: new Set(store.get('tags', [])),
-    yr: store.get('yr', [MIN_Y, MAX_Y]),
+    // Open-ended ends are stored as null so new earlier/later files stay in range. Older saves stored the
+    // full range as numbers (lower end 1940, the old floor); treat those as open too.
+    yr: (([a, b] = []) => [a == null || a === 1940 ? MIN_Y : a, b == null || b >= NOW_Y ? MAX_Y : b])(store.get('yr', null) || []),
     showMentions: store.get('showMentions', false),
     video: null,
     trail: null,                                  // exploration mode: { steps: [ids], open: Set (connections shown), pinned: Set }
@@ -205,7 +207,7 @@
   }
   function filtersChanged() {
     store.set('credibleOnly', state.credibleOnly); store.set('types', [...state.types]); store.set('typesSeen', allTypes); store.set('tags', [...state.tags]);
-    store.set('yr', state.yr); store.set('showMentions', state.showMentions);
+    store.set('yr', [state.yr[0] <= MIN_Y ? null : state.yr[0], state.yr[1] >= MAX_Y ? null : state.yr[1]]); store.set('showMentions', state.showMentions);
     computeVisible();
     renderFilters();
     refreshView(true);
