@@ -480,11 +480,19 @@ mark { background: rgba(227, 179, 65, .4); color: inherit; border-radius: 3px; p
   .latest-item { grid-template-columns: 1fr; gap: 2px; }
   .home-stats { grid-template-columns: 1fr 1fr; }
 }
+/* nav: text menu on desktop; on phones a full-width bottom tab bar with icon + short label */
+.nv-ic, .nv-short { display: none; }
 @media (max-width: 860px) {
-  .views { max-width: calc(100vw - 20px); overflow-x: auto; scrollbar-width: none; }
-  .views::-webkit-scrollbar { display: none; }
-  .views a { padding: 6px 9px; font-size: 11px; white-space: nowrap; }
-  .home-foot { padding-bottom: 70px; }
+  .views { left: 0; right: 0; bottom: 0; transform: none; width: auto; max-width: none; display: grid; grid-template-columns: repeat(7, 1fr);
+    gap: 0; padding: 4px 2px calc(4px + env(safe-area-inset-bottom)); border-radius: 0; border: 0; border-top: 1px solid var(--border); overflow: visible; }
+  .views a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 5px 0 4px; border-radius: 6px;
+    font-size: 9.5px; letter-spacing: .04em; white-space: nowrap; min-width: 0; }
+  .views a.active { background: var(--accent-soft); box-shadow: none; color: var(--text); }
+  .views a.active .nv-ic { stroke: var(--accent); }
+  .nv-ic { display: block; width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .nv-full { display: none; }
+  .nv-short { display: block; }
+  .home-foot { padding-bottom: 80px; }
 }
 
 /* hero dot card */
@@ -669,3 +677,5 @@ body.resizing iframe { pointer-events: none; }
 
 .sc-body { min-width: 0; }
 .sc-btn-buy { border-color: color-mix(in srgb, #ff9900 55%, var(--border)) !important; }
+
+@media (max-width: 860px) { #panel-body { padding-bottom: 84px; } }
