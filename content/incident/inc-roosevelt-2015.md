@@ -25,3 +25,10 @@ facts:
     source: v-2024-11-13-hearing-c@25:59
 ---
 
+In 2014–2015, Navy F/A-18 crews from the USS Theodore Roosevelt carrier strike group, training off the U.S. East Coast, reported frequent encounters with unidentified objects, including near-midair collisions. Lt. Ryan Graves, an F/A-18F pilot in the group, later described the encounters as frequent during the pre-deployment exercise.
+
+Two infrared videos from these operations, "Gimbal" and "GoFast", were published by *The New York Times* in 2017–2018 and officially released by the Department of Defense on 27 April 2020; the Navy confirmed they show unidentified aerial phenomena. Rear Adm. Tim Gallaudet, then Oceanographer of the Navy, testified that a secure email about the safety concerns vanished from his and the other recipients' inboxes the day after it arrived.
+
+The analyst Mick West attributes the rotation in "Gimbal" to infrared glare and the camera's gimbal mechanism, and the apparent speed in "GoFast" to parallax. Graves testified about the encounters to the House Oversight Committee in July 2023.
+
+*Sources: Graves's written statement (2023) · House Oversight hearing (13 November 2024) · [Wikipedia](https://en.wikipedia.org/wiki/Pentagon_UFO_videos)*

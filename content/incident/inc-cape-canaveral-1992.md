@@ -14,3 +14,8 @@ facts:
     source: v-jm-greg-rogers@0:11
 ---
 
+Dr. Gregory Rogers says that around 1992 an Air Force major at Cape Canaveral showed him security footage of a white saucer about 20 feet wide levitating inside a military hangar.
+
+The claim rests on Rogers's own testimony; no footage or record has been released. His account is listed below.
+
+*Sources: Interview with Jesse Michels*

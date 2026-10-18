@@ -20,3 +20,11 @@ facts:
     by: mario-woods
     source: v-michels-ellsworth-reunion-2026@39:49
 ---
+
+In November 1977, Air Force security policemen Mario Woods and Sgt. Michael Johnson answered an alarm at the November-5 (N-5) Minuteman silo near Ellsworth Air Force Base, South Dakota. Woods says they saw a massive, pulsating spherical craft hovering over the site, "the size of a Walmart building".
+
+Both men describe hours of missing time, waking at a reservoir, being recovered, questioned separately and medically examined, after which the Air Force separated them and one was discharged. A joint hypnotic regression in 2026 produced accounts of beings and an examination aboard the craft.
+
+The claims come from the two witnesses' interviews; no official record of the event has been released.
+
+*Sources: Interviews with Jesse Michels (2025–2026)*

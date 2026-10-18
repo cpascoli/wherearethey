@@ -22,3 +22,10 @@ facts:
     source: "https://en.wikipedia.org/wiki/1952_Washington,_D.C._UFO_incident"
 ---
 
+Over consecutive weekends in July 1952, most notably the nights of 19–20 and 26–27 July, air traffic controllers at Washington National Airport tracked unidentified targets over the U.S. capital, some calculated to move at very high speed. On 19 July controller Edward Nugent picked up seven objects south-southwest of the city, and Capital Airlines pilot Capt. S. C. Pierman saw fast-moving white lights over about 14 minutes.
+
+U.S. Air Force F-94 Starfire interceptors were scrambled on both weekends; Lt. William Patterson saw four white glows but "saw no chance of overtaking them", and other targets vanished or outran the jets as they approached.
+
+On 29 July Maj. Gen. John Samford held a major Pentagon press conference, attributing the radar returns to temperature inversions and the visual sightings to stars and meteors. The episode alarmed the Truman White House and led the CIA to convene the Robertson Panel in January 1953.
+
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/1952_Washington,_D.C.,_UFO_incident) · Ruppelt, The Report on Unidentified Flying Objects (1956)*

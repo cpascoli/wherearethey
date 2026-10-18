@@ -19,3 +19,8 @@ facts:
     source: https://search.worldcat.org/search?q=Incident+at+Devils+Den+Lovelace
 ---
 
+In 1977, Terry Lovelace, then an Air Force medic, and a friend went camping at Devil's Den State Park in Arkansas. Lovelace says they had a UFO encounter there and experienced missing time.
+
+He also says that in 2012 an X-ray taken for a knee injury showed a small square electronic object deep in his thigh with no surgical scar, which later vanished without explanation. He tells the story in his book *Incident at Devils Den*; the claims rest on his account.
+
+*Sources: Lovelace, Incident at Devils Den*

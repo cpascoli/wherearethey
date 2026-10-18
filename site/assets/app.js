@@ -960,6 +960,8 @@
         <button class="btn primary" data-play="${e.id}@0">▶ Play with transcript</button>
         <div class="small muted" style="margin-top:6px">${e.transcript ? `${e.transcript.segments.toLocaleString()} transcript lines (${({ 'youtube-auto': 'auto captions', youtube: 'subtitles', whisper: 'Whisper transcript', 'whisper-translated': 'Whisper translation' })[e.transcript.source] || 'transcript'})` : 'No transcript yet'}${e.local ? ' · local copy' : ''}</div></div></div>`);
     }
+    // what happened / what it is, before the videos (people keep videos and credentials first, then the profile)
+    if (e.body && e.type !== 'person') h.push(`<div class="p-sec"><h4>Summary</h4><div class="p-body p-bio">${e.body}</div></div>`);
     // Watch: videos that record, feature or are about this entry — playable straight from the dossier
     if (e.type !== 'video') {
       const WATCH = { 'trailer of': 'Trailer', 'recording of': 'Recording', features: 'Appearance', about: 'About this', 'speaks in': 'Speaks in' };
@@ -992,7 +994,7 @@
     if (e.credentials?.length) {
       h.push(`<div class="p-sec"><h4>Credentials</h4><ul class="cred-list">${e.credentials.map(c => `<li><span class="cred-cat">${esc(CRED_CAT[c.category] || c.category)}</span><span>${esc(c.role)}</span></li>`).join('')}</ul></div>`);
     }
-    if (e.body) h.push(`<div class="p-sec"><h4>${e.type === 'person' ? 'Profile' : 'Summary'}</h4><div class="p-body p-bio">${e.body}</div></div>`);
+    if (e.body && e.type === 'person') h.push(`<div class="p-sec"><h4>Profile</h4><div class="p-body p-bio">${e.body}</div></div>`);
     if (e.links.length || e.files.length) {
       const amzP = e.type === 'book' && amazonLink(e.isbn);
       h.push(`<div class="p-sec p-side" id="sec-links"><h4>Sources, links & files</h4><ul class="p-links">${amzP ? `<li><a href="${esc(amzP.url)}" target="_blank" rel="noopener sponsored">Buy on Amazon (${esc(amzP.store)}) ↗</a></li>` : ''}${e.links.map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.url)} ↗</a></li>`).join('')}${e.files.map(f => `<li><a href="${esc(fileUrl(f))}" target="_blank">📄 ${esc(f.split('/').pop())}</a></li>`).join('')}</ul></div>`);

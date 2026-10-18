@@ -38,3 +38,11 @@ facts:
     status: claimed
     source: https://querepublicaeessa.an.gov.br/index.php/que-republica-e-essa/assuntos/temas/302-os-ovnis-no-arquivo-nacional
 ---
+
+In 1977, residents of Colares and other parts of the Amazon delta in Pará and Maranhão reported small, fast lights they called *chupa-chupa* ("suck-suck"), which they said fired beams that left burns, weakness and puncture-like marks. Local authorities asked for help, and the Brazilian Air Force sent a team under Capt. Uyrangê Hollanda that investigated at least 130 cases over several months and gathered photographs and film.
+
+Hollanda's official final report found no indication of extraterrestrial beings. In a 1997 interview, twenty years later and months before his death, he said he and his team had seen structured craft, including an object about 30 m across hovering over them and a larger one with many windows, that they had taken about 400–500 photographs, and that he believed the craft were not of human origin.
+
+The operation's records were transferred to the National Archives of Brazil from 2009 and expanded by Air Force releases in 2013; they are now part of the public "UFO Fund". Hollanda's own statements that the full report remains inaccessible are listed below.
+
+*Sources: [National Archives of Brazil](https://querepublicaeessa.an.gov.br/) · Hollanda interview (1997)*

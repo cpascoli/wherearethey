@@ -22,3 +22,11 @@ facts:
   - text: The French COMETA report (1999) cites it among aviation cases. In 2026, Argentine media reported that it appears in U.S. declassified UAP files, but it has not been matched to a specific PURSUE catalog entry here.
     status: unverified
 ---
+
+On the night of 31 July 1995, on approach to San Carlos de Bariloche, Capt. Jorge Polanco of Aerolíneas Argentinas flight 674, a Boeing 727, saw a white light rush towards the aircraft and stop about 100 metres away. During a renewed approach, he says, an object with three lights, red in the centre, flew parallel to the plane for about 17 minutes.
+
+Polanco and airport staff said the airport and city lights went out as the object passed, and the control tower reported its instruments behaving abnormally at the same time. The case was widely covered in the Argentine press, and the French COMETA report (1999) cites it among aviation cases.
+
+Argentine media reported in 2026 that it appears in U.S. declassified UAP files; that has not been matched to a specific record here.
+
+*Sources: [Clarín (2 August 1995)](https://ufologie.patrickgross.org/press/clarin2aug1995.htm)*

@@ -12,3 +12,9 @@ facts:
     by: jean-charles-duboc
     source: v-npc-2007-ufo-close-encounters@15:43
 ---
+
+On 28 January 1994, the crew of Air France flight 3532, captained by Jean-Charles Duboc, reported a very large object near Paris. The sighting coincided with a radar track recorded at the French air defence centre.
+
+The case was studied by France's COMETA group and by GEIPAN, the official French UAP office, and remains unexplained. Duboc described it at the National Press Club in Washington in 2007; his account is listed below.
+
+*Sources: National Press Club (2007)*

@@ -26,3 +26,11 @@ facts:
     status: claimed
     source: https://ufologie.patrickgross.org/htm/belstu03.htm
 ---
+
+From 29 November 1989, when gendarmes and others around Eupen reported large, slow, silent triangular craft with lights at the corners, Belgium saw a wave of sightings that lasted into 1990 and beyond; the Eupen sightings alone drew 143 witness reports, most of them submitted after media coverage.
+
+On the night of 30–31 March 1990, after ground radar contacts at Semmerzake, the Belgian Air Force scrambled two F-16s from Beauvechain. In about an hour and nine interception attempts the fighters achieved three brief radar locks on fast-moving targets but never saw anything. The Air Force published its findings, presented by Col. (later Maj.-Gen.) Wilfried De Brouwer.
+
+Later technical analyses attributed the F-16 locks to radar artefacts and atmospheric effects, and sceptics point to misidentified aircraft and media-driven reports. The famous Petit-Rechain photograph of a triangle with corner lights, published in April 1990, was admitted by its author in July 2011 to be a hoax made from painted styrofoam.
+
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Belgian_UFO_wave) · Belgian Air Force report (1990)*

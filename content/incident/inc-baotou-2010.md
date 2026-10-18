@@ -12,3 +12,9 @@ facts:
     status: claimed
     source: https://petergreenberg.com/2010/10/08/ufo-shuts-down-chinese-airport/
 ---
+
+In September 2010, flights into Baotou Airport in Inner Mongolia were made to circle while an unidentified object was reported over the airport. Two flights, Air China 1107 and Juneyao 1137, were diverted to Ordos and Taiyuan, and operations resumed after about an hour.
+
+It was the second disruption at a Chinese airport attributed to a UFO in 2010, after Hangzhou Xiaoshan in July. No official identification of the object was reported.
+
+*Sources: [Peter Greenberg (2010)](https://petergreenberg.com/2010/10/08/ufo-shuts-down-chinese-airport/)*

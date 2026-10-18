@@ -38,3 +38,10 @@ facts:
     source: https://en.wikipedia.org/wiki/Ariel_School_UFO_incident
 ---
 
+On 16 September 1994, during the mid-morning break at Ariel School, a private primary school in Ruwa near Harare, Zimbabwe, more than 60 children said they saw one or more silver disc-shaped craft land in the brush beyond the playground, and small beings with large eyes. Some said the beings communicated with them telepathically.
+
+The BBC's Tim Leach reported from the school, the ufologist Cynthia Hind interviewed the children and collected their drawings on 20 September, and the Harvard psychiatrist John Mack interviewed them in November 1994. The documentary *Ariel Phenomenon* (2022) follows former pupils revisiting their accounts as adults.
+
+Sceptical explanations include mass suggestion and contamination from group interviews, misidentification of a dust devil or a touring puppet show, and a former pupil's 2023 claim that he started the story, which contradicts his own 2008 account.
+
+*Sources: BBC report (1994) · [Wikipedia](https://en.wikipedia.org/wiki/Ariel_School_UFO_incident)*

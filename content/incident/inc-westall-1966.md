@@ -37,3 +37,10 @@ facts:
     source: https://en.wikipedia.org/wiki/Westall_UFO
 ---
 
+On 6 April 1966, more than 200 students and teachers at Westall High School and the neighbouring Westall State School in Clayton South, Melbourne, saw a silver, metallic object descend, hover near a grassy paddock and then leave at speed; estimates of the number of witnesses range from about 100 to more than 300. The schools are close to RAAF Laverton.
+
+Witnesses say school administrators and military officials told them not to discuss it. The science teacher Andrew Greenwood later said that RAAF officers visited him and warned him to stay silent, and that the headmaster told them to "go and jump in the lake".
+
+The researcher Keith Basterfield, working from National Archives of Australia records, has proposed a stray HIBAL high-altitude radiation-sampling balloon launched from Mildura, which would have looked silvery and trailed a parachute; the launch paperwork for the relevant days is missing, so the match is unconfirmed.
+
+*Sources: ABC Australian Story · [Wikipedia](https://en.wikipedia.org/wiki/Westall_UFO)*

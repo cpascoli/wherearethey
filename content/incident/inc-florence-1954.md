@@ -25,3 +25,8 @@ facts:
     source: https://blog.geolsoc.org.uk/2014/12/09/door-9-football-geothermal-energy-and-the-1954-wave-of-ufos/
 ---
 
+On 27 October 1954, during a football match at Florence's Stadio Artemio Franchi, about 10,000 spectators looked up at strange cigar- or egg-shaped objects crossing the sky. Witnesses described silvery-white threads, so-called "angel hair", drifting down over the city afterwards.
+
+A University of Florence student, Alfredo Jacopozzi, collected samples of the filaments, which the university's Institute of Chemical Analysis reported contained boron, silicon, calcium and magnesium. The most commonly proposed explanation for such falls of "angel hair" is silk from migrating (ballooning) spiders.
+
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/UFO_sightings_in_Italy) · [The Florentine (2025)](https://www.theflorentine.net/2025/10/22/ufos-1954/)*

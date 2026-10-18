@@ -30,3 +30,11 @@ facts:
     status: claimed
     source: https://en.wikipedia.org/wiki/1976_Tehran_UFO_incident
 ---
+
+In the early hours of 19 September 1976, residents of Tehran's Shemiran district phoned Mehrabad Airport about a brightly lit object in the sky, and the Imperial Iranian Air Force scrambled two F-4 Phantom II jets. The first, flown by Lt. Yaddi Nazeri, lost its instruments and UHF and intercom communications as it closed to about 25 nautical miles; they came back as it turned away. The second, flown by Maj. Parviz Jafari with 1st Lt. Jalal Damirian, locked the object on radar at 27 nautical miles. As Jafari prepared to fire an AIM-9 Sidewinder, his weapons control panel and communications failed, and the crew reported smaller objects separating from the main one.
+
+A report went through U.S. defence attaché channels to the Defense Intelligence Agency and was circulated to the Joint Chiefs of Staff, the National Security Council, the White House and the CIA; the DIA evaluator rated it an outstanding case meeting all the criteria for a valid study of the phenomenon. The documents were later released under the Freedom of Information Act, and Jafari described the encounter publicly at the National Press Club in 2007.
+
+The sceptic Philip J. Klass attributed the light to the planet Jupiter and the failures to ordinary equipment faults, noting the first F-4's history of electrical problems; others have pointed to meteors that night.
+
+*Sources: DIA report (1976) · [Wikipedia](https://en.wikipedia.org/wiki/1976_Tehran_UFO_incident)*

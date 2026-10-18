@@ -13,3 +13,9 @@ facts:
     status: claimed
     source: https://en.wikipedia.org/wiki/UFO_sightings_in_Indonesia
 ---
+
+On 28 January 1953, a sighting over Medan, North Sumatra, became what is described as the first officially documented UFO report in Indonesia. Around 1962, about 20 people on Sumatra's west coast, mostly Army officers and their wives, also reported a silent, torpedo-like craft with a flaming tail.
+
+Few details of the Medan sighting itself are available in English sources.
+
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/UFO_sightings_in_Indonesia)*

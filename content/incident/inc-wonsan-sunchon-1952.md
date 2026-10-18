@@ -19,3 +19,11 @@ facts:
     by: otto-weyland
     source: https://en.wikipedia.org/wiki/Wonsan-Sunchon_UFO_incident
 ---
+
+Around midnight on 29 January 1952, during the Korean War, gunners on a U.S. Air Force B-29 bomber over Wonsan, North Korea, watched an orange, globe-shaped light keep pace with the aircraft at about 20,000 feet and 200 mph for some five minutes, "occasionally emitting blue flames like those of a cooking stove". A second B-29 crew over Sunchon, roughly 300 miles away, reported a similar lighted orange sphere following them for about a minute.
+
+The Far East Air Forces commander, Lt. Gen. Otto P. Weyland, told the press: "We can't say there's nothing to it, but unless we can get more data, I don't think we can expect a conclusive answer." The reports were widely covered from February 1952 and, according to Project Blue Book officials, helped fuel that year's wave of UFO reports.
+
+No explanation was established; Weyland himself doubted that the glow of jet engines could account for it.
+
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Wonsan-Sunchon_UFO_incident)*

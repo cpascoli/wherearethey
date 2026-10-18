@@ -26,3 +26,11 @@ facts:
     status: claimed
     source: https://theaviationist.com/2013/11/10/f-14-vs-ufo/
 ---
+
+According to Iranian aircrew interviewed by the aviation historian Tom Cooper, in 2004 Iran formed an air-defence task force of F-4E and F-14 fighters with command and sensor aircraft to protect its nuclear sites against what it believed were CIA spy drones. Crews nicknamed them "luminous objects" and credited them with hovering and extreme speeds.
+
+In one account from November 2004, near the Arak heavy-water plant, an armed F-14A crew reported a spherical object with a green, afterburner-like glow; when they illuminated it with radar, their radar scope was disrupted.
+
+No official Iranian documents are available, so the accounts cannot be checked. U.S. military UAP reports over Iran from 2020–2022 appear separately in the PURSUE releases.
+
+*Sources: [The Aviationist (2013)](https://theaviationist.com/2013/11/10/f-14-vs-ufo/)*

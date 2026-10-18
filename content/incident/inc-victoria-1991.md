@@ -14,3 +14,9 @@ facts:
   - text: Later stories of a 1992 crash, with recovered metal and Argentine Air Force involvement, are not substantiated by any official record located so far.
     status: unverified
 ---
+
+From mid-1991 the Argentine press reported strange lights over Laguna del Pescado near Victoria, Entre Ríos. A local cable channel filmed lights from the La Pepita estancia, and the footage was broadcast nationally.
+
+Later stories of a 1992 crash, with recovered metal and Argentine Air Force involvement, are not supported by any official record located so far.
+
+*Sources: [Visión OVNI](https://www.visionovni.com.ar/archivos/618)*

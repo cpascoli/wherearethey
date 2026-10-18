@@ -14,3 +14,6 @@ facts:
     source: https://www.latimes.com/archives/la-xpm-2002-jul-28-adna-ufo28-story.html
 ---
 
+On 26 July 2002, two F-16 fighters were scrambled near Joint Base Andrews, Maryland, after reports of a bright blue light over the Washington area, as reported by the *Los Angeles Times* two days later. No identification of the light was announced.
+
+*Sources: [Los Angeles Times (2002)](https://www.latimes.com/archives/la-xpm-2002-jul-28-adna-ufo28-story.html)*

@@ -28,3 +28,11 @@ facts:
     status: claimed
     source: https://www.gutenberg.org/ebooks/17346
 ---
+
+Exercise Mainbrace, NATO's first large naval exercise in the North Atlantic in September 1952, involving some 80,000 personnel and 200 ships, produced several UFO reports from military observers.
+
+On 19 September 1952, Flight Lt. John Kilburn and other RAF personnel at RAF Topcliffe in North Yorkshire saw a silvery disc apparently following a Meteor jet on its approach, swaying like a pendulum, then hovering and speeding away; personnel at nearby RAF Dishforth reported something similar. The sightings were front-page news in British papers, and NATO later confirmed that Danish aircrew had seen a comparable silvery disc over the North Sea the same day.
+
+According to Edward Ruppelt of Project Blue Book, the Mainbrace sightings led the RAF to take UFOs seriously, and the UK Air Ministry began investigating reports on a permanent basis in 1953. No explanation was published.
+
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Exercise_Mainbrace) · [Project 1947](http://www.project1947.com/shg/ukufo/1952topcliffe.htm) · Ruppelt, The Report on Unidentified Flying Objects (1956)*

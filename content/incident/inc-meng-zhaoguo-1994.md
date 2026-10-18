@@ -15,3 +15,9 @@ facts:
     by: meng-zhaoguo
     source: https://en.wikipedia.org/wiki/UFO_sightings_in_China
 ---
+
+In June 1994, Meng Zhaoguo, a worker at the Red Flag Forest Farm in Heilongjiang, China, said he saw an object crash on a mountainside, was struck by a beam of light when he went to look, and later had repeated encounters with beings.
+
+The case was investigated by Chinese UFO researchers and is one of China's best-known abduction claims. It rests on Meng's own testimony.
+
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/UFO_sightings_in_China)*

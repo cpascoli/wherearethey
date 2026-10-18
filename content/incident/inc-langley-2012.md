@@ -13,3 +13,8 @@ facts:
     source: v-2025-09-09-hearing-a@55:03
 ---
 
+Former Air Force intelligence officer Dylan Borland testified that in 2012, at Langley Air Force Base in Virginia, he saw a silent triangular craft about 100 feet wide with a "fluid or dynamic" structure hovering about 100 feet above the ground, and that his mobile phone froze during the sighting.
+
+Borland gave the account under oath to the House Oversight Committee on 9 September 2025; it is listed below.
+
+*Sources: House Oversight hearing (9 September 2025)*

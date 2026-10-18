@@ -15,3 +15,8 @@ facts:
     source: https://thehill.com/policy/defense/4937166-drone-flights-virginia-base/
 ---
 
+In December 2023, unidentified drones or aircraft repeatedly entered restricted airspace over Langley Air Force Base in Virginia on 17 nights in a row, according to Gen. Gregory Guillot, commander of NORAD and U.S. Northern Command.
+
+No public attribution of the aircraft has been made.
+
+*Sources: [The Hill (2024)](https://thehill.com/policy/defense/4937166-drone-flights-virginia-base/)*

@@ -17,3 +17,9 @@ facts:
     status: claimed
     source: http://www.china.org.cn/china/2010-07/08/content_20449696.htm
 ---
+
+At about 20:40 on 7 July 2010, a flight crew preparing to descend into Hangzhou Xiaoshan International Airport in Zhejiang reported an unidentified object to air traffic control. Aviation authorities closed the airport for about an hour, holding departures and diverting arrivals to Ningbo and Wuxi.
+
+Chinese experts quoted by state media, including the curator of the Beijing Planetarium, said photos circulating online most likely showed an aircraft's lights, and later reports suggested the object may have been a military aircraft.
+
+*Sources: [China.org.cn (2010)](http://www.china.org.cn/china/2010-07/08/content_20449696.htm)*

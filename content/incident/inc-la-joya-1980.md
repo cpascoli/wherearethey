@@ -15,3 +15,9 @@ facts:
     by: oscar-santa-maria
     source: v-npc-2007-ufo-close-encounters@36:38
 ---
+
+On 11 April 1980, Peruvian Air Force pilot Oscar Santa María was ordered to intercept a balloon-like object over La Joya Air Base near Arequipa. He says he fired cannon rounds at it without visible effect, and that it then outmanoeuvred his Sukhoi fighter at high altitude.
+
+Santa María described the encounter at the National Press Club in Washington in 2007; his account is listed below.
+
+*Sources: National Press Club (2007)*
