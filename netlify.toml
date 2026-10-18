@@ -19,3 +19,9 @@
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=3600"
+
+# Documentaries and books used to share one page
+[[redirects]]
+  from = "/documentaries-and-books"
+  to = "/documentaries"
+  status = 301

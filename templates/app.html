@@ -58,7 +58,8 @@
       <button class="nv-more" id="btn-more" data-group="shelf index claims" aria-haspopup="true" aria-expanded="false" aria-label="More"><svg class="nv-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="18.5" cy="12" r="1.6"/></svg><span>More<i class="nv-caret"> ▾</i></span></button>
     </nav>
     <div class="more-menu" id="more-menu" role="menu" hidden>
-      <a role="menuitem" data-view="shelf" href="/documentaries-and-books"><b>Documentaries &amp; books</b><small>Films and books by people on record</small></a>
+      <a role="menuitem" data-view="shelf" data-shelf="film" href="/documentaries"><b>Documentaries</b><small>Films featuring people on record</small></a>
+      <a role="menuitem" data-view="shelf" data-shelf="book" href="/books"><b>Books</b><small>Written by or about people on record</small></a>
       <a role="menuitem" data-view="index" href="/a-z"><b>Index</b><small>Every file A–Z, including 450 official records</small></a>
       <a role="menuitem" data-view="claims" href="/claims"><b>Claims</b><small>Every claim and its status</small></a>
       <div class="mm-sep"></div>
@@ -135,8 +136,8 @@
         <div id="claims" class="claims"></div>
       </section>
       <section class="view" id="view-shelf" hidden>
-        <h2 class="lib-title">Documentaries &amp; books</h2>
-        <div class="index-bar"><div class="seg" id="shelf-tabs"></div><span class="muted small">Secondary works: what's said in them is testimony, marked as claimed until an official record backs it.</span></div>
+        <h2 class="lib-title" id="shelf-title">Documentaries</h2>
+        <div class="index-bar"><span class="muted small">Secondary works: what's said in them is testimony, marked as claimed until an official record backs it.</span></div>
         <div id="shelf" class="shelf"></div>
       </section>
       <section class="view" id="view-index" hidden>

@@ -21,7 +21,7 @@ const PLURAL = {
   film: 'Documentaries', book: 'Books', record: 'Official records (PURSUE)', video: 'Videos', event: 'Events', concept: 'Concepts', place: 'Places', source: 'Channels & sources',
 };
 // app views → paths (keep in sync with VIEW_PATH in app.js)
-export const VIEW_PATH = { home: '/', graph: '/explore', timeline: '/timeline', map: '/world', videos: '/videos', shelf: '/documentaries-and-books', index: '/a-z', claims: '/claims' };
+export const VIEW_PATH = { home: '/', graph: '/explore', timeline: '/timeline', map: '/world', videos: '/videos', shelf: '/documentaries', books: '/books', index: '/a-z', claims: '/claims' };
 // full transcripts on every video page (switch to a kind check to limit some videos to moments + excerpts)
 const FULL_TRANSCRIPT = () => true;
 // types whose ids are already clean word slugs; the rest are slugged from their name
@@ -86,7 +86,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
   for (const x of edges) for (const [a, b, dir] of [[x.s, x.t, 'out'], [x.t, x.s, 'in']]) (near.get(a) || near.set(a, []).get(a)).push({ other: b, label: x.label, kind: x.kind, dir });
 
   const pages = []; // { path, title, description, body, jsonld, image, noindex, type }
-  const nav = `<nav class="ssr-nav">${Object.entries({ Home: '/', Explore: '/explore', Timeline: '/timeline', World: '/world', Videos: '/videos', 'Documentaries & books': '/documentaries-and-books', 'A–Z index': '/a-z', Claims: '/claims', About: '/about' }).map(([l, h]) => `<a href="${h}">${l}</a>`).join(' · ')}</nav>`;
+  const nav = `<nav class="ssr-nav">${Object.entries({ Home: '/', Explore: '/explore', Timeline: '/timeline', World: '/world', Videos: '/videos', Documentaries: '/documentaries', Books: '/books', 'A–Z index': '/a-z', Claims: '/claims', About: '/about' }).map(([l, h]) => `<a href="${h}">${l}</a>`).join(' · ')}</nav>`;
 
   for (const e of entities) {
     const h = [];
@@ -168,12 +168,13 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
   const intro = `An open, sourced archive of what officials, pilots, radar operators, intelligence officers and scientists have said on the record about unidentified anomalous phenomena (UAP) and non-human intelligence: ${stats.byType.person} people, ${stats.byType.incident} incidents, ${stats.byType.hearing} hearings, ${stats.videos} videos with ${stats.transcriptHours} hours of transcripts, and every claim with its status and source.`;
   const typeOrder = ['person', 'incident', 'hearing', 'program', 'organization', 'document', 'event', 'concept', 'place', 'film', 'book', 'video', 'source'];
   const views = {
-    home: ['Where Are They — UAP / NHI case archive', intro, `<h1>Where are they?</h1><p>${esc(intro)}</p><h2>Start here</h2><ul><li><a href="/videos">Videos: hearings, interviews and archival footage with transcripts</a></li><li><a href="/claims">Claims ledger: every claim and its status</a></li><li><a href="/a-z">A–Z index of every file</a></li><li><a href="/documentaries-and-books">Documentaries &amp; books</a></li></ul><h2>Hearings &amp; briefings</h2>${listOf(ofType('hearing').sort(newest), e => e.date ? ` (${esc(fmtDate(e.date))})` : '')}<h2>Programs</h2>${listOf(ofType('program'))}`],
+    home: ['Where Are They — UAP / NHI case archive', intro, `<h1>Where are they?</h1><p>${esc(intro)}</p><h2>Start here</h2><ul><li><a href="/videos">Videos: hearings, interviews and archival footage with transcripts</a></li><li><a href="/claims">Claims ledger: every claim and its status</a></li><li><a href="/a-z">A–Z index of every file</a></li><li><a href="/documentaries">Documentaries</a></li><li><a href="/books">Books</a></li></ul><h2>Hearings &amp; briefings</h2>${listOf(ofType('hearing').sort(newest), e => e.date ? ` (${esc(fmtDate(e.date))})` : '')}<h2>Programs</h2>${listOf(ofType('program'))}`],
     graph: ['Explore the network', 'An interactive map of the people, programs, incidents, hearings and documents in the UAP / NHI record, and how they connect.', `<h1>Explore the network</h1><p>An interactive map of the people, programs, incidents, hearings and documents in the record, and how they connect. Every file is also listed in the <a href="/a-z">A–Z index</a>.</p>`],
     timeline: ['Timeline', 'UAP / NHI incidents, hearings, programs and events in chronological order.', `<h1>Timeline</h1>${listOf(entities.filter(e => e.date && ['incident', 'hearing', 'event', 'program', 'document'].includes(e.type)).sort((a, b) => String(a.date).localeCompare(String(b.date))), e => ` (${esc(fmtDate(e.date))})`)}`],
     map: ['World map', 'Where UAP incidents and related events took place, on a world map.', `<h1>World map</h1>${listOf(entities.filter(e => e.place && e.type !== 'record'), e => ` (${esc(e.place.name)})`)}`],
     videos: ['Videos', `Congressional hearings, interviews and archival footage about UAP, with synced transcripts and curated moments: ${stats.videos} videos, ${stats.transcriptHours} hours transcribed.`, `<h1>Videos</h1>${listOf(ofType('video').sort(newest), e => ` (${[e.channel, fmtDate(e.date)].filter(Boolean).map(esc).join(', ')})`)}`],
-    shelf: ['Documentaries & books', 'Documentaries and books about UAP by people on the record, with trailers and where to find them.', `<h1>Documentaries &amp; books</h1><h2>Documentaries</h2>${listOf(ofType('film').sort(newest))}<h2>Books</h2>${listOf(ofType('book').sort(newest))}`],
+    shelf: ['Documentaries', 'Documentaries about UAP featuring people on the record, with trailers and where to watch them.', `<h1>Documentaries</h1>${listOf(ofType('film').sort(newest))}`],
+    books: ['Books', 'Books about UAP written by or about people on the record, with where to find them.', `<h1>Books</h1>${listOf(ofType('book').sort(newest))}`],
     index: ['A–Z index', 'Every file in the archive, A to Z: people, incidents, hearings, programs, organizations, documents and official records.', `<h1>A–Z index</h1>${[...typeOrder, 'record'].map(t => `<h2 id="${t}">${PLURAL[t]}</h2>${listOf(ofType(t).sort((a, b) => a.name.localeCompare(b.name)))}`).join('')}`],
     claims: ['Claims ledger', 'Every claim in the archive with its status (documented, claimed or unverified), who made it and the source.', `<h1>Claims ledger</h1><p>Documented: backed by an official record or primary document. Claimed: on-record testimony not independently confirmed. Unverified: reported without a primary source.</p>${entities.filter(e => e.facts.length && e.type !== 'record').map(e => `<h2>${link(e.id)}</h2>${factsHtml(e.facts)}`).join('')}`],
   };
