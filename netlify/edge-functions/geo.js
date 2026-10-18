@@ -13,4 +13,5 @@ export default async (request, context) => {
   return new Response(html, { status: res.status, headers });
 };
 
-export const config = { path: ['/', '/index.html'] };
+// every page (each view and file has its own HTML page); static data and assets skip the function
+export const config = { path: '/*', excludedPath: ['/assets/*', '/data/*', '/sitemap.xml', '/robots.txt'] };

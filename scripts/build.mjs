@@ -8,6 +8,7 @@ import path from 'node:path';
 import { marked } from 'marked';
 import { ROOT, TYPES, STATUSES, readEntries, toSeconds, youtubeId } from './lib.mjs';
 import { computeLayouts } from './layout.mjs';
+import { assignPaths, writePages } from './pages.mjs';
 
 export const CREDIBLE = ['congress', 'government', 'intelligence', 'military', 'aviator', 'sensor-operator', 'academia', 'astronaut', 'aerospace', 'law-enforcement'];
 const REPORTER = ['journalist', 'policy-expert'];
@@ -77,7 +78,7 @@ export async function build({ check = false, quiet = false } = {}) {
     for (const k of ['credits', 'publisher', 'isbn', 'pages']) if (d[k] != null) e[k] = String(d[k]);
     if (d.runtime != null) e.runtime = Number(d.runtime);
     // books & films: a cover image saved as site/assets/covers/<id>.jpg is picked up automatically
-    if (['book', 'film'].includes(r.type) && fs.existsSync(path.join(ROOT, 'site', 'assets', 'covers', `${r.id}.jpg`))) e.cover = `assets/covers/${r.id}.jpg`;
+    if (['book', 'film'].includes(r.type) && fs.existsSync(path.join(ROOT, 'site', 'assets', 'covers', `${r.id}.jpg`))) e.cover = `/assets/covers/${r.id}.jpg`;
     // videos we host ourselves on R2 (only with an explicit decision): stream file and thumbnail, relative to FILES_BASE
     if (d.stream) e.stream = String(d.stream);
     if (d.thumb) e.thumb = String(d.thumb);
@@ -325,6 +326,7 @@ export async function build({ check = false, quiet = false } = {}) {
   if (check) return { errors, warnings, stats };
 
   // ── Write site/data ──
+  assignPaths(entities); // real URLs (/person/david-fravor), frozen in content/slugs.json
   const out = path.join(ROOT, 'site', 'data');
   fs.rmSync(out, { recursive: true, force: true });
   fs.mkdirSync(path.join(out, 'transcripts'), { recursive: true });
@@ -353,8 +355,9 @@ export async function build({ check = false, quiet = false } = {}) {
   for (const [id, parts] of doctexts) {
     fs.writeFileSync(path.join(out, 'doctext', `${id}.js`), `window.KBD&&KBD(${JSON.stringify(id)},${JSON.stringify(parts)});\n`);
   }
+  const pageStats = writePages({ entities, edges: edgeList, transcripts, stats, filesBase: process.env.FILES_BASE || null });
   if (!quiet) {
-    console.log(`built ${stats.entities} entries, ${stats.edges} links, ${stats.transcripts} transcripts (${stats.transcriptHours} h), ${stats.documents} documents (${stats.documentPages} pages), ${stats.mentions} mentions — ${Date.now() - t0} ms`);
+    console.log(`built ${stats.entities} entries, ${stats.edges} links, ${stats.transcripts} transcripts (${stats.transcriptHours} h), ${stats.documents} documents (${stats.documentPages} pages), ${stats.mentions} mentions, ${pageStats.pages} pages (${pageStats.indexed} indexable) — ${Date.now() - t0} ms`);
   }
   return { errors, warnings, stats };
 }

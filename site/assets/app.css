@@ -708,3 +708,14 @@ body.resizing iframe { pointer-events: none; }
   .more-menu { top: auto; left: 8px; right: 8px; bottom: calc(64px + env(safe-area-inset-bottom)); min-width: 0; padding: 8px; }
   .more-menu a { padding: 11px 12px; font-size: 15px; }
 }
+
+/* ── server-rendered article (scripts/pages.mjs): for crawlers and no-JS readers; the app removes it on boot ── */
+.js .ssr { display: none; }
+html:not(.js) body { overflow: auto; height: auto; }
+html:not(.js) .top, html:not(.js) .app, html:not(.js) .views, html:not(.js) .more-menu, html:not(.js) .top-about { display: none; }
+.ssr { max-width: 760px; margin: 0 auto; padding: 24px 16px 60px; line-height: 1.6; }
+.ssr-nav { font-size: 13px; margin-bottom: 24px; }
+.ssr-kicker { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.ssr-facts li, .ssr-moments li { margin-bottom: 8px; }
+.ssr-st { font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); }
+.ssr-by, .ssr-src, .ssr-note { color: var(--muted); font-size: .92em; }

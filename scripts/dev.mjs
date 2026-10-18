@@ -20,7 +20,10 @@ function resolve(urlPath) {
   for (const prefix of ['/media/', '/library/']) {
     if (p.startsWith(prefix)) return path.join(ROOT, p);
   }
-  return path.join(ROOT, 'site', p === '/' ? 'index.html' : p);
+  const file = path.join(ROOT, 'site', p === '/' ? 'index.html' : p);
+  // like Netlify: /person/david-fravor is served from person/david-fravor.html
+  if (!path.extname(p) && !fs.existsSync(file) && fs.existsSync(file + '.html')) return file + '.html';
+  return file;
 }
 
 const server = http.createServer((req, res) => {
@@ -33,6 +36,8 @@ const server = http.createServer((req, res) => {
   }
   const file = resolve(req.url);
   if (!file.startsWith(ROOT) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) {
+    const nf = path.join(ROOT, 'site', '404.html');
+    if (fs.existsSync(nf)) { res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' }); fs.createReadStream(nf).pipe(res); return; }
     res.writeHead(404); res.end('Not found'); return;
   }
   const type = TYPES[path.extname(file).toLowerCase()] || 'application/octet-stream';
@@ -66,11 +71,11 @@ async function doRebuild(reason) {
 
 rebuild('start');
 let timer;
-for (const dir of ['content', 'site/assets', 'site/index.html', 'media']) {
+for (const dir of ['content', 'site/assets', 'templates', 'media', 'scripts']) {
   const full = path.join(ROOT, dir);
   if (!fs.existsSync(full)) continue;
   fs.watch(full, { recursive: true }, (_, f) => {
-    if (String(f).endsWith('.mp4') || String(f).startsWith('.')) return;
+    if (String(f).endsWith('.mp4') || String(f).startsWith('.') || String(f).endsWith('slugs.json')) return;
     clearTimeout(timer);
     timer = setTimeout(() => { console.log(`changed: ${dir}/${f ?? ''}`); rebuild(f); }, 250);
   });

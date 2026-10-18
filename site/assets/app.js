@@ -92,7 +92,8 @@
   const PREFIX = { record: 'R', person: 'P', incident: 'I', hearing: 'H', program: 'PG', organization: 'O', document: 'D', film: 'F', book: 'B', video: 'V', event: 'E', concept: 'C', place: 'L', source: 'S' };
   const fileNo = e => { let h = 2166136261; for (const c of e.id) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return `${PREFIX[e.type] || 'X'}-${(h >>> 0).toString(16).toUpperCase().slice(-4).padStart(4, '0')}`; };
   // Library files: served locally by the dev server, or from Cloudflare R2 on the hosted site (FILES_BASE at build time)
-  const fileUrl = f => (KB.filesBase ? `${KB.filesBase.replace(/\/$/, '')}/${f}` : `../${f}`);
+  const hrefOf = id => byId.get(id)?.path || '/'; // the file's own page (/person/david-fravor)
+  const fileUrl = f => (KB.filesBase ? `${KB.filesBase.replace(/\/$/, '')}/${f}` : `/${f}`);
   const fmtT = s => { s = Math.max(0, Math.floor(s)); const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60; return (h ? h + ':' + String(m).padStart(2, '0') : m) + ':' + String(x).padStart(2, '0'); };
   const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const fmtD = d => { if (!d) return ''; const [y, m, day] = String(d).split('-'); return [day && +day, m && MONTHS[+m - 1], y].filter(Boolean).join(' '); };
@@ -113,7 +114,7 @@
   const chip = (id, extra = '') => {
     const e = byId.get(id);
     if (!e) return `<span class="chip dim">${esc(id)}?</span>`;
-    return `<a class="chip ${e.cred === 'outside' ? 'dim' : ''}" data-goto="${esc(id)}" href="#">${dot(id)}${esc(e.name)}${extra}</a>`;
+    return `<a class="chip ${e.cred === 'outside' ? 'dim' : ''}" data-goto="${esc(id)}" href="${hrefOf(id)}">${dot(id)}${esc(e.name)}${extra}</a>`;
   };
 
   // ───────────── state ─────────────
@@ -179,7 +180,7 @@
     renderHist();
     $('#f-mentions').checked = state.showMentions;
     const s = KB.stats;
-    $('#f-stats').innerHTML = `<b>${s.entities}</b> entries · <b>${s.edges}</b> links<br><b>${s.transcripts}</b> transcripts · <b>${s.transcriptHours}</b> hours · <b>${s.mentions.toLocaleString()}</b> mentions<br>Built ${new Date(KB.built).toLocaleString()}<div class="side-links">© ${new Date().getFullYear()} Carlo Pascoli · <a href="about.html">About</a> · <a href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener">GitHub</a> · <a href="privacy.html">Privacy</a>${window.GA_ID ? ' · <a href="#" data-open-consent>Cookies</a>' : ''}</div>` +
+    $('#f-stats').innerHTML = `<b>${s.entities}</b> entries · <b>${s.edges}</b> links<br><b>${s.transcripts}</b> transcripts · <b>${s.transcriptHours}</b> hours · <b>${s.mentions.toLocaleString()}</b> mentions<br>Built ${new Date(KB.built).toLocaleString()}<div class="side-links">© ${new Date().getFullYear()} Carlo Pascoli · <a href="/about">About</a> · <a href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener">GitHub</a> · <a href="/privacy">Privacy</a>${window.GA_ID ? ' · <a href="#" data-open-consent>Cookies</a>' : ''}</div>` +
       (KB.warnings.length ? `<details><summary>${KB.warnings.length} build warning${KB.warnings.length > 1 ? 's' : ''}</summary><ul>${KB.warnings.map(w => `<li>${esc(w)}</li>`).join('')}</ul></details>` : '');
   }
   function renderHist() {
@@ -709,7 +710,7 @@
     if (recs.length) {
       h.push(`<div class="p-sec p-side" id="sec-records"><h4>${e.type === 'record' ? 'Related records' : 'Official records'} <span>${recs.length}</span></h4><ul class="rec-list" data-collapse="8">${recs.map(r => {
         const pu = r.pursue || {};
-        return `<li><a href="#" data-goto="${esc(r.id)}">${esc(r.name)}</a><div class="small muted">${esc([pu.agency, pu.released && `released ${fmtD(pu.released)}`].filter(Boolean).join(' · '))}${pu.file ? ` · <a href="${esc(pu.file)}" target="_blank" rel="noopener">official file ↗</a>` : ''}</div></li>`;
+        return `<li><a href="${hrefOf(r.id)}" data-goto="${esc(r.id)}">${esc(r.name)}</a><div class="small muted">${esc([pu.agency, pu.released && `released ${fmtD(pu.released)}`].filter(Boolean).join(' · '))}${pu.file ? ` · <a href="${esc(pu.file)}" target="_blank" rel="noopener">official file ↗</a>` : ''}</div></li>`;
       }).join('')}</ul></div>`);
     }
     // connections
@@ -840,7 +841,7 @@
         res();
       };
       const s = document.createElement('script');
-      s.src = 'data/records.js';
+      s.src = '/data/records.js';
       s.onerror = () => res();
       document.head.append(s);
     });
@@ -982,7 +983,7 @@
       if (!trWaiters.has(id)) {
         trWaiters.set(id, []);
         const s = document.createElement('script');
-        s.src = `data/transcripts/${encodeURIComponent(id)}.js`;
+        s.src = `/data/transcripts/${encodeURIComponent(id)}.js`;
         s.onerror = () => { trWaiters.get(id)?.forEach(r => r(null)); trWaiters.delete(id); };
         document.head.append(s);
       }
@@ -1019,7 +1020,7 @@
       if (!dtWaiters.has(id)) {
         dtWaiters.set(id, []);
         const s = document.createElement('script');
-        s.src = `data/doctext/${encodeURIComponent(id)}.js`;
+        s.src = `/data/doctext/${encodeURIComponent(id)}.js`;
         s.onerror = () => { dtWaiters.get(id)?.forEach(r => r(null)); dtWaiters.delete(id); };
         document.head.append(s);
       }
@@ -1155,7 +1156,7 @@
       $('#yt').hidden = true; el.hidden = false;
       try { yt?.pauseVideo?.(); } catch { /* not ready */ }
       // dev server: local copy in media/; public site: our own copy streamed from R2 (videos with `stream:`)
-      if (!same) { el.src = v.local ? '../' + v.local : fileUrl(v.stream); if (v.thumb) el.poster = fileUrl(v.thumb); }
+      if (!same) { el.src = v.local ? '/' + v.local : fileUrl(v.stream); if (v.thumb) el.poster = fileUrl(v.thumb); }
       el.currentTime = t;
       if (autoplay) el.play().catch(() => {});
     } else if (!v.youtube) {
@@ -1223,7 +1224,7 @@
     $('#vid-detail').innerHTML = `<div class="vd-head"><button class="link vd-back" data-close-video>← All videos</button><h2>${esc(v.name)}</h2>
       <div class="vd-meta"><span>${esc([v.channel, fmtD(v.date), fmtDur(v.duration)].filter(Boolean).join(' · '))}</span>
       ${vsource(v).url ? `<a href="${esc(vsource(v).url)}" target="_blank" rel="noopener">${vsource(v).label} ↗</a>` : ''}
-      <a href="#" data-goto="${v.id}">Details</a></div>
+      <a href="${hrefOf(v.id)}" data-goto="${v.id}">Details</a></div>
       ${people.length ? `<div class="chips" style="margin-top:8px">${[...new Set(people)].map(id => chip(id)).join('')}</div>` : ''}</div>
       <div class="tabs">${tabs.map(([k, l]) => `<button data-tab="${k}" class="${curTab === k ? 'on' : ''}">${l}</button>`).join('')}</div>
       <div class="tab-body" id="tab-body"></div>`;
@@ -1395,8 +1396,8 @@
             <div id="hq-dd" class="dropdown" hidden></div>
           </div>
           <div class="hero-cta">
-            <a class="btn primary" href="#/explore" data-home-view="graph">Explore the network</a>
-            <a class="btn" href="#/videos" data-home-view="videos">Watch the testimony</a>
+            <a class="btn primary" href="/explore" data-home-view="graph">Explore the network</a>
+            <a class="btn" href="/videos" data-home-view="videos">Watch the testimony</a>
           </div>
         </div>
         <div class="hero-scroll" aria-hidden="true">↓</div>
@@ -1432,7 +1433,7 @@
           <div class="home-kicker">Ways in</div>
           <h2>Navigate the complexity</h2>
           <div class="ways">${WAYS_IN.map(([v, t, d], i) => `
-            <a class="way" href="#/${v === 'graph' ? 'explore' : v}" data-home-view="${v}"><span class="way-n">0${i + 1}</span><b>${t}</b><span>${d}</span></a>`).join('')}</div>
+            <a class="way" href="${VIEW_PATH[v]}" data-home-view="${v}"><span class="way-n">0${i + 1}</span><b>${t}</b><span>${d}</span></a>`).join('')}</div>
         </section>
 
         <section class="home-sec">
@@ -1448,7 +1449,7 @@
         <footer class="home-foot">
           <div><b>WHERE ARE THEY</b> is a personal research archive. It collects public, on-record statements and official documents. It does not make claims of its own: every statement is attributed, and every status can be checked against its source.</div>
           <div class="muted">Built ${new Date(KB.built).toLocaleDateString()} · ${KB.stats.entities} files · ${KB.stats.edges.toLocaleString()} links · sources include congressional records, war.gov/UFO (PURSUE), the CIA and FBI reading rooms, NARA and The Black Vault.</div>
-          <div class="home-links">© ${new Date().getFullYear()} Carlo Pascoli · <a href="about.html">About</a> · <a href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener">GitHub</a> · <a href="privacy.html">Privacy &amp; cookies</a>${window.GA_ID ? ' · <a href="#" data-open-consent>Cookie settings</a>' : ''}</div>
+          <div class="home-links">© ${new Date().getFullYear()} Carlo Pascoli · <a href="/about">About</a> · <a href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener">GitHub</a> · <a href="/privacy">Privacy &amp; cookies</a>${window.GA_ID ? ' · <a href="#" data-open-consent>Cookie settings</a>' : ''}</div>
         </footer>
       </div>`;
     startHero();
@@ -1756,33 +1757,34 @@
   }
 
   // ───────────── navigation ─────────────
-  // URL names that differ from internal view ids (old #/graph links still resolve)
-  const ROUTE_OF = { graph: 'explore' }, VIEW_OF = { explore: 'graph' };
+  // Real URLs: each view has a path (/explore) and each file its own page (/person/david-fravor), generated by
+  // scripts/pages.mjs. The view a file was opened from lives in history.state, so Back/Forward restore it.
+  const VIEW_PATH = { home: '/', graph: '/explore', timeline: '/timeline', map: '/world', videos: '/videos', shelf: '/documentaries-and-books', index: '/a-z', claims: '/claims' };
+  const PATH_VIEW = Object.fromEntries(Object.entries(VIEW_PATH).map(([v, p]) => [p, v]));
+  const byPath = new Map(ents.filter(e => e.path).map(e => [e.path, e.id]));
+  let routing = false; // true while applying a URL, so the steps don't push history entries of their own
+  function urlFor() {
+    if (state.view === 'videos' && state.video) return hrefOf(state.video); // the video's page
+    if (state.sel && state.view !== 'home') return hrefOf(state.sel);
+    return VIEW_PATH[state.view] || '/';
+  }
   function setHash({ replace = false } = {}) {
-    let target;
-    if (state.view === 'home' && !state.sel) {
-      if (!location.hash) return; // home lives at the bare URL
-      target = location.pathname + location.search;
-    } else {
-      const parts = ['', ROUTE_OF[state.view] || state.view];
-      if (state.view === 'videos' && state.video) parts.push(state.video);
-      target = '#' + parts.join('/') + (state.sel ? `?sel=${encodeURIComponent(state.sel)}` : '');
-      if (location.hash === target) return;
-    }
-    history[replace ? 'replaceState' : 'pushState'](null, '', target);
+    if (routing) return;
+    const target = urlFor(), st = { view: state.view, sel: state.sel, video: state.video };
+    if (location.pathname === target && !location.hash) { history.replaceState(st, '', target + location.search); return; }
+    history[replace ? 'replaceState' : 'pushState'](st, '', target);
     trackView();
   }
   // Google Analytics: one page_view per in-app view, with the hash route turned into a readable path
-  // (e.g. /videos/v-jre-hal-puthoff-2025, /graph?sel=aawsap). Replaced history entries don't count twice.
+  // (the page's own path, e.g. /person/david-fravor). Replaced history entries don't count twice.
   let lastTracked = null;
   function trackView(force) {
     if (!window.GA_ON || typeof gtag !== 'function') return; // only after consent
-    const route = location.hash.replace(/^#/, '') || '/';
+    const route = location.pathname + location.search;
     if (route === lastTracked && !force) return;
     lastTracked = route;
     const [path, qs] = route.split('?');
-    const sel = new URLSearchParams(qs || '').get('sel');
-    const title = [sel && byId.get(sel)?.name, state.view === 'videos' && state.video && byId.get(state.video)?.name, state.view !== 'home' && state.view, 'Where Are They'].filter(Boolean).join(' · ');
+    const title = [state.sel && byId.get(state.sel)?.name, state.view === 'videos' && state.video && byId.get(state.video)?.name, state.view !== 'home' && state.view, 'Where Are They'].filter(Boolean).join(' · ');
     gtag('event', 'page_view', { page_location: location.origin + path + (qs ? '?' + qs : ''), page_path: path + (qs ? '?' + qs : ''), page_title: title });
   }
   function select(id, { from } = {}) {
@@ -1844,6 +1846,7 @@
       return;
     }
     const g = e.target.closest('[data-goto]');
+    if (g && g.matches('a[href^="/"]') && (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1)) return; // new tab / window
     if (g) {
       e.preventDefault();
       if (state.view === 'home') go('graph');
@@ -1903,19 +1906,38 @@
   computeVisible();
   renderFilters();
   const VIEWS = ['home', 'graph', 'timeline', 'map', 'videos', 'shelf', 'index', 'claims'];
-  function applyRoute(initial) {
-    const [path, qs] = location.hash.replace(/^#\/?/, '').split('?');
-    const [route, vid] = path.split('/');
-    const view = VIEW_OF[route] || route;
-    const sel = new URLSearchParams(qs || '').get('sel');
-    const v = VIEWS.includes(view) ? view : (!path ? 'home' : initial ? 'home' : state.view);
-    if (v !== state.view || initial) go(v);
-    if ((sel || null) !== state.sel) select(sel && byId.has(sel) ? sel : null);
-    if (v === 'videos' && vid && byId.has(vid) && vid !== state.video) openVideo(vid, 0, false);
-    else if (v === 'videos' && !vid && state.video) closeVideo();
+  function routeFromUrl() {
+    // legacy #/view/video?sel=id links from before real URLs
+    if (location.hash.startsWith('#/')) {
+      const [p, qs] = location.hash.slice(2).split('?');
+      const [r, vid] = p.split('/');
+      const view = r === 'explore' ? 'graph' : r;
+      const sel = new URLSearchParams(qs || '').get('sel');
+      return { view: VIEWS.includes(view) ? view : 'home', sel: byId.has(sel) ? sel : null, video: view === 'videos' && byId.has(vid) ? vid : null };
+    }
+    const p = decodeURIComponent(location.pathname).replace(/\.html$/, '').replace(/(.)\/+$/, '$1');
+    const t = +new URLSearchParams(location.search).get('t') || 0;
+    if (PATH_VIEW[p]) return { view: PATH_VIEW[p], sel: null, video: null };
+    const id = byPath.get(p);
+    if (!id) return { view: 'home', sel: null, video: null };
+    return byId.get(id).type === 'video' ? { view: 'videos', sel: null, video: id, t } : { view: 'graph', sel: id, video: null };
   }
-  window.addEventListener('hashchange', () => applyRoute(false));
+  function applyRoute(initial) {
+    const fromUrl = routeFromUrl();
+    const r = history.state?.view && !location.hash ? { ...history.state, t: fromUrl.t } : fromUrl;
+    routing = true;
+    try {
+      if (r.view !== state.view || initial) go(r.view, { keepVideo: !!r.video });
+      if ((r.sel || null) !== state.sel) select(r.sel && byId.has(r.sel) ? r.sel : null);
+      if (r.view === 'videos' && r.video && byId.has(r.video) && (r.video !== state.video || r.t || initial)) openVideo(r.video, r.t || 0, false);
+      else if (r.view === 'videos' && !r.video && state.video) closeVideo();
+    } finally { routing = false; }
+    // store the state on this entry; legacy hash links become real URLs
+    history.replaceState({ view: state.view, sel: state.sel, video: state.video }, '', urlFor() + (location.hash.startsWith('#/') ? '' : location.search));
+  }
+  window.addEventListener('hashchange', () => { if (location.hash.startsWith('#/')) applyRoute(true); });
   window.addEventListener('popstate', () => applyRoute(false));
+  document.getElementById('ssr')?.remove(); // the server-rendered article is for crawlers and no-JS readers
   // the logo returns home without a page reload
   $('.brand').addEventListener('click', e => { e.preventDefault(); go('home'); });
   applyRoute(true);
