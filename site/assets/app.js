@@ -333,8 +333,17 @@
         .map(([x, i]) => ({ data: { id: 'e' + i, source: x.s, target: x.t, label: x.label, kind: x.kind } })),
     ];
     cy = cytoscape({ container: $('#cy'), elements, style: graphStyle(), wheelSensitivity: 0.25, minZoom: 0.15, maxZoom: 3.5, boxSelectionEnabled: false });
-    let heldAt = 0; // a long-press opens the menu; the tap that ends it must not also take a step
-    cy.on('tap', 'node', ev => { if (Date.now() - heldAt > 700) select(ev.target.id(), { from: 'graph' }); });
+    // tap: open the file's card. Double-tap / double-click: follow it (start a trail, or take the next step).
+    let heldAt = 0, lastTap = { id: null, at: 0 }; // a long-press opens the menu; the tap that ends it does nothing else
+    cy.on('tap', 'node', ev => {
+      const id = ev.target.id(), now = Date.now();
+      if (now - heldAt < 700) return;
+      if (lastTap.id === id && now - lastTap.at < 400) { clearTimeout(lastTap.timer); lastTap = { id: null, at: 0 }; followFile(id); return; }
+      // phones: the card opens full screen and would catch the second tap, so wait to see if one is coming
+      // a clicked file is already in view: don't move the camera (it would also make a double-click miss)
+      const open = () => { noFrame = true; try { select(id, { from: 'graph' }); } finally { noFrame = false; } };
+      lastTap = { id, at: now, timer: window.innerWidth <= 860 ? setTimeout(open, 400) : (open(), null) };
+    });
     if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) window.__cy = cy; // for local UI tests
     cy.on('tap', ev => { if (ev.target === cy) select(null); });
     cy.on('mouseover', 'node', ev => { $('#cy').style.cursor = 'pointer'; if (!state.sel) highlight(ev.target.id(), true); });
@@ -466,6 +475,21 @@
     trailChanged(id);
   }
   function collapseFile(id) { state.trail.open.delete(id); trailChanged(); } // stays on the trail
+  // Double-click: follow a file. Outside a trail it starts one; on the trail's edge it becomes the next step and the
+  // earlier steps fold their connections away (the path stays); on an earlier step it goes back there and drops
+  // the steps after it. "Show its connections" (menu) remains the additive way to open other directions.
+  function followFile(id) {
+    if (!byId.has(id) || byId.get(id).type === 'record') return;
+    if (!state.trail) { startTrail(id); return; }
+    const T = state.trail, i = T.steps.indexOf(id);
+    if (i >= 0) T.steps.length = i + 1; else T.steps.push(id);
+    T.open = new Set([id]);
+    T.pinned.delete(id);
+    state.hiddenIds.delete(id);
+    if (state.sel !== id) select(id, { from: 'trail' });
+    if (window.innerWidth <= 860) closePanel(); // phones: keep following in the graph; a single tap opens the card
+    trailChanged(id);
+  }
   function popStep(id) {
     const T = state.trail;
     if (T.steps.length === 1) return; // keep one file to explore from
@@ -499,7 +523,7 @@
     if (bar.hidden) return;
     const steps = T ? T.steps.map(id => `<span class="tb-step ${state.sel === id ? 'on' : ''} ${T.open.has(id) ? '' : 'closed'}" style="--c:${TYPES[byId.get(id).type].color}"><button class="tb-name" data-trail-open="${esc(id)}" title="Open the file card">${esc(byId.get(id).name)}</button>${T.steps.length > 1 ? `<button class="tb-x" data-trail-pop="${esc(id)}" title="Take off the trail" aria-label="Take off the trail">×</button>` : ''}</span>`).join('<span class="tb-sep">›</span>') : '';
     bar.innerHTML = `${T ? `<div class="tb-row"><span class="tb-lbl">Trail</span>${steps}</div>` : ''}
-      <div class="tb-row tb-tools">${T && T.steps.length === 1 ? '<span class="tb-hint">Click a file to read it · right-click or long-press → Show its connections to go further</span>' : ''}
+      <div class="tb-row tb-tools">${T && T.steps.length === 1 ? '<span class="tb-hint">Click a file to read it · double-click (double-tap) to follow it · right-click or long-press for more</span>' : ''}
         ${nh ? `<span class="tb-hidden">${nh} hidden · <button class="link" data-unhide>show</button></span>` : ''}
         ${T ? '<button class="btn small" data-trail-exit>✕ Exit trail</button>' : ''}</div>`;
   }
@@ -601,6 +625,7 @@
     if (!always && rb.x1 >= m && rb.x2 <= w - m && rb.y1 >= m && rb.y2 <= h - m && cy.zoom() >= z * 0.6) return;
     cy.animate({ zoom: z, pan: { x: w / 2 - z * (bb.x1 + bb.x2) / 2, y: h / 2 - z * (bb.y1 + bb.y2) / 2 } }, { duration: 450 });
   }
+  let noFrame = false; // set while handling a click on a node in the graph
   function highlight(id, hover = false) {
     if (!cy) return;
     cy.batch(() => {
@@ -618,7 +643,7 @@
       const n = cy.getElementById(id);
       if (n.length && !n.hasClass('hidden')) {
         n.select();
-        if (!state.trail) requestAnimationFrame(() => frameHood(n)); // after the panel has opened and the canvas has its new size
+        if (!state.trail && !noFrame) requestAnimationFrame(() => frameHood(n)); // after the panel has opened and the canvas has its new size
       }
     }
   }
