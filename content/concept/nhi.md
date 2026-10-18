@@ -9,8 +9,8 @@ tags:
   - disclosure
 ---
 
-"Non-human intelligence" (NHI) is the term now used in official and congressional discussion for whatever intelligence might lie behind UAP, chosen to avoid assuming that it is extraterrestrial. The proposed UAP Disclosure Act of 2023 gave the term a formal legal definition.
+"Non-human intelligence" (NHI) is the term now used in official and congressional discussion for whatever intelligence might lie behind UAP, chosen to avoid assuming that it is extraterrestrial. The proposed UAP Disclosure Act of 2023 defined it as "any sentient intelligent non-human lifeform regardless of nature or ultimate origin that may be presumed responsible for unidentified anomalous phenomena or of which the Federal Government has become aware."
 
 The phrase gained wide currency through David Grusch's 2023 testimony that the U.S. has recovered "non-human" craft and biologics, claims that AARO says it found no evidence for.
 
-*Sources: House Oversight hearing (26 July 2023) · AARO Historical Record Report, Vol. 1 (2024)*
+*Sources: UAP Disclosure Act text (2023) · House Oversight hearing (26 July 2023) · AARO Historical Record Report, Vol. 1 (2024)*
