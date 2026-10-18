@@ -1,0 +1,1564 @@
+PHOTOGRAPHIC ANALYSIS OF THE CALVINE UFO PHOTOGRAPH
+By Andrew Robinson, Senior Lecturer in Photography, Sheffield Hallam University
+
+EXTENDED and UPDATED VERSION 5.0 – June 2024
+
+
+
+
+The Original Calvine Image (Craig Lindsay / Sheffield Hallam University 2022)
+
+Reviewer                  Andrew Robinson
+                          Senior Lecturer in Photography, Sheffield Hallam University, Sheffield. S1 1WB
+                          Freelance Photographer, Educator and Consultant.
+                          andrew.robinson@shu.ac.uk
+
+Date of Review            02/06/24 (updated v5)
+Reference                 Calvine-UFO-06-2024
+Copyright                 © 2024 by Andrew Robinson / Licensed under CC BY-NC-SA 4.0
+
+CONCLUSIONS
+
+    •   This investigation concludes that the print provided to the researchers by Craig Lindsay is without doubt a
+        genuine copy of the original Calvine photograph analysed by the MoD in 1990.
+    •   This black and white print is most likely to have been made from a copy negative produced by the Daily Record
+        on Ilford XP-1 film from an original colour print provided by the witness. This print was probably produced on a
+        Colour Mini-Lab machine at the Daily Record prior to the original colour negatives being provided.
+    •   As far as can be determined the image itself is a genuine photograph of a scene before the camera and if any
+        manipulation or construction took place, this was something occurring in the scene rather than in camera or in
+        post-production. No evidence of any such manipulation before the camera can be found.
+    •   No evidence of the date of the photograph or the location at which the photograph was taken can be derived
+        from the print and for these essential details we are reliant on the eyewitness testimony shared with the Daily
+        Record and Craig Lindsay.
+    •   Although the print is credited to ‘Kevin Russell’ the true identity of the photographer remains unknown.
+    •   An Teampan, the summit of Struan Point to the south of Calvine is a possible location for the photograph
+        however this cannot be confirmed as the location without further evidence.
+    •   There is insufficient data to reach any conclusion regarding what the unidentified object might be.
+    •   The projected timeline of the photograph being captured on the 4th of August, arriving at the Daily Record in
+        late August and at the MoD on the 10th of September fits with all available evidence.
+    •   All evidence provided by the Calvine print, its envelope and the accompanying photocopies, fits with the
+        essential narrative of the sighting provided by Craig Lindsay and other credible sources.
+    •   If the image is the result of a hoax, no evidence of this is present in the image.
+
+
+                                                                                                                           1
+INDEX
+
+    •   Section A – SUMMARY
+
+    •   Section B – INTRODUCTION
+            o B-1 – INTRODUCTION TO 2024 UPDATE
+            o B-2 – NOTE CONCERNING PHOTOGRAPHIC EVIDENCE
+            o B-3 - ORIGINAL MATERIALS
+
+    •   SECTION C – PRINT ANALYSIS
+           o C-1 - Paper Type
+           o C-2 - Film Type
+           o C-3 - Film Grain
+           o C-4 - Print Size
+           o C-5 – Printing and Processing
+           o C-6 – Copyright Notice
+
+    •   Section D – IMAGE ANALYSIS
+            o D-1 - Image Overview
+            o D-2 – Branches
+            o D-3 – Fence
+            o D-4 – Background
+            o D-5 – Unidentified Object
+            o D.6 – Film Grain Around Unidentified Object
+            o D-7 – Plane/Harrier
+            o D.8 - Chromatic Aberration
+            o D-9 - Climatic Conditions
+
+    •   SECTION E – CAMERA AND LENS
+
+    •   SECTION F - IMAGE ORIENTATION
+
+    •   SECTION G – SIZE AND DISTANCE CALCULATIONS
+           o G-1 – Size of Object and Harrier
+           o G-2 Distance of Fence and Harrier
+
+    •   SECTION H – LOCATION
+
+    •   SECTION I – IMAGE HERITAGE
+           o I-1 – Authenticity of Calvine Image
+           o I-2 Channel 5 Reconstruction
+
+    •   SECTION J – TIMELINE
+
+    •   THANKS
+
+    •   REFERENCES
+
+
+
+
+2
+Section A – SUMMARY OF FINDINGS
+
+After detailed analysis of the image itself and the physical properties of the print it is my considered opinion that:
+
+    •   The Calvine Image provided by Craig Lindsay is a genuine photograph of the Calvine sighting and identical to
+        both the photocopies faxed to the MoD and the original negatives provided by the Daily Record and
+        subsequently printed as Vu-Foils (images on transparent film) and studied by the Joint Air Reconnaissance
+        Intelligence Centre (JARIC) before being finally released to the public in the form of poor-quality photocopies
+        from the Vu-Foil images in 2009.
+    •   The time frame from sighting on the 4 th August to the arrival of the images at the Daily Record and the arrival of
+        the negatives at the MoD in London on the 10th September is realistic and fits with statements provided by
+        numerous witnesses.
+    •   To date the photographer and witnesses to the Calvine sighting remain unknown.
+    •   The kitchen porter named Kevin Russell who worked at the Hydro Hotel at the time of the sighting denies any
+        knowledge of the incident and cannot explain why his name appears on the back of the image. Other names
+        have been suggested however investigations have so far failed to trace those named or corroborate this.
+    •   The most likely camera to produce the original Calvine image would be a 35mm SLR or Compact Camera fitted
+        with a 50mm Standard Lens or a 35-70mm or similar zoom Lens.
+    •   The Calvine photograph provided to Craig Lindsay is a black and white image made from a copy negative of an
+        original colour print which was printed on Ektacolor 78 Resin Coated colour photographic paper as
+        manufactured by Kodak, between 1972 and the early 1990.
+    •   The print size of 10x8” has resulted in a cropping of 17% of the width of the original negative.
+    •   Whilst the film used to make the Calvine print provided to Craig Lindsay could have been a 100 ISO B/W film
+        such as Ilford FP4 or Kodak Plus-X, the ‘normal’ enlarger colour settings revealed by the print code suggest that
+        this print was from a negative produced on Ilford XP-1 film.
+    •   The available evidence indicates that the print was produced on a Colour Mini-Lab machine as might have been
+        found at a newspaper or in larger photography stores and chemists in the early 1990s.
+    •   The film grain distribution suggests that no negative or print based manipulation of the image has taken place
+        and that the image is a genuine representation of a scene in front of the camera.
+    •   The amount of chromatic aberration present would tend to indicate a lower quality enlarging lens.
+    •   The landscape just visible behind the fence consists of a number of ridges or low hills at different distances from
+        the camera position with groups of trees visible on the far distance ridge to the left and a modest peak behind
+        the right-hand fence post.
+    •   The fence is approximately 10.6m distant from the camera position (assuming a 50mm lens) and has a smooth
+        top wire and a barbed lower wire showing a regular 10cm spacing of barbs.
+    •   Whilst the trees, fence and the limited landscape features present in the photograph are in keeping with
+        landscape around Calvine and in particular the area around An Teampan on Struan Point to the southwest, to
+        date it has not been possible to identify the exact location where the photograph was taken, and it must remain
+        a possibility that whilst it could have been taken on the moors close to Calvine it could also have been taken
+        elsewhere.
+    •   Although the possibility of the image being a reflection in the surface of a lake cannot be categorically ruled out
+        this is considered unlikely and unproven due to the lighter density of the ‘reflection’, the required camera
+        position and the lack of any objects or disturbance in what would be the lake surface.
+    •   The unidentified object does not have a symmetrical shape in either dimension however due to blur poor image
+        resolution it is not possible to identify any features.
+    •   The unidentified object has an approximate length of between 30 m and 40 m and a height of between 8 m and
+        12 metres (+/- 10%).
+    •   The plane shows both slight focus blur and lateral movement blur suggesting it was moving from left to right
+        across the image when photographed. Resolution and blur prevent a conclusive identification of the plane
+        however the shape is consistent with the outline a Harrier would produce.
+    •   The plane is approximately 755m (0.47 miles) distant from the camera position and flying at a height of
+        approximately 117 m (383’) above ground (assuming a 50mm lens)
+    •   The weather and sun data for the day in question are thus consistent with the claimed heritage of the
+        photograph and the visual evidence contained within.
+
+
+
+
+                                                                                                                          3
+Section B – INTRODUCTION
+
+B-1 – INTRODUCTION TO 2024 UPDATE
+
+This paper is an updated version of the original analysis I produced in the summer of 2022 following the discovery of the
+only extant photograph of the Calvine sighting by Dr David Clarke and its donation by Craig Lindsay to Sheffield Hallam
+University prior to the publication of an exclusive story of the print’s discovery in the Mail on Sunday on the 13th of
+August 2022. This update extends my previous discussions with additional information, further detail and new material.
+
+This analysis and discussion is largely restricted to matters directly related to the photographic print and it’s known
+heritage rather than the wider legend associated with the Calvine sighting. In part because this is my area of expertise
+and in part because the story and associated debates are widely discussed elsewhere.
+
+In producing this analysis, I have had unrestricted access to the original Calvine print, the photocopies of the print made
+by Criag Lindsay in order for the image to be faxed from RAF Pitreavie Castle to the MoD in London, and the original
+envelope in which the print was sent from the Daily Record to Craig Lindsay. Dr David Clarke has also provided me with
+full access to his recorded and transcribed interviews with Craig Lindsay and others related to the sighting and
+additional information has kindly been provided by Giles Stevens, a local resident familiar with the area around Calvine.
+
+My personal research interest is in the role that photographs are often called upon to play in providing visual evidence
+of UFO sightings, and more generally, the evidential potential of photography. My aim in producing this analysis is
+neither to prove the sighting and the Calvine UFO are real, nor to prove they are fake, but rather to analyse both the
+photograph and the available evidence alongside the witness statements and other documentation and commentary in
+order to clearly identify what information can be gleaned from the photograph and to what extent this supports or
+contradicts eyewitness statements.
+
+
+B-2 – NOTE CONCERNING PHOTOGRAPHIC EVIDENCE
+
+Photographs provide very detailed and accurate visual evidence of what was before the camera at the moment the
+shutter was released, however, for this visual information to function as evidence and provide reliable information
+further context is required.
+
+We must ask where and when the photograph was taken; who took it and why; what camera was used; what lens and
+what film stock? It would be helpful to know what shutter speed and aperture were used, and with analogue imagery
+where and how the film was processed and even what chemistry was used. Having access to the original negatives
+rather than first, second or subsequent generation prints is essential so a high-quality version of the full image area can
+be studied rather than an isolated section of a degraded copy. Access to more than a single negative can also place the
+photograph in the context of the proceeding and subsequent images providing additional context and evidence.
+
+Unfortunately, in the majority of cases, photographs provided in support of UFO sightings lack sufficient contextual
+detail to fulfil their role as evidence and allow a full and complete analysis. This is true of the Calvine photograph. The
+eyewitness report claims the photograph was taken on the moors above Calvine on the evening of the 4th of August
+1990, however we have no way of confirming either the location or the date on which the photograph was taken.
+The witness also claimed that six images were produced, and a number of other reliable witnesses, including Craig
+Lindsay, confirm that they saw another five variants of this image. However, no negatives or other prints are known for
+any of the other 5 images. We do not know what camera the photograph was taken on nor what lens, exposure, setting
+or film type were used. We also do not know who took the photograph. According to the eyewitness statement two
+people were present however, Craig Lindsay only talked to one witness whose name he doesn’t recall, and we do not
+know the names of either witness. These may be included in the unredacted MoD report of the sighting however this is
+currently sealed under the Data Protection Act until January 1st 2076.
+
+It is hoped that a detailed study of the original materials provided by Craig Lindsay will help establish further
+information regarding both the sighting and the production of the photograph and this is what this analysis will attempt.
+
+B-3 - ORIGINAL MATERIALS
+This analysis is based on a detailed study of original materials comprising:
+
+
+4
+The Original Calvine Photograph
+
+
+
+
+The front and back of original Calvine Image, photograph © Andrew Robinson 2024.
+
+The only extant print of the Calvine image, which was sent to Craig Lindsay, RAF Press Officer for Scotland at RAF
+Pitreavie Castle by the Daily Record in Glasgow and which Craig kept in his possession from 1990 until it was revealed to
+Dr David Clarke who secured its donation to Sheffield Hallam University in June 2022 and it subsequent publication on
+the 13th August 2022.
+
+Daily Record Card Envelope
+
+
+
+
+Image showing the front and back of the envelope used to send the Calvine Print to Craig Lindsay © Andrew Robinson 2024.
+
+The original envelope in which the Calvine print was sent from the Daily Record in Glasgow to Craig Lindsay at RAF
+Pitreavie Castle near Edinburgh and in which print was stored by Craig Lindsay between August 1990 and June 2022.
+
+Photocopies of the Calvine print
+
+
+
+
+Composite image showing the three photocopies produced by Craig Lindsay in August 1990, © Andrew Robinson 2024.
+
+
+                                                                                                                           5
+The original photocopies produced by Criag Lindsay in August 1990 in order to fax the image to the MoD upon first
+receiving it from the Daily Record. These were kept with the print in the original card envelope.
+
+In addition, a number of digital copies and enlargements of the original print have been produced by the reviewer to
+allow more detailed analysis. These include:
+
+    •   Photographic copies of entire print and envelope (front and back)
+    •   Detailed macro photographs of key areas of the print
+    •   A high-resolution flatbed digital scan of the image and envelope
+
+Digital images were produced on a Nikon D610 using a 110mm Micro-Nikkor resulting in NEF raw files at full frame
+resolution. Images were processed in Adobe Lightroom and exported as 16bit Tiffs with a file size of approximately
+138.5 mb.
+
+Digital scans were produced on a A3 Epson Flatbed Scanner using VueScan capture software resulting in 16bit Tiff Raw
+files. Images were processed in Adobe Lightroom and exported as 16bit Tiffs with a file size of 2.8 – 2.9 GB
+
+Scans of Colour prints produced from XP-2 negatives dating from 2002 and HP5 black and white negative dating from
+1988 were also made at an equivalent size and resolution in order to provide comparisons of the print emulsion and
+grain size.
+
+SECTION C – PRINT ANALYSIS
+
+C-1 - Paper Type
+
+The backstamp identifies the paper as a Kodak Ektacolor paper.
+
+
+
+
+Enlargement of backstamp on the rear surface of the original Calvine Image, photograph © Andrew Robinson 2024.
+
+Prior to 1961 Kodak paper was produced with a backstamp or water mark printed across its rear surface comprising of
+EKC encircled by a double-lined circle. This was replaced in 1961 by a single line of text reading: ‘A KODAK® PAPER’.
+From 1972 up until the early 1990s this changed to the watermark shown on this print which comprised of three lines of
+text:
+                                                        THIS PAPER
+                                                     MANUFACTURED
+                                                         BY KODAK
+
+In 1989 Kodak introduced Ektacolor Portra and in 1991 Ektacolor Edge both using the new RA-4 process with different
+backstamps so the backstamp on the Calvine print would suggest the paper used was Ektacolour 78 and that the print
+was processed using EP-2 chemistry sometime between 1979 and 1991. (Keirstead, Weaver and Lon, 2009).
+
+The weight, texture, surface, finish and thickness of the paper identify it as a resin coated paper. RC paper comprises of
+a thin layer of paper sealed between two layers of polyethylene (plastic) with the photographic emulsion and a top
+coating on the top surface. RC papers are thinner and lighter than fibre based (FB) paper at around 190gms compared
+to 250gms or more for FB paper. The introduction of RC speeded up processing times as the plastic coating prevents the
+absorption of processing chemicals which dramatically reduced the required washing and drying time. RC paper was
+produced with the following surfaces: F (glossy), N (matte), Y (silk), E (lustre) with glossy by far the most popular. The
+
+
+6
+image quality of RC prints was less that Fibre Based paper due to the thinness of the emulsion present and the lower
+silver content which also resulted in a more limited response to toning in Black and White photography. RC paper was
+extensively used in the printing of colour negative photography where the speed of processing and drying was
+important.
+
+Kodak Resin Coated (RC) supports, were introduced to their colour paper range in 1968. RC papers were most popular in
+situations where the speed of printing was important and were typically used in consumer high street printing, press
+and publicity photography, police, healthcare and other applied or commercial areas of practice. Fibre Based paper
+continued to be used for exhibition and archive prints within art photography and other areas where image quality and
+permanence were a priority although RC paper would typically be used for contacts and proof prints.
+
+A small area of abrasion of the paper emulsion in the lower right section of the photograph (see image detail below)
+reveals an orange/red layer beneath the image layer which is consistent with COLOUR paper.
+
+
+
+
+Enlargement of scratches on original Calvine Image, photograph © Andrew Robinson 2024.
+
+
+
+Comparisons with abrasion marks on prints made from both XP-2 film and Colour negative film show similar results with
+a reddish tone where the image layer is partially removed and a yellowish background where more of the image layer is
+removed. If greater abrasion is applied the entire emulsion layer is removed to reveal the white paper base:
+
+
+
+
+Enlargement of scratches on different types of colour prints, photograph © Andrew Robinson 2024.
+
+
+
+A small turquoise/green ‘spot’ in the upper left section of the print (see image detail below) appears to be a small
+unprocessed area of the paper – unprocessed colour negative paper has a turquoise/green colour – possibly resulting
+from a small piece of dirt or adhesive being attached to the print surface during processing. This would again suggest
+that the paper type is colour rather than a toned Black and White print.
+
+
+
+
+                                                                                                                         7
+Enlargement of the upper left corner of the Calvine Image – photograph © Andrew Robinson 2024.
+
+
+
+Conclusion – The image is printed on Ektacolor 78 resin coated colour photographic paper manufactured by Kodak.
+
+C-2 - Film Type
+
+Areas of the image which would exhibit colour in a colour print (the sky, the trees in the near foreground and distance,
+the grass in the foreground) are all rendered in monochrome. The image is however not pure black and white having a
+slight purple/brown sepia tone. Sepia tone can be achieved by toning a black and white print of by printing a black and
+white negative on colour paper..
+
+Two main types of black and white film might have produced a suitable negative:
+
+    •   a traditional black and white photographic film processed using standard black and white processing chemicals
+        (e.g. Ilford FP4 or HP5; Kodak Pan-X, Tri-X or T-max; Fuji Neopan 400)
+    •   a chromogenic colour film designed to be processed using standard C41 colour negative processing chemistry to
+        produce a monochromatic image when printed on colour paper (eg Ilford XP1 or XP2).
+
+The fact that this, the only extant print of the Calvine Image, is in black and white is at odds with all descriptions of the
+Calvine photographs to be found in official MoD documentation for example: DEFE 31/179: 156-7 (The National
+Archives, 2009) and witness statements where the prints and negatives are always described as being in colour.
+
+When recently asked about this discrepancy Craig Lindsay stated that he couldn’t explain other than suggesting that
+because the print has a light brown, sepia tone he possibly described it as ‘colour’ however this doesn’t explain the
+numerous other occasions on which witnesses described the images as being in colour.
+
+
+
+
+Detail of the handwritten memo outlining the Calvine sighting produced in September 1990 - DEFE 24/1940: 113 (The National
+Archives, 2008)
+
+Careful examination of the documents released by the MoD may provide an explanation. In the handwritten memo
+describing the Calvine incident (The National Archives, 2008), which dates from early September, prior to the negatives
+being sent to the MoD in London, the situation is described thus: “Pictures passed to RAF Pitreavie and Scottish Daily
+Record. Original negatives then passed to the Daily Record.” This would suggest that the witnesses actually provided
+original PRINTS to the Daily Record. If this was the case then for the Daily Record to have provided Craig with a 10x8”
+print of the image, prior to the negatives being passed to the paper, they must have copied their original print in order
+to produce an image to send to RAF Pitreavie Castle.
+
+
+
+
+8
+The Daily Record had facilities for copying prints and negatives, so when asked to provide Craig with a photograph they
+could have quickly copied the original prints onto black and white film and printed them a colour print machine
+resulting in a black and white print on colour paper which was then sent to Criag. Why the Daily Record would use black
+and white film rather than colour to make this copy is unknown, it could simply be that that was the film loaded in their
+copy camera at the time and the job was urgent. Subsequent prints made by the MoD or the Daily Record from the
+original negatives when they became available would then be in colour.
+
+The copy negatives produced as a result might well be those that the former press photographer Stuart Little claims to
+have seen taped to the back of a print on the wall of the picture desk when he visited the Daily Record in 1993 (Little
+2022).
+
+The other possibility is that the original images were produced on Black and White film and the print sent to Craig
+Lindsay was made from the original negatives and the subsequent statements that the images were in colour were a
+mistake by the witnesses concerned. If this was the case, then the use of either traditional B/W or XP-1 film rather than
+normal colour negative film by the photographer would suggest that they were both interested in and knowledgeable
+about photography as at this time the use of B/W films was not particularly common within popular photography.
+During the late C20th black and white practice was largely limited to student photography, traditional documentary
+practice and landscape photography. Given the number of documents describing the Calvine images as being in colour
+this explanation would seem unlikely.
+
+Conclusion – The Calvine Photograph is a black and white image printed on colour photographic paper made from a
+copy negative of an original colour print.
+
+C-3 - Film Grain
+
+The film grain within the image is noticeable however not extreme. Film grain is largely determined by the film stock
+however is also a result of the processing chemistry. Higher speed film has course and more noticeable grain while
+speed increasing, or edge sharpening developers may also produce coarser grain. Grain size is also determined by the
+amount of enlargement.
+
+A full fame image printed to 10x8” will exhibit finer grain than a portion of the same image enlarged to 200% and
+printed on 10x8” paper. Assuming the print is full frame (with a slight crop to the edges due to proportions of the paper
+size) the grain size present in the appears to be reasonably fine grained and most consistent with a film with an ISO of
+100 processed in a normal B/W developer. Finer grain results from a faster film could also result from using a specialist
+fine grain developer.
+
+
+
+
+Comparisons of enlarged areas of prints made from images on different film stock, photograph © Andrew Robinson 2024.
+
+
+
+Comparisons of the grain of the original Calvine print with enlarged sections of roughly contemporary 10x8” prints
+produced from both XP-2 and FP4 negatives (see above) reveals that the grain on the Calvine print is courser than that
+produced by XP-2 and similar to that visible on a print from a FP4 negative if perhaps a little courser. This would suggest
+that the most likely film based on grain type would be a 100 ISO B/W film such as Ilford FP4 or Kodak Plus-X or perhaps
+
+
+
+                                                                                                                            9
+a courser grain 400 ISO film such as Ilford HP5 or Kodak Tri-X. Another possibility might be Kodak T-Max 100 however
+the grain structure of this ‘T’ grain film would have a different appearance.
+
+Ilford’s XP films were well known for their fine grain properties at different film ISOs, dependent to some extent on the
+type and quality of developer used, and the grain visible in this print might suggest a traditional black and white film
+rather than Ilford XP-1.
+
+Conclusion – The film used to make the Calvine Photograph was most probably a 100 ISO film such as Ilford FP4 or
+Kodak Plus-X or alternatively Ilford XP-1.
+
+
+C-4 - Print Size
+
+The Calvine Image is a borderless black and white image printed on a Kodak Ektacolour 78 photo paper precisely 7.9” x
+9.9” (20.1 x 25.2 cm) in size. This suggests the print was made either on an individual sheet of 10x8” Ektacolor paper
+(official cut size 20.3 x 25.4 cm) and either machine or hand processed or printed on 10” (25.4 cm) wide Kodak Ektacolor
+Roll paper on an automatic ‘Mini-Lab’ printer (Kodak, 1979).
+
+10x8” was the most popular paper size within professional photography for much of the second half of the C20th and
+prints of approximately this size became the standard for press and publicity prints, proof prints, police and health
+situations. Since the advent of digital photography paper sizes have largely moved to the ‘A’ series of paper sizes
+although photographic (analogue) paper is still produced in imperial sizes.
+
+
+
+
+Image showing the cropped areas of the Calvine Image in grey, © Andrew Robinson 2024.
+
+35mm film has a ratio of 3:2 while 10x8” paper has a ratio of 5:4 thus in order to print a 35mm image on a sheet of
+10x8” photo paper without boarders approximately 17% of the sides of the image would have to be cropped (shown as
+grey in the above image). It should be assumed that the Calvine image has been cropped in this manner when printed.
+
+The common paper sizes for typical consumer ‘en-prints’ 6x4” (ratio 3:2) and 7x5” (ratio 3.5x2.5) are a better fit for
+35mm film requiring little cropping.
+
+Given that the negative for this image is not available it is possible that the Calvine photograph might be a selective
+enlargement of a section of a larger image and whilst there is nothing to suggest that this is the case this cannot be
+ruled out as a possibility.
+
+Conclusion – The print size of just over 10x8” has resulted in a cropping of 17% of the width of the original negative and
+is consistent with enlargements produced on Mini-Labs by newspapers, high street photo labs and chemists.
+
+10
+C-5 – Printing and Processing
+
+The Calvine image is a borderless colour print made from a Black and White negative. At the time the print was
+produced two likely means of producing a colour print of this size from a B/W or Colour negative exist. The print could
+have been hand printed in a darkroom on a colour enlarger and processed in a EP-2 dry to dry colour print processor.
+This would typically produce a print on a standard sized photographic paper with white borders determined by the
+masking easel settings. Ektacolor 78 paper was available in 20.3 x 30.5 cm (10x8”), 24 x 30.5 cm (approx. 9.5 x 12”) and
+27.9 x 35.6cm (approx. 11 x 14”) (Kodak 1979). Alternatively, such a print might be produced on a dry-to-dry auto print
+machine (a ‘mini lab’) loaded with EP2 colour negative paper 10” wide producing a borderless image.
+
+A third option, a colour handprint, tray processed (wet processed) in colour chemistry, is possible but highly unlikely,
+especially in a photo lab or newspaper setting of the early 1990s.
+
+It is normal with mini-lab machine prints for a print number to be present on the back of the print and such a code exists
+on the rear of the Calvine print halfway along the left-hand edge.
+
+
+
+
+Enlargement of the print code printed on the rear of the Calvine Image, © Andrew Robison 2024.
+
+These numbers are a record of the print settings. Different manufacturer’s processing machines use different
+configurations and individual labs can configure their codes to meet their own needs however most use similar
+conventions (linda_vesci1, 2009 and Michael C, 2017).
+
+    •   Codes usually start with a number to identify the machine the image was printed on so this appears to be
+        printed on machine ‘28’. Alternatively, this is sometimes used to identify the roll and frame number.
+    •   The next numbers usually identify the manufacturer and film speed –so the code might suggest manufacturer
+        ‘02’ and film speed ‘31’ however sometimes these might also be used for the film processing settings.
+    •   The ‘N’ numbers represent the enlarger/printer settings for YELLOW, MAGENTA and CYAN (or sometimes Cyan,
+        Magenta and Yellow).
+    •   ‘N’ means no adjustment while ‘2’ or (+2) represents an increase of two units of colour and -2 represent a
+        reduction of two units of colour with 1 Unit = 5%.
+    •   The colour adjustment settings are then usually followed by the density and contrast settings which might be +
+        or – with units equal to 10% density.
+    •   Thus the print was probably made with a setting of:
+    •   Normal Yellow / -2 Magenta / Normal Cyan / +2 units of exposure / +2 Units of Contrast.
+    •   The last two numbers are likely to be batch numbers rather than date numbers.
+
+The colour setting of Normal Yellow / -2 Magenta / Normal Cyan suggests that this print was NOT made from a
+traditional black and white negative. Such negatives can be printed on colour paper to give fairly neutral black and white
+results however the adjustments needed to the colour filter settings on the enlarger would be considerable and the
+setting detailed in this print code is a fairly normal setting for printing from standard colour film or Ilford XP-1 film
+suggesting that the negative for this copy print was most probably produced on one of these films and not on a
+traditional black and white film. Given that we believe the original print that this copy negative was produced from was
+in colour, based on these settings the film type used to produce this black and white copy print is most likely to have
+been Ilford XP-1.
+
+Given the presence of such a code number the most likely explanation is that the print was produced on a ‘Mini-Lab’
+automatic print machine that a photo lab, chemist or newspaper would use for quickly producing prints in house. This
+would also be consistent with the poor chromatic aberration visible in the print. Typically, the lens used on a traditional
+colour enlarger would have much less chromatic aberration than seen in the print (although this depends on the quality
+of the lens employed).
+
+
+
+
+                                                                                                                           11
+Before the advent of digital imaging and internet publication, newspapers made reproductions of images they published
+available to the public for a small fee. These were typically 10x8” in size and by the 1990s most newspapers would be
+using a ‘mini-lab’ printer to quickly produce these in house at low cost.
+
+It would be useful to find out what equipment the Daily Record used to produce press prints in the early 1990s (mini lab
+brand & manufacture). Someone who worked in the darkrooms at the Daily Record might also be able to shed light on
+the codes used here or if other photographs printed at roughly the same time were available more information might
+be derived from the code however it is unlikely that this would reveal anything other than film manufacturer, film iso,
+the machine this was printed on, and the batch number.
+
+Conclusion – The available evidence suggests that the print was produced on a Mini-Lab or automatic printer/processor
+machine as might have been found at a newspaper or in larger photography stores and chemists in the early 1990s. The
+‘normal’ enlarger colour settings revealed by the print code suggest that this print was from a negative produced on
+Ilford XP-1 film.
+
+C-6 – Copyright Notice
+
+A copyright notice is written on the rear of the Calvine photograph which states “Copyright Kevin Russell, C/O Daily
+Record, Glasgow”.
+
+
+
+
+Copyright notice on the rear of the Calvine Image, © Andrew Robinson 2024.
+
+This text was present on the print when it arrived in the care of Craig Lindsay in late August 1990. It follows that this was
+written on the print by someone at the Daily Record, probably Andy Allen, the picture editor at the time who originally
+contacted Craig Lindsay to ask for comment on the photographs and arranged for a copy of the best image to be sent to
+RAF Pitreavie Castle. The text is written in red chinagraph pencil. Chinagraph pencils (also known as ‘grease’ or ‘wax’
+pencils or ‘china markers’) were in common use by photographers and picture editors at this time to mark-up contact
+prints in order to indicate selected images due to their ability to write on shiny or plastic surfaces such as the front or
+back of resin coated or fibre based photographic papers.
+
+
+
+
+Story published in the Scottish Daily Mail in March 2023 revealing a photo of a Kevin Russell who worked in Pitlochry in 1990.
+
+12
+An extensive search by Dr David Clarke and investigative journalist Matthew Isley traced more than 140 men of the
+correct age named Kevin Russell in Scotland and further afield. This search ultimately identified a man named Kevin
+Russell who appears on the Pitlochry Electoral Register in 1990 where he is listed as living at the town’s Hydro Hotel
+working as a kitchen porter. A co-worker at the hotel provided a photograph of this person which was published in the
+Glasgow Daily Record on the 6th of March 2023 (McGiven, 2023) and the Daily Mail Scotland on the 25th March 2023
+(Madeley, 2023 - see above) and shared widely on social media in an attempt to find him. In May 2024 the man pictured
+in this photograph, who was using the name Kevin Russell in 1990, came forward and confirmed that he had worked as
+a porter at the Pitlochry Hydro Hotel at the time of the sighting however he claims he knows nothing about either the
+sighting or the photographers and cannot explain why his name would appear on the rear of the Calvine Photograph.
+
+Dr David Clarke has recently revealed details from another witness who worked at a different hotel in Pitlochry at the
+time of the sighting. Former chef Richard Grieve claims in statements to the researchers and to the Daily Mail that he
+knew the two witness and worked alongside them in the kitchens at Fishers Hotel, Pitlochry, in the summer of 1990. He
+remembers them taking about the sighting, taking the photographs to the Daily Record and saw them interviewed by
+MoD investigators however according to Grieve neither of these people were named ‘Kevin Russell’.
+
+Conclusion – The photographer and witnesses to the Calvine sighting remain unknown. The kitchen porter named Kevin
+Russell who worked at the Hydro Hotel at the time denies any knowledge of the incident and cannot explain why his
+name appears on the back of the Calvine image. Other names have been suggested by former Chef Richard Grieve
+however investigations have so far failed to trace those named or corroborate this.
+
+Section D – IMAGE ANALYSIS
+
+D-1 - Image Overview
+
+
+
+
+The Original Calvine Image (Craig Lindsay / Sheffield Hallam University 2022)
+
+The image is taken looking slightly upwards with the majority of the frame filled with sky and only a small portion of
+landscape visible along the lower edge of the frame. Variations in the tonality of the sky allow clouds to be distinguished
+and the scene appears to be lit by diffused light from an overcast sky rather than by direct sunlight.
+
+D-2 – Branches
+
+Along the left-hand half of the top edge of the image two groups of branches, identified as Scots Pine, partially frame
+the image. The left-hand group itself consists of three or four groupings of branches with an increasing density of leaves
+closer to the upper edge of the image compared with the lower ends of the branches.
+
+
+
+
+                                                                                                                        13
+Details of the branches visible in the upper left corner of the Calvine Image, photograph © Andrew Robinson 2024.
+
+The second distinctive group or branches are located to the right of the first just to the left of the central point along the
+top edge of the image. These branches are darker in tone and more heavily covered with leaves than those to its left.
+These branches also enter the image at a steeper incline and may be different in kind to the leaves to their left.
+
+
+
+
+At the far left of the lower edge of the image there is a darker area which appears to be the branches and leaves of a
+tree, bush or some kind of plant. The leaves are long, thin and pointed and appear quite different to those seen above
+the along the upper left-hand edge of the image. These leaves may be obscuring a log, rock or other solid item located
+behind them.
+
+Conclusion – The branches visible along the top of the image, identified as Scots Pine are consistent with trees found in
+the vicinity of Calvine and elsewhere in the area.
+
+D-3 – Fence
+
+Along the lower edge of the image can be seen a fence supported by three (or possibly four posts): two thicker posts
+(possibly wood) and to the left-hand side a thinner fence support which appears to have a circular hole in the top
+through which the uppermost wire of the fence passes. This would appear to be a metal post or separator. A third post
+maintaining the regular post spacing may be hidden behind the ‘bush’ at the left-hand corner of the print but it is not
+possible to clearly identify this. Two wires are visible passing from post to post to form the fence. The uppermost of the
+two fence wires visible appears smoother than the lower.
+
+
+
+
+Images showing details the fence along the lower edge of the Calvine Image, © Andrew Robinson 2024.
+
+
+
+Two dark marks appear along this upper wire just to the left of both of the two thicker posts (see above). It is not
+possible to clearly determine what these marks are with any certainty however they are likely to be grass or animal fur,
+wool, or some similar material which has become attached to the fence wire. There appears to be some threads or
+some other material hanging from the two marks to the left of the left-hand wooden post.
+
+14
+The lower of the two fence wires has regular markings along its length (see below) whereby the wire appears slightly
+thicker at regular intervals. It is possible that this wire forms the uppermost edge of gridded wire fencing with the marks
+indicating where slightly thinner vertical wires are attached which have not registered on the film however it is most
+likely that the wire is barbed. The barbed wire typically used in agriculture and forestry has a standard space of 10cm
+between the barbs, (Crestala Fencing Centre, 2024 and Jackson Fencing, 2024). In a recent photograph taken by the
+author of a barbed wire fence with 10cm spaced barbs on moorland in the Peak District the wire appears similar to that
+in the original photograph (see below).
+
+
+
+
+Section of Original Photograph show wire (assumed to be barbed) with approximately 16 ‘barbs’ visible
+
+
+
+
+Authors recent photograph shot on 70mm lens focused on near foreground (5 feet distant) showing 16 barbs of a
+barbed wire fence at a distance of 15 feet appearing slightly out of focus. As the barbs fall out of focus their points
+disappear and they appear as a slightly thickening of the wire at regular intervals similar to that seen in the original
+photograph.
+
+Conclusion – The fence present along the lower edge of the image has a smooth top wire and a barbed lower wire
+showing a regular spacing of barbs.
+
+D-4 – Background
+
+If we examine the landscape visible behind the fence along the lower edge of the print, a number of features can be
+seen. These include what appears to be a faint undulating horizon in the background along with and a slightly darker
+ridge towards the left side of the image with a number of dark protrusions which are interpreted as groupings of trees.
+Closer to the fence at the far right in a darker tone, can be seen what appears to be the tops of trees or a ridge in the
+middle distance. All these features appear in sharper focus than the foreground fence and thus are interpreted as being
+in the background rather than being part of the fence. A linear feature that appears just below the wire to the left of the
+centre-left post (marked in red in the diagram) might be interpreted as a continuation of the wool or grass attached to
+the upper fence wire however it appears in sharper focus suggesting that it is a background feature.
+
+
+
+
+Illustration of the landforms identified behind the fence along the bottom of the Calvine Image, © Andrew Robinson 2024.
+
+
+                                                                                                                           15
+The horizon appears not as a line but as a tone boundary between a light area above (sky) and an darker area below
+(land). Other commentators have interpreted this differently and believe that this is part of the fence, perhaps a finer
+wire mesh ‘rabbit’ fence however I believe the focus and tonality indicate otherwise. This boundary is sharper than the
+fence wire and posts suggesting it is in the background rather than part of the fence. The tree lined ridge is also darker
+than the horizon landscape behind it – this is consistent with atmospheric haze which results in distant landscapes
+appearing lighter in tone than those nearer to the viewer.
+
+Where the ‘wool/grass’ attached to the fence hangs down below the fence wire it appears more blurred than either the
+‘field boundaries’ (shown in brown) and the horizon line (yellow). The ‘wool/grass' is thus interpreted as being attached
+to the fence while the features identified as a ridge, trees, field boundaries and horizon line are interpreted as being in
+the background.
+
+
+
+
+                   (NB - A simple darkening has been applied to the top two versions while the bottom strip is unaltered)
+Identification of landforms and fence details along the bottom of the Calvine Image, © Andrew Robinson 2024.
+
+About two thirds of the way along the bottom of the photograph and behind the third fence post there is a distinctive
+angular peak on the horizon which is the highest point visible in the background (see below)
+
+
+
+
+Just to the right of the left hand thinner fence post and in front of the range of hills on the horizon, there is a slightly
+lower darker hill or ridge (shown in brown on the top image above) with what appears to be three groupings of trees
+(shown in green), a large grouping closest to the fence post followed by a small group of 3-4 trees and finally what
+appears to be a single tree or possibly a pair of trees (see below). A little further along the ridge, approximately midway
+between the first and second fence post there appears to be a further lone tree on this hill.
+
+
+
+
+Some way closer to the camera, just visible to the right of the right-hand fence post and to the right of the distinctive
+hill on the horizon is an irregular dark area at the very lower edge of the print (see below). This would appear to be the
+tops of trees in a forest or wooded area in the middle distance (shown in green on the large image).
+
+16
+Conclusion – The landscape just visible behind the fence consists of a number of ridges or low hills at different distances
+from the camera position (middle distance, far distance and horizon) with groups of trees visible on the far distance
+ridge to the left of the image and a slight peak behind the right-hand fence post.
+
+D-5 – Unidentified Object
+
+In the Centre of the image appears an unknown object with a squashed diamond shape. This object has some slight
+variation in it’s tonality along with length with a dividing line along it’s length with the upper surface lighter in tone than
+its lower surface. The lighting of this object is consistent with the diffused overcast lighting of the overall scene.
+
+
+
+
+Identification of key features on the unknown object in the centre of the Calvine Image, © Andrew Robinson 2024.
+
+At either end of the object, approximately a fifth of the distance along its length, a lighter area of tone is present with
+the left-hand area being both larger and lighter than area visible at right hand end. Just to the right of the centre of the
+object a darker circular area of tone is present. Along the top right-hand slope close to the peak is a small darker raised
+area. The far-right hand extremity of the object, where the upper and lower surfaces join, extends to circular ‘nose’ like
+form. In contrast, at the left-hand extremity of the object the upper and lower surfaces join at a point. No smoke or
+fumes are to be seen around the object. It should be noted that the top half of the diamond is NOT a mirror image of
+the lower half.
+
+Conclusion – The unidentified object does not have a symmetrical shape in either dimension however due to poor
+resolution and image blur it is not possible to identify any features.
+
+D.6 – Film Grain Around Unidentified Object
+
+
+
+
+Enlargement with increased contrast showing grain structure around unknown object. © Andrew Robinson 2024.
+
+                                                                                                                             17
+The grain around the unidentified object in the centre of the image shows no break, distortion or unevenness and is
+continuous across the object boundaries. There is no evidence from the grain distribution around the object that the
+image has being collaged or constructed. The grain is continuous, in size, texture and density across the whole image
+suggesting that the image itself (both negative and print) has not been manipulated. The grain present here is
+consistent with this being a genuine recording of a scene in front of the camera.
+
+A possible approach to disguising the collaging and construction of an image, either on the negative or print would be to
+rephotograph a manipulated image on a coarser grain film so that a convincing and genuine grain distribution disguises
+any joins or artefacts resulting from the manipulation. Whilst it is impossible to fully rule this out this would be unlikely
+due to the fineness and consistency of the grain in this image.
+
+Conclusion – The film grain distribution suggests that no negative or print based manipulation of the image has taken
+place and that the image is a genuine representation of a scene in front of the camera.
+
+
+D-7 – Plane/Harrier
+
+The plane flying below and apparently behind the unidentified object is traveling from right to left and, from its position
+in relation to the landscape behind, it appears to be flying at a relatively low height.
+
+
+
+
+                                                                                        Image Source – Warbird News HERE
+
+
+Although it is not possible to clearly identify the plane due to it’s distance from the camera; the slight blur in the image;
+and the film grain, the plane’s silhouette is nevertheless consistent with that of a Harrier Jet.
+
+
+
+
+Enlargement showing detail of the ‘Harrier’ seen in the Calvine Image, © Andrew Robinson 2024.
+
+The ‘harrier’ is blurred, whilst there may be a small amount of focus blur present, lateral movement blur can be seen
+suggesting that the plane is moving at speed. The interpreting of this blur as movement is supported by the fact that the
+Harrier, whilst appearing close to the sharper background, is the most blurred object in the image. There is a lighter
+blurred area on the lower wing which in part obscures the shape of the wing. It is not clear what might be causing this -
+it may be an effect of the film grain, or a mark on the neg, or the wing may have caught the light.
+
+
+
+
+18
+Conclusion – The plane visible in the image shows both slight focus blur and lateral movement blur suggesting it was
+moving at the time it was photographed. Resolution and blur prevent a conclusive identification of the plane however
+the shape is consistent with the outline a Harrier would produce.
+
+D.8 - Chromatic Aberration
+
+Peripheral areas of the print, especially the branches of the trees at the top left and the fence and bushes at the lower
+left and right exhibit lateral chromatic aberration. Chromatic aberration, also known as colour fringing, is a colour
+distortion resulting from the camera or enlarger lens which creates an outline of colour along metallic surfaces or high
+contrast edges resulting in a blur of blue-yellow, red-cyan or magenta-green fringing around the edge of objects in the
+photograph. Lateral chromatic aberration only occurs at the edge of images while longitudinal chromatic aberration
+occurs across the whole frame.
+
+
+
+
+In the detail above red-cyan fringing can be seen around the fence post with a red/yellow fringe to the left and a weaker
+green/blue fringe to the right of the post. This is not seen on the fence post at the centre of the lower edge nor on the
+unidentified object at the centre of the image.
+
+If, as believed, the printed image was taken on B/W film (probably Ilford XP1) even if chromatic aberration was present
+in the camera lens B/W film would not record chromatic (colour) abortion as a colour fringe as we see in the print but
+rather as a very slight blurring of the image in the area where any aberration was present.
+
+The colour aberration visible in the print must thus be a result of the enlarging lens used when the B/W negative was
+being printed onto colour paper.
+
+Conclusion - The chromatic aberration present is a result of the printing process and suggests a lower quality enlarging
+lens on the enlarger or mini-printer.
+
+D-9 - Climatic Conditions
+
+The image reveals an overcast sky with diffused light and no visible blue sky or direct sunlight. The date given for the
+creation of the photograph is Saturday 4 August 1990 at 2100 GMT approx. The weather recorded by the UK Met Office
+for that day includes the following summary of the weather in Scotland:
+
+        “Scotland and Northern Ireland had a rather cloudy day, but some eastern parts of Scotland were quite sunny.
+        There was some rain in the north and west of Scotland with a few showers in Norther Ireland and southern
+        Scotland by the evening. Temperatures were a little above average.” (Met Office, 1990).
+
+Central Scotland had between 2 and 4 hours of sunshine from dawn to dusk with temperature of between 18 and 22
+degrees centigrade (Met Office, 1990). Sunset on the 4th August 1990 was at 09:20:53 PM (MapLogs.com, 2024) which
+would place the origin of the photograph around 20 mins before sunset.
+
+Conclusion - The weather and sun data for the day in question are consistent with the claimed heritage of the
+photograph and the visual evidence contained within.
+
+
+
+                                                                                                                            19
+SECTION E – CAMERA AND LENS
+
+
+
+
+Note on MoD handwritten summary of Calvine sighting indicating missing camera information, DEFE 24/1940: 113
+
+No information is available concerning the type of camera used to capture the Calvine image. The handwritten summary
+of the sighting released by the MoD (The National Archives, 2008) apparently written between the arrival of the
+negatives at the MoD on the 10th September 1990 and their return to the Daily Record on the 14th September 1990,
+indicates a desire for details regarding the camera type, lens and focal length, possibly to enable size and distance
+calculations however there is no evidence that these were ever provided or documented. Analysis of the Calvine print
+can however provide some suggestions of possible camera details.
+
+The sharpest point in the image is the unidentified object in the sky with both foreground and background details
+appearing out of focus in comparison. Due to the sharpness of the central object, the blurring of other areas of the
+image except for the plane would seem to be a result of focus and the depth of field used rather than due to camera or
+subject movement during the capturing of the image.
+
+Depth of field is the depth of the scene that is rendered in focus either side (in front or behind) of the point of focus and
+is a function of the aperture (F Stop) used along with the focal length of the lens. Wider apertures and longer focal
+length lenses result in a shallower depth of field. The depth of field visible in the image is fairly shallow suggesting either
+a wider aperture (e.g. F2.8 – F5.6) and/or a longer lens (e.g. 50mm - 80mm or above).
+
+Assuming the image has been printed full frame (aside from the small amount of image cropped off each side to allow
+the image to fit on the 10x8” sheet of paper) the field of view and the absence of either the distortion produced by wide
+angle lenses, or the compression produced by telephoto lenses, suggests that lens used is likely to have been a standard
+50mm or possibly either a slightly wider 35mm lens or a 80mm short telephoto lens.
+
+The above information would suggest the use of a traditional SLR (single lens reflex) camera fitted with either a fixed
+focal length prime lens of between 35mm and 80mm OR a zoom lens with a variable focal length of perhaps 35-70mm
+or 35-80mm. This would be fairly common equipment for an interested amateur photographer in the late 1980s and
+early 90s.
+
+The second possibility is that the image was taken on a simpler and cheaper ‘point and shoot’ compact camera.
+Compact cameras of the late 1980s and early 1990s were fairly advanced with auto exposure and accurate auto focus
+available at a reasonable price. At this time point and shoot film cameras were the most popular camera for amateur
+family, travel and holiday photography. Most compact cameras were fitted with either fixed focal length lenses
+(typically 50mm but sometimes 35mm) or short-range zoom lenses such as 35-70mm or 35-110mm and it is quite
+possible that such a camera might have been used to produce this photograph.
+
+Although Kodak first introduced the 35mm ‘Fling’ single use camera in 1988, such disposable cameras which became
+popular with amateur photographers in the mid 1990s, were not commonly available in the UK in 1990.
+
+Kodak B/W single use (‘disposable’) cameras were not available at this time. Ilford didn’t introduce a single use camera
+using B/W HP5+ film until the early 2000s (the earliest data sheet is dated 2002) and a single use camera using XP-2 was
+not introduced until 2013.
+
+Conclusion – The camera most likely to have been used to produce the image is a 35mm SLR or Compact Camera fitted
+with a 50mm Standard Lens or a 35-70mm or similar zoom Lens.
+
+
+SECTION F - IMAGE ORIENTATION
+
+Immediately following the publication of the original Calvine Image in the Sunday Mail on the 13th August 2022
+numerous theories were proposed online to explain the unidentified object present in the centre of the image. Given
+
+20
+the scope of this analysis it is not possible to consider all of these here, however an persistent interpretation that has
+gained traction since the image’s release suggests that the image is actually inverted and shows a reflection of an object
+protruding from the surface of a lake.
+
+
+
+
+The Original Calvine Image vs inverted version (Craig Lindsay / Sheffield Hallam University 2022)
+
+When the print is inverted and considered as a reflection in a water surface the diamond shaped object could be
+explained as the reflection of a triangular rock or piece of wood slightly projecting above the water surface. Whilst this
+may appear possible, it should be noted that the top half of the diamond is NOT a mirror image of the lower half (there
+are small differences to the shape of the object) and the reflected lower half is LIGHTER than the top half (normally a
+reflection in water would be DARKER). This would seem problematic for such an interpretation.
+
+If the image was taken at eye level, then we should see a reflection of the landscape beyond the fence rising above it in
+the ‘reflection’ unless the lake were on high ground with no higher land present. Were the lake in a valley bottom, as
+some people have suggested, then the valley side beyond the fence would be seen reflected in the top of the image.
+The mirror stillness with not a single ripple and the lack of any surface debris (leaves, twigs, bubbles etc.), whilst not
+impossible, would seem highly unlikely.
+
+It is unlikely that a single viewpoint could produce a reflection of the diamond shaped object, the foreground branches
+and the background fence as they are seen in the inverted image. Separate adjustment of the perspective of both
+background fence and foreground branches produces a more realistic view (see below) however this is not what is seen
+in the original image.
+
+
+                                                                            Perspective applied to fence area
+
+
+
+                                                                            Original Image
+
+
+
+
+                                                                            Perspective applied to branches
+
+
+Adjusted version of the Calvine image with false perspective applied to tree and fence areas. © Andrew Robinson 2024.
+
+A number of people have attempted to model a reflection explanation in 3D to test its credibility. Ruan3D, who provides
+online tuition videos and tutorials on 3d creation, has posted a short video on YouTube created in the 3D programme
+Blender a virtual landscape with a circular lake, overhanging tree and fence along the far side of the lake (Ruan3d 2022).
+Whilst this effectively demonstrates this theory here the perspective of the fence and tree branches in the resulting
+image do not accurately match those seen in the Calvine Image.
+
+
+                                                                                                                        21
+Stills taken from Ruan3D’s video showing generated landscape (left), reflection in the lake as seen by the virtual camera (centre) and
+the resulting image when inverted (right). © Ruan3d 2022. (LINK)
+
+The 3D rendering software used by Ruan3d correctly produces a darker shadow for the reflection of the object in the
+lake surface than that above the lake surface which when the image is inverted (see below) clearly doesn’t match the
+original Calvine image where the lower half of the diamond is darker.
+
+
+
+
+Stills taken from Ruan3D ‘s video showing details of the 3D generated image (left - top half of object darker than lower) and the
+original Calvine image (right - bottom half darker than top). © Ruan3d 2022.
+
+The Danish 3D illustrator who posts on YouTube as ThomasH has produced a much more detailed 3D recreation of the
+inverted reflection interpretation (ThomasH, 2023a). Here he has created a lake on a valley floor in a highland landscape
+bounded by a fence on one side with trees or bushes along the opposite bank. In order for the reflection to produce an
+image that begins to match the Calvine Photograph the camera position has to be elevated considerably so that the
+branches of the trees themselves rather than their reflection are appearing in the bottom of the image. This would
+require a step bank or cliff face behind the trees to provide sufficient elevation for the image to work. (see below).
+
+
+
+
+Stills taken from a 3d recreation of the reflection interpretation of the Calvine sighting produced within Blender by ‘ThomasH’
+showing the arrangement of fence, lake and tree (left) and the camera position required to produce a suitable image (right). ©
+ThomasH, 2023. (LINK)
+
+
+
+
+22
+Whilst this arrangement can produce a similar image there are a number of problems with this which Thomas points out
+in the voice over that accompanies the video:
+
+        “I think the scene makes okay sense but there's also some things that makes me doubt it, I had to cheat to have
+        the water reflecting like this because the reflection is brighter than the actual object normally the reflection is
+        darker… I find it a bit incredible for the water to be so clean clear and still so you can't see the difference
+        between real things, reflections and front or back”
+
+Another issue present in this interpretation concerns the Harrier which is here replaced by a blurred bird in flight. The
+height and position required for the Harrier to appear at the correct size and orientation in the reflection would be
+highly unlikely. Whilst this 3D recreation has some strengths the issues present ultimately undermine its viability as a
+possible explanation. Numerous other interpretations of the image exist both online and in print. Many of the suggested
+explanations don’t match the available data however even those that might be plausible tend to create more problems
+than they solve. The simplest explanation, that we are seeing a photograph of a real object in the sky, is by far the most
+convincing and currently fits the available photographic evidence and the narrative of the sighting best.
+
+Conclusion – Although the possibility of the image being a reflection in the surface of a lake cannot be categorically
+ruled out this is considered unlikely and unproven due to the lack of any objects or disturbance in the lake surface, the
+lightness of the reflection of the object in the water, and the required camera position and surrounding landscape.
+
+SECTION G – SIZE AND DISTANCE CALCULATIONS
+
+G-1 – Size of Object and Harrier
+
+The relative sizes of objects in the photograph, as measured from a print, are dependent upon their actual size, their
+distance from the camera and the focal length of the lens. This relationship is an inverse linear relationship, i.e. size is 1
+/ distance - if you double the distance the size halves.
+
+The length of a Harrier Jet is known and the length of a section of the barbed wire in the foreground can be calculated
+based on the standard spacing of barbs on the typical type of barbed wire in universal use across farming and forestry
+applications where the barbs are spaced in 10cm intervals (Crestala Fencing Centre, 2024 and Jackson Fencing, 2024).
+Thus if we are able to determine at what point between the fence in the foreground and the jet in the background the
+unidentified object is flying, we are able to calculate an approximate value for the size for the unidentified object.
+
+
+
+
+Measurements of Harrier, unidentified object and barbed wire from a copy of the Calvine print, ì Andrew Robinson 2024.
+
+                                                                                                                             23
+     •   Harrier - True Length = 1440 cm / Image Length = 0.80cm
+     •   UFO – True Length = Unknown / Image Length = 3.33cm
+     •   Fence - True Length = 170cm / Image Length = 6.11cm
+
+Calculations of the approximate size of the Unidentified Object have been made based on three different placements of
+the object between the fence in the foreground and the harrier jet in the background:
+
+Option 1 - Assuming UFO is 50% of distance between fence and jet - UFO Length = 30.43 m / UFO Height = 8.86 m
+Option 2 - Assuming UFO is 33% of distance between fence and jet - UFO Length = 20.60 m / UFO Height = 6.00 m
+Option 3 - Assuming UFO is 66% of distance between fence and jet - UFO Length = 40.27 m / UFO Height = 11.73 m
+
+Conclusion - Assuming the position of the unidentified object is (as it appears to be) closer to the Jet in the background
+than the fence in the foreground, an approximate length of between 30 m and 40 m and a height of between 8 m and
+12 metres can be calculated for the object. NB – It should be noted that the measurements calculated here are
+approximate and are based on the stated assumptions and will have a margin of error of approximately +/- 10%.
+
+G-2 Distance of Fence and Harrier
+
+Give the barbed wire provides a measurable scale at the position of the fence in the foreground of the image and the
+Harrier provides a measurable object in the distance of the photograph, using trigonometry we are able to calculate the
+distance between the camera position and both the fence and the Harrier for a given focal length lens. Before doing this
+we first need to calculate the full uncropped width of the image:
+
+     •   35mm Neg dimensions              24 x 36mm
+     •   Calvine Print Dimensions         201 x 252 mm (20.1 x 25.2 cm)
+     •   Print width has been cropped to fit on 10x8” paper.
+     •   Assuming print shows full hight of negative
+     •   To calculate print width if whole negative were printed to this size 201/W = 24/36
+     •   W = 201/0.6667m = 302mm = 30.2cm
+
+Fence Distance - Knowing the probable spacing of the barbs on a barbed wire fence provides a scale at the position of
+the fence. This allows us to calculate the total width of the field of view visible across the film frame at this point in the
+image.
+
+6.11cm (18 barbs on fence) on print measures 170cm in reality.
+Thus, width of fence visible in full width of negative = (170/6.11) x 30.2 = 766.27 cm = 7.66m
+
+Knowing the field of view for a given focal length lens we can then use this width and TAN to calculate the distance of
+the camera position from the fence.
+
+Field of View for 50mm lens = 39.6o
+Half width of field of view triangle (Camera to Fence) = 7.66/2 = 3.83cm.
+    • Tan Angle = Opp/Adj
+    • Adj = Opp/Tan Angle
+    • Adj = 3.83 /Tan 19.8 = 3.83/0.36 = 10.64m
+
+The same calculation can be made for a 35mm Focal length lens with a horizontal field of view of 54.4 o and this provides
+a distance between fence and camera position of 7.45m.
+
+Conclusion – The fence is approximately 10.6m distant from the photographer (assuming a 50mm lens) or 7.45m
+(assuming a 35mm lens)
+
+Harrier Distance - Knowing the length of the Harrier a similar methodology can be used to calculate the approximate
+distance of the harrier from the camera position.
+
+
+
+24
+Measuring the length of the Harrier on a high-res scan of the original image in Photoshop, © Andrew Robinson 2024.
+
+Length of Harrier (GR3/QV-8A) on print (0.80cm) measures 1440cm in reality
+How many Harriers would fill width of print = 30.2cm/0.80cm = 37.75
+Width of field of view at distance of Harrier = 37.78 x 1440 = 54,360cm = 543.60m
+
+Horizontal Field of View for 50mm lens = 39.6o
+Half width of field of view triangle (Camera to Harrier) = 543.60/2 = 271.80m
+    • Tan Angle = Opp/Adj
+    • Adj = Opp/Tan Angle
+    • Adj = 271.80/Tan 19.8 = 271.80/0.36 = 755m
+
+The same calculation can be made for a 35mm Focal length lens with a horizontal field of view of 54.4 o , and this
+provides a distance between fence and camera position of 529m (0.33 miles)
+
+Conclusion – The Harrier is approximately 755m (0.47 miles) distant from the Photographer (assuming a 50mm lens) or
+529m (0.33 miles) distant (assuming a 35mm lens).
+
+Harrier Height - The known length of the Harrier also allows calculation of the approximate height of the harrier above
+the tree line visible in the bottom left of the image.
+
+
+
+
+Measuring the height of the Harrier above the top of ‘trees’ (may be heather or moorland?) visible along fence line at the bottom
+right of image. © Andrew Robinson 2024.
+
+
+                                                                                                                                    25
+The top of the trees (may be heather or moorland?) visible along fence line at the bottom right of image lie beyond the
+fence appearing to be in the middle distance at roughly the position of the Harrier. The height of the Harrier above
+these trees can be measured on the print. Given the length of the Harrier is known the approximate hight can be
+calculated:
+
+Height of Harrier above ‘trees’ on 35mm print – 6.4 cm
+Length of Harrier measured on 35mm print – 0.79 cm
+Length of Harrier (GR3/QV-8A) in reality = 1440cm
+True Height of Harrier (H) = (Height on Print / Length on Print) X (True Length)
+True Height of Harrier (H) = (Height on print/0.79) X 1440
+
+H = (6.4/0.79) x 1440
+H = (8.10126582) x 1440
+H = 11,665.8228 cm
+H = 116.658228 m
+(NB Measurements made on 300 dpi digital image 30 x 20cm in size)
+
+Conclusion – The Harrier is flying at a height of approximately 117 m (383’) above ground (assuming a 50mm lens).
+
+
+SECTION H – LOCATION
+
+Knowing the exact location at which the photograph was taken would help prove that the eyewitness story is genuine.
+Unfortunately, all that is known about the location is the information provided by the eyewitness first to the Daily
+Record and then to Craig Lindsay. They claimed that after work on the evening of the 4th of August 1990 they drove from
+Pitlochry to Calvine, parked their car and walked up onto the moors. Unfortunately, there is so little contextual
+information in the photograph that it has thus far proved impossible to determine an accurate location. However, given
+that sheep grazing around Calvin is now, as it was in 1990, only to be found in a limited number of locations this, along
+with the tree branches (identified as Scots Pine) play an important role in identifying potential locations.
+
+
+
+
+Map showing Calvine and surrounds with An Teampan on Struan Point marked in red and the location from which the photograph
+used in the Channel 5 recostruction was taeken marked in Blue - OS One Inch - Sheet 48 - Loch Tay © Ordinance Survey 1963,
+provided by National Library of Scotland Here via CC BY 4.0
+
+
+
+
+26
+Calvine lies in a valley running east-west along which runs the A9 road, this is joined by a second valley from the south
+at Calvine. Moorland areas are present to the north, the southwest, and the southeast with easily accessible tracks,
+roads and footpaths to the north and southwest. The area to the north is gradually rising, forested Moorland, quite
+boggy in places, where the majority of fencing is present to control deer. Such fencing is typically 6 feet or more high
+often with wire ‘rabbit proof’ netting covering the lower section as can be seen in the image below taken above the
+General Wade Road to the north of Calvine.
+
+
+
+
+6’ high deer fencing, with rabbit netting at base on the moors to the north of Calvine - © Giles Stevens 2024.
+
+The moorland to the southwest rises steeply to Struan Point. Here the land is a mixture of forested areas and open
+moor with occasional dilapidated walls and some areas enclosed by sheep fencing, which is less than half the height of
+the deer fencing found to the north of Calvine. Giles Stevens, who lives a short walk from Calvine, knows the local ghillie
+and has walked the area extensively, believes the most likely location lies to the south of Calvine due to the type of
+fencing present in the photograph. Giles has identified a small cluster of trees at An Teampan, the summit of Struan
+Point, along the side of which runs a sheep fence, as the most likely location. This location has subsequently been visited
+by Dr David Clarke, Craig Lindsay, and the American documentary maker, James Fox.
+
+The view to the East from under the most southerly tree along the fence line provide a striking similarity with the
+Calvine image making this a credible location although to date we haven’t been able produce a photograph with the
+required horizon and the current fence present here does not include barbed wire.
+
+
+
+
+View to the East from An Teamplan with Scots Pine and sheep fencing. Photograph © Giles Stevens, 2022 / The Original Calvine
+Image (Craig Lindsay / Sheffield Hallam University 2022).
+
+
+
+                                                                                                                               27
+This point has both the elevation and general outlook seen in the photograph with a very similar fence, fence posts, and
+overhanging trees. Whilst this can be considered as a possible location for the photograph we do not have the evidence
+needed to prove conclusively that this is where the photograph was taken. To do this we need to show a photograph
+can be taken at this location with the foreground and horizon matching that seen in the original image. Fence posts and
+wire may have changed slightly in 30 years however the landforms and horizon will be the same and need to be
+matched to provide any degree of certainty.
+
+There are two problems in matching the location at An Teampan with the photograph. Firstly, none of the sheep fencing
+surveyed by Giles Stevens and others on or around Struan Point includes barbed wire as seen in the photograph. Whilst
+it is possible that the original wire may have been replaced since the photograph was taken, it doesn’t seem to be
+common practice to use barbed wire on this type of fencing in this area.
+
+Secondly the camera position required to achieve the upward looking view of the sky, with no landscape visible ABOVE
+the fence line at the bottom of the photograph, would need to be lower than ground level present at the fence. This can
+be seen in the detailed 3D recreation of the scene produced in Blender 3D and posted on YouTube by ‘ThomasH’ in
+which he demonstrates that the Calvine Photograph could be produced as told by the eyewitness to Craig Lindsay
+(ThomasH, 2023b)
+
+
+
+
+Still images taken from a 3D recreation of the Calvine sighting produced within Blender by ‘ThomasH’ showing the view from the
+camera position (left) and the slope behind the fence required to produce the correct arrangement of fence, trees and distant
+landscape (right). © ThomasH, 2023. (LINK).
+
+In the video Thomas states:
+
+        “I must admit that it's actually possible with all the angles camera settings etc. but the camera has
+        to be a lot lower than the fence to make it possible to have that much sky in the photo, mountain tops in the
+        bottom and only the top of the poles in the frame.”
+
+As can be seen in the video the landscape generated to produce an identical result to the original image requires a much
+lower camera position and higher hills in the background than are available at Struan Point. The ground level at An
+Teampan is fairly level either side of the fence or rises as one moves away from the fence and under the overhanging
+trees. To date investigations have not been able to locate a camera position looking UPHILL towards a sheep fence from
+under overhanging trees. This video may however be prove helpful in suggesting alternate locations as investigations
+continue.
+
+Conclusion – Whilst the trees, fence and the limited landscape features present in the photograph are in keeping with
+landscape around Calvine and in particular the area around An Teampan on Struan Point to the southwest of the village,
+to date it has not been possible to identify the exact location where the photograph was taken, and it must remain a
+possibility that whilst it could have been taken on the moors close to Calvine it could also have been taken elsewhere.
+
+
+
+28
+SECTION I – IMAGE HERITAGE
+
+I-1 – Authenticity of Calvine Image
+
+Some commentators have questioned the authenticity of Craig Lindsay’s photography suggesting it may not be the
+image supplied to the MoD as he claims or not even one of the Calvine photographs at all.
+
+
+
+
+Enlargement of the top right corner of the original Calvine Image (l) and the photocopy faxed to London by Criag Lindsay both
+showing the same unique mark. © Andrew Robinson 2024.
+
+
+
+The small area of underdeveloped paper base, which appears in the top left of Craig’s print and is unique to this print
+(see above image) , can also be found on the photocopies sent by Craig to the MoD in London. If we then overlay these
+images – the original Calvine Print and the photocopies that were faxed to London they align perfectly proving that the
+photocopies were made from this image.
+
+
+
+
+Comparison showing the original Calvine Image (l), the Photocopy sent to the MoD by Craig Lindsay (centre) and the Vu-Foil
+Photocopy released by the MoD in 2009 (r). © Andrew Robinso, 2024.
+
+
+
+Likewise, when the two photocopied Vu-Foil images released by the MoD (The National Archives, 2009) are overlaid on
+the Calvine Image and photocopies all three images align perfectly. In addition, the light area on the nose of the object
+along with the rendering of the motion blur and missing wing tip of the Harrier (both highlighted in red) are identical on
+all three images.
+
+Conclusion - The Calvine Image provided by Craig Lindsay is a genuine copy of the original Calvine photograph and
+identical to both those faxed to the MoD and the original negatives provided by the Daily Record and subsequently
+studied by JARIC before being finally released to the public in the form of poor-quality photocopies from Vu-Foil images
+in 2009.
+
+                                                                                                                                29
+I-2 Channel 5 Reconstruction
+
+In 2015, for an episode of the series ‘Conspiracies’ entitled ‘Alien Cover Up’, Channel 5 dispatched a film crew and a pair
+of actors to Calvine to reconstruct the sighting. Giles Stevens has located the site where the filming took place and also
+the location where the still image used to create a reconstruction of the Calvine Image were taken. Both are to be found
+close to the Old General Wade Road on the moorland just to the north of Calvine.
+
+
+
+
+Stills taken from ‘Alien Cover Up’, Season One, Episode 6, of ‘Conspiracy’ TV Series, Directed and Produced by Phil Stein, first
+broadcast Channel 5, 17th July, 2015.
+
+
+Nick Pope, who was acting as both an interviewee and consultant on the documentary travelled from his home in San
+Jose, California to Los Angeles where he worked with a graphic artist to create both a still and animated reconstruction
+of the sighting of the unidentified craft (Pope, 2015). When first aired on Channel 5 in the UK between 8pm-9pm on
+Friday, 17th July 2015 an audience of 680,000 viewers making it the 21st most popular show on Channel 5 that week
+(IMDB, 2015).
+
+
+
+
+‘Alien Cover Up’ on My Five / Channel 5 Reconstruction of Calvine Image / ‘The Jox Files’ The Sun, Oct 10, 2020.
+
+
+The photographic reconstruction of the Calvine Image used in the show was published in the Sun (Sims, 2020). Prior to
+the release of the original Calvine Image in 2022 this became the defining image of the Calvine sighting with some
+believing it showed the exact location where the sighting took place. Indeed, the Sun article pictured here incorrectly
+describes this reconstruction as a ‘Colourised version of a blurred image included in the ministry’s redacted files’ and
+even after the genuine Calvine Image was published Nick Pope continued to use this reconstruction on his social media
+to illustrate the story.
+
+Although the photograph bares a remarkable similarity to the genuine Calvine Image provided to Dr David Clarke by
+Craig Lindsay, the Channel 5 film crew, using the descriptions of the sighting released by the MoD in 2009 as a guide,
+could fairly easily have captured the landscape used in the reconstruction by taking the most direct and accessible route
+onto the moorland above Calvine. Working with the resulting footage, photocopies of the Vu-Foil image released by the
+MoD in 2009, and Nick Pope’s recollection of the enlarged print that used to adorn his office wall, the graphic artist
+would then be able to produce both the video reconstruction included in the documentary and the still image used in
+related publicity with a reasonable degree of accuracy.
+
+
+30
+By over laying the Channel 5 reconstruction with the original Calvine photograph and the Vu-Foil photocopy images
+released in 2009 we can see the dimensions are consistent with it being copied from the Vu-Foil and accurate when
+compared to the original image (see image below).
+
+
+
+
+Comparison showing the unidentified object as seen in the original Calvine Image (top), the Vu-Foil Photocopy released by the MoD
+in 2009 (centre), and the Channel 5 reconstruction broadcast in 2015 and published in the Sun in 2020. © Andrew Robinson 2024.
+
+
+
+It’s it is unfortunate, however, that the animation doesn’t accurately portray the movement of the craft as described by
+the witnesses who explain it simply silently hovered for four or five minutes before slowly ascending vertically, gradually
+increasing in speed. There is no evidence of it zipping along the valley as shown in the Channel 5 reconstruction.
+
+Conclusion - The reconstruction produced for the 2015 Channel 5 Documentary and later published in the Sun is not a
+copy of a genuine Calvine image however it is an accurate artists reconstruction which could have been produced from
+the information readily available at the time.
+
+
+SECTION J - TIMELINE
+
+When a wishing to use a photograph as evidence to support an event such as an alleged UFO sighting, knowing the date
+and time the photograph was taken and establishing a timeline for the subsequent movement of the photographs and
+negatives is essential for the confirming the heritage of both print and image. In the case of the Calvine image and
+negatives we are reliant on the story told by the witnesses to the Daily Record and Craig Lindsay, on Craig Lindsay’s
+memory of events, on information provided by other staff at the Daily Record and MoD and on MoD documents. These
+sources have been used here to construct a possible timeline.
+
+The eyewitnesses told both the Daily Record and Craig Lindsay that the photographs were taken at around 9:00pm of
+the evening of the 4th of August 1990, on the moors above Calvine. Whilst there is nothing to suggest they weren’t, we
+have no proof of this other than the statement provided by the eyewitness.
+
+                                                                                                                                31
+Davidsons Chemist, 112 Athol Road, Pitlochry – uncredited photograph.
+
+The photographer would have had to have taken his images to either a local chemist or photography shop, or sent them
+away for processing in a prepaid envelope as was popular at the time. Davidson’s Chemists located close to the local
+hotels in the middle of Pitlochry, provided processing services and would seem a logical choice although there is no
+indication as to where the film was processed and printed. At this time some larger photography shops and chemists
+had their own in-house mini labs and provided a 24 hour or in some case a one-hour service for an extra cost however
+these were mainly found in larger towns and cities and it is unlikely that such a service would exist in Pitlochry in 1990.
+At this time, it would be typical for processing to take anything from 3 – 6 days depending on the service provided by
+the store so if the photographer had taken the films straight in for processing on Monday the 5 th August they might
+have expected to receive them back at the earliest later that week (8th August) or early the following week (12 th August).
+
+The former editor of the Daily Record, Malcolm Speed, has stated in an interview with David Clarke that the images
+arrived at the Record just before he went on his Summer holiday and that he took this every year during the August
+bank holiday week. In 1990 August Bank Holiday Monday fell on the 27th which would mean the photographs probably
+arrived at the Daily Record on or about Thursday the 23rd of August.
+
+Craig Lindsay would most likely have been contacted on either Friday 24th August or possibly immediately after the
+Bank Holiday on Tuesday the 28th of August. He requested a copy of the photograph, and this was sent promptly,
+possibly on the same day (perhaps the 28th or 29th August?). The Daily Record envelope in which the photograph was
+sent is not dated and analysis of detailed scans of the faded envelope label have been unable to recover the text
+present or reveal a date (see below).
+
+
+
+
+Analysis of the faded label on the front of the Daily Record envelope image fails to identify a date - © Andrew Robinson 2024.
+
+32
+The Red Star sticker shows it left Glasgow Station at 19:00h and arrived at Edinburgh Waverly at 19:50h.
+
+
+
+
+Red Star Sticker present on the read of the envelope sent to Craig Linday - © Andrew Robinson 2024.
+
+The envelope is addressed to Bill Fraser, a colleague of Andy Allen who worked in photography department of the
+Edinburgh office of the Daily Record, and would probably have been dispatched to collect the envelope and take it
+directly to RAF Pitreavie Castle where it was handed in at the office and passed to Craig Lindsay - probably sometime on
+the Thursday 30th August.
+
+
+
+
+Craig Lindsay’s Desk in the Press Office at RAF Pitreavie Castle in the 1990s, © Craig Lindsay 2024.
+
+Craig then contacted SEC(AS) – the MoD ‘UFO desk’ - in London and faxed them a photocopy of the image. SEC(AS) got
+back in touch immediately requesting the negatives and further information. Craig contacted the Daily Record who
+agreed to arrange for the negatives to be sent to London and also provided Craig with a phone number for the witness.
+Craig then phoned the number he was given which was for a hotel in Pitlochry and spoke for up to 30 minutes with one
+of the eyewitnesses who was working in the kitchens. Craig typed up his findings and faxed his summary to SEC(AS) in
+London, either on the same day or first thing the following day (possibly Thursday 30th or Friday 31st August).
+
+The negatives were then taken in person or posted to the Daily Record who forwarded them to SEC(AS) at the MoD
+where, according to MoD document DEFE 31/179: 156-7, they arrived on Monday 10th September. By the Thursday the
+14th of September the photographs had been analysed, a response to potential questions in the House drafted, and the
+
+
+                                                                                                                      33
+negatives returned to the Daily Record in Glasgow (The National Archives, 2009). What happened to these negatives
+subsequently is unknown.
+
+
+
+
+Section of briefing produced by Sec(AF)2a for Minister for Defence regarding Calvine sighting detailing the arrival of the Calvine
+images on the 10th September ad their return to the Daily Record on the 14th September (DEFE 31/179: 156-7)
+
+
+
+Whilst the above timeline involves considerable conjecture it demonstrates that the known sequence of events and the
+available dates do not contradict one another and that following a sighting on the 4th August it would be possible for the
+photographs to be processed in time to be delivered just before the August Bank Holiday, a print provided to Criag
+Lindsay at RAF Pitreavie Castle and the negatives sent to London in time to arrive by the 10th of September 1990.
+
+Conclusion – The time frame from sighting on the 4th of August to the arrival of the images at the Daily Record and the
+arrival of the negatives at the MoD in London on the 10th of September is realistic and fits with statements provided by
+numerous witnesses.
+
+SPECIAL THANKS
+
+A special note of thanks is extended to my colleague Dr David Clarke for his willingness to share materials from his
+archive and especially his transcripts and original recordings of interviews with key witnesses; Giles Stevens for his help
+in identifying locations surrounding Calvine and for providing a selection of images of the area; Matthew Isley for his
+excellent detective work; and Craig Lindsay for his openness and honesty regarding his role in the Calvine mystery and
+not least for keeping safe the only surviving photograph of the sighting for more than 30 years before donating it to the
+Special Collection at Sheffield Hallam University.
+
+References:
+
+Crestala Fencing Centre (2024). HT and MS Barbed Wire. Available at:
+https://www.crestalafencing.co.uk/product/barbed-wire/
+Last accessed 02/06/24
+
+IMDB (2024), Conspiracy, S1.E6: The Alien Files - Trivia. Available at:
+ https://www.imdb.com/title/tt4837370/?ref_=ttfc_fc_tt
+Last accessed 02/06/24
+
+Jackson Fencing (2024). Wire Fencing-Barbed Wire. Available at:
+https://www.jacksons-fencing.co.uk/fencing/agricultural-fencing/wire-fencing-barbed-wire
+Last accessed 02/06/24
+
+Keirstead, J.M. Weaver, G. and Lon, Z. (2009) ‘Ektacolor Paper Backprint Chronology’ in Chromogenic Characterization: A
+Study of Kodak Color Prints, 1942-2008’, Topics in Photographic Preservation, Volume 13. Pp 79-82. Available at:
+http://resources.culturalheritage.org/pmgtopics/2009-volume-thirteen/13_13_Weaver.pdf
+Last accessed 02/06/24
+
+Kodak. (1979) ‘Kodak’ EKTACOLOUR 78 Paper. Available at
+https://collections.museumsvictoria.com.au/content/media/2/1106002.pdf
+Last accessed 02/06/24
+
+
+34
+linda_vesci1 (2009). Processing film - the numbers on the back of prints. Available at:
+ https://www.photo.net/discuss/threads/processing-film-the-numbers-on-the-back-of-prints.164559/
+Last accessed 02/06/24
+
+Little, Stuart. (2022). Calvine UFO, Ex Press Photographer, has seen all 6 photos. Available at:
+https://www.youtube.com/watch?v=QFc9pe2-RdE
+Last accessed 02/06/24
+
+MapLogs.com (2024). Sunrise Sunset Times of Blair Atholl, Pitlochry PH18, UK. Available at:
+https://sunrise.maplogs.com/blair_atholl_pitlochry_ph18_uk.105340.html?year=1990
+Last accessed 02/06/24
+
+Madeley, (2023). Revealed: Hotel Porter who took this extraordinary photo of a UFO above the hills of Perthshire. Daily Mail
+Scotland, 25th March. P.26.
+
+McGiven, Mark (2023). Investigators believe Scot could hold important clue to one of world’s biggest UFO mysteries, (Daily
+Record, 06/03/2023). Available at:
+https://www.dailyrecord.co.uk/news/scottish-news/scots-hotel-porter-could-hold-29380068
+Last accessed 02/06/24
+
+Met Office (1990). Daily Weather Summary 1990 (DWS_1990_08). Available at:
+https://digital.nmla.metoffice.gov.uk/IO_988a2914-1297-4653-94d8-d38337883b91/
+Last accessed 02/06/24
+
+Michael C (2017). How can I decode information on back of printed photo?. Available at:
+https://photo.stackexchange.com/questions/94352/how-can-i-decode-information-on-back-of-printed-photo
+Last accessed 02/06/24
+
+Pope, Nick (2015) - Nick Pope: The Calvine UFO Incident on The Vortex. Available at:
+https://www.youtube.com/watch?v=14JHX_K12sc
+Last accessed 02/06/24
+
+Ruan3D (2022). Calvine UFO – Possible Debunk. Available at:
+https://www.youtube.com/watch?v=w3oZtjbAOYc
+Last accessed 02/06/24
+
+Sims, Paul. (2020) ‘The Jox Files’. The Sun. 10th October. P.17
+
+Stein, Phil & Channel 5. (2015) Conspiracy: Alien Cover Up (Season One, Episode 6). Available at:
+https://www.channel5.com/show/conspiracy/season-1/alien-cover-up
+Last accessed 02/06/24
+
+The National Archives. (2008). Digital copy of DEFE 24/1940: UFO reports; with redactions. pp. 113. Available at
+https://discovery.nationalarchives.gov.uk/details/r/C10130124
+Last accessed 02/06/24
+
+The National Archives. (2009). Digital copy of DEFE 31/179: UFO incidents; with redactions. pp 156-7. Available at:
+https://discovery.nationalarchives.gov.uk/details/r/C10232693
+Last accessed 02/06/24
+
+ThomasH. (2023a). Recreation and analysis of the "Calvine UFO" in Blender3D. Available at:
+https://www.youtube.com/watch?v=ui16a4sBKbI
+Last accessed 02/06/24
+
+ThomasH. (2023b). The Calvine UFO" - a visualization and analysis. Available at:
+https://www.youtube.com/watch?v=12LS-rGZ_Js
+Last accessed 02/06/24
+
+
+
+
+                                                                                                                             35
+Photographic analysis of the 10x8” print of Calvine UFO photograph donated by Craig
+Lindsey and currently held in special collections at Sheffield Hallam University [Version 5 -
+2024]
+
+ROBINSON, Andrew <http://orcid.org/0000-0003-4834-7719>
+
+Available from the Sheffield Hallam University Research Archive (SHURA) at:
+
+https://shura.shu.ac.uk/34877/
+
+
+
+
+Copyright and re-use policy
+
+Please visit https://shura.shu.ac.uk/34877/ and
+http://shura.shu.ac.uk/information.html for further details about copyright
+and re-use permissions.
+

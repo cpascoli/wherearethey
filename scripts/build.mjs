@@ -292,6 +292,8 @@ export async function build({ check = false, quiet = false } = {}) {
       if (!re) continue;
       re.lastIndex = 0;
       for (const m of text.matchAll(re)) {
+        // "National Archives of Brazil" names a different body than "National Archives": skip "<term> of <Name>"
+        if (/^\s+of\s+\p{Lu}/u.test(text.slice(m.index + m[0].length))) continue;
         const key = norm(m[1]).replace(/\s+/g, ' ').trim();
         for (const id of termMap.get(lower ? key.toLowerCase() : key) || []) if (id !== e.id) found.add(id);
       }
