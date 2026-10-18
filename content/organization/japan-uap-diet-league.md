@@ -24,3 +24,9 @@ facts:
     status: claimed
     source: https://www.scmp.com/week-asia/politics/article/3264559/japan-sets-parliamentary-group-probe-ufo-sightings-move-research-mainstream
 ---
+
+A cross-party group of Japanese Diet members founded on 6 June 2024 to push for government study of UAP. It is chaired by the former Defense Minister Yasukazu Hamada, with Shinjiro Koizumi as secretary-general and Shigeru Ishiba, later prime minister, as an adviser, and has grown to about 100 members.
+
+Its founding statement calls UAP a potential national-security threat, possibly unknown-technology weapons or spy drones, and urges Japan to create an office like the Pentagon's AARO and share data with the United States. At its launch two members, Kei Endo and Yoshiharu Asakawa, said they had personally seen UFOs.
+
+*Sources: [South China Morning Post (2024)](https://www.scmp.com/week-asia/politics/article/3264559/japan-sets-parliamentary-group-probe-ufo-sightings-move-research-mainstream)*

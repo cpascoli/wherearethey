@@ -34,3 +34,8 @@ facts:
     source: https://oversight.house.gov/release/chairman-comer-and-rep-luna-announce-republican-appointments-to-declassification-and-transparency-task-force/
 ---
 
+The Task Force on the Declassification of Federal Secrets was established inside the House Oversight Committee on 11 February 2025 by Chairman James Comer, with Rep. Anna Paulina Luna as chair. Its broad declassification mandate covers the JFK, RFK and MLK assassination records, the Epstein files, COVID-19 origins, 9/11 files and UAP.
+
+Its most visible UAP-focused members are Luna, Tim Burchett, Nancy Mace and Eric Burlison, with Jasmine Crockett as the ranking Democrat. It held the September 2025 hearing "Restoring Public Trust Through UAP Transparency and Whistleblower Protection".
+
+*Sources: [House Oversight](https://oversight.house.gov/)*

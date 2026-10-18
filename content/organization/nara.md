@@ -16,3 +16,7 @@ facts:
     status: documented
     source: https://www.archives.gov/research/topics/uaps
 ---
+
+The National Archives and Records Administration preserves the U.S. government's permanent records. The FY2024 NDAA created the UAP Records Collection at NARA as Record Group 615, to which federal agencies transfer their UAP records for public release.
+
+*Sources: [National Archives](https://www.archives.gov/research/topics/uaps)*

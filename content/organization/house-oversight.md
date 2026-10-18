@@ -14,3 +14,8 @@ facts:
     source: https://oversight.house.gov/
 ---
 
+The House Committee on Oversight and Government Reform is the main investigative committee of the U.S. House of Representatives (called the Committee on Oversight and Accountability in 2023–2024). Its subcommittees held the July 2023 hearing with David Grusch, David Fravor and Ryan Graves, and the November 2024 hearing "Unidentified Anomalous Phenomena: Exposing the Truth".
+
+In 2025 its chairman, James Comer, set up the Task Force on the Declassification of Federal Secrets, chaired by Rep. Anna Paulina Luna, whose remit includes UAP.
+
+*Sources: [oversight.house.gov](https://oversight.house.gov/)*

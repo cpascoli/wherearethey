@@ -13,3 +13,6 @@ facts:
     status: unverified
 ---
 
+A body described in the original notes as evaluating anomalous sensor data and physical evidence, with Avi Loeb, Garry Nolan and Tim Gallaudet listed as members. Its official name, sponsor and status have not been confirmed; this entry is a placeholder until they are.
+
+*Sources: original notes (unverified)*
