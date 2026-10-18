@@ -1700,7 +1700,7 @@
     return 'interview';
   }
   const VKINDS = [['all', 'All'], ['hearing', 'Hearings'], ['interview', 'Interviews & podcasts'], ['news', 'News & archive'], ['trailer', 'Trailers']];
-  let vbKind = 'all', vbSort = 'new', vbQ = '';
+  let vbKind = 'hearing', vbSort = 'new', vbQ = '';
   const vidPeople = v => [...new Set([...(v.moments || []).map(m => m.speaker), ...adj.get(v.id).filter(x => x.dir === 'out' && x.label === 'features').map(x => x.other)].filter(id => byId.get(id)?.type === 'person'))];
   const vidCard = v => {
     const ppl = vidPeople(v);
@@ -1724,7 +1724,7 @@
     const featured = base.filter(v => v.moments?.length >= 5).sort((a, b) => b.moments.length - a.moments.length || String(b.date).localeCompare(String(a.date))).slice(0, 6);
     const showFeatured = vbKind === 'all' && !q;
     const libTabs = `<div class="seg lib-tabs"><button class="on">Videos ${videos.length}</button><button data-lib="film">${TYPES.film.plural} ${ents.filter(e => e.type === 'film').length}</button><button data-lib="book">${TYPES.book.plural} ${ents.filter(e => e.type === 'book').length}</button></div>`;
-    $('#vid-browse').innerHTML = `${libTabs}<div class="vb-head"><h2>Testimony</h2><p class="muted">Hearings, interviews and archival footage, with synced transcripts and curated moments. ${base.length} videos · ${KB.stats.transcriptHours} hours transcribed.</p>
+    $('#vid-browse').innerHTML = `<h2 class="lib-title">Library</h2>${libTabs}<div class="vb-head"><p class="muted">Hearings, interviews and archival footage, with synced transcripts and curated moments. ${base.length} videos · ${KB.stats.transcriptHours} hours transcribed.</p>
       <div class="vb-bar"><input id="vb-q" type="search" placeholder="Filter by title, person, case…" value="${esc(vbQ)}" autocomplete="off">
         <select id="vb-sort"><option value="new">Newest</option><option value="old">Oldest</option><option value="moments">Most moments</option><option value="long">Longest</option></select>
         <button class="btn small" data-tsearch-open>Search inside transcripts</button></div>
