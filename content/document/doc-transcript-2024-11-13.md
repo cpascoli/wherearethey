@@ -13,7 +13,7 @@ rel:
 facts:
   - text: Includes discussion of a 2015 Navy exercise involving the USS Theodore Roosevelt.
     status: documented
-    source: v-2024-11-13-hearing-a@25:19
+    source: v-2024-11-13-hearing-c@25:48
 ---
 
 The printed record of "Unidentified Anomalous Phenomena: Exposing the Truth", the joint hearing of two House Oversight subcommittees on 13 November 2024, chaired by Reps. Nancy Mace and Glenn Grothman. The witnesses were Rear Adm. Tim Gallaudet, the former Pentagon official Luis Elizondo, the journalist Michael Shellenberger and the former NASA official Michael Gold.
