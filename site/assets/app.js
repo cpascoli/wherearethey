@@ -291,6 +291,7 @@
         'target-arrow-shape': 'none', 'font-size': 8, color: css('--muted'), 'text-rotation': 'autorotate',
         'text-background-color': css('--bg'), 'text-background-opacity': 0.85, 'text-background-padding': 1,
       } },
+      { selector: 'edge[kind="bridge"]', style: { 'line-style': 'dotted', opacity: 0.6 } }, // through a filtered-out file (see applyGraphFilter)
       { selector: 'edge[kind="mention"]', style: { 'line-style': 'dashed', 'line-dash-pattern': [3, 3], opacity: 0.6 } },
       { selector: '.faded', style: { opacity: 0.08 } },
       { selector: 'node.path', style: { 'border-width': 3, 'border-color': css('--accent'), 'border-style': 'solid', 'font-size': 11, 'font-weight': 600 } },
@@ -337,11 +338,43 @@
     applyGraphFilter();
     layoutGraph(false);
   }
+  // Bridges: when a type is switched off, files still on screen that connect through a hidden file of that type get a
+  // dotted link naming it (Fravor ··· Dietrich "via USS Nimitz…"), whatever their own types. Switching the type back on
+  // removes the bridges and the layout settles around the real intermediary again. Small groups only: a type with more
+  // than BRIDGE_TYPE_MAX files around one hidden file is left out (a documentary featuring 30 people says little about
+  // any two of them), and a hidden file bridges at most BRIDGE_MAX files in all.
+  const BRIDGE_TYPE_MAX = 12, BRIDGE_MAX = 30;
+  function bridgeEdges() {
+    const pairs = new Map();
+    for (const h of ents) {
+      if (h.type === 'record' || state.types.has(h.type)) continue; // only files hidden by the type filter
+      const byType = new Map();
+      for (const x of adj.get(h.id)) {
+        if (x.kind === 'mention' || !visible.has(x.other)) continue;
+        const t = byId.get(x.other).type;
+        (byType.get(t) || byType.set(t, new Set()).get(t)).add(x.other);
+      }
+      const ids = [...byType.values()].filter(g => g.size <= BRIDGE_TYPE_MAX).flatMap(g => [...g]);
+      if (ids.length < 2 || ids.length > BRIDGE_MAX) continue;
+      const m = [...ids].sort();
+      for (let i = 0; i < m.length; i++) for (let j = i + 1; j < m.length; j++) {
+        if (directly.has(`${m[i]}|${m[j]}`)) continue;
+        const key = `${m[i]}|${m[j]}`;
+        (pairs.get(key) || pairs.set(key, { s: m[i], t: m[j], via: [] }).get(key)).via.push(h.id);
+      }
+    }
+    return [...pairs.values()].map(p => ({ group: 'edges', data: { id: `b:${p.s}|${p.t}`, source: p.s, target: p.t, kind: 'bridge', via: p.via,
+      label: `via ${p.via.slice(0, 2).map(id => byId.get(id).name).join(', ')}${p.via.length > 2 ? ` +${p.via.length - 2}` : ''}` } }));
+  }
+  const directly = new Set(KB.edges.filter(x => x.kind !== 'mention').flatMap(x => [`${x.s}|${x.t}`, `${x.t}|${x.s}`]));
   function applyGraphFilter() {
     if (!cy) return;
+    const bridges = bridgeEdges();
     const nv = visible.size, ne = KB.edges.filter(x => visible.has(x.s) && visible.has(x.t) && (x.kind !== 'mention' || state.showMentions)).length;
-    if ($('#hud')) $('#hud').innerHTML = `Case network · <b>${nv}</b> files · <b>${ne}</b> links${state.credibleOnly ? ' · official sources only' : ''}`;
+    if ($('#hud')) $('#hud').innerHTML = `Case network · <b>${nv}</b> files · <b>${ne}</b> links${bridges.length ? ` · <b>${bridges.length}</b> bridged` : ''}${state.credibleOnly ? ' · official sources only' : ''}`;
     cy.batch(() => {
+      cy.remove('edge[kind="bridge"]');
+      if (bridges.length) cy.add(bridges);
       cy.nodes().forEach(n => n.toggleClass('hidden', !visible.has(n.id())));
       cy.edges().forEach(ed => ed.toggleClass('hidden', (ed.data('kind') === 'mention' && !state.showMentions) || !visible.has(ed.data('source')) || !visible.has(ed.data('target'))));
     });
@@ -354,12 +387,15 @@
     for (const pos of [LAYOUT.official, LAYOUT.all]) if (pos && ids.length === Object.keys(pos).length && ids.every(id => pos[id])) return pos;
     return null;
   }
+  // a layout fits the whole graph; bring the selected file and its connections back into view afterwards
+  const reframeSel = () => { if (state.sel && state.view === 'graph') setTimeout(() => frameHood(cy.getElementById(state.sel)), 50); };
   function layoutGraph(animate, { fresh = false } = {}) {
     if (!cy) return;
     const eles = cy.elements().not('.hidden');
     const preset = !fresh && presetFor(eles);
     if (preset) {
-      eles.layout({ name: 'preset', positions: n => ({ x: preset[n.id()][0], y: preset[n.id()][1] }), fit: true, padding: 40, animate: !!animate, animationDuration: 500 }).run();
+      eles.layout({ name: 'preset', positions: n => ({ x: preset[n.id()][0], y: preset[n.id()][1] }), fit: true, padding: 40, animate: !!animate, animationDuration: 500 })
+        .one('layoutstop', reframeSel).run();
       return;
     }
     // first draw of a filtered view: start from the precomputed full-network positions so the force layout settles fast
@@ -373,7 +409,22 @@
     } : {
       name: 'cose', animate: animate ? 'end' : false, animationDuration: 600, randomize: !animate, fit: true, padding: 40,
       nodeRepulsion: () => 14000, idealEdgeLength: () => 70, edgeElasticity: () => 80, gravity: 0.35, numIter: 1600,
-    }).run();
+    }).one('layoutstop', reframeSel).run();
+  }
+  // Frame a selected file and its connections, unless they're already comfortably in view. The canvas may run
+  // under the side panel, so "in view" means left of the panel.
+  function frameHood(n) {
+    if (!cy || n.removed() || n.hasClass('hidden')) return;
+    cy.resize();
+    const hood = n.closedNeighborhood().nodes().not('.hidden');
+    const cr = cy.container().getBoundingClientRect(), panel = $('#panel');
+    const pr = !panel.hidden && window.innerWidth > 860 ? panel.getBoundingClientRect() : null;
+    const w = pr && pr.left < cr.right ? Math.max(200, pr.left - cr.left) : cy.width(), h = cy.height();
+    const rb = hood.renderedBoundingBox(), m = 24, bb = hood.boundingBox(), pad = 60;
+    const z = Math.min(1.4, Math.max(0.3, Math.min((w - 2 * pad) / Math.max(bb.w, 1), (h - 2 * pad) / Math.max(bb.h, 1))));
+    // leave it alone when it's in view and big enough to read
+    if (rb.x1 >= m && rb.x2 <= w - m && rb.y1 >= m && rb.y2 <= h - m && cy.zoom() >= z * 0.6) return;
+    cy.animate({ zoom: z, pan: { x: w / 2 - z * (bb.x1 + bb.x2) / 2, y: h / 2 - z * (bb.y1 + bb.y2) / 2 } }, { duration: 450 });
   }
   function highlight(id, hover = false) {
     if (!cy) return;
@@ -392,8 +443,7 @@
       const n = cy.getElementById(id);
       if (n.length && !n.hasClass('hidden')) {
         n.select();
-        const ext = cy.extent(), p = n.position();
-        if (p.x < ext.x1 || p.x > ext.x2 || p.y < ext.y1 || p.y > ext.y2) cy.animate({ center: { eles: n }, duration: 400 });
+        requestAnimationFrame(() => frameHood(n)); // after the panel has opened and the canvas has its new size
       }
     }
   }
