@@ -13,3 +13,7 @@ facts:
     by: david-scott
     source: v-2013-chd-nuclear-tampering-1@32:29
 ---
+
+David Scott is a former U.S. Air Force security policeman with the 91st Missile Security Squadron at Minot Air Force Base. At the 2013 Citizen Hearing on Disclosure he testified that in November 1974, as an airman first class on a security alert team, he and Airman Bill Gray saw a pulsating red light over one of their Minuteman missile sites.
+
+*Sources: Citizen Hearing (2013)*

@@ -13,3 +13,7 @@ facts:
     by: fred-diamond
     source: v-ctv-w5-pascagoula-1974@2:52
 ---
+
+Fred Diamond was the sheriff of Jackson County, Mississippi, in 1973. He said Charles Hickson and Calvin Parker came into his department on the evening of 11 October "all excited and upset … hysterical crying" after their reported abduction, and his office secretly recorded the two men while they were left alone together, a recording often cited in their favour.
+
+*Sources: CTV W5 interview · Pascagoula incident record*

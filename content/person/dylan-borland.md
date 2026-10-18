@@ -15,3 +15,8 @@ facts:
     source: v-2025-09-09-hearing-a@55:03
 ---
 
+Dylan Borland is a former U.S. Air Force geospatial intelligence specialist. Testifying under oath to the House Oversight Committee on 9 September 2025, he described a 2012 encounter at Langley Air Force Base with a silent, 100-foot-wide triangular craft hovering about 100 feet up, during which his phone froze.
+
+He has also described his understanding of how a "UFO legacy program" is structured, including the theory that AATIP and the UAP Task Force partly "red-teamed" it; those claims are filed below.
+
+*Sources: House Oversight hearing (9 September 2025)*

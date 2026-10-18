@@ -13,3 +13,7 @@ facts:
     by: charles-brown
     source: v-disclosure-project-2001-npc@19:14
 ---
+
+Charles L. Brown is a retired U.S. Air Force lieutenant colonel. At the Disclosure Project's National Press Club event in May 2001 he said he had been a Second World War bomber pilot and, after 1949, served with the Air Force Office of Special Investigations, which he described as the Air Force's worldwide investigative agency for UFO reports at the time.
+
+*Sources: Disclosure Project press conference (2001)*

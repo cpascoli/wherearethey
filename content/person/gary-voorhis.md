@@ -14,3 +14,6 @@ facts:
     source: https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/
 ---
 
+Gary Voorhis was a U.S. Navy petty officer third class aboard the cruiser USS Princeton in 2004, its only technician for the Cooperative Engagement Capability and AEGIS combat systems. He is among the Princeton crew members who have described the radar tracks and observations surrounding the November 2004 Nimitz "Tic Tac" encounter.
+
+*Sources: Nimitz incident record*

@@ -10,3 +10,8 @@ tags:
   - navy
 ---
 
+Alex Dietrich is a retired U.S. Navy lieutenant commander and F/A-18 pilot. In November 2004 she flew the second Super Hornet during the USS Nimitz "Tic Tac" encounter and, with David Fravor's crew, watched the object over the ocean.
+
+She has since spoken publicly about the encounter and appears in the documentary *The Age of Disclosure* (2025).
+
+*Sources: Nimitz incident record · The Age of Disclosure*

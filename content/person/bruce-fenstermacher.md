@@ -16,3 +16,7 @@ facts:
     status: documented
     source: https://www.youtube.com/watch?v=UDu3FlK-mI0
 ---
+
+Bruce Fenstermacher is a retired U.S. Air Force captain and former ICBM launch officer. At the 2013 Citizen Hearing on Disclosure, on the "Nuclear Tampering" panel with Robert Salas and David Schindele, he testified that in 1976 at F. E. Warren Air Force Base a silent, cigar-shaped object hovered over his launch facilities; the missiles stayed online, but an officer destroyed the crew's notes and told them the incident "officially never happened".
+
+*Sources: Citizen Hearing (2013)*

@@ -13,3 +13,7 @@ facts:
     status: claimed
     source: https://en.wikipedia.org/wiki/Ariel_School_UFO_incident
 ---
+
+Cynthia Hind was a UFO researcher and author, MUFON's representative for Africa. She visited Ariel School four days after the September 1994 sighting, interviewed the children and collected their drawings, and was among the first to document the case. She also exposed the story of a 1989 "UFO crash" in the Kalahari as a hoax.
+
+*Sources: Ariel incident record · BBC report (1994)*

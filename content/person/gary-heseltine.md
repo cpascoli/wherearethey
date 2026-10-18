@@ -13,3 +13,7 @@ facts:
     by: gary-heseltine
     source: https://www.vijayvaani.com/ArticleDisplay.aspx?aid=2806
 ---
+
+Gary Heseltine is a former British police detective with the British Transport Police who collects UFO reports made by police officers. At the 2013 Citizen Hearing on Disclosure he said he had 425 cases involving 940 police officers in the UK, more than 70% of them with several police witnesses.
+
+*Sources: Citizen Hearing (2013)*

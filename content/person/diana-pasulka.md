@@ -15,3 +15,7 @@ facts:
     by: hal-puthoff
     source: v-jre-hal-puthoff-2025@1:40:30
 ---
+
+Diana Walsh Pasulka is a professor of religious studies at the University of North Carolina Wilmington, best known for *American Cosmic* (2019), which studies belief in UFOs and the scientists and insiders around the subject. The physicist Hal Puthoff says Pasulka told him that some recovered craft had been described to her as "donations".
+
+*Sources: Joe Rogan Experience #2314*

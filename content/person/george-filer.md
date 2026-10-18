@@ -14,3 +14,7 @@ facts:
     by: george-filer
     source: v-disclosure-project-2001-npc@1:05:58
 ---
+
+George Filer III is a retired U.S. Air Force intelligence officer and aircrew member who said he flew nearly 5,000 hours. At the Disclosure Project's 2001 event he said that in winter 1962 London control asked his aircraft to chase a UFO, which they held on airborne radar from about 40 miles out until, at about a mile, it lit up and climbed away; he later briefed generals on UFOs. He also testified at the 2013 Citizen Hearing.
+
+*Sources: Disclosure Project press conference (2001) · Citizen Hearing (2013)*

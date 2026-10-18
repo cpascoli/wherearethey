@@ -14,3 +14,7 @@ facts:
     by: dwynne-arneson
     source: v-disclosure-project-2001-npc@48:18
 ---
+
+Dwynne Arneson is a retired U.S. Air Force colonel who said he served 26 years as a communications-electronics officer with a top-secret clearance. At the Disclosure Project's 2001 National Press Club event he said that as a young lieutenant running the crypto centre at Ramstein, Germany, in the early 1960s, he saw a message reporting that a UFO had crashed on Spitsbergen, Norway, and that he was later posted to Great Falls, Montana, in 1967.
+
+*Sources: Disclosure Project press conference (2001)*
