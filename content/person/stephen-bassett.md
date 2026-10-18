@@ -12,3 +12,7 @@ facts:
     status: claimed
     source: https://paradigmresearchgroup.org/citizen-hearing-on-disclosure/
 ---
+
+Stephen Bassett is the founder of Paradigm Research Group and a registered lobbyist for UFO disclosure. Through his group he produced the 2013 Citizen Hearing on Disclosure, at which former officials and military personnel testified before former members of Congress. As an advocate rather than a witness, he is outside this archive's sourcing criteria.
+
+*Sources: Citizen Hearing (2013)*

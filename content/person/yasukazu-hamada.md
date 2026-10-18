@@ -11,3 +11,7 @@ links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Yasukazu_Hamada
 ---
+
+Yasukazu Hamada is a member of Japan's House of Representatives who served twice as Minister of Defense (2008–2009 and 2022–2023). In June 2024 he became chair of the cross-party Diet league for UAP clarification, which urges Japan to create an office like the Pentagon's AARO.
+
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Yasukazu_Hamada) · SCMP (2024)*

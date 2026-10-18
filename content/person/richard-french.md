@@ -16,3 +16,7 @@ facts:
     status: documented
     source: https://www.youtube.com/watch?v=AkGkOdpxAL8
 ---
+
+Richard French is a retired U.S. Air Force lieutenant colonel and former fighter pilot (Korea, Vietnam). At the 2013 Citizen Hearing on Disclosure, on its "History & Background" and "Pilots & Aviation Experts" panels, he testified that he was sent by the Air Force Office of Special Investigations district commander to investigate an object reported in the water off Newfoundland.
+
+*Sources: Citizen Hearing (2013)*

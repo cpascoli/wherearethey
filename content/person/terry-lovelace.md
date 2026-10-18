@@ -14,3 +14,8 @@ tags:
   - missing-time
 ---
 
+Terry Lovelace was a U.S. Air Force medic at Whiteman Air Force Base, Missouri, and later an attorney. He says that in 1975 he and an airman saw a silent triangular craft over one of the base's nuclear missile silos, and that in 1977, camping at Devil's Den State Park in Arkansas with a friend, he had a UFO encounter with missing time.
+
+He also says a 2012 X-ray showed a small electronic object in his thigh that later vanished. His accounts come from his book *Incident at Devils Den*.
+
+*Sources: Lovelace, Incident at Devils Den*
