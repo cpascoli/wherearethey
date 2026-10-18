@@ -91,6 +91,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
   for (const e of entities) {
     const h = [];
     const kicker = [LABEL[e.type], fmtDate(e.date) + (e.end ? ` – ${fmtDate(e.end)}` : ''), e.place?.name].filter(Boolean).join(' · ');
+    h.push(`<nav class="ssr-crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/a-z#${e.type}">${PLURAL[e.type]}</a> › ${esc(e.name)}</nav>`);
     h.push(`<p class="ssr-kicker">${esc(kicker)}</p><h1>${esc(e.name)}</h1>`);
     if (e.aka?.length) h.push(`<p class="ssr-aka">Also known as ${e.aka.map(esc).join(', ')}</p>`);
     if (e.credentials?.length) h.push(`<ul class="ssr-creds">${e.credentials.map(c => `<li>${esc(c.role || c.category)}</li>`).join('')}</ul>`);
@@ -125,8 +126,24 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     if (groups.size) {
       h.push(`<h2>Connected files</h2>${[...groups].map(([type, m]) => `<h3>${PLURAL[type]}</h3><ul>${[...m].map(([id, label]) => `<li>${link(id)} <span class="ssr-by">(${esc(label)})</span></li>`).join('')}</ul>`).join('')}`);
     }
-    const mentionedIn = (near.get(e.id) || []).filter(x => x.kind === 'mention' && byId.get(x.other)?.type === 'video');
-    if (mentionedIn.length) h.push(`<h2>Mentioned in videos</h2><ul>${[...new Set(mentionedIn.map(x => x.other))].map(id => `<li>${link(id)}</li>`).join('')}</ul>`);
+    // names found in transcripts and in document text, both ways
+    const mentions = (near.get(e.id) || []).filter(x => ['mention', 'text'].includes(x.kind) && byId.has(x.other));
+    const uniq = xs => [...new Set(xs.map(x => x.other))];
+    const inVideos = uniq(mentions.filter(x => x.dir === 'in' && byId.get(x.other).type === 'video'));
+    const inText = uniq(mentions.filter(x => x.dir === 'in' && byId.get(x.other).type !== 'video'));
+    const named = uniq(mentions.filter(x => x.dir === 'out'));
+    if (named.length) h.push(`<h2>${e.type === 'video' ? 'Mentioned in this video' : 'Mentioned in this file'}</h2><ul>${named.map(id => `<li>${link(id)} <span class="ssr-by">(${esc(LABEL[byId.get(id).type])})</span></li>`).join('')}</ul>`);
+    if (inVideos.length) h.push(`<h2>Mentioned in videos</h2><ul>${inVideos.map(id => `<li>${link(id)}</li>`).join('')}</ul>`);
+    if (inText.length) h.push(`<h2>Mentioned in documents and records</h2><ul>${inText.map(id => `<li>${link(id)}</li>`).join('')}</ul>`);
+    // a few sideways links: same type, ranked by shared tags and shared connections (same people, cases, channels)
+    if (e.type !== 'record') {
+      const tags = new Set(e.tags);
+      const linkedIds = new Set((near.get(e.id) || []).map(x => x.other));
+      const more = entities.filter(o => o.type === e.type && o.id !== e.id && !linkedIds.has(o.id))
+        .map(o => [o, o.tags.filter(t => tags.has(t)).length * 3 + new Set((near.get(o.id) || []).map(x => x.other).filter(id => linkedIds.has(id))).size]).filter(([, n]) => n > 0)
+        .sort((a, b) => b[1] - a[1] || String(b[0].date || '').localeCompare(String(a[0].date || ''))).slice(0, 6).map(([o]) => o.id);
+      if (more.length) h.push(`<h2>More ${PLURAL[e.type].toLowerCase()}</h2><ul>${more.map(id => `<li>${link(id)}</li>`).join('')}</ul>`);
+    }
     if (e.links.length) h.push(`<h2>Links</h2><ul>${e.links.map(l => `<li><a href="${esc(l.url)}" rel="noopener">${esc(l.label || l.url)}</a></li>`).join('')}</ul>`);
     if (e.files.length) h.push(`<h2>Files</h2><ul>${e.files.map(f => `<li><a href="${esc(fileUrl(f))}">${esc(f.split('/').pop())}</a></li>`).join('')}</ul>`);
 
@@ -139,6 +156,8 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     }
     if (e.type === 'book') jsonld = { '@type': 'Book', name: e.name, isbn: e.isbn, numberOfPages: e.pages ? +e.pages : undefined, publisher: e.publisher, datePublished: e.date, description };
     if (e.type === 'film') jsonld = { '@type': 'Movie', name: e.name, dateCreated: e.date, description, image: imageOf(e) || undefined };
+    const crumbs = { '@type': 'BreadcrumbList', itemListElement: [['Home', '/'], [PLURAL[e.type], `/a-z#${e.type}`], [e.name, e.path]].map(([name, p], i) => ({ '@type': 'ListItem', position: i + 1, name, item: SITE_URL + p })) };
+    jsonld = jsonld ? [jsonld, crumbs] : [crumbs];
     pages.push({ path: e.path, title: `${e.name} · ${LABEL[e.type]}`, description, body: h.join('\n'), jsonld, image: imageOf(e), noindex: e.type === 'record', type: e.type === 'video' ? 'video.other' : 'article' });
   }
 
@@ -155,7 +174,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     map: ['World map', 'Where UAP incidents and related events took place, on a world map.', `<h1>World map</h1>${listOf(entities.filter(e => e.place && e.type !== 'record'), e => ` (${esc(e.place.name)})`)}`],
     videos: ['Videos', `Congressional hearings, interviews and archival footage about UAP, with synced transcripts and curated moments: ${stats.videos} videos, ${stats.transcriptHours} hours transcribed.`, `<h1>Videos</h1>${listOf(ofType('video').sort(newest), e => ` (${[e.channel, fmtDate(e.date)].filter(Boolean).map(esc).join(', ')})`)}`],
     shelf: ['Documentaries & books', 'Documentaries and books about UAP by people on the record, with trailers and where to find them.', `<h1>Documentaries &amp; books</h1><h2>Documentaries</h2>${listOf(ofType('film').sort(newest))}<h2>Books</h2>${listOf(ofType('book').sort(newest))}`],
-    index: ['A–Z index', 'Every file in the archive, A to Z: people, incidents, hearings, programs, organizations, documents and official records.', `<h1>A–Z index</h1>${[...typeOrder, 'record'].map(t => `<h2>${PLURAL[t]}</h2>${listOf(ofType(t).sort((a, b) => a.name.localeCompare(b.name)))}`).join('')}`],
+    index: ['A–Z index', 'Every file in the archive, A to Z: people, incidents, hearings, programs, organizations, documents and official records.', `<h1>A–Z index</h1>${[...typeOrder, 'record'].map(t => `<h2 id="${t}">${PLURAL[t]}</h2>${listOf(ofType(t).sort((a, b) => a.name.localeCompare(b.name)))}`).join('')}`],
     claims: ['Claims ledger', 'Every claim in the archive with its status (documented, claimed or unverified), who made it and the source.', `<h1>Claims ledger</h1><p>Documented: backed by an official record or primary document. Claimed: on-record testimony not independently confirmed. Unverified: reported without a primary source.</p>${entities.filter(e => e.facts.length && e.type !== 'record').map(e => `<h2>${link(e.id)}</h2>${factsHtml(e.facts)}`).join('')}`],
   };
   for (const [view, [title, description, body]] of Object.entries(views)) pages.push({ path: VIEW_PATH[view], title, description, body, view });
@@ -172,7 +191,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       p.noindex ? '<meta name="robots" content="noindex, follow">' : '',
       `<meta property="og:site_name" content="Where Are They"><meta property="og:title" content="${esc(p.title)}"><meta property="og:description" content="${esc(p.description)}"><meta property="og:url" content="${esc(url)}"><meta property="og:type" content="${p.type || 'website'}">`,
       p.image ? `<meta property="og:image" content="${esc(p.image)}"><meta name="twitter:card" content="summary_large_image">` : '<meta name="twitter:card" content="summary">',
-      p.jsonld ? `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', ...p.jsonld }).replace(/</g, '\\u003c')}</script>` : '',
+      p.jsonld ? `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': [].concat(p.jsonld) }).replace(/</g, '\\u003c')}</script>` : '',
     ].filter(Boolean).join('\n  ');
     return template
       .replace(/<title>[\s\S]*?<\/title>\s*/, '')

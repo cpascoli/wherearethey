@@ -719,3 +719,4 @@ html:not(.js) .top, html:not(.js) .app, html:not(.js) .views, html:not(.js) .mor
 .ssr-facts li, .ssr-moments li { margin-bottom: 8px; }
 .ssr-st { font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); }
 .ssr-by, .ssr-src, .ssr-note { color: var(--muted); font-size: .92em; }
+.ssr-crumbs { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
