@@ -179,7 +179,7 @@
     renderHist();
     $('#f-mentions').checked = state.showMentions;
     const s = KB.stats;
-    $('#f-stats').innerHTML = `<b>${s.entities}</b> entries · <b>${s.edges}</b> links<br><b>${s.transcripts}</b> transcripts · <b>${s.transcriptHours}</b> hours · <b>${s.mentions.toLocaleString()}</b> mentions<br>Built ${new Date(KB.built).toLocaleString()}${window.GA_ID ? ' · <a href="privacy.html">Privacy</a> · <a href="#" data-open-consent>Cookie settings</a>' : ''}` +
+    $('#f-stats').innerHTML = `<b>${s.entities}</b> entries · <b>${s.edges}</b> links<br><b>${s.transcripts}</b> transcripts · <b>${s.transcriptHours}</b> hours · <b>${s.mentions.toLocaleString()}</b> mentions<br>Built ${new Date(KB.built).toLocaleString()}<div class="side-links">© ${new Date().getFullYear()} Carlo Pascoli · <a href="about.html">About</a> · <a href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener">GitHub</a> · <a href="privacy.html">Privacy</a>${window.GA_ID ? ' · <a href="#" data-open-consent>Cookies</a>' : ''}</div>` +
       (KB.warnings.length ? `<details><summary>${KB.warnings.length} build warning${KB.warnings.length > 1 ? 's' : ''}</summary><ul>${KB.warnings.map(w => `<li>${esc(w)}</li>`).join('')}</ul></details>` : '');
   }
   function renderHist() {
@@ -1416,7 +1416,8 @@
 
         <footer class="home-foot">
           <div><b>WHERE ARE THEY</b> is a personal research archive. It collects public, on-record statements and official documents. It does not make claims of its own: every statement is attributed, and every status can be checked against its source.</div>
-          <div class="muted">Built ${new Date(KB.built).toLocaleDateString()} · ${KB.stats.entities} files · ${KB.stats.edges.toLocaleString()} links · sources include congressional records, war.gov/UFO (PURSUE), the CIA and FBI reading rooms, NARA and The Black Vault. <a href="privacy.html">Privacy &amp; cookies</a> · <a href="#" data-open-consent>Cookie settings</a></div>
+          <div class="muted">Built ${new Date(KB.built).toLocaleDateString()} · ${KB.stats.entities} files · ${KB.stats.edges.toLocaleString()} links · sources include congressional records, war.gov/UFO (PURSUE), the CIA and FBI reading rooms, NARA and The Black Vault.</div>
+          <div class="home-links">© ${new Date().getFullYear()} Carlo Pascoli · <a href="about.html">About</a> · <a href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener">GitHub</a> · <a href="privacy.html">Privacy &amp; cookies</a>${window.GA_ID ? ' · <a href="#" data-open-consent>Cookie settings</a>' : ''}</div>
         </footer>
       </div>`;
     startHero();

@@ -636,3 +636,8 @@ body.resizing iframe { pointer-events: none; }
 .f-hint { font-size: 11.5px; color: var(--muted); margin: 6px 6px 0; line-height: 1.35; }
 .f-hint .hint-touch { display: none; }
 @media (hover: none) and (pointer: coarse) { .f-hint .hint-mouse { display: none; } .f-hint .hint-touch { display: inline; } }
+
+/* footer links (home + sidebar) */
+.home-links { font-size: 12.5px; color: var(--muted); }
+.home-links a, .side-links a { color: inherit; } .home-links a:hover, .side-links a:hover { color: var(--accent); }
+.side-links { margin-top: 8px; color: var(--muted); }
