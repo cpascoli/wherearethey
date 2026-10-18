@@ -8,8 +8,8 @@ tags:
   - air-force
   - foia
 rel:
-  - - run by
-    - department-of-war
+  - [ run by, department-of-war ]
+  - [ preceded by, project-grudge ]
 facts:
   - text: A 1952–1969 U.S. Air Force program to investigate the nature and origin of unidentified flying objects.
     status: documented
