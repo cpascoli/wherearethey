@@ -13,3 +13,7 @@ facts:
     status: documented
     source: v-2025-05-01-hearing-a@7749
 ---
+
+Kirk McConnell is a former senior staff member of the Senate Armed Services and Senate Intelligence committees. At the congressional UAP briefing of 1 May 2025 he discussed the challenges Congress faces in overseeing UAP programmes and the protection of whistleblowers.
+
+*Sources: Briefing record (2025)*

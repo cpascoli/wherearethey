@@ -14,3 +14,6 @@ facts:
     source: https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/
 ---
 
+P. J. Hughes was a U.S. Navy aviation technician with the USS Nimitz's E-2 Hawkeye squadron in 2004. He says he was responsible for securing the data recorders from the E-2 that first tried to intercept the objects during the "Tic Tac" episode.
+
+*Sources: Nimitz incident record*

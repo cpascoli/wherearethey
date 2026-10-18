@@ -17,3 +17,7 @@ facts:
     by: hal-puthoff
     source: v-jre-hal-puthoff-2025@1:29:45
 ---
+
+Linda Moulton Howe (born 1942) is an American journalist and documentary maker, best known for reporting on UFOs and cattle mutilations through her Earthfiles site; Wikipedia describes her as an advocate of a variety of conspiracy theories. According to Hal Puthoff, she received the bismuth–magnesium "Roswell" sample through the radio host Art Bell and had it analysed before To The Stars took it on. She testified at the 2013 Citizen Hearing.
+
+*Sources: Joe Rogan Experience #2314 · Citizen Hearing (2013)*

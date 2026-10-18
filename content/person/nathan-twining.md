@@ -9,3 +9,7 @@ credentials:
 tags:
   - air-force
 ---
+
+Lt. Gen. Nathan F. Twining commanded the Army Air Forces' Air Materiel Command in 1947 and later became Chairman of the Joint Chiefs of Staff (1957–1960). On 23 September 1947 he signed the memo stating that "the phenomenon reported is something real and not visionary or fictitious" and recommending a classified study, which became Project Sign.
+
+*Sources: Twining memo (1947)*

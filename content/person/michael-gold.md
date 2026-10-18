@@ -9,3 +9,6 @@ rel:
   - [ worked at, nasa ]
 ---
 
+Michael Gold is a former NASA associate administrator and a member of the independent study team NASA convened on UAP, which reported in 2023. He testified at the House Oversight hearing of 13 November 2024 and spoke at the congressional briefing of 1 May 2025, and appears in *The Age of Disclosure* (2025).
+
+*Sources: House Oversight hearing (13 November 2024) · Briefing record (2025)*

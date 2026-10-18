@@ -9,3 +9,6 @@ tags:
   - congress
 ---
 
+Joni Ernst, a Republican U.S. Senator from Iowa, was the ranking member of the Senate Armed Services Subcommittee on Emerging Threats and Capabilities in 2024, the panel that holds the Senate's public hearings with AARO.
+
+*Sources: Senate hearing record*
