@@ -735,15 +735,19 @@ html:not(.js) .top, html:not(.js) .app, html:not(.js) .views, html:not(.js) .mor
 .tb-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
 .tb-tools { font-size: 12px; color: var(--muted); }
 .tb-lbl { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-right: 2px; }
-.tb-step { background: var(--panel); border: 1px solid var(--border); box-shadow: inset 3px 0 0 var(--c); color: var(--text); font: inherit; font-size: 12.5px; padding: 4px 10px 4px 12px; border-radius: 0 5px 5px 0; cursor: pointer; max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tb-step { display: inline-flex; align-items: center; background: var(--panel); border: 1px solid var(--border); box-shadow: inset 3px 0 0 var(--c); border-radius: 0 5px 5px 0; max-width: 240px; }
 .tb-step:hover { border-color: var(--accent); }
+.tb-name { background: none; border: 0; color: var(--text); font: inherit; font-size: 12.5px; padding: 4px 8px 4px 12px; cursor: pointer; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.tb-step.on .tb-name { font-weight: 600; }
+.tb-x { background: none; border: 0; border-left: 1px solid var(--border); color: var(--muted); font-size: 14px; line-height: 1; padding: 4px 7px; cursor: pointer; }
+.tb-x:hover { color: var(--text); }
 .tb-step.on { border-color: var(--accent); font-weight: 600; }
 .tb-sep { color: var(--muted); }
-.tb-hint, .tb-keep, .tb-hidden { background: color-mix(in srgb, var(--bg) 80%, transparent); padding: 2px 6px; border-radius: 4px; }
-.tb-keep { display: inline-flex; gap: 5px; align-items: center; cursor: pointer; }
+.tb-hint, .tb-hidden { background: color-mix(in srgb, var(--bg) 80%, transparent); padding: 2px 6px; border-radius: 4px; }
 .node-menu { position: absolute; z-index: 40; min-width: 210px; background: var(--panel); border: 1px solid var(--border); border-radius: 7px; box-shadow: var(--shadow); padding: 5px; display: grid; }
 .node-menu .nm-title { font-weight: 600; font-size: 12.5px; padding: 5px 9px 7px 11px; box-shadow: inset 3px 0 0 var(--c); margin-bottom: 4px; max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .node-menu button { background: none; border: 0; color: var(--text); font: inherit; font-size: 13px; text-align: left; padding: 7px 9px; border-radius: 4px; cursor: pointer; }
 .node-menu button:hover { background: var(--accent-soft); }
 @media (max-width: 860px) { .trail-bar { top: 8px; left: 8px; right: 8px; } .node-menu button { padding: 10px 10px; font-size: 14.5px; } }
 @media (max-width: 860px) { #view-graph.exploring .graph-hud { display: none; } }
+.tb-step.closed { border-style: dashed; } /* on the trail, connections hidden */

@@ -134,8 +134,7 @@
     yr: store.get('yr', [MIN_Y, MAX_Y]),
     showMentions: store.get('showMentions', false),
     video: null,
-    trail: null,                                  // exploration mode: { steps: [ids], expanded: Set } (see trailShown)
-    trailKeep: store.get('trailKeep', false),     // keep the neighbours of earlier steps on screen
+    trail: null,                                  // exploration mode: { steps: [ids], open: Set (connections shown), pinned: Set }
     hiddenIds: new Set(),                         // files hidden by hand (right-click → Hide)
   };
   state.types.delete('record');
@@ -410,18 +409,20 @@
       if (bridges.length) cy.add(bridges);
       cy.nodes().forEach(n => n.toggleClass('hidden', !show(n.id())));
       cy.edges().forEach(ed => ed.toggleClass('hidden', (ed.data('kind') === 'mention' && !state.showMentions) || !show(ed.data('source')) || !show(ed.data('target'))));
-      // the trail: its steps and the links between consecutive steps
+      // the trail: its files and the links between them (the path)
       cy.elements().removeClass('trail');
-      const steps = state.trail?.steps || [];
+      const steps = new Set(state.trail?.steps || []);
       for (const id of steps) cy.getElementById(id).addClass('trail');
-      for (let i = 1; i < steps.length; i++) cy.edges().filter(ed => !ed.hasClass('hidden') && ((ed.data('source') === steps[i - 1] && ed.data('target') === steps[i]) || (ed.data('source') === steps[i] && ed.data('target') === steps[i - 1]))).addClass('trail');
+      if (steps.size > 1) cy.edges().filter(ed => !ed.hasClass('hidden') && steps.has(ed.data('source')) && steps.has(ed.data('target'))).addClass('trail');
     });
     renderTrailBar();
   }
   // ───────────── exploration mode: follow a trail through the graph ─────────────
-  // Start from one file ("Explore from here"): the graph shows it and its neighbours. Clicking a neighbour takes a
-  // step: it joins the trail and its own neighbours appear; earlier steps stay, the neighbours of earlier steps
-  // drop away (unless "keep earlier neighbours" is on). Clicking an earlier step goes back to it.
+  // Start from one file ("Explore from here"): the graph shows it and its connections. Clicking a file only opens
+  // its card. "Show its connections" (right-click / long-press) adds it to the trail and reveals its neighbours;
+  // "Remove its connections" hides them again, except those that are themselves on the trail — the file stays on
+  // the trail. The × on a trail chip takes a file off the trail. Files opened from search or a link while
+  // exploring are pinned on screen.
   function graphNeighbours(id, bridges) {
     const out = new Set();
     for (const x of adj.get(id) || []) if (x.kind !== 'mention' && visible.has(x.other) && byId.get(x.other)?.type !== 'record') out.add(x.other);
@@ -429,22 +430,19 @@
     return out;
   }
   function trailShown(bridges) {
-    const T = state.trail, shown = new Set(T.steps);
-    const grow = id => { shown.add(id); for (const o of graphNeighbours(id, bridges)) shown.add(o); };
-    if (state.trailKeep) T.steps.forEach(grow); else if (T.steps.length) grow(T.steps[T.steps.length - 1]);
-    T.expanded.forEach(grow);
+    const T = state.trail, shown = new Set([...T.steps, ...T.pinned]);
+    for (const id of T.open) for (const o of graphNeighbours(id, bridges)) shown.add(o);
     return shown;
   }
-  let trailPrev = null; // files on screen before the last change: new ones start next to the step that revealed them
-  function trailChanged() {
+  let trailPrev = null; // files on screen before the last change: new ones start next to the file that revealed them
+  function trailChanged(anchorId) {
     if (!cy) return;
     trailPrev = new Set(cy.nodes().not('.hidden').map(n => n.id()));
     applyGraphFilter();
-    if (state.trail) {
-      const steps = state.trail.steps, anchor = cy.getElementById(steps[steps.length - 1]);
-      const fresh = cy.nodes().not('.hidden').filter(n => !trailPrev.has(n.id()));
-      const c = anchor.length && trailPrev.has(anchor.id()) ? anchor.position() : null;
-      if (c) fresh.forEach((n, i) => { const a = (2 * Math.PI * i) / fresh.length; n.position({ x: c.x + 140 * Math.cos(a), y: c.y + 140 * Math.sin(a) }); });
+    const anchor = anchorId && cy.getElementById(anchorId);
+    if (state.trail && anchor?.length && trailPrev.has(anchorId)) {
+      const fresh = cy.nodes().not('.hidden').filter(n => !trailPrev.has(n.id())), c = anchor.position();
+      fresh.forEach((n, i) => { const a = (2 * Math.PI * i) / fresh.length; n.position({ x: c.x + 140 * Math.cos(a), y: c.y + 140 * Math.sin(a) }); });
     }
     highlight(state.sel);
     clearTimeout(layoutTimer);
@@ -452,19 +450,27 @@
   }
   function startTrail(id) {
     if (!byId.has(id)) return;
-    state.trail = { steps: [id], expanded: new Set() };
+    state.trail = { steps: [id], open: new Set([id]), pinned: new Set() };
     state.hiddenIds.delete(id);
     if (state.view !== 'graph') go('graph');
     if (state.sel !== id) select(id, { from: 'trail' });
-    else if (window.innerWidth <= 860) closePanel(); // on a phone the panel would cover the graph you're exploring
-    trailChanged();
+    if (window.innerWidth <= 860) closePanel(); // on a phone the panel would cover the graph you're exploring
+    trailChanged(id);
   }
-  function trailStep(id) {
+  function expandFile(id) {
     const T = state.trail;
-    const i = T.steps.indexOf(id);
-    if (i >= 0) T.steps.length = i + 1; // back to an earlier step
-    else T.steps.push(id);
+    if (!T.steps.includes(id)) T.steps.push(id);
+    T.open.add(id);
+    T.pinned.delete(id);
     state.hiddenIds.delete(id);
+    trailChanged(id);
+  }
+  function collapseFile(id) { state.trail.open.delete(id); trailChanged(); } // stays on the trail
+  function popStep(id) {
+    const T = state.trail;
+    if (T.steps.length === 1) return; // keep one file to explore from
+    T.steps = T.steps.filter(x => x !== id);
+    T.open.delete(id);
     trailChanged();
   }
   function exitTrail() {
@@ -474,14 +480,14 @@
     layoutGraph(true);
   }
   function hideFile(id) {
-    state.hiddenIds.add(id);
     if (state.trail) {
-      const i = state.trail.steps.indexOf(id);
-      if (i > 0) state.trail.steps.length = i; // hiding a step ends the trail there
-      if (i === 0) { state.hiddenIds.delete(id); return; } // the starting point stays
-      state.trail.expanded.delete(id);
+      const T = state.trail;
+      if (T.steps.length === 1 && T.steps[0] === id) return; // keep at least one file to explore from
+      T.steps = T.steps.filter(x => x !== id);
+      T.open.delete(id); T.pinned.delete(id);
     }
-    if (state.sel === id) select(state.trail ? state.trail.steps[state.trail.steps.length - 1] : null, { from: 'trail' });
+    state.hiddenIds.add(id);
+    if (state.sel === id) select(null, { from: 'trail' });
     trailChanged();
   }
   function renderTrailBar() {
@@ -491,34 +497,28 @@
     $('#view-graph').classList.toggle('exploring', !!T);
     bar.hidden = !T && !nh;
     if (bar.hidden) return;
-    const steps = T ? T.steps.map((id, i) => `<button class="tb-step ${i === T.steps.length - 1 ? 'on' : ''}" data-trail-step="${esc(id)}" style="--c:${TYPES[byId.get(id).type].color}" title="${i === T.steps.length - 1 ? 'Current step' : 'Go back to this step'}">${esc(byId.get(id).name)}</button>`).join('<span class="tb-sep">›</span>') : '';
-    bar.innerHTML = `${T ? `<div class="tb-row"><span class="tb-lbl">Trail</span>${steps}</div>
-      <div class="tb-row tb-tools">${T.steps.length === 1 ? '<span class="tb-hint">Click a connected file to take a step · right-click or long-press a file for more</span>' : ''}
-        <label class="tb-keep"><input type="checkbox" id="tb-keep" ${state.trailKeep ? 'checked' : ''}> keep earlier neighbours</label>` : '<div class="tb-row tb-tools">'}
+    const steps = T ? T.steps.map(id => `<span class="tb-step ${state.sel === id ? 'on' : ''} ${T.open.has(id) ? '' : 'closed'}" style="--c:${TYPES[byId.get(id).type].color}"><button class="tb-name" data-trail-open="${esc(id)}" title="Open the file card">${esc(byId.get(id).name)}</button>${T.steps.length > 1 ? `<button class="tb-x" data-trail-pop="${esc(id)}" title="Take off the trail" aria-label="Take off the trail">×</button>` : ''}</span>`).join('<span class="tb-sep">›</span>') : '';
+    bar.innerHTML = `${T ? `<div class="tb-row"><span class="tb-lbl">Trail</span>${steps}</div>` : ''}
+      <div class="tb-row tb-tools">${T && T.steps.length === 1 ? '<span class="tb-hint">Click a file to read it · right-click or long-press → Show its connections to go further</span>' : ''}
         ${nh ? `<span class="tb-hidden">${nh} hidden · <button class="link" data-unhide>show</button></span>` : ''}
         ${T ? '<button class="btn small" data-trail-exit>✕ Exit trail</button>' : ''}</div>`;
   }
   $('#view-graph').addEventListener('click', e => {
-    const st = e.target.closest('[data-trail-step]'); if (st) { select(st.dataset.trailStep); return; }
+    const op = e.target.closest('[data-trail-open]'); if (op) { select(op.dataset.trailOpen, { from: 'trail' }); return; }
+    const pp = e.target.closest('[data-trail-pop]'); if (pp) { popStep(pp.dataset.trailPop); return; }
     if (e.target.closest('[data-trail-exit]')) { exitTrail(); return; }
     if (e.target.closest('[data-unhide]')) { state.hiddenIds.clear(); trailChanged(); return; }
   });
-  $('#view-graph').addEventListener('change', e => { if (e.target.id === 'tb-keep') { state.trailKeep = e.target.checked; store.set('trailKeep', state.trailKeep); trailChanged(); } });
 
   // right-click (long-press on touch) menu on a file
   function openNodeMenu(id, pos) {
     closeNodeMenu();
-    const e = byId.get(id), T = state.trail, inTrail = T?.steps.includes(id), isLast = inTrail && T.steps[T.steps.length - 1] === id;
+    const e = byId.get(id), T = state.trail;
     const items = [
       !T && ['explore', '◎ Explore from here'],
-      T && !inTrail && ['step', '→ Take a step here'],
-      inTrail && !isLast && ['step', '↩ Go back to this step'],
-      T && !inTrail && !T.expanded.has(id) && ['expand', '✚ Show its connections'],
-      T && inTrail && T.steps[0] !== id && ['restart', '◎ Start a new trail here'],
-      !(T && T.steps[0] === id) && ['hide', '⊘ Hide this file'],
-      ['hidetype', `⊘ Hide all ${TYPES[e.type].plural.toLowerCase()}`],
+      T && (T.open.has(id) ? ['collapse', '− Remove its connections'] : ['expand', '✚ Show its connections']),
+      !(T && T.steps.length === 1 && T.steps[0] === id) && ['hide', '⊘ Hide this file'],
       ['path', '⇢ Find a path to…'],
-      ['card', '▤ Open file card'],
     ].filter(Boolean);
     const m = document.createElement('div');
     m.className = 'node-menu'; m.id = 'node-menu';
@@ -535,12 +535,11 @@
     const b = e.target.closest('#node-menu [data-nm]'); if (!b) return;
     const id = $('#node-menu').dataset.id, k = b.dataset.nm;
     closeNodeMenu();
-    if (k === 'explore' || k === 'restart') startTrail(id);
-    else if (k === 'step') select(id);
-    else if (k === 'expand') { state.trail.expanded.add(id); trailChanged(); }
+    if (k === 'explore') startTrail(id);
+    else if (k === 'expand') expandFile(id);
+    else if (k === 'collapse') collapseFile(id);
     else if (k === 'hide') hideFile(id);
-    else if (k === 'hidetype') { state.types.delete(byId.get(id).type); filtersChanged(); }
-    else if (k === 'path' || k === 'card') {
+    else if (k === 'path') {
       select(id, { from: 'card' });
       if (k === 'path') setTimeout(() => { const q = $('#trace-q'); if (q) { q.scrollIntoView({ block: 'center', behavior: 'smooth' }); q.focus(); } }, 150);
     }
@@ -2018,14 +2017,14 @@
     gtag('event', 'page_view', { page_location: location.origin + path + (qs ? '?' + qs : ''), page_path: path + (qs ? '?' + qs : ''), page_title: title });
   }
   function select(id, { from } = {}) {
-    if (state.trail && id && !['trail', 'card'].includes(from) && byId.get(id)?.type !== 'record' && state.view === 'graph') {
-      state.sel = id;
-      trailStep(id);
-    }
     state.sel = id;
-    // exploring on a phone: steps keep the graph in view (the panel would cover it); "Open file card" still opens it
-    const quiet = state.trail && state.view === 'graph' && window.innerWidth <= 860 && from !== 'card' && from !== 'link';
-    if (id && state.view !== 'home' && !quiet) openPanel(id); else closePanel();
+    // exploring: a file opened from search or a link that isn't on screen is pinned there (no connections yet)
+    if (state.trail && id && state.view === 'graph' && byId.get(id)?.type !== 'record' && cy?.getElementById(id).hasClass('hidden') && visible.has(id)) {
+      state.trail.pinned.add(id); state.hiddenIds.delete(id);
+      trailChanged(id);
+    }
+    if (id && state.view !== 'home') openPanel(id); else closePanel();
+    if (state.trail) renderTrailBar(); // highlight the open file's chip
     if (state.view === 'graph') highlight(id);
     if (state.view === 'timeline') $$('.tl-item').forEach(el => el.classList.toggle('sel', el.dataset.goto === id));
     setHash();
