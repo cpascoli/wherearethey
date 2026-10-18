@@ -484,17 +484,21 @@
       const tr = trailerOf(e);
       const people = shelfPeople(e), official = people.filter(p => p.cred === 'credible').length;
       const sum = e.facts[0]?.text || ''; // first fact as the blurb
-      const cover = tr ? `<img src="${vthumb(tr)}" alt="" loading="lazy"><span class="wplay">▶</span>`
+      const cover = e.cover ? `<img class="sc-book" src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" loading="lazy">`
+        : tr ? `<img src="${vthumb(tr)}" alt="" loading="lazy"><span class="wplay">▶</span>`
         : `<div class="sc-spine" style="--c:${TYPES[e.type].color}"><b>${esc(e.name)}</b><span>${esc(e.credits || '')}</span></div>`;
+      const actions = `<div class="sc-actions">${tr ? `<button class="btn small primary" data-play="${tr.id}@0">▶ Trailer</button>` : ''}<button class="btn small" data-goto="${e.id}">File card</button>${e.links.slice(0, 2).map(l => `<a class="btn small" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join('')}</div>`;
       return `<article class="shelf-card ${e.type}">
-        <div class="sc-cover" ${tr ? `data-play="${tr.id}@0" title="Play the trailer"` : `data-goto="${e.id}"`}>${cover}</div>
+        <div class="sc-left">
+          <div class="sc-cover" ${tr ? `data-play="${tr.id}@0" title="Play the trailer"` : `data-goto="${e.id}"`}>${cover}</div>
+          ${actions}
+        </div>
         <div class="sc-body">
           <div class="sc-kicker">${esc(shelfMeta(e))}</div>
           <h3 data-goto="${e.id}">${esc(e.name)}</h3>
           ${e.credits ? `<div class="sc-credits">${esc(e.credits)}</div>` : ''}
-          <p class="sc-sum">${esc(sum.length > 260 ? sum.slice(0, 257).replace(/\s+\S*$/, '') + '…' : sum)}</p>
-          ${people.length ? `<div class="sc-people"><span class="small muted">${official ? `${official} official source${official > 1 ? 's' : ''} on record` : 'People'}:</span> ${people.slice(0, 8).map(p => chip(p.id)).join('')}${people.length > 8 ? `<span class="small muted">+${people.length - 8} more</span>` : ''}</div>` : ''}
-          <div class="sc-actions">${tr ? `<button class="btn small primary" data-play="${tr.id}@0">▶ Trailer</button>` : ''}<button class="btn small" data-goto="${e.id}">File card</button>${e.links.slice(0, 2).map(l => `<a class="btn small" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join('')}</div>
+          <p class="sc-sum">${esc(sum.length > 320 ? sum.slice(0, 317).replace(/\s+\S*$/, '') + '…' : sum)}</p>
+          ${people.length ? `<div class="sc-people"><span class="small muted">${official ? `${official} official source${official > 1 ? 's' : ''} on record` : 'People'}:</span> ${people.slice(0, 10).map(p => chip(p.id)).join('')}${people.length > 10 ? `<span class="small muted">+${people.length - 10} more</span>` : ''}</div>` : ''}
         </div></article>`;
     }).join('') || '<p class="muted">Nothing here yet.</p>';
   }
@@ -606,6 +610,7 @@
     h.push(`<h2 class="p-title">${esc(e.name)}</h2>`);
     if (e.aka.length) h.push(`<div class="p-aka">Also: ${e.aka.map(esc).join(' · ')}</div>`);
     if (e.type === 'film' || e.type === 'book') h.push(`<div class="p-meta">${esc([e.credits, shelfMeta(e), e.isbn ? `ISBN ${e.isbn}` : ''].filter(Boolean).join(' · '))}</div>`);
+    if (e.cover) h.push(`<img class="p-cover" src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" loading="lazy">`);
     const meta = [fmtRange(e) && (e.type === 'video' ? 'Published ' : '') + fmtRange(e), e.place?.name, e.type === 'video' && [e.channel, fmtDur(e.duration)].filter(Boolean).join(' · ')].filter(Boolean);
     if (meta.length) h.push(`<div class="p-meta">${meta.map(m => `<span>${esc(m)}</span>`).join('')}</div>`);
     if (e.type === 'incident' && e.credVia?.length) h.push(`<div class="p-meta"><span>On record via ${e.credVia.map(id => chip(id)).join(' ')}</span></div>`);

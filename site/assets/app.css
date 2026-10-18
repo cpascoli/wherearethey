@@ -641,3 +641,18 @@ body.resizing iframe { pointer-events: none; }
 .home-links { font-size: 12.5px; color: var(--muted); }
 .home-links a, .side-links a { color: inherit; } .home-links a:hover, .side-links a:hover { color: var(--accent); }
 .side-links { margin-top: 8px; color: var(--muted); }
+
+/* shelf cards v2: actions under the cover, synopsis and people on the right */
+.shelf-card { grid-template-columns: 240px 1fr; align-items: start; }
+.shelf-card.book { grid-template-columns: 170px 1fr; }
+.sc-left { display: grid; gap: 10px; align-content: start; }
+.sc-left .sc-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.sc-left .sc-actions .btn { flex: 1 1 auto; justify-content: center; text-align: center; }
+.sc-cover img.sc-book { aspect-ratio: auto; width: 100%; height: auto; object-fit: contain; box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+.p-cover { display: block; width: 140px; border-radius: 3px; margin: 4px 0 12px; box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+@media (max-width: 860px) {
+  .shelf-card, .shelf-card.book { grid-template-columns: 1fr; }
+  .shelf-card.book .sc-left { grid-template-columns: 120px 1fr; align-items: start; }
+  .shelf-card.book .sc-left .sc-actions { flex-direction: column; }
+  .sc-cover:has(.sc-book) { display: block; }
+}

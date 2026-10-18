@@ -76,6 +76,8 @@ export async function build({ check = false, quiet = false } = {}) {
     // books & films: free-text credits plus bibliographic / runtime metadata
     for (const k of ['credits', 'publisher', 'isbn', 'pages']) if (d[k] != null) e[k] = String(d[k]);
     if (d.runtime != null) e.runtime = Number(d.runtime);
+    // books & films: a cover image saved as site/assets/covers/<id>.jpg is picked up automatically
+    if (['book', 'film'].includes(r.type) && fs.existsSync(path.join(ROOT, 'site', 'assets', 'covers', `${r.id}.jpg`))) e.cover = `assets/covers/${r.id}.jpg`;
     // videos we host ourselves on R2 (only with an explicit decision): stream file and thumbnail, relative to FILES_BASE
     if (d.stream) e.stream = String(d.stream);
     if (d.thumb) e.thumb = String(d.thumb);
