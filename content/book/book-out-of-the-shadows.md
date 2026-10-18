@@ -25,3 +25,9 @@ facts:
     status: claimed
     source: https://brooklinebooksmith.com/book/9780063384538
 ---
+
+*Out of the Shadows: Revealing the Truth About Non-Human Intelligent Life* (William Morrow, 13 October 2026) is the memoir of Jay Stratton, the DIA official who was the first director of the Pentagon's UAP Task Force and who led U.S. government UAP investigations for more than 16 years, including the 2004 Nimitz case.
+
+In the book, as in the documentary *The Age of Disclosure* (2025), Stratton says the United States holds craft of non-human origin. His claims are filed with his record; no official record released so far confirms them.
+
+*Sources: [Deadline (2026)](https://deadline.com/2026/06/jay-stratton-memoir-release-date-title-unveiled-1236938677/) · [The Hollywood Reporter](https://www.hollywoodreporter.com/news/general-news/jay-stratton-ufo-memoir-1235996607/)*

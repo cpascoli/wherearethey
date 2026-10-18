@@ -24,3 +24,11 @@ facts:
     status: claimed
     source: https://www.kxan.com/business/press-releases/ein-presswire/667434341/the-definitive-documentary-of-ariel-school-ufo-sighting-now-streaming/
 ---
+
+*Ariel Phenomenon* is a feature documentary by Randall Nickerson, made over about 15 years and released on 20 May 2022, about the September 1994 sighting at Ariel School in Ruwa, Zimbabwe, when more than 60 pupils said they saw a craft and small beings land near the playground.
+
+It follows the BBC war reporter Tim Leach, who filmed the children's first interviews days after the event, and the Harvard psychiatrist John Mack, who interviewed them that November; the film presents both men's careers as having been put at risk by the case. It also follows former pupils, interviewed as adults, including one who returns from Toronto to Zimbabwe, as they revisit what they say they saw.
+
+The film presents the witnesses' account; sceptical explanations of the sighting, from mass suggestion to misidentification, are set out in the Ariel School incident record. The official trailer plays here.
+
+*Sources: press release (2022) · Ariel incident record*

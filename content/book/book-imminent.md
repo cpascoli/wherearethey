@@ -36,3 +36,11 @@ facts:
     source: https://www.kqed.org/arts/13962929/a-former-pentagon-insider-reveals-all-he-knows-about-ufos-in-new-book
 nomatch: true
 ---
+
+*Imminent: Inside the Pentagon's Hunt for UFOs* (William Morrow, August 2024) is the memoir of Luis Elizondo, the former Pentagon official who says he led AATIP and who resigned in 2017 in protest at the handling of the subject.
+
+The book's central claim is that a decades-long crash-retrieval and reverse-engineering effort, which Elizondo calls "Legacy Programs", has run since the Roswell recovery as a secret umbrella of government officials and aerospace contractors. He names Lockheed Martin, McDonnell Douglas, Northrop Grumman, Boeing, Raytheon and BAE Systems among contractors he says have worked on retrieved technology, and says multiple presidents were briefed.
+
+The book was cleared by the Pentagon's prepublication review, which means it contains no classified information, not that its claims are confirmed. AARO's 2024 historical review found no evidence for such programmes, and the companies named by interviewees denied the claims on the record.
+
+*Sources: [NewsNation](https://www.newsnationnow.com/space/ufo/special-report-confessions-of-a-ufo-hunter/) · [KQED](https://www.kqed.org/arts/13962929/a-former-pentagon-insider-reveals-all-he-knows-about-ufos) · AARO Historical Record Report, Vol. 1 (2024)*
