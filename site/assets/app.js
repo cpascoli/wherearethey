@@ -501,7 +501,7 @@
   const shelfMeta = e => [e.y0, e.runtime ? `${e.runtime} min` : '', e.publisher, e.pages ? `${e.pages} pp.` : ''].filter(Boolean).join(' · ');
   function renderShelf() {
     const count = t => ents.filter(e => e.type === t).length;
-    $('#shelf-tabs').innerHTML = ['film', 'book'].map(t => `<button data-shelf="${t}" class="${shelfTab === t ? 'on' : ''}">${TYPES[t].plural} ${count(t)}</button>`).join('');
+    $('#shelf-tabs').innerHTML = `<button data-lib="videos">Videos ${videos.length}</button>` + ['film', 'book'].map(t => `<button data-shelf="${t}" class="${shelfTab === t ? 'on' : ''}">${TYPES[t].plural} ${count(t)}</button>`).join('');
     const items = ents.filter(e => e.type === shelfTab).sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
     $('#shelf').innerHTML = items.map(e => {
       const tr = trailerOf(e);
@@ -528,6 +528,7 @@
     }).join('') || '<p class="muted">Nothing here yet.</p>';
   }
   $('#shelf-tabs').addEventListener('click', e => {
+    if (e.target.closest('[data-lib="videos"]')) { go('videos'); return; }
     const b = e.target.closest('[data-shelf]'); if (!b) return;
     shelfTab = b.dataset.shelf; store.set('shelfTab', shelfTab); renderShelf();
   });
@@ -1367,11 +1368,11 @@
     { kicker: 'Official record · 1947 → 2026', title: 'From Twining to PURSUE', text: '“Something real and not visionary or fictitious.” Eighty years of official statements, from the first Air Force opinion to the 2026 releases.', action: `data-preset='{"view":"timeline","types":["document","event","program","hearing"]}'`, cta: 'Walk the timeline' },
   ];
   const WAYS_IN = [
-    ['graph', 'Network', 'Every person, program and incident, and how they connect. Trace the path between any two.'],
+    ['graph', 'Explore', 'Every person, program and incident, and how they connect. Trace the path between any two.'],
     ['timeline', 'Timeline', 'Eighty years of events, documents and hearings, decade by decade.'],
     ['map', 'World', 'Where it happened: bases, ships, schools and hearing rooms.'],
     ['videos', 'Testimony', 'Hearings and interviews with synced transcripts. Search every word spoken.'],
-    ['shelf', 'Books & films', 'Documentaries and books by the people on record, with trailers and where to find them.'],
+    ['shelf', 'Library', 'Documentaries and books by the people on record, with trailers and where to find them.'],
     ['claims', 'Claims ledger', 'Every claim with its status: documented, on record, or still unverified.'],
     ['index', 'Index', 'All files, by type, filterable.'],
   ];
@@ -1395,7 +1396,7 @@
             <div id="hq-dd" class="dropdown" hidden></div>
           </div>
           <div class="hero-cta">
-            <a class="btn primary" href="#/graph" data-home-view="graph">Explore the network</a>
+            <a class="btn primary" href="#/explore" data-home-view="graph">Explore the network</a>
             <a class="btn" href="#/videos" data-home-view="videos">Watch the testimony</a>
           </div>
         </div>
@@ -1432,7 +1433,7 @@
           <div class="home-kicker">Ways in</div>
           <h2>Navigate the complexity</h2>
           <div class="ways">${WAYS_IN.map(([v, t, d], i) => `
-            <a class="way" href="#/${v}" data-home-view="${v}"><span class="way-n">0${i + 1}</span><b>${t}</b><span>${d}</span></a>`).join('')}</div>
+            <a class="way" href="#/${v === 'graph' ? 'explore' : v}" data-home-view="${v}"><span class="way-n">0${i + 1}</span><b>${t}</b><span>${d}</span></a>`).join('')}</div>
         </section>
 
         <section class="home-sec">
@@ -1722,7 +1723,8 @@
     const counts = Object.fromEntries(VKINDS.map(([k]) => [k, k === 'all' ? base.length : base.filter(v => vidKind(v) === k).length]));
     const featured = base.filter(v => v.moments?.length >= 5).sort((a, b) => b.moments.length - a.moments.length || String(b.date).localeCompare(String(a.date))).slice(0, 6);
     const showFeatured = vbKind === 'all' && !q;
-    $('#vid-browse').innerHTML = `<div class="vb-head"><h2>Testimony</h2><p class="muted">Hearings, interviews and archival footage, with synced transcripts and curated moments. ${base.length} videos · ${KB.stats.transcriptHours} hours transcribed.</p>
+    const libTabs = `<div class="seg lib-tabs"><button class="on">Videos ${videos.length}</button><button data-lib="film">${TYPES.film.plural} ${ents.filter(e => e.type === 'film').length}</button><button data-lib="book">${TYPES.book.plural} ${ents.filter(e => e.type === 'book').length}</button></div>`;
+    $('#vid-browse').innerHTML = `${libTabs}<div class="vb-head"><h2>Testimony</h2><p class="muted">Hearings, interviews and archival footage, with synced transcripts and curated moments. ${base.length} videos · ${KB.stats.transcriptHours} hours transcribed.</p>
       <div class="vb-bar"><input id="vb-q" type="search" placeholder="Filter by title, person, case…" value="${esc(vbQ)}" autocomplete="off">
         <select id="vb-sort"><option value="new">Newest</option><option value="old">Oldest</option><option value="moments">Most moments</option><option value="long">Longest</option></select>
         <button class="btn small" data-tsearch-open>Search inside transcripts</button></div>
@@ -1740,6 +1742,7 @@
   });
   $('#vid-browse').addEventListener('change', e => { if (e.target.id === 'vb-sort') { vbSort = e.target.value; renderBrowse(); } });
   $('#vid-browse').addEventListener('click', e => {
+    const lt = e.target.closest('[data-lib]'); if (lt) { shelfTab = lt.dataset.lib; store.set('shelfTab', shelfTab); go('shelf'); return; }
     const k = e.target.closest('[data-vkind]'); if (k) { vbKind = k.dataset.vkind; renderBrowse(); return; }
     if (e.target.closest('[data-tsearch-open]')) { $('#side').classList.add('open'); $('#tq').focus(); return; }
     const c = e.target.closest('[data-open-video]'); if (c) openVideo(c.dataset.openVideo, 0, false);
@@ -1753,13 +1756,15 @@
   }
 
   // ───────────── navigation ─────────────
+  // URL names that differ from internal view ids (old #/graph links still resolve)
+  const ROUTE_OF = { graph: 'explore' }, VIEW_OF = { explore: 'graph' };
   function setHash({ replace = false } = {}) {
     let target;
     if (state.view === 'home' && !state.sel) {
       if (!location.hash) return; // home lives at the bare URL
       target = location.pathname + location.search;
     } else {
-      const parts = ['', state.view];
+      const parts = ['', ROUTE_OF[state.view] || state.view];
       if (state.view === 'videos' && state.video) parts.push(state.video);
       target = '#' + parts.join('/') + (state.sel ? `?sel=${encodeURIComponent(state.sel)}` : '');
       if (location.hash === target) return;
@@ -1796,7 +1801,7 @@
     $('#side').classList.remove('open'); // close the mobile filter drawer on navigation
     store.set('view', view);
     for (const v of VIEWS) $('#view-' + v).hidden = v !== view;
-    $$('#views a').forEach(a => a.classList.toggle('active', a.dataset.view === view));
+    $$('#views [data-group], #views [data-view]').forEach(a => a.classList.toggle('active', (a.dataset.group || a.dataset.view).split(' ').includes(view)));
     $('#app').classList.toggle('is-home', view === 'home');
     if (view === 'home') { $('#panel').hidden = true; $('#app').classList.remove('has-panel'); }
     else if (state.sel) openPanel(state.sel);
@@ -1847,11 +1852,25 @@
     }
   });
   $('#views').addEventListener('click', e => {
-    const a = e.target.closest('[data-view]');
+    const a = e.target.closest('a[data-view]');
     if (!a) return;
     e.preventDefault();
     go(a.dataset.view);
   });
+  // "More": dropdown on desktop, bottom sheet on phones. Holds Index, Claims, About and site links.
+  const moreMenu = $('#more-menu'), moreBtn = $('#btn-more');
+  const setMore = open => {
+    if (open && innerWidth > 860) moreMenu.style.right = Math.max(8, innerWidth - moreBtn.getBoundingClientRect().right) + 'px'; else moreMenu.style.right = '';
+    moreMenu.hidden = !open; moreBtn.setAttribute('aria-expanded', String(open)); moreBtn.classList.toggle('open', open); };
+  moreBtn.addEventListener('click', e => { e.stopPropagation(); setMore(moreMenu.hidden); });
+  moreMenu.addEventListener('click', e => {
+    const a = e.target.closest('a'); if (!a) return;
+    if (a.dataset.view) { e.preventDefault(); go(a.dataset.view); }
+    setMore(false);
+  });
+  document.addEventListener('click', e => { if (!moreMenu.hidden && !e.composedPath().includes(moreMenu)) setMore(false); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !moreMenu.hidden) setMore(false); });
+  if (!window.GA_ID) moreMenu.querySelector('.mm-consent')?.remove();
   $('#btn-side').addEventListener('click', e => { e.stopPropagation(); $('#side').classList.toggle('open'); });
   // tapping outside the open drawer closes it. Use the event path recorded at dispatch: filter clicks re-render the
   // list, so by now e.target may be detached and closest('#side') would wrongly say "outside".
@@ -1885,7 +1904,8 @@
   const VIEWS = ['home', 'graph', 'timeline', 'map', 'videos', 'shelf', 'index', 'claims'];
   function applyRoute(initial) {
     const [path, qs] = location.hash.replace(/^#\/?/, '').split('?');
-    const [view, vid] = path.split('/');
+    const [route, vid] = path.split('/');
+    const view = VIEW_OF[route] || route;
     const sel = new URLSearchParams(qs || '').get('sel');
     const v = VIEWS.includes(view) ? view : (!path ? 'home' : initial ? 'home' : state.view);
     if (v !== state.view || initial) go(v);
