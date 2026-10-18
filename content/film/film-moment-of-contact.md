@@ -24,6 +24,6 @@ facts:
     source: https://videolibrarian.com/reviews/documentary/moment-of-contact/
 ---
 
-The Varginha case itself isn't yet an incident in this archive. Its witnesses are mostly civilians, and the military claims rest on anonymous or second-hand testimony. No official trailer is on YouTube, only aggregator re-uploads, so the archive links out instead.
+The Varginha case itself isn't yet an incident in this archive. Its witnesses are mostly civilians, and the military claims rest on anonymous or second-hand testimony. The official trailer plays here from Regal Theatres' YouTube upload.
 
 *Sources: Wikipedia (Varginha UFO incident, James Fox); Video Librarian.*
