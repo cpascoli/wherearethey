@@ -467,6 +467,18 @@
     settle(before.filter(n => !n.hasClass('hidden')), fresh, head);
   }
   // new neighbours on an arc facing away from the previous step (or from the centre of what's already shown)
+  // Exploration layouts have far fewer files than the full network, so they can afford real room: nodes are sized
+  // with their labels, repel strongly, and links to well-connected files are longer (busy hubs get more space).
+  // The full network keeps its own options, in sync with the precomputed layout (scripts/layout.mjs).
+  const visDeg = n => n.connectedEdges().not('.hidden').length;
+  const TRAIL_SPACING = {
+    nodeDimensionsIncludeLabels: true,
+    nodeRepulsion: () => 24000,
+    idealEdgeLength: ed => 110 + 14 * Math.sqrt(Math.max(visDeg(ed.source()), visDeg(ed.target()))),
+    edgeElasticity: () => 0.3,
+    nodeSeparation: 140,
+    numIter: 2500,
+  };
   function fanOut(head, nodes) {
     if (!nodes.length) return;
     const c = head.position(), steps = state.trail.steps, i = steps.indexOf(head.id());
@@ -474,11 +486,16 @@
     const others = cy.nodes().not('.hidden').not(nodes).not(head);
     const ref = from?.length ? from.position() : others.length ? (b => ({ x: (b.x1 + b.x2) / 2, y: (b.y1 + b.y2) / 2 }))(others.boundingBox()) : { x: c.x, y: c.y + 1 };
     const dir = Math.atan2(c.y - ref.y, c.x - ref.x) || 0;
-    // stay on the far side (a half circle at most): more files go on further rings rather than wrapping round
+    // start beyond whatever is already on screen in that direction, so the new files don't land on the old ones
+    const ux = Math.cos(dir), uy = Math.sin(dir);
+    const clear = others.reduce((m, o) => { const q = o.position(); return Math.max(m, (q.x - c.x) * ux + (q.y - c.y) * uy); }, 0);
+    // stay on the far side (a half circle at most): more files go on further rings rather than wrapping round;
+    // spacing is sized for a node plus its two-line label
     const arc = nodes.length <= 3 ? Math.PI / 2 : Math.PI * 0.9;
+    const r0 = Math.max(220, Math.min(clear + 140, 520));
     let k = 0, ring = 0;
     while (k < nodes.length) {
-      const r = 160 + ring * 110, cap = Math.max(1, Math.floor((arc * r) / 85)), n = Math.min(cap, nodes.length - k);
+      const r = r0 + ring * 160, cap = Math.max(1, Math.floor((arc * r) / 170)), n = Math.min(cap, nodes.length - k);
       for (let j = 0; j < n; j++, k++) {
         const a = dir + (n === 1 ? 0 : -arc / 2 + (arc * j) / (n - 1));
         nodes[k].position({ x: c.x + r * Math.cos(a), y: c.y + r * Math.sin(a) });
@@ -493,7 +510,7 @@
     cy.elements().not('.hidden').layout({
       name: 'fcose', randomize: false, animate: true, animationDuration: 450, fit: false, quality: 'default', numIter: 800,
       fixedNodeConstraint: fixed.map(n => ({ nodeId: n.id(), position: { ...n.position() } })),
-      nodeRepulsion: () => 9000, idealEdgeLength: () => 90, edgeElasticity: () => 0.45, gravity: 0.05, nodeSeparation: 90, packComponents: false, tile: false,
+      ...TRAIL_SPACING, gravity: 0.05, packComponents: false, tile: false,
     }).one('layoutstop', done).run();
   }
   // the area the graph is visible in (left of the side panel on desktop)
@@ -510,7 +527,9 @@
     const rb = eles.renderedBoundingBox();
     const scale = Math.min(1, (w - 2 * m) / Math.max(rb.w, 1), (h - top - bottom) / Math.max(rb.h, 1));
     if (scale < 1) {
-      const z = cy.zoom() * scale, bb = eles.boundingBox();
+      // never zoom out so far that labels vanish (they need about 0.8); centre the new files instead and let the
+      // viewer pan or zoom for the rest
+      const z = Math.max(Math.min(cy.zoom(), 0.8), cy.zoom() * scale), bb = eles.boundingBox();
       cy.animate({ zoom: z, pan: { x: w / 2 - z * (bb.x1 + bb.x2) / 2, y: top + (h - top - bottom) / 2 - z * (bb.y1 + bb.y2) / 2 } }, { duration: 350 });
       return;
     }
@@ -663,6 +682,7 @@
       name: 'fcose', quality: seeded ? 'default' : 'proof', randomize: !animate && !seeded, animate: !!animate, animationDuration: 700, fit: !state.trail, padding: 40, // a trail is framed afterwards, in the area left of the panel
       nodeRepulsion: n => 9000, idealEdgeLength: ed => (ed.data('kind') === 'mention' ? 160 : 75), edgeElasticity: () => 0.4,
       gravity: 0.3, gravityRangeCompound: 1.5, numIter: 3000, nodeSeparation: 90, packComponents: true, tile: true,
+      ...(state.trail ? { ...TRAIL_SPACING, gravity: 0.15 } : {}), // exploring: fewer files, so give each one room
       tilingPaddingVertical: 38, tilingPaddingHorizontal: 90, // room for two-line labels on unconnected nodes
     } : {
       name: 'cose', animate: animate ? 'end' : false, animationDuration: 600, randomize: !animate, fit: true, padding: 40,
