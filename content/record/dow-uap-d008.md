@@ -1,4 +1,6 @@
 ---
+files:
+  - library/pursue/dow-uap-d008.pdf
 rel:
   - [ released in, ev-pursue-release-01 ]
   - [ released by, department-of-war ]
@@ -30,3 +32,5 @@ A U.S. military operator reported observing two “white hot UAPs.” The report
 All descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.
 
 <!-- your notes below this line are kept on re-import -->
+
+**Note.** Despite the title "Djibouti", the report's grid reference (35S QT 34236 92957) converts to about 34.25°N 29.54°E, in the eastern Mediterranean north of Egypt, matching the catalog's "Mediterranean Sea" location. The title may reflect where the reporting unit was based.

@@ -1,4 +1,6 @@
 ---
+files:
+  - library/pursue/eop-uap-d001.pdf
 rel:
   - [ released in, ev-pursue-release-05 ]
   - [ released by, white-house ]

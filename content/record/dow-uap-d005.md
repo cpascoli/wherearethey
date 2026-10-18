@@ -1,4 +1,6 @@
 ---
+files:
+  - library/pursue/dow-uap-d005.pdf
 rel:
   - [ released in, ev-pursue-release-01 ]
   - [ released by, department-of-war ]
@@ -30,3 +32,5 @@ A U.S. military operator reported observing two UAP traveling at an estimated sp
 All descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.
 
 <!-- your notes below this line are kept on re-import -->
+
+**Note.** Despite the title "Arabian Gulf", the report's two grid references (34S CE 75669 90098 and 35T QK 15809 95057) convert to about 36.05°N 19.62°E (Ionian Sea, west of Greece) and 45.08°N 29.74°E (Black Sea, off Romania).

@@ -1,4 +1,6 @@
 ---
+files:
+  - library/pursue/dow-uap-d004.pdf
 rel:
   - [ released in, ev-pursue-release-01 ]
   - [ released by, department-of-war ]
@@ -29,3 +31,5 @@ A U.S. military operator reported observing a UAP traveling at an estimated spee
 All descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.
 
 <!-- your notes below this line are kept on re-import -->
+
+**Note.** Despite the title "Arabian Gulf", the report's grid reference (34S DG 90414 17044) converts to about 37.20°N 20.89°E, in the Ionian Sea west of Greece.

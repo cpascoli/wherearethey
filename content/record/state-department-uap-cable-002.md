@@ -1,4 +1,6 @@
 ---
+files:
+  - library/pursue/state-department-uap-cable-002.pdf
 rel:
   - [ released in, ev-pursue-release-01 ]
   - [ released by, department-of-state ]

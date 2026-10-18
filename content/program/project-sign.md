@@ -9,7 +9,7 @@ tags:
   - foia
 rel:
   - [ run by, department-of-war ]
-  - [ succeeded by, project-blue-book ]
+  - [ succeeded by, project-grudge ]
   - [ related to, dow-uap-d097 ]
 links:
   - label: Wikipedia

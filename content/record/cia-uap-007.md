@@ -1,4 +1,6 @@
 ---
+files:
+  - library/pursue/cia-uap-007.pdf
 rel:
   - [ released in, ev-pursue-release-03 ]
   - [ released by, cia ]

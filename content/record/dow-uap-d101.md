@@ -1,4 +1,6 @@
 ---
+files:
+  - library/pursue/dow-uap-d101.pdf
 rel:
   - [ released in, ev-pursue-release-05 ]
   - [ released by, department-of-war ]

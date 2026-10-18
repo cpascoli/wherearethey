@@ -1,4 +1,6 @@
 ---
+files:
+  - library/pursue/dow-uap-d003.pdf
 rel:
   - [ released in, ev-pursue-release-01 ]
   - [ released by, department-of-war ]

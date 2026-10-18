@@ -80,6 +80,10 @@ const AGENCY = {
   'Executive Office of the President': 'white-house', 'Local Law Enforcement': 'local-law-enforcement',
   'Intelligence Community Agency': 'odni', 'U.S. Government': 'department-of-war',
 };
+// Geocoding a bare catalog location can land in the wrong place; pin these records by code (checked against the document).
+const PLACE_FIX = {
+  'State Department UAP Cable 003': { name: 'Kodori Gorge, Abkhazia, Georgia', lat: 43.07, lng: 41.53 },
+};
 // The official catalog occasionally reuses a code for two different records; disambiguate those by title.
 const codeCounts = new Map();
 for (const r of rows) { const c = r.Title.split(',')[0].trim(); codeCounts.set(c, (codeCounts.get(c) || 0) + 1); }
@@ -153,7 +157,7 @@ for (const r of rows) {
   const own = {
     name: `${code} — ${title}`,
     date: looseDate(r['Incident Date']) || undefined,
-    place: g ? { name: loc, lat: g.lat, lng: g.lng } : undefined,
+    place: PLACE_FIX[code] || (g ? { name: loc, lat: g.lat, lng: g.lng } : undefined),
     pursue: {
       code, title, agency: r.Agency, release, released: toIso(r['Release Date']), format: type,
       incident_date: r['Incident Date'] || undefined, incident_location: loc || undefined,
