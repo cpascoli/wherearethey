@@ -4,6 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Where Are They</title>
+  <!-- Google tag (gtag.js) — skipped on local dev; page views are sent by app.js for each in-app view -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.GA_ID = /^(localhost|127\.0\.0\.1|0\.0\.0\.0)$/.test(location.hostname) || location.protocol === 'file:' ? null : 'G-GHW5QGX5DH';
+    if (window.GA_ID) {
+      var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID; document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', window.GA_ID, { send_page_view: false });
+    }
+  </script>
   <meta name="description" content="A navigable knowledge map of UAP / NHI testimony, programs, hearings and incidents.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='5' fill='%237cc4ff'/><circle cx='16' cy='16' r='13' fill='none' stroke='%237cc4ff' stroke-width='2' stroke-dasharray='4 4'/></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">

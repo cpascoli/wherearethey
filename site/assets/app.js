@@ -1709,6 +1709,20 @@
       if (location.hash === target) return;
     }
     history[replace ? 'replaceState' : 'pushState'](null, '', target);
+    trackView();
+  }
+  // Google Analytics: one page_view per in-app view, with the hash route turned into a readable path
+  // (e.g. /videos/v-jre-hal-puthoff-2025, /graph?sel=aawsap). Replaced history entries don't count twice.
+  let lastTracked = null;
+  function trackView() {
+    if (!window.GA_ID || typeof gtag !== 'function') return;
+    const route = location.hash.replace(/^#/, '') || '/';
+    if (route === lastTracked) return;
+    lastTracked = route;
+    const [path, qs] = route.split('?');
+    const sel = new URLSearchParams(qs || '').get('sel');
+    const title = [sel && byId.get(sel)?.name, state.view === 'videos' && state.video && byId.get(state.video)?.name, state.view !== 'home' && state.view, 'Where Are They'].filter(Boolean).join(' · ');
+    gtag('event', 'page_view', { page_location: location.origin + path + (qs ? '?' + qs : ''), page_path: path + (qs ? '?' + qs : ''), page_title: title });
   }
   function select(id, { from } = {}) {
     state.sel = id;
@@ -1825,4 +1839,5 @@
   // the logo returns home without a page reload
   $('.brand').addEventListener('click', e => { e.preventDefault(); go('home'); });
   applyRoute(true);
+  trackView();
 })();
