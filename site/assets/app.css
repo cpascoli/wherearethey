@@ -723,3 +723,7 @@ html:not(.js) .top, html:not(.js) .app, html:not(.js) .views, html:not(.js) .mor
 .ssr-st { font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); }
 .ssr-by, .ssr-src, .ssr-note { color: var(--muted); font-size: .92em; }
 .ssr-crumbs { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+
+/* full text of a graph link (hover / tap) */
+.edge-tip { position: absolute; z-index: 30; max-width: 300px; padding: 7px 10px; border-radius: 6px; background: var(--panel); border: 1px solid var(--border); box-shadow: var(--shadow); font-size: 12px; line-height: 1.4; color: var(--text); pointer-events: none; }
+.edge-tip div { color: var(--muted); margin-top: 3px; }

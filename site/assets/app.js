@@ -333,6 +333,22 @@
     cy.on('tap', ev => { if (ev.target === cy) select(null); });
     cy.on('mouseover', 'node', ev => { $('#cy').style.cursor = 'pointer'; if (!state.sel) highlight(ev.target.id(), true); });
     cy.on('mouseout', 'node', () => { $('#cy').style.cursor = ''; if (!state.sel) highlight(null); });
+    // full text of a link on hover (tap on touch screens): labels on the line stay a few words long
+    const tip = document.createElement('div');
+    tip.className = 'edge-tip'; tip.hidden = true;
+    $('#view-graph').appendChild(tip);
+    const showTip = ev => {
+      const ed = ev.target, a = byId.get(ed.data('source')), b = byId.get(ed.data('target'));
+      tip.innerHTML = `<b>${esc(a?.name || '')}</b> — ${esc(ed.data('label'))} — <b>${esc(b?.name || '')}</b>${ed.data('tip') ? `<div>${esc(ed.data('tip'))}</div>` : ''}`;
+      const r = $('#cy').getBoundingClientRect(), g = $('#view-graph').getBoundingClientRect(), p = ev.renderedPosition;
+      tip.style.left = `${Math.min(r.left - g.left + p.x + 12, g.width - 300)}px`; tip.style.top = `${r.top - g.top + p.y + 12}px`;
+      tip.hidden = false;
+    };
+    cy.on('mouseover', 'edge', showTip);
+    cy.on('tap', 'edge', showTip);
+    cy.on('mouseout', 'edge', () => { tip.hidden = true; });
+    cy.on('tap', ev => { if (ev.target === cy || ev.target.isNode?.()) tip.hidden = true; });
+    cy.on('viewport', () => { tip.hidden = true; });
     $('#view-graph').insertAdjacentHTML('beforeend', '<div class="graph-hud" id="hud"></div>');
     $('#legend').innerHTML = graphTypes.map(t => `<span><i style="background:${TYPES[t].color}"></i>${TYPES[t].plural}</span>`).join('');
     applyGraphFilter();
@@ -363,8 +379,11 @@
         (pairs.get(key) || pairs.set(key, { s: m[i], t: m[j], via: [] }).get(key)).via.push(h.id);
       }
     }
+    // the line shows a few words; the full names appear on hover / tap (edgeTip)
+    const short = e => [e.name, ...e.aka].find(n => n.length <= 22) || `${e.date ? e.date.slice(0, 4) + ' ' : ''}${TYPES[e.type].label.toLowerCase()}`;
     return [...pairs.values()].map(p => ({ group: 'edges', data: { id: `b:${p.s}|${p.t}`, source: p.s, target: p.t, kind: 'bridge', via: p.via,
-      label: `via ${p.via.slice(0, 2).map(id => byId.get(id).name).join(', ')}${p.via.length > 2 ? ` +${p.via.length - 2}` : ''}` } }));
+      label: p.via.length === 1 ? `via ${short(byId.get(p.via[0]))}` : `via ${p.via.length} files`,
+      tip: `Connected through ${p.via.map(id => byId.get(id).name).join('; ')} (hidden by the type filter)` } }));
   }
   const directly = new Set(KB.edges.filter(x => x.kind !== 'mention').flatMap(x => [`${x.s}|${x.t}`, `${x.t}|${x.s}`]));
   function applyGraphFilter() {
