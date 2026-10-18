@@ -10,7 +10,7 @@ rel:
   - [ authored by, leslie-kean ]
   - [ related to, v-npc-2007-ufo-close-encounters ]
 links:
-  - label: Find in a library (WorldCat)
+  - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:9780307716842
   - label: Wikipedia — Leslie Kean
     url: https://en.wikipedia.org/wiki/Leslie_Kean

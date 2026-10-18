@@ -466,6 +466,27 @@
   }
   $('#iq').addEventListener('input', renderIndex);
 
+  // ───────────── Amazon links for books ─────────────
+  // The visitor's local Amazon store (country from the Netlify edge function), defaulting to amazon.com.
+  // To earn referral fees later, put your Amazon Associates tag for each store in AMAZON_TAGS
+  // (e.g. { com: 'yourtag-20', 'co.uk': 'yourtag-21' }) and add the required disclosure to about/privacy.
+  const AMAZON_STORE = { US: 'com', GB: 'co.uk', IE: 'co.uk', DE: 'de', AT: 'de', CH: 'de', IT: 'it', FR: 'fr', BE: 'com.be', ES: 'es', NL: 'nl', SE: 'se', PL: 'pl', CA: 'ca', AU: 'com.au', NZ: 'com.au', JP: 'co.jp', IN: 'in', BR: 'com.br', MX: 'com.mx', SG: 'sg', AE: 'ae', SA: 'sa', TR: 'com.tr', EG: 'eg' };
+  const AMAZON_TAGS = {};
+  function amazonLink(isbn) {
+    const digits = String(isbn || '').replace(/[^0-9X]/gi, '');
+    if (!digits) return null;
+    const store = AMAZON_STORE[window.VISITOR_COUNTRY] || 'com';
+    const tag = AMAZON_TAGS[store] ? `tag=${encodeURIComponent(AMAZON_TAGS[store])}` : '';
+    let url;
+    if (digits.length === 13 && digits.startsWith('978')) {
+      // ISBN-13 (978) → ISBN-10, which Amazon uses as the product id
+      const s9 = digits.slice(3, 12);
+      const c = (11 - [...s9].reduce((a, d, i) => a + (10 - i) * +d, 0) % 11) % 11;
+      url = `https://www.amazon.${store}/dp/${s9}${c === 10 ? 'X' : c}`;
+    } else url = `https://www.amazon.${store}/s?k=${digits}`; // 979 ISBNs have no ISBN-10: search by ISBN
+    return { url: url + (tag ? (url.includes('?') ? '&' : '?') + tag : ''), store: `amazon.${store}` };
+  }
+
   // ───────────── books & films ─────────────
   let shelfTab = store.get('shelfTab', 'film');
   const PEOPLE_RELS = new Set(['features', 'authored by', 'narrated by', 'directed by', 'co-author of', 'authored', 'appears in']);
@@ -475,6 +496,8 @@
     return [...ids].map(id => byId.get(id)).sort((a, b) => (a.cred === 'credible' ? 0 : 1) - (b.cred === 'credible' ? 0 : 1));
   }
   const trailerOf = e => adj.get(e.id).map(x => x.dir === 'in' && x.label === 'trailer of' && byId.get(x.other)).find(v => v?.type === 'video');
+  // short button text: "The Black Vault — documents on…" → "The Black Vault", "Lab 9 Films (official site)" → "Lab 9 Films"
+  const btnLabel = label => String(label || 'Link').split(' — ')[0].replace(/\s*\([^)]*\)\s*$/, '');
   const shelfMeta = e => [e.y0, e.runtime ? `${e.runtime} min` : '', e.publisher, e.pages ? `${e.pages} pp.` : ''].filter(Boolean).join(' · ');
   function renderShelf() {
     const count = t => ents.filter(e => e.type === t).length;
@@ -487,11 +510,12 @@
       const cover = e.cover ? `<img class="sc-book" src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" loading="lazy">`
         : tr ? `<img src="${vthumb(tr)}" alt="" loading="lazy"><span class="wplay">▶</span>`
         : `<div class="sc-spine" style="--c:${TYPES[e.type].color}"><b>${esc(e.name)}</b><span>${esc(e.credits || '')}</span></div>`;
-      const actions = `<div class="sc-actions">${tr ? `<button class="btn small primary" data-play="${tr.id}@0">▶ Trailer</button>` : ''}<button class="btn small" data-goto="${e.id}">File card</button>${e.links.slice(0, 2).map(l => `<a class="btn small" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join('')}</div>`;
+      const amz = e.type === 'book' && amazonLink(e.isbn);
+      const actions = `<div class="sc-actions">${tr ? `<button class="btn small primary" data-play="${tr.id}@0">▶ Trailer</button>` : ''}<button class="btn small" data-goto="${e.id}">File card</button>${amz ? `<a class="btn small sc-btn-buy" href="${esc(amz.url)}" target="_blank" rel="noopener sponsored" title="Opens ${amz.store}">Buy on Amazon ↗</a>` : ''}${e.links.slice(0, 2).map(l => `<a class="btn small" href="${esc(l.url)}" target="_blank" rel="noopener" title="${esc(l.label)}">${esc(btnLabel(l.label))} ↗</a>`).join('')}</div>`;
       return `<article class="shelf-card ${e.type}">
         <div class="sc-left">
           <div class="sc-cover" ${tr ? `data-play="${tr.id}@0" title="Play the trailer"` : `data-goto="${e.id}"`}>${cover}</div>
-          ${actions}
+          ${e.type === 'book' ? '' : actions}
         </div>
         <div class="sc-body">
           <div class="sc-kicker">${esc(shelfMeta(e))}</div>
@@ -499,6 +523,7 @@
           ${e.credits ? `<div class="sc-credits">${esc(e.credits)}</div>` : ''}
           <p class="sc-sum">${esc(sum.length > 320 ? sum.slice(0, 317).replace(/\s+\S*$/, '') + '…' : sum)}</p>
           ${people.length ? `<div class="sc-people"><span class="small muted">${official ? `${official} official source${official > 1 ? 's' : ''} on record` : 'People'}:</span> ${people.slice(0, 10).map(p => chip(p.id)).join('')}${people.length > 10 ? `<span class="small muted">+${people.length - 10} more</span>` : ''}</div>` : ''}
+          ${e.type === 'book' ? actions : ''}
         </div></article>`;
     }).join('') || '<p class="muted">Nothing here yet.</p>';
   }
@@ -659,7 +684,8 @@
     }
     if (e.body) h.push(`<div class="p-sec"><h4>${e.type === 'person' ? 'Profile' : 'Summary'}</h4><div class="p-body p-bio">${e.body}</div></div>`);
     if (e.links.length || e.files.length) {
-      h.push(`<div class="p-sec p-side" id="sec-links"><h4>Sources, links & files</h4><ul class="p-links">${e.links.map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.url)} ↗</a></li>`).join('')}${e.files.map(f => `<li><a href="${esc(fileUrl(f))}" target="_blank">📄 ${esc(f.split('/').pop())}</a></li>`).join('')}</ul></div>`);
+      const amzP = e.type === 'book' && amazonLink(e.isbn);
+      h.push(`<div class="p-sec p-side" id="sec-links"><h4>Sources, links & files</h4><ul class="p-links">${amzP ? `<li><a href="${esc(amzP.url)}" target="_blank" rel="noopener sponsored">Buy on Amazon (${esc(amzP.store)}) ↗</a></li>` : ''}${e.links.map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.url)} ↗</a></li>`).join('')}${e.files.map(f => `<li><a href="${esc(fileUrl(f))}" target="_blank">📄 ${esc(f.split('/').pop())}</a></li>`).join('')}</ul></div>`);
     }
     if (e.facts.length) {
       h.push(`<div class="p-sec" id="sec-claims"><h4>Notes & claims <span>${e.facts.length}</span></h4><ul class="facts" data-collapse="8">${e.facts.map(f => {

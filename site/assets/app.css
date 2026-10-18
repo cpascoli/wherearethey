@@ -656,3 +656,16 @@ body.resizing iframe { pointer-events: none; }
   .shelf-card.book .sc-left .sc-actions { flex-direction: column; }
   .sc-cover:has(.sc-book) { display: block; }
 }
+
+/* books: tall cover on the left, buttons in a row on the right (films keep them under the trailer) */
+.shelf-card.book { grid-template-columns: 150px 1fr; }
+.shelf-card.book .sc-body .sc-actions { margin-top: 12px; }
+.sc-actions .btn { white-space: nowrap; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 860px) {
+  .shelf-card, .shelf-card.book { grid-template-columns: minmax(0, 1fr); } /* must follow the desktop rule above; minmax lets long content wrap */
+  .shelf-card.book .sc-left { display: block; }
+  .shelf-card.book .sc-cover img.sc-book { width: 130px; }
+}
+
+.sc-body { min-width: 0; }
+.sc-btn-buy { border-color: color-mix(in srgb, #ff9900 55%, var(--border)) !important; }

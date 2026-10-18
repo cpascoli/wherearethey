@@ -13,7 +13,7 @@ rel:
 links:
   - label: Google Books
     url: https://books.google.com/books/about/The_Day_After_Roswell.html?id=3fDWAAAAMAAJ
-  - label: Find in a library (WorldCat)
+  - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:9780671004613
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/The_Day_After_Roswell

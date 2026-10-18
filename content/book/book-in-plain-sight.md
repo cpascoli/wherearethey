@@ -12,7 +12,7 @@ rel:
 links:
   - label: Google Books
     url: https://books.google.com/books?id=UcFnzgEACAAJ
-  - label: Find in a library (WorldCat)
+  - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:9781460759066
 facts:
   - text: "An investigation into UFOs and alleged crash-retrieval programs by Australian investigative journalist Ross Coulthart, published by HarperCollins Australia in 2021 and reprinted in 2023."

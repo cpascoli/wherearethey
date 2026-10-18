@@ -18,7 +18,7 @@ rel:
 links:
   - label: HarperCollins
     url: https://www.harpercollins.ca/9780063235564/imminent/
-  - label: Find in a library (WorldCat)
+  - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:9780063235564
   - label: NewsNation — Confessions of a UFO hunter (Elizondo)
     url: https://www.newsnationnow.com/space/ufo/special-report-confessions-of-a-ufo-hunter/

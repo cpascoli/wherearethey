@@ -12,7 +12,7 @@ rel:
 links:
   - label: Google Books
     url: https://books.google.com/books/about/Out_of_the_Shadows.html?id=gHoT0gEACAAJ
-  - label: Find in a library (WorldCat)
+  - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:9780063384538
   - label: Deadline — release date and title (June 2026)
     url: https://deadline.com/2026/06/jay-stratton-memoir-release-date-title-unveiled-1236938677/

@@ -14,7 +14,7 @@ rel:
   - [ about, skinwalker-ranch ]
   - [ followed by, book-inside-covert-ufo-program ]
 links:
-  - label: Find in a library (WorldCat)
+  - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:9798487639653
   - label: The Black Vault — documents on its Pentagon prepublication review
     url: https://www.theblackvault.com/documentarchive/new-documents-detail-slow-multi-agency-vetting-of-skinwalkers-at-the-pentagon/

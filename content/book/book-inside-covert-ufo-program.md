@@ -17,7 +17,7 @@ rel:
 links:
   - label: Google Books
     url: https://books.google.com/books/about/Inside_the_U_S_Government_Covert_UFO_Pro.html?id=Yt5a0AEACAAJ
-  - label: Find in a library (WorldCat)
+  - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:9798989114610
   - label: Liberation Times — excerpt and WEAPONIZED interview (October 17, 2023)
     url: https://www.liberationtimes.com/home/former-head-of-us-government-ufo-program-confirms-government-possesses-advanced-craft-of-unknown-origin
