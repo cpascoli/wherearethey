@@ -6,6 +6,7 @@ place: { name: "Magenta, Lombardy, Italy", lat: 45.4647, lng: 8.8833 }
 tags: [crash-retrieval, international, secrecy]
 rel:
   - [ claimed by, david-grusch ]
+  - [ claimed by, eric-davis ]
   - [ related to, crash-retrieval ]
   - [ related to, legacy-program ]
 links:
@@ -26,6 +27,10 @@ facts:
     status: claimed
     by: david-grusch
     source: v-jre-david-grusch@16:42
+  - text: "At the May 1, 2025 congressional UAP briefing, physicist Eric Davis said the crash-retrieval programmes date back to 1944 and “the US Army's recovery of a craft that crashed in Italy back in 1933”, which the Army recovered when it invaded Italy and brought back to Wright Field. In the same remarks he said he had briefed Grusch for two and a half days before Grusch filed his Inspector General complaint."
+    status: claimed
+    by: eric-davis
+    source: v-2025-05-01-hearing-a@1:03:25
   - text: "Only one document, a 1936 sheet, has been forensically tested: consultant Antonio Garavaglia's 2000 report concluded that “only the sample examined” could be considered original and authentic. The 1933 telegrams have not been tested, and the papers carry no protocol numbers or official stamps."
     status: claimed
     source: https://www.dailymail.co.uk/news/article-12252381/Italian-researcher-shares-evidence-files-secret-UFO-crash-Italy.html
@@ -39,8 +44,8 @@ facts:
 
 According to documents that surfaced six decades later, an "unconventional" craft crashed or landed near Magenta, west of Milan, on 13 June 1933. Papers mailed anonymously in 1996 to the Italian researcher Roberto Pinotti include telegrams, said to be by personal order of Mussolini, ordering "absolute silence" about an "alleged landing on national soil of unknown aircraft", and notes describing a secret study group, "Gabinetto RS/33", said to have been chaired by Guglielmo Marconi, with the wreck stored in the SIAI-Marchetti hangars at Vergiate.
 
-The case gained international attention in 2023, when the former intelligence officer David Grusch said a bell-like craft about ten metres across was recovered at Magenta, held by Mussolini's government until 1944 and then taken by the American OSS, with Pope Pius XII back-channelling its existence to the United States; he calls it the earliest retrieval he can discuss publicly. If true, it would predate Roswell by fourteen years.
+The case gained international attention in 2023, when the former intelligence officer David Grusch said a bell-like craft about ten metres across was recovered at Magenta, held by Mussolini's government until 1944 and then taken by the American OSS, with Pope Pius XII back-channelling its existence to the United States; he calls it the earliest retrieval he can discuss publicly. The physicist Eric Davis, who says he briefed Grusch before his whistleblower complaint, repeated the claim of a 1944 U.S. Army recovery of a craft that crashed in Italy in 1933 at a congressional briefing in May 2025. If true, it would predate Roswell by fourteen years.
 
 None of it has been confirmed. Only one document, from 1936, has been forensically tested; the 1933 telegrams have not, and the papers bear no protocol numbers or official stamps. No archive or historian has found any trace of RS/33. Critics note that the Pope, the bell shape and the American recovery are absent from the 1996 papers and appear only in a 2010 retelling, that Grusch's account of an empty craft differs from Pinotti's descriptions of bodies, and that forgery on period paper cannot be ruled out. The Pentagon's AARO says it has found no verifiable evidence of any retrieval programme.
 
-*Sources: [Daily Mail (2023)](https://www.dailymail.co.uk/news/article-12252381/Italian-researcher-shares-evidence-files-secret-UFO-crash-Italy.html) · Joe Rogan Experience #2065 · [Umbralog](https://umbralog.com/story/magenta-crash-and-mussolini-s-gabinetto-rs-33-1933) (secondary)*
+*Sources: Congressional briefing (1 May 2025) · [Daily Mail (2023)](https://www.dailymail.co.uk/news/article-12252381/Italian-researcher-shares-evidence-files-secret-UFO-crash-Italy.html) · Joe Rogan Experience #2065 · [Umbralog](https://umbralog.com/story/magenta-crash-and-mussolini-s-gabinetto-rs-33-1933) (secondary)*
