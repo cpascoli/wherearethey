@@ -501,7 +501,7 @@
   const shelfMeta = e => [e.y0, e.runtime ? `${e.runtime} min` : '', e.publisher, e.pages ? `${e.pages} pp.` : ''].filter(Boolean).join(' · ');
   function renderShelf() {
     const count = t => ents.filter(e => e.type === t).length;
-    $('#shelf-tabs').innerHTML = `<button data-lib="videos">Videos ${videos.length}</button>` + ['film', 'book'].map(t => `<button data-shelf="${t}" class="${shelfTab === t ? 'on' : ''}">${TYPES[t].plural} ${count(t)}</button>`).join('');
+    $('#shelf-tabs').innerHTML = ['film', 'book'].map(t => `<button data-shelf="${t}" class="${shelfTab === t ? 'on' : ''}">${TYPES[t].plural} ${count(t)}</button>`).join('');
     const items = ents.filter(e => e.type === shelfTab).sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
     $('#shelf').innerHTML = items.map(e => {
       const tr = trailerOf(e);
@@ -528,7 +528,6 @@
     }).join('') || '<p class="muted">Nothing here yet.</p>';
   }
   $('#shelf-tabs').addEventListener('click', e => {
-    if (e.target.closest('[data-lib="videos"]')) { go('videos'); return; }
     const b = e.target.closest('[data-shelf]'); if (!b) return;
     shelfTab = b.dataset.shelf; store.set('shelfTab', shelfTab); renderShelf();
   });
@@ -1371,8 +1370,8 @@
     ['graph', 'Explore', 'Every person, program and incident, and how they connect. Trace the path between any two.'],
     ['timeline', 'Timeline', 'Eighty years of events, documents and hearings, decade by decade.'],
     ['map', 'World', 'Where it happened: bases, ships, schools and hearing rooms.'],
-    ['videos', 'Testimony', 'Hearings and interviews with synced transcripts. Search every word spoken.'],
-    ['shelf', 'Library', 'Documentaries and books by the people on record, with trailers and where to find them.'],
+    ['videos', 'Videos', 'Hearings and interviews with synced transcripts. Search every word spoken.'],
+    ['shelf', 'Documentaries & books', 'Documentaries and books by the people on record, with trailers and where to find them.'],
     ['claims', 'Claims ledger', 'Every claim with its status: documented, on record, or still unverified.'],
     ['index', 'Index', 'All files, by type, filterable.'],
   ];
@@ -1699,9 +1698,18 @@
     if ((v.y0 && v.y0 < 2005) || NEWS.test(v.channel || '') || NEWS.test(v.name)) return 'news';
     return 'interview';
   }
-  const VKINDS = [['all', 'All'], ['hearing', 'Hearings'], ['interview', 'Interviews & podcasts'], ['news', 'News & archive'], ['trailer', 'Trailers']];
-  let vbKind = 'hearing', vbSort = 'new', vbQ = '';
+  const VKINDS = [['all', 'All'], ['hearing', 'Hearings'], ['interview', 'Interviews & podcasts'], ['news', 'News & archive']]; // trailers show under All and on their film's card
+  let vbKind = 'all', vbQ = '';
   const vidPeople = v => [...new Set([...(v.moments || []).map(m => m.speaker), ...adj.get(v.id).filter(x => x.dir === 'out' && x.label === 'features').map(x => x.other)].filter(id => byId.get(id)?.type === 'person'))];
+  // the filter box also matches the people tied to a video (speakers, features, any link), not just its own text
+  const vbTextCache = new Map();
+  const vbText = v => {
+    if (!vbTextCache.has(v.id)) {
+      const ids = new Set([...vidPeople(v), ...adj.get(v.id).map(x => x.other)]);
+      vbTextCache.set(v.id, [searchText(v), ...[...ids].map(id => byId.get(id)).filter(e => e?.type === 'person').flatMap(e => [e.name, ...e.aka])].join(' \n ').toLowerCase());
+    }
+    return vbTextCache.get(v.id);
+  };
   const vidCard = v => {
     const ppl = vidPeople(v);
     return `<div class="vb-card" data-open-video="${v.id}"><div class="vb-thumb"><img src="${vthumb(v)}" alt="" loading="lazy">${v.duration ? `<span class="wdur">${fmtDur(v.duration)}</span>` : ''}${v.moments?.length ? `<span class="vb-mom">${v.moments.length} moments</span>` : ''}</div>
@@ -1717,22 +1725,17 @@
   function renderBrowse() {
     const base = videos.filter(v => !(state.credibleOnly && v.cred === 'outside'));
     const q = vbQ.trim().toLowerCase();
-    let list = base.filter(v => (vbKind === 'all' || vidKind(v) === vbKind) && (!q || q.split(/\s+/).every(w => searchText(v).includes(w))));
-    const sorters = { new: (a, b) => String(b.date || '').localeCompare(String(a.date || '')), old: (a, b) => String(a.date || '9').localeCompare(String(b.date || '9')), moments: (a, b) => (b.moments?.length || 0) - (a.moments?.length || 0), long: (a, b) => (b.duration || 0) - (a.duration || 0) };
-    list.sort(sorters[vbSort]);
+    let list = base.filter(v => (vbKind === 'all' || vidKind(v) === vbKind) && (!q || q.split(/\s+/).every(w => vbText(v).includes(w))));
+    list.sort((a, b) => String(b.date || '').localeCompare(String(a.date || ''))); // newest first
     const counts = Object.fromEntries(VKINDS.map(([k]) => [k, k === 'all' ? base.length : base.filter(v => vidKind(v) === k).length]));
     const featured = base.filter(v => v.moments?.length >= 5).sort((a, b) => b.moments.length - a.moments.length || String(b.date).localeCompare(String(a.date))).slice(0, 6);
     const showFeatured = vbKind === 'all' && !q;
-    const libTabs = `<div class="seg lib-tabs"><button class="on">Videos ${videos.length}</button><button data-lib="film">${TYPES.film.plural} ${ents.filter(e => e.type === 'film').length}</button><button data-lib="book">${TYPES.book.plural} ${ents.filter(e => e.type === 'book').length}</button></div>`;
-    $('#vid-browse').innerHTML = `<h2 class="lib-title">Library</h2>${libTabs}<div class="vb-head"><p class="muted">Hearings, interviews and archival footage, with synced transcripts and curated moments. ${base.length} videos · ${KB.stats.transcriptHours} hours transcribed.</p>
-      <div class="vb-bar"><input id="vb-q" type="search" placeholder="Filter by title, person, case…" value="${esc(vbQ)}" autocomplete="off">
-        <select id="vb-sort"><option value="new">Newest</option><option value="old">Oldest</option><option value="moments">Most moments</option><option value="long">Longest</option></select>
-        <button class="btn small" data-tsearch-open>Search inside transcripts</button></div>
+    $('#vid-browse').innerHTML = `<div class="vb-head"><h2>Videos</h2><p class="muted">Hearings, interviews and archival footage, with synced transcripts and curated moments. ${base.length} videos · ${KB.stats.transcriptHours} hours transcribed.</p>
+      <div class="vb-bar"><input id="vb-q" type="search" placeholder="Filter by title, person, case…" value="${esc(vbQ)}" autocomplete="off"></div>
       <div class="seg vb-kinds">${VKINDS.map(([k, l]) => `<button data-vkind="${k}" class="${vbKind === k ? 'on' : ''}">${l} ${counts[k]}</button>`).join('')}</div></div>
       ${showFeatured && featured.length ? `<h3 class="vb-sec">Start here <span class="muted small">most annotated</span></h3><div class="vb-grid">${featured.map(vidCard).join('')}</div>` : ''}
       <h3 class="vb-sec">${showFeatured ? 'All videos' : `${list.length} video${list.length === 1 ? '' : 's'}`}</h3>
       <div class="vb-grid">${list.map(vidCard).join('') || '<p class="muted">No videos match.</p>'}</div>`;
-    $('#vb-sort').value = vbSort;
   }
   $('#vid-browse').addEventListener('input', e => {
     if (e.target.id !== 'vb-q') return;
@@ -1740,11 +1743,8 @@
     clearTimeout(renderBrowse.t);
     renderBrowse.t = setTimeout(() => { const pos = e.target.selectionStart; renderBrowse(); const el = $('#vb-q'); el.focus(); el.setSelectionRange(pos, pos); }, 200);
   });
-  $('#vid-browse').addEventListener('change', e => { if (e.target.id === 'vb-sort') { vbSort = e.target.value; renderBrowse(); } });
   $('#vid-browse').addEventListener('click', e => {
-    const lt = e.target.closest('[data-lib]'); if (lt) { shelfTab = lt.dataset.lib; store.set('shelfTab', shelfTab); go('shelf'); return; }
     const k = e.target.closest('[data-vkind]'); if (k) { vbKind = k.dataset.vkind; renderBrowse(); return; }
-    if (e.target.closest('[data-tsearch-open]')) { $('#side').classList.add('open'); $('#tq').focus(); return; }
     const c = e.target.closest('[data-open-video]'); if (c) openVideo(c.dataset.openVideo, 0, false);
   });
   function closeVideo() {
