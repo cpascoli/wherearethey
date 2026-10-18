@@ -80,6 +80,9 @@ input { font: inherit; color: inherit; }
 .dd-item { display: flex; gap: 10px; align-items: flex-start; padding: 8px 10px; border-radius: 7px; cursor: pointer; }
 .dd-item:hover, .dd-item.active { background: var(--accent-soft); }
 .dd-item .t { font-weight: 600; }
+.dd-item.typed { box-shadow: inset 3px 0 0 var(--c); padding-left: 13px; }
+.dd-item.typed:hover, .dd-item.typed.active { background: color-mix(in srgb, var(--c) 14%, transparent); }
+.dd-type { display: inline-block; margin-left: 6px; padding: 1px 6px; border-radius: 3px; vertical-align: 1px; font-family: var(--mono); font-size: 10.5px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: color-mix(in srgb, var(--c) 75%, var(--text)); background: color-mix(in srgb, var(--c) 15%, transparent); }
 .dd-item .s { color: var(--muted); font-size: 12px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
 .dd-sep { border-top: 1px solid var(--border); margin: 6px 0; }
 .views { display: flex; gap: 2px; background: var(--panel-2); padding: 3px; border-radius: 9px; border: 1px solid var(--border); }

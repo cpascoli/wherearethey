@@ -110,6 +110,9 @@
     const f = e.facts?.[0]?.text;
     return [fmtRange(e), e.place?.name, !e.date && !e.place ? f : ''].filter(Boolean).join(' · ') || f || '';
   };
+  // search-dropdown rows carry their type's colour (left bar, tinted badge and highlight)
+  const ddTyped = e => `class="dd-item typed" style="--c:${TYPES[e.type]?.color || '#999'}"`;
+  const ddType = e => `<span class="dd-type">${TYPES[e.type].label}</span>`;
   const dot = id => { const e = byId.get(id); return `<i class="dot" style="background:${TYPES[e?.type]?.color || '#999'}"></i>`; };
   const chip = (id, extra = '') => {
     const e = byId.get(id);
@@ -599,7 +602,7 @@
     if (!q.trim()) { dd.hidden = true; return; }
     const res = searchEntities(q);
     ddIndex = -1;
-    dd.innerHTML = res.map(e => `<div class="dd-item" data-goto="${e.id}">${dot(e.id)}<div><div class="t">${esc(e.name)} <span class="muted small">${TYPES[e.type].label}</span></div><div class="s">${esc(subtitle(e))}</div></div></div>`).join('') +
+    dd.innerHTML = res.map(e => `<div ${ddTyped(e)} data-goto="${e.id}"><div><div class="t">${esc(e.name)} ${ddType(e)}</div><div class="s">${esc(subtitle(e))}</div></div></div>`).join('') +
       `${res.length ? '<div class="dd-sep"></div>' : ''}<div class="dd-item" data-tsearch="${esc(q)}"><span>🔎</span><div><div class="t">Search transcripts and documents for “${esc(q)}”</div><div class="s">${KB.stats.transcripts} videos · ${KB.stats.transcriptHours} h of speech · ${KB.stats.documents} documents · ${KB.stats.documentPages} pages</div></div></div>`;
     dd.hidden = false;
   }
@@ -913,7 +916,7 @@
     if (ev.target.id !== 'trace-q') return;
     const res = searchEntities(ev.target.value, 8).filter(x => x.id !== state.sel);
     const dd = $('#trace-dd');
-    dd.innerHTML = res.map(x => `<div class="dd-item" data-trace-target="${x.id}">${dot(x.id)}<div><div class="t">${esc(x.name)}</div><div class="s">${TYPES[x.type].label}</div></div></div>`).join('');
+    dd.innerHTML = res.map(x => `<div ${ddTyped(x)} data-trace-target="${x.id}"><div><div class="t">${esc(x.name)} ${ddType(x)}</div></div></div>`).join('');
     dd.hidden = !res.length;
   });
   function closePanel() {
@@ -1661,7 +1664,7 @@
     if (e.target.id !== 'hq') return;
     const res = searchEntities(e.target.value, 8);
     const dd = $('#hq-dd');
-    dd.innerHTML = res.map(x => `<div class="dd-item" data-hq="${x.id}">${dot(x.id)}<div><div class="t">${esc(x.name)} <span class="muted small">${TYPES[x.type].label}</span></div><div class="s">${esc(subtitle(x))}</div></div></div>`).join('')
+    dd.innerHTML = res.map(x => `<div ${ddTyped(x)} data-hq="${x.id}"><div><div class="t">${esc(x.name)} ${ddType(x)}</div><div class="s">${esc(subtitle(x))}</div></div></div>`).join('')
       + (e.target.value.trim() ? `<div class="dd-sep"></div><div class="dd-item" data-hq-t="1"><span>🔎</span><div><div class="t">Search transcripts and documents for “${esc(e.target.value)}”</div></div></div>` : '');
     dd.hidden = !e.target.value.trim();
   });
