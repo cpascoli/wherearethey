@@ -1846,7 +1846,7 @@
       return;
     }
     const o = e.target.closest('[data-hc-open]');
-    if (o) { const id = o.dataset.hcOpen; closeHeroCard(); const ent = byId.get(id); if (ent && !state.types.has(ent.type)) { state.types.add(ent.type); filtersChanged(); } go('graph'); select(id); }
+    if (o) { closeHeroCard(); exploreFrom(o.dataset.hcOpen); }
   });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && state.view === 'home') closeHeroCard(); });
   function startHero() {
@@ -1953,6 +1953,22 @@
     filtersChanged();
     go(p.view || 'graph');
   }
+  // From the home page into Explore: start clean every time (no leftover type/theme/year filters or hidden
+  // files) and make the chosen file the first step of a trail. "Official sources only" stays on unless the
+  // file itself is outside the criteria, which would otherwise hide it.
+  function exploreFrom(id) {
+    const ent = byId.get(id);
+    if (!ent) return;
+    if (ent.type === 'record') { go('graph'); select(id); return; } // records aren't graph nodes: just open the card
+    state.types = new Set(graphTypes);
+    state.tags.clear();
+    state.yr = [MIN_Y, MAX_Y];
+    state.showMentions = false;
+    state.credibleOnly = ent.cred !== 'outside';
+    state.hiddenIds.clear();
+    filtersChanged();
+    startTrail(id);
+  }
   $('#view-home').addEventListener('click', e => {
     const pr = e.target.closest('[data-preset]');
     if (pr) { e.preventDefault(); applyPreset(JSON.parse(pr.dataset.preset)); return; }
@@ -1961,10 +1977,7 @@
     const hg = e.target.closest('[data-home-goto]');
     if (hg) {
       e.preventDefault();
-      const id = hg.dataset.homeGoto;
-      const ent = byId.get(id);
-      if (ent && !state.types.has(ent.type)) { state.types.add(ent.type); filtersChanged(); }
-      go('graph'); select(id);
+      exploreFrom(hg.dataset.homeGoto);
     }
   });
   $('#view-home').addEventListener('input', e => {
@@ -1981,7 +1994,7 @@
   $('#view-home').addEventListener('mousedown', e => {
     const it = e.target.closest('[data-hq]');
     const tq = e.target.closest('[data-hq-t]');
-    if (it) { e.preventDefault(); const id = it.dataset.hq; const ent = byId.get(id); if (ent && !state.types.has(ent.type)) { state.types.add(ent.type); filtersChanged(); } if (ent?.type === 'record') { go('graph'); select(id); } else startTrail(id); } // a home search starts a trail
+    if (it) { e.preventDefault(); exploreFrom(it.dataset.hq); } // a home search starts a clean trail
     if (tq) { e.preventDefault(); $('#tq').value = $('#hq').value; go('videos'); runTranscriptSearch(); }
   });
 
