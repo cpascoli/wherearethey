@@ -2106,7 +2106,7 @@
   // scripts/pages.mjs. The view a file was opened from lives in history.state, so Back/Forward restore it.
   const VIEW_PATH = { home: '/', graph: '/explore', timeline: '/timeline', map: '/world', videos: '/videos', shelf: '/documentaries', index: '/a-z', claims: '/claims' };
   const PATH_VIEW = Object.fromEntries(Object.entries(VIEW_PATH).map(([v, p]) => [p, v]));
-  const SHELF_PATH = { '/documentaries': 'film', '/books': 'book', '/documentaries-and-books': 'film' }; // one page component, two lists
+  const SHELF_PATH = { '/documentaries': 'film', '/books': 'book' }; // one page component, two lists
   const byPath = new Map(ents.filter(e => e.path).map(e => [e.path, e.id]));
   let routing = false; // true while applying a URL, so the steps don't push history entries of their own
   function urlFor() {
@@ -2271,14 +2271,6 @@
   renderFilters();
   const VIEWS = ['home', 'graph', 'timeline', 'map', 'videos', 'shelf', 'index', 'claims'];
   function routeFromUrl() {
-    // legacy #/view/video?sel=id links from before real URLs
-    if (location.hash.startsWith('#/')) {
-      const [p, qs] = location.hash.slice(2).split('?');
-      const [r, vid] = p.split('/');
-      const view = r === 'explore' ? 'graph' : r;
-      const sel = new URLSearchParams(qs || '').get('sel');
-      return { view: VIEWS.includes(view) ? view : 'home', sel: byId.has(sel) ? sel : null, video: view === 'videos' && byId.has(vid) ? vid : null };
-    }
     const p = decodeURIComponent(location.pathname).replace(/\.html$/, '').replace(/(.)\/+$/, '$1');
     const t = +new URLSearchParams(location.search).get('t') || 0;
     if (SHELF_PATH[p]) return { view: 'shelf', sel: null, video: null, shelf: SHELF_PATH[p] };
@@ -2299,10 +2291,9 @@
       if (r.view === 'videos' && r.video && byId.has(r.video) && (r.video !== state.video || r.t || initial)) openVideo(r.video, r.t || 0, false);
       else if (r.view === 'videos' && !r.video && state.video) closeVideo();
     } finally { routing = false; }
-    // store the state on this entry; legacy hash links become real URLs
-    history.replaceState({ view: state.view, sel: state.sel, video: state.video }, '', urlFor() + (location.hash.startsWith('#/') ? '' : location.search));
+    // store the state on this entry
+    history.replaceState({ view: state.view, sel: state.sel, video: state.video }, '', urlFor() + location.search);
   }
-  window.addEventListener('hashchange', () => { if (location.hash.startsWith('#/')) applyRoute(true); });
   window.addEventListener('popstate', () => applyRoute(false));
   document.getElementById('ssr')?.remove(); // the server-rendered article is for crawlers and no-JS readers
   // the logo returns home without a page reload

@@ -19,23 +19,3 @@
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=3600"
-
-# Documentaries and books used to share one page
-[[redirects]]
-  from = "/documentaries-and-books"
-  to = "/documentaries"
-  status = 301
-
-# Nov 2024 hearing: duplicate/looped recordings replaced by the official upload
-[[redirects]]
-  from = "/video/ufo-uap-congressional-hearing-nov-13-2024-full-uncut-session"
-  to = "/video/unidentified-anomalous-phenomena-exposing-the-truth-2024"
-  status = 301
-[[redirects]]
-  from = "/video/hearing-on-unidentified-anomalous-ufo-phenomena-11-12-2024"
-  to = "/video/unidentified-anomalous-phenomena-exposing-the-truth-2024"
-  status = 301
-[[redirects]]
-  from = "/video/unidentified-anomalous-phenomena-exposing-the-truth-full"
-  to = "/video/unidentified-anomalous-phenomena-exposing-the-truth-2024"
-  status = 301
