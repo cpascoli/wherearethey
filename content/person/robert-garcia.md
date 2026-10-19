@@ -19,4 +19,4 @@ U.S. Representative for California's 42nd district (D) since 2023 and former may
 
 He called for a better system for pilots to report sightings, while noting the official findings that no evidence of extraterrestrial activity had been found. He asked David Grusch on the record whether the government possesses UAP; Grusch said “Absolutely.”
 
-*Sources: hearing transcript (CHRG-118hhrg53022); [Wikipedia](https://en.wikipedia.org/wiki/Robert_Garcia_(California_politician))*
+*Sources: hearing transcript (CHRG-118hhrg53022); [Wikipedia](https://en.wikipedia.org/wiki/Robert_Garcia_(California_congressman))*
