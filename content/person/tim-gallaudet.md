@@ -24,7 +24,7 @@ facts:
   - text: In January 2015, during a pre-deployment exercise off the U.S. East Coast, received a secure email from a fleet operations officer about urgent flight-safety concerns and near-midair collisions with UAP. The next day the email had vanished from his inbox and from the other recipients’ accounts.
     status: claimed
     by: tim-gallaudet
-    source: v-2024-11-13-hearing-c@25:59
+    source: v-2024-11-13-hearing-a@44:03
   - text: Among the first officials to see the “GoFast” video. He said the object’s flight and structure went far beyond any known human technology.
     status: claimed
     by: tim-gallaudet

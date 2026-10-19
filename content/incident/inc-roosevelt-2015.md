@@ -22,7 +22,7 @@ facts:
   - text: A secure email about the flight-safety concerns vanished from Rear Adm. Gallaudet’s inbox, and from the other recipients’, the day after it arrived.
     status: claimed
     by: tim-gallaudet
-    source: v-2024-11-13-hearing-c@25:59
+    source: v-2024-11-13-hearing-a@44:03
 ---
 
 In 2014–2015, Navy F/A-18 crews from the USS Theodore Roosevelt carrier strike group, training off the U.S. East Coast, reported frequent encounters with unidentified objects, including near-midair collisions. Lt. Ryan Graves, an F/A-18F pilot in the group, later described the encounters as frequent during the pre-deployment exercise.
