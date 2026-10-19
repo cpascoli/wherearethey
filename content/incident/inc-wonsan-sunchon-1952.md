@@ -7,26 +7,28 @@ tags: [aviator, air-force, military, international]
 rel:
   - [ related to, otto-weyland ]
   - [ related to, project-blue-book ]
+  - [ documented in, doc-bluebook-korea-1952 ]
 links:
   - label: Wikipedia — Wonsan-Sunchon UFO incident
     url: https://en.wikipedia.org/wiki/Wonsan-Sunchon_UFO_incident
 facts:
-  - text: Around midnight, gunners on a U.S. Air Force B-29 over Wonsan saw an orange, globe- or disc-shaped light that kept pace with the bomber (about 20,000 ft, 200 mph) for at least five minutes, “occasionally emitting blue flames like those of a cooking stove”. A second B-29 about 300 miles away over Sunchon reported an orange sphere following it for a full minute.
+  - text: "According to ATIC's analysis, at 2300 local time on 29 January 1952, 30 miles WSW of Wonsan, three gunners of a B-29 flying at 22,500 ft watched a light orange sphere, “the color of the sun with an occasional bluish tint”, on a parallel course for five minutes. At 2324, two gunners of another B-29 near Sunchon, at 22,250 ft, saw an identical object for one minute."
+    status: documented
+    source: library/docs/doc-bluebook-korea-1952.pdf
+  - text: Press accounts added details not in the case file, including a speed of about 200 mph and “blue flames like those of a cooking stove”.
     status: unverified
     source: https://en.wikipedia.org/wiki/Wonsan-Sunchon_UFO_incident
-  - text: "Project Blue Book kept a case file on the sightings, “KOREA, January 1952”, now held by the National Archives (microfilm T1206, Project “Bluebook” 1947–1969, roll 9; NARA ID 28940796)."
+  - text: "ATIC reached no conclusion on the objects' identity or origin; its propulsion group ruled out jet, pulse-jet, ram-jet and rocket exhaust. Tentative explanations in the file include a flare towed by an aircraft, the exhaust of an La-9 or La-11 Soviet fighter, an aircraft-mounted searchlight, and balloons."
     status: documented
-    source: https://catalog.archives.gov/id/28940796
+    source: doc-bluebook-korea-1952
   - text: Far East Air Forces commander Lt. Gen. Otto P. Weyland told the press, “We can't say there's nothing to it, but unless we can get more data, I don't think we can expect a conclusive answer” (Stars and Stripes, February 22, 1952).
     status: claimed
     by: otto-weyland
     source: https://en.wikipedia.org/wiki/Wonsan-Sunchon_UFO_incident
 ---
 
-Around midnight on 29 January 1952, during the Korean War, gunners on a U.S. Air Force B-29 bomber over Wonsan, North Korea, watched an orange, globe-shaped light keep pace with the aircraft at about 20,000 feet and 200 mph for some five minutes, "occasionally emitting blue flames like those of a cooking stove". A second B-29 crew over Sunchon, roughly 300 miles away, reported a similar lighted orange sphere following them for about a minute.
+Around 11 p.m. on 29 January 1952, during the Korean War, three gunners on a U.S. Air Force B-29 flying at 22,500 feet some 30 miles west-southwest of Wonsan, North Korea, watched a light orange sphere, "the color of the sun with an occasional bluish tint", hold a parallel course for five minutes. Twenty-four minutes later, two gunners on a B-29 from a different squadron near Sunchon reported an identical object for one minute. The crews were combat veterans and were interrogated separately.
 
-The Far East Air Forces commander, Lt. Gen. Otto P. Weyland, told the press: "We can't say there's nothing to it, but unless we can get more data, I don't think we can expect a conclusive answer." The reports were widely covered from February 1952 and, according to Project Blue Book officials, helped fuel that year's wave of UFO reports.
+Project Blue Book's case file shows that ATIC reached no conclusion. Its propulsion group ruled out known engine exhaust, and the file offers tentative explanations: a flare towed by an aircraft to mark the bomber for flak crews, the exhaust of a Soviet La-9 or La-11 fighter, an aircraft-mounted searchlight, or balloons. An Air Force memo noted that the press release had "played up the 'flying saucer' aspects". Far East Air Forces commander Lt. Gen. Otto P. Weyland told the press that no conclusive answer could be expected without more data.
 
-No explanation was established; Weyland himself doubted that the glow of jet engines could account for it.
-
-*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Wonsan-Sunchon_UFO_incident)*
+*Sources: Project Blue Book case file, U.S. National Archives (local copy) · [Wikipedia](https://en.wikipedia.org/wiki/Wonsan-Sunchon_UFO_incident)*
