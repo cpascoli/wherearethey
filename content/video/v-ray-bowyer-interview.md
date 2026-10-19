@@ -33,12 +33,16 @@ moments:
     text: "Bowyer: a Jersey radar technician estimated from one sweep that hit the object three times that it was at least a mile long."
     speaker: ray-bowyer
     refs: [ inc-alderney-2007 ]
-  - t: "1:05:52"
+  - t: "1:00:00"
     text: "Bowyer: the only official response to his report was that it posed no threat to UK or French airspace."
     speaker: ray-bowyer
     refs: [ inc-alderney-2007 ]
+  - t: "56:55"
+    text: "Bowyer: a 150-page university study examined reflections, weather and refraction and concluded “we don't know what it was”, while its author suggested ship reflections, though Bowyer says there were no ships there."
+    speaker: ray-bowyer
+    refs: [ inc-alderney-2007 ]
   - t: "1:25:24"
-    text: "Bowyer addresses proposed explanations, earthquake lights and a sun dog, and says a university study concluded “we don't know what it was” while suggesting ship reflections, though no ships were there."
+    text: "Bowyer addresses proposed explanations, earthquake lights (which occur over land) and a sun dog, and says he convinced the astronomer who suggested the latter."
     speaker: ray-bowyer
     refs: [ inc-alderney-2007 ]
 ---
