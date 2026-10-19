@@ -16,7 +16,7 @@ facts:
   - text: Journalist George Knapp, a witness at the hearing, said he had heard about the event before but had not had the video, and that the missile struck the object and "bounced right off".
     status: claimed
     by: george-knapp
-    source: v-2025-09-09-hearing-b@1:26:21
+    source: v-2025-09-09-hearing-a@1:44:31
   - text: The clip entered the public record through a member of Congress; the Department of Defense and AARO have not released or authenticated it, and its origin and chain of custody are not public.
     status: unverified
     source: library/docs/doc-transcript-2025-09-09.pdf
