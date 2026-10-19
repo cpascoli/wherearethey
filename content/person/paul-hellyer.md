@@ -14,9 +14,10 @@ facts:
   - text: St. Paul, Alberta held the grand opening of its UFO landing pad, a Canadian centennial project, on June 3, 1967.
     status: documented
     source: https://www.stpaul.ca/visitors/ufo-landing-pad
-  - text: As Defence Minister, Hellyer is reported to have formally opened the St. Paul landing pad.
-    status: unverified
-    source: https://www.guinnessworldrecords.com/world-records/first-official-ufo-landing-pad
+  - text: "Hellyer said in 2005 that, as Defence Minister, he was asked to dedicate the St. Paul landing pad on 3 June 1967."
+    status: claimed
+    by: paul-hellyer
+    source: v-hellyer-toronto-2005-part1@3:37
   - text: At the Toronto exopolitics symposium on September 25, 2005 he said “UFOs are as real as the airplanes that fly over your head,” and that he had once seen a UFO with his wife and friends.
     status: claimed
     by: paul-hellyer
