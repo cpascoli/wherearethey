@@ -1,5 +1,4 @@
-{
-"18-100754-general-1946-7-vol-2":"record/18-100754-general-1946-7-vol-2",
+{"18-100754-general-1946-7-vol-2":"record/18-100754-general-1946-7-vol-2",
 "18-6369445-general-1948-vol-1":"record/18-6369445-general-1948-vol-1",
 "255-413270-ufo-s-and-defense-what-should-we-prepare-for":"record/255-413270-ufo-s-and-defense-what-should-we-prepare-for",
 "331-120752-numeric-files-1944-1945-37153-german-armament-equipment-documents":"record/331-120752-numeric-files-1944-1945-37153-german-armament",
@@ -150,6 +149,7 @@
 "doc-transcript-1968-07-29":"document/hearing-transcript-symposium-on-unidentified-flying-objects-house",
 "doc-transcript-2022-05-17":"document/hearing-transcript-hpsci-open-hearing-on-unidentified-aerial",
 "doc-transcript-2023-04-19":"document/hearing-transcript-aaro-mission-activities-oversight-and-budget",
+"doc-transcript-2023-07-26":"document/hearing-transcript-uap-implications-on-national-security-public",
 "doc-transcript-2024-11-13":"document/hearing-transcript-unidentified-anomalous-phenomena-exposing-the",
 "doc-transcript-2025-09-09":"document/hearing-transcript-restoring-public-trust-through-uap",
 "doc-twining-memo-1947":"document/twining-memo-amc-opinion-concerning-flying-discs",
@@ -711,6 +711,7 @@
 "luis-elizondo":"person/luis-elizondo",
 "mario-woods":"person/mario-woods",
 "masato-kono":"person/masato-kono",
+"matt-gaetz":"person/matt-gaetz",
 "meng-zhaoguo":"person/meng-zhaoguo",
 "michael-gold":"person/michael-gold",
 "michael-johnson":"person/michael-johnson",
@@ -789,6 +790,7 @@
 "richard-barth":"person/richard-barth",
 "richard-french":"person/richard-french",
 "robert-bigelow":"person/robert-bigelow",
+"robert-garcia":"person/robert-garcia",
 "roberto-pinotti":"person/roberto-pinotti",
 "rodrigo-bravo":"person/rodrigo-bravo",
 "ronald-moultrie":"person/ronald-moultrie",
@@ -948,5 +950,4 @@
 "white-house":"organization/white-house",
 "wilfried-de-brouwer":"person/wilfried-de-brouwer",
 "yasukazu-hamada":"person/yasukazu-hamada",
-"yoshiharu-asakawa":"person/yoshiharu-asakawa"
-}
+"yoshiharu-asakawa":"person/yoshiharu-asakawa"}

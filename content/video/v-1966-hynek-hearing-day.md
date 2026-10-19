@@ -6,7 +6,15 @@ rel:
   - [ features, j-allen-hynek ]
 moments:
   - t: "0:18"
-    text: Hynek’s comments to reporters at the end of the hearing on what should be done with the unexplained cases.
+    text: "Hynek’s comments to reporters at the end of the hearing on what should be done with the unexplained cases."
+    speaker: j-allen-hynek
+    refs: [ h-1966-04-05, project-blue-book ]
+  - t: "0:36"
+    text: "Hynek: “none of the evidence that I have examined would indicate any proof at all” that we are being visited."
+    speaker: j-allen-hynek
+    refs: [ project-blue-book ]
+  - t: "0:50"
+    text: "Hynek says he picked some 20 unexplained cases with “possible scientific pay dirt” and recommends a quiet scientific look at the data, “without fanfare”, keeping an open mind."
     speaker: j-allen-hynek
     refs: [ h-1966-04-05, project-blue-book ]
 ---

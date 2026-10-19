@@ -14,6 +14,38 @@ moments:
     text: "Witnesses affirm they will tell the truth to the panel. Robert Salas opens with the March 1967 Malmstrom incident, when he was a first lieutenant and deputy missile combat crew commander for Minuteman I missiles."
     speaker: bob-salas
     refs: [ inc-malmstrom-1967 ]
+  - t: "2:00"
+    text: "Salas: on the evening of 24 March 1967, alone at the console in Oscar Flight's capsule, he got two calls from his flight security controller, the second reporting a red, pulsating oval object 30–40 feet across hovering above the front gate."
+    speaker: bob-salas
+    refs: [ inc-malmstrom-1967 ]
+  - t: "3:40"
+    text: "Salas: as he started to brief his commander, “we lost alert status on all 10 missiles while this object was above our facility,” each reporting a guidance and control system failure."
+    speaker: bob-salas
+    refs: [ inc-malmstrom-1967 ]
+  - t: "8:02"
+    text: "Salas plays his 1996 phone recording of Col. Walter Figel, deputy crew commander at Echo Flight, describing reports of UFOs over two launch sites as all ten Echo missiles went down on 16 March 1967."
+    speaker: bob-salas
+    refs: [ inc-malmstrom-1967 ]
+  - t: "10:00"
+    text: "Salas says his crew was ordered to sign non-disclosure statements, and stresses that the capsule never lost electrical power."
+    speaker: bob-salas
+    refs: [ inc-malmstrom-1967 ]
+  - t: "11:01"
+    text: "Salas reads from the unit history he supplied: the investigating team's opinion was that “externally generated signals” shut the Echo missiles down, since all ten couplers failing within seconds was very remote."
+    speaker: bob-salas
+    refs: [ inc-malmstrom-1967 ]
+  - t: "12:00"
+    text: "Salas: Boeing engineer Robert Kaminski, who led the Echo investigation, was told not to submit his final report because the incident was reported as a UFO event."
+    speaker: bob-salas
+    refs: [ inc-malmstrom-1967 ]
+  - t: "14:00"
+    text: "Salas argues that the Air Force kept the Echo and Oscar shutdowns from the University of Colorado (Condon) study, whose report was the basis for ending Project Blue Book in December 1969."
+    speaker: bob-salas
+    refs: [ project-blue-book, inc-malmstrom-1967 ]
+  - t: "17:20"
+    text: "Salas: the Malmstrom operations officer told Blue Book in writing that his office had “no knowledge of equipment malfunctions” during the UFO sightings; Salas concludes the Air Force “was and is engaged in lying and disinforming the public.”"
+    speaker: bob-salas
+    refs: [ project-blue-book, inc-malmstrom-1967 ]
   - t: "18:59"
     text: "Capt. David Schindele (USAF, ret.), Minot AFB launch control officer, says that in 1966 he was told never to speak of an incident and that “as far as I was concerned it never happened.”"
     speaker: david-schindele
@@ -39,4 +71,21 @@ moments:
   - t: "44:20"
     text: "Fenstermacher says the missiles never went offline. Back at base, an officer tore up the crew's personal notes and had them sign documents; they were told the incident was classified and “officially never happened.”"
     speaker: bruce-fenstermacher
+  - t: "47:01"
+    text: "Fenstermacher relays an account from a former security alert team member: approaching a launch facility they saw a pulsating light with a beam extending down to it, and crashed their truck racing away after one of them reached into the beam."
+    speaker: bruce-fenstermacher
+  - t: "50:40"
+    text: "Researcher Richard Dolan begins his testimony on declassified records of unknown objects over U.S. nuclear facilities."
+  - t: "55:00"
+    text: "Dolan cites FBI documents of January 1949 and August 1950 on repeated sightings over Los Alamos, including green fireballs, with some 150 observations by mid-1950, and teletypes on radar unknowns over Oak Ridge in 1950."
+  - t: "1:05:00"
+    text: "Asked about recent cases, a panelist points to the 2010 loss of contact with 50 missiles at F.E. Warren AFB, which the Air Force attributed to a computer glitch, and says witnesses have reported seeing an object at the time."
+  - t: "1:12:01"
+    text: "Asked why he speaks despite his oath, Salas says he kept silent for nearly 30 years until a 1994 book mentioned the Malmstrom shutdowns; a FOIA request then led the Air Force to declassify the Echo incident."
+    speaker: bob-salas
+    refs: [ inc-malmstrom-1967 ]
+  - t: "1:19:30"
+    text: "Asked about Project Blue Book, Salas says the only follow-up he got was a paper to sign, and that Blue Book kept a secret set of files alongside the public ones, holding the classified Malmstrom report."
+    speaker: bob-salas
+    refs: [ project-blue-book, inc-malmstrom-1967 ]
 ---
