@@ -9,6 +9,11 @@ credentials:
 tags: [aviator, international]
 rel:
   - [ witness, inc-alderney-2007 ]
+facts:
+  - text: "Captain Ray Bowyer recounted his 2007 sighting near Alderney and urged aircrew to report what they see."
+    status: claimed
+    by: ray-bowyer
+    source: v-npc-2007-ufo-close-encounters@49:04
 ---
 
 Airline captain who reported the 2007 Alderney sighting through official aviation channels and has since described it in many interviews, including the National Press Club panel in 2007.

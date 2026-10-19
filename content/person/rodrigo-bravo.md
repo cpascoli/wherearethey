@@ -4,6 +4,11 @@ credentials:
   - category: aviator
     role: Captain and pilot, Chilean Army aviation; involved in Chile's official UAP committee (CEFAA)
 tags: [aviator, international]
+facts:
+  - text: "Capt. Rodrigo Bravo of Chilean Army aviation described Chile's official UAP investigations at the 2007 National Press Club panel."
+    status: claimed
+    by: rodrigo-bravo
+    source: v-npc-2007-ufo-close-encounters@28:41
 ---
 
 Rodrigo Bravo is a captain and pilot in Chilean Army aviation who has worked with CEFAA, Chile's official committee for the study of anomalous aerial phenomena. He spoke about Chile's official approach at the National Press Club event on UFOs in November 2007.

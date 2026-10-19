@@ -16,6 +16,19 @@ links:
     url: https://www.deps.org/DEPSpages/DEsysSymp22ShortCourse.html
   - label: Dan Isbell on X (April 2025 post on the 1980 sighting)
     url: https://x.com/DanTannaIsbell/status/1916235534088999148
+facts:
+  - text: "Isbell says that on 26 December 1980, driving home from RAF Upper Heyford, he saw a silent 50–60-foot triangular craft hover over a golf course from about 150 feet away, and told no one for 43 years."
+    status: claimed
+    by: dan-isbell
+    source: v-2026-10-08-air-force-test-pilot-saw-a-silent-triangular-craf@1:17:38
+  - text: "He says that in 1990, as a Test Pilot School instructor at Edwards AFB, he watched a silent black triangle, perhaps 300 feet across, blot out the stars as it passed slowly overhead."
+    status: claimed
+    by: dan-isbell
+    source: v-2026-10-15-test-pilot-watched-a-300-foot-black-triangle-blot@3:30
+  - text: "He says Ryan Graves arranged an FBI interview, and the FBI later asked to release his account without his name."
+    status: claimed
+    by: dan-isbell
+    source: v-2026-10-08-air-force-test-pilot-saw-a-silent-triangular-craf@1:07:03
 ---
 
 Dan Isbell is a retired U.S. Air Force pilot who served 27 years. A Georgia Tech aerospace-engineering graduate, he went straight from pilot training to the left seat of the F-111 at RAF Upper Heyford in England, where he stood nuclear "Victor alert", and later graduated from the Air Force Test Pilot School and flew more than 70 aircraft types. His posts included commander of the 514th Flight Test Squadron, chief of the F-16 System Program Office and air-vehicle program manager in the F/A-22 program office; after retiring he worked on directed-energy weapons and taught directed-energy systems engineering.
