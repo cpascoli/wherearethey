@@ -49,7 +49,7 @@ moments:
     text: "Elizondo relays that a week-long White House-sponsored meeting in 2004 concluded the public was not ready for disclosure; he says the participants, not he, should tell it."
     speaker: luis-elizondo
   - t: "1:40:26"
-    text: "Elizondo: “disclosure is a marathon, not a sprint.”"
+    text: "Elizondo: “disclosure is a marathon. It's not a sprint.”"
     speaker: luis-elizondo
 ---
 
