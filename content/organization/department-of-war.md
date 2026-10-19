@@ -7,6 +7,10 @@ aka:
   - Pentagon
 tags:
   - government
+facts:
+  - text: "The Department of War runs PURSUE at war.gov/UFO and is its largest contributor, with 257 of the 450 records in releases 01–06."
+    status: documented
+    source: pursue
 ---
 
 The U.S. Department of Defense, styled the Department of War on war.gov, oversees the armed forces and most U.S. government UAP work: the Air Force's Projects Sign and Blue Book, the DIA's AAWSAP, the Navy's UAP Task Force, and today's All-domain Anomaly Resolution Office (AARO).
