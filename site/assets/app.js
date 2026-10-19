@@ -1982,6 +1982,10 @@
     const ent = byId.get(id);
     if (!ent) return;
     if (ent.type === 'record') { go('graph'); select(id); return; } // records aren't graph nodes: just open the card
+    clearFilters(ent);
+    startTrail(id);
+  }
+  function clearFilters(ent) {
     state.types = new Set(graphTypes);
     state.tags.clear();
     state.yr = [MIN_Y, MAX_Y];
@@ -1989,7 +1993,6 @@
     state.credibleOnly = ent.cred !== 'outside';
     state.hiddenIds.clear();
     filtersChanged();
-    startTrail(id);
   }
   $('#view-home').addEventListener('click', e => {
     const pr = e.target.closest('[data-preset]');
@@ -2206,15 +2209,26 @@
       e.preventDefault();
       const fromSearch = !!g.closest('#q-results'), ent = byId.get(g.dataset.goto);
       $('#q-results').hidden = true;
-      // a search result picked on the graph (or home) starts a trail from it: the first step, ready to follow
-      if (fromSearch && ['graph', 'home'].includes(state.view) && ent && ent.type !== 'record') {
-        if (!state.types.has(ent.type)) { state.types.add(ent.type); filtersChanged(); }
+      // a search result picked from any page opens Explore and starts a trail from it: the first step, ready to
+      // follow (filters are cleared if they would hide it)
+      if (fromSearch && ent && ent.type !== 'record') {
+        if (!visible.has(ent.id)) clearFilters(ent);
+        else if (!state.types.has(ent.type)) { state.types.add(ent.type); filtersChanged(); }
         startTrail(ent.id);
         if (window.innerWidth > 860 && state.sel === ent.id) openPanel(ent.id); // desktop: the card opens alongside
         if (window.innerWidth <= 860) $('#side').classList.remove('open');
         return;
       }
-      if (state.view === 'home') go('graph');
+      if (state.view === 'home' || (fromSearch && state.view !== 'graph')) go('graph'); // records: Explore with the card open
+      // following a link from the reading view: back to the side panel with clean filters, so the new file is
+      // visible in the middle; on the graph it also joins the trail (or starts one)
+      if (state.reading && g.closest('#panel') && ent) {
+        state.reading = false; $('#app').classList.remove('reading');
+        if (ent.type !== 'record') clearFilters(ent);
+        if (state.view === 'graph' && ent.type !== 'record') { followFile(ent.id); if (state.sel === ent.id) openPanel(ent.id); }
+        else select(ent.id, { from: 'link' });
+        return;
+      }
       select(g.dataset.goto, { from: 'link' });
       if (window.innerWidth <= 860) $('#side').classList.remove('open');
     }
