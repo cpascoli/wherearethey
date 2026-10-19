@@ -4,6 +4,28 @@ youtube: R8TqBrrqL4U
 rel:
   - [ features, david-grusch ]
 moments:
+  - t: "0:33"
+    text: "Grusch: 14 years as an Air Force intelligence officer (seven active, seven reserve) and later a GS-15 at the NGA; he handled the presidential daily brief for the NRO director and was not a believer."
+    speaker: david-grusch
+  - t: "4:30"
+    text: "Grusch: in early 2019 the UAP Task Force director asked his NRO boss for a representative, and he joined, interviewing pilots and flag officers and seeing radar data of objects making turns that made no sense."
+    speaker: david-grusch
+    refs: [ uaptf ]
+  - t: "5:38"
+    text: "Grusch relays an interview with a 30-year senior Navy officer who saw a roughly 300-foot triangle with purplish glowing edges pace his car near a naval facility; the car's paint turned milky, which Grusch reads as ionizing radiation — he says he saw photographs."
+    speaker: david-grusch
+  - t: "11:15"
+    text: "Grusch: in fall 2019 a very senior intelligence official introduced him to a PhD-level source who said, in a secure facility, that he had worked on a program reverse-engineering crash material recovered over decades."
+    speaker: david-grusch
+    refs: [ crash-retrieval, legacy-program ]
+  - t: "12:57"
+    text: "Grusch: he and colleagues interviewed about 40 people, up to generals and agency directors, cross-checked their accounts and documents, and were refused access by the program's “gatekeepers”."
+    speaker: david-grusch
+    refs: [ legacy-program ]
+  - t: "15:09"
+    text: "Grusch: his complaint on the crash-retrieval program was deemed “credible and urgent” in July 2022 and sent to the DNI and the congressional intelligence committees; he later gave about 11–12 hours of classified testimony."
+    speaker: david-grusch
+    refs: [ ev-grusch-icig-complaint-2022 ]
   - t: "16:42"
     text: "Grusch says he cleared the 1933 retrieval in Magenta, Italy, for public discussion to show the phenomenon is old and international; Pope Pius XII and the Vatican back-channelled it through the OSS to Roosevelt."
     speaker: david-grusch
@@ -12,5 +34,61 @@ moments:
     text: "Grusch describes the Magenta craft: probably a lenticular disc whose edges broke off on impact, leaving a bell or acorn shape, with no biological remains."
     speaker: david-grusch
     refs: [ inc-magenta-1933 ]
+  - t: "25:14"
+    text: "Grusch: the number of recoveries is “double digit”; he won't give the exact figure to avoid helping foreign intelligence services."
+    speaker: david-grusch
+    refs: [ crash-retrieval ]
+  - t: "26:55"
+    text: "Grusch: in spring 2021 he briefed Harry Reid at his Las Vegas home; Reid said he knew the U.S. had UFO material, had been denied access for decades, and would raise it with President Biden."
+    speaker: david-grusch
+    refs: [ harry-reid ]
+  - t: "29:16"
+    text: "Grusch: AAWSAP's real purpose was a bigoted, waived special access program Reid requested to receive material; Lockheed Martin wanted to divest 1950s hull fragments to Bigelow's facility, but the CIA killed the transfer — so the program turned to Skinwalker Ranch."
+    speaker: david-grusch
+    refs: [ aawsap, lockheed-martin, bigelow-aerospace, skinwalker-ranch, harry-reid ]
+  - t: "32:17"
+    text: "Grusch points to James Lacatski's book and his statement that the U.S. broke into an intact craft, and urges AARO and Congress to take Lacatski's classified testimony."
+    speaker: david-grusch
+    refs: [ james-lacatski, aaro ]
+  - t: "38:15"
+    text: "Grusch: friends working on the program complained that compartmentation kept engineers from even talking across cubicles, which he calls debilitating to progress."
+    speaker: david-grusch
+    refs: [ legacy-program ]
+  - t: "41:19"
+    text: "Grusch: in the AATIP/AAWSAP archives he read a stolen foreign-adversary assessment discussing the U.S. reverse-engineering program; when he sought the full report, the holding agency debriefed him from his accesses."
+    speaker: david-grusch
+    refs: [ aatip, aawsap ]
+  - t: "45:59"
+    text: "Grusch on the Schumer–Rounds UAP Disclosure Act: a presidential review board and controlled disclosure modeled on the JFK Records Act, which he says Reps. Mike Turner and Mike Rogers were blocking in the House."
+    speaker: david-grusch
+    refs: [ doc-uap-disclosure-act-2023, chuck-schumer ]
+  - t: "53:13"
+    text: "Grusch calls for a truth-and-reconciliation process, and says “we're not alone” with near certainty based on the people he spoke to."
+    speaker: david-grusch
+  - t: "54:55"
+    text: "Grusch: program insiders used “extraterrestrial”, but the Schumer amendment deliberately says non-human intelligence; he entertains interdimensional ideas in the vein of Jacques Vallée."
+    speaker: david-grusch
+    refs: [ nhi, jacques-vallee ]
+  - t: "1:03:43"
+    text: "Grusch: interaction with the beings was a sensitive subject senior officials would not discuss; besides craft, biologics — dead pilots — were recovered."
+    speaker: david-grusch
+    refs: [ nhi, crash-retrieval ]
+  - t: "1:06:45"
+    text: "Grusch on reprisals: agencies questioned his mental health over PTSD he had already reported, he was investigated without being interviewed, a boss was fired, and twice someone showed him and his wife “they can touch me at any time”."
+    speaker: david-grusch
+  - t: "1:24:00"
+    text: "Grusch: he brought people who worked on the biological analysis to congressional staff, which helped give members confidence to write the Schumer amendment; Garry Nolan is the kind of scientist who should be on it."
+    speaker: david-grusch
+    refs: [ garry-nolan, doc-uap-disclosure-act-2023 ]
+  - t: "1:28:56"
+    text: "Asked whether remains exist, Grusch: “oh yes”, of varying kinds; no source told him their origin, and accounts of live interactions were second-hand water-cooler talk he won't repeat."
+    speaker: david-grusch
+    refs: [ nhi ]
+  - t: "1:32:29"
+    text: "Grusch cites Barry Goldwater's account of being rebuffed by Gen. Curtis LeMay over a UFO room, and Mike Pompeo's remark about having seen “the UFO file”."
+    speaker: david-grusch
+  - t: "2:35:49"
+    text: "Grusch: advisers to a recent administration warned against disclosure chiefly over white-collar liability — decades of sole-source contracts that losing contractors could litigate to the Supreme Court."
+    speaker: david-grusch
 ---
 
