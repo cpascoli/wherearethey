@@ -82,10 +82,14 @@
     }
   }
   const momentsFor = new Map();
-  for (const v of videos) for (const m of v.moments || []) {
-    for (const id of new Set([...m.refs, m.speaker].filter(Boolean))) {
-      if (!momentsFor.has(id)) momentsFor.set(id, []);
-      momentsFor.get(id).push({ video: v.id, ...m });
+  for (const v of videos) {
+    // a hearing (or event) shows every moment of its recordings, not only the ones that name it
+    const of = adj.get(v.id).filter(x => x.dir === 'out' && x.label === 'recording of' && ['hearing', 'event'].includes(byId.get(x.other)?.type)).map(x => x.other);
+    for (const m of v.moments || []) {
+      for (const id of new Set([...m.refs, m.speaker, ...of].filter(Boolean))) {
+        if (!momentsFor.has(id)) momentsFor.set(id, []);
+        momentsFor.get(id).push({ video: v.id, ...m });
+      }
     }
   }
 
@@ -1032,9 +1036,9 @@
     // curated moments
     const ms = e.type === 'video' ? (e.moments || []).map(m => ({ video: e.id, ...m })) : (momentsFor.get(e.id) || []);
     if (ms.length) {
-      h.push(`<div class="p-sec"><h4>Video moments <span>${ms.length}</span></h4>${ms.sort((a, b) => a.video.localeCompare(b.video) || a.t - b.t).map(m => `
+      h.push(`<div class="p-sec"><h4>Video moments <span>${ms.length}</span></h4><div data-collapse="12">${ms.sort((a, b) => a.video.localeCompare(b.video) || a.t - b.t).map(m => `
         <div class="moment"><button class="ts" data-play="${m.video}@${m.t}">▶ ${fmtT(m.t)}</button><div><div>${esc(m.text)}</div>
-        <div class="who">${m.speaker && m.speaker !== e.id ? chip(m.speaker) : ''}${e.type !== 'video' ? chip(m.video) : m.refs.map(r => chip(r)).join('')}</div></div></div>`).join('')}</div>`);
+        <div class="who">${m.speaker && m.speaker !== e.id ? chip(m.speaker) : ''}${e.type !== 'video' ? chip(m.video) : m.refs.map(r => chip(r)).join('')}</div></div></div>`).join('')}</div></div>`);
     }
     // official records (PURSUE) linked to this entry
     const recs = [...new Set(adj.get(e.id).filter(x => x.kind !== 'mention' && byId.get(x.other)?.type === 'record').map(x => x.other))]

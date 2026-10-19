@@ -107,6 +107,11 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     if (e.type === 'video' && e.moments?.length) {
       h.push(`<h2>Key moments</h2><ol class="ssr-moments">${e.moments.map(m => `<li><a href="${e.path}?t=${Math.floor(m.t)}">${hms(m.t)}</a> ${m.speaker ? `${link(m.speaker)}: ` : ''}${esc(m.text)}</li>`).join('')}</ol>`);
     }
+    // a hearing or event page lists the moments of its recordings, linked into each video
+    if (['hearing', 'event'].includes(e.type)) {
+      const recs = (near.get(e.id) || []).filter(x => x.dir === 'in' && x.label === 'recording of' && byId.get(x.other)?.moments?.length).map(x => byId.get(x.other));
+      for (const v of recs) h.push(`<h2>Key moments: ${esc(v.name)}</h2><ol class="ssr-moments">${v.moments.map(m => `<li><a href="${v.path}?t=${Math.floor(m.t)}">${hms(m.t)}</a> ${m.speaker ? `${link(m.speaker)}: ` : ''}${esc(m.text)}</li>`).join('')}</ol>`);
+    }
     const t = transcripts.get(e.id);
     if (t && FULL_TRANSCRIPT(e)) {
       // paragraphs of roughly a minute, each with its timestamp
