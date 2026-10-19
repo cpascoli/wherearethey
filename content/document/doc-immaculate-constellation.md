@@ -13,6 +13,14 @@ rel:
   - [ about, immaculate-constellation ]
   - [ submitted by, michael-shellenberger ]
   - [ published by, nancy-mace ]
+facts:
+  - text: "The report was entered into the record of the House Oversight hearing of 13 November 2024, listed as “Report, Pentagon, ‘Immaculate Constellation’; submitted by Rep. Mace.”"
+    status: documented
+    source: library/docs/doc-transcript-2024-11-13.pdf
+  - text: "Shellenberger testified that the whistleblower report describes Immaculate Constellation as an unacknowledged special access program consolidating UAP imagery and signature intelligence."
+    status: claimed
+    by: michael-shellenberger
+    source: v-2024-11-13-hearing-a@56:33
 ---
 
 A whistleblower report submitted to Congress by the journalist Michael Shellenberger and entered into the record of the House Oversight hearing of 13 November 2024 by Rep. Nancy Mace. Its author, unnamed, alleges that "Immaculate Constellation" is an unacknowledged special access programme, set up after the 2017 AATIP revelations, that collects and controls high-quality imagery and sensor data on UAP gathered by U.S. military assets, keeping it from circulating within the military intelligence enterprise.

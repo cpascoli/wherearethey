@@ -12,6 +12,10 @@ links:
 rel:
   - [ part of, doc-dirds ]
   - [ related to, dow-uap-d138 ]
+facts:
+  - text: "Released in PURSUE release 06 as record DOW-UAP-D138, with an AARO summary noting that the concept “relies entirely on unverified assumptions” and “offers no viable engineering pathway toward a functioning propulsion system.”"
+    status: documented
+    source: dow-uap-d138
 ---
 
 *Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions* (April 2010) is one of the 38 Defense Intelligence Reference Documents commissioned under the DIA's AAWSAP programme.

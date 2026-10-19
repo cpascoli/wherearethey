@@ -10,6 +10,10 @@ rel:
 links:
   - label: war.gov/UFO — release 01
     url: https://www.war.gov/UFO/?release=01
+facts:
+  - text: "PURSUE release 01, published on 8 May 2026, added 158 records."
+    status: documented
+    source: https://www.war.gov/UFO/?release=01
 ---
 
 Release 01 of PURSUE, the U.S. government's public catalogue of declassified UAP records hosted by the Department of War, was published on 8 May 2026. It added 158 records: 79 from the Department of War, 57 from the FBI, 15 from NASA and 7 from the State Department.

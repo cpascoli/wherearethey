@@ -12,6 +12,13 @@ links:
 rel:
   - [ produced by, odni ]
   - [ defines, cap ]
+facts:
+  - text: "The directive establishes the oversight and management of Intelligence Community special access programs, known in the IC as Controlled Access Programs (CAPs), and states that their establishment “shall be kept to an absolute minimum”."
+    status: documented
+    source: library/docs/doc-icd-906.pdf
+  - text: "It does not apply to special access programs established by the Secretaries of State, Defense, Energy or Homeland Security, or the Attorney General."
+    status: documented
+    source: library/docs/doc-icd-906.pdf
 ---
 
 Intelligence Community Directive 906 sets the rules for Controlled Access Programs (CAPs), the intelligence community's version of special access programmes, under Executive Order 13526. It applies to CAPs established under the Director of National Intelligence's authority, both SCI and non-SCI, and states that CAPs exist "to protect extraordinarily sensitive national security operations, capabilities, and intelligence activities", that they must be "kept to an absolute minimum", and that their effect on information sharing must be weighed.

@@ -10,6 +10,15 @@ links:
     url: https://docs.house.gov/Committee/Calendar/ByEvent.aspx?EventID=114761
 rel:
   - [ transcript of, h-2022-05-17 ]
+facts:
+  - text: "Ronald Moultrie and Scott Bray testified; Bray stated that “Reports of sightings are frequent and continuing”, and that “When it comes to material that we have, we have no material.”"
+    status: documented
+    by: scott-bray
+    source: library/docs/doc-transcript-2022-05-17.pdf
+  - text: "Bray testified that there had been no collisions but “at least 11 near misses”."
+    status: documented
+    by: scott-bray
+    source: library/docs/doc-transcript-2022-05-17.pdf
 ---
 
 The transcript of the House Intelligence subcommittee's open hearing on UAP on 17 May 2022, chaired by Rep. André Carson, the first public congressional hearing on the subject in over fifty years. The witnesses were Ronald Moultrie, Under Secretary of Defense for Intelligence and Security, and Scott Bray, Deputy Director of Naval Intelligence.

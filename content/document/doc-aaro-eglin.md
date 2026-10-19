@@ -9,6 +9,13 @@ links:
     url: https://www.aaro.mil/portals/136/PDFs/case_resolution_reports/Case_Resolution_of_Eglin_UAP_2_508_.pdf
 rel:
   - [ published by, aaro ]
+facts:
+  - text: "AARO's case resolution of 14 October 2023 assessed the object reported on 26 January 2023 near Eglin AFB as “very likely a lighter-than-air object, such as a large commercial lighting balloon”, with moderate confidence."
+    status: documented
+    source: library/docs/doc-aaro-eglin.pdf
+  - text: "It attributes the jet's radar failure to a circuit breaker that had tripped three times before on the same aircraft."
+    status: documented
+    source: library/docs/doc-aaro-eglin.pdf
 ---
 
 An AARO case resolution of 14 October 2023 on a report from 26 January 2023, when a military pilot on the Eglin Air Force Base training range off Florida detected four objects on radar at 16,000–18,000 feet, apparently flying in formation, saw one of them and captured two infrared still images of it. The pilot described a gray, paneled object about 12 feet across with orange-red colouring, a rounded bottom and a cone-shaped top like an "Apollo spacecraft", and said the jet's radar failed on closing within 4,000 feet.

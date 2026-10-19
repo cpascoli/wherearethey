@@ -16,6 +16,15 @@ links:
     url: https://archive.org/details/ufo_1966_1
 rel:
   - [ transcript of, h-1966-04-05 ]
+facts:
+  - text: "Air Force Secretary Harold Brown told the committee that 18 years of investigation had not identified any threat to national security, or any evidence of extraterrestrial vehicles, and that the Air Force would continue to investigate with an open mind."
+    status: documented
+    by: harold-brown
+    source: library/docs/doc-transcript-1966-04-05.pdf
+  - text: "Chairman L. Mendel Rivers opened the session: “We can't just write them off. There are too many responsible people who are concerned.”"
+    status: documented
+    by: l-mendel-rivers
+    source: library/docs/doc-transcript-1966-04-05.pdf
 ---
 
 The printed record of the House Armed Services Committee hearing on UFOs on 5 April 1966, called after the March 1966 Michigan sightings that the Air Force consultant J. Allen Hynek had partly attributed to "swamp gas". It includes House Minority Leader Gerald Ford's statement that he did not agree all the reports could be "so easily explained away", testimony from Air Force Secretary Harold Brown, Hynek and Blue Book chief Maj. Hector Quintanilla, and Air Force case material.
