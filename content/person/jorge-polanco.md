@@ -7,6 +7,11 @@ credentials:
 tags: [aviator, international]
 rel:
   - [ witness, inc-bariloche-1995 ]
+facts:
+  - text: "Polanco, captain of Aerolíneas Argentinas flight 674, said that on approach to Bariloche on 31 July 1995 a white light rushed towards the aircraft and stopped about 100 m away, and an object with three lights later flew alongside."
+    status: claimed
+    by: jorge-polanco
+    source: https://ufologie.patrickgross.org/press/clarin2aug1995.htm
 ---
 
 Jorge Polanco was the captain of Aerolíneas Argentinas flight 674, a Boeing 727, on 31 July 1995. On approach to San Carlos de Bariloche he saw a white light rush towards the aircraft and stop about 100 metres away, and during the renewed approach an object with three lights flew parallel to the plane for about 17 minutes, while the airport and city lights reportedly went out.

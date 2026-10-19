@@ -8,6 +8,11 @@ tags:
   - military
 rel:
   - [ succeeded by, aaro ]
+facts:
+  - text: "Opening the May 2022 HPSCI hearing, Chairman André Carson said Congress had rewritten the charter of the UAP task force, “now called the Airborne Object Identification and Management Synchronization Group, or AOIMSG for short.”"
+    status: documented
+    by: andre-carson
+    source: library/docs/doc-transcript-2022-05-17.pdf
 ---
 
 The Airborne Object Identification and Management Synchronization Group was set up on 23 November 2021 by Deputy Secretary of Defense Kathleen Hicks, in coordination with the Director of National Intelligence, as the successor to the Navy's UAP Task Force. Its remit was to detect, identify and attribute objects in special-use airspace and assess threats to flight safety and national security.

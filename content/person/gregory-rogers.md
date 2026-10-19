@@ -12,6 +12,11 @@ tags:
   - air-force
 rel:
   - [ worked at, nasa ]
+facts:
+  - text: "Rogers says an Air Force major at Cape Canaveral showed him security footage of a white saucer about 20 feet wide levitating inside a military hangar; no footage or record has been released."
+    status: claimed
+    by: gregory-rogers
+    source: v-jm-greg-rogers@0:11
 ---
 
 Gregory Rogers is a former NASA chief flight surgeon and retired U.S. Air Force major. He says that around 1992 an Air Force major at Cape Canaveral showed him security footage of a white saucer about 20 feet wide levitating inside a military hangar; no footage or record has been released.

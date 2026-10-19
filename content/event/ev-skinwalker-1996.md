@@ -6,6 +6,10 @@ tags:
 rel:
   - [ about, skinwalker-ranch ]
   - [ about, robert-bigelow ]
+facts:
+  - text: "Robert Bigelow bought Skinwalker Ranch, a 512-acre property in Utah, in 1996."
+    status: unverified
+    source: https://en.wikipedia.org/wiki/Skinwalker_Ranch
 ---
 
 In 1996 the Las Vegas businessman Robert Bigelow bought Skinwalker Ranch in Utah's Uinta Basin for $200,000 from the family of Terry Sherman, whose stories of cattle mutilations and strange lights had persuaded him to investigate.

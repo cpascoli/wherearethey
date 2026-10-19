@@ -7,6 +7,15 @@ tags:
   - missing-time
 rel:
   - [ witness, travis-walton ]
+facts:
+  - text: "Six days after his disappearance, Travis Walton said he was struck by “a physical blow” from a craft and woke on a table with beings leaning over him."
+    status: claimed
+    by: travis-walton
+    source: v-walton-first-interview-1975@2:04
+  - text: "Walton says the sheriff had other reports that night of a glow rising and streaking off, from hunters and fishermen at Black Canyon Lake."
+    status: claimed
+    by: travis-walton
+    source: v-jre-travis-walton-2021@1:33
 ---
 
 On 5 November 1975, a seven-man forestry crew led by Mike Rogers was driving home from a thinning contract in the Apache-Sitgreaves National Forest near Heber, Arizona, when they said they saw a glowing object hovering over a clearing. Travis Walton, 22, got out and walked towards it; the crew said a beam of light struck him and threw him to the ground, and they drove off in panic. When they returned, Walton and the object were gone.

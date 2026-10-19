@@ -6,6 +6,10 @@ tags:
   - crash-retrieval
 rel:
   - [ about, doc-wilson-memo ]
+facts:
+  - text: "In May 2022 the notes were entered into the record of the HPSCI open hearing at Rep. Mike Gallagher's request; entry into the record confirms provenance, not accuracy."
+    status: documented
+    source: doc-wilson-memo
 ---
 
 In 2019 a 15-page document began circulating online that presents itself as notes typed by the physicist Eric Davis of a 16 October 2002 conversation with retired Vice Adm. Thomas R. Wilson, a former director of the Defense Intelligence Agency. According to the notes, Wilson tried to gain access to a covert programme reverse-engineering recovered craft but was refused by its gatekeepers.

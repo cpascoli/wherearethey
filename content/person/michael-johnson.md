@@ -5,6 +5,11 @@ credentials:
     role: Sergeant, U.S. Air Force (Ellsworth AFB)
 tags:
   - air-force
+facts:
+  - text: "Johnson and Mario Woods answered a security alarm at the N-5 Minuteman silo at Ellsworth AFB in November 1977 and say they saw a massive pulsating craft over the site."
+    status: claimed
+    by: mario-woods
+    source: v-michels-mario-woods-2025@0:11
 ---
 
 Michael Johnson was a U.S. Air Force sergeant at Ellsworth Air Force Base who, with Mario Woods, answered an alarm at the N-5 Minuteman silo in November 1977. Both men describe seeing a huge craft over the site and hours of missing time; the Air Force then separated the two men and one was discharged. They reunited for interviews and a joint hypnotic regression in 2025–2026.

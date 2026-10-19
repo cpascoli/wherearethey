@@ -6,6 +6,11 @@ tags:
   - abduction
 rel:
   - [ witness, sandra-larson ]
+facts:
+  - text: "Sandra Larson said that on 26 August 1975, driving from Fargo to Bismarck, she, her daughter and her daughter's boyfriend saw glowing orange spheres over Interstate 94 and lost about an hour. There is no physical evidence or independent corroboration."
+    status: unverified
+    by: sandra-larson
+    source: https://hpr1.com/the-sandra-larson-incident/
 ---
 
 Sandra Larson, 32, said that early on 26 August 1975, while being driven from Fargo to Bismarck, North Dakota, by her daughter Jackie's boyfriend, the three saw several glowing orange spheres descend over Interstate 94 about 45 miles west of Fargo, and afterwards could not account for roughly an hour.

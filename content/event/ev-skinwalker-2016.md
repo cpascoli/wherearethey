@@ -6,6 +6,10 @@ tags:
 rel:
   - [ about, skinwalker-ranch ]
   - [ about, brandon-fugal ]
+facts:
+  - text: "Brandon Fugal acquired Skinwalker Ranch from Robert Bigelow in 2016."
+    status: unverified
+    source: https://en.wikipedia.org/wiki/Skinwalker_Ranch
 ---
 
 In 2016 Robert Bigelow sold Skinwalker Ranch to Adamantium Real Estate LLC for around $500,000. The Utah real-estate developer Brandon Fugal announced in March 2020 that he was the owner behind the purchase.

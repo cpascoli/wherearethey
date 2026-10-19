@@ -7,6 +7,15 @@ tags:
 rel:
   - [ witness, charles-hickson ]
   - [ witness, calvin-parker ]
+facts:
+  - text: "In his recorded statement to the Jackson County sheriff's officers, Charles Hickson said three beings floated him into a craft hovering near the pier where he and Calvin Parker were fishing."
+    status: claimed
+    by: charles-hickson
+    source: v-pascagoula-sheriff-tape-1973@4:38
+  - text: "Calvin Parker, then 19, kept his own account private for close to four decades, until 2018."
+    status: claimed
+    by: calvin-parker
+    source: v-fox10-calvin-parker-2023@1:34
 ---
 
 On the evening of 11 October 1973, Charles Hickson, 45, and Calvin Parker, 17, were fishing on the west bank of the Pascagoula River in Mississippi when, they said, they heard a whirring sound, saw flashing blue lights and an oval object 30–40 feet across, and were taken aboard by three creatures with pincer-like hands and examined before being released.

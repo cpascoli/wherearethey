@@ -7,6 +7,11 @@ tags:
   - missing-time
 rel:
   - [ witness, barney-betty-hill ]
+facts:
+  - text: "Betty Hill retold the September 1961 encounter in the White Mountains in a 1999 interview, including the “star map” later linked to Zeta Reticuli."
+    status: claimed
+    by: barney-betty-hill
+    source: v-betty-hill-1999-interview@44:58
 ---
 
 On the night of 19–20 September 1961, Barney Hill, a postal worker, and Betty Hill, a social worker, both civil-rights activists from Portsmouth, New Hampshire, were driving home from a holiday when they reported a bright, erratically moving craft following their car through the White Mountains, near Lancaster. Barney later said the beings he glimpsed were "somehow not human". In interviews with NICAP investigators that November, the couple realised the drive had taken about seven hours instead of four.
