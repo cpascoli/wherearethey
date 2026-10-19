@@ -14,7 +14,7 @@ rel:
   - [ worked at, sri-international ]
 facts:
   - text: According to James Ryder, Targ worked for him at Lockheed Martin for years.
-    status: claimed
+    status: unverified
     by: james-ryder
 ---
 

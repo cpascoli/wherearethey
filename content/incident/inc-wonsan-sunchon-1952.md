@@ -12,8 +12,11 @@ links:
     url: https://en.wikipedia.org/wiki/Wonsan-Sunchon_UFO_incident
 facts:
   - text: Around midnight, gunners on a U.S. Air Force B-29 over Wonsan saw an orange, globe- or disc-shaped light that kept pace with the bomber (about 20,000 ft, 200 mph) for at least five minutes, “occasionally emitting blue flames like those of a cooking stove”. A second B-29 about 300 miles away over Sunchon reported an orange sphere following it for a full minute.
-    status: documented
+    status: unverified
     source: https://en.wikipedia.org/wiki/Wonsan-Sunchon_UFO_incident
+  - text: "Project Blue Book kept a case file on the sightings, “KOREA, January 1952”, now held by the National Archives (microfilm T1206, Project “Bluebook” 1947–1969, roll 9; NARA ID 28940796)."
+    status: documented
+    source: https://catalog.archives.gov/id/28940796
   - text: Far East Air Forces commander Lt. Gen. Otto P. Weyland told the press, “We can't say there's nothing to it, but unless we can get more data, I don't think we can expect a conclusive answer” (Stars and Stripes, February 22, 1952).
     status: claimed
     by: otto-weyland

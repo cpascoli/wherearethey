@@ -14,7 +14,7 @@ links:
     url: https://en.wikipedia.org/wiki/Haim_Eshed
 facts:
   - text: Received the Israel Defense Prize three times, for reasons that remain classified.
-    status: documented
+    status: unverified
     source: https://en.wikipedia.org/wiki/Haim_Eshed
 ---
 

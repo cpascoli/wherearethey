@@ -16,8 +16,8 @@ rel:
   - [ worked at, lockheed-martin ]
   - [ related to, remote-viewing ]
 facts:
-  - text: “Absolutely I know there’s telepathy. Dr. Targ worked for me for years. It’s fun being able to say these things.”
-    status: claimed
+  - text: Reportedly said he knows telepathy exists and that Russell Targ worked for him for years. The wording circulating online has not been traced to a recording or transcript.
+    status: unverified
     by: james-ryder
   - text: Was at Lockheed Martin when the alleged transfer of a non-human craft to Bigelow Aerospace was blocked.
     status: unverified

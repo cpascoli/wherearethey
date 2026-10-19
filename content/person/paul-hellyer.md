@@ -11,9 +11,12 @@ links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Paul_Hellyer
 facts:
-  - text: As Defence Minister he inaugurated a “UFO landing pad” built as a centennial project in St. Paul, Alberta, on June 3, 1967.
+  - text: St. Paul, Alberta held the grand opening of its UFO landing pad, a Canadian centennial project, on June 3, 1967.
     status: documented
-    source: https://en.wikipedia.org/wiki/Paul_Hellyer
+    source: https://www.stpaul.ca/visitors/ufo-landing-pad
+  - text: As Defence Minister, Hellyer is reported to have formally opened the St. Paul landing pad.
+    status: unverified
+    source: https://www.guinnessworldrecords.com/world-records/first-official-ufo-landing-pad
   - text: At the Toronto exopolitics symposium on September 25, 2005 he said “UFOs are as real as the airplanes that fly over your head,” and that he had once seen a UFO with his wife and friends.
     status: claimed
     by: paul-hellyer
@@ -27,7 +30,7 @@ facts:
     by: paul-hellyer
     source: https://en.wikipedia.org/wiki/Paul_Hellyer
   - text: He repeated the “Project Serpo” alien-exchange story, which originated with former AFOSI agent Richard Doty, who later admitted to spreading disinformation. His later claims relied on secondhand sources he did not identify.
-    status: documented
+    status: unverified
     source: https://en.wikipedia.org/wiki/Paul_Hellyer
 ---
 

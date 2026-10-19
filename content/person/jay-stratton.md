@@ -19,6 +19,10 @@ facts:
     source: https://www.newsnationnow.com/space/ufo/pentagon-insider-ufo-memoir/
   - text: Co-founded AATIP with Luis Elizondo.
     status: unverified
+  - text: "Testifying under oath in July 2023, David Fravor said Stratton contacted him in 2009 to investigate the Nimitz encounter and that, unbeknownst to all, he was part of the AATIP program in the Pentagon led by Lue Elizondo."
+    status: claimed
+    by: david-fravor
+    source: library/docs/doc-transcript-2023-07-26.pdf
   - text: In his memoir and in The Age of Disclosure (2025) he says the United States holds craft of non-human origin.
     status: claimed
     by: jay-stratton

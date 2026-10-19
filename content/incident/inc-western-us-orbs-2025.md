@@ -19,9 +19,10 @@ facts:
   - text: In an FBI 302 interview the official said that federal and state personnel searched areas where orbs had previously been seen and, using a helicopter, found a “super-hot” orb hovering over the ground.
     status: documented
     source: usper-statement-about-uap-sighting
-  - text: Rep. Eric Burlison has said these witnesses could be invited to testify publicly. They are the likely focus of the hearing planned for November 2026.
+  - text: Rep. Eric Burlison told the New York Post he would look into whether these witnesses could testify publicly, noting that bringing agency personnel forward “may expose other things.” No hearing had been announced.
     status: claimed
     by: eric-burlison
+    source: https://www.ibtimes.co.uk/burlison-considers-testimony-orange-uap-orbs-1824884
 ---
 
 The map pin is approximate: the official records withhold the facility’s location. Released through PURSUE in May 2026 (ODNI-UAP-D001 and the FBI 302).

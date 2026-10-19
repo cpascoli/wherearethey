@@ -12,7 +12,7 @@ links:
     url: https://en.wikipedia.org/wiki/Jacob_Salatun
 facts:
   - text: Indonesia's first prominent UFO researcher. He wrote “Menjingkap Rahasia Piring Terbang” (1960) and “UFO, Salah Satu Masalah Dunia Masa Kini” (1982), in which he describes seeing and photographing a UFO himself, and he founded the Indonesian UFO study group SUFOI.
-    status: documented
+    status: unverified
     source: https://en.wikipedia.org/wiki/Jacob_Salatun
 ---
 

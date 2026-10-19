@@ -63,6 +63,8 @@ export async function build({ check = false, quiet = false } = {}) {
         }
         if (fact.by && !byId.has(fact.by)) warnings.push(`${r.file}: fact.by "${fact.by}" not found`);
         fact.source = parseSource(fact.source, r.file);
+        // the sourcing rule: Wikipedia can point the way, but never backs a documented fact
+        if (fact.status === 'documented' && /wikipedia\.org/i.test(fact.source?.url || '')) warnings.push(`${r.file}: documented fact cites Wikipedia; cite the primary record or use claimed/unverified`);
         return fact;
       }),
       rel: arr(d.rel).map(x => (Array.isArray(x) ? { label: String(x[0]), id: String(x[1]) } : { label: String(x.label), id: String(x.id) })),
