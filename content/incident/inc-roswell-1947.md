@@ -6,6 +6,7 @@ tags:
   - crash-retrieval
   - military
 rel:
+  - [ documented in, doc-af-roswell-case-closed-1997 ]
   - [ related to, philip-corso ]
   - [ related to, edgar-mitchell ]
   - [ related to, crash-retrieval ]
@@ -13,6 +14,9 @@ facts:
   - text: In July 1947 the Roswell Army Air Field announced it had recovered a “flying disc”, then retracted the statement and called it a weather balloon.
     status: documented
     source: https://www.gao.gov/products/nsiad-95-187
+  - text: "The Air Force's 1994 report concluded that the debris came from Project MOGUL, a balloon-borne research project. Its 1997 report, Case Closed, attributes the later \"alien\" accounts to anthropomorphic test dummies dropped from high-altitude balloons, and the hospital \"bodies\" to a 1956 KC-97 crash and a 1959 balloon mishap. It says events from many years had been compressed into the July 1947 story."
+    status: documented
+    source: doc-af-roswell-case-closed-1997
 ---
 
 In early July 1947, rancher Mac Brazel found debris of tinfoil, paper, tape and sticks scattered across his ranch near Corona, New Mexico. Maj. Jesse Marcel of Roswell Army Air Field collected it, and on 8 July the base announced that it had recovered a "flying disc". Within hours Gen. Roger Ramey retracted the statement in Fort Worth and identified the material as a weather balloon.
