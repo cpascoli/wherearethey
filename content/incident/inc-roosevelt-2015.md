@@ -15,6 +15,9 @@ rel:
   - [ witness, ryan-graves ]
   - [ related to, tim-gallaudet ]
 facts:
+  - text: "NASA's 2023 UAP study analysed the GoFast video and found that the object moved about 390 metres in 22 seconds, roughly 40 mph, \"a typical wind speed at 13,000 feet\". It appeared colder than the ocean, with no evidence of propulsion heat, so it was most likely drifting with the wind."
+    status: documented
+    source: doc-nasa-uap-study-2023
   - text: "The Department of Defense officially released two Navy videos taken in January 2015 (Gimbal and GoFast), together with the 2004 FLIR1 video, stating that \"the aerial phenomena observed in the videos remain characterized as 'unidentified.'\""
     status: documented
     source: doc-dod-statement-navy-videos-2020
