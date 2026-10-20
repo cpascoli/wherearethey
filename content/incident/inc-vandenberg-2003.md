@@ -13,14 +13,18 @@ facts:
     status: claimed
     by: jeffrey-nuccetelli
     source: v-2025-09-09-hearing-a@35:30
-  - text: Air Force Security Forces members Jeffrey Nuccetelli and Chaz King, along with Boeing contractors, reported a massive geometric craft about the size of a football field. It came in from the ocean and flew over a missile launch pad.
+  - text: Nuccetelli testified that when he arrived on scene, five shaken witnesses described a massive triangular craft larger than a football field that had hovered silently for about 45 seconds over their entry control point before shooting away. About a week later another patrol reported an erratic light over the ocean that descended onto the flight line, then left at high speed.
     status: claimed
     by: jeffrey-nuccetelli
-    source: v-2025-09-09-hearing-a@36:32
+    source: v-2025-09-09-hearing-a@36:24
+  - text: "In the documentary The Age of Disclosure, Security Forces member Chaz King said: \"Later that night, myself and five security forces members, we observed a bright light approaching the base.\" He described a craft about the size of a football field, almost rectangular, that then shot off up the coast."
+    status: claimed
+    by: chaz-king
+    source: https://www.yahoo.com/news/articles/aliens-over-central-coast-documentary-130000244.html
 ---
 
-On 14 October 2003, Boeing contractors at Vandenberg Air Force Base in California reported a massive glowing red square hovering silently over two missile-defence sites. Air Force security forces members Jeffrey Nuccetelli and Chaz King, along with contractors, later reported a geometric craft about the size of a football field that came in from the ocean and flew over a missile launch pad.
+On 14 October 2003, Boeing contractors at Vandenberg Air Force Base in California reported a massive glowing red square hovering silently over two missile-defence sites. Security Forces personnel later reported a craft larger than a football field hovering over an entry control point.
 
-Nuccetelli described the incursions under oath to the House Oversight Committee on 9 September 2025; the accounts are listed below.
+Jeffrey Nuccetelli described the incursions under oath to the House Oversight Committee on 9 September 2025. Chaz King, another Security Forces member on duty, gave his account in the 2025 documentary *The Age of Disclosure*.
 
-*Sources: House Oversight hearing (9 September 2025)*
+*Sources: House Oversight hearing (9 September 2025) · [San Luis Obispo Tribune (2025)](https://www.yahoo.com/news/articles/aliens-over-central-coast-documentary-130000244.html)*
