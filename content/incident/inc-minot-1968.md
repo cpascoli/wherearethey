@@ -18,6 +18,6 @@ facts:
 
 In the early hours of 24 October 1968, maintenance and security personnel at Minuteman missile sites around Minot Air Force Base reported a bright light, and a B-52 bomber flying practice approaches northwest of the base tracked a radar target that raced alongside it before breaking away, while its radios failed. The crew photographed the radar scope.
 
-Project Blue Book attributed the ground sightings to Sirius and the B-52, and suggested ball-lightning-like plasma for the radar contact and radio failure. The scope photographs and radio transcript are part of the file.
+Project Blue Book attributed the ground sightings to Sirius and the B-52, and suggested ball-lightning-like plasma for the radar contact and radio failure. The file includes a transcript of the B-52's radio exchanges with Minot.
 
 *Sources: Project Blue Book case file, Minot AFB 1968 (NARA ID 302580672)*
