@@ -2202,6 +2202,7 @@
     if (play) {
       e.preventDefault();
       const [vid, t] = play.dataset.play.split('@');
+      if (state.reading) setReading(false); // shrink the reading view back to the side so the player is visible
       openVideo(vid, +t || 0, true);
       return;
     }
