@@ -10,7 +10,7 @@ rel:
 facts:
   - text: The Department of Defense officially released the “FLIR1” (Tic Tac), “Gimbal” and “GoFast” videos.
     status: documented
-    source: https://www.war.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/
+    source: doc-dod-statement-navy-videos-2020
 ---
 
 On 27 April 2020, the U.S. Department of Defense officially released three short infrared videos taken by Navy pilots: "FLIR1", recorded during the 2004 USS Nimitz encounter, and "Gimbal" and "GoFast", from USS Theodore Roosevelt operations in 2015. The videos had circulated publicly since *The New York Times* and others published them in 2017–2018; the Navy confirmed that they show unidentified aerial phenomena.

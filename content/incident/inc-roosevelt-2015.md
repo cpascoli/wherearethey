@@ -15,6 +15,9 @@ rel:
   - [ witness, ryan-graves ]
   - [ related to, tim-gallaudet ]
 facts:
+  - text: "The Department of Defense officially released two Navy videos taken in January 2015 (Gimbal and GoFast), together with the 2004 FLIR1 video, stating that \"the aerial phenomena observed in the videos remain characterized as 'unidentified.'\""
+    status: documented
+    source: doc-dod-statement-navy-videos-2020
   - text: Navy F/A-18 crews in a pre-deployment exercise reported frequent UAP encounters, including near-midair collisions.
     status: claimed
     by: ryan-graves
