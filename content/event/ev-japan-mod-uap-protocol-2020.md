@@ -12,12 +12,16 @@ links:
   - label: The Diplomat — Japan's Defense Ministry launches protocol for UFO sightings
     url: https://thediplomat.com/2020/09/japans-defense-ministry-launches-protocol-for-ufo-sightings/
 facts:
-  - text: Defense Minister Taro Kono ordered the Self-Defense Forces to record and photograph unidentified aerial objects they encounter or that enter Japanese airspace, and to analyse them, including reports from the public.
+  - text: "Defense Minister Taro Kono issued a directive on unidentifiable objects in the air that could affect Japan's defence and security: report them thoroughly, photograph them where possible, and analyse them, including when they are seen outside air-defence and surveillance missions."
     status: documented
-    source: https://www.japantimes.co.jp/news/2020/09/14/national/japan-defense-ministry-ufo/
-  - text: Kono said the SDF had no recorded UFO encounters, that the move was prompted by the Pentagon's April 2020 release of Navy videos, and that he personally did not believe in UFOs.
-    status: claimed
     by: taro-kono
+    source: doc-japan-mod-press-2020-09-15
+  - text: "Kono said there was no record of the SDF encountering such an object, and that he had discussed the issue with the U.S. defence secretary at their meeting in Guam."
+    status: documented
+    by: taro-kono
+    source: doc-japan-mod-press-2020-09-15
+  - text: The Japan Times reported that the move was prompted by the Pentagon's April 2020 release of Navy videos, and that the protocol also covers reports from the public.
+    status: claimed
     source: https://www.japantimes.co.jp/news/2020/09/14/national/japan-defense-ministry-ufo/
   - text: Before issuing the protocol, Kono said UFOs had been discussed with U.S. Defense Secretary Mark Esper during their meeting in Guam (August 2020), without giving details.
     status: claimed
@@ -25,8 +29,8 @@ facts:
     source: v-kono-esper-ufo-2020@0:12
 ---
 
-On 14 September 2020, Japan's Defense Minister Taro Kono ordered the Self-Defense Forces to record and photograph any unidentified aerial objects they encounter or that enter Japanese airspace, and to analyse them, including reports from the public.
+On 14 September 2020, Japan's Defense Minister Taro Kono issued a directive requiring the Self-Defense Forces to report unidentifiable aerial objects thoroughly, photograph them where possible and analyse them. He announced it at his press conference the next day, saying it concerned unidentified objects, not objects from space, and that there was no record of the SDF ever encountering one.
 
-Kono said the SDF had no recorded UFO encounters, that the step had been prompted by the Pentagon's April 2020 release of Navy videos, and that he did not personally believe in UFOs. He had said the subject came up in his August 2020 meeting with U.S. Defense Secretary Mark Esper in Guam, without giving details.
+The Japan Times reported that the step had been prompted by the Pentagon's April 2020 release of Navy videos. He had said the subject came up in his August 2020 meeting with U.S. Defense Secretary Mark Esper in Guam, without giving details.
 
-*Sources: [The Japan Times (2020)](https://www.japantimes.co.jp/news/2020/09/14/national/japan-defense-ministry-ufo/) · [The Diplomat (2020)](https://thediplomat.com/2020/09/japans-defense-ministry-launches-protocol-for-ufo-sightings/)*
+*Sources: Ministry of Defense press conference transcript (15 September 2020) · [The Japan Times (2020)](https://www.japantimes.co.jp/news/2020/09/14/national/japan-defense-ministry-ufo/) · [The Diplomat (2020)](https://thediplomat.com/2020/09/japans-defense-ministry-launches-protocol-for-ufo-sightings/)*

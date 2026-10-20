@@ -6,12 +6,12 @@ credentials:
     role: Defence Minister of India (2006–2014)
 tags: [government, international]
 facts:
-  - text: "Antony told India's Parliament there was no conclusive proof of UFOs over Ladakh; an earlier assessment had attributed some sightings to Jupiter and Venus."
+  - text: "Asked in the Lok Sabha in November 2012 whether the Army's 14 Corps had reported UFOs over the India–China border, Antony said there was \"no conclusive proof\" of such sightings."
     status: claimed
     by: ak-antony
-    source: https://en.wikipedia.org/wiki/UFO_sightings_in_India
+    source: https://www.dnaindia.com/india/report-ak-antony-plays-down-stories-of-ufos-on-india-china-border-1769920
 ---
 
-A. K. Antony was India's Defence Minister from 2006 to 2014. When Indian border personnel reported luminous objects over Ladakh, he told Parliament there was no conclusive proof of UFOs; an earlier assessment had attributed some of the sightings to Jupiter and Venus.
+A. K. Antony was India's Defence Minister from 2006 to 2014. When Indian border personnel reported luminous objects over Ladakh, he told the Lok Sabha in November 2012 that there was "no conclusive proof" of UFOs. Astronomers sent to the area later attributed the lights to Jupiter and Venus, according to press reports.
 
-*Sources: Ladakh incident record*
+*Sources: [DNA India (2012)](https://www.dnaindia.com/india/report-ak-antony-plays-down-stories-of-ufos-on-india-china-border-1769920) · [The Register (2013)](https://www.theregister.com/2013/07/26/india_china_war_jupiter_mars_drones/)*
