@@ -8,6 +8,12 @@ tags:
 rel:
   - [ witness, bob-salas ]
 facts:
+  - text: "The 341st Strategic Missile Wing history records that on 16 March 1967 at 0845 all ten launch facilities of Echo Flight lost strategic alert nearly simultaneously, and that \"Rumors of Unidentified Flying Objects (UFO) around the area of Echo Flight during the time of fault were disproven\": a mobile strike team that had checked November Flight's launch facilities that morning reported no unusual activity or sightings, and the base radar squadron reported no related radar or atmospheric interference. The history also records that commercial power switching was ruled out as the cause."
+    status: documented
+    source: doc-341smw-history-1967
+  - text: "Engineering tests recorded in the later wing histories traced the shutdown to a noise pulse reaching the Minuteman I C-53P logic coupler, judged to be of electromagnetic-pulse or electrostatic nature and peculiar to the Wing I system. The wing histories do not mention the Oscar Flight event Salas describes."
+    status: documented
+    source: doc-341smw-history-1967
   - text: Above-ground security guards reported a glowing, reddish-orange, oval object about 30 feet across hovering over the launch facility gate.
     status: claimed
     by: bob-salas
@@ -22,6 +28,6 @@ In March 1967, two flights of Minuteman nuclear missiles at Malmstrom Air Force 
 
 Salas has spoken publicly about the event, including at the National Press Club in 2001, and links the shutdowns to UFO activity at nuclear sites.
 
-Sceptics note that unit records of the 341st Strategic Missile Wing show no UFO reports on the night Salas describes, that the Echo Flight shutdown was attributed to a commercial power fault, and that the lights the guards saw may have been the planet Mars.
+The 341st Strategic Missile Wing's own histories, released under FOIA, document the Echo Flight shutdown of 16 March but state that rumours of UFOs around Echo Flight "were disproven": a strike team and the base radar squadron reported nothing unusual. Engineering tests traced the fault to a noise pulse reaching the Minuteman I logic coupler. The histories contain no record of the Oscar Flight event; Salas's account of it dates from decades later.
 
-*Sources: Disclosure Project press conference (2001) · [Wikipedia](https://en.wikipedia.org/wiki/Malmstrom_UFO_incident)*
+*Sources: Disclosure Project press conference (2001) · 341st Strategic Missile Wing histories 1967–68 (FOIA) · [Wikipedia](https://en.wikipedia.org/wiki/Malmstrom_UFO_incident)*
