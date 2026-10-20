@@ -6,6 +6,7 @@ tags:
 rel:
   - [ about, skinwalker-ranch ]
   - [ about, brandon-fugal ]
+  - [ related to, robert-bigelow ]
 facts:
   - text: "Brandon Fugal acquired Skinwalker Ranch from Robert Bigelow in 2016."
     status: unverified

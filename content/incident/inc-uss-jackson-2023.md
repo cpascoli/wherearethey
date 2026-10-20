@@ -7,6 +7,7 @@ tags: [navy, radar, military, video, transmedium]
 rel:
   - [ witness, alexandro-wiggins ]
   - [ related to, inc-nimitz-2004 ]
+  - [ raised by, eric-burlison ]
 facts:
   - text: "Under oath at the House Oversight task-force hearing of 9 September 2025, Senior Chief Alexandro Wiggins testified that on 15 February 2023 at about 19:15 PST, aboard USS Jackson in the Whiskey 291 warning area off southern California, “A self-luminous tic-tac-shaped object emerged from the ocean before linking up with three other similar objects. The four then disappeared simultaneously with a high-synchronized, near-instantaneous acceleration.”"
     status: claimed

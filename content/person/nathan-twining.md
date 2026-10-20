@@ -8,6 +8,8 @@ credentials:
     role: Lieutenant General, U.S. Army Air Forces; Commander, Air Materiel Command (1947); later Chairman of the Joint Chiefs of Staff (1957–1960)
 tags:
   - air-force
+rel:
+  - [ led to, project-sign ]
 facts:
   - text: "As commander of Air Materiel Command, Twining signed the 23 September 1947 letter stating that “the phenomenon reported is something real and not visionary or fictitious”, which led to Project Sign."
     status: documented

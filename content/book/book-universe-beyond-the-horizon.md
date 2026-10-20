@@ -5,6 +5,7 @@ credits: "Hagar Yanai, in conversation with Haim Eshed (Hebrew)"
 tags: [international]
 rel:
   - [ features, haim-eshed ]
+  - [ disputed by, isaac-ben-israel ]
 facts:
   - text: A Hebrew-language book of conversations with Eshed, written by Hagar Yanai and published in November 2020. Eshed's December 2020 interview was given to promote it.
     status: claimed

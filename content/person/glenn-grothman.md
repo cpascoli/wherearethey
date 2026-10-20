@@ -7,6 +7,8 @@ credentials:
     role: U.S. Representative (R-WI); Chair, Subcommittee on National Security, the Border, and Foreign Affairs
 tags:
   - congress
+rel:
+  - [ member of, house-oversight ]
 facts:
   - text: "In November 2024 Grothman said briefings with the DoD and IC inspectors general and AARO had not substantiated David Grusch's 2023 claims."
     status: claimed

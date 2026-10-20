@@ -12,6 +12,7 @@ links:
 rel:
   - [ part of, doc-dirds ]
   - [ related to, dow-uap-d138 ]
+  - [ produced for, aawsap ]
 facts:
   - text: "Released in PURSUE release 06 as record DOW-UAP-D138, with an AARO summary noting that the concept “relies entirely on unverified assumptions” and “offers no viable engineering pathway toward a functioning propulsion system.”"
     status: documented

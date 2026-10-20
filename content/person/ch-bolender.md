@@ -8,6 +8,8 @@ credentials:
     role: Brigadier General, U.S. Air Force; Deputy Director of Development (1969)
 tags:
   - air-force
+rel:
+  - [ related to, project-blue-book ]
 facts:
   - text: "Brig. Gen. C. H. Bolender signed the 20 October 1969 memo recommending the end of Project Blue Book, which notes that UFO reports that could affect national security “are not part of the Blue Book system.”"
     status: documented

@@ -6,6 +6,8 @@ tags:
   - crash-retrieval
 rel:
   - [ about, doc-wilson-memo ]
+  - [ related to, eric-davis ]
+  - [ related to, thomas-wilson ]
 facts:
   - text: "In May 2022 the notes were entered into the record of the HPSCI open hearing at Rep. Mike Gallagher's request; entry into the record confirms provenance, not accuracy."
     status: documented

@@ -2,6 +2,8 @@
 name: Ministry of Defense (Japan)
 aka: [Japan Ministry of Defense, Japanese Defense Ministry, Japan MoD, Self-Defense Forces, SDF]
 tags: [government, international]
+rel:
+  - [ led by, taro-kono ]
 facts:
   - text: "Defense Minister Taro Kono said in 2020 that Japan would issue a policy on responding to UFOs, and that the topic came up with U.S. Defense Secretary Mark Esper."
     status: claimed

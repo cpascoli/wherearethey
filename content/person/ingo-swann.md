@@ -9,6 +9,8 @@ tags: [remote-viewing]
 rel:
   - [ studied at, sri-international ]
   - [ part of, remote-viewing ]
+  - [ worked with, hal-puthoff ]
+  - [ worked with, russell-targ ]
 facts:
   - text: "First demonstrated his abilities at the Stanford Research Institute in 1972, in experiments that became known as remote viewing and drew the CIA's attention. He is credited with proposing coordinate-based “controlled remote viewing”, which Puthoff and Targ developed and tested."
     status: claimed

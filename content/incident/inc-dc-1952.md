@@ -9,6 +9,7 @@ tags:
   - air-force
 rel:
   - [ witness, s-c-pierman ]
+  - [ led to, doc-robertson-panel-1953 ]
 facts:
   - text: Unexplained radar and visual sightings over the capital across consecutive weekends in July 1952 (July 12–14, 18–19 and 26–27).
     status: claimed

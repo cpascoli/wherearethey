@@ -2,6 +2,8 @@
 name: Intelligence Community Inspector General
 aka: [ICIG, IC Inspector General, Inspector General]
 tags: [intelligence, whistleblower]
+rel:
+  - [ received complaint from, david-grusch ]
 facts:
   - text: "David Grusch testified that he became a whistleblower through a PPD-19 urgent-concern filing with the Intelligence Community Inspector General in May 2022."
     status: claimed

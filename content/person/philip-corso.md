@@ -8,6 +8,8 @@ credentials:
     role: Lt. Col., U.S. Army; Foreign Technology Desk, Army Research & Development
 tags:
   - crash-retrieval
+rel:
+  - [ related to, crash-retrieval ]
 facts:
   - text: Claimed that while heading the Army’s Foreign Technology Desk he managed the reverse-engineering of alien artifacts recovered at Roswell in 1947.
     status: claimed

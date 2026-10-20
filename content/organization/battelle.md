@@ -6,6 +6,7 @@ tags:
   - contractor
 rel:
   - [ related to, inc-roswell-1947 ]
+  - [ claimed by, hal-puthoff ]
 facts:
   - text: "Hal Puthoff says Battelle received foil-like material reportedly from the 1947 Roswell crash and worked on reproducing it, and that Nitinol came out of that work; no official record supports this."
     status: claimed

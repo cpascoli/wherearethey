@@ -7,6 +7,7 @@ tags:
 rel:
   - [ about, uaptf ]
   - [ published, doc-odni-2021-preliminary-assessment ]
+  - [ published by, odni ]
 facts:
   - text: The first unclassified U.S. government report on UAP (144 reports examined; 143 unexplained).
     status: documented

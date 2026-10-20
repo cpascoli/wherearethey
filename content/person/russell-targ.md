@@ -12,6 +12,7 @@ tags:
 rel:
   - [ co-founded, stargate ]
   - [ worked at, sri-international ]
+  - [ worked with, hal-puthoff ]
 facts:
   - text: According to James Ryder, Targ worked for him at Lockheed Martin for years.
     status: unverified

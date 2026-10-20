@@ -11,6 +11,7 @@ tags:
   - intelligence
 rel:
   - [ related to, area-51 ]
+  - [ led, dia ]
 facts:
   - text: Has publicly acknowledged the existence of UAP.
     status: claimed

@@ -9,6 +9,7 @@ tags:
   - congress
 rel:
   - [ questioned at, h-2023-07-26 ]
+  - [ member of, house-oversight ]
 facts:
   - text: "In his opening statement Garcia noted that AARO director Sean Kirkpatrick had testified that his unit found no evidence of extraterrestrial activity, and that NASA had said it had no evidence of extraterrestrial life."
     status: documented

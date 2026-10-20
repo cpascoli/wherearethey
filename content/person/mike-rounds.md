@@ -5,6 +5,8 @@ credentials:
   - category: congress
     role: U.S. Senator (R-SD)
 tags: [congress, disclosure]
+rel:
+  - [ co-sponsored, doc-uap-disclosure-act-2023 ]
 facts:
   - text: "Rounds and Senate Majority Leader Chuck Schumer introduced the UAP Disclosure Act in July 2023 as an amendment to the FY2024 NDAA."
     status: documented

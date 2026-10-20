@@ -6,6 +6,9 @@ tags:
   - disclosure
 rel:
   - [ related to, kirsten-gillibrand ]
+  - [ related to, doc-uap-disclosure-act-2023 ]
+  - [ related to, chuck-schumer ]
+  - [ related to, mike-rounds ]
 facts:
   - text: Language requiring the government to collect, declassify and release UAP records, aimed at reducing the stigma around reporting.
     status: documented

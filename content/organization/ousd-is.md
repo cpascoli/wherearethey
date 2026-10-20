@@ -5,6 +5,9 @@ aka:
   - OUSD(I&S)
 tags:
   - intelligence
+rel:
+  - [ ran, uaptf ]
+  - [ ran, aoimsg ]
 facts:
   - text: "Under Secretary Ronald Moultrie testified in 2022 that the Secretary of Defense had assigned the new UAP effort to the Office of the Under Secretary for Intelligence and Security, “because I am responsible for looking at intelligence matters.”"
     status: documented
