@@ -8,6 +8,7 @@ tags:
   - international
 rel:
   - [ related to, cia-uap-007 ]
+  - [ noted by, cia ]
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Project_Magnet_(Canada)

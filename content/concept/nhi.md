@@ -7,6 +7,9 @@ aka:
   - non-human biologics
 tags:
   - disclosure
+rel:
+  - [ defined in, doc-uap-disclosure-act-2023 ]
+  - [ related to, david-grusch ]
 facts:
   - text: "The UAP Disclosure Act of 2023 defines “non-human intelligence” as “any sentient intelligent non-human lifeform regardless of nature or ultimate origin that may be presumed responsible for unidentified anomalous phenomena or of which the Federal Government has become aware.”"
     status: documented

@@ -12,6 +12,8 @@ rel:
   - [ documented in, dow-uap-pr035 ]
   - [ documented in, dow-uap-d025 ]
   - [ documented in, dow-uap-pr028 ]
+  - [ reviewed by, aaro ]
+  - [ released in, pursue ]
 facts:
   - text: Mission reports of 27 and 29 October 2023 (D033, D035) record U.S. military operators observing UAP "flying just above the surface of the ocean" in the Aegean, one making "multiple 90-degree turns at an estimated 80 mph", the other flying toward land; paired infrared clips (PR034, PR035) show the tracked contrast lost against the background.
     status: documented

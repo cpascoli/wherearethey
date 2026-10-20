@@ -3,6 +3,10 @@ name: Jared Moskowitz
 aka: [Moskowitz, Rep. Moskowitz]
 credentials: [{ category: congress, role: "U.S. Representative (D-FL); House Oversight Committee member" }]
 tags: [congress]
+rel:
+  - [ member of, house-oversight ]
+  - [ spoke at, h-2023-07-26 ]
+  - [ spoke at, h-2025-09-09 ]
 facts:
   - text: "At the July 2023 hearing Moskowitz said that if there is nothing to conceal, Congress should be allowed into Wright-Patterson, Dugway Proving Ground or Groom Lake (Area 51)."
     status: claimed

@@ -3,6 +3,8 @@ name: Local law enforcement
 aka: []
 tags:
   - government
+rel:
+  - [ contributed to, pursue ]
 facts:
   - text: "Local police and sheriff's departments account for 8 PURSUE records, all in release 06."
     status: documented

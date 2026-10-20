@@ -4,6 +4,8 @@ aka: [Baotou 2010]
 date: 2010-09
 place: { name: "Baotou Airport, Inner Mongolia, China", lat: 40.56, lng: 109.997 }
 tags: [aviator, international]
+rel:
+  - [ related to, inc-xiaoshan-2010 ]
 links:
   - label: Peter Greenberg Travel Detective — UFO shuts down Chinese airport (Oct 8, 2010)
     url: https://petergreenberg.com/2010/10/08/ufo-shuts-down-chinese-airport/

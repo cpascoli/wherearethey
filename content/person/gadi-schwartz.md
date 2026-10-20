@@ -9,6 +9,8 @@ credentials:
     role: Correspondent, NBC News
 tags:
   - disclosure
+rel:
+  - [ moderated, ev-disclosure-forum-2026 ]
 facts:
   - text: "Schwartz moderated the national security panel at Disclosure Forum 2026."
     status: documented

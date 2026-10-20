@@ -6,6 +6,7 @@ place: { name: "Harare International Airport, Zimbabwe", lat: -17.9318, lng: 31.
 tags: [radar, international, pursue]
 rel:
   - [ documented in, cia-uap-017 ]
+  - [ reported by, cia ]
 facts:
   - text: A CIA intelligence information report disseminated on 3 July 2008 relays reporting from Zimbabwe about an unidentified object hovering at high altitude over Harare International Airport on the afternoon of 2 July 2008, observed "possibly by both radar and optical means".
     status: documented

@@ -10,6 +10,9 @@ credentials:
 tags:
   - congress
   - drones
+rel:
+  - [ questioned, frank-kendall ]
+  - [ related to, inc-langley-2023 ]
 facts:
   - text: "At the House Armed Services hearing of 17 April 2024, Wittman told Secretary of the Air Force Frank Kendall: “We saw recently a very disturbing trend at Langley Air Force Base, where because of a large number of UASs that were in that airspace, Langley had to close down just to make sure that we were able to defend the operations that were going on there.”"
     status: documented

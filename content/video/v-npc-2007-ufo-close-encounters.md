@@ -2,6 +2,7 @@
 name: National Press Club - November 12th, 2007. UFO Close Encounters
 youtube: MdpLJQgB1pE
 rel:
+  - [ recording of, ev-npc-2007 ]
   - [ features, fife-symington ]
   - [ features, wilfried-de-brouwer ]
   - [ features, parviz-jafari ]

@@ -2,6 +2,8 @@
 name: The National Archives (UK)
 aka: [UK National Archives, National Archives at Kew]
 tags: [government, foia, international]
+rel:
+  - [ holds records of, inc-rendlesham-1980 ]
 links:
   - label: The National Archives — UFO files
     url: https://www.nationalarchives.gov.uk/explore-the-collection/explore-by-time-period/postwar/ufo-reports/

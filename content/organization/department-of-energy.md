@@ -3,6 +3,8 @@ name: Department of Energy
 aka: []
 tags:
   - government
+rel:
+  - [ contributed to, pursue ]
 facts:
   - text: "The Department of Energy contributed 5 records to PURSUE releases 01–06."
     status: documented

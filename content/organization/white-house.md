@@ -3,6 +3,8 @@ name: Executive Office of the President
 aka: []
 tags:
   - government
+rel:
+  - [ ordered, pursue ]
 facts:
   - text: "On 19 February 2026 President Trump directed the Secretary of War and other agencies to identify and release government files on UAP, UFOs and extraterrestrial life, the directive behind PURSUE."
     status: documented

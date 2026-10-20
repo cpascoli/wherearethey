@@ -4,6 +4,8 @@ credentials:
   - category: aviator
     role: Captain and pilot, Chilean Army aviation; involved in Chile's official UAP committee (CEFAA)
 tags: [aviator, international]
+rel:
+  - [ worked with, cefaa ]
 facts:
   - text: "Capt. Rodrigo Bravo of Chilean Army aviation described Chile's official UAP investigations at the 2007 National Press Club panel."
     status: claimed

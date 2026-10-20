@@ -6,6 +6,8 @@ tags:
   - mass-sighting
   - school
   - international
+rel:
+  - [ analysed by, david-clarke ]
 facts:
   - text: 14 schoolchildren reported a yellow, cigar-shaped craft hovering in a nearby field in broad daylight.
     status: claimed

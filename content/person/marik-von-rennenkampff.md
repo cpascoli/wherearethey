@@ -13,6 +13,10 @@ credentials:
     role: UAP analyst and columnist
 tags:
   - disclosure
+rel:
+  - [ spoke at, ev-disclosure-forum-2026 ]
+  - [ related to, inc-langley-2023 ]
+  - [ related to, inc-roosevelt-2015 ]
 facts:
   - text: "At Disclosure Forum 2026 he said former AARO director Sean Kirkpatrick twice told him the Gimbal object was a balloon reflecting sunlight, which he disputes because the encounter was at night and the aircrew described it moving against 120-knot winds."
     status: claimed

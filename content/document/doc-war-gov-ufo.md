@@ -2,6 +2,9 @@
 name: War Department UAP/UFO page
 tags:
   - disclosure
+rel:
+  - [ published by, department-of-war ]
+  - [ hosts, pursue ]
 links:
   - label: war.gov/UFO
     url: https://www.war.gov/UFO/

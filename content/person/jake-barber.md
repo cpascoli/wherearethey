@@ -8,6 +8,8 @@ credentials:
 tags:
   - whistleblower
   - crash-retrieval
+rel:
+  - [ related to, crash-retrieval ]
 facts:
   - text: Says he flew a helicopter on a classified mission to retrieve a UAP.
     status: claimed

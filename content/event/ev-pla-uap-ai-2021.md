@@ -2,6 +2,8 @@
 name: PLA researchers describe using AI to track rising UAP reports
 date: 2021-06
 tags: [military, international, science]
+rel:
+  - [ related to, doc-odni-2021-preliminary-assessment ]
 links:
   - label: South China Morning Post — China military uses AI to track rapidly increasing UFOs
     url: https://www.scmp.com/news/china/science/article/3136078/china-military-uses-ai-track-rapidly-increasing-ufos

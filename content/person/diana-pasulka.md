@@ -6,6 +6,8 @@ credentials:
   - category: academia
     role: Professor of religious studies, University of North Carolina Wilmington; author of American Cosmic
 tags: [academia]
+rel:
+  - [ related to, crash-retrieval ]
 facts:
   - text: Writer and professor of religious studies at the University of North Carolina Wilmington, best known for “American Cosmic”.
     status: claimed
