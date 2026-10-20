@@ -9,6 +9,10 @@ rel:
   - [ related to, inc-nimitz-2004 ]
   - [ raised by, eric-burlison ]
 facts:
+  - text: "In his sworn statement to the House Oversight task force on 9 September 2025, Operations Specialist Alexandro Wiggins testified that at about 19:15 PST on 15 February 2023, in the W-291 warning area, the ship's sensors showed a self-luminous tic-tac-shaped object that \"emerged from the ocean\", joined three similar objects, and departed with them near-instantaneously. He said he saw no propulsion signatures on the SAFIRE imaging system and that the radar tracks dropped afterwards. The transcript records the testimony, not its accuracy."
+    status: documented
+    by: alexandro-wiggins
+    source: doc-transcript-2025-09-09
   - text: "Under oath at the House Oversight task-force hearing of 9 September 2025, Senior Chief Alexandro Wiggins testified that on 15 February 2023 at about 19:15 PST, aboard USS Jackson in the Whiskey 291 warning area off southern California, “A self-luminous tic-tac-shaped object emerged from the ocean before linking up with three other similar objects. The four then disappeared simultaneously with a high-synchronized, near-instantaneous acceleration.”"
     status: claimed
     by: alexandro-wiggins

@@ -7,6 +7,10 @@ tags:
 rel:
   - [ witness, dylan-borland ]
 facts:
+  - text: "In sworn testimony to the House Oversight task force on 9 September 2025, former geospatial-intelligence airman Dylan Borland said that in summer 2012, at about 01:30 at Langley AFB, he saw an approximately 100-foot equilateral triangle take off near the NASA hangar, silent and interfering with his phone, before ascending rapidly. The transcript records the testimony, not its accuracy."
+    status: documented
+    by: dylan-borland
+    source: doc-transcript-2025-09-09
   - text: A silent, 100-foot-wide triangular craft with a “fluid or dynamic” structure hovered about 100 feet up, and Borland’s cell phone froze.
     status: claimed
     by: dylan-borland
