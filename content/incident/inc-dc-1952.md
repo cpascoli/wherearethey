@@ -11,6 +11,9 @@ rel:
   - [ witness, s-c-pierman ]
   - [ led to, doc-robertson-panel-1953 ]
 facts:
+  - text: "A CIA Office of Scientific Intelligence memo of September 1952 records that the Air Force had received about 1,500 official sighting reports since 1947, that \"During July 1952 alone, official reports totaled 250\", and that more than a quarter of the reports received from January through July 1952 were carried as unexplained (the scan reads 26 or 28 percent)."
+    status: documented
+    source: doc-cia-osi-flying-saucers-1952
   - text: Unexplained radar and visual sightings over the capital across consecutive weekends in July 1952 (July 12–14, 18–19 and 26–27).
     status: claimed
     source: https://www.gutenberg.org/ebooks/17346
