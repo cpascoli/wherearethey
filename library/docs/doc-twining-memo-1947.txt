@@ -1,6 +1,3 @@
-
-
-[page 1]
 Dev Pod Na 10804 (Hee 19 fap 44) : : WeUy Ja a’ saat
 ; _” HEADQUARTERS ve
 DMMUNICATION. AND. Be AIR MATERIEL COMMAND
@@ -54,12 +51,7 @@ ee The apparent ceamm description of the objects is as follows:~
 (1) Metallic or light reflecting surface. I
 
 s
-; 4 U-39552
-
-
-
-[page 2]
-Seen
+; 4 U-39552Seen
 
 Basic Ltr fr 0G, ANC, WF to ca, ‘AAaF, Washe De C. subj "AMC Opinion Con-
 Cerning *Flying Disca“.
