@@ -6,6 +6,9 @@ place: { name: "São José dos Campos, São Paulo, Brazil", lat: -23.1896, lng: 
 tags: [air-force, radar, aviator, international]
 rel:
   - [ documented in, doc-fab-noite-oficial-ovnis-1986 ]
+  - [ witness, ozires-silva ]
+  - [ witness, sergio-mota-da-silva ]
+  - [ witness, armindo-viriato ]
 facts:
   - text: "On the night of 19–20 May 1986, the São José dos Campos tower and São Paulo approach reported moving coloured lights and radar contacts, and the Brazilian Air Force scrambled interceptors from Santa Cruz and Anápolis. Pilots reported lights and airborne radar contacts they could not close on, including one that pulled away while the interceptor was supersonic."
     status: documented
