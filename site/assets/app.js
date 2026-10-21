@@ -1581,6 +1581,8 @@
     if (!v) return;
     const same = state.video === id;
     state.video = id;
+    // phones: the file card covers the whole screen, so close it to show the player (Back reopens it)
+    if (state.sel && matchMedia('(max-width: 860px)').matches) { state.sel = null; closePanel(); }
     if (state.view !== 'videos') go('videos', { keepSel: true, keepVideo: true });
     setHash({ replace });
     $('#player-empty').hidden = true;
