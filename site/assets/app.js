@@ -299,7 +299,6 @@
         'target-arrow-shape': 'none', 'font-size': 8, color: css('--muted'), 'text-rotation': 'autorotate',
         'text-background-color': css('--bg'), 'text-background-opacity': 0.85, 'text-background-padding': 1,
       } },
-      { selector: 'edge[kind="bridge"]', style: { 'line-style': 'dotted', opacity: 0.6 } }, // through a filtered-out file (see applyGraphFilter)
       { selector: 'edge[kind="mention"]', style: { 'line-style': 'dashed', 'line-dash-pattern': [3, 3], opacity: 0.6 } },
       { selector: '.faded', style: { opacity: 0.08 } },
       { selector: 'node.path', style: { 'border-width': 3, 'border-color': css('--accent'), 'border-style': 'solid', 'font-size': 11, 'font-weight': 600 } },
@@ -379,49 +378,14 @@
     applyGraphFilter();
     layoutGraph(false);
   }
-  // Bridges: when a type is switched off, files still on screen that connect through a hidden file of that type get a
-  // dotted link naming it (Fravor ··· Dietrich "via USS Nimitz…"), whatever their own types. Switching the type back on
-  // removes the bridges and the layout settles around the real intermediary again. Small groups only: a type with more
-  // than BRIDGE_TYPE_MAX files around one hidden file is left out (a documentary featuring 30 people says little about
-  // any two of them), and a hidden file bridges at most BRIDGE_MAX files in all.
-  const BRIDGE_TYPE_MAX = 12, BRIDGE_MAX = 30;
-  function bridgeEdges() {
-    const pairs = new Map();
-    for (const h of ents) {
-      if (h.type === 'record' || state.types.has(h.type)) continue; // only files hidden by the type filter
-      const byType = new Map();
-      for (const x of adj.get(h.id)) {
-        if (x.kind === 'mention' || !visible.has(x.other)) continue;
-        const t = byId.get(x.other).type;
-        (byType.get(t) || byType.set(t, new Set()).get(t)).add(x.other);
-      }
-      const ids = [...byType.values()].filter(g => g.size <= BRIDGE_TYPE_MAX).flatMap(g => [...g]);
-      if (ids.length < 2 || ids.length > BRIDGE_MAX) continue;
-      const m = [...ids].sort();
-      for (let i = 0; i < m.length; i++) for (let j = i + 1; j < m.length; j++) {
-        if (directly.has(`${m[i]}|${m[j]}`)) continue;
-        const key = `${m[i]}|${m[j]}`;
-        (pairs.get(key) || pairs.set(key, { s: m[i], t: m[j], via: [] }).get(key)).via.push(h.id);
-      }
-    }
-    // the line shows a few words; the full names appear on hover / tap (edgeTip)
-    const short = e => [e.name, ...e.aka].find(n => n.length <= 22) || `${e.date ? e.date.slice(0, 4) + ' ' : ''}${TYPES[e.type].label.toLowerCase()}`;
-    return [...pairs.values()].map(p => ({ group: 'edges', data: { id: `b:${p.s}|${p.t}`, source: p.s, target: p.t, kind: 'bridge', via: p.via,
-      label: p.via.length === 1 ? `via ${short(byId.get(p.via[0]))}` : `via ${p.via.length} files`,
-      tip: `Connected through ${p.via.map(id => byId.get(id).name).join('; ')} (hidden by the type filter)` } }));
-  }
-  const directly = new Set(KB.edges.filter(x => x.kind !== 'mention').flatMap(x => [`${x.s}|${x.t}`, `${x.t}|${x.s}`]));
   function applyGraphFilter() {
     if (!cy) return;
-    const bridges = bridgeEdges();
     const nv = visible.size, ne = KB.edges.filter(x => visible.has(x.s) && visible.has(x.t) && (x.kind !== 'mention' || state.showMentions)).length;
     if ($('#hud') && state.trail) setTimeout(() => { $('#hud').innerHTML = `Exploring · <b>${cy.nodes().not('.hidden').length}</b> files on screen · <b>${cy.edges().not('.hidden').length}</b> links${state.credibleOnly ? ' · official sources only' : ''}`; });
-    else if ($('#hud')) $('#hud').innerHTML = `Case network · <b>${nv}</b> files · <b>${ne}</b> links${bridges.length ? ` · <b>${bridges.length}</b> bridged` : ''}${state.credibleOnly ? ' · official sources only' : ''}`;
-    const shown = state.trail ? trailShown(bridges) : null;
+    else if ($('#hud')) $('#hud').innerHTML = `Case network · <b>${nv}</b> files · <b>${ne}</b> links${state.credibleOnly ? ' · official sources only' : ''}`;
+    const shown = state.trail ? trailShown() : null;
     const show = id => visible.has(id) && !state.hiddenIds.has(id) && (!shown || shown.has(id));
     cy.batch(() => {
-      cy.remove('edge[kind="bridge"]');
-      if (bridges.length) cy.add(bridges);
       cy.nodes().forEach(n => n.toggleClass('hidden', !show(n.id())));
       cy.edges().forEach(ed => ed.toggleClass('hidden', (ed.data('kind') === 'mention' && !state.showMentions) || !show(ed.data('source')) || !show(ed.data('target'))));
       // the trail: its files and the links between them (the path)
@@ -438,15 +402,14 @@
   // "Remove its connections" hides them again, except those that are themselves on the trail — the file stays on
   // the trail. The × on a trail chip takes a file off the trail. Files opened from search or a link while
   // exploring are pinned on screen.
-  function graphNeighbours(id, bridges) {
+  function graphNeighbours(id) {
     const out = new Set();
     for (const x of adj.get(id) || []) if (x.kind !== 'mention' && visible.has(x.other) && byId.get(x.other)?.type !== 'record') out.add(x.other);
-    for (const b of bridges) { if (b.data.source === id) out.add(b.data.target); else if (b.data.target === id) out.add(b.data.source); }
     return out;
   }
-  function trailShown(bridges) {
+  function trailShown() {
     const T = state.trail, shown = new Set([...T.steps, ...T.pinned]);
-    for (const id of T.open) for (const o of graphNeighbours(id, bridges)) shown.add(o);
+    for (const id of T.open) for (const o of graphNeighbours(id)) shown.add(o);
     return shown;
   }
   // Extending a trail must not reshuffle it: files already on screen keep their place, new ones fan out around the
