@@ -17,6 +17,6 @@ facts:
 
 On the evening of 4 November 1968, the crew of an Iberia Caravelle flying from Barcelona to Alicante, flight IB-249, radioed Barcelona Control that they were watching a very large light flanked by two smaller ones off the coast between Valencia and Sagunto. They described it switching off, dropping towards the sea, rising and lighting up again, and finally moving off towards the Mediterranean. The position was beyond the range of Barcelona's radar.
 
-The Spanish Air Force kept the transcript, and its 1992 declassification review found too little data to explain the sighting, suggesting only that another aircraft's landing lights could produce a similar effect. The captain, named in later accounts as Juan Ignacio Lorenzo Torres, is not named in the released file.
+The Spanish Air Force kept the transcript, and its 1992 declassification review found too little data to explain the sighting, suggesting only that another aircraft's landing lights could produce a similar effect. The released file names no crew. In 1989 the captain, Juan Ignacio Lorenzo, told RTVE a far bigger story. He said the light came within 10 metres and he exchanged signals with it using his taxi lights, and that he was later shown a national radar report. The 1968 transcript records none of this, and the file says Barcelona's radar could not reach the position.
 
-*Sources: Ejército del Aire, expediente 681104 (Biblioteca Virtual de Defensa)*
+*Sources: Ejército del Aire, expediente 681104 (Biblioteca Virtual de Defensa); RTVE, En familia, 21 April 1989*
