@@ -697,6 +697,9 @@ body.resizing iframe { pointer-events: none; }
 .more-menu a small { color: var(--muted); font-size: 12px; }
 .more-menu .mm-sep { height: 1px; background: var(--border); margin: 6px 4px; }
 @media (min-width: 861px) { .more-menu .mm-about { display: none; } } /* desktop shows About in the top bar */
+/* the bottom tab bar holds five: Latest, Explore, World, Videos, More (Timeline moves into More); desktop keeps Timeline as a tab */
+@media (min-width: 861px) { .more-menu .mm-narrow { display: none; } }
+@media (max-width: 860px) { .views .nv-wide { display: none; } }
 .lib-title { margin: 0 0 12px; font-size: 26px; }
 #view-shelf .lib-title { padding: 20px 24px 0; margin-bottom: 0; }
 #view-shelf .index-bar { padding-top: 12px; }
@@ -800,5 +803,7 @@ body.no-side #btn-side { display: none; }
 @media (max-width: 860px) {
   .latest-page { padding: 18px 16px 60px; }
   .lt-card { grid-template-columns: 1fr; }
+  .lt-cats { display: flex; flex-wrap: nowrap; overflow-x: auto; max-width: 100%; scrollbar-width: none; }
+  .lt-cats button { white-space: nowrap; flex: none; }
   .lt-row { grid-template-columns: 1fr; gap: 2px; }
 }

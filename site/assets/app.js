@@ -2268,7 +2268,8 @@
     $('#side').classList.remove('open'); // close the mobile filter drawer on navigation
     store.set('view', view);
     for (const v of VIEWS) $('#view-' + v).hidden = v !== view;
-    $$('#views [data-group], #views [data-view]').forEach(a => a.classList.toggle('active', (a.dataset.group || a.dataset.view).split(' ').includes(view)));
+    const narrow = matchMedia('(max-width: 860px)').matches; // the bottom tab bar folds Timeline into More
+    $$('#views [data-group], #views [data-view]').forEach(a => a.classList.toggle('active', [...(a.dataset.group || a.dataset.view).split(' '), ...(narrow && a.dataset.groupNarrow ? a.dataset.groupNarrow.split(' ') : [])].includes(view)));
     $('#app').classList.toggle('is-home', view === 'home');
     document.body.classList.toggle('is-home', view === 'home'); // the header sits outside #app
     $('#app').classList.toggle('no-side', view === 'latest'); document.body.classList.toggle('no-side', view === 'latest'); // the graph filters don't apply to Latest
