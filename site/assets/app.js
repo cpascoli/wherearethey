@@ -46,7 +46,7 @@
   // news item kinds (keep in sync with NEWS_KINDS in build.mjs)
   const NEWS_KIND = {
     statement: { label: 'Statement' }, post: { label: 'Post' }, article: { label: 'Article' }, interview: { label: 'Interview' }, podcast: { label: 'Podcast' },
-    hearing: { label: 'Hearing' }, legislation: { label: 'Legislation' }, release: { label: 'Official release' }, incident: { label: 'Incident' }, event: { label: 'Event' },
+    hearing: { label: 'Hearing' }, legislation: { label: 'Legislation' }, release: { label: 'Official release' }, research: { label: 'Research' }, incident: { label: 'Incident' }, event: { label: 'Event' },
   };
   const CRED = {
     credible: { label: 'Official source', hint: 'Meets the project rule: an official role in government, Congress, the military (incl. pilots and sensor operators), intelligence or academia' },
@@ -828,14 +828,14 @@
   const LATEST = { types: ['news', 'video', 'hearing', 'document', 'incident', 'event', 'film', 'book'], windowDays: 90, upcomingDays: 60, addedDays: 60, baseline: '2026-10-17' };
   const LATEST_CATS = [
     ['all', 'All'], ['hearings', 'Hearings & legislation'], ['interviews', 'Interviews & podcasts'], ['statements', 'Statements & posts'],
-    ['releases', 'Official releases'], ['incidents', 'Incidents'], ['press', 'In the press'], ['media', 'Books & films'],
+    ['releases', 'Official releases'], ['research', 'Research & analysis'], ['incidents', 'Incidents'], ['press', 'In the press'], ['media', 'Books & films'],
   ];
   const isoToday = () => new Date().toISOString().slice(0, 10);
   const dayOffset = (iso, days) => new Date(Date.parse(iso) + days * 864e5).toISOString().slice(0, 10);
   const dateEnd = d => /^\d{4}-\d{2}-\d{2}$/.test(d) ? d : /^\d{4}-\d{2}$/.test(d) ? new Date(Date.UTC(+d.slice(0, 4), +d.slice(5, 7), 0)).toISOString().slice(0, 10) : null;
   const recordingOf = v => adj.get(v.id).find(x => x.dir === 'out' && x.label === 'recording of' && ['hearing', 'event'].includes(byId.get(x.other)?.type))?.other;
   function latestCat(e) {
-    if (e.type === 'news') return { hearing: 'hearings', legislation: 'hearings', interview: 'interviews', podcast: 'interviews', statement: 'statements', post: 'statements', release: 'releases', incident: 'incidents', event: 'releases', article: 'press' }[e.kind] || 'press';
+    if (e.type === 'news') return { hearing: 'hearings', legislation: 'hearings', interview: 'interviews', podcast: 'interviews', statement: 'statements', post: 'statements', release: 'releases', research: 'research', incident: 'incidents', event: 'releases', article: 'press' }[e.kind] || 'press';
     if (e.type === 'hearing') return 'hearings';
     if (e.type === 'video') return recordingOf(e) ? 'hearings' : 'interviews';
     if (e.type === 'document' || e.type === 'event') return 'releases';

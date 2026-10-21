@@ -16,7 +16,7 @@ const REPORTER = ['journalist', 'policy-expert'];
 export const MASS_MIN_WITNESSES = 50;
 export const OUTCOMES = ['open', 'disputed', 'explained', 'hoax'];
 // news items: short dated updates (a statement, a post, an article) too slight for a full entry
-export const NEWS_KINDS = ['statement', 'post', 'article', 'interview', 'podcast', 'hearing', 'legislation', 'release', 'incident', 'event'];
+export const NEWS_KINDS = ['statement', 'post', 'article', 'interview', 'podcast', 'hearing', 'legislation', 'release', 'research', 'incident', 'event'];
 // not graph nodes: shown in context (dossiers, index, search, Latest) instead
 export const OFF_GRAPH = new Set(['record', 'news']);
 
