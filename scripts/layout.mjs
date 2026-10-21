@@ -19,7 +19,7 @@ const FCOSE = {
 };
 
 export async function computeLayouts(entities, edges, adjDegree) {
-  const nodes = entities.filter(e => e.type !== 'record');
+  const nodes = entities.filter(e => e.type !== 'record' && e.type !== 'news');
   const ids = new Set(nodes.map(e => e.id));
   const links = edges.filter(x => x.kind !== 'mention' && ids.has(x.s) && ids.has(x.t));
   const sets = {

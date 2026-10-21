@@ -9,11 +9,16 @@ import { marked } from 'marked';
 import { ROOT, TYPES, STATUSES, readEntries, toSeconds, youtubeId } from './lib.mjs';
 import { computeLayouts } from './layout.mjs';
 import { assignPaths, writePages } from './pages.mjs';
+import { assignAdded } from './added.mjs';
 
 export const CREDIBLE = ['congress', 'government', 'intelligence', 'military', 'aviator', 'sensor-operator', 'academia', 'astronaut', 'aerospace', 'law-enforcement'];
 const REPORTER = ['journalist', 'policy-expert'];
 export const MASS_MIN_WITNESSES = 50;
 export const OUTCOMES = ['open', 'disputed', 'explained', 'hoax'];
+// news items: short dated updates (a statement, a post, an article) too slight for a full entry
+export const NEWS_KINDS = ['statement', 'post', 'article', 'interview', 'podcast', 'hearing', 'legislation', 'release', 'incident', 'event'];
+// not graph nodes: shown in context (dossiers, index, search, Latest) instead
+export const OFF_GRAPH = new Set(['record', 'news']);
 
 export async function build({ check = false, quiet = false } = {}) {
   const t0 = Date.now();
@@ -93,6 +98,14 @@ export async function build({ check = false, quiet = false } = {}) {
       if (d.outcome_note) e.outcomeNote = String(d.outcome_note);
       if (d.outcome_source) e.outcomeSource = parseSource(d.outcome_source, r.file);
       if (['explained', 'hoax', 'disputed'].includes(e.outcome) && !d.outcome_source) warnings.push(`${r.file}: outcome "${e.outcome}" needs an outcome_source`);
+    }
+    if (r.type === 'news') {
+      e.kind = d.kind ? String(d.kind) : 'article';
+      if (!NEWS_KINDS.includes(e.kind)) warnings.push(`${r.file}: news kind "${e.kind}" should be one of ${NEWS_KINDS.join(', ')}`);
+      e.url = d.url ? String(d.url) : null;
+      if (d.outlet) e.outlet = String(d.outlet);
+      if (!e.url) warnings.push(`${r.file}: news item needs a "url" (the original source)`);
+      if (!e.date) warnings.push(`${r.file}: news item needs a "date" (when it happened)`);
     }
     if (r.type === 'video') {
       e.youtube = d.youtube ? youtubeId(d.youtube) : null;
@@ -212,7 +225,7 @@ export async function build({ check = false, quiet = false } = {}) {
   const norm = s => s.replace(/[^\p{L}\p{N}']+/gu, ' ');
   const termMap = new Map(); // normalized term → [entity ids]
   for (const e of entities) {
-    if (['video', 'source', 'record'].includes(e.type) || e.nomatch) continue;
+    if (['video', 'source', 'record', 'news'].includes(e.type) || e.nomatch) continue;
     for (const term of new Set([e.name, ...e.aka, ...(e.match || [])])) {
       const n = norm(term).trim();
       if (n.length < 3 || n.length > 60) continue; // long document titles are never spoken verbatim
@@ -340,13 +353,14 @@ export async function build({ check = false, quiet = false } = {}) {
 
   // ── Write site/data ──
   assignPaths(entities); // real URLs (/person/david-fravor), frozen in content/slugs.json
+  assignAdded(entities, raw); // when each entry entered the archive, frozen in content/added.json
   const out = path.join(ROOT, 'site', 'data');
   fs.rmSync(out, { recursive: true, force: true });
   fs.mkdirSync(path.join(out, 'transcripts'), { recursive: true });
   fs.mkdirSync(path.join(out, 'doctext'), { recursive: true });
   const edgeList = [...edges.values()];
   // graph layout, precomputed (node size = links to other graph nodes, as in the app)
-  const isRecord = new Set(entities.filter(e => e.type === 'record').map(e => e.id));
+  const isRecord = new Set(entities.filter(e => OFF_GRAPH.has(e.type)).map(e => e.id));
   const degree = new Map();
   for (const x of edgeList) if (x.kind !== 'mention' && !isRecord.has(x.s) && !isRecord.has(x.t)) for (const id of [x.s, x.t]) degree.set(id, (degree.get(id) || 0) + 1);
   const layouts = await computeLayouts(entities, edgeList, id => degree.get(id) || 0);

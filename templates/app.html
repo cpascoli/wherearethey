@@ -29,6 +29,7 @@
     // accepted earlier, or no choice yet in a country where analytics doesn't need prior consent (opt-out via Cookie settings)
     if (saved === 'granted' || (saved === null && !window.CONSENT_REQUIRED)) window.startAnalytics();
   </script>
+  <link rel="alternate" type="application/rss+xml" title="Where Are They — Latest" href="/feed.xml">
   <!--HEAD-->
   <script>document.documentElement.classList.add('js')</script>
   <meta name="description" content="A navigable knowledge map of UAP / NHI testimony, programs, hearings and incidents.">
@@ -51,6 +52,7 @@
       <div id="q-results" class="dropdown" hidden></div>
     </div>
     <nav class="views" id="views">
+      <a data-view="latest" href="/latest" aria-label="Latest"><svg class="nv-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2.2"/><path d="M7.8 7.8a6 6 0 0 0 0 8.4M16.2 7.8a6 6 0 0 1 0 8.4M5 5a10 10 0 0 0 0 14M19 5a10 10 0 0 1 0 14"/></svg><span>Latest</span></a>
       <a data-view="graph" href="/explore" aria-label="Explore"><svg class="nv-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="6" r="2.4"/><circle cx="12" cy="17" r="2.4"/><path d="M8.2 7.7 15.7 6.4M7.2 9 10.9 15M16.8 8.2 13.1 15"/></svg><span>Explore</span></a>
       <a data-view="timeline" href="/timeline" aria-label="Timeline"><svg class="nv-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h18"/><circle cx="6" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="18" cy="12" r="1.8"/><path d="M6 7v3M12 14v3M18 7v3"/></svg><span>Timeline</span></a>
       <a data-view="map" href="/world" aria-label="World"><svg class="nv-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.6 2.4 3.9 5.2 3.9 8.5s-1.3 6.1-3.9 8.5c-2.6-2.4-3.9-5.2-3.9-8.5S9.4 5.9 12 3.5z"/></svg><span>World</span></a>
@@ -122,6 +124,7 @@
 
     <main class="main" id="main">
       <section class="view home" id="view-home"></section>
+      <section class="view" id="view-latest" hidden><div id="latest" class="latest-page"></div></section>
       <section class="view" id="view-graph" hidden><div id="cy"></div><div class="legend" id="legend"></div></section>
       <section class="view" id="view-timeline" hidden><div class="timeline" id="timeline"></div></section>
       <section class="view" id="view-map" hidden><div id="map"></div></section>

@@ -31,6 +31,8 @@ site/documentaries.html
 site/books.html
 site/a-z.html
 site/claims.html
+site/latest.html
+site/feed.xml
 site/sitemap.xml
 site/robots.txt
 site/person/
@@ -47,3 +49,4 @@ site/event/
 site/concept/
 site/place/
 site/source/
+site/news/

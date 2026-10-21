@@ -10,22 +10,38 @@ export const SITE_URL = (process.env.SITE_URL || 'https://wherearethey.info').re
 // URL segment per type (singular, readable); records get pages but stay out of search results
 export const SEG = {
   person: 'person', incident: 'incident', hearing: 'hearing', program: 'program', organization: 'organization', document: 'document',
-  film: 'documentary', book: 'book', record: 'record', video: 'video', event: 'event', concept: 'concept', place: 'place', source: 'source',
+  film: 'documentary', book: 'book', record: 'record', video: 'video', event: 'event', concept: 'concept', place: 'place', source: 'source', news: 'news',
 };
 const LABEL = {
   person: 'Person', incident: 'Incident', hearing: 'Hearing / briefing', program: 'Program', organization: 'Organization', document: 'Document',
-  film: 'Documentary', book: 'Book', record: 'Official record (PURSUE)', video: 'Video', event: 'Event', concept: 'Concept', place: 'Place', source: 'Channel / source',
+  film: 'Documentary', book: 'Book', record: 'Official record (PURSUE)', video: 'Video', event: 'Event', concept: 'Concept', place: 'Place', source: 'Channel / source', news: 'News',
 };
 const PLURAL = {
   person: 'People', incident: 'Incidents', hearing: 'Hearings & briefings', program: 'Programs', organization: 'Organizations', document: 'Documents',
-  film: 'Documentaries', book: 'Books', record: 'Official records (PURSUE)', video: 'Videos', event: 'Events', concept: 'Concepts', place: 'Places', source: 'Channels & sources',
+  film: 'Documentaries', book: 'Books', record: 'Official records (PURSUE)', video: 'Videos', event: 'Events', concept: 'Concepts', place: 'Places', source: 'Channels & sources', news: 'News',
 };
 // app views → paths (keep in sync with VIEW_PATH in app.js)
-export const VIEW_PATH = { home: '/', graph: '/explore', timeline: '/timeline', map: '/world', videos: '/videos', shelf: '/documentaries', books: '/books', index: '/a-z', claims: '/claims' };
+export const VIEW_PATH = { home: '/', latest: '/latest', graph: '/explore', timeline: '/timeline', map: '/world', videos: '/videos', shelf: '/documentaries', books: '/books', index: '/a-z', claims: '/claims' };
 // full transcripts on every video page (switch to a kind check to limit some videos to moments + excerpts)
 const FULL_TRANSCRIPT = () => true;
 // types whose ids are already clean word slugs; the rest are slugged from their name
 const ID_SLUG = new Set(['person', 'organization', 'program', 'concept', 'place', 'source', 'record']);
+
+// Latest: what happened recently (by event `date`), and what is new to the archive (by `added`). Keep in sync with app.js.
+// baseline: the initial import (git's first commit); entries from it are the archive's starting point, not "recently added"
+export const LATEST = { types: ['news', 'video', 'hearing', 'document', 'incident', 'event', 'film', 'book'], windowDays: 90, upcomingDays: 60, addedDays: 60, baseline: '2026-10-17' };
+const dayOffset = (iso, days) => new Date(Date.parse(iso) + days * 864e5).toISOString().slice(0, 10);
+// the last day an entry's date covers ("2026-10" → 2026-10-31); year-only dates are too coarse for news
+const dateEnd = d => /^\d{4}-\d{2}-\d{2}$/.test(d) ? d : /^\d{4}-\d{2}$/.test(d) ? new Date(Date.UTC(+d.slice(0, 4), +d.slice(5, 7), 0)).toISOString().slice(0, 10) : null;
+export function latestSplit(entities, today = new Date().toISOString().slice(0, 10)) {
+  const from = dayOffset(today, -LATEST.windowDays), until = dayOffset(today, LATEST.upcomingDays), since = dayOffset(today, -LATEST.addedDays);
+  const recent = entities.filter(e => LATEST.types.includes(e.type) && e.date && dateEnd(e.end || e.date) >= from && dateEnd(e.date) && e.date <= until)
+    .sort((a, b) => String(b.date).localeCompare(String(a.date)) || String(b.added).localeCompare(String(a.added)));
+  const inRecent = new Set(recent.map(e => e.id));
+  const added = entities.filter(e => !inRecent.has(e.id) && !['record', 'source'].includes(e.type) && e.added >= since && e.added > LATEST.baseline)
+    .sort((a, b) => String(b.added).localeCompare(String(a.added)) || a.name.localeCompare(b.name));
+  return { recent, added };
+}
 
 const kebab = s => String(s).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/['’]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 const trimSlug = (s, max = 72) => (s.length <= max ? s : s.slice(0, max).replace(/-[^-]*$/, '')) || s.slice(0, max);
@@ -41,7 +57,7 @@ export function assignPaths(entities, { save = !process.env.NETLIFY } = {}) {
     if (!key) {
       let base = trimSlug(ID_SLUG.has(e.type) ? e.id : kebab(e.name) || e.id, 66);
       const year = e.date?.slice(0, 4);
-      if (['incident', 'hearing', 'event'].includes(e.type) && year && !base.includes(year)) base += `-${year}`;
+      if (['incident', 'hearing', 'event', 'news'].includes(e.type) && year && !base.includes(year)) base += `-${year}`;
       let slug = base, n = 2;
       while (taken.has(`${e.type}/${slug}`)) slug = `${base}-${n++}`;
       key = `${e.type}/${slug}`;
@@ -86,7 +102,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
   for (const x of edges) for (const [a, b, dir] of [[x.s, x.t, 'out'], [x.t, x.s, 'in']]) (near.get(a) || near.set(a, []).get(a)).push({ other: b, label: x.label, kind: x.kind, dir });
 
   const pages = []; // { path, title, description, body, jsonld, image, noindex, type }
-  const nav = `<nav class="ssr-nav">${Object.entries({ Home: '/', Explore: '/explore', Timeline: '/timeline', World: '/world', Videos: '/videos', Documentaries: '/documentaries', Books: '/books', 'A–Z index': '/a-z', Claims: '/claims', About: '/about' }).map(([l, h]) => `<a href="${h}">${l}</a>`).join(' · ')}</nav>`;
+  const nav = `<nav class="ssr-nav">${Object.entries({ Home: '/', Latest: '/latest', Explore: '/explore', Timeline: '/timeline', World: '/world', Videos: '/videos', Documentaries: '/documentaries', Books: '/books', 'A–Z index': '/a-z', Claims: '/claims', About: '/about' }).map(([l, h]) => `<a href="${h}">${l}</a>`).join(' · ')}</nav>`;
 
   for (const e of entities) {
     const h = [];
@@ -102,6 +118,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       const url = videoUrl(e);
       h.push(`<p>${[e.channel, fmtDate(e.date), e.duration && `${Math.round(e.duration / 60)} min`].filter(Boolean).map(esc).join(' · ')}${url ? ` · <a href="${esc(url)}" rel="noopener">Watch the original</a>` : ''}</p>`);
     }
+    if (e.type === 'news' && e.url) h.push(`<p>${[e.kind, e.outlet].filter(Boolean).map(esc).join(' · ')} · <a href="${esc(e.url)}" rel="noopener">Original source</a></p>`);
     if (e.outcome && e.outcome !== 'open') {
       const lbl = { disputed: 'Partly explained', explained: 'Explained', hoax: 'Hoax' }[e.outcome];
       const src = e.outcomeSource?.id ? ` (${link(e.outcomeSource.id)})` : e.outcomeSource?.url ? ` (<a href="${esc(e.outcomeSource.url)}" rel="noopener">source</a>)` : '';
@@ -188,7 +205,16 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
   const ofType = t => entities.filter(e => e.type === t);
   const intro = `An open, sourced archive of what officials, pilots, radar operators, intelligence officers and scientists have said on the record about unidentified anomalous phenomena (UAP) and non-human intelligence: ${stats.byType.person} people, ${stats.byType.incident} incidents, ${stats.byType.hearing} hearings, ${stats.videos} videos with ${stats.transcriptHours} hours of transcripts, and every claim with its status and source.`;
   const typeOrder = ['person', 'incident', 'hearing', 'program', 'organization', 'document', 'event', 'concept', 'place', 'film', 'book', 'video', 'source'];
+  const today = new Date().toISOString().slice(0, 10);
+  const { recent, added } = latestSplit(entities, today);
+  const kindOf = e => (e.type === 'news' ? `${e.kind[0].toUpperCase()}${e.kind.slice(1)}` : LABEL[e.type]);
+  const summaryOf = e => clip(text(e.body) || e.facts[0]?.text || (e.moments || []).map(m => m.text).join(' ') || '', 220);
+  const latestLi = (e, when) => `<li><span class="ssr-by">${esc(when)} · ${esc(kindOf(e))}</span> ${link(e.id)}${summaryOf(e) ? `<br><span class="ssr-note">${esc(summaryOf(e))}</span>` : ''}</li>`;
+  const latestBody = `<h1>Latest</h1><p>What has happened recently in the UAP / NHI record (hearings, interviews, statements, official releases, new incidents), sorted by when it happened, followed by older material newly added to the archive. Subscribe with the <a href="/feed.xml">RSS feed</a>.</p>`
+    + `<h2>Latest</h2>${recent.length ? `<ul>${recent.map(e => latestLi(e, fmtDate(e.date) + (e.date > today ? ' (upcoming)' : ''))).join('')}</ul>` : '<p>Nothing in the last 90 days yet.</p>'}`
+    + `<h2>Recently added to the archive</h2><ul>${added.slice(0, 60).map(e => latestLi(e, `${fmtDate(e.date) || 'undated'} · added ${fmtDate(e.added)}`)).join('')}</ul>`;
   const views = {
+    latest: ['Latest', 'The latest UAP / NHI hearings, interviews, statements, official releases and incidents, and the newest additions to the archive.', latestBody],
     home: ['Where Are They — UAP / NHI case archive', intro, `<h1>Where are they?</h1><p>${esc(intro)}</p><h2>Start here</h2><ul><li><a href="/videos">Videos: hearings, interviews and archival footage with transcripts</a></li><li><a href="/claims">Claims ledger: every claim and its status</a></li><li><a href="/a-z">A–Z index of every file</a></li><li><a href="/documentaries">Documentaries</a></li><li><a href="/books">Books</a></li></ul><h2>Hearings &amp; briefings</h2>${listOf(ofType('hearing').sort(newest), e => e.date ? ` (${esc(fmtDate(e.date))})` : '')}<h2>Programs</h2>${listOf(ofType('program'))}`],
     graph: ['Explore the network', 'An interactive map of the people, programs, incidents, hearings and documents in the UAP / NHI record, and how they connect.', `<h1>Explore the network</h1><p>An interactive map of the people, programs, incidents, hearings and documents in the record, and how they connect. Every file is also listed in the <a href="/a-z">A–Z index</a>.</p>`],
     timeline: ['Timeline', 'UAP / NHI incidents, hearings, programs and events in chronological order.', `<h1>Timeline</h1>${listOf(entities.filter(e => e.date && ['incident', 'hearing', 'event', 'program', 'document'].includes(e.type)).sort((a, b) => String(a.date).localeCompare(String(b.date))), e => ` (${esc(fmtDate(e.date))})`)}`],
@@ -227,8 +253,17 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     fs.writeFileSync(path.join(site, file), render(p));
   }
   fs.writeFileSync(path.join(site, '404.html'), render({ path: '/404', title: 'Not found', description: 'This page does not exist.', body: '<h1>Not found</h1><p>This page does not exist. Try the <a href="/a-z">A–Z index</a>.</p>', noindex: true }));
-  const today = new Date().toISOString().slice(0, 10);
   const indexed = pages.filter(p => !p.noindex);
+  // RSS: everything on Latest, newest addition first; the title carries the event date
+  const rfc = d => new Date(`${d}T12:00:00Z`).toUTCString();
+  const feedItems = [...recent, ...added].filter(e => e.added).sort((a, b) => String(b.added).localeCompare(String(a.added))).slice(0, 60);
+  fs.writeFileSync(path.join(site, 'feed.xml'), `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
+<title>Where Are They — Latest</title><link>${SITE_URL}/latest</link><atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>
+<description>New hearings, interviews, statements, official releases and incidents in the UAP / NHI record, and new additions to the archive.</description><language>en</language>
+${feedItems.map(e => `<item><title>${esc(`${kindOf(e)}: ${e.name}${e.date ? ` (${fmtDate(e.date)})` : ''}`)}</title><link>${SITE_URL}${e.path}</link><guid isPermaLink="true">${SITE_URL}${e.path}</guid><pubDate>${rfc(e.added)}</pubDate><description>${esc(summaryOf(e))}</description></item>`).join('\n')}
+</channel></rss>
+`);
   fs.writeFileSync(path.join(site, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${[...indexed.map(p => p.path), '/about', '/privacy'].map(p => `  <url><loc>${SITE_URL}${p}</loc><lastmod>${today}</lastmod></url>`).join('\n')}\n</urlset>\n`);
   fs.writeFileSync(path.join(site, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
   return { pages: pages.length, indexed: indexed.length + 2 };

@@ -28,6 +28,7 @@
     concept: { label: 'Concept', plural: 'Concepts', color: '#BDB55C', shape: 'octagon' },
     place: { label: 'Place', plural: 'Places', color: '#A98467', shape: 'pentagon' },
     source: { label: 'Source', plural: 'Channels & sources', color: '#8C9AAB', shape: 'vee' },
+    news: { label: 'News', plural: 'News', color: '#F2C14E', shape: 'rectangle' },
   };
   const STATUS = {
     documented: { label: 'Documented', hint: 'Backed by an official record or primary document' },
@@ -42,6 +43,11 @@
     hoax: { label: 'Hoax', hint: 'Shown to be fabricated' },
   };
   const resolved = e => e.outcome === 'explained' || e.outcome === 'hoax';
+  // news item kinds (keep in sync with NEWS_KINDS in build.mjs)
+  const NEWS_KIND = {
+    statement: { label: 'Statement' }, post: { label: 'Post' }, article: { label: 'Article' }, interview: { label: 'Interview' }, podcast: { label: 'Podcast' },
+    hearing: { label: 'Hearing' }, legislation: { label: 'Legislation' }, release: { label: 'Official release' }, incident: { label: 'Incident' }, event: { label: 'Event' },
+  };
   const CRED = {
     credible: { label: 'Official source', hint: 'Meets the project rule: an official role in government, Congress, the military (incl. pilots and sensor operators), intelligence or academia' },
     mass: { label: 'Mass sighting', hint: 'Included by the mass-sighting rule: 50+ independent witnesses with contemporary press, TV or radio coverage' },
@@ -145,15 +151,16 @@
 
   // ───────────── state ─────────────
   const allTypes = Object.keys(TYPES);
-  // PURSUE records stay out of the graph and the type filter; they appear in context (dossiers, index, search)
-  const graphTypes = allTypes.filter(t => t !== 'record');
+  // PURSUE records and news items stay out of the graph and the type filter; they appear in context (dossiers, index, search, Latest)
+  const offGraph = t => t === 'record' || t === 'news';
+  const graphTypes = allTypes.filter(t => !offGraph(t));
   const TYPES_BEFORE_SHELF = ['person', 'incident', 'hearing', 'program', 'organization', 'document', 'record', 'video', 'event', 'concept', 'place', 'source'];
   const state = {
     view: 'graph', sel: null,
     credibleOnly: store.get('credibleOnly', true),
     hideExplained: store.get('hideExplained', true),
     // types added since a visitor saved their filters (e.g. film, book) are switched on for them
-    types: new Set(store.get('types', null) ? [...store.get('types'), ...allTypes.filter(t => t !== 'record' && !store.get('typesSeen', TYPES_BEFORE_SHELF).includes(t))] : allTypes.filter(t => t !== 'record')),
+    types: new Set(store.get('types', null) ? [...store.get('types'), ...allTypes.filter(t => !offGraph(t) && !store.get('typesSeen', TYPES_BEFORE_SHELF).includes(t))] : allTypes.filter(t => !offGraph(t))),
     tags: new Set(store.get('tags', [])),
     // Open-ended ends are stored as null so new earlier/later files stay in range. Older saves stored the
     // full range as numbers (lower end 1940, the old floor); treat those as open too.
@@ -163,7 +170,7 @@
     trail: null,                                  // exploration mode: { steps: [ids], open: Set (connections shown), pinned: Set }
     hiddenIds: new Set(),                         // files hidden by hand (right-click → Hide)
   };
-  state.types.delete('record');
+  state.types.delete('record'); state.types.delete('news');
   let visible = new Set();
 
   function computeVisible() {
@@ -350,13 +357,13 @@
     return `${best.a}\n${b}`;
   }
   function initGraph() {
-    const degree = id => adj.get(id).filter(x => x.kind !== 'mention' && byId.get(x.other)?.type !== 'record').length;
+    const degree = id => adj.get(id).filter(x => x.kind !== 'mention' && !offGraph(byId.get(x.other)?.type)).length;
     const elements = [
-      ...ents.filter(e => e.type !== 'record').map(e => ({ data: {
+      ...ents.filter(e => !offGraph(e.type)).map(e => ({ data: {
         id: e.id, label: twoLines(e.name), type: e.type,
         color: TYPES[e.type]?.color || '#999', shape: TYPES[e.type]?.shape || 'ellipse', size: Math.min(48, 12 + Math.sqrt(degree(e.id)) * 6),
       }, classes: e.cred === 'outside' ? 'outside' : '' })),
-      ...KB.edges.map((x, i) => [x, i]).filter(([x]) => byId.get(x.s)?.type !== 'record' && byId.get(x.t)?.type !== 'record')
+      ...KB.edges.map((x, i) => [x, i]).filter(([x]) => !offGraph(byId.get(x.s)?.type) && !offGraph(byId.get(x.t)?.type))
         .map(([x, i]) => ({ data: { id: 'e' + i, source: x.s, target: x.t, label: x.label, kind: x.kind } })),
     ];
     cy = cytoscape({ container: $('#cy'), elements, style: graphStyle(), wheelSensitivity: 0.25, minZoom: 0.15, maxZoom: 3.5, boxSelectionEnabled: false });
@@ -426,7 +433,7 @@
   // exploring are pinned on screen.
   function graphNeighbours(id) {
     const out = new Set();
-    for (const x of adj.get(id) || []) if (x.kind !== 'mention' && visible.has(x.other) && byId.get(x.other)?.type !== 'record') out.add(x.other);
+    for (const x of adj.get(id) || []) if (x.kind !== 'mention' && visible.has(x.other) && !offGraph(byId.get(x.other)?.type)) out.add(x.other);
     return out;
   }
   function trailShown() {
@@ -550,7 +557,7 @@
   // earlier steps fold their connections away (the path stays); on an earlier step it goes back there and drops
   // the steps after it. "Show its connections" (menu) remains the additive way to open other directions.
   function followFile(id) {
-    if (!byId.has(id) || byId.get(id).type === 'record') return;
+    if (!byId.has(id) || offGraph(byId.get(id).type)) return;
     if (!state.trail) { startTrail(id); return; }
     const T = state.trail, i = T.steps.indexOf(id);
     if (i >= 0) T.steps.length = i + 1; else T.steps.push(id);
@@ -779,7 +786,7 @@
   // ───────────── index ─────────────
   function renderIndex() {
     const q = $('#iq').value.trim().toLowerCase();
-    const items = ents.filter(e => visible.has(e.id) && (!q || searchText(e).includes(q)));
+    const items = ents.filter(e => (visible.has(e.id) || e.type === 'news') && (!q || searchText(e).includes(q)));
     $('#iq-count').textContent = `${items.length} of ${ents.length}`;
     $('#index').innerHTML = allTypes.map(t => {
       const list = items.filter(e => e.type === t).sort((a, b) => a.name.localeCompare(b.name));
@@ -814,6 +821,105 @@
     } else url = `https://www.amazon.${store}/s?k=${digits}`; // 979 ISBNs have no ISBN-10: search by ISBN
     return { url: url + (tag ? (url.includes('?') ? '&' : '?') + tag : ''), store: `amazon.${store}` };
   }
+
+  // ───────────── Latest ─────────────
+  // What happened recently (by event `date`) and what is new to the archive (by `added`, older material).
+  // Keep LATEST in sync with scripts/pages.mjs (server pages and the RSS feed use the same rules).
+  const LATEST = { types: ['news', 'video', 'hearing', 'document', 'incident', 'event', 'film', 'book'], windowDays: 90, upcomingDays: 60, addedDays: 60, baseline: '2026-10-17' };
+  const LATEST_CATS = [
+    ['all', 'All'], ['hearings', 'Hearings & legislation'], ['interviews', 'Interviews & podcasts'], ['statements', 'Statements & posts'],
+    ['releases', 'Official releases'], ['incidents', 'Incidents'], ['press', 'In the press'], ['media', 'Books & films'],
+  ];
+  const isoToday = () => new Date().toISOString().slice(0, 10);
+  const dayOffset = (iso, days) => new Date(Date.parse(iso) + days * 864e5).toISOString().slice(0, 10);
+  const dateEnd = d => /^\d{4}-\d{2}-\d{2}$/.test(d) ? d : /^\d{4}-\d{2}$/.test(d) ? new Date(Date.UTC(+d.slice(0, 4), +d.slice(5, 7), 0)).toISOString().slice(0, 10) : null;
+  const recordingOf = v => adj.get(v.id).find(x => x.dir === 'out' && x.label === 'recording of' && ['hearing', 'event'].includes(byId.get(x.other)?.type))?.other;
+  function latestCat(e) {
+    if (e.type === 'news') return { hearing: 'hearings', legislation: 'hearings', interview: 'interviews', podcast: 'interviews', statement: 'statements', post: 'statements', release: 'releases', incident: 'incidents', event: 'releases', article: 'press' }[e.kind] || 'press';
+    if (e.type === 'hearing') return 'hearings';
+    if (e.type === 'video') return recordingOf(e) ? 'hearings' : 'interviews';
+    if (e.type === 'document' || e.type === 'event') return 'releases';
+    if (e.type === 'incident') return 'incidents';
+    return 'media';
+  }
+  function latestData() {
+    const today = isoToday();
+    const from = dayOffset(today, -LATEST.windowDays), until = dayOffset(today, LATEST.upcomingDays), since = dayOffset(today, -LATEST.addedDays);
+    let recent = ents.filter(e => LATEST.types.includes(e.type) && e.date && dateEnd(e.date) && dateEnd(e.end || e.date) >= from && e.date <= until)
+      .sort((a, b) => String(b.date).localeCompare(String(a.date)) || String(b.added).localeCompare(String(a.added)));
+    // a hearing and its recording (or transcript) make one card: the hearing, with the recording's play button
+    const ids = new Set(recent.map(e => e.id));
+    const folded = new Map(); // hearing id → recording video
+    recent = recent.filter(e => {
+      const parent = e.type === 'video' ? recordingOf(e) : e.type === 'document' ? adj.get(e.id).find(x => x.dir === 'out' && x.label === 'transcript of')?.other : null;
+      if (parent && ids.has(parent)) { if (e.type === 'video' && !folded.has(parent)) folded.set(parent, e); return false; }
+      return true;
+    });
+    const inRecent = new Set(recent.map(e => e.id));
+    const added = ents.filter(e => !inRecent.has(e.id) && !folded.has(e.id) && !['record', 'source'].includes(e.type) && e.added >= since && e.added > LATEST.baseline)
+      .sort((a, b) => String(b.added).localeCompare(String(a.added)) || a.name.localeCompare(b.name));
+    return { recent, added, folded, today };
+  }
+  // people on a card: those linked to it (featured, speaking, quoted), official sources first
+  function latestPeople(e) {
+    const ids = new Set();
+    for (const x of adj.get(e.id)) if (x.kind !== 'mention' && byId.get(x.other)?.type === 'person') ids.add(x.other);
+    for (const m of e.moments || []) if (m.speaker) ids.add(m.speaker);
+    return [...ids].map(id => byId.get(id)).sort((a, b) => (a.cred === 'credible' ? 0 : 1) - (b.cred === 'credible' ? 0 : 1)).slice(0, 6);
+  }
+  const latestSummary = e => {
+    const t = (e.body ? new DOMParser().parseFromString(e.body, 'text/html').body.textContent : '').replace(/\s+/g, ' ').trim() || e.facts[0]?.text || (e.moments || []).slice(0, 2).map(m => m.text).join(' ') || '';
+    return t.length > 260 ? t.slice(0, 257).replace(/\s+\S*$/, '') + '…' : t;
+  };
+  // "new since your last visit": the previous visit's date, read once per page load
+  const LATEST_SEEN = store.get('latestSeen', null);
+  let latestCat_ = 'all', latestShowAll = false;
+  function renderLatest() {
+    const { recent, added, folded, today } = latestData();
+    const isNew = e => LATEST_SEEN && e.added > LATEST_SEEN;
+    const cats = new Map(LATEST_CATS.map(([k]) => [k, 0]));
+    for (const e of recent) { cats.set('all', cats.get('all') + 1); cats.set(latestCat(e), cats.get(latestCat(e)) + 1); }
+    const list = recent.filter(e => latestCat_ === 'all' || latestCat(e) === latestCat_);
+    const catLabel = Object.fromEntries(LATEST_CATS);
+    const card = e => {
+      const rec = e.type === 'video' ? e : folded.get(e.id);
+      const late = e.added && dateEnd(e.date) && e.added > dayOffset(dateEnd(e.date), 3);
+      const kind = e.type === 'news' ? NEWS_KIND[e.kind]?.label || e.kind : TYPES[e.type].label;
+      const people = latestPeople(e);
+      return `<article class="lt-card ${isNew(e) ? 'is-new' : ''}" style="--c:${TYPES[e.type].color}">
+        ${rec ? `<div class="lt-thumb" data-play="${rec.id}@0" title="Play"><img src="${vthumb(rec)}" alt="" loading="lazy"><span class="wplay">▶</span>${rec.duration ? `<span class="wdur">${fmtDur(rec.duration)}</span>` : ''}</div>` : ''}
+        <div class="lt-body">
+          <div class="lt-kicker"><span class="lt-date">${esc(fmtRange(e))}</span>${e.date > today ? '<em class="lt-tag up">upcoming</em>' : ''}${isNew(e) ? '<em class="lt-tag new">new</em>' : ''}<span class="lt-kind">${esc(kind)}</span>${e.type === 'video' && e.channel ? `<span class="lt-src">${esc(e.channel)}</span>` : e.outlet ? `<span class="lt-src">${esc(e.outlet)}</span>` : ''}</div>
+          <h3><a href="${hrefOf(e.id)}" data-goto="${esc(e.id)}">${esc(e.name)}</a></h3>
+          ${latestSummary(e) ? `<p class="lt-sum">${esc(latestSummary(e))}</p>` : ''}
+          ${people.length ? `<div class="lt-people">${people.map(p => chip(p.id)).join('')}</div>` : ''}
+          <div class="lt-actions">${rec ? `<button class="btn small primary" data-play="${rec.id}@0">▶ Play${rec.moments?.length ? ` · ${rec.moments.length} moments` : ''}</button>` : ''}<a class="btn small" href="${hrefOf(e.id)}" data-goto="${esc(e.id)}">File card</a>${e.url && e.type === 'news' ? `<a class="btn small" href="${esc(e.url)}" target="_blank" rel="noopener">Original source ↗</a>` : ''}${late ? `<span class="small muted">added ${esc(fmtD(e.added))}</span>` : ''}</div>
+        </div></article>`;
+    };
+    const shown = latestShowAll ? added : added.slice(0, 25);
+    $('#latest').innerHTML = `
+      <header class="lt-head">
+        <div class="home-kicker">Latest</div>
+        <h2>What's happening on the record</h2>
+        <p class="muted">Hearings, interviews, statements, official releases and new incidents from the last ${LATEST.windowDays} days, sorted by when they happened. <a href="/feed.xml" target="_blank" rel="noopener">RSS feed ↗</a></p>
+        <div class="seg lt-cats">${LATEST_CATS.filter(([k]) => k === 'all' || cats.get(k)).map(([k, l]) => `<button class="${k === latestCat_ ? 'on' : ''}" data-lt-cat="${k}">${l} <span>${cats.get(k)}</span></button>`).join('')}</div>
+      </header>
+      <div class="lt-list">${list.map(card).join('') || `<p class="muted">Nothing ${latestCat_ === 'all' ? '' : `in ${esc(catLabel[latestCat_].toLowerCase())} `}in the last ${LATEST.windowDays} days.</p>`}</div>
+      ${added.length ? `<section class="lt-added">
+        <div class="home-kicker">Recently added to the archive</div>
+        <h2>New to the archive, from the record</h2>
+        <p class="muted">Older material filed in the last ${LATEST.addedDays} days: archival interviews, declassified files, historical cases.</p>
+        <div class="lt-rows">${shown.map(e => `<a class="lt-row ${isNew(e) ? 'is-new' : ''}" href="${hrefOf(e.id)}" data-goto="${esc(e.id)}" style="--c:${TYPES[e.type].color}">
+          <span class="lt-row-type">${TYPES[e.type].label}</span><span class="lt-row-name">${esc(e.name)}${isNew(e) ? ' <em class="lt-tag new">new</em>' : ''}</span><span class="lt-row-date">${esc(fmtRange(e) || '')}</span><span class="lt-row-added">added ${esc(fmtD(e.added))}</span></a>`).join('')}</div>
+        ${added.length > shown.length ? `<button class="btn small" data-lt-more>Show all ${added.length}</button>` : ''}
+      </section>` : ''}`;
+    store.set('latestSeen', today); // the next visit marks what was added after today
+  }
+  $('#view-latest').addEventListener('click', e => {
+    const c = e.target.closest('[data-lt-cat]');
+    if (c) { latestCat_ = c.dataset.ltCat; renderLatest(); return; }
+    if (e.target.closest('[data-lt-more]')) { latestShowAll = true; renderLatest(); }
+  });
 
   // ───────────── books & films ─────────────
   let shelfTab = store.get('shelfTab', 'film');
@@ -958,12 +1064,13 @@
     h.push(`<div class="p-kicker"><span class="badge type" style="background:${t.color}">${t.label}</span>${e.cred ? `<span class="badge ${e.cred}" title="${esc(CRED[e.cred].hint)}">${CRED[e.cred].label}</span>` : ''}${e.outcome && e.outcome !== 'open' ? `<span class="badge outcome-${e.outcome}" title="${esc(OUTCOME[e.outcome].hint)}">${OUTCOME[e.outcome].label}</span>` : ''}</div>`);
     if (e.outcome && e.outcome !== 'open' && e.outcomeNote) h.push(`<div class="p-outcome outcome-${e.outcome}"><b>${OUTCOME[e.outcome].label}.</b> ${esc(e.outcomeNote)}${e.outcomeSource ? ` <span class="src">${e.outcomeSource.id ? chip(e.outcomeSource.id) : e.outcomeSource.url ? `<a href="${esc(e.outcomeSource.url)}" target="_blank" rel="noopener">source ↗</a>` : ''}</span>` : ''}</div>`);
     h.push(`<h2 class="p-title">${esc(e.name)}</h2>`);
-    if (e.type !== 'record' && !(state.trail && state.view === 'graph')) h.push(`<button class="btn small p-explore" data-explore="${esc(e.id)}" title="Show only this file and its connections, then follow a trail">◎ Explore from here</button>`);
+    if (!offGraph(e.type) && !(state.trail && state.view === 'graph')) h.push(`<button class="btn small p-explore" data-explore="${esc(e.id)}" title="Show only this file and its connections, then follow a trail">◎ Explore from here</button>`);
     if (e.aka.length) h.push(`<div class="p-aka">Also: ${e.aka.map(esc).join(' · ')}</div>`);
     if (e.type === 'film' || e.type === 'book') h.push(`<div class="p-meta">${esc([e.credits, shelfMeta(e), e.isbn ? `ISBN ${e.isbn}` : ''].filter(Boolean).join(' · '))}</div>`);
     if (e.cover) h.push(`<img class="p-cover" src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" loading="lazy">`);
     const meta = [fmtRange(e) && (e.type === 'video' ? 'Published ' : '') + fmtRange(e), e.place?.name, e.type === 'video' && [e.channel, fmtDur(e.duration)].filter(Boolean).join(' · ')].filter(Boolean);
     if (meta.length) h.push(`<div class="p-meta">${meta.map(m => `<span>${esc(m)}</span>`).join('')}</div>`);
+    if (e.type === 'news') h.push(`<div class="p-meta"><span>${esc(NEWS_KIND[e.kind]?.label || e.kind)}</span>${e.outlet ? `<span>${esc(e.outlet)}</span>` : ''}${e.url ? `<a class="btn small" href="${esc(e.url)}" target="_blank" rel="noopener">Original source ↗</a>` : ''}</div>`);
     if (e.type === 'incident' && e.credVia?.length) h.push(`<div class="p-meta"><span>On record via ${e.credVia.map(id => chip(id)).join(' ')}</span></div>`);
     if (e.witnesses || e.coverage?.length) {
       h.push(`<div class="mass-box"><div class="mb-head"><span class="mb-n">${e.witnesses ? `~${e.witnesses.toLocaleString()}` : '?'}</span> witnesses${e.cred === 'mass' ? ' · <b>included as a mass sighting</b>' : ''}</div>${e.coverage?.length ? `<div class="mb-cov">Contemporary coverage: ${e.coverage.map(c => {
@@ -1030,6 +1137,11 @@
         <div class="moment"><button class="ts" data-play="${m.video}@${m.t}">▶ ${fmtT(m.t)}</button><div><div>${esc(m.text)}</div>
         <div class="who">${m.speaker && m.speaker !== e.id ? chip(m.speaker) : ''}${e.type !== 'video' ? chip(m.video) : m.refs.map(r => chip(r)).join('')}</div></div></div>`).join('')}</div></div>`);
     }
+    // news items linked to this entry (either direction), newest first
+    if (e.type !== 'news') {
+      const news = [...new Set(adj.get(e.id).filter(x => x.kind !== 'mention' && byId.get(x.other)?.type === 'news').map(x => x.other))].map(id => byId.get(id)).sort((a, b) => String(b.date).localeCompare(String(a.date)));
+      if (news.length) h.push(`<div class="p-sec p-side"><h4>In the news <span>${news.length}</span></h4><ul class="rec-list" data-collapse="6">${news.map(n => `<li><a href="${hrefOf(n.id)}" data-goto="${esc(n.id)}">${esc(n.name)}</a><div class="small muted">${esc([fmtD(n.date), NEWS_KIND[n.kind]?.label, n.outlet].filter(Boolean).join(' · '))}${n.url ? ` · <a href="${esc(n.url)}" target="_blank" rel="noopener">source ↗</a>` : ''}</div></li>`).join('')}</ul></div>`);
+    }
     // official records (PURSUE) linked to this entry
     const recs = [...new Set(adj.get(e.id).filter(x => x.kind !== 'mention' && byId.get(x.other)?.type === 'record').map(x => x.other))]
       .map(id => byId.get(id)).sort((a, b) => String(a.pursue?.released || a.date || '').localeCompare(String(b.pursue?.released || b.date || '')) || a.name.localeCompare(b.name));
@@ -1042,7 +1154,7 @@
     // connections
     const groups = new Map();
     for (const x of adj.get(e.id)) {
-      if (x.kind === 'mention' || byId.get(x.other)?.type === 'record') continue;
+      if (x.kind === 'mention' || offGraph(byId.get(x.other)?.type)) continue;
       const label = x.dir === 'out' ? x.label : (INVERSE[x.label] || x.label);
       if (!groups.has(label)) groups.set(label, new Set());
       groups.get(label).add(x.other);
@@ -1077,7 +1189,7 @@
     return h.join('');
   }
   // ── connecting the dots ──
-  const strongAdj = id => adj.get(id).filter(x => x.kind !== 'mention' && byId.get(x.other)?.type !== 'record');
+  const strongAdj = id => adj.get(id).filter(x => x.kind !== 'mention' && !offGraph(byId.get(x.other)?.type));
   function possibleConnections(e, limit = 8) {
     const direct = new Set(strongAdj(e.id).map(x => x.other));
     const score = new Map();
@@ -1705,8 +1817,7 @@
   function renderHome() {
     const el = $('#view-home');
     const today = new Date().toISOString().slice(0, 10);
-    const latest = ents.filter(e => e.date && !['record', 'video', 'source'].includes(e.type))
-      .sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 6);
+    const latest = latestData().recent.slice(0, 6);
     el.innerHTML = `
       <div class="hero">
         <canvas id="hero-canvas" aria-hidden="true"></canvas>
@@ -1763,13 +1874,14 @@
         </section>
 
         <section class="home-sec">
-          <div class="home-kicker">Latest on the record</div>
-          <h2>Recently dated entries</h2>
+          <div class="home-kicker">Latest</div>
+          <h2>What's happening on the record</h2>
           <div class="latest">${latest.map(e => `
-            <a class="latest-item" href="#" data-home-goto="${e.id}" style="--c:${TYPES[e.type].color}">
+            <a class="latest-item" href="${hrefOf(e.id)}" data-home-latest="${e.id}" style="--c:${TYPES[e.type].color}">
               <span class="li-date">${esc(fmtRange(e))}${String(e.date) > today ? ' <em>upcoming</em>' : ''}</span>
-              <span class="li-type">${TYPES[e.type].label}</span><span class="li-name">${esc(e.name)}</span>
-            </a>`).join('')}</div>
+              <span class="li-type">${e.type === 'news' ? esc(NEWS_KIND[e.kind]?.label || 'News') : TYPES[e.type].label}</span><span class="li-name">${esc(e.name)}</span>
+            </a>`).join('') || '<p class="muted">Nothing in the last few months yet.</p>'}</div>
+          <p class="home-more"><a href="/latest" data-home-view="latest">See everything on Latest →</a> · <a href="/feed.xml" target="_blank" rel="noopener">RSS feed</a></p>
         </section>
 
         <footer class="home-foot">
@@ -1784,7 +1896,7 @@
   // hero: a live, slowly drifting rendering of the archive's own network
   let heroRaf = null, heroData = null;
   function buildHeroLayout() {
-    const nodes = ents.filter(e => !['record', 'video', 'source'].includes(e.type) && !(e.cred === 'outside'));
+    const nodes = ents.filter(e => !['record', 'news', 'video', 'source'].includes(e.type) && !(e.cred === 'outside'));
     const idx = new Map(nodes.map((e, i) => [e.id, i]));
     const links = KB.edges.filter(x => x.kind !== 'mention' && idx.has(x.s) && idx.has(x.t)).map(x => [idx.get(x.s), idx.get(x.t)]);
     // deterministic pseudo-random start so the picture is stable between visits
@@ -1975,7 +2087,7 @@
   function exploreFrom(id) {
     const ent = byId.get(id);
     if (!ent) return;
-    if (ent.type === 'record') { go('graph'); select(id); return; } // records aren't graph nodes: just open the card
+    if (offGraph(ent.type)) { go(ent.type === 'news' ? 'latest' : 'graph'); select(id); return; } // records and news aren't graph nodes: just open the card
     clearFilters(ent);
     startTrail(id);
   }
@@ -1994,6 +2106,8 @@
     if (pr) { e.preventDefault(); applyPreset(JSON.parse(pr.dataset.preset)); return; }
     const hv = e.target.closest('[data-home-view]');
     if (hv) { e.preventDefault(); go(hv.dataset.homeView); return; }
+    const hl = e.target.closest('[data-home-latest]');
+    if (hl) { e.preventDefault(); go('latest'); select(hl.dataset.homeLatest); return; }
     const hg = e.target.closest('[data-home-goto]');
     if (hg) {
       e.preventDefault();
@@ -2102,7 +2216,7 @@
   // ───────────── navigation ─────────────
   // Real URLs: each view has a path (/explore) and each file its own page (/person/david-fravor), generated by
   // scripts/pages.mjs. The view a file was opened from lives in history.state, so Back/Forward restore it.
-  const VIEW_PATH = { home: '/', graph: '/explore', timeline: '/timeline', map: '/world', videos: '/videos', shelf: '/documentaries', index: '/a-z', claims: '/claims' };
+  const VIEW_PATH = { home: '/', latest: '/latest', graph: '/explore', timeline: '/timeline', map: '/world', videos: '/videos', shelf: '/documentaries', index: '/a-z', claims: '/claims' };
   const PATH_VIEW = Object.fromEntries(Object.entries(VIEW_PATH).map(([v, p]) => [p, v]));
   const SHELF_PATH = { '/documentaries': 'film', '/books': 'book' }; // one page component, two lists
   const byPath = new Map(ents.filter(e => e.path).map(e => [e.path, e.id]));
@@ -2135,7 +2249,7 @@
   function select(id, { from } = {}) {
     state.sel = id;
     // exploring: a file opened from search or a link that isn't on screen is pinned there (no connections yet)
-    if (state.trail && id && state.view === 'graph' && byId.get(id)?.type !== 'record' && cy?.getElementById(id).hasClass('hidden') && visible.has(id)) {
+    if (state.trail && id && state.view === 'graph' && !offGraph(byId.get(id)?.type) && cy?.getElementById(id).hasClass('hidden') && visible.has(id)) {
       state.trail.pinned.add(id); state.hiddenIds.delete(id);
       trailChanged(id);
     }
@@ -2157,6 +2271,7 @@
     $$('#views [data-group], #views [data-view]').forEach(a => a.classList.toggle('active', (a.dataset.group || a.dataset.view).split(' ').includes(view)));
     $('#app').classList.toggle('is-home', view === 'home');
     document.body.classList.toggle('is-home', view === 'home'); // the header sits outside #app
+    $('#app').classList.toggle('no-side', view === 'latest'); document.body.classList.toggle('no-side', view === 'latest'); // the graph filters don't apply to Latest
     if (view === 'home') { $('#panel').hidden = true; $('#app').classList.remove('has-panel'); }
     else if (state.sel) openPanel(state.sel);
     $('#filters').hidden = view === 'videos';
@@ -2179,6 +2294,7 @@
     else if (state.view === 'index') renderIndex();
     else if (state.view === 'shelf') renderShelf();
     else if (state.view === 'claims') renderClaims();
+    else if (state.view === 'latest') renderLatest();
     else if (state.view === 'home') renderHome();
     else if (state.view === 'videos') {
       renderVideoList();
@@ -2207,7 +2323,7 @@
       $('#q-results').hidden = true;
       // a search result picked from any page opens Explore and starts a trail from it: the first step, ready to
       // follow (filters are cleared if they would hide it)
-      if (fromSearch && ent && ent.type !== 'record') {
+      if (fromSearch && ent && !offGraph(ent.type)) {
         if (!visible.has(ent.id)) clearFilters(ent);
         else if (!state.types.has(ent.type)) { state.types.add(ent.type); filtersChanged(); }
         startTrail(ent.id);
@@ -2220,8 +2336,8 @@
       // visible in the middle; on the graph it also joins the trail (or starts one)
       if (state.reading && g.closest('#panel') && ent) {
         state.reading = false; $('#app').classList.remove('reading');
-        if (ent.type !== 'record') clearFilters(ent);
-        if (state.view === 'graph' && ent.type !== 'record') { followFile(ent.id); if (state.sel === ent.id) openPanel(ent.id); }
+        if (!offGraph(ent.type)) clearFilters(ent);
+        if (state.view === 'graph' && !offGraph(ent.type)) { followFile(ent.id); if (state.sel === ent.id) openPanel(ent.id); }
         else select(ent.id, { from: 'link' });
         return;
       }
@@ -2279,7 +2395,7 @@
   if (theme) document.documentElement.dataset.theme = theme;
   computeVisible();
   renderFilters();
-  const VIEWS = ['home', 'graph', 'timeline', 'map', 'videos', 'shelf', 'index', 'claims'];
+  const VIEWS = ['home', 'latest', 'graph', 'timeline', 'map', 'videos', 'shelf', 'index', 'claims'];
   function routeFromUrl() {
     const p = decodeURIComponent(location.pathname).replace(/\.html$/, '').replace(/(.)\/+$/, '$1');
     const t = +new URLSearchParams(location.search).get('t') || 0;
