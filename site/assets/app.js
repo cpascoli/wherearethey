@@ -611,6 +611,9 @@
     const e = byId.get(id), T = state.trail;
     const items = [
       !T && ['explore', '◎ Explore from here'],
+      // same as a double-click: follow the file (a step already on the trail goes back to it)
+      T && !T.steps.includes(id) && ['follow', '➜ Add to trail'],
+      T && T.steps.includes(id) && T.steps[T.steps.length - 1] !== id && ['follow', '↩ Back to this step'],
       T && (T.open.has(id) ? ['collapse', '− Remove its connections'] : ['expand', '✚ Show its connections']),
       !(T && T.steps.length === 1 && T.steps[0] === id) && ['hide', '⊘ Hide this file'],
       ['path', '⇢ Find a path to…'],
@@ -631,6 +634,7 @@
     const id = $('#node-menu').dataset.id, k = b.dataset.nm;
     closeNodeMenu();
     if (k === 'explore') startTrail(id);
+    else if (k === 'follow') followFile(id);
     else if (k === 'expand') expandFile(id);
     else if (k === 'collapse') collapseFile(id);
     else if (k === 'hide') hideFile(id);
