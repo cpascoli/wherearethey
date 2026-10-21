@@ -5,6 +5,9 @@ place: { name: "Roswell, New Mexico", lat: 33.3943, lng: -104.523 }
 tags:
   - crash-retrieval
   - military
+outcome: disputed
+outcome_note: "The Air Force traced the debris to a Project MOGUL balloon (1994) and the \"alien\" accounts to 1950s test dummies and accidents (1997); crash-retrieval claims dispute this."
+outcome_source: doc-af-roswell-case-closed-1997
 rel:
   - [ documented in, doc-af-roswell-case-closed-1997 ]
   - [ related to, philip-corso ]

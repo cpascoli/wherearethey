@@ -4,6 +4,9 @@ aka: [Bariloche, Caso Bariloche, AR 674]
 date: 1995-07-31
 place: { name: "San Carlos de Bariloche Airport, Argentina", lat: -41.1512, lng: -71.1578 }
 tags: [aviator, international]
+outcome: explained
+outcome_note: "The Argentine Air Force (CEFAE, 2018) resolved it as a discotheque sky-tracer searchlight reflected on ice-crystal cloud during a city-wide blackout; the operator acknowledged testing it that night."
+outcome_source: doc-cefae-informe-2018
 rel:
   - [ witness, jorge-polanco ]
   - [ investigated by, cefae ]

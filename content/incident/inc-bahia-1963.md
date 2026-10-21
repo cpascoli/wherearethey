@@ -4,6 +4,9 @@ aka: [Bahia 1963, Conde 1963]
 date: 1963-11-08
 place: { name: "Conde, Bahia, Brazil", lat: -11.8136, lng: -37.6106 }
 tags: [crash-retrieval, international, pursue, debunked]
+outcome: hoax
+outcome_note: "The U.S. Consul in Salvador reported that the story was \"apparently fabricated in Rio\": no such object was seen by anyone in the area."
+outcome_source: dos-uap-d002
 rel:
   - [ documented in, eop-uap-d001 ]
   - [ documented in, dos-uap-d001 ]

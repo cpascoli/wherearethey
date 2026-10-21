@@ -6,6 +6,9 @@ aka:
 date: 1979-11-11
 place: { name: "Manises Airport, Valencia, Spain", lat: 39.4893, lng: -0.4816 }
 tags: [aviator, air-force, radar, international]
+outcome: disputed
+outcome_note: "The Spanish Air Force found \"no proof to admit the presence of UFOs\", recorded no radar contact, and suggested a bright planet, a balloon or reflected lights; it did not identify the object."
+outcome_source: doc-ea-expediente-791111-manises
 rel:
   - [ documented in, doc-ea-expediente-791111-manises ]
   - [ witness, javier-lerdo-de-tejada ]

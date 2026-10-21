@@ -4,6 +4,9 @@ aka: [Kalahari incident, Kalahari crash]
 date: 1989-05-07
 place: { name: "Kalahari Desert, South Africa–Botswana border region", lat: -24.5, lng: 22.5 }
 tags: [crash-retrieval, international]
+outcome: hoax
+outcome_note: "The story rests on forged documents; its source admitted fabricating details."
+outcome_source: https://en.wikipedia.org/wiki/UFO_sightings_in_South_Africa
 facts:
   - text: The claim was that South African Air Force Mirages shot down a disc that crashed in the Kalahari, and that the craft and two occupants were recovered.
     status: unverified

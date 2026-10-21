@@ -102,6 +102,11 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       const url = videoUrl(e);
       h.push(`<p>${[e.channel, fmtDate(e.date), e.duration && `${Math.round(e.duration / 60)} min`].filter(Boolean).map(esc).join(' · ')}${url ? ` · <a href="${esc(url)}" rel="noopener">Watch the original</a>` : ''}</p>`);
     }
+    if (e.outcome && e.outcome !== 'open') {
+      const lbl = { disputed: 'Partly explained', explained: 'Explained', hoax: 'Hoax' }[e.outcome];
+      const src = e.outcomeSource?.id ? ` (${link(e.outcomeSource.id)})` : e.outcomeSource?.url ? ` (<a href="${esc(e.outcomeSource.url)}" rel="noopener">source</a>)` : '';
+      h.push(`<p class="ssr-outcome"><strong>${lbl}.</strong> ${esc(e.outcomeNote || '')}${src}</p>`);
+    }
     if (e.body) h.push(`<div class="ssr-body">${e.body}</div>`);
     if (e.facts.length) h.push(`<h2>Facts and claims</h2>${factsHtml(e.facts)}`);
     if (e.type === 'video' && e.moments?.length) {

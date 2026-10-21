@@ -4,6 +4,9 @@ aka: [Eglin UAP, Eglin orb, Gaetz Eglin case]
 date: 2023-01-26
 place: { name: "Eglin AFB training range, Gulf of Mexico off Florida", lat: 30.4832, lng: -86.5254 }
 tags: [air-force, radar, aviator, congress]
+outcome: explained
+outcome_note: "AARO (2023): very likely a lighter-than-air object such as a large commercial lighting balloon (moderate confidence); the radar failure was a pre-existing fault. The three other radar objects were not analysed."
+outcome_source: doc-aaro-eglin
 rel:
   - [ investigated by, aaro ]
   - [ documented in, doc-aaro-eglin ]

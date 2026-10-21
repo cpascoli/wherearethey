@@ -11,10 +11,17 @@ tags:
   - aviator
   - navy
   - radar
+outcome: disputed
+outcome_note: "AARO (2025) and NASA (2023) found the GoFast object moving at about wind speed at 13,000 ft, with no anomalous performance; the squadron's other radar tracks, the near misses and Gimbal remain unexplained."
+outcome_source: doc-aaro-gofast
 rel:
+  - [ documented in, doc-aaro-gofast ]
   - [ witness, ryan-graves ]
   - [ related to, tim-gallaudet ]
 facts:
+  - text: "AARO's 2025 case resolution of the GoFast video finds with high confidence that the object did not move at anomalous speeds: it was at about 13,000 feet, not skimming the sea, and moving at roughly 5–92 mph relative to the wind. AARO does not identify the object. Its resolution covers that video only, not the squadron's other radar tracks or near misses."
+    status: documented
+    source: doc-aaro-gofast
   - text: "NASA's 2023 UAP study analysed the GoFast video and found that the object moved about 390 metres in 22 seconds, roughly 40 mph, \"a typical wind speed at 13,000 feet\". It appeared colder than the ocean, with no evidence of propulsion heat, so it was most likely drifting with the wind."
     status: documented
     source: doc-nasa-uap-study-2023

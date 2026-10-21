@@ -5,6 +5,9 @@ place: { name: "Malmstrom AFB, Montana", lat: 47.5052, lng: -111.183 }
 tags:
   - nuclear
   - air-force
+outcome: disputed
+outcome_note: "The wing history says UFO rumours around Echo Flight were \"disproven\" and traces the shutdown to a noise pulse in the logic coupler; the Oscar Flight account rests on later testimony."
+outcome_source: doc-341smw-history-1967
 rel:
   - [ witness, bob-salas ]
 facts:

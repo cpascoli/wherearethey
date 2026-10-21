@@ -751,3 +751,12 @@ html:not(.js) .top, html:not(.js) .app, html:not(.js) .views, html:not(.js) .mor
 @media (max-width: 860px) { .trail-bar { top: 8px; left: 8px; right: 8px; } .node-menu button { padding: 10px 10px; font-size: 14.5px; } }
 @media (max-width: 860px) { #view-graph.exploring .graph-hud { display: none; } }
 .tb-step.closed { border-style: dashed; } /* on the trail, connections hidden */
+/* incident outcome: explained / partly explained / hoax */
+.badge.outcome-explained { color: var(--muted); border: 1.5px solid currentColor; background: transparent; }
+.badge.outcome-disputed { color: #c9a227; border: 1.5px solid currentColor; background: transparent; }
+.badge.outcome-hoax { color: var(--outside); border: 1.5px solid currentColor; background: transparent; }
+.p-outcome { margin: 10px 0 4px; padding: 8px 10px; border-left: 3px solid var(--muted); background: var(--panel-2, rgba(127,127,127,.08)); font-size: 14px; line-height: 1.45; }
+.p-outcome.outcome-disputed { border-left-color: #c9a227; }
+.p-outcome.outcome-hoax { border-left-color: var(--outside); }
+.p-outcome .src { display: block; margin-top: 6px; min-width: 0; }
+.p-outcome .src > * { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; vertical-align: bottom; }

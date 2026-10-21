@@ -34,6 +34,14 @@
     claimed: { label: 'On record', hint: 'Stated publicly by a named person' },
     unverified: { label: 'Unverified', hint: 'Not yet tied to a source — needs one' },
   };
+  // where an incident stands; explained and hoax cases are hidden while "Hide explained cases" is on
+  const OUTCOME = {
+    open: { label: 'Open', hint: 'No credible conventional explanation has been established' },
+    disputed: { label: 'Partly explained', hint: 'A credible explanation covers part of the case, or is offered but contested' },
+    explained: { label: 'Explained', hint: 'A credible conventional explanation has been established' },
+    hoax: { label: 'Hoax', hint: 'Shown to be fabricated' },
+  };
+  const resolved = e => e.outcome === 'explained' || e.outcome === 'hoax';
   const CRED = {
     credible: { label: 'Official source', hint: 'Meets the project rule: an official role in government, Congress, the military (incl. pilots and sensor operators), intelligence or academia' },
     mass: { label: 'Mass sighting', hint: 'Included by the mass-sighting rule: 50+ independent witnesses with contemporary press, TV or radio coverage' },
@@ -143,6 +151,7 @@
   const state = {
     view: 'graph', sel: null,
     credibleOnly: store.get('credibleOnly', true),
+    hideExplained: store.get('hideExplained', true),
     // types added since a visitor saved their filters (e.g. film, book) are switched on for them
     types: new Set(store.get('types', null) ? [...store.get('types'), ...allTypes.filter(t => t !== 'record' && !store.get('typesSeen', TYPES_BEFORE_SHELF).includes(t))] : allTypes.filter(t => t !== 'record')),
     tags: new Set(store.get('tags', [])),
@@ -159,7 +168,7 @@
 
   function computeVisible() {
     const full = state.yr[0] <= MIN_Y && state.yr[1] >= MAX_Y;
-    const base = e => state.types.has(e.type) && !(state.credibleOnly && e.cred === 'outside') &&
+    const base = e => state.types.has(e.type) && !(state.credibleOnly && e.cred === 'outside') && !(state.hideExplained && resolved(e)) &&
       (!state.tags.size || e.tags.some(t => state.tags.has(t)));
     const inRange = e => e.y0 && e.y0 <= state.yr[1] && e.y1 >= state.yr[0];
     const v = new Set();
@@ -177,9 +186,10 @@
   // ───────────── filters UI ─────────────
   function renderFilters() {
     $('#f-credible').checked = state.credibleOnly;
+    $('#f-explained').checked = state.hideExplained;
     // Faceted counts: each list is counted against the *other* list's selection,
     // so picking types narrows the themes and picking themes narrows the types.
-    const credOk = e => !(state.credibleOnly && e.cred === 'outside');
+    const credOk = e => !(state.credibleOnly && e.cred === 'outside') && !(state.hideExplained && resolved(e));
     const tagOk = e => !state.tags.size || e.tags.some(t => state.tags.has(t));
     const counts = {};
     for (const e of ents) if (credOk(e) && tagOk(e)) counts[e.type] = (counts[e.type] || 0) + 1;
@@ -209,7 +219,7 @@
     const step = 5, start = Math.floor(MIN_Y / step) * step, n = Math.ceil((MAX_Y + 1 - start) / step);
     const buckets = new Array(n).fill(0);
     // count only what the type/theme filters let through (the year filter itself is shown by the highlight)
-    const shown = e => !(state.credibleOnly && e.cred === 'outside') && state.types.has(e.type) &&
+    const shown = e => !(state.credibleOnly && e.cred === 'outside') && !(state.hideExplained && resolved(e)) && state.types.has(e.type) &&
       (!state.tags.size || e.tags.some(t => state.tags.has(t)));
     let total = 0;
     for (const e of dated) if (shown(e)) { buckets[Math.min(n - 1, Math.floor((e.y0 - start) / step))]++; total++; }
@@ -221,13 +231,14 @@
     $('#f-yr-label').textContent = (state.yr[0] <= MIN_Y && state.yr[1] >= MAX_Y ? 'all' : `${state.yr[0]}–${state.yr[1]}`) + ` · ${total} dated`;
   }
   function filtersChanged() {
-    store.set('credibleOnly', state.credibleOnly); store.set('types', [...state.types]); store.set('typesSeen', allTypes); store.set('tags', [...state.tags]);
+    store.set('credibleOnly', state.credibleOnly); store.set('hideExplained', state.hideExplained); store.set('types', [...state.types]); store.set('typesSeen', allTypes); store.set('tags', [...state.tags]);
     store.set('yr', [state.yr[0] <= MIN_Y ? null : state.yr[0], state.yr[1] >= MAX_Y ? null : state.yr[1]]); store.set('showMentions', state.showMentions);
     computeVisible();
     renderFilters();
     refreshView(true);
   }
   $('#f-credible').addEventListener('change', e => { state.credibleOnly = e.target.checked; filtersChanged(); });
+  $('#f-explained').addEventListener('change', e => { state.hideExplained = e.target.checked; filtersChanged(); });
   // Click toggles a type; a second click on the same type within 400 ms shows only that type
   // (the list re-renders on every click, so the browser's native dblclick never fires).
   let lastTypeClick = { t: null, at: 0, before: null };
@@ -940,7 +951,8 @@
     const h = [];
     const nFacts = e.facts.length, nDoc = e.facts.filter(f => f.status === 'documented').length;
     h.push(`<div class="dossier-strip"><span>File <b>${fileNo(e)}</b></span><span>${nFacts ? `${nDoc}/${nFacts} documented` : 'no claims filed'}</span></div>`);
-    h.push(`<div class="p-kicker"><span class="badge type" style="background:${t.color}">${t.label}</span>${e.cred ? `<span class="badge ${e.cred}" title="${esc(CRED[e.cred].hint)}">${CRED[e.cred].label}</span>` : ''}</div>`);
+    h.push(`<div class="p-kicker"><span class="badge type" style="background:${t.color}">${t.label}</span>${e.cred ? `<span class="badge ${e.cred}" title="${esc(CRED[e.cred].hint)}">${CRED[e.cred].label}</span>` : ''}${e.outcome && e.outcome !== 'open' ? `<span class="badge outcome-${e.outcome}" title="${esc(OUTCOME[e.outcome].hint)}">${OUTCOME[e.outcome].label}</span>` : ''}</div>`);
+    if (e.outcome && e.outcome !== 'open' && e.outcomeNote) h.push(`<div class="p-outcome outcome-${e.outcome}"><b>${OUTCOME[e.outcome].label}.</b> ${esc(e.outcomeNote)}${e.outcomeSource ? ` <span class="src">${e.outcomeSource.id ? chip(e.outcomeSource.id) : e.outcomeSource.url ? `<a href="${esc(e.outcomeSource.url)}" target="_blank" rel="noopener">source ↗</a>` : ''}</span>` : ''}</div>`);
     h.push(`<h2 class="p-title">${esc(e.name)}</h2>`);
     if (e.type !== 'record' && !(state.trail && state.view === 'graph')) h.push(`<button class="btn small p-explore" data-explore="${esc(e.id)}" title="Show only this file and its connections, then follow a trail">◎ Explore from here</button>`);
     if (e.aka.length) h.push(`<div class="p-aka">Also: ${e.aka.map(esc).join(' · ')}</div>`);
@@ -1969,6 +1981,7 @@
     state.yr = [MIN_Y, MAX_Y];
     state.showMentions = false;
     state.credibleOnly = ent.cred !== 'outside';
+    if (resolved(ent)) state.hideExplained = false; // opening an explained case shows it
     state.hiddenIds.clear();
     filtersChanged();
   }

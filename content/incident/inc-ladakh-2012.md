@@ -5,6 +5,9 @@ date: 2012-08-01
 end: 2013-02
 place: { name: "Thakung, near Pangong Tso, Ladakh (India–China Line of Actual Control)", lat: 33.83, lng: 78.67 }
 tags: [military, radar, international]
+outcome: disputed
+outcome_note: "Astronomers measuring at Thakung reportedly identified the lights as Jupiter and Venus; earlier reports called them \"non celestial\"."
+outcome_source: https://www.theregister.com/2013/07/26/india_china_war_jupiter_mars_drones/
 rel:
   - [ witness, itbp ]
   - [ disputed by, ak-antony ]

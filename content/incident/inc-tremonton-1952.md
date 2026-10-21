@@ -4,6 +4,9 @@ aka: [Tremonton, Tremonton film, Newhouse film]
 date: 1952-07-02
 place: { name: "Near Tremonton, Utah", lat: 41.7121, lng: -112.1658 }
 tags: [navy, film, pursue]
+outcome: disputed
+outcome_note: "The Robertson Panel and later Air Force assessments favoured seagulls reflecting sunlight; the Navy's photo analysts disagreed, and the film cannot establish distance or size."
+outcome_source: doc-robertson-panel-1953
 rel:
   - [ witness, delbert-newhouse ]
   - [ investigated by, project-blue-book ]

@@ -13,6 +13,7 @@ import { assignPaths, writePages } from './pages.mjs';
 export const CREDIBLE = ['congress', 'government', 'intelligence', 'military', 'aviator', 'sensor-operator', 'academia', 'astronaut', 'aerospace', 'law-enforcement'];
 const REPORTER = ['journalist', 'policy-expert'];
 export const MASS_MIN_WITNESSES = 50;
+export const OUTCOMES = ['open', 'disputed', 'explained', 'hoax'];
 
 export async function build({ check = false, quiet = false } = {}) {
   const t0 = Date.now();
@@ -85,6 +86,14 @@ export async function build({ check = false, quiet = false } = {}) {
     if (d.stream) e.stream = String(d.stream);
     if (d.thumb) e.thumb = String(d.thumb);
     if (d.coverage) e.coverage = arr(d.coverage).map(c => (typeof c === 'string' ? { outlet: c } : c));
+    // incidents: where the case stands — open (default), disputed, explained or hoax — with a short note and its source
+    if (r.type === 'incident') {
+      e.outcome = d.outcome ? String(d.outcome) : 'open';
+      if (!OUTCOMES.includes(e.outcome)) { warnings.push(`${r.file}: outcome "${e.outcome}" should be one of ${OUTCOMES.join(', ')}`); e.outcome = 'open'; }
+      if (d.outcome_note) e.outcomeNote = String(d.outcome_note);
+      if (d.outcome_source) e.outcomeSource = parseSource(d.outcome_source, r.file);
+      if (['explained', 'hoax', 'disputed'].includes(e.outcome) && !d.outcome_source) warnings.push(`${r.file}: outcome "${e.outcome}" needs an outcome_source`);
+    }
     if (r.type === 'video') {
       e.youtube = d.youtube ? youtubeId(d.youtube) : null;
       // non-YouTube videos (X, news sites, local files): `media:` names the folder under media/, `url:` the original post

@@ -8,6 +8,9 @@ date: 1989-11-29
 end: 1991-04
 place: { name: "Eupen and across Belgium", lat: 50.6305, lng: 6.0313 }
 tags: [aviator, radar, air-force, mass-sighting, international]
+outcome: disputed
+outcome_note: "Later analyses attributed the March 1990 F-16 radar locks to radar artefacts and atmospheric effects, and the Petit-Rechain photo was a hoax; the earlier visual sightings remain unexplained."
+outcome_source: https://ufologie.patrickgross.org/htm/belstu03.htm
 rel:
   - [ investigated by, wilfried-de-brouwer ]
 links:

@@ -4,6 +4,9 @@ aka: [Minot 1968, Minot B-52 UFO]
 date: 1968-10-24
 place: { name: "Minot Air Force Base, North Dakota", lat: 48.4156, lng: -101.358 }
 tags: [air-force, radar, nuclear, aviator]
+outcome: disputed
+outcome_note: "Project Blue Book attributed the ground sightings to Sirius and the B-52, and only \"possibly\" to plasma for the radar contact and radio failure."
+outcome_source: doc-bluebook-minot-1968
 rel:
   - [ investigated by, project-blue-book ]
   - [ documented in, doc-bluebook-minot-1968 ]

@@ -5,6 +5,9 @@ date: 1946-05
 end: 1946-10
 place: { name: "Sweden and Scandinavia", lat: 59.675, lng: 14.5209 }
 tags: [military, international, pursue]
+outcome: explained
+outcome_note: "A 1947 U.S. War Department review attributed most reports to meteors, with perhaps a handful of genuine V-1-type missiles."
+outcome_source: dow-uap-d099
 rel:
   - [ documented in, dow-uap-d099 ]
   - [ related to, cia-uap-014 ]
