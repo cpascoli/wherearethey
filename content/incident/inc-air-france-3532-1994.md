@@ -9,7 +9,7 @@ rel:
   - [ investigated by, geipan ]
   - [ documented in, doc-geipan-af3532 ]
 facts:
-  - text: The crew of Air France flight 3532 reported a very large object near Paris. The sighting coincided with a radar track at the French air defence centre. France's COMETA group and GEIPAN studied it and it remains unexplained.
+  - text: The crew of Air France flight 3532 reported a very large object near Paris. Duboc says the sighting coincided with a radar track at the French air defence centre; GEIPAN found the track temporally coincident but inconsistent with the visual observation. France's COMETA group and GEIPAN studied it and it remains unexplained.
     status: claimed
     by: jean-charles-duboc
     source: v-npc-2007-ufo-close-encounters@15:43
@@ -21,7 +21,7 @@ facts:
     source: doc-geipan-af3532
 ---
 
-On 28 January 1994, the crew of Air France flight 3532, captained by Jean-Charles Duboc, reported a very large object near Paris. The sighting coincided with a radar track recorded at the French air defence centre.
+On 28 January 1994, the crew of Air France flight 3532, captained by Jean-Charles Duboc, reported a very large object near Paris. A radar track recorded by the air defence network at the same time crossed the flight's path, but GEIPAN found it inconsistent with what the crew described.
 
 The case was studied by France's COMETA group and by GEIPAN, the official French UAP office, and remains unexplained. Duboc described it at the National Press Club in Washington in 2007; his account is listed below.
 

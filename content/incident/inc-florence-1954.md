@@ -4,9 +4,10 @@ date: 1954-10-27
 place: { name: "Stadio Artemio Franchi, Florence, Italy", lat: 43.7809, lng: 11.2822 }
 witnesses: 10000
 coverage:
-  - outlet: Florentine and Italian press (contemporary reports)
-    date: 1954-10
-    url: https://www.theflorentine.net/2025/10/22/ufos-1954/
+  - outlet: La Stampa
+    date: 1954-10-28
+    url: https://tacchettidiprovincia.it/accadde-oggi/27-ottobre-1954-firenze-partita-sospesa-ufo
+    note: "Reported in La Stampa on 28 October 1954 per later accounts; the original page has not yet been retrieved from the La Stampa archive." 
 tags:
   - mass-sighting
   - international
