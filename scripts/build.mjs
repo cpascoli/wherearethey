@@ -139,7 +139,7 @@ export async function build({ check = false, quiet = false } = {}) {
     if (fs.existsSync(metaPath)) {
       const m = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
       if (e.name === e.id) e.name = m.title;
-      e.date ||= m.date;
+      e.date ||= m.date ? String(m.date).replace(/^(\d{4})(\d{2})(\d{2})$/, '$1-$2-$3') : m.date; // yt-dlp writes YYYYMMDD
       e.channel = m.channel;
       if (!e.url && m.url) e.url = m.url;
       e.duration = m.duration;

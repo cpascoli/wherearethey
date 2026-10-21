@@ -96,6 +96,9 @@ moments:
     text: "Davis speculates the craft use sub-light warp bubbles requiring negative energy density; Loeb cautions that without a theory of quantum gravity “what we are hearing is speculation.”"
     speaker: eric-davis
     refs: [ avi-loeb ]
+  - t: "1:23:05"
+    text: "Avi Loeb cautions that physics has no reliable theory of quantum gravity, so this is speculation, and offers to help if the government holds something scientists should study."
+    speaker: avi-loeb
   - t: "1:24:29"
     text: "Davis: no physicists work in the legacy programs — only engineers and materials scientists — so they lack the ability to understand how the craft fly."
     speaker: eric-davis
@@ -112,6 +115,14 @@ moments:
     text: "Davis cites James Lacatski's book account of going inside a craft with no recognizable propulsion or power systems, and speculates energy may be teleported to the craft."
     speaker: eric-davis
     refs: [ james-lacatski ]
+  - t: "1:27:56"
+    text: "Davis relays that James Lacatski wrote that someone went inside a craft and found no recognisable propulsion or power system."
+    speaker: eric-davis
+    refs: [ james-lacatski ]
+  - t: "1:29:12"
+    text: "Davis says that at the TS/SCI level he was told recovered material combines elements and isotopes structured in ways with no equivalent today."
+    speaker: eric-davis
+    refs: [ crash-retrieval ]
   - t: "1:29:38"
     text: "Dr. Davis on NHI species descriptions and craft crews."
     speaker: eric-davis

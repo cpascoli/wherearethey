@@ -19,3 +19,17 @@
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=3600"
+
+# removed duplicates: old links point to the version we kept
+[[redirects]]
+  from = "/video/two-airmen-finally-tell-the-story-of-their-terrifying-ufo"
+  to = "/video/air-force-veterans-abducted-by-aliens-reunite-50-years-later"
+  status = 301
+[[redirects]]
+  from = "/video/2007-11-12-general-parviz-jafari-ufo-testimony"
+  to = "/video/national-press-club-november-12th-2007-ufo-close-encounters?t=1456"
+  status = 301
+[[redirects]]
+  from = "/video/dr-eric-davis-space-time-species-types-uap-hearing-may-1-2025"
+  to = "/video/understanding-uap-science-national-security-innovation-house?t=4846"
+  status = 301

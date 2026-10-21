@@ -50,7 +50,7 @@ facts:
   - text: Eric Davis said that “the legacy program has been very insulated and insular”, that recovered craft are “not of this Earth”, and that he briefed Grusch on legacy programs.
     status: claimed
     by: eric-davis
-    source: v-eric-davis-space-time@4:41
+    source: v-2025-05-01-hearing-a@1:24:57
   - text: Dylan Borland described his understanding of how the “UFO legacy program” is structured, including the theory that AATIP and the UAP Task Force were partly “red-teaming” it.
     status: claimed
     by: dylan-borland

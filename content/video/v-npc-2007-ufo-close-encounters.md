@@ -32,6 +32,22 @@ moments:
     text: "Gen. Parviz Jafari recounts the 1976 Tehran intercept: radar lock, and his weapons and communications failing as he tried to fire."
     speaker: parviz-jafari
     refs: [ inc-tehran-1976, doc-dia-tehran-1976 ]
+  - t: "25:45"
+    text: "Jafari: as squadron commander he flew the second F-4 and locked on with radar at 25 miles; the return was comparable to a 707 tanker, and the object flashed red, green, orange and blue."
+    speaker: parviz-jafari
+    refs: [ inc-tehran-1976, doc-dia-tehran-1976 ]
+  - t: "26:40"
+    text: "Jafari: objects separated from the main one; when one came towards him he tried to fire a heat-seeking missile but his weapons panel went out, and his radio was garbled."
+    speaker: parviz-jafari
+    refs: [ inc-tehran-1976, doc-dia-tehran-1976 ]
+  - t: "26:52"
+    text: "Jafari: one object landed in an open area, radiating light bright enough to see the sand."
+    speaker: parviz-jafari
+    refs: [ inc-tehran-1976, doc-dia-tehran-1976 ]
+  - t: "27:45"
+    text: "Jafari notes that a DIA assessment released under FOIA documented the event in detail and called it “a classic” case."
+    speaker: parviz-jafari
+    refs: [ doc-dia-tehran-1976, inc-tehran-1976 ]
   - t: "28:41"
     text: "Capt. Rodrigo Bravo of Chilean Army aviation describes Chile's official UAP investigations."
     speaker: rodrigo-bravo
