@@ -28,11 +28,11 @@ moments:
   - t: "24:29"
     text: "In a TV interview Startup rejects the planet Venus as an explanation, noting the object appeared on the aircraft's own radar at 12–15 miles."
     speaker: bill-startup
-    refs: [ inc-kaikoura-1978 ]
+    refs: [ inc-kaikoura-1978, doc-rnzaf-air-1080-6-897-kaikoura ]
   - t: "27:20"
     text: "Sceptics proposed Venus, meteors and a hoax; the crew answers that Venus does not show on air traffic control radar and had not yet risen."
-    refs: [ inc-kaikoura-1978 ]
+    refs: [ inc-kaikoura-1978, doc-rnzaf-air-1080-6-897-kaikoura ]
   - t: "28:45"
     text: "Lights on squid-fishing boats were offered as an explanation; the crew rejects it because the targets moved at aircraft speed and followed the plane."
-    refs: [ inc-kaikoura-1978 ]
+    refs: [ inc-kaikoura-1978, doc-rnzaf-air-1080-6-897-kaikoura ]
 ---

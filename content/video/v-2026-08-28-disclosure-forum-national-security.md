@@ -79,6 +79,9 @@ moments:
     speaker: tim-gallaudet
   - t: "44:59"
     text: "A panellist says a former White House national-security staffer, a supporter of disclosure, never saw UAP briefings during his tenure."
+  - t: "52:26"
+    text: "A panellist cites the record releases under the PURSUE programme, which he says are revealing very interesting information, alongside a proposed 2027 NDAA records-review panel and the White House science advisory council."
+    refs: [ doc-war-gov-ufo, pursue ]
   - t: "55:25"
     text: "Mellon: “nobody has ever been prosecuted for bringing classified information to Congress” in a secure setting; the Disclosure Foundation offers free legal advice to potential whistleblowers."
     speaker: chris-mellon
@@ -90,11 +93,11 @@ moments:
   - t: "1:07:23"
     text: "Von Rennenkampff on PURSUE: six law enforcement officers saw fiery reddish orbs at western test ranges in 2023, and in late 2025 senior intelligence officials in a helicopter saw reddish-orange orbs; the government released 32 infrared images."
     speaker: marik-von-rennenkampff
-    refs: [ inc-western-us-orbs-2025, pursue ]
+    refs: [ inc-western-us-orbs-2025, pursue, doc-war-gov-ufo ]
   - t: "1:09:14"
     text: "Von Rennenkampff: the oldest PURSUE documents, from 1944–45, describe the same fiery-orb morphology as recent cases, as do Blue Book reports including the 1952 Washington sightings; he calls the releases a form of soft disclosure."
     speaker: marik-von-rennenkampff
-    refs: [ pursue, inc-dc-1952, project-blue-book ]
+    refs: [ pursue, inc-dc-1952, project-blue-book, doc-war-gov-ufo ]
   - t: "1:11:04"
     text: "Gallaudet: scientific standards are how to separate signal from noise; universities are taking up the subject, including a newly funded program at the University at Albany and the Sol Foundation at Stanford."
     speaker: tim-gallaudet
@@ -154,7 +157,10 @@ moments:
   - t: "1:35:56"
     text: "Von Rennenkampff: in 80 years the government never officially acknowledged an anomaly; the red-orb incidents released through PURSUE are now in the open."
     speaker: marik-von-rennenkampff
-    refs: [ pursue ]
+    refs: [ pursue, doc-war-gov-ufo ]
+  - t: "1:37:05"
+    text: "The moderator says the releases have drawn over 1.5 billion views on the war.gov/UFO site, raising the topic's political capital."
+    refs: [ doc-war-gov-ufo ]
 ---
 
 The national security panel of Disclosure Forum 2026, held on 25 June 2026 in the Senate's Kennedy Caucus Room and published by the Disclosure Foundation on 28 August 2026. NBC News correspondent Gadi Schwartz moderates Christopher Mellon, Rear Adm. Tim Gallaudet, Kirk McConnell and Marik von Rennenkampff.

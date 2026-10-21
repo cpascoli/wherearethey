@@ -9,5 +9,5 @@ moments:
   - t: "0:12"
     text: "Kono says Japan will soon issue a UFO action policy, and that UFOs came up in his recent meeting with U.S. Defense Secretary Mark Esper in Guam."
     speaker: taro-kono
-    refs: [ ev-japan-mod-uap-protocol-2020 ]
+    refs: [ ev-japan-mod-uap-protocol-2020, doc-japan-mod-press-2020-09-15 ]
 ---

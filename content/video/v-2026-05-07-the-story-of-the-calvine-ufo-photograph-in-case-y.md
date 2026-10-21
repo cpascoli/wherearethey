@@ -11,7 +11,7 @@ moments:
     refs: [ inc-calvine-1990 ]
   - t: "0:55"
     text: "4 August 1990: two chefs from Pitlochry walking above Calvine see a silent diamond-shaped object, about 80 ft by later estimates, and take six photographs."
-    refs: [ inc-calvine-1990 ]
+    refs: [ inc-calvine-1990, doc-robinson-calvine-analysis ]
   - t: "1:45"
     text: "A jet, now identified as an RAF Harrier, flies around the object, which then lifts vertically very fast."
     refs: [ inc-calvine-1990 ]

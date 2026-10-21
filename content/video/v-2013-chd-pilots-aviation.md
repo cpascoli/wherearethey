@@ -15,15 +15,15 @@ moments:
   - t: "2:45"
     text: "Callahan: in early January 1987 the FAA's Alaska region asked what to tell reporters about a UFO said to have chased a Japan Air Lines 747 across Alaska for some 31 minutes."
     speaker: john-callahan
-    refs: [ inc-jal-1628-1986 ]
+    refs: [ inc-jal-1628-1986, doc-faa-jal1628-terauchi-interview ]
   - t: "4:35"
     text: "Callahan says he had all the radar data and voice tapes flown to the FAA Technical Center, where the controller's scope was replayed in sync with the tapes and he filmed the screen."
     speaker: john-callahan
-    refs: [ inc-jal-1628-1986 ]
+    refs: [ inc-jal-1628-1986, doc-faa-jal1628-terauchi-interview ]
   - t: "8:15"
     text: "Callahan relays the Japanese captain's description: no markings, “as big as four aircraft carriers,” with yellow and white lights, following the 747 even through a 360-degree turn."
     speaker: john-callahan
-    refs: [ inc-jal-1628-1986 ]
+    refs: [ inc-jal-1628-1986, doc-faa-jal1628-terauchi-interview ]
   - t: "9:40"
     text: "Callahan: FAA Administrator Donald Engen watched his video, cancelled his appointments and said he had to go and see President Reagan."
     speaker: john-callahan
@@ -64,7 +64,7 @@ moments:
   - t: "1:01:30"
     text: "Callahan tells Bartlett that only the three JAL crew saw the craft, while about 23 people at the FAA reviewed the radar track."
     speaker: john-callahan
-    refs: [ inc-jal-1628-1986 ]
+    refs: [ inc-jal-1628-1986, doc-faa-jal1628-terauchi-interview ]
   - t: "1:04:30"
     text: "Callahan: the FAA's hardware engineers blamed the target beside the 747 on software, and the software engineers blamed hardware. “If it's not a hardware problem and it's not a software problem then what the hell is it?”"
     speaker: john-callahan

@@ -12,7 +12,7 @@ moments:
   - t: "2:53"
     text: "On the PURSUE releases: “This is evidence. It's not proof yet.”"
     speaker: garry-nolan
-    refs: [ pursue ]
+    refs: [ pursue, doc-war-gov-ufo ]
   - t: "3:14"
     text: "Nolan: what is mostly blacked out of the released videos is how, where and when the data were collected, which scientists need to validate them."
     speaker: garry-nolan

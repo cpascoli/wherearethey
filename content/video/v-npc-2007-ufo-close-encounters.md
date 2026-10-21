@@ -24,14 +24,14 @@ moments:
   - t: "15:43"
     text: "Air France captain Jean-Charles Duboc describes the 1994 sighting of a huge object near Paris, studied by the French COMETA group and GEIPAN."
     speaker: jean-charles-duboc
-    refs: [ inc-air-france-3532-1994 ]
+    refs: [ inc-air-france-3532-1994, doc-geipan-af3532 ]
   - t: "19:58"
     text: "Astronomer Jean-Claude Ribes of the French national space agency (CNES) speaks for GEIPAN, France's official UAP investigation office."
     speaker: jean-claude-ribes
   - t: "24:08"
     text: "Gen. Parviz Jafari recounts the 1976 Tehran intercept: radar lock, and his weapons and communications failing as he tried to fire."
     speaker: parviz-jafari
-    refs: [ inc-tehran-1976 ]
+    refs: [ inc-tehran-1976, doc-dia-tehran-1976 ]
   - t: "28:41"
     text: "Capt. Rodrigo Bravo of Chilean Army aviation describes Chile's official UAP investigations."
     speaker: rodrigo-bravo
@@ -57,7 +57,7 @@ moments:
   - t: "1:06:50"
     text: "John Callahan, former FAA accidents and investigations division chief, on the 1986 Japan Airlines 1628 case: “an event that never happened.”"
     speaker: john-callahan
-    refs: [ inc-jal-1628-1986 ]
+    refs: [ inc-jal-1628-1986, doc-faa-jal1628-terauchi-interview ]
 ---
 
 Organized by journalist Leslie Kean and filmmaker James Fox, and moderated by former Arizona Governor Fife Symington: officials and pilots from seven countries testified publicly on the same platform.

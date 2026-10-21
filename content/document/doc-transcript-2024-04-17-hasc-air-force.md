@@ -13,6 +13,7 @@ links:
 rel:
   - [ about, inc-langley-2023 ]
   - [ related to, frank-kendall ]
+  - [ transcript of, v-2024-04-17-hasc-air-force-budget ]
 facts:
   - text: "Rep. Rob Wittman told Secretary of the Air Force Frank Kendall: “We saw recently a very disturbing trend at Langley Air Force Base, where because of a large number of UASs that were in that airspace, Langley had to close down just to make sure that we were able to defend the operations that were going on there,” and asked whether Air Force bases are adequately protected."
     status: documented

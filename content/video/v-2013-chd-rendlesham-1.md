@@ -51,6 +51,9 @@ moments:
   - t: "19:50"
     text: "Frascogna says Penniston and Burroughs were interrogated by agents believed to be from AFOSI, and were given narcotics beforehand."
     refs: [ inc-rendlesham-1980, jim-penniston, john-burroughs ]
+  - t: "20:15"
+    text: "Attorney Frascogna summarises Halt's investigation in the forest and the official Air Force memorandum known as the Halt memo."
+    refs: [ doc-halt-memo, inc-rendlesham-1980, charles-halt ]
   - t: "21:01"
     text: "Frascogna: FOIA requests to the Air Force, DIA, NSA, AFOSI, the VA and others found no records on the two men, and the CIA would neither confirm nor deny having any."
     refs: [ jim-penniston, john-burroughs ]
@@ -110,7 +113,7 @@ moments:
   - t: "1:11:40"
     text: "Penniston: on the second night a beam of light reportedly shut off a patrol vehicle; on the third, Halt recorded about 17 minutes of tape, including “there's a beam of light shining down on our feet.”"
     speaker: jim-penniston
-    refs: [ inc-rendlesham-1980, charles-halt ]
+    refs: [ inc-rendlesham-1980, charles-halt, doc-halt-memo ]
   - t: "1:16:15"
     text: "Penniston says they were told by AFOSI to give the wing commander a sanitized account, and that no one was ever relieved under the Personnel Reliability Program, which he takes as a sign they were believed."
     speaker: jim-penniston

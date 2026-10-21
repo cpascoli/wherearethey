@@ -19,7 +19,7 @@ moments:
   - t: "6:34"
     text: "Shellenberger repeats that a single, unverified source told him the program is administered by the Defense Department but held at the White House."
     speaker: michael-shellenberger
-    refs: [ immaculate-constellation ]
+    refs: [ immaculate-constellation, doc-immaculate-constellation ]
   - t: "7:36"
     text: "Shellenberger: he did not verify every part of the report, but checked it did not look compiled from existing lore, to guard against circular reporting."
     speaker: michael-shellenberger
@@ -34,7 +34,7 @@ moments:
   - t: "11:07"
     text: "Asked about Luis Elizondo's “neither confirm nor deny” answer on being read into Immaculate Constellation, Shellenberger calls it curious."
     speaker: michael-shellenberger
-    refs: [ luis-elizondo, immaculate-constellation ]
+    refs: [ luis-elizondo, immaculate-constellation, doc-immaculate-constellation ]
   - t: "13:48"
     text: "Shellenberger calls for a new Church Committee-style, bipartisan reform of intelligence secrecy."
     speaker: michael-shellenberger

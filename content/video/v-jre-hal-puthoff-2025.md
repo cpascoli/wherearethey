@@ -56,7 +56,7 @@ moments:
   - t: "1:02:40"
     text: "Instead Puthoff commissions 38 papers on where each field will be by 2050. These are the DIRDs, including his own on spacetime metric engineering."
     speaker: hal-puthoff
-    refs: [ doc-dirds, dow-uap-d132 ]
+    refs: [ doc-dirds, dow-uap-d132, doc-dia-foia-00159-2018, doc-dird-warp-drive ]
   - t: "1:06:30"
     text: "The Age of Disclosure: Dan Farah approached 38 insiders, including Rubio, Clapper and Jay Stratton, to say on camera what each could legally say."
     speaker: hal-puthoff
@@ -64,7 +64,7 @@ moments:
   - t: "1:08:55"
     text: "After AAWSAP and AATIP, the group proposes a new special access program at the Department of Homeland Security, Kona Blue, since revealed by AARO."
     speaker: hal-puthoff
-    refs: [ kona-blue, aatip, department-of-homeland-security, aaro ]
+    refs: [ kona-blue, aatip, department-of-homeland-security, aaro, doc-aaro-historical-record-report-v1 ]
   - t: "1:11:12"
     text: "On David Grusch: a top UAP investigator for the NRO who moved to NGA and was tasked by Jay Stratton for the UAP Task Force. Puthoff says “I know many of the programs” he describes. (He places Grusch's hearing in August 2023; it was July 26, 2023.)"
     speaker: hal-puthoff
@@ -111,7 +111,7 @@ moments:
   - t: "1:51:49"
     text: "His DIRD on spacetime metric engineering: the effects pilots report match what engineering Einstein's equations would produce; such craft are not beyond our physics, only beyond our engineering."
     speaker: hal-puthoff
-    refs: [ dow-uap-d132 ]
+    refs: [ dow-uap-d132, doc-dia-foia-00159-2018 ]
   - t: "2:05:18"
     text: "“I think the Travis Walton story is right on”, citing the co-workers' polygraphs."
     speaker: hal-puthoff
@@ -128,6 +128,10 @@ moments:
     text: "On the Schumer–Rounds UAP Disclosure Act of 2023: “Nonhuman intelligence phrase is mentioned more than 20 times.”"
     speaker: hal-puthoff
     refs: [ doc-uap-disclosure-act-2023, chuck-schumer, mike-rounds ]
+  - t: "2:38:30"
+    text: "Puthoff: the so-called Robertson Panel was purposely designed misinformation by the intelligence community, going out of its way to call it all nonsense."
+    speaker: hal-puthoff
+    refs: [ doc-robertson-panel-1953 ]
 ---
 
 A long-form career interview covering the SRI remote-viewing program (1972–~1995) and his role in AAWSAP, Kona Blue and To The Stars. Everything here is Puthoff's own account. Where he can be checked, the moments say so: AARO's Historical Record Report concluded the bismuth–magnesium sample is a terrestrial alloy, and the CIA's 1995 review judged remote viewing operationally unproven.

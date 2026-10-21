@@ -92,6 +92,17 @@
       }
     }
   }
+  // Hearing documents come alive with the recording: a transcript shows every moment of the hearing's videos (or of
+  // the video it transcribes), and a written statement the moments in which its author speaks at that hearing.
+  const recordingsOf = id => byId.get(id)?.type === 'video' ? [byId.get(id)]
+    : adj.get(id).filter(x => x.dir === 'in' && x.label === 'recording of').map(x => byId.get(x.other)).filter(v => v?.type === 'video');
+  for (const d of ents.filter(e => e.type === 'document')) {
+    const out = adj.get(d.id).filter(x => x.dir === 'out'), have = new Set((momentsFor.get(d.id) || []).map(m => `${m.video}@${m.t}`));
+    const add = (v, m) => { const k = `${v.id}@${m.t}`; if (have.has(k)) return; have.add(k); if (!momentsFor.has(d.id)) momentsFor.set(d.id, []); momentsFor.get(d.id).push({ video: v.id, ...m }); };
+    for (const x of out.filter(x => x.label === 'transcript of')) for (const v of recordingsOf(x.other)) for (const m of v.moments || []) add(v, m);
+    const authors = new Set(out.filter(x => x.label === 'authored by').map(x => x.other));
+    if (authors.size) for (const x of out.filter(x => x.label === 'submitted to')) for (const v of recordingsOf(x.other)) for (const m of v.moments || []) if (authors.has(m.speaker)) add(v, m);
+  }
 
   const PREFIX = { record: 'R', person: 'P', incident: 'I', hearing: 'H', program: 'PG', organization: 'O', document: 'D', film: 'F', book: 'B', video: 'V', event: 'E', concept: 'C', place: 'L', source: 'S' };
   const fileNo = e => { let h = 2166136261; for (const c of e.id) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return `${PREFIX[e.type] || 'X'}-${(h >>> 0).toString(16).toUpperCase().slice(-4).padStart(4, '0')}`; };

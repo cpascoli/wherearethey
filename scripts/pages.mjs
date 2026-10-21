@@ -112,6 +112,17 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       const recs = (near.get(e.id) || []).filter(x => x.dir === 'in' && x.label === 'recording of' && byId.get(x.other)?.moments?.length).map(x => byId.get(x.other));
       for (const v of recs) h.push(`<h2>Key moments: ${esc(v.name)}</h2><ol class="ssr-moments">${v.moments.map(m => `<li><a href="${v.path}?t=${Math.floor(m.t)}">${hms(m.t)}</a> ${m.speaker ? `${link(m.speaker)}: ` : ''}${esc(m.text)}</li>`).join('')}</ol>`);
     }
+    // a hearing transcript lists the moments of the hearing's recordings; a written statement, those of its author
+    if (e.type === 'document') {
+      const out = (near.get(e.id) || []).filter(x => x.dir === 'out');
+      const recsOf = id => byId.get(id)?.type === 'video' ? [byId.get(id)] : (near.get(id) || []).filter(x => x.dir === 'in' && x.label === 'recording of').map(x => byId.get(x.other)).filter(v => v?.type === 'video');
+      const authors = new Set(out.filter(x => x.label === 'authored by').map(x => x.other));
+      const groups = [
+        ...out.filter(x => x.label === 'transcript of').flatMap(x => recsOf(x.other)).map(v => [v, v.moments || []]),
+        ...(authors.size ? out.filter(x => x.label === 'submitted to').flatMap(x => recsOf(x.other)).map(v => [v, (v.moments || []).filter(m => authors.has(m.speaker))]) : []),
+      ];
+      for (const [v, ms] of groups) if (ms.length) h.push(`<h2>Key moments: ${esc(v.name)}</h2><ol class="ssr-moments">${ms.map(m => `<li><a href="${v.path}?t=${Math.floor(m.t)}">${hms(m.t)}</a> ${m.speaker ? `${link(m.speaker)}: ` : ''}${esc(m.text)}</li>`).join('')}</ol>`);
+    }
     const t = transcripts.get(e.id);
     if (t && FULL_TRANSCRIPT(e)) {
       // paragraphs of roughly a minute, each with its timestamp

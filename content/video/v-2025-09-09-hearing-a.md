@@ -76,6 +76,9 @@ moments:
     text: "Borland describes a light becoming a triangle that stopped about 100 feet in front of him, and his phone freezing."
     speaker: dylan-borland
     refs: [ inc-langley-2012 ]
+  - t: "1:10:29"
+    text: "Asked how important the UAP Disclosure Act of 2025 is, a witness says it is very important, but hopes its seven-year window could be shortened."
+    refs: [ doc-uap-disclosure-act-2023 ]
   - t: "1:12:18"
     text: "Moskowitz: “I don’t know on this subject. But I do know when we are being lied to, and we are definitely being lied to.”"
     speaker: jared-moskowitz
@@ -124,7 +127,7 @@ moments:
   - t: "1:48:03"
     text: "Knapp: James Lacatski told him the U.S. had managed to get inside a craft with no wings, rotor, tail or fuel; it took 14 months of DOPSR review to clear two sentences on it."
     speaker: george-knapp
-    refs: [ james-lacatski, crash-retrieval ]
+    refs: [ james-lacatski, crash-retrieval, doc-dopsr-22-sb-0151 ]
   - t: "1:59:19"
     text: "Knapp: the 1952 Washington flights were seen, tracked on radar and chased by jets, “and then we get an explanation it was a temperature inversion.”"
     speaker: george-knapp
@@ -133,6 +136,10 @@ moments:
     text: "Knapp: congressional investigator Richard D'Amato, sent by Senators Robert Byrd and Harry Reid, got into Area 51 and came to believe the reverse-engineering program had moved inside corporations."
     speaker: george-knapp
     refs: [ area-51, harry-reid, crash-retrieval ]
+  - t: "2:04:32"
+    text: "A member says the Schumer-sponsored UAP Disclosure Act was stripped by the House; Knapp says it would go far, but contractors keeping the secrets would still have to be forced to give them up."
+    speaker: george-knapp
+    refs: [ doc-uap-disclosure-act-2023 ]
   - t: "2:14:44"
     text: "Knapp: Bob Jacobs, who filmed a 1964 Vandenberg missile test, went to AARO and was dismissed with a claim that the original footage showed nothing — footage that had been taken away the day it was recorded."
     speaker: george-knapp

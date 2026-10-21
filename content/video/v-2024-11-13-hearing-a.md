@@ -5,6 +5,10 @@ date: 2024-11-13
 rel:
   - [ recording of, h-2024-11-13 ]
 moments:
+  - t: "23:57"
+    text: "Mace announces the 12-page document on Immaculate Constellation that Shellenberger delivered to Congress that day, distributed to members and entered into the record by Burchett."
+    speaker: nancy-mace
+    refs: [ doc-immaculate-constellation ]
   - t: "31:33"
     text: "Grothman: briefings with the DoD and IC inspectors general and AARO have not been able to substantiate David Grusch's 2023 claims, despite Members questioning them inside and outside the SCIF."
     speaker: glenn-grothman
@@ -41,6 +45,10 @@ moments:
     text: "Gallaudet: he learned from Chris Mellon that satellite imagery of UAP from a few years earlier still had not been shared with Congress."
     speaker: tim-gallaudet
     refs: [ chris-mellon ]
+  - t: "47:21"
+    text: "Gallaudet asks Congress to enact the UAP Disclosure Act's records review board and to strengthen the act in future reauthorizations."
+    speaker: tim-gallaudet
+    refs: [ doc-uap-disclosure-act-2023 ]
   - t: "49:18"
     text: "Elizondo: “UAP are real. Advanced technologies not made by our government or any other government are monitoring sensitive military installations around the globe. Furthermore, the U.S. is in possession of UAP technologies, as are some of our adversaries.”"
     speaker: luis-elizondo
@@ -62,11 +70,11 @@ moments:
   - t: "1:01:26"
     text: "Gold: members of NASA's UAP independent study team, especially academics, “were mocked and even threatened for simply having the temerity to engage in the study of UAP.”"
     speaker: michael-gold
-    refs: [ nasa ]
+    refs: [ nasa, doc-nasa-uap-study-2023 ]
   - t: "1:03:47"
     text: "Gold: the study team recommended using NASA's Aviation Safety Reporting System, which has collected nearly 2 million confidential reports in 47 years, to gather UAP data from pilots."
     speaker: michael-gold
-    refs: [ nasa ]
+    refs: [ nasa, doc-nasa-uap-study-2023 ]
   - t: "1:06:38"
     text: "Gallaudet on the satellite imagery: he can only give details in a closed setting, but analysts called the object “the button” — “a disc-shaped object.”"
     speaker: tim-gallaudet
@@ -98,6 +106,10 @@ moments:
   - t: "1:20:16"
     text: "Elizondo: there is enough data to suggest a relationship between UAP and sensitive military installations, nuclear equities and Department of Energy sites, going back decades."
     speaker: luis-elizondo
+  - t: "1:21:40"
+    text: "Asked for evidence for Immaculate Constellation, Shellenberger says the report described cases new to him, so it was not circular reporting, and that more than one other source confirmed the program's name."
+    speaker: michael-shellenberger
+    refs: [ doc-immaculate-constellation ]
   - t: "1:23:44"
     text: "Elizondo: if this were adversary technology, it “would be an intelligence failure eclipsing that of 9/11 by an order of magnitude.”"
     speaker: luis-elizondo
@@ -125,6 +137,9 @@ moments:
   - t: "1:45:15"
     text: "Asked by Rep. Garcia, all four witnesses say part of the government is knowingly concealing UAP evidence; Gallaudet sees “strong evidence that they are nonhuman higher intelligence”, Elizondo agrees, Shellenberger and Gold do not know."
     refs: [ tim-gallaudet, luis-elizondo, michael-shellenberger, michael-gold, nhi ]
+  - t: "1:49:02"
+    text: "A member recalls their House amendment adding the UAP Disclosure Act, with a records review board and eminent domain modelled on the JFK records act, was blocked, while the Senate included the Schumer–Rounds version."
+    refs: [ doc-uap-disclosure-act-2023 ]
   - t: "1:51:43"
     text: "Gallaudet: he believes an intelligence agency treated the GoFast email as “spillage” into a lower classification, which is why the communications were removed."
     speaker: tim-gallaudet
@@ -151,6 +166,14 @@ moments:
     text: "Gallaudet: the 2020–2022 DoD UAP Task Force led by Jay Stratton had the first comprehensive whole-of-government approach, which witnesses want restored."
     speaker: tim-gallaudet
     refs: [ uaptf, jay-stratton ]
+  - t: "2:10:00"
+    text: "Shellenberger says Immaculate Constellation covers both terrestrial and oceanic cases, several of them at sea."
+    speaker: michael-shellenberger
+    refs: [ doc-immaculate-constellation ]
+  - t: "2:13:00"
+    text: "Asked whether he was read into Immaculate Constellation, Elizondo says he is not authorised to confirm or deny any program by name or trigraph."
+    speaker: luis-elizondo
+    refs: [ doc-immaculate-constellation ]
   - t: "2:15:26"
     text: "Gallaudet answers debunkers who call GoFast a balloon: it was only one video, and there were dozens of such encounters that nearly shut down the 2015 exercise."
     speaker: tim-gallaudet

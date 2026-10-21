@@ -16,6 +16,10 @@ moments:
   - t: "17:16"
     text: "Her account of being shown around the craft."
     speaker: barney-betty-hill
+  - t: "18:12"
+    text: "The interviewer cites the record that Pease AFB radar tracked an unknown object at 2:14 a.m. Betty Hill says Pease released the radar report but the pilots' reports are still classified. Blue Book's analysis sheet attributed the radar return to a temperature inversion."
+    speaker: barney-betty-hill
+    refs: [ doc-bluebook-lincoln-nh-1961, inc-hill-1961 ]
   - t: "24:01"
     text: "On Walter Webb, the NICAP investigator who interviewed the Hills soon after the event."
     speaker: barney-betty-hill

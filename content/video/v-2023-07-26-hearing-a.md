@@ -107,6 +107,9 @@ moments:
     text: "Asked whether Kirkpatrick's “no credible evidence” statement is correct, Grusch says “It is not accurate,” adding that some of the roughly 30 people who went to AARO were also people he interviewed."
     speaker: david-grusch
     refs: [ sean-kirkpatrick, aaro, h-2023-04-19 ]
+  - t: "1:14:05"
+    text: "Rep. Frost describes NASA's independent study team, its first public meeting and its forthcoming report, and asks Graves how NASA's research could help commercial aviation safety."
+    refs: [ doc-nasa-uap-study-2023, nasa ]
   - t: "1:19:34"
     text: "Grusch: “I like to use the term nonhuman. I do not like to denote origin,” and dates the government's awareness to “previously 1930's.”"
     speaker: david-grusch

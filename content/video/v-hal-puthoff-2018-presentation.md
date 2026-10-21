@@ -37,6 +37,10 @@ moments:
   - t: "20:09"
     text: "Puthoff explains “metric engineering”: general relativity allows warp drives and wormholes in principle, which could account for reported UAP performance."
     speaker: hal-puthoff
+  - t: "22:52"
+    text: "Puthoff notes that his metric-engineering paper was also published as one of the Defense Intelligence Reference Documents, and in the open literature."
+    speaker: hal-puthoff
+    refs: [ doc-dirds ]
   - t: "23:39"
     text: "Puthoff suggests engineered spacetime would blue-shift radiation, explaining luminous craft and possible radiation injuries near them."
     speaker: hal-puthoff

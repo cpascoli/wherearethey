@@ -8,6 +8,10 @@ moments:
     text: "Davis says David Grusch and his wife were harassed and intimidated after his complaint, and that a PTSD episode from his medical files was illegally leaked."
     speaker: eric-davis
     refs: [ david-grusch ]
+  - t: "7:47"
+    text: "Davis says he would need a lawyer to assess the circumstances under which Admiral Wilson gave him information before discussing it."
+    speaker: eric-davis
+    refs: [ doc-wilson-memo ]
   - t: "8:24"
     text: "Davis says he briefed Senate Intelligence and Armed Services Committee staff in classified settings in 2019 and 2022, but was never invited to testify."
     speaker: eric-davis

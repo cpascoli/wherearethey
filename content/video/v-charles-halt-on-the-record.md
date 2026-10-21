@@ -11,7 +11,7 @@ moments:
   - t: "1:11"
     text: "Halt on the first night: three security policemen approached a metallic, triangular object about nine feet on a side; he says their memory was altered and there was probably more than an hour of lost time."
     speaker: charles-halt
-    refs: [ inc-rendlesham-1980, jim-penniston, john-burroughs ]
+    refs: [ inc-rendlesham-1980, jim-penniston, john-burroughs, doc-halt-memo ]
   - t: "2:09"
     text: "Two nights later the duty police lieutenant interrupted an officers' dinner: “It's back.” Halt went out to investigate."
     speaker: charles-halt

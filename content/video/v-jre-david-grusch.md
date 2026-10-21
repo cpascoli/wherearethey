@@ -50,6 +50,10 @@ moments:
     text: "Grusch points to James Lacatski's book and his statement that the U.S. broke into an intact craft, and urges AARO and Congress to take Lacatski's classified testimony."
     speaker: david-grusch
     refs: [ james-lacatski, aaro ]
+  - t: "34:15"
+    text: "Grusch: when the material transfer to AAWSAP fell through, the program's money went to the DIRDs and to studying Skinwalker Ranch."
+    speaker: david-grusch
+    refs: [ doc-dirds, aawsap ]
   - t: "38:15"
     text: "Grusch: friends working on the program complained that compartmentation kept engineers from even talking across cubicles, which he calls debilitating to progress."
     speaker: david-grusch

@@ -49,6 +49,10 @@ moments:
   - t: "24:55"
     text: "In Q&A, Grusch describes a continuum of non-human life \"from corporeal bipedal type life to... sentient plasma life\" known to the U.S. government."
     speaker: david-grusch
+  - t: "25:11"
+    text: "Asked about Immaculate Constellation, Grusch says he cannot comment on its content, calling it a National Security Council program."
+    speaker: david-grusch
+    refs: [ doc-immaculate-constellation ]
   - t: "27:02"
     text: "Asked about Matthew Sullivan, Grusch says Sullivan worked on the legacy programme and served with him in the Air Force, but declines details pending a federal investigation."
     speaker: david-grusch

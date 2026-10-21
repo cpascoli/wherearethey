@@ -25,7 +25,7 @@ moments:
   - t: "8:02"
     text: "Salas plays his 1996 phone recording of Col. Walter Figel, deputy crew commander at Echo Flight, describing reports of UFOs over two launch sites as all ten Echo missiles went down on 16 March 1967."
     speaker: bob-salas
-    refs: [ inc-malmstrom-1967 ]
+    refs: [ inc-malmstrom-1967, doc-341smw-history-1967 ]
   - t: "10:00"
     text: "Salas says his crew was ordered to sign non-disclosure statements, and stresses that the capsule never lost electrical power."
     speaker: bob-salas
@@ -33,15 +33,19 @@ moments:
   - t: "11:01"
     text: "Salas reads from the unit history he supplied: the investigating team's opinion was that “externally generated signals” shut the Echo missiles down, since all ten couplers failing within seconds was very remote."
     speaker: bob-salas
-    refs: [ inc-malmstrom-1967 ]
+    refs: [ inc-malmstrom-1967, doc-341smw-history-1967 ]
   - t: "12:00"
     text: "Salas: Boeing engineer Robert Kaminski, who led the Echo investigation, was told not to submit his final report because the incident was reported as a UFO event."
     speaker: bob-salas
-    refs: [ inc-malmstrom-1967 ]
+    refs: [ inc-malmstrom-1967, doc-341smw-history-1967 ]
   - t: "14:00"
     text: "Salas argues that the Air Force kept the Echo and Oscar shutdowns from the University of Colorado (Condon) study, whose report was the basis for ending Project Blue Book in December 1969."
     speaker: bob-salas
     refs: [ project-blue-book, inc-malmstrom-1967 ]
+  - t: "15:20"
+    text: "Salas: in 1967 the Condon study's chief investigator Roy Craig heard from a Sylvania engineer that the Echo Flight shutdowns coincided with UFO sightings; the Malmstrom operations officer told him he could not talk about it, then assured him no UFO was involved."
+    speaker: bob-salas
+    refs: [ doc-341smw-history-1967, inc-malmstrom-1967 ]
   - t: "17:20"
     text: "Salas: the Malmstrom operations officer told Blue Book in writing that his office had “no knowledge of equipment malfunctions” during the UFO sightings; Salas concludes the Air Force “was and is engaged in lying and disinforming the public.”"
     speaker: bob-salas
@@ -88,4 +92,7 @@ moments:
     text: "Asked about Project Blue Book, Salas says the only follow-up he got was a paper to sign, and that Blue Book kept a secret set of files alongside the public ones, holding the classified Malmstrom report."
     speaker: bob-salas
     refs: [ project-blue-book, inc-malmstrom-1967 ]
+  - t: "1:23:20"
+    text: "A panellist says Blue Book's unknowns were near 25% until the CIA-sponsored Robertson Panel, after which Blue Book was gutted and ordered to bring unknowns down."
+    refs: [ doc-robertson-panel-1953, project-blue-book ]
 ---

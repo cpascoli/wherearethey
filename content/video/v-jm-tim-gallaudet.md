@@ -44,11 +44,15 @@ moments:
   - t: "43:01"
     text: "Gallaudet: the council is examining a PURSUE report of law-enforcement agents at a western national-security site encountering orbs, including a mothership launching smaller orbs; he says AARO's Jon Kosloski has stated many orbs have no explanation."
     speaker: tim-gallaudet
-    refs: [ pursue, jon-kosloski, uap-science-advisory-council ]
+    refs: [ pursue, jon-kosloski, uap-science-advisory-council, doc-war-gov-ufo ]
   - t: "1:03:30"
     text: "Gallaudet: the DIA funded about two years of research at Skinwalker Ranch, documented by James Lacatski, Colm Kelleher and George Knapp — “basically disclosure right there”."
     speaker: tim-gallaudet
     refs: [ skinwalker-ranch, aawsap, james-lacatski, george-knapp ]
+  - t: "1:09:05"
+    text: "Gallaudet: the stigma has been an 80-year, well-funded campaign that started after the Robertson Panel."
+    speaker: tim-gallaudet
+    refs: [ doc-robertson-panel-1953 ]
   - t: "1:16:50"
     text: "Gallaudet: former intelligence chief Bobby Ray Inman acknowledged a National Underwater Reconnaissance Office, which Gallaudet, despite his undersea clearances as the Navy's oceanographer, had never heard of."
     speaker: tim-gallaudet

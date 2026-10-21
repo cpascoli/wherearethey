@@ -7,10 +7,10 @@ rel:
 moments:
   - t: "0:00"
     text: "Report: Defence Minister Taro Kono instructs the Self-Defense Forces to record and report UAP sightings, following the U.S. UAP Task Force."
-    refs: [ ev-japan-mod-uap-protocol-2020, taro-kono ]
+    refs: [ ev-japan-mod-uap-protocol-2020, taro-kono, doc-japan-mod-press-2020-09-15 ]
   - t: "1:01"
     text: "Kono cited the Navy videos. The report says SDF pilots are not believed ever to have met a UAP, and the aim was a procedure in case one did."
-    refs: [ ev-japan-mod-uap-protocol-2020, taro-kono ]
+    refs: [ ev-japan-mod-uap-protocol-2020, taro-kono, doc-japan-mod-press-2020-09-15 ]
   - t: "1:23"
     text: "Background: the ministry said in 2015 it had never encountered alien spacecraft, while Shigeru Ishiba said in his personal opinion there were no grounds to deny they exist."
     refs: [ shigeru-ishiba ]

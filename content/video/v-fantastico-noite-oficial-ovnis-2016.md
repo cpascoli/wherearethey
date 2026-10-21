@@ -18,7 +18,7 @@ moments:
     refs: [ inc-noite-oficial-ovnis-1986 ]
   - t: "2:42"
     text: "Timeline: an armed F-5 scrambled from Santa Cruz and Mirages from Anápolis. Five jets in all returned without being able to get close; the CINDACTA radars counted 21 unknown returns."
-    refs: [ inc-noite-oficial-ovnis-1986 ]
+    refs: [ inc-noite-oficial-ovnis-1986, doc-fab-noite-oficial-ovnis-1986 ]
   - t: "4:38"
     text: "Controller Sérgio Mota da Silva, on duty in the São José dos Campos tower, gives his first TV interview: to the naked eye it looked like an aircraft, but through binoculars it was intensely scintillating and multicoloured, mostly orange."
     speaker: sergio-mota-da-silva
@@ -32,7 +32,7 @@ moments:
     refs: [ inc-noite-oficial-ovnis-1986 ]
   - t: "8:26"
     text: "Original air-defence audio of Capt. Armindo de Sousa Viriato's intercept, with his missile armed and the target on radar (\"Judite\") before it pulls away at high speed."
-    refs: [ inc-noite-oficial-ovnis-1986 ]
+    refs: [ inc-noite-oficial-ovnis-1986, doc-fab-noite-oficial-ovnis-1986 ]
   - t: "9:40"
     text: "Viriato says the Brasília air-defence radar measured an acceleration that would equal roughly 15,000 km/h."
     speaker: armindo-viriato

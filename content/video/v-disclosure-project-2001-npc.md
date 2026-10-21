@@ -37,7 +37,7 @@ moments:
   - t: "14:26"
     text: "John Callahan, retired FAA division manager for accidents and investigations, describes the JAL 1628 radar data being briefed to President Reagan's science staff, CIA and FBI, and a CIA man saying “this meeting never happened.”"
     speaker: john-callahan
-    refs: [ inc-jal-1628-1986 ]
+    refs: [ inc-jal-1628-1986, doc-faa-jal1628-terauchi-interview ]
   - t: "18:26"
     text: "Callahan says he still has the controllers' voice tapes, his video of the radar playback and the target printouts, and is prepared to swear to it before Congress."
     speaker: john-callahan
@@ -65,7 +65,7 @@ moments:
   - t: "45:16"
     text: "Salas: Echo Flight lost all ten missiles under similar circumstances; a FOIA-released SAC telex said the loss “is cause for grave concern to this headquarters.”"
     speaker: bob-salas
-    refs: [ inc-malmstrom-1967 ]
+    refs: [ inc-malmstrom-1967, doc-341smw-history-1967 ]
   - t: "48:18"
     text: "Col. Dwynne Arneson (USAF, ret.), 26 years as a communications-electronics officer, recalls a crypto message in the early 1960s reporting a UFO crash on Spitsbergen, Norway."
     speaker: dwynne-arneson

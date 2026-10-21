@@ -186,11 +186,11 @@ moments:
   - t: "3:20:18"
     text: "Gold: on the NASA study team he asked the FAA how many commercial-pilot UAP reports it had and got “confusion and no straight answers”; he backs using NASA's ASRS for reports."
     speaker: michael-gold
-    refs: [ nasa, ryan-graves ]
+    refs: [ nasa, ryan-graves, doc-nasa-uap-study-2023 ]
   - t: "3:22:29"
     text: "Gold: academic members of the NASA study team were threatened just for reviewing the topic — “you can't do science in that environment.”"
     speaker: michael-gold
-    refs: [ nasa ]
+    refs: [ nasa, doc-nasa-uap-study-2023 ]
   - t: "3:24:31"
     text: "Brady-Estevez says a credible source told her that some laser and semiconductor technology came out of the UAP programs."
     speaker: anna-brady-estevez
