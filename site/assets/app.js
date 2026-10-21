@@ -2367,21 +2367,23 @@
       if (window.innerWidth <= 860) $('#side').classList.remove('open');
     }
   });
+  // phones: the file card covers the screen, so any tap on the tab bar (or a More item) closes it first
+  const narrowNav = () => matchMedia('(max-width: 860px)').matches;
   $('#views').addEventListener('click', e => {
     const a = e.target.closest('a[data-view]');
     if (!a) return;
     e.preventDefault();
-    go(a.dataset.view);
+    go(a.dataset.view, { keepSel: !(narrowNav() && state.sel) });
   });
   // "More": dropdown on desktop, bottom sheet on phones. Holds Index, Claims, About and site links.
   const moreMenu = $('#more-menu'), moreBtn = $('#btn-more');
   const setMore = open => {
     if (open && innerWidth > 860) moreMenu.style.right = Math.max(8, innerWidth - moreBtn.getBoundingClientRect().right) + 'px'; else moreMenu.style.right = '';
     moreMenu.hidden = !open; moreBtn.setAttribute('aria-expanded', String(open)); moreBtn.classList.toggle('open', open); };
-  moreBtn.addEventListener('click', e => { e.stopPropagation(); setMore(moreMenu.hidden); });
+  moreBtn.addEventListener('click', e => { e.stopPropagation(); if (moreMenu.hidden && narrowNav() && state.sel) select(null); setMore(moreMenu.hidden); });
   moreMenu.addEventListener('click', e => {
     const a = e.target.closest('a'); if (!a) return;
-    if (a.dataset.view) { e.preventDefault(); if (a.dataset.shelf) shelfTab = a.dataset.shelf; go(a.dataset.view); }
+    if (a.dataset.view) { e.preventDefault(); if (a.dataset.shelf) shelfTab = a.dataset.shelf; go(a.dataset.view, { keepSel: !(narrowNav() && state.sel) }); }
     setMore(false);
   });
   document.addEventListener('click', e => { if (!moreMenu.hidden && !e.composedPath().includes(moreMenu)) setMore(false); });

@@ -544,7 +544,7 @@ body.is-home #btn-side { display: none; } /* no side panel on the landing page *
 .panel-resize:hover, body.resizing .panel-resize { background: linear-gradient(90deg, transparent 2px, var(--accent) 2px, var(--accent) 4px, transparent 4px); }
 body.resizing { cursor: col-resize; user-select: none; }
 body.resizing iframe { pointer-events: none; }
-.panel { position: relative; }
+@media (min-width: 861px) { .panel { position: relative; } } /* phones: a fixed full-screen sheet under the top bar (see the 860px rules) */
 .collapsed { display: none !important; }
 .show-all { margin-top: 6px; font-family: var(--mono); font-size: 11.5px; display: inline-block; }
 /* reading view: dossier takes over the main area */
