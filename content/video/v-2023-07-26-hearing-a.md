@@ -132,7 +132,7 @@ moments:
   - t: "1:39:57"
     text: "Gaetz describes an Eglin AFB disclosure: four craft in diamond formation on radar over the Gulf, and an orb whose approach knocked out the pilot's radar and FLIR. AARO's resolution of an apparently matching case (26 January 2023: four radar objects in formation, radar failure, still images only) found it very likely a balloon."
     speaker: matt-gaetz
-    refs: [ doc-aaro-eglin, tim-burchett, anna-paulina-luna ]
+    refs: [ doc-aaro-eglin, tim-burchett, anna-paulina-luna, inc-eglin-2023 ]
   - t: "1:43:20"
     text: "Graves: in the Gimbal incident the pilots refer to a fleet of objects not visible on the FLIR, which he saw on the radar display in the debrief."
     speaker: ryan-graves
