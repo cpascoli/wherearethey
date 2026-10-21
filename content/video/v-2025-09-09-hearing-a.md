@@ -104,6 +104,7 @@ moments:
   - t: "1:35:11"
     text: "Knapp relays Russian files on an October 1982 incident at a Soviet ICBM base: after hours of UFO activity the launch control system lit up as if the correct codes had been entered, then returned to normal."
     speaker: george-knapp
+    refs: [ inc-usovo-1982 ]
   - t: "1:36:15"
     text: "Asked which contractors hold recovered material, Knapp: “one of them is Lockheed”, adding they are doing what they were asked to do."
     speaker: george-knapp
@@ -183,6 +184,7 @@ moments:
   - t: "2:39:01"
     text: "Knapp relays Col. Sokolov: in 40 Soviet intercepts of UFOs, three pilots fired; their planes stalled and crashed, two pilots died, and the standing order became to leave UFOs alone."
     speaker: george-knapp
+    refs: [ boris-sokolov ]
   - t: "2:39:53"
     text: "Borland points to Bob Lazar: discredited at once, yet he took friends with a video camera to film test flights in the desert, “so clearly, he knew something.”"
     speaker: dylan-borland
