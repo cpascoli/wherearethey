@@ -41,6 +41,7 @@ moments:
   - t: "10:49"
     text: "Von Rennenkampff: Wright-Patterson AFB was shut down in 2024 because of drone activity, with 15 to 30 objects on radar according to FOIA records."
     speaker: marik-von-rennenkampff
+    refs: [ inc-wright-patterson-2024 ]
   - t: "13:14"
     text: "Mellon: the UAP security classification guide put a blanket classification on anything UAP-related, which he calls short-sighted because public awareness drives congressional support."
     speaker: chris-mellon
