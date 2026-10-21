@@ -770,8 +770,11 @@ html:not(.js) .top, html:not(.js) .app, html:not(.js) .views, html:not(.js) .mor
 body.no-side #btn-side { display: none; }
 #view-latest { overflow: auto; background: var(--bg); }
 .latest-page { max-width: 980px; margin: 0 auto; padding: 28px 24px 80px; }
-.lt-head h2, .lt-added h2 { margin: 4px 0 6px; }
-.lt-head p { margin: 0 0 14px; }
+.lt-added h2 { margin: 4px 0 6px; }
+.lt-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.lt-top .home-kicker { margin: 0; }
+.lt-rss { display: inline-flex; border-radius: 5px; opacity: .9; }
+.lt-rss:hover { opacity: 1; }
 .lt-cats { flex-wrap: wrap; margin-bottom: 18px; }
 .lt-cats button span { opacity: .6; font-size: 11px; margin-left: 3px; }
 .lt-list { display: grid; gap: 12px; }

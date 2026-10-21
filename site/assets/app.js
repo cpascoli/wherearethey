@@ -899,9 +899,8 @@
     const shown = latestShowAll ? added : added.slice(0, 25);
     $('#latest').innerHTML = `
       <header class="lt-head">
-        <div class="home-kicker">Latest</div>
-        <h2>What's happening on the record</h2>
-        <p class="muted">Hearings, interviews, statements, official releases and new incidents from the last ${LATEST.windowDays} days, sorted by when they happened. <a href="/feed.xml" target="_blank" rel="noopener">RSS feed ↗</a></p>
+        <div class="lt-top"><div class="home-kicker" title="The last ${LATEST.windowDays} days, sorted by when things happened">Latest</div>
+          <a class="lt-rss" href="/feed.xml" target="_blank" rel="noopener" title="RSS feed: subscribe in your feed reader" aria-label="RSS feed"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#F78422"/><circle cx="6.5" cy="17.5" r="2" fill="#fff"/><path d="M4.5 10.5a9 9 0 0 1 9 9h-2.6a6.4 6.4 0 0 0-6.4-6.4z M4.5 5a14.5 14.5 0 0 1 14.5 14.5h-2.6A11.9 11.9 0 0 0 4.5 7.6z" fill="#fff"/></svg></a></div>
         <div class="seg lt-cats">${LATEST_CATS.filter(([k]) => k === 'all' || cats.get(k)).map(([k, l]) => `<button class="${k === latestCat_ ? 'on' : ''}" data-lt-cat="${k}">${l} <span>${cats.get(k)}</span></button>`).join('')}</div>
       </header>
       <div class="lt-list">${list.map(card).join('') || `<p class="muted">Nothing ${latestCat_ === 'all' ? '' : `in ${esc(catLabel[latestCat_].toLowerCase())} `}in the last ${LATEST.windowDays} days.</p>`}</div>
