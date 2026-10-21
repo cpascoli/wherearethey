@@ -9,6 +9,10 @@ tags: [military, intelligence, disclosure-project]
 rel:
   - [ testified at, ev-disclosure-project-2001 ]
 facts:
+  - text: "At the 2010 National Press Club press conference he said that in March 1967, as officer in charge of the 28th Air Division communications centre in Great Falls, he saw a message reporting that a UFO had shut down several missile silos in Montana."
+    status: claimed
+    by: dwynne-arneson
+    source: v-2010-09-28-disclosure-conference-national-press-club-27-sept@9:37
   - text: Said that as a young lieutenant running the crypto centre at Ramstein, Germany, in the early 1960s, he saw a message reporting that a UFO had crashed on Spitsbergen, Norway. He was later posted to Great Falls, Montana, in 1967.
     status: claimed
     by: dwynne-arneson
