@@ -4,7 +4,7 @@ aka: [Canarias 1976, 19 November 1976 Canary Islands]
 date: 1976-11-19
 place: { name: "Canary Islands, Spain", lat: 28.1, lng: -15.4 }
 tags: [aviator, air-force, navy, international]
-outcome: explained
+outcome: disputed
 outcome_note: "Eastern Test Range launch records list two Poseidon C-3 submarine-launched missiles fired from USS Alexander Hamilton (SSBN-617) in the Eastern Test Range at 19:08 and 19:09 GMT. The phenomenon was reported between 19:00 and 20:00 GMT, most often at 19:15. The Spanish Air Force had classed it as an unidentified optical phenomenon."
 outcome_source: https://www.academia.edu/16027101/Identificados_Los_OVNIS_de_Canarias_fueron_misiles_Poseidon
 links:
