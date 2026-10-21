@@ -1336,10 +1336,22 @@
     const edit = body.querySelector(':scope > .p-edit');
     if (edit) left.append(edit); // keep the edit hint at the end of the main column
   }
+  // Panel animations: the browser's View Transitions morph the panel between its old and new box (narrow ↔ reading
+  // view, slide in/out on open/close; a sheet on phones). Without support, or with reduced motion, changes are instant.
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  function panelTransition(kind, update) {
+    if (!document.startViewTransition || reduceMotion.matches || document.hidden) { update(); return; }
+    const root = document.documentElement;
+    root.dataset.vt = kind; // open | close | expand | collapse: picks the keyframes in app.css
+    const t = document.startViewTransition(update);
+    t.finished.finally(() => { if (root.dataset.vt === kind) delete root.dataset.vt; });
+  }
   function setReading(on) {
-    state.reading = on;
-    if (state.sel) openPanel(state.sel);
-    if (!on) afterResize();
+    panelTransition(on ? 'expand' : 'collapse', () => {
+      state.reading = on;
+      if (state.sel) openPanel(state.sel);
+      if (!on) afterResize();
+    });
   }
   // Drag the panel's left edge to resize (desktop); width remembered per browser
   function applyPanelWidth() {
@@ -1582,7 +1594,7 @@
     const same = state.video === id;
     state.video = id;
     // phones: the file card covers the whole screen, so close it to show the player (Back reopens it)
-    if (state.sel && matchMedia('(max-width: 860px)').matches) { state.sel = null; closePanel(); }
+    if (state.sel && matchMedia('(max-width: 860px)').matches) { state.sel = null; panelTransition('close', () => { if (!state.sel) closePanel(); }); }
     if (state.view !== 'videos') go('videos', { keepSel: true, keepVideo: true });
     setHash({ replace });
     $('#player-empty').hidden = true;
@@ -2255,7 +2267,12 @@
       state.trail.pinned.add(id); state.hiddenIds.delete(id);
       trailChanged(id);
     }
-    if (id && state.view !== 'home') openPanel(id); else closePanel();
+    const panelShown = !$('#panel').hidden;
+    if (id && state.view !== 'home') {
+      if (panelShown) openPanel(id);
+      else panelTransition('open', () => { if (state.sel === id) openPanel(id); });
+    } else if (panelShown) panelTransition('close', () => { if (!state.sel || state.view === 'home') closePanel(); });
+    else closePanel();
     if (state.trail) renderTrailBar(); // highlight the open file's chip
     if (state.view === 'graph') highlight(id);
     if (state.view === 'timeline') $$('.tl-item').forEach(el => el.classList.toggle('sel', el.dataset.goto === id));
@@ -2338,10 +2355,12 @@
       // following a link from the reading view: back to the side panel with clean filters, so the new file is
       // visible in the middle; on the graph it also joins the trail (or starts one)
       if (state.reading && g.closest('#panel') && ent) {
-        state.reading = false; $('#app').classList.remove('reading');
-        if (!offGraph(ent.type)) clearFilters(ent);
-        if (state.view === 'graph' && !offGraph(ent.type)) { followFile(ent.id); if (state.sel === ent.id) openPanel(ent.id); }
-        else select(ent.id, { from: 'link' });
+        panelTransition('collapse', () => {
+          state.reading = false; $('#app').classList.remove('reading');
+          if (!offGraph(ent.type)) clearFilters(ent);
+          if (state.view === 'graph' && !offGraph(ent.type)) { followFile(ent.id); if (state.sel === ent.id) openPanel(ent.id); }
+          else select(ent.id, { from: 'link' });
+        });
         return;
       }
       select(g.dataset.goto, { from: 'link' });

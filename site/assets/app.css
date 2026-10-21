@@ -807,3 +807,34 @@ body.no-side #btn-side { display: none; }
   .lt-cats button { white-space: nowrap; flex: none; }
   .lt-row { grid-template-columns: 1fr; gap: 2px; }
 }
+
+/* ── Panel animations (View Transitions; see panelTransition in app.js) ── */
+.panel { view-transition-name: panel; }
+::view-transition-group(panel) { overflow: hidden; }
+/* keep the text at its real size while the box morphs: no stretching, pinned to the top-left */
+::view-transition-old(panel), ::view-transition-new(panel) { height: 100%; width: auto; object-fit: none; object-position: left top; }
+::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation-duration: .28s; animation-timing-function: cubic-bezier(.22, .7, .2, 1); }
+/* only the panel moves: the rest of the page switches at once (a crossfade would double the graph) */
+::view-transition-old(root) { display: none; }
+::view-transition-new(root) { animation: none; }
+/* expand / collapse: the old layout gives way quickly, so the two don't ghost over each other */
+html[data-vt="expand"]::view-transition-old(panel), html[data-vt="collapse"]::view-transition-old(panel) { animation-duration: .12s; }
+@keyframes vt-in-right { from { transform: translateX(100%); } }
+@keyframes vt-out-right { to { transform: translateX(100%); } }
+@keyframes vt-in-up { from { transform: translateY(100%); } }
+@keyframes vt-out-down { to { transform: translateY(100%); } }
+html[data-vt="open"]::view-transition-new(panel) { animation-name: vt-in-right; }
+html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right; }
+@media (max-width: 860px) {
+  /* phones: the dossier is a full-screen sheet that rises from and sinks to the bottom */
+  html[data-vt="open"]::view-transition-new(panel) { animation-name: vt-in-up; }
+  html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-down; }
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+}
+
+/* expand and close: accented so it's clear the panel can be widened */
+.panel-tools .icon-btn { color: var(--accent); background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 30%, transparent); width: 32px; height: 32px; }
+.panel-tools .icon-btn:hover { color: var(--panel); background: var(--accent); border-color: var(--accent); }
+.panel-tools { gap: 6px; }
