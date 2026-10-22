@@ -5,11 +5,6 @@ rel:
   - [ published by, jesse-michels ]
   - [ about, inc-cape-canaveral-1992 ]
 moments:
-  - t: "4:34"
-    text: "Rogers describes his role as chief of aerospace medicine for the 45th Space Wing at Cape Canaveral and Patrick AFB, and senior flight surgeon for the space shuttle astronaut rescue team."
-    speaker: gregory-rogers
-  - t: "22:08"
-    text: "Jesse Michels, narrating, outlines EG&G's history as a nuclear-test and Nevada Test Site contractor and its alleged role in UFO programmes. This is his own account, not Rogers'."
   - t: "33:54"
     text: "Rogers: in spring 1992, after inspecting clean rooms at Cape Canaveral with an EG&G escort, a major stopped him: “I've got something to show you even you have never seen.”"
     speaker: gregory-rogers
@@ -34,16 +29,9 @@ moments:
     text: "Rogers: the craft tilted to a 45-degree angle of attack without moving, which no aircraft he knows could do; then someone knocked and the major shut off the screen."
     speaker: gregory-rogers
     refs: [ inc-cape-canaveral-1992 ]
-  - t: "1:01:45"
-    text: "Rogers says he decided not to report it, fearing for his career in 1992, and never saw the major or returned to the building."
-    speaker: gregory-rogers
-    refs: [ inc-cape-canaveral-1992 ]
   - t: "1:25:27"
     text: "Rogers says David Grusch's 2023 testimony, and officials' denials that any such craft exists, prompted him to come forward after retiring."
     speaker: gregory-rogers
     refs: [ david-grusch ]
-  - t: "2:25:37"
-    text: "Rogers: the biggest obstacle is bureaucratic inertia; the question is no longer whether UAP are real but what to do about them."
-    speaker: gregory-rogers
 ---
 

@@ -30,14 +30,6 @@ moments:
     text: "From Jacques Vallée Nolan learned the idea of “kabuki”: the absurdity in UFO encounters may be a deliberate show meant to influence humanity as a whole. Vallée's other lesson was to talk about data, not conclusions."
     speaker: garry-nolan
     refs: [ jacques-vallee ]
-  - t: "1:11:00"
-    text: "On the June 2021 ODNI Preliminary Assessment: “the adults are finally stepping up”, and the stigma is lifting."
-    speaker: garry-nolan
-    refs: [ doc-odni-2021-preliminary-assessment ]
-  - t: "1:15:21"
-    text: "Discussion of the new DoD office (AOIMSG) and funding for academic research. Nolan estimates that proper materials analysis needs at least a few million dollars, and the Galileo Project's work $5–10 million."
-    speaker: garry-nolan
-    refs: [ aoimsg, galileo-project ]
   - t: "1:21:33"
     text: "Asked whether a government holds extraterrestrial hardware: “I've not seen anything personally but if I believe the people who I don't think can lie” — and he would release it, with amnesty for officials."
     speaker: garry-nolan
