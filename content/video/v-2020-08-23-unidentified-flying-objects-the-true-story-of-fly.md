@@ -19,10 +19,6 @@ moments:
     text: "Asked to describe them: \"like two saucers, one inverted over the other\". He says he had no means of judging altitude."
     speaker: delbert-newhouse
     refs: [ inc-tremonton-1952 ]
-  - t: "47:44"
-    text: "The camera: a 16 mm Bell & Howell with a three-lens turret, at 16 frames per second. By the time it was ready the objects had moved much farther away, and he says stopping down to f/16 was a mistake."
-    speaker: delbert-newhouse
-    refs: [ inc-tremonton-1952 ]
   - t: "48:36"
     text: "One object reversed course and left the group. He held the camera still and let it pass through the frame two or three times before it disappeared to the east."
     speaker: delbert-newhouse

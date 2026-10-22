@@ -8,9 +8,6 @@ moments:
   - t: "0:16"
     text: "Pupils describe seeing something shiny at break time and two figures in tight black suits with big eyes, one beside the craft."
     refs: [ inc-ariel-1994 ]
-  - t: "1:26"
-    text: "A pupil recalls a shiny, cigar-like object in the sky the day before."
-    refs: [ inc-ariel-1994 ]
   - t: "2:12"
     text: "Pupils show drawings: a silver craft like two plates on top of each other, with smaller lights around it."
     refs: [ inc-ariel-1994 ]

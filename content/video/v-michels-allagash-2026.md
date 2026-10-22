@@ -15,8 +15,6 @@ moments:
     text: "Investigation by Raymond Fowler, and hypnotic regressions that describe examinations by small grey beings."
   - t: "1:35:38"
     text: "Bald patches and benign tumours on Jim Weiner's shins; the episode says tissue sent through military pathology could not be identified."
-  - t: "2:08:15"
-    text: "Charlie Foltz, a Navy veteran, describes a May 1970 sighting with about 24 crewmen off the coast of Spain."
 ---
 
 A civilian case with no official investigator. It is included for its physical-trace claims and its long record of investigation.

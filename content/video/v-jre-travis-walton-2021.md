@@ -13,12 +13,6 @@ moments:
   - t: "1:33"
     text: "He says the sheriff had other reports on file of a glow rising and streaking off that night, from hunters and fishermen at Black Canyon Lake, including a deer hunter who worked in military intelligence."
     speaker: travis-walton
-  - t: "3:05"
-    text: "At first even his oldest brother thought the crew had killed him, and tore apart brush piles looking for his body."
-    speaker: travis-walton
-  - t: "5:25"
-    text: "The craft: a classic metallic disc with a soft, golden glow."
-    speaker: travis-walton
   - t: "9:18"
     text: "He ducked behind a log, which brought him within 8–10 ft of the object as he stood up, and that is when “the energy discharge happened”."
     speaker: travis-walton
