@@ -1348,7 +1348,8 @@
   // view, slide in/out on open/close; a sheet on phones). Without support, or with reduced motion, changes are instant.
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
   function panelTransition(kind, update) {
-    if (!document.startViewTransition || reduceMotion.matches || document.hidden) { update(); return; }
+    // no animation when the change comes from the address (opening a link, Back/Forward): only for clicks
+    if (!document.startViewTransition || reduceMotion.matches || document.hidden || routing) { update(); return; }
     const root = document.documentElement;
     root.dataset.vt = kind; // open | close | expand | collapse: picks the keyframes in app.css
     const t = document.startViewTransition(update);
