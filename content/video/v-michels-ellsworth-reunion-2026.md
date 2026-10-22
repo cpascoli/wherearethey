@@ -7,13 +7,6 @@ rel:
   - [ features, michael-johnson ]
   - [ about, inc-ellsworth-1977 ]
 moments:
-  - t: "15:18"
-    text: "Mario Woods and Michael Johnson meet again for the first time since the military separated them in 1977."
-    refs: [ mario-woods, michael-johnson, inc-ellsworth-1977 ]
-  - t: "23:25"
-    text: "At about 9:15 p.m., Woods says he saw a strange light to the east, flashed his truck lights at it three times, and it flashed back."
-    speaker: mario-woods
-    refs: [ inc-ellsworth-1977 ]
   - t: "24:26"
     text: "Just after midnight, inner- and outer-zone alarms went off at the November-5 Minuteman site, above and below ground."
     speaker: mario-woods
@@ -51,12 +44,8 @@ moments:
     text: "Woods says he never reported the beings in the debrief because he would have been removed from the Personnel Reliability Program. Johnson describes being reassigned to menial work and discharged."
     speaker: mario-woods
     refs: [ inc-ellsworth-1977, michael-johnson ]
-  - t: "57:51"
-    text: "The first joint hypnotic regression of both men, run by hypnotherapist Yvonne Smith: “two men, the same words”."
   - t: "1:51:39"
     text: "The “L9 incident” document, which claims aliens fired a beam at security police at Ellsworth's L9 site on November 16, 1977. The episode argues it was a fabrication tied to Richard Doty and meant to discredit the real case."
-  - t: "2:37:59"
-    text: "Closing: what actually happened?"
 ---
 
 Recorded for the 49th anniversary. Jesse Michels also posted a shorter clip of this reunion.

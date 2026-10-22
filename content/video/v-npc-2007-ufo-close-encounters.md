@@ -28,10 +28,6 @@ moments:
   - t: "19:58"
     text: "Astronomer Jean-Claude Ribes of the French national space agency (CNES) speaks for GEIPAN, France's official UAP investigation office."
     speaker: jean-claude-ribes
-  - t: "24:08"
-    text: "Gen. Parviz Jafari recounts the 1976 Tehran intercept: radar lock, and his weapons and communications failing as he tried to fire."
-    speaker: parviz-jafari
-    refs: [ inc-tehran-1976, doc-dia-tehran-1976 ]
   - t: "25:45"
     text: "Jafari: as squadron commander he flew the second F-4 and locked on with radar at 25 miles; the return was comparable to a 707 tanker, and the object flashed red, green, orange and blue."
     speaker: parviz-jafari
@@ -59,9 +55,6 @@ moments:
     text: "Capt. Ray Bowyer recounts the 2007 Alderney sighting and urges aircrew to report what they see."
     speaker: ray-bowyer
     refs: [ inc-alderney-2007 ]
-  - t: "52:59"
-    text: "Nick Pope, formerly of the UK Ministry of Defence, on the British government's handling of UFO reports since 1950."
-    speaker: nick-pope
   - t: "56:52"
     text: "James Penniston describes his close approach to the craft at Rendlesham in 1980."
     speaker: jim-penniston

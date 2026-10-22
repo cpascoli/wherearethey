@@ -49,21 +49,6 @@ moments:
     text: "Gallaudet: the DIA funded about two years of research at Skinwalker Ranch, documented by James Lacatski, Colm Kelleher and George Knapp — “basically disclosure right there”."
     speaker: tim-gallaudet
     refs: [ skinwalker-ranch, aawsap, james-lacatski, george-knapp ]
-  - t: "1:09:05"
-    text: "Gallaudet: the stigma has been an 80-year, well-funded campaign that started after the Robertson Panel."
-    speaker: tim-gallaudet
-    refs: [ doc-robertson-panel-1953 ]
-  - t: "1:16:50"
-    text: "Gallaudet: former intelligence chief Bobby Ray Inman acknowledged a National Underwater Reconnaissance Office, which Gallaudet, despite his undersea clearances as the Navy's oceanographer, had never heard of."
-    speaker: tim-gallaudet
-  - t: "1:21:12"
-    text: "Gallaudet: a classified Navy diving unit experiments with liquid breathing, and Eric Davis has said more crash retrievals have happened in the ocean than on land."
-    speaker: tim-gallaudet
-    refs: [ eric-davis, crash-retrieval ]
-  - t: "1:23:35"
-    text: "Gallaudet: he and his wife helped Jeff Cruickshank analyze ship deck logs from the 1962 Bluegill Triple Prime nuclear test recovery; he believes something anomalous was recovered, while saying he can't be 100% sure."
-    speaker: tim-gallaudet
-    refs: [ crash-retrieval ]
 ---
 
 Jesse Michels interviews retired Rear Admiral Tim Gallaudet, former Navy oceanographer and acting NOAA administrator, about the 2015 GoFast email, unidentified submerged objects and the ocean as a possible UAP hot spot, his work on the ODNI's UAP Science Advisory Council, the Bluegill Triple Prime recovery and his Atlantis search. Much of the undersea material is second-hand accounts relayed to him.

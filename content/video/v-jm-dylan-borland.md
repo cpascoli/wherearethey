@@ -11,10 +11,6 @@ moments:
   - t: "18:45"
     text: "Borland: enlisted 2010–2013 as an imagery analyst, he was assigned to manned and unmanned ISR supporting special operations, and was medically discharged in 2013."
     speaker: dylan-borland
-  - t: "27:34"
-    text: "Borland: at Langley around 1:30–2 a.m. he first took the light rising from near the NASA hangar for a weather balloon — he had seen balloon tests from that hangar before."
-    speaker: dylan-borland
-    refs: [ inc-langley-2012 ]
   - t: "28:30"
     text: "Borland: the light flew toward him and a triangle “manifested” around it; it stopped about 100 feet in front of and above him, he felt static electricity, smelled a lightning storm, and his phone overheated and froze."
     speaker: dylan-borland
@@ -27,21 +23,10 @@ moments:
     text: "Borland: after two or three minutes the center light flashed and it climbed from about 100 feet to at least airliner altitude in two to three seconds, then drifted east over the Atlantic; the friend on the phone, a federal officer, has not come forward."
     speaker: dylan-borland
     refs: [ inc-langley-2012 ]
-  - t: "41:15"
-    text: "Borland: Google Maps entries at NASA Langley buildings carry pictures of labyrinths, pyramids and hieroglyphs posted by people who appear on LinkedIn as staff there."
-    speaker: dylan-borland
-    refs: [ inc-langley-2012 ]
-  - t: "49:26"
-    text: "On the December 2023 Langley drone incursions, Borland, then working for DTRA, says he knows the targets: chiefly NASA hangars and the F-22s."
-    speaker: dylan-borland
-    refs: [ inc-langley-2023 ]
   - t: "52:08"
     text: "Borland: he knows for a fact the government holds cell-phone video of a triangle from within 100 feet, and is sure the U.S. has recovered craft “not made by humanity” — while saying he has never claimed they are extraterrestrial."
     speaker: dylan-borland
     refs: [ crash-retrieval ]
-  - t: "55:46"
-    text: "Borland: after the sighting his technical sergeant told him never to talk about it; a security-forces airman told him of a guarded box flown by C-17 into a North Dakota hangar for hours — which Borland says could have been anything."
-    speaker: dylan-borland
   - t: "58:30"
     text: "Borland: at BAE Systems (2015–2018) people in a program heard him describe the triangle, assumed he was read in, and that is how he learned of a specific program with access to historical backlog."
     speaker: dylan-borland
@@ -50,9 +35,6 @@ moments:
     text: "Borland believes the program has a genetics component consistent with Grusch's “biologics”, and agrees Glenn Gaffney has been named as a leader of the legacy program."
     speaker: dylan-borland
     refs: [ david-grusch, glenn-gaffney, legacy-program ]
-  - t: "1:03:58"
-    text: "Borland: after he went to the IC Inspector General, Congress in 2024 passed language protecting whistleblowers who disclose CIA and Department of Energy secrets to the IG from espionage prosecution."
-    speaker: dylan-borland
   - t: "1:36:24"
     text: "Borland: AARO's memorandum recorded his triangle sighting while the rest was placed in a special access program; he says AARO director Tim Phillips acknowledged his two drawings were classified under a security classification guide."
     speaker: dylan-borland
@@ -61,17 +43,10 @@ moments:
     text: "Borland: after becoming a whistleblower in 2023 he legally searched databases he could access as a counter-WMD analyst and found reports and briefings on baiting craft and taking them down, matching what he had been told."
     speaker: dylan-borland
     refs: [ crash-retrieval ]
-  - t: "1:42:26"
-    text: "Borland on how his clearance was disabled: a request for an updated SF-86 sent to a former employer triggers administrative withdrawal; his clearance has never been revoked and he has never failed a polygraph."
-    speaker: dylan-borland
   - t: "1:58:03"
     text: "Borland: AARO sent him a memorandum for record with inserted details, acknowledged errors and took his corrections — yet the uncorrected version later reached the ODNI under Jon Kosloski; he says he kept all the emails."
     speaker: dylan-borland
     refs: [ aaro, odni, jon-kosloski ]
-  - t: "2:03:23"
-    text: "Borland: per Corbell, an ODNI official claimed he made a fourth drawing; he denies it and says the claim contradicts AARO's own report."
-    speaker: dylan-borland
-    refs: [ odni, jeremy-corbell ]
   - t: "2:09:47"
     text: "Borland: in 2016–17 the VA denied he had done his Air Force job while enrolling him in a PTSD program with polygraph sensors, flashing images and air horns; he says medication made him suicidal and his psychiatrist quit."
     speaker: dylan-borland
