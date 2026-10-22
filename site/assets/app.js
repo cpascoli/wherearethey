@@ -194,6 +194,7 @@
   function renderFilters() {
     $('#f-credible').checked = state.credibleOnly;
     $('#f-explained').checked = state.hideExplained;
+    $('#btn-settings .set-dot').hidden = state.credibleOnly && state.hideExplained; // a dot on the cog when a setting is off its default
     // Faceted counts: each list is counted against the *other* list's selection,
     // so picking types narrows the themes and picking themes narrows the types.
     const credOk = e => !(state.credibleOnly && e.cred === 'outside') && !(state.hideExplained && resolved(e));
@@ -2441,7 +2442,7 @@
   const setMore = open => {
     if (open && innerWidth > 860) moreMenu.style.right = Math.max(8, innerWidth - moreBtn.getBoundingClientRect().right) + 'px'; else moreMenu.style.right = '';
     moreMenu.hidden = !open; moreBtn.setAttribute('aria-expanded', String(open)); moreBtn.classList.toggle('open', open); };
-  moreBtn.addEventListener('click', e => { e.stopPropagation(); if (moreMenu.hidden && narrowNav() && state.sel) select(null); setMore(moreMenu.hidden); });
+  moreBtn.addEventListener('click', e => { e.stopPropagation(); if (moreMenu.hidden && narrowNav() && state.sel) select(null); if (moreMenu.hidden) setOpen(false); setMore(moreMenu.hidden); });
   moreMenu.addEventListener('click', e => {
     const a = e.target.closest('a'); if (!a) return;
     if (a.dataset.view) { e.preventDefault(); if (a.dataset.shelf) shelfTab = a.dataset.shelf; go(a.dataset.view, { keepSel: !(narrowNav() && state.sel) }); }
@@ -2469,6 +2470,16 @@
     if (state.view === 'map') renderMap();
   }
   $('#btn-theme').addEventListener('click', () => applyTheme(isDark() ? 'light' : 'dark'));
+  // settings: a small panel under the cog (choices are kept in localStorage by filtersChanged)
+  const setPop = $('#settings-pop'), setBtn = $('#btn-settings');
+  const setOpen = open => {
+    if (open && innerWidth > 860) setPop.style.right = Math.max(8, innerWidth - setBtn.getBoundingClientRect().right) + 'px'; else setPop.style.right = '';
+    setPop.hidden = !open; setBtn.setAttribute('aria-expanded', String(open));
+    if (open) { setMore(false); setPop.querySelector('input')?.focus(); }
+  };
+  setBtn.addEventListener('click', e => { e.stopPropagation(); setOpen(setPop.hidden); });
+  document.addEventListener('click', e => { if (!setPop.hidden && !e.composedPath().includes(setPop)) setOpen(false); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !setPop.hidden) { setOpen(false); setBtn.focus(); } });
 
   // live reload from the dev server
   if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {

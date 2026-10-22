@@ -72,24 +72,27 @@
       <a role="menuitem" href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
     <a class="top-about" href="/about">About</a>
+    <button class="icon-btn" id="btn-settings" aria-label="Settings" aria-haspopup="dialog" aria-expanded="false" aria-controls="settings-pop" title="Settings"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1.08-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1.08 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg><i class="set-dot" hidden></i></button>
     <button class="icon-btn" id="btn-theme" aria-label="Toggle theme" title="Theme">◐</button>
+    <div class="settings-pop" id="settings-pop" role="dialog" aria-label="Settings" hidden>
+      <h4>Settings</h4>
+      <label class="switch">
+        <input type="checkbox" id="f-credible" checked>
+        <span class="track"></span>
+        <span><b>Official sources only</b><small>Officials, military, pilots, intelligence, academia, Congress</small></span>
+      </label>
+      <label class="switch">
+        <input type="checkbox" id="f-explained" checked>
+        <span class="track"></span>
+        <span><b>Hide explained cases</b><small>Incidents with a credible conventional explanation, or exposed as hoaxes</small></span>
+      </label>
+      <p class="sp-note">Saved in this browser.</p>
+    </div>
   </header>
 
   <div class="app is-home" id="app">
     <aside class="side" id="side">
       <div id="filters">
-        <section class="f-block">
-          <label class="switch">
-            <input type="checkbox" id="f-credible" checked>
-            <span class="track"></span>
-            <span><b>Official sources only</b><small>Officials, military, pilots, intelligence, academia, Congress</small></span>
-          </label>
-          <label class="switch">
-            <input type="checkbox" id="f-explained" checked>
-            <span class="track"></span>
-            <span><b>Hide explained cases</b><small>Incidents with a credible conventional explanation, or exposed as hoaxes</small></span>
-          </label>
-        </section>
         <section class="f-block">
           <h4>Types <button class="link" id="f-types-clear" hidden title="Show all types again">clear</button></h4>
           <div id="f-types" class="f-types"></div>
