@@ -7,6 +7,11 @@ credentials:
   - category: congress
     role: Member of Parliament (Davenport 1949–1957; Trinity 1958–1974)
 tags: [international, disclosure]
+rel:
+  - [ witness, h-2013-citizen-hearing ]
+  - [ related to, ev-hellyer-toronto-2005 ]
+  - [ related to, edgar-mitchell ]
+  - [ related to, steven-greer ]
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Paul_Hellyer
@@ -22,6 +27,18 @@ facts:
     status: claimed
     by: paul-hellyer
     source: v-hellyer-sse-talk@3:00
+  - text: "He said in 2005 that as Defence Minister he received reports of unidentified flying objects but was too busy to take an interest, and that his views changed after an ABC News special and Philip Corso's book The Day After Roswell, which he relied on heavily; Corso's claims have not been corroborated."
+    status: claimed
+    by: paul-hellyer
+    source: v-hellyer-toronto-2005-part1@2:51
+  - text: "Opening the 2013 Citizen Hearing on Disclosure, he said: “like my friend Edgar Mitchell, I say without equivocation, we are not alone in the cosmos.”"
+    status: claimed
+    by: paul-hellyer
+    source: v-2013-chd-opening@7:00
+  - text: "He proposed a bipartisan congressional committee with an amnesty from the National Security Act for people who know about UFO programs."
+    status: claimed
+    by: paul-hellyer
+    source: v-hellyer-interview-2019@4:19
   - text: He warned that U.S. military preparations to fight extraterrestrials could drag the world into an “intergalactic war”, and later called on governments to disclose alien technology that could help with climate change.
     status: claimed
     by: paul-hellyer
