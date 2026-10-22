@@ -38,12 +38,20 @@ facts:
     status: claimed
     by: david-fravor
     source: v-lex-fridman-david-fravor@1:31:30
+  - text: "Interviewed by Jeremy Corbell in 2020, he said Fravor sent him out with “Put your tapes on”, that the object showed no tail, wings or exhaust plume on the infrared pod, and that on radar its Mach number was “jumping all over the place” with strobe lines indicating jamming."
+    status: claimed
+    by: chad-underwood
+    source: v-2020-08-17-corbell-chad-underwood@4:57
+  - text: "In the same interview he said his aircraft was “straight and low the entire time” and that “It broke my lock by zooming off to the left”, rejecting the theory that his manoeuvring or the zoom created the dart — a firmer position than his 2019 statement that he could not confirm the acceleration."
+    status: claimed
+    by: chad-underwood
+    source: v-2020-08-17-corbell-chad-underwood@12:10
 ---
 
 Chad Underwood is a former U.S. Navy F/A-18 pilot with Strike Fighter Squadron 41, the "Black Aces". On 14 November 2004, about an hour after David Fravor's encounter, he flew the next sortie from USS Nimitz, found the object on radar and recorded the infrared "FLIR1" video of it on his targeting pod. He also coined the name "Tic Tac". The video circulated within the carrier group, was published by The New York Times in 2017 and was officially released by the Pentagon in 2020. He later became a flight instructor and worked in the aerospace industry.
 
-He stayed silent for 15 years, wary of being associated with "little green men", before giving his only major interview, to New York Magazine in 2019. He described an object changing altitude, speed and aspect erratically, dropping from about 50,000 feet to near the sea in seconds, with no visible exhaust. He ruled out birds and balloons, and judged a weather event unlikely given Fravor's sighting and the other sensors. He said he was never debriefed as he would have been about a secret test aircraft.
+He stayed silent for 15 years, wary of being associated with "little green men", before speaking to New York Magazine in 2019 and, in 2020, on camera to Jeremy Corbell. He described an object changing altitude, speed and aspect erratically, dropping from about 50,000 feet to near the sea in seconds, with no visible exhaust. He ruled out birds and balloons, and judged a weather event unlikely given Fravor's sighting and the other sensors. He said he was never debriefed as he would have been about a secret test aircraft.
 
-He is careful about the limits of his evidence. He never saw the object with his own eyes. He says his manoeuvres did not cause the famous dart to the left, but he cannot confirm the object actually accelerated, a point sceptics who attribute it to the pod's tracking have pressed.
+His two interviews differ in emphasis. In 2019 he stressed the limits of his evidence: he never saw the object with his own eyes and could not confirm that it actually accelerated, a point pressed by sceptics who attribute the dart to the pod's tracking. In 2020 he told Corbell that his jet was flying straight and level, and that the object broke the pod's lock by accelerating away. He also said the radar showed signs of jamming.
 
 *Sources: [New York Magazine (2019)](https://nymag.com/intelligencer/2019/12/tic-tac-ufo-video-q-and-a-with-navy-pilot-chad-underwood.html) · Lex Fridman Podcast #122 (Fravor) · Nimitz incident record*
