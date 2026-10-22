@@ -87,6 +87,8 @@ export async function build({ check = false, quiet = false } = {}) {
     if (d.seo_description) e.seoDescription = String(d.seo_description);
     // Latest: pinned above the dated list until this date (YYYY-MM-DD), then it drops back into place
     if (d.featured) e.featured = d.featured instanceof Date ? d.featured.toISOString().slice(0, 10) : String(d.featured);
+    // books & films: shown first, as a large “featured” card, on the Documentaries / Books page
+    if (d.shelf_featured) e.shelfFeatured = true;
     // books & films: free-text credits plus bibliographic / runtime metadata
     for (const k of ['credits', 'publisher', 'isbn', 'pages']) if (d[k] != null) e[k] = String(d[k]);
     if (d.runtime != null) e.runtime = Number(d.runtime);

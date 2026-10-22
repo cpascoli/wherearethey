@@ -942,7 +942,7 @@
   function renderShelf() {
     const count = t => ents.filter(e => e.type === t).length;
     $('#shelf-title').textContent = TYPES[shelfTab].plural; // Documentaries or Books: separate pages (/documentaries, /books)
-    const items = ents.filter(e => e.type === shelfTab).sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
+    const items = ents.filter(e => e.type === shelfTab).sort((a, b) => !!b.shelfFeatured - !!a.shelfFeatured || String(b.date || '').localeCompare(String(a.date || '')));
     $('#shelf').innerHTML = items.map(e => {
       const tr = trailerOf(e);
       const people = shelfPeople(e), official = people.filter(p => p.cred === 'credible').length;
@@ -952,16 +952,16 @@
         : `<div class="sc-spine" style="--c:${TYPES[e.type].color}"><b>${esc(e.name)}</b><span>${esc(e.credits || '')}</span></div>`;
       const amz = e.type === 'book' && amazonLink(e.isbn);
       const actions = `<div class="sc-actions">${tr ? `<button class="btn small primary" data-play="${tr.id}@0">▶ Trailer</button>` : ''}<button class="btn small" data-goto="${e.id}">File card</button>${amz ? `<a class="btn small sc-btn-buy" href="${esc(amz.url)}" target="_blank" rel="noopener sponsored" title="Opens ${amz.store}">Buy on Amazon ↗</a>` : ''}${e.links.slice(0, 2).map(l => `<a class="btn small" href="${esc(l.url)}" target="_blank" rel="noopener" title="${esc(l.label)}">${esc(btnLabel(l.label))} ↗</a>`).join('')}</div>`;
-      return `<article class="shelf-card ${e.type}">
+      return `<article class="shelf-card ${e.type}${e.shelfFeatured ? ' is-featured' : ''}">
         <div class="sc-left">
           <div class="sc-cover" ${tr ? `data-play="${tr.id}@0" title="Play the trailer"` : `data-goto="${e.id}"`}>${cover}</div>
           ${e.type === 'book' ? '' : actions}
         </div>
         <div class="sc-body">
-          <div class="sc-kicker">${esc(shelfMeta(e))}</div>
+          <div class="sc-kicker">${e.shelfFeatured ? '<em class="lt-tag feat">featured</em>' : ''}${esc(shelfMeta(e))}</div>
           <h3 data-goto="${e.id}">${esc(e.name)}</h3>
           ${e.credits ? `<div class="sc-credits">${esc(e.credits)}</div>` : ''}
-          <p class="sc-sum">${esc(sum.length > 320 ? sum.slice(0, 317).replace(/\s+\S*$/, '') + '…' : sum)}</p>
+          <p class="sc-sum">${esc(sum.length > (e.shelfFeatured ? 640 : 320) ? sum.slice(0, e.shelfFeatured ? 637 : 317).replace(/\s+\S*$/, '') + '…' : sum)}</p>
           ${people.length ? `<div class="sc-people"><span class="small muted">${official ? `${official} official source${official > 1 ? 's' : ''} on record` : 'People'}:</span> ${people.slice(0, 10).map(p => chip(p.id)).join('')}${people.length > 10 ? `<span class="small muted">+${people.length - 10} more</span>` : ''}</div>` : ''}
           ${e.type === 'book' ? actions : ''}
         </div></article>`;

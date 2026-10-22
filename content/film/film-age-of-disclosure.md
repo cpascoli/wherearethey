@@ -2,6 +2,7 @@
 name: The Age of Disclosure
 aka: [Age of Disclosure]
 date: 2025-11-21
+shelf_featured: true
 credits: "Directed and produced by Dan Farah · narrated by Luis Elizondo"
 runtime: 109
 tags: [disclosure, congress, intelligence]

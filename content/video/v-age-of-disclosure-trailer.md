@@ -1,8 +1,9 @@
 ---
-name: "The Age of Disclosure: official trailer"
+name: "The Age of Disclosure: first trailer (January 2025)"
+date: 2025-01-22
 youtube: DkU7ZqbADRs
 rel:
-  - [ trailer of, film-age-of-disclosure ]
+  - [ about, film-age-of-disclosure ]
   - [ features, james-clapper ]
 moments:
   - t: "0:30"
@@ -16,4 +17,4 @@ moments:
     text: "The program is compared to the Manhattan Project; “even presidents have been operating on a need to know basis.”"
 ---
 
-The official trailer, from the film's own YouTube channel. The auto-captions don't name the speakers; the film itself identifies them on screen.
+The first trailer, published on the film's own YouTube channel in January 2025, before a release date had been set; the October 2025 trailer replaced it. The auto-captions don't name the speakers; the film itself identifies them on screen.
