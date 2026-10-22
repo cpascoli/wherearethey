@@ -6,23 +6,8 @@ rel:
   - [ features, ray-bowyer ]
   - [ about, inc-alderney-2007 ]
 moments:
-  - t: "5:13"
-    text: "Bowyer describes an earlier sighting around 2000–2001 near the Needles: a sparkling tube above a stationary Royal Navy frigate, which vanished; he says a Brighton police helicopter later filmed a similar object."
-    speaker: ray-bowyer
-  - t: "15:05"
-    text: "Bowyer: on 23 April 2007 he first took the light for sunlight off greenhouses, until binoculars showed a definite shape that stayed in place."
-    speaker: ray-bowyer
-    refs: [ inc-alderney-2007 ]
   - t: "19:25"
     text: "Bowyer: he later learned the object was over 50 miles away when first seen, implying great size; it was a 15:1 cigar shape with a dark band and an intensely bright light that did not dazzle."
-    speaker: ray-bowyer
-    refs: [ inc-alderney-2007 ]
-  - t: "22:08"
-    text: "Bowyer: a Blue Islands jet captain also saw the object, but says his company told him not to report it."
-    speaker: ray-bowyer
-    refs: [ inc-alderney-2007 ]
-  - t: "26:06"
-    text: "Bowyer: descending towards Alderney he saw a second identical object farther away; the objects seemed to sit at the top of the haze layer."
     speaker: ray-bowyer
     refs: [ inc-alderney-2007 ]
   - t: "33:25"

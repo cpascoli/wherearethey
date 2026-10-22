@@ -7,20 +7,11 @@ moments:
   - t: "1:40"
     text: "Market gardener Paul Smith, then 16, describes a bright silver-white object about 30 m up that shimmered, changed colour, turned translucent and descended into the Grange pines."
     refs: [ inc-westall-1966 ]
-  - t: "10:12"
-    text: "Former pupils describe two or three craft above the oval and power pylons, with up to 200 students and several teachers watching."
-    refs: [ inc-westall-1966 ]
-  - t: "17:46"
-    text: "A witness estimates the craft at about 60 feet across and 300–400 feet up, silent, with no wings, lights or exhaust."
-    refs: [ inc-westall-1966 ]
   - t: "25:30"
     text: "A former pupil says she ran into the Grange and saw an oval craft with bluish-purple lights hovering just above the ground about 10 m away, humming, which rose, turned on its side and shot straight up; two other girls were already there."
     refs: [ inc-westall-1966 ]
   - t: "33:41"
     text: "Witnesses describe flattened, swirled, yellowed grass circles at the site, and men in army-style uniforms who fenced it off; a former firefighter was told not to talk about it."
-    refs: [ inc-westall-1966 ]
-  - t: "36:14"
-    text: "A former pupil interviewed by Channel 9 outside the school says a policeman told the crew to stop filming and sent her back inside."
     refs: [ inc-westall-1966 ]
   - t: "39:39"
     text: "Witnesses say cameras used by teachers, including science teacher Barbara Robbins, were confiscated, and recall an assembly telling pupils they had seen nothing."

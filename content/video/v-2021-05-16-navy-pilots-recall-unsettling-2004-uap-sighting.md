@@ -14,8 +14,6 @@ moments:
     text: "Dietrich: “It was unidentified and that's why it was so unsettling to us … because we couldn't classify it”, but warns against jumping to conclusions or sensationalising it as “little green men”."
     speaker: alex-dietrich
     refs: [ inc-nimitz-2004 ]
-  - t: "1:53"
-    text: "Narration: Fravor and Dietrich, each with a weapons system officer, are sent to investigate and find white water in a calm sea, as if an object the size of a 737 were just below the surface."
   - t: "2:14"
     text: "Fravor: Dietrich's backseater spots it first; they see “this little white tic tac looking object” moving above the white water."
     speaker: david-fravor
@@ -28,9 +26,6 @@ moments:
     text: "Fravor: as he spirals down, the Tic Tac turns abruptly and starts mirroring him; when it is right in front of him, “it just disappears”."
     speaker: david-fravor
     refs: [ inc-nimitz-2004 ]
-  - t: "3:31"
-    text: "Narration: seconds later the Princeton reacquired the target 60 miles away; a later crew briefly locked on with the targeting camera and recorded the FLIR footage."
-    refs: [ chad-underwood ]
   - t: "4:16"
     text: "Dietrich: they were unarmed — “I felt the vulnerability of not having anything to defend ourselves … and then I felt confused when it disappeared.”"
     speaker: alex-dietrich

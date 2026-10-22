@@ -11,33 +11,16 @@ moments:
   - t: "0:53"
     text: "Reviewing the leaked “event summary” of the encounter, Dietrich says she has never seen it before and “cannot validate the accuracy or that it's official”, but many of its terms and details seem familiar."
     speaker: alex-dietrich
-  - t: "3:03"
-    text: "Dietrich: the Princeton reported the contact at 100 knots and about 25,000 feet, which first made the crews think of a small plane smuggling drugs, though that altitude was odd for one."
-    speaker: alex-dietrich
-    refs: [ inc-nimitz-2004 ]
   - t: "6:00"
     text: "Dietrich: she did not see the steam or smoke in the summary, but did see churning, roiling water, an oblong area about the size of a large aircraft fuselage; she first thought they might be on scene for a downed aircraft."
     speaker: alex-dietrich
     refs: [ inc-nimitz-2004 ]
-  - t: "10:13"
-    text: "Dietrich: fixing her eyes on the roiling water is what let her pick up the small, fast Tic Tac as it crossed in front of it; she tracked it for about 10 seconds."
-    speaker: alex-dietrich
   - t: "17:39"
     text: "Dietrich: when they lost visual, the controller said something like “you're not gonna believe this”, it's at your CAP point; either it was supersonic or something else popped up there with the same radar signature, which she says she is not qualified to judge."
     speaker: alex-dietrich
     refs: [ inc-nimitz-2004 ]
-  - t: "21:01"
-    text: "Dietrich: in November 2004 she was a lieutenant junior grade, new to the squadron, flying on the commanding officer's wing with a senior officer in her back seat — “a very small sliver of eyewitness experience”, now over 16 years old."
-    speaker: alex-dietrich
-  - t: "24:25"
-    text: "Dietrich: the encounter does not define her, but as an officer flying a government aircraft on taxpayer time she feels “a duty and obligation” to answer inquiries, without being “part of the hunt”."
-    speaker: alex-dietrich
   - t: "28:42"
     text: "On the gap between her 10-second account and Fravor's roughly five-minute one: she was visual for about 10 seconds of aggressive manoeuvring; Fravor may have watched it behaving benignly for minutes before, while she as wingman concentrated on not losing her lead."
-    speaker: alex-dietrich
-    refs: [ david-fravor ]
-  - t: "29:50"
-    text: "Dietrich says she would defer to Fravor, who flew lead, was the squadron's commanding officer and had thousands of hours on the Hornet and Tomcat."
     speaker: alex-dietrich
     refs: [ david-fravor ]
   - t: "39:29"

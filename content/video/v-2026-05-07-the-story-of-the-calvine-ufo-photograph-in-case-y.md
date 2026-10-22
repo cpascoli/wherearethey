@@ -6,18 +6,11 @@ tags: [news, international]
 rel:
   - [ about, inc-calvine-1990 ]
 moments:
-  - t: "0:32"
-    text: "BBC journalist Craig Williams with the Calvine photograph, often called one of the best UFO images ever taken."
-    refs: [ inc-calvine-1990 ]
   - t: "0:55"
     text: "4 August 1990: two chefs from Pitlochry walking above Calvine see a silent diamond-shaped object, about 80 ft by later estimates, and take six photographs."
     refs: [ inc-calvine-1990, doc-robinson-calvine-analysis ]
   - t: "1:45"
     text: "A jet, now identified as an RAF Harrier, flies around the object, which then lifts vertically very fast."
-    refs: [ inc-calvine-1990 ]
-  - t: "2:15"
-    text: "The photos go to the Daily Record, which contacts RAF press officer Craig Lindsay; the paper never runs the story."
-    speaker: craig-lindsay
     refs: [ inc-calvine-1990 ]
   - t: "3:01"
     text: "Lindsay later sees a blown-up print of one image on the wall of the MoD office that dealt with UFOs, and is told it is being dealt with."
