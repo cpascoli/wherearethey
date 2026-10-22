@@ -15,6 +15,10 @@ moments:
     text: "Nuccetelli: “Official Air Force records of this event are in possession by AARO and the FBI.”"
     speaker: jeffrey-nuccetelli
     refs: [ inc-vandenberg-2003, aaro ]
+  - t: "36:32"
+    text: "Nuccetelli: shaken witnesses described a triangular craft larger than a football field hovering silently for about 45 seconds over their entry control point."
+    speaker: jeffrey-nuccetelli
+    refs: [ inc-vandenberg-2003 ]
   - t: "41:25"
     text: "Wiggins: “A self-luminous tic-tac-shaped object emerged from the ocean before linking up with three other similar objects”; the four left together with near-instantaneous acceleration, no sonic boom or exhaust, and radar tracks then dropped."
     speaker: alexandro-wiggins
