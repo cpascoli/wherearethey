@@ -1,5 +1,7 @@
 ---
 name: "Inside the US Government Covert UFO Program: Initial Revelations"
+seo_title: "Inside the US Government Covert UFO Program (Lacatski, Kelleher, Knapp)"
+seo_description: "Lacatski, Kelleher and Knapp on the DIA's AAWSAP program, including the claim that the U.S. holds a craft and got inside it. Cleared by DOPSR in 2023."
 aka: [Inside the U.S. Government Covert UFO Program, Initial Revelations]
 date: 2023-10-07
 credits: "James T. Lacatski, Colm A. Kelleher & George Knapp"

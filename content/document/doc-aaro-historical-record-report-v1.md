@@ -1,5 +1,7 @@
 ---
 name: "AARO Historical Record Report, Volume 1"
+seo_title: "AARO Historical Record Report Vol. 1 (2024): key findings"
+seo_description: "AARO's March 2024 review of U.S. UAP investigations since 1945: findings on crash retrieval, AAWSAP and KONA BLUE, full text and critics."
 aka: [Historical Record Report, AARO HRR, AARO historical report]
 date: 2024-03-08
 tags: [aaro, foia, crash-retrieval]

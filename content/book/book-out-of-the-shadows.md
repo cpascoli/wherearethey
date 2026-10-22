@@ -1,5 +1,7 @@
 ---
 name: "Out of the Shadows: Revealing the Truth About Non-Human Intelligent Life"
+seo_title: "Out of the Shadows by Jay Stratton: claims and fact-check"
+seo_description: "Jay Stratton's 2026 memoir, a New York Times best-seller: his “Legacy Program” and non-human craft claims, sourced, with AARO's response."
 aka: [Out of the Shadows, Stratton memoir]
 date: 2026-10-13
 featured: 2026-11-30   # pinned at the top of Latest until then

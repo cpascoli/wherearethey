@@ -82,6 +82,9 @@ export async function build({ check = false, quiet = false } = {}) {
     if (d.channels) e.channels = arr(d.channels).map(String);
     if (d.pursue) e.pursue = d.pursue;
     if (d.witnesses != null) e.witnesses = Number(d.witnesses);
+    // search results: optional hand-written page title and meta description (otherwise generated in pages.mjs)
+    if (d.seo_title) e.seoTitle = String(d.seo_title);
+    if (d.seo_description) e.seoDescription = String(d.seo_description);
     // Latest: pinned above the dated list until this date (YYYY-MM-DD), then it drops back into place
     if (d.featured) e.featured = d.featured instanceof Date ? d.featured.toISOString().slice(0, 10) : String(d.featured);
     // books & films: free-text credits plus bibliographic / runtime metadata

@@ -1,5 +1,7 @@
 ---
 name: Unidentified Aerial Phenomena Task Force
+seo_title: "UAP Task Force (UAPTF), 2020–2021: who led it and what it found"
+seo_description: "The Pentagon's Navy-led UAP Task Force (2020–2021), led by Jay Stratton: its mission, its members, the 2021 ODNI assessment, and sourced claims."
 aka:
   - UAPTF
   - UAP Task Force

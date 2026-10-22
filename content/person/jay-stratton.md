@@ -1,5 +1,6 @@
 ---
 name: Jay Stratton
+seo_title: "Jay Stratton: UAP Task Force director, claims and sources"
 aka:
   - Stratton
 credentials:

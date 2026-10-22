@@ -1,5 +1,7 @@
 ---
 name: Immaculate Constellation
+seo_title: "Immaculate Constellation: the alleged UAP program, explained"
+seo_description: "The secret UAP program alleged in a whistleblower report entered into the House record in November 2024: what it is said to do, and the evidence."
 tags:
   - secrecy
   - whistleblower

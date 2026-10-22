@@ -1,5 +1,7 @@
 ---
 name: Advanced Aerospace Threat Identification Program
+seo_title: "AATIP: the Pentagon UFO program, Luis Elizondo and the dispute"
+seo_description: "The Pentagon UFO program revealed by The New York Times in 2017: what it was, who ran it, and why AARO says it was never an official program."
 match:
   - "ATIP"
   - "a tip program"

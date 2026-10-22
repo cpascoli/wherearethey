@@ -75,6 +75,21 @@ export function assignPaths(entities, { save = !process.env.NETLIFY } = {}) {
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const text = html => String(html || '').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/\s+/g, ' ').trim();
 const clip = (s, n = 158) => (s.length <= n ? s : s.slice(0, n - 1).replace(/\s+\S*$/, '') + '…');
+// search snippets: whole sentences up to ~150 characters (no mid-sentence cut), skipping housekeeping lines
+const BOILERPLATE = /archive (doesn't|does not) hold|copyrighted|can be bought or borrowed|links above/i;
+const ABBREV = /(?:\b[A-Z]|\bU\.S|\bU\.K|\bD\.C|\bDr|\bMr|\bMrs|\bMs|\bLt|\bCol|\bGen|\bCmdr|\bCapt|\bSgt|\bAdm|\bRep|\bSen|\bSt|\bJr|\bNo|\bvs|\bInc|\bCo|\be\.g|\bi\.e|\bret)\.$/;
+const sentencesOf = s => {
+  const parts = String(s).split(/(?<=[.!?]["”’)]*)\s+(?=["“(]?[A-Z0-9])/), out = [];
+  for (const p of parts) (out.length && ABBREV.test(out[out.length - 1]) ? out[out.length - 1] += ' ' + p : out.push(p));
+  return out.map(x => x.trim()).filter(x => x && !BOILERPLATE.test(x));
+};
+const leadSentences = (s, n = 150) => {
+  let out = '';
+  for (const x of sentencesOf(s)) { if ((out + ' ' + x).trim().length > n) break; out = (out + ' ' + x).trim(); }
+  return out || clip(sentencesOf(s).join(' ') || s, n);
+};
+// what a searcher gets from a file, appended to its title (kept short so the whole title shows in results)
+const TITLE_SUFFIX = { person: 'testimony & sources', program: 'claims & evidence', incident: 'witnesses & evidence', hearing: 'testimony & transcript', document: 'text & key findings', video: 'transcript & key moments' };
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const fmtDate = d => { if (!d) return ''; const [y, m, day] = d.split('-'); return [day && +day, m && MONTHS[+m - 1], y].filter(Boolean).join(' '); };
 const hms = t => { t = Math.floor(t); const h = Math.floor(t / 3600), m = Math.floor(t / 60) % 60, s = t % 60; return (h ? `${h}:${String(m).padStart(2, '0')}` : `${m}`) + `:${String(s).padStart(2, '0')}`; };
@@ -102,6 +117,9 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
   // neighbours per entity (direct links; transcript/text mentions listed separately)
   const near = new Map();
   for (const x of edges) for (const [a, b, dir] of [[x.s, x.t, 'out'], [x.t, x.s, 'in']]) (near.get(a) || near.set(a, []).get(a)).push({ other: b, label: x.label, kind: x.kind, dir });
+  // how many video moments feature each file (as speaker, or linked in refs), for search snippets
+  const momentsAbout = new Map();
+  for (const v of entities) for (const m of v.moments || []) for (const id of new Set([m.speaker, ...(m.refs || [])].filter(Boolean))) momentsAbout.set(id, (momentsAbout.get(id) || 0) + 1);
 
   const pages = []; // { path, title, description, body, jsonld, image, noindex, type }
   const nav = `<nav class="ssr-nav">${Object.entries({ Home: '/', Latest: '/latest', Explore: '/explore', Timeline: '/timeline', World: '/world', Videos: '/videos', Documentaries: '/documentaries', Books: '/books', 'A–Z index': '/a-z', Claims: '/claims', About: '/about' }).map(([l, h]) => `<a href="${h}">${l}</a>`).join(' · ')}</nav>`;
@@ -187,7 +205,17 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     if (e.links.length) h.push(`<h2>Links</h2><ul>${e.links.map(l => `<li><a href="${esc(l.url)}" rel="noopener">${esc(l.label || l.url)}</a></li>`).join('')}</ul>`);
     if (e.files.length) h.push(`<h2>Files</h2><ul>${e.files.map(f => `<li><a href="${esc(fileUrl(f))}">${esc(f.split('/').pop())}</a></li>`).join('')}</ul>`);
 
-    const description = clip(text(e.body) || e.facts.map(f => f.text).join(' ') || (e.type === 'video' ? e.moments?.map(m => m.text).join(' ') || e.description || '' : '') || `${LABEL[e.type]} in the Where Are They UAP / NHI case archive.`);
+    const lead = leadSentences(text(e.body) || e.facts.map(f => f.text).join(' ') || (e.type === 'video' ? e.moments?.map(m => m.text).join(' ') || e.description || '' : '') || `${LABEL[e.type]} in the Where Are They UAP / NHI case archive.`);
+    // the snippet says what the page holds: sourced claims and timestamped video moments
+    const nMoments = e.type === 'video' ? (e.moments || []).length : (momentsAbout.get(e.id) || 0);
+    const holds = [e.facts.length && `${e.facts.length} sourced claim${e.facts.length > 1 ? 's' : ''}`, nMoments && `${nMoments} timestamped video moment${nMoments > 1 ? 's' : ''}`].filter(Boolean);
+    const withHolds = holds.length ? `${lead} ${holds.join(', ').replace(/^./, c => c.toUpperCase())}.` : lead;
+    const description = e.seoDescription || (withHolds.length <= 160 ? withHolds : lead);
+    const authors = e.type === 'book' ? (near.get(e.id) || []).filter(x => /^authored( by)?$/.test(x.label) && byId.get(x.other)?.type === 'person').map(x => byId.get(x.other).name) : [];
+    const autoTitle = e.type === 'book' && authors.length && `${e.name} by ${authors.join(', ')}`.length <= 70 ? `${e.name} by ${authors.join(', ')}`
+      : TITLE_SUFFIX[e.type] && e.name.length + TITLE_SUFFIX[e.type].length + 2 <= 62 ? `${e.name}: ${TITLE_SUFFIX[e.type]}`
+      : e.name.length <= 55 ? `${e.name} · ${LABEL[e.type]}` : e.name;
+    const title = e.seoTitle || autoTitle;
     let jsonld = null;
     if (e.type === 'person') jsonld = { '@type': 'Person', name: e.name, alternateName: e.aka?.length ? e.aka : undefined, jobTitle: e.credentials?.map(c => c.role).filter(Boolean).join('; ') || undefined, description, sameAs: e.links.map(l => l.url).filter(u => /wikipedia\.org/.test(u)) };
     if (e.type === 'video' && thumbOf(e) && /^\d{4}-\d{2}-\d{2}$/.test(e.date || '')) {
@@ -198,7 +226,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     if (e.type === 'film') jsonld = { '@type': 'Movie', name: e.name, dateCreated: e.date, description, image: imageOf(e) || undefined };
     const crumbs = { '@type': 'BreadcrumbList', itemListElement: [['Home', '/'], [PLURAL[e.type], `/a-z#${e.type}`], [e.name, e.path]].map(([name, p], i) => ({ '@type': 'ListItem', position: i + 1, name, item: SITE_URL + p })) };
     jsonld = jsonld ? [jsonld, crumbs] : [crumbs];
-    pages.push({ path: e.path, title: `${e.name} · ${LABEL[e.type]}`, description, body: h.join('\n'), jsonld, image: imageOf(e), noindex: e.type === 'record', type: e.type === 'video' ? 'video.other' : 'article' });
+    pages.push({ path: e.path, title, description, body: h.join('\n'), jsonld, image: imageOf(e), noindex: e.type === 'record', type: e.type === 'video' ? 'video.other' : 'article' });
   }
 
   // ── views ──
@@ -225,8 +253,8 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     videos: ['Videos', `Congressional hearings, interviews and archival footage about UAP, with synced transcripts and curated moments: ${stats.videos} videos, ${stats.transcriptHours} hours transcribed.`, `<h1>Videos</h1>${listOf(ofType('video').sort(newest), e => ` (${[e.channel, fmtDate(e.date)].filter(Boolean).map(esc).join(', ')})`)}`],
     shelf: ['Documentaries', 'Documentaries about UAP featuring people on the record, with trailers and where to watch them.', `<h1>Documentaries</h1>${listOf(ofType('film').sort(newest))}`],
     books: ['Books', 'Books about UAP written by or about people on the record, with where to find them.', `<h1>Books</h1>${listOf(ofType('book').sort(newest))}`],
-    index: ['A–Z index', 'Every file in the archive, A to Z: people, incidents, hearings, programs, organizations, documents and official records.', `<h1>A–Z index</h1>${[...typeOrder, 'record'].map(t => `<h2 id="${t}">${PLURAL[t]}</h2>${listOf(ofType(t).sort((a, b) => a.name.localeCompare(b.name)))}`).join('')}`],
-    claims: ['Claims ledger', 'Every claim in the archive with its status (documented, claimed or unverified), who made it and the source.', `<h1>Claims ledger</h1><p>Documented: backed by an official record or primary document. Claimed: on-record testimony not independently confirmed. Unverified: reported without a primary source.</p>${entities.filter(e => e.facts.length && e.type !== 'record').map(e => `<h2>${link(e.id)}</h2>${factsHtml(e.facts)}`).join('')}`],
+    index: ['UAP archive A–Z: people, incidents, hearings, documents', 'Every file in the UAP / NHI archive, A to Z: officials and witnesses, incidents, congressional hearings, Pentagon programs, documents and official records.', `<h1>A–Z index</h1>${[...typeOrder, 'record'].map(t => `<h2 id="${t}">${PLURAL[t]}</h2>${listOf(ofType(t).sort((a, b) => a.name.localeCompare(b.name)))}`).join('')}`],
+    claims: ['UAP claims database: every claim, who made it, its source', `${entities.reduce((n, e) => n + (e.type === 'record' ? 0 : e.facts.length), 0).toLocaleString('en-US')} claims about UAP and non-human intelligence from officials, pilots and whistleblowers, each with its status (documented, claimed or unverified), who made it and the source.`, `<h1>Claims ledger</h1><p>Documented: backed by an official record or primary document. Claimed: on-record testimony not independently confirmed. Unverified: reported without a primary source.</p>${entities.filter(e => e.facts.length && e.type !== 'record').map(e => `<h2>${link(e.id)}</h2>${factsHtml(e.facts)}`).join('')}`],
   };
   for (const [view, [title, description, body]] of Object.entries(views)) pages.push({ path: VIEW_PATH[view], title, description, body, view });
 
@@ -234,7 +262,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
   for (const dir of [...new Set(Object.values(SEG))]) fs.rmSync(path.join(site, dir), { recursive: true, force: true });
   const render = p => {
     const url = SITE_URL + (p.path === '/' ? '/' : p.path);
-    const fullTitle = p.view === 'home' ? p.title : `${p.title} — Where Are They`;
+    const fullTitle = p.view === 'home' || p.title.length > 50 ? p.title : `${p.title} — Where Are They`; // long titles keep their words, not the brand
     const head = [
       `<title>${esc(fullTitle)}</title>`,
       `<meta name="description" content="${esc(p.description)}">`,

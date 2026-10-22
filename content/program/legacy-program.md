@@ -1,5 +1,7 @@
 ---
 name: Legacy program
+seo_title: "What is the Legacy Program? UAP crash-retrieval claims and evidence"
+seo_description: "The alleged decades-long U.S. program to recover and reverse-engineer non-human craft: who says it exists, what AARO found, and whether it is real."
 aka: [legacy program, legacy programs, UFO legacy program, crash retrieval program, multi-decade crash retrieval program]
 tags: [crash-retrieval, secrecy, disclosure]
 rel:

@@ -1,5 +1,7 @@
 ---
 name: PURSUE — Presidential Unsealing and Reporting System for UAP Encounters
+seo_title: "PURSUE: the U.S. government's UAP file releases, explained"
+seo_description: "PURSUE, the Presidential Unsealing and Reporting System for UAP Encounters: the U.S. government's declassified UAP files, every release, searchable."
 aka:
   - PURSUE
 date: 2026-02-19

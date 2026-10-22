@@ -1,5 +1,6 @@
 ---
 name: David Grusch
+seo_title: "David Grusch: UAP whistleblower testimony and sources"
 match:
   - "Grush"
   - "Dave Grush"

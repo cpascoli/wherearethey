@@ -36,6 +36,7 @@ links: [{ label: "…", url: "…" }]
 files: [library/…pdf]          # local copies
 ```
 Videos add `youtube:` and curated `moments:` (`t`, `text`, `speaker`, `refs`). Use `npm run find -- "phrase" [video-id]` to get exact timestamps.
+Search results: each page's title and meta description are generated (title + what the page offers, e.g. “David Fravor: testimony & sources”; snippet = whole lead sentences + counts of sourced claims and video moments, ≤160 chars). For pages that matter in Search Console, set `seo_title:` (≤65 chars) and `seo_description:` (≤155 chars) in the frontmatter, using the words people search with; never claim anything the page doesn't support.
 Bios: 2–3 short factual paragraphs, then an italic `*Sources: …*` line. Verify Wikipedia links point to the right person (many names redirect to topic pages).
 
 ## Commands
