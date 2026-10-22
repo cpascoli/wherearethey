@@ -4,6 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT } from './lib.mjs';
+import { pageDates } from './lastmod.mjs';
 
 export const SITE_URL = (process.env.SITE_URL || 'https://wherearethey.info').replace(/\/$/, '');
 
@@ -226,7 +227,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     if (e.type === 'film') jsonld = { '@type': 'Movie', name: e.name, dateCreated: e.date, description, image: imageOf(e) || undefined };
     const crumbs = { '@type': 'BreadcrumbList', itemListElement: [['Home', '/'], [PLURAL[e.type], `/a-z#${e.type}`], [e.name, e.path]].map(([name, p], i) => ({ '@type': 'ListItem', position: i + 1, name, item: SITE_URL + p })) };
     jsonld = jsonld ? [jsonld, crumbs] : [crumbs];
-    pages.push({ path: e.path, title, description, body: h.join('\n'), jsonld, image: imageOf(e), noindex: e.type === 'record', type: e.type === 'video' ? 'video.other' : 'article' });
+    pages.push({ path: e.path, file: e.file, title, description, body: h.join('\n'), jsonld, image: imageOf(e), noindex: e.type === 'record', type: e.type === 'video' ? 'video.other' : 'article' });
   }
 
   // ── views ──
@@ -295,7 +296,10 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
 ${feedItems.map(e => `<item><title>${esc(`${kindOf(e)}: ${e.name}${e.date ? ` (${fmtDate(e.date)})` : ''}`)}</title><link>${SITE_URL}${e.path}</link><guid isPermaLink="true">${SITE_URL}${e.path}</guid><pubDate>${rfc(e.added)}</pubDate><description>${esc(summaryOf(e))}</description></item>`).join('\n')}
 </channel></rss>
 `);
-  fs.writeFileSync(path.join(site, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${[...indexed.map(p => p.path), '/about', '/privacy'].map(p => `  <url><loc>${SITE_URL}${p}</loc><lastmod>${today}</lastmod></url>`).join('\n')}\n</urlset>\n`);
+  // <lastmod>: when each page's visible content last changed (frozen in content/lastmod.json), not the build date
+  const statics = ['about', 'privacy'].map(n => ({ path: `/${n}`, file: `site/${n}.html`, title: n, description: '', body: fs.readFileSync(path.join(site, `${n}.html`), 'utf8') }));
+  const lastmod = pageDates([...indexed, ...statics]);
+  fs.writeFileSync(path.join(site, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${[...indexed, ...statics].map(p => `  <url><loc>${SITE_URL}${p.path}</loc><lastmod>${lastmod.get(p.path) || today}</lastmod></url>`).join('\n')}\n</urlset>\n`);
   fs.writeFileSync(path.join(site, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
   return { pages: pages.length, indexed: indexed.length + 2 };
 }
