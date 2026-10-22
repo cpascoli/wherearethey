@@ -24,8 +24,6 @@ moments:
   - t: "4:21"
     text: "Former FAA division chief John Callahan, in a 2001 clip, recounts replaying the radar data, briefing Reagan's scientific staff, and a CIA officer declaring the meeting and the event “never happened”."
     speaker: john-callahan
-  - t: "12:02"
-    text: "An unnamed UFO researcher complains that officials attributed the radar returns to a double image and ground clutter, and the two smaller lights to Mars and Jupiter."
 ---
 
 A third-party compilation of archive material on the Japan Air Lines flight 1628 sighting over Alaska on 17 November 1986. It includes Captain Kenju Terauchi describing his sketch of a "mothership" the size of an aircraft carrier, extracts of the released air traffic control tape, and a March 1987 U.S. television news report on the FAA's conclusion. That report says the crewmates were not sure what they had seen, other aircraft saw nothing, the second radar blip was a common echo, and Terauchi had reported UFOs four times. A Nippon TV reconstruction and a 2001 clip of former FAA official John Callahan describing the CIA briefing follow. The compilation's own narration is not a source; the archive clips are. Transcribed locally with Whisper.

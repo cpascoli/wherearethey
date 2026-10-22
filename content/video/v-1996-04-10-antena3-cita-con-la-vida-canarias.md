@@ -7,10 +7,6 @@ rel:
   - [ about, inc-canarias-1976 ]
   - [ features, carlos-dolz-de-espejo ]
 moments:
-  - t: "1:14"
-    text: "Caption: Carlos Dolz de Espejo, Air Force lieutenant general, aged 82, commander of the Canary Islands Air Zone in 1976. He says he ordered a file opened on the 22 June 1976 phenomenon, which \"ocurrió sin género de dudas\"."
-    speaker: carlos-dolz-de-espejo
-    refs: [ carlos-dolz-de-espejo ]
   - t: "1:40"
     text: "Why were the reports secret? \"Es muy desagradable tener que decir no sé, no sé, no sé\"."
     speaker: carlos-dolz-de-espejo

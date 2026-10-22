@@ -26,9 +26,6 @@ moments:
   - t: "2:27"
     text: "A separate sighting at Kariba: about 14 people saw a glow that split into two red-orange balls, silent, at first mistaken for an Airbus."
     refs: [ inc-ariel-1994 ]
-  - t: "3:12"
-    text: "“As I said to Tim yesterday, I do believe the children saw something”, a reference to Tim Leach."
-    refs: [ tim-leach, inc-ariel-1994 ]
   - t: "3:35"
     text: "Cynthia Hind arrives with a colleague carrying a home-made Geiger counter and metal detector, says she believes the children, and compares the case to Broad Haven in Wales."
     speaker: cynthia-hind

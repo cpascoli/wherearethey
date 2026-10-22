@@ -12,9 +12,6 @@ moments:
   - t: "3:37"
     text: "Hellyer recalls being asked to dedicate the world's first flying saucer landing pad, in St. Paul, Alberta, on 3 June 1967, which he then saw as an imaginative centennial project."
     speaker: paul-hellyer
-  - t: "6:44"
-    text: "Hellyer says a two-hour ABC News special by Peter Jennings, with pilots, police and officials describing encounters, convinced him that anyone open-minded should be persuaded."
-    speaker: paul-hellyer
   - t: "8:01"
     text: "Hellyer calls Philip Corso's book The Day After Roswell “the unimpeachable source” of his talk, repeating Corso's claim that a UFO crashed near Roswell around 4 July 1947."
     speaker: paul-hellyer

@@ -5,9 +5,6 @@ rel:
   - [ features, charles-halt ]
   - [ about, inc-rendlesham-1980 ]
 moments:
-  - t: "0:00"
-    text: "Halt: reassigned from the Pentagon to RAF Bentwaters in 1980, then the largest tactical fighter wing in the world."
-    speaker: charles-halt
   - t: "1:11"
     text: "Halt on the first night: three security policemen approached a metallic, triangular object about nine feet on a side; he says their memory was altered and there was probably more than an hour of lost time."
     speaker: charles-halt
@@ -26,10 +23,6 @@ moments:
     refs: [ inc-rendlesham-1980 ]
   - t: "4:14"
     text: "Halt says the Orford Ness lighthouse was visible to the right the whole time as a separate white light, before the object exploded into multiple white objects."
-    speaker: charles-halt
-    refs: [ inc-rendlesham-1980 ]
-  - t: "5:36"
-    text: "Halt: he later learned that Bentwaters air traffic controllers saw a red object cross their scope in seconds, and that Eastern Radar had picked up a blip."
     speaker: charles-halt
     refs: [ inc-rendlesham-1980 ]
   - t: "6:12"

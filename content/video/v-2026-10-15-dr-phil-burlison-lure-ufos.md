@@ -21,14 +21,6 @@ moments:
     text: "He describes a late-2025 event at a western military installation with ODNI, CIA, FBI and Department of War intelligence personnel on site, who saw glowing orbs that seemed to move intelligently. He says it was declassified in the first PURSUE tranches."
     speaker: eric-burlison
     refs: [ inc-western-us-orbs-2025, pursue ]
-  - t: "16:52"
-    text: "The orbs hovered silently with no visible propulsion, then would \"go from zero to instantaneous speed\"; sometimes one split into two."
-    speaker: eric-burlison
-    refs: [ inc-western-us-orbs-2025 ]
-  - t: "17:43"
-    text: "On whether the government can lure them: like a hunter who knows a deer trail and uses certain scents, \"it doesn't guarantee an outcome\", which is his interpretation of how it was described to him."
-    speaker: eric-burlison
-    refs: [ inc-western-us-orbs-2025 ]
   - t: "21:10"
     text: "Intelligence personnel in a helicopter got \"within 10 feet\" of the orbs, which responded and formed intelligent formations; he says \"at least three or four or more dozen\" appeared."
     speaker: eric-burlison
@@ -41,9 +33,6 @@ moments:
     text: "On recovered craft: \"I would be surprised if that were not true\", though he does not hold a security clearance and cannot be certain."
     speaker: eric-burlison
     refs: [ crash-retrieval ]
-  - t: "33:55"
-    text: "He says he is using every tool he has, including subpoena, to compel people in the middle tier who know something to testify."
-    speaker: eric-burlison
   - t: "43:44"
     text: "\"I employ David Grusch for a short period of time. He'll be leaving the office in the next few months\"; Grusch's clearance has not been restored, which Burlison says deters other whistleblowers."
     speaker: eric-burlison

@@ -15,8 +15,6 @@ moments:
   - t: "0:39"
     text: "WCPO confirms the airspace was closed for four hours on Friday because of drones over and around the base. The base says none of the drones affected base residents, facilities or assets."
     refs: [ inc-wright-patterson-2024 ]
-  - t: "1:13"
-    text: "A federal official says there is no known foreign involvement in the Northeast drone sightings, which the FBI and Homeland Security are investigating."
   - t: "1:35"
     text: "A local drone company says many reports may be manned aircraft mistaken for drones."
 ---

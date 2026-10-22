@@ -8,15 +8,9 @@ rel:
   - [ features, oscar-santa-maria ]
   - [ about, inc-la-joya-1980 ]
 moments:
-  - t: "0:25"
-    text: "(Spanish) Santa María introduces himself as a former Peruvian Air Force officer pilot, telling of chasing and firing on a UFO in 1980, and says that when he closed to about 100 metres came “the surprise: what is this?”"
-    speaker: oscar-santa-maria
-    refs: [ inc-la-joya-1980 ]
   - t: "1:11"
     text: "(Spanish) He says the group commander ordered a jet to “destroy that balloon” at the end of the field: something like a hot-air balloon at about 600 m, approaching slowly, silver and unusually luminous."
     speaker: oscar-santa-maria
-  - t: "1:54"
-    text: "(Spanish) Narration: the tower got no answer on the radio and the radars could not detect it; with Peru's Soviet-supplied equipment a concern for espionage, the order was to shoot it down and all weapon systems were alerted."
   - t: "2:48"
     text: "(Spanish) Santa María: the Sukhoi's computer gave him firing range and he fired a burst of 64 rounds, interlacing into a “wall of fire” — and nothing happened; the “balloon” began to climb away fast."
     speaker: oscar-santa-maria

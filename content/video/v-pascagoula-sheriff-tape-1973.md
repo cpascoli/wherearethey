@@ -20,13 +20,6 @@ moments:
   - t: "6:09"
     text: "Inside, an object “like a big eye” moved over him; he was left in position for what he estimates was 20 or 30 minutes."
     speaker: charles-hickson
-  - t: "9:14"
-    text: "Why he waited: he first tried the Mississippi Press newspaper office, then called Keesler AFB, which referred him to the sheriff's department."
-    speaker: charles-hickson
-  - t: "10:46"
-    text: "He admits taking “three good shots” of whisky afterwards to settle his nerves, and says Parker was hysterical."
-    speaker: charles-hickson
-    refs: [ calvin-parker ]
   - t: "18:28"
     text: "“I don't want no big publicity about the thing… I brought it to the officials and you do what you want with it.”"
     speaker: charles-hickson

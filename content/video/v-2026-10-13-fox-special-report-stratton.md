@@ -10,10 +10,6 @@ moments:
   - t: "1:13"
     text: "Stratton on his career: almost 33 years in the military and national intelligence, rising to the Senior Executive Service, with over 16 years investigating UAP for the U.S. government."
     speaker: jay-stratton
-  - t: "3:17"
-    text: "Asked whether we are alone: \"No Bret, we're not\", adding that we do not know the intent of the non-human intelligent life that is here."
-    speaker: jay-stratton
-    refs: [ nhi ]
   - t: "3:59"
     text: "As DIA chief of air and space warfare, he says a colleague showed him a video of a black triangular UAP over nuclear missile silos, flying with capabilities that exceeded ours; he considered it a threat."
     speaker: jay-stratton
@@ -29,10 +25,6 @@ moments:
   - t: "6:40"
     text: "Baier reads from the book: \"our bait would be a nuclear submarine\". Stratton says he put a submarine off the East Coast with a Navy P-3, and on the first mission a UAP appeared and data was collected."
     speaker: jay-stratton
-  - t: "7:25"
-    text: "He says two admirals and a commander at TOPGUN called him after seeing UAP \"phase in\" over a training building, but a senior officer he believes is tied to the legacy program talked them out of reporting it."
-    speaker: jay-stratton
-    refs: [ legacy-program ]
   - t: "8:57"
     text: "On a friend's warning that \"they've done worse than threaten people\": \"steps have been taken to remove the problem and the people\"."
     speaker: jay-stratton
