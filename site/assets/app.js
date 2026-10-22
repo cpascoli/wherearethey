@@ -1058,7 +1058,7 @@
   document.addEventListener('keydown', e => {
     if (e.key === '/' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); $('#q').focus(); }
     if (e.key === 'Escape' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName) && state.sel) { if (state.reading) setReading(false); else select(null); }
-    if ((e.key === 'r' || e.key === 'R') && !e.metaKey && !e.ctrlKey && !/INPUT|TEXTAREA/.test(document.activeElement.tagName) && state.sel && state.view !== 'home') setReading(!state.reading);
+    if ((e.key === 'r' || e.key === 'R') && !e.metaKey && !e.ctrlKey && !/INPUT|TEXTAREA/.test(document.activeElement.tagName) && state.sel && state.view !== 'home') { trackReading('key'); setReading(!state.reading); }
   });
 
   // ───────────── detail panel ─────────────
@@ -1386,7 +1386,9 @@
   }
   function afterResize() { requestAnimationFrame(() => { cy?.resize(); map?.invalidateSize(); }); }
   $('#panel-close').addEventListener('click', () => select(null));
-  $('#panel-expand').addEventListener('click', () => setReading(!state.reading));
+  // so we can see whether people discover the reading view: which way, from which file, by button or the R key
+  function trackReading(method) { track('reading_view', { action: state.reading ? 'collapse' : 'expand', method, content_type: byId.get(state.sel)?.type, item_id: state.sel }); }
+  $('#panel-expand').addEventListener('click', () => { trackReading('button'); setReading(!state.reading); });
   $('#panel').addEventListener('click', e => {
     const j = e.target.closest('[data-jump]');
     if (j) { e.preventDefault(); $('#' + j.dataset.jump)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
