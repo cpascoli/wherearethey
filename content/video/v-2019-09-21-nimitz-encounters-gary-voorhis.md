@@ -20,7 +20,7 @@ moments:
   - t: "4:13"
     text: "Voorhis: crew with clearances were “100% positive” it was not clutter and wondered why nothing was being done — “they're invading our airspace”."
     speaker: gary-voorhis
-  - t: "5:14"
+  - t: "5:18"
     text: "Voorhis says he watched the intercept video live on the classified network: the object went from over 25,000 feet down “in no time”, made turns beyond the laws of physics, and “actually changed shapes”."
     speaker: gary-voorhis
   - t: "6:11"

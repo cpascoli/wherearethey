@@ -13,7 +13,7 @@ moments:
   - t: "0:12"
     text: "A local man (unnamed) says he was riding a motorcycle nearby and saw a large object of perfect geometric shape; the narration says villagers described a 900-ft saucer hovering for hours."
     refs: [ inc-usovo-1982 ]
-  - t: "0:43"
+  - t: "0:41"
     text: "Lt. Col. Vladimir Platunov, missile engineer: \"It looked just like a flying saucer… No portholes, nothing. The surface was absolutely even\". It made a banking turn like a plane, with no sound."
     speaker: vladimir-platunov
     refs: [ inc-usovo-1982 ]

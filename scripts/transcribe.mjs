@@ -17,6 +17,7 @@ const args = process.argv.slice(2).filter(a => a !== '--');
 const translate = args.includes('--translate');
 const force = args.includes('--force');
 const lang = args.includes('--lang') ? args[args.indexOf('--lang') + 1] : 'auto';
+const MAX_LEN = 45; // max characters per segment
 // the media id is whatever isn't one of our options (YouTube ids may themselves start with "-" or "--")
 const OPTS = new Set(['--translate', '--force', '--lang']);
 const id = args.find((a, i) => !OPTS.has(a) && args[i - 1] !== '--lang');
@@ -43,7 +44,9 @@ const wav = path.join(tmp, 'audio.wav');
 execFileSync('ffmpeg', ['-loglevel', 'error', '-y', '-i', video, '-ar', '16000', '-ac', '1', '-c:a', 'pcm_s16le', wav]);
 const prefix = path.join(tmp, 'out');
 console.log(`→ media/${id}: transcribing${translate ? ' + translating to English' : ''} (${lang})…`);
-execFileSync('whisper-cli', ['-m', model, '-f', wav, '-l', lang, ...(translate ? ['-tr'] : []), '-oj', '-of', prefix, '-np'], { stdio: ['ignore', 'ignore', 'inherit'] });
+// -ml/-sow: short segments split on word boundaries (~2–5 s, like YouTube captions), so moment timestamps
+// land on the quoted phrase rather than up to ~10 s before it
+execFileSync('whisper-cli', ['-m', model, '-f', wav, '-l', lang, ...(translate ? ['-tr'] : []), '-ml', String(MAX_LEN), '-sow', '-oj', '-of', prefix, '-np'], { stdio: ['ignore', 'ignore', 'inherit'] });
 const res = JSON.parse(fs.readFileSync(`${prefix}.json`, 'utf8'));
 const segments = (res.transcription || [])
   .map(s => [Math.round((s.offsets?.from || 0) / 100) / 10, String(s.text || '').trim()])
@@ -54,6 +57,6 @@ const dedupe = t => { const parts = t.split(/(?<=[.!?])\s+/); return parts.filte
 for (let i = 0; i < segments.length; i++) segments[i][1] = dedupe(segments[i][1]);
 for (let i = segments.length - 1; i > 0; i--) if (segments.slice(Math.max(0, i - 3), i).some(s => s[1] === segments[i][1])) segments.splice(i, 1);
 const detected = res.result?.language || lang;
-fs.writeFileSync(out, JSON.stringify({ source: translate ? 'whisper-translated' : 'whisper', language: detected, segments }));
+fs.writeFileSync(out, JSON.stringify({ source: translate ? 'whisper-translated' : 'whisper', language: detected, maxLen: MAX_LEN, segments }));
 fs.rmSync(tmp, { recursive: true, force: true });
 console.log(`  ${segments.length} segments · language: ${detected}${translate ? ' → English' : ''}`);

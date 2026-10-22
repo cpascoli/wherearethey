@@ -68,7 +68,7 @@ facts:
   - text: "Rep. Eric Burlison said in October 2026 that Grusch was working in his office for a short period and would leave in the next few months, and that his security clearance had still not been restored, which Burlison says deters other whistleblowers."
     status: claimed
     by: eric-burlison
-    source: v-2026-10-15-dr-phil-burlison-lure-ufos@43:41
+    source: v-2026-10-15-dr-phil-burlison-lure-ufos@43:44
   - text: "Opening the November 2024 hearing, Rep. Glenn Grothman said that agencies briefing the committee, including the DoD and IC inspectors general and AARO, had not been able to substantiate the claims Grusch made in 2023, despite members questioning them inside and outside the SCIF."
     status: documented
     by: glenn-grothman

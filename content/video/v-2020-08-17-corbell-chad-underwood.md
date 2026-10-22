@@ -42,7 +42,7 @@ moments:
   - t: "14:57"
     text: "Underwood: he turned to reacquire it and asked the Princeton where it went — “negative radar contact”; their scopes were clean too."
     speaker: chad-underwood
-  - t: "16:39"
+  - t: "16:37"
     text: "Underwood: it was no black project — he has been debriefed and signed NDAs before after seeing classified programs, and that never happened here; asked what it was: “I have no … idea.”"
     speaker: chad-underwood
 ---

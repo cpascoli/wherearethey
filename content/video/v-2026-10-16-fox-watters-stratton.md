@@ -7,7 +7,7 @@ rel:
   - [ about, book-out-of-the-shadows ]
   - [ about, legacy-program ]
 moments:
-  - t: "1:04"
+  - t: "1:06"
     text: "Stratton: the program \"gatekeeping the secret for over 80 years\" is in a secret Cold War race with adversaries to reverse-engineer the technology, \"like the Manhattan Project on steroids\"."
     speaker: jay-stratton
     refs: [ legacy-program ]
@@ -18,7 +18,7 @@ moments:
     text: "At DIA, responsible for emerging and disruptive technologies, he was shown a video of a black triangle over a nuclear missile silo; he says he determined it was neither ours nor an adversary's."
     speaker: jay-stratton
     refs: [ dia ]
-  - t: "2:46"
+  - t: "2:51"
     text: "On the non-human beings he says followed him home: \"I got their attention. And yes, they came home with me\"; his family saw them too."
     speaker: jay-stratton
   - t: "3:34"

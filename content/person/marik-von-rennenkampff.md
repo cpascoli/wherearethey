@@ -29,7 +29,7 @@ facts:
   - text: "He says the Langley objects showed bright flashing lights for 17 nights, which the Air Combat Command commander called “close encounters at Langley”, and argues that is not how espionage is done; he relays former NORAD commander Gen. Glen VanHerck's statement that they tried and failed to jam them."
     status: claimed
     by: marik-von-rennenkampff
-    source: v-2026-08-28-disclosure-forum-national-security@9:17
+    source: v-2026-08-28-disclosure-forum-national-security@9:26
   - text: "He says his analysis with citizen scientists reconstructs the Gimbal object's 3D flight path with high confidence that it was at the close range the aircrew described, and notes AARO has issued no case resolution for Gimbal. Michael Shellenberger says von Rennenkampff has won the Gimbal argument against Mick West's lens-glare explanation."
     status: claimed
     by: marik-von-rennenkampff

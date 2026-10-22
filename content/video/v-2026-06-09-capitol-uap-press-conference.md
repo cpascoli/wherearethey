@@ -21,7 +21,7 @@ moments:
   - t: "4:13"
     text: "Rep. Burlison lists the task force's inquiries: Russian and Brazilian records, an FBI inquiry into Varginha, MIT Lincoln Laboratory and MITRE, and the death of would-be whistleblower Matthew Sullivan."
     speaker: eric-burlison
-  - t: "6:24"
+  - t: "6:27"
     text: "Burlison says the MQ-9 footage of a UAP off Yemen reached his office through a \"Tom Clancy style dead drop\"."
     speaker: eric-burlison
   - t: "8:34"
@@ -46,7 +46,7 @@ moments:
   - t: "23:32"
     text: "He says his investigation found \"slush funds to the tune of billions of dollars per annum\". He presents no documents."
     speaker: david-grusch
-  - t: "24:55"
+  - t: "25:06"
     text: "In Q&A, Grusch describes a continuum of non-human life \"from corporeal bipedal type life to... sentient plasma life\" known to the U.S. government."
     speaker: david-grusch
   - t: "25:11"

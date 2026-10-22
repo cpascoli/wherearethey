@@ -48,7 +48,7 @@ facts:
   - text: "In his first on-camera interview (2022), Stratton said the Gimbal and GoFast videos \"came across my desk. I was the first one to get them in the Pentagon\", that he took them to Lockheed Skunk Works and Boeing Phantom Works to rule out U.S. technology, and that he was the one who told the press they were unidentified."
     status: claimed
     by: jay-stratton
-    source: v-2026-10-21-weaponized-stratton-first-interview@20:04
+    source: v-2026-10-21-weaponized-stratton-first-interview@20:01
   - text: "Tim Gallaudet says Stratton later confirmed to him why a 2015 email containing the GoFast video was deleted from recipients' computers: it was still unclear whether the object was adversary technology."
     status: claimed
     by: tim-gallaudet

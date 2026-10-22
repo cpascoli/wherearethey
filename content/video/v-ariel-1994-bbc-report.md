@@ -16,7 +16,7 @@ moments:
   - t: "0:45"
     text: "The reporter challenges a pupil: “Are you sure it wasn't a Harrier jump jet or something that the Zimbabwe Air Force had got?”"
     refs: [ inc-ariel-1994 ]
-  - t: "1:00"
+  - t: "1:04"
     text: "Pupils describe something silver among the trees and a figure in black with “big black eyes” that turned, stared, and went back into a kind of ship."
     refs: [ inc-ariel-1994 ]
   - t: "1:34"

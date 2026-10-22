@@ -33,7 +33,7 @@ moments:
     text: "He says two admirals and a commander at TOPGUN called him after seeing UAP \"phase in\" over a training building, but a senior officer he believes is tied to the legacy program talked them out of reporting it."
     speaker: jay-stratton
     refs: [ legacy-program ]
-  - t: "8:51"
+  - t: "8:57"
     text: "On a friend's warning that \"they've done worse than threaten people\": \"steps have been taken to remove the problem and the people\"."
     speaker: jay-stratton
   - t: "9:55"

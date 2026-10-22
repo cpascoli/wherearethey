@@ -36,7 +36,7 @@ moments:
     text: "Halt: objects sent beams like lasers down into the bases, near the weapons storage area, and one stopped overhead and put a beam about 10 feet from his feet."
     speaker: charles-halt
     refs: [ inc-rendlesham-1980 ]
-  - t: "7:34"
+  - t: "7:39"
     text: "At a 3rd Air Force staff meeting a two-star general asked “Is Halt credible?”, then decided that because it happened off base it was a British affair."
     speaker: charles-halt
     refs: [ inc-rendlesham-1980 ]
@@ -44,7 +44,7 @@ moments:
     text: "Halt: on the RAF liaison officer's advice he wrote a memo, “sanitized just a little bit”, expecting an MoD inquiry that never came."
     speaker: charles-halt
     refs: [ doc-halt-memo ]
-  - t: "8:50"
+  - t: "8:54"
     text: "Halt: the objects were “obviously intelligently controlled”; he has never been officially debriefed."
     speaker: charles-halt
     refs: [ inc-rendlesham-1980 ]

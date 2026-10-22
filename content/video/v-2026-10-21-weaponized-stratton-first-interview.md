@@ -19,7 +19,7 @@ moments:
   - t: "18:02"
     text: "Start of the 2022 Huntsville footage, Stratton's first on-camera interview. Asked whether he consulted industry when a technology seemed to exceed ours, he says he went to Lockheed Skunk Works and Boeing Phantom Works to brief them and ask \"can you build that?\", and to ask whether it was theirs."
     speaker: jay-stratton
-  - t: "20:04"
+  - t: "20:01"
     text: "On the Gimbal and GoFast videos and the \"sphere with a cube\" Lt. Graves saw: \"those things came across my desk. I was the first one to get them in the Pentagon because it was my job\"; he took them to Air Force colleagues to rule out U.S. systems."
     speaker: jay-stratton
     refs: [ inc-roosevelt-2015, ryan-graves ]
@@ -27,7 +27,7 @@ moments:
     text: "\"I'm the guy who told the press that these are unidentified\", because \"we got to be honest with American people\"."
     speaker: jay-stratton
     refs: [ inc-roosevelt-2015 ]
-  - t: "21:39"
+  - t: "21:42"
     text: "On the 2004 Nimitz case: the most important thing was that \"we talked to the pilots and we didn't ridicule\"."
     speaker: jay-stratton
     refs: [ inc-nimitz-2004 ]
@@ -39,7 +39,7 @@ moments:
     text: "When the Gimbal email chain reached his office (formerly \"Deep Red\"), his first reply was to stop emailing, in case it was ours. He later regretted never closing the loop with the fleet, which feeds the stigma against reporting."
     speaker: jay-stratton
     refs: [ inc-roosevelt-2015 ]
-  - t: "32:36"
+  - t: "32:40"
     text: "Briefing Congress with the task force, he was \"absolutely confident that it was not something of ours\"."
     speaker: jay-stratton
     refs: [ uaptf ]

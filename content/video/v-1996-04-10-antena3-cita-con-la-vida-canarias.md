@@ -22,7 +22,7 @@ moments:
     text: "\"Yo he visto un fenómeno muy extraño\": he was flying the aircraft, and his co-pilot, aide and mechanic confirmed it. A Spantax crew radioed to say they saw the same, and the next day the commander of the Juan Sebastián Elcano told him the ship had too."
     speaker: carlos-dolz-de-espejo
     refs: [ inc-canarias-1976, doc-ea-expediente-761119-canarias ]
-  - t: "8:17"
+  - t: "8:27"
     text: "He had the same officer who investigated the June case take statements from many people on the ground: \"todo el mundo ve lo mismo\"."
     speaker: carlos-dolz-de-espejo
     refs: [ doc-ea-expediente-761119-canarias ]
@@ -30,7 +30,7 @@ moments:
     text: "Another reason for secrecy: many nations are developing dangerous weapons, and the US and Russia keep their experiments secret. This echoes his 1976 report's suggestion of foreign-power tests."
     speaker: carlos-dolz-de-espejo
     refs: [ inc-canarias-1976, doc-ea-expediente-761119-canarias ]
-  - t: "13:37"
+  - t: "13:35"
     text: "\"Existe el fenómeno indiscutible\", but a crewed flying object is another matter; the November inquiry made \"un estudio agotador de todo lo que no podía ser\"."
     speaker: carlos-dolz-de-espejo
     refs: [ inc-canarias-1976 ]

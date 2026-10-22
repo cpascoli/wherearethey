@@ -30,7 +30,7 @@ moments:
     text: "McConnell says he thinks the black triangles seen near bases are “probably ours”, citing accounts from Eglin and Langley, including Dylan Borland's sighting."
     speaker: kirk-mcconnell
     refs: [ dylan-borland, inc-langley-2023 ]
-  - t: "9:17"
+  - t: "9:26"
     text: "Von Rennenkampff: the Langley objects showed bright flashing lights for 17 nights, which the Air Combat Command commander called “close encounters at Langley”; he argues that is not how espionage is done."
     speaker: marik-von-rennenkampff
     refs: [ inc-langley-2023 ]
@@ -75,7 +75,7 @@ moments:
   - t: "40:33"
     text: "McConnell: “bad news doesn't get better over time”; even if the public is not ready, governments should not put a lid on it."
     speaker: kirk-mcconnell
-  - t: "44:05"
+  - t: "44:10"
     text: "Gallaudet: political appointees in the office of the Under Secretary of Defense for Research and Engineering told him they were committed to “look under the hood” of the UAP issue."
     speaker: tim-gallaudet
   - t: "44:59"
@@ -83,11 +83,11 @@ moments:
   - t: "52:26"
     text: "A panellist cites the record releases under the PURSUE programme, which he says are revealing very interesting information, alongside a proposed 2027 NDAA records-review panel and the White House science advisory council."
     refs: [ doc-war-gov-ufo, pursue ]
-  - t: "55:25"
+  - t: "55:31"
     text: "Mellon: “nobody has ever been prosecuted for bringing classified information to Congress” in a secure setting; the Disclosure Foundation offers free legal advice to potential whistleblowers."
     speaker: chris-mellon
     refs: [ uapdf ]
-  - t: "58:47"
+  - t: "58:53"
     text: "A panellist calls whistleblower protections inadequate and “ridiculously one-sided”: whistleblowers risk their job, clearance and reputation even when disclosing lawfully."
   - t: "1:03:13"
     text: "A panellist proposes time-limited protections for UAP whistleblowers, and eventually a truth and reconciliation process after 80 years of suppression."
@@ -102,7 +102,7 @@ moments:
   - t: "1:11:04"
     text: "Gallaudet: scientific standards are how to separate signal from noise; universities are taking up the subject, including a newly funded program at the University at Albany and the Sol Foundation at Stanford."
     speaker: tim-gallaudet
-  - t: "1:12:52"
+  - t: "1:12:59"
     text: "Mellon: he has helped Rep. Eric Burlison compile lists of specific UAP videos, and has seen some in classified settings that he thinks would “move the needle”."
     speaker: chris-mellon
     refs: [ eric-burlison ]
@@ -152,7 +152,7 @@ moments:
     text: "Mellon: The New York Times, through Helene Cooper and Leslie Kean, ran the story; when the committees did not react, he called Kirk McConnell, who set up the meetings that brought in Navy witnesses."
     speaker: chris-mellon
     refs: [ ev-nyt-2017, leslie-kean, kirk-mcconnell ]
-  - t: "1:34:01"
+  - t: "1:34:07"
     text: "Von Rennenkampff: “I don't think the toothpaste is going back in the tube.”"
     speaker: marik-von-rennenkampff
   - t: "1:35:56"

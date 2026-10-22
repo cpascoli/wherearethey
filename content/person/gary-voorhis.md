@@ -40,7 +40,7 @@ facts:
   - text: "In the same interview he said he watched the intercept video live on the classified network, saw the object “actually changed shapes”, and found the longer video gone when he tried to copy it — which differs from his later statement to Popular Mechanics that the ship was too far away to see Fravor's intercept."
     status: claimed
     by: gary-voorhis
-    source: v-2019-09-21-nimitz-encounters-gary-voorhis@5:14
+    source: v-2019-09-21-nimitz-encounters-gary-voorhis@5:18
   - text: "He also said: “I could have gotten things wrong easy because we all remember things the way we want to remember them”, and listed a U.S. government test among possible explanations."
     status: claimed
     by: gary-voorhis

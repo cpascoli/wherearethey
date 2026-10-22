@@ -23,7 +23,7 @@ moments:
     text: "Running on the treadmill, he looked through the porthole and saw an object flying below the station, shaped like a Turkmen melon but much smaller."
     speaker: vladimir-kovalyonok
     refs: [ inc-salyut-6-1981 ]
-  - t: "5:36"
+  - t: "5:38"
     text: "\"В космосе определить расстояние невозможно\": a particle 2–3 cm from the window can look like a spaceship, and an object 20 km away can seem close, so he cannot say how far it was."
     speaker: vladimir-kovalyonok
     refs: [ inc-salyut-6-1981 ]

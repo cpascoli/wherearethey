@@ -46,7 +46,7 @@ facts:
   - text: "He concludes the objects were “obviously intelligently controlled”, and says he has never been officially debriefed."
     status: claimed
     by: charles-halt
-    source: v-charles-halt-on-the-record@8:50
+    source: v-charles-halt-on-the-record@8:54
   - text: "Nick Pope says the memo's release under FOIA in 1983 forced the authorities to acknowledge an incident after the press office had said nothing occurred; Pope quotes Lord Hill-Norton that either a landing took place or the deputy commander of a nuclear-armed base and his men “were either hallucinating or lying.”"
     status: claimed
     by: nick-pope

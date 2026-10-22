@@ -37,14 +37,14 @@ moments:
     text: "Citing the government's own release, an FBI 302, he says the objects were seen breaking apart and coming back together."
     speaker: eric-burlison
     refs: [ inc-western-us-orbs-2025, usper-statement-about-uap-sighting ]
-  - t: "28:49"
+  - t: "28:53"
     text: "On recovered craft: \"I would be surprised if that were not true\", though he does not hold a security clearance and cannot be certain."
     speaker: eric-burlison
     refs: [ crash-retrieval ]
   - t: "33:55"
     text: "He says he is using every tool he has, including subpoena, to compel people in the middle tier who know something to testify."
     speaker: eric-burlison
-  - t: "43:41"
+  - t: "43:44"
     text: "\"I employ David Grusch for a short period of time. He'll be leaving the office in the next few months\"; Grusch's clearance has not been restored, which Burlison says deters other whistleblowers."
     speaker: eric-burlison
     refs: [ david-grusch ]

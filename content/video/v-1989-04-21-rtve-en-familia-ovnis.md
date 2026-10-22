@@ -32,7 +32,7 @@ moments:
     text: "The month-long report ruled out weather, a surface-to-surface or surface-to-air missile, a meteorite and a nuclear explosion. The judge then found a photograph left at a shop by a German tourist, taken at the same hour."
     speaker: carlos-dolz-de-espejo
     refs: [ inc-canarias-1976, doc-ea-expediente-761119-canarias ]
-  - t: "7:40"
+  - t: "7:38"
     text: "\"Yo lo definí esto en el informe, al final, que esto era un fenómeno aéreo no identificado\"."
     speaker: carlos-dolz-de-espejo
     refs: [ inc-canarias-1976, doc-ea-expediente-761119-canarias ]

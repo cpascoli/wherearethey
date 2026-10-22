@@ -27,7 +27,7 @@ moments:
     text: "He admits taking “three good shots” of whisky afterwards to settle his nerves, and says Parker was hysterical."
     speaker: charles-hickson
     refs: [ calvin-parker ]
-  - t: "18:23"
+  - t: "18:28"
     text: "“I don't want no big publicity about the thing… I brought it to the officials and you do what you want with it.”"
     speaker: charles-hickson
 ---

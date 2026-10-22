@@ -11,7 +11,7 @@ facts:
   - text: "Filmed by George Knapp in 1994, he described the object he saw: \"It looked just like a flying saucer, the way they show them in the movies. No portholes, nothing. The surface was absolutely even\", making a banking turn \"just like a plane\" with no sound."
     status: claimed
     by: vladimir-platunov
-    source: v-1994-knapp-byelokorovichi-platunov@0:43
+    source: v-1994-knapp-byelokorovichi-platunov@0:41
 ---
 
 Vladimir Platunov was a lieutenant colonel and missile engineer at the Strategic Rocket Forces base near Byelokorovichi, in the Zhytomyr region of Ukraine. In 1994 George Knapp filmed him at the ruins of the dismantled missile site, where he described seeing a smooth, silent disc over the area in October 1982.

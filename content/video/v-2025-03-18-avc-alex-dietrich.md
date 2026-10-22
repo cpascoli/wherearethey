@@ -31,7 +31,7 @@ moments:
   - t: "16:26"
     text: "Dietrich: it changed speed, altitude and direction seemingly instantaneously and “didn't adhere to any of those rules” of the flight envelope — alarming and impressive at once."
     speaker: alex-dietrich
-  - t: "17:29"
+  - t: "17:31"
     text: "Dietrich: “I don't assume that there was anybody in it”; she sticks to the literal term — unidentified."
     speaker: alex-dietrich
   - t: "19:14"
@@ -40,11 +40,11 @@ moments:
   - t: "21:01"
     text: "Asked what she thinks it was: “I have no idea … I literally don't know and I don't really care” — though in the moment it could have been a safety-of-flight issue or “a 9/11 nightmare”."
     speaker: alex-dietrich
-  - t: "23:03"
+  - t: "23:12"
     text: "Dietrich: AARO is a good idea though she doesn't know they've “gotten it exactly right”; service members need a clear mechanism for reporting, combined with radar and FLIR data."
     speaker: alex-dietrich
     refs: [ aaro ]
-  - t: "25:42"
+  - t: "25:47"
     text: "Dietrich: she won't be pinned down on extraterrestrials, but is open-minded and “would accept some non-prosaic, you know, sort of otherworldly explanation”."
     speaker: alex-dietrich
 ---

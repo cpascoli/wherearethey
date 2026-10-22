@@ -62,6 +62,10 @@ moments:
   - t: "1:23:10"
     text: "Avi Loeb cautions that physics has no reliable theory of quantum gravity, so this is speculation, and offers to help if the government holds something scientists should study."
     speaker: avi-loeb
+  - t: "1:24:57"
+    text: "Davis: “the legacy program has been very insulated and insular” — no physicists work in it, only engineers and materials scientists, so they lack the ability to understand how the craft fly."
+    speaker: eric-davis
+    refs: [ legacy-program ]
   - t: "1:27:56"
     text: "Davis cites James Lacatski's book account of going inside a craft with no recognizable propulsion or power systems, and speculates energy may be teleported to the craft."
     speaker: eric-davis

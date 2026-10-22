@@ -13,7 +13,7 @@ moments:
   - t: "1:03"
     text: "Day: senior chief aboard USS Princeton, radar man in the CIC, anti-air warfare coordinator and air intercept controller, with “a little over 18 years actual sea time on Aegis type ships”."
     speaker: kevin-day
-  - t: "2:03"
+  - t: "2:12"
     text: "Day: from about 10 November 2004, near San Clemente Island, tracks appeared “in groups of 5 to 10 at a time”, closely spaced, at 28,000 feet, 100 knots, heading south — off the commercial air routes, not considered hostile."
     speaker: kevin-day
     refs: [ inc-nimitz-2004 ]

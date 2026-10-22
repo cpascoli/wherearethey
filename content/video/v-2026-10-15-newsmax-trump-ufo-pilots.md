@@ -6,7 +6,7 @@ rel:
   - [ features, donald-trump ]
   - [ about, pursue ]
 moments:
-  - t: "0:00"
+  - t: "0:05"
     text: "Rob Finnerty asks whether aliens are real, whether we have been visited and whether the U.S. is reverse-engineering their technology. Trump: \"I wasn't much of a believer\", though he has friends who talk about nothing else."
     speaker: donald-trump
   - t: "0:14"
@@ -15,7 +15,7 @@ moments:
   - t: "0:30"
     text: "One saw \"a round object which is not an ideal shape for going fast that went faster by four times than an F-22\". Asked whether it could have been a comet, the pilot said \"it wasn't, sir\"."
     speaker: donald-trump
-  - t: "0:41"
+  - t: "0:45"
     text: "Will he be the president who discloses? \"I'm looking… I'm not high on the list of that particular subject.\""
     speaker: donald-trump
   - t: "0:50"

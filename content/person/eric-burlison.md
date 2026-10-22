@@ -54,15 +54,15 @@ facts:
   - text: "Asked whether the U.S. holds non-human craft: “At this point, I would be surprised if that were not true”, adding that he does not know with certainty and does not hold a security clearance."
     status: claimed
     by: eric-burlison
-    source: v-2026-10-15-dr-phil-burlison-lure-ufos@28:49
+    source: v-2026-10-15-dr-phil-burlison-lure-ufos@28:53
   - text: "Chris Mellon says he has helped Burlison compile lists of specific UAP videos for release."
     status: claimed
     by: chris-mellon
-    source: v-2026-08-28-disclosure-forum-national-security@1:12:52
+    source: v-2026-08-28-disclosure-forum-national-security@1:12:59
   - text: "He says David Grusch worked in his office for a short period, and that Grusch's clearance has not been restored, which deters other whistleblowers."
     status: claimed
     by: eric-burlison
-    source: v-2026-10-15-dr-phil-burlison-lure-ufos@43:41
+    source: v-2026-10-15-dr-phil-burlison-lure-ufos@43:44
 ---
 
 Eric Burlison is a Republican U.S. Representative from Missouri, in Congress since 2023, and a member of the House Oversight Committee. He has become the House's most persistent investigator of crash-retrieval allegations. He describes himself as having no security clearance, relying instead on briefings, whistleblowers and sworn testimony.

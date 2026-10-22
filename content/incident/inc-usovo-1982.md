@@ -22,7 +22,7 @@ facts:
   - text: "Lt. Col. Vladimir Platunov, a missile engineer, described a smooth, silent disc making a banking turn."
     status: claimed
     by: vladimir-platunov
-    source: v-1994-knapp-byelokorovichi-platunov@0:43
+    source: v-1994-knapp-byelokorovichi-platunov@0:41
   - text: "George Knapp told Congress that the UFO was seen for four hours and that \"something or someone entered the correct launch codes for the missiles\", which could not be shut down until the UFOs left."
     status: claimed
     by: george-knapp
