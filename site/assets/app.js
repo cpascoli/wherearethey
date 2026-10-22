@@ -238,6 +238,7 @@
     $('#f-yr-label').textContent = (state.yr[0] <= MIN_Y && state.yr[1] >= MAX_Y ? 'all' : `${state.yr[0]}–${state.yr[1]}`) + ` · ${total} dated`;
   }
   function filtersChanged() {
+    clearTimeout(filtersChanged.t); filtersChanged.t = setTimeout(() => track('filter_change', { credible_only: state.credibleOnly, hide_explained: state.hideExplained, types: [...state.types].sort().join(','), tags: [...state.tags].join(',') || 'none' }), 1500);
     store.set('credibleOnly', state.credibleOnly); store.set('hideExplained', state.hideExplained); store.set('types', [...state.types]); store.set('typesSeen', allTypes); store.set('tags', [...state.tags]);
     store.set('yr', [state.yr[0] <= MIN_Y ? null : state.yr[0], state.yr[1] >= MAX_Y ? null : state.yr[1]]); store.set('showMentions', state.showMentions);
     computeVisible();
@@ -1494,6 +1495,7 @@
   let lastSearch = null;
 
   async function runTranscriptSearch() {
+    trackSearch($('#tq').value, 'transcripts');
     const q = $('#tq').value.trim();
     if (q.length < 2) { lastSearch = null; renderVideoList(); return; }
     const vids = videos.filter(v => v.transcript && !(state.credibleOnly && v.cred === 'outside'));
@@ -1656,7 +1658,7 @@
         yt = new YT.Player('yt', {
           host: 'https://www.youtube-nocookie.com', // privacy-enhanced mode: no YouTube cookies until a video is played
           videoId: v.youtube, playerVars: { start: Math.floor(t), autoplay: autoplay ? 1 : 0, rel: 0, modestbranding: 1, playsinline: 1 },
-          events: { onReady: () => {
+          events: { onStateChange: ev => { if (ev.data === 0) videoTick(state.video, 1, 1, true); }, onReady: () => {
             ytReadyFlag = true;
             // a different video may have been requested while the player was still loading
             const p = ytPending; ytPending = null;
@@ -2269,8 +2271,57 @@
     const title = [state.sel && byId.get(state.sel)?.name, state.view === 'videos' && state.video && byId.get(state.video)?.name, state.view !== 'home' && state.view, 'Where Are They'].filter(Boolean).join(' · ');
     gtag('event', 'page_view', { page_location: location.origin + path + (qs ? '?' + qs : ''), page_path: path + (qs ? '?' + qs : ''), page_title: title });
   }
+  // Google Analytics events: sent only after consent, like page views. clickCtx records where the current click
+  // happened (search box, Latest, home, panel…) so select() can report how a file was opened.
+  function track(name, params = {}) { if (window.GA_ON && typeof gtag === 'function') gtag('event', name, params); }
+  var clickCtx = null; // var: select() may run during start-up, before this line
+  document.addEventListener('click', e => {
+    const t = e.target;
+    clickCtx = t.closest('#q-results, #hq-dd') ? 'search' : t.closest('#view-latest, [data-home-latest]') ? 'latest' : t.closest('#view-home') ? 'home'
+      : t.closest('#panel') ? 'panel' : t.closest('#view-claims') ? 'claims' : t.closest('#view-index') ? 'a-z' : t.closest('#view-shelf') ? 'shelf' : null;
+    setTimeout(() => { clickCtx = null; }, 0);
+    const a = t.closest('a[href]'); if (!a) return;
+    const href = a.getAttribute('href') || '';
+    let url; try { url = new URL(a.href); } catch { return; }
+    if (/\.pdf(#|$)/i.test(href)) track('file_open', { file_name: url.pathname.split('/').pop(), page: (href.match(/#page=(\d+)/) || [])[1], context: clickCtx || state.view });
+    else if (/^https?:$/.test(url.protocol) && url.host !== location.host) track('link_out', { link_domain: url.host.replace(/^www\./, ''), link_url: a.href, context: clickCtx || state.view });
+  }, true);
+  // searches: reported once the visitor stops typing (≥ 3 characters), one event per distinct term and box
+  var searchSent = {}, searchTimers = {};
+  function trackSearch(term, type) {
+    clearTimeout(searchTimers[type]);
+    searchTimers[type] = setTimeout(() => {
+      const q = String(term || '').trim().toLowerCase();
+      if (q.length < 3 || searchSent[type] === q) return;
+      searchSent[type] = q; track('search', { search_term: q, search_type: type });
+    }, 1500);
+  }
+  document.addEventListener('input', e => {
+    const id = e.target.id, type = { q: 'site', hq: 'site', cq: 'claims', iq: 'a-z', tfind: 'in-transcript' }[id];
+    if (type) trackSearch(e.target.value, type);
+  });
+  // video engagement: start, 25/50/75% progress and completion, once per video per visit
+  var vidSeen = new Map();
+  function videoTick(id, cur, dur, ended) {
+    if (!id) return;
+    const v = vidSeen.get(id) || vidSeen.set(id, new Set()).get(id);
+    const send = (k, extra = {}) => { if (!v.has(k)) { v.add(k); track(k === 'start' ? 'video_start' : k === 'complete' ? 'video_complete' : 'video_progress', { video_id: id, video_title: byId.get(id)?.name, ...extra }); } };
+    send('start');
+    if (dur > 0) for (const pct of [25, 50, 75]) if (cur / dur * 100 >= pct) send(`p${pct}`, { video_percent: pct });
+    if (ended) send('complete');
+  }
+  setInterval(() => {
+    if (!state.video || !window.GA_ON) return;
+    const local = !$('#local-video').hidden;
+    const playing = local ? !$('#local-video').paused : yt?.getPlayerState?.() === 1;
+    if (!playing) return;
+    const cur = local ? $('#local-video').currentTime : yt.getCurrentTime?.() || 0, dur = local ? $('#local-video').duration : yt.getDuration?.() || 0;
+    videoTick(state.video, cur, dur, false);
+  }, 5000);
+  $('#local-video')?.addEventListener('ended', () => videoTick(state.video, 1, 1, true));
   function select(id, { from } = {}) {
     state.sel = id;
+    if (id && !routing) track('select_content', { content_type: byId.get(id)?.type, item_id: id, method: clickCtx || from || 'link' });
     // exploring: a file opened from search or a link that isn't on screen is pinned there (no connections yet)
     if (state.trail && id && state.view === 'graph' && !offGraph(byId.get(id)?.type) && cy?.getElementById(id).hasClass('hidden') && visible.has(id)) {
       state.trail.pinned.add(id); state.hiddenIds.delete(id);
@@ -2338,6 +2389,7 @@
     if (play) {
       e.preventDefault();
       const [vid, t] = play.dataset.play.split('@');
+      track(+t > 0 ? 'moment_click' : 'video_play_click', { video_id: vid, video_title: byId.get(vid)?.name, moment_seconds: +t || 0, context: clickCtx || state.view });
       if (state.reading) setReading(false); // shrink the reading view back to the side so the player is visible
       openVideo(vid, +t || 0, true);
       return;
@@ -2456,7 +2508,7 @@
     // store the state on this entry
     history.replaceState({ view: state.view, sel: state.sel, video: state.video }, '', urlFor() + location.search);
   }
-  window.addEventListener('popstate', () => applyRoute(false));
+  window.addEventListener('popstate', () => { applyRoute(false); trackView(); }); // Back/Forward count as page views too
   document.getElementById('ssr')?.remove(); // the server-rendered article is for crawlers and no-JS readers
   // the logo returns home without a page reload
   $('.brand').addEventListener('click', e => { e.preventDefault(); go('home'); });
