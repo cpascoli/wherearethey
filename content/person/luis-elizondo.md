@@ -51,6 +51,14 @@ facts:
     status: claimed
     by: luis-elizondo
     source: v-2024-11-13-hearing-a@2:00:44
+  - text: "Asked under oath by Rep. Mace whether government employees injured by UAP receive compensation, he answered “That is correct”, and said “I have seen the documentation by the U.S. Government for several of these individuals who have sustained injuries as a result of a UAP incident.”"
+    status: claimed
+    by: luis-elizondo
+    source: v-2024-11-13-hearing-a@1:08:09
+  - text: "He testified that a contractor asked to divest material collected in the 1950s to Bigelow Aerospace during AAWSAP, but the transfer was blocked for want of a Secretary of the Air Force memo."
+    status: claimed
+    by: luis-elizondo
+    source: v-2024-11-13-hearing-a@1:57:30
 ---
 
 Luis "Lue" Elizondo is a former U.S. Army counterintelligence special agent who became the public face of the Pentagon's UAP programs after he resigned in October 2017. He studied microbiology and immunology, served briefly in Army military intelligence, and became a civilian counterintelligence special agent and special agent in charge, working counterterrorism and counterespionage cases. From 2008 he worked in the Office of the Under Secretary of Defense for Intelligence, where he says his last role was managing a special access program for the White House and the National Security Council.

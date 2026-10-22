@@ -18,9 +18,6 @@ rel:
   - [ related to, leslie-kean ]
   - [ related to, legacy-program ]
 facts:
-  - text: "Discussed congressional challenges and whistleblower protection at the May 1, 2025 UAP briefing."
-    status: documented
-    source: v-2025-05-01-hearing-a@7749
   - text: "Chris Mellon says that when the intelligence committees did not react to the December 2017 New York Times story, he called McConnell, who set up the meetings that brought Navy witnesses to Congress."
     status: claimed
     by: chris-mellon

@@ -35,7 +35,7 @@ facts:
   - text: Asked at the hearing whether he had personal knowledge of anyone injured “working on legacy UAP reverse engineering” (the questioner's phrase), Grusch answered “yes”.
     status: claimed
     by: david-grusch
-    source: v-2023-07-26-hearing-a@1:58:40
+    source: v-2023-07-26-hearing-a@1:59:04
   - text: Grusch testified that his knowledge came from interviewing more than 40 witnesses over four years, that he knew the exact locations, and that those were given to the Intelligence Community Inspector General and in part to the intelligence committees. He says the ICIG found his 2022 complaint “credible and urgent”.
     status: claimed
     by: david-grusch
