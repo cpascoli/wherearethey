@@ -6,6 +6,8 @@ credentials:
     role: Former emergency-room physician; founder of CSETI (1990) and the Disclosure Project (1993)
 tags: [civilian, disclosure, contact]
 rel:
+  - [ related to, garry-nolan ]
+  - [ related to, ev-ata-genome-2018 ]
   - [ founded, cseti ]
   - [ founded, disclosure-project ]
   - [ hosted, ev-disclosure-project-2001 ]
@@ -38,6 +40,18 @@ facts:
   - text: "Produced the films “Sirius” (2013), “Unacknowledged” (2017) and “Close Encounters of the Fifth Kind: Contact Has Begun” (2020). “Sirius” presented the Atacama skeleton as possibly non-human; genetic analysis later showed it was human."
     status: claimed
     source: https://en.wikipedia.org/wiki/Steven_M._Greer
+  - text: "At the 2001 press conference he claimed that unacknowledged special access projects take in “at least 40 to 80 billion per year” and hold world-changing energy and propulsion technologies, and that visitors have at times “neutralized or rendered inert the launch capabilities of intercontinental ballistic missiles”; he offered no documents for the figure."
+    status: claimed
+    by: steven-greer
+    source: v-disclosure-project-2001-npc@4:50
+  - text: "He says the CE-5 protocols grew out of his own experiences: a near-death experience at 17 and, in October 1973, seeing a craft and being touched on the shoulder by an extraterrestrial being while meditating."
+    status: claimed
+    by: steven-greer
+    source: v-greer-ce5-origin@0:00
+  - text: "Garry Nolan's team sequenced the genome of the Atacama skeleton that Greer had presented as possibly non-human and found it was “human a hundred percent”."
+    status: claimed
+    by: garry-nolan
+    source: v-lex-fridman-garry-nolan-2022@47:41
 ---
 
 Greer is the best-known organiser of witness-based "disclosure" campaigns, and the main promoter of CE-5. He holds no official role, so he is **outside the archive's criteria**. His importance here is that he gathered and recorded testimony from people who did hold official roles, most visibly at the 2001 National Press Club event. His own claims, about contact with extraterrestrials or about whom he briefed, are his account only. Critics have challenged his films and his CE-5 claims.

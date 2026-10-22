@@ -14,6 +14,10 @@ credentials:
 tags:
   - disclosure
 rel:
+  - [ related to, sean-kirkpatrick ]
+  - [ related to, michael-shellenberger ]
+  - [ related to, pursue ]
+  - [ related to, inc-nimitz-2004 ]
   - [ spoke at, ev-disclosure-forum-2026 ]
   - [ related to, inc-langley-2023 ]
   - [ related to, inc-roosevelt-2015 ]
@@ -22,10 +26,28 @@ facts:
     status: claimed
     by: marik-von-rennenkampff
     source: v-2026-08-28-disclosure-forum-national-security@1:18:44
+  - text: "He says the Langley objects showed bright flashing lights for 17 nights, which the Air Combat Command commander called “close encounters at Langley”, and argues that is not how espionage is done; he relays former NORAD commander Gen. Glen VanHerck's statement that they tried and failed to jam them."
+    status: claimed
+    by: marik-von-rennenkampff
+    source: v-2026-08-28-disclosure-forum-national-security@9:17
+  - text: "He says his analysis with citizen scientists reconstructs the Gimbal object's 3D flight path with high confidence that it was at the close range the aircrew described, and notes AARO has issued no case resolution for Gimbal. Michael Shellenberger says von Rennenkampff has won the Gimbal argument against Mick West's lens-glare explanation."
+    status: claimed
+    by: marik-von-rennenkampff
+    source: v-2026-08-28-disclosure-forum-national-security@1:17:19
+  - text: "He says the oldest PURSUE documents, from 1944–45, describe the same fiery-orb morphology as recent cases released through PURSUE, and relays that former acting AARO director Tim Phillips said the two morphologies that perplexed him were fiery spheres and black triangles."
+    status: claimed
+    by: marik-von-rennenkampff
+    source: v-2026-08-28-disclosure-forum-national-security@1:09:14
+  - text: "He keeps a 5–10% possibility that the Tic Tac was U.S. technology, because Fravor and Dietrich recall pitot-tube-like protrusions in the higher-quality video."
+    status: claimed
+    by: marik-von-rennenkampff
+    source: v-2026-08-28-disclosure-forum-national-security@1:26:30
 ---
 
-Marik von Rennenkampff is a former analyst with the State Department's Bureau of International Security and Nonproliferation and a former appointee at the Department of Defense, who now writes and speaks about UAP, including opinion columns for The Hill.
+Marik von Rennenkampff is a former analyst with the State Department's Bureau of International Security and Nonproliferation and a former appointee at the Department of Defense. He now writes and speaks about UAP as a national-security issue, including in opinion columns for The Hill. He is an analyst rather than a witness.
 
-He was a panellist on national security at Disclosure Forum 2026, where he discussed the Langley incursions, UAP reports in the PURSUE releases and his analysis of the Gimbal video. He is an analyst rather than a witness.
+On the national-security panel of Disclosure Forum 2026, alongside Chris Mellon, Tim Gallaudet and Kirk McConnell, he set out several lines of argument. One was the 17 nights of incursions over Langley in 2023, which he says even NORAD could not jam. Another was his reconstruction, with citizen scientists, of the Gimbal object's flight path, which supports the aircrew's account of a nearby object against Sean Kirkpatrick's balloon explanation and Mick West's lens-glare theory. He also sees a continuity of "fiery orb" reports from 1944 to the PURSUE releases, which he calls soft disclosure.
 
-*Sources: The Hill author biography (2025) · [Disclosure Forum 2026](https://forum.disclosure.org/)*
+He is not uncritical. He leaves a 5–10% chance that the Nimitz Tic Tac was American technology. AARO has published no resolution of the Gimbal video, so the argument remains between private analysts.
+
+*Sources: Disclosure Forum 2026 (national-security panel) · American Alchemy interview (Shellenberger) · The Hill author biography (2025)*
