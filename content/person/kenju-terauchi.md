@@ -23,6 +23,10 @@ facts:
   - text: "The FAA's Alaskan Region release of 5 March 1987 said the agency was unable to confirm the event and attributed the second radar target near his 747 to “a split radar return” from the aircraft itself; FAA official John Callahan later said a CIA officer told a briefing that “this event never happened”."
     status: documented
     source: https://documents.theblackvault.com/documents/ufos/jal1628/733667-001-022.pdf
+  - text: "In archive footage he describes his sketch: “This is just a small space ship … This one is the size of the carrier, so a mothership”; a March 1987 news report said his crewmates were not sure they had seen a UFO and noted it was one of four times he had reported UFOs."
+    status: claimed
+    by: kenju-terauchi
+    source: v-jal1628-archive-compilation@0:09
 ---
 
 Kenju Terauchi was the captain of Japan Air Lines cargo flight 1628, a Boeing 747, with about 29 years' flying experience. On 17 November 1986, flying over Alaska from Iceland to Anchorage, he and his two crew members reported lights that paced the aircraft for many minutes.

@@ -33,6 +33,18 @@ facts:
     status: claimed
     by: david-fravor
     source: https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/
+  - text: "In a 2019 interview for The Nimitz Encounters he said recalibrating the radar “only … make[s] the tracks clear”, that the objects moved faster than the radar's pulses, and that through binoculars they were only “little specks”."
+    status: claimed
+    by: gary-voorhis
+    source: v-2019-09-21-nimitz-encounters-gary-voorhis@2:22
+  - text: "In the same interview he said he watched the intercept video live on the classified network, saw the object “actually changed shapes”, and found the longer video gone when he tried to copy it — which differs from his later statement to Popular Mechanics that the ship was too far away to see Fravor's intercept."
+    status: claimed
+    by: gary-voorhis
+    source: v-2019-09-21-nimitz-encounters-gary-voorhis@5:14
+  - text: "He also said: “I could have gotten things wrong easy because we all remember things the way we want to remember them”, and listed a U.S. government test among possible explanations."
+    status: claimed
+    by: gary-voorhis
+    source: v-2019-09-21-nimitz-encounters-gary-voorhis@21:47
 ---
 
 Gary Voorhis was a U.S. Navy petty officer third class aboard the cruiser USS Princeton in 2004, near the end of six years' service that included two combat tours. He was the ship's only technician for its Cooperative Engagement Capability and AEGIS combat system, and so was responsible for the radars that tracked the "Tic Tac" objects.
