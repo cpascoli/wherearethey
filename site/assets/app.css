@@ -841,3 +841,9 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
 .panel-tools .icon-btn { color: var(--accent); background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 30%, transparent); width: 32px; height: 32px; }
 .panel-tools .icon-btn:hover { color: var(--panel); background: var(--accent); border-color: var(--accent); }
 .panel-tools { gap: 6px; }
+.lt-tag.feat { color: var(--accent); }
+.lt-card.is-featured { border-color: color-mix(in srgb, var(--accent) 35%, var(--border)); background: color-mix(in srgb, var(--accent) 5%, var(--panel)); }
+.lt-card:has(.lt-cover) { grid-template-columns: 120px 1fr; }
+.lt-thumb.lt-cover { aspect-ratio: auto; background: none; cursor: pointer; }
+.lt-thumb.lt-cover img { height: auto; object-fit: contain; box-shadow: 0 4px 14px rgba(0,0,0,.35); }
+@media (max-width: 860px) { .lt-card:has(.lt-cover) { grid-template-columns: 90px 1fr; } }

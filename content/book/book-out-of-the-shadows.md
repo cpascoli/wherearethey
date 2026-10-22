@@ -2,6 +2,7 @@
 name: "Out of the Shadows: Revealing the Truth About Non-Human Intelligent Life"
 aka: [Out of the Shadows, Stratton memoir]
 date: 2026-10-13
+featured: 2026-11-30   # pinned at the top of Latest until then
 credits: "Jay Stratton"
 publisher: William Morrow (HarperCollins)
 isbn: 978-0-06-338453-8

@@ -855,10 +855,13 @@
       if (parent && ids.has(parent)) { if (e.type === 'video' && !folded.has(parent)) folded.set(parent, e); return false; }
       return true;
     });
-    const inRecent = new Set(recent.map(e => e.id));
+    // featured entries (frontmatter `featured: <until date>`) are pinned above the dated list
+    const featured = ents.filter(e => e.featured && e.featured >= today).sort((a, b) => String(b.date).localeCompare(String(a.date)));
+    recent = recent.filter(e => !featured.includes(e));
+    const inRecent = new Set([...recent, ...featured].map(e => e.id));
     const added = ents.filter(e => !inRecent.has(e.id) && !folded.has(e.id) && !['record', 'source'].includes(e.type) && e.added >= since && e.added > LATEST.baseline)
       .sort((a, b) => String(b.added).localeCompare(String(a.added)) || a.name.localeCompare(b.name));
-    return { recent, added, folded, today };
+    return { featured, recent, added, folded, today };
   }
   // people on a card: those linked to it (featured, speaking, quoted), official sources first
   function latestPeople(e) {
@@ -875,25 +878,27 @@
   const LATEST_SEEN = store.get('latestSeen', null);
   let latestCat_ = 'all', latestShowAll = false;
   function renderLatest() {
-    const { recent, added, folded, today } = latestData();
+    const { featured, recent, added, folded, today } = latestData();
     const isNew = e => LATEST_SEEN && e.added > LATEST_SEEN;
     const cats = new Map(LATEST_CATS.map(([k]) => [k, 0]));
-    for (const e of recent) { cats.set('all', cats.get('all') + 1); cats.set(latestCat(e), cats.get(latestCat(e)) + 1); }
-    const list = recent.filter(e => latestCat_ === 'all' || latestCat(e) === latestCat_);
+    for (const e of [...featured, ...recent]) { cats.set('all', cats.get('all') + 1); cats.set(latestCat(e), cats.get(latestCat(e)) + 1); }
+    const list = [...featured, ...recent].filter(e => latestCat_ === 'all' || latestCat(e) === latestCat_);
     const catLabel = Object.fromEntries(LATEST_CATS);
     const card = e => {
       const rec = e.type === 'video' ? e : folded.get(e.id);
       const late = e.added && dateEnd(e.date) && e.added > dayOffset(dateEnd(e.date), 3);
       const kind = e.type === 'news' ? NEWS_KIND[e.kind]?.label || e.kind : TYPES[e.type].label;
       const people = latestPeople(e);
-      return `<article class="lt-card ${isNew(e) ? 'is-new' : ''}" style="--c:${TYPES[e.type].color}">
+      const pinned = featured.includes(e);
+      const cover = !rec && e.cover ? `<div class="lt-thumb lt-cover" data-goto="${esc(e.id)}"><img src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" loading="lazy"></div>` : '';
+      return `<article class="lt-card ${isNew(e) ? 'is-new' : ''} ${pinned ? 'is-featured' : ''}" style="--c:${TYPES[e.type].color}">${cover}
         ${rec ? `<div class="lt-thumb" data-play="${rec.id}@0" title="Play"><img src="${vthumb(rec)}" alt="" loading="lazy"><span class="wplay">▶</span>${rec.duration ? `<span class="wdur">${fmtDur(rec.duration)}</span>` : ''}</div>` : ''}
         <div class="lt-body">
-          <div class="lt-kicker"><span class="lt-date">${esc(fmtRange(e))}</span>${e.date > today ? '<em class="lt-tag up">upcoming</em>' : ''}${isNew(e) ? '<em class="lt-tag new">new</em>' : ''}<span class="lt-kind">${esc(kind)}</span>${e.type === 'video' && e.channel ? `<span class="lt-src">${esc(e.channel)}</span>` : e.outlet ? `<span class="lt-src">${esc(e.outlet)}</span>` : ''}</div>
+          <div class="lt-kicker">${pinned ? '<em class="lt-tag feat">featured</em>' : ''}<span class="lt-date">${esc(fmtRange(e))}</span>${e.date > today ? '<em class="lt-tag up">upcoming</em>' : ''}${isNew(e) ? '<em class="lt-tag new">new</em>' : ''}<span class="lt-kind">${esc(kind)}</span>${e.type === 'video' && e.channel ? `<span class="lt-src">${esc(e.channel)}</span>` : e.outlet ? `<span class="lt-src">${esc(e.outlet)}</span>` : ''}</div>
           <h3><a href="${hrefOf(e.id)}" data-goto="${esc(e.id)}">${esc(e.name)}</a></h3>
           ${latestSummary(e) ? `<p class="lt-sum">${esc(latestSummary(e))}</p>` : ''}
           ${people.length ? `<div class="lt-people">${people.map(p => chip(p.id)).join('')}</div>` : ''}
-          <div class="lt-actions">${rec ? `<button class="btn small primary" data-play="${rec.id}@0">▶ Play${rec.moments?.length ? ` · ${rec.moments.length} moments` : ''}</button>` : ''}<a class="btn small" href="${hrefOf(e.id)}" data-goto="${esc(e.id)}">File card</a>${e.url && e.type === 'news' ? `<a class="btn small" href="${esc(e.url)}" target="_blank" rel="noopener">Original source ↗</a>` : ''}${late ? `<span class="small muted">added ${esc(fmtD(e.added))}</span>` : ''}</div>
+          <div class="lt-actions">${rec ? `<button class="btn small primary" data-play="${rec.id}@0">▶ Play${rec.moments?.length ? ` · ${rec.moments.length} moments` : ''}</button>` : ''}<a class="btn small" href="${hrefOf(e.id)}" data-goto="${esc(e.id)}">File card</a>${e.url && e.type === 'news' ? `<a class="btn small" href="${esc(e.url)}" target="_blank" rel="noopener">Original source ↗</a>` : ''}${e.type === 'book' && amazonLink(e.isbn) ? `<a class="btn small" href="${esc(amazonLink(e.isbn).url)}" target="_blank" rel="noopener sponsored">Buy on Amazon ↗</a>` : ''}${late ? `<span class="small muted">added ${esc(fmtD(e.added))}</span>` : ''}</div>
         </div></article>`;
     };
     const shown = latestShowAll ? added : added.slice(0, 25);
@@ -1830,7 +1835,7 @@
   function renderHome() {
     const el = $('#view-home');
     const today = new Date().toISOString().slice(0, 10);
-    const latest = latestData().recent.slice(0, 6);
+    const ld = latestData(), latest = [...ld.featured, ...ld.recent].slice(0, 6);
     el.innerHTML = `
       <div class="hero">
         <canvas id="hero-canvas" aria-hidden="true"></canvas>

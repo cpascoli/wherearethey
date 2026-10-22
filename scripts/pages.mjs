@@ -37,10 +37,12 @@ export function latestSplit(entities, today = new Date().toISOString().slice(0, 
   const from = dayOffset(today, -LATEST.windowDays), until = dayOffset(today, LATEST.upcomingDays), since = dayOffset(today, -LATEST.addedDays);
   const recent = entities.filter(e => LATEST.types.includes(e.type) && e.date && dateEnd(e.end || e.date) >= from && dateEnd(e.date) && e.date <= until)
     .sort((a, b) => String(b.date).localeCompare(String(a.date)) || String(b.added).localeCompare(String(a.added)));
-  const inRecent = new Set(recent.map(e => e.id));
+  const featured = entities.filter(e => e.featured && e.featured >= today).sort((a, b) => String(b.date).localeCompare(String(a.date)));
+  const inRecent = new Set([...recent, ...featured].map(e => e.id));
+  const recentOnly = recent.filter(e => !featured.includes(e));
   const added = entities.filter(e => !inRecent.has(e.id) && !['record', 'source'].includes(e.type) && e.added >= since && e.added > LATEST.baseline)
     .sort((a, b) => String(b.added).localeCompare(String(a.added)) || a.name.localeCompare(b.name));
-  return { recent, added };
+  return { featured, recent: recentOnly, added };
 }
 
 const kebab = s => String(s).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/['’]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
@@ -206,11 +208,12 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
   const intro = `An open, sourced archive of what officials, pilots, radar operators, intelligence officers and scientists have said on the record about unidentified anomalous phenomena (UAP) and non-human intelligence: ${stats.byType.person} people, ${stats.byType.incident} incidents, ${stats.byType.hearing} hearings, ${stats.videos} videos with ${stats.transcriptHours} hours of transcripts, and every claim with its status and source.`;
   const typeOrder = ['person', 'incident', 'hearing', 'program', 'organization', 'document', 'event', 'concept', 'place', 'film', 'book', 'video', 'source'];
   const today = new Date().toISOString().slice(0, 10);
-  const { recent, added } = latestSplit(entities, today);
+  const { featured, recent, added } = latestSplit(entities, today);
   const kindOf = e => (e.type === 'news' ? `${e.kind[0].toUpperCase()}${e.kind.slice(1)}` : LABEL[e.type]);
   const summaryOf = e => clip(text(e.body) || e.facts[0]?.text || (e.moments || []).map(m => m.text).join(' ') || '', 220);
   const latestLi = (e, when) => `<li><span class="ssr-by">${esc(when)} · ${esc(kindOf(e))}</span> ${link(e.id)}${summaryOf(e) ? `<br><span class="ssr-note">${esc(summaryOf(e))}</span>` : ''}</li>`;
   const latestBody = `<h1>Latest</h1><p>What has happened recently in the UAP / NHI record (hearings, interviews, statements, official releases, new incidents), sorted by when it happened, followed by older material newly added to the archive. Subscribe with the <a href="/feed.xml">RSS feed</a>.</p>`
+    + (featured.length ? `<h2>Featured</h2><ul>${featured.map(e => latestLi(e, fmtDate(e.date))).join('')}</ul>` : '')
     + `<h2>Latest</h2>${recent.length ? `<ul>${recent.map(e => latestLi(e, fmtDate(e.date) + (e.date > today ? ' (upcoming)' : ''))).join('')}</ul>` : '<p>Nothing in the last 90 days yet.</p>'}`
     + `<h2>Recently added to the archive</h2><ul>${added.slice(0, 60).map(e => latestLi(e, `${fmtDate(e.date) || 'undated'} · added ${fmtDate(e.added)}`)).join('')}</ul>`;
   const views = {
@@ -256,7 +259,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
   const indexed = pages.filter(p => !p.noindex);
   // RSS: everything on Latest, newest addition first; the title carries the event date
   const rfc = d => new Date(`${d}T12:00:00Z`).toUTCString();
-  const feedItems = [...recent, ...added].filter(e => e.added).sort((a, b) => String(b.added).localeCompare(String(a.added))).slice(0, 60);
+  const feedItems = [...featured, ...recent, ...added].filter(e => e.added).sort((a, b) => String(b.added).localeCompare(String(a.added))).slice(0, 60);
   fs.writeFileSync(path.join(site, 'feed.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
 <title>Where Are They — Latest</title><link>${SITE_URL}/latest</link><atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>
