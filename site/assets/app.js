@@ -1290,6 +1290,9 @@
     return recordsLoading;
   }
   (window.requestIdleCallback || (f => setTimeout(f, 2500)))(() => loadRecordBodies(), { timeout: 8000 });
+  // expand: arrows pointing out to the corners; back to the side panel: arrows pointing in
+  const ICON_EXPAND = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>';
+  const ICON_COLLAPSE = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7"/></svg>';
   function openPanel(id) {
     const e = byId.get(id);
     if (!e) { closePanel(); return; }
@@ -1302,8 +1305,9 @@
     $('#panel').scrollTop = 0;
     $('#app').classList.add('has-panel');
     $('#app').classList.toggle('reading', !!state.reading);
-    $('#panel-expand').textContent = state.reading ? '⤡' : '⤢';
+    $('#panel-expand').innerHTML = state.reading ? ICON_COLLAPSE : ICON_EXPAND;
     $('#panel-expand').title = state.reading ? 'Back to side panel (R)' : 'Reading view (R)';
+    $('#panel-expand').setAttribute('aria-label', state.reading ? 'Back to side panel' : 'Open in reading view');
     applyPanelWidth();
     afterResize();
   }
@@ -2441,7 +2445,10 @@
     if (fromUrl.shelf) shelfTab = fromUrl.shelf; // the address picks Documentaries or Books
     try {
       if (r.view !== state.view || initial || shelfChanged) go(r.view, { keepVideo: !!r.video });
-      if ((r.sel || null) !== state.sel) select(r.sel && byId.has(r.sel) ? r.sel : null);
+      // a file's own address (/person/eric-davis) opens it full width on desktop, like on phones;
+      // ?panel=side opens it in the side panel beside the network instead
+      if (initial && r.sel && byId.has(r.sel) && innerWidth > 860) state.reading = new URLSearchParams(location.search).get('panel') !== 'side';
+      if ((r.sel || null) !== state.sel) { select(r.sel && byId.has(r.sel) ? r.sel : null); if (initial && state.sel) openPanel(state.sel); }
       if (r.view === 'videos' && r.video && byId.has(r.video) && (r.video !== state.video || r.t || initial)) openVideo(r.video, r.t || 0, false);
       else if (r.view === 'videos' && !r.video && state.video) closeVideo();
     } finally { routing = false; }

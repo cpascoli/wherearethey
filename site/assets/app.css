@@ -847,3 +847,5 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
 .lt-thumb.lt-cover { aspect-ratio: auto; background: none; cursor: pointer; }
 .lt-thumb.lt-cover img { height: auto; object-fit: contain; box-shadow: 0 4px 14px rgba(0,0,0,.35); }
 @media (max-width: 860px) { .lt-card:has(.lt-cover) { grid-template-columns: 90px 1fr; } }
+
+.panel-tools .icon-btn svg { display: block; margin: auto; }
