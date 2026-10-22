@@ -14,11 +14,11 @@ rel:
   - [ worked at, sri-international ]
   - [ worked with, hal-puthoff ]
 facts:
-  - text: According to James Ryder, Targ worked for him at Lockheed Martin for years.
+  - text: "A remark attributed online to Lockheed Martin vice president James Ryder says Targ worked for him at Lockheed for years; it has not been traced to a recording or transcript."
     status: unverified
-    by: james-ryder
+    source: james-ryder
 ---
 
-Russell Targ is a physicist who, with Harold Puthoff, began the government-funded remote-viewing research at the Stanford Research Institute in 1972 that grew into the Stargate programme. According to the former Lockheed Martin vice-president James Ryder, Targ later worked for him at Lockheed for years.
+Russell Targ is a physicist who, with Harold Puthoff, began the government-funded remote-viewing research at the Stanford Research Institute in 1972 that grew into the Stargate programme. A remark attributed online to the former Lockheed Martin vice-president James Ryder says Targ later worked for him there; it has not been traced to a recording.
 
 *Sources: [Wikipedia](https://en.wikipedia.org/wiki/Stargate_Project_(U.S._Army_unit)) · Joe Rogan Experience #2314*

@@ -23,8 +23,10 @@ facts:
     status: claimed
     by: james-lacatski
     source: book-skinwalkers-at-the-pentagon
-  - text: "Alleged purpose: to transfer a recovered craft (“Tic Tac”) from Lockheed Martin to Bigelow Aerospace. The transfer was reportedly blocked."
-    status: unverified
+  - text: "David Grusch alleges that AAWSAP's real purpose was to receive recovered material: Lockheed Martin wanted to divest 1950s hull fragments to Bigelow's facility, but the CIA killed the transfer. Luis Elizondo testified that an aerospace contractor asked to divest material “collected in the 1950s”, that the transfer to Bigelow Aerospace was blocked, and that it required a Secretary of the Air Force memo that never came."
+    status: claimed
+    by: david-grusch
+    source: v-jre-david-grusch@29:16
   - text: Commissioned technical papers (the DIRDs) on traversable wormholes, warp drives, negative energy and high-frequency gravitational-wave communications.
     status: documented
     source: doc-dirds
