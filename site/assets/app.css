@@ -1,4 +1,4 @@
-/* Theme: “declassified case file”. Dark = operations room (default); light = manila folder. */
+/* Theme: “declassified case file”. Dark = operations room (default); light = grey paper. */
 :root {
   --bg: #090c0f;
   --bg-grid: rgba(120, 200, 190, .035);
@@ -24,22 +24,22 @@
   color-scheme: dark;
 }
 :root[data-theme="light"] {
-  --bg: #f1eee4;
-  --bg-grid: rgba(60, 50, 20, .045);
-  --panel: #faf8f2;
-  --panel-2: #ece8dc;
-  --border: #dcd6c6;
-  --border-strong: #c6bea9;
-  --edge: #c9c1ad;
+  --bg: #eeeff1;
+  --bg-grid: rgba(30, 40, 50, .045);
+  --panel: #f9f9fa;
+  --panel-2: #e7e8eb;
+  --border: #d7d9dd;
+  --border-strong: #bfc2c8;
+  --edge: #c3c6cc;
   --text: #1e2124;
-  --muted: #6a6558;
+  --muted: #5f646b;
   --accent: #0f766e;
   --accent-soft: rgba(15, 118, 110, .1);
   --documented: #1a7a46;
   --claimed: #9a6200;
-  --unverified: #7d776a;
+  --unverified: #73787f;
   --outside: #b0452f;
-  --shadow: 0 10px 30px rgba(60, 50, 20, .14);
+  --shadow: 0 10px 30px rgba(20, 30, 40, .14);
   color-scheme: light;
 }
 
