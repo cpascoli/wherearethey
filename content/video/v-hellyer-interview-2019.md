@@ -16,7 +16,4 @@ moments:
     text: "Hellyer says that at dinner Edgar Mitchell agreed the Roswell crash was real and that there were between two and twelve visiting species. The claim is Hellyer's account of a private conversation."
     speaker: paul-hellyer
     refs: [ edgar-mitchell, inc-roswell-1947 ]
-  - t: "41:47"
-    text: "Hellyer calls for converting arms plants to build “zero-point energy” engines, which he claims exist."
-    speaker: paul-hellyer
 ---

@@ -5,10 +5,6 @@ rel:
   - [ recording of, h-1966-04-05 ]
   - [ features, j-allen-hynek ]
 moments:
-  - t: "0:18"
-    text: "Hynek’s comments to reporters at the end of the hearing on what should be done with the unexplained cases."
-    speaker: j-allen-hynek
-    refs: [ h-1966-04-05, project-blue-book ]
   - t: "0:36"
     text: "Hynek: “none of the evidence that I have examined would indicate any proof at all” that we are being visited."
     speaker: j-allen-hynek
