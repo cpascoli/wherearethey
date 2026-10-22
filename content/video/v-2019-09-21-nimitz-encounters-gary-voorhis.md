@@ -10,24 +10,15 @@ rel:
   - [ related to, kevin-day ]
   - [ related to, pj-hughes ]
 moments:
-  - t: "0:10"
-    text: "Voorhis: fire controlman third class aboard USS Princeton, an Aegis computer technician and Cooperative Engagement Capability operator, also responsible for all CIC recordings."
-    speaker: gary-voorhis
   - t: "2:22"
     text: "Voorhis: the SPY radar team took the whole system down to clear what they thought was clutter; recalibrating only made the tracks clearer, and they tracked unknowns for three to five days."
     speaker: gary-voorhis
     refs: [ inc-nimitz-2004 ]
-  - t: "4:13"
-    text: "Voorhis: crew with clearances were “100% positive” it was not clutter and wondered why nothing was being done — “they're invading our airspace”."
-    speaker: gary-voorhis
   - t: "5:18"
     text: "Voorhis says he watched the intercept video live on the classified network: the object went from over 25,000 feet down “in no time”, made turns beyond the laws of physics, and “actually changed shapes”."
     speaker: gary-voorhis
   - t: "6:11"
     text: "Voorhis: he went to copy the clearer, longer video onto his secret computer, but by the time he got there “it was already gone”."
-    speaker: gary-voorhis
-  - t: "8:01"
-    text: "Voorhis: the objects moved faster than the radar's pulses, so a track would have looked like a dotted line."
     speaker: gary-voorhis
   - t: "10:36"
     text: "Voorhis: through binoculars in daytime the objects were just “little specks” that appeared and disappeared, like a ship on the horizon whose shape you can't make out."
@@ -38,12 +29,6 @@ moments:
     refs: [ pj-hughes ]
   - t: "15:07"
     text: "Voorhis: unlike routine tape collections, there was a formal chain of custody, and he was told to delete any other tapes, “even if they're brand new”."
-    speaker: gary-voorhis
-  - t: "17:47"
-    text: "On what the objects were, Voorhis lists possibilities including a U.S. government test of advanced technology or an advanced drone, and declines to speculate on origin."
-    speaker: gary-voorhis
-  - t: "20:08"
-    text: "Asked about after-effects, Voorhis says he became mellower and more rational, but that it “could just be PTSD” from his war service."
     speaker: gary-voorhis
   - t: "21:47"
     text: "Voorhis: after 14 years “I could have gotten things wrong easy because we all remember things the way we want to remember them”, and he invites other crew to come forward."

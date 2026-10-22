@@ -9,9 +9,6 @@ rel:
   - [ about, inc-canarias-1976 ]
   - [ about, inc-valencia-sagunto-1968 ]
 moments:
-  - t: "0:25"
-    text: "Opening: ten years earlier a deputy asked the Defence Minister in Congress whether an Air Force fighter had chased a UFO; the question went unanswered and the subject has been classified ever since."
-    refs: [ inc-manises-1979 ]
   - t: "3:29"
     text: "Lt. Gen. Carlos Dolz de Espejo (reserve): flying from Lanzarote to Las Palmas, he saw a large, very bright disc approach at dizzying speed. It grew into a cloud that seemed to engulf them, then a grey translucent semicircle on the horizon, with a rhombus and a rectangle of bottle green at its centre."
     speaker: carlos-dolz-de-espejo
@@ -24,10 +21,6 @@ moments:
     text: "At the base no one had seen anything, \"ni incluso el radar\". Next morning the commander of the Juan Sebastián Elcano told him he and his crew had watched it for about two hours."
     speaker: carlos-dolz-de-espejo
     refs: [ inc-canarias-1976 ]
-  - t: "5:11"
-    text: "He appointed a judge, who took statements from the Elcano's crew, his own crew and people at Guía; no concrete conclusion was reached."
-    speaker: carlos-dolz-de-espejo
-    refs: [ inc-canarias-1976, doc-ea-expediente-761119-canarias ]
   - t: "6:27"
     text: "The month-long report ruled out weather, a surface-to-surface or surface-to-air missile, a meteorite and a nuclear explosion. The judge then found a photograph left at a shop by a German tourist, taken at the same hour."
     speaker: carlos-dolz-de-espejo
@@ -54,13 +47,8 @@ moments:
     refs: [ inc-valencia-sagunto-1968, doc-ea-expediente-681104-valencia-sagunto ]
   - t: "28:35"
     text: "Lt. Col. Trinidad of the Air Force Air Staff, answering for the Air Force: UFO files have been classified confidential since 1969, by the then Air Minister, and the classification was ratified in 1979."
-  - t: "29:09"
-    text: "Trinidad's reasons for the secrecy: some witnesses did not want their names known, and some reports include air-defence alert-and-control procedures, and even scrambled interceptors, which are confidential by nature."
   - t: "31:09"
     text: "Trinidad: most registered cases have relatively natural, explainable causes; some have no cause known so far, but there is no evidence of extraterrestrial craft."
-  - t: "40:30"
-    text: "Journalist-pilot José Antonio Silva cites the 1979 case of Capt. Fernando Cámara, whose Mirage from Los Llanos chased three objects for over an hour."
-    refs: [ inc-manises-1979 ]
   - t: "41:46"
     text: "Dolz: distinguish unidentified aerial phenomena, which undoubtedly exist, from the UFO as an extraterrestrial craft. He doesn't rule them out, but asks why such advanced visitors have never been more tangibly demonstrated."
     speaker: carlos-dolz-de-espejo

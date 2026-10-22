@@ -12,20 +12,12 @@ rel:
   - [ features, jared-moskowitz ]
   - [ features, leslie-kean ]
 moments:
-  - t: "0:00"
-    text: "James Fox opens and asks the President to declassify files on the 1996 Varginha case, citing former Brazilian defence minister Aldo Rebelo."
   - t: "2:54"
     text: "Rep. Luna credits the task force on declassification and asks the White House to grant whistleblowers temporary or permanent immunity."
     speaker: anna-paulina-luna
     refs: [ task-force-declassification ]
   - t: "4:13"
     text: "Rep. Burlison lists the task force's inquiries: Russian and Brazilian records, an FBI inquiry into Varginha, MIT Lincoln Laboratory and MITRE, and the death of would-be whistleblower Matthew Sullivan."
-    speaker: eric-burlison
-  - t: "6:27"
-    text: "Burlison says the MQ-9 footage of a UAP off Yemen reached his office through a \"Tom Clancy style dead drop\"."
-    speaker: eric-burlison
-  - t: "8:34"
-    text: "He asks the President to waive the non-disclosure agreements binding whistleblowers and grant them immunity."
     speaker: eric-burlison
   - t: "11:21"
     text: "Rep. Burchett says he was told in a SCIF that the President was on a need-to-know basis, and calls it a cover-up dating back to at least 1947."

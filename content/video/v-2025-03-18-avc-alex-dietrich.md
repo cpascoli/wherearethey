@@ -10,9 +10,6 @@ rel:
   - [ related to, david-fravor ]
   - [ related to, aaro ]
 moments:
-  - t: "3:29"
-    text: "Dietrich: commissioned in May 2001, her very first training flight in Corpus Christi was on 11 September 2001 — the day she realised the oath she had taken was about something bigger than herself."
-    speaker: alex-dietrich
   - t: "5:26"
     text: "Dietrich: she flew with VFA-41, the Black Aces, from USS Nimitz and made two combat deployments, in 2005 and 2007, supporting troops in Iraq and Afghanistan."
     speaker: alex-dietrich
@@ -30,12 +27,6 @@ moments:
     refs: [ kevin-day ]
   - t: "16:26"
     text: "Dietrich: it changed speed, altitude and direction seemingly instantaneously and “didn't adhere to any of those rules” of the flight envelope — alarming and impressive at once."
-    speaker: alex-dietrich
-  - t: "17:31"
-    text: "Dietrich: “I don't assume that there was anybody in it”; she sticks to the literal term — unidentified."
-    speaker: alex-dietrich
-  - t: "19:14"
-    text: "Dietrich calls the episode “a crack in our dominance”, and suspects the chain of command set it aside because it fitted no conventional bin and a deployment was coming."
     speaker: alex-dietrich
   - t: "21:01"
     text: "Asked what she thinks it was: “I have no idea … I literally don't know and I don't really care” — though in the moment it could have been a safety-of-flight issue or “a 9/11 nightmare”."

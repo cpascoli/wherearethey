@@ -27,17 +27,11 @@ moments:
   - t: "8:29"
     text: "Underwood: once he locked it on radar the readings went erratic — the Mach number “jumping all over the place … 0.8, 0.4, 0.2” — and he saw strobe lines indicating the radar was being jammed, which he says would count as an act of war."
     speaker: chad-underwood
-  - t: "9:58"
-    text: "Underwood: he switched to the passive FLIR and ran through every mode and zoom, reversing polarity, so intelligence would have as much video as possible to analyse."
-    speaker: chad-underwood
   - t: "10:31"
     text: "Answering the theory that his own banking made the object appear to dart left: “Our aircraft was straight and low the entire time”, with no change in heading, altitude or airspeed that would make the pod drop track."
     speaker: chad-underwood
   - t: "12:10"
     text: "Underwood: the 2x zoom did not drop the track; “It broke my lock by zooming off to the left” with an acceleration the pod is not built to follow — though elsewhere he has said he did not see it accelerate with his own eyes."
-    speaker: chad-underwood
-  - t: "13:44"
-    text: "Underwood: even an SR-71 cannot go from 250 to 2,000 knots instantly; that acceleration would crush a pilot and rip the wings off an aircraft."
     speaker: chad-underwood
   - t: "14:57"
     text: "Underwood: he turned to reacquire it and asked the Princeton where it went — “negative radar contact”; their scopes were clean too."
