@@ -6,14 +6,27 @@ credentials:
     role: Captain, Air France (flight AF 3532, 1994); former French Air Force pilot
 tags: [aviator, international]
 rel:
+  - [ related to, doc-geipan-af3532 ]
+  - [ related to, ev-npc-2007 ]
   - [ witness, inc-air-france-3532-1994 ]
 facts:
   - text: "Air France captain Jean-Charles Duboc described his crew's 1994 sighting of a huge object near Paris, which was studied by France's COMETA group and GEIPAN."
     status: claimed
     by: jean-charles-duboc
     source: v-npc-2007-ufo-close-encounters@15:43
+  - text: "At the 2007 National Press Club panel he said that at 1 p.m. on 28 January 1994, at 39,000 ft near Paris, his crew saw a red-brown object with blurred outlines, first taken for a weather balloon, which he estimated at about 1,000 ft across, stationary, and which became transparent and disappeared in 10 to 20 seconds."
+    status: claimed
+    by: jean-charles-duboc
+    source: v-npc-2007-ufo-close-encounters@15:43
+  - text: "GEIPAN classifies the case D1, unexplained, but notes that the testimony came three years late, the steward never gave a statement, and the 50-second radar track is inconsistent with the object observed; a sounding balloon crossed the path an hour earlier, too early to explain it."
+    status: documented
+    source: doc-geipan-af3532
 ---
 
-Jean-Charles Duboc is a former French Air Force pilot and Air France captain. On 28 January 1994, commanding flight AF 3532 near Paris, he and his crew reported a very large object; the sighting coincided with a radar track at the French air defence centre and remains unexplained after study by COMETA and GEIPAN. He described it at the National Press Club in 2007.
+Jean-Charles Duboc is a retired Air France captain and former French Air Force pilot. On 28 January 1994, flying Air France 3532 to London at 39,000 feet, he and his copilot saw a huge reddish-brown disc near Paris in broad daylight. A steward and the copilot first took it for a weather balloon. Duboc estimated it at about 1,000 feet across, hanging motionless below them, before it turned transparent and vanished within seconds.
 
-*Sources: National Press Club (2007)*
+He says the French air defence centre recorded a one-minute radar track crossing his flight path at the same time. The case was studied by France's COMETA group and by GEIPAN, the space agency's official UAP office, and he told it at the 2007 National Press Club panel.
+
+GEIPAN keeps the case as unexplained (D1), but with caveats. The crew reported it three years later, the steward never gave a statement, and the radar track does not match what they saw. A drifting balloon envelope or an unknown optical effect remain possible but unprovable explanations.
+
+*Sources: National Press Club (2007) · GEIPAN case file (AF 3532)*
