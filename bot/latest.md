@@ -108,10 +108,29 @@ One or two neutral sentences: what happened and why it matters to the archive, w
 - Videos you cannot get a transcript for: describe them from the video's title and description and from articles about
   them; quote nothing that is not in a saved text.
 
+### The recording: when the person tells it on video
+
+If the item is someone speaking (an interview, podcast, hearing, statement or speech) and a video of them saying it
+exists, find it: the outlet's or the speaker's own upload (NewsNation, Fox News, C-SPAN, a committee channel, the
+podcast's channel), never a re-upload. Then try to file it:
+
+```bash
+pip install -q yt-dlp 2>/dev/null; npm run fetch -- <youtube id>      # metadata + transcript into media/<id>/
+```
+
+- **If it fetched a transcript:** write `content/video/v-<YYYY-MM-DD>-<outlet>-<speaker>.md` with
+  `[ recording of, <news-id> ]`, `[ features, <person-id> ]` and 3–6 `moments` (`t`, `text`, `speaker`, `refs`) at the
+  points the news item is about, quoting only words that are in `media/<id>/transcript.json` (use
+  `npm run find -- "phrase" <video-id>` for timestamps). Commit `media/<id>/meta.json` and `transcript.json`.
+  `check-news` verifies those quotes against the transcript. The Latest card then shows the video with a Play button.
+- **If YouTube refuses** (HTTP 429, “sign in to confirm you're not a bot”, no captions): don't file it; list it under
+  **Videos to file** in the PR with its URL, duration and the minute where the key passage starts, if you know it. The
+  owner files it locally.
+
 ## 5. Check
 
 ```bash
-node scripts/check-news.mjs --changed --max-age 4   # quotes, links, window, duplicates
+node scripts/check-news.mjs --changed --max-age 4   # quotes (and recording moments), links, window, duplicates
 npm run check                                        # the whole archive still validates
 npm run build                                        # updates content/added.json, slugs.json, lastmod.json
 ```
@@ -127,7 +146,7 @@ Add **every candidate you judged** (published, runner-up, suggested, skipped) to
 
 ```bash
 git checkout -b latest/<today>
-git add content/news sources/news bot/seen.json content/added.json content/slugs.json content/lastmod.json
+git add content/news content/video media sources/news bot/seen.json content/added.json content/slugs.json content/lastmod.json
 git commit -m "Latest: <n> news items for <today> (<short list>)"
 git push -u origin latest/<today>
 gh pr create --base main --head latest/<today> --title "Latest: <today> — <short list>" --body-file /tmp/pr.md
@@ -144,6 +163,9 @@ If `gh` is not available, push the branch and give the compare link
 ```markdown
 ## Published (n)
 1. **<headline>** — <kind>, <date>, <outlet>. Score 13/15 (sig 3, cred 3, primary 3, new 2, central 2). Links: <ids>. <one line on why it matters>
+
+## Videos to file (couldn't fetch here)
+- **<news id>** — <video title>, <channel>, <duration> — <url> — key passage at ~<m:ss>
 
 ## Suggested full entries
 - **<what>** — <url>. <why it deserves a full entry; what is missing on file>
