@@ -339,7 +339,7 @@
       { selector: 'node.hl', style: { 'font-size': 10.5, 'font-weight': 600 } },
       { selector: 'node.trail', style: { 'border-width': 3, 'border-color': css('--accent'), 'border-style': 'solid', 'font-size': 11, 'font-weight': 600, opacity: 1 } },
       { selector: 'edge.trail', style: { 'line-color': css('--accent'), width: 3, label: 'data(label)', opacity: 1 } },
-      { selector: 'node.core', style: { 'font-size': 12.5, 'min-zoomed-font-size': 5.5, 'text-max-width': 160 } },
+      { selector: 'node.big', style: { 'font-size': 12.5, 'min-zoomed-font-size': 5.5, 'text-max-width': 160 } }, // exploring: labels readable zoomed out
       { selector: '.hidden', style: { display: 'none' } },
     ];
   }
@@ -424,7 +424,7 @@
       cy.edges().forEach(ed => ed.toggleClass('hidden', (ed.data('kind') === 'mention' && !state.showMentions) || !show(ed.data('source')) || !show(ed.data('target'))));
       // the trail: its files and the links between them (the path)
       cy.elements().removeClass('trail');
-      cy.nodes().toggleClass('core', !!state.trail?.core);
+      cy.nodes().toggleClass('big', !!state.trail);
       const steps = new Set(state.trail?.steps || []);
       for (const id of steps) cy.getElementById(id).addClass('trail');
       if (steps.size > 1) cy.edges().filter(ed => !ed.hasClass('hidden') && steps.has(ed.data('source')) && steps.has(ed.data('target'))).addClass('trail');
@@ -624,6 +624,7 @@
     if (state.sel === id) select(null, { from: 'trail' });
     trailChanged();
   }
+  const narrowScreen = () => matchMedia('(max-width: 860px)').matches;
   function renderTrailBar() {
     let bar = $('#trail-bar');
     if (!bar) { $('#view-graph').insertAdjacentHTML('beforeend', '<div class="trail-bar" id="trail-bar" hidden></div>'); bar = $('#trail-bar'); }
@@ -634,7 +635,7 @@
     const hiddenNote = nh ? `<span class="tb-hidden">${nh} hidden · <button class="link" data-unhide>show</button></span>` : '';
     if (T?.core) {
       bar.innerHTML = `<div class="tb-row tb-starts"><span class="tb-lbl">Start from</span>${EXPLORE.starts.filter(s => byId.has(s.id)).map(s => `<button class="tb-start" style="--c:${TYPES[byId.get(s.id).type].color}" data-core-start="${esc(s.id)}">${esc(s.label)}</button>`).join('')}</div>
-        <div class="tb-row tb-tools"><span class="tb-hint">The key files of the story · click one to read it · double-click (double-tap) to follow its connections</span>${hiddenNote}
+        <div class="tb-row tb-tools"><span class="tb-hint">${narrowScreen() ? 'The key files · tap to read · double-tap to follow' : 'The key files of the story · click one to read it · double-click to follow its connections'}</span>${hiddenNote}
           <button class="btn small" data-full>Show the full network</button></div>`;
       return;
     }
@@ -644,7 +645,7 @@
     }
     const steps = T ? T.steps.map(id => `<span class="tb-step ${state.sel === id ? 'on' : ''} ${T.open.has(id) ? '' : 'closed'}" style="--c:${TYPES[byId.get(id).type].color}"><button class="tb-name" data-trail-open="${esc(id)}" title="Open the file card">${esc(byId.get(id).name)}</button>${T.steps.length > 1 ? `<button class="tb-x" data-trail-pop="${esc(id)}" title="Take off the trail" aria-label="Take off the trail">×</button>` : ''}</span>`).join('<span class="tb-sep">›</span>') : '';
     bar.innerHTML = `${T ? `<div class="tb-row"><span class="tb-lbl">Trail</span>${steps}</div>` : ''}
-      <div class="tb-row tb-tools">${T && T.steps.length === 1 ? '<span class="tb-hint">Click a file to read it · double-click (double-tap) to follow it · right-click or long-press for more</span>' : ''}
+      <div class="tb-row tb-tools">${T && T.steps.length === 1 ? `<span class="tb-hint">${narrowScreen() ? 'Tap to read · double-tap to follow · hold for more' : 'Click a file to read it · double-click to follow it · right-click for more'}</span>` : ''}
         ${hiddenNote}
         <button class="btn small" data-trail-exit>◎ Back to the key files</button></div>`;
   }
@@ -708,11 +709,15 @@
     return null;
   }
   // a layout fits the whole graph; bring the selected file and its connections back into view afterwards
+  // (an animated layout can still be moving the nodes when it reports done: tidy up once they have stopped)
+  const whenStill = fn => cy.nodes().some(n => n.animated()) ? setTimeout(() => whenStill(fn), 60) : fn();
   const reframeSel = () => {
     if (state.view !== 'graph') return;
-    if (state.trail?.core) { pullInCore(); orientCore(); }
-    if (state.trail) setTimeout(() => frameEles(cy.nodes().not('.hidden'), true), 50);
-    else if (state.sel) setTimeout(() => frameHood(cy.getElementById(state.sel)), 50);
+    whenStill(() => {
+      if (state.trail?.core) { pullInCore(); orientCore(); } else if (state.trail) pullOutliers();
+      if (state.trail) setTimeout(() => frameEles(cy.nodes().not('.hidden'), true), 50);
+      else if (state.sel) setTimeout(() => frameHood(cy.getElementById(state.sel)), 50);
+    });
   };
   // files with no link among the key files (PURSUE, Rendlesham…) would float far off: set each loose group just
   // outside the main cluster, in the direction it already lies
@@ -727,6 +732,21 @@
       const t = Math.min(Math.abs(dx) > 1e-6 ? (main.w / 2) / Math.abs(dx) : Infinity, Math.abs(dy) > 1e-6 ? (main.h / 2) / Math.abs(dy) : Infinity);
       const reach = t + (Math.abs(dx) * b.w + Math.abs(dy) * b.h) / 2 + gap, tx = mx + dx * reach, ty = my + dy * reach;
       ns.forEach(n => { const p = n.position(); n.position({ x: p.x + tx - cx, y: p.y + ty - cyy }); });
+    }));
+  }
+  // a trail's layout can leave a file or two far out on a long spoke, which forces the zoom so low that no label
+  // reads: bring any file more than 1.7× the median distance from the centre back in to 1.4×
+  function pullOutliers() {
+    const nodes = cy.nodes().not('.hidden');
+    if (nodes.length < 6) return;
+    const head = cy.getElementById(state.trail.steps[state.trail.steps.length - 1]);
+    const bb = nodes.boundingBox(), c = head.length && !head.hasClass('hidden') ? head.position() : { x: (bb.x1 + bb.x2) / 2, y: (bb.y1 + bb.y2) / 2 };
+    const d = nodes.map(n => Math.hypot(n.position('x') - c.x, n.position('y') - c.y)).sort((a, b) => a - b);
+    const typical = d[Math.floor(d.length / 2)], limit = 1.7 * typical;
+    if (!typical) return;
+    cy.batch(() => nodes.forEach(n => {
+      const p = n.position(), dist = Math.hypot(p.x - c.x, p.y - c.y);
+      if (dist > limit) n.position({ x: c.x + (p.x - c.x) * typical * 1.4 / dist, y: c.y + (p.y - c.y) * typical * 1.4 / dist });
     }));
   }
   // the key-files map fills a phone (tall) or a desktop (wide) screen better when its long side matches: turn it 90°
@@ -776,7 +796,7 @@
     const top = tb && !tb.hidden ? Math.max(pad, tb.getBoundingClientRect().bottom - cr.top + 16) : pad;
     const bottom = lg && lg.offsetParent ? Math.max(pad, cr.bottom - lg.getBoundingClientRect().top + 12) : pad;
     const ah = Math.max(120, h - top - bottom);
-    const z = Math.min(1.4, Math.max(state.trail?.core ? 0.45 : 0.3, Math.min((w - 2 * pad) / Math.max(bb.w, 1), ah / Math.max(bb.h, 1))));
+    const z = Math.min(1.4, Math.max(state.trail ? 0.45 : 0.3, Math.min((w - 2 * pad) / Math.max(bb.w, 1), ah / Math.max(bb.h, 1))));
     // leave it alone when it's in view and big enough to read
     if (!always && rb.x1 >= m && rb.x2 <= w - m && rb.y1 >= top && rb.y2 <= h - bottom && cy.zoom() >= z * 0.6) return;
     cy.animate({ zoom: z, pan: { x: w / 2 - z * (bb.x1 + bb.x2) / 2, y: top + ah / 2 - z * (bb.y1 + bb.y2) / 2 } }, { duration: 450 });
