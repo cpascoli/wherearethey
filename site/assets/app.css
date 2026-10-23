@@ -190,6 +190,8 @@ input { font: inherit; color: inherit; }
 /* ── Map ── */
 #map { position: absolute; inset: 0; background: var(--panel-2); }
 .leaflet-container { font: inherit; }
+#map { isolation: isolate; } /* Leaflet's panes (z-index up to 1000) stay inside the map, below the header's search results */
+.dd-head { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); padding: 6px 10px 4px; }
 .leaflet-tooltip { background: var(--panel); color: var(--text); border: 1px solid var(--border); box-shadow: var(--shadow); }
 .leaflet-tooltip-top::before { border-top-color: var(--panel); }
 

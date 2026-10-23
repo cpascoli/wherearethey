@@ -843,6 +843,7 @@
 
   // ───────────── world map ─────────────
   let map = null, mapLayer = null, tileLayer = null, mapFitted = false;
+  const mapMarkers = new Map(); // file id → its dot, so search and selection can find it
   const isDark = () => document.documentElement.dataset.theme !== 'light';
   function setTiles() {
     if (!map) return;
@@ -860,6 +861,7 @@
     }
     map.invalidateSize();
     mapLayer.clearLayers();
+    mapMarkers.clear();
     const pts = ents.filter(e => e.place && visible.has(e.id));
     const seen = new Map();
     const markers = [];
@@ -875,8 +877,29 @@
       m.on('click', () => select(e.id, { from: 'map' }));
       m.addTo(mapLayer);
       markers.push(m);
+      mapMarkers.set(e.id, m);
     }
+    markMapSel();
     if (!mapFitted && markers.length) { map.fitBounds(L.featureGroup(markers).getBounds().pad(0.1)); mapFitted = true; }
+  }
+
+  // the open file's dot stands out: larger, with an accent ring, drawn on top
+  let mapSelId = null;
+  function markMapSel() {
+    const prev = mapMarkers.get(mapSelId);
+    if (prev) prev.setStyle({ radius: byId.get(mapSelId)?.type === 'incident' ? 8 : 6, color: isDark() ? '#0d1015' : '#ffffff', weight: 1.5 });
+    mapSelId = state.sel;
+    const m = mapMarkers.get(state.sel);
+    if (m) { m.setStyle({ radius: 12, color: css('--accent'), weight: 3 }); m.bringToFront(); }
+  }
+  // from search on the World page: fly to the file's dot and open it, rather than leaving for Explore
+  function showOnMap(id) {
+    const m = mapMarkers.get(id);
+    if (!map || !m) return false;
+    map.flyTo(m.getLatLng(), Math.max(map.getZoom(), 6), { duration: 0.8 });
+    select(id, { from: 'search' });
+    map.once('moveend', () => m.openTooltip());
+    return true;
   }
 
   // ───────────── index ─────────────
@@ -1105,12 +1128,13 @@
     }
     return searchCache.get(e.id);
   }
-  function searchEntities(q, limit = 12) {
+  function searchEntities(q, limit = 12, keep = null) { // keep: optional filter (e.g. on the map)
     q = q.trim().toLowerCase();
     if (!q) return [];
     const words = q.split(/\s+/);
     const scored = [];
     for (const e of ents) {
+      if (keep && !keep(e)) continue;
       const name = e.name.toLowerCase(), aka = e.aka.join(' ').toLowerCase(), txt = searchText(e);
       if (!words.every(w => txt.includes(w))) continue;
       let s = 0;
@@ -1126,9 +1150,10 @@
     const q = $('#q').value;
     const dd = $('#q-results');
     if (!q.trim()) { dd.hidden = true; return; }
-    const res = searchEntities(q);
+    const onMap = state.view === 'map' && mapMarkers.size ? e => mapMarkers.has(e.id) : null;
+    const res = searchEntities(q, 12, onMap);
     ddIndex = -1;
-    dd.innerHTML = res.map(e => `<div ${ddTyped(e)} data-goto="${e.id}"><div><div class="t">${esc(e.name)} ${ddType(e)}</div><div class="s">${esc(subtitle(e))}</div></div></div>`).join('') +
+    dd.innerHTML = (onMap ? `<div class="dd-head">${res.length ? 'On the map' : `Nothing on the map matches “${esc(q)}”`}</div>` : '') + res.map(e => `<div ${ddTyped(e)} data-goto="${e.id}"><div><div class="t">${esc(e.name)} ${ddType(e)}</div><div class="s">${esc(subtitle(e))}</div></div></div>`).join('') +
       `${res.length ? '<div class="dd-sep"></div>' : ''}<div class="dd-item" data-tsearch="${esc(q)}"><span>🔎</span><div><div class="t">Search transcripts and documents for “${esc(q)}”</div><div class="s">${KB.stats.transcripts} videos · ${KB.stats.transcriptHours} h of speech · ${KB.stats.documents} documents · ${KB.stats.documentPages} pages</div></div></div>`;
     dd.hidden = false;
   }
@@ -2435,6 +2460,7 @@
     else closePanel();
     if (state.trail) renderTrailBar(); // highlight the open file's chip
     if (state.view === 'graph') highlight(id);
+    if (state.view === 'map') markMapSel();
     if (state.view === 'timeline') $$('.tl-item').forEach(el => el.classList.toggle('sel', el.dataset.goto === id));
     setHash();
   }
@@ -2505,6 +2531,7 @@
       $('#q-results').hidden = true;
       // a search result picked from any page opens Explore and starts a trail from it: the first step, ready to
       // follow (filters are cleared if they would hide it)
+      if (fromSearch && ent && state.view === 'map' && showOnMap(ent.id)) return;
       if (fromSearch && ent && !offGraph(ent.type)) {
         if (!visible.has(ent.id)) clearFilters(ent);
         else if (!state.types.has(ent.type)) { state.types.add(ent.type); filtersChanged(); }
