@@ -1,0 +1,29 @@
+{
+  "_about": "Where the Latest bot looks for news (see bot/latest.md). Edit freely: add a feed or a search, remove one that only brings noise.",
+  "feeds": [
+    { "name": "The Black Vault (document archive)", "url": "https://www.theblackvault.com/documentarchive/feed/", "note": "FOIA releases; trace each to the primary document" },
+    { "name": "The Debrief", "url": "https://thedebrief.org/feed/", "note": "science and defense; many non-UAP stories, filter hard" },
+    { "name": "Liberation Times", "url": "https://www.liberationtimes.com/home?format=rss", "note": "UAP policy and Congress; often anonymous sources, follow the named ones" },
+    { "name": "Google News: UAP (last 3 days)", "url": "https://news.google.com/rss/search?q=(UAP%20OR%20UAPs)%20when%3A3d&hl=en-US&gl=US&ceid=US:en" },
+    { "name": "Google News: UFO disclosure (last 3 days)", "url": "https://news.google.com/rss/search?q=UFO%20(disclosure%20OR%20Pentagon%20OR%20Congress%20OR%20whistleblower)%20when%3A3d&hl=en-US&gl=US&ceid=US:en" },
+    { "name": "Google News: non-human intelligence (last 3 days)", "url": "https://news.google.com/rss/search?q=%22non-human%22%20(UAP%20OR%20UFO)%20when%3A3d&hl=en-US&gl=US&ceid=US:en" }
+  ],
+  "watchlist_feeds": "node scripts/watchlist.mjs --queries  → one Google News feed per key person, program and organization on file (top 60 by connections)",
+  "searches": [
+    "AARO announcement OR report OR case resolution (last 3 days)",
+    "war.gov UFO PURSUE new release",
+    "UAP Disclosure Act OR UAPDA NDAA amendment Senate (last 3 days)",
+    "House Oversight UAP task force Luna OR Burlison OR Burchett (last 3 days)",
+    "UAP hearing OR briefing Congress (upcoming or last 3 days)",
+    "ODNI OR DNI Gabbard UAP (last 3 days)",
+    "site:youtube.com UAP interview (last 3 days) — names from the watchlist: Grusch, Stratton, Elizondo, Mellon, Gallaudet, Graves, Fravor, Nolan, Loeb",
+    "NewsNation UAP OR UFO (last 3 days)",
+    "UAP whistleblower testimony (last 3 days)",
+    "UAP sighting military OR pilot OR FAA report (last 3 days)"
+  ],
+  "blocked_for_scripts": "aaro.mil, war.gov, dni.gov, congress.gov pages and reddit.com refuse plain downloads: reach them through web search results and the search tool's page fetch, or cite the outlet that quotes them and say so",
+  "not_sources": [
+    "Reddit, Discord, anonymous X accounts and content farms: may point to a story, never cite them",
+    "Wikipedia: never a source for a news item"
+  ]
+}

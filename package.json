@@ -8,6 +8,8 @@
     "dev": "node scripts/dev.mjs",
     "build": "node scripts/build.mjs",
     "check": "node scripts/build.mjs --check",
+    "check:news": "node scripts/check-news.mjs",
+    "watchlist": "node scripts/watchlist.mjs",
     "fetch": "node scripts/fetch-video.mjs",
     "find": "node scripts/find.mjs",
     "import:pursue": "node scripts/import-pursue.mjs",
