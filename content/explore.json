@@ -9,11 +9,11 @@
   ],
   "starts": [
     { "label": "The Tic Tac (Nimitz)", "id": "inc-nimitz-2004" },
-    { "label": "Grusch & crash retrieval", "id": "david-grusch" },
+    { "label": "David Grusch", "id": "david-grusch" },
     { "label": "The 2023 UFO hearing", "id": "h-2023-07-26" },
     { "label": "AATIP & the Pentagon", "id": "aatip" },
     { "label": "Roswell", "id": "inc-roswell-1947" },
     { "label": "UFOs at nuclear bases", "id": "inc-malmstrom-1967" },
-    { "label": "The PURSUE files", "id": "pursue" }
+    { "label": "Crash retrieval", "id": "crash-retrieval" }
   ]
 }
