@@ -990,7 +990,7 @@
       return `<article class="lt-card ${isNew(e) ? 'is-new' : ''} ${pinned ? 'is-featured' : ''}" style="--c:${TYPES[e.type].color}">${cover}
         ${rec ? `<div class="lt-thumb" data-play="${rec.id}@0" title="Play"><img src="${vthumb(rec)}" alt="" loading="lazy"><span class="wplay">▶</span>${rec.duration ? `<span class="wdur">${fmtDur(rec.duration)}</span>` : ''}</div>` : ''}
         <div class="lt-body">
-          <div class="lt-kicker">${pinned ? '<em class="lt-tag feat">featured</em>' : ''}<span class="lt-date">${esc(fmtRange(e))}</span>${e.date > today ? '<em class="lt-tag up">upcoming</em>' : ''}${isNew(e) ? '<em class="lt-tag new">new</em>' : ''}<span class="lt-kind">${esc(kind)}</span>${e.type === 'video' && e.channel ? `<span class="lt-src">${esc(e.channel)}</span>` : e.outlet ? `<span class="lt-src">${esc(e.outlet)}</span>` : ''}</div>
+          <div class="lt-kicker"><span class="lt-date">${esc(fmtRange(e))}</span>${pinned ? '<em class="lt-tag feat">featured</em>' : ''}${e.date > today ? '<em class="lt-tag up">upcoming</em>' : ''}${isNew(e) ? '<em class="lt-tag new">new</em>' : ''}<span class="lt-kind">${esc(kind)}</span>${e.type === 'video' && e.channel ? `<span class="lt-src">${esc(e.channel)}</span>` : e.outlet ? `<span class="lt-src">${esc(e.outlet)}</span>` : ''}</div>
           <h3><a href="${hrefOf(e.id)}" data-goto="${esc(e.id)}">${esc(e.name)}</a></h3>
           ${latestSummary(e) ? `<p class="lt-sum">${esc(latestSummary(e))}</p>` : ''}
           ${people.length ? `<div class="lt-people">${people.map(p => chip(p.id)).join('')}</div>` : ''}
@@ -1052,7 +1052,7 @@
           ${e.type === 'book' ? '' : actions}
         </div>
         <div class="sc-body">
-          <div class="sc-kicker">${e.shelfFeatured ? '<em class="lt-tag feat">featured</em>' : ''}${esc(shelfMeta(e))}</div>
+          <div class="sc-kicker">${e.shelfFeatured ? `${esc(e.y0 || '')}<em class="lt-tag feat">featured</em>${esc(shelfMeta(e).replace(/^\d{4}( · )?/, ''))}` : esc(shelfMeta(e))}</div>
           <h3 data-goto="${e.id}">${esc(e.name)}</h3>
           ${e.credits ? `<div class="sc-credits">${esc(e.credits)}</div>` : ''}
           <p class="sc-sum">${esc(sum.length > (e.shelfFeatured ? 640 : 320) ? sum.slice(0, e.shelfFeatured ? 637 : 317).replace(/\s+\S*$/, '') + '…' : sum)}</p>
