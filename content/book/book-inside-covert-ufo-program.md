@@ -16,6 +16,7 @@ rel:
   - [ authored by, george-knapp ]
   - [ about, aawsap ]
   - [ cleared in, doc-dopsr-22-sb-0151 ]
+  - [ followed by, book-covert-ufo-new-insights ]
   - [ related to, kona-blue ]
   - [ related to, crash-retrieval ]
 links:
