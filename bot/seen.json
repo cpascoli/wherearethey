@@ -1,1 +1,62 @@
-{}
+{
+ "https://www.newsnationnow.com/politics/pentagon-ufo-hunter-jay-stratton-aliens/": {
+  "d": "2026-10-23",
+  "v": "news",
+  "why": "Stratton on CUOMO 2026-10-20: humanoid at his window; score 12"
+ },
+ "https://www.ibtimes.co.uk/ross-coulthart-trump-ufo-retrieval-programme-claims-1827289": {
+  "d": "2026-10-23",
+  "v": "runner-up",
+  "why": "Coulthart on Reality Check: Trump knows of legacy program; unnamed sources, repeats his May 2026 claim, show date unconfirmed; score 8"
+ },
+ "https://cybernews.com/news/trump-uap-ufo-ross-coulthart/": {
+  "d": "2026-10-23",
+  "v": "skip",
+  "why": "duplicate of Coulthart Reality Check story, write-up"
+ },
+ "https://www.bundestag.de/presse/hib/kurzmeldungen-1229446": {
+  "d": "2026-10-23",
+  "v": "suggest",
+  "why": "German government answer to AfD UAP inquiry (Drucksache 21/8662, 16 Oct): no findings on UAP; official, but nothing on file to anchor and outside window"
+ },
+ "https://curiosmos.com/grusch-human-looking-beings/": {
+  "d": "2026-10-23",
+  "v": "skip",
+  "why": "content farm; Grusch on JRE #2560 was 2026-09-30, outside window"
+ },
+ "https://curiosmos.com/ellsworth-veterans-reunion/": {
+  "d": "2026-10-23",
+  "v": "skip",
+  "why": "content farm; Woods/Johnson reunion aired Sept 2026 (American Alchemy), outside window"
+ },
+ "https://thehill.com/video-clips/5939109-watch-live-washington-talks-ufos-at-uap-disclosure-forum/": {
+  "d": "2026-10-23",
+  "v": "skip",
+  "why": "Disclosure Forum 2026 was 25 June, already on file"
+ },
+ "https://www.liberationtimes.com/home/trump-leaves-door-open-to-ufo-disclosure-announcement-im-looking": {
+  "d": "2026-10-23",
+  "v": "skip",
+  "why": "2026-10-16, outside window"
+ },
+ "https://www.8newsnow.com/investigators/former-intelligence-official-breaks-silence-on-govt-ufo-investigations/": {
+  "d": "2026-10-23",
+  "v": "skip",
+  "why": "KLAS Stratton book feature: same book promotion, nothing beyond the CUOMO item"
+ },
+ "news.google.com: 'Humanoid predator' near US border (Maussan; Daily Mail, UNILAD, Times of India)": {
+  "d": "2026-10-23",
+  "v": "skip",
+  "why": "not credible, not anchored"
+ },
+ "news.google.com: Daily Mail 'UFO cloud over Washington DC' / 'Glowing UFOs over Atlantic'": {
+  "d": "2026-10-23",
+  "v": "skip",
+  "why": "tabloid, no credible witness"
+ },
+ "news.google.com: Patricia Cornwell 'Orbs over the Cape' Instagram": {
+  "d": "2026-10-23",
+  "v": "skip",
+  "why": "civilian video, not anchored"
+ }
+}
