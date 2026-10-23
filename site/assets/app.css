@@ -770,6 +770,14 @@ html:not(.js) .top, html:not(.js) .app, html:not(.js) .views, html:not(.js) .mor
 @media (max-width: 860px) { .trail-bar { top: 8px; left: 8px; right: 8px; } .node-menu button { padding: 10px 10px; font-size: 14.5px; } }
 @media (max-width: 860px) { #view-graph.exploring .graph-hud { display: none; } }
 .tb-step.closed { border-style: dashed; } /* on the trail, connections hidden */
+/* the key-files map: starting points above the graph */
+.tb-start { background: var(--panel); border: 1px solid var(--border); box-shadow: inset 3px 0 0 var(--c); border-radius: 0 5px 5px 0; color: var(--text); font: inherit; font-size: 12.5px; padding: 4px 10px 4px 12px; cursor: pointer; white-space: nowrap; }
+.tb-start:hover { border-color: var(--accent); color: var(--accent); }
+@media (max-width: 860px) {
+  .tb-starts { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-right: -8px; padding-right: 8px; }
+  .tb-starts::-webkit-scrollbar { display: none; }
+  .tb-start { font-size: 13.5px; padding: 6px 12px 6px 14px; }
+}
 /* incident outcome: explained / partly explained / hoax */
 .badge.outcome-explained { color: var(--muted); border: 1.5px solid currentColor; background: transparent; }
 .badge.outcome-disputed { color: #c9a227; border: 1.5px solid currentColor; background: transparent; }

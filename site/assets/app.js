@@ -167,7 +167,8 @@
     yr: (([a, b] = []) => [a == null || a === 1940 ? MIN_Y : a, b == null || b >= NOW_Y ? MAX_Y : b])(store.get('yr', null) || []),
     showMentions: store.get('showMentions', false),
     video: null,
-    trail: null,                                  // exploration mode: { steps: [ids], open: Set (connections shown), pinned: Set }
+    trail: null,                                  // exploration mode: { steps: [ids], open: Set (connections shown), pinned: Set }; core: true = the key-files map
+    full: new URLSearchParams(location.search).has('full'), // Explore shows the whole network instead of the key files (/explore?full)
     hiddenIds: new Set(),                         // files hidden by hand (right-click → Hide)
   };
   state.types.delete('record'); state.types.delete('news');
@@ -338,6 +339,7 @@
       { selector: 'node.hl', style: { 'font-size': 10.5, 'font-weight': 600 } },
       { selector: 'node.trail', style: { 'border-width': 3, 'border-color': css('--accent'), 'border-style': 'solid', 'font-size': 11, 'font-weight': 600, opacity: 1 } },
       { selector: 'edge.trail', style: { 'line-color': css('--accent'), width: 3, label: 'data(label)', opacity: 1 } },
+      { selector: 'node.core', style: { 'font-size': 12.5, 'min-zoomed-font-size': 5.5, 'text-max-width': 160 } },
       { selector: '.hidden', style: { display: 'none' } },
     ];
   }
@@ -412,7 +414,8 @@
   function applyGraphFilter() {
     if (!cy) return;
     const nv = visible.size, ne = KB.edges.filter(x => visible.has(x.s) && visible.has(x.t) && (x.kind !== 'mention' || state.showMentions)).length;
-    if ($('#hud') && state.trail) setTimeout(() => { $('#hud').innerHTML = `Exploring · <b>${cy.nodes().not('.hidden').length}</b> files on screen · <b>${cy.edges().not('.hidden').length}</b> links${state.credibleOnly ? ' · official sources only' : ''}`; });
+    if ($('#hud') && state.trail?.core) setTimeout(() => { $('#hud').innerHTML = `Key files · <b>${cy.nodes().not('.hidden').length}</b> files · <b>${cy.edges().not('.hidden').length}</b> links between them`; });
+    else if ($('#hud') && state.trail) setTimeout(() => { $('#hud').innerHTML = `Exploring · <b>${cy.nodes().not('.hidden').length}</b> files on screen · <b>${cy.edges().not('.hidden').length}</b> links${state.credibleOnly ? ' · official sources only' : ''}`; });
     else if ($('#hud')) $('#hud').innerHTML = `Case network · <b>${nv}</b> files · <b>${ne}</b> links${state.credibleOnly ? ' · official sources only' : ''}`;
     const shown = state.trail ? trailShown() : null;
     const show = id => visible.has(id) && !state.hiddenIds.has(id) && (!shown || shown.has(id));
@@ -421,6 +424,7 @@
       cy.edges().forEach(ed => ed.toggleClass('hidden', (ed.data('kind') === 'mention' && !state.showMentions) || !show(ed.data('source')) || !show(ed.data('target'))));
       // the trail: its files and the links between them (the path)
       cy.elements().removeClass('trail');
+      cy.nodes().toggleClass('core', !!state.trail?.core);
       const steps = new Set(state.trail?.steps || []);
       for (const id of steps) cy.getElementById(id).addClass('trail');
       if (steps.size > 1) cy.edges().filter(ed => !ed.hasClass('hidden') && steps.has(ed.data('source')) && steps.has(ed.data('target'))).addClass('trail');
@@ -478,6 +482,16 @@
     edgeElasticity: () => 0.3,
     nodeSeparation: 140,
     numIter: 2500,
+  };
+  const CORE_SPACING = {
+    nodeDimensionsIncludeLabels: true,
+    nodeRepulsion: () => 12000,
+    idealEdgeLength: () => 95,
+    edgeElasticity: () => 0.45,
+    nodeSeparation: 80,
+    gravity: 1.2, gravityRange: 1.0,
+    numIter: 2500,
+    packComponents: false, tile: false, // files with no link among the key files (PURSUE, Rendlesham…) are pulled in by gravity, not set apart
   };
   function fanOut(head, nodes) {
     if (!nodes.length) return;
@@ -537,12 +551,33 @@
     const dy = rb.y1 < top ? top - rb.y1 : rb.y2 > h - bottom ? h - bottom - rb.y2 : 0;
     if (dx || dy) cy.animate({ panBy: { x: dx, y: dy } }, { duration: 350 });
   }
+  // Explore opens on a small map of the key files (content/explore.json) rather than the whole network, which is
+  // slow to draw and unreadable at a glance. It is a trail with no steps whose files are pinned on screen, so
+  // search, selection and the menu work as in any trail; following a file starts a real trail from it.
+  // "Show the full network" leaves it (state.full), "Back to the key files" and "Exit trail" return to it.
+  const EXPLORE = KB.explore || { core: [], starts: [] };
+  const coreTrail = () => ({ core: true, steps: [], open: new Set(), pinned: new Set(EXPLORE.core.filter(id => byId.has(id))) });
+  function enterCore() {
+    state.full = false;
+    state.trail = coreTrail();
+    applyGraphFilter();
+    highlight(state.sel);
+    clearTimeout(layoutTimer); layoutTimer = setTimeout(() => layoutGraph(true), 60);
+  }
+  function showFull() {
+    state.full = true;
+    state.trail = null;
+    track('explore_full');
+    applyGraphFilter();
+    highlight(state.sel);
+    layoutGraph(true);
+  }
   function startTrail(id) {
     if (!byId.has(id)) return;
     state.trail = { steps: [id], open: new Set([id]), pinned: new Set() };
     state.hiddenIds.delete(id);
     if (state.view !== 'graph') go('graph');
-    if (state.sel !== id) select(id, { from: 'trail' });
+    if (state.sel !== id) select(id, { from: 'trail', noPanel: window.innerWidth <= 860 });
     if (window.innerWidth <= 860) closePanel(); // on a phone the panel would cover the graph you're exploring
     trailChanged(id, { relayout: true });
   }
@@ -560,13 +595,13 @@
   // the steps after it. "Show its connections" (menu) remains the additive way to open other directions.
   function followFile(id) {
     if (!byId.has(id) || offGraph(byId.get(id).type)) return;
-    if (!state.trail) { startTrail(id); return; }
+    if (!state.trail || state.trail.core) { if (state.trail?.core) track('explore_start', { item_id: id, method: 'key_files' }); startTrail(id); return; }
     const T = state.trail, i = T.steps.indexOf(id);
     if (i >= 0) T.steps.length = i + 1; else T.steps.push(id);
     T.open = new Set([id]);
     T.pinned.delete(id);
     state.hiddenIds.delete(id);
-    if (state.sel !== id) select(id, { from: 'trail' });
+    if (state.sel !== id) select(id, { from: 'trail', noPanel: window.innerWidth <= 860 });
     if (window.innerWidth <= 860) closePanel(); // phones: keep following in the graph; a single tap opens the card
     trailChanged(id);
   }
@@ -577,12 +612,7 @@
     T.open.delete(id);
     trailChanged();
   }
-  function exitTrail() {
-    state.trail = null;
-    applyGraphFilter();
-    highlight(state.sel);
-    layoutGraph(true);
-  }
+  function exitTrail() { enterCore(); } // back to the key files
   function hideFile(id) {
     if (state.trail) {
       const T = state.trail;
@@ -599,25 +629,39 @@
     if (!bar) { $('#view-graph').insertAdjacentHTML('beforeend', '<div class="trail-bar" id="trail-bar" hidden></div>'); bar = $('#trail-bar'); }
     const T = state.trail, nh = state.hiddenIds.size;
     $('#view-graph').classList.toggle('exploring', !!T);
-    bar.hidden = !T && !nh;
+    bar.hidden = !T && !nh && !state.full;
     if (bar.hidden) return;
+    const hiddenNote = nh ? `<span class="tb-hidden">${nh} hidden · <button class="link" data-unhide>show</button></span>` : '';
+    if (T?.core) {
+      bar.innerHTML = `<div class="tb-row tb-starts"><span class="tb-lbl">Start from</span>${EXPLORE.starts.filter(s => byId.has(s.id)).map(s => `<button class="tb-start" style="--c:${TYPES[byId.get(s.id).type].color}" data-core-start="${esc(s.id)}">${esc(s.label)}</button>`).join('')}</div>
+        <div class="tb-row tb-tools"><span class="tb-hint">The key files of the story · click one to read it · double-click (double-tap) to follow its connections</span>${hiddenNote}
+          <button class="btn small" data-full>Show the full network</button></div>`;
+      return;
+    }
+    if (!T) {
+      bar.innerHTML = `<div class="tb-row tb-tools">${hiddenNote}<button class="btn small" data-core>◎ Back to the key files</button></div>`;
+      return;
+    }
     const steps = T ? T.steps.map(id => `<span class="tb-step ${state.sel === id ? 'on' : ''} ${T.open.has(id) ? '' : 'closed'}" style="--c:${TYPES[byId.get(id).type].color}"><button class="tb-name" data-trail-open="${esc(id)}" title="Open the file card">${esc(byId.get(id).name)}</button>${T.steps.length > 1 ? `<button class="tb-x" data-trail-pop="${esc(id)}" title="Take off the trail" aria-label="Take off the trail">×</button>` : ''}</span>`).join('<span class="tb-sep">›</span>') : '';
     bar.innerHTML = `${T ? `<div class="tb-row"><span class="tb-lbl">Trail</span>${steps}</div>` : ''}
       <div class="tb-row tb-tools">${T && T.steps.length === 1 ? '<span class="tb-hint">Click a file to read it · double-click (double-tap) to follow it · right-click or long-press for more</span>' : ''}
-        ${nh ? `<span class="tb-hidden">${nh} hidden · <button class="link" data-unhide>show</button></span>` : ''}
-        ${T ? '<button class="btn small" data-trail-exit>✕ Exit trail</button>' : ''}</div>`;
+        ${hiddenNote}
+        <button class="btn small" data-trail-exit>◎ Back to the key files</button></div>`;
   }
   $('#view-graph').addEventListener('click', e => {
     const op = e.target.closest('[data-trail-open]'); if (op) { select(op.dataset.trailOpen, { from: 'trail' }); return; }
     const pp = e.target.closest('[data-trail-pop]'); if (pp) { popStep(pp.dataset.trailPop); return; }
     if (e.target.closest('[data-trail-exit]')) { exitTrail(); return; }
+    const cs = e.target.closest('[data-core-start]'); if (cs) { track('explore_start', { item_id: cs.dataset.coreStart, method: 'starting_point' }); exploreFrom(cs.dataset.coreStart); return; }
+    if (e.target.closest('[data-full]')) { showFull(); return; }
+    if (e.target.closest('[data-core]')) { enterCore(); return; }
     if (e.target.closest('[data-unhide]')) { state.hiddenIds.clear(); trailChanged(null, { relayout: true }); return; }
   });
 
   // right-click (long-press on touch) menu on a file
   function openNodeMenu(id, pos) {
     closeNodeMenu();
-    const e = byId.get(id), T = state.trail;
+    const e = byId.get(id), T = state.trail?.core ? null : state.trail;
     const items = [
       !T && ['explore', '◎ Explore from here'],
       // same as a double-click: follow the file (a step already on the trail goes back to it)
@@ -666,9 +710,32 @@
   // a layout fits the whole graph; bring the selected file and its connections back into view afterwards
   const reframeSel = () => {
     if (state.view !== 'graph') return;
+    if (state.trail?.core) { pullInCore(); orientCore(); }
     if (state.trail) setTimeout(() => frameEles(cy.nodes().not('.hidden'), true), 50);
     else if (state.sel) setTimeout(() => frameHood(cy.getElementById(state.sel)), 50);
   };
+  // files with no link among the key files (PURSUE, Rendlesham…) would float far off: set each loose group just
+  // outside the main cluster, in the direction it already lies
+  function pullInCore() {
+    const comps = cy.elements().not('.hidden').components().sort((a, b) => b.nodes().length - a.nodes().length);
+    if (comps.length < 2) return;
+    const main = comps[0].nodes().boundingBox(), mx = (main.x1 + main.x2) / 2, my = (main.y1 + main.y2) / 2, gap = 30;
+    cy.batch(() => comps.slice(1).forEach(c => {
+      const ns = c.nodes(), b = ns.boundingBox(), cx = (b.x1 + b.x2) / 2, cyy = (b.y1 + b.y2) / 2;
+      let dx = cx - mx, dy = cyy - my; const len = Math.hypot(dx, dy) || 1; dx /= len; dy /= len;
+      // distance from the main centre to its box edge along that direction, plus half the group and a gap
+      const t = Math.min(Math.abs(dx) > 1e-6 ? (main.w / 2) / Math.abs(dx) : Infinity, Math.abs(dy) > 1e-6 ? (main.h / 2) / Math.abs(dy) : Infinity);
+      const reach = t + (Math.abs(dx) * b.w + Math.abs(dy) * b.h) / 2 + gap, tx = mx + dx * reach, ty = my + dy * reach;
+      ns.forEach(n => { const p = n.position(); n.position({ x: p.x + tx - cx, y: p.y + ty - cyy }); });
+    }));
+  }
+  // the key-files map fills a phone (tall) or a desktop (wide) screen better when its long side matches: turn it 90°
+  function orientCore() {
+    const nodes = cy.nodes().not('.hidden'), bb = nodes.boundingBox(), { w, h } = viewArea();
+    if ((bb.w > bb.h) === (w > h) || Math.abs(bb.w - bb.h) < 0.05 * Math.max(bb.w, bb.h)) return;
+    const cx = (bb.x1 + bb.x2) / 2, cyy = (bb.y1 + bb.y2) / 2;
+    cy.batch(() => nodes.forEach(n => { const p = n.position(); n.position({ x: cx + (p.y - cyy), y: cyy - (p.x - cx) }); }));
+  }
   function layoutGraph(animate, { fresh = false } = {}) {
     if (!cy) return;
     cy.resize(); // the side panel may have just opened or closed
@@ -680,14 +747,15 @@
       return;
     }
     // first draw of a filtered view: start from the precomputed full-network positions so the force layout settles fast
-    const seeded = !animate && !fresh && LAYOUT?.all;
+    // (the key files always start from there too, so their map is the same every time)
+    const core = !!state.trail?.core, seeded = (core || (!animate && !fresh)) && LAYOUT?.all;
     if (seeded) cy.batch(() => eles.nodes().forEach(n => { const p = LAYOUT.all[n.id()]; if (p) n.position({ x: p[0], y: p[1] }); }));
     eles.layout(hasFcose ? {
       name: 'fcose', quality: seeded ? 'default' : 'proof', randomize: !animate && !seeded, animate: !!animate, animationDuration: 700, fit: !state.trail, padding: 40, // a trail is framed afterwards, in the area left of the panel
       nodeRepulsion: n => 9000, idealEdgeLength: ed => (ed.data('kind') === 'mention' ? 160 : 75), edgeElasticity: () => 0.4,
       gravity: 0.3, gravityRangeCompound: 1.5, numIter: 3000, nodeSeparation: 90, packComponents: true, tile: true,
-      ...(state.trail ? { ...TRAIL_SPACING, gravity: 0.15 } : {}), // exploring: fewer files, so give each one room
       tilingPaddingVertical: 38, tilingPaddingHorizontal: 90, // room for two-line labels on unconnected nodes
+      ...(state.trail?.core ? CORE_SPACING : state.trail ? { ...TRAIL_SPACING, gravity: 0.15 } : {}), // exploring: fewer files, so give each one room
     } : {
       name: 'cose', animate: animate ? 'end' : false, animationDuration: 600, randomize: !animate, fit: true, padding: 40,
       nodeRepulsion: () => 14000, idealEdgeLength: () => 70, edgeElasticity: () => 80, gravity: 0.35, numIter: 1600,
@@ -702,11 +770,16 @@
   function frameEles(hood, always = false) {
     if (!cy || !hood.length) return;
     const { w, h } = viewArea();
-    const rb = hood.renderedBoundingBox(), m = 24, bb = hood.boundingBox(), pad = 60;
-    const z = Math.min(1.4, Math.max(0.3, Math.min((w - 2 * pad) / Math.max(bb.w, 1), (h - 2 * pad) / Math.max(bb.h, 1))));
+    const rb = hood.renderedBoundingBox(), m = 24, bb = hood.boundingBox(), pad = 40;
+    // room taken by the trail bar (top) and the legend (bottom)
+    const cr = cy.container().getBoundingClientRect(), tb = $('#trail-bar'), lg = $('#legend');
+    const top = tb && !tb.hidden ? Math.max(pad, tb.getBoundingClientRect().bottom - cr.top + 16) : pad;
+    const bottom = lg && lg.offsetParent ? Math.max(pad, cr.bottom - lg.getBoundingClientRect().top + 12) : pad;
+    const ah = Math.max(120, h - top - bottom);
+    const z = Math.min(1.4, Math.max(state.trail?.core ? 0.45 : 0.3, Math.min((w - 2 * pad) / Math.max(bb.w, 1), ah / Math.max(bb.h, 1))));
     // leave it alone when it's in view and big enough to read
-    if (!always && rb.x1 >= m && rb.x2 <= w - m && rb.y1 >= m && rb.y2 <= h - m && cy.zoom() >= z * 0.6) return;
-    cy.animate({ zoom: z, pan: { x: w / 2 - z * (bb.x1 + bb.x2) / 2, y: h / 2 - z * (bb.y1 + bb.y2) / 2 } }, { duration: 450 });
+    if (!always && rb.x1 >= m && rb.x2 <= w - m && rb.y1 >= top && rb.y2 <= h - bottom && cy.zoom() >= z * 0.6) return;
+    cy.animate({ zoom: z, pan: { x: w / 2 - z * (bb.x1 + bb.x2) / 2, y: top + ah / 2 - z * (bb.y1 + bb.y2) / 2 } }, { duration: 450 });
   }
   let noFrame = false; // set while handling a click on a node in the graph
   function highlight(id, hover = false) {
@@ -2322,7 +2395,7 @@
     videoTick(state.video, cur, dur, false);
   }, 5000);
   $('#local-video')?.addEventListener('ended', () => videoTick(state.video, 1, 1, true));
-  function select(id, { from } = {}) {
+  function select(id, { from, noPanel = false } = {}) { // noPanel: select without opening the card (phones, while exploring)
     state.sel = id;
     if (id && !routing) track('select_content', { content_type: byId.get(id)?.type, item_id: id, method: clickCtx || from || 'link' });
     // exploring: a file opened from search or a link that isn't on screen is pinned there (no connections yet)
@@ -2331,7 +2404,7 @@
       trailChanged(id);
     }
     const panelShown = !$('#panel').hidden;
-    if (id && state.view !== 'home') {
+    if (id && state.view !== 'home' && !noPanel) {
       if (panelShown) openPanel(id);
       else panelTransition('open', () => { if (state.sel === id) openPanel(id); });
     } else if (panelShown) panelTransition('close', () => { if (!state.sel || state.view === 'home') closePanel(); });
@@ -2360,6 +2433,7 @@
     $('#filters').hidden = view === 'videos';
     $('#vid-side').hidden = view !== 'videos';
     $$('.only-graph').forEach(el => el.hidden = view !== 'graph');
+    if (view === 'graph' && !state.trail && !state.full) state.trail = coreTrail();
     if (!keepSel) select(null);
     setHash(); // push the new view's history entry first, so views that adjust it (e.g. default video) replace their own entry
     refreshView(false);

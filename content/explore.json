@@ -1,0 +1,19 @@
+{
+  "_about": "What Explore opens on: a small map of the key files (core) instead of the whole network, and the starting points shown above it. Edit freely; ids must exist (npm run check). Keep it to the well-sourced core of the story.",
+  "core": [
+    "aatip", "aawsap", "uaptf", "aaro", "legacy-program", "pursue", "project-blue-book", "crash-retrieval",
+    "h-2023-07-26", "h-2024-11-13", "h-2025-09-09",
+    "inc-nimitz-2004", "inc-roosevelt-2015", "inc-roswell-1947", "inc-rendlesham-1980", "inc-malmstrom-1967",
+    "david-grusch", "luis-elizondo", "david-fravor", "ryan-graves", "chris-mellon", "jay-stratton",
+    "sean-kirkpatrick", "harry-reid", "kirsten-gillibrand", "anna-paulina-luna"
+  ],
+  "starts": [
+    { "label": "The Tic Tac (Nimitz)", "id": "inc-nimitz-2004" },
+    { "label": "Grusch & crash retrieval", "id": "david-grusch" },
+    { "label": "The 2023 UFO hearing", "id": "h-2023-07-26" },
+    { "label": "AATIP & the Pentagon", "id": "aatip" },
+    { "label": "Roswell", "id": "inc-roswell-1947" },
+    { "label": "UFOs at nuclear bases", "id": "inc-malmstrom-1967" },
+    { "label": "The PURSUE files", "id": "pursue" }
+  ]
+}

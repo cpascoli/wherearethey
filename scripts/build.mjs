@@ -352,6 +352,15 @@ export async function build({ check = false, quiet = false } = {}) {
     transcriptHours: Math.round(entities.filter(e => e.transcript).reduce((a, e) => a + (e.duration || 0), 0) / 360) / 10,
   };
 
+  // Explore's starting map (content/explore.json): key files and starting points, ids checked here
+  const exploreFile = path.join(ROOT, 'content', 'explore.json');
+  const explore = fs.existsSync(exploreFile) ? JSON.parse(fs.readFileSync(exploreFile, 'utf8')) : { core: [], starts: [] };
+  for (const id of [...(explore.core || []), ...(explore.starts || []).map(s => s.id)]) {
+    const e = byId.get(id);
+    if (!e) errors.push(`content/explore.json: unknown id "${id}"`);
+    else if (OFF_GRAPH.has(e.type) || ['video', 'source'].includes(e.type)) errors.push(`content/explore.json: "${id}" is not a graph file`);
+  }
+
   if (!quiet || check) {
     for (const w of warnings) console.warn(`  warn  ${w}`);
     for (const er of errors) console.error(`  ERROR ${er}`);
@@ -380,7 +389,7 @@ export async function build({ check = false, quiet = false } = {}) {
     return { ...e, body: '', bodyLazy: true };
   });
   fs.writeFileSync(path.join(out, 'records.js'), `window.KB_RECORD_BODIES=${JSON.stringify(recordBodies)};window.KBR&&KBR();\n`);
-  const kb = { built: new Date().toISOString(), filesBase: process.env.FILES_BASE || null, entities: kbEntities, edges: edgeList, stats, warnings, errors };
+  const kb = { built: new Date().toISOString(), filesBase: process.env.FILES_BASE || null, entities: kbEntities, edges: edgeList, explore: { core: explore.core || [], starts: explore.starts || [] }, stats, warnings, errors };
   fs.writeFileSync(path.join(out, 'kb.js'), `window.KB=${JSON.stringify(kb)};\n`);
   fs.writeFileSync(path.join(out, 'mentions.js'), `window.KB_MENTIONS=${JSON.stringify(mentions)};\nwindow.KB_TOGETHER=${JSON.stringify(together)};\n`);
   for (const [vid, t] of transcripts) {
