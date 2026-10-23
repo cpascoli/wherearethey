@@ -97,8 +97,8 @@
   }
   const momentsFor = new Map();
   for (const v of videos) {
-    // a hearing (or event) shows every moment of its recordings, not only the ones that name it
-    const of = adj.get(v.id).filter(x => x.dir === 'out' && x.label === 'recording of' && ['hearing', 'event'].includes(byId.get(x.other)?.type)).map(x => x.other);
+    // a hearing, event or news item shows every moment of its recordings, not only the ones that name it
+    const of = adj.get(v.id).filter(x => x.dir === 'out' && x.label === 'recording of' && ['hearing', 'event', 'news'].includes(byId.get(x.other)?.type)).map(x => x.other);
     for (const m of v.moments || []) {
       for (const id of new Set([...m.refs, m.speaker, ...of].filter(Boolean))) {
         if (!momentsFor.has(id)) momentsFor.set(id, []);
@@ -835,7 +835,7 @@
   const isoToday = () => new Date().toISOString().slice(0, 10);
   const dayOffset = (iso, days) => new Date(Date.parse(iso) + days * 864e5).toISOString().slice(0, 10);
   const dateEnd = d => /^\d{4}-\d{2}-\d{2}$/.test(d) ? d : /^\d{4}-\d{2}$/.test(d) ? new Date(Date.UTC(+d.slice(0, 4), +d.slice(5, 7), 0)).toISOString().slice(0, 10) : null;
-  const recordingOf = v => adj.get(v.id).find(x => x.dir === 'out' && x.label === 'recording of' && ['hearing', 'event'].includes(byId.get(x.other)?.type))?.other;
+  const recordingOf = v => adj.get(v.id).find(x => x.dir === 'out' && x.label === 'recording of' && ['hearing', 'event', 'news'].includes(byId.get(x.other)?.type))?.other;
   function latestCat(e) {
     if (e.type === 'news') return { hearing: 'hearings', legislation: 'hearings', interview: 'interviews', podcast: 'interviews', statement: 'statements', post: 'statements', release: 'releases', research: 'research', incident: 'incidents', event: 'releases', article: 'press' }[e.kind] || 'press';
     if (e.type === 'hearing') return 'hearings';

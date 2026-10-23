@@ -11,6 +11,8 @@
 //     Matching ignores case, punctuation and spacing, and a quote split by an ellipsis is checked piece by piece.
 //   • it links (`rel`) to at least one existing archive entry, and every link target exists
 //   • its url is not already used by another news item, and the url / date / kind fields are present
+//   • any video filed as its recording (`[ recording of, <news-id> ]`): every quoted passage in the video's moments
+//     appears word for word in that video's transcript (media/<id>/transcript.json)
 // Exits non-zero, listing each failure, if any item fails.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -69,8 +71,21 @@ for (const file of files) {
     if (missing.length) problems.push(`quote not found word for word in the source text: “${q}”${pieces.length > 1 ? ` (missing: “${missing.map(m => m.trim()).join('” / “')}”)` : ''}`);
   }
 
+  // videos filed as this item's recording: their quoted moments must be in their own transcript
+  let vidQuotes = 0;
+  for (const v of entries.filter(e => e.type === 'video' && (e.data.rel || []).some(r => r[0] === 'recording of' && r[1] === id))) {
+    const tf = path.join(ROOT, 'media', String(v.data.media || v.data.youtube || ''), 'transcript.json');
+    if (!fs.existsSync(tf)) { problems.push(`video ${v.id} has no transcript (${path.relative(ROOT, tf)})`); continue; }
+    const tx = norm(JSON.parse(fs.readFileSync(tf, 'utf8')).segments.map(s => s[1]).join(' '));
+    for (const m of v.data.moments || []) for (const q of quotesIn(m.text)) {
+      vidQuotes++;
+      const missing = q.split(/…|\.\.\./).map(norm).filter(p => p.trim() && !tx.includes(p));
+      if (missing.length) problems.push(`video ${v.id} @${m.t}: quote not found in its transcript: “${q}”`);
+    }
+  }
+
   const rels = path.relative(ROOT, file);
   if (problems.length) { failed++; console.log(`✗ ${rels}`); for (const p of problems) console.log(`    ${p}`); }
-  else console.log(`✓ ${rels}  (${quotes.length} quote${quotes.length === 1 ? '' : 's'} verified against ${srcFiles.length} source text${srcFiles.length === 1 ? '' : 's'})`);
+  else console.log(`✓ ${rels}  (${quotes.length} quote${quotes.length === 1 ? '' : 's'} verified against ${srcFiles.length} source text${srcFiles.length === 1 ? '' : 's'}${vidQuotes ? `; ${vidQuotes} video moment quote${vidQuotes === 1 ? '' : 's'} against its transcript` : ''})`);
 }
 if (failed) { console.log(`\n${failed} of ${files.length} news item(s) failed`); process.exit(1); }

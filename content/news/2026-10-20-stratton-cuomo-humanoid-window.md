@@ -14,10 +14,10 @@ facts:
     status: claimed
     by: jay-stratton
     source: https://www.newsnationnow.com/politics/pentagon-ufo-hunter-jay-stratton-aliens/
-  - text: "According to NewsNation, Stratton says such encounters began in the 2010s, years after he started investigating UAP for the Pentagon. On the “legacy” program he says holds non-human technology in competition with other nations, he said “the country that wins that race is the superpower for the next hundred years”."
+  - text: "According to NewsNation, Stratton says such encounters began in the 2010s, years after he started investigating UAP for the Pentagon. He supports the theory that a secretive “legacy” program holds non-human technology in competition with other nations, and said “the country that wins that race is the superpower for the next hundred years”."
     status: claimed
     by: jay-stratton
     source: https://www.newsnationnow.com/politics/pentagon-ufo-hunter-jay-stratton-aliens/
 ---
 
-Promoting his memoir *Out of the Shadows*, former UAP Task Force director Jay Stratton told NewsNation's CUOMO that he personally saw a non-human being at his home. It is his own, unverified account: the article cites no other witness or record of the sighting.
+Promoting his memoir *Out of the Shadows*, former UAP Task Force director Jay Stratton told NewsNation's CUOMO that he personally saw a non-human being at his home. It is his own, unverified account: neither the interview nor the article cites another witness or record of the sighting. The full interview is filed with timestamped moments.
