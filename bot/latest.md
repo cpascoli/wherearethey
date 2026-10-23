@@ -47,7 +47,9 @@ A candidate can become a **news item** only if all of these hold:
 2. **Credible voice.** What it reports comes from a credible on-record person (see CLAUDE.md categories), or an official
    action (a hearing, a bill, a release, an agency statement). A journalist relaying **named** sources is fine. A
    journalist relaying **anonymous** sources only if the subject is a core entry, worded as their unnamed-source claim.
-3. **New.** It says or does something the archive does not already have.
+3. **New.** It says or does something the archive does not already have. Compilations, recaps, “best of” and
+   re-edited segments (e.g. NewsNation's *Backscroll*), re-uploads and anniversary pieces about material already on
+   file are **not** news, however recent the upload: skip them, even when they are fresh to the outlet.
 4. **Primary source reachable.** Prefer the original (the video, the document, the post, the press release). Cite a
    write-up only when the original is unreachable, and say so in `outlet`.
 
