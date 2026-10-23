@@ -17,7 +17,6 @@ pursue:
   format: vid
   incident_date: October, 2023
   incident_location: Colorado
-  featured: true
   redaction: "TRUE"
   dvids: https://www.dvidshub.net/video/1023409
   paired:

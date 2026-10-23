@@ -4,14 +4,17 @@ files:
 rel:
   - [ released in, ev-pursue-release-01 ]
   - [ released by, department-of-war ]
+  - [ paired with, dow-uap-pr039 ]
+  - [ paired with, dow-uap-pr088 ]
+  - [ paired with, dow-uap-pr089 ]
 tags:
   - pursue
-name: DOW-UAP-D042 — Range Fouler Debrief, Japan, 2023
+name: DOW-UAP-D042 — Range Fouler Debrief, Arabian Gulf, 2023
 date: 2020-08-31
 place: { name: Arabian Gulf, lat: 27.2381, lng: 51.1972 }
 pursue:
   code: DOW-UAP-D042
-  title: Range Fouler Debrief, Japan, 2023
+  title: Range Fouler Debrief, Arabian Gulf, 2023
   agency: Department of War
   release: 1
   released: 2026-05-08
@@ -19,11 +22,15 @@ pursue:
   incident_date: 8/31/20
   incident_location: Arabian Gulf
   redaction: "TRUE"
-  file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d42-range-fouler-debrief-japan-2023.pdf
-  thumbnail: https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d42-range-fouler-debrief-japan-2023.jpg
+  file: https://www.war.gov/medialink/ufo/release_1/DOW-UAP-D042-Range-Fouler-Debrief-Arabian-Gulf-2023.pdf
+  thumbnail: https://www.war.gov/medialink/ufo/release_1/thumbnail/DOW-UAP-D042-Range-Fouler-Debrief-Arabian-Gulf-2023.jpg
+  paired:
+    - DOW-UAP-PR039
+    - DOW-UAP-PR088
+    - DOW-UAP-PR089
 links:
   - label: Official file (PDF) — war.gov
-    url: https://www.war.gov/medialink/ufo/release_1/dow-uap-d42-range-fouler-debrief-japan-2023.pdf
+    url: https://www.war.gov/medialink/ufo/release_1/DOW-UAP-D042-Range-Fouler-Debrief-Arabian-Gulf-2023.pdf
 ---
 
 **Official PURSUE description** (Department of War / AARO, release 01):

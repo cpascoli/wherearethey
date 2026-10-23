@@ -2,6 +2,7 @@
 rel:
   - [ released in, ev-pursue-release-01 ]
   - [ released by, department-of-war ]
+  - [ paired with, dow-uap-pr040 ]
 tags:
   - pursue
 name: DOW-UAP-D044 — Range Fouler Reporting Form, Gulf of Aden, October 2020
@@ -19,6 +20,8 @@ pursue:
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d44-range-fouler-arabian-sea-october-2020.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d44-range-fouler-arabian-sea-october-2020.jpg
+  paired:
+    - DOW-UAP-PR040
 links:
   - label: Official file (PDF) — war.gov
     url: https://www.war.gov/medialink/ufo/release_1/dow-uap-d44-range-fouler-arabian-sea-october-2020.pdf

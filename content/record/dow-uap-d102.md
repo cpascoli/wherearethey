@@ -22,7 +22,6 @@ pursue:
   format: pdf
   incident_date: 7/2/52
   incident_location: Tremonton, Utah
-  featured: true
   file: https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D102_Project-Blue-Book-File-on-Tremonton-Film-Utah-1952.pdf
   thumbnail: https://www.war.gov/medialink/ufo/sept-18/release-06/thumbs/DOW-UAP-D102_Project-Blue-Book-File-on-Tremonton-Film-Utah-1952.jpg
   paired:

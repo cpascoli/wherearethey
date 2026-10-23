@@ -2,6 +2,9 @@
 rel:
   - [ released in, ev-pursue-release-01 ]
   - [ released by, department-of-war ]
+  - [ paired with, dow-uap-pr088 ]
+  - [ paired with, dow-uap-pr089 ]
+  - [ paired with, dow-uap-d042 ]
 tags:
   - pursue
 name: DOW-UAP-PR039 — Unresolved UAP Report, Middle East, 2020
@@ -17,6 +20,10 @@ pursue:
   incident_location: Arabian Gulf
   redaction: "TRUE"
   dvids: https://www.dvidshub.net/video/1006089
+  paired:
+    - DOW-UAP-PR088
+    - DOW-UAP-PR089
+    - DOW-UAP-D042
 links:
   - label: Video on DVIDS
     url: https://www.dvidshub.net/video/1006089

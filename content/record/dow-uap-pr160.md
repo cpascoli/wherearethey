@@ -17,7 +17,6 @@ pursue:
   format: aud
   incident_date: 3/26/52
   incident_location: Boston, Massachusetts
-  featured: true
   dvids: https://www.dvidshub.net/video/1023407
 links:
   - label: Video on DVIDS

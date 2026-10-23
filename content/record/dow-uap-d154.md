@@ -18,7 +18,6 @@ pursue:
   format: pdf
   incident_date: 3/26/52
   incident_location: Boston, Massachusetts
-  featured: true
   file: https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D154_Transcript-of-a-Presentation-by-Captain-Edward-J-Ruppelt-1952.pdf
   thumbnail: https://www.war.gov/medialink/ufo/sept-18/release-06/thumbs/DOW-UAP-D154_Transcript-of-a-Presentation-by-Captain-Edward-J-Ruppelt-1952.jpg
   paired:

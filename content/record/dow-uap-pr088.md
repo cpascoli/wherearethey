@@ -2,6 +2,9 @@
 rel:
   - [ released in, ev-pursue-release-02 ]
   - [ released by, department-of-war ]
+  - [ paired with, dow-uap-pr039 ]
+  - [ paired with, dow-uap-pr089 ]
+  - [ paired with, dow-uap-d042 ]
 tags:
   - pursue
 name: DOW-UAP-PR088 — 31 AUG [CALLSIGN] [CALLSIGN] Observes UAP
@@ -18,6 +21,10 @@ pursue:
   incident_location: CENTCOM
   redaction: "TRUE"
   dvids: https://www.dvidshub.net/video/1007800
+  paired:
+    - DOW-UAP-PR039
+    - DOW-UAP-PR089
+    - DOW-UAP-D042
 links:
   - label: Video on DVIDS
     url: https://www.dvidshub.net/video/1007800

@@ -358,5 +358,45 @@
   "lat": 23.6585,
   "lng": -102.0077,
   "resolved": "México"
+ },
+ "Saudi Arabia": {
+  "lat": 25.6243,
+  "lng": 42.3528,
+  "resolved": "السعودية"
+ },
+ "Catalina Island, California": {
+  "lat": 33.3889,
+  "lng": -118.4239,
+  "resolved": "Santa Catalina Island, Avalon, Los Angeles County, California, 90704, United States"
+ },
+ "Guam": {
+  "lat": 13.45,
+  "lng": 144.7652,
+  "resolved": "Guam, United States"
+ },
+ "Italy": {
+  "lat": 42.6384,
+  "lng": 12.6743,
+  "resolved": "Italia"
+ },
+ "Canada": {
+  "lat": 61.0667,
+  "lng": -107.9917,
+  "resolved": "Canada"
+ },
+ "Morocco": {
+  "lat": 28.3348,
+  "lng": -10.3713,
+  "resolved": "Maroc ⵍⵎⵖⵔⵉⴱ المغرب"
+ },
+ "Alaska": {
+  "lat": 64.446,
+  "lng": -149.6809,
+  "resolved": "Alaska, United States"
+ },
+ "San Fransisco, California": {
+  "lat": 37.8089,
+  "lng": -122.4772,
+  "resolved": "San Fransisco Approach, Golden Gate Bridge, San Francisco, California, 24129, United States"
  }
 }

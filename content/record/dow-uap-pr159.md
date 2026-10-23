@@ -22,7 +22,6 @@ pursue:
   format: vid
   incident_date: 7/2/52
   incident_location: Tremonton, Utah
-  featured: true
   dvids: https://www.dvidshub.net/video/1023402
   paired:
     - DOW-UAP-D098
