@@ -1164,7 +1164,9 @@
     h.push(`<div class="p-kicker"><span class="badge type" style="background:${t.color}">${t.label}</span>${e.cred ? `<span class="badge ${e.cred}" title="${esc(CRED[e.cred].hint)}">${CRED[e.cred].label}</span>` : ''}${e.outcome && e.outcome !== 'open' ? `<span class="badge outcome-${e.outcome}" title="${esc(OUTCOME[e.outcome].hint)}">${OUTCOME[e.outcome].label}</span>` : ''}</div>`);
     if (e.outcome && e.outcome !== 'open' && e.outcomeNote) h.push(`<div class="p-outcome outcome-${e.outcome}"><b>${OUTCOME[e.outcome].label}.</b> ${esc(e.outcomeNote)}${e.outcomeSource ? ` <span class="src">${e.outcomeSource.id ? chip(e.outcomeSource.id) : e.outcomeSource.url ? `<a href="${esc(e.outcomeSource.url)}" target="_blank" rel="noopener">source ↗</a>` : ''}</span>` : ''}</div>`);
     h.push(`<h2 class="p-title">${esc(e.name)}</h2>`);
-    if (!offGraph(e.type) && !(state.trail && state.view === 'graph')) h.push(`<button class="btn small p-explore" data-explore="${esc(e.id)}" title="Show only this file and its connections, then follow a trail">◎ Explore from here</button>`);
+    // credentials right under the name: on this archive they are the headline fact (they decide the source badge)
+    if (e.credentials?.length) h.push(`<ul class="cred-list p-creds">${e.credentials.map(c => `<li><span class="cred-cat">${esc(CRED_CAT[c.category] || c.category)}</span><span>${esc(c.role)}</span></li>`).join('')}</ul>`);
+    if (!offGraph(e.type) && !(state.trail && !state.trail.core && state.view === 'graph')) h.push(`<button class="btn small p-explore" data-explore="${esc(e.id)}" title="Show only this file and its connections, then follow a trail">◎ Explore from here</button>`);
     if (e.aka.length) h.push(`<div class="p-aka">Also: ${e.aka.map(esc).join(' · ')}</div>`);
     if (e.type === 'film' || e.type === 'book') h.push(`<div class="p-meta">${esc([e.credits, shelfMeta(e), e.isbn ? `ISBN ${e.isbn}` : ''].filter(Boolean).join(' · '))}</div>`);
     if (e.cover) h.push(`<img class="p-cover" src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" loading="lazy">`);
@@ -1213,9 +1215,6 @@
         <dl class="rec-meta"><dt>Agency</dt><dd>${esc(pu.agency || '—')}</dd><dt>Released</dt><dd>${esc(fmtD(pu.released))} · Release ${String(pu.release).padStart(2, '0')}</dd>
         <dt>Incident</dt><dd>${esc([pu.incident_date, pu.incident_location].filter(Boolean).join(' · ') || '—')}</dd><dt>Format</dt><dd>${esc((pu.format || '').toUpperCase())}${pu.redaction ? ' · redacted' : ''}</dd></dl>
         <div class="rec-actions">${pu.file ? `<a class="btn small" href="${esc(pu.file)}" target="_blank" rel="noopener">Official file ↗</a>` : ''}${local ? `<a class="btn small primary" href="${esc(fileUrl(local))}" target="_blank">Local copy</a>` : ''}${pu.dvids ? `<a class="btn small" href="${esc(pu.dvids)}" target="_blank" rel="noopener">DVIDS video ↗</a>` : ''}</div></div>`);
-    }
-    if (e.credentials?.length) {
-      h.push(`<div class="p-sec"><h4>Credentials</h4><ul class="cred-list">${e.credentials.map(c => `<li><span class="cred-cat">${esc(CRED_CAT[c.category] || c.category)}</span><span>${esc(c.role)}</span></li>`).join('')}</ul></div>`);
     }
     if (e.links.length || e.files.length) {
       const amzP = e.type === 'book' && amazonLink(e.isbn);

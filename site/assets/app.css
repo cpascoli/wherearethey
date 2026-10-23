@@ -262,6 +262,8 @@ mark { background: rgba(227, 179, 65, .4); color: inherit; border-radius: 3px; p
 .badge.outside { color: var(--outside); border-color: currentColor; background: transparent; }
 .p-title { font-size: 22px; font-weight: 700; letter-spacing: -.02em; line-height: 1.25; margin: 0 0 4px; }
 .p-aka { color: var(--muted); font-size: 12.5px; margin-bottom: 6px; }
+.p-creds { margin: 2px 0 8px; font-size: 14px; }
+#panel-body.reading .p-creds { font-size: 15px; }
 .p-meta { color: var(--muted); font-size: 13px; display: flex; flex-direction: column; gap: 2px; margin: 6px 0 4px; }
 .p-sec { margin-top: 20px; }
 .p-sec h4 { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 8px; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
