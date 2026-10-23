@@ -10,6 +10,7 @@ outcome_note: "The wing history says UFO rumours around Echo Flight were \"dispr
 outcome_source: doc-341smw-history-1967
 rel:
   - [ witness, bob-salas ]
+  - [ related to, uap-disinformation ]
 facts:
   - text: "The 341st Strategic Missile Wing history records that on 16 March 1967 at 0845 all ten launch facilities of Echo Flight lost strategic alert nearly simultaneously, and that \"Rumors of Unidentified Flying Objects (UFO) around the area of Echo Flight during the time of fault were disproven\": a mobile strike team that had checked November Flight's launch facilities that morning reported no unusual activity or sightings, and the base radar squadron reported no related radar or atmospheric interference. The history also records that commercial power switching was ruled out as the cause."
     status: documented
@@ -25,6 +26,9 @@ facts:
     status: claimed
     by: bob-salas
     source: v-disclosure-project-2001-npc@44:49
+  - text: "The Wall Street Journal reported in 2025 that AARO's investigators traced the shutdowns to a secret Air Force electromagnetic-pulse generator, placed on a platform above the facility, that could glow orange and was used to test whether the missiles would survive a nuclear blast; the launch crews were not told. AARO has not published this finding. Salas, interviewed by the Journal, maintains there is “a gigantic coverup”."
+    status: claimed
+    source: 2025-06-06-wsj-pentagon-ufo-disinformation
 ---
 
 In March 1967, two flights of Minuteman nuclear missiles at Malmstrom Air Force Base, Montana, went into a "no-go" (unlaunchable) condition. On 16 March all ten missiles of Echo Flight shut down. Former Air Force officer Robert Salas says that at Oscar Flight, where he was deputy crew commander, above-ground security guards reported a glowing reddish-orange oval object about 30 feet across hovering over the launch facility gate, and that six to eight of his ten missiles then dropped offline one after another.
