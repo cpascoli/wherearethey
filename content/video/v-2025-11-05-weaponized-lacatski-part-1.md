@@ -11,6 +11,7 @@ rel:
   - [ about, kona-blue ]
   - [ about, book-inside-covert-ufo-program ]
   - [ about, book-skinwalkers-at-the-pentagon ]
+  - [ about, book-covert-ufo-new-insights ]
 moments:
   - t: "1:58"
     text: "Lacatski's prepared statement: he was “the creator and DIA program manager” of AAWSAP and of the follow-on KONA BLUE program, “Both classified programs, regardless of what the Internet has said in the past.”"
@@ -19,7 +20,7 @@ moments:
   - t: "3:17"
     text: "Lacatski: everything he is approved to say is in four books of about 1,200 pages, which “factually detail the results” of the program's day-to-day activities, “assembled only from official government files at DIA and approved for release”."
     speaker: james-lacatski
-    refs: [ book-skinwalkers-at-the-pentagon, book-inside-covert-ufo-program ]
+    refs: [ book-skinwalkers-at-the-pentagon, book-inside-covert-ufo-program, book-covert-ufo-new-insights, book-covert-ufo-future-visions ]
   - t: "8:50"
     text: "Lacatski: “Deliberately false, not just incorrect documents have been created about OSAP and Kona Blue and are currently in government files”; he says he reported some of them to the Inspector General."
     speaker: james-lacatski
