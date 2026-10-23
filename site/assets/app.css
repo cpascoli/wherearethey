@@ -804,10 +804,10 @@ body.no-side #btn-side { display: none; }
 .lt-cats { flex-wrap: wrap; margin-bottom: 18px; }
 .lt-cats button span { opacity: .6; font-size: 11px; margin-left: 3px; }
 .lt-list { display: grid; gap: 12px; }
-.lt-card { display: grid; grid-template-columns: 220px 1fr; gap: 16px; padding: 14px; border: 1px solid var(--border); border-left: 3px solid var(--c); border-radius: 6px; background: var(--panel); }
+.lt-card { display: grid; grid-template-columns: 1fr 220px; gap: 16px; padding: 14px; border: 1px solid var(--border); border-left: 3px solid var(--c); border-radius: 6px; background: var(--panel); }
 .lt-card:not(:has(.lt-thumb)) { grid-template-columns: 1fr; }
 .lt-card.is-new { box-shadow: 0 0 0 1px color-mix(in srgb, var(--claimed) 45%, transparent); }
-.lt-thumb { position: relative; cursor: pointer; align-self: start; border-radius: 4px; overflow: hidden; aspect-ratio: 16 / 9; background: #000; }
+.lt-thumb { order: 2; position: relative; cursor: pointer; align-self: start; /* image on the right: every card's date and headline start on the same line */ border-radius: 4px; overflow: hidden; aspect-ratio: 16 / 9; background: #000; }
 .lt-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .lt-thumb .wplay { position: absolute; inset: 0; display: grid; place-items: center; font-size: 26px; color: #fff; text-shadow: 0 1px 8px #000; }
 .lt-thumb .wdur { position: absolute; right: 6px; bottom: 6px; font-family: var(--mono); font-size: 11px; background: rgba(0,0,0,.75); color: #fff; padding: 1px 5px; border-radius: 3px; }
@@ -869,9 +869,9 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
 .panel-tools { gap: 6px; }
 .lt-tag.feat { color: var(--accent); }
 .lt-card.is-featured { border-color: color-mix(in srgb, var(--accent) 35%, var(--border)); background: color-mix(in srgb, var(--accent) 5%, var(--panel)); }
-.lt-card:has(.lt-cover) { grid-template-columns: 120px 1fr; }
+.lt-card:has(.lt-cover) { grid-template-columns: 1fr 120px; }
 .lt-thumb.lt-cover { aspect-ratio: auto; background: none; cursor: pointer; }
 .lt-thumb.lt-cover img { height: auto; object-fit: contain; box-shadow: 0 4px 14px rgba(0,0,0,.35); }
-@media (max-width: 860px) { .lt-card:has(.lt-cover) { grid-template-columns: 90px 1fr; } }
+@media (max-width: 860px) { .lt-card:has(.lt-cover) { grid-template-columns: 1fr 90px; } .lt-thumb:not(.lt-cover) { order: 0; } } /* phones: one column, so text is aligned anyway: videos on top, covers small on the right */
 
 .panel-tools .icon-btn svg { display: block; margin: auto; }
