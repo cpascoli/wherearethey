@@ -70,6 +70,7 @@
     'statement about': 'statements by', discusses: 'discussed in', 'speaks in': 'speakers', mentions: 'mentioned in',
     'hosted by': 'hosted', 'sponsored by': 'sponsored', 'moderated by': 'moderated',
   };
+  const WEAK_LINKS = new Set(['statement about', 'statements by', 'related to', 'discusses', 'discussed in', 'speaks in', 'speakers', 'mentions', 'mentioned in']);
 
   // ───────────── index ─────────────
   const ents = KB.entities;
@@ -1250,16 +1251,20 @@
         return `<li><a href="${hrefOf(r.id)}" data-goto="${esc(r.id)}">${esc(r.name)}</a><div class="small muted">${esc([pu.agency, pu.released && `released ${fmtD(pu.released)}`].filter(Boolean).join(' · '))}${pu.file ? ` · <a href="${esc(pu.file)}" target="_blank" rel="noopener">official file ↗</a>` : ''}</div></li>`;
       }).join('')}</ul></div>`);
     }
-    // connections
-    const groups = new Map();
+    // connections; a file listed under a specific link ("authored", "worked at"…) is not repeated under a generic one
+    // ("statement about", "related to"…): those come from quotes and loose ties, and would list it twice
+    const groups = new Map(), strong = new Set();
     for (const x of adj.get(e.id)) {
       if (x.kind === 'mention' || offGraph(byId.get(x.other)?.type)) continue;
       const label = x.dir === 'out' ? x.label : (INVERSE[x.label] || x.label);
       if (!groups.has(label)) groups.set(label, new Set());
       groups.get(label).add(x.other);
+      if (!WEAK_LINKS.has(label)) strong.add(x.other);
     }
+    const placed = new Set(strong); // …and among generic links, under the first one only
+    for (const [label, ids] of groups) if (WEAK_LINKS.has(label)) { for (const id of ids) if (placed.has(id)) ids.delete(id); else placed.add(id); if (!ids.size) groups.delete(label); }
     if (groups.size) {
-      const nConn = [...groups.values()].reduce((a, ids) => a + ids.size, 0);
+      const nConn = new Set([...groups.values()].flatMap(ids => [...ids])).size;
       h.push(`<div class="p-sec p-side" id="sec-connections"><h4>Connections <span>${nConn}</span></h4>${[...groups].map(([label, ids]) => `<div class="conn-group"><div class="lbl">${esc(label)}</div><div class="chips" data-collapse="10">${[...ids].map(id => chip(id)).join('')}</div></div>`).join('')}</div>`);
     }
     // transcript mentions
