@@ -413,7 +413,7 @@
     $('#view-graph').insertAdjacentHTML('beforeend', '<div class="graph-hud" id="hud"></div>');
     $('#legend').innerHTML = graphTypes.map(t => `<span><i style="background:${TYPES[t].color}"></i>${TYPES[t].plural}</span>`).join('');
     applyGraphFilter();
-    layoutGraph(false);
+    layoutGraph(false, { instant: true }); // first draw: framed in place, not flown in
   }
   function applyGraphFilter() {
     if (!cy) return;
@@ -460,11 +460,11 @@
     const prev = new Set(before.map(n => n.id()));
     applyGraphFilter();
     highlight(state.sel);
-    if (relayout) { clearTimeout(layoutTimer); layoutTimer = setTimeout(() => layoutGraph(true), 60); return; }
+    if (relayout) { clearTimeout(layoutTimer); layoutTimer = setTimeout(() => layoutGraph(false, { instant: true }), 60); return; }
     const fresh = cy.nodes().not('.hidden').filter(n => !prev.has(n.id()));
     if (!fresh.length) return; // only removals: nothing moves
     const anchor = anchorId ? cy.getElementById(anchorId) : null;
-    if (!state.trail || prev.size === 0) { clearTimeout(layoutTimer); layoutTimer = setTimeout(() => layoutGraph(true), 60); return; }
+    if (!state.trail || prev.size === 0) { clearTimeout(layoutTimer); layoutTimer = setTimeout(() => layoutGraph(prev.size > 0, { instant: prev.size === 0 }), 60); return; }
     let head = anchor?.length && prev.has(anchorId) ? anchor : null;
     if (!head) {
       // a file pinned from search: put it in the free space at the edge of what's on screen, then settle
@@ -566,7 +566,7 @@
     state.trail = coreTrail();
     applyGraphFilter();
     highlight(state.sel);
-    clearTimeout(layoutTimer); layoutTimer = setTimeout(() => layoutGraph(true), 60);
+    clearTimeout(layoutTimer); layoutTimer = setTimeout(() => layoutGraph(false, { instant: true }), 60);
   }
   function showFull() {
     state.full = true;
@@ -716,11 +716,12 @@
   // (an animated layout can still be moving the nodes when it reports done: tidy up once they have stopped)
   const whenStill = fn => cy.nodes().some(n => n.animated()) ? setTimeout(() => whenStill(fn), 60) : fn();
   const reframeSel = () => {
-    if (state.view !== 'graph') return;
+    if (state.view !== 'graph') { if (instantFrame) { instantFrame = false; fadeIn(); } return; }
     whenStill(() => {
       if (state.trail?.core) { pullInCore(); orientCore(); } else if (state.trail) pullOutliers();
-      if (state.trail) setTimeout(() => frameEles(cy.nodes().not('.hidden'), true), 50);
-      else if (state.sel) setTimeout(() => frameHood(cy.getElementById(state.sel)), 50);
+      const instant = instantFrame; instantFrame = false;
+      if (state.trail) setTimeout(() => { frameEles(cy.nodes().not('.hidden'), true, instant); if (instant) fadeIn(); }, instant ? 0 : 50);
+      else { if (state.sel) setTimeout(() => frameHood(cy.getElementById(state.sel)), 50); if (instant) fadeIn(); }
     });
   };
   // files with no link among the key files (PURSUE, Rendlesham…) would float far off: set each loose group just
@@ -760,9 +761,14 @@
     const cx = (bb.x1 + bb.x2) / 2, cyy = (bb.y1 + bb.y2) / 2;
     cy.batch(() => nodes.forEach(n => { const p = n.position(); n.position({ x: cx + (p.y - cyy), y: cyy - (p.x - cx) }); }));
   }
-  function layoutGraph(animate, { fresh = false } = {}) {
+  // instant: a fresh map (the key files, a new trail) is laid out in one go, framed without moving the camera, and
+  // faded in, instead of flying in from wherever its raw coordinates fall before it is framed
+  let instantFrame = false;
+  const fadeIn = () => { const c = cy.container(); requestAnimationFrame(() => { c.style.transition = 'opacity .25s ease'; c.style.opacity = 1; }); };
+  function layoutGraph(animate, { fresh = false, instant = false } = {}) {
     if (!cy) return;
     cy.resize(); // the side panel may have just opened or closed
+    if (instant) { instantFrame = true; const c = cy.container(); c.style.transition = 'none'; c.style.opacity = 0; }
     const eles = cy.elements().not('.hidden');
     const preset = !fresh && presetFor(eles);
     if (preset) {
@@ -791,7 +797,7 @@
     if (!cy || n.removed() || n.hasClass('hidden')) return;
     frameEles(n.closedNeighborhood().nodes().not('.hidden'));
   }
-  function frameEles(hood, always = false) {
+  function frameEles(hood, always = false, instant = false) {
     if (!cy || !hood.length) return;
     const { w, h } = viewArea();
     const rb = hood.renderedBoundingBox(), m = 24, bb = hood.boundingBox(), pad = 40;
@@ -803,7 +809,8 @@
     const z = Math.min(1.4, Math.max(state.trail ? 0.45 : 0.3, Math.min((w - 2 * pad) / Math.max(bb.w, 1), ah / Math.max(bb.h, 1))));
     // leave it alone when it's in view and big enough to read
     if (!always && rb.x1 >= m && rb.x2 <= w - m && rb.y1 >= top && rb.y2 <= h - bottom && cy.zoom() >= z * 0.6) return;
-    cy.animate({ zoom: z, pan: { x: w / 2 - z * (bb.x1 + bb.x2) / 2, y: top + ah / 2 - z * (bb.y1 + bb.y2) / 2 } }, { duration: 450 });
+    const view = { zoom: z, pan: { x: w / 2 - z * (bb.x1 + bb.x2) / 2, y: top + ah / 2 - z * (bb.y1 + bb.y2) / 2 } };
+    if (instant) cy.viewport(view); else cy.animate(view, { duration: 450 });
   }
   let noFrame = false; // set while handling a click on a node in the graph
   function highlight(id, hover = false) {
