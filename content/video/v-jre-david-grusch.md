@@ -1,4 +1,5 @@
 ---
+top_pick: 8
 name: "Joe Rogan Experience #2065 - David Grusch"
 youtube: R8TqBrrqL4U
 rel:
