@@ -4,6 +4,8 @@ aka:
   - triangular UAP 2026
   - western U.S. triangle
 date: 2026-06
+image: /assets/images/pursue-07-triangle.jpg
+image_caption: "From the FBI's file: the triangle drawn onto a photograph of the site, in its hover position above the ridge (FBI-UAP-D043, page 7). An illustration, not a photograph of the object."
 place: { name: "Sensitive national security site, western United States (location withheld)", lat: 38.8, lng: -116.2 }
 tags:
   - intelligence

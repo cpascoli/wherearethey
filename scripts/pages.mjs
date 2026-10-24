@@ -7,6 +7,7 @@ import { ROOT } from './lib.mjs';
 import { pageDates } from './lastmod.mjs';
 import { INVERSE } from './relations.mjs';
 
+const DEFAULT_IMAGE = '/assets/images/share-default.jpg';
 export const SITE_URL = (process.env.SITE_URL || 'https://wherearethey.info').replace(/\/$/, '');
 
 // URL segment per type (singular, readable); records get pages but stay out of search results
@@ -281,7 +282,8 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       `<link rel="canonical" href="${esc(url)}">`,
       p.noindex ? '<meta name="robots" content="noindex, follow">' : '',
       `<meta property="og:site_name" content="Where Are They"><meta property="og:title" content="${esc(p.title)}"><meta property="og:description" content="${esc(p.description)}"><meta property="og:url" content="${esc(url)}"><meta property="og:type" content="${p.type || 'website'}">`,
-      p.image ? `<meta property="og:image" content="${esc(p.image)}"><meta name="twitter:card" content="summary_large_image">` : '<meta name="twitter:card" content="summary">',
+      // pages without a picture of their own share the site card, so link previews never show a blank square
+      `<meta property="og:image" content="${esc(p.image || SITE_URL + DEFAULT_IMAGE)}"><meta name="twitter:card" content="summary_large_image">`,
       p.jsonld ? `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': [].concat(p.jsonld) }).replace(/</g, '\\u003c')}</script>` : '',
     ].filter(Boolean).join('\n  ');
     return template
