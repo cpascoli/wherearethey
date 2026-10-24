@@ -27,6 +27,9 @@ facts:
     status: claimed
     source: v-lex-fridman-garry-nolan-2022@12:28
   - text: Harvard psychiatrist John Mack interviewed the children later that year.
+    said: 1994-11
+    claims: [ ariel-school-landing ]
+    stance: context
     status: claimed
     by: john-mack
     source: v-nickerson-ariel-phenomenon-podcast@1:28
@@ -34,6 +37,9 @@ facts:
     status: claimed
     source: https://en.wikipedia.org/wiki/Ariel_School_UFO_incident
   - text: Skeptical explanations include mass suggestion and cross-contamination from group interviews, misidentification (a dust devil, or a touring puppet show), and a former pupil's 2023 claim that he started the story, which contradicts his own 2008 account.
+    claims: [ ariel-school-landing ]
+    stance: disputes
+    basis: opinion
     status: claimed
     source: https://en.wikipedia.org/wiki/Ariel_School_UFO_incident
 ---

@@ -8,6 +8,8 @@ rel:
   - [ features, george-knapp ]
 moments:
   - t: "1:18"
+    claims: [ government-ufo-disinformation ]
+    basis: first-hand
     text: "Knapp: “There is disinformation. There are cover stories.” Doty agrees there is also a real phenomenon “that I think can be dangerous to the United States”, citing interference with classified projects, fighters and nuclear-armed B-52s."
     speaker: richard-doty
   - t: "2:15"

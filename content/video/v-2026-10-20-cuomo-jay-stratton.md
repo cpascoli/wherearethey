@@ -26,6 +26,7 @@ moments:
     text: "He says that in earlier on-the-ground investigations he encountered other beings with “two legs, two arms, but much larger, basically seven to eight feet”."
     speaker: jay-stratton
   - t: "5:32"
+    claims: [ programs-hidden-from-congress ]
     text: "On the Legacy Program: “comprised of CIA, the Air Force, the Department of Energy, and the defense contractor community”, keeping “this 80-year secret from not only Congress, but the president”, in a race to reverse-engineer craft of non-human origin: “the country that wins that race is the superpower for the next 100 years.”"
     speaker: jay-stratton
     refs: [ legacy-program, cia ]

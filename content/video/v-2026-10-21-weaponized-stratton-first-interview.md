@@ -21,6 +21,8 @@ moments:
     speaker: jay-stratton
     refs: [ inc-roosevelt-2015, ryan-graves ]
   - t: "20:42"
+    claims: [ gimbal-gofast-not-conventional ]
+    basis: first-hand
     text: "\"I'm the guy who told the press that these are unidentified\", because \"we got to be honest with American people\"."
     speaker: jay-stratton
     refs: [ inc-roosevelt-2015 ]

@@ -47,6 +47,8 @@ facts:
     by: david-grusch
     source: doc-transcript-2023-07-26
   - text: "Asked under oath whether the government has the bodies of the pilots of crashed craft, he said “biologics came with some of these recoveries”, and that they were “Nonhuman, and that was the assessment of people with direct knowledge on the program I talked to”. Asked separately by Rep. Burlison whether he had seen the bodies himself: “That is something I have not witnessed myself.”"
+    claims: [ recovered-non-human-bodies ]
+    basis: relayed
     status: claimed
     by: david-grusch
     source: v-2023-07-26-hearing-a@1:49:13

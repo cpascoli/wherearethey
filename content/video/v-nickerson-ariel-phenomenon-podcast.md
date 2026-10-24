@@ -8,6 +8,8 @@ rel:
   - [ about, inc-ariel-1994 ]
 moments:
   - t: "8:34"
+    claims: [ ariel-school-landing ]
+    basis: opinion
     text: "Nickerson: no one has ever come forward to say it was something else, and the children were plainly telling the truth."
     speaker: randall-nickerson
     refs: [ inc-ariel-1994 ]

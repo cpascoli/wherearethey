@@ -12,6 +12,8 @@ rel:
   - [ about, inc-rendlesham-1980 ]
 moments:
   - t: "6:40"
+    claims: [ rendlesham-craft-landed ]
+    basis: relayed
     text: "Pope: the Ministry of Defence's Defence Intelligence Staff assessed the radiation readings at the landing site as “significantly higher than the average background.”"
     speaker: nick-pope
     refs: [ inc-rendlesham-1980, doc-halt-memo ]
@@ -28,6 +30,8 @@ moments:
     speaker: nick-pope
     refs: [ inc-rendlesham-1980, charles-halt ]
   - t: "12:30"
+    claims: [ rendlesham-craft-landed ]
+    basis: opinion
     text: "Pope says his cold-case review examined misidentification, hoax and delusion theories and that “none of these theories fitted the facts.”"
     speaker: nick-pope
     refs: [ inc-rendlesham-1980 ]
@@ -53,10 +57,14 @@ moments:
     speaker: nick-pope
     refs: [ project-blue-book ]
   - t: "39:10"
+    claims: [ uap-injuries ]
+    basis: first-hand
     text: "Penniston says he had trouble walking within three weeks, but answered “no” when the base hospital asked about radiation exposure because he was under orders to keep the incident top secret."
     speaker: jim-penniston
     refs: [ inc-rendlesham-1980 ]
   - t: "43:00"
+    claims: [ rendlesham-craft-landed, uap-injuries ]
+    basis: first-hand
     text: "Burroughs: shortly after the incident his gums turned white, and months later a doctor found a heart murmur, though his Air Force entry physical had been clean."
     speaker: john-burroughs
     refs: [ inc-rendlesham-1980 ]
@@ -68,6 +76,8 @@ moments:
     speaker: jim-penniston
     refs: [ inc-rendlesham-1980 ]
   - t: "1:06:30"
+    claims: [ rendlesham-craft-landed ]
+    basis: first-hand
     text: "Penniston says the craft hovered about two feet off the ground with no landing gear, did not move when pushed, and felt like smooth metal, warmer than the freezing air."
     speaker: jim-penniston
     refs: [ inc-rendlesham-1980 ]
@@ -84,6 +94,8 @@ moments:
     speaker: jim-penniston
     refs: [ inc-rendlesham-1980 ]
   - t: "1:35:45"
+    claims: [ rendlesham-craft-landed ]
+    stance: context
     text: "Bartlett questions the radiation evidence: residual radiation the next day would require something left behind. Pope cites three triangular indentations and scorched trees noted by the disaster preparedness officer."
     refs: [ nick-pope, inc-rendlesham-1980 ]
   - t: "1:40:20"

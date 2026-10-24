@@ -18,15 +18,28 @@ links:
     url: https://www.nsa.gov/Press-Room/Digital-Media-Center/Document-Gallery/igphoto/2002761364/
 facts:
   - text: After calls from Tehran residents reporting a bright object, the Imperial Iranian Air Force scrambled two F-4 Phantom II jets from Shahrokhi Air Base. The first lost instrumentation and UHF/intercom communications as it closed on the object; the systems returned once it turned away.
+    said: 1976-09
+    claims: [ tehran-1976-object ]
+    basis: documented
     status: documented
     source: library/docs/doc-dia-tehran-1976.pdf
   - text: The second F-4 tracked the object on radar. As the pilot prepared to fire an AIM-9 missile, his weapons control panel and communications went dead. Smaller objects appeared to separate from the main object.
+    said: 1976-09
+    claims: [ tehran-1976-object ]
+    basis: documented
     status: documented
     source: library/docs/doc-dia-tehran-1976.pdf
   - text: The report was sent through U.S. defense attaché channels and circulated by the DIA, the National Security Council, the White House and the CIA. The DIA evaluator called it an outstanding case that met all criteria for a valid study of the UFO phenomenon.
+    said: 1976-09
+    claims: [ tehran-1976-object ]
+    stance: context
+    basis: documented
     status: documented
     source: library/docs/doc-dia-tehran-1976.pdf
   - text: Skeptic Philip Klass argued the object was the planet Jupiter and that the aircraft problems were ordinary equipment failures.
+    claims: [ tehran-1976-object ]
+    stance: disputes
+    basis: opinion
     status: claimed
     source: https://en.wikipedia.org/wiki/1976_Tehran_UFO_incident
 ---

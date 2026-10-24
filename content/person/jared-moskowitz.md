@@ -23,6 +23,8 @@ facts:
     by: jared-moskowitz
     source: doc-transcript-2024-11-13
   - text: "On Luis Elizondo's non-disclosure document barring him from discussing crash retrieval, he remarked: “you cannot talk about fight club if there is no fight club.”"
+    claims: [ programs-hidden-from-congress ]
+    basis: opinion
     status: documented
     by: jared-moskowitz
     source: doc-transcript-2024-11-13

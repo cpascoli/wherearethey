@@ -19,6 +19,9 @@ facts:
     status: documented
     source: library/docs/doc-af-roswell-case-closed-1997.pdf
   - text: "It attributes claims of \"alien bodies\" at the Roswell Army Air Field hospital most likely to a combination of a 1956 KC-97 aircraft accident in which 11 Air Force members died and a 1959 manned balloon mishap in which two Air Force pilots were injured."
+    claims: [ recovered-non-human-bodies ]
+    stance: disputes
+    basis: documented
     status: documented
     source: library/docs/doc-af-roswell-case-closed-1997.pdf
 ---

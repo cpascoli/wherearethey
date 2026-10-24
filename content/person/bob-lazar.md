@@ -15,12 +15,14 @@ rel:
   - [ assessed by, hal-puthoff, "Puthoff found Lazar's apparent clearance too low for his story but cannot rule it out" ]
 facts:
   - text: "Went public in 1989 through interviews with George Knapp (KLAS-TV), saying he reverse-engineered alien craft propulsion at S-4."
-    claims: [ recovered-non-human-craft ]
+    claims: [ recovered-non-human-craft, area-51-alien-craft ]
     basis: first-hand
     status: claimed
     by: bob-lazar
     source: v-bob-lazar-1989-knapp
   - text: "First appearing in shadow as “Dennis”, he said there were nine flying discs at S-4, a few miles south of Groom Lake, and described being walked past the disc he called the “sport model” in a hangar before seeing nine craft in connected hangars."
+    claims: [ area-51-alien-craft ]
+    basis: first-hand
     status: claimed
     by: bob-lazar
     source: v-bob-lazar-1989-knapp@4:38
@@ -33,6 +35,9 @@ facts:
     by: george-knapp
     source: v-bob-lazar-1989-knapp@5:40
   - text: "The same report described mixed polygraph results: the first examiner's tests were inconclusive, a second and third examiner found no attempt to deceive, and a fourth suggested Lazar might be relating information learned from someone else; no final statement was issued."
+    claims: [ area-51-alien-craft ]
+    stance: context
+    claim_by: george-knapp
     status: claimed
     by: george-knapp
     source: v-bob-lazar-1989-knapp@10:09

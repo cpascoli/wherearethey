@@ -17,6 +17,9 @@ moments:
     text: "Doty says Bennewitz had tapped into national security programs but also something else; signals in “high gigahertz” ranges that he says the U.S. did not have in the 1980s, “so it had to come from an ET source”."
     speaker: richard-doty
   - t: "1:32"
+    claims: [ area-51-alien-craft ]
+    stance: context
+    basis: first-hand
     text: "He says he served twice at Area 51 as an Air Force counterintelligence officer, and that classified satellite programs photographed unknown craft in space."
     speaker: richard-doty
     refs: [ area-51 ]

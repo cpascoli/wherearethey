@@ -23,6 +23,8 @@ rel:
   - [ example, inc-malmstrom-1967, "The WSJ reported AARO traced the shutdowns to a secret EMP test the launch crews were not told about" ]
 facts:
   - text: "The CIA's own 1997 history says that over half of all UFO reports from the late 1950s through the 1960s were U-2 and other manned reconnaissance flights, and that “this led the Air Force to make misleading and deceptive statements to the public in order to allay public fears and to protect an extraordinarily sensitive national security project.”"
+    claims: [ government-ufo-disinformation ]
+    basis: documented
     status: documented
     source: doc-cia-haines-1997
   - text: "In 1953 the CIA-convened Robertson Panel recommended a public education and “debunking” effort, through mass media such as television, films and popular articles, to reduce public interest in UFOs."
@@ -43,6 +45,9 @@ facts:
     by: richard-doty
     source: v-2025-02-28-rebelliously-curious-doty@12:00
   - text: "The Wall Street Journal reported in 2025 that AARO found an Air Force colonel had handed doctored flying-saucer photos to a bar owner near Area 51 in the 1980s to shield stealth-fighter tests, and that new commanders of classified Air Force programs were told for decades they were joining “Yankee Blue”, a fictitious program to reverse-engineer a flying saucer, until a 2023 memo ended the practice. The Pentagon said a second AARO volume would cover these “pranks and inauthentic materials”; FOIA searches have found no copy of the 2023 memo."
+    claims: [ area-51-alien-craft ]
+    stance: disputes
+    basis: relayed
     status: claimed
     source: 2025-06-06-wsj-pentagon-ufo-disinformation
 ---

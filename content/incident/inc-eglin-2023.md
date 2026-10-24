@@ -17,9 +17,17 @@ rel:
   - [ led to, task-force-declassification, "Luna says the experience led to her declassification task force" ]
 facts:
   - text: "On 26 January 2023 a military pilot on the Eglin AFB training range off Florida reported four objects on radar at 16,000–18,000 ft, apparently in formation. The pilot saw one of them and captured two still images with the aircraft's EO/IR sensor, describing a gray, paneled object about 12 ft across, with an orange-red centre and a rounded bottom under a cone-shaped top. The aircraft's video recorder was inoperable before and during the flight."
+    said: 2023-10-14
+    claims: [ eglin-orb-not-human ]
+    stance: context
+    basis: documented
     status: documented
     source: doc-aaro-eglin
   - text: "AARO's case resolution (14 October 2023) assesses with moderate confidence that the object was \"very likely a lighter-than-air object, such as a large commercial lighting balloon\", drifting with the wind. Its radar failure was caused by a circuit breaker that had tripped three times before on the same aircraft, which AARO judged coincidental. An IC partner and an S&T partner independently assessed with high confidence that the object was not anomalous and very likely a balloon. AARO could not analyse the other three radar objects."
+    claims: [ eglin-orb-not-human ]
+    stance: disputes
+    basis: documented
+    claim_by: aaro
     status: documented
     source: doc-aaro-eglin
   - text: "Testifying at the July 2023 House Oversight hearing, Rep. Matt Gaetz said his office had received a protected disclosure from Eglin. He said he, Rep. Burchett and Rep. Luna were initially refused the images, the radar data and access to all the flight crew, but after \"a bit of a discussion about how authorities flow\" saw the image and met one crew member. He described the image as something \"I am not able to attach to any human capability either from the United States or from any of our adversaries\"."
@@ -27,6 +35,8 @@ facts:
     by: matt-gaetz
     source: doc-transcript-2023-07-26
   - text: "Gaetz described four craft \"in a clear diamond formation\" on a radar sequence that \"I and I alone have observed in the U.S. Congress\", and a pilot approaching \"a large floating, what I can only describe as an orb\" whose radar went down and whose FLIR malfunctioned, so that the image had to be taken manually. He asked for the radar images and the photo to be provided to the Committee, \"subpoenaed if necessary\", and said test pilots told him the best thing for one's career after a UAP experience is to \"forget it and not tell anyone\"."
+    claims: [ eglin-orb-not-human ]
+    basis: relayed
     status: claimed
     by: matt-gaetz
     source: doc-transcript-2023-07-26
@@ -35,6 +45,10 @@ facts:
     by: anna-paulina-luna
     source: v-jre-anna-paulina-luna@1:12:45
   - text: "AARO's resolution does not name the congressional case. Its details (date, four radar objects apparently in formation, radar failure, still images only) match Gaetz's account. Where they differ, AARO attributes the missing video to recording equipment that was already broken and the radar failure to a pre-existing fault, not to the object."
+    said: 2023-10-14
+    claims: [ eglin-orb-not-human ]
+    stance: context
+    basis: documented
     status: documented
     source: doc-aaro-eglin
 ---

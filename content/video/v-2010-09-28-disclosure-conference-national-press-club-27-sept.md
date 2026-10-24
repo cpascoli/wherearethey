@@ -40,6 +40,9 @@ moments:
     speaker: robert-jamison
     refs: [ inc-malmstrom-1967 ]
   - t: "26:05"
+    claims: [ rendlesham-craft-landed ]
+    stance: context
+    basis: first-hand
     text: "On his memo: Third Air Force decided it was a British affair, so he wrote a \"cleaned-up memo\" of unexplained lights for the MoD. He later learned that the airmen involved had been harshly interrogated."
     speaker: charles-halt
     refs: [ inc-rendlesham-1980, doc-halt-memo ]

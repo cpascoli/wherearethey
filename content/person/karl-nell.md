@@ -41,6 +41,8 @@ facts:
     by: karl-nell
     source: v-jm-karl-nell@19:51
   - text: "He cites the 1953 CIA Robertson Panel's recommendation to debunk the subject and monitor civilian UFO groups, and says Edward Condon wrote the Colorado study's conclusion before it was complete, leading to Blue Book's closure."
+    claims: [ government-ufo-disinformation ]
+    basis: documented
     status: claimed
     by: karl-nell
     source: v-jm-karl-nell@20:53

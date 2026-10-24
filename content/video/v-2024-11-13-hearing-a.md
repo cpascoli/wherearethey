@@ -11,6 +11,8 @@ moments:
     speaker: glenn-grothman
     refs: [ david-grusch, aaro ]
   - t: "32:37"
+    claims: [ langley-drones-unidentified ]
+    basis: relayed
     text: "Grothman on the drone swarm over Langley AFB the previous December: drones about 20 feet long, over 100 mph at more than 3,000 feet, origin still unknown."
     speaker: glenn-grothman
     refs: [ inc-langley-2023 ]
@@ -23,6 +25,8 @@ moments:
     speaker: nancy-mace
     refs: [ immaculate-constellation, doc-immaculate-constellation, michael-shellenberger ]
   - t: "44:03"
+    claims: [ gimbal-gofast-not-conventional ]
+    basis: relayed
     text: "Gallaudet recounts the urgent flight-safety email received during the 2015 exercise, with the “GoFast” video attached."
     speaker: tim-gallaudet
     refs: [ inc-roosevelt-2015 ]
@@ -80,7 +84,7 @@ moments:
     speaker: michael-shellenberger
     refs: [ doc-immaculate-constellation ]
   - t: "1:24:24"
-    claims: [ recovered-non-human-craft ]
+    claims: [ recovered-non-human-craft, programs-hidden-from-congress ]
     text: "Elizondo agrees with Grusch that the U.S. has run a multi-decade crash-retrieval and reverse-engineering program, and says UAP programs are operating without proper congressional oversight: “One hundred percent.”"
     speaker: luis-elizondo
     refs: [ david-grusch, crash-retrieval, tim-burchett ]
@@ -103,6 +107,7 @@ moments:
     speaker: luis-elizondo
     refs: [ aawsap, bigelow-aerospace, lockheed-martin, crash-retrieval ]
   - t: "2:00:44"
+    claims: [ recovered-non-human-bodies ]
     text: "Asked by Rep. Burlison whether the U.S. possesses bodies, Elizondo: “Yes. Yes, sir”, adding it was discussed at the Pentagon but the collection predates his birth."
     speaker: luis-elizondo
     refs: [ nhi, crash-retrieval, eric-burlison ]

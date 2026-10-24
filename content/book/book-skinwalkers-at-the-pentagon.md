@@ -28,6 +28,8 @@ facts:
     status: claimed
     source: https://en.wikipedia.org/wiki/Skinwalker_Ranch
   - text: "Co-author Colm Kelleher says AAWSAP ran two parallel tracks, UFO performance and the effects of UFOs on humans, and that this book reported mostly the second: medical, pathological, physiological, psychological and paranormal effects."
+    claims: [ uap-injuries ]
+    basis: relayed
     status: claimed
     by: colm-kelleher
     source: v-2023-10-17-weaponized-lacatski-kelleher@25:03

@@ -21,6 +21,10 @@ facts:
     status: documented
     source: library/docs/doc-gao-roswell-1995.pdf
   - text: "It quotes a July 8, 1947 FBI message reporting the recovery near Roswell of a hexagonal disc suspended from a large balloon, stating that “the disc and balloon were being sent to Wright Field (now Wright-Patterson Air Force Base, Ohio) for examination,” and that the object resembled a high-altitude weather balloon with a radar reflector."
+    said: 1947-07-08
+    claims: [ roswell-crashed-craft ]
+    stance: context
+    basis: documented
     status: documented
     source: library/docs/doc-gao-roswell-1995.pdf
   - text: "The GAO reviewed Air Materiel Command (Wright Field) records from 1947 to 1950 and “found no records mentioning the Roswell crash or the examination by Air Materiel Command personnel of any debris recovered from the crash.”"

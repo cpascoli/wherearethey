@@ -28,7 +28,7 @@ facts:
     status: documented
     source: library/docs/doc-aaro-historical-record-report-v1.pdf
   - text: It found no empirical evidence of reverse-engineering of extraterrestrial technology by the U.S. government or private companies, and no evidence of UAP non-disclosure agreements threatening violence. Many reported claims, it concluded, came from misidentified authentic programs and circular reporting among a small group of proponents.
-    claims: [ recovered-non-human-craft ]
+    claims: [ recovered-non-human-craft, programs-hidden-from-congress ]
     stance: disputes
     basis: documented
     claim_by: aaro

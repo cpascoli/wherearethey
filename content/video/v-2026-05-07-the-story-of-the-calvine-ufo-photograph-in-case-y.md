@@ -13,6 +13,9 @@ moments:
     text: "A jet, now identified as an RAF Harrier, flies around the object, which then lifts vertically very fast."
     refs: [ inc-calvine-1990 ]
   - t: "3:01"
+    claims: [ calvine-craft-photographed ]
+    stance: context
+    basis: first-hand
     text: "Lindsay later sees a blown-up print of one image on the wall of the MoD office that dealt with UFOs, and is told it is being dealt with."
     speaker: craig-lindsay
     refs: [ inc-calvine-1990 ]
@@ -24,6 +27,9 @@ moments:
     text: "Andrew Robinson of Sheffield Hallam University confirmed the photo was not edited later, which does not prove the object was an alien craft."
     refs: [ inc-calvine-1990, doc-robinson-calvine-analysis ]
   - t: "9:03"
+    claims: [ calvine-craft-photographed ]
+    stance: context
+    basis: opinion
     text: "The most realistic explanation, says Williams, is military hardware of some kind; the witnesses, the Harrier pilot and the newspaper's reasons remain unknown."
     refs: [ inc-calvine-1990 ]
 ---

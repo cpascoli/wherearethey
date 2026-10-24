@@ -88,6 +88,8 @@ moments:
     speaker: george-knapp
     refs: [ james-lacatski, crash-retrieval, doc-dopsr-22-sb-0151 ]
   - t: "1:59:32"
+    claims: [ area-51-alien-craft ]
+    basis: relayed
     text: "Knapp: congressional investigator Richard D'Amato, sent by Senators Robert Byrd and Harry Reid, got into Area 51 and came to believe the reverse-engineering program had moved inside corporations."
     speaker: george-knapp
     refs: [ area-51, harry-reid, crash-retrieval ]

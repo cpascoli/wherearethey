@@ -13,6 +13,8 @@ moments:
     text: "Hellyer recalls being asked to dedicate the world's first flying saucer landing pad, in St. Paul, Alberta, on 3 June 1967, which he then saw as an imaginative centennial project."
     speaker: paul-hellyer
   - t: "8:01"
+    claims: [ roswell-crashed-craft ]
+    basis: relayed
     text: "Hellyer calls Philip Corso's book The Day After Roswell “the unimpeachable source” of his talk, repeating Corso's claim that a UFO crashed near Roswell around 4 July 1947."
     speaker: paul-hellyer
     refs: [ philip-corso, book-day-after-roswell, inc-roswell-1947 ]
@@ -20,6 +22,7 @@ moments:
     text: "Hellyer relays Corso's claim that he was told by Lt. Gen. Arthur Trudeau to feed recovered technology into U.S. industry. The claim is Corso's and has not been corroborated."
     speaker: paul-hellyer
     refs: [ philip-corso, crash-retrieval ]
+date: 2005-09-25   # recorded / first broadcast (the YouTube upload is later)
 ---
 
 Part 1 of the September 25, 2005 Exopolitics Toronto speech. No English captions are available on YouTube.

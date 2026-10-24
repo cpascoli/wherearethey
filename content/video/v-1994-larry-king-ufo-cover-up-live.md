@@ -10,6 +10,8 @@ rel:
   - [ about, inc-roswell-1947 ]
 moments:
   - t: "47:58"
+    claims: [ roswell-crashed-craft ]
+    stance: context
     text: "Narration on Roswell: the recovered object “was transported by special plane to Wright Field for examination”; Wright-Patterson has long been the focus of rumours about crashed discs."
     refs: [ inc-roswell-1947, wright-patterson-afb ]
   - t: "1:04:13"

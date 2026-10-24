@@ -19,6 +19,8 @@ moments:
     text: "Graves: “Since 2021 all UAP videos are classified as secret or above.”"
     speaker: ryan-graves
   - t: "26:33"
+    claims: [ gimbal-gofast-not-conventional ]
+    basis: relayed
     text: "Graves: off Virginia Beach, two F/A-18 Super Hornets were split by a UAP, a dark gray or black cube inside a clear sphere, that came within 50 feet of the lead aircraft; the squadron filed a safety report but got no official acknowledgement."
     speaker: ryan-graves
     refs: [ inc-roosevelt-2015 ]
@@ -53,6 +55,8 @@ moments:
     speaker: david-grusch
     refs: [ crash-retrieval, icig ]
   - t: "50:26"
+    claims: [ gimbal-gofast-not-conventional ]
+    basis: first-hand
     text: "Graves: objects sat at “0.0 Mach” over fixed points while “completely stationary in category four hurricane winds,” then accelerated to 1.1–1.2 Mach."
     speaker: ryan-graves
     refs: [ inc-roosevelt-2015 ]
@@ -88,6 +92,9 @@ moments:
     speaker: david-grusch
     refs: [ nhi, tim-burchett ]
   - t: "1:20:06"
+    claims: [ area-51-alien-craft ]
+    stance: context
+    basis: opinion
     text: "Burchett asks Grusch which facilities hold recovered material, remarking that Congress keeps talking about going to Area 51 but “there's nothing there anymore”; Grusch says he can't say publicly but gave the information to the intelligence committees and the Inspector General."
     speaker: tim-burchett
     refs: [ area-51, david-grusch, crash-retrieval ]
@@ -104,6 +111,8 @@ moments:
     speaker: matt-gaetz
     refs: [ doc-aaro-eglin, tim-burchett, anna-paulina-luna, inc-eglin-2023 ]
   - t: "1:43:20"
+    claims: [ gimbal-gofast-not-conventional ]
+    basis: first-hand
     text: "Graves: in the Gimbal incident the pilots refer to a fleet of objects not visible on the FLIR, which he saw on the radar display in the debrief."
     speaker: ryan-graves
     refs: [ inc-roosevelt-2015 ]

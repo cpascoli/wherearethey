@@ -5,6 +5,8 @@ rel:
   - [ features, garry-nolan ]
 moments:
   - t: "12:28"
+    claims: [ ariel-school-landing ]
+    basis: opinion
     text: "Nolan's most fascinating case is the Ariel School sighting in Zimbabwe: 50–60 children who saw a craft and small figures, drew the same pictures, and got the message “you are not taking care of your planet”."
     speaker: garry-nolan
     refs: [ inc-ariel-1994 ]

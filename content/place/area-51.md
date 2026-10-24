@@ -16,6 +16,9 @@ links:
     url: https://www.cnn.com/2013/08/15/us/area-51-documents
 facts:
   - text: "A CIA history of the U-2 spy-plane program, declassified in summer 2013 in response to a Freedom of Information Act request, officially acknowledged the Groom Lake test site known as Area 51. The National Security Archive published it with more than 60 related declassified documents."
+    claims: [ area-51-alien-craft ]
+    stance: context
+    basis: documented
     status: documented
     source: https://nsarchive.gwu.edu/node/3324
   - text: "According to the declassified record, the site was chosen for U-2 testing in 1955 (officials surveyed Nevada on April 12, 1955), the first A-12 OXCART arrived in late December 1961, Soviet MiGs were tested there from 1968 (HAVE DOUGHNUT, HAVE DRILL, HAVE FERRY), and the F-117 made its first flight, presumably there, in June 1981."

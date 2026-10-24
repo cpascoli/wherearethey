@@ -19,10 +19,14 @@ moments:
     speaker: barney-betty-hill
     refs: [ inc-hill-1961 ]
   - t: "12:10"
+    claims: [ hill-abduction ]
+    basis: first-hand
     text: "In a clearing, an object with a ramp and a door filled the space. She is led up the ramp and down a corridor into a room."
     speaker: barney-betty-hill
     refs: [ inc-hill-1961 ]
   - t: "16:43"
+    claims: [ hill-abduction ]
+    basis: first-hand
     text: "The examination: a cluster of needles with wires, then a long needle into her navel, which the leader called a pregnancy test. He stopped the pain by passing his hand before her eyes."
     speaker: barney-betty-hill
     refs: [ inc-hill-1961 ]

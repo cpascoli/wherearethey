@@ -29,6 +29,8 @@ moments:
     speaker: richard-doty
     refs: [ dia, cia ]
   - t: "20:47"
+    claims: [ government-ufo-disinformation ]
+    basis: first-hand
     text: "“You won't ever find the word disinformation in our manuals. It's deception operations, it's called.” He says such operations required the target to be connected to the U.S. government or military, as Bennewitz was through his contracts."
     speaker: richard-doty
     refs: [ uap-disinformation ]
@@ -37,6 +39,8 @@ moments:
     speaker: richard-doty
     refs: [ linda-moulton-howe ]
   - t: "1:25:56"
+    claims: [ government-ufo-disinformation ]
+    basis: first-hand
     text: "Disinformation in his day was “probably 60% truth and 40% non-truth”, mixed by “the Special Means Committee … the group in the DIA that creates this stuff”; months later he received a sanitized, colour-coded version of the Howe document showing which information was which."
     speaker: richard-doty
     refs: [ uap-disinformation, linda-moulton-howe ]

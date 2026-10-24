@@ -6,6 +6,8 @@ rel:
   - [ features, andrew-greenwood ]
 moments:
   - t: "46:42"
+    claims: [ westall-craft-landed ]
+    basis: first-hand
     text: "Greenwood recalls teaching a Year 9 science class when a pupil burst in: “Mr Greenwood, there’s a flying saucer!”"
     speaker: andrew-greenwood
     refs: [ inc-westall-1966 ]

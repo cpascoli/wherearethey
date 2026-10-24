@@ -57,6 +57,8 @@ moments:
     speaker: david-fravor
     refs: [ inc-nimitz-2004 ]
   - t: "2:44:15"
+    claims: [ gimbal-gofast-not-conventional ]
+    basis: relayed
     text: "Fravor, from the aircrew he knows: the Gimbal and GoFast videos were shot by the same person; the new APG-79 radar showed about five other objects in a V ahead of the Gimbal object, which reversed course."
     speaker: david-fravor
     refs: [ inc-roosevelt-2015, ryan-graves ]

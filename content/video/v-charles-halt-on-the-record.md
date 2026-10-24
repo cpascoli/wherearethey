@@ -38,6 +38,8 @@ moments:
     speaker: charles-halt
     refs: [ doc-halt-memo ]
   - t: "8:54"
+    claims: [ rendlesham-craft-landed ]
+    basis: first-hand
     text: "Halt: the objects were “obviously intelligently controlled”; he has never been officially debriefed."
     speaker: charles-halt
     refs: [ inc-rendlesham-1980 ]

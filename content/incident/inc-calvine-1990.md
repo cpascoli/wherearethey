@@ -17,6 +17,9 @@ links:
     url: https://drdavidclarke.co.uk/2022/10/23/the-calvine-photographs-mod-response-to-mps-questions/
 facts:
   - text: Two men walking on the moors above Calvine on the evening of 4 August 1990 said they saw a large, silent, diamond-shaped object hover for several minutes while a jet made passes around it, before it rose vertically at speed; one of them took six photographs, which they gave to the Daily Record.
+    said: 1990-08
+    claims: [ calvine-craft-photographed ]
+    basis: relayed
     status: claimed
     source: v-2026-05-07-the-story-of-the-calvine-ufo-photograph-in-case-y@0:55
   - text: The MoD's surviving papers (DEFE 24/1940/1, pp. 113–116, opened at the UK National Archives in 2009) include a September 1990 Sec(AS) briefing and handwritten summary of the sighting; photocopies of the images appear in the files of Defence Intelligence's DI55 (DEFE 31/180/1), showing they were examined by DI55 and RAF photo analysts.
@@ -26,16 +29,25 @@ facts:
     status: documented
     source: library/docs/doc-robinson-calvine-analysis.pdf
   - text: The surviving print is a genuine copy of the photograph the MoD analysed in 1990 and shows a real scene before the camera with no sign of later manipulation; there is insufficient data to say what the object is, and a hoax staged in front of the camera cannot be excluded.
+    claims: [ calvine-craft-photographed ]
+    stance: context
+    basis: documented
     status: documented
     source: library/docs/doc-robinson-calvine-analysis.pdf
   - text: "In a 2022 letter to Louise Haigh MP, Armed Forces minister James Heappey said the only surviving MoD papers are those in DEFE 24/1940/1, that a minister told the Commons in 1996 the negatives were examined but not retained as they contained \"nothing of defence significance\", and that the UK had given no authority for any secret U.S. \"Aurora\" aircraft to fly over or land in the UK and had no evidence that one had."
     status: claimed
     source: https://drdavidclarke.co.uk/2022/10/23/the-calvine-photographs-mod-response-to-mps-questions/
   - text: Nick Pope, who ran the MoD UFO desk from 1991, wrote in 1996 that the case was "one of the most intriguing in the Ministry of Defence's files", that a poster-sized print hung in his office until his head of division removed it, and that MoD analysis judged the photos not to be fakes.
+    said: 1996
+    claims: [ calvine-craft-photographed ]
+    basis: opinion
     status: claimed
     by: nick-pope
     source: https://en.wikipedia.org/wiki/Calvine_UFO_photograph
   - text: Sceptics argue the object could be a small model, such as a cardboard star ornament, hung from the overhanging trees close to the camera; the witnesses have never been identified, no other sighting was reported, and no Harrier pilot has come forward.
+    claims: [ calvine-craft-photographed ]
+    stance: disputes
+    basis: opinion
     status: claimed
     source: https://drdavidclarke.co.uk/2022/10/23/the-calvine-photographs-mod-response-to-mps-questions/
 ---

@@ -19,6 +19,8 @@ rel:
   - [ witness, john-burroughs ]
 facts:
   - text: Over several nights in late December 1980, U.S. Air Force personnel at RAF Woodbridge and Bentwaters reported unexplained lights and a landed craft in the adjacent Rendlesham Forest.
+    claims: [ rendlesham-craft-landed ]
+    basis: documented
     status: documented
     source: doc-halt-memo
   - text: Sgt. Jim Penniston says he approached and touched a small, triangular craft with symbols on its surface.

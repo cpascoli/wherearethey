@@ -15,9 +15,16 @@ rel:
   - [ alleged case of, crash-retrieval, "Books from 1980 on added a crashed craft and bodies; the Air Force attributes the accounts to balloons and test dummies" ]
 facts:
   - text: In July 1947 the Roswell Army Air Field announced it had recovered a “flying disc”, then retracted the statement and called it a weather balloon.
+    said: 1947-07-08
+    claims: [ roswell-crashed-craft ]
+    stance: context
+    basis: documented
     status: documented
     source: https://www.gao.gov/products/nsiad-95-187
   - text: "The Air Force's 1994 report concluded that the debris came from Project MOGUL, a balloon-borne research project. Its 1997 report, Case Closed, attributes the later \"alien\" accounts to anthropomorphic test dummies dropped from high-altitude balloons, and the hospital \"bodies\" to a 1956 KC-97 crash and a 1959 balloon mishap. It says events from many years had been compressed into the July 1947 story."
+    claims: [ roswell-crashed-craft ]
+    stance: disputes
+    basis: documented
     status: documented
     source: doc-af-roswell-case-closed-1997
 ---

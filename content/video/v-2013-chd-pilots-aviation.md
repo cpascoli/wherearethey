@@ -11,6 +11,8 @@ rel:
   - [ features, john-callahan ]
 moments:
   - t: "4:35"
+    claims: [ jal1628-unknown-craft ]
+    basis: first-hand
     text: "Callahan says he had all the radar data and voice tapes flown to the FAA Technical Center, where the controller's scope was replayed in sync with the tapes and he filmed the screen."
     speaker: john-callahan
     refs: [ inc-jal-1628-1986, doc-faa-jal1628-terauchi-interview ]
@@ -36,10 +38,16 @@ moments:
     text: "Lt. Col. Richard French, a fighter pilot in Korea and Vietnam, describes being sent by the OSI district commander to investigate an object reported in the water off Newfoundland."
     speaker: richard-french
   - t: "1:01:30"
+    claims: [ jal1628-unknown-craft ]
+    stance: context
+    basis: first-hand
     text: "Callahan tells Bartlett that only the three JAL crew saw the craft, while about 23 people at the FAA reviewed the radar track."
     speaker: john-callahan
     refs: [ inc-jal-1628-1986, doc-faa-jal1628-terauchi-interview ]
   - t: "1:04:30"
+    claims: [ jal1628-unknown-craft ]
+    stance: context
+    basis: first-hand
     text: "Callahan: the FAA's hardware engineers blamed the target beside the 747 on software, and the software engineers blamed hardware. “If it's not a hardware problem and it's not a software problem then what the hell is it?”"
     speaker: john-callahan
     refs: [ inc-jal-1628-1986 ]

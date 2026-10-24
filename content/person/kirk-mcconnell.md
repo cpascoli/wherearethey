@@ -33,6 +33,8 @@ facts:
     by: kirk-mcconnell
     source: v-2025-05-01-hearing-a@2:25:33
   - text: "Leslie Kean said at the June 2026 press conference that McConnell “was present in classified settings when highly credible sources briefed senators including Marco Rubio about recovered non-human bodies”."
+    claims: [ recovered-non-human-bodies ]
+    basis: relayed
     status: claimed
     by: leslie-kean
     source: v-2026-06-09-capitol-uap-press-conference@16:07
@@ -41,6 +43,8 @@ facts:
     by: kirk-mcconnell
     source: v-2026-08-28-disclosure-forum-national-security@7:24
   - text: "Asked about Jay Stratton's memoir, he wrote: “I do not recall Jay ever sharing this information with staff from the Senate Armed Services and Intelligence Committees”, adding that as head of the task force Stratton was likely not in a position to reveal it, and “I welcome his statements.”"
+    claims: [ programs-hidden-from-congress ]
+    stance: context
     status: claimed
     by: kirk-mcconnell
     source: https://www.paradigm.news/p/exclusive-ex-pentagon-ufo-lead-accuses

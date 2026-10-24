@@ -13,6 +13,9 @@ moments:
     speaker: tim-gallaudet
     refs: [ jay-stratton, inc-roosevelt-2015 ]
   - t: "10:14"
+    claims: [ gimbal-gofast-not-conventional ]
+    stance: context
+    basis: opinion
     text: "On AARO's parallax explanation for GoFast, Gallaudet concedes the object wasn't going fast — “I don't dispute that” — but says it was a spherical object without control surfaces, in formation with others, while pilots saw dozens."
     speaker: tim-gallaudet
     refs: [ inc-roosevelt-2015, jon-kosloski, aaro ]

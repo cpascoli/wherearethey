@@ -50,6 +50,8 @@ facts:
     by: luis-elizondo
     source: v-2024-11-13-hearing-a@2:00:44
   - text: "Asked under oath by Rep. Mace whether government employees injured by UAP receive compensation, he answered “That is correct”, and said “I have seen the documentation by the U.S. Government for several of these individuals who have sustained injuries as a result of a UAP incident.”"
+    claims: [ uap-injuries ]
+    basis: first-hand
     status: claimed
     by: luis-elizondo
     source: v-2024-11-13-hearing-a@1:08:09

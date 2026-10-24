@@ -18,6 +18,8 @@ moments:
     speaker: charles-halt
     refs: [ inc-rendlesham-1980, doc-halt-memo ]
   - t: "14:40"
+    claims: [ rendlesham-craft-landed ]
+    basis: first-hand
     text: "Halt: he knew the Orford Ness lighthouse well; its white rotating beam was distinct from the bright orange-red object he saw."
     speaker: charles-halt
     refs: [ inc-rendlesham-1980 ]

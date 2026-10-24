@@ -4,6 +4,9 @@ rel:
   - [ features, garry-nolan ]
 moments:
   - t: "1:22"
+    claims: [ uap-injuries ]
+    stance: context
+    basis: first-hand
     text: "Nolan: he was drawn in when the government asked for help with about a hundred harmed diplomats and military personnel, many later identified as early Havana syndrome cases."
     speaker: garry-nolan
   - t: "2:53"
@@ -15,6 +18,8 @@ moments:
     speaker: garry-nolan
     refs: [ pursue ]
   - t: "4:12"
+    claims: [ uap-injuries ]
+    basis: first-hand
     text: "Nolan: brain scans of some of these individuals showed white-matter damage, which he likens to walking into a jet's exhaust plume."
     speaker: garry-nolan
 ---

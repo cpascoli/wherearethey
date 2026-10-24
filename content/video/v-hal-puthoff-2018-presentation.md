@@ -21,6 +21,8 @@ moments:
     speaker: hal-puthoff
     refs: [ sample-bismuth-magnesium ]
   - t: "25:01"
+    claims: [ colares-craft-observed, uap-injuries ]
+    basis: relayed
     text: "Puthoff cites the Brazilian Air Force's 1977–78 investigation, with about 1,000 pages, 500 photographs and 15 hours of film, and a list of medical injuries."
     speaker: hal-puthoff
     refs: [ inc-operacao-prato-1977 ]
@@ -32,5 +34,6 @@ moments:
     text: "Asked about the $22 million figure, Puthoff says it was one program among others, and interest and work continue."
     speaker: hal-puthoff
     refs: [ aawsap ]
+date: 2018-06-08   # recorded / first broadcast (the YouTube upload is later)
 ---
 

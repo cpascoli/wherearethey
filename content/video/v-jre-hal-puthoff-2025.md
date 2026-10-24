@@ -56,6 +56,8 @@ moments:
     speaker: hal-puthoff
     refs: [ to-the-stars, tom-delonge, leslie-kean ]
   - t: "1:37:13"
+    claims: [ roswell-crashed-craft ]
+    basis: relayed
     text: "Eric Davis interviewed a former Wright-Patterson commander (“General Exon”), who said Roswell “was the real deal”. Puthoff says there is data on crashes in other countries too."
     speaker: hal-puthoff
     refs: [ eric-davis, inc-roswell-1947, wright-patterson-afb ]
@@ -64,6 +66,8 @@ moments:
     speaker: hal-puthoff
     refs: [ diana-pasulka, inc-malmstrom-1967, bob-salas ]
   - t: "1:44:02"
+    claims: [ colares-craft-observed, uap-injuries ]
+    basis: relayed
     text: "Colares, Brazil: weeks of activity investigated by the Brazilian Air Force, with beams that harmed people. It is the one clearly hostile case he knows. (He dates it to the 1980s; Operação Prato was 1977.)"
     speaker: hal-puthoff
     refs: [ inc-operacao-prato-1977 ]

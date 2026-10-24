@@ -29,6 +29,8 @@ facts:
     status: documented
     source: library/docs/doc-robertson-panel-1953.pdf
   - text: The panel warned that the volume of reports could clog military communications and be exploited psychologically. It recommended a public “debunking” and education effort to strip UFOs of their mystique. Critics see this as the origin of official stigma around reporting.
+    claims: [ government-ufo-disinformation ]
+    basis: documented
     status: documented
     source: library/docs/doc-robertson-panel-1953.pdf
   - text: Declassified and approved for release in 2013 (CIA reading room). Earlier versions were released in redacted form from the 1970s.

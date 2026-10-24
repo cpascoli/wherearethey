@@ -26,6 +26,9 @@ facts:
     status: documented
     source: library/docs/doc-cia-haines-1997.pdf
   - text: "According to estimates from CIA officials who worked on the U-2 and OXCART (SR-71) projects, “over half of all UFO reports from the late 1950s through the 1960s were accounted for by manned reconnaissance flights (namely the U-2) over the United States. This led the Air Force to make misleading and deceptive statements to the public in order to allay public fears and to protect an extraordinarily sensitive national security project. While perhaps justified, this deception added fuel to the later conspiracy theories and the coverup controversy of the 1970s.”"
+    claims: [ area-51-alien-craft ]
+    stance: disputes
+    basis: documented
     status: documented
     source: library/docs/doc-cia-haines-1997.pdf
   - text: "The study concludes that while Agency concern over UFOs was substantial until the early 1950s, the CIA “has since paid only limited and peripheral attention to the phenomena.”"

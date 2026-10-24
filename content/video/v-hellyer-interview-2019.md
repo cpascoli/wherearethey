@@ -6,6 +6,8 @@ rel:
   - [ features, paul-hellyer ]
 moments:
   - t: "3:04"
+    claims: [ roswell-crashed-craft, government-ufo-disinformation ]
+    basis: opinion
     text: "Hellyer says deception began with Roswell, when the base's “disc” announcement was replaced by a balloon story."
     speaker: paul-hellyer
     refs: [ inc-roswell-1947 ]

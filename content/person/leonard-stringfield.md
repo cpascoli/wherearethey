@@ -22,6 +22,8 @@ links:
     url: https://en.wikipedia.org/wiki/Leonard_H._Stringfield
 facts:
   - text: "In his 1978 MUFON paper “Retrievals of the Third Kind” he wrote that, “According to my sources, these immobilized craft and deceased occupants, described as humanoid, have been placed in custody at certain military installations where they were studied under the highest security measures.” He followed it with seven self-published Status Reports, the last in 1994."
+    claims: [ recovered-non-human-bodies ]
+    basis: relayed
     status: claimed
     by: leonard-stringfield
     source: https://archive.org/details/leonard-stringfield-retrievals-of-the-third-kind

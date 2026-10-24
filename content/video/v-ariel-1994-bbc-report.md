@@ -17,9 +17,14 @@ moments:
     text: "The reporter challenges a pupil: “Are you sure it wasn't a Harrier jump jet or something that the Zimbabwe Air Force had got?”"
     refs: [ inc-ariel-1994 ]
   - t: "1:04"
+    claims: [ ariel-school-landing ]
+    basis: first-hand
     text: "Pupils describe something silver among the trees and a figure in black with “big black eyes” that turned, stared, and went back into a kind of ship."
     refs: [ inc-ariel-1994 ]
   - t: "1:34"
+    claims: [ ariel-school-landing ]
+    stance: context
+    basis: opinion
     text: "Headmaster Colin Mackie: the children feel they saw something; after asking them to draw it he believes they did, but would be “reluctant” to call it a UFO."
     speaker: colin-mackie
     refs: [ inc-ariel-1994 ]
@@ -30,6 +35,7 @@ moments:
     text: "Cynthia Hind arrives with a colleague carrying a home-made Geiger counter and metal detector, says she believes the children, and compares the case to Broad Haven in Wales."
     speaker: cynthia-hind
     refs: [ inc-ariel-1994, inc-broad-haven-1977 ]
+date: 1994-09-19   # recorded / first broadcast (the YouTube upload is later)
 ---
 
 Original 1994 **BBC** news footage (the BBC logo is on screen), reposted on X in 2024. The dateline (September 19, 1994), the reporter's questions and the reference to “Tim” match BBC reporter Tim Leach's visit to the school; that he filmed this report is very likely, though he is not named on screen. Transcribed locally with Whisper. The archive plays its own copy, streamed from its file storage, with the original X post linked as the source.

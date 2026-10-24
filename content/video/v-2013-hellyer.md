@@ -14,5 +14,6 @@ moments:
   - t: "9:00"
     text: "Hellyer alleges that clean-energy technology exists but is kept secret by a “cabal” of financial, oil, intelligence and military interests; the rest of his statement turns to foreign policy."
     speaker: paul-hellyer
+date: 2013   # recorded / first broadcast (the YouTube upload is later)
 ---
 

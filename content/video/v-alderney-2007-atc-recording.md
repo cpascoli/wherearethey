@@ -24,6 +24,7 @@ moments:
   - t: "10:39"
     text: "The controller tells another crew that a second aircraft, a Trislander just east of Sark, also confirmed an object north of its position."
     refs: [ inc-alderney-2007 ]
+date: 2007-04-23   # recorded / first broadcast (the YouTube upload is later)
 ---
 
 Contains the air traffic control audio from the flight on April 23, 2007, with commentary.

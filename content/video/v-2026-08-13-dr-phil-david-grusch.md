@@ -26,6 +26,8 @@ moments:
     text: "He says a security office at an agency he worked for leaked his past PTSD to a journalist at The Intercept within days of his July 2023 testimony, and that he was cleared in the investigations that followed."
     speaker: david-grusch
   - t: "25:20"
+    claims: [ recovered-non-human-bodies ]
+    basis: relayed
     text: "On his evidence: people from the retrieval program would “exfiltrate audiovisual evidence for me to see both video and photos … of the retrieved craft, some of the dead cadavers that were recovered”; he was not hands-on and brought those witnesses to the Inspector General."
     speaker: david-grusch
     refs: [ crash-retrieval, icig ]

@@ -9,6 +9,8 @@ rel:
   - [ claims about, crash-retrieval ]
 facts:
   - text: Claimed he took part in recoveries of crashed craft and debris, some involving bodies and some live occupants, while the public was told there was nothing to it.
+    claims: [ recovered-non-human-bodies ]
+    basis: first-hand
     status: claimed
     by: clifford-stone
     source: v-disclosure-project-2001-npc@1:10:39

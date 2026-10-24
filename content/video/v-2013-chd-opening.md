@@ -11,6 +11,8 @@ rel:
   - [ features, paul-hellyer ]
 moments:
   - t: "2:17"
+    claims: [ roswell-crashed-craft ]
+    basis: relayed
     text: "Edgar Mitchell introduces himself as the Apollo 14 astronaut who grew up near Roswell, and says that starting with Roswell “we have been visited by aliens.”"
     speaker: edgar-mitchell
     refs: [ inc-roswell-1947 ]

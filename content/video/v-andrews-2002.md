@@ -12,5 +12,6 @@ moments:
   - t: "1:46"
     text: "The reporter says NORAD and the Air National Guard confirmed activity near Andrews at about the same time."
     refs: [ inc-andrews-2002 ]
+date: 2002-07   # recorded / first broadcast (the YouTube upload is later)
 ---
 

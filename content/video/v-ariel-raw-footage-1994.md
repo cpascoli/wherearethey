@@ -10,6 +10,7 @@ moments:
   - t: "1:02"
     text: "A child recalls that “somebody from BBC came to us”, consistent with Tim Leach filming at the school on September 19, 1994."
     refs: [ inc-ariel-1994, tim-leach ]
+date: 1994-09   # recorded / first broadcast (the YouTube upload is later)
 ---
 
 Interviews with the Ariel School children recorded in 1994, shortly after the event (uploader: Urban Africa Creative Studios). The original recording source is not stated by the uploader.

@@ -20,6 +20,9 @@ rel:
   - [ witness, tania-vassie ]
 facts:
   - text: More than 200 students and teachers at Westall High School and the neighbouring Grange saw a silver, metallic object descend, hover near a grassy field, then leave quickly. The schools are close to RAAF Laverton.
+    said: 1966-04-06
+    claims: [ westall-craft-landed ]
+    basis: relayed
     status: claimed
     source: v-abc-westall-australian-story@15:05
   - text: School administrators and military officials reportedly told students and staff not to discuss it.

@@ -9,6 +9,8 @@ rel:
   - [ about, inc-jal-1628-1986 ]
 moments:
   - t: "0:10"
+    claims: [ jal1628-unknown-craft ]
+    basis: first-hand
     text: "In archive footage Captain Terauchi explains his sketch: “This is just a small space ship … This one is the size of the carrier, so a mothership.”"
     speaker: kenju-terauchi
     refs: [ inc-jal-1628-1986 ]

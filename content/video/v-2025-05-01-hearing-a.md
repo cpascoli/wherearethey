@@ -37,7 +37,7 @@ moments:
     speaker: eric-davis
     refs: [ robert-bigelow, hal-puthoff, edgar-mitchell ]
   - t: "59:50"
-    claims: [ recovered-non-human-craft ]
+    claims: [ recovered-non-human-craft, programs-hidden-from-congress ]
     basis: relayed
     text: "Davis: the crash-retrieval programs are more secret than the Manhattan Project, hidden from Congress under presidential emergency action directives dating from Eisenhower and exempt from FOIA."
     speaker: eric-davis
@@ -74,6 +74,8 @@ moments:
     speaker: eric-davis
     refs: [ james-lacatski ]
   - t: "1:30:23"
+    claims: [ roswell-crashed-craft, recovered-non-human-bodies ]
+    basis: relayed
     text: "Davis: the grays he knows of came from the crash near Corona, New Mexico — “misnamed” Roswell."
     speaker: eric-davis
     refs: [ inc-roswell-1947, nhi ]

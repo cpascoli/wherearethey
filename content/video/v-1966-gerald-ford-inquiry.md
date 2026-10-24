@@ -12,4 +12,5 @@ moments:
     text: House Minority Leader Gerald Ford says Congress should investigate the reported sightings in southern Michigan and elsewhere, because the public is “very alarmed”.
     speaker: gerald-ford
     refs: [ h-1966-04-05 ]
+date: 1966-03   # recorded / first broadcast (the YouTube upload is later)
 ---

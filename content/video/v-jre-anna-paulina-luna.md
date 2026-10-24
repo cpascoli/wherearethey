@@ -28,6 +28,8 @@ moments:
     speaker: anna-paulina-luna
     refs: [ doc-aaro-eglin, inc-eglin-2023 ]
   - t: "1:16:30"
+    claims: [ eglin-orb-not-human ]
+    basis: relayed
     text: "Luna: Rep. Gaetz has since said publicly that they saw material he doesn't believe was made by mankind; she says this is why declassification is needed."
     speaker: anna-paulina-luna
     refs: [ inc-eglin-2023 ]

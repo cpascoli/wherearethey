@@ -31,6 +31,8 @@ moments:
     speaker: steven-greer
     refs: [ ev-disclosure-project-2001 ]
   - t: "14:26"
+    claims: [ jal1628-unknown-craft ]
+    basis: relayed
     text: "John Callahan, retired FAA division manager for accidents and investigations, describes the JAL 1628 radar data being briefed to President Reagan's science staff, CIA and FBI, and a CIA man saying “this meeting never happened.”"
     speaker: john-callahan
     refs: [ inc-jal-1628-1986, doc-faa-jal1628-terauchi-interview ]
@@ -63,6 +65,8 @@ moments:
     text: "Col. Dwynne Arneson (USAF, ret.), 26 years as a communications-electronics officer, recalls a crypto message in the early 1960s reporting a UFO crash on Spitsbergen, Norway."
     speaker: dwynne-arneson
   - t: "1:03:36"
+    claims: [ rendlesham-craft-landed ]
+    basis: first-hand
     text: "Larry Warren, a USAF security specialist at RAF Bentwaters in 1980, describes a three-night UFO event near the base's nuclear weapons store."
     speaker: larry-warren
     refs: [ inc-rendlesham-1980 ]

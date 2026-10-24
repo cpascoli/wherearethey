@@ -17,12 +17,19 @@ links:
     url: https://querepublicaeessa.an.gov.br/index.php/que-republica-e-essa/assuntos/temas/302-os-ovnis-no-arquivo-nacional
 facts:
   - text: The Brazilian Air Force (FAB) sent a team under Capt. Uyrangê Hollanda to investigate months of reports of lights and beams around Colares and the Amazon delta, including residents with burn-like marks. The team investigated at least 130 cases and gathered photographs and film.
+    said: 1977
+    claims: [ colares-craft-observed ]
+    stance: context
+    basis: documented
     status: documented
     source: https://querepublicaeessa.an.gov.br/index.php/que-republica-e-essa/assuntos/temas/302-os-ovnis-no-arquivo-nacional
   - text: The operation's records, transferred to the National Archives of Brazil from 2009 and expanded by FAB releases in 2013, are part of the public “UFO Fund” in the SIAN system.
     status: documented
     source: https://querepublicaeessa.an.gov.br/index.php/que-republica-e-essa/assuntos/temas/302-os-ovnis-no-arquivo-nacional
   - text: Hollanda's official final report found no indication of extraterrestrial beings. Twenty years later, in a 1997 interview, he said he and his team had seen structured craft and that he believed they were not of human origin. He died months later.
+    said: 1997
+    claims: [ colares-craft-observed ]
+    basis: first-hand
     status: claimed
     by: uyrange-hollanda
     source: v-hollanda-last-testimony-1997@72:30
@@ -35,6 +42,8 @@ facts:
     by: uyrange-hollanda
     source: v-hollanda-last-testimony-1997@83:00
   - text: The operation followed a wave of reports in Maranhão and Pará of small, fast lights that residents called “chupa-chupa” (“suck-suck”), which they said fired beams that left burns, weakness and puncture-like marks. Local authorities asked for military help.
+    claims: [ uap-injuries ]
+    basis: relayed
     status: claimed
     source: https://querepublicaeessa.an.gov.br/index.php/que-republica-e-essa/assuntos/temas/302-os-ovnis-no-arquivo-nacional
 ---

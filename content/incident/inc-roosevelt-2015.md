@@ -20,12 +20,24 @@ rel:
   - [ reported to, tim-gallaudet, "As Oceanographer of the Navy he received the “urgent safety of flight” email with the GoFast video" ]
 facts:
   - text: "AARO's 2025 case resolution of the GoFast video finds with high confidence that the object did not move at anomalous speeds: it was at about 13,000 feet, not skimming the sea, and moving at roughly 5–92 mph relative to the wind. AARO does not identify the object. Its resolution covers that video only, not the squadron's other radar tracks or near misses."
+    claims: [ gimbal-gofast-not-conventional ]
+    stance: disputes
+    basis: documented
+    claim_by: aaro
     status: documented
     source: doc-aaro-gofast
   - text: "NASA's 2023 UAP study analysed the GoFast video and found that the object moved about 390 metres in 22 seconds, roughly 40 mph, \"a typical wind speed at 13,000 feet\". It appeared colder than the ocean, with no evidence of propulsion heat, so it was most likely drifting with the wind."
+    claims: [ gimbal-gofast-not-conventional ]
+    stance: disputes
+    basis: documented
+    claim_by: nasa
     status: documented
     source: doc-nasa-uap-study-2023
   - text: "The Department of Defense officially released two Navy videos taken in January 2015 (Gimbal and GoFast), together with the 2004 FLIR1 video, stating that \"the aerial phenomena observed in the videos remain characterized as 'unidentified.'\""
+    said: 2020-04-27
+    claims: [ gimbal-gofast-not-conventional ]
+    stance: context
+    basis: documented
     status: documented
     source: doc-dod-statement-navy-videos-2020
   - text: Navy F/A-18 crews in a pre-deployment exercise reported frequent UAP encounters, including near-midair collisions.

@@ -66,6 +66,9 @@ facts:
     by: hal-puthoff
     source: v-jre-hal-puthoff-2025@1:11:12
   - text: "He says the layered bismuth–magnesium sample said to come from Roswell debris was analysed at Oak Ridge through AARO: the isotopes were terrestrial, but the layering was unexplained. AARO concluded it is “a manufactured, terrestrial alloy” with no exceptional qualities."
+    claims: [ roswell-crashed-craft ]
+    stance: context
+    basis: documented
     status: documented
     source: doc-aaro-historical-record-report-v1
   - text: "He calls himself agnostic on origin: his paper on “ultraterrestrials” surveys every hypothesis, from extraterrestrial visitors to hidden civilizations, time travellers and other dimensions, and his working conclusion is non-human intelligence of unknown source."

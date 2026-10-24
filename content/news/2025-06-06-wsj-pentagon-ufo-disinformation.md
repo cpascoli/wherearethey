@@ -14,9 +14,13 @@ rel:
   - [ about, bob-salas ]
 facts:
   - text: "The Journal reports that AARO's investigators learned that in the 1980s an Air Force colonel gave a bar owner near Area 51 photos of what might be flying saucers. “The photos were doctored, the now-retired officer confessed to the Pentagon investigators in 2023.” The ruse protected stealth-fighter development at the site, such as the F-117."
+    claims: [ government-ufo-disinformation ]
+    basis: relayed
     status: claimed
     source: https://www.wsj.com/politics/national-security/ufo-us-disinformation-45376f7e
   - text: "It reports that “for decades, certain new commanders of the Air Force’s most classified programs” were shown a flying-saucer photo in their induction briefings and told their program, “dubbed Yankee Blue”, was reverse-engineering the craft; “Many never learned it was fake.” A memo from the defense secretary's office in spring 2023 ordered the practice stopped."
+    claims: [ government-ufo-disinformation ]
+    basis: relayed
     status: claimed
     source: https://www.wsj.com/politics/national-security/ufo-us-disinformation-45376f7e
   - text: "Defense Department spokeswoman Sue Gough acknowledged that AARO had uncovered evidence of fake classified program materials relating to extraterrestrials, and said: “The department is committed to releasing a second volume of its Historical Record Report, to include AARO’s findings on reports of potential pranks and inauthentic materials.”"

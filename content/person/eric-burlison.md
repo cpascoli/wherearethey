@@ -25,6 +25,9 @@ facts:
     status: claimed
     source: h-2025-09-09
   - text: "At the July 2023 hearing he asked David Grusch whether he had seen the bodies; Grusch answered: “That is something I have not witnessed myself.” In November 2024 he asked Luis Elizondo whether the United States possesses bodies; Elizondo answered “Yes”."
+    claims: [ recovered-non-human-bodies ]
+    stance: context
+    claim_by: david-grusch
     status: documented
     by: eric-burlison
     source: doc-transcript-2023-07-26

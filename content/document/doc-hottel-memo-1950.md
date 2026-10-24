@@ -19,6 +19,8 @@ rel:
   - [ alleges, crash-retrieval, "Relays an informant's story of three “flying saucers” recovered in New Mexico, each with three small bodies" ]
 facts:
   - text: Records that “three so-called flying saucers had been recovered in New Mexico… circular in shape with raised centers, approximately 50 feet in diameter. Each one was occupied by three bodies of human shape but only 3 feet tall, dressed in metallic cloth of a very fine texture.”
+    claims: [ recovered-non-human-bodies ]
+    basis: relayed
     status: documented
     source: library/docs/doc-hottel-memo-1950.pdf
   - text: The information is third-hand. Hottel was passing on what an Air Force investigator said an informant told him. The memo itself notes that the government’s high-powered radar in the area was believed to interfere with the craft’s controls. The FBI says it never investigated further, and the memo is not evidence that the story is true.

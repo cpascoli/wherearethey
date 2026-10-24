@@ -61,7 +61,7 @@ facts:
     source: v-2026-08-28-disclosure-forum-national-security@1:18:44
   - text: "Answering Jay Stratton's memoir in October 2026, he called the claim that he was controlled by the Legacy Program “the most absurd thing I've heard today”, said Congress's only classified information on “this fictitious program” concerns what national-security violations “Jay and his band of pseudo-scientists have committed”, and said: “There is no legacy program.”"
     said: 2026-10
-    claims: [ recovered-non-human-craft ]
+    claims: [ recovered-non-human-craft, programs-hidden-from-congress ]
     stance: disputes
     status: claimed
     by: sean-kirkpatrick

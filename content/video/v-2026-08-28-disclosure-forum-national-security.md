@@ -13,6 +13,9 @@ rel:
   - [ features, gadi-schwartz ]
 moments:
   - t: "0:29"
+    claims: [ langley-drones-unidentified ]
+    stance: context
+    basis: relayed
     text: "Mellon on Langley: his understanding is that when officials briefed Congress they said they had no video of the objects, although the incursions went on for 17 days."
     speaker: chris-mellon
     refs: [ inc-langley-2023 ]
@@ -21,10 +24,14 @@ moments:
     speaker: kirk-mcconnell
     refs: [ dylan-borland, inc-langley-2023 ]
   - t: "9:26"
+    claims: [ langley-drones-unidentified ]
+    basis: opinion
     text: "Von Rennenkampff: the Langley objects showed bright flashing lights for 17 nights, which the Air Combat Command commander called “close encounters at Langley”; he argues that is not how espionage is done."
     speaker: marik-von-rennenkampff
     refs: [ inc-langley-2023 ]
   - t: "9:34"
+    claims: [ langley-drones-unidentified ]
+    basis: relayed
     text: "Von Rennenkampff relays former NORAD commander Gen. Glen VanHerck's statement on 60 Minutes that they tried to jam the Langley objects and failed."
     speaker: marik-von-rennenkampff
     refs: [ inc-langley-2023 ]
@@ -65,10 +72,16 @@ moments:
     speaker: marik-von-rennenkampff
     refs: [ aaro ]
   - t: "1:17:19"
+    claims: [ gimbal-gofast-not-conventional ]
+    basis: opinion
     text: "Von Rennenkampff says his analysis with citizen scientists reconstructs the Gimbal object's 3D flight path with high confidence that it was at the close range the aircrew described; AARO has issued no case resolution."
     speaker: marik-von-rennenkampff
     refs: [ inc-roosevelt-2015, aaro ]
   - t: "1:18:44"
+    claims: [ gimbal-gofast-not-conventional ]
+    stance: disputes
+    basis: relayed
+    claim_by: sean-kirkpatrick
     text: "Von Rennenkampff: Sean Kirkpatrick twice told him the Gimbal object was a balloon reflecting sunlight, which he disputes because it was night and the aircrew described it moving against 120-knot winds."
     speaker: marik-von-rennenkampff
     refs: [ sean-kirkpatrick, inc-roosevelt-2015 ]

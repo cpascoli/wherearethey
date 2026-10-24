@@ -8,6 +8,8 @@ tags:
   - intelligence
 facts:
   - text: "David Grusch testified that he provided the locations of recovered material to the intelligence committees and the Inspector General."
+    claims: [ programs-hidden-from-congress ]
+    stance: context
     status: claimed
     by: david-grusch
     source: v-2023-07-26-hearing-a@1:20:06

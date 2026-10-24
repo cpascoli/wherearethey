@@ -11,6 +11,8 @@ moments:
     speaker: ryan-graves
     refs: [ inc-roosevelt-2015 ]
   - t: "14:28"
+    claims: [ gimbal-gofast-not-conventional ]
+    basis: first-hand
     text: "Three sensors correlated: the ATFLIR targeting pod and the AIM-9X missile seekers also detected and locked onto the radar tracks, so the squadron treated them as physical objects."
     speaker: ryan-graves
     refs: [ inc-roosevelt-2015 ]

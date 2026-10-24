@@ -32,6 +32,8 @@ facts:
     status: unverified
     source: library/docs/doc-wilson-davis-notes.pdf
   - text: According to the memo, Wilson tried to audit a covert UFO reverse-engineering program after learning of unconventional aerospace hardware, but program “gatekeepers” denied him access.
+    claims: [ programs-hidden-from-congress ]
+    basis: relayed
     status: unverified
     source: library/docs/doc-wilson-davis-notes.pdf
   - text: Reportedly typed by Davis and found among the private papers of the late Apollo 14 astronaut Edgar Mitchell. It began circulating widely online in 2019.

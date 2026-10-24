@@ -57,6 +57,10 @@ facts:
     by: james-lacatski
     source: v-2025-11-05-weaponized-lacatski-part-1@8:50
   - text: "AARO's 2024 report says the KONA BLUE proposal for DHS “was never approved or stood up” and that “no extraterrestrial craft or bodies were ever collected”."
+    claims: [ recovered-non-human-bodies ]
+    stance: disputes
+    basis: documented
+    claim_by: aaro
     status: documented
     source: doc-aaro-historical-record-report-v1
 ---

@@ -7,6 +7,8 @@ rel:
   - [ about, inc-hill-1961 ]
 moments:
   - t: "18:12"
+    claims: [ hill-abduction ]
+    stance: context
     text: "The interviewer cites the record that Pease AFB radar tracked an unknown object at 2:14 a.m. Betty Hill says Pease released the radar report but the pilots' reports are still classified. Blue Book's analysis sheet attributed the radar return to a temperature inversion."
     speaker: barney-betty-hill
     refs: [ doc-bluebook-lincoln-nh-1961, inc-hill-1961 ]

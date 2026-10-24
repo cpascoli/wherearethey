@@ -19,6 +19,8 @@ moments:
     speaker: uyrange-hollanda
     refs: [ inc-operacao-prato-1977 ]
   - t: "29:00"
+    claims: [ colares-craft-observed ]
+    basis: first-hand
     text: "At Baía do Sol, with SNI intelligence colleagues present: an object about 30 m across, dark, with a yellow light in the middle, hovering about 200 m above them."
     speaker: uyrange-hollanda
     refs: [ inc-operacao-prato-1977 ]
@@ -35,6 +37,8 @@ moments:
     speaker: uyrange-hollanda
     refs: [ inc-operacao-prato-1977 ]
   - t: "64:00"
+    claims: [ colares-craft-observed ]
+    basis: first-hand
     text: "A bright light switched off, revealing the core: a craft shaped like an American football with many small windows, which he estimated at about 100 m long (“two Boeing 737s”)."
     speaker: uyrange-hollanda
     refs: [ inc-operacao-prato-1977 ]
@@ -43,6 +47,8 @@ moments:
     speaker: uyrange-hollanda
     refs: [ inc-operacao-prato-1977, nhi ]
   - t: "77:30"
+    claims: [ colares-craft-observed ]
+    basis: first-hand
     text: "Developed film showed what the team had not seen: an open door at the top of the craft and a beam of light directed at their boat. It was screened frame by frame for officers at the regional Air Command."
     speaker: uyrange-hollanda
     refs: [ inc-operacao-prato-1977 ]
@@ -51,6 +57,8 @@ moments:
     speaker: uyrange-hollanda
     refs: [ inc-operacao-prato-1977 ]
   - t: "83:00"
+    claims: [ colares-craft-observed ]
+    basis: first-hand
     text: "About 400–500 photographs: various craft shapes, including a “mother ship” with smaller craft leaving and returning. The report went to the Air Force General Staff, with part kept in Belém, and remains inaccessible."
     speaker: uyrange-hollanda
     refs: [ inc-operacao-prato-1977 ]
@@ -58,6 +66,7 @@ moments:
     text: "“Who are they? Where do they come from? What do they want? No government can answer that.” He says the U.S. government is the most advanced and does not speak."
     speaker: uyrange-hollanda
     refs: [ inc-operacao-prato-1977, nhi ]
+date: 1997   # recorded / first broadcast (the YouTube upload is later)
 ---
 
 Recorded in Portuguese in 1997, months before Hollanda's death. The searchable transcript is a local Whisper transcription in Portuguese (two hallucinated repetition loops were removed, and some names are misheard). The English moments are summary translations of key passages by the archive's editor, not his exact words; check the original audio at each timestamp.

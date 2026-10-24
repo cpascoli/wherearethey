@@ -13,12 +13,22 @@ rel:
   - [ investigated by, project-blue-book ]
 facts:
   - text: "Project Blue Book filed the sighting under Lincoln, New Hampshire, 20 September 1961, as \"Insufficient Data for Evaluation\". Its analysis sheet attributed both a radar return and the visual sighting to a strong temperature inversion, saying the light had \"all of the characteristics of an advertising search light\"."
+    claims: [ hill-abduction ]
+    stance: disputes
+    basis: documented
+    claim_by: project-blue-book
     status: documented
     source: doc-bluebook-lincoln-nh-1961
   - text: "In 1963 the Air Force's Foreign Technology Division wrote that the sighting had been investigated by officials from Pease AFB, that there were \"inconsistencies in the report\", and that the object \"was in all probability Jupiter\"."
+    claims: [ hill-abduction ]
+    stance: disputes
+    basis: documented
     status: documented
     source: doc-bluebook-lincoln-nh-1961
   - text: "Betty Hill retold the September 1961 encounter in the White Mountains in a 1999 interview, including the “star map” later linked to Zeta Reticuli."
+    said: 1999-10
+    claims: [ hill-abduction ]
+    basis: first-hand
     status: claimed
     by: barney-betty-hill
     source: v-betty-hill-1999-interview@44:58
