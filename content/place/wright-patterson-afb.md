@@ -21,6 +21,8 @@ rel:
   - [ related to, doc-cia-osi-flying-saucers-1952 ]
   - [ related to, dow-uap-d180 ]
   - [ related to, battelle ]
+  - [ related to, nasic ]
+  - [ related to, barry-goldwater ]
 links:
   - label: Wright-Patterson Air Force Base (official site)
     url: https://www.wpafb.af.mil/
@@ -44,6 +46,10 @@ facts:
     status: claimed
     by: jared-moskowitz
     source: v-2023-07-26-hearing-a@22:40
+  - text: "Former Senator Barry Goldwater said in 1994 that he believed “at Wright-Patterson Field if you could get into certain places you'd find out what the Air Force and the government knows about UFOs”, and that Gen. Curtis LeMay angrily refused his request to see a room there; he said he could not back it up."
+    status: claimed
+    by: barry-goldwater
+    source: v-1994-larry-king-ufo-cover-up-live@1:04:13
 ---
 
 Wright-Patterson Air Force Base, near Dayton, Ohio, known in the 1940s as Wright Field, was the centre of the U.S. Air Force's UFO investigations for more than two decades. Its Air Materiel Command took over Project Sign in January 1948 after Lt. Gen. Nathan Twining's 1947 letter, and the base later housed Project Grudge and, from 1952 to 1969, Project Blue Book. In 1952 the CIA found its Air Technical Intelligence Center to be the only group giving the subject serious effort.
