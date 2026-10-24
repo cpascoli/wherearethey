@@ -14,6 +14,10 @@ rel:
   - [ features, italo-venturelli ]
   - [ features, fred-claussen ]
   - [ features, eric-burlison ]
+  - [ features, carlos-de-souza ]
+  - [ features, katia-xavier ]
+  - [ features, liliane-silva ]
+  - [ features, valquiria-silva ]
 moments:
   - t: "31:15"
     text: "McConnell: as extraordinary as the Varginha witnesses' claims sound, “similar reports” of crash retrievals and the recovery of non-human beings have reached senators and staff in their investigation."
@@ -38,11 +42,13 @@ moments:
     claims: [ varginha-beings-captured ]
     basis: relayed
   - t: "46:46"
+    speaker: carlos-de-souza
     text: "Carlos de Souza, an ultralight pilot and geography teacher, in his first public statement in 26 years: “I witnessed the crash of a non-terrestrial craft on January 13th”, a cigar-shaped object releasing white smoke with a tear down its side."
     refs: [ inc-varginha-1996 ]
     claims: [ varginha-beings-captured ]
     basis: first-hand
   - t: "52:59"
+    speaker: carlos-de-souza
     text: "De Souza says that at the crash site, among Army vehicles, a soldier struck him with a rifle and ordered him to leave “or I'll split your skull”, and that two men in suits later threatened him at a petrol station."
     refs: [ inc-varginha-1996 ]
   - t: "59:59"
@@ -51,16 +57,19 @@ moments:
     claims: [ varginha-beings-captured ]
     basis: first-hand
   - t: "1:01:06"
+    speaker: liliane-silva
     text: "(Portuguese) Liliane Silva, now a pre-school teacher: on Saturday 20 January 1996, at about 3:20 p.m., she saw a short creature with red eyes, brown skin that looked oiled and veins from neck to arm; when it looked at her she felt it was suffering and hiding from someone."
     refs: [ inc-varginha-1996 ]
     claims: [ varginha-beings-captured ]
     basis: first-hand
   - t: "1:02:43"
+    speaker: katia-xavier
     text: "(Portuguese) Kátia Xavier: she was two metres from the creature, brown with red eyes, oily skin, a large head, three fingers and a big foot; she has never changed a syllable of her account in thirty years."
     refs: [ inc-varginha-1996 ]
     claims: [ varginha-beings-captured ]
     basis: first-hand
   - t: "1:04:36"
+    speaker: valquiria-silva
     text: "(Portuguese) Valquíria Silva: the creature looked as frightened of them as they were of it, brown, with red eyes and a shine on its body as if oiled."
     refs: [ inc-varginha-1996 ]
     claims: [ varginha-beings-captured ]

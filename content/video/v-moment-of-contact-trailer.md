@@ -4,6 +4,10 @@ youtube: HkFvlF8mhuU
 rel:
   - [ trailer of, film-moment-of-contact ]
   - [ about, inc-varginha-1996 ]
+  - [ features, carlos-de-souza ]
+  - [ features, katia-xavier ]
+  - [ features, liliane-silva ]
+  - [ features, valquiria-silva ]
 moments:
   - t: "1:12"
     text: "The witnesses introduce themselves: Carlos de Souza, Kátia Xavier, Liliane Silva and Valquíria Silva."

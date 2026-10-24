@@ -5,6 +5,9 @@ date: 2026-01-04
 tags: [international, south-america]
 rel:
   - [ about, inc-varginha-1996 ]
+  - [ features, katia-xavier ]
+  - [ features, liliane-silva ]
+  - [ features, valquiria-silva ]
   - [ features, italo-venturelli ]
   - [ features, ubirajara-rodrigues ]
 moments:

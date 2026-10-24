@@ -3,6 +3,8 @@ name: Varginha incident
 aka: [ET de Varginha, Varginha UFO incident, Varginha case, Caso Varginha]
 date: 1996-01-20
 place: { name: "Jardim Andere, Varginha, Minas Gerais, Brazil", lat: -21.5513, lng: -45.4303 }
+image: /assets/images/varginha-et-memorial.jpg
+image_caption: "The ET Memorial, the museum Varginha opened in 2022 about the case (photo: Então Vamo!, February 2025, CC BY-SA 4.0, via Wikimedia Commons)."
 outcome: disputed
 outcome_note: "A Brazilian Army inquiry (1997) found no military involvement and judged the creature most likely a local man seen in a storm; two of the three soldiers' testimonies of the 1990s were later retracted, while the three women and new witnesses stand by their accounts."
 outcome_source: doc-stm-ipm-18-1997
