@@ -2621,7 +2621,13 @@
       return;
     }
     const ex = e.target.closest('[data-explore]');
-    if (ex) { e.preventDefault(); startTrail(ex.dataset.explore); return; }
+    if (ex) {
+      e.preventDefault();
+      // from the reading view: the panel goes back to the side so the trail is visible beside it
+      if (state.reading) panelTransition('collapse', () => { state.reading = false; if (state.sel) openPanel(state.sel); afterResize(); startTrail(ex.dataset.explore); });
+      else startTrail(ex.dataset.explore);
+      return;
+    }
     const g = e.target.closest('[data-goto]');
     if (g && g.matches('a[href^="/"]') && (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1)) return; // new tab / window
     if (g) {
@@ -2640,17 +2646,8 @@
         return;
       }
       if (state.view === 'home' || (fromSearch && state.view !== 'graph')) go('graph'); // records: Explore with the card open
-      // following a link from the reading view: back to the side panel with clean filters, so the new file is
-      // visible in the middle; on the graph it also joins the trail (or starts one)
-      if (state.reading && g.closest('#panel') && ent) {
-        panelTransition('collapse', () => {
-          state.reading = false; $('#app').classList.remove('reading');
-          if (!offGraph(ent.type)) clearFilters(ent);
-          if (state.view === 'graph' && !offGraph(ent.type)) { followFile(ent.id); if (state.sel === ent.id) openPanel(ent.id); }
-          else select(ent.id, { from: 'link' });
-        });
-        return;
-      }
+      // following a link from the reading view stays in the reading view: the new file opens full width
+      if (state.reading && g.closest('#panel') && ent) { select(ent.id, { from: 'link' }); return; }
       select(g.dataset.goto, { from: 'link' });
       if (window.innerWidth <= 860) $('#side').classList.remove('open');
     }
