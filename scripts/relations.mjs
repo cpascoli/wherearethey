@@ -57,7 +57,7 @@ const PAIRS = [
   ['testimony by', 'testified in'], ['testified at', 'testified at'], ['testified to', 'received testimony from'], ['spoke at', 'speakers'], ['speaker', 'speaker at'],
   ['questioned at', 'questioned'], ['questioned witnesses at', 'questioners'], ['authored', 'authored by'], ['authored by', 'authored'], ['co-author', 'co-authored'],
   ['published', 'published by'], ['published by', 'published'], ['produced', 'produced by'], ['produced by', 'produced'], ['produced for', 'commissioned'],
-  ['narrated by', 'narrated'], ['directed film', 'film by'], ['presented', 'presented by'], ['presented by', 'presented'], ['submitted', 'submitted by'], ['submitted by', 'submitted'],
+  ['narrated by', 'narrated'], ['edited by', 'edited'], ['foreword by', 'wrote foreword for'], ['directed film', 'film by'], ['presented', 'presented by'], ['presented by', 'presented'], ['submitted', 'submitted by'], ['submitted by', 'submitted'],
   ['submitted to', 'received'], ['raised by', 'raised'], ['noted by', 'noted'], ['discussed by', 'discusses'], ['discusses', 'discussed in'], ['cited in', 'cites'], ['cites', 'cited in'],
   ['quoted in', 'quotes'], ['quotes', 'quoted in'], ['defined in', 'defines'], ['defines', 'defined in'], ['assessed in', 'assesses'], ['names', 'named in'], ['mentions', 'mentioned in'],
   ['recording of', 'recordings'], ['transcript of', 'transcript'], ['trailer of', 'trailer'], ['found among papers of', 'papers contained'], ['contributed to', 'contributions from'],
