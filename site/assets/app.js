@@ -1213,7 +1213,7 @@
       const firstSupport = as.find(a => a.stance === 'supports' && a.date);
       out.push(`<div class="p-sec"><h4>Who has said it, in order <span>${as.length}</span></h4><ol class="cl-time" data-collapse="14">${as.map(a => `
         <li class="cl-${a.stance}"><div class="cl-date">${a.date ? esc(fmtD(a.date)) : '<span class="muted">undated</span>'}</div><div class="cl-body">
-          <div class="cl-who">${a.by ? chip(a.by) : chip(a.on)}${a.via ? `<span class="small muted">as reported by</span>${chip(a.via)}` : ''}<span class="cl-stance">${esc(STANCE[a.stance])}</span>${a.basis ? `<span class="cl-basis" title="${esc(BASIS[a.basis]?.hint || '')}">${esc(BASIS[a.basis]?.label || a.basis)}</span>` : ''}${a === firstSupport ? '<span class="cl-first">first on file</span>' : ''}</div>
+          <div class="cl-who">${a.by ? chip(a.by) : a.kind === 'moment' ? '<span class="small muted">speaker not on file</span>' : chip(a.on)}${a.via ? `<span class="small muted">as reported by</span>${chip(a.via)}` : ''}<span class="cl-stance">${esc(STANCE[a.stance])}</span>${a.basis ? `<span class="cl-basis" title="${esc(BASIS[a.basis]?.hint || '')}">${esc(BASIS[a.basis]?.label || a.basis)}</span>` : ''}${a === firstSupport ? '<span class="cl-first">first on file</span>' : ''}</div>
           <div class="cl-text">${esc(a.text)}</div><div class="cl-src">${assertionSource(a)}</div></div></li>`).join('')}</ol></div>`);
     }
     // how the people making the claim are connected: shows whether many voices trace back to a few sources

@@ -6,6 +6,7 @@ runtime: 108
 tags: [international, south-america, crash-retrieval]
 rel:
   - [ same director, film-the-phenomenon, "Both are documentaries by James Fox" ]
+  - [ about, inc-varginha-1996 ]
 links:
   - label: Prime Video
     url: https://www.primevideo.com/detail/Moment-of-Contact/0R8ZR50WOA504KL4MYS8E58XOM
@@ -24,6 +25,6 @@ facts:
     source: https://videolibrarian.com/reviews/documentary/moment-of-contact/
 ---
 
-The Varginha case itself isn't yet an incident in this archive. Its witnesses are mostly civilians, and the military claims rest on anonymous or second-hand testimony. The official trailer plays here from Regal Theatres' YouTube upload.
+The case is filed as the Varginha incident, with the Brazilian Army's 1997 inquiry, the later retractions by two soldiers, and the witnesses Fox presented at the National Press Club in January 2026 for the film's updated cut, Moment of Contact: New Revelations. The official trailer plays here from Regal Theatres' YouTube upload.
 
 *Sources: Wikipedia (Varginha UFO incident, James Fox); Video Librarian.*
