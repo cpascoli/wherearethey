@@ -14,6 +14,7 @@ tags:
   - intelligence
   - disinformation
 rel:
+  - [ related to, area-51 ]
   - [ related to, uap-disinformation ]
   - [ related to, doc-fbi-majestic-12 ]
   - [ related to, inc-ellsworth-1977 ]

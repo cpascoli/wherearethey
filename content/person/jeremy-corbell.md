@@ -6,6 +6,7 @@ credentials:
     role: Filmmaker and UFO investigative reporter (WEAPONIZED podcast, with George Knapp)
 tags: [journalist]
 rel:
+  - [ related to, area-51 ]
   - [ related to, jay-stratton ]
   - [ related to, tim-burchett ]
   - [ related to, dylan-borland ]

@@ -16,6 +16,7 @@ tags:
   - intelligence
   - disclosure
 rel:
+  - [ related to, langley-afb ]
   - [ worked at, senate-intel-committee ]
   - [ related to, aatip ]
   - [ related to, luis-elizondo ]

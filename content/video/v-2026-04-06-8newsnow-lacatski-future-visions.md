@@ -20,7 +20,7 @@ moments:
   - t: "4:46"
     text: "Knapp: Future Visions, Lacatski's fourth and final book from the AAWSAP files, “contains many new details about dramatic UFO incidents and cases, weird events at Skinwalker Ranch and similar locations, and hints about another program that grew out of OSAP”."
     speaker: george-knapp
-    refs: [ book-covert-ufo-future-visions, kona-blue ]
+    refs: [ book-covert-ufo-future-visions, kona-blue, skinwalker-ranch ]
 ---
 
 A short April 2026 KLAS 8 News Now report by George Knapp on James Lacatski's fourth book, *Future Visions*. It recaps Lacatski's earlier, approved statement that the U.S. holds a craft of unknown origin, and gives his view that the craft is part of a larger mystery in which UFOs sit under a "paranormal umbrella". Transcribed with Whisper.

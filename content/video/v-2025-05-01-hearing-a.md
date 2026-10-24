@@ -50,7 +50,7 @@ moments:
   - t: "1:03:25"
     text: "Davis says the crash-retrieval programmes go back to 1944 and the U.S. Army's recovery of a craft that crashed in Italy in 1933, brought back to Wright Field; just before, he says he briefed Grusch for two and a half days before Grusch's Inspector General complaint."
     speaker: eric-davis
-    refs: [ inc-magenta-1933, david-grusch, crash-retrieval ]
+    refs: [ inc-magenta-1933, david-grusch, crash-retrieval, wright-patterson-afb ]
   - t: "1:04:11"
     text: "Dr. Davis: recovered craft are “not of this Earth.”"
     speaker: eric-davis

@@ -11,6 +11,7 @@ tags:
   - crash-retrieval
   - disclosure
 rel:
+  - [ related to, skinwalker-ranch ]
   - [ authored by, james-lacatski ]
   - [ authored by, colm-kelleher ]
   - [ authored by, george-knapp ]

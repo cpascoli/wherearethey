@@ -9,6 +9,7 @@ tags:
   - congress
   - intelligence
 rel:
+  - [ related to, langley-afb ]
   - [ related to, chris-mellon ]
   - [ related to, inc-nimitz-2004 ]
   - [ related to, david-fravor ]

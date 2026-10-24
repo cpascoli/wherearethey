@@ -12,6 +12,7 @@ tags:
   - intelligence
   - military
 rel:
+  - [ related to, skinwalker-ranch ]
   - [ authored, book-out-of-the-shadows ]
   - [ investigated, inc-nimitz-2004 ]
   - [ led, uaptf ]

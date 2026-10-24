@@ -4,6 +4,7 @@ date: 2021-10-12
 youtube: b3U0PVvv7RQ
 tags: [aawsap, skinwalker]
 rel:
+  - [ about, skinwalker-ranch ]
   - [ features, james-lacatski ]
   - [ features, colm-kelleher ]
   - [ features, george-knapp ]

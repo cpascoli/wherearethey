@@ -15,7 +15,7 @@ moments:
   - t: "12:15"
     text: "Knapp: in the book Stratton acknowledges he is \"Axelrod\", the intelligence official in Skinwalkers at the Pentagon whose family experienced phenomena at home after visiting Skinwalker Ranch."
     speaker: george-knapp
-    refs: [ book-skinwalkers-at-the-pentagon, jay-stratton ]
+    refs: [ book-skinwalkers-at-the-pentagon, jay-stratton, skinwalker-ranch ]
   - t: "20:01"
     text: "On the Gimbal and GoFast videos and the \"sphere with a cube\" Lt. Graves saw: \"those things came across my desk. I was the first one to get them in the Pentagon because it was my job\"; he took them to Air Force colleagues to rule out U.S. systems."
     speaker: jay-stratton

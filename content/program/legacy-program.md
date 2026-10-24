@@ -5,6 +5,7 @@ seo_description: "The alleged decades-long U.S. program to recover and reverse-e
 aka: [legacy program, legacy programs, UFO legacy program, crash retrieval program, multi-decade crash retrieval program]
 tags: [crash-retrieval, secrecy, disclosure]
 rel:
+  - [ related to, inc-roswell-1947 ]
   - [ defined in, doc-uap-disclosure-act-2023 ]
   - [ disputed by, doc-aaro-historical-record-report-v1 ]
   - [ disputed by, sean-kirkpatrick ]

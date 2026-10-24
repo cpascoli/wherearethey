@@ -6,6 +6,7 @@ credentials:
     role: Biochemist; worked alongside James Lacatski within AAWSAP at Bigelow Aerospace Advanced Space Studies (BAASS), the program's contractor
 tags: [aerospace, aawsap, skinwalker]
 rel:
+  - [ related to, skinwalker-ranch ]
   - [ worked on, aawsap ]
   - [ worked at, bigelow-aerospace ]
   - [ co-author of, book-inside-covert-ufo-program ]

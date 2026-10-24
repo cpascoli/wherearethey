@@ -27,7 +27,7 @@ moments:
   - t: "25:03"
     text: "Kelleher: AAWSAP ran two parallel tracks, UFO performance and the effects of UFOs on humans; Skinwalkers at the Pentagon reported mostly the second (medical, physiological, psychological and paranormal effects), the new book the first."
     speaker: colm-kelleher
-    refs: [ book-skinwalkers-at-the-pentagon, book-inside-covert-ufo-program ]
+    refs: [ book-skinwalkers-at-the-pentagon, book-inside-covert-ufo-program, skinwalker-ranch ]
   - t: "35:16"
     text: "Lacatski on reports that the program was stopped over religious objections: “if there were, I knew nothing about that. I saw no evidence of that being true.”"
     speaker: james-lacatski
@@ -35,7 +35,7 @@ moments:
   - t: "41:56"
     text: "Kelleher: the retrofitting of Bigelow's buildings was required by the contract to obtain facility security clearances, audited regularly, “a very different thing from … building a hangar outside Wright-Patterson Air Force Base in order to receive a craft”."
     speaker: colm-kelleher
-    refs: [ aawsap ]
+    refs: [ aawsap, wright-patterson-afb ]
   - t: "57:52"
     text: "Kelleher: the UAP Task Force “had access to the … electronic version of the OSAP database”, but he has no personal knowledge that AOIMSG or AARO used it."
     speaker: colm-kelleher

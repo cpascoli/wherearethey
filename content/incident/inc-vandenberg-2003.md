@@ -6,6 +6,7 @@ tags:
   - nuclear
   - air-force
 rel:
+  - [ related to, inc-big-sur-1964 ]
   - [ witness, jeffrey-nuccetelli ]
   - [ witness, chaz-king ]
 facts:

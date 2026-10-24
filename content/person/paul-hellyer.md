@@ -8,6 +8,7 @@ credentials:
     role: Member of Parliament (Davenport 1949–1957; Trinity 1958–1974)
 tags: [international, disclosure]
 rel:
+  - [ related to, inc-roswell-1947 ]
   - [ witness, h-2013-citizen-hearing ]
   - [ related to, ev-hellyer-toronto-2005 ]
   - [ related to, edgar-mitchell ]

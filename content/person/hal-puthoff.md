@@ -15,6 +15,8 @@ tags:
   - consciousness
   - science
 rel:
+  - [ related to, inc-nimitz-2004 ]
+  - [ related to, inc-roswell-1947 ]
   - [ co-founded, stargate ]
   - [ worked at, sri-international ]
   - [ related to, aawsap ]

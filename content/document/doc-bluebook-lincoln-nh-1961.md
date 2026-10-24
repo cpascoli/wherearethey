@@ -9,6 +9,7 @@ links:
   - label: National Archives catalog (NARA ID 28994660, T1206 roll 43)
     url: https://catalog.archives.gov/id/28994660
 rel:
+  - [ related to, wright-patterson-afb ]
   - [ related to, project-blue-book ]
   - [ about, inc-hill-1961 ]
 facts:

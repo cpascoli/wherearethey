@@ -5,6 +5,8 @@ date: 1933-06-13
 place: { name: "Magenta, Lombardy, Italy", lat: 45.4647, lng: 8.8833 }
 tags: [crash-retrieval, international, secrecy]
 rel:
+  - [ related to, wright-patterson-afb ]
+  - [ related to, inc-roswell-1947 ]
   - [ claimed by, david-grusch ]
   - [ claimed by, eric-davis ]
   - [ related to, crash-retrieval ]

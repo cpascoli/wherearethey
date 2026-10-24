@@ -8,6 +8,8 @@ credentials:
 tags:
   - congress
 rel:
+  - [ related to, skinwalker-ranch ]
+  - [ related to, area-51 ]
   - [ funded, aawsap ]
   - [ related to, aatip ]
   - [ related to, kona-blue ]

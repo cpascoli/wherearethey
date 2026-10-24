@@ -10,6 +10,7 @@ tags:
   - congress
   - aaro
 rel:
+  - [ related to, inc-nimitz-2004 ]
   - [ related to, aaro ]
   - [ related to, sean-kirkpatrick ]
   - [ related to, jon-kosloski ]

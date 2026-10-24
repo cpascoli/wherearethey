@@ -8,6 +8,7 @@ credentials:
 tags:
   - foia
 rel:
+  - [ related to, inc-roswell-1947 ]
   - [ worked at, fbi ]
 facts:
   - text: "As Special Agent in Charge in Washington, Hottel sent the 22 March 1950 memo relaying, third-hand, an informant's claim that three “flying saucers” had been recovered in New Mexico."

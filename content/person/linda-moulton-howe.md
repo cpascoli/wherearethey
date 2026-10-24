@@ -6,6 +6,7 @@ credentials:
     role: Investigative journalist and documentary maker (Earthfiles); ufologist
 tags: [journalist]
 rel:
+  - [ related to, inc-roswell-1947 ]
   - [ testified at, h-2013-citizen-hearing ]
   - [ held, sample-bismuth-magnesium ]
   - [ related to, richard-doty ]

@@ -8,6 +8,7 @@ credentials:
 tags:
   - journalist
 rel:
+  - [ related to, skinwalker-ranch ]
   - [ witness, h-2025-09-09 ]
   - [ related to, bob-lazar ]
   - [ related to, aawsap ]

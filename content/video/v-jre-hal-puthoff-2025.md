@@ -58,7 +58,7 @@ moments:
   - t: "1:37:13"
     text: "Eric Davis interviewed a former Wright-Patterson commander (“General Exon”), who said Roswell “was the real deal”. Puthoff says there is data on crashes in other countries too."
     speaker: hal-puthoff
-    refs: [ eric-davis, inc-roswell-1947 ]
+    refs: [ eric-davis, inc-roswell-1947, wright-patterson-afb ]
   - t: "1:40:30"
     text: "Diana Pasulka says some craft were described to her as “donations”. Puthoff cites Malmstrom (Bob Salas) and a Soviet silo whose launch sequence started on its own."
     speaker: hal-puthoff

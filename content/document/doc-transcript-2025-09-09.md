@@ -11,6 +11,8 @@ links:
   - label: govinfo.gov (official printed hearing)
     url: https://www.govinfo.gov/content/pkg/CHRG-119hhrg61718/pdf/CHRG-119hhrg61718.pdf
 rel:
+  - [ related to, inc-langley-2012 ]
+  - [ related to, inc-vandenberg-2003 ]
   - [ transcript of, h-2025-09-09 ]
 facts:
   - text: The index of documents entered into the record includes a letter to the Secretary of Defense about alleged reprisals against Maj. David Charles Grusch.

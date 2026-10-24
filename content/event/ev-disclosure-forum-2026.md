@@ -6,6 +6,7 @@ tags:
   - disclosure
   - congress
 rel:
+  - [ related to, inc-langley-2023 ]
   - [ organized by, uapdf ]
 links:
   - label: Disclosure Forum 2026 (forum.disclosure.org)

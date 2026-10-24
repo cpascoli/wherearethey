@@ -12,6 +12,7 @@ tags:
   - nuclear
   - whistleblower
 rel:
+  - [ related to, vandenberg-sfb ]
   - [ witness, h-2025-09-09 ]
   - [ witness, inc-vandenberg-2003 ]
   - [ related to, aaro ]

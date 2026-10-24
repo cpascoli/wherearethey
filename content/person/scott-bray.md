@@ -9,6 +9,7 @@ tags:
   - intelligence
   - navy
 rel:
+  - [ related to, inc-malmstrom-1967 ]
   - [ worked at, oni ]
   - [ witness, h-2022-05-17 ]
   - [ related to, uaptf ]

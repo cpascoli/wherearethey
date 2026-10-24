@@ -19,6 +19,8 @@ facts:
     status: claimed
     by: george-knapp
     source: v-2025-09-09-hearing-a@2:14:44
+rel:
+  - [ related to, vandenberg-sfb ]
 ---
 
 Robert Jacobs was a U.S. Air Force lieutenant in charge of a photographic instrumentation team at Vandenberg Air Force Base, and later a university professor. He says that in September 1964 his team's telescope footage of an Atlas missile test showed a disc-shaped object circle the dummy warhead, fire beams of light at it and send it tumbling.

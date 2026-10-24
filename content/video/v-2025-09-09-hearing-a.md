@@ -50,7 +50,7 @@ moments:
   - t: "55:03"
     text: "Borland: at about 01:30 he saw a roughly 100 ft equilateral triangle take off from near the NASA hangar at Langley AFB."
     speaker: dylan-borland
-    refs: [ inc-langley-2012 ]
+    refs: [ inc-langley-2012, langley-afb ]
   - t: "1:12:18"
     text: "Moskowitz: “I don’t know on this subject. But I do know when we are being lied to, and we are definitely being lied to.”"
     speaker: jared-moskowitz
@@ -61,7 +61,7 @@ moments:
   - t: "1:19:10"
     text: "Asked by Rep. Mace whether the Langley triangle was U.S. technology, Borland says that must be answered in a SCIF, that AARO “have the answer”, and that he does not think it was a foreign government."
     speaker: dylan-borland
-    refs: [ inc-langley-2012, aaro, nancy-mace ]
+    refs: [ inc-langley-2012, aaro, nancy-mace, langley-afb ]
   - t: "1:35:11"
     text: "Knapp relays Russian files on an October 1982 incident at a Soviet ICBM base: after hours of UFO activity the launch control system lit up as if the correct codes had been entered, then returned to normal."
     speaker: george-knapp

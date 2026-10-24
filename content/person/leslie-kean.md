@@ -6,6 +6,7 @@ credentials:
     role: Investigative journalist; co-author of The New York Times' 2017 AATIP story and The Debrief's 2023 Grusch story
 tags: [journalist, disclosure]
 rel:
+  - [ related to, inc-nimitz-2004 ]
   - [ authored, book-kean-ufos-on-the-record ]
   - [ reported on, aatip ]
   - [ reported on, david-grusch ]

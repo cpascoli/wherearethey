@@ -12,6 +12,7 @@ tags:
   - crash-retrieval
   - science
 rel:
+  - [ related to, inc-roswell-1947 ]
   - [ related to, aawsap ]
   - [ related to, lockheed-martin ]
   - [ related to, hal-puthoff ]

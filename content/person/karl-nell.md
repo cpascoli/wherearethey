@@ -15,6 +15,7 @@ tags:
   - military
   - disclosure
 rel:
+  - [ related to, inc-malmstrom-1967 ]
   - [ related to, uaptf ]
   - [ related to, david-grusch ]
   - [ related to, diana-pasulka ]

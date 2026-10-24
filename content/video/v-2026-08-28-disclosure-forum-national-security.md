@@ -31,7 +31,7 @@ moments:
   - t: "10:49"
     text: "Von Rennenkampff: Wright-Patterson AFB was shut down in 2024 because of drone activity, with 15 to 30 objects on radar according to FOIA records."
     speaker: marik-von-rennenkampff
-    refs: [ inc-wright-patterson-2024 ]
+    refs: [ inc-wright-patterson-2024, wright-patterson-afb ]
   - t: "35:38"
     text: "Mellon: he sat on the Defense Department committee that reviews all special access programs and reports them to Congress, and “never saw anything related to UAP”, though workarounds such as alternative compensatory control measures exist."
     speaker: chris-mellon

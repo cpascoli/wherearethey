@@ -13,6 +13,7 @@ links:
   - label: FBI Vault — Guy Hottel
     url: https://vault.fbi.gov/hottel_guy
 rel:
+  - [ related to, inc-roswell-1947 ]
   - [ authored by, guy-hottel ]
   - [ produced by, fbi ]
   - [ related to, crash-retrieval ]

@@ -11,6 +11,7 @@ tags:
   - air-force
   - military
 rel:
+  - [ related to, area-51 ]
   - [ used by, department-of-war ]
   - [ related to, project-sign ]
   - [ related to, project-grudge ]

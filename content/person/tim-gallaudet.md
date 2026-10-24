@@ -21,6 +21,7 @@ tags:
   - navy
   - whistleblower
 rel:
+  - [ related to, inc-nimitz-2004 ]
   - [ witness, h-2024-11-13 ]
   - [ related to, inc-roosevelt-2015 ]
   - [ related to, jay-stratton ]

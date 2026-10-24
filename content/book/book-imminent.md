@@ -8,6 +8,7 @@ isbn: 978-0-06-323556-4
 pages: 304
 tags: [disclosure, crash-retrieval, intelligence]
 rel:
+  - [ about, inc-roswell-1947 ]
   - [ authored by, luis-elizondo ]
   - [ about, legacy-program ]
   - [ about, aatip ]

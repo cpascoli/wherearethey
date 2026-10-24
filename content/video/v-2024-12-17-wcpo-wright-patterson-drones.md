@@ -8,10 +8,10 @@ rel:
 moments:
   - t: "0:09"
     text: "WCPO 9 reports that Wright-Patterson temporarily shut its airspace because of drones flying in the area."
-    refs: [ inc-wright-patterson-2024 ]
+    refs: [ inc-wright-patterson-2024, wright-patterson-afb ]
   - t: "0:22"
     text: "A reported radio call from the Wright-Patterson tower to a medical transport aircraft, obtained by The War Zone: \"Use extreme caution for heavy UAS movement on the base. Security forces is handling the situation.\""
-    refs: [ inc-wright-patterson-2024 ]
+    refs: [ inc-wright-patterson-2024, wright-patterson-afb ]
   - t: "0:39"
     text: "WCPO confirms the airspace was closed for four hours on Friday because of drones over and around the base. The base says none of the drones affected base residents, facilities or assets."
     refs: [ inc-wright-patterson-2024 ]
