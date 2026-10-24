@@ -96,6 +96,8 @@ moments:
     speaker: george-knapp
     refs: [ bob-jacobs, inc-big-sur-1964, aaro ]
   - t: "2:15:30"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: relayed
     text: "Knapp: Bob Salas, who saw UFOs over a nuclear ICBM base as missiles went down, was also disregarded; “It almost looks like AARO operated as a counterintelligence operation.”"
     speaker: george-knapp
     refs: [ bob-salas, inc-malmstrom-1967, aaro ]

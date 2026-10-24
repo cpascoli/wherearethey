@@ -48,10 +48,14 @@ moments:
     text: "Cmdr. Graham Bethune (USN, ret.) describes a night flight from Keflavik to Argentia on February 10, 1951, when a glowing object rose from the sea and paced the aircraft."
     speaker: graham-bethune
   - t: "42:36"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: first-hand
     text: "Robert Salas corrects his card (he left the Air Force as a captain), then describes the March 16, 1967 loss of six to eight Minuteman missiles at Oscar Flight while guards reported a glowing red object at the gate."
     speaker: bob-salas
     refs: [ inc-malmstrom-1967 ]
   - t: "45:16"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: documented
     text: "Salas: Echo Flight lost all ten missiles under similar circumstances; a FOIA-released SAC telex said the loss “is cause for grave concern to this headquarters.”"
     speaker: bob-salas
     refs: [ inc-malmstrom-1967, doc-341smw-history-1967 ]

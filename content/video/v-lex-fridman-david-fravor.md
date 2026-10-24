@@ -15,6 +15,8 @@ moments:
     speaker: david-fravor
     refs: [ inc-nimitz-2004 ]
   - t: "1:21:45"
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
     text: "Fravor: above it a small white Tic Tac moved abruptly north–south and east–west with no inertia and no rotor wash, ruling out a helicopter."
     speaker: david-fravor
     refs: [ inc-nimitz-2004 ]

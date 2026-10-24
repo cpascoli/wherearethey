@@ -1,5 +1,6 @@
 ---
 name: Bob Lazar 1989 interview with George Knapp
+date: 1989-11   # first broadcast on KLAS-TV (uploaded to YouTube in 2021)
 youtube: CY5LxACsYI4
 rel:
   - [ features, bob-lazar ]

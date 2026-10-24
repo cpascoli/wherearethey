@@ -11,6 +11,9 @@ links:
     url: https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/
 facts:
   - text: In May 2022 Grusch filed a “Disclosure of Urgent Concern” and reprisal complaint with the Intelligence Community Inspector General, alleging that information about UAP crash-retrieval programs was being withheld from Congress.
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
+    claim_by: david-grusch
     status: claimed
     by: david-grusch
     source: https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/

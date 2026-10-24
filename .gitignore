@@ -36,6 +36,7 @@ site/feed.xml
 site/sitemap.xml
 site/robots.txt
 site/person/
+site/claim/
 site/incident/
 site/hearing/
 site/program/

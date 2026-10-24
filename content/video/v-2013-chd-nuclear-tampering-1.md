@@ -17,10 +17,14 @@ moments:
     speaker: bob-salas
     refs: [ inc-malmstrom-1967 ]
   - t: "8:02"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: relayed
     text: "Salas plays his 1996 phone recording of Col. Walter Figel, deputy crew commander at Echo Flight, describing reports of UFOs over two launch sites as all ten Echo missiles went down on 16 March 1967."
     speaker: bob-salas
     refs: [ inc-malmstrom-1967, doc-341smw-history-1967 ]
   - t: "11:01"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: documented
     text: "Salas reads from the unit history he supplied: the investigating team's opinion was that “externally generated signals” shut the Echo missiles down, since all ten couplers failing within seconds was very remote."
     speaker: bob-salas
     refs: [ inc-malmstrom-1967, doc-341smw-history-1967 ]

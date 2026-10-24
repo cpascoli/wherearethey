@@ -15,6 +15,9 @@ facts:
     status: documented
     source: doc-341smw-history-1967
   - text: "Engineering tests recorded in the later wing histories traced the shutdown to a noise pulse reaching the Minuteman I C-53P logic coupler, judged to be of electromagnetic-pulse or electrostatic nature and peculiar to the Wing I system. The wing histories do not mention the Oscar Flight event Salas describes."
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    stance: disputes
+    basis: documented
     status: documented
     source: doc-341smw-history-1967
   - text: Above-ground security guards reported a glowing, reddish-orange, oval object about 30 feet across hovering over the launch facility gate.

@@ -23,6 +23,9 @@ facts:
     status: claimed
     source: https://www.wsj.com/politics/national-security/ufo-us-disinformation-45376f7e
   - text: "On the 1967 Malmstrom missile shutdowns, the Journal reports that AARO traced them to an Air Force electromagnetic-pulse generator used to test the missiles' vulnerability, kept secret from the launch crews. Robert Salas disagrees: “There is a gigantic coverup, not only by the Air Force, but every other federal agency that has cognizance of this subject.”"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    stance: disputes
+    basis: relayed
     status: claimed
     source: https://www.wsj.com/politics/national-security/ufo-us-disinformation-45376f7e
   - text: "Counterpoint: The Black Vault's FOIA requests for the spring 2023 memo (OSD case 25-F-3514) and related AFOSI records found no responsive records."

@@ -52,6 +52,9 @@ facts:
     by: ryan-graves
     source: doc-graves-statement-2023-07-26
   - text: "Asked about David Grusch's crash-retrieval claims, he says he was never exposed to such programs but that nothing in Grusch's background suggests he is lying."
+    claims: [ recovered-non-human-craft ]
+    stance: context
+    basis: opinion
     status: claimed
     by: ryan-graves
     source: v-jm-ryan-graves@38:20

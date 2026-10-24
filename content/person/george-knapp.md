@@ -41,6 +41,8 @@ facts:
     status: documented
     source: doc-aaro-historical-record-report-v1
   - text: "He testified that James Lacatski told him the U.S. had got inside a craft with no wings, rotor, tail or fuel, and that it took 14 months of Pentagon pre-publication review to clear two sentences on it."
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
     status: claimed
     by: george-knapp
     source: v-2025-09-09-hearing-a@1:48:03

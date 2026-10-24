@@ -18,6 +18,8 @@ moments:
     text: "Day: the ship's systems “failed utterly to identify these things”; the air defense commander, Captain Smith, suggested ice crystals, which Day thought ludicrous."
     speaker: kevin-day
   - t: "10:37"
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
     text: "Day: as Fravor's flight reached merge plot, the object dropped from 28,000 feet to 50 feet above the water in 0.78 seconds, which he says he measured the next day."
     speaker: kevin-day
     refs: [ david-fravor ]

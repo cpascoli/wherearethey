@@ -28,6 +28,8 @@ facts:
     by: dylan-borland
     source: v-jm-dylan-borland@18:45
   - text: "Under oath he said he is a whistleblower to the Intelligence Community Inspector General and AARO with “direct firsthand knowledge of and experience with craft and technologies that are not ours”, and that he was later “exposed to classified information from the UAP legacy crash retrieval program” through a position in a special access program."
+    claims: [ recovered-non-human-craft ]
+    basis: first-hand
     status: documented
     by: dylan-borland
     source: doc-transcript-2025-09-09

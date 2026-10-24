@@ -28,6 +28,9 @@ facts:
     by: bob-salas
     source: v-jm-robert-salas@59:27
   - text: "He long told the story as having happened at Echo Flight, until his crew commander Fred Meiwald told him in 1996 that they had been at Oscar Flight, a week after Echo; in a recorded call Meiwald confirmed the guard's reports and missiles going down, though not how many."
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    stance: context
+    basis: first-hand
     status: claimed
     by: bob-salas
     source: v-jm-robert-salas@57:53
@@ -47,6 +50,7 @@ facts:
     by: bob-salas
     source: v-jm-robert-salas@1:34
   - text: "He calls the 2025 Wall Street Journal report attributing the Malmstrom shutdowns to a secret EMP test a deliberate attempt to discredit his story, citing DOE confirmation that there were no nuclear tests on 16 or 24 March 1967."
+    claims: [ malmstrom-ufo-missile-shutdown ]
     status: claimed
     by: bob-salas
     source: v-jm-robert-salas@39:19

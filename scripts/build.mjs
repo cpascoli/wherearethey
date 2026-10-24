@@ -17,9 +17,14 @@ const REPORTER = ['journalist', 'policy-expert'];
 export const MASS_MIN_WITNESSES = 50;
 export const OUTCOMES = ['open', 'disputed', 'explained', 'hoax'];
 // news items: short dated updates (a statement, a post, an article) too slight for a full entry
+// claims: where a proposition stands, given the record (shown as a badge on the claim page, with a note and its source)
+export const CLAIM_STATUSES = ['open', 'disputed', 'supported', 'refuted'];
+// an assertion (a fact or moment tagged with a claim): its position and how the speaker knows
+export const STANCES = ['supports', 'disputes', 'context'];
+export const BASES = ['first-hand', 'relayed', 'documented', 'opinion'];
 export const NEWS_KINDS = ['statement', 'post', 'article', 'interview', 'podcast', 'hearing', 'legislation', 'release', 'research', 'incident', 'event'];
 // not graph nodes: shown in context (dossiers, index, search, Latest) instead
-export const OFF_GRAPH = new Set(['record', 'news']);
+export const OFF_GRAPH = new Set(['record', 'news', 'claim']);
 
 export async function build({ check = false, quiet = false } = {}) {
   const t0 = Date.now();
@@ -51,6 +56,17 @@ export async function build({ check = false, quiet = false } = {}) {
     return { id, t: t != null ? toSeconds(t) : null };
   }
 
+  // a fact or moment can bear on claims: `claims: [claim-id]`, with `stance` (supports, disputes, context), `basis`
+  // (first-hand, relayed, documented, opinion) and `claim_by` when the position is someone else's than the speaker's
+  const claimTags = (o, src, file) => {
+    if (!src.claims) return o;
+    o.claims = arr(src.claims).map(String);
+    o.stance = src.stance ? String(src.stance) : 'supports';
+    if (!STANCES.includes(o.stance)) warnings.push(`${file}: stance "${o.stance}" should be one of ${STANCES.join(', ')}`);
+    if (src.basis) { o.basis = String(src.basis); if (!BASES.includes(o.basis)) warnings.push(`${file}: basis "${o.basis}" should be one of ${BASES.join(', ')}`); }
+    if (src.claim_by) o.claimBy = String(src.claim_by);
+    return o;
+  };
   const entities = raw.map(r => {
     const d = r.data;
     const e = {
@@ -70,6 +86,8 @@ export async function build({ check = false, quiet = false } = {}) {
         }
         if (fact.by && !byId.has(fact.by)) warnings.push(`${r.file}: fact.by "${fact.by}" not found`);
         fact.source = parseSource(fact.source, r.file);
+        claimTags(fact, f, r.file);
+        if (f.said) fact.said = str(f.said); // when it was said, if not the date of its source
         // the sourcing rule: Wikipedia can point the way, but never backs a documented fact
         if (fact.status === 'documented' && /wikipedia\.org/i.test(fact.source?.url || '')) warnings.push(`${r.file}: documented fact cites Wikipedia; cite the primary record or use claimed/unverified`);
         return fact;
@@ -115,6 +133,13 @@ export async function build({ check = false, quiet = false } = {}) {
       if (d.outcome_source) e.outcomeSource = parseSource(d.outcome_source, r.file);
       if (['explained', 'hoax', 'disputed'].includes(e.outcome) && !d.outcome_source) warnings.push(`${r.file}: outcome "${e.outcome}" needs an outcome_source`);
     }
+    if (r.type === 'claim') {
+      e.status = d.status ? String(d.status) : 'open';
+      if (!CLAIM_STATUSES.includes(e.status)) { warnings.push(`${r.file}: claim status "${e.status}" should be one of ${CLAIM_STATUSES.join(', ')}`); e.status = 'open'; }
+      if (d.status_note) e.statusNote = String(d.status_note);
+      if (d.status_source) e.statusSource = parseSource(d.status_source, r.file);
+      if (e.status !== 'open' && !d.status_source) warnings.push(`${r.file}: claim status "${e.status}" needs a status_source`);
+    }
     if (r.type === 'news') {
       e.kind = d.kind ? String(d.kind) : 'article';
       if (!NEWS_KINDS.includes(e.kind)) warnings.push(`${r.file}: news kind "${e.kind}" should be one of ${NEWS_KINDS.join(', ')}`);
@@ -129,9 +154,9 @@ export async function build({ check = false, quiet = false } = {}) {
       if (!e.youtube && d.media) { e.media = String(d.media); e.url = d.url ? String(d.url) : null; }
       if (!e.youtube && !e.media) errors.push(`${r.file}: video needs a "youtube" id/URL or a "media" folder`);
       if (d.youtube && !e.youtube) errors.push(`${r.file}: invalid "youtube" value`);
-      e.moments = arr(d.moments).map(m => ({
+      e.moments = arr(d.moments).map(m => claimTags({
         t: toSeconds(m.t), text: m.text || '', speaker: m.speaker || null, refs: arr(m.refs).map(String),
-      }));
+      }, m, r.file));
       for (const m of e.moments) {
         if (m.t == null) errors.push(`${r.file}: moment has an invalid time`);
         for (const ref of [...m.refs, ...(m.speaker ? [m.speaker] : [])]) if (!byId.has(ref)) warnings.push(`${r.file}: moment ref "${ref}" not found`);
@@ -200,6 +225,33 @@ export async function build({ check = false, quiet = false } = {}) {
     if (s && !v.rel.some(r => r.id === s.id)) v.rel.push({ label: 'published by', id: s.id });
   }
 
+  // ── Claims: every fact and moment tagged with a claim becomes one of its assertions, dated by when it was said ──
+  // a video's moments date from the hearing or event it records (uploads often come days later)
+  const recordedOn = v => { const r = v.rel.find(x => x.label === 'recording of' && ['hearing', 'event'].includes(ent.get(x.id)?.type)); return (r && ent.get(r.id).date) || v.date; };
+  const dateOf = src => { const s = src?.id && ent.get(src.id); return s ? (s.type === 'video' ? recordedOn(s) : s.date) : null; };
+  const assertions = new Map();
+  const assert = (claimId, a, file) => {
+    if (ent.get(claimId)?.type !== 'claim') { warnings.push(`${file}: claim "${claimId}" not found`); return; }
+    (assertions.get(claimId) || assertions.set(claimId, []).get(claimId)).push(a);
+  };
+  for (const e of entities) {
+    e.facts.forEach((f, i) => {
+      for (const c of f.claims || []) assert(c, {
+        on: e.id, kind: 'fact', i, text: f.text, by: f.claimBy || f.by || (e.type === 'person' ? e.id : null), status: f.status,
+        date: f.said === 'unknown' ? null : f.said || dateOf(f.source) || (['document', 'hearing', 'event', 'news', 'book', 'film', 'video'].includes(e.type) ? e.date : null),
+        stance: f.stance, basis: f.basis || null, source: f.source || null, via: f.claimBy && f.by && f.by !== f.claimBy ? f.by : null,
+      }, e.file);
+    });
+    for (const m of e.moments || []) for (const c of m.claims || []) assert(c, {
+      on: e.id, kind: 'moment', t: m.t, text: m.text, by: m.claimBy || m.speaker, date: recordedOn(e), stance: m.stance, basis: m.basis || null,
+      source: { id: e.id, t: m.t }, via: m.claimBy && m.speaker && m.speaker !== m.claimBy ? m.speaker : null,
+    }, e.file);
+  }
+  for (const e of entities.filter(e => e.type === 'claim')) {
+    // oldest first, undated last: who said it first is the point of the timeline
+    e.assertions = (assertions.get(e.id) || []).sort((a, b) => (a.date ? 0 : 1) - (b.date ? 0 : 1) || String(a.date).localeCompare(String(b.date)));
+  }
+
   // ── Edges ──
   const edges = new Map();
   const linked = new Set(); // "a|b" both directions, for quick "already connected?" checks
@@ -212,6 +264,8 @@ export async function build({ check = false, quiet = false } = {}) {
   };
   for (const e of entities) {
     for (const r of e.rel) addEdge(e.id, r.id, r.label, 'rel', 1, r.note);
+    // who asserts or disputes a claim (their dossier lists their positions on claims)
+    for (const a of e.assertions || []) if (a.by) addEdge(a.by, e.id, a.stance === 'disputes' ? 'disputes claim' : a.stance === 'context' ? 'comments on claim' : 'asserts', 'claim');
     for (const f of e.facts) if (f.by && f.by !== e.id) addEdge(f.by, e.id, 'statement about', 'fact');
     for (const m of e.moments || []) {
       for (const ref of m.refs) addEdge(e.id, ref, 'discusses', 'moment');
@@ -246,7 +300,7 @@ export async function build({ check = false, quiet = false } = {}) {
   const norm = s => s.replace(/[^\p{L}\p{N}']+/gu, ' ');
   const termMap = new Map(); // normalized term → [entity ids]
   for (const e of entities) {
-    if (['video', 'source', 'record', 'news'].includes(e.type) || e.nomatch) continue;
+    if (['video', 'source', 'record', 'news', 'claim'].includes(e.type) || e.nomatch) continue;
     for (const term of new Set([e.name, ...e.aka, ...(e.match || [])])) {
       const n = norm(term).trim();
       if (n.length < 3 || n.length > 60) continue; // long document titles are never spoken verbatim

@@ -73,14 +73,23 @@ moments:
     speaker: marik-von-rennenkampff
     refs: [ sean-kirkpatrick, inc-roosevelt-2015 ]
   - t: "1:21:26"
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: relayed
     text: "McConnell: the Tic Tac case convinced him, after he sat down with David Fravor and Alex Dietrich: multiple witnesses, radar from the E-2C, the Aegis cruiser and an F/A-18, and infrared."
     speaker: kirk-mcconnell
     refs: [ inc-nimitz-2004, david-fravor, alex-dietrich ]
   - t: "1:23:32"
+    claims: [ tic-tac-beyond-known-technology ]
+    stance: disputes
+    basis: relayed
+    claim_by: sean-kirkpatrick
     text: "Gallaudet: Sean Kirkpatrick recently said in person in Arlington that the Tic Tac was a DARPA experiment, a narrative Gallaudet rejects."
     speaker: tim-gallaudet
     refs: [ sean-kirkpatrick, inc-nimitz-2004 ]
   - t: "1:26:30"
+    claims: [ tic-tac-beyond-known-technology ]
+    stance: context
+    basis: opinion
     text: "Von Rennenkampff keeps a 5–10% possibility that the Tic Tac was U.S. technology, because Fravor and Dietrich recall pitot-tube-like protrusions in the higher-quality video."
     speaker: marik-von-rennenkampff
     refs: [ inc-nimitz-2004, david-fravor, alex-dietrich ]

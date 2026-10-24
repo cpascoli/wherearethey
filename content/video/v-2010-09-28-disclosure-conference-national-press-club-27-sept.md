@@ -14,6 +14,8 @@ rel:
   - [ features, dwynne-arneson ]
 moments:
   - t: "1:47"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: first-hand
     text: "Salas: on 24 March 1967, as deputy crew commander at Oscar Flight with Lt. Fred Meiwald, his topside guard reported strange lights, then called back screaming about a red glowing object about 30 ft across hovering above the front gate."
     speaker: bob-salas
     refs: [ inc-malmstrom-1967 ]
@@ -22,10 +24,14 @@ moments:
     speaker: dwynne-arneson
     refs: [ inc-malmstrom-1967 ]
   - t: "11:37"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: relayed
     text: "Arneson says his Boeing supervisor, the engineer who investigated the Echo Flight shutdown, told him the missiles \"did not go down by themselves\" and that the Air Force told Boeing to stop the investigation and send no report."
     speaker: dwynne-arneson
     refs: [ inc-malmstrom-1967, doc-341smw-history-1967 ]
   - t: "13:17"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: relayed
     text: "Robert Jamison, a missile targeting team commander, says that before being sent to restart Oscar Flight he was told a UFO had been seen over Roy, Montana, and saw on the job-control board that all of Oscar Flight was down, which he was told had happened once before, at Echo Flight."
     speaker: robert-jamison
     refs: [ inc-malmstrom-1967 ]

@@ -15,12 +15,18 @@ facts:
     status: documented
     source: library/docs/doc-341smw-history-1967.pdf
   - text: "It states: \"Rumors of Unidentified Flying Objects (UFO) around the area of Echo Flight during the time of fault were disproven.\" A mobile strike team that had checked all of November Flight's launch facilities that morning stated that no unusual activity or sightings were observed, and the 801st Radar Squadron reported no radar or atmospheric interference related to Echo Flight."
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    stance: disputes
+    basis: documented
     status: documented
     source: library/docs/doc-341smw-history-1967.pdf
   - text: "The investigation teams at Malmstrom were initially \"unable to determine a logical cause for the incident\". Later quarters record Boeing and Ogden Air Materiel Area testing: the C-53P logic coupler was found to be the receiver of the noise pulse, tests reproduced the Echo Flight responses most of the time, and the problem was judged peculiar to the Minuteman I (Wing I) system and of electromagnetic-pulse or electrostatic nature."
     status: documented
     source: library/docs/doc-341smw-history-1967.pdf
   - text: "The histories concern Echo Flight. They contain no account of an object over a launch facility or of a separate Oscar Flight shutdown."
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    stance: context
+    basis: documented
     status: documented
     source: library/docs/doc-341smw-history-1967.pdf
 ---

@@ -49,6 +49,8 @@ facts:
     by: eric-burlison
     source: v-2026-10-15-dr-phil-burlison-lure-ufos@15:41
   - text: "Asked whether the U.S. holds non-human craft: “At this point, I would be surprised if that were not true”, adding that he does not know with certainty and does not hold a security clearance."
+    claims: [ recovered-non-human-craft ]
+    basis: opinion
     status: claimed
     by: eric-burlison
     source: v-2026-10-15-dr-phil-burlison-lure-ufos@28:53

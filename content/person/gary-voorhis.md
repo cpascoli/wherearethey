@@ -30,10 +30,16 @@ facts:
     by: gary-voorhis
     source: https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/
   - text: "David Fravor has disputed parts of the enlisted witnesses' accounts: he says only the four aircrew saw the Tic Tac, no one was asked to sign non-disclosure agreements, “men in suits” never came to the ships, and claims of a 10-minute video are untrue; he thinks the squadron's tapes were probably recorded over by accident."
+    said: 2019-12
+    claims: [ tic-tac-beyond-known-technology ]
+    stance: context
+    basis: first-hand
     status: claimed
     by: david-fravor
     source: https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/
   - text: "In a 2019 interview for The Nimitz Encounters he said recalibrating the radar “only … make[s] the tracks clear”, that the objects moved faster than the radar's pulses, and that through binoculars they were only “little specks”."
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
     status: claimed
     by: gary-voorhis
     source: v-2019-09-21-nimitz-encounters-gary-voorhis@2:22

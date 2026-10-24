@@ -33,6 +33,9 @@ facts:
     by: david-fravor
     source: doc-fravor-statement-2023-07-26
   - text: "On June 5, 2023 she and Ralph Blumenthal broke David Grusch's story in The Debrief: “A former intelligence official turned whistleblower has given Congress and the Intelligence Community Inspector General extensive classified information about deeply covert programs that he says possess retrieved intact and partially intact craft of non-human origin.”"
+    said: 2023-06-05
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
     status: documented
     source: https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/
   - text: "At the June 2026 Capitol Hill press conference she said she had interviewed Grusch extensively before publishing his story, that the conversation should now shift “with more of a focus on biology and less on technology”, and that Kirk McConnell was present in classified settings when credible sources briefed senators, including Marco Rubio, about recovered non-human bodies."

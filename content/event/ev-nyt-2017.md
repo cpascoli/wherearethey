@@ -29,6 +29,8 @@ facts:
     status: documented
     source: https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html
   - text: "A companion article, “2 Navy Airmen and an Object That ‘Accelerated Like Nothing I've Ever Seen’”, told the November 2004 Nimitz “Tic Tac” encounter through Cmdr. David Fravor's account."
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: relayed
     status: documented
     source: https://www.nytimes.com/2017/12/16/us/politics/unidentified-flying-object-navy.html
   - text: "The main article reported that Bigelow Aerospace “modified buildings in Las Vegas for the storage of metal alloys and other materials that Mr. Elizondo and program contractors said had been recovered from unidentified aerial phenomena.”"

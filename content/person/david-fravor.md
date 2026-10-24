@@ -55,6 +55,8 @@ facts:
     by: david-fravor
     source: v-2023-07-26-hearing-a@1:54:59
   - text: "His written statement concludes that the Tic Tac “was far superior to anything that we had at the time, have today, or are looking to develop in the next 10+ years”, and calls for congressional oversight of any program said to hold such technology."
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
     status: claimed
     by: david-fravor
     source: doc-fravor-statement-2023-07-26

@@ -24,6 +24,9 @@ moments:
     speaker: alex-dietrich
     refs: [ david-fravor ]
   - t: "39:29"
+    claims: [ tic-tac-beyond-known-technology ]
+    stance: context
+    basis: first-hand
     text: "Dietrich: back on the ship her first suspicion was that they had been vectored into a live range and the Tic Tac was a surface- or subsurface-to-air missile; she says Pentagon officials from ONI, AATIP and the UAP Task Force have since assured her that possibility was eliminated."
     speaker: alex-dietrich
     refs: [ aatip, uaptf ]

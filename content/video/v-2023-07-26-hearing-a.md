@@ -31,6 +31,8 @@ moments:
     speaker: david-grusch
     refs: [ uaptf, sap, cap ]
   - t: "32:06"
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
     text: "Grusch: informed in the course of his official duties of a multi-decade UAP crash retrieval and reverse-engineering program, to which he was denied access."
     speaker: david-grusch
     refs: [ crash-retrieval ]

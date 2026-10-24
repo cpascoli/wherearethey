@@ -25,6 +25,7 @@ links:
     url: https://www.newsnationnow.com/space/ufo/special-report-confessions-of-a-ufo-hunter/
 facts:
   - text: Elizondo's memoir (William Morrow, 2024) says a decades-long crash-retrieval and reverse-engineering effort, which he calls “Legacy Programs”, has run since the Roswell recovery as a secret umbrella of government officials and aerospace contractors.
+    claims: [ recovered-non-human-craft ]
     status: claimed
     by: luis-elizondo
     source: https://www.newsnationnow.com/space/ufo/special-report-confessions-of-a-ufo-hunter/

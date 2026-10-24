@@ -24,6 +24,8 @@ moments:
     speaker: alex-dietrich
     refs: [ inc-nimitz-2004 ]
   - t: "2:49"
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
     text: "Fravor: as he spirals down, the Tic Tac turns abruptly and starts mirroring him; when it is right in front of him, “it just disappears”."
     speaker: david-fravor
     refs: [ inc-nimitz-2004 ]
@@ -34,6 +36,8 @@ moments:
     text: "Dietrich on the reception aboard ship: within 30 minutes the whole ship knew, and the crews were ridiculed with cartoons and screenings of Men in Black and Independence Day; Fravor says the admiral's staff made a few phone calls, “but that was the extent of it”."
     speaker: alex-dietrich
   - t: "5:45"
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: relayed
     text: "Chris Mellon: the Nimitz objects seemed to have unlimited loiter time and dropped from 60,000–80,000 feet to near the sea “in seconds”, with acceleration far beyond anything the U.S. can build."
     speaker: chris-mellon
 ---

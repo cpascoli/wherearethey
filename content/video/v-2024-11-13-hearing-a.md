@@ -67,6 +67,8 @@ moments:
     text: "Gallaudet on the USS Omaha case off southern California: bridge watchstanders saw an object with no exhaust or control surfaces go from the air into the sea — transmedium travel."
     speaker: tim-gallaudet
   - t: "1:18:39"
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: relayed
     text: "Gallaudet: a meeting with AARO turned into “an hours-long influence operation” to defend its historical record report and suggest the Tic Tac was American technology, which Fravor and Dietrich reject."
     speaker: tim-gallaudet
     refs: [ aaro, doc-aaro-historical-record-report-v1, inc-nimitz-2004, david-fravor, alex-dietrich ]
@@ -78,6 +80,7 @@ moments:
     speaker: michael-shellenberger
     refs: [ doc-immaculate-constellation ]
   - t: "1:24:24"
+    claims: [ recovered-non-human-craft ]
     text: "Elizondo agrees with Grusch that the U.S. has run a multi-decade crash-retrieval and reverse-engineering program, and says UAP programs are operating without proper congressional oversight: “One hundred percent.”"
     speaker: luis-elizondo
     refs: [ david-grusch, crash-retrieval, tim-burchett ]

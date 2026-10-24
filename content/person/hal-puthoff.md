@@ -57,6 +57,7 @@ facts:
     by: hal-puthoff
     source: v-jre-hal-puthoff-2025@49:32
   - text: "Asked how many non-human craft humans have recovered, he said “More than 10” in U.S. possession, with more worldwide."
+    claims: [ recovered-non-human-craft ]
     status: claimed
     by: hal-puthoff
     source: v-jre-hal-puthoff-2025@1:46:26

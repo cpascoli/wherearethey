@@ -18,6 +18,8 @@ moments:
     speaker: alex-dietrich
     refs: [ inc-nimitz-2004 ]
   - t: "10:56"
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
     text: "Dietrich: the “Tic Tac” was about the size of their own fuselage, 30 to 40 feet, smooth, matte white, with no windows, no flight control surfaces and no visible propulsion."
     speaker: alex-dietrich
     refs: [ inc-nimitz-2004 ]

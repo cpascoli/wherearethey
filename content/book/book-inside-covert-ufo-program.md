@@ -43,6 +43,8 @@ facts:
     by: james-lacatski
     source: https://www.liberationtimes.com/home/former-head-of-us-government-ufo-program-confirms-government-possesses-advanced-craft-of-unknown-origin
   - text: "In a November 2025 interview with KLAS 8 News Now, Lacatski again said the government holds at least one recovered craft of unknown origin, with no wings, engine, fuel or fuel tanks. Asked whether he was convinced it was a craft or machine, he answered: “Yes.”"
+    said: 2025-11
+    claims: [ recovered-non-human-craft ]
     status: claimed
     by: james-lacatski
     source: https://www.8newsnow.com/investigators/scientist-reveals-details-of-top-secret-ufo-research-in-las-vegas/

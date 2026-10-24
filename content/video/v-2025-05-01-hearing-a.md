@@ -37,6 +37,8 @@ moments:
     speaker: eric-davis
     refs: [ robert-bigelow, hal-puthoff, edgar-mitchell ]
   - t: "59:50"
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
     text: "Davis: the crash-retrieval programs are more secret than the Manhattan Project, hidden from Congress under presidential emergency action directives dating from Eisenhower and exempt from FOIA."
     speaker: eric-davis
     refs: [ crash-retrieval, legacy-program ]

@@ -29,6 +29,7 @@
     place: { label: 'Place', plural: 'Places', color: '#A98467', shape: 'pentagon' },
     source: { label: 'Source', plural: 'Channels & sources', color: '#8C9AAB', shape: 'vee' },
     news: { label: 'News', plural: 'News', color: '#F2C14E', shape: 'rectangle' },
+    claim: { label: 'Claim', plural: 'Claims', color: '#F07167', shape: 'rectangle' },
   };
   const STATUS = {
     documented: { label: 'Documented', hint: 'Backed by an official record or primary document' },
@@ -43,6 +44,15 @@
     hoax: { label: 'Hoax', hint: 'Shown to be fabricated' },
   };
   const resolved = e => e.outcome === 'explained' || e.outcome === 'hoax';
+  // claims: where a proposition stands (keep in sync with CLAIM_STATUSES in build.mjs), and each assertion's position
+  const CLAIM_STATUS = {
+    open: { label: 'Open', hint: 'Neither established nor ruled out by the record' },
+    disputed: { label: 'Disputed', hint: 'Official records or findings contradict it; its proponents contest them' },
+    supported: { label: 'Supported by records', hint: 'Official or primary records back it' },
+    refuted: { label: 'Refuted', hint: 'Shown to be false by the record' },
+  };
+  const STANCE = { supports: 'says so', disputes: 'disputes it', context: 'context' };
+  const BASIS = { 'first-hand': { label: 'first-hand', hint: 'Says they saw or did it themselves' }, relayed: { label: 'relayed', hint: 'Says they were told by others' }, documented: { label: 'record', hint: 'An official or primary record' }, opinion: { label: 'opinion', hint: 'A judgement, not a report of what they saw or were told' } };
   // news item kinds (keep in sync with NEWS_KINDS in build.mjs)
   const NEWS_KIND = {
     statement: { label: 'Statement' }, post: { label: 'Post' }, article: { label: 'Article' }, interview: { label: 'Interview' }, podcast: { label: 'Podcast' },
@@ -144,7 +154,7 @@
   // ───────────── state ─────────────
   const allTypes = Object.keys(TYPES);
   // PURSUE records and news items stay out of the graph and the type filter; they appear in context (dossiers, index, search, Latest)
-  const offGraph = t => t === 'record' || t === 'news';
+  const offGraph = t => t === 'record' || t === 'news' || t === 'claim';
   const graphTypes = allTypes.filter(t => !offGraph(t));
   const TYPES_BEFORE_SHELF = ['person', 'incident', 'hearing', 'program', 'organization', 'document', 'record', 'video', 'event', 'concept', 'place', 'source'];
   const state = {
@@ -163,7 +173,7 @@
     full: new URLSearchParams(location.search).has('full'), // Explore shows the whole network instead of the key files (/explore?full)
     hiddenIds: new Set(),                         // files hidden by hand (right-click → Hide)
   };
-  state.types.delete('record'); state.types.delete('news');
+  state.types.delete('record'); state.types.delete('news'); state.types.delete('claim');
   let visible = new Set();
 
   function computeVisible() {
@@ -1080,7 +1090,17 @@
 
   // ───────────── claims ledger ─────────────
   const claimStatus = new Set(store.get('claimStatus', ['documented', 'claimed', 'unverified']));
+  function renderClaimCards() {
+    const cs = ents.filter(e => e.type === 'claim').sort((a, b) => b.assertions.length - a.assertions.length);
+    $('#claims-key').innerHTML = cs.map(c => {
+      const sup = c.assertions.filter(a => a.stance === 'supports'), dis = c.assertions.filter(a => a.stance === 'disputes');
+      const first = sup.find(a => a.date);
+      return `<a class="claim-card" href="${hrefOf(c.id)}" data-goto="${esc(c.id)}"><div class="cc-top"><span class="badge claim-${c.status}">${CLAIM_STATUS[c.status].label}</span><span class="muted small">${sup.length} say so · ${dis.length} dispute it</span></div>
+        <div class="cc-name">${esc(c.name)}</div>${first ? `<div class="small muted">First on file: ${esc(byId.get(first.by)?.name || byId.get(first.on)?.name || '')}, ${esc(fmtD(first.date))}</div>` : ''}</a>`;
+    }).join('') || '<p class="muted">No claims yet.</p>';
+  }
   function renderClaims() {
+    renderClaimCards();
     $('#c-status').innerHTML = Object.entries(STATUS).map(([k, v]) => `<button data-cst="${k}" class="${claimStatus.has(k) ? 'on' : ''}" title="${esc(v.hint)}">${v.label}</button>`).join('');
     const q = $('#cq').value.trim().toLowerCase();
     const rows = [];
@@ -1095,13 +1115,13 @@
     }
     const order = { documented: 0, claimed: 1, unverified: 2 };
     rows.sort((a, b) => order[a.f.status] - order[b.f.status] || String(b.e.date || '').localeCompare(String(a.e.date || '')));
-    $('#cq-count').textContent = `${rows.length} claims`;
+    $('#cq-count').textContent = `${rows.length} statements`;
     $('#claims').innerHTML = rows.map(({ e, f, by }) => {
       const src = f.source ? (f.source.file ? `<a href="${esc(fileUrl(f.source.file))}" target="_blank">📄 ${esc(f.source.file.split('/').pop())}</a>` : f.source.url ? `<a href="${esc(f.source.url)}" target="_blank" rel="noopener">source ↗</a>`
         : byId.get(f.source.id)?.type === 'video' ? `<button class="ts" data-play="${f.source.id}@${f.source.t || 0}">▶ ${f.source.t != null ? fmtT(f.source.t) : 'video'}</button>` : chip(f.source.id)) : (f.status !== 'documented' ? '<span class="needs">needs source</span>' : '');
       return `<div class="claim" style="--st:var(--${f.status})"><div>${esc(f.text)}</div>
-        <div class="meta"><span class="stamp" style="--st:var(--${f.status})">${STATUS[f.status].label}</span><span>re: ${chip(e.id)}</span>${by && by.id !== e.id ? `<span>by ${chip(by.id)}</span>` : by ? '<span>self-reported</span>' : ''}${src}</div></div>`;
-    }).join('') || '<p class="muted">No claims match.</p>';
+        <div class="meta"><span class="stamp" style="--st:var(--${f.status})">${STATUS[f.status].label}</span><span>re: ${chip(e.id)}</span>${(f.claims || []).map(c => `<span>claim: ${chip(c)}</span>`).join('')}${by && by.id !== e.id ? `<span>by ${chip(by.id)}</span>` : by ? '<span>self-reported</span>' : ''}${src}</div></div>`;
+    }).join('') || '<p class="muted">No statements match.</p>';
   }
   $('#cq').addEventListener('input', renderClaims);
   $('#c-status').addEventListener('click', e => {
@@ -1173,15 +1193,47 @@
     if ((e.key === 'r' || e.key === 'R') && !e.metaKey && !e.ctrlKey && !/INPUT|TEXTAREA/.test(document.activeElement.tagName) && state.sel && state.view !== 'home') { trackReading('key'); setReading(!state.reading); }
   });
 
+  // ───────────── claims ─────────────
+  // one assertion: who, when, how they know, and where to check it (a playable moment, a document, a link)
+  const assertionSource = a => {
+    const s = a.source; if (!s) return '';
+    if (s.file) return `<a href="${esc(fileUrl(s.file))}" target="_blank">📄 ${esc(s.file.split('/').pop())}</a>`;
+    if (s.url) { let host = s.url; try { host = new URL(s.url).hostname.replace(/^www\./, ''); } catch { /* keep */ } return `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(host)} ↗</a>`; }
+    const se = byId.get(s.id);
+    return se?.type === 'video' ? `<button class="ts" data-play="${s.id}@${s.t || 0}">▶ ${fmtT(s.t || 0)}</button> ${chip(s.id)}` : chip(s.id);
+  };
+  function claimSections(e) {
+    const as = e.assertions || [];
+    const out = [];
+    const n = k => as.filter(a => a.stance === k).length;
+    const fh = as.filter(a => a.stance === 'supports' && a.basis === 'first-hand').length, rel = as.filter(a => a.stance === 'supports' && a.basis === 'relayed').length;
+    out.push(`<div class="cl-sum"><span><b>${n('supports')}</b> say so</span><span><b>${n('disputes')}</b> dispute it</span>${n('context') ? `<span><b>${n('context')}</b> context</span>` : ''}<span class="muted">of those who say so: ${fh} first-hand, ${rel} relayed</span></div>`);
+    if (as.length) {
+      const firstSupport = as.find(a => a.stance === 'supports' && a.date);
+      out.push(`<div class="p-sec"><h4>Who has said it, in order <span>${as.length}</span></h4><ol class="cl-time" data-collapse="14">${as.map(a => `
+        <li class="cl-${a.stance}"><div class="cl-date">${a.date ? esc(fmtD(a.date)) : '<span class="muted">undated</span>'}</div><div class="cl-body">
+          <div class="cl-who">${a.by ? chip(a.by) : chip(a.on)}${a.via ? `<span class="small muted">as reported by</span>${chip(a.via)}` : ''}<span class="cl-stance">${esc(STANCE[a.stance])}</span>${a.basis ? `<span class="cl-basis" title="${esc(BASIS[a.basis]?.hint || '')}">${esc(BASIS[a.basis]?.label || a.basis)}</span>` : ''}${a === firstSupport ? '<span class="cl-first">first on file</span>' : ''}</div>
+          <div class="cl-text">${esc(a.text)}</div><div class="cl-src">${assertionSource(a)}</div></div></li>`).join('')}</ol></div>`);
+    }
+    // how the people making the claim are connected: shows whether many voices trace back to a few sources
+    const people = [...new Set(as.map(a => a.by).concat(as.map(a => a.via)).filter(id => byId.get(id)?.type === 'person'))];
+    const inSet = new Set(people), pairs = [];
+    for (const p of people) for (const x of adj.get(p)) if (x.dir === 'out' && x.kind === 'rel' && inSet.has(x.other) && x.label !== 'related to') pairs.push(x);
+    const links = pairs.filter(Boolean);
+    if (links.length) out.push(`<div class="p-sec p-side"><h4>How the people making it are connected <span>${links.length}</span></h4><ul class="cl-links" data-collapse="8">${links.map(x => `<li>${chip(x.s)}<span class="cl-lbl">${esc(x.label)}</span>${chip(x.t)}${x.note ? `<div class="small muted">${esc(x.note)}</div>` : ''}</li>`).join('')}</ul></div>`);
+    return out.join('');
+  }
+
   // ───────────── detail panel ─────────────
   function renderPanel(e) {
     const t = TYPES[e.type] || TYPES.concept;
     const h = [];
     const nFacts = e.facts.length, nDoc = e.facts.filter(f => f.status === 'documented').length;
-    h.push(`<div class="dossier-strip"><span>File <b>${fileNo(e)}</b></span><span>${nFacts ? `${nDoc}/${nFacts} documented` : 'no claims filed'}</span></div>`);
-    h.push(`<div class="p-kicker"><span class="badge type" style="background:${t.color}">${t.label}</span>${e.cred ? `<span class="badge ${e.cred}" title="${esc(CRED[e.cred].hint)}">${CRED[e.cred].label}</span>` : ''}${e.outcome && e.outcome !== 'open' ? `<span class="badge outcome-${e.outcome}" title="${esc(OUTCOME[e.outcome].hint)}">${OUTCOME[e.outcome].label}</span>` : ''}</div>`);
+    h.push(`<div class="dossier-strip"><span>File <b>${fileNo(e)}</b></span><span>${e.type === 'claim' ? `${e.assertions.length} statements` : nFacts ? `${nDoc}/${nFacts} documented` : 'no claims filed'}</span></div>`);
+    h.push(`<div class="p-kicker"><span class="badge type" style="background:${t.color}">${t.label}</span>${e.cred ? `<span class="badge ${e.cred}" title="${esc(CRED[e.cred].hint)}">${CRED[e.cred].label}</span>` : ''}${e.outcome && e.outcome !== 'open' ? `<span class="badge outcome-${e.outcome}" title="${esc(OUTCOME[e.outcome].hint)}">${OUTCOME[e.outcome].label}</span>` : ''}${e.type === 'claim' ? `<span class="badge claim-${e.status}" title="${esc(CLAIM_STATUS[e.status].hint)}">${CLAIM_STATUS[e.status].label}</span>` : ''}</div>`);
     if (e.outcome && e.outcome !== 'open' && e.outcomeNote) h.push(`<div class="p-outcome outcome-${e.outcome}"><b>${OUTCOME[e.outcome].label}.</b> ${esc(e.outcomeNote)}${e.outcomeSource ? ` <span class="src">${e.outcomeSource.id ? chip(e.outcomeSource.id) : e.outcomeSource.url ? `<a href="${esc(e.outcomeSource.url)}" target="_blank" rel="noopener">source ↗</a>` : ''}</span>` : ''}</div>`);
     h.push(`<h2 class="p-title">${esc(e.name)}</h2>`);
+    if (e.type === 'claim' && e.statusNote) h.push(`<div class="p-outcome claim-${e.status}"><b>${CLAIM_STATUS[e.status].label}.</b> ${esc(e.statusNote)}${e.statusSource ? ` <span class="src">${e.statusSource.id ? (byId.get(e.statusSource.id)?.type === 'video' ? `<button class="ts" data-play="${e.statusSource.id}@${e.statusSource.t || 0}">▶ ${fmtT(e.statusSource.t || 0)}</button> ` : '') + chip(e.statusSource.id) : e.statusSource.url ? `<a href="${esc(e.statusSource.url)}" target="_blank" rel="noopener">source ↗</a>` : ''}</span>` : ''}</div>`);
     // credentials right under the name: on this archive they are the headline fact (they decide the source badge)
     if (e.credentials?.length) h.push(`<ul class="cred-list p-creds">${e.credentials.map(c => `<li><span class="cred-cat">${esc(CRED_CAT[c.category] || c.category)}</span><span>${esc(c.role)}</span></li>`).join('')}</ul>`);
     if (!offGraph(e.type) && !(state.trail && !state.trail.core && state.view === 'graph')) h.push(`<button class="btn small p-explore" data-explore="${esc(e.id)}" title="Show only this file and its connections, then follow a trail">◎ Explore from here</button>`);
@@ -1205,8 +1257,18 @@
     }
     // the summary (a person's profile) comes before the videos
     if (e.body) h.push(`<div class="p-sec"><h4>${e.type === 'person' ? 'Profile' : 'Summary'}</h4><div class="p-body p-bio">${e.body}</div></div>`);
+    if (e.type === 'claim') h.push(claimSections(e));
+    // a person's positions on the claims (from the assertions tagged on their facts and moments)
+    if (e.type === 'person') {
+      const pos = new Map();
+      for (const c of ents.filter(c => c.type === 'claim')) for (const a of c.assertions) if (a.by === e.id) (pos.get(c.id) || pos.set(c.id, []).get(c.id)).push(a);
+      if (pos.size) h.push(`<div class="p-sec p-side"><h4>Positions on claims <span>${pos.size}</span></h4><ul class="rec-list">${[...pos].map(([cid, as]) => {
+        const c = byId.get(cid), st = [...new Set(as.map(a => STANCE[a.stance]))].join(', ');
+        return `<li><a href="${hrefOf(cid)}" data-goto="${esc(cid)}">${esc(c.name)}</a><div class="small muted">${esc(st)} · ${as.length} statement${as.length > 1 ? 's' : ''} · <span class="claim-st claim-${c.status}">${esc(CLAIM_STATUS[c.status].label)}</span></div></li>`;
+      }).join('')}</ul></div>`);
+    }
     // Watch: videos that record, feature or are about this entry — playable straight from the dossier
-    if (e.type !== 'video') {
+    if (e.type !== 'video' && e.type !== 'claim') {
       const WATCH = { 'trailer of': 'Trailer', 'recording of': 'Recording', features: 'Appearance', about: 'About this', 'speaks in': 'Speaks in' };
       const vids = new Map();
       for (const x of adj.get(e.id)) {
@@ -2249,7 +2311,7 @@
   function exploreFrom(id) {
     const ent = byId.get(id);
     if (!ent) return;
-    if (offGraph(ent.type)) { go(ent.type === 'news' ? 'latest' : 'graph'); select(id); return; } // records and news aren't graph nodes: just open the card
+    if (offGraph(ent.type)) { go(ent.type === 'news' ? 'latest' : ent.type === 'claim' ? 'claims' : 'graph'); select(id); return; } // records and news aren't graph nodes: just open the card
     clearFilters(ent);
     startTrail(id);
   }
@@ -2646,7 +2708,8 @@
     if (PATH_VIEW[p]) return { view: PATH_VIEW[p], sel: null, video: null };
     const id = byPath.get(p);
     if (!id) return { view: 'home', sel: null, video: null };
-    return byId.get(id).type === 'video' ? { view: 'videos', sel: null, video: id, t } : { view: 'graph', sel: id, video: null };
+    const type = byId.get(id).type;
+    return type === 'video' ? { view: 'videos', sel: null, video: id, t } : { view: type === 'claim' ? 'claims' : 'graph', sel: id, video: null };
   }
   function applyRoute(initial) {
     const fromUrl = routeFromUrl();

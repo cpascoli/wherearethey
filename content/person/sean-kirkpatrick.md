@@ -23,6 +23,8 @@ facts:
     status: documented
     source: https://thedebrief.org/pentagon-confirms-retirement-of-aaro-director-sean-kirkpatrick-as-new-deputy-director-is-named/
   - text: "Testifying to the Senate Armed Services Committee in April 2023, he said: “AARO has found no credible evidence thus far of extraterrestrial activity, off world technology, or objects that defy the known laws of physics.”"
+    claims: [ recovered-non-human-craft ]
+    stance: disputes
     status: documented
     by: sean-kirkpatrick
     source: doc-transcript-2023-04-19
@@ -58,6 +60,9 @@ facts:
     by: marik-von-rennenkampff
     source: v-2026-08-28-disclosure-forum-national-security@1:18:44
   - text: "Answering Jay Stratton's memoir in October 2026, he called the claim that he was controlled by the Legacy Program “the most absurd thing I've heard today”, said Congress's only classified information on “this fictitious program” concerns what national-security violations “Jay and his band of pseudo-scientists have committed”, and said: “There is no legacy program.”"
+    said: 2026-10
+    claims: [ recovered-non-human-craft ]
+    stance: disputes
     status: claimed
     by: sean-kirkpatrick
     source: https://www.paradigm.news/p/exclusive-ex-pentagon-ufo-lead-accuses

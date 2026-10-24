@@ -45,6 +45,9 @@ facts:
     by: chris-mellon
     source: v-2026-08-28-disclosure-forum-national-security@35:38
   - text: "He says one of the main crash-retrieval sources he first brought to Congress told him the program had been closed because it was making no headway and spending a lot of money."
+    claims: [ recovered-non-human-craft ]
+    stance: context
+    basis: relayed
     status: claimed
     by: chris-mellon
     source: v-2026-08-28-disclosure-forum-national-security@37:15

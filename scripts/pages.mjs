@@ -12,22 +12,22 @@ export const SITE_URL = (process.env.SITE_URL || 'https://wherearethey.info').re
 // URL segment per type (singular, readable); records get pages but stay out of search results
 export const SEG = {
   person: 'person', incident: 'incident', hearing: 'hearing', program: 'program', organization: 'organization', document: 'document',
-  film: 'documentary', book: 'book', record: 'record', video: 'video', event: 'event', concept: 'concept', place: 'place', source: 'source', news: 'news',
+  film: 'documentary', book: 'book', record: 'record', video: 'video', event: 'event', concept: 'concept', place: 'place', source: 'source', news: 'news', claim: 'claim',
 };
 const LABEL = {
   person: 'Person', incident: 'Incident', hearing: 'Hearing / briefing', program: 'Program', organization: 'Organization', document: 'Document',
-  film: 'Documentary', book: 'Book', record: 'Official record (PURSUE)', video: 'Video', event: 'Event', concept: 'Concept', place: 'Place', source: 'Channel / source', news: 'News',
+  film: 'Documentary', book: 'Book', record: 'Official record (PURSUE)', video: 'Video', event: 'Event', concept: 'Concept', place: 'Place', source: 'Channel / source', news: 'News', claim: 'Claim',
 };
 const PLURAL = {
   person: 'People', incident: 'Incidents', hearing: 'Hearings & briefings', program: 'Programs', organization: 'Organizations', document: 'Documents',
-  film: 'Documentaries', book: 'Books', record: 'Official records (PURSUE)', video: 'Videos', event: 'Events', concept: 'Concepts', place: 'Places', source: 'Channels & sources', news: 'News',
+  film: 'Documentaries', book: 'Books', record: 'Official records (PURSUE)', video: 'Videos', event: 'Events', concept: 'Concepts', place: 'Places', source: 'Channels & sources', news: 'News', claim: 'Claims',
 };
 // app views → paths (keep in sync with VIEW_PATH in app.js)
 export const VIEW_PATH = { home: '/', latest: '/latest', graph: '/explore', timeline: '/timeline', map: '/world', videos: '/videos', shelf: '/documentaries', books: '/books', index: '/a-z', claims: '/claims' };
 // full transcripts on every video page (switch to a kind check to limit some videos to moments + excerpts)
 const FULL_TRANSCRIPT = () => true;
 // types whose ids are already clean word slugs; the rest are slugged from their name
-const ID_SLUG = new Set(['person', 'organization', 'program', 'concept', 'place', 'source', 'record']);
+const ID_SLUG = new Set(['person', 'organization', 'program', 'concept', 'place', 'source', 'record', 'claim']);
 
 // Latest: what happened recently (by event `date`), and what is new to the archive (by `added`). Keep in sync with app.js.
 // baseline: the initial import (git's first commit); entries from it are the archive's starting point, not "recently added"
@@ -91,7 +91,9 @@ const leadSentences = (s, n = 150) => {
   return out || clip(sentencesOf(s).join(' ') || s, n);
 };
 // what a searcher gets from a file, appended to its title (kept short so the whole title shows in results)
-const TITLE_SUFFIX = { person: 'testimony & sources', program: 'claims & evidence', incident: 'witnesses & evidence', hearing: 'testimony & transcript', document: 'text & key findings', video: 'transcript & key moments' };
+const CLAIM_LABEL = { open: 'Open', disputed: 'Disputed', supported: 'Supported by records', refuted: 'Refuted' };
+const STANCE_LABEL = { supports: 'says so', disputes: 'disputes it', context: 'context' };
+const TITLE_SUFFIX = { person: 'testimony & sources', program: 'claims & evidence', incident: 'witnesses & evidence', hearing: 'testimony & transcript', document: 'text & key findings', video: 'transcript & key moments', claim: 'who said it, and the evidence' };
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const fmtDate = d => { if (!d) return ''; const [y, m, day] = d.split('-'); return [day && +day, m && MONTHS[+m - 1], y].filter(Boolean).join(' '); };
 const hms = t => { t = Math.floor(t); const h = Math.floor(t / 3600), m = Math.floor(t / 60) % 60, s = t % 60; return (h ? `${h}:${String(m).padStart(2, '0')}` : `${m}`) + `:${String(s).padStart(2, '0')}`; };
@@ -146,7 +148,14 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       const src = e.outcomeSource?.id ? ` (${link(e.outcomeSource.id)})` : e.outcomeSource?.url ? ` (<a href="${esc(e.outcomeSource.url)}" rel="noopener">source</a>)` : '';
       h.push(`<p class="ssr-outcome"><strong>${lbl}.</strong> ${esc(e.outcomeNote || '')}${src}</p>`);
     }
+    if (e.type === 'claim') {
+      const src = e.statusSource?.id ? ` (${link(e.statusSource.id)})` : e.statusSource?.url ? ` (<a href="${esc(e.statusSource.url)}" rel="noopener">source</a>)` : '';
+      h.push(`<p class="ssr-outcome"><strong>${CLAIM_LABEL[e.status]}.</strong> ${esc(e.statusNote || '')}${src}</p>`);
+    }
     if (e.body) h.push(`<div class="ssr-body">${e.body}</div>`);
+    if (e.type === 'claim' && e.assertions?.length) {
+      h.push(`<h2>Who has said it, in order</h2><ol class="ssr-facts">${e.assertions.map(a => `<li>${a.date ? `<strong>${esc(fmtDate(a.date))}</strong> ` : ''}${a.by ? link(a.by) : ''}${a.via ? ` (as reported by ${link(a.via)})` : ''} — <em>${esc([STANCE_LABEL[a.stance], a.basis].filter(Boolean).join(', '))}</em>: ${esc(a.text)}${a.source ? ` <span class="ssr-src">Source: ${sourceHtml(a.source)}</span>` : ''}</li>`).join('')}</ol>`);
+    }
     if (e.facts.length) h.push(`<h2>Facts and claims</h2>${factsHtml(e.facts)}`);
     if (e.type === 'video' && e.moments?.length) {
       h.push(`<h2>Key moments</h2><ol class="ssr-moments">${e.moments.map(m => `<li><a href="${e.path}?t=${Math.floor(m.t)}">${hms(m.t)}</a> ${m.speaker ? `${link(m.speaker)}: ` : ''}${esc(m.text)}</li>`).join('')}</ol>`);
@@ -256,7 +265,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     shelf: ['Documentaries', 'Documentaries about UAP featuring people on the record, with trailers and where to watch them.', `<h1>Documentaries</h1>${listOf(ofType('film').sort(newest).sort((a, b) => !!b.shelfFeatured - !!a.shelfFeatured))}`],
     books: ['Books', 'Books about UAP written by or about people on the record, with where to find them.', `<h1>Books</h1>${listOf(ofType('book').sort(newest).sort((a, b) => !!b.shelfFeatured - !!a.shelfFeatured))}`],
     index: ['UAP archive A–Z: people, incidents, hearings, documents', 'Every file in the UAP / NHI archive, A to Z: officials and witnesses, incidents, congressional hearings, Pentagon programs, documents and official records.', `<h1>A–Z index</h1>${[...typeOrder, 'record'].map(t => `<h2 id="${t}">${PLURAL[t]}</h2>${listOf(ofType(t).sort((a, b) => a.name.localeCompare(b.name)))}`).join('')}`],
-    claims: ['UAP claims database: every claim, who made it, its source', `${entities.reduce((n, e) => n + (e.type === 'record' ? 0 : e.facts.length), 0).toLocaleString('en-US')} claims about UAP and non-human intelligence from officials, pilots and whistleblowers, each with its status (documented, claimed or unverified), who made it and the source.`, `<h1>Claims ledger</h1><p>Documented: backed by an official record or primary document. Claimed: on-record testimony not independently confirmed. Unverified: reported without a primary source.</p>${entities.filter(e => e.facts.length && e.type !== 'record').map(e => `<h2>${link(e.id)}</h2>${factsHtml(e.facts)}`).join('')}`],
+    claims: ['UAP claims database: every claim, who made it, its source', `${entities.reduce((n, e) => n + (e.type === 'record' ? 0 : e.facts.length), 0).toLocaleString('en-US')} claims about UAP and non-human intelligence from officials, pilots and whistleblowers, each with its status (documented, claimed or unverified), who made it and the source.`, `<h1>Claims</h1><p>The key claims in the UAP / NHI debate, each with everyone on file who has said it, in order, how they know, and the evidence for and against.</p>${listOf(ofType('claim').sort((a, b) => b.assertions.length - a.assertions.length), e => ` (${esc(CLAIM_LABEL[e.status])}, ${e.assertions.length} statements)`)}<h2>All statements</h2><p>Documented: backed by an official record or primary document. Claimed: on-record testimony not independently confirmed. Unverified: reported without a primary source.</p>${entities.filter(e => e.facts.length && e.type !== 'record').map(e => `<h2>${link(e.id)}</h2>${factsHtml(e.facts)}`).join('')}`],
   };
   for (const [view, [title, description, body]] of Object.entries(views)) pages.push({ path: VIEW_PATH[view], title, description, body, view });
 

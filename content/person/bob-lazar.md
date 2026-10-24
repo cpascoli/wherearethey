@@ -15,6 +15,8 @@ rel:
   - [ assessed by, hal-puthoff, "Puthoff found Lazar's apparent clearance too low for his story but cannot rule it out" ]
 facts:
   - text: "Went public in 1989 through interviews with George Knapp (KLAS-TV), saying he reverse-engineered alien craft propulsion at S-4."
+    claims: [ recovered-non-human-craft ]
+    basis: first-hand
     status: claimed
     by: bob-lazar
     source: v-bob-lazar-1989-knapp

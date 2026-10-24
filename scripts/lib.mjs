@@ -6,7 +6,7 @@ import YAML from 'yaml';
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const CONTENT = path.join(ROOT, 'content');
 
-export const TYPES = ['person', 'program', 'organization', 'hearing', 'incident', 'document', 'film', 'book', 'record', 'video', 'event', 'concept', 'place', 'news'];
+export const TYPES = ['person', 'program', 'organization', 'hearing', 'incident', 'document', 'film', 'book', 'record', 'video', 'event', 'concept', 'place', 'news', 'claim'];
 export const STATUSES = ['documented', 'claimed', 'unverified'];
 
 export function slugify(s) {
