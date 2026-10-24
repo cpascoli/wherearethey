@@ -1012,7 +1012,8 @@
       const kind = e.type === 'news' ? NEWS_KIND[e.kind]?.label || e.kind : TYPES[e.type].label;
       const people = latestPeople(e);
       const pinned = featured.includes(e);
-      const cover = !rec && e.cover ? `<div class="lt-thumb lt-cover" data-goto="${esc(e.id)}"><img src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" loading="lazy"></div>` : '';
+      const cover = !rec && e.cover ? `<div class="lt-thumb lt-cover" data-goto="${esc(e.id)}"><img src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" loading="lazy"></div>`
+        : !rec && e.image ? `<div class="lt-thumb lt-image" data-goto="${esc(e.id)}" title="${esc(e.imageCaption || '')}"><img src="${esc(e.image)}" alt="${esc(e.imageCaption || e.name)}" loading="lazy"></div>` : '';
       return `<article class="lt-card ${isNew(e) ? 'is-new' : ''} ${pinned ? 'is-featured' : ''}" style="--c:${TYPES[e.type].color}">${cover}
         ${rec ? `<div class="lt-thumb" data-play="${rec.id}@0" title="Play"><img src="${vthumb(rec)}" alt="" loading="lazy"><span class="wplay">▶</span>${rec.duration ? `<span class="wdur">${fmtDur(rec.duration)}</span>` : ''}</div>` : ''}
         <div class="lt-body">
@@ -1240,6 +1241,7 @@
     if (e.aka.length) h.push(`<div class="p-aka">Also: ${e.aka.map(esc).join(' · ')}</div>`);
     if (e.type === 'film' || e.type === 'book') h.push(`<div class="p-meta">${esc([e.credits, shelfMeta(e), e.isbn ? `ISBN ${e.isbn}` : ''].filter(Boolean).join(' · '))}</div>`);
     if (e.cover) h.push(`<img class="p-cover" src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" loading="lazy">`);
+    if (e.image) h.push(`<figure class="p-image"><img src="${esc(e.image)}" alt="${esc(e.imageCaption || e.name)}" loading="lazy">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>`);
     const meta = [fmtRange(e) && (e.type === 'video' ? 'Published ' : '') + fmtRange(e), e.place?.name, e.type === 'video' && [e.channel, fmtDur(e.duration)].filter(Boolean).join(' · ')].filter(Boolean);
     if (meta.length) h.push(`<div class="p-meta">${meta.map(m => `<span>${esc(m)}</span>`).join('')}</div>`);
     if (e.type === 'news') h.push(`<div class="p-meta"><span>${esc(NEWS_KIND[e.kind]?.label || e.kind)}</span>${e.outlet ? `<span>${esc(e.outlet)}</span>` : ''}${e.url ? `<a class="btn small" href="${esc(e.url)}" target="_blank" rel="noopener">Original source ↗</a>` : ''}</div>`);

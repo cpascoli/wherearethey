@@ -107,7 +107,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
   const link = id => { const e = byId.get(id); return e ? `<a href="${e.path}">${esc(e.name)}</a>` : esc(id); };
   const videoUrl = (v, t) => (v.youtube ? `https://www.youtube.com/watch?v=${v.youtube}${t ? `&t=${Math.floor(t)}s` : ''}` : v.url || null);
   const thumbOf = v => (v.youtube ? `https://i.ytimg.com/vi/${v.youtube}/hqdefault.jpg` : v.thumb ? fileUrl(v.thumb) : null);
-  const imageOf = e => (e.cover ? SITE_URL + e.cover : e.type === 'video' ? thumbOf(e) : null);
+  const imageOf = e => (e.cover ? SITE_URL + e.cover : e.image ? SITE_URL + e.image : e.type === 'video' ? thumbOf(e) : null);
   const sourceHtml = s => {
     if (!s) return '';
     if (s.url) { let host = s.url; try { host = new URL(s.url).hostname.replace(/^www\./, ''); } catch {} return `<a href="${esc(s.url)}" rel="noopener">${esc(host)}</a>`; }
@@ -138,6 +138,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     if (e.type === 'book') h.push(`<p>${[e.credits, e.publisher, e.pages && `${e.pages} pages`, e.isbn && `ISBN ${e.isbn}`].filter(Boolean).map(esc).join(' · ')}</p>`);
     if (e.type === 'film') h.push(`<p>${[e.credits, e.runtime && `${e.runtime} min`].filter(Boolean).map(esc).join(' · ')}</p>`);
     if (e.cover) h.push(`<img src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" width="200">`);
+    if (e.image) h.push(`<figure><img src="${esc(e.image)}" alt="${esc(e.imageCaption || e.name)}" width="800">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>`);
     if (e.type === 'video') {
       const url = videoUrl(e);
       h.push(`<p>${[e.channel, fmtDate(e.date), e.duration && `${Math.round(e.duration / 60)} min`].filter(Boolean).map(esc).join(' · ')}${url ? ` · <a href="${esc(url)}" rel="noopener">Watch the original</a>` : ''}</p>`);

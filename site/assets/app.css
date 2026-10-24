@@ -928,3 +928,8 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
 .cc-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
 .cc-name { font-size: 16px; font-weight: 600; line-height: 1.35; }
 @media (max-width: 600px) { .claims-head { padding: 14px 16px 0; } }
+
+/* a file's picture: on its page, and on its Latest card (16:9, like video thumbnails) */
+.p-image { margin: 6px 0 14px; }
+.p-image img { display: block; width: 100%; max-width: 720px; border-radius: 4px; }
+.p-image figcaption { font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.4; max-width: 720px; }

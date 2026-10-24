@@ -4,6 +4,8 @@ aka:
   - PURSUE Release 07
 date: 2026-10-23
 featured: 2026-11-06
+image: /assets/images/pursue-07-triangle.jpg
+image_caption: "From the FBI's file: the triangle drawn onto a photograph of the site, in its hover position above the ridge (FBI-UAP-D043, page 7). An illustration, not a photograph of the object."
 tags:
   - disclosure
   - foia
