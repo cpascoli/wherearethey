@@ -26,7 +26,7 @@ facts:
   - text: "On NewsNation the same day he said the government's data is insufficient (“It’s not good enough”) and that his hope is “to partner with the Pentagon and put better sensors at the locations where these objects are found.”"
     status: claimed
     by: avi-loeb
-    source: v-2026-10-23-newsnation-the-hill-avi-loeb@0:52
+    source: v-2026-10-23-newsnation-the-hill-avi-loeb@1:47
 ---
 
 On the day PURSUE release 07 came out, Harvard astrophysicist Avi Loeb, who chairs the UAP Science Advisory Council, said the released reports, with no measured speeds or raw sensor recordings, cannot settle what the western U.S. triangle or the orbs are, and proposed placing better sensors at the sites PURSUE reports, in partnership with the Pentagon. It is a proposal; neither the Department of War nor AARO has announced any such deployment.
