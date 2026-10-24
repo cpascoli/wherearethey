@@ -892,7 +892,13 @@
       mapMarkers.set(e.id, m);
     }
     markMapSel();
-    if (!mapFitted && markers.length) { map.fitBounds(L.featureGroup(markers).getBounds().pad(0.1)); mapFitted = true; }
+    if (!mapFitted && markers.length) {
+      // a tall phone screen would show the whole world as a thin strip between blank bands: open on the United States,
+      // where most incidents are, filling the screen (pan or search for the rest); wider screens fit every marker
+      if (innerHeight > innerWidth * 1.2) map.fitBounds([[22, -126], [50, -66]]);
+      else map.fitBounds(L.featureGroup(markers).getBounds().pad(0.1));
+      mapFitted = true;
+    }
   }
 
   // the open file's dot stands out: larger, with an accent ring, drawn on top
