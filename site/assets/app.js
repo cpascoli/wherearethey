@@ -1811,10 +1811,22 @@
       <div class="vd-meta"><span>${esc([v.channel, fmtD(v.date), fmtDur(v.duration)].filter(Boolean).join(' · '))}</span>
       ${vsource(v).url ? `<a href="${esc(vsource(v).url)}" target="_blank" rel="noopener">${vsource(v).label} ↗</a>` : ''}
       <a href="${hrefOf(v.id)}" data-goto="${v.id}">Details</a></div>
+      ${seriesNav(v)}
       ${people.length ? `<div class="chips" style="margin-top:8px">${[...new Set(people)].map(id => chip(id)).join('')}</div>` : ''}</div>
       <div class="tabs">${tabs.map(([k, l]) => `<button data-tab="${k}" class="${curTab === k ? 'on' : ''}">${l}</button>`).join('')}</div>
       <div class="tab-body" id="tab-body"></div>`;
     await renderTab(v);
+  }
+
+  // sessions of one recording (series: <hearing id>, part: N): previous / next, and every session on file
+  function seriesNav(v) {
+    if (!v.series) return '';
+    const parts = videos.filter(x => x.series === v.series).sort((a, b) => (a.part ?? 0) - (b.part ?? 0));
+    const i = parts.indexOf(v), s = byId.get(v.series), prev = parts[i - 1], next = parts[i + 1];
+    const btn = (x, l) => x ? `<button class="link" data-open-video="${x.id}" title="${esc(x.name)}">${l}</button>` : `<span class="muted">${l}</span>`;
+    return `<div class="vd-series"><div><span class="muted small">${s ? esc(s.name) : 'Series'}${v.part ? ` · session ${v.part}${s?.parts ? ` of ${s.parts}` : ''}` : ''}${s?.parts && parts.length < s.parts ? ` · ${parts.length} on file` : ''}</span>
+      ${btn(prev, '← Previous')}${btn(next, 'Next →')}</div>
+      <div class="vd-parts">${parts.map(x => `<button data-open-video="${x.id}" class="${x === v ? 'on' : ''}" title="${esc(x.name)}">${x.part ?? '•'}</button>`).join('')}</div></div>`;
   }
 
   // YouTube descriptions: make URLs clickable (new tab) and timestamps seek the player.
@@ -1921,6 +1933,8 @@
     if (playing) syncTranscript(false);
   }, 700);
   $('#vid-detail').addEventListener('click', e => {
+    const o = e.target.closest('[data-open-video]');
+    if (o) { openVideo(o.dataset.openVideo, 0, false); return; }
     const tab = e.target.closest('[data-tab]');
     if (tab) { curTab = tab.dataset.tab; renderTab(byId.get(state.video)); return; }
     const p = e.target.closest('#transcript p');
@@ -2334,13 +2348,21 @@
     let list = base.filter(v => (vbKind === 'all' || vidKind(v) === vbKind) && (!q || q.split(/\s+/).every(w => vbText(v).includes(w))));
     list.sort((a, b) => String(b.date || '').localeCompare(String(a.date || ''))); // newest first
     const counts = Object.fromEntries(VKINDS.map(([k]) => [k, k === 'all' ? base.length : base.filter(v => vidKind(v) === k).length]));
-    const featured = base.filter(v => v.moments?.length >= 5).sort((a, b) => b.moments.length - a.moments.length || String(b.date).localeCompare(String(a.date))).slice(0, 6);
-    const showFeatured = vbKind === 'all' && !q;
+    // “Start here”: hand-picked (top_pick: 1, 2… in the video's frontmatter), plus the recording of the latest
+    // congressional hearing, so a new hearing shows up without editing the list; at most eight (two rows)
+    const picks = base.filter(v => v.topPick != null).sort((a, b) => a.topPick - b.topPick);
+    const latestHearing = ents.filter(e => e.type === 'hearing' && !/citizen/i.test(e.id) && e.date)
+      .sort((a, b) => String(b.date).localeCompare(String(a.date)))
+      .map(h => base.find(v => adj.get(v.id).some(x => x.dir === 'out' && x.label === 'recording of' && x.other === h.id))).find(Boolean);
+    if (latestHearing && !picks.includes(latestHearing)) picks.splice(Math.min(2, picks.length), 0, latestHearing);
+    const featured = picks.slice(0, 8);
+    const showFeatured = vbKind === 'all' && !q && featured.length > 0;
+    if (showFeatured) list = list.filter(v => !featured.includes(v)); // listed once, at the top
     $('#vid-browse').innerHTML = `<div class="vb-head"><h2>Videos</h2><p class="muted">Hearings, interviews and archival footage, with synced transcripts and curated moments. ${base.length} videos · ${KB.stats.transcriptHours} hours transcribed.</p>
       <div class="vb-bar"><input id="vb-q" type="search" placeholder="Filter by title, person, case…" value="${esc(vbQ)}" autocomplete="off"></div>
       <div class="seg vb-kinds">${VKINDS.map(([k, l]) => `<button data-vkind="${k}" class="${vbKind === k ? 'on' : ''}">${l} ${counts[k]}</button>`).join('')}</div></div>
-      ${showFeatured && featured.length ? `<h3 class="vb-sec">Start here <span class="muted small">most annotated</span></h3><div class="vb-grid">${featured.map(vidCard).join('')}</div>` : ''}
-      <h3 class="vb-sec">${showFeatured ? 'All videos' : `${list.length} video${list.length === 1 ? '' : 's'}`}</h3>
+      ${showFeatured && featured.length ? `<h3 class="vb-sec">Start here <span class="muted small">top picks and the latest hearing</span></h3><div class="vb-grid">${featured.map(vidCard).join('')}</div>` : ''}
+      <h3 class="vb-sec">${showFeatured ? 'More videos' : `${list.length} video${list.length === 1 ? '' : 's'}`}</h3>
       <div class="vb-grid">${list.map(vidCard).join('') || '<p class="muted">No videos match.</p>'}</div>`;
   }
   $('#vid-browse').addEventListener('input', e => {

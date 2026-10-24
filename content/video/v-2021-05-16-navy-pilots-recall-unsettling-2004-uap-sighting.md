@@ -1,4 +1,5 @@
 ---
+top_pick: 6
 name: "60 Minutes: Navy pilots recall “unsettling” 2004 UAP sighting (Fravor and Dietrich, 16 May 2021)"
 date: 2021-05-16
 youtube: ygB4EZ7ggig

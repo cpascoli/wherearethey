@@ -95,6 +95,9 @@ export async function build({ check = false, quiet = false } = {}) {
     if (d.featured) e.featured = d.featured instanceof Date ? d.featured.toISOString().slice(0, 10) : String(d.featured);
     // books & films: shown first, as a large “featured” card, on the Documentaries / Books page
     if (d.shelf_featured) e.shelfFeatured = true;
+    if (d.top_pick != null) e.topPick = Number(d.top_pick); // videos: order in “Start here” on the Videos page
+    if (d.series) { e.series = String(d.series); if (d.part != null) e.part = Number(d.part); } // a session of a multi-part recording (series = the hearing/event id)
+    if (d.parts != null) e.parts = Number(d.parts); // how many sessions the series has in all
     // books & films: free-text credits plus bibliographic / runtime metadata
     for (const k of ['credits', 'publisher', 'isbn', 'pages']) if (d[k] != null) e[k] = String(d[k]);
     if (d.runtime != null) e.runtime = Number(d.runtime);

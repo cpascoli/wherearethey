@@ -2,6 +2,7 @@
 name: Citizen Hearing on Disclosure
 aka: [Citizen Hearing, Citizen Hearing on UFO Disclosure]
 date: 2013-04-29
+parts: 20               # recorded sessions; the session videos link to each other (series + part)
 end: 2013-05-03
 place: { name: "National Press Club, Washington, D.C.", lat: 38.8973, lng: -77.0306 }
 tags:

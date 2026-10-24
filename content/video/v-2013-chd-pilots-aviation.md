@@ -1,4 +1,6 @@
 ---
+series: h-2013-citizen-hearing
+part: 17
 name: "Citizen Hearing 2013: Pilots & Aviation Experts"
 youtube: AkGkOdpxAL8
 date: 2013

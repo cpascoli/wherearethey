@@ -880,3 +880,12 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
 @media (max-width: 860px) { .lt-card:has(.lt-cover) { grid-template-columns: 1fr 90px; } .lt-thumb:not(.lt-cover) { order: 0; } } /* phones: one column, so text is aligned anyway: videos on top, covers small on the right */
 
 .panel-tools .icon-btn svg { display: block; margin: auto; }
+
+/* sessions of a multi-part recording, under the video title */
+.vd-series { margin-top: 10px; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; display: flex; flex-direction: column; gap: 6px; }
+.vd-series > div:first-child { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.vd-series > div:first-child > span:first-child { margin-right: auto; }
+.vd-parts { display: flex; flex-wrap: wrap; gap: 4px; }
+.vd-parts button { min-width: 28px; padding: 2px 6px; border: 1px solid var(--border); border-radius: 6px; background: none; color: var(--text); font: inherit; font-size: 12px; cursor: pointer; }
+.vd-parts button.on { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+.vd-series > div:first-child > * { font-size: 12.5px; }

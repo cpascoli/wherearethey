@@ -1,4 +1,5 @@
 ---
+top_pick: 2
 youtube: SNgoul4vyDM
 rel:
   - [ recording of, h-2023-07-26 ]

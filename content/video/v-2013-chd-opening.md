@@ -1,4 +1,7 @@
 ---
+top_pick: 7
+series: h-2013-citizen-hearing
+part: 1
 name: "Citizen Hearing 2013: Opening statements (Mitchell, Hellyer)"
 youtube: MNSYSa5-yds
 date: 2013-04-29

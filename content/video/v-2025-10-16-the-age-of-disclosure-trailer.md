@@ -1,4 +1,5 @@
 ---
+top_pick: 1
 name: "The Age of Disclosure: official trailer (October 2025)"
 date: 2025-10-16
 youtube: SXUEcfgZv70

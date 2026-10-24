@@ -1,4 +1,5 @@
 ---
+top_pick: 3
 youtube: LBKRr5OvF6E
 rel:
   - [ recording of, h-2025-09-09 ]

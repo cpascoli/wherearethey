@@ -1,4 +1,6 @@
 ---
+series: h-2013-citizen-hearing
+part: 5
 name: "Citizen Hearing 2013: Rendlesham Forest Encounter, Part 1"
 youtube: 1yaMlNDB95Y
 date: 2013

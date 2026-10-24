@@ -1,4 +1,6 @@
 ---
+series: h-2013-citizen-hearing
+part: 7
 name: "Citizen Hearing 2013: Nuclear Tampering, Part 1"
 youtube: UDu3FlK-mI0
 date: 2013
