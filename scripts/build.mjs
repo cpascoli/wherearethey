@@ -361,7 +361,7 @@ export async function build({ check = false, quiet = false } = {}) {
     byType: Object.fromEntries([...TYPES, 'source'].map(t => [t, entities.filter(e => e.type === t).length])),
     edges: edges.size, videos: videoByYt.size, transcripts: transcripts.size, mentions: mentionCount, textLinks,
     documents: doctexts.size, documentPages: docPages,
-    transcriptHours: Math.round(entities.filter(e => e.transcript).reduce((a, e) => a + (e.duration || 0), 0) / 360) / 10,
+    transcriptHours: Math.round(entities.filter(e => e.transcript).reduce((a, e) => a + (e.duration || 0), 0) / 3600), // whole hours: shown on the homepage and in descriptions
   };
 
   // Explore's starting map (content/explore.json): key files and starting points, ids checked here
