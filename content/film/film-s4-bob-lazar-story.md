@@ -10,7 +10,7 @@ rel:
   - [ features, bob-lazar ]
   - [ features, george-knapp ]
   - [ about, area-51 ]
-  - [ related to, film-bob-lazar-area-51 ]
+  - [ follows, film-bob-lazar-area-51, "It follows Jeremy Corbell's Bob Lazar: Area 51 & Flying Saucers (2018)" ]
 links:
   - label: Amazon Prime Video
     url: https://www.amazon.com/gp/video/detail/B0GL9JHLGW

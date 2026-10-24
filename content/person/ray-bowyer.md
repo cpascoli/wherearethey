@@ -8,7 +8,6 @@ credentials:
     role: Captain, Aurigny Air Services (18 years' flying experience in 2007)
 tags: [aviator, international]
 rel:
-  - [ related to, ev-npc-2007 ]
   - [ witness, inc-alderney-2007 ]
 facts:
   - text: "Captain Ray Bowyer recounted his 2007 sighting near Alderney and urged aircrew to report what they see."

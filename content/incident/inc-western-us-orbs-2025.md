@@ -11,7 +11,7 @@ tags:
 rel:
   - [ documented in, odni-uap-d001 ]
   - [ documented in, usper-statement-about-uap-sighting ]
-  - [ related to, eric-burlison ]
+  - [ followed up by, eric-burlison, "Burlison said he would look into whether the witnesses could testify publicly" ]
 facts:
   - text: A currently serving senior U.S. intelligence official wrote a first-hand account of investigating unusual noises and UAP sightings in and near a sensitive U.S. military facility in late 2025, including encountering UAP while riding as a helicopter passenger.
     status: documented

@@ -14,7 +14,6 @@ links:
   - label: Internet Archive (PDF)
     url: https://archive.org/details/pdfy-uHw9zGct4dsyqXcU
 rel:
-  - [ related to, doc-twining-memo-1947 ]
   - [ related to, project-blue-book ]
   - [ related to, project-sign ]
 facts:

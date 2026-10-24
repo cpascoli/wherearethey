@@ -5,7 +5,7 @@ rel:
   - [ released in, ev-pursue-release-07 ]
   - [ released by, department-of-war ]
   - [ about, aawsap ]
-  - [ related to, bigelow-aerospace ]
+  - [ prepared for, bigelow-aerospace, "Developed for BAASS, Bigelow Aerospace's AAWSAP contractor" ]
 tags:
   - pursue
 name: DOW-UAP-D167 — Project Capella, December 2008

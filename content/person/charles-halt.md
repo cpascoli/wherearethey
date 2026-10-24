@@ -12,9 +12,9 @@ tags:
 rel:
   - [ authored, doc-halt-memo ]
   - [ witness, inc-rendlesham-1980 ]
-  - [ related to, jim-penniston ]
-  - [ related to, john-burroughs ]
-  - [ related to, nick-pope ]
+  - [ fellow witness, jim-penniston, "Halt investigated two nights after Penniston, Burroughs and Cabansag reported a landed craft" ]
+  - [ fellow witness, john-burroughs, "Halt investigated two nights after Penniston, Burroughs and Cabansag reported a landed craft" ]
+  - [ cited by, nick-pope, "Pope says the 1983 FOIA release of Halt's memo forced the authorities to acknowledge an incident" ]
 facts:
   - text: "Halt described investigating the December 1980 events at Rendlesham as deputy base commander at RAF Bentwaters, at the 2007 National Press Club panel."
     status: claimed

@@ -13,12 +13,9 @@ tags:
 rel:
   - [ worked at, dia ]
   - [ initiated, aawsap ]
-  - [ related to, harry-reid ]
-  - [ related to, robert-bigelow ]
-  - [ related to, george-knapp ]
-  - [ related to, colm-kelleher ]
-  - [ related to, skinwalker-ranch ]
-  - [ related to, doc-dopsr-22-sb-0151 ]
+  - [ contracted, robert-bigelow, "Bigelow's BAASS won the contract for AAWSAP, which Lacatski ran" ]
+  - [ co-author of, colm-kelleher, "Co-authors, with George Knapp, of Skinwalkers at the Pentagon; Kelleher worked at BAASS alongside Lacatski's AAWSAP" ]
+  - [ visited, skinwalker-ranch, "He reported a strange encounter during a mid-2000s visit, which he says led to AAWSAP" ]
   - [ initiated, kona-blue ]
 facts:
   - text: "His 2023 book says that at a 2011 meeting in the Capitol he told a U.S. Senator and an agency Under Secretary that the United States “was in possession of a craft of unknown origin and had successfully gained access to its interior.” He repeated that the government holds such a craft in interviews in October 2023 and November 2025."

@@ -2,7 +2,7 @@
 rel:
   - [ released in, ev-pursue-release-03 ]
   - [ released by, cia ]
-  - [ related to, project-blue-book ]
+  - [ documents, project-blue-book, "The USAF Project Blue Book with a CIA “Official Record Copy” cover sheet" ]
 tags:
   - pursue
 name: CIA-UAP-015 — Project Blue Book Special Report No. 14 (Analysis of Reports of Unidentified Aerial Objects)

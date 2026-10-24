@@ -5,7 +5,7 @@ credentials: [{ category: aviator, role: "Captain and fighter pilot, Brazilian A
 tags: [aviator, air-force, international]
 rel:
   - [ witness, inc-noite-oficial-ovnis-1986 ]
-  - [ related to, doc-fab-noite-oficial-ovnis-1986 ]
+  - [ described in, doc-fab-noite-oficial-ovnis-1986, "The Brazilian Air Force report records the interceptor pilots' radar contacts and lights" ]
 facts:
   - text: "One of the interceptor pilots on 19–20 May 1986. He says the Brasília air-defence radar measured an acceleration equivalent to roughly 15,000 km/h."
     status: claimed

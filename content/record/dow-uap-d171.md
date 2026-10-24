@@ -3,7 +3,7 @@ rel:
   - [ released in, ev-pursue-release-07 ]
   - [ released by, department-of-war ]
   - [ about, aawsap ]
-  - [ related to, bigelow-aerospace ]
+  - [ prepared by, bigelow-aerospace, "A monthly progress report by BAASS, Bigelow Aerospace's AAWSAP contractor" ]
 tags:
   - pursue
 name: DOW-UAP-D171 — BAASS Monthly Report, June 2009

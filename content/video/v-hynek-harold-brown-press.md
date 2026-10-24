@@ -4,7 +4,7 @@ youtube: jMMMJg3ScNg
 rel:
   - [ features, j-allen-hynek ]
   - [ features, harold-brown ]
-  - [ related to, project-blue-book ]
+  - [ about, project-blue-book ]
 moments:
   - t: "0:18"
     text: "Hynek: “None of the evidence that I have examined would indicate any proof at all that we are being visited by extraterrestrials.”"

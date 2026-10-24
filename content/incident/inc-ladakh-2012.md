@@ -11,7 +11,7 @@ outcome_source: https://www.theregister.com/2013/07/26/india_china_war_jupiter_m
 rel:
   - [ witness, itbp ]
   - [ disputed by, ak-antony ]
-  - [ related to, cia-uap-016 ]
+  - [ same region as, cia-uap-016, "A 1968 CIA report lists earlier UFO sightings in Ladakh, Nepal, Sikkim and Bhutan" ]
 links:
   - label: UPI — Indian Army spots UFOs in Ladakh (Aug 18, 2013)
     url: https://www.upi.com/Odd_News/2013/08/18/UFOs-spotted-along-India-China-border/1121376858272/

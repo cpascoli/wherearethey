@@ -10,7 +10,7 @@ credentials:
 tags:
   - intelligence
 rel:
-  - [ related to, area-51 ]
+  - [ commented on, area-51, "In The Age of Disclosure he says the activity over Area 51 is real" ]
   - [ led, dia ]
 facts:
   - text: Has publicly acknowledged the existence of UAP.

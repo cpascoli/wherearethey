@@ -6,7 +6,7 @@ tags: [aviator, navy]
 rel:
   - [ features, alex-dietrich ]
   - [ about, inc-nimitz-2004 ]
-  - [ related to, david-fravor ]
+  - [ discusses, david-fravor, "She explains why her account lasts about 10 seconds against Fravor's several minutes" ]
 moments:
   - t: "0:53"
     text: "Reviewing the leaked “event summary” of the encounter, Dietrich says she has never seen it before and “cannot validate the accuracy or that it's official”, but many of its terms and details seem familiar."

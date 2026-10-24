@@ -16,16 +16,14 @@ tags:
   - intelligence
   - disclosure
 rel:
-  - [ related to, langley-afb ]
+  - [ commented on, langley-afb, "He described the drone incursions over Langley at the May 2025 congressional briefing" ]
   - [ worked at, senate-intel-committee ]
   - [ related to, aatip ]
-  - [ related to, luis-elizondo ]
-  - [ related to, to-the-stars ]
-  - [ related to, ev-nyt-2017 ]
-  - [ related to, inc-roosevelt-2015 ]
-  - [ related to, kirk-mcconnell ]
-  - [ related to, eric-burlison ]
-  - [ related to, aaro ]
+  - [ worked with, luis-elizondo, "He met Elizondo around 2017 and joined him and Tom DeLonge in To The Stars Academy" ]
+  - [ provided video of, inc-roosevelt-2015, "He provided the GoFast and Gimbal videos to The New York Times in 2017" ]
+  - [ worked with, kirk-mcconnell, "Mellon turned to McConnell, who arranged the first Navy witness briefings in Congress" ]
+  - [ worked with, eric-burlison, "Mellon has helped Burlison compile lists of specific UAP videos for release" ]
+  - [ criticised, aaro, "He called AARO's 2024 historical report the most error-ridden government report he could recall" ]
 facts:
   - text: "Spent nearly a decade on Capitol Hill, finishing as Minority Staff Director of the Senate Select Committee on Intelligence."
     status: claimed

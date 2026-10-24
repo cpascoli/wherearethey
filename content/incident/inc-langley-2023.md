@@ -6,8 +6,8 @@ tags:
   - drones
   - air-force
 rel:
-  - [ related to, gregory-guillot ]
-  - [ related to, frank-kendall ]
+  - [ assessed by, gregory-guillot, "Gen. Guillot made the Langley incursions “the centerpiece” of his counter-drone assessment" ]
+  - [ raised with, frank-kendall, "Asked about the incursions at a 2024 hearing, Secretary Kendall did not address them" ]
 facts:
   - text: "Testifying before the Senate Armed Services Committee in March 2024, NORTHCOM commander Gen. Gregory Guillot said he had \"gone into the events at Joint Base Langley-Eustis\" and was using them as \"the centerpiece\" of his 90-day assessment of counter-drone defence, adding: \"I was not prepared for the number of incursions that I see.\""
     status: documented

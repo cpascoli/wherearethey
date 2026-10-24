@@ -14,13 +14,11 @@ tags:
   - intelligence
   - disinformation
 rel:
-  - [ related to, area-51 ]
-  - [ related to, uap-disinformation ]
-  - [ related to, doc-fbi-majestic-12 ]
-  - [ related to, inc-ellsworth-1977 ]
-  - [ related to, george-knapp ]
-  - [ related to, paul-hellyer ]
-  - [ related to, linda-moulton-howe ]
+  - [ served at, area-51, "He says he served twice at Area 51 as a counterintelligence officer" ]
+  - [ named in, doc-fbi-majestic-12, "AFOSI called the MJ-12 papers “completely bogus”; Doty says the FBI cleared him and that they were “based on actual documents”" ]
+  - [ alleged forgery on, inc-ellsworth-1977, "A 2026 episode argues the “L9 incident” document was a fabrication tied to Doty, meant to discredit the case" ]
+  - [ interviewed by, george-knapp, "George Knapp interviewed Doty for Mystery Wire (recorded 2019, published 2020)" ]
+  - [ story repeated by, paul-hellyer, "Hellyer repeated the “Project Serpo” alien-exchange story, widely traced to Doty" ]
 links:
   - label: "The Black Vault — Richard Doty personnel file, New Mexico State Police (records request)"
     url: https://www.theblackvault.com/documentarchive/richard-doty-personnel-file-new-mexico-state-police/

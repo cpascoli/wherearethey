@@ -12,13 +12,9 @@ tags:
   - disclosure
 rel:
   - [ member, task-force-declassification ]
-  - [ related to, h-2023-07-26 ]
-  - [ related to, inc-eglin-2023 ]
-  - [ related to, anna-paulina-luna ]
-  - [ related to, matt-gaetz ]
-  - [ related to, george-knapp ]
-  - [ related to, david-grusch ]
-  - [ related to, jeremy-corbell ]
+  - [ questioned witnesses at, h-2023-07-26, "Burchett, Luna and Moskowitz pressed for more disclosure" ]
+  - [ credits, george-knapp, "He credits Knapp's reporting for what he knows, and entered Knapp's statement into the 2023 hearing record" ]
+  - [ questioned, david-grusch, "He asked Grusch under oath where recovered material is held" ]
 facts:
   - text: "One of the most vocal advocates for full military UAP disclosure."
     status: claimed

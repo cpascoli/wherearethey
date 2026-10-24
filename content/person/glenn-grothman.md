@@ -8,7 +8,7 @@ credentials:
 tags:
   - congress
 rel:
-  - [ related to, langley-afb ]
+  - [ raised, langley-afb, "He described the December 2023 swarm as drones about 20 feet long, flying over 100 mph" ]
   - [ member of, house-oversight ]
 facts:
   - text: "In November 2024 Grothman said briefings with the DoD and IC inspectors general and AARO had not substantiated David Grusch's 2023 claims."

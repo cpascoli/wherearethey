@@ -9,7 +9,7 @@ tags:
   - whistleblower
   - crash-retrieval
 rel:
-  - [ related to, crash-retrieval ]
+  - [ alleges, crash-retrieval, "Says he flew a helicopter on a classified mission to retrieve a UAP" ]
 facts:
   - text: Says he flew a helicopter on a classified mission to retrieve a UAP.
     status: claimed

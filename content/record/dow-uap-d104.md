@@ -7,7 +7,7 @@ rel:
   - [ paired with, dow-uap-d102 ]
   - [ paired with, dow-uap-d103 ]
   - [ paired with, dow-uap-d105 ]
-  - [ related to, project-blue-book ]
+  - [ documents, project-blue-book, "The Tremonton film became the subject of a Blue Book investigation" ]
 tags:
   - pursue
 name: DOW-UAP-D104 — Final Personnel Record for Newhouse, Delbert C., U.S. Navy, 1957

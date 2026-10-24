@@ -11,8 +11,8 @@ tags:
   - air-force
 rel:
   - [ witness, inc-malmstrom-1967 ]
-  - [ related to, doc-341smw-history-1967 ]
-  - [ related to, aaro ]
+  - [ cites, doc-341smw-history-1967, "Salas says a FOIA request led the Air Force to declassify the Echo Flight records; the wing history says UFO rumours there “were disproven”" ]
+  - [ disputes, aaro, "He says AARO disregarded him, and rejects the WSJ's EMP-test explanation" ]
   - [ related to, sean-kirkpatrick ]
 facts:
   - text: "Salas testified that on 24 March 1967, as deputy missile combat crew commander at Malmstrom's Oscar Flight, the missiles lost alert status while guards reported a red, pulsating oval object hovering above the front gate: “we lost alert status on all 10 missiles while this object was above our facility.” In other accounts he has put the number at six to eight of ten."

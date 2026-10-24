@@ -6,7 +6,7 @@ rel:
   - [ released by, department-of-war ]
   - [ paired with, eop-uap-d002 ]
   - [ related to, crash-retrieval ]
-  - [ related to, nasa ]
+  - [ concerns, nasa, "Drafts proposed NASA as a holder of foreign space material" ]
 tags:
   - pursue
 name: USG-UAP-D002 — Interagency Correspondence Concerning Space Fragments, 1962-1964

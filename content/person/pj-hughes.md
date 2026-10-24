@@ -10,9 +10,7 @@ tags:
   - radar
 rel:
   - [ witness, inc-nimitz-2004 ]
-  - [ related to, kevin-day ]
-  - [ related to, gary-voorhis ]
-  - [ related to, david-fravor ]
+  - [ disputed by, david-fravor, "Fravor rejects the idea that anyone came to the ships or that witnesses signed NDAs" ]
 facts:
   - text: Responsible for securing the hard-drive data recorders from the E-2 Hawkeye that Kevin Day first tried to use to intercept the objects.
     status: claimed

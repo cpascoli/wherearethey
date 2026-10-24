@@ -10,7 +10,7 @@ tags:
 rel:
   - [ run by, department-of-war ]
   - [ succeeded by, project-grudge ]
-  - [ related to, dow-uap-d097 ]
+  - [ documented in, dow-uap-d097, "An initial report from Air Materiel Command on Project Sign" ]
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Project_Sign

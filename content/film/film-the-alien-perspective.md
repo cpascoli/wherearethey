@@ -6,8 +6,8 @@ credits: "Written and directed by Dean Alioto · two-part documentary series · 
 tags: [science, international]
 rel:
   - [ features, leslie-kean ]
-  - [ related to, inc-rendlesham-1980 ]
-  - [ related to, film-the-phenomenon ]
+  - [ features, inc-rendlesham-1980, "Includes first-hand witness accounts of the 1980 Rendlesham Forest incident" ]
+  - [ shares crew with, film-the-phenomenon, "Alioto previously consulted on The Phenomenon (2020)" ]
 links:
   - label: Amazon Prime Video
     url: https://www.primevideo.com/detail/The-Alien-Perspective/0TLOVUPPLAH80MS53V8QUSGFKK

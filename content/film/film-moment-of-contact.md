@@ -5,7 +5,7 @@ credits: "Directed by James Fox · narrated by Peter Coyote · 1091 Pictures"
 runtime: 108
 tags: [international, south-america, crash-retrieval]
 rel:
-  - [ related to, film-the-phenomenon ]
+  - [ same director, film-the-phenomenon, "Both are documentaries by James Fox" ]
 links:
   - label: Prime Video
     url: https://www.primevideo.com/detail/Moment-of-Contact/0R8ZR50WOA504KL4MYS8E58XOM

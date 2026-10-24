@@ -7,8 +7,8 @@ rel:
   - [ chaired by, avi-loeb ]
   - [ member, garry-nolan ]
   - [ member, tim-gallaudet ]
-  - [ related to, aaro ]
-  - [ related to, pursue ]
+  - [ works with, aaro, "Formed at the White House's request in coordination with AARO, the ODNI and the FBI" ]
+  - [ analysed, pursue, "Council members found about 8% of PURSUE sensor videos may show birds" ]
 links:
   - { label: "New science advisory council forms to help US government ‘resolve the UAP mystery’ (DefenseScoop, 17 June 2026)", url: "https://defensescoop.com/2026/06/17/new-science-advisory-council-forms-to-help-us-government-resolve-the-uap-mystery/" }
   - { label: "Michael Shermer Named to White House UAP Science Advisory Council (Skeptic, 15 June 2026)", url: "https://www.skeptic.com/article/michael-shermer-named-to-white-house-uap-science-advisory-council/" }

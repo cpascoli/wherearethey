@@ -12,10 +12,9 @@ rel:
   - [ authored, doc-shellenberger-testimony ]
   - [ submitted, doc-immaculate-constellation ]
   - [ witness, h-2024-11-13 ]
-  - [ related to, david-grusch ]
-  - [ related to, luis-elizondo ]
-  - [ related to, tim-gallaudet ]
-  - [ related to, marik-von-rennenkampff ]
+  - [ checked claims of, david-grusch, "He set out to verify Grusch's claims after the 2023 testimony" ]
+  - [ testified with, luis-elizondo, "They testified together on 13 November 2024" ]
+  - [ testified with, tim-gallaudet, "They testified together on 13 November 2024" ]
 facts:
   - text: "Shellenberger testified in November 2024 that a whistleblower report describes Immaculate Constellation as an unacknowledged special access program consolidating UAP imagery and signature intelligence."
     status: claimed

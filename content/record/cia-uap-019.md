@@ -2,7 +2,7 @@
 rel:
   - [ released in, ev-pursue-release-03 ]
   - [ released by, cia ]
-  - [ related to, project-blue-book ]
+  - [ reviewed, project-blue-book, "A 1971 Australian review of Project Blue Book" ]
 tags:
   - pursue
 name: CIA-UAP-019 — Australian Dept of Defense Scientific and Intel Aspects of the UFO Problem

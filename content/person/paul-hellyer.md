@@ -10,9 +10,6 @@ tags: [international, disclosure]
 rel:
   - [ related to, inc-roswell-1947 ]
   - [ witness, h-2013-citizen-hearing ]
-  - [ related to, ev-hellyer-toronto-2005 ]
-  - [ related to, edgar-mitchell ]
-  - [ related to, steven-greer ]
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Paul_Hellyer

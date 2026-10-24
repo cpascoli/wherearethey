@@ -13,7 +13,7 @@ tags:
   - congress
   - air-force
 rel:
-  - [ related to, wright-patterson-afb ]
+  - [ claims about, wright-patterson-afb, "He believed the Air Force kept what it knows about UFOs in a room at Wright-Patterson; Gen. LeMay refused him access" ]
 links:
   - label: U.S. Air Force — Major General Barry M. Goldwater (official biography)
     url: https://www.af.mil/About-Us/Biographies/Display/Article/106951/major-general-barry-m-goldwater/

@@ -12,9 +12,8 @@ tags:
 rel:
   - [ authored, doc-graves-statement-2023-07-26 ]
   - [ witness, inc-roosevelt-2015 ]
-  - [ related to, tim-gallaudet ]
-  - [ related to, dan-isbell ]
-  - [ related to, doc-aaro-gofast ]
+  - [ advised by, tim-gallaudet, "Gallaudet became an adviser to Graves's Americans for Safe Aerospace" ]
+  - [ disputed by, doc-aaro-gofast, "AARO assesses “with high confidence” that GoFast did not move at anomalous speeds" ]
 facts:
   - text: "In his written testimony he describes himself as a former F-18 pilot with over a decade in the Navy, which he joined in 2009, including deployments in Operation Enduring Freedom and Operation Inherent Resolve, and as a formally trained engineer."
     status: claimed

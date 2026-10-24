@@ -3,7 +3,7 @@ rel:
   - [ released in, ev-pursue-release-06 ]
   - [ released by, department-of-war ]
   - [ paired with, dow-uap-pr160 ]
-  - [ related to, project-blue-book ]
+  - [ preceded, project-blue-book, "Previews methods such as diffraction-grating photography later used by Blue Book" ]
 tags:
   - pursue
 name: DOW-UAP-D154 — Transcript of a Presentation by Captain Edward J. Ruppelt, 1952

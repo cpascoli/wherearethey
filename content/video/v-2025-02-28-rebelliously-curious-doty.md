@@ -6,8 +6,8 @@ tags: [intelligence, disinformation]
 rel:
   - [ features, richard-doty ]
   - [ about, uap-disinformation ]
-  - [ related to, linda-moulton-howe ]
-  - [ related to, area-51 ]
+  - [ discusses, linda-moulton-howe, "Doty says headquarters had him interview Howe and show her a courier-delivered document" ]
+  - [ discusses, area-51, "Doty says he served at Kirtland and within the Nellis range, “which you would call Area 51”" ]
 moments:
   - t: "5:03"
     text: "Doty says he served as an AFOSI counterintelligence officer “from 1978 until 1988, 10 years”, at Kirtland Air Force Base and also within the Nellis Test and Training Range, “which you would call Area 51”."

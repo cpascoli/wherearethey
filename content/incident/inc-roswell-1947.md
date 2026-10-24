@@ -10,9 +10,9 @@ outcome_note: "The Air Force traced the debris to a Project MOGUL balloon (1994)
 outcome_source: doc-af-roswell-case-closed-1997
 rel:
   - [ documented in, doc-af-roswell-case-closed-1997 ]
-  - [ related to, philip-corso ]
-  - [ related to, edgar-mitchell ]
-  - [ related to, crash-retrieval ]
+  - [ claims by, philip-corso, "Corso made broader claims about recovered technology" ]
+  - [ vouched for by, edgar-mitchell, "Mitchell, who grew up in Roswell, said the 1947 crash was genuine" ]
+  - [ alleged case of, crash-retrieval, "Books from 1980 on added a crashed craft and bodies; the Air Force attributes the accounts to balloons and test dummies" ]
 facts:
   - text: In July 1947 the Roswell Army Air Field announced it had recovered a “flying disc”, then retracted the statement and called it a weather balloon.
     status: documented

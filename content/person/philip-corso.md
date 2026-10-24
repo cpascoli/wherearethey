@@ -9,7 +9,7 @@ credentials:
 tags:
   - crash-retrieval
 rel:
-  - [ related to, crash-retrieval ]
+  - [ alleges, crash-retrieval, "Claimed he managed the reverse-engineering of artifacts recovered at Roswell" ]
 facts:
   - text: Claimed that while heading the Army’s Foreign Technology Desk he managed the reverse-engineering of alien artifacts recovered at Roswell in 1947.
     status: claimed

@@ -7,7 +7,7 @@ tags: [aviator, international]
 rel:
   - [ features, jean-charles-duboc ]
   - [ about, inc-air-france-3532-1994 ]
-  - [ related to, doc-geipan-af3532 ]
+  - [ same case as, doc-geipan-af3532 ]
 moments:
   - t: "1:50"
     text: "(French) Duboc: seeing a craft “between 400 and 500 metres in diameter, in broad daylight, above the Paris region, at 10,000 metres altitude” was unique in a pilot's career."

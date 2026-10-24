@@ -21,15 +21,13 @@ tags:
   - navy
   - whistleblower
 rel:
-  - [ related to, inc-nimitz-2004 ]
+  - [ disputes, inc-nimitz-2004, "He rejects Kirkpatrick's DARPA explanation for the Tic Tac" ]
   - [ witness, h-2024-11-13 ]
-  - [ related to, inc-roosevelt-2015 ]
-  - [ related to, jay-stratton ]
+  - [ informed by, jay-stratton, "Stratton told him the deleted GoFast email had been treated as spillage" ]
   - [ related to, chris-mellon ]
-  - [ related to, alexandro-wiggins ]
-  - [ related to, aaro ]
-  - [ related to, sean-kirkpatrick ]
-  - [ related to, doc-aaro-gofast ]
+  - [ accused, aaro, "He accused AARO of an influence operation" ]
+  - [ disputes, sean-kirkpatrick, "He rejects Kirkpatrick's DARPA explanation for the Tic Tac and called a meeting with AARO's leadership an “influence operation”" ]
+  - [ partly accepts, doc-aaro-gofast, "He concedes AARO's point that GoFast was not fast (“I don't dispute that”) but disputes its wider conclusions" ]
 facts:
   - text: "He testified that confirmation that UAP are real came to him in January 2015, as Commander of the Naval Meteorology and Oceanography Command, during a pre-deployment exercise of the USS Theodore Roosevelt Carrier Strike Group overseen by U.S. Fleet Forces Command."
     status: documented

@@ -11,8 +11,8 @@ rel:
   - [ speaker, tim-burchett ]
   - [ speaker, jared-moskowitz ]
   - [ speaker, leslie-kean ]
-  - [ related to, kirk-mcconnell ]
-  - [ related to, task-force-declassification ]
+  - [ attended by, kirk-mcconnell, "McConnell was present but did not speak" ]
+  - [ held by, task-force-declassification, "Members of the Oversight task force on declassification, led by Luna, held the press conference" ]
 facts:
   - text: "Filmmaker James Fox, Rep. Anna Paulina Luna, Rep. Eric Burlison, Rep. Tim Burchett, Rep. Jared Moskowitz, journalist Leslie Kean and former intelligence officer David Grusch spoke at an unsworn press conference on Capitol Hill calling on the President to declassify UAP records and grant immunity to whistleblowers."
     status: documented

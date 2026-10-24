@@ -10,6 +10,7 @@ import { ROOT, TYPES, STATUSES, readEntries, toSeconds, youtubeId } from './lib.
 import { computeLayouts } from './layout.mjs';
 import { assignPaths, writePages } from './pages.mjs';
 import { assignAdded } from './added.mjs';
+import { INVERSE, KNOWN } from './relations.mjs';
 
 export const CREDIBLE = ['congress', 'government', 'intelligence', 'military', 'aviator', 'sensor-operator', 'academia', 'astronaut', 'aerospace', 'law-enforcement'];
 const REPORTER = ['journalist', 'policy-expert'];
@@ -73,7 +74,12 @@ export async function build({ check = false, quiet = false } = {}) {
         if (fact.status === 'documented' && /wikipedia\.org/i.test(fact.source?.url || '')) warnings.push(`${r.file}: documented fact cites Wikipedia; cite the primary record or use claimed/unverified`);
         return fact;
       }),
-      rel: arr(d.rel).map(x => (Array.isArray(x) ? { label: String(x[0]), id: String(x[1]) } : { label: String(x.label), id: String(x.id) })),
+      rel: arr(d.rel).map(x => {
+        const l = Array.isArray(x) ? { label: String(x[0]), id: String(x[1]), note: x[2] } : { label: String(x.label), id: String(x.id), note: x.note };
+        if (l.note) l.note = String(l.note); else delete l.note;
+        if (!KNOWN.has(l.label)) warnings.push(`${r.file}: link label "${l.label}" is not in scripts/relations.mjs (add it with its reading from the other end)`);
+        return l;
+      }),
       body: r.body.trim() ? marked.parse(r.body) : '',
     };
     if (d.credentials) e.credentials = arr(d.credentials).map(c => ({ category: String(c.category || 'unknown'), role: c.role || '' }));
@@ -194,21 +200,26 @@ export async function build({ check = false, quiet = false } = {}) {
   // ── Edges ──
   const edges = new Map();
   const linked = new Set(); // "a|b" both directions, for quick "already connected?" checks
-  const addEdge = (a, b, label, kind = 'rel', weight = 1) => {
+  const addEdge = (a, b, label, kind = 'rel', weight = 1, note) => {
     if (!ent.has(a) || !ent.has(b) || a === b) return;
     linked.add(`${a}|${b}`); linked.add(`${b}|${a}`);
     const key = `${a}|${b}|${label}`;
-    if (edges.has(key)) edges.get(key).w += weight;
-    else edges.set(key, { s: a, t: b, label, kind, w: weight });
+    if (edges.has(key)) { edges.get(key).w += weight; if (note && !edges.get(key).note) edges.get(key).note = note; }
+    else edges.set(key, { s: a, t: b, label, kind, w: weight, ...(note ? { note } : {}) });
   };
   for (const e of entities) {
-    for (const r of e.rel) addEdge(e.id, r.id, r.label);
+    for (const r of e.rel) addEdge(e.id, r.id, r.label, 'rel', 1, r.note);
     for (const f of e.facts) if (f.by && f.by !== e.id) addEdge(f.by, e.id, 'statement about', 'fact');
     for (const m of e.moments || []) {
       for (const ref of m.refs) addEdge(e.id, ref, 'discusses', 'moment');
       if (m.speaker) addEdge(m.speaker, e.id, 'speaks in', 'moment');
     }
   }
+
+  // links generated from quotes and video moments ("statement about", "discusses", "speaks in") step aside where
+  // the two files already have an explicit link, which says how they are related; drawn on top, they would hide it
+  const relPair = new Set([...edges.values()].filter(x => x.kind === 'rel').flatMap(x => [`${x.s}|${x.t}`, `${x.t}|${x.s}`]));
+  for (const [k, x] of edges) if ((x.kind === 'fact' || x.kind === 'moment') && relPair.has(`${x.s}|${x.t}`)) edges.delete(k);
 
   // ── Credibility (the project's sourcing rule) ──
   for (const e of entities.filter(e => e.type === 'person')) {
@@ -345,6 +356,7 @@ export async function build({ check = false, quiet = false } = {}) {
   for (const [k, x] of edges) if (x.label === 'paired with' && (pairCount.get(x.s) > 8 || pairCount.get(x.t) > 8)) edges.delete(k);
 
   const stats = {
+    generic: entities.flatMap(e => e.rel.filter(r => r.label === 'related to').map(r => `${e.id} → ${r.id}`)), // links still saying "related to"
     entities: entities.length,
     byType: Object.fromEntries([...TYPES, 'source'].map(t => [t, entities.filter(e => e.type === t).length])),
     edges: edges.size, videos: videoByYt.size, transcripts: transcripts.size, mentions: mentionCount, textLinks,
@@ -389,7 +401,7 @@ export async function build({ check = false, quiet = false } = {}) {
     return { ...e, body: '', bodyLazy: true };
   });
   fs.writeFileSync(path.join(out, 'records.js'), `window.KB_RECORD_BODIES=${JSON.stringify(recordBodies)};window.KBR&&KBR();\n`);
-  const kb = { built: new Date().toISOString(), filesBase: process.env.FILES_BASE || null, entities: kbEntities, edges: edgeList, explore: { core: explore.core || [], starts: explore.starts || [] }, stats, warnings, errors };
+  const kb = { built: new Date().toISOString(), filesBase: process.env.FILES_BASE || null, entities: kbEntities, edges: edgeList, inverse: INVERSE, explore: { core: explore.core || [], starts: explore.starts || [] }, stats: { ...stats, generic: undefined }, warnings, errors };
   fs.writeFileSync(path.join(out, 'kb.js'), `window.KB=${JSON.stringify(kb)};\n`);
   fs.writeFileSync(path.join(out, 'mentions.js'), `window.KB_MENTIONS=${JSON.stringify(mentions)};\nwindow.KB_TOGETHER=${JSON.stringify(together)};\n`);
   for (const [vid, t] of transcripts) {
@@ -408,6 +420,11 @@ export async function build({ check = false, quiet = false } = {}) {
 if (import.meta.url === `file://${process.argv[1]}`) {
   const check = process.argv.includes('--check');
   const { errors, warnings, stats } = await build({ check });
-  if (check) console.log(`${stats.entities} entries · ${warnings.length} warnings · ${errors.length} errors`);
+  if (check) {
+    const generic = stats.generic || [];
+    if (generic.length) console.log(`  note  ${generic.length} links still say "related to" (give them a specific label from scripts/relations.mjs where the files say how; list them with --related)`);
+    if (process.argv.includes('--related')) for (const g of generic) console.log(`        ${g}`);
+    console.log(`${stats.entities} entries · ${warnings.length} warnings · ${errors.length} errors`);
+  }
   process.exit(errors.length ? 1 : 0);
 }

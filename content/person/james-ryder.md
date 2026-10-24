@@ -11,11 +11,10 @@ tags:
   - consciousness
 rel:
   - [ worked at, lockheed-martin ]
-  - [ related to, remote-viewing ]
-  - [ related to, robert-bigelow ]
-  - [ related to, glenn-gaffney ]
-  - [ related to, aawsap ]
-  - [ related to, george-knapp ]
+  - [ untraced quote on, remote-viewing, "A telepathy remark attributed to Ryder online has not been traced to any recording" ]
+  - [ allegedly negotiated with, robert-bigelow, "Knapp says Ryder negotiated to hand BAASS “leftovers, scraps” of recovered material" ]
+  - [ allegedly involved in, aawsap, "Knapp says Ryder negotiated to hand BAASS “leftovers, scraps” of recovered material" ]
+  - [ named by, george-knapp, "Knapp named Ryder as a gatekeeper of recovered material at Lockheed" ]
 facts:
   - text: "Testifying in September 2025, George Knapp named him when asked for individuals who have kept the UAP secret: “one of them was named Dr. James Ryder at Lockheed”, adding that he does not fault contractors for doing what the government asked of them."
     status: claimed

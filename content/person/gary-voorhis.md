@@ -11,8 +11,8 @@ tags:
 rel:
   - [ witness, inc-nimitz-2004 ]
   - [ related to, kevin-day ]
-  - [ related to, pj-hughes ]
-  - [ related to, david-fravor ]
+  - [ fellow witness, pj-hughes, "Hughes's account parallels Voorhis's description of AEGIS data being collected on the Princeton" ]
+  - [ disputed by, david-fravor, "Fravor has publicly rejected parts of Voorhis's account" ]
 facts:
   - text: The Princeton’s only system technician for its Cooperative Engagement Capability and AEGIS Combat System.
     status: claimed

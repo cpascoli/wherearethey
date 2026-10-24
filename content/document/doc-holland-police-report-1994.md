@@ -8,7 +8,7 @@ links:
     url: https://www.woodtv.com/wp-content/uploads/sites/51/2021/07/holland-police-report-UFO-sighting-030894.pdf
 rel:
   - [ about, inc-holland-michigan-1994 ]
-  - [ related to, jeff-velthouse ]
+  - [ authored by, jeff-velthouse, "Officer Velthouse's report on the 8 March 1994 sightings" ]
 facts:
   - text: "Officer Jeff Velthouse (badge 73) responded to UFO calls in Holland, Michigan, on 8 March 1994; 911 dispatch had received a number of calls. Through a resident's binoculars he saw an object high to the southwest with red, green and white lights but could not make out a shape. He wrote that the lighting \"appeared to be different than a normal aircraft\" and was \"oscillating, rather than blinking\", and that he saw two objects moving southwest."
     status: documented

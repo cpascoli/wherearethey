@@ -12,7 +12,7 @@ links:
     url: https://www.cia.gov/readingroom/docs/DOC_0000015339.pdf
 rel:
   - [ produced by, cia ]
-  - [ related to, inc-dc-1952 ]
+  - [ follows, inc-dc-1952, "Written in October 1952 after the summer wave: “During July 1952 alone, official reports totaled 250”" ]
 facts:
   - text: A memo from the Assistant Director of the CIA’s Office of Scientific Intelligence asking whether “unidentified flying objects” had national-security implications, whether they were being studied adequately, and what further research should be done. It reviews the work of the Air Technical Intelligence Center at Wright-Patterson AFB.
     status: documented

@@ -9,7 +9,6 @@ rel:
   - [ features, frank-kendall ]
   - [ features, rob-wittman ]
   - [ about, inc-langley-2023 ]
-  - [ related to, doc-transcript-2024-04-17-hasc-air-force ]
 moments:
   - t: "48:30"
     text: "Rep. Rob Wittman asks Secretary Kendall about counter-drone capability at Air Force bases: “We saw recently a very disturbing trend at Langley Air Force Base, where because of a large number of UASs that were in that airspace, Langley had to close down.”"

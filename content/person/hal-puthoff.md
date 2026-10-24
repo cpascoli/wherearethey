@@ -15,17 +15,16 @@ tags:
   - consciousness
   - science
 rel:
-  - [ related to, inc-nimitz-2004 ]
-  - [ related to, inc-roswell-1947 ]
+  - [ commented on, inc-nimitz-2004, "He says the program also interviewed the Nimitz pilots" ]
+  - [ claims about, inc-roswell-1947, "Puthoff says Battelle worked on foil-like material reportedly from Roswell, and that a layered sample came from Roswell debris" ]
   - [ co-founded, stargate ]
   - [ worked at, sri-international ]
-  - [ related to, aawsap ]
-  - [ related to, kona-blue ]
-  - [ related to, eric-davis ]
-  - [ related to, luis-elizondo ]
-  - [ related to, chris-mellon ]
-  - [ related to, sample-bismuth-magnesium ]
-  - [ related to, ev-nyt-2017 ]
+  - [ contractor for, aawsap, "From 2008 his EarthTech was a subcontractor to BAASS under the AAWSAP contract" ]
+  - [ proposed, kona-blue, "He was part of the group that proposed KONA BLUE at DHS" ]
+  - [ co-founded with, luis-elizondo, "Co-founders of To The Stars Academy in 2017" ]
+  - [ co-founded with, chris-mellon, "Co-founders of To The Stars Academy in 2017" ]
+  - [ vouches for, sample-bismuth-magnesium, "Puthoff says the layered sample came from Roswell debris and stresses its unexplained manufacture; AARO says it is ordinary alloy" ]
+  - [ commented on, ev-nyt-2017, "Puthoff says To The Stars Academy helped Leslie Kean get the story out" ]
 facts:
   - text: "Co-founded and directed the CIA- and DIA-funded remote-viewing research (later Stargate) at SRI International."
     status: documented

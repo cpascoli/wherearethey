@@ -21,7 +21,7 @@ links:
 rel:
   - [ produced by, fbi ]
   - [ about, inc-roswell-1947 ]
-  - [ related to, crash-retrieval ]
+  - [ alleges, crash-retrieval, "The forged “briefing document” describes a secret committee managing crash retrievals, including Roswell" ]
 facts:
   - text: The purported MJ-12 “briefing document for President-elect Eisenhower” (dated 1952) describes a secret committee managing crash retrievals, including Roswell. It surfaced among ufologists in 1984.
     status: claimed

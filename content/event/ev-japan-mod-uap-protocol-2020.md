@@ -5,7 +5,7 @@ tags: [government, military, international, disclosure]
 rel:
   - [ issued by, taro-kono ]
   - [ issued by, japan-mod ]
-  - [ related to, ev-dod-videos-2020 ]
+  - [ prompted by, ev-dod-videos-2020, "The Japan Times reported the Pentagon's April 2020 release of Navy videos prompted the protocol" ]
 links:
   - label: The Japan Times — Japanese Defense Ministry unveils protocol for encountering UFOs
     url: https://www.japantimes.co.jp/news/2020/09/14/national/japan-defense-ministry-ufo/

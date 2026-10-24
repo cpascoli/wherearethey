@@ -10,7 +10,7 @@ outcome_note: "A 1947 U.S. War Department review attributed most reports to mete
 outcome_source: dow-uap-d099
 rel:
   - [ documented in, dow-uap-d099 ]
-  - [ related to, cia-uap-014 ]
+  - [ mentioned in, cia-uap-014 ]
   - [ investigated by, department-of-war ]
 facts:
   - text: A U.S. War Department intelligence review (Intelligence Division, General Staff, January 1947) records that "ghost rockets" were first reported over southern Sweden in late May 1946, then over Finland, Denmark and Norway; almost 1,000 reports had reached the Swedish Defence Staff by the end of July, most from untrained observers describing "a ball of fire with a tail" or a "shiny cigar-shaped object".

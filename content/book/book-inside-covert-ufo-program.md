@@ -18,7 +18,7 @@ rel:
   - [ about, aawsap ]
   - [ cleared in, doc-dopsr-22-sb-0151 ]
   - [ followed by, book-covert-ufo-new-insights ]
-  - [ related to, kona-blue ]
+  - [ about, kona-blue, "Lacatski calls AAWSAP and its successor KONA BLUE “Both classified programs”; AARO says KONA BLUE was never approved" ]
   - [ related to, crash-retrieval ]
 links:
   - label: Google Books

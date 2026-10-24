@@ -6,8 +6,7 @@ credentials:
     role: Captain, Air France (flight AF 3532, 1994); former French Air Force pilot
 tags: [aviator, international]
 rel:
-  - [ related to, doc-geipan-af3532 ]
-  - [ related to, ev-npc-2007 ]
+  - [ described in, doc-geipan-af3532, "GEIPAN's file records the captain and copilot describing a brown or dark red disc" ]
   - [ witness, inc-air-france-3532-1994 ]
 facts:
   - text: "Air France captain Jean-Charles Duboc described his crew's 1994 sighting of a huge object near Paris, which was studied by France's COMETA group and GEIPAN."

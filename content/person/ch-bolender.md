@@ -9,7 +9,7 @@ credentials:
 tags:
   - air-force
 rel:
-  - [ related to, project-blue-book ]
+  - [ recommended end of, project-blue-book, "His 1969 memo recommended ending Project Blue Book" ]
 facts:
   - text: "Brig. Gen. C. H. Bolender signed the 20 October 1969 memo recommending the end of Project Blue Book, which notes that UFO reports that could affect national security “are not part of the Blue Book system.”"
     status: documented

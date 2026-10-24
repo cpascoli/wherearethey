@@ -8,8 +8,8 @@ rel:
   - [ features, james-lacatski ]
   - [ about, aawsap ]
   - [ about, book-covert-ufo-new-insights ]
-  - [ related to, robert-bigelow ]
-  - [ related to, skinwalker-ranch ]
+  - [ discusses, robert-bigelow, "Knapp recounts how Bigelow's Skinwalker Ranch led Lacatski to create AAWSAP" ]
+  - [ discusses, skinwalker-ranch ]
 moments:
   - t: "8:28"
     text: "Knapp: Lacatski read Knapp and Kelleher's book Hunt for the Skinwalker, passed it to his DIA colleague Jay Stratton, then visited the ranch with Robert Bigelow; within an hour he saw something glowing and floating in the ranch house."

@@ -6,7 +6,7 @@ end: 2025
 place: { name: "Persian Gulf, Iraq, Syria, Gulf of Aden and Afghanistan — USCENTCOM", lat: 27.24, lng: 51.2 }
 tags: [military, pursue, international]
 rel:
-  - [ related to, pursue ]
+  - [ documented in, pursue ]
   - [ investigated by, aaro ]
   - [ documented in, dow-uap-d038 ]
   - [ documented in, dow-uap-pr036 ]

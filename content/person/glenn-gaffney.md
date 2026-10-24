@@ -9,10 +9,10 @@ tags:
   - intelligence
 rel:
   - [ worked at, cia ]
-  - [ related to, legacy-program ]
-  - [ related to, james-ryder ]
-  - [ related to, robert-bigelow ]
-  - [ related to, aawsap ]
+  - [ named as gatekeeper of, legacy-program, "Knapp named him to Congress as a gatekeeper of the legacy program; no official record confirms it" ]
+  - [ allegedly blocked, james-ryder, "Knapp says Gaffney stopped a deal for Ryder to pass recovered material to Bigelow's AAWSAP contractor" ]
+  - [ allegedly blocked, robert-bigelow, "Knapp, Davis and Chris Sharp name him as the CIA official who blocked Lockheed from handing material to BAASS" ]
+  - [ allegedly blocked, aawsap, "Knapp, Davis and Chris Sharp say he blocked Lockheed from handing material to BAASS" ]
 facts:
   - text: "Testifying in September 2025, George Knapp named Gaffney, former CIA Director of Science and Technology, as a gatekeeper of the legacy UAP program; no evidence for this has been made public."
     status: claimed

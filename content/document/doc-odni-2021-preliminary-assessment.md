@@ -15,7 +15,7 @@ links:
 rel:
   - [ produced by, odni ]
   - [ about, uaptf ]
-  - [ related to, inc-nimitz-2004 ]
+  - [ covers, inc-nimitz-2004, "Its reports run from November 2004, the month of the Nimitz encounters, to March 2021" ]
 facts:
   - text: Covers 144 reports from U.S. government sources between 2004 and 2021, 80 of them observed with multiple sensors. Only one was identified with high confidence (a large, deflating balloon); “the others remain unexplained.”
     status: documented

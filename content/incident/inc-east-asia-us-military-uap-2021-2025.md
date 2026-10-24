@@ -16,7 +16,7 @@ rel:
   - [ documented in, dow-uap-pr103 ]
   - [ documented in, dow-uap-pr105 ]
   - [ documented in, dow-uap-pr148 ]
-  - [ related to, pursue ]
+  - [ documented in, pursue ]
 facts:
   - text: The Department of War's PURSUE releases include at least ten unresolved U.S. military UAP reports from INDOPACOM, over the East China Sea, Yellow Sea and South China Sea and near Japan, dated 2021 to 2025 and mostly sensor video.
     status: documented

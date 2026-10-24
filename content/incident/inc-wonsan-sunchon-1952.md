@@ -5,8 +5,8 @@ date: 1952-01-29
 place: { name: "Over Wonsan and Sunchon, North Korea", lat: 39.15, lng: 127.44 }
 tags: [aviator, air-force, military, international]
 rel:
-  - [ related to, otto-weyland ]
-  - [ related to, project-blue-book ]
+  - [ addressed by, otto-weyland, "Gen. Weyland told the press no conclusive answer could be expected without more data" ]
+  - [ investigated by, project-blue-book, "Blue Book's case file shows ATIC reached no conclusion" ]
   - [ documented in, doc-bluebook-korea-1952 ]
 links:
   - label: Wikipedia — Wonsan-Sunchon UFO incident

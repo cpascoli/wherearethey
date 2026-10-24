@@ -18,10 +18,9 @@ tags:
 rel:
   - [ authored, doc-fravor-statement-2023-07-26 ]
   - [ witness, inc-nimitz-2004 ]
-  - [ related to, alex-dietrich ]
-  - [ related to, jay-stratton ]
-  - [ related to, luis-elizondo ]
-  - [ related to, to-the-stars ]
+  - [ contacted by, jay-stratton, "Stratton contacted him in 2009 for an unofficial Pentagon report on the Tic Tac" ]
+  - [ contacted by, luis-elizondo, "Elizondo got in touch in 2016" ]
+  - [ credits, to-the-stars, "He credits TTSA with working with the Times on the 2017 articles, which he says “removed the Stigma of the UFO topic”" ]
 facts:
   - text: "Asked under oath about his background, he said he was an enlisted Marine, a Naval Academy graduate, flew for the Navy for 18 years, holds a master's degree from the University of Houston, and has worked in the private sector for about 16–17 years, doing a lot of defense work."
     status: claimed

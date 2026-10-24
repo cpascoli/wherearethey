@@ -7,7 +7,7 @@ rel:
   - [ paired with, dow-uap-d103 ]
   - [ paired with, dow-uap-d104 ]
   - [ paired with, dow-uap-d105 ]
-  - [ related to, project-blue-book ]
+  - [ reviewed by, project-blue-book, "The film became one of the visual cases reviewed by Project Blue Book" ]
 tags:
   - pursue
 name: DOW-UAP-PR159 — Historical Film of Reported UFOs, Utah, 1952

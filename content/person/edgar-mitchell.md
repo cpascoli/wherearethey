@@ -10,10 +10,7 @@ tags:
   - disclosure
 rel:
   - [ witness, h-2013-citizen-hearing ]
-  - [ related to, inc-roswell-1947 ]
-  - [ related to, steven-greer ]
-  - [ related to, paul-hellyer ]
-  - [ related to, doc-wilson-memo ]
+  - [ friend of, paul-hellyer, "Hellyer called him “my friend Edgar Mitchell”; they opened the 2013 Citizen Hearing together" ]
   - [ worked at, nasa ]
 facts:
   - text: After NASA he often said Earth was being visited and that governments were covering it up.

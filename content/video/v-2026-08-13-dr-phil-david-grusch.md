@@ -7,10 +7,10 @@ rel:
   - [ features, david-grusch ]
   - [ about, crash-retrieval ]
   - [ about, legacy-program ]
-  - [ related to, eric-burlison ]
-  - [ related to, aaro ]
-  - [ related to, icig ]
-  - [ related to, lockheed-martin ]
+  - [ mentions, eric-burlison ]
+  - [ discusses, aaro, "Grusch says AARO never contacted him again after he offered to help cross-examine former program officials" ]
+  - [ discusses, icig, "Grusch describes what he took to the Inspector General: “the fact that we've had this recovery program”" ]
+  - [ discusses, lockheed-martin, "He says AAWSAP was “trying to get Lockheed Martin to transfer material”, which CIA leadership denied" ]
 moments:
   - t: "6:36"
     text: "Grusch: what he took to the Inspector General and briefed to Congress is “the fact that we've had this recovery program”, with the material spread across big contractors, the CIA, the Office of Naval Intelligence and federally funded research centres, unknown to most of Congress and to many presidents."

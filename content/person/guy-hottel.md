@@ -8,7 +8,7 @@ credentials:
 tags:
   - foia
 rel:
-  - [ related to, inc-roswell-1947 ]
+  - [ wrongly linked to, inc-roswell-1947, "His 1950 memo is often cited as proof of Roswell, though it does not mention Roswell" ]
   - [ worked at, fbi ]
 facts:
   - text: "As Special Agent in Charge in Washington, Hottel sent the 22 March 1950 memo relaying, third-hand, an informant's claim that three “flying saucers” had been recovered in New Mexico."

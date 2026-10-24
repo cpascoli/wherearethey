@@ -7,9 +7,9 @@ tags: [disclosure]
 rel:
   - [ about, ev-pursue-release-07 ]
   - [ about, inc-western-us-triangle-2026 ]
-  - [ related to, dow-uap-d176 ]
-  - [ related to, fbi-uap-d043 ]
-  - [ related to, usg-uap-d002 ]
+  - [ discusses, dow-uap-d176 ]
+  - [ discusses, fbi-uap-d043 ]
+  - [ discusses, usg-uap-d002 ]
 moments:
   - t: "0:00"
     text: "NewsNation, the morning of the release: “the White House releasing a new tranche of UAP or UFO documents newly declassified”, some “dating back all the way to the 40s, 50s and 60s.” (The records were published by the Department of War on war.gov/UFO, under the White House's PURSUE program.)"

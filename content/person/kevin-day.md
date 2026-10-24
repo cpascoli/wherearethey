@@ -8,9 +8,8 @@ tags:
   - navy
 rel:
   - [ witness, inc-nimitz-2004 ]
-  - [ related to, david-fravor ]
-  - [ related to, gary-voorhis ]
-  - [ related to, pj-hughes ]
+  - [ sent to intercept, david-fravor, "Day's decision put Fravor's flight onto the object" ]
+  - [ fellow witness, pj-hughes, "Hughes says he secured the E-2 recorders Day had first used to try to intercept the objects" ]
 facts:
   - text: “My job was to man the radars and ID everything that flew in the skies.”
     status: claimed

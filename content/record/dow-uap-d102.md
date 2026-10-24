@@ -7,7 +7,7 @@ rel:
   - [ paired with, dow-uap-d103 ]
   - [ paired with, dow-uap-d104 ]
   - [ paired with, dow-uap-d105 ]
-  - [ related to, project-blue-book ]
+  - [ documents, project-blue-book, "Blue Book's investigation of the 1952 Tremonton film" ]
 tags:
   - pursue
 name: DOW-UAP-D102 — Project Blue Book File on Tremonton Film, Utah, 1952

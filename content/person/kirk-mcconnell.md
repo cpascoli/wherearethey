@@ -9,15 +9,12 @@ tags:
   - congress
   - intelligence
 rel:
-  - [ related to, langley-afb ]
-  - [ related to, chris-mellon ]
-  - [ related to, inc-nimitz-2004 ]
-  - [ related to, david-fravor ]
-  - [ related to, alex-dietrich ]
-  - [ related to, jay-stratton ]
-  - [ related to, dylan-borland ]
-  - [ related to, leslie-kean ]
-  - [ related to, legacy-program ]
+  - [ commented on, langley-afb, "He thinks triangles seen near bases such as Langley are “probably ours”" ]
+  - [ convinced by, inc-nimitz-2004, "Walking through the Tic Tac case with Fravor and Dietrich convinced him the issue was real" ]
+  - [ briefed by, david-fravor, "Walking through the Tic Tac case with Fravor and Dietrich convinced him the issue was real" ]
+  - [ questions account of, jay-stratton, "He does not recall Stratton sharing his legacy-program claims with Senate staff" ]
+  - [ cited by, leslie-kean, "Kean says McConnell was present when credible sources briefed senators about recovered non-human bodies" ]
+  - [ commented on, legacy-program, "He said the key is first-hand sources who can testify to direct involvement in the legacy program" ]
 facts:
   - text: "Chris Mellon says that when the intelligence committees did not react to the December 2017 New York Times story, he called McConnell, who set up the meetings that brought Navy witnesses to Congress."
     status: claimed

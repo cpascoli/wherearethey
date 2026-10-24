@@ -15,7 +15,7 @@ facts:
     status: claimed
     source: v-2026-05-07-the-story-of-the-calvine-ufo-photograph-in-case-y@3:43
 rel:
-  - [ related to, inc-rendlesham-1980 ]
+  - [ researched, inc-rendlesham-1980, "He has researched Rendlesham from the original records" ]
 ---
 
 British historian who advised the UK National Archives on publishing the Ministry of Defence's UFO files, and who has researched Lakenheath, Rendlesham, Alderney and Topcliffe from the original records. He tends towards sceptical, document-led conclusions, which is valuable balance in this archive.

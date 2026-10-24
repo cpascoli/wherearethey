@@ -8,7 +8,7 @@ rel:
   - [ features, alex-dietrich ]
   - [ about, inc-nimitz-2004 ]
   - [ related to, david-fravor ]
-  - [ related to, aaro ]
+  - [ discusses, aaro, "Dietrich says AARO is a good idea, though she doesn't know they've “gotten it exactly right”" ]
 moments:
   - t: "5:26"
     text: "Dietrich: she flew with VFA-41, the Black Aces, from USS Nimitz and made two combat deployments, in 2005 and 2007, supporting troops in Iraq and Afghanistan."

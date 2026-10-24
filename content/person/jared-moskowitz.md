@@ -5,8 +5,7 @@ credentials: [{ category: congress, role: "U.S. Representative (D-FL); House Ove
 tags: [congress]
 rel:
   - [ spoke at, h-2024-11-13 ]
-  - [ related to, ev-capitol-uap-press-conference-2026 ]
-  - [ related to, luis-elizondo ]
+  - [ commented on, luis-elizondo, "On Elizondo's crash-retrieval non-disclosure document: “you cannot talk about fight club if there is no fight club”" ]
   - [ member of, house-oversight ]
   - [ spoke at, h-2023-07-26 ]
   - [ spoke at, h-2025-09-09 ]

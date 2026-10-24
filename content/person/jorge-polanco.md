@@ -6,7 +6,7 @@ credentials:
     role: Captain, Aerolíneas Argentinas (Boeing 727, flight 674, 1995)
 tags: [aviator, international]
 rel:
-  - [ related to, doc-cefae-informe-2018 ]
+  - [ described in, doc-cefae-informe-2018, "The report notes that only Captain Polanco described a solid body" ]
   - [ witness, inc-bariloche-1995 ]
 facts:
   - text: "Polanco, captain of Aerolíneas Argentinas flight 674, said that on approach to Bariloche on 31 July 1995 a white light rushed towards the aircraft and stopped about 100 m away, and an object with three lights later flew alongside."

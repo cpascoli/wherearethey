@@ -8,15 +8,14 @@ credentials:
 tags:
   - journalist
 rel:
-  - [ related to, skinwalker-ranch ]
+  - [ chronicled, skinwalker-ranch, "He became the public chronicler of the Skinwalker Ranch research" ]
   - [ witness, h-2025-09-09 ]
-  - [ related to, bob-lazar ]
-  - [ related to, aawsap ]
-  - [ related to, james-lacatski ]
-  - [ related to, robert-bigelow ]
-  - [ related to, lockheed-martin ]
-  - [ related to, inc-usovo-1982 ]
-  - [ related to, jay-stratton ]
+  - [ chronicled, aawsap, "He called AAWSAP the largest acknowledged UFO program and co-wrote the books on it" ]
+  - [ co-author of, james-lacatski, "Co-authors, with Colm Kelleher, of Skinwalkers at the Pentagon and the books that followed" ]
+  - [ chronicled, robert-bigelow, "Through Bigelow and AAWSAP he became the public chronicler of the Skinwalker Ranch research" ]
+  - [ claims about, lockheed-martin, "He testified Lockheed held material “not made here” and named its James Ryder as a gatekeeper" ]
+  - [ reported on, inc-usovo-1982, "The case became famous through Knapp, who told Congress “something or someone entered the correct launch codes”" ]
+  - [ interviewed, jay-stratton, "His WEAPONIZED podcast released Stratton's first interview; Knapp says Stratton is “Axelrod” in his book" ]
 facts:
   - text: "In his written testimony he describes himself as KLAS-TV's chief investigative reporter, “not a whistleblower, and not a UFO witness”, who began pursuing the UFO story in 1987, and says what hooked him was the paper trail of government documents obtained under FOIA."
     status: claimed

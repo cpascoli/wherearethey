@@ -11,9 +11,9 @@ tags:
   - drones
 rel:
   - [ used by, department-of-war ]
-  - [ related to, inc-langley-2012 ]
-  - [ related to, inc-langley-2023 ]
-  - [ related to, h-2025-09-09 ]
+  - [ site of, inc-langley-2012 ]
+  - [ site of, inc-langley-2023 ]
+  - [ discussed at, h-2025-09-09, "Dylan Borland testified about the 2012 triangle at Langley" ]
 facts:
   - text: "In sworn testimony on 9 September 2025, former geospatial-intelligence airman Dylan Borland told the House Oversight task force that in summer 2012, at about 01:30, he saw a roughly 100-foot equilateral triangle take off near the NASA hangar at Langley and hover silently."
     status: documented

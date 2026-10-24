@@ -6,7 +6,7 @@ tags:
   - disclosure
   - congress
 rel:
-  - [ related to, inc-langley-2023 ]
+  - [ discusses, inc-langley-2023, "Its national security panel discussed the Langley drone incursions" ]
   - [ organized by, uapdf ]
 links:
   - label: Disclosure Forum 2026 (forum.disclosure.org)

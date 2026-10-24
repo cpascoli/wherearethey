@@ -11,14 +11,11 @@ tags:
   - contractor
 rel:
   - [ founded, bigelow-aerospace ]
-  - [ related to, aawsap ]
-  - [ related to, harry-reid ]
-  - [ related to, james-lacatski ]
-  - [ related to, hal-puthoff ]
-  - [ related to, eric-davis ]
-  - [ related to, colm-kelleher ]
-  - [ related to, lockheed-martin ]
-  - [ related to, skinwalker-ranch ]
+  - [ contractor for, aawsap, "His subsidiary BAASS won the $22 million AAWSAP contract" ]
+  - [ hired, hal-puthoff, "Puthoff sat on the advisory board of Bigelow's NIDS, and his EarthTech was a BAASS subcontractor under AAWSAP" ]
+  - [ hired, eric-davis, "Bigelow hired Davis at the National Institute for Discovery Science in 1996" ]
+  - [ employed, colm-kelleher, "Kelleher worked on UAP research for Bigelow at BAASS" ]
+  - [ allegedly negotiated with, lockheed-martin, "Knapp says Bigelow negotiated with Lockheed executives for BAASS to receive material; AARO says the companies deny holding any" ]
 facts:
   - text: "AARO's 2024 historical report states that the DIA's $22 million AAWSAP contract was awarded to a private-sector organization; Bigelow's BAASS subsidiary was the contractor."
     status: documented

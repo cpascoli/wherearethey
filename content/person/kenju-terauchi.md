@@ -6,7 +6,7 @@ credentials:
     role: Captain, Japan Air Lines (Boeing 747 cargo flight 1628); about 29 years' flying experience in 1986
 tags: [aviator, international]
 rel:
-  - [ related to, john-callahan ]
+  - [ case briefed by, john-callahan, "Callahan says the FAA data on the sighting was briefed to the CIA, who declared it “never happened”" ]
   - [ witness, inc-jal-1628-1986 ]
 facts:
   - text: Told the FAA, through interpreters, that he saw three unidentified objects, two of which came close in front of the 747 cockpit with bright lights, and a much larger “mothership” he described as “two times carrier” in size.

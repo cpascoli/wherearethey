@@ -13,10 +13,10 @@ links:
   - label: FBI Vault — Guy Hottel
     url: https://vault.fbi.gov/hottel_guy
 rel:
-  - [ related to, inc-roswell-1947 ]
+  - [ misattributed to, inc-roswell-1947, "Often cited as proof of the Roswell recovery; the FBI notes it does not mention Roswell" ]
   - [ authored by, guy-hottel ]
   - [ produced by, fbi ]
-  - [ related to, crash-retrieval ]
+  - [ alleges, crash-retrieval, "Relays an informant's story of three “flying saucers” recovered in New Mexico, each with three small bodies" ]
 facts:
   - text: Records that “three so-called flying saucers had been recovered in New Mexico… circular in shape with raised centers, approximately 50 feet in diameter. Each one was occupied by three bodies of human shape but only 3 feet tall, dressed in metallic cloth of a very fine texture.”
     status: documented

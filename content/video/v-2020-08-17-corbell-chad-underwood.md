@@ -8,7 +8,7 @@ rel:
   - [ features, chad-underwood ]
   - [ features, jeremy-corbell ]
   - [ about, inc-nimitz-2004 ]
-  - [ related to, david-fravor ]
+  - [ discusses, david-fravor, "Underwood explains how Fravor sent him out with tapes running" ]
 moments:
   - t: "4:26"
     text: "Underwood: call sign “Nuts”, VFA-41 Black Aces aboard USS Nimitz in November 2004, serving under Dave Fravor — “I filmed the Tic Tac FLIR video”, in peacetime operations off San Diego."

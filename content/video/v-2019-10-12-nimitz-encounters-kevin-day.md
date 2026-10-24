@@ -7,7 +7,7 @@ tags: [radar, navy]
 rel:
   - [ features, kevin-day ]
   - [ about, inc-nimitz-2004 ]
-  - [ related to, david-fravor ]
+  - [ discusses, david-fravor, "Day's account of the object around Fravor differs from Fravor's own" ]
   - [ related to, gary-voorhis ]
 moments:
   - t: "2:12"

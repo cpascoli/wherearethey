@@ -2,7 +2,7 @@
 rel:
   - [ released in, ev-pursue-release-04 ]
   - [ released by, department-of-war ]
-  - [ related to, project-blue-book ]
+  - [ reviewed, project-blue-book, "The Air Force Scientific Advisory Board's ad hoc committee review of Blue Book" ]
 tags:
   - pursue
 name: DOW-UAP-D092 — Department of the Air Force Committee to Review Project Bluebook, 1966-1967

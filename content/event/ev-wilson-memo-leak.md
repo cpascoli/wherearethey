@@ -6,8 +6,8 @@ tags:
   - crash-retrieval
 rel:
   - [ about, doc-wilson-memo ]
-  - [ related to, eric-davis ]
-  - [ related to, thomas-wilson ]
+  - [ attributed to, eric-davis, "Presents itself as Davis's notes of a 2002 conversation with Wilson; neither has confirmed it" ]
+  - [ involves, thomas-wilson, "According to the notes, Wilson was refused access to a covert reverse-engineering programme" ]
 facts:
   - text: "In May 2022 the notes were entered into the record of the HPSCI open hearing at Rep. Mike Gallagher's request; entry into the record confirms provenance, not accuracy."
     status: documented

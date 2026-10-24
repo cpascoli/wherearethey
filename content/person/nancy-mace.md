@@ -14,13 +14,13 @@ credentials:
 tags:
   - congress
 rel:
-  - [ related to, langley-afb ]
+  - [ raised, langley-afb, "Mace has pressed for answers on the Langley incursions" ]
   - [ chaired, h-2024-11-13 ]
   - [ published, doc-immaculate-constellation ]
   - [ member, task-force-declassification ]
-  - [ related to, david-grusch ]
-  - [ related to, michael-shellenberger ]
-  - [ related to, dylan-borland ]
+  - [ questioned, david-grusch, "Her questions drew Grusch's answer that “biologics came with some of these recoveries”" ]
+  - [ entered report by, michael-shellenberger, "She entered into the record the “Immaculate Constellation” whistleblower report Shellenberger brought" ]
+  - [ questioned, dylan-borland, "She asked him whether the Langley triangle was U.S. technology; he said the answer had to be given in a SCIF" ]
 facts:
   - text: Co-chaired the November 13, 2024 joint UAP hearing and published the Immaculate Constellation report on her House website.
     status: documented

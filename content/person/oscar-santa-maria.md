@@ -6,7 +6,6 @@ credentials:
     role: Commander, Peruvian Air Force; Sukhoi Su-22 pilot (1980)
 tags: [aviator, international]
 rel:
-  - [ related to, ev-npc-2007 ]
   - [ witness, inc-la-joya-1980 ]
 facts:
   - text: "Peruvian Air Force pilot Oscar Santa María described firing on an unidentified object in his Sukhoi in 1980."

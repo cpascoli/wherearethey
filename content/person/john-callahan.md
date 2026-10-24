@@ -6,8 +6,6 @@ credentials:
     role: Division Chief, Accidents and Investigations, Federal Aviation Administration (1980s)
 tags: [government, radar]
 rel:
-  - [ related to, ev-disclosure-project-2001 ]
-  - [ related to, ev-npc-2007 ]
   - [ witness, h-2013-citizen-hearing ]
   - [ investigated, inc-jal-1628-1986 ]
 facts:

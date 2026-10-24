@@ -9,7 +9,7 @@ rel:
   - [ run by, department-of-war ]
   - [ preceded by, project-sign ]
   - [ succeeded by, project-blue-book ]
-  - [ related to, dow-uap-d017 ]
+  - [ documented in, dow-uap-d017, "Some of these investigations became the basis for Project Grudge" ]
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Project_Grudge

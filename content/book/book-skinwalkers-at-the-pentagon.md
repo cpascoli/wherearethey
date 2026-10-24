@@ -13,7 +13,7 @@ rel:
   - [ about, aawsap ]
   - [ about, skinwalker-ranch ]
   - [ followed by, book-inside-covert-ufo-program ]
-  - [ related to, jay-stratton ]
+  - [ portrays, jay-stratton, "Co-author George Knapp says the book's pseudonymous “Axelrod” is Jay Stratton" ]
   - [ related to, kona-blue ]
 links:
   - label: Find in a library

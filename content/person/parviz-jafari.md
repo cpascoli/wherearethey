@@ -10,8 +10,7 @@ credentials:
     role: Retired General, Iranian Air Force
 tags: [aviator, international]
 rel:
-  - [ related to, doc-dia-tehran-1976 ]
-  - [ related to, ev-npc-2007 ]
+  - [ described in, doc-dia-tehran-1976, "The attaché report describes the two F-4 intercepts and the loss of instruments and weapons" ]
   - [ witness, inc-tehran-1976 ]
 facts:
   - text: Pilot of the second F-4 sent to intercept the object over Tehran. In public testimony at the National Press Club in 2007 he described attempting to fire a missile when his weapons panel and radio failed.

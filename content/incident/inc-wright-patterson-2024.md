@@ -6,7 +6,7 @@ end: 2024-12-14
 place: { name: "Wright-Patterson Air Force Base, Ohio", lat: 39.8261, lng: -84.0483 }
 tags: [air-force, drones]
 rel:
-  - [ related to, inc-langley-2023 ]
+  - [ similar to, inc-langley-2023, "Both are drone incursions over Air Force bases" ]
 links:
   - label: WVXU — Wright-Patt's airspace briefly shut down because of drone activity (15 December 2024)
     url: https://www.wvxu.org/local-news/2024-12-15/wright-patterson-air-force-base-drones

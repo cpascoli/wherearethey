@@ -6,9 +6,7 @@ credentials:
     role: UK Ministry of Defence civil servant; ran the MoD's UFO desk (1991–1994)
 tags: [government, international]
 rel:
-  - [ related to, inc-rendlesham-1980 ]
-  - [ related to, inc-calvine-1990 ]
-  - [ related to, charles-halt ]
+  - [ reviewed, inc-rendlesham-1980, "His cold-case review at the MoD found that “none of these theories fitted the facts”" ]
   - [ witness, h-2013-citizen-hearing ]
 facts:
   - text: "Pope, who handled UFO reports at the UK Ministry of Defence from 1991 to 1994, says his cold-case review of Rendlesham found that “none of these theories fitted the facts.”"

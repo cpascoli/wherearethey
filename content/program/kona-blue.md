@@ -6,7 +6,7 @@ tags: [crash-retrieval, secrecy]
 rel:
   - [ proposed to, department-of-homeland-security ]
   - [ grew out of, aawsap ]
-  - [ related to, legacy-program ]
+  - [ proposal for, legacy-program, "KONA BLUE, never approved, is the one documented proposal for such an effort" ]
   - [ documented in, doc-aaro-historical-record-report-v1 ]
 facts:
   - text: Interviewees told AARO that KONA BLUE was a sensitive Department of Homeland Security compartment set up to hide the retrieval and exploitation of “non-human biologics”.

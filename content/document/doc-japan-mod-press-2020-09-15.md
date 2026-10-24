@@ -10,7 +10,7 @@ links:
 rel:
   - [ about, ev-japan-mod-uap-protocol-2020 ]
   - [ published by, japan-mod ]
-  - [ related to, taro-kono ]
+  - [ records, taro-kono, "Kono's press conference announcing his directive on reporting unidentified aerial objects" ]
 facts:
   - text: "Kono announced that the day before he had issued a minister's directive on reporting unidentifiable objects in the air that could affect Japan's defence and security: report them thoroughly, record them with photographs where possible, and analyse them, including when they are seen on missions other than air-defence scrambles and surveillance."
     status: documented

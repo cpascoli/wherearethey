@@ -13,9 +13,9 @@ rel:
   - [ led, galileo-project ]
   - [ witness, h-2025-05-01 ]
   - [ chaired, uap-science-advisory-council ]
-  - [ related to, garry-nolan ]
-  - [ related to, eric-davis ]
-  - [ related to, pursue ]
+  - [ worked with, garry-nolan, "Nolan joined the Galileo Project, which Loeb founded in 2021" ]
+  - [ disputes, eric-davis, "Loeb called Davis's account of how recovered craft fly “speculation” without a theory of quantum gravity" ]
+  - [ analysed, pursue, "His paper found likely birds in about 8% of PURSUE sensor videos" ]
 facts:
   - text: "Loeb told Congress in 2025 that the U.S. should “invest a billion dollars in figuring out what is in our sky”, using AI analysis of modern sensor data."
     status: claimed

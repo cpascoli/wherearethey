@@ -2,7 +2,7 @@
 rel:
   - [ released in, ev-pursue-release-04 ]
   - [ released by, department-of-war ]
-  - [ related to, project-blue-book ]
+  - [ documents, project-blue-book, "Correspondence about Blue Book's research and findings" ]
 tags:
   - pursue
 name: DOW-UAP-D096 — Correspondence Relating to Project Blue Book, 1955

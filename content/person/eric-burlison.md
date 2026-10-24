@@ -17,12 +17,9 @@ tags:
 rel:
   - [ member, task-force-declassification ]
   - [ presented, inc-yemen-mq9-orb-2024 ]
-  - [ related to, inc-western-us-orbs-2025 ]
-  - [ related to, david-grusch ]
-  - [ related to, luis-elizondo ]
-  - [ related to, chris-mellon ]
-  - [ related to, anna-paulina-luna ]
-  - [ related to, pursue ]
+  - [ employed, david-grusch, "He questioned Grusch at the 2023 hearing and employed him in his office in 2026" ]
+  - [ questioned, luis-elizondo, "He asked Elizondo in November 2024 whether the U.S. possesses bodies; Elizondo answered “Yes”" ]
+  - [ commented on, pursue, "He says the PURSUE releases followed an ODNI briefing on personnel encountering orbs at a western base" ]
 facts:
   - text: "A lead investigator tracking crash-retrieval allegations."
     status: claimed

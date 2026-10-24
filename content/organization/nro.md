@@ -9,13 +9,13 @@ tags:
   - intelligence
   - secrecy
 rel:
-  - [ related to, uaptf ]
-  - [ related to, cia ]
-  - [ related to, department-of-war ]
+  - [ represented on, uaptf, "Grusch represented the NRO on the UAP Task Force from 2019 to 2021" ]
+  - [ run by, cia, "Founded in secret in 1961 and run jointly by the Air Force and the CIA" ]
+  - [ overseen by, department-of-war, "Set up in 1961 as an office managed jointly by the Secretary of Defense and the Director of Central Intelligence" ]
   - [ related to, h-2023-07-26 ]
   - [ related to, ev-grusch-icig-complaint-2022 ]
-  - [ related to, inc-vandenberg-2003 ]
-  - [ related to, doc-cia-haines-1997 ]
+  - [ launches during, inc-vandenberg-2003, "Nuccetelli says the base was conducting launches the NRO deemed “the most important in 25 years”" ]
+  - [ its historian wrote, doc-cia-haines-1997, "Gerald Haines, the NRO's historian, wrote it for the CIA's Studies in Intelligence" ]
 links:
   - label: NRO — official site
     url: https://www.nro.gov/About-NRO/

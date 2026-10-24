@@ -15,11 +15,11 @@ tags:
   - military
   - disclosure
 rel:
-  - [ related to, inc-malmstrom-1967 ]
-  - [ related to, uaptf ]
-  - [ related to, david-grusch ]
-  - [ related to, diana-pasulka ]
-  - [ related to, doc-uap-disclosure-act-2023 ]
+  - [ cites, inc-malmstrom-1967, "He counts the Malmstrom ICBM shutdowns among his data" ]
+  - [ represented on, uaptf, "He was the Army's representative to the UAP Task Force" ]
+  - [ cites, david-grusch, "He counts Grusch's testimony among his evidence" ]
+  - [ talked with, diana-pasulka ]
+  - [ cites, doc-uap-disclosure-act-2023, "He counts the Schumer–Rounds UAP Disclosure Act among his evidence" ]
 facts:
   - text: "At the SALT iConnections conference in May 2024 he said that “non-human intelligence exists, non-human intelligence has been interacting with Humanity, this interaction is not new and it's been ongoing and there are unelected people in the government that are aware of that”. Asked how confident he was: “there's zero doubt.”"
     status: claimed

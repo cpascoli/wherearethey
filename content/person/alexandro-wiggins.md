@@ -9,8 +9,8 @@ tags:
   - navy
 rel:
   - [ witness, h-2025-09-09 ]
-  - [ related to, tim-gallaudet ]
-  - [ related to, anna-paulina-luna ]
+  - [ encouraged by, tim-gallaudet, "Gallaudet says he encouraged Wiggins to come forward" ]
+  - [ questioned by, anna-paulina-luna, "At her September 2025 hearing Luna asked whether anything in the U.S. arsenal could split a Hellfire missile; Wiggins said nothing to his knowledge" ]
   - [ witness, inc-uss-jackson-2023 ]
 facts:
   - text: "Wiggins testified that on 15 February 2023, aboard USS Jackson off southern California, he saw “a self-luminous tic-tac-shaped object” emerge from the ocean and join three similar objects before all four left with near-instantaneous acceleration."

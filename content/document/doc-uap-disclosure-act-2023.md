@@ -12,8 +12,8 @@ rel:
   - [ sponsored by, chuck-schumer ]
   - [ sponsored by, mike-rounds ]
   - [ defines, legacy-program ]
-  - [ related to, ev-ndaa-fy2024 ]
-  - [ related to, nara ]
+  - [ basis for, ev-ndaa-fy2024, "The FY2024 NDAA kept a scaled-back version of the Act, without its review board or eminent-domain power" ]
+  - [ led to, nara, "The enacted FY2024 NDAA kept a narrower requirement to collect UAP records at the National Archives" ]
 facts:
   - text: Introduced in July 2023 by Senate Majority Leader Chuck Schumer and Sen. Mike Rounds as an amendment to the FY2024 NDAA (S. 2226). Modelled on the JFK Records Act, it would have created a presidentially appointed UAP Records Review Board, used eminent domain to recover any “technologies of unknown origin and biological evidence of non-human intelligence” held privately, and set out “controlled disclosure”.
     status: documented

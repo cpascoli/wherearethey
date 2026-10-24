@@ -11,19 +11,17 @@ tags:
   - air-force
   - military
 rel:
-  - [ related to, area-51 ]
+  - [ named with, area-51, "Rep. Moskowitz said Congress should be allowed into Wright-Patterson, Dugway or Groom Lake" ]
   - [ used by, department-of-war ]
-  - [ related to, project-sign ]
-  - [ related to, project-grudge ]
-  - [ related to, project-blue-book ]
-  - [ related to, inc-roswell-1947 ]
-  - [ related to, inc-wright-patterson-2024 ]
-  - [ related to, doc-twining-memo-1947 ]
-  - [ related to, doc-cia-osi-flying-saucers-1952 ]
-  - [ related to, dow-uap-d180 ]
-  - [ related to, battelle ]
-  - [ related to, nasic ]
-  - [ related to, barry-goldwater ]
+  - [ home of, project-sign, "Air Materiel Command at Wright Field took over Project Sign in January 1948, after Twining's 1947 letter" ]
+  - [ home of, project-grudge, "The base later housed Project Grudge" ]
+  - [ home of, project-blue-book, "Blue Book was run from Wright-Patterson from 1952 to 1969" ]
+  - [ destination for, inc-roswell-1947, "The FBI's July 1947 message said the Roswell disc and balloon were being sent to Wright Field" ]
+  - [ site of, inc-wright-patterson-2024 ]
+  - [ origin of, doc-twining-memo-1947, "Twining wrote the 1947 letter from Air Materiel Command headquarters at Wright Field" ]
+  - [ assessed in, doc-cia-osi-flying-saucers-1952, "The CIA found the Air Technical Intelligence Center at Wright-Patterson the only group giving the subject serious effort" ]
+  - [ documented in, dow-uap-d180, "Personnel record of Col. Howard McCoy, intelligence chief at Air Materiel Command, Wright Field, 1946–49" ]
+  - [ contracted, battelle, "In 1952 ATIC at Wright-Patterson arranged for Battelle to support its UFO project" ]
 links:
   - label: Wright-Patterson Air Force Base (official site)
     url: https://www.wpafb.af.mil/

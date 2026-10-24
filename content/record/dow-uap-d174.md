@@ -6,7 +6,7 @@ rel:
   - [ released by, department-of-war ]
   - [ about, aawsap ]
   - [ about, skinwalker-ranch ]
-  - [ related to, bigelow-aerospace ]
+  - [ prepared by, bigelow-aerospace, "BAASS's report on its 2010 field deployments to the Utah ranch" ]
   - [ related to, book-skinwalkers-at-the-pentagon ]
 tags:
   - pursue

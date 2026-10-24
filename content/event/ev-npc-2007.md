@@ -27,7 +27,7 @@ rel:
   - [ about, inc-la-joya-1980 ]
   - [ about, inc-jal-1628-1986 ]
   - [ related to, cefaa ]
-  - [ related to, project-blue-book ]
+  - [ urged reopening, project-blue-book, "Panellists asked the U.S. government to reopen the investigation that ended with Blue Book in 1969" ]
 facts:
   - text: "Filmmaker James Fox opened the event on Veterans Day and thanked panellists who had travelled from Iran, Peru, Chile and the UK, as well as journalist Leslie Kean of the Coalition for Freedom of Information."
     status: documented

@@ -18,14 +18,12 @@ tags:
   - congress
 rel:
   - [ chaired, task-force-declassification ]
-  - [ related to, inc-eglin-2023 ]
-  - [ related to, matt-gaetz ]
-  - [ related to, tim-burchett ]
-  - [ related to, eric-burlison ]
-  - [ related to, david-grusch ]
-  - [ related to, sean-kirkpatrick ]
-  - [ related to, aaro ]
-  - [ related to, ev-planned-oversight-hearing-2026-11 ]
+  - [ visited Eglin with, matt-gaetz, "With Gaetz and Burchett she visited Eglin in 2023 after pilots alleged a cover-up" ]
+  - [ visited Eglin with, tim-burchett, "Burchett visited Eglin with her and Gaetz, and later joined her declassification task force" ]
+  - [ colleague of, eric-burlison, "Burlison is a member of her declassification task force" ]
+  - [ works with, david-grusch, "She says Grusch works with her task force on leads about contractors" ]
+  - [ accused, sean-kirkpatrick, "She called the former AARO director “a documented liar” and offered to subpoena him" ]
+  - [ disputes, aaro, "She dismisses AARO's briefings and has called its former director a liar" ]
 facts:
   - text: "She says that as an airfield manager with the Portland Air National Guard she heard F-15 pilots avoid discussing an airspace incursion by something that had outperformed them, for fear of losing flight status."
     status: claimed

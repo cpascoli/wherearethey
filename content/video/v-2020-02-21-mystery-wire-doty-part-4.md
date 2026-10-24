@@ -7,7 +7,7 @@ rel:
   - [ features, richard-doty ]
   - [ features, george-knapp ]
   - [ about, uap-disinformation ]
-  - [ related to, area-51 ]
+  - [ discusses, area-51, "Doty says he served twice at Area 51 as a counterintelligence officer" ]
 moments:
   - t: "0:12"
     text: "On claims that he drove Paul Bennewitz mad: “I've heard everything, and none of it's true … Paul just was so infatuated with the subject of UFOs that he did this to himself.”"

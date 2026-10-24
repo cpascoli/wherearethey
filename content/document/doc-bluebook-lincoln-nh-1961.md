@@ -9,8 +9,8 @@ links:
   - label: National Archives catalog (NARA ID 28994660, T1206 roll 43)
     url: https://catalog.archives.gov/id/28994660
 rel:
-  - [ related to, wright-patterson-afb ]
-  - [ related to, project-blue-book ]
+  - [ mentions, wright-patterson-afb, "A 1963 letter from the Foreign Technology Division at Wright-Patterson on the Barney Hill sighting" ]
+  - [ case file of, project-blue-book ]
   - [ about, inc-hill-1961 ]
 facts:
   - text: "The Project Blue Book record card files the sighting under Lincoln, New Hampshire, 20 September 1961, 0001–0100 local time, as a ground-visual observation, with the conclusion \"Insufficient Data for Evaluation\"."

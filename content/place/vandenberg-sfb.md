@@ -11,10 +11,10 @@ tags:
   - nuclear
 rel:
   - [ used by, department-of-war ]
-  - [ related to, inc-vandenberg-2003 ]
-  - [ related to, inc-big-sur-1964 ]
-  - [ related to, h-2025-09-09 ]
-  - [ related to, nro ]
+  - [ site of, inc-vandenberg-2003 ]
+  - [ site of, inc-big-sur-1964, "The 1964 Atlas missile was launched from Vandenberg" ]
+  - [ discussed at, h-2025-09-09, "Jeffrey Nuccetelli testified about the 2003 “Red Square” incursions" ]
+  - [ launch site for, nro, "Nuccetelli says the base was conducting launches the NRO deemed “the most important in 25 years”" ]
 facts:
   - text: "In sworn testimony on 9 September 2025, Air Force veteran Jeffrey Nuccetelli told the House Oversight task force that UAP incursions over Vandenberg's missile-defence sites began on 14 October 2003, when Boeing contractors reported a massive glowing red square hovering silently, and that five incidents occurred between 2003 and 2005."
     status: documented

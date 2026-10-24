@@ -17,9 +17,7 @@ tags:
 rel:
   - [ authored, book-imminent ]
   - [ led, aatip ]
-  - [ related to, aawsap ]
-  - [ related to, jay-stratton ]
-  - [ related to, to-the-stars ]
+  - [ worked on, aawsap, "He says he was recruited into AAWSAP around 2009; it evolved into AATIP" ]
 facts:
   - text: "Under oath in November 2024 he described his background: he studied microbiology and immunology, served briefly in Army military intelligence, then became a civilian counterintelligence special agent and special agent in charge (counterterrorism and counterespionage). Around 2009, back at the Pentagon after a tour with the Director of National Intelligence, he joined the program first called AAWSAP, which evolved into AATIP."
     status: claimed

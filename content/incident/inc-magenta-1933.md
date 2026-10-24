@@ -5,12 +5,12 @@ date: 1933-06-13
 place: { name: "Magenta, Lombardy, Italy", lat: 45.4647, lng: 8.8833 }
 tags: [crash-retrieval, international, secrecy]
 rel:
-  - [ related to, wright-patterson-afb ]
+  - [ allegedly taken to, wright-patterson-afb, "Eric Davis says the Army brought the 1933 Italian craft back to Wright Field" ]
   - [ related to, inc-roswell-1947 ]
   - [ claimed by, david-grusch ]
   - [ claimed by, eric-davis ]
-  - [ related to, crash-retrieval ]
-  - [ related to, legacy-program ]
+  - [ alleged case of, crash-retrieval, "Grusch says a bell-like craft was recovered at Magenta; AARO found no verifiable evidence of a retrieval programme" ]
+  - [ alleged start of, legacy-program, "Eric Davis says the crash-retrieval programmes began with the Army's recovery of the 1933 Italian craft; AARO found no evidence" ]
 links:
   - label: Daily Mail (July 3, 2023) — Pinotti's documents, Grusch, and the sceptics
     url: https://www.dailymail.co.uk/news/article-12252381/Italian-researcher-shares-evidence-files-secret-UFO-crash-Italy.html

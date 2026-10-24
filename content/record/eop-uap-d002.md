@@ -5,8 +5,7 @@ rel:
   - [ released in, ev-pursue-release-07 ]
   - [ released by, white-house ]
   - [ paired with, usg-uap-d002 ]
-  - [ related to, nasa ]
-  - [ related to, usg-uap-d002 ]
+  - [ concerns, nasa, "Records a 1963 meeting with NASA's Arnold Frutkin on recovering space debris" ]
 tags:
   - pursue
 name: EOP-UAP-D002 — Memorandum on Interagency Coordination for the Recovery of Foreign Materiel, May 1963

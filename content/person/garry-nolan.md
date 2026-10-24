@@ -9,12 +9,11 @@ credentials:
 tags:
   - science
 rel:
-  - [ related to, galileo-project ]
-  - [ related to, luis-elizondo ]
-  - [ related to, chris-mellon ]
-  - [ related to, jacques-vallee ]
-  - [ related to, steven-greer ]
-  - [ related to, pursue ]
+  - [ member of, galileo-project, "He later joined Avi Loeb's Galileo Project" ]
+  - [ briefed by, luis-elizondo, "Elizondo and Mellon showed him the Navy videos about three weeks before they went public in 2017" ]
+  - [ briefed by, chris-mellon, "Elizondo and Mellon showed him the Navy videos about three weeks before they went public in 2017" ]
+  - [ refutes, steven-greer, "His team sequenced the Atacama skeleton Greer had presented as possibly alien and found it “human a hundred percent”" ]
+  - [ commented on, pursue, "He called the releases “evidence”, but “not proof yet”" ]
 facts:
   - text: "He says he was drawn in when the government asked for help with about a hundred harmed diplomats and military personnel, many later identified as early Havana syndrome cases, because of a deep blood-profiling technology co-developed in his laboratory; a few of those patients alleged their injuries came from proximity to UAP."
     status: claimed

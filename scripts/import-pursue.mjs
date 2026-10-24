@@ -176,13 +176,16 @@ for (const r of rows) {
   if (/AAWSAP/i.test(r.Title)) autoRel.push(['about', 'aawsap']);
   if (/AAWSAP DIRD/i.test(r.Title)) autoRel.push(['part of', 'doc-dirds']);
   if (/Warp Drive, Dark Energy/i.test(r.Title)) autoRel.push(['same as', 'doc-dird-warp-drive']);
-  if (/Blue Book/i.test(r.Title + r['Description Blurb'])) autoRel.push(['related to', 'project-blue-book']);
+  if (/Blue Book/i.test(r.Title + r['Description Blurb'])) autoRel.push(['mentions', 'project-blue-book']);
 
   const file = path.join(OUT, `${id}.md`);
   let data = {}, body = '';
   if (fs.existsSync(file)) ({ data, body } = splitFrontmatter(fs.readFileSync(file, 'utf8')));
   // labels only the importer writes are always regenerated (so stale ones disappear); anything else is the user's
   const IMPORTER_LABELS = ['released in', 'released by', 'paired with', 'same as'];
+  // a guessed link (about, part of, mentions) gives way to one you wrote to the same file, which says more
+  const userTargets = new Set((data.rel || []).filter(x => !IMPORTER_LABELS.includes(x[0]) && !autoRel.some(a => a[0] === x[0] && a[1] === x[1])).map(x => x[1]));
+  for (let i = autoRel.length - 1; i >= 0; i--) if (!IMPORTER_LABELS.includes(autoRel[i][0]) && userTargets.has(autoRel[i][1])) autoRel.splice(i, 1);
   const keepRel = (data.rel || []).filter(x => !IMPORTER_LABELS.includes(x[0]) && !autoRel.some(a => a[0] === x[0] && a[1] === x[1]));
   const next = { ...Object.fromEntries(Object.entries(data).filter(([k]) => !OWNED.includes(k))), ...own };
   next.rel = [...autoRel, ...keepRel];

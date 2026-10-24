@@ -9,7 +9,7 @@ links:
   - label: National Archives catalog (NARA ID 28940796, T1206 roll 9)
     url: https://catalog.archives.gov/id/28940796
 rel:
-  - [ related to, project-blue-book ]
+  - [ case file of, project-blue-book ]
   - [ about, inc-wonsan-sunchon-1952 ]
 facts:
   - text: "ATIC's analysis: on the night of 29 January 1952, 30 miles WSW of Wonsan, the tail, left and top gunners of a B-29 observed “a light orange colored sphere” for five minutes on a parallel course; at 2324 local time the left and tail gunners of another B-29 observed “an identical object near Sunchon” for one minute."

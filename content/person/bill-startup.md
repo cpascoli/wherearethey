@@ -7,7 +7,7 @@ credentials:
     role: Captain, Safe Air (Argosy freighter), pilot on the December 30–31, 1978 Kaikōura flight
 tags: [aviator, international]
 rel:
-  - [ related to, doc-rnzaf-air-1080-6-897-kaikoura ]
+  - [ described in, doc-rnzaf-air-1080-6-897-kaikoura ]
   - [ witness, inc-kaikoura-1978 ]
 facts:
   - text: "Startup was the captain of the Safe Air Argosy freighter on the night of 30–31 December 1978, when a TV crew aboard filmed the Kaikōura lights, with radar contacts reported."

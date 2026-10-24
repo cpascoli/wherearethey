@@ -59,17 +59,8 @@
     'sensor-operator': 'Radar / sensor', academia: 'Academia', astronaut: 'Astronaut', aerospace: 'Aerospace', 'law-enforcement': 'Law enforcement',
     journalist: 'Journalist', 'policy-expert': 'Policy expert', civilian: 'Civilian', disputed: 'Disputed', unknown: 'Unknown',
   };
-  const INVERSE = {
-    witness: 'testified at / witnessed', 'held by': 'held', 'chaired by': 'chaired', member: 'member of', 'part of': 'includes',
-    'founded by': 'founded', 'led by': 'led', led: 'led by', 'succeeded by': 'preceded by', 'run by': 'runs', 'spun off from': 'spin-off',
-    'initiated by': 'initiated', 'funded by': 'funded', contractor: 'contractor for', 'owned by': 'owned', 'type of': 'subtypes',
-    'studied by': 'studied', about: 'subject of', 'related to': 'related to', 'produced by': 'produced', 'submitted by': 'submitted',
-    'published by': 'published', 'authored by': 'authored', 'submitted to': 'received', 'transcript of': 'transcript',
-    'found among papers of': 'papers contained', features: 'appears in', 'recording of': 'recordings', 'worked at': 'staff',
-    'co-founded': 'co-founded by', 'investigated by': 'investigated', 'testified to': 'received testimony from',
-    'statement about': 'statements by', discusses: 'discussed in', 'speaks in': 'speakers', mentions: 'mentioned in',
-    'hosted by': 'hosted', 'sponsored by': 'sponsored', 'moderated by': 'moderated',
-  };
+  // a link's reading from the other end ("based at" → "home of"); the vocabulary lives in scripts/relations.mjs
+  const INVERSE = KB.inverse || {};
   const WEAK_LINKS = new Set(['statement about', 'statements by', 'related to', 'discusses', 'discussed in', 'speaks in', 'speakers', 'mentions', 'mentioned in']);
 
   // ───────────── index ─────────────
@@ -333,6 +324,8 @@
         'text-background-color': css('--bg'), 'text-background-opacity': 0.85, 'text-background-padding': 1,
       } },
       { selector: 'edge[kind="mention"]', style: { 'line-style': 'dashed', 'line-dash-pattern': [3, 3], opacity: 0.6 } },
+      // generic links (“related to”) stay visible but recede, so the specific ones stand out
+      { selector: 'edge[label="related to"]', style: { 'line-style': 'dashed', 'line-dash-pattern': [4, 3], opacity: 0.45 } },
       { selector: '.faded', style: { opacity: 0.08 } },
       { selector: 'node.path', style: { 'border-width': 3, 'border-color': css('--accent'), 'border-style': 'solid', 'font-size': 11, 'font-weight': 600 } },
       { selector: 'edge.path', style: { 'line-color': css('--accent'), width: 2.4, label: 'data(label)', opacity: 1 } },
@@ -369,7 +362,7 @@
         color: TYPES[e.type]?.color || '#999', shape: TYPES[e.type]?.shape || 'ellipse', size: Math.min(48, 12 + Math.sqrt(degree(e.id)) * 6),
       }, classes: e.cred === 'outside' ? 'outside' : '' })),
       ...KB.edges.map((x, i) => [x, i]).filter(([x]) => !offGraph(byId.get(x.s)?.type) && !offGraph(byId.get(x.t)?.type))
-        .map(([x, i]) => ({ data: { id: 'e' + i, source: x.s, target: x.t, label: x.label, kind: x.kind } })),
+        .map(([x, i]) => ({ data: { id: 'e' + i, source: x.s, target: x.t, label: x.label, kind: x.kind, ...(x.note ? { tip: x.note } : {}) } })),
     ];
     cy = cytoscape({ container: $('#cy'), elements, style: graphStyle(), wheelSensitivity: 0.25, minZoom: 0.15, maxZoom: 3.5, boxSelectionEnabled: false });
     // tap: open the file's card. Double-tap / double-click: follow it (start a trail, or take the next step).
@@ -1277,19 +1270,24 @@
     }
     // connections; a file listed under a specific link ("authored", "worked at"…) is not repeated under a generic one
     // ("statement about", "related to"…): those come from quotes and loose ties, and would list it twice
-    const groups = new Map(), strong = new Set();
+    const groups = new Map(), strong = new Set(), notes = new Map(); // notes: "label|id" → the link's one-line note
     for (const x of adj.get(e.id)) {
       if (x.kind === 'mention' || offGraph(byId.get(x.other)?.type)) continue;
       const label = x.dir === 'out' ? x.label : (INVERSE[x.label] || x.label);
       if (!groups.has(label)) groups.set(label, new Set());
       groups.get(label).add(x.other);
+      if (x.note) notes.set(`${label}|${x.other}`, x.note);
       if (!WEAK_LINKS.has(label)) strong.add(x.other);
     }
     const placed = new Set(strong); // …and among generic links, under the first one only
     for (const [label, ids] of groups) if (WEAK_LINKS.has(label)) { for (const id of ids) if (placed.has(id)) ids.delete(id); else placed.add(id); if (!ids.size) groups.delete(label); }
     if (groups.size) {
       const nConn = new Set([...groups.values()].flatMap(ids => [...ids])).size;
-      h.push(`<div class="p-sec p-side" id="sec-connections"><h4>Connections <span>${nConn}</span></h4>${[...groups].map(([label, ids]) => `<div class="conn-group"><div class="lbl">${esc(label)}</div><div class="chips" data-collapse="10">${[...ids].map(id => chip(id)).join('')}</div></div>`).join('')}</div>`);
+      h.push(`<div class="p-sec p-side" id="sec-connections"><h4>Connections <span>${nConn}</span></h4>${[...groups].map(([label, ids]) => {
+        // links with a note say how: one per line, note beside the chip; the rest stay as a row of chips
+        const noted = [...ids].filter(id => notes.has(`${label}|${id}`)), plain = [...ids].filter(id => !notes.has(`${label}|${id}`));
+        return `<div class="conn-group"><div class="lbl">${esc(label)}</div>${noted.length ? `<ul class="conn-notes" data-collapse="6">${noted.map(id => `<li>${chip(id)}<span>${esc(notes.get(`${label}|${id}`))}</span></li>`).join('')}</ul>` : ''}${plain.length ? `<div class="chips" data-collapse="10">${plain.map(id => chip(id)).join('')}</div>` : ''}</div>`;
+      }).join('')}</div>`);
     }
     // transcript mentions
     if (e.type === 'video') {

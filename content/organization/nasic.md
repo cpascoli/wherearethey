@@ -16,13 +16,13 @@ tags:
   - intelligence
 rel:
   - [ part of, department-of-war ]
-  - [ related to, wright-patterson-afb ]
-  - [ related to, project-sign ]
-  - [ related to, project-grudge ]
-  - [ related to, project-blue-book ]
+  - [ based at, wright-patterson-afb, "Headquartered at Wright-Patterson; its lineage runs back to Wright Field's T-2 Intelligence Department" ]
+  - [ ran, project-sign, "AARO: ATIC, NASIC's forerunner, “assumed control of Project SIGN on January 23, 1948”" ]
+  - [ ran, project-grudge, "AARO and the CIA's 1952 records place Projects Sign, Grudge and Blue Book under ATIC, NASIC's forerunner" ]
+  - [ ran, project-blue-book, "AARO and the CIA's 1952 records place Projects Sign, Grudge and Blue Book under ATIC, NASIC's forerunner" ]
   - [ related to, dia ]
-  - [ related to, dow-uap-d180 ]
-  - [ related to, doc-cia-osi-flying-saucers-1952 ]
+  - [ documented in, dow-uap-d180, "Personnel record of Col. Howard McCoy, intelligence chief at Air Materiel Command when Sign and Grudge began" ]
+  - [ assessed in, doc-cia-osi-flying-saucers-1952, "The CIA found ATIC, NASIC's forerunner at Wright-Patterson, the only group giving the subject serious effort" ]
 links:
   - label: NASIC — National Air and Space Intelligence Center Heritage (official fact sheet)
     url: https://www.nasic.af.mil/About-Us/Fact-Sheets/Article/611728/national-air-and-space-intelligence-center-heritage/

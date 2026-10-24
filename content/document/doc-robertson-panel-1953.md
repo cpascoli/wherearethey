@@ -22,8 +22,8 @@ rel:
   - [ chaired by, hp-robertson ]
   - [ authored by, fc-durant ]
   - [ follows, doc-cia-osi-flying-saucers-1952 ]
-  - [ related to, project-blue-book ]
-  - [ related to, cia-uap-d021 ]
+  - [ reviewed, project-blue-book, "The panel met on 14–18 January 1953 to review Air Force UFO cases and films" ]
+  - [ cited in, cia-uap-d021, "A 1955 CIA analysis cites Robertson's finding that almost all sightings “represented no threat to the U.S.”" ]
 facts:
   - text: A CIA-convened panel of scientists, chaired by Caltech physicist H.P. Robertson, met on January 14–18, 1953 to review UFO reports. It concluded that UFOs posed no direct threat to national security.
     status: documented

@@ -9,7 +9,7 @@ rel:
   - [ related to, inc-roswell-1947 ]
   - [ testified at, h-2013-citizen-hearing ]
   - [ held, sample-bismuth-magnesium ]
-  - [ related to, richard-doty ]
+  - [ disinformed by, richard-doty, "Doty says he was ordered to show her a document that mixed truth with deception" ]
 facts:
   - text: American investigative journalist and documentary maker (born 1942), best known for UFO and cattle-mutilation reporting. Wikipedia describes her as an advocate of a variety of conspiracy theories.
     status: claimed

@@ -106,7 +106,8 @@ One or two neutral sentences: what happened and why it matters to the archive, w
   cannot find word for word. Paraphrase is fine, but every statement you make must be supported by a saved text; the
   script cannot check paraphrase, so check it yourself.
 - Neutral wording: “says”, “claims”, “according to”. No hype, no “bombshell”, no conclusions the source does not draw.
-- Link the speaker only if they are on file; link 1–6 relevant entries, most specific first.
+- Link the speaker only if they are on file; link 1–6 relevant entries, most specific first. Use the labels in
+  `scripts/relations.mjs` (`features`, `about`, `recording of`…), never `related to`.
 - Videos you cannot get a transcript for: describe them from the video's title and description and from articles about
   them; quote nothing that is not in a saved text.
 

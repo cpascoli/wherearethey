@@ -11,10 +11,10 @@ rel:
   - [ investigated by, aaro ]
   - [ documented in, doc-aaro-eglin ]
   - [ documented in, doc-transcript-2023-07-26 ]
-  - [ related to, matt-gaetz ]
-  - [ related to, anna-paulina-luna ]
-  - [ related to, tim-burchett ]
-  - [ related to, task-force-declassification ]
+  - [ investigated by, matt-gaetz, "Gaetz, whose district includes Eglin, received a protected disclosure and saw the image with Burchett and Luna" ]
+  - [ investigated by, anna-paulina-luna, "Luna saw the image with Gaetz and Burchett, and says the visit led to her declassification task force" ]
+  - [ investigated by, tim-burchett, "Burchett, Gaetz and Luna were at first refused access, then saw the image and met one crew member" ]
+  - [ led to, task-force-declassification, "Luna says the experience led to her declassification task force" ]
 facts:
   - text: "On 26 January 2023 a military pilot on the Eglin AFB training range off Florida reported four objects on radar at 16,000–18,000 ft, apparently in formation. The pilot saw one of them and captured two still images with the aircraft's EO/IR sensor, describing a gray, paneled object about 12 ft across, with an orange-red centre and a rounded bottom under a cone-shaped top. The aircraft's video recorder was inoperable before and during the flight."
     status: documented

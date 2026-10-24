@@ -10,7 +10,7 @@ rel:
   - [ about, jay-stratton ]
   - [ about, book-out-of-the-shadows ]
   - [ about, legacy-program ]
-  - [ related to, harry-reid ]
+  - [ mentions, harry-reid, "Reid's former chief of staff could not confirm Stratton's claim that Reid was mistakenly briefed" ]
   - [ related to, james-ryder ]
   - [ related to, eric-davis ]
 facts:

@@ -9,11 +9,10 @@ credentials:
 tags:
   - crash-retrieval
 rel:
-  - [ related to, area-51 ]
-  - [ related to, crash-retrieval ]
-  - [ related to, george-knapp ]
-  - [ related to, jeremy-corbell ]
-  - [ related to, hal-puthoff ]
+  - [ claims about, area-51, "He says he worked on recovered alien craft at S-4, a few miles south of Groom Lake; his account is unverified" ]
+  - [ claims about, crash-retrieval, "His 1989 account on KLAS-TV became the template for modern crash-retrieval stories" ]
+  - [ interviewed by, george-knapp, "Knapp broke Lazar's story on KLAS-TV in 1989, reported the gaps in his records, and says he believes him" ]
+  - [ assessed by, hal-puthoff, "Puthoff found Lazar's apparent clearance too low for his story but cannot rule it out" ]
 facts:
   - text: "Went public in 1989 through interviews with George Knapp (KLAS-TV), saying he reverse-engineered alien craft propulsion at S-4."
     status: claimed

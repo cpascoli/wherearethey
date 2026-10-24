@@ -9,7 +9,7 @@ rel:
   - [ documented in, dow-uap-pr082 ]
   - [ documented in, dow-uap-pr081 ]
   - [ documented in, dow-uap-pr043 ]
-  - [ related to, pursue ]
+  - [ documented in, pursue ]
 facts:
   - text: PURSUE includes three short infrared clips from U.S. military platforms in the U.S. Africa Command area — two uploaded to a classified network in October 2020 (titled 16 and 18 October 2020) and a two-second clip AFRICOM submitted from Djibouti in 2025 with no written description; each shows only an area of contrast crossing the sensor's field of view.
     status: documented

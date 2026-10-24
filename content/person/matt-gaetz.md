@@ -13,11 +13,9 @@ tags:
 rel:
   - [ questioned at, h-2023-07-26 ]
   - [ member of, house-oversight ]
-  - [ related to, inc-eglin-2023 ]
-  - [ related to, tim-burchett ]
-  - [ related to, anna-paulina-luna ]
-  - [ related to, david-grusch ]
-  - [ related to, doc-aaro-eglin ]
+  - [ visited Eglin with, tim-burchett, "Gaetz took Burchett and Luna to Eglin in 2023, where they were at first refused the images, radar data and crew" ]
+  - [ questioned, david-grusch, "He drew from Grusch that nothing is classified “above top secret” and called for a classified session with him" ]
+  - [ disputed by, doc-aaro-eglin, "AARO assessed an apparently matching Eglin case as very likely a lighter-than-air object" ]
 facts:
   - text: "Gaetz testified that his office received a protected disclosure from Eglin Air Force Base about a UAP incident; at a briefing he saw an image taken by a flight crew member of an object “that I am not able to attach to any human capability,” and was told of four craft in a diamond formation on radar and of the pilot's radar and FLIR failing as he approached."
     status: claimed

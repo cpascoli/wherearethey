@@ -6,7 +6,7 @@ place: { name: "Near RAF Upper Heyford, Oxfordshire, England", lat: 51.9376, lng
 tags: [aviator, air-force, nuclear, international, triangle]
 rel:
   - [ witness, dan-isbell ]
-  - [ related to, inc-rendlesham-1980 ]
+  - [ same night as, inc-rendlesham-1980, "The same night as the first Rendlesham Forest sightings; the bases are about 115 miles apart" ]
 links:
   - label: Earthfiles podcast 108 — anonymous Upper Heyford witness, 27 December 1980 (Linda Moulton Howe, 2024)
     url: https://podcast.earthfiles.com/e/108-nov-6-2024-whose-silent-triangle-craft-hovered-over-three-american-raf-bases-in-december-1980

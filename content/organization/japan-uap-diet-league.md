@@ -9,7 +9,7 @@ rel:
   - [ member, shigeru-ishiba ]
   - [ member, kei-endo ]
   - [ member, yoshiharu-asakawa ]
-  - [ related to, aaro ]
+  - [ cites as model, aaro, "Its founding statement urges Japan to create an office like AARO and share data with the U.S." ]
 links:
   - label: South China Morning Post — Japan sets up parliamentary group to probe UFO sightings
     url: https://www.scmp.com/week-asia/politics/article/3264559/japan-sets-parliamentary-group-probe-ufo-sightings-move-research-mainstream

@@ -6,10 +6,10 @@ credentials:
     role: Filmmaker and UFO investigative reporter (WEAPONIZED podcast, with George Knapp)
 tags: [journalist]
 rel:
-  - [ related to, area-51 ]
-  - [ related to, jay-stratton ]
-  - [ related to, tim-burchett ]
-  - [ related to, dylan-borland ]
+  - [ made film on, area-51, "He directed Bob Lazar: Area 51 & Flying Saucers (2018)" ]
+  - [ interviewed, jay-stratton, "With Knapp he released Stratton's first on-camera interview in October 2026" ]
+  - [ source for, tim-burchett, "Burchett entered Corbell's report and documents into the hearing record, crediting him with access to whistleblowers" ]
+  - [ disputed by, dylan-borland, "Corbell relayed an unnamed ODNI official's claim about Borland's testimony, which Borland disputes" ]
   - [ documented, bob-lazar ]
   - [ works with, george-knapp ]
 facts:

@@ -12,16 +12,15 @@ tags:
   - secrecy
   - intelligence
 rel:
-  - [ related to, doc-cia-haines-1997 ]
-  - [ related to, doc-robertson-panel-1953 ]
-  - [ related to, doc-aaro-historical-record-report-v1 ]
-  - [ related to, doc-fbi-majestic-12 ]
-  - [ related to, richard-doty ]
+  - [ example, doc-robertson-panel-1953, "The CIA-convened panel recommended a public “debunking” effort through mass media" ]
+  - [ documented in, doc-aaro-historical-record-report-v1 ]
+  - [ example, doc-fbi-majestic-12, "AFOSI called the MJ-12 “briefing document” fabricated and “completely bogus”" ]
+  - [ example, richard-doty, "Former AFOSI agent who says he fed false UFO stories to researchers on orders" ]
   - [ related to, linda-moulton-howe ]
-  - [ related to, area-51 ]
+  - [ example, area-51, "An Air Force colonel reportedly gave doctored saucer photos to a bar owner near Area 51 to shield stealth tests" ]
   - [ related to, project-blue-book ]
-  - [ related to, aaro ]
-  - [ related to, inc-malmstrom-1967 ]
+  - [ investigated by, aaro, "AARO sees disinformation and secrecy around weapons programs as the source of much UFO lore" ]
+  - [ example, inc-malmstrom-1967, "The WSJ reported AARO traced the shutdowns to a secret EMP test the launch crews were not told about" ]
 facts:
   - text: "The CIA's own 1997 history says that over half of all UFO reports from the late 1950s through the 1960s were U-2 and other manned reconnaissance flights, and that “this led the Air Force to make misleading and deceptive statements to the public in order to allay public fears and to protect an extraordinarily sensitive national security project.”"
     status: documented

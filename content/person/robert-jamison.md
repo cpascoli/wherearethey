@@ -3,7 +3,7 @@ name: Robert Jamison
 credentials: [{ category: military, role: "Former USAF nuclear missile targeting officer, Malmstrom AFB (1967)" }]
 tags: [air-force, nuclear]
 rel:
-  - [ related to, inc-malmstrom-1967 ]
+  - [ responded to, inc-malmstrom-1967, "He says his targeting team went out to Oscar Flight and restarted three or four missiles" ]
 facts:
   - text: "He says he led a targeting team that, after waiting about an hour and a half for activity in the field to cease, went out to Oscar Flight and restarted three or four missiles. About a week later he heard that a UFO had been sighted over India Flight during a partial shutdown, and he restarted at least two missiles there."
     status: claimed

@@ -15,7 +15,7 @@ rel:
   - [ documented in, dow-uap-d098 ]
   - [ documented in, dow-uap-d105 ]
   - [ documented in, dow-uap-pr159 ]
-  - [ related to, doc-robertson-panel-1953 ]
+  - [ reviewed by, doc-robertson-panel-1953, "The Robertson Panel reviewed the film and “could not accept the conclusions reached” by the Navy laboratory" ]
 facts:
   - text: "Navy Warrant Officer Delbert C. Newhouse, a Navy photographer, reported seeing 12 to 14 reflective objects near Tremonton on 2 July 1952 and filmed them on 16 mm Kodachrome with a handheld Bell & Howell Auto Master camera. Project Blue Book assessed him as honest and reliable, and as an expert with more than 1,000 hours of aerial-photography experience."
     status: documented

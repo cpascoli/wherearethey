@@ -6,8 +6,8 @@ place: { name: "Arak heavy-water plant and other nuclear sites, Iran", lat: 34.3
 tags: [aviator, military, radar, nuclear, international]
 rel:
   - [ reported by, tom-cooper ]
-  - [ related to, dow-uap-d064 ]
-  - [ related to, dow-uap-pr050 ]
+  - [ same region as, dow-uap-d064, "Later U.S. military UAP reports over Iran (2020–2022) in PURSUE" ]
+  - [ same region as, dow-uap-pr050, "Later U.S. military UAP reports over Iran (2020–2022) in PURSUE" ]
 links:
   - label: The Aviationist — Iranian F-14s vs UFOs (2013)
     url: https://theaviationist.com/2013/11/10/f-14-vs-ufo/

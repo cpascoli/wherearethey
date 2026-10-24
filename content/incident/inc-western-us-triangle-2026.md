@@ -12,8 +12,8 @@ rel:
   - [ documented in, dow-uap-d176 ]
   - [ documented in, fbi-uap-d043 ]
   - [ investigated by, aaro ]
-  - [ related to, fbi ]
-  - [ related to, inc-western-us-orbs-2025 ]
+  - [ recorded by, fbi, "The agents' written statement was recorded by the FBI (FD-302, FBI-UAP-D043)" ]
+  - [ same region as, inc-western-us-orbs-2025, "AARO says the triangle matches other incidents reported in the western United States" ]
   - [ released in, ev-pursue-release-07 ]
 facts:
   - text: "An AARO memorandum records a debrief of two federal special agents and a corroborating third official at a separate observation post, who reported UAP observations at “a sensitive national security site in the western United States over two days in 2026.”"

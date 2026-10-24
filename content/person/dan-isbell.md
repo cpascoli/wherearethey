@@ -9,9 +9,9 @@ credentials:
     role: 27 years in the U.S. Air Force; Air Vehicle Program Manager, F/A-22 System Program Office; Chief, F-16 System Program Office
 tags: [aviator, air-force, nuclear]
 rel:
-  - [ related to, ryan-graves ]
+  - [ helped by, ryan-graves, "He came forward to Graves's Americans for Safe Aerospace, and Graves arranged an FBI interview" ]
   - [ related to, george-knapp ]
-  - [ related to, inc-rendlesham-1980 ]
+  - [ links to, inc-rendlesham-1980, "He links his own sighting that night to the Rendlesham Forest incident" ]
   - [ witness, inc-upper-heyford-1980 ]
   - [ witness, inc-edwards-triangle-1990 ]
 links:

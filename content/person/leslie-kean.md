@@ -6,15 +6,14 @@ credentials:
     role: Investigative journalist; co-author of The New York Times' 2017 AATIP story and The Debrief's 2023 Grusch story
 tags: [journalist, disclosure]
 rel:
-  - [ related to, inc-nimitz-2004 ]
+  - [ reported on, inc-nimitz-2004, "Her 2017 New York Times story is how Rep. Burchett says he learned of the Tic Tac" ]
   - [ authored, book-kean-ufos-on-the-record ]
   - [ reported on, aatip ]
   - [ reported on, david-grusch ]
-  - [ related to, ev-grusch-icig-complaint-2022 ]
-  - [ related to, chris-mellon ]
-  - [ related to, luis-elizondo ]
-  - [ related to, to-the-stars ]
-  - [ related to, kirk-mcconnell ]
+  - [ reported on, ev-grusch-icig-complaint-2022, "She and Ralph Blumenthal broke Grusch's story in The Debrief on 5 June 2023" ]
+  - [ sourced from, chris-mellon, "Mellon gave her his first public comments in 2016 and supplied the Navy videos for her 2017 story" ]
+  - [ sourced from, luis-elizondo, "Elizondo and To The Stars Academy were sources for her 2017 story" ]
+  - [ worked with, to-the-stars, "TTSA supplied her 2017 story; Puthoff says it helped her get it out" ]
 facts:
   - text: "Co-wrote, with Helene Cooper and Ralph Blumenthal, the December 16, 2017 New York Times article that revealed the Pentagon's $22 million AATIP program."
     status: documented

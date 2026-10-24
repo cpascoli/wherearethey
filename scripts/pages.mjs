@@ -5,6 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT } from './lib.mjs';
 import { pageDates } from './lastmod.mjs';
+import { INVERSE } from './relations.mjs';
 
 export const SITE_URL = (process.env.SITE_URL || 'https://wherearethey.info').replace(/\/$/, '');
 
@@ -117,7 +118,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
 
   // neighbours per entity (direct links; transcript/text mentions listed separately)
   const near = new Map();
-  for (const x of edges) for (const [a, b, dir] of [[x.s, x.t, 'out'], [x.t, x.s, 'in']]) (near.get(a) || near.set(a, []).get(a)).push({ other: b, label: x.label, kind: x.kind, dir });
+  for (const x of edges) for (const [a, b, dir] of [[x.s, x.t, 'out'], [x.t, x.s, 'in']]) (near.get(a) || near.set(a, []).get(a)).push({ other: b, label: x.label, shown: dir === 'out' ? x.label : (INVERSE[x.label] || x.label), kind: x.kind, dir, note: x.note });
   // how many video moments feature each file (as speaker, or linked in refs), for search snippets
   const momentsAbout = new Map();
   for (const v of entities) for (const m of v.moments || []) for (const id of new Set([m.speaker, ...(m.refs || [])].filter(Boolean))) momentsAbout.set(id, (momentsAbout.get(id) || 0) + 1);
@@ -181,9 +182,9 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     // related files, grouped by type
     const rel = (near.get(e.id) || []).filter(x => !['mention', 'text'].includes(x.kind) && byId.has(x.other));
     const groups = new Map();
-    for (const x of rel) { const o = byId.get(x.other); if (!groups.has(o.type)) groups.set(o.type, new Map()); groups.get(o.type).set(o.id, x.label); }
+    for (const x of rel) { const o = byId.get(x.other); if (!groups.has(o.type)) groups.set(o.type, new Map()); if (!groups.get(o.type).get(o.id)?.note) groups.get(o.type).set(o.id, x); }
     if (groups.size) {
-      h.push(`<h2>Connected files</h2>${[...groups].map(([type, m]) => `<h3>${PLURAL[type]}</h3><ul>${[...m].map(([id, label]) => `<li>${link(id)} <span class="ssr-by">(${esc(label)})</span></li>`).join('')}</ul>`).join('')}`);
+      h.push(`<h2>Connected files</h2>${[...groups].map(([type, m]) => `<h3>${PLURAL[type]}</h3><ul>${[...m].map(([id, x]) => `<li>${link(id)} <span class="ssr-by">(${esc(x.shown)})</span>${x.note ? ` — ${esc(x.note)}` : ''}</li>`).join('')}</ul>`).join('')}`);
     }
     // names found in transcripts and in document text, both ways
     const mentions = (near.get(e.id) || []).filter(x => ['mention', 'text'].includes(x.kind) && byId.has(x.other));

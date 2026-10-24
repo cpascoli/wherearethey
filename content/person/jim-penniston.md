@@ -11,8 +11,7 @@ tags:
 rel:
   - [ witness, inc-rendlesham-1980 ]
   - [ witness, h-2013-citizen-hearing ]
-  - [ related to, charles-halt ]
-  - [ related to, john-burroughs ]
+  - [ fellow witness, john-burroughs, "He led the patrol, with Burroughs and Edward Cabansag, into Rendlesham Forest on 26 December 1980" ]
 facts:
   - text: "Penniston says that in December 1980 at Rendlesham he walked around a craft about 9 by 9 feet, saw glyphs on it and touched it: smooth like metal and warmer than the freezing air."
     status: claimed

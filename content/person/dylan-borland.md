@@ -11,13 +11,13 @@ tags:
   - air-force
   - whistleblower
 rel:
-  - [ related to, langley-afb ]
+  - [ witness at, langley-afb, "In 2012 he says he saw a silent triangle 100 to 150 feet across rise near the NASA hangar" ]
   - [ witness, h-2025-09-09 ]
   - [ witness, inc-langley-2012 ]
-  - [ related to, legacy-program ]
-  - [ related to, aaro ]
-  - [ related to, icig ]
-  - [ related to, kirk-mcconnell ]
+  - [ claims about, legacy-program, "He says he was “exposed to classified information from the UAP legacy crash retrieval program”" ]
+  - [ filed with, aaro, "He filed with the ICIG and AARO in 2023, and counts a disputed AARO memorandum among the reprisals he describes" ]
+  - [ filed with, icig, "He filed with the ICIG and AARO in 2023; he says the complaint was found “credible, not urgent”" ]
+  - [ doubted by, kirk-mcconnell, "McConnell thinks the base triangles, including Borland's sighting, are “probably ours”" ]
 facts:
   - text: "Described a 2012 encounter at Langley AFB: a silent, 100-foot-wide triangular craft with a “fluid or dynamic” structure hovered about 100 feet up, and his cell phone froze."
     status: claimed

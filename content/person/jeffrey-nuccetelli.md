@@ -12,11 +12,11 @@ tags:
   - nuclear
   - whistleblower
 rel:
-  - [ related to, vandenberg-sfb ]
+  - [ served at, vandenberg-sfb, "He described five UAP incidents at Vandenberg between 2003 and 2005 to Congress" ]
   - [ witness, h-2025-09-09 ]
   - [ witness, inc-vandenberg-2003 ]
-  - [ related to, aaro ]
-  - [ related to, ryan-graves ]
+  - [ records sought from, aaro, "He says AARO told him the Vandenberg records had been destroyed under a three-year retention schedule" ]
+  - [ account relayed by, ryan-graves, "Graves had already relayed the “Vandenberg red square” account to Congress in 2023" ]
 facts:
   - text: Testified about five separate UAP incidents between 2003 and 2005. He witnessed one himself and formally investigated the others after six fellow service members came to him.
     status: claimed

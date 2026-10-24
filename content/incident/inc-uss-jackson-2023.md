@@ -6,7 +6,7 @@ place: { name: "Warning area W-291, off southern California", lat: 32.3, lng: -1
 tags: [navy, radar, military, video, transmedium]
 rel:
   - [ witness, alexandro-wiggins ]
-  - [ related to, inc-nimitz-2004 ]
+  - [ similar to, inc-nimitz-2004, "Wiggins described a “tic-tac-shaped object” emerging from the ocean off southern California" ]
   - [ raised by, eric-burlison ]
 facts:
   - text: "In his sworn statement to the House Oversight task force on 9 September 2025, Operations Specialist Alexandro Wiggins testified that at about 19:15 PST on 15 February 2023, in the W-291 warning area, the ship's sensors showed a self-luminous tic-tac-shaped object that \"emerged from the ocean\", joined three similar objects, and departed with them near-instantaneously. He said he saw no propulsion signatures on the SAFIRE imaging system and that the radar tracks dropped afterwards. The transcript records the testimony, not its accuracy."

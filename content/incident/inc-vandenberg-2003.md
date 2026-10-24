@@ -6,7 +6,7 @@ tags:
   - nuclear
   - air-force
 rel:
-  - [ related to, inc-big-sur-1964 ]
+  - [ same base as, inc-big-sur-1964, "Both at Vandenberg" ]
   - [ witness, jeffrey-nuccetelli ]
   - [ witness, chaz-king ]
 facts:

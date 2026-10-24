@@ -9,8 +9,7 @@ tags:
   - foia
 rel:
   - [ part of, pursue ]
-  - [ related to, inc-western-us-triangle-2026 ]
-  - [ related to, aawsap ]
+  - [ released files of, aawsap, "Ten records add AAWSAP's working files from the BAASS contract (2008–2010)" ]
 links:
   - label: war.gov/UFO — release 07
     url: https://www.war.gov/UFO/?release=07

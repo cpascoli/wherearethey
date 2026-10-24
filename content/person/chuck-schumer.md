@@ -7,10 +7,9 @@ credentials:
 tags: [congress, disclosure]
 rel:
   - [ sponsored, doc-uap-disclosure-act-2023 ]
-  - [ related to, ev-ndaa-fy2024 ]
-  - [ related to, mike-rounds ]
-  - [ related to, legacy-program ]
-  - [ related to, nhi ]
+  - [ co-sponsored with, mike-rounds, "They introduced the UAP Disclosure Act in July 2023 as an amendment to the FY2024 NDAA" ]
+  - [ defined in bill, legacy-program, "His UAP Disclosure Act gave the term “legacy program” a legal definition" ]
+  - [ defined in bill, nhi, "His UAP Disclosure Act defined “non-human intelligence” in proposed federal law" ]
 facts:
   - text: "Schumer and Sen. Mike Rounds introduced the UAP Disclosure Act in July 2023 as an amendment to the FY2024 NDAA, modelled on the JFK Records Act."
     status: documented

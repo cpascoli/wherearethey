@@ -7,7 +7,7 @@ tags: [military, video, orb]
 rel:
   - [ investigated by, aaro ]
   - [ presented by, sean-kirkpatrick ]
-  - [ related to, h-2023-04-19 ]
+  - [ presented at, h-2023-04-19, "AARO director Sean Kirkpatrick showed the MQ-9 video to the Senate Armed Services subcommittee" ]
 links:
   - label: DVIDS — Middle East Object (DoD video, taken 12 July 2022)
     url: https://www.dvidshub.net/video/880273/middle-east-object

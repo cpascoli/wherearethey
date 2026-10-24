@@ -11,7 +11,7 @@ facts:
     by: richard-barth
     source: https://www.youtube.com/watch?v=Qe8br8yYEDM
 rel:
-  - [ related to, vandenberg-sfb ]
+  - [ served at, vandenberg-sfb, "He says he guarded a Vandenberg missile site, where he describes an abduction" ]
 ---
 
 Richard Barth is a U.S. Air Force veteran who says he guarded a missile site at Vandenberg Air Force Base. He says a hooded being paralysed him on duty and that he found himself aboard a craft over the base with four other beings, who told him they were inspecting the missiles to understand how they worked and to prevent nuclear war. His account comes from interviews and is not supported by any released record.

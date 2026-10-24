@@ -9,11 +9,11 @@ tags:
   - intelligence
   - navy
 rel:
-  - [ related to, inc-malmstrom-1967 ]
+  - [ asked about, inc-malmstrom-1967, "He said the task force had no official data on the reported Malmstrom shutdowns" ]
   - [ worked at, oni ]
   - [ witness, h-2022-05-17 ]
-  - [ related to, uaptf ]
-  - [ related to, inc-nimitz-2004 ]
+  - [ testified on, uaptf, "He approved the task force's security classification guide and testified on how it was set up" ]
+  - [ called unresolved, inc-nimitz-2004, "He cited Nimitz as a case that “simply remains unresolved”" ]
 facts:
   - text: "As Deputy Director of Naval Intelligence, Bray told Congress in 2022 that reports of unidentified objects in military training areas are “frequent and continuing”, and that the UAP database had grown to about 400 reports."
     status: claimed

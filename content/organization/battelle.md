@@ -5,7 +5,7 @@ aka:
 tags:
   - contractor
 rel:
-  - [ related to, inc-roswell-1947 ]
+  - [ allegedly studied, inc-roswell-1947, "Hal Puthoff says Battelle worked on foil-like material reportedly from Roswell; no official record supports this" ]
   - [ claimed by, hal-puthoff ]
 facts:
   - text: "A 1952 CIA Office of Scientific Intelligence memo describing the Air Force's UFO project at Wright-Patterson says the Air Technical Intelligence Center \"has concluded an arrangement with Battelle Memorial Institute for the latter to establish a machine indexing system for official reports of sightings.\" This is Battelle's documented role in the U.S. UFO studies."

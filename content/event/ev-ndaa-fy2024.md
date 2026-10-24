@@ -5,10 +5,9 @@ tags:
   - congress
   - disclosure
 rel:
-  - [ related to, kirsten-gillibrand ]
-  - [ related to, doc-uap-disclosure-act-2023 ]
-  - [ related to, chuck-schumer ]
-  - [ related to, mike-rounds ]
+  - [ backed by, kirsten-gillibrand, "Along with Schumer and Rounds, she backed its UAP records provisions" ]
+  - [ backed by, chuck-schumer, "Its UAP provisions were a scaled-back version of the UAP Disclosure Act proposed by Schumer and Rounds" ]
+  - [ backed by, mike-rounds, "Its UAP provisions were a scaled-back version of the UAP Disclosure Act proposed by Schumer and Rounds" ]
 facts:
   - text: Language requiring the government to collect, declassify and release UAP records, aimed at reducing the stigma around reporting.
     status: documented

@@ -7,7 +7,7 @@ tags:
   - canada
   - international
 rel:
-  - [ related to, cia-uap-007 ]
+  - [ documented in, cia-uap-007, "A December 1953 status report on the Air Force's UFO project, including Canada's “laboratory” for recording phenomena" ]
   - [ noted by, cia ]
 links:
   - label: Wikipedia

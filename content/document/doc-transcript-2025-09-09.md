@@ -11,8 +11,8 @@ links:
   - label: govinfo.gov (official printed hearing)
     url: https://www.govinfo.gov/content/pkg/CHRG-119hhrg61718/pdf/CHRG-119hhrg61718.pdf
 rel:
-  - [ related to, inc-langley-2012 ]
-  - [ related to, inc-vandenberg-2003 ]
+  - [ testimony on, inc-langley-2012, "Air Force veteran Dylan Borland described a 2012 triangular craft at Langley" ]
+  - [ testimony on, inc-vandenberg-2003, "Air Force veteran Jeffrey Nuccetelli described the 2003 “Red Square” incursions at Vandenberg" ]
   - [ transcript of, h-2025-09-09 ]
 facts:
   - text: The index of documents entered into the record includes a letter to the Secretary of Defense about alleged reprisals against Maj. David Charles Grusch.

@@ -5,7 +5,7 @@ rel:
   - [ released in, ev-pursue-release-07 ]
   - [ released by, department-of-war ]
   - [ about, aawsap ]
-  - [ related to, bigelow-aerospace ]
+  - [ prepared by, bigelow-aerospace, "BAASS's own statement of its analysis capabilities, arguing for AAWSAP to continue" ]
 tags:
   - pursue
 name: DOW-UAP-D175 — BAASS Self-Assessment of UAP Analysis Capabilities, November 2010

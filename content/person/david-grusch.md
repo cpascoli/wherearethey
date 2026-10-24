@@ -22,14 +22,13 @@ rel:
   - [ authored, doc-grusch-statement-2023-07-26 ]
   - [ filed, ev-grusch-icig-complaint-2022 ]
   - [ worked at, uaptf ]
-  - [ related to, crash-retrieval ]
-  - [ related to, legacy-program ]
-  - [ related to, aawsap ]
-  - [ related to, aaro ]
-  - [ related to, jay-stratton ]
-  - [ related to, eric-davis ]
-  - [ related to, sean-kirkpatrick ]
-  - [ related to, inc-magenta-1933 ]
+  - [ alleges, crash-retrieval, "His 2023 testimony made the crash-retrieval allegation a matter of congressional record; AARO calls it inaccurate" ]
+  - [ alleges, legacy-program, "He testified he was told of a multi-decade crash-retrieval and reverse-engineering program he was denied access to" ]
+  - [ claims about, aawsap, "He alleges AAWSAP's real purpose was to receive recovered material from Lockheed, a transfer the CIA killed" ]
+  - [ disputed by, aaro, "AARO's 2024 report calls the reverse-engineering narrative inaccurate and the product of circular reporting" ]
+  - [ introduced by, jay-stratton, "Stratton introduced Grusch to Eric Davis, who then briefed him" ]
+  - [ briefed by, eric-davis, "Davis briefed Grusch and his NRO boss for two and a half days; Davis says it fed Grusch's IG complaint" ]
+  - [ disputes, sean-kirkpatrick, "Grusch testified that Kirkpatrick's “no credible evidence” statement “is not accurate”" ]
 facts:
   - text: "In his written statement to Congress he said he was an intelligence officer for 14 years, in the Air Force at the rank of Major and from 2021 to 2023 at the National Geospatial-Intelligence Agency at GS-15, where he was his agency's co-lead for UAP and trans-medium object analysis, reporting to the UAP Task Force and later AARO."
     status: claimed

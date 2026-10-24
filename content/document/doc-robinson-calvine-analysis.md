@@ -6,7 +6,7 @@ tags: [academia, international, photo]
 files: [library/docs/doc-robinson-calvine-analysis.pdf]
 rel:
   - [ about, inc-calvine-1990 ]
-  - [ related to, craig-lindsay ]
+  - [ analyses, craig-lindsay, "The analysis finds the print donated by Lindsay is a genuine copy of the Calvine photograph" ]
 links:
   - label: Sheffield Hallam University Research Archive (SHURA)
     url: https://shura.shu.ac.uk/34877/

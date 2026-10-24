@@ -6,7 +6,7 @@ tags:
 rel:
   - [ about, skinwalker-ranch ]
   - [ about, brandon-fugal ]
-  - [ related to, robert-bigelow ]
+  - [ sold by, robert-bigelow, "Bigelow sold Skinwalker Ranch in 2016 to Adamantium Real Estate for around $500,000" ]
 facts:
   - text: "Brandon Fugal acquired Skinwalker Ranch from Robert Bigelow in 2016."
     status: unverified

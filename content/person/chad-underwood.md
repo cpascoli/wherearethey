@@ -10,8 +10,7 @@ tags:
   - navy
 rel:
   - [ witness, inc-nimitz-2004 ]
-  - [ related to, david-fravor ]
-  - [ related to, alex-dietrich ]
+  - [ fellow witness, david-fravor, "About an hour after Fravor's encounter he flew the next sortie and recorded the FLIR1 video" ]
 links:
   - { label: "Navy Pilot Who Filmed the ‘Tic Tac’ UFO Speaks (New York Magazine, December 2019)", url: "https://nymag.com/intelligencer/2019/12/tic-tac-ufo-video-q-and-a-with-navy-pilot-chad-underwood.html" }
 facts:

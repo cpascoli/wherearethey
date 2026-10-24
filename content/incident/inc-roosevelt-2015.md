@@ -17,7 +17,7 @@ outcome_source: doc-aaro-gofast
 rel:
   - [ documented in, doc-aaro-gofast ]
   - [ witness, ryan-graves ]
-  - [ related to, tim-gallaudet ]
+  - [ reported to, tim-gallaudet, "As Oceanographer of the Navy he received the “urgent safety of flight” email with the GoFast video" ]
 facts:
   - text: "AARO's 2025 case resolution of the GoFast video finds with high confidence that the object did not move at anomalous speeds: it was at about 13,000 feet, not skimming the sea, and moving at roughly 5–92 mph relative to the wind. AARO does not identify the object. Its resolution covers that video only, not the squadron's other radar tracks or near misses."
     status: documented

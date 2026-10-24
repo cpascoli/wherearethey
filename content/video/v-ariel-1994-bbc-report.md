@@ -8,7 +8,7 @@ rel:
   - [ about, inc-ariel-1994 ]
   - [ features, colin-mackie ]
   - [ features, cynthia-hind ]
-  - [ related to, tim-leach ]
+  - [ filmed by, tim-leach, "Very likely filmed by BBC reporter Tim Leach, who is not named on screen" ]
 moments:
   - t: "0:18"
     text: "On-screen dateline: “Ruwa, Ariel School, 19th September ’94, 12.12, local time”, the day BBC reporter Tim Leach filmed at the school."

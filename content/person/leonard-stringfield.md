@@ -12,8 +12,8 @@ credentials:
 tags:
   - crash-retrieval
 rel:
-  - [ related to, crash-retrieval ]
-  - [ related to, wright-patterson-afb ]
+  - [ collected cases of, crash-retrieval, "From 1978 he published dozens of retrieval accounts; he said himself his cases could be considered hearsay" ]
+  - [ claims about, wright-patterson-afb, "Many of his retrieval accounts are set at Wright-Patterson; he said his cases could be considered hearsay" ]
   - [ cited in, doc-shellenberger-testimony ]
 links:
   - label: "“Retrievals of the Third Kind” (1978) and Status Reports — scans on the Internet Archive"

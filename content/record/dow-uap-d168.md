@@ -2,9 +2,9 @@
 rel:
   - [ released in, ev-pursue-release-07 ]
   - [ released by, department-of-war ]
-  - [ related to, project-blue-book ]
+  - [ mentions, project-blue-book ]
   - [ about, aawsap ]
-  - [ related to, bigelow-aerospace ]
+  - [ prepared by, bigelow-aerospace, "BAASS, Bigelow Aerospace's AAWSAP contractor, set out its plan for the DIA contract" ]
 tags:
   - pursue
 name: DOW-UAP-D168 — BAASS Project Management Plan, December 2008

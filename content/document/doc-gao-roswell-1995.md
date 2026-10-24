@@ -14,8 +14,8 @@ links:
     url: https://www.nsa.gov/news-features/declassified-documents/ufo/assets/files/general_accounting_office_s_schiff.pdf
 rel:
   - [ about, inc-roswell-1947 ]
-  - [ related to, wright-patterson-afb ]
-  - [ related to, fbi ]
+  - [ about, wright-patterson-afb, "It found the FBI message saying the Roswell disc was flown to Wright Field, but nothing in Wright Field's records" ]
+  - [ quotes, fbi, "It quotes the FBI's 8 July 1947 message that the disc and balloon were being sent to Wright Field" ]
 facts:
   - text: "A General Accounting Office report to Congressman Steven H. Schiff on the government records concerning the 1947 Roswell crash, dated July 28, 1995."
     status: documented

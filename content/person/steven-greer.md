@@ -6,8 +6,6 @@ credentials:
     role: Former emergency-room physician; founder of CSETI (1990) and the Disclosure Project (1993)
 tags: [civilian, disclosure, contact]
 rel:
-  - [ related to, garry-nolan ]
-  - [ related to, ev-ata-genome-2018 ]
   - [ founded, cseti ]
   - [ founded, disclosure-project ]
   - [ hosted, ev-disclosure-project-2001 ]

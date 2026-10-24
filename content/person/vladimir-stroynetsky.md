@@ -7,7 +7,7 @@ credentials:
     role: "Major, serving officer in a Soviet military unit near Moscow (1990)"
 tags: [military, international]
 rel:
-  - [ related to, inc-pereslavl-zalessky-1990 ]
+  - [ witness, inc-pereslavl-zalessky-1990, "He described a huge mass rimmed with welding-like flashes rising silently over the forest at his unit" ]
 facts:
   - text: "Told Rabochaya Tribuna (15 April 1990) that he and several hundred other witnesses had repeatedly seen UFOs over the Yaroslavl Highway at 500–800 m, many like \"great triangular milk cartons\", whose speed rose with the frequency of their flashes."
     status: documented

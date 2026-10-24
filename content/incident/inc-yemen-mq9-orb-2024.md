@@ -6,7 +6,7 @@ place: { name: "Off the coast of Yemen", lat: 14.8, lng: 42.3 }
 tags: [military, video, orb, congress]
 rel:
   - [ presented by, eric-burlison ]
-  - [ related to, h-2025-09-09 ]
+  - [ presented at, h-2025-09-09, "Rep. Burlison played the video at the hearing" ]
   - [ discussed by, george-knapp ]
 facts:
   - text: At the House Oversight task-force hearing of 9 September 2025, Rep. Eric Burlison played a video he said he had been given, describing it as taken on 30 October 2024 and showing an MQ-9 drone tracking an orb off the coast of Yemen while another MQ-9 fired a Hellfire missile at it.

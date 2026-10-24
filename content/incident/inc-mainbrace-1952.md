@@ -10,7 +10,7 @@ place: { name: "RAF Topcliffe, North Yorkshire (and the North Sea exercise area)
 tags: [military, navy, air-force, aviator, international]
 rel:
   - [ witness, john-kilburn ]
-  - [ related to, project-blue-book ]
+  - [ discussed by, project-blue-book, "Blue Book's Edward Ruppelt said the sightings led the RAF to take UFOs seriously" ]
 links:
   - label: Wikipedia — Exercise Mainbrace
     url: https://en.wikipedia.org/wiki/Exercise_Mainbrace

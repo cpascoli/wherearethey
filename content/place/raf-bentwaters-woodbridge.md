@@ -12,10 +12,10 @@ tags:
   - international
 rel:
   - [ used by, department-of-war ]
-  - [ related to, inc-rendlesham-1980 ]
-  - [ related to, inc-lakenheath-1956 ]
-  - [ related to, doc-halt-memo ]
-  - [ related to, david-clarke ]
+  - [ site of, inc-rendlesham-1980 ]
+  - [ site of, inc-lakenheath-1956, "Ground radar at RAF Bentwaters and Lakenheath tracked the targets" ]
+  - [ documented in, doc-halt-memo, "Halt, the deputy base commander, sent the memo from RAF Bentwaters/Woodbridge to the MoD on 13 January 1981" ]
+  - [ researched by, david-clarke, "Historian David Clarke has researched both cases from the original records" ]
 facts:
   - text: "Over several nights in late December 1980, U.S. Air Force personnel at RAF Woodbridge and Bentwaters reported unexplained lights and a landed craft in the adjacent Rendlesham Forest, as recorded in Lt. Col. Charles Halt's official memo to the Ministry of Defence."
     status: documented

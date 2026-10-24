@@ -4,8 +4,8 @@ files:
 rel:
   - [ released in, ev-pursue-release-07 ]
   - [ released by, department-of-war ]
-  - [ related to, project-sign ]
-  - [ related to, project-grudge ]
+  - [ documents, project-sign, "Covers McCoy's tenure at Air Materiel Command, when the Air Force began Projects Sign and Grudge" ]
+  - [ documents, project-grudge, "Covers McCoy's tenure at Air Materiel Command, when the Air Force began Projects Sign and Grudge" ]
 tags:
   - pursue
 name: DOW-UAP-D180 — Final Personnel Record for McCoy, Howard M., U.S. Air Force, 1954

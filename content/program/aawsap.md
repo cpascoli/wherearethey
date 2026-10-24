@@ -14,7 +14,7 @@ rel:
   - [ funded by, harry-reid ]
   - [ contractor, bigelow-aerospace ]
   - [ run by, dia ]
-  - [ related to, skinwalker-ranch ]
+  - [ studied, skinwalker-ranch, "It studied reports of UFOs and related phenomena, including at Bigelow's Skinwalker Ranch" ]
 facts:
   - text: A $22 million Defense Intelligence Agency program (2008–2012), contracted to Bigelow Aerospace’s BAASS subsidiary.
     status: documented

@@ -8,9 +8,9 @@ links:
     url: https://science.nasa.gov/uap/
 rel:
   - [ published by, nasa ]
-  - [ related to, michael-gold ]
-  - [ related to, inc-roosevelt-2015 ]
-  - [ related to, aaro ]
+  - [ written with, michael-gold, "Gold was a member of NASA's UAP independent study team" ]
+  - [ analyses, inc-roosevelt-2015, "NASA's team finds the GoFast object moved about 40 mph, “a typical wind speed at 13,000 feet”" ]
+  - [ discusses, aaro, "It notes Congress has made AARO the lead federal organisation for resolving UAP" ]
 facts:
   - text: "The study team, chaired by astrophysicist David Spergel, included retired astronaut Capt. Scott Kelly, Mike Gold, scientists, and FAA officials. Its sub-panel reports were deliberated at a public meeting on 31 May 2023."
     status: documented

@@ -14,11 +14,10 @@ tags:
 rel:
   - [ led, aaro ]
   - [ witness, h-2023-04-19 ]
-  - [ related to, doc-aaro-historical-record-report-v1 ]
-  - [ related to, david-grusch ]
-  - [ related to, jay-stratton ]
-  - [ related to, inc-nimitz-2004 ]
-  - [ related to, inc-roosevelt-2015 ]
+  - [ oversaw, doc-aaro-historical-record-report-v1, "Prepared under his leadership; released in March 2024 after he left" ]
+  - [ accused, jay-stratton, "He calls the legacy program “fictitious” and accuses Stratton of national-security violations" ]
+  - [ reportedly explained, inc-nimitz-2004, "Tim Gallaudet says Kirkpatrick called the Tic Tac a DARPA experiment; Gallaudet rejects this" ]
+  - [ reportedly explained, inc-roosevelt-2015, "Marik von Rennenkampff says Kirkpatrick twice told him the Gimbal object was a balloon reflecting sunlight" ]
 facts:
   - text: "AARO's first director. He set up the office before stepping down in December 2023."
     status: documented
