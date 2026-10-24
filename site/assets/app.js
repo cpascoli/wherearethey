@@ -460,7 +460,7 @@
     const prev = new Set(before.map(n => n.id()));
     applyGraphFilter();
     highlight(state.sel);
-    if (relayout) { clearTimeout(layoutTimer); layoutTimer = setTimeout(() => layoutGraph(false, { instant: true }), 60); return; }
+    if (relayout) { hideGraph(); clearTimeout(layoutTimer); layoutTimer = setTimeout(() => layoutGraph(false, { instant: true }), 60); return; }
     const fresh = cy.nodes().not('.hidden').filter(n => !prev.has(n.id()));
     if (!fresh.length) return; // only removals: nothing moves
     const anchor = anchorId ? cy.getElementById(anchorId) : null;
@@ -564,6 +564,7 @@
   function enterCore() {
     state.full = false;
     state.trail = coreTrail();
+    hideGraph(); // hidden at once: the files would show at their old places until the layout runs
     applyGraphFilter();
     highlight(state.sel);
     clearTimeout(layoutTimer); layoutTimer = setTimeout(() => layoutGraph(false, { instant: true }), 60);
@@ -764,6 +765,7 @@
   // instant: a fresh map (the key files, a new trail) is laid out in one go, framed without moving the camera, and
   // faded in, instead of flying in from wherever its raw coordinates fall before it is framed
   let instantFrame = false;
+  const hideGraph = () => { if (!cy) return; const c = cy.container(); c.style.transition = 'none'; c.style.opacity = 0; };
   const fadeIn = () => { const c = cy.container(); requestAnimationFrame(() => { c.style.transition = 'opacity .25s ease'; c.style.opacity = 1; }); };
   function layoutGraph(animate, { fresh = false, instant = false } = {}) {
     if (!cy) return;
