@@ -19,6 +19,14 @@ moments:
     text: "Davis: Deputy Defense Secretary William Lynn turned down Harry Reid's request for special access for AAWSAP because it bypassed the formal process."
     speaker: eric-davis
     refs: [ harry-reid, aawsap ]
+  - t: "22:25"
+    text: "Davis says he had conversations with George H.W. Bush “back in 2003”, and that Bush was briefed on UFOs not as president but as incoming CIA director."
+    speaker: eric-davis
+    refs: [ inc-holloman-1964 ]
+  - t: "23:37"
+    text: "Davis says a Pentagon liaison officer, wrongly assuming Bush had been briefed, told him of a major event in the early 1960s; the evidence was mainly a film, and Bush was told “you don't have a need to know”. In The Age of Disclosure Davis places the event at Holloman AFB."
+    speaker: eric-davis
+    refs: [ inc-holloman-1964 ]
   - t: "33:18"
     text: "Davis says he was told the CIA shut down the effort in 1989 for lack of progress, and that there are no alien reproduction vehicles."
     speaker: eric-davis
