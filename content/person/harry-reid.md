@@ -10,8 +10,6 @@ tags:
 rel:
   - [ funded research at, skinwalker-ranch, "AARO says the AAWSAP contractor's work at the ranch was paranormal research outside the program's purpose" ]
   - [ sent investigator to, area-51, "Knapp says investigator Richard D'Amato, sent by Senators Byrd and Reid, got into Area 51" ]
-  - [ funded, aawsap ]
-  - [ funded, aatip, "The money he secured funded AAWSAP, later carried on informally as AATIP" ]
   - [ backed, kona-blue, "With Senator Lieberman he backed the failed KONA BLUE proposal at DHS" ]
   - [ friend of, robert-bigelow, "A longtime friend and campaign donor, Bigelow first interested Reid in the subject in 2007" ]
   - [ funded program of, james-lacatski, "Reid steered $22 million to AAWSAP, the DIA program Lacatski conceived and ran" ]

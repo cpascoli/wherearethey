@@ -12,7 +12,6 @@ tags:
   - skinwalker
 rel:
   - [ worked at, dia ]
-  - [ initiated, aawsap ]
   - [ contracted, robert-bigelow, "Bigelow's BAASS won the contract for AAWSAP, which Lacatski ran" ]
   - [ co-author of, colm-kelleher, "Co-authors, with George Knapp, of Skinwalkers at the Pentagon; Kelleher worked at BAASS alongside Lacatski's AAWSAP" ]
   - [ visited, skinwalker-ranch, "He reported a strange encounter during a mid-2000s visit, which he says led to AAWSAP" ]
