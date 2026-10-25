@@ -14,6 +14,8 @@ links:
     url: https://openlibrary.org/works/OL2978549W
   - label: "Find in a library"
     url: https://search.worldcat.org/search?q=bn:1557784493
+  - label: "Kirkus Reviews (1992)"
+    url: https://www.kirkusreviews.com/book-reviews/stanton-t-friedman/crash-at-corona/
 facts:
   - text: "Friedman and Berliner argue that the military recovered a crashed extraterrestrial craft and its occupants in New Mexico in July 1947 and covered it up."
     status: claimed
@@ -22,6 +24,15 @@ facts:
     claims: [ roswell-crashed-craft ]
     basis: opinion
     source: https://openlibrary.org/works/OL2978549W
+glimpses:
+  - text: "Man had just come face to face with beings from another world"
+    where: "As quoted by Kirkus Reviews (1992)"
+    via: "Kirkus Reviews"
+    url: https://www.kirkusreviews.com/book-reviews/stanton-t-friedman/crash-at-corona/
+  - text: "brilliant covering-up by the entire American government"
+    where: "As quoted by Kirkus Reviews"
+    via: "Kirkus Reviews"
+    url: https://www.kirkusreviews.com/book-reviews/stanton-t-friedman/crash-at-corona/
 ---
 
 *Crash at Corona* (Paragon House, 1992), by the nuclear physicist Stanton Friedman and the aviation writer Don Berliner, is Friedman's account of the 1947 Roswell case, which he had reopened in 1978 by finding Maj. Jesse Marcel. The title reflects the authors' view that the craft came down nearer Corona than Roswell, and the book argues that the military recovered a crashed extraterrestrial craft and its occupants and then covered it up, drawing on witness interviews and on the MJ-12 papers, which Friedman defended.
