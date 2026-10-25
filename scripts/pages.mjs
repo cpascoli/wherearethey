@@ -1,6 +1,7 @@
 // Static pages for search engines and sharing: one real URL per view and per file (/person/david-fravor),
 // each the app shell plus a server-rendered article (title, description, canonical, JSON-LD, the full content).
 // The app hides the article on boot and shows the same file in its own UI; crawlers and no-JS readers get the article.
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT } from './lib.mjs';
@@ -102,7 +103,18 @@ const isoDur = s => s ? `PT${Math.floor(s / 3600) ? Math.floor(s / 3600) + 'H' :
 
 export function writePages({ entities, edges, transcripts, stats, filesBase }) {
   const site = path.join(ROOT, 'site');
-  const template = fs.readFileSync(path.join(ROOT, 'templates', 'app.html'), 'utf8');
+  // Versioned code and data: each URL carries a hash of the file, so a deploy changes only the URLs of what changed and
+  // browsers never run stale code (the files can then be cached for a year, see netlify.toml). BUILD changes with any
+  // of them; open tabs compare it with /version.json to notice a new deploy (app.js).
+  const hashOf = f => crypto.createHash('sha1').update(fs.readFileSync(path.join(site, f))).digest('hex').slice(0, 10);
+  const BOOT = ['data/kb.js', 'data/mentions.js', 'data/layout.js', 'assets/app.js'];
+  const ver = Object.fromEntries([...BOOT, 'assets/app.css', 'data/records.js'].map(f => [f, hashOf(f)]));
+  const build = crypto.createHash('sha1').update(Object.values(ver).join()).digest('hex').slice(0, 10);
+  const template = fs.readFileSync(path.join(ROOT, 'templates', 'app.html'), 'utf8')
+    .replace('/*V:app.css*/', ver['assets/app.css'])
+    .replace('/*BUILD*/', build)
+    .replace('/*BOOT_FILES*/[]', JSON.stringify(BOOT.map(f => [`/${f}?v=${ver[f]}`, fs.statSync(path.join(site, f)).size])));
+  fs.writeFileSync(path.join(site, 'version.json'), JSON.stringify({ build }) + '\n');
   const byId = new Map(entities.map(e => [e.id, e]));
   const fileUrl = f => (filesBase ? `${filesBase.replace(/\/$/, '')}/${f}` : `/${f}`);
   const link = id => { const e = byId.get(id); return e ? `<a href="${e.path}">${esc(e.name)}</a>` : esc(id); };

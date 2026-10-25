@@ -35,6 +35,7 @@ site/latest.html
 site/feed.xml
 site/sitemap.xml
 site/robots.txt
+site/version.json
 site/person/
 site/claim/
 site/incident/

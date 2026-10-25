@@ -11,14 +11,23 @@
   # Switch to a custom domain later by changing this one value.
   FILES_BASE = "https://pub-86f038fb92684457b9683cd2fd44620e.r2.dev"
 
+# The app's code and data are requested with a content hash (?v=…, scripts/pages.mjs), so a deploy changes their
+# URLs: data can be kept for a year. Pages themselves are never cached (the geo edge function marks them no-store).
 [[headers]]
   for = "/data/*"
   [headers.values]
-    Cache-Control = "public, max-age=300"
+    Cache-Control = "public, max-age=31536000, immutable"
+# app.js and app.css are versioned too, but images and covers keep their names when replaced, so an hour for all
+# (a rule per file would combine with this one, as Netlify merges matching rules)
 [[headers]]
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=3600"
+# open tabs ask for this to learn of a new deploy
+[[headers]]
+  for = "/version.json"
+  [headers.values]
+    Cache-Control = "no-store"
 
 # removed duplicates: old links point to the version we kept
 [[redirects]]

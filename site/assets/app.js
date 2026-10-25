@@ -1488,7 +1488,7 @@
         res();
       };
       const s = document.createElement('script');
-      s.src = '/data/records.js';
+      s.src = `/data/records.js${window.BUILD ? `?v=${window.BUILD}` : ''}`;
       s.onerror = () => res();
       document.head.append(s);
     });
@@ -1649,7 +1649,7 @@
       if (!trWaiters.has(id)) {
         trWaiters.set(id, []);
         const s = document.createElement('script');
-        s.src = `/data/transcripts/${encodeURIComponent(id)}.js`;
+        s.src = `/data/transcripts/${encodeURIComponent(id)}.js${window.BUILD ? `?v=${window.BUILD}` : ''}`;
         s.onerror = () => { trWaiters.get(id)?.forEach(r => r(null)); trWaiters.delete(id); };
         document.head.append(s);
       }
@@ -1686,7 +1686,7 @@
       if (!dtWaiters.has(id)) {
         dtWaiters.set(id, []);
         const s = document.createElement('script');
-        s.src = `/data/doctext/${encodeURIComponent(id)}.js`;
+        s.src = `/data/doctext/${encodeURIComponent(id)}.js${window.BUILD ? `?v=${window.BUILD}` : ''}`;
         s.onerror = () => { dtWaiters.get(id)?.forEach(r => r(null)); dtWaiters.delete(id); };
         document.head.append(s);
       }
@@ -2480,9 +2480,27 @@
     if (state.view === 'shelf') return shelfTab === 'book' ? '/books' : '/documentaries';
     return VIEW_PATH[state.view] || '/';
   }
+  // A new deploy while this tab is open: noticed when the tab comes back into view (and every 10 minutes), by comparing
+  // the build this page runs with /version.json. A small notice offers to reload; moving to another section (Latest,
+  // Explore…) reloads by itself, since that address restores the whole page.
+  let newBuild = false, buildChecked = 0;
+  function checkBuild() {
+    if (!window.BUILD || newBuild || Date.now() - buildChecked < 60000) return;
+    buildChecked = Date.now();
+    fetch('/version.json', { cache: 'no-store' }).then(r => (r.ok ? r.json() : null)).then(v => {
+      if (!v?.build || v.build === window.BUILD) return;
+      newBuild = true;
+      let el = $('#update');
+      if (!el) { document.body.insertAdjacentHTML('beforeend', '<div class="update" id="update" role="status">The site has been updated. <button class="btn small primary" data-reload>Reload</button><button class="icon-btn" data-update-close aria-label="Dismiss">✕</button></div>'); el = $('#update'); }
+      el.addEventListener('click', e => { if (e.target.closest('[data-reload]')) location.reload(); if (e.target.closest('[data-update-close]')) el.remove(); });
+    }).catch(() => {});
+  }
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') checkBuild(); });
+  setInterval(() => { if (document.visibilityState === 'visible') checkBuild(); }, 10 * 60 * 1000);
   function setHash({ replace = false } = {}) {
     if (routing) return;
     const target = urlFor(), st = { view: state.view, sel: state.sel, video: state.video };
+    if (newBuild && !replace && !state.sel && !state.video && target !== location.pathname) { location.assign(target); return; }
     if (location.pathname === target && !location.hash) { history.replaceState(st, '', target + location.search); return; }
     history[replace ? 'replaceState' : 'pushState'](st, '', target);
     trackView();

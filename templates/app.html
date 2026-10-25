@@ -37,10 +37,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@1,400;1,500&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-  <link rel="stylesheet" href="/assets/app.css">
+  <link rel="stylesheet" href="/assets/app.css?v=/*V:app.css*/">
 </head>
 <body>
   <!--SSR-->
+  <div class="boot" id="boot" hidden role="progressbar" aria-label="Loading the archive" aria-valuemin="0" aria-valuemax="100"><div class="boot-bar"><i></i></div><p>Loading the archive… <span>0%</span></p></div>
   <header class="top">
     <button class="icon-btn only-mobile" id="btn-side" aria-label="Filters">☰</button>
     <a class="brand" href="/" data-view="home" title="Home">
@@ -170,15 +171,40 @@
     </aside>
   </div>
 
+  <script>
+    // Boot loader: fetch the archive's data and the app (versioned by content hash, filled in by scripts/pages.mjs)
+    // with a progress bar, then run them in order once the libraries below have loaded.
+    // Without fetch streaming, or if a fetch fails, it falls back to plain script tags.
+    (function () {
+      window.BUILD = '/*BUILD*/';
+      var files = /*BOOT_FILES*/[], total = 0, got = 0, boot = document.getElementById('boot');
+      files.forEach(function (f) { total += f[1]; });
+      var shown = setTimeout(function () { boot.hidden = false; }, 400); // a cached load is quick: no flash
+      var paint = function () { var pc = Math.min(99, Math.floor(got / total * 100)); boot.querySelector('i').style.width = pc + '%'; boot.querySelector('span').textContent = pc + '%'; boot.setAttribute('aria-valuenow', pc); };
+      var plain = function () { files.forEach(function (f) { var s = document.createElement('script'); s.src = f[0]; s.async = false; document.body.appendChild(s); }); };
+      var read = function (f) {
+        return fetch(f[0]).then(function (r) {
+          if (!r.ok || !r.body || !r.body.getReader) throw new Error('no stream');
+          var reader = r.body.getReader(), dec = new TextDecoder(), text = '';
+          var pump = function () { return reader.read().then(function (c) { if (c.done) return text + dec.decode(); got += c.value.length; paint(); text += dec.decode(c.value, { stream: true }); return pump(); }); };
+          return pump();
+        });
+      };
+      var ready = new Promise(function (res) { document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', res) : res(); });
+      if (!window.fetch || !window.TextDecoder || !files.length) { clearTimeout(shown); ready.then(plain); return; }
+      Promise.all(files.map(read)).then(function (codes) {
+        return ready.then(function () {
+          clearTimeout(shown); boot.remove();
+          codes.forEach(function (code, i) { var s = document.createElement('script'); s.textContent = code + '\n//# sourceURL=' + files[i][0]; document.body.appendChild(s); });
+        });
+      }, function () { ready.then(function () { clearTimeout(shown); boot.remove(); plain(); }); });
+    })();
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.2/cytoscape.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/layout-base@2.0.1/layout-base.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/cose-base@2.2.0/cose-base.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/cytoscape-fcose@2.2.0/cytoscape-fcose.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-  <script src="/data/kb.js"></script>
-  <script src="/data/mentions.js"></script>
-  <script src="/data/layout.js"></script>
-  <script src="/assets/app.js"></script>
   <div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden>
     <p>We'd like to use Google Analytics cookies to count visits and see which pages are useful. No ads, no selling of data. Analytics stays off unless you accept. <a href="/privacy">Privacy &amp; cookies</a></p>
     <div class="consent-actions"><button class="btn small" data-consent="denied">Reject</button><button class="btn small primary" data-consent="granted">Accept</button></div>
