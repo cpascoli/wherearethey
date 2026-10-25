@@ -27,7 +27,7 @@ facts:
   - text: It describes objects “probably approximating the shape of a disc, of such appreciable size as to appear to be as large as man-made aircraft”, and considers the possibility of a domestic secret project or a foreign nation with propulsion “outside of our domestic knowledge”.
     status: documented
     source: library/docs/doc-twining-memo-1947.pdf
-  - text: It recommends that Army Air Forces headquarters issue a directive assigning “a priority, security classification and Code Name for a detailed study”. This became Project Sign.
+  - text: It recommends that Army Air Forces headquarters issue a directive assigning “a priority, security classification and Code Name for a detailed study”.
     status: documented
     source: library/docs/doc-twining-memo-1947.pdf
   - text: It also notes the lack of physical evidence such as “crash recovered exhibits”. That wording is cited both by skeptics and by researchers who argue some recoveries were compartmented.

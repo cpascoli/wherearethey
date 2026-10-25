@@ -12,7 +12,7 @@ tags:
   - navy
   - radar
 outcome: disputed
-outcome_note: "AARO (2025) and NASA (2023) found the GoFast object moving at about wind speed at 13,000 ft, with no anomalous performance; the squadron's other radar tracks, the near misses and Gimbal remain unexplained."
+outcome_note: "AARO (2025) placed the GoFast object at about 13,000 ft, moving at 72–161 mph, or 5–92 mph once the wind is removed, and never against the wind, with high confidence it showed no anomalous speed; NASA (2023) judged it most likely drifting with the wind. The squadron's other radar tracks, the near misses and Gimbal remain unexplained."
 outcome_source: doc-aaro-gofast
 rel:
   - [ documented in, doc-aaro-gofast ]

@@ -5,7 +5,7 @@ match:
   - "the arrow office"
 aka:
   - AARO
-date: 2022-07-20
+date: 2022-07-15
 tags:
   - aaro
   - military
@@ -13,15 +13,15 @@ links:
   - label: aaro.mil
     url: https://www.aaro.mil/
 facts:
-  - text: Formed July 20, 2022 as the Pentagon office for UAP reports, succeeding AOIMSG.
+  - text: "Approved by the Deputy Secretary of Defense's memorandum of 15 July 2022 (published 20 July), which directed the USD(I&S) to establish AARO in place of the AOIMSG and to wind down the UAP Task Force."
     status: documented
-    source: https://media.defense.gov/2022/Jul/20/2003039074/-1/-1/1/ESTABLISHMENT-OF-THE-ALL-DOMAIN-ANOMALY-RESOLUTION-OFFICE.PDF
+    source: doc-aaro-establishment-memo-2022
   - text: "Directors: Dr. Sean Kirkpatrick (2022–2023), then Dr. Jon T. Kosloski (named August 26, 2024)."
     status: documented
     source: https://www.meritalk.com/articles/dod-appoints-nsas-jon-kosloski-to-head-ufo-office/
 ---
 
-The All-domain Anomaly Resolution Office is the Pentagon office responsible for UAP reports across air, sea, space and transmedium domains. It was established on 20 July 2022, created through the Fiscal Year 2022 NDAA, and replaced the short-lived AOIMSG. Its directors have been the physicist Sean Kirkpatrick (2022–2023), Tim Phillips as acting director, and Jon T. Kosloski, named in August 2024.
+The All-domain Anomaly Resolution Office is the Pentagon office responsible for UAP reports across air, sea, space and transmedium domains. Required by the Fiscal Year 2022 NDAA, it was approved in a Deputy Secretary of Defense memorandum of 15 July 2022, published on 20 July, and replaced the short-lived AOIMSG. Its directors have been the physicist Sean Kirkpatrick (2022–2023), Tim Phillips as acting director, and Jon T. Kosloski, named in August 2024.
 
 AARO publishes case resolutions and annual reports. Its *Historical Record Report, Volume 1* (2024) reviewed U.S. government UAP efforts since 1945 and "found no evidence that any USG investigation, academic-sponsored research, or official review panel has confirmed that any sighting of a UAP represented extraterrestrial technology", and no empirical evidence of reverse-engineering programmes. Whistleblowers such as David Grusch dispute those findings; both sides are filed in the linked records.
 

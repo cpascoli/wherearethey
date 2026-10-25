@@ -29,13 +29,19 @@ facts:
     basis: documented
     status: documented
     source: library/docs/doc-dia-tehran-1976.pdf
-  - text: The report was sent through U.S. defense attaché channels and circulated by the DIA, the National Security Council, the White House and the CIA. The DIA evaluator called it an outstanding case that met all criteria for a valid study of the UFO phenomenon.
+  - text: The report was sent through U.S. defense attaché channels and circulated by the DIA, the National Security Council, the White House and the CIA.
     said: 1976-09
     claims: [ tehran-1976-object ]
     stance: context
     basis: documented
     status: documented
     source: library/docs/doc-dia-tehran-1976.pdf
+  - text: "A report by Richard Haines's NARCAP cites a section of a DIA document, not among those the archive holds, that called the incident “outstanding” and a classic meeting all the criteria for a study of the phenomenon."
+    claims: [ tehran-1976-object ]
+    stance: context
+    basis: relayed
+    status: claimed
+    source: https://en.wikipedia.org/wiki/1976_Tehran_UFO_incident
   - text: Skeptic Philip Klass argued the object was the planet Jupiter and that the aircraft problems were ordinary equipment failures.
     claims: [ tehran-1976-object ]
     stance: disputes
@@ -46,7 +52,7 @@ facts:
 
 In the early hours of 19 September 1976, residents of Tehran's Shemiran district phoned Mehrabad Airport about a brightly lit object in the sky, and the Imperial Iranian Air Force scrambled two F-4 Phantom II jets. The first, flown by Lt. Yaddi Nazeri, lost its instruments and UHF and intercom communications as it closed to about 25 nautical miles; they came back as it turned away. The second, flown by Maj. Parviz Jafari with 1st Lt. Jalal Damirian, locked the object on radar at 27 nautical miles. As Jafari prepared to fire an AIM-9 Sidewinder, his weapons control panel and communications failed, and the crew reported smaller objects separating from the main one.
 
-A report went through U.S. defence attaché channels to the Defense Intelligence Agency and was circulated to the Joint Chiefs of Staff, the National Security Council, the White House and the CIA; the DIA evaluator rated it an outstanding case meeting all the criteria for a valid study of the phenomenon. The documents were later released under the Freedom of Information Act, and Jafari described the encounter publicly at the National Press Club in 2007.
+A report went through U.S. defence attaché channels to the Defense Intelligence Agency and was circulated to the Joint Chiefs of Staff, the National Security Council, the White House and the CIA; according to a NARCAP report, a section of a DIA document, which the archive does not hold, called it "outstanding" and a classic meeting all the criteria for a study. The documents were later released under the Freedom of Information Act, and Jafari described the encounter publicly at the National Press Club in 2007.
 
 The sceptic Philip J. Klass attributed the light to the planet Jupiter and the failures to ordinary equipment faults, noting the first F-4's history of electrical problems; others have pointed to meteors that night.
 

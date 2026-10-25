@@ -20,8 +20,8 @@ rel:
   - [ submitted to, h-2022-05-17 ]
   - [ submitted by, mike-gallagher ]
   - [ about, thomas-wilson ]
-  - [ authored by, eric-davis ]
-  - [ found among papers of, edgar-mitchell ]
+  - [ attributed to, eric-davis, "Reportedly typed by Davis; unverified" ]
+  - [ found among papers of, edgar-mitchell, "Reportedly found among Mitchell's papers after his death; unverified" ]
   - [ about, usap ]
   - [ about, crash-retrieval ]
 facts:

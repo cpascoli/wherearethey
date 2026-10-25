@@ -1,0 +1,167 @@
+SOURCE: https://defensescoop.com/2024/11/19/uap-aaro-findings-go-fast-puerto-rico-mt-etna-objects/
+FETCHED: 2026-10-25
+
+Skip to main content
+OPEN NAVIGATION
+Advertisement
+Subscribe to our daily newsletter.
+SUBSCRIBE
+CLOSE
+TECH
+Pentagon’s UAP office reviews findings on Go Fast, Puerto Rico, Mt. Etna incidents in Senate hearing
+The head of the Defense Department's All-Domain Anomaly Resolution Office (AARO) testified at a congressional hearing on Tuesday.
+
+BY
+JON HARPER
+
+NOVEMBER 19, 2024
+
+Listen to this article
+9:37
+Learn more.
+Screenshot from video of the "Puerto Rico Object" shown during a Senate Armed Services Subcommittee on Emerging Threats and Capabilities hearing, Nov. 19, 2024.
+
+The leader of the Defense Department organization charged with investigating reports of “unidentified anomalous phenomena” laid out findings related to two high-profile incidents and another that he said hasn’t received as much attention from the public.
+
+The presentation by Jon Kosloski, director of the All-Domain Anomaly Resolution Office (AARO), came during a congressional hearing Tuesday with members of the Senate Armed Services Subcommittee on Emerging Threats and Capabilities.
+
+Lawmakers have been urging the Pentagon to be more transparent about its work on UAP issues and have raised national security concerns about these types of incidents. UAP, an acronym that refers to unidentified anomalous phenomena, is a modern term for UFOs and mysterious transmedium objects.
+
+“A case that we thought would be a transmedium case, as it was reported, is well known on the outside … as the Puerto Rico case,” Kosloski told senators.
+
+Advertisement
+
+The incident he was referring to happened in April 2013 when a U.S. Customs and Border Protection aircraft recorded infrared video of an object over Rafael Hernandez Airport.
+
+“The video appears to show an object traveling at high speed, splitting into two objects, and entering and exiting the water. The object was deemed anomalous based on these initial perceptions,” according to Kosloski’s charts presented at the hearing.
+
+“Transmedium means that it goes from one domain into another. In this case, it looks like it goes from the air into the water and then back into the air. We assess that it was actually flying over the airport the entire time,” Kosloski told the panel. “And what appears to be the transmedium part, where it goes into the water, is actually where the temperature of the water is equal to the temperature of the object and the camera can no longer distinguish between the two. It’s not that the object actually goes into the water. And so we assess that the object, likely a pair of balloons or sky lanterns, was floating at about seven knots over the airport and descending to about 200 meters.”
+
+AARO officials, who coordinated with the intelligence community and other science-and-technology experts on their evaluation, assess “with high confidence” that the object didn’t demonstrate any anomalous speeds or flight characteristics, according to Kosloski’s charts.
+
+“Two distinct objects were airborne in proximity to each other, rather than a single object splitting into two,” officials wrote, adding that modeling and minimum separation vectors analysis “indicates the illusion of splitting was likely due to the changing angle of sensor view allowing only intermittent views of both objects.” Additionally, the perception of high speed was attributed to “motion parallax.”
+
+Advertisement
+
+Another high-profile UAP event, dubbed Go Fast, took place off the coast of Florida in January 2016 when a U.S. Navy aircraft recorded a mysterious object.
+
+Screen shot from video of Go Fast object played at Tuesday’s hearing.
+
+“The Go Fast … captured the public attention and congressional attention when it was made public in 2017. [It] looks like an object flying very fast over the water, very close to the water. Through a very careful geospatial intelligence analysis, using trigonometry, we assess with high confidence that the object is not actually close to the water, but is rather closer to 13,000 feet,” Kosloski said. “As the platform is flying and capturing the object, if it is closer to the platform at a higher altitude, a trick of the eye called ‘parallax’ makes it look like the object is moving much faster.”
+
+He said AARO officials wrote a paper on parallax that was released on the organization’s website so that the public “can literally check our math on this analysis.”
+
+Footage of another UAP discussed at the hearing, which Kosloski suggested was less well known, was captured by an American drone. His presentation referred to it as the “Mt. Edna Object,” which is depicted as “seemingly passing through the volcano’s plume with no apparent impact to its performance, altitude and bearing.”
+
+Advertisement
+
+“An interesting case, which I don’t believe the public is familiar with, is captured in 2018 from a UAV flying in the Mediterranean watching Mount Etna as it was erupting. And it appears that that object is flying through the plume of superheated gas and ash. This was a rather difficult case to resolve. We had to pull in support from a number of IC and S&T partners and even reach out to a volcanologist. And through very detailed remodeling and pixel-by-pixel analysis of the object as it’s traversing across the clouds, they assess that the object was actually 170 meters away from the plume and not flying through it,” he said.
+
+Screenshot of video of Mt. Etna Object played at Tuesday’s hearing.
+
+Analysts used full-motion video, analysis software, 3D modeling, and “novel” speed and distance calculation techniques to inform their assessment, according to Kosloski’s presentation.
+
+“AARO and its partners disproved the obiect flew through the ash plume by conducting an analysis of the luminosity of the object’s pixels in elation to a sample range of pixels immediately around it,” officials wrote.
+
+These examples were just a few of the more than 1,600 UAP reports that AARO has received to date. Last week, the Pentagon released its fiscal 2024 consolidated annual report about its work and findings related to these efforts and briefed reporters.
+
+Advertisement
+
+Among AARO’s closed cases from the May 1, 2023 to June 1, 2024 time period, about 70 precent of the UAP were deemed to have been balloons, 16 percent drones, eight percent birds, four percent satellites and two percent aircraft, according to the report.
+
+To date, AARO has not discovered any verifiable evidence of extraterrestrial beings, activity or technology, Kosloski told senators at the hearing.
+
+There are concerns among lawmakers and others that some UAP cases could be advanced drones developed by foreign adversaries. Some officials are hoping that sensor technologies developed to aid AARO’s work will be used to help detect unmanned aerial systems.
+
+The Pentagon’s UAP report released last week noted that the office has a prototype system called Gremlin that the Defense Department is deploying.
+
+The Georgia Tech Research Institute developed the Gremlin sensor architecture, according to the report. The technology has “several sensing modalities to detect, track, characterize and identify UAP in areas of interest,” officials wrote.
+
+Advertisement
+
+The document contained a diagram of an architecture that included a Gremlin “network stack” connected to long-range electro-optical/infrared sensors, 2D search radar, 3D radar and an RF spectrum monitor. It also included ADS-B, NAS, GPS, satellite communications, and cellular and copper/fiber links.
+
+The Gremlin capability “demonstrated functionality and successfully collected data” during a test event earlier this year, per the report.
+
+The department is now using the technology to conduct what officials are calling “pattern of life collection” at an unspecified “national security” site.
+
+At Tuesday’s hearing, Sen. Kirsten Gillibrand, D-N.Y., chair of the subcommittee, noted her concerns about drone incidents near sensitive national security facilities such as Langley Air Force Base.
+
+“UAS continue to pose significant threats to our national security. In addition to safety of flight issues these UAS create for our own pilots and air crew, the UAS present clear and undeniable counterintelligence concerns around some of the most sensitive airspace. While standard UAS are not part of AARO’s mission, your work on sensors at military installations across the country will be critical to making sure that we have the domain awareness necessary to accurately identify and track these objects,” she told Kosloski. “I expect your office to also pay close attention to any anomalous characteristics that these systems could present in the future.”
+
+Advertisement
+
+The AARO chief was asked by lawmakers how he envisioned his organization assisting the U.S. military and intelligence community with analyzing and identifying drones.
+
+“We are generally going to be supporting them through an advisory capacity as an organization that naturally needs to conduct baseline experiments of the environment to see what normal looks like, whether it’s balloons, birds, anomalous activity, or drones flying through an environment. We’re going to gather a lot of data that will allow us to characterized an environment very well, and then detect and follow those tracks, hopefully rather efficiently. There’s also a lot of overlap in the type of sensors that are going to be used for the counter-UAS mission and the UAP mission, whether that’s active detection, like radars or passive like cameras. And so as AARO is trying to push the bounds on detectability for UAP, we’re hopefully going to have best practices that we can also provide to the counter-UAS [community], and potentially we might have additional technologies that we can offer them to support,” Kosloski said.
+
+Written by Jon Harper
+Jon Harper is Editor-in-Chief of DefenseScoop. He leads an award-winning team of journalists in providing breaking news and in-depth analysis on military technology and the ways in which it is shaping how the Defense Department operates and modernizes. You can also follow him on X: @Jon_Harper_
+In This Story
+AARO
+UAP
+JON KOSLOSKI
+SHARE
+More Scoops 
+Abraham (Avi) Loeb is the Frank B. Baird, Jr., Professor of Science at Harvard University. (Photo by: Lotem Loeb, May 22, 2026; shared by Avi Loeb.)
+New science advisory council forms to help US government ‘resolve the UAP mystery’
+Theoretical physicist and Harvard University Professor Avi Loeb shared early details about the new UAP Science Advisory Council.
+BY BRANDI VINCENT
+Actual site photo with FBI rendered graphic depicting corroborating eye witness reports from September 2023 of an apparent ellipsoid bronze metallic object materializing out of a bright light in the sky, 130-195 feet in length, and disappearing instantaneously. (U.S. Government Photo from war.gov/ufo)
+‘Data alone is not disclosure’: UAP research community reacts to Trump’s first PURSUE file drop
+BY BRANDI VINCENT
+A screenshot taken of a Defense Department video released as part of an investigation by the Unidentified Aerial Phenomena Task Force. (Department of Defense video)
+Pentagon’s AARO quietly held an invite-only workshop to help shape the future of UAP research
+BY BRANDI VINCENT
+Hegseth doubles-down on Trump’s UAP disclosure promise as AARO’s caseload exceeds 2,000
+BY BRANDI VINCENT
+Transparency proponents meet Trump’s UAP disclosure tease with hope — and caution
+BY BRANDI VINCENT
+Congress wants to know more about the military’s UAP intercepts around North America
+BY BRANDI VINCENT
+Military whistleblowers share new evidence of alleged UAP at transparency hearing
+BY BRANDI VINCENT
+Latest Podcasts
+ How the Navy is reducing workforce friction to improve mission outcomes
+ How DARPA is looking to AI to fend off cyber vulnerabilities through a challenge program
+ How the DOD protects national security interests by monitoring climate change
+ IonQ’s Craig Miller on securing against quantum threats
+Tech
+Army Special Forces leaders see promise, high demand for new robotics technician integrator job
+HDUSA wants to replicate South Korea’s ‘war footing’ industrial capacity in America
+US Navy deploys unmanned maritime drone to support carrier strike group in historic first
+Army playing ‘ACEs’ to meet commanders’ capability needs
+AI
+Navy expands contract ceiling for AI-enabled repair robots
+Military service members to square off against AI in ‘Mindgame’ tournament
+Army to launch Project Gatekeeper, an effort to make it easier for vendors to onboard software
+ARCYBER expanding use of AI agents for network operations
+Weapons
+U.S. military debuts new Task Force Easy to enable drone tech ‘adaptation dominance’
+American Army forces in South Korea adapting to new drone threats
+7th Air Force seeks new counter-drone capabilities for point defense modernization in South Korea
+Navy creates warfighting development center in Virginia to determine how the sea service will employ unmanned systems in future battles
+Cyber
+Pentagon averts cyber pay cuts — for now — with one-year C-MIP ‘transition plan’
+Colby approves Pentagon policy for ‘cyber operations-peculiar’ monetary awards
+The Pentagon’s new cyber mastery incentive model promised a ‘new era.’ Troops are bracing for pay cuts.
+AAFES investigating ‘suspicious' messages sent to military customers through email and store’s official app
+Advertisement
+ABOUT US
+DEFENSESCOOP
+FEDSCOOP
+AISCOOP
+CYBERSCOOP
+STATESCOOP
+EDSCOOP
+NEWSLETTERS
+ADVERTISE WITH US
+AD SPECS
+(202) 887-8001
+HELLO@DEFENSESCOOP.COM
+FB
+TW
+LINKEDIN
+YT
+CLOSE AD
+Continue to DefenseScoop

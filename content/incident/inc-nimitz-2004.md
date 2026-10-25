@@ -25,7 +25,6 @@ rel:
   - [ witness, jason-turner ]
   - [ witness, pj-hughes ]
   - [ witness, ryan-weigelt ]
-  - [ investigated by, aatip ]
 facts:
   - text: USS Princeton radar operators tracked anomalous objects for days. F/A-18Fs led by Cmdr. David Fravor were vectored to intercept a white, wingless “Tic Tac” object.
     status: claimed

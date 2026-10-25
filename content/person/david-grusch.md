@@ -21,7 +21,7 @@ rel:
   - [ worked at, nro ]
   - [ authored, doc-grusch-statement-2023-07-26 ]
   - [ filed, ev-grusch-icig-complaint-2022 ]
-  - [ worked at, uaptf ]
+  - [ worked at, uaptf, "He dates his membership to 2019–2021; the task force itself was approved in August 2020, so his 2019 work belongs to the effort that preceded it" ]
   - [ alleges, crash-retrieval, "His 2023 testimony made the crash-retrieval allegation a matter of congressional record; AARO calls it inaccurate" ]
   - [ alleges, legacy-program, "He testified he was told of a multi-decade crash-retrieval and reverse-engineering program he was denied access to" ]
   - [ claims about, aawsap, "He alleges AAWSAP's real purpose was to receive recovered material from Lockheed, a transfer the CIA killed" ]

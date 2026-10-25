@@ -15,7 +15,7 @@ rel:
   - [ visited, skinwalker-ranch, "Knapp says Stratton is “Axelrod”, the intelligence officer who had strange experiences after visiting the ranch" ]
   - [ authored, book-out-of-the-shadows ]
   - [ investigated, inc-nimitz-2004 ]
-  - [ led, uaptf ]
+  - [ says he led, uaptf, "His and his publisher's account, supported by Gallaudet's testimony; AARO's history says the Navy was asked to lead the task force and does not name him" ]
   - [ worked at, dia ]
   - [ worked at, oni ]
   - [ co-founded, aawsap, "On loan to DIA in 2009 he worked on AAWSAP and, by his account, helped found it" ]

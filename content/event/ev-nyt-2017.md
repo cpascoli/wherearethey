@@ -6,7 +6,7 @@ tags:
   - disclosure
 rel:
   - [ about, aatip ]
-  - [ about, aawsap ]
+  - [ about, aawsap, "The Times named the program AATIP; AARO later identified it with AAWSAP" ]
   - [ about, inc-nimitz-2004 ]
   - [ reported by, leslie-kean ]
   - [ features, luis-elizondo, "Cites “Mr. Elizondo and program contractors” on alloys said to be stored in Las Vegas, a line a co-author later walked back" ]

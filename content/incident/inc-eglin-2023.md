@@ -23,7 +23,7 @@ facts:
     basis: documented
     status: documented
     source: doc-aaro-eglin
-  - text: "AARO's case resolution (14 October 2023) assesses with moderate confidence that the object was \"very likely a lighter-than-air object, such as a large commercial lighting balloon\", drifting with the wind. Its radar failure was caused by a circuit breaker that had tripped three times before on the same aircraft, which AARO judged coincidental. An IC partner and an S&T partner independently assessed with high confidence that the object was not anomalous and very likely a balloon. AARO could not analyse the other three radar objects."
+  - text: "AARO's case resolution (14 October 2023) assesses with moderate confidence that the object was \"very likely a lighter-than-air object, such as a large commercial lighting balloon\", drifting with the wind. Its radar failure was caused by a circuit breaker that had tripped three times before on the same aircraft, which AARO judged coincidental. Its IC partner assessed with high confidence that the object “was not exhibiting anomalous characteristics”; its S&T partner, independently, with high confidence that it “was not anomalous and very likely was some kind of balloon.” AARO could not analyse the other three radar objects."
     claims: [ eglin-orb-not-human ]
     stance: disputes
     basis: documented

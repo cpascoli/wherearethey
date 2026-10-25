@@ -15,7 +15,7 @@ facts:
   - text: "AARO concluded that the sample is “a manufactured, terrestrial alloy and does not represent off-world technology or possess any exceptional qualities”, mostly magnesium, zinc and bismuth."
     status: documented
     source: library/docs/doc-aaro-historical-record-report-v1.pdf
-  - text: "AARO and a leading science laboratory found the material “a metallic alloy, terrestrial in nature, and possibly of USAF origin”, and that the bismuth “was not a pure layer per initial claims”. AARO says the organisation's own attempt to recreate the sample was later conflated with claims of industry reverse-engineering."
+  - text: "AARO and a leading science laboratory found the material “a metallic alloy, terrestrial in nature, and possibly of USAF origin”, and that the bismuth “was not a pure layer per initial claims”. AARO says a separate private sector organisation's recreation of the sample “was almost certainly conflated” with claims that the aerospace industry was reverse-engineering off-world technology."
     status: documented
     source: library/docs/doc-aaro-historical-record-report-v1.pdf
 ---
