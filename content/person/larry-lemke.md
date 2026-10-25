@@ -1,6 +1,6 @@
 ---
 name: Larry Lemke
-aka: [Lemke, Larry G. Lemke]
+aka: [Lemke]
 match: [Lemi, Lemmy]
 credentials:
   - category: aerospace
