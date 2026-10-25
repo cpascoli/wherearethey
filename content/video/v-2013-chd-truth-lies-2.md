@@ -6,20 +6,25 @@ youtube: fd7darRlevQ
 date: 2013
 rel:
   - [ recording of, h-2013-citizen-hearing ]
+  - [ features, grant-cameron ]
   - [ features, linda-moulton-howe ]
   - [ features, steven-greer ]
 moments:
   - t: "1:27"
     text: "Grant Cameron says Senate investigator Dick D'Amato, with top-secret clearances and appropriations backing, tried to get into black-budget UFO projects at Area 51 and “could not get anywhere”; he adds that Lockheed's Ben Rich said it would take “an act of god” to get it out."
+    speaker: grant-cameron
     refs: [ area-51 ]
     claims: [ programs-hidden-from-congress ]
     basis: relayed
   - t: "4:23"
     text: "Cameron says Bill Clinton told filmmaker Paul Davids “he was fascinated with the subject of ufos”, and that Clinton wanted answers on UFOs and the JFK assassination."
+    speaker: grant-cameron
   - t: "6:26"
     text: "Cameron credits John Podesta's openness drive: the Clinton administration declassified “800 million pages”, but the UFO documents the Clintons wanted released never materialised."
+    speaker: grant-cameron
   - t: "7:26"
     text: "Cameron cites Bill Richardson, Clinton's energy secretary and later governor of New Mexico, who wrote in a foreword to a Roswell book that “it would help everybody if the u.s government disclosed everything it knows the american people can handle the truth”, and who said that as a congressman he was told the Defense Department's records were classified."
+    speaker: grant-cameron
     refs: [ inc-roswell-1947 ]
   - t: "8:40"
     text: "Linda Moulton Howe recalls a discussion with Harvard psychiatrist John Mack at Laurance Rockefeller's Wyoming ranch about whether non-humans make cloned entities to interact on Earth."
@@ -51,6 +56,7 @@ moments:
     speaker: steven-greer
   - t: "37:24"
     text: "Cameron says Clinton asked Webster Hubbell to find out who killed JFK and whether UFOs exist, and that the New York Post's Deborah Orin raised Hubbell's UFO inquiry at a White House press briefing."
+    speaker: grant-cameron
   - t: "54:02"
     text: "Howe tells of a Lockheed Martin security guard at the Denver facility in the mid-1980s who dropped her book *An Alien Harvest* when given it as a gift, as if he already knew its subject."
     speaker: linda-moulton-howe

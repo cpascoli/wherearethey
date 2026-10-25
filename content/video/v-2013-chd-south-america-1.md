@@ -6,26 +6,34 @@ youtube: GCgp1FKr5hU
 date: 2013
 rel:
   - [ recording of, h-2013-citizen-hearing ]
+  - [ features, antonio-huneeus ]
+  - [ features, aj-gevaerd ]
   - [ features, anthony-choy ]
   - [ features, oscar-santa-maria ]
 moments:
   - t: "10:45"
     text: "Brazilian researcher A. J. Gevaerd, editor of UFO magazine, describes a meeting weeks earlier between six civilian researchers and “10 personnel from Army, Air Force and Navy at the Ministry of Defense of Brazil”, which promised them an open channel to the armed forces."
+    speaker: aj-gevaerd
   - t: "12:55"
     text: "Gevaerd says Brazil was “one of the first countries in the world to officially admit” the visitations, in 1954, and that the Air Force ran a UFO investigation system from 1969 to 1972."
+    speaker: aj-gevaerd
   - t: "15:15"
     text: "Gevaerd on the Brazilian Air Force's “Operation Saucer” (Operação Prato) of 1977 in the Amazon: over 500 photographs and 16 hours of film of UFOs, some at close range."
+    speaker: aj-gevaerd
     refs: [ inc-operacao-prato-1977 ]
     claims: [ colares-craft-observed ]
     basis: relayed
   - t: "16:32"
     text: "Gevaerd says the operation's commander chose him to give an interview “20 years after it was ended”, describing the mission in detail. The commander was Col. Uyrangê Hollanda."
+    speaker: aj-gevaerd
     refs: [ inc-operacao-prato-1977, uyrange-hollanda ]
   - t: "18:57"
     text: "Journalist Antonio Huneeus on Chile's official committee “known as CEFAA”, set up in 1997 under the civil aviation authority rather than the air force, because UFOs can be a risk to air safety."
+    speaker: antonio-huneeus
     refs: [ cefaa ]
   - t: "24:47"
     text: "Huneeus quotes CEFAA's director Gen. Ricardo Bermúdez on a case seen by two airliners approaching Santiago and a navy aircraft: “Three airplanes the same phenomenon.”"
+    speaker: antonio-huneeus
     refs: [ cefaa ]
   - t: "26:26"
     text: "He describes the “El Bosque” case, an object caught on several videos of the Chilean Air Force's air parade at the academy in Santiago, released by Gen. Bermúdez."

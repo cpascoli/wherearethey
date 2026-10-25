@@ -6,20 +6,26 @@ youtube: 7X_vT18mboI
 date: 2013
 rel:
   - [ recording of, h-2013-citizen-hearing ]
+  - [ features, robert-wood ]
   - [ features, steven-greer ]
 moments:
   - t: "4:32"
     text: "Aerospace engineer Robert Wood says that after he told two McDonnell Douglas executives in the late 1960s that UFOs were real craft, one asked “how much would it cost to take a look at that question”, and a small low-key project began."
+    speaker: robert-wood
   - t: "5:24"
     text: "Wood says the project interviewed an abductee, tried to devise physics allowing faster-than-light travel, built an instrumented van to chase sightings and “spun magnets in space to try to change their weight it didn't change”."
+    speaker: robert-wood
   - t: "5:56"
     text: "Wood says he was invited to testify at the 1968 House Science and Astronautics Committee “symposium on unidentified flying objects” but declined, having no breakthroughs to report."
+    speaker: robert-wood
     refs: [ h-1968-07-29 ]
   - t: "8:15"
     text: "Wood says a sensitive remote-viewing project he managed was funded by “james s mcdonald” (James S. McDonnell), the company's CEO, from his foundation."
+    speaker: robert-wood
     refs: [ remote-viewing ]
   - t: "9:01"
     text: "Wood says he read a classified version of the report on the Iranian Air Force F-4 pilot “attempting to fire a missile at a ufo only to have his control shut down” as he thought about firing."
+    speaker: robert-wood
     refs: [ inc-tehran-1976 ]
     claims: [ tehran-1976-object ]
     basis: relayed

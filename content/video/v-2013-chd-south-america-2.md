@@ -6,16 +6,20 @@ youtube: QH6boSEfo0U
 date: 2013
 rel:
   - [ recording of, h-2013-citizen-hearing ]
+  - [ features, antonio-huneeus ]
+  - [ features, aj-gevaerd ]
   - [ features, anthony-choy ]
   - [ features, oscar-santa-maria ]
 moments:
   - t: "8:41"
     text: "A. J. Gevaerd says Operação Prato began because people around Colares could not leave and “over a thousand people were attacked” by lights during that period, so community leaders asked the state of Pará for help."
+    speaker: aj-gevaerd
     refs: [ inc-operacao-prato-1977 ]
     claims: [ uap-injuries ]
     basis: relayed
   - t: "10:17"
     text: "Gevaerd says that during the four-month operation “u.s military u.s intelligence were visiting those areas”, according to its commander."
+    speaker: aj-gevaerd
     refs: [ inc-operacao-prato-1977 ]
   - t: "15:40"
     text: "Operação Prato “started in in september 1977” and ended in December 1977, Gevaerd says."
@@ -47,11 +51,13 @@ moments:
     refs: [ inc-la-joya-1980 ]
   - t: "44:37"
     text: "Gevaerd describes the beams of light that attacked people and animals around Colares, and craft “like a can” with “two human-like creatures inside of it”."
+    speaker: aj-gevaerd
     refs: [ inc-operacao-prato-1977 ]
     claims: [ uap-injuries, colares-craft-observed ]
     basis: relayed
   - t: "45:57"
     text: "Gevaerd says the Brazilian Air Force has released “only 440 pages of a total of 2 000 pages” produced by Operação Prato."
+    speaker: aj-gevaerd
     refs: [ inc-operacao-prato-1977 ]
   - t: "47:34"
     text: "He says the commander, Col. Uyrangê Hollanda, told him over two days of interviews that he and his men had “a close encounter with the creatures”."
@@ -60,11 +66,13 @@ moments:
     basis: relayed
   - t: "58:58"
     text: "Gevaerd on Varginha 1996: a craft crashed and “at least two creatures were captured”, and “u.s doctors were sent by the u.s consulate in sao paulo”."
+    speaker: aj-gevaerd
     refs: [ inc-varginha-1996 ]
     claims: [ varginha-beings-captured ]
     basis: relayed
   - t: "1:01:55"
     text: "Antonio Huneeus on the 1978 object that fell on the Bolivia–Argentina border: FOIA files include “a telex from secretary of state cyrus vance” and a Project Moon Dust visit by defense attaché officers from La Paz."
+    speaker: antonio-huneeus
   - t: "1:28:14"
     text: "Col. Ariel Sánchez says that in 1993 small luminous spheres in Uruguay left marks whose soil, in laboratory tests, showed a loss of “phosphorus zinc” and other elements."
   - t: "1:40:18"

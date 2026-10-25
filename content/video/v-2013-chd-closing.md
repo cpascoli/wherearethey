@@ -6,6 +6,7 @@ youtube: AdPBanWpQco
 date: 2013
 rel:
   - [ recording of, h-2013-citizen-hearing ]
+  - [ features, richard-dolan ]
   - [ features, john-burroughs ]
   - [ features, jim-penniston ]
   - [ features, paul-hellyer ]
@@ -38,10 +39,12 @@ moments:
     speaker: paul-hellyer
   - t: "32:05"
     text: "Historian Richard Dolan concludes that the cover-up has “long ago gravitated away from formal presidential authority into international and private hands”."
+    speaker: richard-dolan
     claims: [ programs-hidden-from-congress ]
     basis: opinion
   - t: "50:49"
     text: "Dolan relays a source of “absolutely impeccable” credentials: after a briefing, a president was seen with his “head in his hands elbows on the desk and weeping”, later telling a family member “i have a daughter”."
+    speaker: richard-dolan
   - t: "1:19:47"
     text: "Closing, former congressman Roscoe Bartlett suggests the decision to keep the subject secret may have gone to the president's office “within a few hours after” the July 1947 Roswell press release, out of fear of panic."
     refs: [ inc-roswell-1947 ]

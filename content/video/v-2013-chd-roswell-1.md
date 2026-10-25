@@ -6,35 +6,46 @@ youtube: uhV_m_BH8Po
 date: 2013
 rel:
   - [ recording of, h-2013-citizen-hearing ]
+  - [ features, kevin-randle ]
+  - [ features, donald-schmitt ]
+  - [ features, stanton-friedman ]
   - [ features, jesse-marcel-jr ]
 moments:
   - t: "3:51"
     text: "Researcher Donald Schmitt: on 8 July 1947 Roswell Army Air Field announced it “had captured a flying saucer on a ranch north of town”; within five hours the story had become a weather balloon."
+    speaker: donald-schmitt
     refs: [ inc-roswell-1947 ]
   - t: "6:54"
     text: "Schmitt says that, after Rep. Steven Schiff's inquiry, the Pentagon added Project Mogul and then crash-test dummies, so that “we now have four official versions of one historic event”."
+    speaker: donald-schmitt
     refs: [ inc-roswell-1947, doc-gao-roswell-1995, doc-af-roswell-case-closed-1997 ]
   - t: "9:37"
     text: "Schmitt says he and Tom Carey have “interviewed over 600” people directly or indirectly involved, for four books on Roswell."
+    speaker: donald-schmitt
     refs: [ inc-roswell-1947 ]
   - t: "14:14"
     text: "Nuclear physicist Stanton Friedman says “there were at least three flying saucer crashes in new mexico” in early July 1947, including one near Corona."
+    speaker: stanton-friedman
     refs: [ inc-roswell-1947 ]
     claims: [ roswell-crashed-craft ]
     basis: opinion
   - t: "15:43"
     text: "Friedman recalls how the modern Roswell story began: in 1978 a TV station manager in Baton Rouge told him “the guy you really ought to talk to is jesse marcel he handled the wreckage”, and he phoned Marcel the next day."
+    speaker: stanton-friedman
     refs: [ inc-roswell-1947 ]
   - t: "25:54"
     text: "Retired Lt. Col. Kevin Randle says the rancher's son Bill Brazel later found pieces at the site, including a wire that carried light end to end, “which of course is fiber optics”, and foil that unfolded itself."
+    speaker: kevin-randle
     refs: [ inc-roswell-1947 ]
     claims: [ roswell-crashed-craft ]
     basis: relayed
   - t: "26:30"
     text: "Randle says the base provost marshal, Maj. “edwin easley”, believed he had promised the president not to talk, and that Easley confirmed the rancher had been held at the base."
+    speaker: kevin-randle
     refs: [ inc-roswell-1947 ]
   - t: "32:27"
     text: "Randle disputes the Air Force's Mogul explanation: the diary of project leader Albert Crary says “flight number four had been canceled”, the very flight the Air Force blamed."
+    speaker: kevin-randle
     refs: [ inc-roswell-1947, doc-af-roswell-case-closed-1997 ]
     claims: [ roswell-crashed-craft ]
     basis: documented
@@ -68,6 +79,7 @@ moments:
     basis: relayed
   - t: "1:22:46"
     text: "Schmitt cites Brig. Gen. Arthur Exon of Wright Field's testing division, who said there was “a unanimous consensus that the materials had to be from space”."
+    speaker: donald-schmitt
     refs: [ inc-roswell-1947, wright-patterson-afb ]
     claims: [ roswell-crashed-craft ]
     basis: relayed
@@ -80,6 +92,7 @@ moments:
     basis: relayed
   - t: "1:30:06"
     text: "Schmitt relays the sheriff's granddaughter: her grandmother told her the military warned Sheriff Wilcox “we will kill you and we will kill your family” if he talked."
+    speaker: donald-schmitt
     refs: [ inc-roswell-1947 ]
   - t: "1:33:46"
     text: "Pressed for any 1947 record of bodies, Randle concedes: “we have no documentation from that time frame”, only people who spoke about it later."
@@ -89,6 +102,7 @@ moments:
     basis: opinion
   - t: "1:39:05"
     text: "Schmitt says that when Maj. Marcel demanded to see the counter-intelligence report, Capt. Sheridan Cavitt replied “it's out of my hands take it up with washington”."
+    speaker: donald-schmitt
     refs: [ inc-roswell-1947 ]
 ---
 

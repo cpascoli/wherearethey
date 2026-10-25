@@ -6,6 +6,7 @@ youtube: U4UjBev0XJw
 date: 2013
 rel:
   - [ recording of, h-2013-citizen-hearing ]
+  - [ features, richard-dolan ]
   - [ features, linda-moulton-howe ]
 moments:
   - t: "4:19"
@@ -42,6 +43,7 @@ moments:
     refs: [ cia ]
   - t: "38:50"
     text: "Historian Richard Dolan argues that decades of secret research on recovered technology may have created within the classified world “a breakaway” society far ahead of public science."
+    speaker: richard-dolan
     claims: [ recovered-non-human-craft ]
     basis: opinion
   - t: "41:43"

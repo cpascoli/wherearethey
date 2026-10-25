@@ -6,6 +6,7 @@ youtube: UDu3FlK-mI0
 date: 2013
 rel:
   - [ recording of, h-2013-citizen-hearing ]
+  - [ features, richard-dolan ]
   - [ features, bob-salas ]
   - [ features, david-schindele ]
   - [ features, bruce-fenstermacher ]
@@ -61,6 +62,7 @@ moments:
     speaker: bruce-fenstermacher
   - t: "55:00"
     text: "Dolan cites FBI documents of January 1949 and August 1950 on repeated sightings over Los Alamos, including green fireballs, with some 150 observations by mid-1950, and teletypes on radar unknowns over Oak Ridge in 1950."
+    speaker: richard-dolan
   - t: "1:12:01"
     text: "Asked why he speaks despite his oath, Salas says he kept silent for nearly 30 years until a 1994 book mentioned the Malmstrom shutdowns; a FOIA request then led the Air Force to declassify the Echo incident."
     speaker: bob-salas

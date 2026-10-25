@@ -6,6 +6,8 @@ youtube: JBSzRZleXJs
 date: 2013
 rel:
   - [ recording of, h-2013-citizen-hearing ]
+  - [ features, antonio-huneeus ]
+  - [ features, grant-cameron ]
   - [ features, roberto-pinotti ]
   - [ features, nick-pope ]
 moments:
@@ -22,14 +24,17 @@ moments:
     text: "The president of the “world chinese ufo federation” says China has “tens of millions” of UFO enthusiasts and that many Chinese scholars are convinced UFOs and aliens exist."
   - t: "28:07"
     text: "Grant Cameron says Wilbert Smith, head of Canada's Project Magnet, was asked how much material the Americans had handled and “replied tons of it”."
+    speaker: grant-cameron
     refs: [ project-magnet ]
     claims: [ recovered-non-human-craft ]
     basis: relayed
   - t: "29:47"
     text: "Cameron shows Smith's notes of his September 1950 interview with U.S. scientist Robert Sarbacher at the Canadian embassy, which begins with “scully's book” on crashed saucers and how much of it is true."
+    speaker: grant-cameron
     refs: [ project-magnet ]
   - t: "31:55"
     text: "Cameron says a later letter from Sarbacher confirmed “that the americans did have bodies and they did have a craft”, as he had heard from scientists returning from Wright-Patterson meetings."
+    speaker: grant-cameron
     refs: [ project-magnet, wright-patterson-afb ]
     claims: [ recovered-non-human-bodies, recovered-non-human-craft ]
     basis: relayed
@@ -54,18 +59,22 @@ moments:
     refs: [ uk-national-archives ]
   - t: "47:01"
     text: "Antonio Huneeus on France: GEPAN's first statistical study, of “354 ufo cases” collected by the Gendarmerie, left 25% unexplained."
+    speaker: antonio-huneeus
     refs: [ geipan ]
   - t: "48:33"
     text: "Huneeus says GEPAN's study of the 1981 Trans-en-Provence landing found young plants at the site had become “biochemically old”."
+    speaker: antonio-huneeus
     refs: [ inc-trans-en-provence-1981, geipan ]
   - t: "49:58"
     text: "Huneeus on the 1999 “cometa report”, *UFOs and Defense: What Should We Prepare For?*, by former French defence officials."
+    speaker: antonio-huneeus
     refs: [ 255-413270-ufo-s-and-defense-what-should-we-prepare-for ]
   - t: "53:31"
     text: "He cites UFO sightings over a nuclear missile base near “usovo ukraine” that coincided with a malfunction of the launch-control console, similar to Malmstrom."
     refs: [ inc-usovo-1982 ]
   - t: "54:14"
     text: "Huneeus notes the U.S.–Soviet nuclear accidents agreement, signed on “september 30 1971”, which commits each side to notify the other of unidentified objects detected by warning systems."
+    speaker: antonio-huneeus
   - t: "1:01:38"
     text: "Asked his own view, Pope says the evidence does not go quite far enough for him to say “i am absolutely sure we're being visited”, but is compelling enough to make it a possibility."
     speaker: nick-pope
