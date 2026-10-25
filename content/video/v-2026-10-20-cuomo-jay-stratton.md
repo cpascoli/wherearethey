@@ -13,6 +13,10 @@ moments:
     text: "Asked whether he has seen an intelligent life form that is not human: “I have, and I go into great detail in my book”, in the line of duty from the DIA's original UAP program through the UAP Task Force, 2005 to the 2020s."
     speaker: jay-stratton
     refs: [ uaptf ]
+  - t: "1:55"
+    text: "Stratton: his account covers what he saw in the line of duty from DIA's “original UAP program called OSAP, all the way through the UAP task force”, from 2005 into the 2020s."
+    speaker: jay-stratton
+    refs: [ aawsap, uaptf ]
   - t: "2:31"
     text: "Asked whether he has seen a body, or something that looked like it could be alive and sentient: “Absolutely.”"
     speaker: jay-stratton

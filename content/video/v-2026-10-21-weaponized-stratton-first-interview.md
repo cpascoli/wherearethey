@@ -16,6 +16,22 @@ moments:
     text: "Knapp: in the book Stratton acknowledges he is \"Axelrod\", the intelligence official in Skinwalkers at the Pentagon whose family experienced phenomena at home after visiting Skinwalker Ranch."
     speaker: george-knapp
     refs: [ book-skinwalkers-at-the-pentagon, jay-stratton, skinwalker-ranch ]
+  - t: "14:59"
+    text: "George Knapp: Stratton, on loan from the Office of Naval Intelligence to DIA, worked with James Lacatski and “came up with the idea for OSAP” (AAWSAP); he did its very first investigation, of the Tic Tac, interviewing the key witnesses."
+    speaker: george-knapp
+    refs: [ jay-stratton, james-lacatski, aawsap, inc-nimitz-2004 ]
+  - t: "15:24"
+    text: "Knapp: after AAWSAP, Stratton “reignited a sort of a working group that came to be known as ATIP”, with Elizondo, who would have been its counterintelligence officer had it become a special access program."
+    speaker: george-knapp
+    refs: [ jay-stratton, aatip, luis-elizondo ]
+  - t: "16:18"
+    text: "Knapp: after the 2017 New York Times story, Stratton's superiors asked for briefings, and “they casually created what later became the UAP task force”, with Stratton as its first director."
+    speaker: george-knapp
+    refs: [ jay-stratton, uaptf, ev-nyt-2017 ]
+  - t: "17:08"
+    text: "Knapp: “he was the only person I know of that was OSAP, ATIP and UAP task force.”"
+    speaker: george-knapp
+    refs: [ jay-stratton, aawsap, aatip, uaptf ]
   - t: "20:01"
     text: "On the Gimbal and GoFast videos and the \"sphere with a cube\" Lt. Graves saw: \"those things came across my desk. I was the first one to get them in the Pentagon because it was my job\"; he took them to Air Force colleagues to rule out U.S. systems."
     speaker: jay-stratton

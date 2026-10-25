@@ -13,6 +13,7 @@ tags:
   - military
   - aviator
 rel:
+  - [ followed by, uaptf, "Insiders say the same people carried the work on: Jay Stratton, who helped start AAWSAP and the AATIP working group, became the Task Force's first director (George Knapp; Stratton). AARO's history presents the Task Force as a new, Navy-led organization approved in August 2020." ]
   - [ another name for, aawsap, "AARO: “The names AAWSAP and AATIP have been used interchangeably for the name of this program”" ]
 facts:
   - text: "AARO's historical report says DIA established AAWSAP in 2009, “which was also known AATIP”, and that the two names “have been used interchangeably for the name of this program, including on official documentation.”"

@@ -29,6 +29,14 @@ moments:
     text: "Lacatski says AARO's deputy director told him “Kona Blue was established as the home for all these paranormal UFO crap”, and that “we're all being played like a fiddle”, by what he calls a repeated counterintelligence operation."
     speaker: james-lacatski
     refs: [ kona-blue, aaro ]
+  - t: "27:42"
+    text: "Asked by the host whether AARO is a disinformation campaign, Lacatski answers: “I wouldn't use the word completely lying. That's not how counterintelligence works. There's some truth. There's some false.”"
+    speaker: james-lacatski
+    refs: [ aaro ]
+  - t: "28:37"
+    text: "Host Jeremy Corbell sets out the lineage as he sees it: AAWSAP's work dismissed, Stratton's UAP Task Force “goes away”, an interim program, and then AARO, “directly opposite of all the work that was before it”."
+    speaker: jeremy-corbell
+    refs: [ aawsap, uaptf, aoimsg, aaro ]
   - t: "33:24"
     text: "Lacatski: the program stopped after its second year because BAASS “was too successful”; Senator Reid told him on a secure line that he could not give the money that year because of the 2010 election, and the technical work passed to another Pentagon unit."
     speaker: james-lacatski

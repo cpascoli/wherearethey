@@ -36,10 +36,22 @@ moments:
     text: "Kelleher: the retrofitting of Bigelow's buildings was required by the contract to obtain facility security clearances, audited regularly, “a very different thing from … building a hangar outside Wright-Patterson Air Force Base in order to receive a craft”."
     speaker: colm-kelleher
     refs: [ aawsap, wright-patterson-afb ]
+  - t: "55:41"
+    text: "Asked whether AARO uses AAWSAP's case database, Lacatski says AARO has not contacted them, but “the lead of the UAP task force from whence Arrow evolved did have it.”"
+    speaker: james-lacatski
+    refs: [ uaptf, aaro, aawsap ]
+  - t: "57:27"
+    text: "Kelleher: the handover from the original UAP Task Force to AOIMSG and then AARO happened “under completely different leadership and completely different circumstances”, and was “very abrupt”, with leadership moving into the intelligence under-secretary's office."
+    speaker: colm-kelleher
+    refs: [ uaptf, aoimsg, aaro, aawsap ]
   - t: "57:52"
     text: "Kelleher: the UAP Task Force “had access to the … electronic version of the OSAP database”, but he has no personal knowledge that AOIMSG or AARO used it."
     speaker: colm-kelleher
     refs: [ uaptf, aaro ]
+  - t: "1:02:25"
+    text: "One of the authors, on their book: “The only difference between OSAP and what has been mandated by Congress for Arrow is the high cost censors” (sensors), which AAWSAP could not afford."
+    refs: [ aawsap, aaro ]
+
 ---
 
 James Lacatski and Colm Kelleher with George Knapp and Jeremy Corbell on WEAPONIZED, ten days after their second book, *Inside the US Government Covert UFO Program: Initial Revelations*, came out in October 2023. Lacatski confirms the book's chapter 9 statement that the U.S. holds a craft of unknown origin and accessed its interior, explains where the name AATIP came from, and Kelleher sets out how the two books divide the program's work. Transcribed with Whisper.

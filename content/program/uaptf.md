@@ -12,7 +12,6 @@ tags:
   - navy
   - intelligence
 rel:
-  - [ related to, aatip, "Often described as continuing AATIP's work; AARO presents the task force as a new organization approved in August 2020" ]
   - [ succeeded by, aoimsg ]
   - [ run by, ousd-is ]
   - [ run by, oni ]
