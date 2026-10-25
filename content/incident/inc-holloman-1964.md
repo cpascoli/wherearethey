@@ -42,7 +42,14 @@ facts:
     by: eric-davis
     said: 2025-11-21
     source: https://nypost.com/2025/11/22/us-news/president-george-hw-bush-knew-of-1964-alien-contact-with-humans-in-new-mexico-documentary/
-  - text: "In a 2024 interview Davis said Bush learned of the event, which Davis placed in the early 1960s, as incoming CIA director, from a Pentagon liaison officer who wrongly assumed he had been briefed; the main evidence was a film, which Bush was refused. The New York Post's account of the film has Bush informed after his presidency."
+  - text: "In the film, Davis also says Bush told him that as CIA director in the Ford administration he “was not briefed on the legacy UAP crash retrieval program, but he later found out about it”, and that “there were a number of crash retrievals that had taken place since the uh mid 1940s”."
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
+    status: claimed
+    by: eric-davis
+    said: 2025-11-21
+    source: v-2025-11-23-eric-davis-says-president-george-h-w-bush-told-hi@0:08
+  - text: "In a 2024 interview Davis said Bush learned of the event, which Davis placed in the early 1960s, as incoming CIA director, from a Pentagon liaison officer who wrongly assumed he had been briefed; the main evidence was a film, which Bush was refused. In the film he says instead that Bush was not briefed as CIA director and found out later; the New York Post's account has Bush informed after his presidency."
     status: claimed
     by: eric-davis
     source: v-jm-eric-davis@22:00
