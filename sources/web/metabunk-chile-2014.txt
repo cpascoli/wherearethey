@@ -1,0 +1,1056 @@
+SOURCE: https://www.metabunk.org/goto/post?id=198347
+FETCHED: 2026-10-25
+
+ 
+Home
+ 
+Forums
+ 
+What's new
+ 
+Members
+ 
+Info
+ 
+How To
+ 
+Posting Guidelines
+ 
+Log in
+Register
+New posts
+Forums 
+Metabunk 
+Skydentify - What is that Thing in the Sky? 
+Explained: Chilean Navy "UFO" video - Aerodynamic Contrails, Flight IB6830
+ 
+Thread starter
+Mick West  
+Start date
+Jan 6, 2017  
+Tags
+ufo
+1
+	
+2
+	
+3
+	
+…
+	
+6
+ Next
+Mick West
+Administrator
+Staff member
+Jan 6, 2017
+#1
+
+If you are short on time, then I made a one minute video explaining this:
+
+
+Source: https://www.youtube.com/watch?v=2bFfuIidCK0
+
+Background: Infrared footage from the Chilean Navy appears to show some kind of flying object that briefly leaves a trail behind it.
+
+http://www.huffingtonpost.com/entry..._us_586d37bce4b014e7c72ee56b?lciacn1ruwjkmx6r (.", "\.)
+
+External Quote:
+At 1:52 pm, while filming the terrain, the technician observed a strange object flying to the left over the ocean. Soon both men observed it with the naked eye. They noticed that the velocity and the altitude of the object appeared to be about the same as the helicopter, and estimated that the object was approximately 35 to 40 miles (55-65 km) away. It was traveling W/NW, according to the Captain. The technician aimed the camera at the object immediately and zoomed in with the infrared (IR) for better clarity.
+(Full footage can be seen here)
+
+This looks like a plane, flying away from the camera considerably higher than the helicopter (somewhere around 15,000 to 25,000 feet), which briefly creates an aerodynamic contrail.
+
+Based on analysis by @Trailblazer, @Trailspotter, myself, and others, There were only two planes possibly involved: IB6830 and LA330. The plane that initially seems to fit best is LA330, a two-engined A320, which was reported to be climbing through 20,000 feet at that exact visual position at 14:01:39.
+
+https://planefinder.net/flight/LXP330/time/2014-11-11T17:01:39 UTC/speed/15.00^
+
+While this seemed like a good fit just based on this overhead view, subsequent 3D analysis revealed that IB6830 (a four-engined A340) is actually a perfect match. IB6830 left earlier and was climbing out more to the south, nearer to the helicopter. At the time this was spotted (the very first sighting on the video, at 13:52:34) IB6830 was actually around 35 miles away. However it would very quickly get further away. By 13:57 IB6830 would be 65 miles away. This explains why it was not seen on radar (IB6830 was on radar, just not where they thought it was)
+
+Initially, I had to extract the data for the track from Planefinder, but then I located the FlightAware GPS track. Using this, multiple other examples of IB6830's departure, and the official departure charts, I was able to create a track in google earth using actual GPS coordinates (blue) and estimated positions (orange).
+
+
+
+Since we have timestamped GPS locations, we can now geolocate IB6830 and LA330 in Google Earth, and create views of frames from the helicopter video using the coastline and mountains to get the exact heading.
+
+IB6830 is in exactly the right position. We can position both the planes and the chopper precisely with the GPS data, match the camera direction from the wide shot, and the position of IB6830 then matches exactly.
+
+
+
+Here's a video showing how it matches up:
+
+
+Source: https://www.youtube.com/watch?v=Uoqxr6AI7VQ
+
+The two large blobs are glares, images from the heat of the engines (much smaller in reality). You can see this effect with some candles if you view them from a distance with an IR camera. I used the FLIR ONE to do this:
+
+(Here's a video of the above experiment)
+
+We can see how large the glares look at various stages of the path.
+
+
+The flaring is more apparent if you look at it uninverted. The engines appear as two very bright lights
+
+
+The aerodynamic contrail starts and stops in a similar way to the trail in this video (not a "chemtrail" though, this just a regular aerodynamic contrail)
+
+
+Source: https://www.youtube.com/watch?v=cjy0NcUCTEc
+
+
+
+There are a few different relevant images from the video:
+
+This is a close-up of the object early in the video, and then a few frames later when the camera changes zoom, causing motion blur.
+
+This shows that the plane is banked at this point - i.e. it is turning to the right. This matches the part of the track for IB6830 where it turns to the north, based on the time. The engine configuration is a perfect match. In the motion blurred frame on the right, the positions of the individual engines are clearly delineated. As shown earlier, it's also a perfect match for the plane's size and distance.
+
+Compare it with this video of a plane taking off. It is much closer, however at the end of the video you see the two engines tilted at about the same angle as the "UFO" while the plane turns right.
+
+
+
+At one point (9:08) they switch between the IR camera and a regular (visible light) camera. you can see the trail quite distinctly. It looks very like a contrail.
+
+
+
+
+Why is it showing up as warmer? Aerodynamic contrails are essentially clouds, and at this altitude, they will be ice clouds, below freezing. They show up as darkly colored for the same reason that other clouds in the scene show up dark. It's simply the camera adjusting the exposure for the very cold sky. The engines are small so they don't affect the exposure much (and hence they glare). So the net result is that anything warmer than radiation coming from a clear sky will appear dark.
+
+
+A few seconds later
+
+
+
+It also seems a bit odd that there is very little change in the heading and elevation angles in the video. This becomes clear if you look at the angles and distances involved
+
+View attachment 24067
+
+The thin white lines here connect the chopper and the plane at equal times, as you can see the heading angle between them does not change much.
+
+The altitude of the plane varies from ~5000m to 9000m, while the distance varies from 70km to 170km, the chopper is about 1400m, we can draw a diagram to see the angles
+View attachment 24069
+
+As you can see there is very little change from the start (2.93°) to the end (1.94). Basically, it should vary from about 3° to about 2° (appearing to be descending faster at the start)
+
+[Note: this top post will be updated with information from the discussion below, so some of what follows may seem repetitive]
+
+References: IPACO Report^
+
+Frequently Asked Questions
+
+Q: If it was a plane then why did it not respond to hailing
+A: A pilot familiar with Santiago departure responds:
+
+TWCobra said:
+The helicopter seems to have tried to call on 121.5. There are a couple of problems with that, Most aircraft don't set that frequency until some time after takeoff which can vary from airline to airline, and if they were listening, unless whoever was calling used their callsign, they wouldn't respond.
+
+Q: Why did it not show up on radar?
+They were looking for a low flying object south of the airport about 35 miles away, by the time they looked it was at a high altitude and 65 miles away. The plane actually does show up on radar in data supplied by CEFAA
+
+Q: How can it be a contrail cloud if it's as hot as the engine?
+A: It's not as hot as the engines, it's a similar color in the IR to other clouds in the images. It's just a dense cloud which is a lot warmer than the far background sky. Even if they were dumping boiling water it would have been atomized by the 300 mph wind into a cloud and cooled to ambient temperature in seconds.
+
+Q: Don't contrails only form above 30,000 feet?
+A: That's where exhaust contrails are most frequent. However, this looks exactly like a semi-persistent aerodynamic contrail which often form on climbing aircraft between 20,000 to 30,000 feet (and sometimes lower).
+
+Q: Why did you change from LA330 to both LA330 and IB6830 and then to just IB6830?
+There were only ever two possible planes. LA330 looked better when simply viewing the tracks from above. But later 3D recreation showed that IB6830 (flying a similar path) was a better fit. LA330 still looked like a good fit for the final shot, but more detailed analysis of the path eventually showed it could only be IB6830
+
+Q: Why should we trust your theory over the experts?
+A: I could argue I'm an expert too (at identifying planes and contrails), or that the CEFAA lacks expertise in some areas, or that even experts make mistakes. However let's drop that "argument for authority", and look at facts you can verify yourself.
+
+We have some very solid verifiable evidence in
+
+The helicopter video with timestamps and GPS coordinates.
+The IB6830 ADS-B track with timestamps and GPS coordinates.
+1 matches 2 in every way
+
+IB6830 is in the right place at the right time
+IB6830 is going in the right direction
+IB6830 banks when the "UFO" banks,
+IB6830 would create a visual thermal signature the same size as in the video.
+IB6830 engine configuration matches the glares seen in the banking and then climbing
+The size of IB6830's thermal signature shrinks proportional to its distance, matching the video.
+Contrails derived from the IB6830's track would have the same apparent size as in the video.
+This is not my theory. These are verifiable facts that I (and others) simply discovered. Unless there was a UFO flying between the plane and the helicopter, mimicking the motion, the banking, the size and and the thermal signature of the plane, then it's a plane.
+
+See also:
+
+Explained: Contrails Appear "Hot" in Thermal Imaging because the Sky Appears Very Cold
+Recreating the missing section of IB6830's ADS-B track
+Huffington post update:
+http://www.huffingtonpost.com/entry...deo-is-it-a-plane_us_587e7277e4b06a0baf6490ef (http://archive.today/gC6Q3)
+ 
+Attachments
+IB 6830.kml
+2.9 KB · Views: 2,328
+LA330.kml
+2.8 KB · Views: 2,465
+FlightAware_IBE6830_SCEL_LEMD_20141111.kml
+11.2 KB · Views: 2,254
+Chile Chopper Track from video GPSTime.kmz
+922 bytes · Views: 2,415
+IBE6830 FlightAware plus Reconstructed.kml
+6 KB · Views: 528
+Last edited: Jan 16, 2023
+Reactions:
+Efftup, Bass In Your Face, Jan Robert Johnsen and 8 others
+Henk001
+Senior Member.
+Jan 6, 2017
+#2
+Mick West said:
+Why is it showing up as warmer? Aerodynamic contrails can form in air is that is water saturated, but in which no clouds have yet formed. The drop in pressure increases the relative humidity enough for a water condensation cloud to form. This can also freeze if the temperature is cold enough.
+Condensation in itself releases heat, although I don't know if that would show up like this in an IR-camera. Also the water (vapour) might reflect more IR-radiation than the surrounding thin clouds that appear to be there. Just speculating...
+ 
+Reactions:
+Mick West
+Mick West
+Administrator
+Staff member
+Jan 6, 2017
+#3
+Henk001 said:
+Condensation in itself releases heat, although I don't know if that would show up like this in an IR-camera. Also the water (vapour) might reflect more IR-radiation than the surrounding thin clouds that appear to be there. Just speculating...
+
+I considered both of those. With the latent heat of condensation, it's the surrounding air that warms up, not the water droplets. And air itself is generally not visible on IR. If the hot exhaust is not visible, then ar warmed by condensation is not going to be.
+
+Reflection is much more plausible. in this image:
+
+The clouds in the background and foreground is also darker. So maybe something to do with the clouds reflecting the heat of the land.
+ 
+Reactions:
+Ross Marsden and Henk001
+Mick West
+Administrator
+Staff member
+Jan 6, 2017
+#4
+What would be useful here is IR footage of planes and contrails from a similar distance. Also example of IR flaring. Here's a start:
+
+
+Source: https://www.youtube.com/watch?v=L5NSm6GpvBI
+
+
+
+Most of the "UFO" footage is shot inverted, so you see:
+
+
+
+And the engines are so bright that at this distance they flare up, so you see more like:
+
+
+Or in the video:
+
+ 
+Last edited: Jan 7, 2017
+Trailblazer
+Moderator
+Staff member
+Jan 7, 2017
+#5
+Planefinder.net has playback for the day in question.
+
+The footage is dated 11 November 2014 at 1400 local time (UTC-3). The coordinates are here:
+
+
+
+The heading on the footage seems to indicate that the view was slightly east of north (010 degrees) although it looks more like northeast based on the curve of coastline visible here, which seems to match the large bay heading round towards San Antonio:
+
+
+
+There was a plane that had recently taken off from Santiago and was heading northwards at that time (screenshot is at 1700UTC / 1400 local time)
+
+
+
+It looks much too far away (over 140 miles) if the times are accurate on both the footage and the playback, but without knowing the level of zoom involved in the helicopter footage it is hard to say. I doubt that the observer would be out on the distance by a factor of three or four, though.
+
+There was also a slightly later flight climbing out of Santiago on a more westerly track which would have been about 60 miles away in the right direction at 1415 local time. That is not much further than the officer's estimate of "approximately 35 to 40 miles (55-65 km) away", and heading NW which also matches his description:
+
+
+
+We still have the problem of the time not matching, though. That flight had not taken off by 1:52pm, when the UFO was first observed, assuming the Planefinder playback is correct.
+
+However, it looks as if that is a fairly standard departure route out of Santiago, with a southerly takeoff and then a turn to the northwest, so it's possible there could have been an earlier untracked flight which would have been in the right place at the right time to match the UFO.
+
+
+EDIT: see post below. I had a filter set on the Planefinder site so not all flights were visible. There was in fact a flight that seems to fit the video very well.
+ 
+Last edited: Jan 7, 2017
+Reactions:
+Henk001 and Mick West
+Sagittarius
+Member
+Jan 7, 2017
+#6
+The Chilean government [French company ipaco] are almost certain it was a plane: http://www.ipaco.fr/ReportChileanNavyCEFAA.pdf
+
+
+External Quote:
+Conclusion The object observed in the video was most probably a medium-haul twin jet airliner in a landing phase, flying ahead of the helicopter at a higher velocity, with a low altitude and a low velocity, in view of landing. One possible sketch of its route is the following:
+
+
+
+The "white oval" effect was quite possibly due to halation through the atmosphere, mainly from illumination of a white fuselage roof. The pilot, perhaps not being aware of quite how far away the target was, could be subject to this illusion. The effluent trail observed on two occasions probably results from dumping some cabin waste water, forming a plume oriented along the local wind blowing from the west.
+ 
+Last edited by a moderator: Mar 15, 2019
+Reactions:
+Henk001 and Trailspotter
+Trailspotter
+Senior Member.
+Jan 7, 2017
+#7
+Sagittarius said:
+The Chilean government are almost certain it was a plane: http://www.ipaco.fr/ReportChileanNavyCEFAA.pdf
+External Quote:
+
+Conclusion
+
+The object observed in the video was most probably a medium-haul twin jet airliner in a landing phase, flying ahead of the helicopter at a higher velocity, with a low altitude and a low velocity, in view of landing. One possible sketch of its route is the following:
+
+
+
+I compared the proposed track of a hypothetical medium-haul twin jet airliner in a landing phase with the planefinder.net flight path of an actual long-haul airliner that took off from the Santiago Airport a few minutes earlier:
+
+A part of it, which was not tracked and replaced with dashed line, might actually coincide with the deduced path of the "UFO". It also seems possible that the two out of A340 four engines (on one side) were blocked from the camera view by the plane body with one of them occasionally pocking out and seen as a third hot spot:
+
+ 
+Last edited: Jan 7, 2017
+Mick West
+Administrator
+Staff member
+Jan 7, 2017
+#8
+Trailspotter said:
+It also seems possible that the two out of A340 four engines (on one side) were blocked from the camera view by the plane body with one of them occasionally pocking out and seen as a third hot spot:
+
+
+Kind of shoehorning it in, but that does kind of fit with a full-wing aerodynamic contrail.
+
+
+However I think that's possibly misleading, as the trail would be thicker close to the plane in an actual aerodynamic contrail. And really the angle of the fuselage would match the angle of the trail. More like:
+
+
+
+Especially when the trail is still attached to the plane. The engines appear much bigger than they actually are because they are so hot and flare in the FLIR footage.
+
+
+
+The flaring is more apparent if you look at it uninverted. The engines appear as two very bright lights
+
+
+Also it seems unlikely that the other two engines would remain hidden when the plane was banking.
+
+ 
+Last edited: Jan 7, 2017
+Reactions:
+Trailblazer
+Trailblazer
+Moderator
+Staff member
+Jan 7, 2017
+#9
+Trailspotter said:
+External Quote:
+
+Conclusion
+
+The object observed in the video was most probably a medium-haul twin jet airliner in a landing phase, flying ahead of the helicopter at a higher velocity, with a low altitude and a low velocity, in view of landing. One possible sketch of its route is the following:
+
+View attachment 23806
+
+I compared the proposed track of a hypothetical medium-haul twin jet airliner in a landing phase with the planefinder.net flight path of an actual long-haul airliner that took off from the Santiago Airport a few minutes earlier:
+View attachment 23805
+A part of it, which was not tracked and replaced with dashed line, might actually coincide with the deduced path of the "UFO". It also seems possible that the two out of A340 four engines (on one side) were blocked from the camera view by the plane body with one of them occasionally pocking out and seen as a third hot spot:
+
+
+I was wondering why I hadn't seen that flight on Planefinder, and of course it was a rookie error, I still had an altitude filter set!
+
+IMHO though it is a different flight that has perfect timing for the helicopter video at 1700 UTC:
+
+
+
+This is a twin-engined plane, an A320.
+
+
+The helicopter video momentarily shows a zoomed out view:
+
+
+
+I'm assuming that the crosshairs here show the area that is being zoomed in on in the close-up shots.
+
+I used Google Earth to place a polygon at the location and altitude of the plane at 1700UTC. It looks like quite a good match when viewed from the helicopter location:
+
+
+ 
+Last edited: Jan 7, 2017
+Reactions:
+Trailspotter and Mick West
+Mick West
+Administrator
+Staff member
+Jan 7, 2017
+#10
+A bit more on IR flaring. Here's two candles I'm using the simulate jet exhaust. Close up everything looks about the right size, there's a little flaring even here though, with visible light
+
+
+Switch to IR:
+
+
+But if we move back a bit the super strong heat source flare up, appearing much larger than they actually are. Even overlapping.
+We can invert this, and overly on the visible light image:
+
+ 
+Reactions:
+ufoofinterest
+Trailblazer
+Moderator
+Staff member
+Jan 7, 2017
+#11
+Just refining that a bit to match the stated altitude of the helicopter which is 4356ft (1383m)
+
+
+
+Compare to:
+
+
+
+
+
+As for the timing, the first tracking on Planefinder is at 1654UTC, at a height of 5,250ft. The helicopter crew first saw the plane at 1652UTC, when it would probably have only just taken off. I think the timings are just about compatible, though, if they saw the plane quite low at first. It might even be possible that the first object they saw was the earlier flight, IB6830, and then they picked up the later flight as they flew up the coast. They don't seem to keep sight of the object continuously, at least as far as the full video footage shows.
+ 
+Last edited: Jan 7, 2017
+Reactions:
+Trailspotter and ufoofinterest
+ufoofinterest
+Member
+Jan 7, 2017
+#12
+Very interesting analyses, thanks to all!
+ 
+Reactions:
+TEEJ
+Mick West
+Administrator
+Staff member
+Jan 7, 2017
+#13
+Just to verify the accuracy of the helicopter coordinates, the coordinates are south and west, so are both negative, so:
+
+
+Can be entered into Google Earth as
+-34 05 13, -71 54 33
+
+Which translates as:
+-34.086766960°
+-71.908855250°
+
+The altitude there 4530 feet is 1381m
+
+So we can stick the camera at that exact location, and adjust the heading and FOV to match the coastline, and everything lines up.
+
+ 
+
+
+Google Earth .KMZ file attached
+ 
+Attachments
+Chile Navy UFO Coast View.kmz
+2 KB · Views: 2,166
+Reactions:
+Trailspotter and Trailblazer
+Trailblazer
+Moderator
+Staff member
+Jan 7, 2017
+#14
+Mick West said:
+Just to verify the accuracy of the helicopter coordinates, the coordinates are south and west, so are both negative, so:
+
+
+Can be entered into Google Earth as
+-34 05 13, -71 54 33
+
+Which translates as:
+-34.086766960°
+-71.908855250°
+
+Just to note that my screenshot above was taken using the co-ordinates of the YouTube clip at 14:00 local time, by which time the helicopter had travelled quite a distance northwards up the coast.
+
+
+Another point in favour of the plane hypothesis: when it is first spotted on the camera it appears to be at an angle, consistent with the plane banking to the right, which is what flight LA330 did almost as soon as it took off. (Edit: I see Mick already mentioned this in post #8)
+
+
+ 
+Last edited: Jan 7, 2017
+Reactions:
+Mick West
+Efftup
+Senior Member.
+Jan 7, 2017
+#15
+Sagittarius said:
+The Chilean government are almost certain it was a plane: http://www.ipaco.fr/ReportChileanNavyCEFAA.pdf
+
+
+External Quote:
+Conclusion The object observed in the video was most probably a medium-haul twin jet airliner in a landing phase, flying ahead of the helicopter at a higher velocity, with a low altitude and a low velocity, in view of landing. One possible sketch of its route is the following:
+
+View attachment 23808
+
+The "white oval" effect was quite possibly due to halation through the atmosphere, mainly from illumination of a white fuselage roof. The pilot, perhaps not being aware of quite how far away the target was, could be subject to this illusion. The effluent trail observed on two occasions probably results from dumping some cabin waste water, forming a plume oriented along the local wind blowing from the west.
+This appears to be the analysis from some French Analysts which according to one source I found was rejected by the CEFAA as Santiago ATC couldn;t find a radar return for an object at that distance.
+
+This is almost certainly be completely wrong becaUSE IT WAS based on a few assumptions.
+The analysts here ASSUMED this helicopter has EUROFLIR- 350-3 as the French AS532s have been UPGRADED to this spec.http://www.defense-aerospace.com/ar...em-flir-for-french-special-forces-ec725s.html
+External Quote:
+Developed and produced by Sagem, the Euroflir 350 and 410 are high-performance, gyrostabilized optronic observation systems for airborne applications (helicopters, drones, maritime patrol and surveillance aircraft, etc.). The Euroflir 350 was already selected as part of the modernization package for the French army's AS532 Cougar helicopters.
+It appears the Chilean Navy actually have a DIFFERENT turrent: https://www.verticalmag.com/press-r...5-eo-ir-imaging-turret-for-chilean-navy-html/
+
+External Quote:
+L-3 Communications WESCAM (L-3 WESCAM), a wholly owned subsidiary of L-3 Communications, announced today that it has been selected by the Chilean Navy to provide an MX-15 electro-optical and infrared (EO/IR) imaging turret for the SH-32 Cougar airframe. System delivery will take place in 2006, followed by an in-country installation by Enaer, a Chilean Air Force Company. - See more at: https://www.verticalmag.com/press-r...t-for-chilean-navy-html/#sthash.MvJu1Rpm.dpuf
+ 
+Efftup
+Senior Member.
+Jan 7, 2017
+#16
+Efftup said:
+This appears to be the analysis from some French Analysts which according to one source I found was rejected by the CEFAA as Santiago ATC couldn;t find a radar return for an object at that distance.
+
+This is almost certainly be completely wrong becaUSE IT WAS based on a few assumptions.
+The analysts here ASSUMED this helicopter has EUROFLIR- 350-3 as the French AS532s have been UPGRADED to this spec.http://www.defense-aerospace.com/ar...em-flir-for-french-special-forces-ec725s.html
+External Quote:
+Developed and produced by Sagem, the Euroflir 350 and 410 are high-performance, gyrostabilized optronic observation systems for airborne applications (helicopters, drones, maritime patrol and surveillance aircraft, etc.). The Euroflir 350 was already selected as part of the modernization package for the French army's AS532 Cougar helicopters.
+It appears the Chilean Navy actually have a DIFFERENT turrent: https://www.verticalmag.com/press-r...5-eo-ir-imaging-turret-for-chilean-navy-html/
+
+External Quote:
+L-3 Communications WESCAM (L-3 WESCAM), a wholly owned subsidiary of L-3 Communications, announced today that it has been selected by the Chilean Navy to provide an MX-15 electro-optical and infrared (EO/IR) imaging turret for the SH-32 Cougar airframe. System delivery will take place in 2006, followed by an in-country installation by Enaer, a Chilean Air Force Company. - See more at: https://www.verticalmag.com/press-r...t-for-chilean-navy-html/#sthash.MvJu1Rpm.dpuf
+I will let someone else do all the hard work based on the new information. you know, all those calculations and stuff.
+
+although at least I will leave you with this datasheet: http://www.wescam.com/wp-content/uploads/PDS-MX-15-April2015.pdf
+ 
+Last edited: Jan 7, 2017
+Mick West
+Administrator
+Staff member
+Jan 7, 2017
+#17
+Trailblazer said:
+I'm assuming that the crosshairs here show the area that is being zoomed in on in the close-up shots.
+
+I used Google Earth to place a polygon at the location and altitude of the plane at 1700UTC. It looks like quite a good match when viewed from the helicopter location:
+
+
+
+The crosshairs do show the area zoomed in. There's a sequence of three shots around 14:00:20 at three zoom levels here you can overlay the visible and the IR to see some wider cloud structure, which matches what you can see around the crosshairs
+
+Your polygon seems to be a perfect match for altitude. This demonstrates that the initial Navy estimate of the altitude being the same was way off , as that's 16,000 feet there.
+
+
+ 
+Trailblazer
+Moderator
+Staff member
+Jan 7, 2017
+#18
+Mick West said:
+Your polygon seems to be a perfect match for altitude. This demonstrates that the initial Navy estimate of the altitude being the same was way off , as that's 16,000 feet there.
+
+View attachment 23836
+The location seems to be too far south though. Perhaps it is the flight which departed earlier, after all?
+ 
+Trailblazer
+Moderator
+Staff member
+Jan 7, 2017
+#19
+So, this shows the two flights in question at 1400 local time (1700UTC).
+
+LA330 is the one further south at 16,575ft (5052m), and IB6830 is further north at 26300ft (8016m). The helicopter was at the red circle at that time.
+
+
+
+
+Here is a view with polygons in the right place (I made the further polygon bigger to make it more visible, but the relative sizes are not meant to be important)
+
+
+
+IB6830 looks the better match, but it is much further away than the estimate.
+ 
+Mick West
+Administrator
+Staff member
+Jan 7, 2017
+#20
+Trailblazer said:
+IB6830 looks the better match, but it is much further away than the estimate.
+
+However it's moving directly away from the camera, so would not leave a diagonal trail [Update: this turned out to be wrong] (I don't think wind would account for the difference).
+
+I think it's more likely the clock was off by a minute or so. I looked at the raw Planefinder data for LA330:
+
+Code:
+{"success":true,"payload":[["-31.7618","-71.2102","0","407.5","1415725944"],
+["-31.7618","-71.2102","0","407.5","1415725944"],["-31.8439","-71.2101","19975","425.1","1415725902"],
+["-31.963","-71.2082","21950","456","1415725843"],["-32.0918","-71.206","0","430.1","1415725781"],
+["-32.2002","-71.2032","0","377","1415725723"],["-32.3155","-71.2015","29975","428.1","1415725661"],
+["-32.4729","-71.1985","28700","422.1","1415725581"],["-32.5552","-71.1969","27475","425.1","1415725538"],
+["-32.6703","-71.1948","0","435","1415725480"],["-32.7896","-71.1925","23925","429.1","1415725422"],
+["-32.9131","-71.1906","0","412","1415725358"],["-33.0209","-71.1621","20575","399.7","1415725299"],
+["-33.1227","-71.1225","18575","392.4","1415725242"],["-33.2248","-71.0828","16575","376","1415725182"],
+["-33.3201","-71.0452","14500","357.3","1415725122"],["-33.4168","-71.0079","0","339.7","1415725059"],
+["-33.4831","-70.949","0","290.7","1415725001"],["-33.5097","-70.8608","7650","264.2","1415724940"],
+["-33.5091","-70.7882","5250","237.4","1415724881"],["-33.4453","-70.7837","2800","199.2","1415724821"]]}
+(in reverse chronological order).
+
+The two of note are
+["-33.0209","-71.1621","20575","399.7","1415725299"], (14:01:39)
+and
+["-33.1227","-71.1225","18575","392.4","1415725242"] (14:00:42)
+
+
+
+With just the 14:01 data point highlighted:
+
+
+
+The 14:01:39 data point is an almost exact match. It's also at 20,575 feet, which is a very plausible altitude for persistent aerodynamic contrails. Similar to altitudes I see them form at for planes climbing out of San Francisco, climbing over Sacramento.
+ 
+Last edited: Jan 18, 2017
+Reactions:
+Trailspotter
+Mick West
+Administrator
+Staff member
+Jan 7, 2017
+#21
+Mick West said:
+I looked at the raw Planefinder data for LA330:
+
+To do this in Chrome, open the debugger, go to network tab, clear anything there, then right click on the php?=planePosition URL and open in new tab:
+
+
+
+Convert timestamps here:
+http://www.epochconverter.com/
+ 
+Last edited: Jan 7, 2017
+Reactions:
+Trailblazer
+Trailspotter
+Senior Member.
+Jan 7, 2017
+#22
+Mick West said:
+However it's moving directly away from the camera, so would not leave a diagonal trail (I don't think wind would account for the difference).
+
+I think it's more likely the clock was off by a minute or so. I looked at the raw Planefinder data for LA330:
+
+The two of note are
+["-33.0209","-71.1621","20575","399.7","1415725299"], (14:01:39)
+and
+["-33.1227","-71.1225","18575","392.4","1415725242"] (14:00:42)
+
+View attachment 23844
+
+The 14:01:39 data point is an almost exact match. It's also at 20,575 feet, which is a very plausible altitude for persistent aerodynamic contrails. Similar to altitudes I see them form at for planes climbing out of San Francisco, climbing over Sacramento.
+It looks like I missed a lot of fruitful investigation while outing for the most of the afternoon. I agree that LA330 is the most likely culprit. I also think that an aerodynamic contrail is a likely explanation of the trail. There is one thing remains to demonstrate - such a contrail can reflect infrared radiation (from the engines). This would explain the presence of a brighter spot inside the trail.
+ 
+Mick West
+Administrator
+Staff member
+Jan 7, 2017
+#23
+Trailspotter said:
+There is one thing remains to demonstrate - such a contrail can reflect infrared radiation (from the engines). This would explain the presence of a brighter spot inside the trail.
+
+I don't think it's reflecting from the engines except when it's very close to the plane. I think it just becomes a dense cloud, and appears black much the way the other clouds in the shot do. It's just denser, hence "brighter" in the IR spectrum.
+
+
+I'd added this to the OP a while back:
+
+
+
+A few seconds later
+
+
+ 
+Reactions:
+Trailspotter
+Trailspotter
+Senior Member.
+Jan 7, 2017
+#24
+Mick West said:
+It's just denser, hence "brighter" in the IR spectrum.
+Agree. I actually meant brighter zone inside the trail that may well correspond to its denser zone.
+
+
+Local denser patches commonly occur in short and intermittent aerodynamic contrails.
+IMG_0143 by Jean Delisi, on Flickr
+ 
+Last edited: Jan 7, 2017
+Reactions:
+Mick West
+Leifer
+Senior Member.
+Jan 7, 2017
+#25
+What is the best buy on a FLIR camera ?
+There are $400 deals now for Smartphone attachments...
+...or is a used FLIR camera best found on the used market ?
+ 
+Mick West
+Administrator
+Staff member
+Jan 7, 2017
+#26
+Leifer said:
+What is the best buy on a FLIR camera ?
+There are $400 deals now for Smartphone attachments...
+...or is a used FLIR camera best found on the used market ?
+
+I have the FLIR ONE (2nd generation) , which is $250. There's a new FLIR ONE model for $200 coming soon. The $400 model is "pro" with much higher resolution.
+
+"FLIR" is really just a trademark. The "Forward Looking" part of the generic FLIR term just refers to the forward facing mount on aircraft. The FLIR branded cameras are not actually FLIR, just IR, or thermal cameras. FLIR brand is pretty dominant, but there are others, like Seek.
+https://www.amazon.com/Seek-Thermal-Compact-Imager-Android/dp/B00NYWAHHM
+ 
+Last edited: Jan 8, 2017
+Mick West
+Administrator
+Staff member
+Jan 8, 2017
+#27
+I'm writing some code to convert Planefinder tracks to KML
+
+
+ 
+Reactions:
+TEEJ, Trailblazer and Trailspotter
+Mick West
+Administrator
+Staff member
+Jan 8, 2017
+#28
+I've munged the Planefinder data into the proper timestamped KML format (attached)
+
+And now I have to lean back towards IB6830 as being the better fit, for two reasons:
+
+the angle of the trail is consistent with the path. LA330 would appear to be climbing from the POV of the chopper, the trail would point up.
+the timestamp is consistent with the "trail" pont at 14:00:24
+
+
+However, the second trail at 14:01:36 is horizontal.
+
+
+
+If the camera time is correct then then this suggests that this is LA330, just come into view, slightly above IB6830
+ 
+Attachments
+LA330.kml
+2.8 KB · Views: 2,766
+IB 6830.kml
+2.9 KB · Views: 2,294
+Mick West
+Administrator
+Staff member
+Jan 8, 2017
+#29
+In fact I can't see how it can be anything other than both planes, so I'm going to update the OP and title accordingly.
+
+
+ 
+Last edited: Jan 8, 2017
+Mick West
+Administrator
+Staff member
+Jan 8, 2017
+#30
+The two planes also makes sense when you look at the IR shape of engines. In the earlier shot's it's like a "peanut" shape, which is the 4 engined A340
+
+
+Then later shots seem to show a more distinct two-engined signature, the A320
+
+ 
+Reactions:
+Trailspotter
+Trailspotter
+Senior Member.
+Jan 8, 2017
+#31
+If there were two flights, could it also be that the IB6830 trail was an exhaust contrail? I think there may be some evidence for that.
+ 
+Mick West
+Administrator
+Staff member
+Jan 8, 2017
+#32
+Trailspotter said:
+If there were two flights, could it also be that the IB6830 trail was an exhaust contrail? I think there may be some evidence for that.
+
+It trails from 14:00:06 to 14:00:40. According to the track (which is quite detailed at that point) that going between 8155m (26,755 feet) and 8828m (28,963.25). This is certainly getting towards a more typical exhaust contrail altitude.
+
+The second trail starts at 14:01:35. This has LA330 at 6246m (20,492 ft).
+ 
+Trailspotter
+Senior Member.
+Jan 8, 2017
+#33
+Mick West said:
+Trailspotter said:
+If there were two flights, could it also be that the IB6830 trail was an exhaust contrail? I think there may be some evidence for that.
+It trails from 14:00:06 to 14:00:40. According to the track (which is quite detailed at that point) that going between 8155m (26,755 feet) and 8828m (28,963.25). This is certainly getting towards a more typical exhaust contrail altitude.
+
+The second trail starts at 14:01:35. This has LA330 at 6246m (20,492 ft).
+The trails have evolved differently.
+
+In the first trail, there was a brighter (denser) spot formed in the middle that remained in the same place:
+
+
+In the second trail, the distal end gets darker (denser) with time:
+
+ 
+Reactions:
+Mick West
+Mick West
+Administrator
+Staff member
+Jan 8, 2017
+#34
+It's certainly plausible. The first trail does also look more like the "two tubes" of an A340 contrail after the initial merge. A340's don't have the bulge that 747s have (and to a lesser extent a380s).
+ 
+Mick West
+Administrator
+Staff member
+Jan 8, 2017
+#35
+The IB6830 flight has a big chunk missing from the climbing turn. We can make a pretty good guess where this might be, and from that find the distance at the first sighting:
+
+This is about 35 miles, which is what the original estimates were.
+
+We can verify that it must have been flying a wider curve (besides the obvious impossibility of instant turns) by looking at the speed of the plane as derived from the positions. Here using the "Elevation Profile" in Google Earth
+
+
+Notice that in the straight portion (indicated by the red arrow, and the marked line in the profile) the calculated velocity drops very low. Hence it must actually be flying a longer path.
+ 
+Last edited: Jan 9, 2017
+B
+Bill Hunt
+New Member
+Jan 8, 2017
+#36
+Mick West said:
+It trails from 14:00:06 to 14:00:40. According to the track (which is quite detailed at that point) that going between 8155m (26,755 feet) and 8828m (28,963.25). This is certainly getting towards a more typical exhaust contrail altitude.
+
+The second trail starts at 14:01:35. This has LA330 at 6246m (20,492 ft).
+
+You guys are losing me here... The helicopter crew were mistaken about the altitude of the (not one, but) two planes they were tracking by (22,255 feet) and (15,992 feet)- both altitudes well above cloud base at 10,000 feet. One plane was landing, one was taking off. The clock was off by a minute or two...
+
+Chilean experts studied this for two years, but it never occurred to them to check the flight data from the air traffic that day, so they missed these two planes....
+
+If someone was putting forth a UFO theory with this sort of "evidence" what would you say to them?
+
+
+"On November 11, 2014, a Chilean Navy helicopter (Airbus Cougar AS-532) was on a routine daytime patrol mission flying north along the coast, west of Santiago. On board were the pilot, a Navy Captain with many years of flying experience, and a Navy technician who was testing a WESCAM's MX-15 HD Forward Looking Infra Red (FLIR) camera, used most often for "medium-altitude covert intelligence, surveillance and reconnaissance," according to the product website. The aircraft was flying at an altitude of approximately 4,500 feet on a clear afternoon with unlimited horizontal visibility, and the air temperature at that height was 50 degrees F (10 C). There was a cloud base above at 10,000 feet, and a layer of stratuscumulos clouds below. The helicopter was flying at about 132 knots, or 152 mph."
+ 
+Mick West
+Administrator
+Staff member
+Jan 8, 2017
+#37
+Bill Hunt said:
+You guys are losing me here... The helicopter crew were mistaken about the altitude of the (not one, but) two planes they were tracking by (22,255 feet) and (15,992 feet)- both altitudes well above cloud base at 10,000 feet. One plane was landing, one was taking off. The clock was off by a minute or two...
+
+The planes were actually there though. Exactly where they saw them, as far as I can tell. The clock being off by a minute was a problematic necessity to explain why the single plane did not exactly line up. Once I realized there were (probably) two different planes the timestamps all suddenly fell into place.
+
+
+Bill Hunt said:
+The aircraft was flying at an altitude of approximately 4,500 feet on a clear afternoon with unlimited horizontal visibility, and the air temperature at that height was 50 degrees F (10 C). There was a cloud base above at 10,000 feet, and a layer of stratuscumulos clouds below.
+
+Unlimited horizontal visibility. So they could see things 30-60 miles away, where the cloud cover was different - in fact it appears to be blue skies:
+
+
+There was not actually all that much cloud near where the chopper was, based on satellite photos from that day.
+https://worldview.earthdata.nasa.go...9031675,-68.32096558233651,-32.01700830594175
+
+ 
+Reactions:
+Jon Adams and TEEJ
+Trailblazer
+Moderator
+Staff member
+Jan 9, 2017
+#38
+Bill Hunt said:
+Chilean experts studied this for two years, but it never occurred to them to check the flight data from the air traffic that day, so they missed these two planes...
+That mystifies me too. It was the first thing several users here, including me, thought to do, and it quickly became clear that there was not one but two aircraft in the right location, and flying on the right heading, to match what appears in the helicopter video.
+
+If the UFO wasn't one of these planes, then both of them must have passed rather close to it. In which case it seems strange that apparently nobody on board the planes saw anything unusual.
+
+
+You guys are losing me here... The helicopter crew were mistaken about the altitude of the (not one, but) two planes they were tracking by (22,255 feet) and (15,992 feet)- both altitudes well above cloud base at 10,000 feet. One plane was landing, one was taking off. The clock was off by a minute or two...
+No, both planes were taking off. They say they first saw the object at 1652UTC, so it would have been lower at that time.
+"Cloud base" doesn't mean there is cloud everywhere at that height, it just indicates the height of the base of the clouds that are there: it tells you that the air should be clear below that height but won't necessarily be clear above it. It doesn't tell you anything about the actual amount of cloud, other than it's not zero.
+
+I do however think it is very unlikely that the clock was inaccurate. The camera display shows live GPS co-ordinates as well as the time, and GPS equipment obtains precise time information from the satellites as a matter of course (for obvious reasons!) There seems to be no reason to have a user-settable, and thus potentially inaccurate, clock on the system as well.
+ 
+Last edited: Jan 9, 2017
+Reactions:
+Mick West and Trailspotter
+Trailspotter
+Senior Member.
+Jan 9, 2017
+#39
+Trailblazer said:
+That mystifies me too. It was the first thing several users here, including me, thought to do, and it quickly became clear that there was not one but two aircraft in the right location, and flying on the right heading, to match what appears in the helicopter video.
+That did not mystify me. Most people tend to greatly underestimate the distances to and altitudes of high flying aircraft and their contrails, whereas the Metabunk users have acquired a considerable experience of dealing with this kind of observations.
+
+The Chilean experts did a good analysis of the video to extract all relevant information on the distance to and speed of the "UFO", but there were a few assumptions taken for granted. Arguably, the most crucial of them was the assumption of one and the same object, resulting in a significantly lower speed and closer distance than those of the actual flights.
+ 
+Last edited: Jan 9, 2017
+Reactions:
+Jon Adams, Mick West and TEEJ
+B
+Bill Hunt
+New Member
+Jan 9, 2017
+#40
+Trailspotter said:
+That did not mystify me. Most people tend to greatly underestimate the distances to and altitudes of high flying aircraft and their contrails, whereas the Metabunk users have acquired a considerable experience of dealing with this kind of observations.
+
+The Chilean experts did a good analysis of the video to extract all relevant information on the distance to and speed of the "UFO", but there were a few assumptions taken for granted. Arguably, the most crucial of them was the assumption of one and the same object, resulting in a significantly lower speed and closer distance than those of the actual flights.
+
+It looks like they also used the altitude data from the FLIR camera (pg. 9 of the French report).
+
+Also, this sort of camera must be used all the time by various organizations around the world (the Chilean crew included) has anyone seen similar footage from another source? Did those guys go back to work and go, "oh man, check it out, we thought that was a yoofoe the other day, but really it was just an airplane- look there is another one."
+ 
+1
+	
+2
+	
+3
+	
+…
+	
+6
+ Next
+You must log in or register to reply here.
+Similar threads
+	
+Reddit thread - Full Video AZ UFO Sighting
+jarlrmai Apr 22, 2026 Skydentify - What is that Thing in the Sky?
+	
+Replies
+8
+Views
+2K
+	Apr 23, 2026
+jdog
+	
+J
+B
+	
+Three lights maintaining triangular formation – Wolverhampton, UK – 23 Aug 2026, 22:01 BST
+Bomorse Aug 24, 2026 Skydentify - What is that Thing in the Sky? 2
+	
+Replies
+46
+Views
+9K
+	Sep 17, 2026
+Fin
+	
+	
+Maybe a drone? Spotted in Rio Rancho New Mexico. 01/25/2026 6:58PM.
+MichaelJ Feb 16, 2026 Skydentify - What is that Thing in the Sky?
+	
+Replies
+7
+Views
+2K
+	Feb 16, 2026
+Mick West
+	
+G
+	
+Looking for help interpreting a video content
+glennfish Jul 12, 2026 Skydentify - What is that Thing in the Sky? 2
+	
+Replies
+44
+Views
+6K
+	Jul 16, 2026
+NorCal Dave
+	
+A
+	
+Sighting after taking picture of scenery
+Adriaan May 27, 2026 Skydentify - What is that Thing in the Sky?
+	
+Replies
+7
+Views
+2K
+	May 29, 2026
+Smythe Bacchus
+	
+Share:
+Facebook
+X
+Bluesky
+LinkedIn
+Reddit
+Pinterest
+Tumblr
+WhatsApp
+Email
+Link
+Latest posts
+Rare things that have been documented much better than UFOs
+Latest: Fritzkquzerk 56 minutes ago
+UFOs and Aliens
+The Ariel School, Zimbabwe UFO sighting - has it ever been debunked?
+Latest: Mendel Today at 4:32 AM
+UFOs and Aliens
+Interesting sighting from my infrared scope
+Latest: Mendel Today at 4:00 AM
+Skydentify - What is that Thing in the Sky?
+A
+The "Disclosure President"?
+Latest: Andreas Today at 12:34 AM
+UFOs and Aliens
+Copenhagen airport closure due to reported drone activity
+Latest: UAV Hive Yesterday at 10:48 AM
+Drones
+Trending content
+Thread 'Orbs Spotted By Sailors - Daily Mail Article'
+flarkey Friday at 7:40 AM
+Replies: 6
+Thread 'The PHP Vulnerability and Metabunk/Sitrec'
+Mick West Wednesday at 8:43 AM
+Replies: 12
+Thread 'Caplan book contains photo from The Day the Earth Stood Still (1951)'
+jarlrmai Aug 21, 2026
+Replies: 21
+R
+Thread 'Raytheon's Multi-Spectral Targeting Systems'
+RobertBillyBob Jul 24, 2026
+Replies: 6
+S
+Thread 'Interesting sighting from my infrared scope'
+solar_flare Yesterday at 2:45 PM
+Replies: 7
+Forums 
+Metabunk 
+Skydentify - What is that Thing in the Sky? 
+ Default
+Contact us
+Terms and rules
+Privacy policy
+Help
+Home
+RSS
+Community platform by XenForo® © 2010-2026 XenForo Ltd.
+XenPorta 2 PRO © Jason Axelrod of 8WAYRUN

@@ -1,0 +1,158 @@
+SOURCE: https://skeptoid.com/episodes/4838
+FETCHED: 2026-10-25
+
+	  	
+
+Members Portal
+
+Support Us
+About
+Topics
+Store
+Community
+Events
+
+ 
+
+
+
+
+ 
+
+The Chilean Navy UFO
+
+Amateur Internet researchers figured out in 5 days what the Chilean government UFO group couldn't in two years.  
+
+Skeptoid Podcast #838
+Filed under Aliens & UFOs
+
+ 
+
+by Brian Dunning
+June 28, 2022
+
+Sponsor an episode!
+
+In the opening days of 2017, Chilean authorities shocked the world. They released ten minutes of video taken from one of their Navy helicopters in November 2014 as it tracked a seemingly inexplicable object in the sky. Visible only in infrared (not in optical), the object looked like two blurry, roundish blobs stuck together. It moved slowly and steadily, and was visible for nearly the whole of the video. But most astonishingly, at two points in the video, it seemed to release a trail of some unidentified substance that hung in the air behind the object as it moved away — dense black trails of who knows what. Neither the helicopter nor ground stations they asked saw anything on radar, and the helicopter crew was unable to contact the object by radio. Government officials tried for two years to come up with a suitable explanation, but could only exclude possibilities. So they ultimately released the video to the world. Did the Chilean Navy UFO of 2014 finally constitute proof of alien visitation?
+
+The helicopter was a Eurocopter AS532 Cougar, just delivered to the Navy earlier that same year. It's a big, multi-role helicopter designed for troop transport, medical evacuation, and search and rescue, not a gunship or combat helicopter. And, on that day — November 11, 2014 — the Cougar was following a fairly boring training routine, flying generally north up the coastline west of Santiago.
+
+Just before 2pm was when the observer first spotted the object on the infrared camera. They estimated it was traveling WNW and was some 35-40 miles away, though they had no instrument readings on it. They contacted local airports, who also reported no radar contact with any object in the area. The pilot also tried to directly hail the object on the radio, but received no reply.
+
+And then came those mysterious ejections of vaporous matter. For several seconds, the thick black trail was evidently extruded, where it hung unmoving in the sky. The observer switched back and forth from infrared to optical, but whatever it was was either invisible or was the same color as the clouds in the background.
+
+Finally the video ended, leaving the crew with lots of questions and no answers.
+
+And so the story broke on January 5, 2017, in a self-uploaded section of the Huffington Post website, back when they had a section for members of the public to publish their own material. It was written by longtime UFO author Leslie Kean. Her article concluded that no known phenomenon could account for either the black discharge, or for the craft to be invisible to radar while being so clearly visible on infrared for so long. She included a quote from the Director of the Chilean government's CEFAA Committee (Committee for Study of Anomalous Aerial Phenomena), the group in charge of investigating UFO reports:
+
+The great majority of committee members agreed to call the subject in question a UAP (Unidentified Aerial Phenomenon) due to the number of highly researched reasons that it was unanimously agreed could not explain it.
+
+So, let's move ahead — but not too far, only five days in fact. Five days after Kean's article announced the case was unexplainable, the Internet had a thoroughly evidenced explanation. Working mainly through the Metabunk website, knowledgeable amateurs had collected the following:
+
+The timestamps and GPS track of the helicopter taken from the video, giving an exact log of its time, speed, and position throughout its mission on that day;
+
+
+Interpretations of all of the other data shown on the video recorded by the infrared camera, including timestamps, plus the camera's mode, direction, and zoom level;
+
+And perhaps most significantly,
+
+The publicly available ADS-B track of the commercial airliner Iberia Airlines flight IB6830, giving its time, altitude, and position data.
+
+Why does this random airliner fit into our story at all? Because, in just those five days, the online amateurs did what the Chileans could not. They found that according to all of the time and position data, IB6830 would have occupied the exact position on the helicopter's infrared camera that the UFO did. This is mathematically true from the very beginning of the video through to the very end. When the helicopter crew first picked it up, IB6830 had completed a northward turn from Santiago airport and was heading north, gaining altitude. So it was on a roughly parallel course to the helicopter, just further north, and obviously going much faster. From the perspective of the helicopter, it would have looked like it was going slowly to the west, as they thought.
+
+So when they contacted ground stations to ask for any radar contacts, they were told no because they were looking in the wrong place. The camera on the helicopter was a WESCAM MX-15 electro-optical/infrared imaging system, mounted in a ball on a gimbal at the nose of the helicopter. It's a close range camera system, used in applications like police, search and rescue, and certain non-combat military applications like surveillance. It's very different from anything you'd find on a fighter plane, for example, that needs to identify and target objects that might be 50 or 100 miles away. It's not a radar and provided no useful positioning data on the UFO; the pilots were estimating the distance, and they estimated way short. Without triangulating data, there is no way any human observer can reliably judge the distance of an object in the sky. That's a limitation imposed by geometry, and no amount of training can circumvent the laws of geometry. So they were told there's nothing on radar because they were looking in the wrong place.
+
+IB6830 was an Airbus A340, a four-engined plane, with a group of two engines on one wing and two on the other. To a low-resolution camera like the MX-15, these two groups of hotspots look like two blobs from behind, from far enough away — an exact match for what's shown on the video. It's an illusion that would be familiar to anyone used to looking at airplanes on infrared, but incredibly, Leslie Kean's article includes a quote from a spokesperson from CEFAA that says it was the first time they'd ever dealt with infrared video.
+
+The pilot's attempt to hail the UFO received no response because of standard procedures. If you want to address an airliner, you need to address them by their flight number, or at least have some pretty darn specific identifying information like their correct position. If you don't, or if the position you describe is as far wrong as their estimate was, they're not going to respond, nor should they.
+
+What about those black clouds extruded by the UFO? Although Leslie Kean made a valiant effort to claim they were unexplainable and couldn't possibly be contrails, this is trivially disproven by the entire history of looking at aircraft through infrared. Contrails look exactly like that; they show up the same black color as warm, dense clouds. This is why they were invisible against the cloudy background when the operator switched the camera to optical. Fuel-burning aircraft produce water vapor in about the same volume as fuel they burn, and if the ambient temperature and humidity are right, that water vapor quickly condenses into a persistent cloud. Atmospheric conditions are never homogenous; there are pockets of warm air and cool air, high humidity and low humidity. If conditions are right on the edge, contrails stop and start as the aircraft flies through the various bubbles. This is visible in countless videos of planes leaving contrails that you can watch online, and it's exactly what the helicopter crew witnessed.
+
+So really, the interesting subject here today has got less to do with the event itself, and everything to do with why the Chilean committee couldn't figure this out for themselves in two years of trying. It would seem inexcusable for people in their position to be so unfamiliar with common infrared signatures generated by everyday airplanes that they wouldn't have recognized them instantly; and all the confirming data available to the Internet amateurs was certainly available to the CEFAA as well.
+
+From my own experience, much of the answer to "Why couldn't the CEFAA figure this out?" is hinted by a single fact: that they chose to make the video public by giving it to UFO author Leslie Kean rather than to a well-known and respected newspaper or TV network. Leslie Kean was a career UFO advocate and a firm believer in alien visitation. You may recognize her name because later that same year, in December 2017, she was a co-author of the infamous New York Times story that supposedly "broke the news" of the US Navy's AATIP program that revealed the three famous Navy UFO videos (see episode #788) — we now know that she was, in fact, a close longtime associate of the people who were behind the entire Navy UFO mythology. That she was the person the CEFAA was in touch with tells us a lot about the Committee members. My long experience with such groups suggests to me that these were almost certainly UFOlogists first, and civil servants second. Let's see what their history tells us.
+
+According to the CEFAA's website, they trace their lineage back to members of the Chilean Commission for the Study of Unidentified Space Phenomena — a purely civilian, amateur UFO group going back some 50 years, and based in Santiago. They were friends, like-minded guys who liked to meet and talk about aliens and UFOs, very much like the amateur UFO groups we have in the United States and all around the world. Their director was Sergio Bravo Flores, a local airport meteorologist, who got into it originally because his was the phone number people called when they wanted to report a UFO to someone.
+
+After a few relatively high-profile UFO cases happened in Chile in the 1990s, another UFO enthusiast — one who happened to be an Air Force officer — lobbied the Commander in Chief to create the CEFAA as part of the DGAC, the Civil Aeronautics General Administration. It's a small group of UFOlogists, less than a dozen, and it's not clear if it's a volunteer organization or what, as they are all listed along with their actual professions — things as disparate as medical doctors and law enforcement. UFOlogists are represented by the same cross sections of society as other groups.
+
+So the mystery of why the Internet figured this out in five days when the Chilean government couldn't in two years looks a little less mysterious. It wasn't "the Chilean government" so much as it was a small group of UFO enthusiasts. They may be experts in whatever their fields are, but when it comes to UFO reports, such people tend to only see alien spacecraft and come up with whatever rationalization is needed to reject anything that doesn't agree with that — to a hammer, everything looks like a nail. Their group did not include anyone experienced with spotting the "usual suspects" that explain optical illusion videos like this; but the Internet includes countless such amateur experts. It's the same reason that these online communities also have very thorough explanations for all of the current US Navy UFO videos, while the UFOlogists staffing these Pentagon offices and trying to advise Congress have only claims of inexplicability.
+
+Mick West, who runs the Metabunk website, wrote up an analysis of how this all went so wrong for Chile and so right for Internet crowdsourcers and published it for Skeptical Inquirer magazine, later in 2017, and included other examples of large communities quickly solving puzzles that small numbers of experts in the wrong fields could not. I'll close with Mick's money quote:
+
+The lessons learned here are that groups of experts are no guarantee of success when investigating obscure phenomena, and the smaller the group, the less likely they are to have the exact obscure mix of knowledge that is needed. Experts should not be put on unassailable pedestals, especially with UFOs, since by definition it's impossible to be an expert on something if you don't know what it is.
+
+Thus, after two years of lacking familiarity with optical illusions, the CEFAA was satisfied they had a real alien spacecraft, so Leslie Kean was at the top of their call list. And the result? Once again, the media had a field day with it, and the general public once again had an ignorance-based explanation reinforced instead of an informed one.
+
+
+By Brian Dunning
+
+
+Please contact us with any corrections or feedback.
+
+ 
+
+Cite this article:
+Dunning, B. (2022, June 28) The Chilean Navy UFO. Skeptoid Podcast. https://skeptoid.com/episodes/838
+
+ 
+
+References & Further Reading
+
+CEFAA. (2017, January 10). What is CEFAA?. Committee for Studies of Anomalous Aerial Phenomena. Retrieved 2022, June 10, from http://www.en.cefaa.gob.cl/home/quienes-somos
+
+Editors. (2014, March 30). Chilean Army receives first production Cougar AS532 Ale helicopter. Army Technology. Retrieved 2022, June 10, from https://www.army-technology.com/news/newschilean-army-receives-first-production-cougar-as532-ale-helicopter-4206220/
+
+Kean, L. (2017, January 5). Groundbreaking UFO Video Just Released By Chilean Navy. Huffington Post. Retrieved 2022, June 10, from https://www.huffpost.com/entry/groundbreaking-ufo-video-just-released-from-chilean_b_586d37bce4b014e7c72ee56b
+
+L3Harris. (2021, March 31). WESCAM MX™-15, Air Surveillance and Reconnaissance. Capabilities. Retrieved 2022, June 14, from https://www.l3harris.com/all-capabilities/wescam-mx-15-air-surveillance-and-reconnaissance
+
+West, M. (2017, January 6). Explained: Chilean Navy "UFO" video - Aerodynamic Contrails, Flight IB6830. Metabunk. Retrieved 2022, June 10, from https://www.metabunk.org/threads/explained-chilean-navy-ufo-video-aerodynamic-contrails-flight-ib6830.8306/
+
+West, M. (2017, May 29). Curated Crowdsourcing in UFO Investigations. Skeptical Briefs, Volume 27, Number 1.
+
+ 
+
+©2026 Skeptoid Media, Inc. All Rights Reserved. Rights and reuse information
+
+	 	
+
+ 
+
+ 
+
+
+
+
+
+Shop: Apparel, books, closeouts
+
+
+
+
+Now Trending...
+
+Tartaria and the Mud Flood
+
+Homeopathy: Pure Water or Pure Nonsense?
+
+The Siberian Hell Sounds
+
+Deconstructing the Rothschild Conspiracy
+
+Illuminating Our Lady of Zeitoun
+
+The Patterson-Gimlin Bigfoot Film
+
+Facts and Fiction of the Schumann Resonance
+
+Skinwalkers
+
+ 
+
+SKEPTOID MEDIA
+
+About us | Our programming | Become a supporter | Privacy
+
+A 501(c)(3) educational nonprofit.
+All content is © Skeptoid Media, Inc. All Rights Reserved.
