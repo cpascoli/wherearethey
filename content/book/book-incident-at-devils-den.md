@@ -16,6 +16,19 @@ links:
     url: https://openlibrary.org/works/OL25272709W
   - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:9780692072011
+glimpses:
+  - text: "Late in the evening I noticed the usual forest sounds of crickets and tree frogs had stopped. It was dead silent."
+    where: "The author’s description, Google Books"
+    via: "Google Books"
+    url: https://books.google.com/books/about/Incident_at_Devils_Den_a_True_Story_by_T.html?id=3loXtAEACAAJ
+  - text: "There on the horizon sat a perfect tight triangle of three very bright stars."
+    where: "The author’s description"
+    via: "Google Books"
+    url: https://books.google.com/books/about/Incident_at_Devils_Den_a_True_Story_by_T.html?id=3loXtAEACAAJ
+  - text: "Sometimes a bad dream isn't just a bad dream."
+    where: "The author’s description"
+    via: "Google Books"
+    url: https://books.google.com/books/about/Incident_at_Devils_Den_a_True_Story_by_T.html?id=3loXtAEACAAJ
 ---
 
 *Incident at Devils Den* (2018) is the self-published memoir of Terry Lovelace, a former U.S. Air Force medic at Whiteman Air Force Base, Missouri, and later an attorney. He describes a silent triangular craft over a nuclear missile silo at Whiteman in 1975, and a night in 1977 when, camping at Devil's Den State Park in Arkansas with a fellow airman, he says they watched a huge triangular object, lost time, and were later debriefed by the Air Force Office of Special Investigations. He also says a 2012 X-ray showed a small object in his thigh that later vanished.

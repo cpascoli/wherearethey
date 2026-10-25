@@ -18,6 +18,8 @@ links:
     url: https://archive.org/details/passporttocosmos0000mack
   - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:0517705680
+  - label: "Excerpt — Chapter 1 (AbeBooks)"
+    url: https://www.abebooks.com/9780609805572/Passport-Cosmos-Human-Transformation-Alien-0609805576/plp
 glimpses:
   - text: "I am interested in the meaning of these experiences for the so-called abductees and for humankind more generally."
     where: "Preface"

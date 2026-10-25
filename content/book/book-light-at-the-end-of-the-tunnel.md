@@ -12,6 +12,8 @@ rel:
 links:
   - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:9781449076122
+  - label: "Excerpt — opening of Chapter One (AbeBooks)"
+    url: https://www.abebooks.co.uk/signed-first-edition/Light-End-Tunnel-Survival-Plan-Human/31992247737/bd
 facts:
   - text: "Hellyer, Canada's defence minister from 1963 to 1967, writes that there is an extraterrestrial presence on Earth and that it is in contact with at least one government, and calls for disclosure as part of a programme for humanity's survival."
     status: claimed
@@ -19,6 +21,11 @@ facts:
     said: 2010
     basis: opinion
     source: https://www.newswire.com/view/content/former-canadian-cabinet-minister-of-defense-paul-hellyer-discusses-the-56571
+glimpses:
+  - text: "Put another way, we have about ten years to turn the situation around and invalidate the above prediction that is based on our present trajectory."
+    where: "Chapter One, “We Are Hell Bent Toward the Extinction of the Human Species”, answering James Lovelock"
+    via: "AbeBooks, excerpt reprinted by permission"
+    url: https://www.abebooks.co.uk/signed-first-edition/Light-End-Tunnel-Survival-Plan-Human/31992247737/bd
 ---
 
 *Light at the End of the Tunnel* (AuthorHouse, 2010) is a self-published book by Paul Hellyer, Canada's Minister of National Defence in the 1960s, who in 2005 became the first former cabinet minister of a G8 country to say publicly that UFOs are real. It combines his long-standing campaigns on monetary reform and the environment with the extraterrestrial question, which he presents as part of a "survival plan for the human species".

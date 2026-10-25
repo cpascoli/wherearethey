@@ -18,11 +18,22 @@ links:
     url: https://openlibrary.org/works/OL5850693W
   - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:1416505210
+  - label: "Preview — Chapter 1, “Wolf” (Google Books)"
+    url: https://books.google.com/books?id=_EfaAO12k2wC&pg=PA3
 facts:
   - text: "The book recounts the unexplained events reported at a ranch in northeastern Utah and the study of them by Robert Bigelow's National Institute for Discovery Science (NIDS), whose team Kelleher led on the property; Knapp was the only journalist allowed to follow the work."
     status: claimed
     by: colm-kelleher
     source: https://www.bookshare.org/browse/book/45815
+glimpses:
+  - text: "The animal loped gracefully in a series of S turns and stopped about fifty yards away from the family. This was very bizarre behavior for a wolf."
+    where: "Chapter 1, “Wolf”, p. 3"
+    via: "Google Books preview"
+    url: https://books.google.com/books?id=_EfaAO12k2wC&pg=PA3
+  - text: "The slug from the .357 had no effect whatsoever on the attacking animal. It didn’t yelp, didn’t pause, and didn’t bleed."
+    where: "Chapter 1, “Wolf”"
+    via: "Google Books preview"
+    url: https://books.google.com/books?id=_EfaAO12k2wC&pg=PA3
 ---
 
 *Hunt for the Skinwalker* (Paraview Pocket Books, 2005) is the first book on what became known as Skinwalker Ranch. Its authors are the biochemist Colm Kelleher, who led the field team of Robert Bigelow's National Institute for Discovery Science (NIDS) on the property, and the Las Vegas journalist George Knapp, who was allowed to follow their work. It retells the family's accounts that led them to sell the ranch in 1996, then the NIDS study: lights, objects, animal mutilations and creatures, and the team's attempts to record them.

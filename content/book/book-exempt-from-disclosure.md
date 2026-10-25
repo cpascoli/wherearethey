@@ -15,6 +15,13 @@ links:
     url: https://openlibrary.org/works/OL6439011W
   - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:0976642603
+  - label: "Excerpt — opening of the introduction (AbeBooks)"
+    url: https://www.abebooks.com/9780976642602/Exempt-Disclosure-Robert-Collins-0976642603/plp
+glimpses:
+  - text: "How did it all get started? After some 20 + years for my co-author Rick Doty and 18 years for me we still ask that question considering all the turmoil associated with the subject."
+    where: "Introduction, Robert Collins"
+    via: "AbeBooks, excerpt reprinted by permission"
+    url: https://www.abebooks.com/9780976642602/Exempt-Disclosure-Robert-Collins-0976642603/plp
 ---
 
 *Exempt from Disclosure* (Peregrine Communications, 2005) is by Robert Collins, a former Air Force officer at Wright-Patterson, with the former AFOSI agent Richard Doty and the researcher Timothy Cooper. It presents what its authors say they learned from inside sources about a secret government UFO programme: recovered craft and beings, stored at Wright-Patterson and Los Alamos, and the "black world" of classified projects. Collins and Doty were among the sources known in UFO circles in the 1980s by bird code names.

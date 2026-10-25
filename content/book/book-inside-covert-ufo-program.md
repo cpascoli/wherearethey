@@ -75,6 +75,11 @@ facts:
   - text: "Counter-evidence: AARO's 2024 report says DIA “cancelled the program in 2012 due to lack of merit and the utility of the deliverables”, that the KONA BLUE proposal “was never approved or stood up”, and that “no extraterrestrial craft or bodies were ever collected—this material was only assumed to exist by KONA BLUE advocates”."
     status: documented
     source: doc-aaro-historical-record-report-v1
+glimpses:
+  - text: "He stated that the United States was in possession of a craft of unknown origin and had successfully gained access to its interior."
+    where: "Back-cover passage: James Lacatski at a 2011 meeting in the Capitol"
+    via: "Publisher’s text, Google Books"
+    url: https://books.google.com/books/about/Inside_the_U_S_Government_Covert_UFO_Pro.html?id=Yt5a0AEACAAJ
 ---
 
 Book 2 in the authors' AAWSAP series. The archive doesn't hold the book itself, which is copyrighted. It can be bought or borrowed through the links above. The archive does hold the Pentagon's clearance file for the manuscript (DOPSR case 22-SB-0151) and the AAWSAP contract records and DIRDs from PURSUE.

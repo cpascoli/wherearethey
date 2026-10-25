@@ -23,6 +23,11 @@ facts:
     by: nick-pope
     said: 1997
     source: https://en.wikipedia.org/wiki/Nick_Pope_(journalist)
+glimpses:
+  - text: "so strange that it will always lie beyond human comprehension."
+    where: "Pope on what UFOs may be, as quoted by Publishers Weekly (1998)"
+    via: "Publishers Weekly"
+    url: https://www.publishersweekly.com/9780879518783
 ---
 
 *The Uninvited* (Simon & Schuster, 1997) is Nick Pope's second book, written after he left the Ministry of Defence's UFO desk. It turns from sightings to alien abduction: it examines accounts from people who say they were taken and asks whether the reports describe a real phenomenon.

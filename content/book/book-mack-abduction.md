@@ -25,6 +25,15 @@ facts:
   - text: "A Harvard faculty committee reviewed Mack's clinical care and research with his subjects and took no action after a 15-month review."
     status: claimed
     source: https://lareviewofbooks.org/article/john-e-mack-and-the-unbelievable-ufo-truth
+glimpses:
+  - text: "I am not a ufologist per se. I am a psychiatrist and a consciousness explorer, a clinician and a co-investigator in this grand mystery called “alien abduction.”"
+    where: "Mack on the book"
+    via: "John E. Mack Institute"
+    url: https://johnemackinstitute.org/books-by-john-e-mack/
+  - text: "This book is as much or more about the human psyche and its potential for extraordinary experience as it is about alien beings."
+    where: "Mack on the book"
+    via: "John E. Mack Institute"
+    url: https://johnemackinstitute.org/books-by-john-e-mack/
 ---
 
 *Abduction* (Scribner, 1994) is the book that made the Harvard Medical School psychiatrist John Mack, a Pulitzer Prize winner for his biography of T. E. Lawrence, the most prominent academic to take alien abduction reports seriously. It presents thirteen of the more than one hundred people he worked with, many under hypnosis, and argues that their experiences cannot be explained by any known psychiatric condition and may be real encounters with intelligences that challenge our view of reality.
