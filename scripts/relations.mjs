@@ -77,7 +77,7 @@ const PAIRS = [
   ['mentioned in', 'mentions'], ['its historian wrote', 'by historian of'], ['allegedly studied', 'allegedly studied by'], ['launches during', 'during launches of'],
   ['cites as model', 'model for'], ['represented on', 'included staff of'], ['defined in bill', 'defined in bill by'], ['untraced quote on', 'untraced quote by'],
   ['collected cases of', 'cases collected by'], ['described in', 'describes'], ['commented on', 'comments by'], ['named in', 'names'], ['named by', 'named'], ['named with', 'named with'],
-  ['partly accepts', 'partly accepted by'], ['provided video of', 'video provided by'], ['links to', 'linked by'], ['researched', 'researched by'], ['researched by', 'researched'],
+  ['partly accepts', 'partly accepted by'], ['provided video of', 'video provided by'], ['provided', 'provided by'], ['links to', 'linked by'], ['researched', 'researched by'], ['researched by', 'researched'],
   ['convinced by', 'convinced'], ['alleged forgery on', 'alleged forgery by'], ['called unresolved', 'called unresolved by'], ['reportedly explained', 'reportedly explained by'],
   ['credits', 'credited by'], ['allegedly negotiated with', 'allegedly negotiated with'], ['encouraged by', 'encouraged'], ['questioned by', 'questioned'],
   ['visited Eglin with', 'visited Eglin with'], ['interviewed by', 'interviewed'], ['fellow witness', 'fellow witness'], ['cited by', 'cited'], ['co-sponsored with', 'co-sponsored with'],
