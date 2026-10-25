@@ -71,6 +71,18 @@ facts:
     basis: documented
     status: documented
     source: doc-aaro-historical-record-report-v1
+  - text: "He says reports from people in the government programs indicate non-human beings associated with some of the craft, humanoid but significantly different, and that among those deeply involved “the fact of it is is is taken for granted”."
+    claims: [ recovered-non-human-bodies ]
+    basis: relayed
+    status: claimed
+    by: hal-puthoff
+    source: v-2025-03-21-the-sol-forum-with-guests-hal-puthoff-jacques-val@45:49
+  - text: "Asked whether the government uses stigma to protect its programs: “certainly there are parts of the government who consider that to be their job”. He adds that people “shut down a piece of a program on the basis that american taxpayer dollars should not be spent on pursuing demonic technology”."
+    claims: [ government-ufo-disinformation ]
+    basis: first-hand
+    status: claimed
+    by: hal-puthoff
+    source: v-2022-02-11-eric-weinstein-debates-cia-ufo-expert-hal-puthoff@30:32
   - text: "He calls himself agnostic on origin: his paper on “ultraterrestrials” surveys every hypothesis, from extraterrestrial visitors to hidden civilizations, time travellers and other dimensions, and his working conclusion is non-human intelligence of unknown source."
     status: claimed
     by: hal-puthoff
