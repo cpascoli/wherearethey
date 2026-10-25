@@ -21,7 +21,7 @@ rel:
   - [ says he co-founded, aawsap, "On loan to DIA in 2009 he worked on AAWSAP and, by his account, helped found it" ]
   - [ worked on, aatip, "He worked on AATIP alongside Elizondo; AARO says AATIP was never an official program" ]
   - [ worked with, luis-elizondo, "They worked together on AATIP; Elizondo calls Stratton his equal" ]
-  - [ claims about, legacy-program, "He says a “legacy program” has hidden recovered non-human craft for 80 years" ]
+  - [ claims about, crash-retrieval, "He says a “legacy program” has hidden recovered non-human craft for 80 years" ]
 facts:
   - text: "Stratton says he served almost 33 years in the military and the national intelligence community, joining the Army in 1989 and rising to the Senior Executive Service, with more than 16 of those years spent investigating UAP for the U.S. government."
     status: claimed

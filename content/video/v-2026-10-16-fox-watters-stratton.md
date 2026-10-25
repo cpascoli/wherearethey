@@ -5,7 +5,7 @@ youtube: sXoAbZRQruQ
 rel:
   - [ features, jay-stratton ]
   - [ about, book-out-of-the-shadows ]
-  - [ about, legacy-program ]
+  - [ about, crash-retrieval ]
 moments:
   - t: "1:06"
     text: "Stratton: the program \"gatekeeping the secret for over 80 years\" is in a secret Cold War race with adversaries to reverse-engineer the technology, \"like the Manhattan Project on steroids\"."

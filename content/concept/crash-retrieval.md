@@ -5,6 +5,9 @@ aka:
   - reverse engineering
   - reverse-engineering
 rel:
+  - [ disputed by, doc-aaro-historical-record-report-v1, "AARO's 2024 historical review found no empirical evidence that the government or private companies have reverse-engineered extraterrestrial technology" ]
+  - [ disputed by, sean-kirkpatrick, "He calls the legacy program “fictitious”: “There is no legacy program”" ]
+  - [ alleged in, doc-wilson-memo, "In the notes, Wilson is told by a contractor's program manager “they were a reverse engineering program — something recovered years ago”" ]
   - [ alleged program, legacy-program ]
 tags:
   - crash-retrieval

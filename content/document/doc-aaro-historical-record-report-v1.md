@@ -16,7 +16,6 @@ links:
     url: https://media.defense.gov/2024/Mar/08/2003409233/-1/-1/0/DOPSR-2024-0263-AARO-HISTORICAL-RECORD-REPORT-VOLUME-1-2024.PDF
 rel:
   - [ produced by, aaro ]
-  - [ about, legacy-program ]
   - [ about, kona-blue ]
   - [ about, aawsap ]
   - [ about, project-blue-book ]

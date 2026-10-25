@@ -23,7 +23,6 @@ rel:
   - [ attributed to, eric-davis, "Reportedly typed by Davis; unverified" ]
   - [ found among papers of, edgar-mitchell, "Reportedly found among Mitchell's papers after his death; unverified" ]
   - [ about, usap ]
-  - [ about, crash-retrieval ]
 facts:
   - text: "Entered into the official record of the May 17, 2022 HPSCI open hearing at the request of Rep. Mike Gallagher, who asked unanimous consent (“Without objection,” Chairman Carson). The 15-page notes, headed “EWD NOTES: 10/16/02 — Eric Davis Meeting with Adm. Wilson”, are published as submitted document SD001. Entry into the record confirms provenance, not accuracy."
     status: documented

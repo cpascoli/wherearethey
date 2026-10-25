@@ -18,7 +18,7 @@ rel:
   - [ claims about, lockheed-martin, "He says contractors such as Lockheed Martin hold retrieved craft in unacknowledged programs" ]
   - [ worked with, hal-puthoff, "Davis joined Puthoff at EarthTech International in Austin" ]
   - [ worked with, jay-stratton, "Davis briefed Grusch “at the behest of Jay Stratton”" ]
-  - [ claims about, legacy-program, "He says “the legacy program has been very insulated and insular” and that he briefed Grusch on it" ]
+  - [ claims about, crash-retrieval, "He says “the legacy program has been very insulated and insular” and that he briefed Grusch on it" ]
 facts:
   - text: "He says his UFO work began in 1996 when Robert Bigelow hired him as a physicist at the National Institute for Discovery Science, whose science advisory board included Hal Puthoff and Apollo 14 astronaut Edgar Mitchell; he later worked for Puthoff at EarthTech in Austin."
     status: claimed

@@ -6,7 +6,6 @@ status_note: "AARO's 2024 historical report found “no empirical evidence” fo
 status_source: doc-aaro-historical-record-report-v1
 tags: [crash-retrieval]
 rel:
-  - [ about, legacy-program ]
   - [ about, crash-retrieval ]
   - [ evidence against, doc-aaro-historical-record-report-v1, "AARO “found no empirical evidence” of reverse-engineering of extraterrestrial technology by the government or private companies" ]
   - [ evidence against, kona-blue, "AARO: the KONA BLUE proposal “was never approved or stood up”, and no craft or bodies were ever collected" ]

@@ -5,7 +5,7 @@ youtube: QpB0gbrF0Yk
 rel:
   - [ features, jay-stratton ]
   - [ about, book-out-of-the-shadows ]
-  - [ about, legacy-program ]
+  - [ about, crash-retrieval ]
 moments:
   - t: "1:13"
     text: "Stratton on his career: almost 33 years in the military and national intelligence, rising to the Senior Executive Service, with over 16 years investigating UAP for the U.S. government."

@@ -10,7 +10,7 @@ links:
 rel:
   - [ authored by, david-grusch ]
   - [ submitted to, h-2023-07-26 ]
-  - [ about, legacy-program ]
+  - [ about, crash-retrieval ]
 facts:
   - text: "“I was informed, in the course of my official duties, of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access to those additional read-on’s.” He says he reported this “to my superiors and multiple Inspectors General”."
     status: documented

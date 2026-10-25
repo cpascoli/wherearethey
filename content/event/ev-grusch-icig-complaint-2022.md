@@ -5,7 +5,7 @@ tags: [whistleblower, intelligence, crash-retrieval]
 rel:
   - [ filed by, david-grusch ]
   - [ filed with, icig ]
-  - [ about, legacy-program ]
+  - [ about, crash-retrieval ]
 links:
   - label: The Debrief — Intelligence officials say U.S. has retrieved craft of non-human origin (June 5, 2023)
     url: https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/

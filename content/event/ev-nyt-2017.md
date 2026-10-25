@@ -15,6 +15,7 @@ rel:
   - [ features, david-fravor, "A companion article told the Nimitz encounter through Fravor's account" ]
   - [ helped by, to-the-stars ]
   - [ followed by, ev-grusch-icig-complaint-2022 ]
+  - [ mentions, crash-retrieval, "Reported alloys that Elizondo and contractors said had been recovered from UAP; co-author Blumenthal later walked it back. It reported no crash-retrieval program" ]
 links:
   - label: "NYT — Glowing Auras and ‘Black Money’: The Pentagon's Mysterious U.F.O. Program (Dec 16, 2017)"
     url: https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html

@@ -10,7 +10,7 @@ tags: [disclosure, crash-retrieval, intelligence]
 rel:
   - [ about, inc-roswell-1947 ]
   - [ authored by, luis-elizondo ]
-  - [ about, legacy-program ]
+  - [ about, crash-retrieval ]
   - [ about, aatip ]
   - [ names, lockheed-martin ]
   - [ names, northrop-grumman ]

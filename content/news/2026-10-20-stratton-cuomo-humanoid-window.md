@@ -7,7 +7,7 @@ url: https://www.newsnationnow.com/politics/pentagon-ufo-hunter-jay-stratton-ali
 rel:
   - [ features, jay-stratton ]
   - [ about, book-out-of-the-shadows ]
-  - [ about, legacy-program ]
+  - [ about, crash-retrieval ]
   - [ about, uaptf ]
 facts:
   - text: "Interviewed on NewsNation's CUOMO, Stratton said that early one morning at his Washington, D.C.-area home he saw “this humanoid-looking creature … looking at my son through the window”, with a “very large head, very small black eyes, very small nose — if it had one — and a small slit for a mouth.” He said he went after it, but “By the time I stepped outside, it was completely gone.”"

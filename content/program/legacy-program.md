@@ -6,19 +6,13 @@ aka: [legacy program, legacy programs, UFO legacy program, crash retrieval progr
 tags: [crash-retrieval, secrecy, disclosure]
 rel:
   - [ defined in, doc-uap-disclosure-act-2023 ]
-  - [ disputed by, doc-aaro-historical-record-report-v1 ]
-  - [ disputed by, sean-kirkpatrick ]
   - [ allegedly run as, usap, "The alleged structure is an unacknowledged and possibly waived SAP" ]
   - [ allegedly run as, cap, "The alleged structure is an unacknowledged SAP or an intelligence-community Controlled Access Program" ]
-  - [ subject of, ev-grusch-icig-complaint-2022 ]
-  - [ subject of, book-imminent ]
-  - [ subject of, doc-grusch-statement-2023-07-26 ]
   - [ allegedly involves, lockheed-martin ]
   - [ allegedly involves, northrop-grumman ]
   - [ allegedly involves, boeing ]
   - [ allegedly involves, rtx ]
   - [ allegedly run as, waived-sap, "The alleged structure is an unacknowledged and possibly waived SAP" ]
-  - [ alleged in, doc-wilson-memo, "In the notes, Wilson is told by a contractor's program manager “they were a reverse engineering program — something recovered years ago”" ]
   - [ related to, immaculate-constellation ]
 facts:
   - text: "The UAP Disclosure Act defined it in proposed law: “all Federal, State, and local government, commercial industry, academic, and private sector endeavors to collect, exploit, or reverse engineer technologies of unknown origin or examine biological evidence of living or deceased non-human intelligence that pre-dates the date of the enactment of this Act.”"

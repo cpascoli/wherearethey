@@ -7,7 +7,7 @@ rel:
   - [ recording of, 2026-10-20-stratton-cuomo-humanoid-window ]
   - [ features, jay-stratton ]
   - [ about, book-out-of-the-shadows ]
-  - [ about, legacy-program ]
+  - [ about, crash-retrieval ]
 moments:
   - t: "1:45"
     text: "Asked whether he has seen an intelligent life form that is not human: “I have, and I go into great detail in my book”, in the line of duty from the DIA's original UAP program through the UAP Task Force, 2005 to the 2020s."

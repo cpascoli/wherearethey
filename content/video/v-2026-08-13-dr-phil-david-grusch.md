@@ -6,7 +6,6 @@ tags: [crash-retrieval, intelligence]
 rel:
   - [ features, david-grusch ]
   - [ about, crash-retrieval ]
-  - [ about, legacy-program ]
   - [ mentions, eric-burlison ]
   - [ discusses, aaro, "Grusch says AARO never contacted him again after he offered to help cross-examine former program officials" ]
   - [ discusses, icig, "Grusch describes what he took to the Inspector General: “the fact that we've had this recovery program”" ]

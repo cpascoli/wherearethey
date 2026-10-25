@@ -16,7 +16,7 @@ rel:
   - [ questioned by, kirsten-gillibrand, "His first public hearing was before Gillibrand's Senate subcommittee on 19 November 2024" ]
   - [ succeeded, sean-kirkpatrick, "Named AARO director in August 2024, succeeding Kirkpatrick and acting director Tim Phillips" ]
   - [ presented, doc-aaro-gofast, "He presented AARO's resolution of the GoFast video, publishing its calculations" ]
-  - [ investigated, legacy-program, "He said AARO had met interlocutors and a couple of first-hand witnesses, and asked senators to encourage more to come forward" ]
+  - [ investigated, crash-retrieval, "He said AARO had met interlocutors and a couple of first-hand witnesses, and asked senators to encourage more to come forward" ]
 facts:
   - text: "Named director of AARO on August 26, 2024."
     status: documented

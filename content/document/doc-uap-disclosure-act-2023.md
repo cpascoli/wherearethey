@@ -12,7 +12,6 @@ rel:
   - [ comments on claim, recovered-non-human-craft, "Gives “legacy program” a legal definition in proposed law; a definition, not proof that one exists" ]
   - [ sponsored by, chuck-schumer ]
   - [ sponsored by, mike-rounds ]
-  - [ defines, legacy-program ]
   - [ basis for, ev-ndaa-fy2024, "The FY2024 NDAA kept a scaled-back version of the Act, without its review board or eminent-domain power" ]
   - [ led to, nara, "The enacted FY2024 NDAA kept a narrower requirement to collect UAP records at the National Archives" ]
 facts:
