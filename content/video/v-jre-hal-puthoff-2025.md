@@ -31,6 +31,13 @@ moments:
     text: "DIA's Jim Lacatski puts out the request for proposals; Robert Bigelow wins it and brings Puthoff in. (Puthoff says “2017” here, but the program dates from 2008.)"
     speaker: hal-puthoff
     refs: [ james-lacatski, robert-bigelow, bigelow-aerospace, aawsap ]
+  - t: "1:00:11"
+    text: "Asked to examine any recovered materials, Puthoff negotiated with aerospace executives, who said that if they had any “it'd be too highly classified” to share, even with the program's Top Secret clearances. Rogan: they wouldn't say that if there was nothing to negotiate about."
+    speaker: hal-puthoff
+    refs: [ aawsap ]
+    claims: [ recovered-non-human-craft ]
+    stance: context
+    basis: first-hand
   - t: "1:02:40"
     text: "Instead Puthoff commissions 38 papers on where each field will be by 2050. These are the DIRDs, including his own on spacetime metric engineering."
     speaker: hal-puthoff
@@ -58,7 +65,7 @@ moments:
   - t: "1:37:13"
     claims: [ roswell-crashed-craft ]
     basis: relayed
-    text: "Eric Davis interviewed a former Wright-Patterson commander (“General Exon”), who said Roswell “was the real deal”. Puthoff says there is data on crashes in other countries too."
+    text: "Eric Davis interviewed General Exon, a former Wright-Patterson commander, who said Roswell “was the real deal”. Puthoff says there is data on crashes in other countries too."
     speaker: hal-puthoff
     refs: [ eric-davis, inc-roswell-1947, wright-patterson-afb ]
   - t: "1:40:30"

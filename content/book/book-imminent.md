@@ -35,6 +35,21 @@ facts:
     status: claimed
     by: luis-elizondo
     source: https://www.newsnationnow.com/space/ufo/special-report-confessions-of-a-ufo-hunter/
+  - text: "On Roswell, Elizondo writes that “Our primitive EMP (electromagnetic pulse) device must have somehow disrupted their propulsion bubble, rendering them vulnerable”, and that “Four deceased nonhuman bodies were in fact recovered from the 1947 Roswell crash.” (as quoted by BroBible, 2026)"
+    claims: [ recovered-non-human-bodies, roswell-crashed-craft ]
+    basis: relayed
+    status: claimed
+    by: luis-elizondo
+    said: 2024-08-20
+    source: https://brobible.com/culture/article/pentagon-ufo-investigator-recovered-crashed-spacecrafts-non-human-bodies/
+  - text: "Early in the book, Elizondo writes, Hal Puthoff told him: “Roswell was real.” Puthoff has not publicly denied it (Michael Ian Black's review, 2024)."
+    claims: [ roswell-crashed-craft ]
+    basis: relayed
+    claim_by: hal-puthoff
+    status: claimed
+    by: luis-elizondo
+    said: 2024-08-20
+    source: https://michaelianblack.substack.com/p/imminent-a-book-review-of-a-book
   - text: The book was cleared for publication by the Pentagon's prepublication review (DOPSR). Clearance means it contains no classified information; it does not confirm the claims.
     status: claimed
     source: https://www.kqed.org/arts/13962929/a-former-pentagon-insider-reveals-all-he-knows-about-ufos-in-new-book
