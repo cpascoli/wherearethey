@@ -35,6 +35,19 @@ facts:
   - text: "On the link to KONA BLUE, AARO's 2024 report agrees that its proposed lines of effort “closely mirrored those conducted by the private sector organization for AAWSAP/AATIP”, but says the program “was never approved or stood up” and that “no extraterrestrial craft or bodies were ever collected”."
     status: documented
     source: doc-aaro-historical-record-report-v1
+glimpses:
+  - text: "AAWSAP never ended, but converted to Kona Blue!"
+    where: "James Lacatski’s conclusion, as quoted"
+    via: "Signals from the Periphery (review)"
+    url: https://signalsfromtheperiphery.com/en/culture/future-visions/
+  - text: "Without disclosing confidential information, we can say that this pattern also applied to pilots who encountered the Tic Tac object described in the New York Times article in December 2017, as well as to select members of AAWSAP."
+    where: "Chapter 1, on aftereffects, as quoted"
+    via: "Signals from the Periphery (review)"
+    url: https://signalsfromtheperiphery.com/en/culture/future-visions/
+  - text: "The AAWSAP found no evidence of gamma radiation in any location on Skinwalker Ranch."
+    where: "As quoted"
+    via: "Signals from the Periphery (review)"
+    url: https://signalsfromtheperiphery.com/en/culture/future-visions/
 ---
 
 The fourth and final book in the "Skinwalkers at the Pentagon" series, written by James Lacatski and published in March 2026. According to its publisher, it covers what the program learned about the "cloaking" abilities of UFOs and the paranormal activity around Skinwalker Ranch, and presents the four books together as the fullest Pentagon-approved disclosure on UFOs.

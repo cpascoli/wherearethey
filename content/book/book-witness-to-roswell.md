@@ -20,6 +20,15 @@ facts:
     claims: [ roswell-crashed-craft, recovered-non-human-bodies ]
     basis: relayed
     source: https://openlibrary.org/works/OL16535443W
+glimpses:
+  - text: "compelling evidence that the official denial of alien presence for more than 60 years is false"
+    where: "Foreword by Edgar Mitchell, p. 18, as quoted"
+    via: "Talking the Weird (review)"
+    url: https://talkingtheweird.com/witness_to_roswell/
+  - text: "was nothing made of this Earth"
+    where: "Jesse Marcel, p. 86, as quoted"
+    via: "Talking the Weird (review)"
+    url: https://talkingtheweird.com/witness_to_roswell/
 ---
 
 *Witness to Roswell* (New Page Books, 2007; revised editions to the 75th-anniversary edition of 2022) is Thomas Carey and Donald Schmitt's account of the Roswell case built on hundreds of witness and family interviews. Its centrepiece is the sealed affidavit of Walter Haut, the base's 1947 public information officer, released after his death in 2005, in which he says he saw the craft and bodies; Haut had earlier said for decades that he only wrote the press release.

@@ -56,6 +56,15 @@ facts:
   - text: "Counter-evidence: AARO's 2024 historical report says the program “investigated an alleged hotspot of UAP and paranormal activity at a property in Utah”, including “shadow figures” and “creatures”, that “DIA did not seek, nor specifically authorize, this work”, that its scientific papers “were never thoroughly peer reviewed”, and that AARO “has yet to uncover any other substantive UAP case work”."
     status: documented
     source: doc-aaro-historical-record-report-v1
+glimpses:
+  - text: "I believe that there is information uncovered by the government’s covert investigations into UAPs that can be disclosed to the public without harming our national security."
+    where: "Foreword by Harry Reid, as quoted by Bill Chalker"
+    via: "The OZ Files (review)"
+    url: http://theozfiles.blogspot.com/2021/10/skinwalkers-at-pentagon-and-its-strange.html
+  - text: "Between September 2008 and December 2010, the Pentagon spent those millions investigating UAPs as well as the paranormal and psychic correlates to UAPs."
+    where: "On AAWSAP, as quoted"
+    via: "The OZ Files (review)"
+    url: http://theozfiles.blogspot.com/2021/10/skinwalkers-at-pentagon-and-its-strange.html
 ---
 
 The first of the authors' books on AAWSAP, the DIA program James Lacatski managed and Colm Kelleher ran day to day at Bigelow's BAASS, written with George Knapp. In its authors' words it covers the program's "effects on humans" track: medical and physiological effects of close encounters, and the paranormal activity studied at Skinwalker Ranch. They describe AAWSAP as a wholly UFO-focused program and AATIP as a nickname for it. Knapp has since said that the book's "Axelrod" is Jay Stratton.

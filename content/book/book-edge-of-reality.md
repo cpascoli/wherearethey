@@ -23,6 +23,15 @@ facts:
     by: j-allen-hynek
     said: 1975
     source: https://en.wikipedia.org/wiki/J._Allen_Hynek
+glimpses:
+  - text: "The men are not lying. I'm quite convinced of that"
+    where: "Hynek on the Pascagoula witnesses, as quoted by Robert Sheaffer"
+    via: "Skeptical Inquirer review (1977)"
+    url: https://skepticalinquirer.org/wp-content/uploads/sites/29/1977/04/p74.pdf
+  - text: "is not consistent either with what you would expect from space visitors, or with what we know about physics. That's the dilemma."
+    where: "Vallée on reported UFO behaviour, as quoted"
+    via: "Skeptical Inquirer review (1977)"
+    url: https://skepticalinquirer.org/wp-content/uploads/sites/29/1977/04/p74.pdf
 ---
 
 *The Edge of Reality* (Regnery, 1975) is a book of conversations between J. Allen Hynek and his former Northwestern colleague Jacques Vallée, with case reports and their discussions of what UFOs might be. It moves away from the simple extraterrestrial hypothesis towards the stranger aspects of close encounters that both men came to emphasise, and includes a stereoscopic photograph Hynek said he took of an object from a plane.

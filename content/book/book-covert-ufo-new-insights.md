@@ -40,6 +40,15 @@ facts:
   - text: "Counter-evidence: AARO's 2024 report says DIA “cancelled the program in 2012 due to lack of merit and the utility of the deliverables”, and that the KONA BLUE proposal for DHS “was never approved or stood up”."
     status: documented
     source: doc-aaro-historical-record-report-v1
+glimpses:
+  - text: "these books are not written in the traditional sense but assembled."
+    where: "Introduction, James Lacatski, as quoted by Life in Jonestown"
+    via: "Life in Jonestown (review)"
+    url: https://lifeinjonestown.substack.com/p/the-old-insights-were-sexier
+  - text: "New Insights describes AAWSAP activity from June 2009 to January 2010"
+    where: "On the book’s scope, as quoted"
+    via: "Life in Jonestown (review)"
+    url: https://lifeinjonestown.substack.com/p/the-old-insights-were-sexier
 ---
 
 The third book in the "Skinwalkers at the Pentagon" series and the first written by James Lacatski alone, published in September 2025. According to its publisher, it covers the engineering and scientific details of UFOs studied by the DIA's AAWSAP program alongside the paranormal activity around Skinwalker Ranch, and draws on Lacatski's part in the preparatory meetings of KONA BLUE, the special access program proposed to DHS. Lacatski says the series is assembled from official DIA files and approved for release by the Pentagon.

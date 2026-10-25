@@ -19,6 +19,11 @@ links:
     url: https://en.wikipedia.org/wiki/Stargate_Project_(U.S._Army_unit)
   - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:0440056888
+glimpses:
+  - text: "So far we have not found a single person who could not do remote viewing to satisfaction."
+    where: "Targ and Puthoff, as quoted by Martin Gardner"
+    via: "New York Review of Books (1977)"
+    url: https://www.nybooks.com/articles/1977/03/17/supergull/
 ---
 
 *Mind-Reach* (Delacorte, 1977) is the first popular account of the remote-viewing experiments that the physicists Russell Targ and Harold Puthoff ran at the Stanford Research Institute from 1972, with subjects such as Ingo Swann and the former police officer Pat Price trying to describe distant places they could not see. It describes their protocols and results and argues that the effect is real. Margaret Mead wrote the introduction.

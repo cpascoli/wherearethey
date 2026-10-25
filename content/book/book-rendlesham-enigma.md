@@ -21,6 +21,11 @@ facts:
     status: claimed
     by: jim-penniston
     source: https://openlibrary.org/works/OL24758777W
+glimpses:
+  - text: "Since the first night of contact on that December night in 1980. Two questions were immediate to me. Who are they? And where do they come from?"
+    where: "Jim Penniston’s author note (spelling as published)"
+    via: "Amazon author note, reprinted by The Fedora Chronicles"
+    url: https://thefedorachronicles.com/podcast/Rendlesham-Enigma-Book-Time.html
 ---
 
 *The Rendlesham Enigma, Book 1: Timeline* (2019) is Jim Penniston's own long account of the December 1980 Rendlesham Forest incident, written with the researcher Gary Osborn and self-published at more than 700 pages. Penniston, then a staff sergeant in the Security Police at RAF Woodbridge, led the patrol that went into the forest and is the only witness who says he touched a craft.

@@ -16,6 +16,8 @@ links:
     url: https://archive.org/details/hynekuforeport00alle
   - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:0440192013
+  - label: "The book (PDF, hosted by the Center for UFO Studies)"
+    url: https://cufos.org/PDFs/books/The_Hynek_UFO_Report.pdf
 facts:
   - text: "In the book Hynek says he enjoyed his role as a debunker for the Air Force."
     status: claimed
@@ -29,6 +31,15 @@ facts:
     basis: first-hand
     said: 1977
     source: https://en.wikipedia.org/wiki/J._Allen_Hynek
+glimpses:
+  - text: "Project Blue Book, the Air Force's project on UFOs, was always regarded officially as \"unclassified,\" but this amounted to a standing joke among those who knew better."
+    where: "Prologue"
+    via: "CUFOS, the Hynek centre’s copy (PDF)"
+    url: https://cufos.org/PDFs/books/The_Hynek_UFO_Report.pdf
+  - text: "Blue Book files were not open to the public, even though the Air Force claimed publicly that Blue Book was an open book."
+    where: "Prologue"
+    via: "CUFOS (PDF)"
+    url: https://cufos.org/PDFs/books/The_Hynek_UFO_Report.pdf
 ---
 
 *The Hynek UFO Report* (Dell, 1977) is J. Allen Hynek's insider's review of the Air Force's UFO files, written after the Blue Book records became available. Hynek, the project's scientific consultant from 1948 to 1969, goes through cases the Air Force had filed as explained and argues that many explanations were forced, and that the project, after its first director Edward Ruppelt left, was run as public relations rather than science.
