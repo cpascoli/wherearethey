@@ -1814,6 +1814,7 @@
     if (!v) return;
     const same = state.video === id;
     state.video = id;
+    state.videoT = Math.floor(t) || 0; // the moment, kept in the address (?t=) so a copied link reopens it
     // phones: the file card covers the whole screen, so close it to show the player (Back reopens it)
     if (state.sel && matchMedia('(max-width: 860px)').matches) { state.sel = null; panelTransition('close', () => { if (!state.sel) closePanel(); }); }
     if (state.view !== 'videos') go('videos', { keepSel: true, keepVideo: true });
@@ -2501,12 +2502,22 @@
   }
   document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') checkBuild(); });
   setInterval(() => { if (document.visibilityState === 'visible') checkBuild(); }, 10 * 60 * 1000);
+  // On the Videos page the address also carries the moment (?t=) and the file open beside the player (&file=), so a
+  // copied link reopens both. Phones leave the file out: there the card would cover the player.
+  function searchFor() {
+    if (state.view !== 'videos' || !state.video) return '';
+    const q = [];
+    if (state.videoT) q.push(`t=${state.videoT}`);
+    if (state.sel && byId.has(state.sel) && !matchMedia('(max-width: 860px)').matches) q.push(`file=${encodeURI(hrefOf(state.sel).slice(1))}`);
+    return q.length ? `?${q.join('&')}` : '';
+  }
   function setHash({ replace = false } = {}) {
     if (routing) return;
     const target = urlFor(), st = { view: state.view, sel: state.sel, video: state.video };
     if (newBuild && !replace && !state.sel && !state.video && target !== location.pathname) { location.assign(target); return; }
-    if (location.pathname === target && !location.hash) { history.replaceState(st, '', target + location.search); return; }
-    history[replace ? 'replaceState' : 'pushState'](st, '', target);
+    const search = state.view === 'videos' && state.video ? searchFor() : null; // elsewhere keep what the address had (e.g. ?explore)
+    if (location.pathname === target && !location.hash) { history.replaceState(st, '', target + (search ?? location.search)); return; }
+    history[replace ? 'replaceState' : 'pushState'](st, '', target + (search ?? ''));
     trackView();
   }
   // Google Analytics: one page_view per in-app view, with the hash route turned into a readable path
@@ -2749,7 +2760,9 @@
     const id = byPath.get(p);
     if (!id) return { view: 'home', sel: null, video: null };
     const type = byId.get(id).type;
-    return type === 'video' ? { view: 'videos', sel: null, video: id, t } : { view: type === 'claim' ? 'claims' : 'graph', sel: id, video: null };
+    // a shared moment: /video/<title>?t=SECONDS&file=person/<name> plays it with that file open beside (desktop only)
+    const file = byPath.get('/' + (new URLSearchParams(location.search).get('file') || '').replace(/^\/+/, ''));
+    return type === 'video' ? { view: 'videos', sel: file && innerWidth > 860 ? file : null, video: id, t } : { view: type === 'claim' ? 'claims' : 'graph', sel: id, video: null };
   }
   function applyRoute(initial) {
     const fromUrl = routeFromUrl();
@@ -2764,14 +2777,14 @@
       // ?explore starts a trail from it, as "Explore from here" would: beside the panel on desktop, the graph alone on phones
       const qs = new URLSearchParams(location.search);
       const explore = initial && r.sel && byId.has(r.sel) && !offGraph(byId.get(r.sel).type) && qs.has('explore') && qs.get('explore') !== '0';
-      if (initial && r.sel && byId.has(r.sel) && innerWidth > 860) state.reading = !explore && qs.get('panel') !== 'side';
+      if (initial && r.sel && byId.has(r.sel) && innerWidth > 860) state.reading = !explore && qs.get('panel') !== 'side' && r.view !== 'videos'; // beside a video: the side panel
       if ((r.sel || null) !== state.sel) { select(r.sel && byId.has(r.sel) ? r.sel : null); if (initial && state.sel) openPanel(state.sel); }
       if (explore) { track('explore_start', { item_id: r.sel, method: 'url' }); startTrail(r.sel); }
       if (r.view === 'videos' && r.video && byId.has(r.video) && (r.video !== state.video || r.t || initial)) openVideo(r.video, r.t || 0, false);
       else if (r.view === 'videos' && !r.video && state.video) closeVideo();
     } finally { routing = false; }
     // store the state on this entry
-    history.replaceState({ view: state.view, sel: state.sel, video: state.video }, '', urlFor() + location.search);
+    history.replaceState({ view: state.view, sel: state.sel, video: state.video }, '', urlFor() + (state.view === 'videos' && state.video ? searchFor() : location.search));
   }
   window.addEventListener('popstate', () => { applyRoute(false); trackView(); }); // Back/Forward count as page views too
   document.getElementById('ssr')?.remove(); // the server-rendered article is for crawlers and no-JS readers
