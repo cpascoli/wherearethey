@@ -45,6 +45,14 @@ glimpses:
     where: "Chapter III, on Capt. Thomas Mantell"
     via: "Project Gutenberg"
     url: https://www.gutenberg.org/ebooks/66639
+  - text: "Air Force investigators and scientists have been able to account for almost every reported “spaceship” as the result of failure to identify some natural phenomenon. Some were the product of delusion or deliberate hoaxes."
+    where: "Chapter I"
+    via: "Project Gutenberg"
+    url: https://www.gutenberg.org/ebooks/66639
+  - text: "No such report suggests the possibility that interplanetary craft are cruising in our skies."
+    where: "Chapter I"
+    via: "Project Gutenberg"
+    url: https://www.gutenberg.org/ebooks/66639
 ---
 
 *The World of Flying Saucers* (Doubleday, 1963), by the Harvard astrophysicist Donald Menzel and the writer Lyle Boyd, is the most thorough sceptical study of UFO reports of its era. With access to the Air Force's files, granted in 1959, it works through the main types of report and classic cases: the Mantell crash (a Skyhook balloon), the 1952 Washington radar sightings (temperature inversions), stars and planets distorted by the atmosphere, mirages, ball lightning, hoaxes and contactees. It calls the spaceship interpretation "a major myth of the Space Age".

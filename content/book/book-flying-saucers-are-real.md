@@ -28,6 +28,10 @@ facts:
     basis: opinion
     source: library/books/keyhoe-flying-saucers-are-real.html
 glimpses:
+  - text: "The mere existence of some yet unidentified flying objects necessitates a constant vigilance on the part of Project ‘Saucer’ personnel, and on the part of the civilian population."
+    where: "Author’s Note: the U.S. Air Force statement of 27 April 1949, as Keyhoe quotes it"
+    via: "Project Gutenberg"
+    url: https://www.gutenberg.org/ebooks/5883
   - text: "I believe that the Air Force statements, contradictory as they appear, are part of an intricate program to prepare America—and the world—for the secret of the disks."
     where: "Opening"
     via: "Project Gutenberg"

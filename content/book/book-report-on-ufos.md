@@ -36,6 +36,14 @@ facts:
     said: 1960
     source: library/books/ruppelt-report-on-ufos.html
 glimpses:
+  - text: "This report is written exactly the way I would have written it had I been officially asked to do so while I was chief of the Air Force's project for investigating UFO reports--Project Blue Book."
+    where: "Foreword"
+    via: "Project Gutenberg"
+    url: https://www.gutenberg.org/ebooks/17346
+  - text: "First, there is world-wide interest in flying saucers; people want to know the facts. But more often than not these facts have been obscured by secrecy and confusion."
+    where: "Foreword"
+    via: "Project Gutenberg"
+    url: https://www.gutenberg.org/ebooks/17346
   - text: "UFO is the official term that I created to replace the words \"flying saucers.\""
     where: "Chapter 1"
     via: "Project Gutenberg"
