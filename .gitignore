@@ -57,3 +57,4 @@ tmp/
 
 # book excerpts: local copies of publisher/author extracts, not republished
 sources/excerpts/
+library/**/*.html
