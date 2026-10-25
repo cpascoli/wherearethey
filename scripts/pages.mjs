@@ -200,7 +200,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
         if (!cur || time - cur.t >= 60) { cur = { t: time, s: [] }; paras.push(cur); }
         cur.s.push(s);
       }
-      const src = { 'youtube-auto': 'automatic captions', youtube: 'published captions', whisper: 'machine transcription (Whisper)' }[t.source] || 'transcript';
+      const src = { 'youtube-auto': 'automatic captions', youtube: 'published captions', whisper: 'machine transcription (Whisper)', 'whisper-translated': 'machine translation to English (Whisper)', translation: 'English translation of the published subtitles' }[t.source] || 'transcript';
       h.push(`<h2>Transcript</h2><p class="ssr-note">From ${esc(src)}; names and terms may be misspelled. Check the original video before quoting.</p><div class="ssr-transcript">${paras.map(p => `<p><a href="${e.path}?t=${Math.floor(p.t)}">${hms(p.t)}</a> ${esc(p.s.join(' '))}</p>`).join('')}</div>`);
     }
     // related files, grouped by type

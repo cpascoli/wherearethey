@@ -1271,7 +1271,7 @@
     if (e.type === 'video') {
       h.push(`<div class="play-card"><img src="${vthumb(e)}" alt="" data-play="${e.id}@0" loading="lazy"><div>
         <button class="btn primary" data-play="${e.id}@0">▶ Play with transcript</button>
-        <div class="small muted" style="margin-top:6px">${e.transcript ? `${e.transcript.segments.toLocaleString()} transcript lines (${({ 'youtube-auto': 'auto captions', youtube: 'subtitles', whisper: 'Whisper transcript', 'whisper-translated': 'Whisper translation' })[e.transcript.source] || 'transcript'})` : 'No transcript yet'}${e.local ? ' · local copy' : ''}</div></div></div>`);
+        <div class="small muted" style="margin-top:6px">${e.transcript ? `${e.transcript.segments.toLocaleString()} transcript lines (${({ 'youtube-auto': 'auto captions', youtube: 'subtitles', whisper: 'Whisper transcript', 'whisper-translated': 'Whisper translation', translation: 'English translation of the published subtitles' })[e.transcript.source] || 'transcript'})` : 'No transcript yet'}${e.local ? ' · local copy' : ''}</div></div></div>`);
     }
     // the summary (a person's profile) comes before the videos
     if (e.body) h.push(`<div class="p-sec"><h4>${e.type === 'person' ? 'Profile' : 'Summary'}</h4><div class="p-body p-bio">${e.body}</div></div>`);
@@ -1972,7 +1972,7 @@
         const last = paras[paras.length - 1];
         if (!last || t - last.t >= 20) paras.push({ t, text: s }); else last.text += ' ' + s;
       }
-      body.innerHTML = `<div class="transcript-tools"><input id="tfind" type="search" placeholder="Find in this transcript…"><label class="check" style="margin:0"><input type="checkbox" id="tfollow" checked> Follow playback</label><span class="small muted">${({ 'youtube-auto': 'Auto-generated captions', youtube: 'Subtitles', whisper: 'Whisper transcript (local AI)', 'whisper-translated': 'Whisper translation to English (local AI)' })[tr.source] || 'Transcript'}</span></div>
+      body.innerHTML = `<div class="transcript-tools"><input id="tfind" type="search" placeholder="Find in this transcript…"><label class="check" style="margin:0"><input type="checkbox" id="tfollow" checked> Follow playback</label><span class="small muted">${({ 'youtube-auto': 'Auto-generated captions', youtube: 'Subtitles', whisper: 'Whisper transcript (local AI)', 'whisper-translated': 'Whisper translation to English (local AI)', translation: 'English translation of the published subtitles (by the archive)' })[tr.source] || 'Transcript'}</span></div>
         <div class="transcript" id="transcript">${paras.map(p => `<p data-t="${p.t}"><button class="ts">${fmtT(p.t)}</button><span>${esc(p.text)}</span></p>`).join('')}</div>`;
       $('#tfind').addEventListener('input', ev => {
         const q = ev.target.value.trim();
