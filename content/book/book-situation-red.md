@@ -9,6 +9,7 @@ pages: 223
 tags: [crash-retrieval]
 rel:
   - [ authored by, leonard-stringfield ]
+  - [ about, crash-retrieval, "Its closing chapters first raised in book form the stories Stringfield would spend the rest of his life collecting: informants who said the military had recovered crashed craft and bodies" ]
   - [ followed by, book-ufo-crash-retrievals ]
 links:
   - label: Internet Archive (borrow)
