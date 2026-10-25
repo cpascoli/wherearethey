@@ -2,6 +2,7 @@
 rel:
   - [ released in, ev-pursue-release-03 ]
   - [ released by, nasa ]
+  - [ about, gordon-cooper, "Walter Cronkite's November 1962 interview with Cooper on UFOs" ]
 tags:
   - pursue
 name: NASA-UAP-D023 — Interview Excerpt with Astronaut Gordon Cooper, 1962
