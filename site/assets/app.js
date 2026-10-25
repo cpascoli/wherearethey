@@ -812,6 +812,7 @@
     // leave it alone when it's in view and big enough to read
     if (!always && rb.x1 >= m && rb.x2 <= w - m && rb.y1 >= top && rb.y2 <= h - bottom && cy.zoom() >= z * 0.6) return;
     const view = { zoom: z, pan: { x: w / 2 - z * (bb.x1 + bb.x2) / 2, y: top + ah / 2 - z * (bb.y1 + bb.y2) / 2 } };
+    cy.stop(true); // a camera move still under way (e.g. the first draw's) would pull the view back
     if (instant) cy.viewport(view); else cy.animate(view, { duration: 450 });
   }
   let noFrame = false; // set while handling a click on a node in the graph
@@ -2738,8 +2739,12 @@
       if (r.view !== state.view || initial || shelfChanged) go(r.view, { keepVideo: !!r.video });
       // a file's own address (/person/eric-davis) opens it full width on desktop, like on phones;
       // ?panel=side opens it in the side panel beside the network instead
-      if (initial && r.sel && byId.has(r.sel) && innerWidth > 860) state.reading = new URLSearchParams(location.search).get('panel') !== 'side';
+      // ?explore starts a trail from it, as "Explore from here" would: beside the panel on desktop, the graph alone on phones
+      const qs = new URLSearchParams(location.search);
+      const explore = initial && r.sel && byId.has(r.sel) && !offGraph(byId.get(r.sel).type) && qs.has('explore') && qs.get('explore') !== '0';
+      if (initial && r.sel && byId.has(r.sel) && innerWidth > 860) state.reading = !explore && qs.get('panel') !== 'side';
       if ((r.sel || null) !== state.sel) { select(r.sel && byId.has(r.sel) ? r.sel : null); if (initial && state.sel) openPanel(state.sel); }
+      if (explore) { track('explore_start', { item_id: r.sel, method: 'url' }); startTrail(r.sel); }
       if (r.view === 'videos' && r.video && byId.has(r.video) && (r.video !== state.video || r.t || initial)) openVideo(r.video, r.t || 0, false);
       else if (r.view === 'videos' && !r.video && state.video) closeVideo();
     } finally { routing = false; }
