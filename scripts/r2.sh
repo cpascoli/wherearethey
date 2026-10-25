@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Sync heavy library files (PDFs, images, video) with Cloudflare R2 via rclone.
+# Sync heavy library files (PDFs, images, video, HTML copies of public-domain books) with Cloudflare R2 via rclone.
 #
 #   npm run r2:push     upload new/changed files to R2 (never deletes anything remotely)
 #   npm run r2:pull     download everything from R2 into library/ (e.g. on a new machine)
@@ -11,7 +11,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 REMOTE="${R2_REMOTE:-r2}"
 BUCKET="${R2_BUCKET:-wherearethey}"
-FILTERS=(--filter "- .incoming/**" --filter "+ *.pdf" --filter "+ *.png" --filter "+ *.jpg" --filter "+ *.jpeg" --filter "+ *.gif" --filter "+ *.mp4" --filter "- *")
+FILTERS=(--filter "- .incoming/**" --filter "+ *.pdf" --filter "+ *.png" --filter "+ *.jpg" --filter "+ *.jpeg" --filter "+ *.gif" --filter "+ *.mp4" --filter "+ *.html" --filter "- *")
 
 if ! rclone listremotes | grep -qx "${REMOTE}:"; then
   echo "No rclone remote called '${REMOTE}'. Run the one-time setup in README.md (Heavy files → R2)." >&2
