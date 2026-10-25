@@ -52,6 +52,10 @@ moments:
     text: "Borland: at about 01:30 he saw a roughly 100 ft equilateral triangle take off from near the NASA hangar at Langley AFB."
     speaker: dylan-borland
     refs: [ inc-langley-2012, langley-afb ]
+  - t: "1:06:48"
+    text: "Borland describes the Langley encounter: a white light flew across the flight line and “a triangle manifests around the light”; it stopped about 100 feet in front of him and 100 feet above, and his phone grew hot and froze."
+    speaker: dylan-borland
+    refs: [ inc-langley-2012 ]
   - t: "1:12:18"
     text: "Moskowitz: “I don’t know on this subject. But I do know when we are being lied to, and we are definitely being lied to.”"
     speaker: jared-moskowitz
@@ -83,6 +87,10 @@ moments:
     text: "Burlison plays a video he describes as taken on 30 October 2024: an MQ-9 tracking an orb off Yemen as another MQ-9 fires a Hellfire missile at it."
     speaker: eric-burlison
     refs: [ inc-yemen-mq9-orb-2024 ]
+  - t: "1:46:12"
+    text: "Watching the Yemen video, Knapp: “that's a hellfire missile smacking into that UFO and just bounced right off”; Burlison adds that the debris seemed to be carried along with the object."
+    speaker: george-knapp
+    refs: [ eric-burlison ]
   - t: "1:48:03"
     text: "Knapp: James Lacatski told him the U.S. had managed to get inside a craft with no wings, rotor, tail or fuel; it took 14 months of DOPSR review to clear two sentences on it."
     speaker: george-knapp

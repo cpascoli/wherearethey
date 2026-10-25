@@ -8,10 +8,6 @@ moments:
     text: "Ranking Member Garcia notes that AARO director Sean Kirkpatrick testified his office has found no evidence of extraterrestrial activity, and that NASA has said the same."
     speaker: robert-garcia
     refs: [ sean-kirkpatrick, aaro, h-2023-04-19 ]
-  - t: "22:40"
-    text: "Moskowitz, closing his opening statement: if there's nothing to conceal, military leaders should let Congress go to Wright-Patterson Air Force Base, the Dugway Proving Ground or Groom Lake (Area 51)."
-    speaker: jared-moskowitz
-    refs: [ area-51, wright-patterson-afb ]
   - t: "24:58"
     text: "Graves says he speaks for more than 30 commercial aircrew and military veterans who confided similar encounters, and that sightings are “not rare or isolated. They are routine.”"
     speaker: ryan-graves

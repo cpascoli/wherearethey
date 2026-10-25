@@ -94,9 +94,6 @@ moments:
     text: "Fortunato Filho: the infection was caused by “a highly virulent and multi-drugresistant bacterium” that spread through the body and caused septic shock."
     speaker: armando-fortunato-filho
     refs: [ inc-varginha-1996 ]
-    claims: [ uap-injuries ]
-    stance: context
-    basis: documented
   - t: "1:22:19"
     text: "Pathologist João Baptista Janini, in a statement read for him: the bacterium went beyond a conventional infection, which “raises the hypothesis of its alien origin”; an exhumation for molecular studies is awaited."
     speaker: joao-baptista-janini

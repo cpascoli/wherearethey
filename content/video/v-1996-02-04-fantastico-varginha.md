@@ -13,11 +13,11 @@ moments:
   - t: "0:00"
     text: "(Portuguese) Two weeks after the sighting, Kátia Xavier, 22, and the sisters Valquíria, 14, and Liliane, 16, return for the first time to the vacant lot where, on Saturday 20 January at about 2 p.m., they say they saw something very strange."
     refs: [ inc-varginha-1996 ]
-    claims: [ varginha-beings-captured ]
-    basis: first-hand
   - t: "0:53"
     text: "(Portuguese) Their description: it had what looked like horns, brown skin as if covered in oil, big bulging red eyes and swollen veins, and it was crouched with its hands between its legs."
     refs: [ inc-varginha-1996 ]
+    claims: [ varginha-beings-captured ]
+    basis: first-hand
   - t: "2:14"
     text: "(Portuguese) The fire brigade's commander in Varginha, Capt. Alvarenga, has issued an official note: the brigade was not called out to capture an extraterrestrial."
     refs: [ inc-varginha-1996 ]

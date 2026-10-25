@@ -19,17 +19,10 @@ moments:
     text: "Greer opens: the witnesses on stage and “some 350 additional military intelligence witnesses” can prove “that we are not alone.” He thanks White House correspondent Sarah McClendon for sponsoring the meeting."
     speaker: steven-greer
     refs: [ ev-disclosure-project-2001 ]
-  - t: "4:10"
-    text: "Greer says he has personally briefed CIA Director James Woolsey, the head of the DIA, members of the Senate Intelligence Committee, many members of Congress and the Japanese cabinet."
-    speaker: steven-greer
   - t: "4:50"
     text: "Greer claims unacknowledged special access projects take in “at least 40 to 80 billion per year” and hold technologies that could change the world."
     speaker: steven-greer
     refs: [ usap ]
-  - t: "9:30"
-    text: "Greer lists the campaign's demands: open congressional hearings, a permanent ban on weapons in space, and declassification of related energy and propulsion technology."
-    speaker: steven-greer
-    refs: [ ev-disclosure-project-2001 ]
   - t: "14:26"
     claims: [ jal1628-unknown-craft ]
     basis: relayed
