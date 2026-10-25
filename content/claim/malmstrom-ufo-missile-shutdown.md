@@ -6,6 +6,7 @@ status_note: "The Air Force's own wing history records the Echo Flight shutdown 
 status_source: doc-341smw-history-1967
 tags: [nuclear]
 rel:
+  - [ narrower than, uap-nuclear-sites ]
   - [ about, inc-malmstrom-1967 ]
   - [ evidence against, doc-341smw-history-1967, "The wing history records the Echo Flight shutdown and says rumours of UFOs there “were disproven”" ]
   - [ evidence against, 2025-06-06-wsj-pentagon-ufo-disinformation, "The WSJ reports AARO traced the shutdowns to a secret Air Force electromagnetic-pulse test" ]

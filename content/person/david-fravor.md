@@ -41,7 +41,7 @@ facts:
   - text: "He says the following crew, led by Chad Underwood, recorded the roughly 90-second FLIR video released in 2017. The radar tape showing jamming of the APG-73 radar was never released, and the video shows no infrared plume from any normal propulsion system."
     status: claimed
     by: david-fravor
-    source: v-2023-07-26-hearing-a@54:13
+    source: v-2023-07-26-hearing-a@54:34
   - text: "He testified that “the incident was never investigated”, that none of his crew were ever questioned, and that no one contacted him until Jay Stratton did in 2009, as part of the Pentagon program he says was led by Lue Elizondo."
     status: documented
     by: david-fravor

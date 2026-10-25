@@ -20,7 +20,7 @@ moments:
     text: "Fravor: above it a small white Tic Tac moved abruptly north–south and east–west with no inertia and no rotor wash, ruling out a helicopter."
     speaker: david-fravor
     refs: [ inc-nimitz-2004 ]
-  - t: "1:24:01"
+  - t: "1:24:20"
     text: "Fravor: as he came down, the object reoriented, pointed west and began climbing, mirroring his jet around the circle as if aware of them."
     speaker: david-fravor
     refs: [ inc-nimitz-2004 ]
@@ -36,7 +36,7 @@ moments:
     text: "Fravor dismisses the story of tapes being seized: intelligence officers playing a joke took them and he got them back; the original FLIR video is about 1 minute 30 seconds, all of it released."
     speaker: david-fravor
     refs: [ inc-nimitz-2004 ]
-  - t: "1:44:15"
+  - t: "1:44:50"
     text: "Fravor: on the original tape in TV mode two small appendages were visible under the object; there was no plume, heat or visible propulsion."
     speaker: david-fravor
     refs: [ inc-nimitz-2004 ]
@@ -56,7 +56,7 @@ moments:
     text: "Fridman presents Mick West's view that the FLIR object only appears to dart off-screen because the tracker loses lock; Fravor rejects it from watching the original tapes — the pod's gimbal simply couldn't move fast enough."
     speaker: david-fravor
     refs: [ inc-nimitz-2004 ]
-  - t: "2:44:15"
+  - t: "2:45:23"
     claims: [ gimbal-gofast-not-conventional ]
     basis: relayed
     text: "Fravor, from the aircrew he knows: the Gimbal and GoFast videos were shot by the same person; the new APG-79 radar showed about five other objects in a V ahead of the Gimbal object, which reversed course."

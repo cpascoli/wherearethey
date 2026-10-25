@@ -41,6 +41,9 @@ facts:
     by: chris-mellon
     source: v-2025-05-01-hearing-a@2:00:36
   - text: "He says he sat on the Defense Department committee that reviews all special access programs and reports them to Congress and “never saw anything related to UAP”, adding that workarounds such as alternative compensatory control measures exist."
+    claims: [ programs-hidden-from-congress ]
+    stance: context
+    basis: first-hand
     status: claimed
     by: chris-mellon
     source: v-2026-08-28-disclosure-forum-national-security@35:38

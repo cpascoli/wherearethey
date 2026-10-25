@@ -9,6 +9,7 @@ links:
   - label: Senate Democrats — amendment text (PDF)
     url: https://www.democrats.senate.gov/imo/media/doc/uap_amendment.pdf
 rel:
+  - [ comments on claim, recovered-non-human-craft, "Gives “legacy program” a legal definition in proposed law; a definition, not proof that one exists" ]
   - [ sponsored by, chuck-schumer ]
   - [ sponsored by, mike-rounds ]
   - [ defines, legacy-program ]

@@ -54,10 +54,14 @@ moments:
     text: "Davis says the crash-retrieval programmes go back to 1944 and the U.S. Army's recovery of a craft that crashed in Italy in 1933, brought back to Wright Field; just before, he says he briefed Grusch for two and a half days before Grusch's Inspector General complaint."
     speaker: eric-davis
     refs: [ inc-magenta-1933, david-grusch, crash-retrieval, wright-patterson-afb ]
-  - t: "1:04:11"
+    claims: [ recovered-non-human-craft, magenta-1933-crash ]
+    basis: relayed
+  - t: "1:04:55"
     text: "Dr. Davis: recovered craft are “not of this Earth.”"
     speaker: eric-davis
     refs: [ crash-retrieval ]
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
   - t: "1:15:04"
     text: "Davis: a materials scientist hired by Ben Rich at Skunk Works told him the recovered materials' elements were identifiable by mass spectrometry but their structure was nothing they could fabricate on Earth."
     speaker: eric-davis

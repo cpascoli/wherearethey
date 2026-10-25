@@ -42,6 +42,8 @@ moments:
     text: "Fravor describes looking down from his F/A-18 at the small white “Tic Tac” object in 2004."
     speaker: david-fravor
     refs: [ inc-nimitz-2004 ]
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
   - t: "35:52"
     text: "Fravor: the radar tape of the object jamming the APG-73 radar was never released, and “the incident was never investigated”; none of his crew was questioned."
     speaker: david-fravor
@@ -54,22 +56,27 @@ moments:
     text: "Asked whether the government possesses UAP, Grusch answers “Absolutely, based on interviewing over 40 witnesses over 4 years,” and says he gave the exact locations to the Inspector General."
     speaker: david-grusch
     refs: [ crash-retrieval, icig ]
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
   - t: "50:26"
     claims: [ gimbal-gofast-not-conventional ]
     basis: first-hand
     text: "Graves: objects sat at “0.0 Mach” over fixed points while “completely stationary in category four hurricane winds,” then accelerated to 1.1–1.2 Mach."
     speaker: ryan-graves
     refs: [ inc-roosevelt-2015 ]
-  - t: "53:01"
-    text: "Asked whether people were harmed or injured in efforts to conceal the technology, Grusch answers “Yes, personally”; on murders, he says he directed people with that knowledge to the authorities."
+  - t: "53:13"
+    text: "Asked whether he has personal knowledge of people harmed or injured in efforts to conceal the technology, Grusch answers “yes”; on murders, he says he directed people with that knowledge to the appropriate authorities."
     speaker: david-grusch
     refs: [ tim-burchett ]
-  - t: "54:13"
+  - t: "54:34"
     text: "Fravor says the crew launched after his flight saw significant jamming of its APG-73 radar, which split the lock, so the video was taken on the passive targeting pod."
     speaker: david-fravor
     refs: [ inc-nimitz-2004, chad-underwood ]
   - t: "59:07"
     text: "Grusch says colleagues were “brutally administratively attacked” for pursuing the issue: “I call it administrative terrorism.”"
+    speaker: david-grusch
+  - t: "1:00:53"
+    text: "Asked whether in the last couple of years he has had incidents that caused him to fear for his life for addressing this, Grusch answers “yes personally”."
     speaker: david-grusch
   - t: "1:01:49"
     text: "Grusch says he had a classified conversation with Sean Kirkpatrick in April 2022, before Kirkpatrick took over AARO, and gave him his concerns; asked why Kirkpatrick never followed up, he says he cannot read his mind."
@@ -83,7 +90,7 @@ moments:
     text: "Asked whether contractors overcharge the government to fund programs, Grusch answers “Correct, through something called IR&D.”"
     speaker: david-grusch
     refs: [ jared-moskowitz, legacy-program ]
-  - t: "1:11:25"
+  - t: "1:11:52"
     text: "Asked whether Kirkpatrick's “no credible evidence” statement is correct, Grusch says “It is not accurate,” adding that some of the roughly 30 people who went to AARO were also people he interviewed."
     speaker: david-grusch
     refs: [ sean-kirkpatrick, aaro, h-2023-04-19 ]
@@ -106,10 +113,15 @@ moments:
     text: "Grusch tells Burlison that colleagues were physically injured both by UAP and by people within the government; asked if he has seen the bodies: “That is something I have not witnessed myself.”"
     speaker: david-grusch
     refs: [ eric-burlison, nhi ]
+    claims: [ recovered-non-human-bodies ]
+    stance: context
+    basis: first-hand
   - t: "1:39:57"
     text: "Gaetz describes an Eglin AFB disclosure: four craft in diamond formation on radar over the Gulf, and an orb whose approach knocked out the pilot's radar and FLIR. AARO's resolution of an apparently matching case (26 January 2023: four radar objects in formation, radar failure, still images only) found it very likely a balloon."
     speaker: matt-gaetz
     refs: [ doc-aaro-eglin, tim-burchett, anna-paulina-luna, inc-eglin-2023 ]
+    claims: [ eglin-orb-not-human ]
+    basis: relayed
   - t: "1:43:20"
     claims: [ gimbal-gofast-not-conventional ]
     basis: first-hand
@@ -120,6 +132,8 @@ moments:
     text: "Asked whether the U.S. has the bodies of the pilots, Grusch: “biologics came with some of these recoveries”, and they were nonhuman — “the assessment of people with direct knowledge on the program I talked to that are currently still on the program.”"
     speaker: david-grusch
     refs: [ nhi, crash-retrieval ]
+    claims: [ recovered-non-human-bodies ]
+    basis: relayed
   - t: "1:54:59"
     text: "Fravor: “probably the most credible UFO sighting in history,” with “four sets of human eyeballs” plus the sensors: “It is not a joke.”"
     speaker: david-fravor

@@ -37,10 +37,14 @@ facts:
     status: documented
     source: doc-fbi-majestic-12
   - text: "Former AFOSI agent Richard Doty says his supervisors had him encourage researcher Paul Bennewitz to believe he had seen UFOs, so that Bennewitz would not go public about a secret laser at Kirtland Air Force Base, and that a program existed to tell people who saw secret aircraft such as the F-117, F-22 and SR-71 “what you're seeing is UFOs”."
+    claims: [ government-ufo-disinformation ]
+    basis: first-hand
     status: claimed
     by: richard-doty
     source: v-2020-02-21-mystery-wire-doty-part-2@3:57
   - text: "Doty describes the Bennewitz operation as encouraging a believer: “Paul was the easiest person to convince that what he was … seeing was, in fact, UFOs … But in reality, we knew what they were”; he calls such work “deception operations” and says the material mixed “probably 60% truth and 40% non-truth”."
+    claims: [ government-ufo-disinformation ]
+    basis: first-hand
     status: claimed
     by: richard-doty
     source: v-2025-02-28-rebelliously-curious-doty@12:00

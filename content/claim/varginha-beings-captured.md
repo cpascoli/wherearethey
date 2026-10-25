@@ -7,7 +7,6 @@ status_source: doc-stm-ipm-18-1997
 tags: [crash-retrieval]
 rel:
   - [ about, inc-varginha-1996 ]
-  - [ narrower than, recovered-non-human-bodies ]
   - [ evidence against, doc-stm-ipm-18-1997, "The Army's inquiry judged the creature most likely a local man known as “mudinho”, and the military movements routine" ]
 ---
 

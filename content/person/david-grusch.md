@@ -43,6 +43,8 @@ facts:
     by: david-grusch
     source: v-jre-david-grusch@15:09
   - text: "Testified under oath that he “was informed in the course of my official duties of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access”, and that the U.S. government “absolutely” possesses UAP, “based on interviewing over 40 witnesses over 4 years”."
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
     status: claimed
     by: david-grusch
     source: doc-transcript-2023-07-26
@@ -53,9 +55,11 @@ facts:
     by: david-grusch
     source: v-2023-07-26-hearing-a@1:49:13
   - text: "Asked whether AARO director Sean Kirkpatrick's statement that there was no credible evidence was accurate, he testified: “It is not accurate”, adding that some of the roughly 30 people who had gone to AARO were also people he had interviewed."
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
     status: claimed
     by: david-grusch
-    source: v-2023-07-26-hearing-a@1:11:25
+    source: v-2023-07-26-hearing-a@1:11:52
   - text: "He says Jay Stratton introduced him to Eric Davis, who briefed him and his NRO boss for two and a half days just before COVID; Davis says that material formed part of Grusch's classified Inspector General complaint."
     status: claimed
     by: eric-davis
@@ -73,10 +77,16 @@ facts:
     by: eric-burlison
     source: v-2026-10-15-dr-phil-burlison-lure-ufos@43:44
   - text: "Opening the November 2024 hearing, Rep. Glenn Grothman said that agencies briefing the committee, including the DoD and IC inspectors general and AARO, had not been able to substantiate the claims Grusch made in 2023, despite members questioning them inside and outside the SCIF."
+    claims: [ recovered-non-human-craft ]
+    stance: disputes
+    basis: relayed
     status: documented
     by: glenn-grothman
     source: doc-transcript-2024-11-13
   - text: "AARO's 2024 historical report found “no empirical evidence” for claims that the U.S. government and private companies have been reverse-engineering extraterrestrial technology, and attributes the modern claim largely to “circular reporting from a group of individuals who believe this to be the case”, many tied to the cancelled AAWSAP/AATIP program and KONA BLUE. It does not name Grusch."
+    claims: [ recovered-non-human-craft ]
+    stance: disputes
+    basis: documented
     status: documented
     source: doc-aaro-historical-record-report-v1
 ---

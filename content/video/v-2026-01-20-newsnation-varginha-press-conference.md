@@ -77,23 +77,15 @@ moments:
   - t: "1:05:27"
     text: "(Portuguese) Luíza Helena da Silva, the sisters' mother: at the site half an hour later she saw a footprint with three long toes; later four men in black opened a case of money and offered to make the family rich if she had the girls say on TV that they had seen an animal or a sick person. She refused."
     refs: [ inc-varginha-1996 ]
-    claims: [ varginha-beings-captured ]
-    basis: first-hand
   - t: "1:08:18"
     text: "(Portuguese) The director of TV Princesa, a local station, says EsSA soldiers stopped him reaching the site, citing national security, that he heard men in the woods calling to surround something, and that his reporters were warned they would be arrested if they pressed the Army on it."
     refs: [ inc-varginha-1996 ]
-    claims: [ varginha-beings-captured ]
-    basis: first-hand
   - t: "1:10:39"
     text: "(Portuguese) An unnamed former Army soldier says he saw the being through a door at the hospital and drove it from Varginha to Três Corações and on to Campinas, where other soldiers took over, and later heard the Americans had it."
     refs: [ inc-varginha-1996 ]
-    claims: [ varginha-beings-captured ]
-    basis: first-hand
   - t: "1:11:49"
     text: "(Portuguese) Marta, sister of military police officer Marco Eli Chereze: her brother, 23, took part in the capture and died of a cause still undetermined; she asks the authorities to say what happened."
     refs: [ inc-varginha-1996 ]
-    claims: [ varginha-beings-captured ]
-    basis: relayed
   - t: "1:15:40"
     text: "Forensic examiner Armando Fortunato Filho: he performed the autopsy of the 23-year-old soldier, whose death from what looked like a simple abscess led the military police commander to request an investigation for suspected medical error."
     speaker: armando-fortunato-filho

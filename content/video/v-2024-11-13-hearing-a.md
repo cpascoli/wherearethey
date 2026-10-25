@@ -10,6 +10,9 @@ moments:
     text: "Grothman: briefings with the DoD and IC inspectors general and AARO have not been able to substantiate David Grusch's 2023 claims, despite Members questioning them inside and outside the SCIF."
     speaker: glenn-grothman
     refs: [ david-grusch, aaro ]
+    claims: [ recovered-non-human-craft ]
+    stance: disputes
+    basis: relayed
   - t: "32:37"
     claims: [ langley-drones-unidentified ]
     basis: relayed
@@ -38,6 +41,8 @@ moments:
     text: "Elizondo: “UAP are real. Advanced technologies not made by our government or any other government are monitoring sensitive military installations around the globe. Furthermore, the U.S. is in possession of UAP technologies, as are some of our adversaries.”"
     speaker: luis-elizondo
     refs: [ crash-retrieval ]
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
   - t: "56:33"
     text: "Shellenberger: the whistleblower report says Immaculate Constellation is a parent USAP consolidating UAP imagery and signature intelligence from tasked and untasked platforms; cases include orbs forcing an F-22 out of its patrol area."
     speaker: michael-shellenberger
@@ -56,10 +61,12 @@ moments:
   - t: "1:06:38"
     text: "Gallaudet on the satellite imagery: he can only give details in a closed setting, but analysts called the object “the button” — “a disc-shaped object.”"
     speaker: tim-gallaudet
-  - t: "1:07:24"
+  - t: "1:07:47"
     text: "Elizondo says documentation he signed three years earlier bars him from discussing crash retrievals; asked yes or no, he says the government has run secret UAP crash-retrieval programs designed to reverse-engineer craft."
     speaker: luis-elizondo
     refs: [ crash-retrieval, legacy-program ]
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
   - t: "1:08:09"
     text: "Asked by Mace whether injured government employees are compensated, Elizondo: “That is correct”, adding that he has seen U.S. government documentation for several individuals injured in UAP incidents."
     speaker: luis-elizondo
@@ -71,15 +78,16 @@ moments:
     text: "Gallaudet on the USS Omaha case off southern California: bridge watchstanders saw an object with no exhaust or control surfaces go from the air into the sea — transmedium travel."
     speaker: tim-gallaudet
   - t: "1:18:39"
-    claims: [ tic-tac-beyond-known-technology ]
-    basis: relayed
     text: "Gallaudet: a meeting with AARO turned into “an hours-long influence operation” to defend its historical record report and suggest the Tic Tac was American technology, which Fravor and Dietrich reject."
     speaker: tim-gallaudet
     refs: [ aaro, doc-aaro-historical-record-report-v1, inc-nimitz-2004, david-fravor, alex-dietrich ]
+    claims: [ tic-tac-beyond-known-technology ]
+    stance: context
+    basis: relayed
   - t: "1:20:16"
     text: "Elizondo: there is enough data to suggest a relationship between UAP and sensitive military installations, nuclear equities and Department of Energy sites, going back decades."
     speaker: luis-elizondo
-  - t: "1:21:40"
+  - t: "1:21:56"
     text: "Asked for evidence for Immaculate Constellation, Shellenberger says the report described cases new to him, so it was not circular reporting, and that more than one other source confirmed the program's name."
     speaker: michael-shellenberger
     refs: [ doc-immaculate-constellation ]
@@ -118,6 +126,8 @@ moments:
   - t: "2:23:32"
     text: "Gallaudet: withholding UAP information from Congress infringes its oversight duties — “This UAP issue may be the greatest issue of our time, and it is being hid from you.”"
     speaker: tim-gallaudet
+    claims: [ programs-hidden-from-congress ]
+    basis: opinion
 ---
 
 The House Oversight Committee's official recording of the joint subcommittee hearing of 13 November 2024, with Rear Adm. Tim Gallaudet, Luis Elizondo, Michael Shellenberger and Michael Gold. The session opens at about 18:15, after the pre-hearing feed.

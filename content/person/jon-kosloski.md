@@ -11,7 +11,7 @@ credentials:
 tags:
   - aaro
 rel:
-  - [ led, aaro ]
+  - [ led, aaro, "Director from August 2024 (named August 26, 2024)" ]
   - [ witness, h-2024-11-19 ]
   - [ questioned by, kirsten-gillibrand, "His first public hearing was before Gillibrand's Senate subcommittee on 19 November 2024" ]
   - [ succeeded, sean-kirkpatrick, "Named AARO director in August 2024, succeeding Kirkpatrick and acting director Tim Phillips" ]

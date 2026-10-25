@@ -40,6 +40,8 @@ facts:
     by: ryan-graves
     source: v-jm-ryan-graves@21:45
   - text: "In the debrief of the Gimbal encounter he says he saw on the radar display the “fleet” of objects the pilots refer to, which do not appear on the FLIR video; a friend who recorded the GoFast video told him the crew detected four objects in line abreast, not one."
+    claims: [ gimbal-gofast-not-conventional ]
+    basis: first-hand
     status: claimed
     by: ryan-graves
     source: v-2023-07-26-hearing-a@1:43:20
@@ -59,6 +61,9 @@ facts:
     by: ryan-graves
     source: v-jm-ryan-graves@38:20
   - text: "AARO's February 2025 case resolution of the GoFast video assesses “with high confidence that the object did not move at anomalous speeds”: it was at about 13,000 feet, not near the sea surface, moving at roughly 5 to 92 mph once wind is accounted for. AARO says it cannot definitively identify the object."
+    claims: [ gimbal-gofast-not-conventional ]
+    stance: disputes
+    basis: documented
     status: documented
     source: doc-aaro-gofast
 links:

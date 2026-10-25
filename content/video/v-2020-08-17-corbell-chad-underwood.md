@@ -24,21 +24,31 @@ moments:
   - t: "6:59"
     text: "Underwood: no tail, no wings, and above all no exhaust plume — “the biggest giveaway … because that's just nothing but heat”; it was “just this elongated thing”."
     speaker: chad-underwood
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
   - t: "8:29"
     text: "Underwood: once he locked it on radar the readings went erratic — the Mach number “jumping all over the place … 0.8, 0.4, 0.2” — and he saw strobe lines indicating the radar was being jammed, which he says would count as an act of war."
     speaker: chad-underwood
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
   - t: "10:31"
     text: "Answering the theory that his own banking made the object appear to dart left: “Our aircraft was straight and low the entire time”, with no change in heading, altitude or airspeed that would make the pod drop track."
     speaker: chad-underwood
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
   - t: "12:10"
     text: "Underwood: the 2x zoom did not drop the track; “It broke my lock by zooming off to the left” with an acceleration the pod is not built to follow — though elsewhere he has said he did not see it accelerate with his own eyes."
     speaker: chad-underwood
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
   - t: "14:57"
     text: "Underwood: he turned to reacquire it and asked the Princeton where it went — “negative radar contact”; their scopes were clean too."
     speaker: chad-underwood
   - t: "16:37"
     text: "Underwood: it was no black project — he has been debriefed and signed NDAs before after seeing classified programs, and that never happened here; asked what it was: “I have no … idea.”"
     speaker: chad-underwood
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
 ---
 
 Filmmaker Jeremy Corbell's 2020 interview with Lt. Cmdr. Chad Underwood of VFA-41, the aviator whose F/A-18 targeting pod recorded the "FLIR1" Tic Tac video on 14 November 2004, about an hour after David Fravor's encounter. Underwood explains how Fravor sent him out with tapes running. He says the object showed none of the infrared signatures of an aircraft, the radar readings went erratic with signs of jamming, and he deliberately cycled through every FLIR mode for the intelligence officers. He rejects the sceptics' theory that the final dart to the left was caused by his own manoeuvring or the zoom, and says he was never debriefed as he would have been after seeing a secret U.S. program.

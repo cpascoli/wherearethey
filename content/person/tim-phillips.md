@@ -6,7 +6,7 @@ credentials:
     role: "Deputy director of the All-domain Anomaly Resolution Office (AARO) from October 2023; acting director between Sean Kirkpatrick and Jon Kosloski"
 tags: [aaro]
 rel:
-  - [ worked at, aaro, "Deputy director from October 2023, and acting director after Kirkpatrick retired in December 2023" ]
+  - [ led, aaro, "Deputy director from October 2023, and acting director after Kirkpatrick retired in December 2023" ]
 facts:
   - text: "Timothy Phillips has been deputy director of AARO since October 2023, MeriTalk reported when Jon Kosloski was named director in August 2024; Sean Kirkpatrick, the first director, had retired in December 2023."
     status: claimed

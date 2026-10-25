@@ -8,7 +8,6 @@ tags: [secrecy]
 rel:
   - [ about, legacy-program ]
   - [ about, usap ]
-  - [ depends on, recovered-non-human-craft ]
 ---
 
 The claim that the executive branch and its contractors have kept UAP programs out of sight of the committees that are supposed to oversee them, through unacknowledged special access programs, emergency directives or contractor ownership.

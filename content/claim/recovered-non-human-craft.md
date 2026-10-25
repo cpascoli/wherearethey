@@ -10,7 +10,6 @@ rel:
   - [ about, crash-retrieval ]
   - [ evidence against, doc-aaro-historical-record-report-v1, "AARO “found no empirical evidence” of reverse-engineering of extraterrestrial technology by the government or private companies" ]
   - [ evidence against, kona-blue, "AARO: the KONA BLUE proposal “was never approved or stood up”, and no craft or bodies were ever collected" ]
-  - [ evidence for, doc-uap-disclosure-act-2023, "Gives “legacy program” a legal definition in proposed law; a definition, not proof that one exists" ]
 ---
 
 The central claim of the disclosure debate: that the United States, through government agencies and defence contractors, has recovered craft that were not made by humans, and has spent decades trying to reverse-engineer them, out of sight of Congress.

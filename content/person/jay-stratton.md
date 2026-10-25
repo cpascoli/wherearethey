@@ -59,7 +59,7 @@ facts:
     by: eric-davis
     source: v-2025-05-01-hearing-a@1:01:58
   - text: "On Fox News in October 2026 he said: \"I have seen non-human beings and non-human craft with my own eyes\", and that both the government and defense contractors hold craft of non-human origin."
-    claims: [ recovered-non-human-craft, recovered-non-human-bodies ]
+    claims: [ recovered-non-human-craft ]
     basis: first-hand
     status: claimed
     by: jay-stratton

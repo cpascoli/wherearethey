@@ -28,9 +28,11 @@ facts:
     by: eric-davis
     source: https://www.nytimes.com/2020/07/23/us/politics/pentagon-ufo-harry-reid-navy.html
   - text: "At the May 2025 congressional briefing he repeated what he says he told The New York Times in 2020 about his contacts with industry leadership: “The craft that have been recovered are not of this earth. They're not made by human hands.” Asked whether they are extraterrestrial: “We don't know.”"
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
     status: claimed
     by: eric-davis
-    source: v-2025-05-01-hearing-a@1:04:11
+    source: v-2025-05-01-hearing-a@1:04:55
   - text: "Has said that defense contractors such as Lockheed Martin hold retrieved craft inside unacknowledged special access programs kept from congressional oversight."
     status: claimed
     by: eric-davis

@@ -54,6 +54,8 @@ moments:
     text: "Asked whether occupants were taken alive: “Yes. And I know people who have had direct interactions in a detainment situation”, citing a former cabinet member who worked the issue."
     speaker: david-grusch
     refs: [ crash-retrieval ]
+    claims: [ recovered-non-human-bodies ]
+    basis: relayed
   - t: "48:39"
     text: "He says a DIA program, AAWSAP, was “trying to get Lockheed Martin to transfer material” to it outside the program, which CIA leadership denied."
     speaker: david-grusch
