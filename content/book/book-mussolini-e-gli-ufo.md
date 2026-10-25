@@ -4,7 +4,7 @@ aka: [Mussolini e gli UFO]
 date: "2001"
 credits: "Roberto Pinotti and Alfredo Lissoni"
 publisher: Idea Libri
-isbn: 978-88-7082-741-1
+isbn: 978-88-7082-741-5
 pages: 255
 tags: [international, crash-retrieval]
 rel:
