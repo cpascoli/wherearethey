@@ -840,7 +840,8 @@
 
   // ───────────── timeline ─────────────
   function renderTimeline() {
-    const items = ents.filter(e => e.y0 && e.type !== 'video' && visible.has(e.id)).sort((a, b) => String(a.date).localeCompare(String(b.date)) || a.name.localeCompare(b.name));
+    // videos (upload dates) and people (birth dates) aren't events: they appear through the events they're part of
+    const items = ents.filter(e => e.y0 && e.type !== 'video' && e.type !== 'person' && visible.has(e.id)).sort((a, b) => String(a.date).localeCompare(String(b.date)) || a.name.localeCompare(b.name));
     if (!items.length) { $('#timeline').innerHTML = '<p class="muted" style="padding:24px">Nothing dated matches the current filters.</p>'; return; }
     const groups = new Map();
     for (const e of items) { const d = Math.floor(e.y0 / 10) * 10; if (!groups.has(d)) groups.set(d, []); groups.get(d).push(e); }
