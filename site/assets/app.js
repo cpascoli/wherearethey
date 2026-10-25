@@ -1817,7 +1817,7 @@
     state.videoT = Math.floor(t) || 0; // the moment, kept in the address (?t=) so a copied link reopens it
     // phones: the file card covers the whole screen, so close it to show the player (Back reopens it)
     if (state.sel && matchMedia('(max-width: 860px)').matches) { state.sel = null; panelTransition('close', () => { if (!state.sel) closePanel(); }); }
-    if (state.view !== 'videos') go('videos', { keepSel: true, keepVideo: true });
+    if (state.view !== 'videos') go('videos', { keepSel: true });
     setHash({ replace });
     $('#player-empty').hidden = true;
     $('#vid-browse').hidden = true; $('#player-col').hidden = false;
@@ -2600,9 +2600,14 @@
     if (state.view === 'timeline') $$('.tl-item').forEach(el => el.classList.toggle('sel', el.dataset.goto === id));
     setHash();
   }
-  function go(view, { keepSel = true, keepVideo = false } = {}) {
-    // entering Videos from elsewhere opens the grid, unless a specific video is being played
-    if (view === 'videos' && state.view !== 'videos' && !keepVideo && state.video) { state.video = null; $$('.vl-item').forEach(el => el.classList.remove('on')); }
+  function go(view, { keepSel = true } = {}) {
+    // leaving Videos pauses the player and remembers where it stopped: coming back shows the same video at that point,
+    // ready to resume (its address carries ?t=); "All videos" is the way back to the grid
+    if (state.view === 'videos' && view !== 'videos' && state.video) {
+      state.videoT = Math.floor(currentTime()) || state.videoT;
+      try { yt?.pauseVideo?.(); } catch { /* not ready */ }
+      $('#local-video').pause?.();
+    }
     if (view === 'home' && state.view !== 'home') teardownApp();
     if (state.reading && view !== state.view) { state.reading = false; $('#app').classList.remove('reading'); } // e.g. ▶ from reading view
     state.view = view;
@@ -2771,7 +2776,7 @@
     const shelfChanged = fromUrl.shelf && fromUrl.shelf !== shelfTab;
     if (fromUrl.shelf) shelfTab = fromUrl.shelf; // the address picks Documentaries or Books
     try {
-      if (r.view !== state.view || initial || shelfChanged) go(r.view, { keepVideo: !!r.video });
+      if (r.view !== state.view || initial || shelfChanged) go(r.view);
       // a file's own address (/person/eric-davis) opens it full width on desktop, like on phones;
       // ?panel=side opens it in the side panel beside the network instead
       // ?explore starts a trail from it, as "Explore from here" would: beside the panel on desktop, the graph alone on phones
