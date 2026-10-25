@@ -11,6 +11,13 @@ rel:
 links:
   - label: "Open Library"
     url: https://openlibrary.org/works/OL38082162W
+  - label: "Excerpt — the introduction (Richard Dolan Press)"
+    url: https://richardmdolan.wixsite.com/rdpress/21st-century-mind
+glimpses:
+  - text: "I wanted to know only one thing: were UFOs ever important to the U.S. national security community?"
+    where: "Introduction"
+    via: "Richard Dolan Press"
+    url: https://richardmdolan.wixsite.com/rdpress/21st-century-mind
 ---
 
 *UFOs for the 21st Century Mind* (2014) is Richard Dolan's general overview of the subject for newcomers: its history, the main cases, government secrecy, abductions and the theories about what UFOs are. It summarises his longer histories and adds his views on the more speculative topics.

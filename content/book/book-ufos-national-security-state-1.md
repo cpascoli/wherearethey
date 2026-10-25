@@ -16,6 +16,8 @@ rel:
 links:
   - label: "Open Library"
     url: https://openlibrary.org/works/OL224878W
+  - label: "Excerpt — “The Problem of UFOs” (Richard Dolan Press)"
+    url: https://richardmdolan.wixsite.com/rdpress/chronology-of-a-cover-up-1941-1973
 facts:
   - text: "Dolan argues from declassified records that the U.S. national-security establishment took UFOs seriously in private while dismissing them in public."
     status: claimed
@@ -24,6 +26,11 @@ facts:
     claims: [ government-ufo-disinformation ]
     basis: documented
     source: https://openlibrary.org/works/OL224878W
+glimpses:
+  - text: "The UFO problem has involved military personnel around the world for more than fifty years, and is wrapped in secrecy."
+    where: "“The Problem of UFOs”"
+    via: "Richard Dolan Press"
+    url: https://richardmdolan.wixsite.com/rdpress/chronology-of-a-cover-up-1941-1973
 ---
 
 The first volume of Richard Dolan's history (Keyhole Publishing, 2000; Hampton Roads, 2002) follows the U.S. government's handling of UFOs from the Second World War to the end of Project Blue Book, mainly through declassified documents: Projects Sign and Grudge, the 1952 Washington sightings, the CIA's Robertson Panel, Blue Book and the Condon study. Its argument is that the national-security apparatus treated the subject as serious while publicly playing it down. Jacques Vallée wrote the foreword.

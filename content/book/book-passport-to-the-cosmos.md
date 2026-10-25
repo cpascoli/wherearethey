@@ -18,6 +18,15 @@ links:
     url: https://archive.org/details/passporttocosmos0000mack
   - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:0517705680
+glimpses:
+  - text: "I am interested in the meaning of these experiences for the so-called abductees and for humankind more generally."
+    where: "Preface"
+    via: "John E. Mack Institute"
+    url: https://johnemackinstitute.org/1999/12/dr-macks-newest-book-published/
+  - text: "In that sense, Passport to the Cosmos is not simply about abductions but has to do with what such anomalous experiences and related phenomena can tell us about ourselves and our evolving knowledge of the nature of reality."
+    where: "Preface"
+    via: "John E. Mack Institute"
+    url: https://johnemackinstitute.org/1999/12/dr-macks-newest-book-published/
 ---
 
 *Passport to the Cosmos* (Crown, 1999) is John Mack's second book on encounter experiences. Drawing on interviews with experiencers in the United States and around the world, including indigenous people in Brazil and southern Africa and the children of the Ariel School in Ruwa, Zimbabwe, whom he interviewed in 1994, he moves from asking whether the encounters are physically real to what they mean: the spiritual transformation, ecological warnings and expanded sense of reality that many experiencers describe.

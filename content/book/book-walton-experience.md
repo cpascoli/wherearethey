@@ -15,6 +15,8 @@ links:
     url: https://openlibrary.org/works/OL3368101W
   - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:0425036758
+  - label: "Excerpts — the account, condensed by Travis Walton from the later edition (travis-walton.com)"
+    url: https://www.travis-walton.com/abduction.html
 facts:
   - text: "Walton's account of 5 November 1975, when his forestry crew said a beam from a glowing craft struck him, and of the five days he says he spent aboard with non-human beings."
     status: claimed

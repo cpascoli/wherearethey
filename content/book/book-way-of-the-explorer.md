@@ -22,6 +22,15 @@ facts:
     by: edgar-mitchell
     said: 1996
     source: https://openlibrary.org/works/OL2981591W
+glimpses:
+  - text: "What I experienced during that three-day trip home was nothing short of an overwhelming sense of universal connectedness. I actually felt what has been described as an ecstasy of unity."
+    where: "Chapter 1 (2008 revised edition)"
+    via: "Publisher’s sample"
+    url: https://www.amazon.com/Way-Explorer-Astronauts-Journey-Material/dp/1564149773
+  - text: "It occurred to me that the molecules of my body and the molecules of the spacecraft itself were manufactured long ago in the furnace of one of the ancient stars that burned in the heavens about me."
+    where: "Chapter 1"
+    via: "Publisher’s sample"
+    url: https://www.amazon.com/Way-Explorer-Astronauts-Journey-Material/dp/1564149773
 ---
 
 *The Way of the Explorer* (Putnam, 1996) is the memoir and philosophy of Edgar Mitchell, the Apollo 14 lunar module pilot and sixth man to walk on the Moon. On the flight home in February 1971 he had what he called an overwhelming sense of universal connectedness, the conviction that the cosmos was in some way conscious. The book describes that experience and the work it led to: he left NASA, founded the Institute of Noetic Sciences in 1973, and spent the following decades studying consciousness, proposing what he called a "dyadic" model of reality.

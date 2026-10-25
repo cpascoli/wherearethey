@@ -137,6 +137,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     if (e.aka?.length) h.push(`<p class="ssr-aka">Also known as ${e.aka.map(esc).join(', ')}</p>`);
     if (e.credentials?.length) h.push(`<ul class="ssr-creds">${e.credentials.map(c => `<li>${esc(c.role || c.category)}</li>`).join('')}</ul>`);
     if (e.type === 'book') h.push(`<p>${[e.credits, e.publisher, e.pages && `${e.pages} pages`, e.isbn && `ISBN ${e.isbn}`].filter(Boolean).map(esc).join(' · ')}</p>`);
+    if (e.glimpses?.length) h.push(`<h2>Glimpses</h2>${e.glimpses.map(g => `<blockquote${g.url ? ` cite="${esc(g.url)}"` : ''}><p>${esc(g.text)}</p><footer>${esc(g.where)}${g.url ? `${g.where ? ' · ' : ''}<a href="${esc(g.url)}" rel="noopener">${esc(g.via || 'source')}</a>` : ''}</footer></blockquote>`).join('\n')}`);
     if (e.type === 'film') h.push(`<p>${[e.credits, e.runtime && `${e.runtime} min`].filter(Boolean).map(esc).join(' · ')}</p>`);
     if (e.cover) h.push(`<img src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" width="200">`);
     if (e.image) h.push(`<figure><img src="${esc(e.image)}" alt="${esc(e.imageCaption || e.name)}" width="800">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>`);

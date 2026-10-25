@@ -18,6 +18,11 @@ links:
     url: https://archive.org/details/forbiddenscience00vall_0
   - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:1556431252
+glimpses:
+  - text: "What should a small group of researchers do when they find themselves confronted with a phenomenon that does not follow the recognized laws of nature? How far should they go in alerting their colleagues and the public in the absence of definite proof?"
+    where: "Foreword, as quoted by Jeffrey Kripal"
+    via: "The Daily Grail"
+    url: https://www.dailygrail.com/2010/12/vallee-author-of-the-impossible/
 ---
 
 *Forbidden Science* (North Atlantic Books, 1992) is the first volume of Jacques Vallée's private journals, covering 1957 to 1969: his years as a young astronomer in Paris, his move to the United States, his work with J. Allen Hynek at Northwestern, and their dealings with the Air Force's Project Blue Book until its closure. It is a contemporary diary rather than a memoir written afterwards, which makes it a useful first-hand source on how the official investigation looked from the inside. The series continued over the following decades, reaching seven volumes with *Final Report, 2020–2025*.

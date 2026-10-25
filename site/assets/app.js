@@ -1274,6 +1274,9 @@
     }
     // the summary (a person's profile) comes before the videos
     if (e.body) h.push(`<div class="p-sec"><h4>${e.type === 'person' ? 'Profile' : 'Summary'}</h4><div class="p-body p-bio">${e.body}</div></div>`);
+    // glimpses: short passages from the book itself, each linked to the authorized excerpt or review it was checked against
+    if (e.glimpses?.length) h.push(`<div class="p-sec" id="sec-glimpses"><h4>Glimpses <span>${e.glimpses.length}</span></h4><div class="glimpses" data-collapse="4">${e.glimpses.map(g => `
+      <blockquote class="glimpse"><p>${esc(g.text)}</p><footer>${esc(g.where)}${g.url ? `${g.where ? ' · ' : ''}<a href="${esc(g.url)}" target="_blank" rel="noopener">${esc(g.via || 'source')} ↗</a>` : g.via ? ` · ${esc(g.via)}` : ''}</footer></blockquote>`).join('')}</div></div>`);
     if (e.type === 'claim') h.push(claimSections(e));
     // a person's positions on the claims (from the assertions tagged on their facts and moments)
     if (e.type === 'person') {

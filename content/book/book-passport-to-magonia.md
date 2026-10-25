@@ -21,6 +21,15 @@ facts:
     said: 1969
     basis: opinion
     source: https://en.wikipedia.org/wiki/Jacques_Vall%C3%A9e
+glimpses:
+  - text: "Magonia, heaven, hell, Elfland – all such places have in common one characteristic: we are unable to reach them alive, except on very special occasions."
+    where: "Opening, as posted by the author"
+    via: "jacquesvallee.net"
+    url: https://www.jacquesvallee.net/research/
+  - text: "It is readily acknowledged that our time has surpassed all epochs in history for the accumulation of technical knowledge, physical power over our environment, and economic might."
+    where: "Opening"
+    via: "jacquesvallee.net"
+    url: https://www.jacquesvallee.net/research/
 ---
 
 *Passport to Magonia* (Regnery, 1969) is the book in which Jacques Vallée broke with the idea that UFOs are simply spacecraft from other planets. Comparing modern close encounters with centuries of folklore, from fairies and elves to the medieval legend of Magonia, a land in the clouds, and to religious apparitions, he argued that the same phenomenon, or the same human response to it, appears in each era in the dress of its time. A long appendix catalogues landing reports from the previous century.

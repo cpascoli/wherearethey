@@ -17,6 +17,8 @@ links:
     url: https://archive.org/details/ufoexperience00jall
   - label: Find in a library
     url: https://search.worldcat.org/search?q=ti:%22UFO+experience%22+au:hynek
+  - label: "Full text — scan hosted by the Center for UFO Studies (PDF)"
+    url: https://cufos.org/PDFs/books/The_UFO_Experience.pdf
 facts:
   - text: "Hynek's first book, in which he published the “close encounter” scale he had developed to catalogue UFO reports; Steven Spielberg's 1977 film *Close Encounters of the Third Kind* is named after one of its levels, and Hynek consulted on it."
     status: claimed

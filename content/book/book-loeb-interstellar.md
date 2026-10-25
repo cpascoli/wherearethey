@@ -29,6 +29,15 @@ facts:
   - text: "A 2024 study led by planetary seismologist Benjamin Fernando concluded that the seismic signal used to locate the search area came from a truck near the sensor, not the meteor."
     status: claimed
     source: https://en.wikipedia.org/wiki/Avi_Loeb
+glimpses:
+  - text: "The fastest way to ascend the ladder of civilizations is to reach in hopeful expectation of another civilization (even if only by way of a long-discarded artifact) extending us a hand up."
+    where: "As quoted by Kirkus Reviews"
+    via: "Kirkus Reviews"
+    url: https://www.kirkusreviews.com/book-reviews/avi-loeb/interstellar/
+  - text: "To those concerned that AI’s arrival augurs humanity’s annihilation … I urge optimism."
+    where: "As quoted by Kirkus Reviews"
+    via: "Kirkus Reviews"
+    url: https://www.kirkusreviews.com/book-reviews/avi-loeb/interstellar/
 ---
 
 *Interstellar* (Mariner Books, 2023) continues Avi Loeb's case for looking for alien technology. Its centrepiece is the 2014 meteor CNEOS 2014-01-08, which Loeb argues came from outside the solar system, and the 2023 expedition he led to the Pacific floor off Papua New Guinea, where he says the team recovered tiny metal spherules of interstellar origin, possibly remnants of an extraterrestrial craft. Around this he ranges over the Galileo Project, humanity's future among the stars and the philosophy of science.

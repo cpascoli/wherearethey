@@ -17,6 +17,8 @@ links:
     url: https://archive.org/details/openskiesclosedm0000pope
   - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:9780684816647
+  - label: "Excerpt — opening pages (AbeBooks, reprinted by permission)"
+    url: https://www.abebooks.com/9780440234890/Open-Skies-Closed-Minds-Pope-0440234891/plp
 facts:
   - text: "Pope's autobiographical account of his three years (1991–94) as the Ministry of Defence desk officer whose duties included investigating UFO sightings for any defence significance."
     status: claimed

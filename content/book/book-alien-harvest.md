@@ -14,6 +14,13 @@ links:
     url: https://en.wikipedia.org/wiki/Linda_Moulton_Howe
   - label: Open Library
     url: https://openlibrary.org/works/OL3976587W
+  - label: "Excerpt — pp. 324–330, Judy Doraty (Earthfiles)"
+    url: https://www.earthfiles.com/2003/02/24/part-2-corguinho-brazil-inside-the-non-human-craft-from-september-15-18-2002/
+glimpses:
+  - text: "It’s like they can very quickly project something. It’s like a movie screen, but it’s not a movie screen. But they can project something there if they want to see it."
+    where: "Judy Doraty, pp. 324–330"
+    via: "Earthfiles, reprinted by the author"
+    url: https://www.earthfiles.com/2003/02/24/part-2-corguinho-brazil-inside-the-non-human-craft-from-september-15-18-2002/
 ---
 
 *An Alien Harvest* (1989) is the self-published book by the journalist and documentary maker Linda Moulton Howe that grew out of her Emmy-winning 1980 documentary *A Strange Harvest* on cattle mutilations. It argues that the mutilations, with organs removed apparently surgically and no tracks or blood, are linked to UFOs and human abductions, and recounts her 1983 meeting at Kirtland Air Force Base where the AFOSI agent Richard Doty showed her what he said was a presidential briefing paper on extraterrestrial contact.

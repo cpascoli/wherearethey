@@ -13,6 +13,11 @@ rel:
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Sekret_Machines:_Gods
+glimpses:
+  - text: "It is almost too easy to draw comparisons between the dark stars of Chinese astronomy and the dark matter of the physicists."
+    where: "Chapter 6, Peter Levenda, as quoted in Jason Colavito’s review"
+    via: "jasoncolavito.com"
+    url: https://www.jasoncolavito.com/blog/review-of-sekret-machines-gods-by-tom-delonge-with-peter-levenda-part-3
 ---
 
 *Sekret Machines: Gods* (To The Stars, 2017) is the first non-fiction volume of the *Gods, Man & War* series by the musician Tom DeLonge and the author Peter Levenda, published months before DeLonge's company To The Stars Academy helped bring the Navy UAP videos and AATIP to public attention. It ranges over religion, myth and Cold War history to argue that the UFO phenomenon has shaped human civilisation and that governments have studied it in secret, and it accompanies DeLonge's *Sekret Machines* novels, which he said were informed by insider advisers.

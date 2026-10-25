@@ -21,6 +21,11 @@ facts:
     said: 2015
     basis: opinion
     source: https://en.wikipedia.org/wiki/David_Clarke_(journalist)
+glimpses:
+  - text: "Why would aliens redesign the appearance of their craft … to conform to a mistake by a journalist?"
+    where: "As quoted by the Sunday Times review"
+    via: "drdavidclarke.co.uk"
+    url: https://drdavidclarke.co.uk/2015/05/17/ufos-conquer-the-world/
 ---
 
 *How UFOs Conquered the World* (Aurum Press, 2015) is the historian David Clarke's cultural history of the UFO, which he treats as a modern myth: a belief that grew from the 1947 flying-saucer wave through Cold War anxieties, films and television, government secrecy and the internet. He draws on the official files he helped release from the Ministry of Defence and on decades of interviewing witnesses.

@@ -54,3 +54,6 @@ site/news/
 
 # scratch files dropped in for checking (screenshots, saved pages)
 tmp/
+
+# book excerpts: local copies of publisher/author extracts, not republished
+sources/excerpts/

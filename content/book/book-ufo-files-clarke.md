@@ -16,11 +16,18 @@ links:
     url: https://en.wikipedia.org/wiki/David_Clarke_(journalist)
   - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:9781905615506
+  - label: "Excerpt — Chapter 2, “The Flying Saucer Age” (The National Archives, PDF)"
+    url: https://cdn.nationalarchives.gov.uk/documents/the-ufo-files-extract.pdf
 facts:
   - text: "Published by the UK National Archives in 2009 (second edition 2012), drawing on the Ministry of Defence UFO files that Clarke had pursued under the Freedom of Information Act and helped the Archives release."
     status: claimed
     by: david-clarke
     source: https://en.wikipedia.org/wiki/David_Clarke_(journalist)
+glimpses:
+  - text: "The sceptics tended to be scientists, who applied cold logic to the UFO question and demanded solid evidence, and their opinion was ultimately the most influential."
+    where: "Chapter 2, “The Flying Saucer Age”"
+    via: "The National Archives, edited extract"
+    url: https://cdn.nationalarchives.gov.uk/documents/the-ufo-files-extract.pdf
 ---
 
 *The UFO Files* (The National Archives, 2009; second edition 2012) is the official companion to the release of the British Ministry of Defence's UFO files. Its author, the historian David Clarke, had used freedom-of-information requests to pry the files open and then advised the National Archives on publishing them. The book walks through the files from the Second World War "foo fighters" to the end of the MoD's UFO desk, with facsimiles of reports, drawings and memos, and cases such as Rendlesham.

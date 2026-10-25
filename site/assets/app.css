@@ -361,6 +361,12 @@ mark { background: rgba(227, 179, 65, .4); color: inherit; border-radius: 3px; p
 .p-bio { font-size: 14.5px; line-height: 1.65; }
 .p-bio p:first-child::first-line { font-weight: 500; }
 .p-bio blockquote { margin: 10px 0; padding: 4px 0 4px 12px; border-left: 2px solid var(--accent); color: var(--text); font-style: italic; }
+.glimpses { display: grid; gap: 12px; }
+.glimpse { margin: 0; padding: 2px 0 2px 14px; border-left: 2px solid var(--accent); }
+.glimpse p { margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; font-style: italic; color: var(--text); }
+.glimpse p::before { content: '“'; } .glimpse p::after { content: '”'; }
+.glimpse footer { margin-top: 5px; font-size: 12px; color: var(--muted); }
+.glimpse footer a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
 .p-sources { font-size: 12px; color: var(--muted); margin-top: 6px; }
 
 /* dot-connecting */

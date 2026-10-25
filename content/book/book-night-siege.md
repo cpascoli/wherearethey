@@ -14,6 +14,11 @@ links:
     url: https://en.wikipedia.org/wiki/J._Allen_Hynek
   - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:0345342135
+glimpses:
+  - text: "They felt as if the object or whatever intelligence that was behind it was trying to communicate with them in some way."
+    where: "On the witnesses, as quoted by Publishers Weekly (1987)"
+    via: "Publishers Weekly"
+    url: https://www.publishersweekly.com/9780345342133
 ---
 
 *Night Siege* (Ballantine, 1987) documents the wave of sightings in New York's Hudson Valley and western Connecticut from 1982 to 1986, when thousands of people reported a huge, silent, boomerang-shaped array of lights moving slowly over highways and towns. J. Allen Hynek began the investigation with Philip Imbrogno, and the book was completed with the journalist Bob Pratt after Hynek's death in 1986.
