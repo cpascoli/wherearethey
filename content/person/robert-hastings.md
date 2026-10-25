@@ -16,6 +16,8 @@ links:
     url: https://en.wikipedia.org/wiki/Robert_Hastings_(ufologist)
 facts:
   - text: "Hastings says that in March 1967, as a teenager working as a janitor in the Malmstrom AFB control tower, he and air traffic controllers watched radar track five UFOs manoeuvring near the nuclear missile silos."
+    claims: [ uap-nuclear-sites ]
+    basis: first-hand
     status: claimed
     by: robert-hastings
     source: https://en.wikipedia.org/wiki/Robert_Hastings_(ufologist)

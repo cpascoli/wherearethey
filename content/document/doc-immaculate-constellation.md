@@ -18,6 +18,8 @@ facts:
     status: documented
     source: library/docs/doc-transcript-2024-11-13.pdf
   - text: "Shellenberger testified that the whistleblower report describes Immaculate Constellation as an unacknowledged special access program consolidating UAP imagery and signature intelligence."
+    claims: [ immaculate-constellation-exists ]
+    basis: relayed
     status: claimed
     by: michael-shellenberger
     source: v-2024-11-13-hearing-a@56:33

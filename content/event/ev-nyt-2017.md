@@ -27,6 +27,8 @@ links:
     url: https://www.scientificamerican.com/article/the-truth-about-those-alien-alloys-in-the-new-york-times-ufo-story/
 facts:
   - text: "On December 16, 2017, The New York Times published “Glowing Auras and ‘Black Money’: The Pentagon's Mysterious U.F.O. Program” by Helene Cooper, Ralph Blumenthal and Leslie Kean. It revealed the Pentagon's secret UAP study, AATIP, funded at Senator Harry Reid's request, and published U.S. Navy cockpit video of an unidentified object."
+    claims: [ aatip-official-program ]
+    basis: relayed
     status: documented
     source: https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html
   - text: "The article said the $22 million spent on AATIP was “almost impossible to find” in the Pentagon's budgets. Reid called it “so-called black money”, which the Times explained as “the Pentagon budget for classified programs”, and contracts obtained by the paper showed “a congressional appropriation of just under $22 million beginning in late 2008 through 2011.”"

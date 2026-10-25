@@ -12,6 +12,8 @@ files:
   - library/docs/doc-pantex-2015.pdf
 facts:
   - text: "At about 07:10 on 1 September 2015 the Pantex Ground Surveillance Radar detected an unknown object flying west of the plant on a northerly track at about 10–15 mph; the Protective Force followed it and secured all gates into the security areas."
+    claims: [ uap-nuclear-sites ]
+    basis: documented
     status: documented
     source: library/docs/doc-pantex-2015.pdf
   - text: "A Protective Force lieutenant and a Security Police Officer who watched it through binoculars said “the object did not make any sound” and that they could not identify any type of propulsion system; they followed it for several miles north of the plant, and it seemed to increase speed and change direction as it was followed."
@@ -21,6 +23,9 @@ facts:
     status: documented
     source: library/docs/doc-pantex-2015.pdf
   - text: "Radar-tower video went to Sandia National Laboratories for study and all evidence to the FBI; the report notes the object never appeared threatening or came close to sensitive assets."
+    claims: [ uap-nuclear-sites ]
+    stance: context
+    basis: documented
     status: documented
     source: library/docs/doc-pantex-2015.pdf
 ---

@@ -11,6 +11,12 @@ facts:
   - text: An alleged unacknowledged special access program for collecting UAP imagery and sensor data. It is described in a whistleblower report that Michael Shellenberger submitted to Congress in November 2024.
     status: unverified
     source: doc-immaculate-constellation
+  - text: "The Department of Defense has publicly stated that it has “no record, present or historical” of a special access program called Immaculate Constellation; the NSA would neither confirm nor deny holding records on the allegation."
+    claims: [ immaculate-constellation-exists ]
+    stance: disputes
+    basis: documented
+    status: claimed
+    source: https://www.theblackvault.com/documentarchive/pentagon-says-it-has-no-record-of-immaculate-constellation-nsa-denies-appeal-and-wont-say-whether-it-does/
 ---
 
 "Immaculate Constellation" is the name given to an alleged unacknowledged special access programme for collecting imagery and sensor data on UAP. It entered public debate in late 2024 through reporting by the journalist Michael Shellenberger, based on a whistleblower document that described it as set up after the 2017 disclosure of AATIP. Rep. Nancy Mace entered the document into the record of the House Oversight hearing of 13 November 2024.

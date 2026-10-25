@@ -8,6 +8,8 @@ rel:
   - [ discussed at, ev-ufo-nukes-press-conference-2010, "Fenstermacher told the story at the 2010 press conference" ]
 facts:
   - text: "Capt. Bruce Fenstermacher, combat crew commander at Romeo flight of the 400th Strategic Missile Squadron, said that in fall 1976 the topside security controller reported a silent, pulsating white object “shaped like a fat cigar” with red and blue lights hovering above the launch control facility, which then moved over the missile silos along the access road."
+    claims: [ uap-nuclear-sites ]
+    basis: first-hand
     status: claimed
     by: bruce-fenstermacher
     source: v-2010-09-28-disclosure-conference-national-press-club-27-sept@44:11
@@ -16,6 +18,9 @@ facts:
     by: bruce-fenstermacher
     source: v-2010-09-28-disclosure-conference-national-press-club-27-sept@45:19
   - text: "He testified in 2013 that the missiles stayed online, but that an officer destroyed the crew's notes and told them the incident “officially never happened.”"
+    claims: [ uap-nuclear-sites ]
+    stance: context
+    basis: first-hand
     status: claimed
     by: bruce-fenstermacher
     source: v-2013-chd-nuclear-tampering-1@44:20

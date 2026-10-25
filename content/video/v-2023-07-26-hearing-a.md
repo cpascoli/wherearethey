@@ -52,6 +52,8 @@ moments:
     text: "Fravor: no one contacted him until 2009, when Jay Stratton of the Pentagon's AATIP program, led by Lue Elizondo, asked to investigate."
     speaker: david-fravor
     refs: [ jay-stratton, aatip, luis-elizondo ]
+    claims: [ aatip-official-program ]
+    basis: relayed
   - t: "49:27"
     text: "Asked whether the government possesses UAP, Grusch answers “Absolutely, based on interviewing over 40 witnesses over 4 years,” and says he gave the exact locations to the Inspector General."
     speaker: david-grusch
@@ -138,9 +140,13 @@ moments:
     text: "Fravor: “probably the most credible UFO sighting in history,” with “four sets of human eyeballs” plus the sensors: “It is not a joke.”"
     speaker: david-fravor
     refs: [ inc-nimitz-2004 ]
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
   - t: "1:57:28"
     text: "Asked whether UAP show interest in nuclear technology, Graves and Fravor say yes and Grusch calls it a fair assessment; Grusch won't confirm or deny Department of Energy involvement in public."
     speaker: david-grusch
+    claims: [ uap-nuclear-sites ]
+    basis: opinion
   - t: "1:59:04"
     text: "Grusch says he has personal knowledge of people injured working on legacy UAP reverse-engineering."
     speaker: david-grusch

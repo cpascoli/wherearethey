@@ -20,12 +20,18 @@ facts:
     status: documented
     source: library/docs/doc-aaro-historical-record-report-v1.pdf
   - text: "“Unlike AAWSAP, AATIP was never an official DoD program.” After AAWSAP was cancelled in 2012, some people used the AATIP name for “an informal, unofficial UAP community of interest” within DoD, researching military sightings as part of their other duties, with “no dedicated personnel or budget.”"
+    claims: [ aatip-official-program ]
+    stance: disputes
+    basis: documented
     status: documented
     source: library/docs/doc-aaro-historical-record-report-v1.pdf
   - text: "The New York Times revealed the program on 16 December 2017 under the name AATIP, funded at Senator Harry Reid's request, with Navy cockpit video; a companion article told the 2004 Nimitz encounter. AARO's report does not mention the Nimitz or Elizondo."
     status: documented
     source: ev-nyt-2017
   - text: "A Pentagon spokesperson told The Intercept in 2019 that AATIP “did pursue research and investigation into unidentified aerial phenomena”, but that Elizondo “had no responsibilities with regard to the AATIP program”."
+    claims: [ aatip-official-program ]
+    stance: disputes
+    basis: documented
     status: documented
     source: https://theintercept.com/2019/06/01/ufo-unidentified-history-channel-luis-elizondo-pentagon/
   - text: Luis Elizondo says he later led it.

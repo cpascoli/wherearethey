@@ -47,6 +47,8 @@ moments:
     text: "Shellenberger: the whistleblower report says Immaculate Constellation is a parent USAP consolidating UAP imagery and signature intelligence from tasked and untasked platforms; cases include orbs forcing an F-22 out of its patrol area."
     speaker: michael-shellenberger
     refs: [ immaculate-constellation, doc-immaculate-constellation ]
+    claims: [ immaculate-constellation-exists ]
+    basis: relayed
   - t: "57:46"
     text: "Shellenberger: a second source described a 13-minute HD video, found on SIPRNet, of a white orb coming out of the ocean about 20 miles off Kuwait, joined by a second orb."
     speaker: michael-shellenberger
@@ -91,6 +93,8 @@ moments:
     text: "Asked for evidence for Immaculate Constellation, Shellenberger says the report described cases new to him, so it was not circular reporting, and that more than one other source confirmed the program's name."
     speaker: michael-shellenberger
     refs: [ doc-immaculate-constellation ]
+    claims: [ immaculate-constellation-exists ]
+    basis: relayed
   - t: "1:24:24"
     claims: [ recovered-non-human-craft, programs-hidden-from-congress ]
     text: "Elizondo agrees with Grusch that the U.S. has run a multi-decade crash-retrieval and reverse-engineering program, and says UAP programs are operating without proper congressional oversight: “One hundred percent.”"

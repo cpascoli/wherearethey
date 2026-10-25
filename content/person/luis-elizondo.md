@@ -29,10 +29,14 @@ facts:
     by: luis-elizondo
     source: doc-transcript-2024-11-13
   - text: "Says he led AATIP at the Pentagon until he resigned in October 2017."
+    claims: [ aatip-official-program ]
+    basis: first-hand
     status: claimed
     by: luis-elizondo
     source: https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html
   - text: "In a 2024 Newsweek essay he wrote that two members of an existing program approached him to join it: \"the Advanced Aerospace Threat Identification Program (AATIP), a niche program under the umbrella of AWSAPP\". He says he did not run it entirely on his own, but worked with James Lacatski, \"who originally led AWSAPP\", and \"Jay Stratton, who took over after I resigned from AATIP in 2017\"."
+    claims: [ aatip-official-program ]
+    basis: first-hand
     status: claimed
     by: luis-elizondo
     source: https://www.newsweek.com/i-worked-pentagon-americans-have-right-know-about-uaps-1941089

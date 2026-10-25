@@ -24,6 +24,8 @@ facts:
     status: documented
     source: library/docs/doc-aaro-historical-record-report-v1.pdf
   - text: “AARO found no evidence that any USG investigation, academic-sponsored research, or official review panel has confirmed that any sighting of a UAP represented extraterrestrial technology.”
+    claims: [ official-no-nhi-evidence ]
+    basis: documented
     status: documented
     source: library/docs/doc-aaro-historical-record-report-v1.pdf
   - text: It found no empirical evidence of reverse-engineering of extraterrestrial technology by the U.S. government or private companies, and no evidence of UAP non-disclosure agreements threatening violence. Many reported claims, it concluded, came from misidentified authentic programs and circular reporting among a small group of proponents.

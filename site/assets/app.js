@@ -2071,7 +2071,7 @@
       [KB.stats.transcriptHours, 'hours of testimony', `${KB.stats.transcripts} transcribed videos, searchable to the second`],
       [ents.filter(e => e.type === 'record').length, 'official records', 'declassified files from the PURSUE releases'],
       [ents.filter(e => e.type === 'hearing').length, 'hearings & briefings', 'from 1966 to today, with transcripts'],
-      [`${facts.filter(f => f.status === 'documented').length}`, 'documented claims', `of ${facts.length} claims, each with its status shown`],
+      [`${facts.filter(f => f.status === 'documented').length}`, 'documented statements', `of ${facts.length} sourced statements, each with its status shown`],
     ];
   }
   const START_HERE = [

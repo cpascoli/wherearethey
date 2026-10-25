@@ -19,6 +19,8 @@ facts:
     status: documented
     source: library/docs/doc-nasa-uap-study-2023.pdf
   - text: "The report states: \"To date, in the peer-reviewed scientific literature, there is no conclusive evidence suggesting an extraterrestrial origin for UAP.\" It calls extraterrestrial life \"the hypothesis of last resort\" and notes that Congress has made AARO the lead federal organisation for resolving UAP."
+    claims: [ official-no-nhi-evidence ]
+    basis: documented
     status: documented
     source: library/docs/doc-nasa-uap-study-2023.pdf
   - text: "Analysing the Navy's GoFast video, the team finds that the object moved about 390 metres in 22 seconds, an average of about 40 mph, \"a typical wind speed at 13,000 feet\". It appears colder than the ocean, so \"there is thus no evidence of heat produced by a propulsion system\", which supports the view that it was most likely drifting with the wind."
