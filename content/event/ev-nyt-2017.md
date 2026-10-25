@@ -28,6 +28,9 @@ facts:
   - text: "On December 16, 2017, The New York Times published “Glowing Auras and ‘Black Money’: The Pentagon's Mysterious U.F.O. Program” by Helene Cooper, Ralph Blumenthal and Leslie Kean. It revealed the Pentagon's secret UAP study, AATIP, funded at Senator Harry Reid's request, and published U.S. Navy cockpit video of an unidentified object."
     status: documented
     source: https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html
+  - text: "The article said the $22 million spent on AATIP was “almost impossible to find” in the Pentagon's budgets. Reid called it “so-called black money”, which the Times explained as “the Pentagon budget for classified programs”, and contracts obtained by the paper showed “a congressional appropriation of just under $22 million beginning in late 2008 through 2011.”"
+    status: documented
+    source: https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html
   - text: "A companion article, “2 Navy Airmen and an Object That ‘Accelerated Like Nothing I've Ever Seen’”, told the November 2004 Nimitz “Tic Tac” encounter through Cmdr. David Fravor's account."
     claims: [ tic-tac-beyond-known-technology ]
     basis: relayed
@@ -46,7 +49,7 @@ facts:
     source: v-jre-hal-puthoff-2025@1:32:00
 ---
 
-The story that opened the current disclosure era. The 2017 articles covered a secret study program and the Navy encounters. They did **not** report a crash-retrieval or reverse-engineering program. Their only reference to physical material was the line about metal alloys stored in Las Vegas, which a co-author later walked back. The crash-retrieval allegations became public in June 2023, with David Grusch's whistleblower claims.
+The story that opened the current disclosure era. The 2017 articles covered a secret study program and the Navy encounters. They did **not** report a crash-retrieval or reverse-engineering program; the “black money” of the headline was the study program's classified budget, about $22 million under contracts from 2008 to 2011. Their only reference to physical material was the line about metal alloys stored in Las Vegas, which a co-author later walked back. The crash-retrieval allegations became public in June 2023, with David Grusch's whistleblower claims.
 
 The articles are copyrighted and paywalled, so the archive links to them rather than hosting copies.
 
