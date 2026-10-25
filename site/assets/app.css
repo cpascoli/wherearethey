@@ -693,6 +693,16 @@ body.resizing iframe { pointer-events: none; }
 .sc-left .sc-actions .btn { flex: 1 1 auto; justify-content: center; text-align: center; }
 .sc-cover img.sc-book { aspect-ratio: auto; width: 100%; height: auto; object-fit: contain; box-shadow: 0 6px 18px rgba(0,0,0,.35); }
 .p-cover { display: block; width: 140px; border-radius: 3px; margin: 4px 0 12px; box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+/* book and film headers: title block on the left two-thirds, cover on the right third, top-aligned with the title */
+.p-head.has-cover { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.p-head.has-cover .p-cover { width: 100%; max-width: 240px; justify-self: end; margin: 6px 0 12px; }
+/* reading view: the header uses the body's columns (.rd-grid), the cover lined up with the right-hand column's content */
+#panel-body.reading .p-head.has-cover { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 0 48px; }
+#panel-body.reading .p-head.has-cover .p-cover { justify-self: start; max-width: 200px; margin-left: 33px; }
+@media (max-width: 600px) { /* phones: title first, the cover centred below it */
+  .p-head.has-cover { grid-template-columns: 1fr; gap: 4px; }
+  .p-head.has-cover .p-cover { justify-self: center; max-width: 180px; margin: 8px 0 14px; }
+}
 @media (max-width: 860px) {
   .shelf-card, .shelf-card.book { grid-template-columns: 1fr; }
   .shelf-card.book .sc-left { grid-template-columns: 120px 1fr; align-items: start; }
