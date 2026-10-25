@@ -945,6 +945,7 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
 .cl-links li > div { flex-basis: 100%; }
 .cl-lbl { font-size: 12px; color: var(--muted); }
 .claim-st { font-weight: 600; }
+.cl-ev .lbl { font-weight: 600; } .cl-ev.cl-supports .lbl { color: var(--documented); } .cl-ev.cl-disputes .lbl { color: var(--outside); }
 .claim-st.claim-disputed { color: #c9a227; } .claim-st.claim-supported { color: var(--documented); } .claim-st.claim-refuted { color: var(--outside); }
 @media (max-width: 600px) { .cl-time > li { grid-template-columns: 1fr; gap: 2px; } }
 

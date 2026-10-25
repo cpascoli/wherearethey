@@ -441,9 +441,12 @@
   // "Remove its connections" hides them again, except those that are themselves on the trail — the file stays on
   // the trail. The × on a trail chip takes a file off the trail. Files opened from search or a link while
   // exploring are pinned on screen.
+  // Links generated from video moments ("discusses") are left out, like transcript mentions, except when the file
+  // itself is a video: otherwise every interview that names a person would crowd that person's trail. "Speaks in"
+  // (a speaker's own moments) stays.
   function graphNeighbours(id) {
-    const out = new Set();
-    for (const x of adj.get(id) || []) if (x.kind !== 'mention' && visible.has(x.other) && !offGraph(byId.get(x.other)?.type)) out.add(x.other);
+    const out = new Set(), fromVideo = byId.get(id)?.type === 'video';
+    for (const x of adj.get(id) || []) if (x.kind !== 'mention' && (x.kind !== 'moment' || x.label === 'speaks in' || fromVideo) && visible.has(x.other) && !offGraph(byId.get(x.other)?.type)) out.add(x.other);
     return out;
   }
   function trailShown() {
@@ -1108,12 +1111,15 @@
 
   // ───────────── claims ledger ─────────────
   const claimStatus = new Set(store.get('claimStatus', ['documented', 'claimed', 'unverified']));
+  // strongest first: statements made first-hand or from documents (either way), then volume; keep in sync with pages.mjs
+  const claimWeight = c => c.assertions.filter(a => a.basis === 'first-hand' || a.basis === 'documented').length;
+  const claimOrder = (a, b) => claimWeight(b) - claimWeight(a) || b.assertions.length - a.assertions.length;
   function renderClaimCards() {
-    const cs = ents.filter(e => e.type === 'claim').sort((a, b) => b.assertions.length - a.assertions.length);
+    const cs = ents.filter(e => e.type === 'claim').sort(claimOrder);
     $('#claims-key').innerHTML = cs.map(c => {
       const sup = c.assertions.filter(a => a.stance === 'supports'), dis = c.assertions.filter(a => a.stance === 'disputes');
       const first = sup.find(a => a.date);
-      return `<a class="claim-card" href="${hrefOf(c.id)}" data-goto="${esc(c.id)}"><div class="cc-top"><span class="badge claim-${c.status}">${CLAIM_STATUS[c.status].label}</span><span class="muted small">${sup.length} say so · ${dis.length} dispute it</span></div>
+      return `<a class="claim-card" href="${hrefOf(c.id)}" data-goto="${esc(c.id)}"><div class="cc-top"><span class="badge claim-${c.status}">${CLAIM_STATUS[c.status].label}</span><span class="muted small">${sup.length} say so · ${dis.length} dispute it · ${claimWeight(c)} first-hand or documented</span></div>
         <div class="cc-name">${esc(c.name)}</div>${first ? `<div class="small muted">First on file: ${esc(byId.get(first.by)?.name || byId.get(first.on)?.name || '')}, ${esc(fmtD(first.date))}</div>` : ''}</a>`;
     }).join('') || '<p class="muted">No claims yet.</p>';
   }
@@ -1226,6 +1232,17 @@
     const n = k => as.filter(a => a.stance === k).length;
     const fh = as.filter(a => a.stance === 'supports' && a.basis === 'first-hand').length, rel = as.filter(a => a.stance === 'supports' && a.basis === 'relayed').length;
     out.push(`<div class="cl-sum"><span><b>${n('supports')}</b> say so</span><span><b>${n('disputes')}</b> dispute it</span>${n('context') ? `<span><b>${n('context')}</b> context</span>` : ''}<span class="muted">of those who say so: ${fh} first-hand, ${rel} relayed</span></div>`);
+    // the evidence filed on the claim (documents, records, news) and its links to other claims; claims, news and records
+    // aren't graph nodes, so the Connections list below leaves them out
+    const lbl = x => (x.dir === 'out' ? x.label : (INVERSE[x.label] || x.label));
+    const rels = adj.get(e.id).filter(x => x.kind === 'rel');
+    const ev = { for: [], against: [], comment: [] };
+    for (const x of rels) { const l = lbl(x); if (l === 'evidence for') ev.for.push(x); else if (l === 'evidence against') ev.against.push(x); else if (l === 'comments by' || l === 'comments on claim') ev.comment.push(x); }
+    const evLi = x => `<li>${chip(x.other)}${x.note ? `<span>${esc(x.note)}</span>` : ''}</li>`;
+    const evGroups = [['Evidence for', ev.for, 'supports'], ['Evidence against', ev.against, 'disputes'], ['Comment', ev.comment, 'context']].filter(g => g[1].length);
+    if (evGroups.length) out.push(`<div class="p-sec"><h4>Evidence on file <span>${evGroups.reduce((n, g) => n + g[1].length, 0)}</span></h4>${evGroups.map(([t, xs, k]) => `<div class="conn-group cl-ev cl-${k}"><div class="lbl">${t}</div><ul class="conn-notes">${xs.map(evLi).join('')}</ul></div>`).join('')}</div>`);
+    const related = rels.filter(x => byId.get(x.other)?.type === 'claim');
+    if (related.length) out.push(`<div class="p-sec"><h4>Related claims <span>${related.length}</span></h4><ul class="rec-list">${related.map(x => { const c = byId.get(x.other); return `<li><span class="cl-lbl">${esc(lbl(x))}</span> <a href="${hrefOf(c.id)}" data-goto="${esc(c.id)}">${esc(c.name)}</a><div class="small muted"><span class="claim-st claim-${c.status}">${esc(CLAIM_STATUS[c.status].label)}</span>${x.note ? ` · ${esc(x.note)}` : ''}</div></li>`; }).join('')}</ul></div>`);
     if (as.length) {
       const firstSupport = as.find(a => a.stance === 'supports' && a.date);
       out.push(`<div class="p-sec"><h4>Who has said it, in order <span>${as.length}</span></h4><ol class="cl-time" data-collapse="14">${as.map(a => `
@@ -1361,6 +1378,7 @@
     for (const x of adj.get(e.id)) {
       if (x.kind === 'mention' || offGraph(byId.get(x.other)?.type)) continue;
       const label = x.dir === 'out' ? x.label : (INVERSE[x.label] || x.label);
+      if (e.type === 'claim' && /^(evidence (for|against)|comments (by|on claim))$/.test(label)) continue; // shown under "Evidence on file"
       if (!groups.has(label)) groups.set(label, new Set());
       groups.get(label).add(x.other);
       if (x.note) notes.set(`${label}|${x.other}`, x.note);
@@ -2070,7 +2088,7 @@
     ['map', 'World', 'Where it happened: bases, ships, schools and hearing rooms.'],
     ['videos', 'Videos', 'Hearings and interviews with synced transcripts. Search every word spoken.'],
     ['shelf', 'Documentaries', 'Films featuring the people on record, with trailers and where to watch them.'],
-    ['claims', 'Claims ledger', 'Every claim with its status: documented, on record, or still unverified.'],
+    ['claims', 'Claims', 'The key propositions of the debate, each open, disputed, supported or refuted, with who said it and the evidence.'],
     ['index', 'Index', 'All files, by type, filterable.'],
   ];
   function renderHome() {

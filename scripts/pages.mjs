@@ -93,6 +93,9 @@ const leadSentences = (s, n = 150) => {
   return out || clip(sentencesOf(s).join(' ') || s, n);
 };
 // what a searcher gets from a file, appended to its title (kept short so the whole title shows in results)
+// /claims order: statements made first-hand or from documents, then volume (keep in sync with app.js)
+const claimWeight = c => c.assertions.filter(a => a.basis === 'first-hand' || a.basis === 'documented').length;
+const claimOrder = (a, b) => claimWeight(b) - claimWeight(a) || b.assertions.length - a.assertions.length;
 const CLAIM_LABEL = { open: 'Open', disputed: 'Disputed', supported: 'Supported by records', refuted: 'Refuted' };
 const STANCE_LABEL = { supports: 'says so', disputes: 'disputes it', context: 'context' };
 const TITLE_SUFFIX = { person: 'testimony & sources', program: 'claims & evidence', incident: 'witnesses & evidence', hearing: 'testimony & transcript', document: 'text & key findings', video: 'transcript & key moments', claim: 'who said it, and the evidence' };
@@ -168,6 +171,17 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       h.push(`<p class="ssr-outcome"><strong>${CLAIM_LABEL[e.status]}.</strong> ${esc(e.statusNote || '')}${src}</p>`);
     }
     if (e.body) h.push(`<div class="ssr-body">${e.body}</div>`);
+    if (e.type === 'claim') {
+      // the evidence filed on the claim, and its links to other claims (as on the claim page in the app)
+      const rels = (near.get(e.id) || []).filter(x => x.kind === 'rel');
+      const li = x => `<li>${link(x.other)}${x.note ? `: ${esc(x.note)}` : ''}</li>`;
+      for (const [title, re] of [['Evidence for', /^evidence for$/], ['Evidence against', /^evidence against$/], ['Comment', /^comments (by|on claim)$/]]) {
+        const xs = rels.filter(x => re.test(x.shown));
+        if (xs.length) h.push(`<h2>${title}</h2><ul>${xs.map(li).join('')}</ul>`);
+      }
+      const related = rels.filter(x => byId.get(x.other)?.type === 'claim');
+      if (related.length) h.push(`<h2>Related claims</h2><ul>${related.map(x => `<li>${esc(x.shown)}: ${link(x.other)} (${esc(CLAIM_LABEL[byId.get(x.other).status])})</li>`).join('')}</ul>`);
+    }
     if (e.type === 'claim' && e.assertions?.length) {
       h.push(`<h2>Who has said it, in order</h2><ol class="ssr-facts">${e.assertions.map(a => `<li>${a.date ? `<strong>${esc(fmtDate(a.date))}</strong> ` : ''}${a.by ? link(a.by) : ''}${a.via ? ` (as reported by ${link(a.via)})` : ''} — <em>${esc([STANCE_LABEL[a.stance], a.basis].filter(Boolean).join(', '))}</em>: ${esc(a.text)}${a.source ? ` <span class="ssr-src">Source: ${sourceHtml(a.source)}</span>` : ''}</li>`).join('')}</ol>`);
     }
@@ -280,7 +294,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     shelf: ['Documentaries', 'Documentaries about UAP featuring people on the record, with trailers and where to watch them.', `<h1>Documentaries</h1>${listOf(ofType('film').sort(newest).sort((a, b) => !!b.shelfFeatured - !!a.shelfFeatured))}`],
     books: ['Books', 'Books about UAP written by or about people on the record, with where to find them.', `<h1>Books</h1>${listOf(ofType('book').sort(newest).sort((a, b) => !!b.shelfFeatured - !!a.shelfFeatured))}`],
     index: ['UAP archive A–Z: people, incidents, hearings, documents', 'Every file in the UAP / NHI archive, A to Z: officials and witnesses, incidents, congressional hearings, Pentagon programs, documents and official records.', `<h1>A–Z index</h1>${[...typeOrder, 'record'].map(t => `<h2 id="${t}">${PLURAL[t]}</h2>${listOf(ofType(t).sort((a, b) => a.name.localeCompare(b.name)))}`).join('')}`],
-    claims: ['UAP claims database: every claim, who made it, its source', `${entities.reduce((n, e) => n + (e.type === 'record' ? 0 : e.facts.length), 0).toLocaleString('en-US')} claims about UAP and non-human intelligence from officials, pilots and whistleblowers, each with its status (documented, claimed or unverified), who made it and the source.`, `<h1>Claims</h1><p>The key claims in the UAP / NHI debate, each with everyone on file who has said it, in order, how they know, and the evidence for and against.</p>${listOf(ofType('claim').sort((a, b) => b.assertions.length - a.assertions.length), e => ` (${esc(CLAIM_LABEL[e.status])}, ${e.assertions.length} statements)`)}<h2>All statements</h2><p>Documented: backed by an official record or primary document. Claimed: on-record testimony not independently confirmed. Unverified: reported without a primary source.</p>${entities.filter(e => e.facts.length && e.type !== 'record').map(e => `<h2>${link(e.id)}</h2>${factsHtml(e.facts)}`).join('')}`],
+    claims: ['UAP claims: who said it, in order, and the evidence', `Key UAP claims, from crash retrievals to hidden programs: open, disputed or supported, who said it first, the evidence, and ${entities.reduce((n, e) => n + (e.type === 'record' ? 0 : e.facts.length), 0).toLocaleString('en-US')} sourced statements.`, `<h1>Claims</h1><p>The key claims in the UAP / NHI debate, each with everyone on file who has said it, in order, how they know, and the evidence for and against.</p>${listOf(ofType('claim').sort(claimOrder), e => ` (${esc(CLAIM_LABEL[e.status])}, ${e.assertions.length} statements)`)}<h2>All sourced statements</h2><p>Every fact on file, tied to a claim or not. Documented: backed by an official record or primary document. Claimed: on-record testimony not independently confirmed. Unverified: reported without a primary source.</p>${entities.filter(e => e.facts.length && e.type !== 'record').map(e => `<h2>${link(e.id)}</h2>${factsHtml(e.facts)}`).join('')}`],
   };
   for (const [view, [title, description, body]] of Object.entries(views)) pages.push({ path: VIEW_PATH[view], title, description, body, view });
 
