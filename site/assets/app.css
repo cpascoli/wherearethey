@@ -952,7 +952,7 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
 .claims-head > p { margin: 4px 0 12px; max-width: 760px; }
 .claims-key { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; margin-bottom: 18px; }
 .claim-card { display: flex; flex-direction: column; gap: 8px; padding: 14px 16px; background: var(--panel); border: 1px solid var(--border); border-radius: 6px; color: var(--text); text-decoration: none; }
-.claim-card:hover { border-color: var(--accent); }
+.claim-card:hover { border-color: var(--accent); text-decoration: none; } /* the border marks it: no link underline on the whole card */
 .cc-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
 .cc-name { font-size: 16px; font-weight: 600; line-height: 1.35; }
 @media (max-width: 600px) { .claims-head { padding: 14px 16px 0; } }

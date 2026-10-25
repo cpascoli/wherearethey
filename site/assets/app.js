@@ -1593,6 +1593,15 @@
   }
   function afterResize() { requestAnimationFrame(() => { cy?.resize(); map?.invalidateSize(); }); }
   $('#panel-close').addEventListener('click', () => select(null));
+  // claims page: a click opens the claim beside the list, a double-click opens it full width (the reading view)
+  document.addEventListener('dblclick', e => {
+    const card = e.target.closest('.claim-card');
+    if (!card || state.reading || window.innerWidth <= 860) return;
+    window.getSelection()?.removeAllRanges(); // a double-click also selects a word
+    if (state.sel !== card.dataset.goto) select(card.dataset.goto, { from: 'claims' });
+    trackReading('dblclick');
+    setReading(true);
+  });
   // so we can see whether people discover the reading view: which way, from which file, by button or the R key
   function trackReading(method) { track('reading_view', { action: state.reading ? 'collapse' : 'expand', method, content_type: byId.get(state.sel)?.type, item_id: state.sel }); }
   $('#panel-expand').addEventListener('click', () => { trackReading('button'); setReading(!state.reading); });
