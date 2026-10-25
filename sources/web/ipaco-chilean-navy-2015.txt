@@ -1,0 +1,517 @@
+SOURCE: http://www.ipaco.fr/ReportChileanNavyCEFAA.pdf
+FETCHED: 2026-10-25
+
+                                                                                                   1
+
+
+
+           Video from the Chilean Navy
+      (Antoine Cousyn, François Louange and Geoff Quick - 2015/11/26) *
+
+
+
+
+On November 11th 2014, an AS-532 Cougar helicopter of the Chilean Navy, during a routine
+daytime mission (16:48 UTC), noticed an unknown flying object through its HD FLIR camera.
+This object was detected, recorded and seen by the pilot over about ten minutes, before it
+disappeared behind the clouds. Images were obtained in high definition mode as well as in
+infrared mode.
+
+The officers asked ground control about this object without success, since it had not been
+detected by the primary radar. They also tried to establish radio contact with the object, with no
+result. The object was described as being white and oval, and on two occasions it dumped some
+unidentified material.
+
+The helicopter was flying at a height of 4500 feet, with a visibility of 30 nautical miles, the cloud
+base being at 10000 feet.
+
+
+
+The key question was to establish whether the object could be an aircraft (possibly a medium-
+haul or long-haul airliner), in spite of the lack of detection and radio contact, or if it was a UFO.
+
+In the IR sequences of the video, two hot spots appeared over about six minutes, which might
+correspond to two jet engine hot sections if the object turned to be an aircraft.
+
+
+
+
+* This report was slightly modified on 2017/01/09, thanks to a constructive remark from Tim
+Printy concerning the possible actual height of the object. The paragraph “Height of the object”
+was added and the paragraph “Nature of the dumped material” was completed.
+
+
+
+
+IMPORTANT NOTE (2017/01/09):
+
+This report had been prepared in 2015 on request from CEFAA, on a good will basis, but with no
+information at all provided about the IR camera model and its characteristics. It was then
+assumed that this was a EUROFLIR 350-3, since this camera model used to be generally installed
+by Eurocopter onboard this type of helicopter.
+
+However, it was officially announced these days that the actual camera was a WESCAM MX-15.
+
+Those two cameras have rather similar characteristics and the conclusions of this report should
+not differ significantly if it is rewritten using the right camera model.
+
+The “IPACO team” chose to leave this report as it is and to wait until the official CEFAA report is
+available before deciding to make any further effort on this typical IFO case.
+                                                                                                  2
+
+
+Available data
+Besides the video itself, the following data were initially available for the present analysis:
+
+      Information about the helicopter and its equipment:
+
+           o   Helicopter model COUGAR AS-532 (Airbus/Eurocopter)
+
+           o   Camera EUROFLIR 350-3
+
+                       Diameter            :      14 inches
+
+                       Elevation / Azimuth :      +35° to - 120° / 360°
+
+                       TV HD               :      1920 x 1080 pixels
+                                                   Zoom 1.3° -> 24°
+
+                       IR (3-5 μ)          :      680 x 512 pixels
+                                                   Zoom 1.3° -> 24°
+
+      Information about the flight:
+
+           o   Height                       :      4500 feet
+
+           o   Visibility                   :      30 nautical miles (55 Km)
+
+           o   Velocity                     :      120 knots
+
+      Information about the video:
+
+       The video contains a succession of sequences in various modes, two of which are
+       particularly relevant for this study: “TV HD mode” (noted EOW on top of the screen) and
+       “IR mode” (noted IR on top of the screen).
+
+           o   Image dimensions      :      1920 x 1088 pixels
+
+           o   Extracted frames      :
+
+                       TV HD        :      information exists in pixels [0,0] to [1918,1086]
+                                            (useful size: 1918 x 1086)
+
+                       IR           :      information exists in pixels [319,27] to [1599,1051]
+                                            (useful size: 1280 x 1024)
+
+      Assessments about the UFO (CEFAA):
+
+           o   Velocity assessment          :      “about the same as the helicopter”
+
+           o   Distance assessment          :      “30-35 nautical miles (55-65 Km)”
+
+
+
+In the frame of this study, it was assumed reasonably that the observed object was unique,
+whatever it was, and in particular that the two detected hot spots it contained remained at a
+fixed distance from one another.
+                                                                                               3
+
+
+Helicopter’s track
+According to the technical data displayed around the image in the video, we could learn that
+the helicopter was flying towards North (+17°), following the object.
+
+The following map, showing the helicopter’s track, was derived from the displayed geographic
+coordinates:
+                                                                                              4
+
+
+Assessment of focal length
+To perform any angular measurements on a photo/video, it is necessary to know either the
+values of the focal length and of the sensor’s dimensions, or the value of the “equivalent focal
+length 35mm camera”.
+
+For the present analysis, none of these parameters were directly available.
+
+
+
+Equivalent focal length 35mm camera in “TV HD mode”
+However, the EUROFLIR 350-3 technical sheet (available to the public) provided the maximum
+and minimum values of the cone angle, from which we could derive respectively the minimum
+and the maximum values of the “equivalent focal length 35mm camera” in “TV HD” mode:
+
+F35mmTVHD = [√ (242 + 362)] / [2 tan (θ/2)]             where θ is the cone angle
+
+F35mmTVHD = 21.6333 / tan (θ/2)
+
+      θ = 24° => F35mmTVHDmin = 101.8 mm               (“EOW 17” on top of the screen)
+
+      θ = 1.3° => F35mmTVHDmax = 1907 mm               (“EOW 200” on top of the screen)
+
+The whole video image size corresponds nearly exactly to the whole “TV HD mode” image size
+(1920 x 1088 pixels vs 1920 x 1080 pixels). This image size, in the focal plane, is assumed to
+be inscribed in the cone angle of the angular aperture.
+
+Therefore, the above-mentioned values of F35mmTVHD could be used for angular computations with
+IPACO, for the “TV HD mode” sequences of the video.
+
+
+
+Equivalent focal length 35mm camera in “IR mode”
+
+In the video, there is a short transition (over two seconds) from the “TV HD mode”, using the
+minimum zoom factor, to the “IR mode”, using the minimum zoom factor, with the same visible
+landscape.
+
+For this maximum value of θ, it was possible to derive the “equivalent focal length 35mm
+camera” in “IR mode” from that in “TV HD mode”, in the following way (using IPACO):
+
+   1. Extract from the video the latest frame in “TV HD mode” just before the transition, and
+      the first frame in “IR mode” just after the transition (here the two frames respectively
+      shot at 13:49:52 and at 13:49:54)
+
+   2. Choose a well-defined feature of the scene that is clearly visible in both frames
+
+   3. Having displayed the “TV HD mode” frame (13:49:52), introduce F35mmTVHDmin = 101.8
+      mm in the Camera/Technical data/Equivalent focal length 35mm camera menu of IPACO
+
+   4. Draw a segment over the chosen feature and measure its angular size, using the
+      Mensuration/Geometric Mensuration/Angle menu of IPACO
+                                                                                            5
+
+   5. Using the Mensuration/Geometric Mensuration/Length vs Distance menu of IPACO with
+      the same segment, measure the length/distance ratio: set the distance value to 1 and
+      note down the resulting length value L
+
+   6. Having displayed the “IR mode” frame (13:49:54), compute the equivalent focal length
+      35mm camera, using the Camera/Focal length menu: draw the same segment over the
+      chosen feature as above and introduce the value of the distance (equal to 1) and that of
+      the length (equal to L).
+
+This sequence of operations is illustrated as follows:
+
+
+
+
+                                          TV HD mode
+                                                                                                              6
+
+
+
+
+                                                  IR mode
+
+Note:   The very small difference (≈0.02%) between both measured angles on the same chosen feature of the scene
+        is due to rounding effects
+
+
+The result obtained was:
+
+       θ = 24° =>              F35mmIRmin = 61 mm               (“IR 27” on top of the screen)
+
+Assuming reasonably that the ratio of the respective values of the equivalent focal length
+35mm camera in “TV HD mode” and in “IR mode” is constant, we could derive the value in “IR
+mode” for θ = 1.3° from the value for θ = 24°:
+
+F35mmIRmax = F35mmIRmin x (F35mmTVHDmax / F35mmTVHDmin), thus:
+
+       θ = 1.3° =>             F35mmIRmax = 1143 mm             (“IR 675” on top of the screen)
+                                                                                            7
+
+
+Angular distance between the two hot spots
+Having introduced into IPACO this estimated value of the “equivalent focal length 35mm camera”
+in “IR mode” (1143 mm), we used the following procedure to measure the angular distance
+between the two hot spots:
+
+      Display the video with IPACO
+      Extract from the IR parts of the video with the “675” setting one given frame where the
+       two hot spots are visible, using the Video/Extraction function
+      Display the extracted image
+      Enter into IPACO the above-computed value of F35mmIRmax = 1143 mm, using the
+       Camera/Technical data menu
+      Use the Mensuration/Geometric mensuration/Angle function to measure the angular
+       distance between both hot spots
+      Use the Mensuration/Geometric mensuration/Length vs distance function to explore
+       possible solutions for the Distance/Size ratio.
+
+The following example shows results obtained from a frame shot at time [13:58:15]:
+
+
+
+
+      Angle between hot spots = 0.01214°
+      Distance/Size ratio = 4719
+      If Distance = 60000 m (for instance) => Transverse size = 12.72 m
+                                                                                               8
+
+
+We extracted several frames from the “IR 675” sequences of the video, measured for each of
+them the angular distance between the two hot spots, and derived the corresponding
+“distance/transverse size of the segment joining the hot spots” ratio.
+
+The following table displays the results obtained:
+
+                                Time       Angle     Distance/Size
+                              13:55:46    0.0170°         3368
+                              13:56:38    0.0148°         3879
+                              13:57:18    0.0135°         4238
+                              13:58:15    0.0121°         4719
+                              14:01:36    0.0091°         6319
+
+This table indicates that during the six minutes of interest, the distance between the helicopter
+and the object had nearly doubled.
+
+It also appeared that the distance/size ratio had increased almost perfectly linearly along time,
+as illustrated by the following curve, with a mean slope equal to +8.4 units per second:
+
+
+
+
+This meant that the object was moving away from the helicopter at a constant velocity.
+                                                                                               9
+
+
+Velocity of the object
+Analysis of the indications displayed on the sides of the video’s image showed that, during the
+six minutes of interest:
+
+      The helicopter’s height remained about constant
+      The helicopter’s velocity along its linear trajectory was constant (120 kt)
+      The object was observed in front of the helicopter, more precisely under a constant
+       azimuthal shift of 12° towards the right
+      The object’s relative velocity along the camera’s line of sight was about constant and was
+       linked to the object’s size through the table and the mean slope value above-referenced.
+
+The following simplified projection on a horizontal plane of the respective trajectories of the
+helicopter and of the object could be drawn:
+                                                                                         10
+
+The goal being to compute the object’s mean speed during the six minutes of interest (more
+precisely: 350 s), the useful points were:
+
+       H0     : position of the helicopter at time [13:55:46]
+       H1     : position of the helicopter at time [14:01:36]
+       O0     : position of the object at time [13:55:46]
+       O1     : position of the object at time [14:01:36]
+       N      : defined by H1N = H0O0
+
+The following computations were done, every length being expressed in kilometers, except the
+actual distance between the two hot spots (noted D) and the transverse component of this
+distance (noted T), which were expressed in meters:
+
+       H0H1 = O0N = 120 x 1.852 x (350/3600)
+       H0H1 = O0N = 21.6 Km
+
+       H0O0 = H1N = 3.368 T
+       H1O1 = 6.319 T
+
+       O1N = H1O1 – H1N
+       O1N = 2.951 T
+
+       T = D cos θ
+
+Using twice the generalized Pythagoras’ theorem with the triangle NO0O1:
+
+       O0O12 = O0N2 + O1N2 – 2 O0N O1N cos (180° – 12°)
+       O0O1 = √ (466.56 + 8.708401 T2 + 124.697 T)
+and:
+       O1N2 = O0N2 + O0O12 – 2 O0N O0O1 cos (12° - θ)
+       θ = 12 – acos [(O0N2 + O0O12 - O1N2) / (2 O0N x O0O1)]
+
+These equations could easily be solved digitally for any given value of D.
+                                                                                                  11
+
+
+Distance between the two hot spots
+Since all preceding equations relied on one single unknown D (real distance in the 3D space
+between the two hots spots observed in the object), calculations were made for several values
+of D in the range from 1 to 30 meters.
+
+For each considered value of D, the following table indicated the values of the following
+parameters:
+
+      Angle θ
+      Minimum distance between the helicopter and the object (at time [13:55:46])
+      Maximum distance between the helicopter and the object (at time [14:01:36])
+      Object’s mean velocity during the 350 s of interest (in both Km/h and knots)
+
+
+                       D          θ         Dist mini Dist maxi Velocity   Velocity
+                      (m)        (°)          (Km)      (Km)    (Km/h)     (knots)
+                             1         11          3         6       251        136
+                             5          7         17        31       371        200
+                            10          5         34        63       522        282
+                            15          4         50        95       673        363
+                            20          3         67       126       825        445
+                            25          3         84       158       977        527
+                            30          2        101       189      1128        609
+
+Obviously, values of D below 10 m did not match with available data concerning assessed
+distance, because for a low distance (up to around 20 Km, the laser range limit in a FLIR turret),
+the indicators at the right bottom of the image would have delivered a valid range value for the
+target, which never occurred throughout the video. On the other hand, values of D above 15 m
+raised a problem of detectability (distance far above the indicated limit of visibility).
+
+Therefore, the range of values of D that seemed consistent with available data was from 10 to
+15 meters.
+
+As a matter of fact, this range is consistent with the standard distance between the two jet
+engines of a medium-haul aircraft (type B737, A320, A321), which is around 11 meters:
+
+                       D          θ         Dist mini Dist maxi Velocity   Velocity
+                      (m)        (°)          (Km)      (Km)    (Km/h)     (knots)
+                            11          5         37        69       552        298
+
+It is noticeable that, for this value, the average distance between the helicopter and the object
+during the six minutes of interest is almost exactly the estimated value reported by the Navy
+(55 Km).
+
+The hypothesis of a long-haul aircraft is far less acceptable, since the corresponding values of D
+would then be in a range from 18 to 23 m (type B767, B777, B787, A310, A330, A350) and
+conditions of visibility would not be fulfilled.
+
+These results are very much in favor of the explanation of the video by a medium-haul aircraft,
+which was probably in a descending phase, with a low velocity (298 knots), in view of landing,
+possibly at Santiago airport (Viña del Mar airport is rarely used by civil airliners, and anyway too
+short for this type of jetliner).
+                                                                                                  12
+
+
+Height of the object
+It was initially assumed that the UFO’s height was about the same as the helicopter’s, as
+commented by the CEFAA. This seemed to be confirmed by the indicator on the left side of the
+screen, indicating a 0° angle, apparently for the elevation of the line of sight in relation with the
+local horizon.
+
+If in effect the UFO was observed in a direction parallel to the local horizon, its height could be
+computed as follows:
+
+              R = Earth’s radius = 6371 Km
+              h = helicopter’s height = 4500 ft
+              D = camera-UFO distance = 55 Km
+              H = UFO’s height
+
+
+              (R + H)2 =(R + h)2 + D2
+
+From which we obtain the value of H:
+
+              H ≈ 5400 ft
+
+
+
+However, it was not possible to obtain a clear explanation of what this indicator really means. If
+we assume that it measures in fact an elevation angle from the helicopter’s horizon, and if the
+helicopter was in a slowly ascending phase, we have to take into account the corresponding
+angular shift θ.
+
+The corrected equation is then:
+
+              (R + H)2 =(R + h)2 + D2 + 2D (R + h) sin θ
+
+Leading to the following rounded values of H according to θ:
+
+
+
+                                          θ (°)       H (Ft)
+                                            1          8 500
+                                            2         11 700
+                                            3         14 800
+                                                  …
+                                                                                              13
+
+
+Oddities in the video
+Considering the possible explanation by a medium-haul aircraft, there remained two particular
+odd features in the video that deserved a rational explanation.
+
+
+
+Number of hot spots
+
+Although in most of the IR sequences of the video, 2 hot spots appear clearly, there are a few
+frames in which there seems to be 3 hot spots, in particular the following one:
+
+
+
+
+In a few other frames, a third hot spot appears more vaguely, often with a lot less saturation
+that the 2 “main” hot spots.
+
+If the object was an aircraft, there would only be two main jet engines. However, the third hot
+spot could well be explained by a reflection in IR on a part of the plane, in certain particular
+geometric configurations.
+
+A spurious reflection of this type had already been identified in the past by the IPACO team, in
+a photo submitted for analysis by MUFON.
+
+Another possible explanation could be the use of the aircraft’s APU (Auxiliary Power Unit), which
+is a small jet engine mounted at the back of the fuselage and which is sometimes run up in flight
+prior to landing.
+                                                                                               14
+
+Nature of the dumped material
+
+At two occasions in the course of the video, some material was dumped by the object, as
+illustrated by this frame:
+
+
+
+
+If the UFO’s height was far above the helicopter’s height, at an altitude above the 0° isotherm,
+then the trail was, most probably, a condensation (or vapor) trail.
+
+If, on the contrary, the UFO’s height was in the same order of magnitude as the helicopter’s
+height, then such an explanation must be discarded, because the temperature at that time and
+at that altitude was not cold enough (the 0° isotherm was much higher than the helicopter).
+
+In that case, a credible scenario appeared to be that a twin jet airliner, many kilometers ahead
+of the helicopter, operating a normal flight profile at low speed, and being at a fairly low level
+(possibly prior to a landing approach), had been jettisoning an amount of cabin waste water. For
+example, the cabin crew could have just dumped ice buckets or similar into the galley basins as
+they cleared away for landing.
+
+The apparent move of the effluent trail to the right resulted from the local wind, which was
+blowing from the west-north-west according to the following record:
+                                                                                              15
+
+
+Conclusion
+
+The object observed in the video was most probably a medium-haul twin jet airliner in a landing
+phase, flying ahead of the helicopter at a higher velocity, with a low height and a low velocity,
+in view of landing. One possible sketch of its route is the following:
+
+
+
+
+The “white oval” effect was quite possibly due to halation through the atmosphere, mainly from
+illumination of a white fuselage roof. The pilot, perhaps not being aware of quite how far away
+the target was, could be subject to this illusion.
+
+The effluent trail observed on two occasions probably results, depending on the actual height of
+the airplane, either from a contrail or from dumping some cabin waste water, forming a plume
+oriented along the local wind blowing from the west.
+                                                                                                16
+
+
+As concerns the third hot spot observed in a few frames of the video, it may be explained either
+by an IR reflection on the fuselage, or possibly by the use of an APU before landing.
+
+Therefore, the pending questions are no longer about the nature of the object, but why it could
+not be detected by the primary radar, and why no radio connection could be established with it.
+
+Concerning detection, could it be that Air traffic ground controllers were looking too close to the
+helicopter for a radar return, discounting that of the airliner as being too far away to the North?
+
+Concerning radio communication, could it be that the jet was not monitoring the frequencies or
+did not think it was them being interrogated (“Can’t be for us, we are too far North”)?
+
+(Note: this type of incident has already been experienced on many occasions.)
+
+
+
+
+                                         ****************
+
