@@ -9,8 +9,8 @@ links:
     url: https://www.aeronautica.difesa.it/wp-content/uploads/2023/05/Archivio_OVNI_periodo1972-1990.pdf
 rel:
   - [ published by, aeronautica-militare ]
-  - [ about, inc-treviso-1979 ]
-  - [ about, inc-elmas-1977 ]
+  - [ documents, inc-treviso-1979 ]
+  - [ documents, inc-elmas-1977 ]
 facts:
   - text: "Entry 8 of 1979 (p. 106): Treviso, 18/06/1979, morning (time not specified); a cylindrical black object at about 3,000 m, speed and direction not indicated, clear sky; reported by Air Force personnel (\"personale Aeronautica Militare\"). \"Sulla base della disamina dei dati in archivio, l'evento è stato catalogato come O.V.N.I.\""
     status: documented

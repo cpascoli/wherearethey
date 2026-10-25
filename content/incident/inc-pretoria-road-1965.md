@@ -4,8 +4,6 @@ date: 1965-09-17
 place: { name: "Pretoria–Bronkhorstspruit road, South Africa", lat: -25.77, lng: 28.5 }
 tags: [international]
 rel:
-  - [ witness, john-locken ]
-  - [ witness, koos-de-klerk ]
 links:
   - label: Wikipedia — UFO sightings in South Africa
     url: https://en.wikipedia.org/wiki/UFO_sightings_in_South_Africa

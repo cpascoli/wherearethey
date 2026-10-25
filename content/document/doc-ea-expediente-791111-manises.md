@@ -8,7 +8,7 @@ links:
   - label: Biblioteca Virtual de Defensa — Expedientes OVNI (record 38287, Spanish, CC BY 4.0)
     url: https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/catalogo_imagenes/grupo.do?path=102238
 rel:
-  - [ about, inc-manises-1979 ]
+  - [ documents, inc-manises-1979 ]
 facts:
   - text: "The Mando Operativo Aéreo intelligence section file covers the events of 11, 17 and 28 November 1979 and was declassified by the Air Force Chief of Staff (JEMA 3216) on 11 August 1994. Its 147 pages include ATC transcripts, witness statements, the interceptor's records and the investigating officers' reports."
     status: documented

@@ -9,7 +9,6 @@ credentials:
     role: Captain (later Colonel), Brazilian Air Force; commander of Operação Prato (1977)
 tags: [air-force, international]
 rel:
-  - [ led, inc-operacao-prato-1977 ]
 facts:
   - text: "Hollanda said that in 1977 his commander handed him the case file on lights over the Amazon, and he led the Brazilian Air Force investigation code-named Operation Prato (“plate”)."
     status: claimed

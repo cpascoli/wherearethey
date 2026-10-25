@@ -10,7 +10,7 @@ links:
   - label: ABC News — NZ military releases UFO files (December 2010)
     url: https://www.abc.net.au/news/2010-12-23/nz-military-releases-ufo-files/2383152
 rel:
-  - [ about, inc-kaikoura-1978 ]
+  - [ documents, inc-kaikoura-1978 ]
 facts:
   - text: "An RNZAF public-relations statement in the file says the unidentified radar and visual sightings off the north-east coast of the South Island \"are the result of natural but unusual atmospheric phenomena\". It cites conditions conducive to freak effects on radar and light waves, an unusually bright Venus rising in the east, spurious returns already seen on the Wellington ATC radar, and more than 50 Japanese squid boats, each using about 200 kW of light. It adds that lights near the Clarence River mouth may have been trains or vehicles."
     status: documented

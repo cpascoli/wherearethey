@@ -11,6 +11,8 @@ tags:
   - science
   - air-force
 rel:
+  - [ testified at, h-1968-07-29 ]
+  - [ testified at, h-1966-04-05 ]
   - [ worked at, project-blue-book ]
 links:
   - label: Wikipedia

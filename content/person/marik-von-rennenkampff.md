@@ -19,7 +19,7 @@ rel:
   - [ commented on, pursue, "He sees the same “fiery orb” morphology from 1944 to the PURSUE releases, which he calls soft disclosure" ]
   - [ analysed, inc-nimitz-2004, "He keeps a 5–10% chance that the Tic Tac was U.S. technology" ]
   - [ spoke at, ev-disclosure-forum-2026 ]
-  - [ related to, inc-langley-2023 ]
+  - [ claims about, inc-langley-2023, "He says the Langley objects showed bright flashing lights for 17 nights" ]
   - [ analysed, inc-roosevelt-2015, "His reconstruction of the Gimbal object's flight path supports the aircrew against the balloon explanation" ]
 facts:
   - text: "At Disclosure Forum 2026 he said former AARO director Sean Kirkpatrick twice told him the Gimbal object was a balloon reflecting sunlight, which he disputes because the encounter was at night and the aircrew described it moving against 120-knot winds."

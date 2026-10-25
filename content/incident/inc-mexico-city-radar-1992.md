@@ -6,7 +6,6 @@ end: 1994-11
 place: { name: "Mexico City International Airport", lat: 19.436, lng: -99.072 }
 tags: [radar, aviator, international]
 rel:
-  - [ witness, enrique-kolbeck ]
   - [ discussed at, ev-disclosure-project-2001, "Kolbeck described the contacts at the 2001 Disclosure Project press conference" ]
 facts:
   - text: "Enrique Kolbeck, a radar controller at Mexico City International Airport, said that on 4 March 1992 “we detect 15 objects” west of Toluca airport."

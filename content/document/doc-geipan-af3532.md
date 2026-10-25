@@ -8,7 +8,7 @@ links:
     url: https://www.cnes-geipan.fr/fr/cas/1994-01-01345
 rel:
   - [ published by, geipan ]
-  - [ about, inc-air-france-3532-1994 ]
+  - [ documents, inc-air-france-3532-1994 ]
 facts:
   - text: "At 13:14 on 28 January 1994, the crew of an Air France A320 flying Nice–London observed a phenomenon over Coulommiers (Seine-et-Marne). The chief steward, then in the cockpit, thought it looked like a weather balloon; the captain and copilot described a brown or dark red disc that changed shape before suddenly disappearing. Reims air traffic control had no traffic in the sector."
     status: documented

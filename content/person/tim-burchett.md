@@ -11,6 +11,7 @@ tags:
   - congress
   - disclosure
 rel:
+  - [ testified at, h-2025-05-01 ]
   - [ member, task-force-declassification ]
   - [ questioned witnesses at, h-2023-07-26, "Burchett, Luna and Moskowitz pressed for more disclosure" ]
   - [ credits, george-knapp, "He credits Knapp's reporting for what he knows, and entered Knapp's statement into the 2023 hearing record" ]

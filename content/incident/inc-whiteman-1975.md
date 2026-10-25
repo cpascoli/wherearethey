@@ -6,7 +6,6 @@ tags:
   - nuclear
   - air-force
 rel:
-  - [ witness, terry-lovelace ]
 facts:
   - text: Air Force medic Terry Lovelace and an airman named Toby saw a silent, triangular craft directly above one of the base’s active nuclear missile silos.
     status: claimed

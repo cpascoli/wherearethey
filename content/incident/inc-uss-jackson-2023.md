@@ -5,7 +5,6 @@ date: 2023-02-15
 place: { name: "Warning area W-291, off southern California", lat: 32.3, lng: -118.6 }
 tags: [navy, radar, military, video, transmedium]
 rel:
-  - [ witness, alexandro-wiggins ]
   - [ similar to, inc-nimitz-2004, "Wiggins described a “tic-tac-shaped object” emerging from the ocean off southern California" ]
   - [ raised by, eric-burlison ]
 facts:

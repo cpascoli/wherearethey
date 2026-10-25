@@ -10,8 +10,6 @@ outcome_note: "A Brazilian Army inquiry (1997) found no military involvement and
 outcome_source: doc-stm-ipm-18-1997
 tags: [international, south-america, crash-retrieval]
 rel:
-  - [ documented in, doc-stm-ipm-18-1997 ]
-  - [ related to, ev-varginha-press-conference-2026 ]
 facts:
   - text: "On the afternoon of Saturday 20 January 1996 Kátia Xavier, 22, and the sisters Valquíria, 14, and Liliane Silva, 16, said they saw a crouching creature with brown, oily-looking skin, large red eyes and bulging veins by a wall on a vacant lot in Jardim Andere, and ran away."
     status: claimed

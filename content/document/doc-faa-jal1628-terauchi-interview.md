@@ -8,7 +8,7 @@ links:
   - label: The Black Vault — JAL 1628 FAA documents (PDF)
     url: https://documents.theblackvault.com/documents/ufos/jal1628/733667-001-008.pdf
 rel:
-  - [ about, inc-jal-1628-1986 ]
+  - [ documents, inc-jal-1628-1986 ]
   - [ about, kenju-terauchi ]
 facts:
   - text: Official FAA record of the interview with Captain Terauchi, conducted by Richard Gordon (Manager, FSDO-63) with JAL and FAA interpreters, part of the FAA's investigation released under FOIA.

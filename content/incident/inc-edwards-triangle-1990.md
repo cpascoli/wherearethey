@@ -5,7 +5,6 @@ date: 1990
 place: { name: "South Base road, Edwards Air Force Base, California", lat: 34.8854, lng: -117.8869 }
 tags: [aviator, air-force, triangle]
 rel:
-  - [ witness, dan-isbell ]
   - [ same witness as, inc-upper-heyford-1980, "The same witness saw both; unlike the 1980 craft in England, the 1990 triangle had no glowing edge" ]
 facts:
   - text: Isbell, then an instructor at the Air Force Test Pilot School, says that one clear night in 1990, stargazing on the road toward the classified South Base at Edwards, he watched stars wink out in the shape of a huge, perfectly triangular black object with sharp corners, no lights and no sound, passing directly over him.

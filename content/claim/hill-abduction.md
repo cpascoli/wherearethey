@@ -1,8 +1,8 @@
 ---
 name: "Betty and Barney Hill were taken aboard a non-human craft in New Hampshire in September 1961"
 aka: [Hill abduction claim]
-status: disputed
-status_note: "Project Blue Book attributed the original sighting to a temperature inversion and later to Jupiter; the abduction account emerged under hypnosis in 1964."
+status: open
+status_note: "No official finding addresses the abduction account, which emerged under hypnosis in 1964; Project Blue Book's file covers only the light the Hills reported, which it attributed to a temperature inversion and later to Jupiter."
 status_source: doc-bluebook-lincoln-nh-1961
 rel:
   - [ about, inc-hill-1961 ]

@@ -6,6 +6,7 @@ credentials:
     role: Captain, U.S. Air Force (ret.); ICBM missile officer
 tags: [military, nuclear]
 rel:
+  - [ witness, inc-warren-1976 ]
   - [ testified at, h-2013-citizen-hearing ]
 facts:
   - text: Testified that in 1976 at F.E. Warren AFB a silent cigar-shaped object hovered over his launch facilities; the missiles stayed online, but an officer destroyed the crew's notes and told them the incident “officially never happened.”

@@ -11,7 +11,7 @@ tags:
 rel:
   - [ witness, inc-nimitz-2004 ]
   - [ flew with, david-fravor, "She flew the second Super Hornet in Fravor's flight during the 2004 Tic Tac encounter" ]
-  - [ related to, chad-underwood ]
+  - [ served with, chad-underwood, "Both flew F/A-18s with VFA-41, the Black Aces, from USS Nimitz" ]
   - [ briefed, kirk-mcconnell, "Kirk McConnell says sitting down with Fravor and Dietrich made the Tic Tac the case that convinced him" ]
 links:
   - { label: "Normalizing UFOs: Retired US Navy pilot recalls 'Tic Tac' encounter (Reuters, via The Jakarta Post, 25 June 2021)", url: "https://www.thejakartapost.com/news/2021/06/25/normalizing-ufos-retired-us-navy-pilot-recalls-tic-tac-encounter" }

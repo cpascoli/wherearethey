@@ -10,7 +10,7 @@ links:
   - label: NSA (PDF)
     url: https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/ufo/us_gov_iran_case.pdf
 rel:
-  - [ about, inc-tehran-1976 ]
+  - [ documents, inc-tehran-1976 ]
   - [ produced by, dia ]
 facts:
   - text: An article released by the NSA that reproduces the text of the U.S. Defense Attaché report on the Tehran incident. It describes the two F-4 intercepts, the loss of instruments, weapons and communications, and the smaller objects separating from the main one. The original DIA routing slip and cable are on the NSA site (see links).

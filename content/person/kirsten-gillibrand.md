@@ -11,7 +11,7 @@ tags:
   - aaro
 rel:
   - [ asked about, inc-nimitz-2004, "She asked AARO to publish what it could on unresolved cases such as Nimitz" ]
-  - [ created, aaro, "Her amendment in the FY2022 NDAA set up the office that became AARO" ]
+  - [ legislated, aaro, "Her amendment in the FY2022 NDAA set up the office that became AARO" ]
   - [ questioned, sean-kirkpatrick, "She chaired AARO's first open Senate hearing with him in April 2023" ]
   - [ commented on, doc-aaro-historical-record-report-v1, "She read the report as showing the government took sightings “extremely seriously” for 75 years" ]
   - [ credits, harry-reid, "She said the work begun by Reid revealed “strong evidence of advanced technology”" ]

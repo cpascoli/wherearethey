@@ -8,7 +8,7 @@ links:
     url: https://www.argentina.gob.ar/sites/default/files/informe_cefae_2018.pdf
 rel:
   - [ published by, cefae ]
-  - [ about, inc-bariloche-1995 ]
+  - [ documents, inc-bariloche-1995 ]
 facts:
   - text: "The report analyses 21 sightings received by CEFAE in 2018 and states that all of them had known causes. It adds the resolution of two historical cases previously considered unexplained."
     status: documented

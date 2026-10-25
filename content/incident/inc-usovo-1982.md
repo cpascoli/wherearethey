@@ -9,7 +9,6 @@ outcome: disputed
 outcome_note: "The Soviet programme's coordinators attributed the lights to illumination flares over a bombing range 400 km away, seen through rare super-refraction, and judged the missile-system fault indicator a chance coincidence."
 outcome_source: doc-platov-sokolov-vran-2000
 rel:
-  - [ documented in, doc-usovo-1982-witness-statements ]
   - [ documented in, doc-platov-sokolov-vran-2000 ]
   - [ investigated by, setka ]
 facts:

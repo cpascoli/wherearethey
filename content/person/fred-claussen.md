@@ -7,7 +7,7 @@ credentials:
     role: "Colonel, U.S. Air Force (ret.); fighter pilot (F-105, F-4, F-15), twice awarded the Distinguished Flying Cross"
 tags: [international, south-america, aviator]
 rel:
-  - [ related to, inc-varginha-1996, "He traced the paper trail an alleged U.S. Air Force flight to Campinas in January 1996 would have left" ]
+  - [ investigated, inc-varginha-1996, "He traced the paper trail an alleged U.S. Air Force flight to Campinas in January 1996 would have left" ]
 facts:
   - text: "He said that, according to a Brazilian air traffic controller, on or about 20 January 1996 a U.S. Air Force cargo plane, most likely a C-17, flew into Brazilian airspace without clearance and landed at Viracopos airport in Campinas, where witnesses spoke of it loading an unusual cargo, and that if this is true “30 to 40 Americans” would have direct knowledge of the flight; he set out the orders and records such a mission would have generated."
     status: claimed

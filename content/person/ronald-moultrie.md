@@ -8,6 +8,7 @@ credentials:
 tags:
   - intelligence
 rel:
+  - [ testified at, h-2022-05-17 ]
   - [ led, ousd-is ]
 facts:
   - text: "As Under Secretary of Defense for Intelligence and Security, Moultrie told Congress in 2022 that UAP are “airborne objects that, when encountered, cannot be immediately identified”, and that the Department aims to remove the stigma around reporting."

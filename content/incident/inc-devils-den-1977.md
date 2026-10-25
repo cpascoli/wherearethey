@@ -7,7 +7,6 @@ tags:
   - missing-time
   - implant
 rel:
-  - [ witness, terry-lovelace ]
 facts:
   - text: Terry Lovelace and a friend had a UFO encounter and missing time while camping.
     status: claimed

@@ -9,7 +9,7 @@ links:
     url: https://www.aaro.mil/portals/136/PDFs/case_resolution_reports/Case_Resolution_of_Eglin_UAP_2_508_.pdf
 rel:
   - [ published by, aaro ]
-  - [ about, inc-eglin-2023 ]
+  - [ documents, inc-eglin-2023 ]
 facts:
   - text: "AARO's case resolution of 14 October 2023 assessed the object reported on 26 January 2023 near Eglin AFB as “very likely a lighter-than-air object, such as a large commercial lighting balloon”, with moderate confidence."
     status: documented

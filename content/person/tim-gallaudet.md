@@ -21,8 +21,8 @@ tags:
   - navy
   - whistleblower
 rel:
-  - [ disputes, inc-nimitz-2004, "He rejects Kirkpatrick's DARPA explanation for the Tic Tac" ]
-  - [ witness, h-2024-11-13 ]
+  - [ testified at, h-2025-05-01 ]
+  - [ testified at, h-2024-11-13 ]
   - [ informed by, jay-stratton, "Stratton told him the deleted GoFast email had been treated as spillage" ]
   - [ related to, chris-mellon ]
   - [ accused, aaro, "He accused AARO of an influence operation" ]

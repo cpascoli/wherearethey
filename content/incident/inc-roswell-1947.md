@@ -9,7 +9,6 @@ outcome: disputed
 outcome_note: "The Air Force traced the debris to a Project MOGUL balloon (1994) and the \"alien\" accounts to 1950s test dummies and accidents (1997); crash-retrieval claims dispute this."
 outcome_source: doc-af-roswell-case-closed-1997
 rel:
-  - [ documented in, doc-af-roswell-case-closed-1997 ]
   - [ claims by, philip-corso, "Corso made broader claims about recovered technology" ]
   - [ vouched for by, edgar-mitchell, "Mitchell, who grew up in Roswell, said the 1947 crash was genuine" ]
   - [ alleged case of, crash-retrieval, "Books from 1980 on added a crashed craft and bodies; the Air Force attributes the accounts to balloons and test dummies" ]

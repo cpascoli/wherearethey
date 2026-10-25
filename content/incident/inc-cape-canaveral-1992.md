@@ -6,7 +6,6 @@ tags:
   - air-force
   - secrecy
 rel:
-  - [ witness, gregory-rogers ]
 facts:
   - text: Dr. Gregory Rogers says an Air Force major showed him security footage of a 20-foot-wide white saucer levitating inside a military hangar.
     status: claimed

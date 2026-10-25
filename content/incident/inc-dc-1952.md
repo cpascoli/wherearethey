@@ -8,7 +8,6 @@ tags:
   - aviator
   - air-force
 rel:
-  - [ witness, s-c-pierman ]
   - [ led to, doc-robertson-panel-1953 ]
 facts:
   - text: "A CIA Office of Scientific Intelligence memo of September 1952 records that the Air Force had received about 1,500 official sighting reports since 1947, that \"During July 1952 alone, official reports totaled 250\", and that more than a quarter of the reports received from January through July 1952 were carried as unexplained (the scan reads 26 or 28 percent)."

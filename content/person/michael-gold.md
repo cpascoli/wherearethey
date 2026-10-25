@@ -6,8 +6,8 @@ credentials:
 tags:
   - science
 rel:
-  - [ witness, h-2024-11-13 ]
-  - [ witness, h-2025-05-01 ]
+  - [ testified at, h-2024-11-13 ]
+  - [ testified at, h-2025-05-01 ]
   - [ worked at, nasa ]
 facts:
   - text: "Gold, a member of NASA's UAP independent study team, testified that academics on the team “were mocked and even threatened for simply having the temerity to engage in the study of UAP.”"

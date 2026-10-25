@@ -14,7 +14,6 @@ tags:
   - international
   - consciousness
 rel:
-  - [ witness, colin-mackie ]
   - [ investigated by, cynthia-hind ]
   - [ subject of, film-ariel-phenomenon ]
   - [ reported by, tim-leach ]

@@ -8,7 +8,7 @@ tags:
   - foia
 rel:
   - [ authored by, charles-halt ]
-  - [ about, inc-rendlesham-1980 ]
+  - [ documents, inc-rendlesham-1980 ]
 facts:
   - text: An official memo from Deputy Base Commander Lt. Col. Charles Halt to the UK Ministry of Defence describing the Rendlesham events, including radiation readings in the depressions where the object had been seen. Released through FOIA in 1983.
     status: documented

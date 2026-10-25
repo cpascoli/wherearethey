@@ -6,7 +6,6 @@ tags:
   - air-force
 rel:
   - [ same base as, inc-langley-2023, "Both at Langley Air Force Base, eleven years apart" ]
-  - [ witness, dylan-borland ]
 facts:
   - text: "In sworn testimony to the House Oversight task force on 9 September 2025, former geospatial-intelligence airman Dylan Borland said that in summer 2012, at about 01:30 at Langley AFB, he saw an approximately 100-foot equilateral triangle take off near the NASA hangar, silent and interfering with his phone, before ascending rapidly. The transcript records the testimony, not its accuracy."
     status: documented

@@ -11,8 +11,6 @@ rel:
   - [ about, book-out-of-the-shadows ]
   - [ about, legacy-program ]
   - [ mentions, harry-reid, "Reid's former chief of staff could not confirm Stratton's claim that Reid was mistakenly briefed" ]
-  - [ related to, james-ryder ]
-  - [ related to, eric-davis ]
 facts:
   - text: "Responding to Stratton's claim in his book that he \"was compromised and controlled by the Legacy Program\", Kirkpatrick told PARADIGM: \"That's the most absurd thing I've heard today.\" He said the only classified information Congress holds on \"this fictitious program\" is what he and others presented \"on what violations of national security law Jay and his band of pseudo-scientists have committed\", without naming the law, and added: \"There is no legacy program.\""
     status: claimed

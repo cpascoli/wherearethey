@@ -5,7 +5,6 @@ date: 1998
 place: { name: "Tel Nof Air Base, Israel", lat: 31.839, lng: 34.822 }
 tags: [aviator, international, air-force]
 rel:
-  - [ witness, dror-gorlik ]
 facts:
   - text: "Returning to land at Tel Nof in an F-15 of 106 Squadron during a 1998 Air Force-wide exercise, Dror Gorlik saw a strong yellow light that resolved into a metallic, silver, mushroom- or muffin-shaped object with a dome, a ring of yellow lights and no trail, passing 300–400 metres to his left and disappearing to the north."
     status: claimed

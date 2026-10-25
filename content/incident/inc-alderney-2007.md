@@ -7,7 +7,6 @@ date: 2007-04-23
 place: { name: "Off Alderney, Channel Islands", lat: 49.71, lng: -2.25 }
 tags: [aviator, radar, international]
 rel:
-  - [ witness, ray-bowyer ]
   - [ investigated by, david-clarke ]
 links:
   - label: Wikipedia — 2007 Alderney UFO sighting

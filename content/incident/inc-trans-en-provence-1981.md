@@ -6,7 +6,6 @@ place: { name: "Trans-en-Provence, Var, France", lat: 43.5047, lng: 6.4869 }
 tags: [physical-evidence, law-enforcement, science, international]
 rel:
   - [ investigated by, geipan ]
-  - [ documented in, doc-geipan-trans-en-provence-1981 ]
 facts:
   - text: "A single witness reported a grey circular object about 2.5 m across that landed for a few seconds on his property and left vertically at high speed, leaving a circular trace about 2 m wide. The gendarmerie recorded the trace and took soil and plant samples the next day; GEPAN investigated in February."
     status: documented

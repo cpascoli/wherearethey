@@ -16,8 +16,6 @@ tags:
   - school
   - international
 rel:
-  - [ witness, andrew-greenwood ]
-  - [ witness, tania-vassie ]
 facts:
   - text: More than 200 students and teachers at Westall High School and the neighbouring Grange saw a silver, metallic object descend, hover near a grassy field, then leave quickly. The schools are close to RAAF Laverton.
     said: 1966-04-06

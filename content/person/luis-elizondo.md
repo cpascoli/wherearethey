@@ -15,6 +15,7 @@ tags:
   - intelligence
   - whistleblower
 rel:
+  - [ testified at, h-2024-11-13 ]
   - [ authored, book-imminent ]
   - [ says he led, aatip, "His account; a Pentagon spokesperson said in 2019 he had no responsibilities for AATIP, and AARO says it was never an official program" ]
   - [ worked on, aawsap, "He says he was recruited into AAWSAP around 2009; it evolved into AATIP" ]

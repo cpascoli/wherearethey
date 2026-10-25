@@ -8,7 +8,6 @@ outcome: disputed
 outcome_note: "The Robertson Panel and later Air Force assessments favoured seagulls reflecting sunlight; the Navy's photo analysts disagreed, and the film cannot establish distance or size."
 outcome_source: doc-robertson-panel-1953
 rel:
-  - [ witness, delbert-newhouse ]
   - [ investigated by, project-blue-book ]
   - [ documented in, dow-uap-d102 ]
   - [ documented in, dow-uap-d103 ]

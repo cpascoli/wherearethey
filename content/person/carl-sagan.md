@@ -12,6 +12,8 @@ facts:
     status: documented
     by: carl-sagan
     source: library/docs/doc-transcript-1968-07-29.pdf
+rel:
+  - [ testified at, h-1968-07-29 ]
 ---
 
 Carl Sagan (1934–1996) was an American astronomer and science communicator, then at Harvard and later at Cornell. He testified at the 1968 House Science and Astronautics Committee symposium on UFOs, and later disputed the claimed "star map" in the Hill case.

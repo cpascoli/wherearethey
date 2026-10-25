@@ -6,6 +6,7 @@ credentials:
 tags:
   - air-force
 rel:
+  - [ witness, inc-vandenberg-2003 ]
   - [ appears in, film-age-of-disclosure ]
 facts:
   - text: "In The Age of Disclosure he said: \"Later that night, myself and five security forces members, we observed a bright light approaching the base,\" describing a craft about the size of a football field, almost rectangular, that shot off up the coast."

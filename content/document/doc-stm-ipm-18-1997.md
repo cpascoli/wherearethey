@@ -4,7 +4,7 @@ aka: [IPM 18/97, Varginha IPM, Varginha Army inquiry, Autos Findos 908]
 date: 1997-04-11
 tags: [international, south-america, foia]
 rel:
-  - [ about, inc-varginha-1996 ]
+  - [ documents, inc-varginha-1996 ]
 files:
   - library/docs/doc-stm-ipm-18-1997-vol1.pdf
   - library/docs/doc-stm-ipm-18-1997-vol2.pdf

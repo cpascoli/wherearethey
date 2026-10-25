@@ -8,6 +8,7 @@ credentials:
 tags:
   - air-force
 rel:
+  - [ testified at, h-1966-04-05 ]
   - [ led, project-blue-book ]
 facts:
   - text: "Maj. Hector Quintanilla Jr. attended the 5 April 1966 House Armed Services hearing as the Air Force's UFO project officer."

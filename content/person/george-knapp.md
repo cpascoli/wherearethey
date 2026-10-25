@@ -9,7 +9,7 @@ tags:
   - journalist
 rel:
   - [ chronicled, skinwalker-ranch, "He became the public chronicler of the Skinwalker Ranch research" ]
-  - [ witness, h-2025-09-09 ]
+  - [ testified at, h-2025-09-09 ]
   - [ chronicled, aawsap, "He called AAWSAP the largest acknowledged UFO program and co-wrote the books on it" ]
   - [ co-author of, james-lacatski, "Co-authors, with Colm Kelleher, of Skinwalkers at the Pentagon and the books that followed" ]
   - [ chronicled, robert-bigelow, "Through Bigelow and AAWSAP he became the public chronicler of the Skinwalker Ranch research" ]

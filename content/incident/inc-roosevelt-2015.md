@@ -15,8 +15,6 @@ outcome: disputed
 outcome_note: "AARO (2025) placed the GoFast object at about 13,000 ft, moving at 72–161 mph, or 5–92 mph once the wind is removed, and never against the wind, with high confidence it showed no anomalous speed; NASA (2023) judged it most likely drifting with the wind. The squadron's other radar tracks, the near misses and Gimbal remain unexplained."
 outcome_source: doc-aaro-gofast
 rel:
-  - [ documented in, doc-aaro-gofast ]
-  - [ witness, ryan-graves ]
   - [ reported to, tim-gallaudet, "As Oceanographer of the Navy he received the “urgent safety of flight” email with the GoFast video" ]
 facts:
   - text: "AARO's 2025 case resolution of the GoFast video finds with high confidence that the object did not move at anomalous speeds: it was at about 13,000 feet, not skimming the sea, and moving at roughly 5–92 mph relative to the wind. AARO does not identify the object. Its resolution covers that video only, not the squadron's other radar tracks or near misses."

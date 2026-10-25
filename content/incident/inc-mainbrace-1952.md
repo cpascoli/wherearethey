@@ -9,7 +9,6 @@ end: 1952-09-25
 place: { name: "RAF Topcliffe, North Yorkshire (and the North Sea exercise area)", lat: 54.205, lng: -1.382 }
 tags: [military, navy, air-force, aviator, international]
 rel:
-  - [ witness, john-kilburn ]
   - [ discussed by, project-blue-book, "Blue Book's Edward Ruppelt said the sightings led the RAF to take UFOs seriously" ]
 links:
   - label: Wikipedia — Exercise Mainbrace

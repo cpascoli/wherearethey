@@ -16,6 +16,8 @@ facts:
     status: claimed
     by: charles-hickson
     source: v-pascagoula-sheriff-tape-1973@18:28
+rel:
+  - [ witness, inc-pascagoula-1973 ]
 ---
 
 Charles Hickson was a shipyard worker who, with Calvin Parker, reported being taken aboard a craft by three creatures while fishing on the Pascagoula River in Mississippi in October 1973. Police recordings of the two men left alone after their report, and later interviews, are filed here.

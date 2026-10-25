@@ -5,7 +5,6 @@ date: 1980-12-26
 place: { name: "Near RAF Upper Heyford, Oxfordshire, England", lat: 51.9376, lng: -1.2483 }
 tags: [aviator, air-force, nuclear, international, triangle]
 rel:
-  - [ witness, dan-isbell ]
   - [ same night as, inc-rendlesham-1980, "The same night as the first Rendlesham Forest sightings; the bases are about 115 miles apart" ]
 links:
   - label: Earthfiles podcast 108 — anonymous Upper Heyford witness, 27 December 1980 (Linda Moulton Howe, 2024)

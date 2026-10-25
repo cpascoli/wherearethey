@@ -11,7 +11,7 @@ tags:
 rel:
   - [ asked about, inc-malmstrom-1967, "He said the task force had no official data on the reported Malmstrom shutdowns" ]
   - [ worked at, oni ]
-  - [ witness, h-2022-05-17 ]
+  - [ testified at, h-2022-05-17 ]
   - [ testified on, uaptf, "He approved the task force's security classification guide and testified on how it was set up" ]
   - [ called unresolved, inc-nimitz-2004, "He cited Nimitz as a case that “simply remains unresolved”" ]
 facts:

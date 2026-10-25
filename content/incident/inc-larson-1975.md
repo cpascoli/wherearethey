@@ -5,7 +5,6 @@ place: { name: "Fargo, North Dakota", lat: 46.8772, lng: -96.7898 }
 tags:
   - abduction
 rel:
-  - [ witness, sandra-larson ]
 facts:
   - text: "Sandra Larson said that on 26 August 1975, driving from Fargo to Bismarck, she, her daughter and her daughter's boyfriend saw glowing orange spheres over Interstate 94 and lost about an hour. There is no physical evidence or independent corroboration."
     status: unverified

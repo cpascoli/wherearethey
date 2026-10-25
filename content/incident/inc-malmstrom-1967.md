@@ -9,7 +9,6 @@ outcome: disputed
 outcome_note: "The wing history says UFO rumours around Echo Flight were \"disproven\" and traces the shutdown to a noise pulse in the logic coupler; the Oscar Flight account rests on later testimony."
 outcome_source: doc-341smw-history-1967
 rel:
-  - [ witness, bob-salas ]
 facts:
   - text: "The 341st Strategic Missile Wing history records that on 16 March 1967 at 0845 all ten launch facilities of Echo Flight lost strategic alert nearly simultaneously, and that \"Rumors of Unidentified Flying Objects (UFO) around the area of Echo Flight during the time of fault were disproven\": a mobile strike team that had checked November Flight's launch facilities that morning reported no unusual activity or sightings, and the base radar squadron reported no related radar or atmospheric interference. The history also records that commercial power switching was ruled out as the cause."
     status: documented

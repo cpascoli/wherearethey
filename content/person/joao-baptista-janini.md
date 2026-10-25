@@ -7,7 +7,7 @@ credentials:
     role: "Pathologist and professor of anatomic pathology (Universidade Federal Fluminense, UFRJ, Universidade de Brasília); founder of the IPD in Varginha"
 tags: [international, south-america]
 rel:
-  - [ related to, inc-varginha-1996, "He examined tissue from the autopsy of officer Marco Eli Chereze" ]
+  - [ claims about, inc-varginha-1996, "He examined tissue from the autopsy of officer Marco Eli Chereze" ]
 facts:
   - text: "In a written statement read at the January 2026 press conference, he said he had access only to tissue fragments from the autopsy of officer Marco Eli Chereze, that the bacterium was of extremely high aggressiveness and lethality, beyond the limits of a conventional infection, which “raises the hypothesis of its alien origin”, and that an exhumation was awaited for molecular studies."
     status: claimed

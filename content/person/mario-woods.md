@@ -8,6 +8,7 @@ tags:
   - air-force
   - whistleblower
 rel:
+  - [ witness, inc-ellsworth-1977 ]
   - [ testified to, aaro ]
 facts:
   - text: Came forward decades later and in 2023 was invited to give testimony under oath to AARO.

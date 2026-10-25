@@ -20,6 +20,7 @@ facts:
     by: george-knapp
     source: v-2025-09-09-hearing-a@2:14:44
 rel:
+  - [ witness, inc-big-sur-1964 ]
   - [ served at, vandenberg-sfb, "He led a photographic instrumentation team that filmed the 1964 Atlas test from Vandenberg" ]
 ---
 

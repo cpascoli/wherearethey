@@ -17,6 +17,7 @@ credentials:
 tags:
   - congress
 rel:
+  - [ testified at, h-2025-05-01 ]
   - [ chaired, task-force-declassification ]
   - [ visited Eglin with, matt-gaetz, "With Gaetz and Burchett she visited Eglin in 2023 after pilots alleged a cover-up" ]
   - [ visited Eglin with, tim-burchett, "Burchett visited Eglin with her and Gaetz, and later joined her declassification task force" ]

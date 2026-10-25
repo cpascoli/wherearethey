@@ -10,6 +10,7 @@ tags:
   - nuclear
   - air-force
 rel:
+  - [ testified at, h-2013-citizen-hearing ]
   - [ witness, inc-malmstrom-1967 ]
   - [ cites, doc-341smw-history-1967, "Salas says a FOIA request led the Air Force to declassify the Echo Flight records; the wing history says UFO rumours there “were disproven”" ]
   - [ disputes, aaro, "He says AARO disregarded him, and rejects the WSJ's EMP-test explanation" ]

@@ -16,6 +16,7 @@ tags:
   - aviator
   - navy
 rel:
+  - [ testified at, h-2023-07-26 ]
   - [ authored, doc-fravor-statement-2023-07-26 ]
   - [ witness, inc-nimitz-2004 ]
   - [ contacted by, jay-stratton, "Stratton contacted him in 2009 for an unofficial Pentagon report on the Tic Tac" ]

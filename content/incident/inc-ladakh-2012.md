@@ -9,7 +9,6 @@ outcome: disputed
 outcome_note: "Astronomers measuring at Thakung reportedly identified the lights as Jupiter and Venus; earlier reports called them \"non celestial\"."
 outcome_source: https://www.theregister.com/2013/07/26/india_china_war_jupiter_mars_drones/
 rel:
-  - [ witness, itbp ]
   - [ disputed by, ak-antony ]
   - [ same region as, cia-uap-016, "A 1968 CIA report lists earlier UFO sightings in Ladakh, Nepal, Sikkim and Bhutan" ]
 links:

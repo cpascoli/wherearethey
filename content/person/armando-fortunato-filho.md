@@ -6,7 +6,7 @@ credentials:
     role: "Forensic medical examiner, Minas Gerais civil police (more than three decades); former municipal health secretary of Varginha"
 tags: [international, south-america]
 rel:
-  - [ related to, inc-varginha-1996, "He performed the autopsy of military police officer Marco Eli Chereze" ]
+  - [ claims about, inc-varginha-1996, "He performed the autopsy of military police officer Marco Eli Chereze" ]
 facts:
   - text: "He says he performed the autopsy of the 23-year-old military police officer Marco Eli Chereze, whose unexpected death from what seemed a simple abscess under the arm led the state military police commander to request an investigation for suspected medical error, and that the infection was caused by a highly virulent, multi-drug-resistant bacterium that spread through the body and caused septic shock."
     status: claimed

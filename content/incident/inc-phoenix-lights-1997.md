@@ -8,8 +8,6 @@ outcome: disputed
 outcome_note: "The Air Force attributed the 10 p.m. lights to illumination flares dropped by Maryland Air National Guard A-10s at the Goldwater Range, and sceptics attribute the earlier formation to A-10s flying in formation; Gov. Fife Symington and Lt. Col. Richard French, who saw a large craft, reject both."
 outcome_source: https://en.wikipedia.org/wiki/Phoenix_Lights
 rel:
-  - [ witness, fife-symington ]
-  - [ witness, richard-french ]
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Phoenix_Lights

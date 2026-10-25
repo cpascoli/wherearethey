@@ -8,7 +8,6 @@ outcome: disputed
 outcome_note: "The Air Force's intelligence center explained it as the aurora borealis and the sceptic Philip Klass as a reflection of the moon below the horizon; the crew rejected both, and the original report records clear weather and no other aircraft."
 outcome_source: https://ufologie.patrickgross.org/htm/bethune51.htm
 rel:
-  - [ witness, graham-bethune ]
   - [ investigated by, project-blue-book, "The Northeast Air Command report went to the Air Force's intelligence center" ]
 links:
   - label: "Patrick Gross casebook — the Bethune case, with the official documents"

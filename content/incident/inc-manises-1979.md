@@ -10,8 +10,6 @@ outcome: disputed
 outcome_note: "The Spanish Air Force found \"no proof to admit the presence of UFOs\", found no confirmed radar contact correlated with the lights, and suggested a bright planet, a balloon or reflected lights; it did not identify the object."
 outcome_source: doc-ea-expediente-791111-manises
 rel:
-  - [ documented in, doc-ea-expediente-791111-manises ]
-  - [ witness, javier-lerdo-de-tejada ]
 links:
   - label: Wikipedia — Manises UFO incident
     url: https://en.wikipedia.org/wiki/Manises_UFO_incident

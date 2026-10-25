@@ -8,7 +8,7 @@ credentials:
 tags:
   - navy
 rel:
-  - [ witness, h-2025-09-09 ]
+  - [ testified at, h-2025-09-09 ]
   - [ encouraged by, tim-gallaudet, "Gallaudet says he encouraged Wiggins to come forward" ]
   - [ questioned by, anna-paulina-luna, "At her September 2025 hearing Luna asked whether anything in the U.S. arsenal could split a Hellfire missile; Wiggins said nothing to his knowledge" ]
   - [ witness, inc-uss-jackson-2023 ]

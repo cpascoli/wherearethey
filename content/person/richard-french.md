@@ -6,6 +6,7 @@ credentials:
     role: Lieutenant Colonel, U.S. Air Force (ret.)
 tags: [military, aviator]
 rel:
+  - [ witness, inc-phoenix-lights-1997 ]
   - [ testified at, h-2013-citizen-hearing ]
 facts:
   - text: Testified that as a fighter pilot (Korea, Vietnam) he was sent by the OSI district commander to investigate an object reported in the water off Newfoundland.

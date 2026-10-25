@@ -8,8 +8,6 @@ tags:
   - abduction
   - missing-time
 rel:
-  - [ witness, mario-woods ]
-  - [ witness, michael-johnson ]
 facts:
   - text: Woods and Sgt. Michael Johnson answered a security alarm at the November-5 (N-5) missile silo and saw a massive, pulsating, spherical craft hovering over the site, “the size of a Walmart building”.
     status: claimed

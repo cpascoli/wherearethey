@@ -11,7 +11,7 @@ tags:
   - science
 rel:
   - [ led, galileo-project ]
-  - [ witness, h-2025-05-01 ]
+  - [ testified at, h-2025-05-01 ]
   - [ chaired, uap-science-advisory-council ]
   - [ worked with, garry-nolan, "Nolan joined the Galileo Project, which Loeb founded in 2021" ]
   - [ disputes, eric-davis, "Loeb called Davis's account of how recovered craft fly “speculation” without a theory of quantum gravity" ]

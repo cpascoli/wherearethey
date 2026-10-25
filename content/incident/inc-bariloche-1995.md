@@ -8,9 +8,7 @@ outcome: explained
 outcome_note: "The Argentine Air Force (CEFAE, 2018) resolved it as a discotheque sky-tracer searchlight reflected on ice-crystal cloud during a city-wide blackout; the operator acknowledged testing it that night."
 outcome_source: doc-cefae-informe-2018
 rel:
-  - [ witness, jorge-polanco ]
   - [ investigated by, cefae ]
-  - [ documented in, doc-cefae-informe-2018 ]
 links:
   - label: Clarín, 2 August 1995 (via Patrick Gross archive)
     url: https://ufologie.patrickgross.org/press/clarin2aug1995.htm

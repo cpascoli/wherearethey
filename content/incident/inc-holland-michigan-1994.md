@@ -5,9 +5,6 @@ date: 1994-03-08
 place: { name: "Holland, Michigan", lat: 42.7875, lng: -86.1089 }
 tags: [law-enforcement, radar]
 rel:
-  - [ witness, jeff-velthouse ]
-  - [ witness, jack-bushong ]
-  - [ documented in, doc-holland-police-report-1994 ]
 facts:
   - text: "Holland police officer Jeff Velthouse saw red, green and white lights through binoculars that he described as \"oscillating, rather than blinking\" and unlike a normal aircraft. Many residents called 911 that night."
     status: documented

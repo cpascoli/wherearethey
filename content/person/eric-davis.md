@@ -12,7 +12,8 @@ tags:
   - crash-retrieval
   - science
 rel:
-  - [ related to, inc-roswell-1947 ]
+  - [ testified at, h-2025-05-01 ]
+  - [ claims about, inc-roswell-1947, "He says the grays he knows of came from the crash near Corona, New Mexico, which he says is misnamed Roswell" ]
   - [ worked on, aawsap, "He wrote Defense Intelligence Reference Documents under the AAWSAP contract" ]
   - [ claims about, lockheed-martin, "He says contractors such as Lockheed Martin hold retrieved craft in unacknowledged programs" ]
   - [ worked with, hal-puthoff, "Davis joined Puthoff at EarthTech International in Austin" ]

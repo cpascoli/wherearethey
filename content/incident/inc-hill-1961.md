@@ -9,7 +9,6 @@ outcome: disputed
 outcome_note: "Project Blue Book attributed the original sighting to a temperature inversion and later to Jupiter; the abduction account emerged under hypnosis in 1964."
 outcome_source: doc-bluebook-lincoln-nh-1961
 rel:
-  - [ witness, barney-betty-hill ]
   - [ investigated by, project-blue-book ]
 facts:
   - text: "Project Blue Book filed the sighting under Lincoln, New Hampshire, 20 September 1961, as \"Insufficient Data for Evaluation\". Its analysis sheet attributed both a radar return and the visual sighting to a strong temperature inversion, saying the light had \"all of the characteristics of an advertising search light\"."

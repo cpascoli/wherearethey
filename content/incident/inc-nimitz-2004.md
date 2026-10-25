@@ -17,14 +17,6 @@ links:
   - label: Podcast episode (Spotify)
     url: https://open.spotify.com/episode/7MVYLn2dlIaw0e0MlYMtgG
 rel:
-  - [ witness, david-fravor ]
-  - [ witness, chad-underwood ]
-  - [ witness, alex-dietrich ]
-  - [ witness, kevin-day ]
-  - [ witness, gary-voorhis ]
-  - [ witness, jason-turner ]
-  - [ witness, pj-hughes ]
-  - [ witness, ryan-weigelt ]
 facts:
   - text: USS Princeton radar operators tracked anomalous objects for days. F/A-18Fs led by Cmdr. David Fravor were vectored to intercept a white, wingless “Tic Tac” object.
     status: claimed

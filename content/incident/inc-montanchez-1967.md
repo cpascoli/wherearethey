@@ -8,7 +8,6 @@ outcome: disputed
 outcome_note: "The Air Force's 1992 review judged a sounding balloon probable (\"con las lógicas reservas\"), but no balloon launch was ever checked and two radar stations tracked the object."
 outcome_source: doc-ea-expediente-670603-montanchez
 rel:
-  - [ documented in, doc-ea-expediente-670603-montanchez ]
 facts:
   - text: "Two Air Force pilots in a T-33 (DUENDE 20) saw a bright object high above them over Montánchez and could not climb to it, noticing strong radio interference beneath it. Radar stations EVA 3 and EVA 2 both made contact, and two F-86s scrambled from Torrejón with cameras reached it but recovered for lack of fuel without closer data."
     status: documented

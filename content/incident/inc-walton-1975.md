@@ -6,7 +6,6 @@ tags:
   - abduction
   - missing-time
 rel:
-  - [ witness, travis-walton ]
 facts:
   - text: "Six days after his disappearance, Travis Walton said he was struck by “a physical blow” from a craft and woke on a table with beings leaning over him."
     status: claimed

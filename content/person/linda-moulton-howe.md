@@ -6,7 +6,7 @@ credentials:
     role: Investigative journalist and documentary maker (Earthfiles); ufologist
 tags: [journalist]
 rel:
-  - [ related to, inc-roswell-1947 ]
+  - [ related to, inc-roswell-1947, "According to Hal Puthoff, she received the bismuth–magnesium “Roswell” sample through Art Bell" ]
   - [ testified at, h-2013-citizen-hearing ]
   - [ held, sample-bismuth-magnesium ]
   - [ disinformed by, richard-doty, "Doty says he was ordered to show her a document that mixed truth with deception" ]

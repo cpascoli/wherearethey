@@ -3,7 +3,7 @@ name: Gerald Ford calls for a congressional UFO inquiry (1966 news footage)
 youtube: XZPhvH-5670
 rel:
   - [ features, gerald-ford ]
-  - [ related to, h-1966-04-05 ]
+  - [ led to, h-1966-04-05, "The hearing was prompted by the March 1966 Michigan sightings and by House Minority Leader Gerald Ford’s call for hearings" ]
 links:
   - label: Gerald R. Ford Presidential Library — Ford’s 1966 UFO correspondence (PDF)
     url: https://www.fordlibrarymuseum.gov/library/document/0054/4525586.pdf

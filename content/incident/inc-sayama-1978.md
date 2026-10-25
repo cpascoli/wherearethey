@@ -5,7 +5,6 @@ date: 1978-10-03
 place: { name: "Sayama, Saitama Prefecture, Japan", lat: 35.8527, lng: 139.4122 }
 tags: [abduction, international]
 rel:
-  - [ witness, hideichi-amano ]
 links:
   - label: URECAT case file (Patrick Gross, secondary compilation)
     url: https://ufologie.patrickgross.org/ce3/1978-10-03-japan-sayamacity.htm

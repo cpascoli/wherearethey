@@ -7,8 +7,6 @@ date: 1976-09-19
 place: { name: "Tehran, Iran", lat: 35.6892, lng: 51.389 }
 tags: [aviator, military, radar, international]
 rel:
-  - [ witness, parviz-jafari ]
-  - [ documented in, doc-dia-tehran-1976 ]
 links:
   - label: Wikipedia — 1976 Tehran UFO incident
     url: https://en.wikipedia.org/wiki/1976_Tehran_UFO_incident

@@ -7,7 +7,7 @@ links:
   - label: National Archives of Australia (article)
     url: https://www.naa.gov.au/blog/flying-saucers-fact-or-fiction
 rel:
-  - [ about, inc-nowra-sea-fury-1954 ]
+  - [ documents, inc-nowra-sea-fury-1954 ]
 facts:
   - text: "The National Archives of Australia states that RAAF records of possible UFO sightings are held in the national archival collection, and that the RAAF ceased investigating sightings in 1994, reasoning that only 3 per cent of reports could not be explained by natural phenomena and that these presented little or no threat to security."
     status: documented

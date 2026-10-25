@@ -11,7 +11,7 @@ tags:
 rel:
   - [ authored, doc-shellenberger-testimony ]
   - [ submitted, doc-immaculate-constellation ]
-  - [ witness, h-2024-11-13 ]
+  - [ testified at, h-2024-11-13 ]
   - [ checked claims of, david-grusch, "He set out to verify Grusch's claims after the 2023 testimony" ]
   - [ testified with, luis-elizondo, "They testified together on 13 November 2024" ]
   - [ testified with, tim-gallaudet, "They testified together on 13 November 2024" ]

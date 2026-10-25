@@ -8,7 +8,7 @@ links:
     url: https://catalog.archives.gov/id/302580672
 rel:
   - [ case file of, project-blue-book ]
-  - [ about, inc-minot-1968 ]
+  - [ documents, inc-minot-1968 ]
 facts:
   - text: "The Project Blue Book record card lists Minot AFB, 24 October 1968 (05:30Z), military sources, air-radar, air-visual and ground-visual observations lasting about four hours. Conclusions: ground-visual \"Probable (AIRCRAFT)(B-52)\" and \"Probable Astro (SIRIUS)\"; radar \"Possible (PLASMA)\"; air-visual \"Possible (PLASMA)\"."
     status: documented

@@ -8,7 +8,7 @@ links:
     url: https://www.aaro.mil/Portals/136/PDFs/case_resolution_reports/AARO_GoFast_Case_Resolution_Card_Methodology_Final.pdf
 rel:
   - [ published by, aaro ]
-  - [ about, inc-roosevelt-2015 ]
+  - [ documents, inc-roosevelt-2015 ]
 facts:
   - text: "AARO's case resolution of 6 February 2025 on the January 2015 Navy F/A-18F FLIR video states: \"AARO cannot definitively identify the object, but it displayed no anomalous performance characteristics.\" It assesses with high confidence that the object did not move at anomalous speeds."
     status: documented

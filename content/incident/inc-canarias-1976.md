@@ -11,7 +11,6 @@ links:
   - label: "Ballester Olmos & Campo, \"¡Identificados! Los OVNIS de Canarias fueron misiles Poseidón\", Revista de Aeronáutica y Astronáutica 701 (2001)"
     url: https://www.academia.edu/16027101/Identificados_Los_OVNIS_de_Canarias_fueron_misiles_Poseidon
 rel:
-  - [ documented in, doc-ea-expediente-761119-canarias ]
 facts:
   - text: "The crew of the training ship Juan Sebastián Elcano, an Air Force T-12 crew, a Spantax airliner crew and many people on Gran Canaria watched a luminous point spiral and swell into a vast semicircular halo on the horizon at about 19:15Z; airline captains near Málaga reported a bright dome at the same time."
     status: documented

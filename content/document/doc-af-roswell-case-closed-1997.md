@@ -9,7 +9,7 @@ links:
   - label: C-SPAN — Air Force report on Roswell events (news conference, 1997)
     url: https://www.c-span.org/program/news-conference/air-force-report-on-roswell-events/65601
 rel:
-  - [ about, inc-roswell-1947 ]
+  - [ documents, inc-roswell-1947 ]
   - [ published by, department-of-war ]
 facts:
   - text: "The Air Force recalls that its July 1994 report, prepared in response to a General Accounting Office inquiry requested by a member of Congress, concluded that the Army Air Forces had recovered debris from a balloon-borne research project code-named MOGUL, most of whose records were never classified."

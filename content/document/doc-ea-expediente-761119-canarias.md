@@ -7,7 +7,7 @@ links:
   - label: Biblioteca Virtual de Defensa — Expedientes OVNI (CC BY 4.0)
     url: https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/catalogo_imagenes/grupo.do?path=102223
 rel:
-  - [ about, inc-canarias-1976 ]
+  - [ documents, inc-canarias-1976 ]
 facts:
   - text: "The file summarises that at 19:15Z on 19 November 1976 the crew of the Spanish Navy training ship Juan Sebastián Elcano, on passage from Cádiz to Las Palmas, saw a luminous point that spiralled about four turns and then grew to two or three times the size of the lunar disc. It formed a perfect semicircle resting on the horizon, with the luminous sphere at its centre, and faded as it expanded; its active phase lasted more than 20 minutes and it took about two hours to die out completely."
     status: documented

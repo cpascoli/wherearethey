@@ -14,11 +14,11 @@ tags:
 rel:
   - [ visited, skinwalker-ranch, "Knapp says Stratton is “Axelrod”, the intelligence officer who had strange experiences after visiting the ranch" ]
   - [ authored, book-out-of-the-shadows ]
-  - [ investigated, inc-nimitz-2004 ]
+  - [ investigated, inc-nimitz-2004, "Fravor said Stratton contacted him in 2009 to investigate the Nimitz encounter" ]
   - [ says he led, uaptf, "His and his publisher's account, supported by Gallaudet's testimony; AARO's history says the Navy was asked to lead the task force and does not name him" ]
   - [ worked at, dia ]
   - [ worked at, oni ]
-  - [ co-founded, aawsap, "On loan to DIA in 2009 he worked on AAWSAP and, by his account, helped found it" ]
+  - [ says he co-founded, aawsap, "On loan to DIA in 2009 he worked on AAWSAP and, by his account, helped found it" ]
   - [ worked on, aatip, "He worked on AATIP alongside Elizondo; AARO says AATIP was never an official program" ]
   - [ worked with, luis-elizondo, "They worked together on AATIP; Elizondo calls Stratton his equal" ]
   - [ claims about, legacy-program, "He says a “legacy program” has hidden recovered non-human craft for 80 years" ]

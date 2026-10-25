@@ -9,6 +9,7 @@ tags:
   - congress
   - intelligence
 rel:
+  - [ testified at, h-2025-05-01 ]
   - [ commented on, langley-afb, "He thinks triangles seen near bases such as Langley are “probably ours”" ]
   - [ convinced by, inc-nimitz-2004, "Walking through the Tic Tac case with Fravor and Dietrich convinced him the issue was real" ]
   - [ briefed by, david-fravor, "Walking through the Tic Tac case with Fravor and Dietrich convinced him the issue was real" ]

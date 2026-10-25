@@ -7,7 +7,7 @@ links:
   - label: Biblioteca Virtual de Defensa — Expedientes OVNI (CC BY 4.0)
     url: https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/catalogo_imagenes/grupo.do?path=101639
 rel:
-  - [ about, inc-valencia-sagunto-1968 ]
+  - [ documents, inc-valencia-sagunto-1968 ]
 facts:
   - text: "The file summarises that at 18:23Z on 4 November 1968 Iberia flight IB-249, a Caravelle from Barcelona to Alicante, told Barcelona Control it had in sight a very large light with two small side lights, which descended, went out, rose and lit again, and finally went out and was lost towards the Mediterranean. Barcelona had no radar contact, as the estimated position was beyond its range."
     status: documented

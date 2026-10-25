@@ -5,9 +5,7 @@ date: 1964-04-24
 place: { name: "Socorro, New Mexico", lat: 34.0584, lng: -106.8914 }
 tags: [law-enforcement, landing, air-force]
 rel:
-  - [ witness, lonnie-zamora ]
   - [ investigated by, project-blue-book ]
-  - [ documented in, doc-bluebook-socorro-1964 ]
 facts:
   - text: "Socorro police officer Lonnie Zamora reported a white, egg-shaped object on girder-like legs, with one or two figures in coveralls, that rose with a roar and flame from a gully south of town and flew off to the south. State Police Sgt Chavez arrived moments later and found slight depressions and burned brush."
     status: documented

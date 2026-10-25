@@ -8,7 +8,7 @@ links:
   - label: The Black Vault (FOIA release to John Greenewald, 2001)
     url: https://documents.theblackvault.com/documents/ufos/malmstromufo.pdf
 rel:
-  - [ about, inc-malmstrom-1967 ]
+  - [ documents, inc-malmstrom-1967 ]
   - [ released by, department-of-war ]
 facts:
   - text: "The wing history records that on 16 March 1967 at 0845 all sites in Echo Flight, Malmstrom AFB, shut down with No-Go indications on channels 9 and 12, all launch facilities losing strategic alert nearly simultaneously, and that no other wing configuration lost alert at that time. All ten sites were returned to alert without replacing launch-facility equipment."

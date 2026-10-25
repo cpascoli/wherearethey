@@ -5,7 +5,6 @@ date: 1980-04-11
 place: { name: "La Joya Air Base, Arequipa, Peru", lat: -16.7888, lng: -71.886 }
 tags: [aviator, military, international]
 rel:
-  - [ witness, oscar-santa-maria ]
 links:
   - label: "Leslie Kean — UFOs: Generals, Pilots, and Government Officials Go on the Record (2010), chapter on Peru"
     url: https://en.wikipedia.org/wiki/Leslie_Kean

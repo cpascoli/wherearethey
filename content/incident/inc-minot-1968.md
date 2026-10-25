@@ -9,7 +9,6 @@ outcome_note: "Project Blue Book attributed the ground sightings to Sirius and t
 outcome_source: doc-bluebook-minot-1968
 rel:
   - [ investigated by, project-blue-book ]
-  - [ documented in, doc-bluebook-minot-1968 ]
 facts:
   - text: "A B-52 crew making practice penetrations northwest of Minot tracked an unidentified radar return that crossed in front of them at about 3,000 mph and then stayed off their left wing for about 20 miles. Both transmitters malfunctioned while the target was close, and they photographed the radar scope. Ground personnel at the missile sites reported a bright light."
     status: documented

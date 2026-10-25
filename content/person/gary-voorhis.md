@@ -10,7 +10,7 @@ tags:
   - navy
 rel:
   - [ witness, inc-nimitz-2004 ]
-  - [ related to, kevin-day ]
+  - [ served with, kevin-day, "Both served aboard the cruiser USS Princeton in November 2004" ]
   - [ fellow witness, pj-hughes, "Hughes's account parallels Voorhis's description of AEGIS data being collected on the Princeton" ]
   - [ disputed by, david-fravor, "Fravor has publicly rejected parts of Voorhis's account" ]
 facts:

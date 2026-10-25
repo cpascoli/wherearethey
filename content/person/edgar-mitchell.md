@@ -9,7 +9,7 @@ credentials:
 tags:
   - disclosure
 rel:
-  - [ witness, h-2013-citizen-hearing ]
+  - [ testified at, h-2013-citizen-hearing ]
   - [ friend of, paul-hellyer, "Hellyer called him “my friend Edgar Mitchell”; they opened the 2013 Citizen Hearing together" ]
   - [ worked at, nasa ]
 facts:

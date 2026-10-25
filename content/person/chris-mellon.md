@@ -16,9 +16,9 @@ tags:
   - intelligence
   - disclosure
 rel:
+  - [ testified at, h-2025-05-01 ]
   - [ commented on, langley-afb, "He described the drone incursions over Langley at the May 2025 congressional briefing" ]
   - [ worked at, senate-intel-committee ]
-  - [ related to, aatip ]
   - [ worked with, luis-elizondo, "He met Elizondo around 2017 and joined him and Tom DeLonge in To The Stars Academy" ]
   - [ provided video of, inc-roosevelt-2015, "He provided the GoFast and Gimbal videos to The New York Times in 2017" ]
   - [ worked with, kirk-mcconnell, "Mellon turned to McConnell, who arranged the first Navy witness briefings in Congress" ]

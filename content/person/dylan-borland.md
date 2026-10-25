@@ -12,7 +12,7 @@ tags:
   - whistleblower
 rel:
   - [ witness at, langley-afb, "In 2012 he says he saw a silent triangle 100 to 150 feet across rise near the NASA hangar" ]
-  - [ witness, h-2025-09-09 ]
+  - [ testified at, h-2025-09-09 ]
   - [ witness, inc-langley-2012 ]
   - [ claims about, legacy-program, "He says he was “exposed to classified information from the UAP legacy crash retrieval program”" ]
   - [ filed with, aaro, "He filed with the ICIG and AARO in 2023, and counts a disputed AARO memorandum among the reprisals he describes" ]

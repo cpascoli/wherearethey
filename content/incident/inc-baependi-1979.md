@@ -4,7 +4,6 @@ date: 1979-05-16
 place: { name: "Baependi, Minas Gerais, Brazil", lat: -21.957, lng: -44.888 }
 tags: [abduction, international]
 rel:
-  - [ witness, arlindo-gabriel-dos-santos ]
 links:
   - label: NICAP case directory
     url: http://www.nicap.org/790516baependidir.htm

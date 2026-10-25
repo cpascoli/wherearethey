@@ -6,7 +6,6 @@ place: { name: "Orange-Caritat Air Base, Vaucluse, France", lat: 44.1405, lng: 4
 tags: [air-force, aviator, international]
 rel:
   - [ investigated by, geipan ]
-  - [ documented in, doc-geipan-orange-1951 ]
 facts:
   - text: "Two French Air Force fighter pilots of the 5e Escadre de Chasse, flying Vampires from Orange-Caritat, saw a brilliant spherical object, apparently stationary at about 10,000 ft. As they flew towards it, it abruptly became oblong and moved away eastwards, climbing faster than their aircraft, and vanished during an approximately six-minute pursuit. Their base commander judged them experienced, level-headed observers whose accounts matched."
     status: documented

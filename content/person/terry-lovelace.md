@@ -17,6 +17,9 @@ facts:
     status: claimed
     by: terry-lovelace
     source: https://search.worldcat.org/search?q=Incident+at+Devils+Den+Lovelace
+rel:
+  - [ witness, inc-whiteman-1975 ]
+  - [ witness, inc-devils-den-1977 ]
 ---
 
 Terry Lovelace was a U.S. Air Force medic at Whiteman Air Force Base, Missouri, and later an attorney. He says that in 1975 he and an airman saw a silent triangular craft over one of the base's nuclear missile silos, and that in 1977, camping at Devil's Den State Park in Arkansas with a friend, he had a UFO encounter with missing time.

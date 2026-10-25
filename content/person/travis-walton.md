@@ -17,6 +17,8 @@ facts:
     status: claimed
     by: travis-walton
     source: v-walton-first-interview-1975@14:26
+rel:
+  - [ witness, inc-walton-1975 ]
 ---
 
 Travis Walton was a member of a forestry crew in Arizona's Apache-Sitgreaves National Forest who, his crewmates said, was struck by a beam of light from a glowing craft on 5 November 1975 and disappeared for five days. He says he was taken aboard by non-human beings. His book *The Walton Experience* (1978) became the film *Fire in the Sky* (1993); sceptics argue the event was a hoax. Interviews from 1975 onward are filed here.

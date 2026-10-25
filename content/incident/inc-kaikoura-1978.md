@@ -11,9 +11,6 @@ outcome: disputed
 outcome_note: "The RNZAF attributed the sightings to natural but unusual atmospheric phenomena, Venus, spurious radar returns, squid boats and ground lights; an independent study in the same file disputes this for the radar-tracked object."
 outcome_source: doc-rnzaf-air-1080-6-897-kaikoura
 rel:
-  - [ witness, bill-startup ]
-  - [ documented in, doc-rnzaf-air-1080-6-897-kaikoura ]
-  - [ witness, quentin-fogarty ]
 links:
   - label: Wikipedia — Kaikōura lights
     url: https://en.wikipedia.org/wiki/Kaik%C5%8Dura_lights

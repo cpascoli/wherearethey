@@ -7,7 +7,7 @@ links:
   - label: Biblioteca Virtual de Defensa — Expedientes OVNI (CC BY 4.0)
     url: https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/catalogo_imagenes/grupo.do?path=101624
 rel:
-  - [ about, inc-montanchez-1967 ]
+  - [ documents, inc-montanchez-1967 ]
 facts:
   - text: "The file summarises that DUENDE 20, a T-33 from Talavera air base with two pilots, saw a bright object at 11 o'clock about 5,000 ft above it over Montánchez at FL 220. The pilots could not climb to its level and had the impression it rose too, and twice noticed strong radio interference passing beneath it. Its horizontal movement was slight or nil."
     status: documented

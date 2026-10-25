@@ -10,6 +10,8 @@ facts:
     status: claimed
     by: jason-turner
     source: https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/
+rel:
+  - [ witness, inc-nimitz-2004 ]
 ---
 
 Jason Turner was a U.S. Navy petty officer in the USS Nimitz carrier strike group in 2004. He is among the strike-group members who have described observations surrounding the November 2004 "Tic Tac" encounter.

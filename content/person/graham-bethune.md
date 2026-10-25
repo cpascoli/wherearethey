@@ -7,6 +7,7 @@ credentials:
     role: Commander, U.S. Navy (ret.), pilot with a top secret clearance
 tags: [aviator, military, disclosure-project]
 rel:
+  - [ witness, inc-gander-1951 ]
   - [ testified at, ev-disclosure-project-2001 ]
 facts:
   - text: Said that on the night of February 10, 1951, flying from Keflavik, Iceland, to Argentia, Newfoundland, his crew saw a circle of lights on the sea and then a glowing object that climbed to their altitude and flew alongside the aircraft.

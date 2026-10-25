@@ -6,7 +6,6 @@ tags:
   - nuclear
   - air-force
 rel:
-  - [ witness, bob-jacobs ]
 facts:
   - text: Lt. Robert Jacobs led a photo-optical team on a mountaintop near Big Sur, using a high-powered Boston University telescope camera to track an Atlas missile test carrying a dummy nuclear warhead.
     status: claimed

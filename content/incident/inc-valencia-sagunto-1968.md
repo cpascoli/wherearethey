@@ -5,7 +5,6 @@ date: 1968-11-04
 place: { name: "Between Valencia and Sagunto, Spain", lat: 39.6, lng: -0.3 }
 tags: [aviator, international]
 rel:
-  - [ documented in, doc-ea-expediente-681104-valencia-sagunto ]
 facts:
   - text: "The crew of Iberia flight IB-249 told Barcelona Control they could see \"una luz central muy grande con dos luces laterales\" that descended, went out, rose and lit again before disappearing towards the Mediterranean; \"está como un OVNI\", they said, as the whole cockpit watched. Barcelona's radar could not reach the position."
     status: documented

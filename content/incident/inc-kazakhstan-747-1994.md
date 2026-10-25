@@ -5,7 +5,6 @@ date: 1994-01-27
 place: { name: "Over Kazakhstan (45°N 55°E)", lat: 45, lng: 55 }
 tags: [aviator, international, pursue]
 rel:
-  - [ witness, ed-rhodes ]
   - [ documented in, state-department-uap-cable-002 ]
   - [ reported by, department-of-state ]
 facts:

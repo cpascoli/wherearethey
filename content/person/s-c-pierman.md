@@ -12,6 +12,8 @@ facts:
     status: claimed
     by: s-c-pierman
     source: https://en.wikipedia.org/wiki/1952_Washington,_D.C._UFO_incident
+rel:
+  - [ witness, inc-dc-1952 ]
 ---
 
 S. C. Pierman was a Capital Airlines captain who, during the Washington, D.C. sightings of July 1952, saw fast-moving white lights near the capital over about 14 minutes while radar controllers at Washington National Airport tracked unidentified targets.

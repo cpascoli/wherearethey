@@ -10,6 +10,8 @@ facts:
     status: documented
     by: james-e-mcdonald
     source: library/docs/doc-transcript-1968-07-29.pdf
+rel:
+  - [ testified at, h-1968-07-29 ]
 ---
 
 James E. McDonald was an atmospheric physicist at the University of Arizona who argued in the 1960s that UFO reports deserved serious scientific study. He testified at the House Committee on Science and Astronautics' symposium on UFOs in July 1968.

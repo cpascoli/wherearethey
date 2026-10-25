@@ -5,8 +5,6 @@ place: { name: "Pascagoula, Mississippi", lat: 30.3658, lng: -88.5561 }
 tags:
   - abduction
 rel:
-  - [ witness, charles-hickson ]
-  - [ witness, calvin-parker ]
 facts:
   - text: "In his recorded statement to the Jackson County sheriff's officers, Charles Hickson said three beings floated him into a craft hovering near the pier where he and Calvin Parker were fishing."
     status: claimed

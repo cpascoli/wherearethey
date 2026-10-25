@@ -5,7 +5,6 @@ seo_description: "The alleged decades-long U.S. program to recover and reverse-e
 aka: [legacy program, legacy programs, UFO legacy program, crash retrieval program, multi-decade crash retrieval program]
 tags: [crash-retrieval, secrecy, disclosure]
 rel:
-  - [ related to, inc-roswell-1947 ]
   - [ defined in, doc-uap-disclosure-act-2023 ]
   - [ disputed by, doc-aaro-historical-record-report-v1 ]
   - [ disputed by, sean-kirkpatrick ]
@@ -21,7 +20,6 @@ rel:
   - [ allegedly run as, waived-sap, "The alleged structure is an unacknowledged and possibly waived SAP" ]
   - [ alleged in, doc-wilson-memo, "In the notes, Wilson is told by a contractor's program manager “they were a reverse engineering program — something recovered years ago”" ]
   - [ related to, immaculate-constellation ]
-  - [ related to, aawsap ]
 facts:
   - text: "The UAP Disclosure Act defined it in proposed law: “all Federal, State, and local government, commercial industry, academic, and private sector endeavors to collect, exploit, or reverse engineer technologies of unknown origin or examine biological evidence of living or deceased non-human intelligence that pre-dates the date of the enactment of this Act.”"
     status: documented

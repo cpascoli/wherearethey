@@ -18,6 +18,7 @@ tags:
   - crash-retrieval
   - intelligence
 rel:
+  - [ testified at, h-2023-07-26 ]
   - [ worked at, nro ]
   - [ authored, doc-grusch-statement-2023-07-26 ]
   - [ filed, ev-grusch-icig-complaint-2022 ]

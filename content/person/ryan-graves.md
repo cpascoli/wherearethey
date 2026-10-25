@@ -10,8 +10,9 @@ tags:
   - aviator
   - navy
 rel:
+  - [ testified at, h-2023-07-26 ]
   - [ authored, doc-graves-statement-2023-07-26 ]
-  - [ witness, inc-roosevelt-2015 ]
+  - [ witness, inc-roosevelt-2015, "He says crews began tracking objects off the East Coast almost daily from 2014; a friend recorded the GoFast video" ]
   - [ advised by, tim-gallaudet, "Gallaudet became an adviser to Graves's Americans for Safe Aerospace" ]
   - [ disputed by, doc-aaro-gofast, "AARO assesses “with high confidence” that GoFast did not move at anomalous speeds" ]
 facts:

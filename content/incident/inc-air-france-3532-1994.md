@@ -5,9 +5,7 @@ date: 1994-01-28
 place: { name: "Near Paris, France", lat: 48.99, lng: 2.22 }
 tags: [aviator, radar, international]
 rel:
-  - [ witness, jean-charles-duboc ]
   - [ investigated by, geipan ]
-  - [ documented in, doc-geipan-af3532 ]
 facts:
   - text: The crew of Air France flight 3532 reported a very large object near Paris. Duboc says the sighting coincided with a radar track at the French air defence centre; GEIPAN found the track temporally coincident but inconsistent with the visual observation. France's COMETA group and GEIPAN studied it and it remains unexplained.
     status: claimed

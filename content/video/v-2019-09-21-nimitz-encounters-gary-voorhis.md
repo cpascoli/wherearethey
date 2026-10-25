@@ -8,7 +8,6 @@ rel:
   - [ features, gary-voorhis ]
   - [ about, inc-nimitz-2004 ]
   - [ related to, kevin-day ]
-  - [ related to, pj-hughes ]
 moments:
   - t: "2:22"
     text: "Voorhis: the SPY radar team took the whole system down to clear what they thought was clutter; recalibrating only made the tracks clearer, and they tracked unknowns for three to five days."

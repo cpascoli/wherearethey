@@ -7,7 +7,7 @@ credentials:
 tags: [government, international]
 rel:
   - [ reviewed, inc-rendlesham-1980, "His cold-case review at the MoD found that “none of these theories fitted the facts”" ]
-  - [ witness, h-2013-citizen-hearing ]
+  - [ testified at, h-2013-citizen-hearing ]
 facts:
   - text: "Pope, who handled UFO reports at the UK Ministry of Defence from 1991 to 1994, says his cold-case review of Rendlesham found that “none of these theories fitted the facts.”"
     status: claimed

@@ -9,7 +9,7 @@ links:
   - label: "Critique: Gene Sticco, \"Knapp's 'Russian UFO files' are mostly old news\" (9 Feb 2026)"
     url: https://asirpjournal.substack.com/p/knapps-russian-ufo-files-are-mostly
 rel:
-  - [ about, inc-usovo-1982 ]
+  - [ documents, inc-usovo-1982 ]
   - [ published by, george-knapp ]
 facts:
   - text: "Signed statements dated 4–5 October 1982 by about ten servicemen of military unit 52035 and neighbouring units: captains, majors, lieutenant colonels and a soldier. They describe golden, twinkling clusters of lights above Usovo between about 19:10 and 21:10 on 4 October 1982, seen from buses and cars on the roads around Belokorovichi. The lights formed ellipses, lines and garlands, flashed, released small luminous balls and \"went out slowly as if melted away\". Several officers first took them for a helicopter or for sunlight reflected off one."

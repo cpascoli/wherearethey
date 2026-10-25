@@ -11,8 +11,8 @@ links:
     url: https://www.navair.navy.mil/foia/documents
 rel:
   - [ about, ev-dod-videos-2020 ]
-  - [ about, inc-nimitz-2004 ]
-  - [ about, inc-roosevelt-2015 ]
+  - [ documents, inc-nimitz-2004 ]
+  - [ documents, inc-roosevelt-2015 ]
   - [ published by, department-of-war ]
 facts:
   - text: "The Department of Defense authorized the release of three unclassified Navy videos, \"one taken in November 2004 and the other two in January 2015\", which had circulated after unauthorized releases in 2007 and 2017. The Navy had already acknowledged that they were Navy videos."

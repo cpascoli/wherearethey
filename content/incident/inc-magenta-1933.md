@@ -6,7 +6,7 @@ place: { name: "Magenta, Lombardy, Italy", lat: 45.4647, lng: 8.8833 }
 tags: [crash-retrieval, international, secrecy]
 rel:
   - [ allegedly taken to, wright-patterson-afb, "Eric Davis says the Army brought the 1933 Italian craft back to Wright Field" ]
-  - [ related to, inc-roswell-1947 ]
+  - [ similar to, inc-roswell-1947, "Grusch calls it the earliest retrieval he can discuss publicly; if true, it would predate Roswell by fourteen years" ]
   - [ claimed by, david-grusch ]
   - [ claimed by, eric-davis ]
   - [ alleged case of, crash-retrieval, "Grusch says a bell-like craft was recovered at Magenta; AARO found no verifiable evidence of a retrieval programme" ]

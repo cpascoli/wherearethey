@@ -8,7 +8,7 @@ links:
     url: https://www.cnes-geipan.fr/fr/cas/1951-06-00002
 rel:
   - [ published by, geipan ]
-  - [ about, inc-orange-caritat-1951 ]
+  - [ documents, inc-orange-caritat-1951 ]
 facts:
   - text: "The commander of Base Aérienne 115 (Orange-Caritat) forwarded to the 4th Air Region the reports of two 5e Escadre de Chasse pilots, a lieutenant and a sergent-chef (names blanked in the released copy), who during a morning exercise at 11:30 saw \"un engin bizarre\" in the base's airspace. He wrote that both were experienced observers, \"des gens pondérés\", whose accounts were \"absolument semblables\", and that he had questioned them himself about an hour and a half afterwards."
     status: documented

@@ -9,7 +9,6 @@ outcome_note: "AARO (2023): very likely a lighter-than-air object such as a larg
 outcome_source: doc-aaro-eglin
 rel:
   - [ investigated by, aaro ]
-  - [ documented in, doc-aaro-eglin ]
   - [ documented in, doc-transcript-2023-07-26 ]
   - [ investigated by, matt-gaetz, "Gaetz, whose district includes Eglin, received a protected disclosure and saw the image with Burchett and Luna" ]
   - [ investigated by, anna-paulina-luna, "Luna saw the image with Gaetz and Burchett, and says the visit led to her declassification task force" ]

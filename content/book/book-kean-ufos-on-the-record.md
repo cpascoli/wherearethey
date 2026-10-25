@@ -8,7 +8,7 @@ isbn: 978-0-307-71684-2
 tags: [disclosure, aviator, international]
 rel:
   - [ authored by, leslie-kean ]
-  - [ related to, v-npc-2007-ufo-close-encounters ]
+  - [ grew out of, ev-npc-2007, "It grew out of the 2007 National Press Club panel that Kean organised" ]
 links:
   - label: Find in a library
     url: https://search.worldcat.org/search?q=bn:9780307716842

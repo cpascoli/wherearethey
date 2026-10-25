@@ -7,8 +7,6 @@ tags:
   - air-force
 rel:
   - [ same base as, inc-big-sur-1964, "Both at Vandenberg" ]
-  - [ witness, jeffrey-nuccetelli ]
-  - [ witness, chaz-king ]
 facts:
   - text: "In sworn testimony on 9 September 2025, Jeffrey Nuccetelli told the House Oversight task force that the incursions began on 14 October 2003 with Boeing contractors' report of a massive glowing red square over two missile-defence sites. He said he personally witnessed one event and investigated others, and that \"Official Air Force records of this event are in possession by AARO and the FBI\" (no such record has been released). The transcript records the testimony, not its accuracy."
     status: documented

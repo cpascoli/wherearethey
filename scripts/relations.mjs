@@ -92,7 +92,7 @@ const PAIRS = [
   ['launch site for', 'launches from'], ['allegedly run as', 'alleged form of'], ['alleged in', 'alleges'], ['proposal for', 'proposed as'], ['prepared for', 'commissioned'],
   ['prepared by', 'prepared'], ['concerns', 'concerned in'], ['filmed by', 'filmed'],
   // where the official record and an account differ: say so in the label
-  ['another name for', 'also called'], ['says he led', 'leadership claimed by'], ['managed by', 'managed'],
+  ['another name for', 'also called'], ['says he led', 'leadership claimed by'], ['says he co-founded', 'co-founding claimed by'], ['managed by', 'managed'],
   ['copy held as', 'copy of'],
   // claims
   ['evidence for', 'evidence for claim'], ['evidence against', 'evidence against claim'], ['narrower than', 'broader than'], ['broader than', 'narrower than'],

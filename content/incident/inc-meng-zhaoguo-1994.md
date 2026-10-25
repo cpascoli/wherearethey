@@ -5,7 +5,6 @@ date: 1994-06
 place: { name: "Red Flag Forest Farm, Heilongjiang, China", lat: 45.0, lng: 128.0 }
 tags: [abduction, international]
 rel:
-  - [ witness, meng-zhaoguo ]
 links:
   - label: Wikipedia — UFO sightings in China
     url: https://en.wikipedia.org/wiki/UFO_sightings_in_China

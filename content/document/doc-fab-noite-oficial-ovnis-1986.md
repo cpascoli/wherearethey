@@ -9,7 +9,7 @@ links:
   - label: Arquivo Nacional — UFOs in the National Archives (overview, Portuguese)
     url: https://querepublicaeessa.an.gov.br/index.php/que-republica-e-essa/assuntos/temas/302-os-ovnis-no-arquivo-nacional
 rel:
-  - [ about, inc-noite-oficial-ovnis-1986 ]
+  - [ documents, inc-noite-oficial-ovnis-1986 ]
 facts:
   - text: "A confidential report dated 2 June 1986 from the Comando de Defesa Aérea (COMDA) to the commander of the Air General Command, signed by Brig. José Pessoa Cavalcanti de Albuquerque as interim commander. It narrates the night of 19 May 1986 for the Minister of Aeronautics, deliberately limited to \"a simple narration of the facts\" so as not to give rise to speculation."
     status: documented

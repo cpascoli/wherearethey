@@ -6,7 +6,7 @@ credentials:
     role: Division Chief, Accidents and Investigations, Federal Aviation Administration (1980s)
 tags: [government, radar]
 rel:
-  - [ witness, h-2013-citizen-hearing ]
+  - [ testified at, h-2013-citizen-hearing ]
   - [ investigated, inc-jal-1628-1986 ]
 facts:
   - text: "Callahan, former FAA division chief for accidents and investigations, says he had the JAL 1628 radar data and voice tapes replayed at the FAA Technical Center and filmed the scope."

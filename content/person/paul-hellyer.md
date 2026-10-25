@@ -8,8 +8,8 @@ credentials:
     role: Member of Parliament (Davenport 1949–1957; Trinity 1958–1974)
 tags: [international, disclosure]
 rel:
-  - [ related to, inc-roswell-1947 ]
-  - [ witness, h-2013-citizen-hearing ]
+  - [ claims about, inc-roswell-1947, "His views changed after Philip Corso's book The Day After Roswell, which he relied on heavily; Corso's claims have not been corroborated" ]
+  - [ testified at, h-2013-citizen-hearing ]
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Paul_Hellyer

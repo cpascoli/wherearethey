@@ -10,7 +10,7 @@ links:
     url: https://www.cnes-geipan.fr/sites/default/files/Note%20techn16-R.pdf
 rel:
   - [ published by, geipan ]
-  - [ about, inc-trans-en-provence-1981 ]
+  - [ documents, inc-trans-en-provence-1981 ]
 facts:
   - text: "GEIPAN's summary: on 8 January 1981 a man working on his property heard a whistling sound and saw a grey, zinc-coloured circular object about 2.5 m across descend, land a few dozen metres away and leave vertically a few seconds later; the whole observation lasted 30 to 40 seconds. He found a trace about 2 m in diameter on the ground."
     status: documented

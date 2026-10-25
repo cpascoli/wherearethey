@@ -12,7 +12,6 @@ rel:
   - [ sent investigator to, area-51, "Knapp says investigator Richard D'Amato, sent by Senators Byrd and Reid, got into Area 51" ]
   - [ backed, kona-blue, "With Senator Lieberman he backed the failed KONA BLUE proposal at DHS" ]
   - [ friend of, robert-bigelow, "A longtime friend and campaign donor, Bigelow first interested Reid in the subject in 2007" ]
-  - [ funded program of, james-lacatski, "Reid steered $22 million to AAWSAP, the DIA program Lacatski conceived and ran" ]
   - [ briefed by, jay-stratton, "Stratton says Reid was his first congressional briefing, in 2007; Reid's former chief of staff could not confirm what he was briefed" ]
   - [ briefed by, david-grusch, "Grusch says he briefed Reid in 2021 and was told the U.S. held material Reid had been denied access to" ]
 facts:

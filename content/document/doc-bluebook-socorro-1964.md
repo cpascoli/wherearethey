@@ -8,7 +8,7 @@ links:
     url: https://catalog.archives.gov/id/302532129
 rel:
   - [ case file of, project-blue-book ]
-  - [ about, inc-socorro-1964 ]
+  - [ documents, inc-socorro-1964 ]
 facts:
   - text: "The Project Blue Book record card files the case under Socorro, New Mexico, 24 April 1964, 17:45 local, as a ground-visual observation of one object lasting less than 10 minutes, with \"Physical Spec\" (physical specimens) noted. Its comment reads: \"Initially believed to be observation of Lunar module type configuration. Effort to date cannot place vehicle at site. Case carried as UNIDENTIFIED pending additional data.\""
     status: documented

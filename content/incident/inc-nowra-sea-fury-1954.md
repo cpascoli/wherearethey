@@ -5,8 +5,6 @@ date: 1954-08-31
 place: { name: "RAN air station Nowra, New South Wales", lat: -34.9489, lng: 150.5369 }
 tags: [aviator, navy, radar, international]
 rel:
-  - [ witness, ja-ofarrell ]
-  - [ documented in, doc-naa-flying-saucers-2018 ]
 facts:
   - text: "Lt J. A. O'Farrell, flying a Royal Australian Navy Sea Fury back to Nowra at night, reported two bright lights that kept pace with his aircraft, each \"a vague shape with the white light situated centrally on top\". Nowra confirmed the objects on radar before they left to the north-east at tremendous speed. His report and the radar operator's confirmation are held by the National Archives of Australia."
     status: documented
