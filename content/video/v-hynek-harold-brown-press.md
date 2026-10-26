@@ -1,7 +1,8 @@
 ---
-name: Hynek and Air Force Secretary Harold Brown at a press conference (news footage, date uncertain)
+name: Hynek and Air Force Secretary Harold Brown at a press conference (1966 news footage)
 youtube: jMMMJg3ScNg
 rel:
+  - [ recording of, h-1966-04-05 ]
   - [ features, j-allen-hynek ]
   - [ features, harold-brown ]
   - [ about, project-blue-book ]
@@ -11,9 +12,10 @@ moments:
     speaker: j-allen-hynek
     refs: [ project-blue-book ]
   - t: "0:30"
-    text: "Air Force Secretary Harold Brown, asked what the Air Force is hiding in its UFO investigations (Project Blue Book): “We have not been hiding anything; the investigations have been made public.”"
+    text: "Air Force Secretary Harold Brown, asked what the Air Force is hiding: “We have not been hiding anything; the investigations have been made public… the hearing this morning was public for just that reason.”"
     speaker: harold-brown
-    refs: [ project-blue-book ]
+    refs: [ h-1966-04-05, project-blue-book ]
+date: 1966-04-05   # recorded / first broadcast (the YouTube upload is later)
 ---
 
-**Date uncertain.** The uploader titles this “after the 1966 Congressional UFO hearing”, but the narration says Hynek joined Blue Book in 1952 and appeared with Brown “17 years later”, which suggests about 1969. Brown served as Air Force Secretary until February 1969. Treat the dating as unconfirmed.
+Archival TV news footage from the day of the hearing, not a recording of the session itself. Brown’s “the hearing this morning was public” dates the stand-up to 5 April 1966 — the only public UFO hearing he sat as Air Force Secretary. The upload’s narration that Hynek joined Blue Book in 1952 and appeared with him “17 years later” (about 1969) is wrong. No full audio or video of the session is known to survive; the printed transcript is the primary record.
