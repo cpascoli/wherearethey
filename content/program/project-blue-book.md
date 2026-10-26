@@ -14,6 +14,11 @@ facts:
   - text: A 1952–1969 U.S. Air Force program to investigate the nature and origin of unidentified flying objects.
     status: documented
     source: https://www.war.gov/UFO/
+  - text: "The CIA's 1997 history of its UFO role says: “Air Force BLUE BOOK investigators aware of the secret U-2 flights tried to explain away such sightings by linking them to natural phenomena such as ice crystals and temperature inversions. By checking with the Agency's U-2 Project Staff in Washington, BLUE BOOK investigators were able to attribute many UFO sightings to U-2 flights. They were careful, however, not to reveal the true cause of the sighting to the public.”"
+    claims: [ government-ufo-disinformation ]
+    basis: documented
+    status: documented
+    source: doc-cia-haines-1997
 ---
 
 Project Blue Book was the U.S. Air Force's study of unidentified flying objects from March 1952 to 17 December 1969, run from Wright-Patterson Air Force Base in Ohio, with the astronomer J. Allen Hynek as its scientific consultant throughout. It followed the earlier Projects Sign and Grudge.
