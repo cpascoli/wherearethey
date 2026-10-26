@@ -11,7 +11,7 @@ links:
   - label: Congress.gov (official printed hearing, H.A.S.C. No. 118–76, CHRG-118hhrg57568)
     url: https://www.congress.gov/118/chrg/CHRG-118hhrg57568/CHRG-118hhrg57568.pdf
 rel:
-  - [ about, inc-langley-2023 ]
+  - [ documents, inc-langley-2023 ]
   - [ features, frank-kendall, "Rep. Wittman asked Kendall about the drones that closed Langley; his answer did not mention Langley" ]
   - [ transcript of, v-2024-04-17-hasc-air-force-budget ]
 facts:

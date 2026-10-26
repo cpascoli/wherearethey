@@ -12,23 +12,15 @@ moments:
   - t: "4:19"
     text: "In a video interview recorded by Richard Dolan, an unnamed 77-year-old man who says he worked under a CIA cover name from the late 1950s says Project Blue Book “was kind of partially a fraud”. His identity and service are unverified."
     refs: [ project-blue-book ]
-    claims: [ government-ufo-disinformation ]
-    basis: first-hand
   - t: "8:44"
     text: "He says that in the Oval Office, President Eisenhower was told that MJ-12 people at Area 51 and S-4 said “the government had no jurisdiction” over what they were doing, and that Eisenhower threatened to send “the first army from colorado” to take the base over."
     refs: [ area-51 ]
-    claims: [ programs-hidden-from-congress ]
-    basis: first-hand
   - t: "10:50"
     text: "He says he and his boss were flown to S-4, where he saw recovered craft, the Roswell craft among them: it “looked like real heavy aluminum foil” and could be rocked by hand."
     refs: [ area-51, inc-roswell-1947 ]
-    claims: [ area-51-alien-craft, roswell-crashed-craft, recovered-non-human-craft ]
-    basis: first-hand
   - t: "11:44"
     text: "He says that at S-4 “we viewed the autopsy film”, and that his boss was allowed a partial interview with a live grey alien while he watched."
     refs: [ area-51 ]
-    claims: [ recovered-non-human-bodies ]
-    basis: first-hand
   - t: "16:47"
     text: "He says that after he first spoke to Linda Moulton Howe, “two guys in a black suits” stopped him outside a grocery store and told him not to publish or talk to her again."
   - t: "18:28"

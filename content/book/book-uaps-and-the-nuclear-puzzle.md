@@ -23,7 +23,7 @@ facts:
     status: claimed
     by: bob-salas
     said: 2023
-    claims: [ malmstrom-ufo-missile-shutdown ]
+    claims: [ malmstrom-ufo-missile-shutdown, uap-nuclear-sites ]
     basis: first-hand
     source: https://readings.com.au/product/9781637480168
 ---

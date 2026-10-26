@@ -18,7 +18,7 @@ facts:
     status: claimed
     by: roberto-pinotti
     said: 2001
-    claims: [ recovered-non-human-craft ]
+    claims: [ magenta-1933-crash ]
     basis: relayed
     source: https://openlibrary.org/works/OL23807479W
 ---

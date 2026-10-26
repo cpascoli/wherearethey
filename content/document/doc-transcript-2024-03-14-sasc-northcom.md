@@ -8,7 +8,7 @@ links:
   - label: Senate Armed Services Committee (official stenographic transcript)
     url: https://www.armed-services.senate.gov/imo/media/doc/31424fulltranscript.pdf
 rel:
-  - [ about, inc-langley-2023 ]
+  - [ documents, inc-langley-2023 ]
   - [ testimony by, gregory-guillot ]
 facts:
   - text: "Asked by Sen. Tim Kaine about drone threats to U.S. bases, Gen. Gregory Guillot said the counter-UAS mission had dominated the first month of his 90-day assessment: \"I was not prepared for the number of incursions that I see. I have gone into the events at Joint Base Langley-Eustis, and I am using that as the centerpiece of my 90-day assessment to see where NORAD and NORTHCOM can and should do more as this emerging capability outstrips the operational framework that we have to address it.\""

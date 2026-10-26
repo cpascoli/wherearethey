@@ -82,6 +82,7 @@ moments:
     claims: [ tic-tac-beyond-known-technology ]
     stance: context
     basis: relayed
+    claim_by: aaro
   - t: "1:20:16"
     text: "Elizondo: there is enough data to suggest a relationship between UAP and sensitive military installations, nuclear equities and Department of Energy sites, going back decades."
     speaker: luis-elizondo

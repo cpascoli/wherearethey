@@ -47,8 +47,6 @@ moments:
   - t: "21:36"
     text: "Greer says that at an underground base in Arizona one of his witnesses “worked on nine separate extraterrestrial vehicles” brought down by electromagnetic pulse weapons."
     speaker: steven-greer
-    claims: [ recovered-non-human-craft ]
-    basis: relayed
   - t: "32:30"
     text: "Physicist Thomas Valone quotes a deputy director of the National Reconnaissance Office: advanced propulsion work tends to become “more and more classified until they're out of sight”."
     refs: [ nro ]
