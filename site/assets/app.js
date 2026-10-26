@@ -2922,7 +2922,10 @@
     setTiles();
     if (state.view === 'map') renderMap();
   }
-  $('#btn-theme').addEventListener('click', () => applyTheme(isDark() ? 'light' : 'dark'));
+  // theme: a choice in Settings (dark unless light was chosen)
+  const syncThemeSeg = () => $$('#set-theme [data-theme-set]').forEach(b => { const on = (b.dataset.themeSet === 'light') !== isDark(); b.classList.toggle('on', on); b.setAttribute('aria-checked', String(on)); });
+  $('#set-theme').addEventListener('click', e => { const b = e.target.closest('[data-theme-set]'); if (!b) return; applyTheme(b.dataset.themeSet); syncThemeSeg(); });
+  $('#side-close').addEventListener('click', () => $('#side').classList.remove('open'));
   // settings: a small panel under the cog (choices are kept in localStorage by filtersChanged)
   const setPop = $('#settings-pop'), setBtn = $('#btn-settings');
   const setOpen = open => {
@@ -2942,6 +2945,7 @@
   // ───────────── boot ─────────────
   const theme = store.get('theme', null);
   if (theme) document.documentElement.dataset.theme = theme;
+  syncThemeSeg();
   computeVisible();
   renderFilters();
   const VIEWS = ['home', 'latest', 'graph', 'timeline', 'map', 'videos', 'shelf', 'index', 'claims'];

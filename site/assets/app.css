@@ -108,7 +108,8 @@ input { font: inherit; color: inherit; }
 .settings-pop { position: fixed; z-index: 70; top: calc(var(--top-h) - 4px); right: 8px; width: min(320px, calc(100vw - 16px)); background: var(--panel); border: 1px solid var(--border); border-radius: 6px; box-shadow: var(--shadow); padding: 14px 16px 12px; display: grid; gap: 14px; }
 .settings-pop[hidden] { display: none; }
 .settings-pop h4 { margin: 0; font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
-.settings-pop .sp-note { margin: 0; font-size: 11.5px; color: var(--muted); }
+.settings-pop .set-theme { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.sp-note { margin: 0; font-size: 11.5px; color: var(--muted); }
 .only-mobile { display: none; }
 
 /* ── Layout ── */
@@ -572,7 +573,13 @@ body.is-home #btn-side { display: none; } /* no side panel on the landing page *
   .top { z-index: 1300; }
   .side.open { box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .45), var(--shadow); }
 }
-@media (max-width: 860px) { .side { padding-bottom: 76px; } }
+/* phones: the filter drawer and the file card are modal, covering the header and the bottom menu until dismissed */
+@media (max-width: 860px) {
+  .side { top: 0; z-index: 1400; padding-bottom: 24px; padding-top: env(safe-area-inset-top, 0px); }
+  .panel { inset: 0; z-index: 1400; padding-top: env(safe-area-inset-top, 0px); }
+  .panel-close { top: calc(10px + env(safe-area-inset-top, 0px)); }
+  .side-head { display: flex; justify-content: space-between; align-items: center; padding: 12px 12px 4px 16px; font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+}
 
 /* ───────── Panel: resize, tools, reading view, collapsing ───────── */
 .panel-tools { position: absolute; top: 10px; right: 10px; z-index: 3; display: flex; gap: 2px; }
