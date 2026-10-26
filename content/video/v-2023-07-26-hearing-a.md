@@ -1,6 +1,7 @@
 ---
 top_pick: 2
 youtube: SNgoul4vyDM
+date: 2023-07-26   # the hearing day (the YouTube upload is later)
 rel:
   - [ recording of, h-2023-07-26 ]
 moments:

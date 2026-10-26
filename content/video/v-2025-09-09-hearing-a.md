@@ -1,6 +1,7 @@
 ---
 top_pick: 3
 youtube: LBKRr5OvF6E
+date: 2025-09-09   # the hearing day (the YouTube upload is later)
 rel:
   - [ recording of, h-2025-09-09 ]
 moments:

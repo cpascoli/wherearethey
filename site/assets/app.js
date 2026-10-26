@@ -2433,14 +2433,19 @@
 
   // ───────────── video browser (the Videos view when no video is open) ─────────────
   const NEWS = /\b(CBS|CNN|NBC|ABC|BBC|CTV|FOX ?\d*|NewsNation|7NEWS|Sky News|i24NEWS|CBC|KLAS|8 News|PBS|60 Minutes)\b/i;
+  // Hearings = Congress (its hearings, and the Capitol press conference with lawmakers); the 2013 Citizen Hearing and
+  // the private press conferences and forums (National Press Club and the like) have their own tab
+  const CONGRESS_EVENTS = new Set(['ev-capitol-uap-press-conference-2026']);
   function vidKind(v) {
     const rels = adj.get(v.id).filter(x => x.dir === 'out');
     if (rels.some(x => x.label === 'trailer of')) return 'trailer';
-    if (rels.some(x => x.label === 'recording of' && ['hearing', 'event'].includes(byId.get(x.other)?.type)) || /hearing|testimony before|subcommittee|committee/i.test(v.name)) return 'hearing';
+    const rec = rels.filter(x => ['recording of', 'records'].includes(x.label) && ['hearing', 'event'].includes(byId.get(x.other)?.type)).map(x => x.other);
+    if (v.series === 'h-2013-citizen-hearing' || rec.some(id => id === 'h-2013-citizen-hearing' || (byId.get(id).type === 'event' && !CONGRESS_EVENTS.has(id)))) return 'citizen';
+    if (rec.length || /hearing|testimony before|subcommittee|committee/i.test(v.name)) return 'hearing';
     if ((v.y0 && v.y0 < 2005) || NEWS.test(v.channel || '') || NEWS.test(v.name)) return 'news';
     return 'interview';
   }
-  const VKINDS = [['all', 'All'], ['hearing', 'Hearings'], ['interview', 'Interviews & podcasts'], ['news', 'News & archive']]; // trailers show under All and on their film's card
+  const VKINDS = [['all', 'All'], ['hearing', 'Hearings'], ['citizen', 'Citizen Hearing & conferences'], ['interview', 'Interviews & podcasts'], ['news', 'News & archive']]; // trailers show under All and on their film's card
   let vbKind = 'all', vbQ = '';
   const vidPeople = v => [...new Set([...(v.moments || []).map(m => m.speaker), ...adj.get(v.id).filter(x => x.dir === 'out' && x.label === 'features').map(x => x.other)].filter(id => byId.get(id)?.type === 'person'))];
   // the filter box also matches the people tied to a video (speakers, features, any link), not just its own text
@@ -2468,7 +2473,8 @@
     const base = videos.filter(v => !(state.credibleOnly && v.cred === 'outside'));
     const q = vbQ.trim().toLowerCase();
     let list = base.filter(v => (vbKind === 'all' || vidKind(v) === vbKind) && (!q || q.split(/\s+/).every(w => vbText(v).includes(w))));
-    list.sort((a, b) => String(b.date || '').localeCompare(String(a.date || ''))); // newest first
+    // newest first; sessions of one recording go by session number, last first (the 2013 Citizen Hearing is mostly dated by year only)
+    list.sort((a, b) => (a.series && a.series === b.series && a.part != null && b.part != null ? b.part - a.part : 0) || String(b.date || '').localeCompare(String(a.date || '')));
     const counts = Object.fromEntries(VKINDS.map(([k]) => [k, k === 'all' ? base.length : base.filter(v => vidKind(v) === k).length]));
     // “Start here”: hand-picked (top_pick: 1, 2… in the video's frontmatter), plus the recording of the latest
     // congressional hearing, so a new hearing shows up without editing the list; at most eight (two rows)
