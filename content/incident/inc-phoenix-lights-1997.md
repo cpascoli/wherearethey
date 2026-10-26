@@ -5,7 +5,7 @@ date: 1997-03-13
 place: { name: "Phoenix, Arizona", lat: 33.448, lng: -112.074 }
 tags: [aviator, air-force]
 outcome: disputed
-outcome_note: "The Air Force attributed the 10 p.m. lights to illumination flares dropped by Maryland Air National Guard A-10s at the Goldwater Range, and sceptics attribute the earlier formation to A-10s flying in formation; Gov. Fife Symington and Lt. Col. Richard French, who saw a large craft, reject both."
+outcome_note: "The Maryland Air National Guard attributed the 10 p.m. lights to illumination flares dropped by Maryland Air National Guard A-10s at the Goldwater Range, and sceptics attribute the earlier formation to A-10s flying in formation; Gov. Fife Symington and Lt. Col. Richard French, who saw a large craft, reject both."
 outcome_source: https://en.wikipedia.org/wiki/Phoenix_Lights
 rel:
 links:
@@ -30,6 +30,6 @@ facts:
 
 On the evening of 13 March 1997 lights were reported across some 300 miles of Arizona and southern Nevada, from the Nevada line through Phoenix to the edge of Tucson. Many witnesses described a huge V- or carpenter's-square-shaped object with five lights passing slowly and silently overhead; later, around 10 p.m., a large number of people in the Phoenix area saw a row of brilliant lights hanging in the sky. Among the witnesses were the sitting governor, Fife Symington, a former Air Force officer and pilot, and Lt. Col. Richard French, who said the craft passed within a hundred yards of him.
 
-The official and sceptical accounts split the evening in two. The Air Force and the Maryland Air National Guard attributed the 10 p.m. lights to slow-falling illumination flares from A-10s on a training exercise at the Barry M. Goldwater Range, visible from Phoenix and seeming to wink out behind the Sierra Estrella; a pilot confirmed in 2007 that he had dropped them. The earlier formation has been attributed by sceptics and an amateur astronomer to A-10s flying in formation to Davis-Monthan. Symington, who at the time mocked the reports with a staffer in an alien costume, said in 2007 that he had seen the craft himself and that it "did not resemble any man-made object".
+The official and sceptical accounts split the evening in two. The Maryland Air National Guard attributed the 10 p.m. lights to slow-falling illumination flares from A-10s on a training exercise at the Barry M. Goldwater Range, visible from Phoenix and seeming to wink out behind the Sierra Estrella; a pilot confirmed in 2007 that he had dropped them. The Guard's statement came in July 1997; in May, Luke Air Force Base had told a FOIA requester that its own aircraft were not involved and that it had never blamed flares. The earlier formation has been attributed by sceptics and an amateur astronomer to A-10s flying in formation to Davis-Monthan. Symington, who at the time mocked the reports with a staffer in an alien costume, said in 2007 that he had seen the craft himself and that it "did not resemble any man-made object".
 
 *Sources: National Press Club (2007) · Citizen Hearing (2013) · [Wikipedia](https://en.wikipedia.org/wiki/Phoenix_Lights)*
