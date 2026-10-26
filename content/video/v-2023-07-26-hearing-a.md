@@ -77,7 +77,7 @@ moments:
     text: "Asked whether in the last couple of years he has had incidents that caused him to fear for his life for addressing this, Grusch answers “yes personally”."
     speaker: david-grusch
   - t: "1:01:49"
-    text: "Grusch says he had a classified conversation with Sean Kirkpatrick in April 2022, before Kirkpatrick took over AARO, and gave him his concerns; asked why Kirkpatrick never followed up, he says he cannot read his mind."
+    text: "Asked by Rep. Luna, Grusch says he had a classified conversation with Sean Kirkpatrick in April 2022, before Kirkpatrick took over AARO, and gave him his concerns; asked why Kirkpatrick never followed up, he says he cannot read his mind."
     speaker: david-grusch
     refs: [ sean-kirkpatrick, aaro, anna-paulina-luna ]
   - t: "1:02:58"
@@ -115,7 +115,7 @@ moments:
     stance: context
     basis: first-hand
   - t: "1:39:57"
-    text: "Gaetz describes an Eglin AFB disclosure: four craft in diamond formation on radar over the Gulf, and an orb whose approach knocked out the pilot's radar and FLIR. AARO's resolution of an apparently matching case (26 January 2023: four radar objects in formation, radar failure, still images only) found it very likely a balloon."
+    text: "Gaetz describes an Eglin AFB disclosure he sought a briefing on with Reps. Burchett and Luna: four craft in diamond formation on radar over the Gulf, and an orb whose approach knocked out the pilot's radar and FLIR. AARO's resolution of an apparently matching case (26 January 2023: four radar objects in formation, radar failure, still images only) found it very likely a balloon."
     speaker: matt-gaetz
     refs: [ doc-aaro-eglin, tim-burchett, anna-paulina-luna, inc-eglin-2023 ]
     claims: [ eglin-orb-not-human ]

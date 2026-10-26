@@ -68,7 +68,7 @@ moments:
     stance: context
     basis: opinion
   - t: "1:41:07"
-    text: "Lemke: his father, at the Berkeley Radiation Laboratory from about 1955 to 1965, told him he had been tasked to work on recovered UFO material, “a piece of that thing that crashed” in New Mexico, including the so-called memory foil."
+    text: "Lemke: his father, at the Berkeley Radiation Laboratory from about 1955 to 1965, told him he had been tasked to work on recovered UFO material, “a piece of that thing that crashed” in New Mexico, including the so-called Roswell memory foil; he notes his father never actually said Roswell."
     speaker: larry-lemke
     refs: [ inc-roswell-1947, legacy-program ]
     claims: [ roswell-crashed-craft, recovered-non-human-craft ]

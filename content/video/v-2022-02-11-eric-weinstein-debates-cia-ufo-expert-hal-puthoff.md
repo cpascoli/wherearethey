@@ -31,7 +31,6 @@ moments:
   - t: "31:18"
     text: "Puthoff: there was “manufactured stigma and control”, and “we've had people actually shut down a piece of a program on the basis that american taxpayer dollars should not be spent on pursuing demonic technology”."
     speaker: hal-puthoff
-    refs: [ aawsap ]
     basis: first-hand
   - t: "31:53"
     text: "Eric Weinstein suggests the lawyer Daniel Sheehan was “fed wrong information” about UFOs to discredit him over his Iran-Contra work with the Christic Institute; Puthoff says he knows of such operations only from being on the receiving end."

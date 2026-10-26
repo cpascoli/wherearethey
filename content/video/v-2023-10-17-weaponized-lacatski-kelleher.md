@@ -17,7 +17,7 @@ moments:
     speaker: james-lacatski
     refs: [ aawsap ]
   - t: "5:24"
-    text: "Lacatski: he did not create the name AATIP; a different name was needed after someone in Congress marked the program secret on a funding document, and he believes “who we called Axelrod, or perhaps Lou Elizondo”, or their colleagues, came up with it."
+    text: "Lacatski: he did not create the name AATIP; a different name was needed after someone in Congress marked the program secret on a funding document, and he believes “who we called Axelrod, or perhaps Lou Elizondo” (Knapp identifies Axelrod as Jay Stratton), or their colleagues, came up with it."
     speaker: james-lacatski
     refs: [ aatip, luis-elizondo, jay-stratton ]
   - t: "14:40"

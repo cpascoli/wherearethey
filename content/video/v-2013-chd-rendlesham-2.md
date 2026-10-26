@@ -11,7 +11,7 @@ rel:
   - [ features, jim-penniston ]
 moments:
   - t: "1:01"
-    text: "Nick Pope points to the declassified Ministry of Defence file, a document “dated february the 16th” 1981 saying USAFE commander Gen. Charles Gabriel visited the base and took evidence back to Ramstein, as a starting point for FOIA requests."
+    text: "Nick Pope points to the declassified Ministry of Defence file on Rendlesham, a document “dated february the 16th” 1981 saying USAFE commander Gen. Charles Gabriel visited the base and took evidence back to Ramstein, as a starting point for FOIA requests."
     speaker: nick-pope
     refs: [ inc-rendlesham-1980 ]
   - t: "3:43"

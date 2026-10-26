@@ -40,7 +40,7 @@ moments:
     speaker: eric-davis
     refs: [ crash-retrieval, legacy-program ]
   - t: "1:01:39"
-    text: "Davis: one four-star general and one three-star admiral located these programs; the general got in with “super user” access."
+    text: "Davis: one four-star general and one three-star admiral located these crash-retrieval programs; the general got in with “super user” access."
     speaker: eric-davis
     refs: [ legacy-program ]
   - t: "1:02:29"
@@ -91,7 +91,7 @@ moments:
     text: "Mellon on the 2019–20 drone swarms over eastern Colorado: a deputy sheriff saw smaller lights enter a larger one that shot overhead — a “mothership”, a term also found in OSI and FBI documents."
     speaker: chris-mellon
   - t: "2:00:36"
-    text: "Mellon: DHS publishes UAP videos while AARO and DoD do not; after he gave the three Navy videos to the New York Times in 2017, a classification guide made almost anything UAP-related classified."
+    text: "Mellon: DHS publishes UAP videos while AARO and DoD do not; after he gave the three Navy videos (FLIR1, Gimbal and GoFast) to the New York Times in 2017, a classification guide made almost anything UAP-related classified."
     speaker: chris-mellon
     refs: [ inc-nimitz-2004, inc-roosevelt-2015 ]
   - t: "2:12:30"
@@ -106,7 +106,7 @@ moments:
     text: "McConnell: witnesses can brief the Armed Services and Intelligence Committees in confidence, and a legal historian found no indictment of anyone for giving classified information to Congress."
     speaker: kirk-mcconnell
   - t: "2:27:07"
-    text: "Mellon warns that UAP sightings and alleged recoveries are blended in the public mind; if recoveries are never confirmed, it could discredit the urgent and very real UAP issue."
+    text: "Mellon warns that UAP sightings and alleged recoveries are blended in the public mind; if recoveries are never confirmed, it could discredit the urgent and very real UAP issue; he adds that he does not know how secure AARO is in the long term."
     speaker: chris-mellon
     refs: [ aaro ]
   - t: "2:47:41"
@@ -117,7 +117,7 @@ moments:
     text: "Brady-Estevez: while at the NSF she funded companies working on what entrepreneurs called “UAP adjacent or UAP inspired technologies”."
     speaker: anna-brady-estevez
   - t: "3:20:18"
-    text: "Gold: on the NASA study team he asked the FAA how many commercial-pilot UAP reports it had and got “confusion and no straight answers”; he backs using NASA's ASRS for reports."
+    text: "Gold: on the NASA study team he asked the FAA how many commercial-pilot UAP reports it had and got “confusion and no straight answers”; he backs using NASA's ASRS for reports, crediting Ryan Graves with the idea."
     speaker: michael-gold
     refs: [ nasa, ryan-graves, doc-nasa-uap-study-2023 ]
 ---

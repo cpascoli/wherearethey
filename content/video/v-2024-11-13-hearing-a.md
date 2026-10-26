@@ -34,7 +34,7 @@ moments:
     speaker: tim-gallaudet
     refs: [ inc-roosevelt-2015 ]
   - t: "45:10"
-    text: "Gallaudet: the next day the email “disappeared from my account and those of the other recipients without explanation”, and the subject was never raised again; he concluded the information sat in an intelligence-agency special access program."
+    text: "Gallaudet: the next day the GoFast email “disappeared from my account and those of the other recipients without explanation”, and the subject was never raised again; he concluded the information sat in an intelligence-agency special access program."
     speaker: tim-gallaudet
     refs: [ inc-roosevelt-2015 ]
   - t: "49:18"

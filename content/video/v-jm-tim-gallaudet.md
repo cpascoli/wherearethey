@@ -5,18 +5,18 @@ rel:
   - [ published by, jesse-michels ]
 moments:
   - t: "5:01"
-    text: "Gallaudet: what clinched it was seeing the GoFast video on the Navy's secret network, attached to an email about the Theodore Roosevelt exercise after an object split a section of F/A-18s; he knew it wasn't U.S. or foreign technology."
+    text: "Gallaudet: what clinched it was seeing the GoFast video on the Navy's secret network, attached to an email about the Theodore Roosevelt exercise, in which Ryan Graves was one of the pilots, after an object split a section of F/A-18s; he knew it wasn't U.S. or foreign technology."
     speaker: tim-gallaudet
     refs: [ inc-roosevelt-2015, ryan-graves ]
   - t: "7:40"
-    text: "Gallaudet: Jay Stratton later told him the email was deleted because officials still didn't know whether it showed adversary technology — the cleanup protocol for “spillage” of classified material."
+    text: "Gallaudet: Jay Stratton later told him the GoFast email was deleted because officials still didn't know whether it showed adversary technology — the cleanup protocol for “spillage” of classified material."
     speaker: tim-gallaudet
     refs: [ jay-stratton, inc-roosevelt-2015 ]
   - t: "10:14"
     claims: [ gimbal-gofast-not-conventional ]
     stance: context
     basis: opinion
-    text: "On AARO's parallax explanation for GoFast, Gallaudet concedes the object wasn't going fast — “I don't dispute that” — but says it was a spherical object without control surfaces, in formation with others, while pilots saw dozens."
+    text: "On AARO's parallax explanation for GoFast, which Jon Kosloski presented to the Senate in November 2024, Gallaudet concedes the object wasn't going fast — “I don't dispute that” — but says it was a spherical object without control surfaces, in formation with others, while pilots saw dozens."
     speaker: tim-gallaudet
     refs: [ inc-roosevelt-2015, jon-kosloski, aaro ]
   - t: "12:33"

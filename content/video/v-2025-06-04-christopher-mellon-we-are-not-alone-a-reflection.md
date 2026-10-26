@@ -20,7 +20,7 @@ moments:
     text: "The intelligence behind the craft might not be biological: he cites the former NASA chief historian Steven Dick on artificial intelligence and von Neumann's self-replicating probes."
     speaker: chris-mellon
   - t: "5:03"
-    text: "How many people know that a former intelligence officer swore under oath before Congress that the U.S. government has “actually recovered” non-human technology?"
+    text: "How many people know that a former intelligence officer (David Grusch) swore under oath before Congress that the U.S. government has “actually recovered” non-human technology?"
     speaker: chris-mellon
     refs: [ david-grusch ]
   - t: "5:44"

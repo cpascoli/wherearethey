@@ -16,7 +16,7 @@ moments:
     speaker: karl-nell
     refs: [ haim-eshed, paul-hellyer, chris-mellon, david-grusch, luis-elizondo, doc-uap-disclosure-act-2023 ]
   - t: "8:00"
-    text: "Nell's data: the FLIR, Gimbal and GoFast videos the Pentagon says are neither ours nor adversaries', Gordon Cooper's account, early-warning radar incursions in the 1970s and the Malmstrom ICBM shutdowns, with a U.S.–Soviet agreement to report UFO effects on missile warning."
+    text: "Nell's data: the FLIR (Nimitz), Gimbal and GoFast videos the Pentagon says are neither ours nor adversaries', Gordon Cooper's account, early-warning radar incursions in the 1970s and the Malmstrom ICBM shutdowns, with a U.S.–Soviet agreement to report UFO effects on missile warning."
     speaker: karl-nell
     refs: [ inc-nimitz-2004, inc-roosevelt-2015, inc-malmstrom-1967 ]
   - t: "19:51"
