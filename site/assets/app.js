@@ -2023,9 +2023,11 @@
       syncTranscript(true);
     }
   }
-  // scroll a paragraph to the middle of its own scroll box without moving the page (keeps the player visible)
+  // scroll a paragraph to the middle of its own scroll box without moving the page (keeps the player visible);
+  // measured on screen, since offsetTop depends on which ancestor is positioned (the box itself is position: relative)
   function scrollWithin(box, el, smooth) {
-    box.scrollTo({ top: el.offsetTop - box.offsetTop - box.clientHeight / 2 + el.clientHeight / 2, behavior: smooth ? 'smooth' : 'auto' });
+    const top = box.scrollTop + el.getBoundingClientRect().top - box.getBoundingClientRect().top - box.clientHeight / 2 + el.clientHeight / 2;
+    box.scrollTo({ top, behavior: smooth ? 'smooth' : 'auto' });
   }
   function syncTranscript(force) {
     const el = $('#transcript');
