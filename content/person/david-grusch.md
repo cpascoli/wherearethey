@@ -87,6 +87,7 @@ facts:
     claims: [ recovered-non-human-craft ]
     stance: disputes
     basis: documented
+    claim_by: aaro
     status: documented
     source: doc-aaro-historical-record-report-v1
 ---

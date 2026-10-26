@@ -1250,15 +1250,19 @@
           <div class="cl-who">${a.by ? chip(a.by) : a.kind === 'moment' ? '<span class="small muted">speaker not on file</span>' : chip(a.on)}${a.via ? `<span class="small muted">as reported by</span>${chip(a.via)}` : ''}<span class="cl-stance">${esc(STANCE[a.stance])}</span>${a.basis ? `<span class="cl-basis" title="${esc(BASIS[a.basis]?.hint || '')}">${esc(BASIS[a.basis]?.label || a.basis)}</span>` : ''}${a === firstSupport ? '<span class="cl-first">first on file</span>' : ''}</div>
           <div class="cl-text">${esc(a.text)}</div><div class="cl-src">${assertionSource(a)}</div></div></li>`).join('')}</ol></div>`);
     }
-    // how the people making the claim are connected: shows whether many voices trace back to a few sources
-    const people = [...new Set(as.map(a => a.by).concat(as.map(a => a.via)).filter(id => byId.get(id)?.type === 'person'))];
-    const inSet = new Set(people), pairs = [];
-    for (const p of people) for (const x of adj.get(p)) if (x.dir === 'out' && x.kind === 'rel' && inSet.has(x.other) && x.label !== 'related to') pairs.push(x);
-    const links = pairs.filter(Boolean);
-    if (links.length) out.push(`<div class="p-sec p-side"><h4>How the people making it are connected <span>${links.length}</span></h4><ul class="cl-links" data-collapse="8">${links.map(x => `<li>${chip(x.s)}<span class="cl-lbl">${esc(x.label)}</span>${chip(x.t)}${x.note ? `<div class="small muted">${esc(x.note)}</div>` : ''}</li>`).join('')}</ul></div>`);
     return out.join('');
   }
 
+  // how the people making the claim are connected: shows whether many voices trace back to a few sources. Last in the
+  // side column (it can run long); links with a note, which say how, come first
+  function claimPeople(e) {
+    const as = e.assertions || [];
+    const people = [...new Set(as.map(a => a.by).concat(as.map(a => a.via)).filter(id => byId.get(id)?.type === 'person'))];
+    const inSet = new Set(people), links = [];
+    for (const p of people) for (const x of adj.get(p)) if (x.dir === 'out' && x.kind === 'rel' && inSet.has(x.other) && x.label !== 'related to') links.push(x);
+    links.sort((a, b) => !!b.note - !!a.note);
+    return links.length ? `<div class="p-sec p-side"><h4>How the people making it are connected <span>${links.length}</span></h4><ul class="cl-links" data-collapse="5">${links.map(x => `<li>${chip(x.s)}<span class="cl-lbl">${esc(x.label)}</span>${chip(x.t)}${x.note ? `<div class="small muted">${esc(x.note)}</div>` : ''}</li>`).join('')}</ul></div>` : '';
+  }
   // ───────────── detail panel ─────────────
   function renderPanel(e) {
     const t = TYPES[e.type] || TYPES.concept;
@@ -1391,7 +1395,7 @@
       h.push(`<div class="p-sec p-side" id="sec-connections"><h4>Connections <span>${nConn}</span></h4>${[...groups].map(([label, ids]) => {
         // links with a note say how: one per line, note beside the chip; the rest stay as a row of chips
         const noted = [...ids].filter(id => notes.has(`${label}|${id}`)), plain = [...ids].filter(id => !notes.has(`${label}|${id}`));
-        return `<div class="conn-group"><div class="lbl">${esc(label)}</div>${noted.length ? `<ul class="conn-notes" data-collapse="6">${noted.map(id => `<li>${chip(id)}<span>${esc(notes.get(`${label}|${id}`))}</span></li>`).join('')}</ul>` : ''}${plain.length ? `<div class="chips" data-collapse="10">${plain.map(id => chip(id)).join('')}</div>` : ''}</div>`;
+        return `<div class="conn-group"><div class="lbl">${esc(label)}</div>${noted.length ? `<ul class="conn-notes" data-collapse="5">${noted.map(id => `<li>${chip(id)}<span>${esc(notes.get(`${label}|${id}`))}</span></li>`).join('')}</ul>` : ''}${plain.length ? `<div class="chips" data-collapse="10">${plain.map(id => chip(id)).join('')}</div>` : ''}</div>`;
       }).join('')}</div>`);
     }
     // transcript mentions
@@ -1415,6 +1419,7 @@
       }
     }
     h.push(renderDots(e));
+    if (e.type === 'claim') h.push(claimPeople(e));
     if (e.tags.length) h.push(`<div class="p-sec p-side"><h4>Themes</h4><div class="chips">${e.tags.map(t => `<button class="chip ${state.tags.has(t) ? 'on' : ''}" data-filter-tag="${esc(t)}">${esc(t)}</button>`).join('')}</div></div>`);
     h.push(`<div class="p-edit">Edit <code>${esc(e.file)}</code><button class="link" data-copy="${esc(e.file)}">copy path</button></div>`);
     return h.join('');
@@ -1467,7 +1472,7 @@
     const pc = possibleConnections(e);
     if (pc.length) {
       out.push(`<div class="p-sec p-side"><h4>Possible connections <span>shared links</span></h4>
-        ${pc.map(([o, s]) => `<div class="dots-item"><div>${chip(o)}<div class="why">via ${[...s.via].slice(0, 4).map(v => esc(byId.get(v).name)).join(', ')}${s.via.size > 4 ? ` +${s.via.size - 4}` : ''}</div></div><button class="link" data-trace-to="${o}">trace</button></div>`).join('')}</div>`);
+        <div data-collapse="5">${pc.map(([o, s]) => `<div class="dots-item"><div>${chip(o)}<div class="why">via ${[...s.via].slice(0, 4).map(v => esc(byId.get(v).name)).join(', ')}${s.via.size > 4 ? ` +${s.via.size - 4}` : ''}</div></div><button class="link" data-trace-to="${o}">trace</button></div>`).join('')}</div></div>`);
     }
     out.push(`<div class="p-sec p-side"><h4>Trace a connection</h4><div class="trace"><input id="trace-q" type="search" placeholder="From ${esc(e.name)} to…" autocomplete="off"><div class="dropdown" id="trace-dd" hidden></div></div>
       <label class="check small" style="margin:8px 0 0"><input type="checkbox" id="trace-mentions"> include transcript mentions</label><div id="trace-out"></div></div>`);
@@ -1541,7 +1546,7 @@
   // Long lists start collapsed: show the first N items (×factor in reading view) with a “show all” toggle
   function applyCollapse(root, factor = 1) {
     for (const box of root.querySelectorAll('[data-collapse]')) {
-      const n = +box.dataset.collapse * factor;
+      const n = +box.dataset.collapse * (box.closest('.p-side') ? 1 : factor); // side-column lists stay short in reading view too
       const items = [...box.children];
       if (items.length <= n + 1) continue;
       items.slice(n).forEach(el => el.classList.add('collapsed'));

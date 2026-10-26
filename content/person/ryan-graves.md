@@ -65,6 +65,7 @@ facts:
     claims: [ gimbal-gofast-not-conventional ]
     stance: disputes
     basis: documented
+    claim_by: aaro
     status: documented
     source: doc-aaro-gofast
 links:
