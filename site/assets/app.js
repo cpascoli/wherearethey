@@ -2433,19 +2433,22 @@
 
   // ───────────── video browser (the Videos view when no video is open) ─────────────
   const NEWS = /\b(CBS|CNN|NBC|ABC|BBC|CTV|FOX ?\d*|NewsNation|7NEWS|Sky News|i24NEWS|CBC|KLAS|8 News|PBS|60 Minutes)\b/i;
-  // Hearings = Congress (its hearings, and the Capitol press conference with lawmakers); the 2013 Citizen Hearing and
-  // the private press conferences and forums (National Press Club and the like) have their own tab
+  // Tabs: Congress hearings (hearing recordings, plus events with lawmakers in CONGRESS_EVENTS); the 2013 Citizen
+  // Hearing; conferences (any other event recording: press conferences, forums); news (news-channel segments under
+  // 20 minutes; longer ones are interviews); archive (footage from before 2005, and official sensor video)
   const CONGRESS_EVENTS = new Set(['ev-capitol-uap-press-conference-2026']);
   function vidKind(v) {
     const rels = adj.get(v.id).filter(x => x.dir === 'out');
     if (rels.some(x => x.label === 'trailer of')) return 'trailer';
     const rec = rels.filter(x => ['recording of', 'records'].includes(x.label) && ['hearing', 'event'].includes(byId.get(x.other)?.type)).map(x => x.other);
-    if (v.series === 'h-2013-citizen-hearing' || rec.some(id => id === 'h-2013-citizen-hearing' || (byId.get(id).type === 'event' && !CONGRESS_EVENTS.has(id)))) return 'citizen';
-    if (rec.length || /hearing|testimony before|subcommittee|committee/i.test(v.name)) return 'hearing';
-    if ((v.y0 && v.y0 < 2005) || NEWS.test(v.channel || '') || NEWS.test(v.name)) return 'news';
+    if (v.series === 'h-2013-citizen-hearing' || rec.includes('h-2013-citizen-hearing')) return 'citizen';
+    if (rec.some(id => byId.get(id).type === 'hearing' || CONGRESS_EVENTS.has(id)) || /hearing|testimony before|subcommittee|committee/i.test(v.name)) return 'congress';
+    if (rec.length) return 'conference';
+    if ((v.y0 && v.y0 < 2005) || /^navair-/.test(v.media || '')) return 'archive';
+    if (NEWS.test(v.channel || '') || NEWS.test(v.name)) return (v.duration || 0) < 1200 ? 'news' : 'interview';
     return 'interview';
   }
-  const VKINDS = [['all', 'All'], ['hearing', 'Hearings'], ['citizen', 'Citizen Hearing & conferences'], ['interview', 'Interviews & podcasts'], ['news', 'News & archive']]; // trailers show under All and on their film's card
+  const VKINDS = [['all', 'All'], ['congress', 'Congress hearings'], ['citizen', 'Citizen Hearing'], ['conference', 'Conferences'], ['interview', 'Interviews & podcasts'], ['news', 'News'], ['archive', 'Archive & official footage']]; // trailers show under All and on their film's card
   let vbKind = 'all', vbQ = '';
   const vidPeople = v => [...new Set([...(v.moments || []).map(m => m.speaker), ...adj.get(v.id).filter(x => x.dir === 'out' && x.label === 'features').map(x => x.other)].filter(id => byId.get(id)?.type === 'person'))];
   // the filter box also matches the people tied to a video (speakers, features, any link), not just its own text
