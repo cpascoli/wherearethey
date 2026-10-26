@@ -10,8 +10,8 @@ rel:
   - [ features, linda-moulton-howe ]
 moments:
   - t: "4:19"
-    text: "In a video interview recorded by Richard Dolan, an unnamed 77-year-old man who says he worked under a CIA cover name from the late 1950s says Project Blue Book “was kind of partially a fraud”. His identity and service are unverified."
-    refs: [ project-blue-book ]
+    text: "In a video interview recorded by Richard Dolan, an unnamed 77-year-old man who says he worked under a CIA cover name from the late 1950s says Project Blue Book “was kind of partially a fraud”. Asked by the interviewer whether some of the Blue Book cases were “completely fictitious”, he answers “yes”, adding that the cases came to them from Fort Belvoir. His identity and service are unverified."
+    refs: [ project-blue-book, uap-disinformation ]
   - t: "8:44"
     text: "He says that in the Oval Office, President Eisenhower was told that MJ-12 people at Area 51 and S-4 said “the government had no jurisdiction” over what they were doing, and that Eisenhower threatened to send “the first army from colorado” to take the base over."
     refs: [ area-51 ]
