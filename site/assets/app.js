@@ -964,6 +964,42 @@
     return { url: url + (tag ? (url.includes('?') ? '&' : '?') + tag : ''), store: `amazon.${store}` };
   }
 
+  // ───────────── facet lists (the Latest and Videos side panels) ─────────────
+  // Rows like Types, with the same gestures: click toggles a row; double-click (or hold) shows only that row, and
+  // doing it again on the only row shows them all. `sel` is the Set of keys switched on.
+  const facetRows = (items, sel) => items.map(it => `
+      <label class="f-type ${sel.has(it.k) ? '' : 'off'}" data-fk="${esc(it.k)}" title="Click to toggle · double-click to show only this">
+        <span class="sw" style="background:${it.color || 'var(--muted)'}"></span>${esc(it.label)}<span class="n">${it.n}</span>
+      </label>`).join('');
+  function bindFacet(el, get, set) { // get() → { sel, all }; set(newSel)
+    let last = { k: null, at: 0, before: null }, timer = null, start = null, suppress = false, down = 0;
+    el.addEventListener('pointerdown', e => {
+      const r = e.target.closest('[data-fk]'); if (!r || e.button > 0) return;
+      start = { x: e.clientX, y: e.clientY }; down = e.timeStamp; clearTimeout(timer);
+      timer = setTimeout(() => {
+        timer = null; suppress = true; navigator.vibrate?.(12); last = { k: null, at: 0, before: null };
+        const { sel, all } = get(), k = r.dataset.fk;
+        set(sel.size === 1 && sel.has(k) ? new Set(all) : new Set([k]));
+      }, 500);
+    });
+    const cancel = e => { if (timer && (e.type !== 'pointermove' || Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10)) { clearTimeout(timer); timer = null; } };
+    for (const ev of ['pointerup', 'pointercancel', 'pointerleave', 'pointermove']) el.addEventListener(ev, cancel);
+    el.addEventListener('contextmenu', e => { if (e.target.closest('[data-fk]')) e.preventDefault(); });
+    el.addEventListener('click', e => {
+      const r = e.target.closest('[data-fk]'); if (!r) return;
+      e.preventDefault();
+      if (suppress) { suppress = false; return; }
+      const k = r.dataset.fk, now = down || e.timeStamp, { sel, all } = get();
+      if (last.k === k && now - last.at < 400) { // judge by the selection before the first click of the pair
+        const b = last.before; last = { k: null, at: 0, before: null };
+        set(b.size === 1 && b.has(k) ? new Set(all) : new Set([k]));
+      } else {
+        last = { k, at: now, before: new Set(sel) };
+        const n = new Set(sel); n.has(k) ? n.delete(k) : n.add(k); set(n);
+      }
+    });
+  }
+
   // ───────────── Latest ─────────────
   // What happened recently (by event `date`) and what is new to the archive (by `added`, older material).
   // Keep LATEST in sync with scripts/pages.mjs (server pages and the RSS feed use the same rules).
@@ -1018,14 +1054,38 @@
   };
   // "new since your last visit": the previous visit's date, read once per page load
   const LATEST_SEEN = store.get('latestSeen', null);
-  let latestCat_ = 'all', latestShowAll = false;
+  // side-panel filters: the types (LATEST_CATS) and when (upcoming, the last 90 days, newly filed older material)
+  const LT_CAT_KEYS = LATEST_CATS.map(([k]) => k).filter(k => k !== 'all');
+  const LT_CAT_COLOR = { hearings: TYPES.hearing.color, interviews: TYPES.video.color, statements: TYPES.person.color, releases: TYPES.document.color, research: TYPES.concept.color, incidents: TYPES.incident.color, press: TYPES.source.color, media: TYPES.book.color };
+  const LT_WHEN_KEYS = ['upcoming', 'recent', 'added'];
+  let ltCats = new Set(LT_CAT_KEYS), ltWhen = new Set(LT_WHEN_KEYS), latestShowAll = false;
+  const ltFiltered = () => ltCats.size < LT_CAT_KEYS.length || ltWhen.size < LT_WHEN_KEYS.length;
   function renderLatest() {
     const { featured, recent, added, folded, today } = latestData();
     const isNew = e => LATEST_SEEN && e.added > LATEST_SEEN;
-    const cats = new Map(LATEST_CATS.map(([k]) => [k, 0]));
-    for (const e of [...featured, ...recent]) { cats.set('all', cats.get('all') + 1); cats.set(latestCat(e), cats.get(latestCat(e)) + 1); }
-    const list = [...featured, ...recent].filter(e => latestCat_ === 'all' || latestCat(e) === latestCat_);
-    const catLabel = Object.fromEntries(LATEST_CATS);
+    const whenOf = e => (e.date > today ? 'upcoming' : 'recent');
+    const items = [...featured, ...recent];
+    // faceted counts: each list is counted against the other list's selection
+    const catN = new Map(LT_CAT_KEYS.map(k => [k, 0])), whenN = new Map(LT_WHEN_KEYS.map(k => [k, 0]));
+    for (const e of items) {
+      if (ltWhen.has(whenOf(e))) catN.set(latestCat(e), catN.get(latestCat(e)) + 1);
+      if (ltCats.has(latestCat(e))) whenN.set(whenOf(e), whenN.get(whenOf(e)) + 1);
+    }
+    whenN.set('added', added.length);
+    const present = new Set(items.map(latestCat));
+    $('#lt-types').innerHTML = facetRows(LT_CAT_KEYS.filter(k => present.has(k)).map(k => ({ k, label: LATEST_CATS.find(c => c[0] === k)[1], n: catN.get(k), color: LT_CAT_COLOR[k] })), ltCats);
+    $('#lt-when').innerHTML = facetRows([
+      { k: 'upcoming', label: 'Upcoming', n: whenN.get('upcoming'), color: 'var(--claimed)' },
+      { k: 'recent', label: `Last ${LATEST.windowDays} days`, n: whenN.get('recent'), color: 'var(--accent)' },
+      { k: 'added', label: 'Newly filed, from the record', n: whenN.get('added'), color: 'var(--muted)' },
+    ], ltWhen);
+    $('#lt-types-clear').hidden = ltCats.size === LT_CAT_KEYS.length;
+    $('#lt-when-clear').hidden = ltWhen.size === LT_WHEN_KEYS.length;
+    const list = items.filter(e => ltCats.has(latestCat(e)) && ltWhen.has(whenOf(e)));
+    // the filter line: name the smaller side ("only X" or "everything except X")
+    const catName = k => LATEST_CATS.find(c => c[0] === k)[1], whenName = k => ({ upcoming: 'upcoming', recent: `the last ${LATEST.windowDays} days`, added: 'newly filed' })[k];
+    const sayFilter = (keys, sel, name) => { const onK = keys.filter(k => sel.has(k)), offK = keys.filter(k => !sel.has(k)); return !offK.length ? null : !onK.length ? 'nothing' : onK.length <= offK.length ? 'only ' + onK.map(name).join(', ') : 'all except ' + offK.map(name).join(', '); };
+    const on = [sayFilter(LT_CAT_KEYS.filter(k => present.has(k)), ltCats, catName), sayFilter(LT_WHEN_KEYS, ltWhen, whenName)].filter(Boolean);
     const card = e => {
       const rec = e.type === 'video' ? e : folded.get(e.id);
       const late = e.added && dateEnd(e.date) && e.added > dayOffset(dateEnd(e.date), 3);
@@ -1048,11 +1108,11 @@
     $('#latest').innerHTML = `
       <header class="lt-head">
         <div class="lt-top"><div class="home-kicker" title="The last ${LATEST.windowDays} days, sorted by when things happened">Latest</div>
-          <a class="lt-rss" href="/feed.xml" target="_blank" rel="noopener" title="RSS feed: subscribe in your feed reader" aria-label="RSS feed"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#F78422"/><circle cx="6.5" cy="17.5" r="2" fill="#fff"/><path d="M4.5 10.5a9 9 0 0 1 9 9h-2.6a6.4 6.4 0 0 0-6.4-6.4z M4.5 5a14.5 14.5 0 0 1 14.5 14.5h-2.6A11.9 11.9 0 0 0 4.5 7.6z" fill="#fff"/></svg></a></div>
-        <div class="seg lt-cats">${LATEST_CATS.filter(([k]) => k === 'all' || cats.get(k)).map(([k, l]) => `<button class="${k === latestCat_ ? 'on' : ''}" data-lt-cat="${k}">${l} <span>${cats.get(k)}</span></button>`).join('')}</div>
+          </div>
+        ${ltFiltered() ? `<p class="lt-filtering">Filtered: ${esc(on.join(' · '))} <button class="link" data-lt-clear>show everything</button></p>` : ''}
       </header>
-      <div class="lt-list">${list.map(card).join('') || `<p class="muted">Nothing ${latestCat_ === 'all' ? '' : `in ${esc(catLabel[latestCat_].toLowerCase())} `}in the last ${LATEST.windowDays} days.</p>`}</div>
-      ${added.length ? `<section class="lt-added">
+      ${ltWhen.has('upcoming') || ltWhen.has('recent') ? `<div class="lt-list">${list.map(card).join('') || `<p class="muted">Nothing matches these filters in the last ${LATEST.windowDays} days.</p>`}</div>` : ''}
+      ${added.length && ltWhen.has('added') ? `<section class="lt-added">
         <div class="home-kicker">Recently added to the archive</div>
         <h2>New to the archive, from the record</h2>
         <p class="muted">Older material filed in the last ${LATEST.addedDays} days: archival interviews, declassified files, historical cases.</p>
@@ -1063,10 +1123,14 @@
     store.set('latestSeen', today); // the next visit marks what was added after today
   }
   $('#view-latest').addEventListener('click', e => {
-    const c = e.target.closest('[data-lt-cat]');
-    if (c) { latestCat_ = c.dataset.ltCat; renderLatest(); return; }
+    if (e.target.closest('[data-lt-clear]')) { ltCats = new Set(LT_CAT_KEYS); ltWhen = new Set(LT_WHEN_KEYS); renderLatest(); return; }
     if (e.target.closest('[data-lt-more]')) { latestShowAll = true; renderLatest(); }
   });
+  const ltChanged = () => { renderLatest(); clearTimeout(ltChanged.t); ltChanged.t = setTimeout(() => track('filter_change', { view: 'latest', types: [...ltCats].sort().join(','), when: [...ltWhen].sort().join(',') }), 1500); };
+  bindFacet($('#lt-types'), () => ({ sel: ltCats, all: LT_CAT_KEYS }), s => { ltCats = s; ltChanged(); });
+  bindFacet($('#lt-when'), () => ({ sel: ltWhen, all: LT_WHEN_KEYS }), s => { ltWhen = s; ltChanged(); });
+  $('#lt-types-clear').addEventListener('click', () => { ltCats = new Set(LT_CAT_KEYS); ltChanged(); });
+  $('#lt-when-clear').addEventListener('click', () => { ltWhen = new Set(LT_WHEN_KEYS); ltChanged(); });
 
   // ───────────── books & films ─────────────
   let shelfTab = store.get('shelfTab', 'film');
@@ -2661,10 +2725,10 @@
     $$('#views [data-group], #views [data-view]').forEach(a => a.classList.toggle('active', [...(a.dataset.group || a.dataset.view).split(' '), ...(narrow && a.dataset.groupNarrow ? a.dataset.groupNarrow.split(' ') : [])].includes(view)));
     $('#app').classList.toggle('is-home', view === 'home');
     document.body.classList.toggle('is-home', view === 'home'); // the header sits outside #app
-    $('#app').classList.toggle('no-side', view === 'latest'); document.body.classList.toggle('no-side', view === 'latest'); // the graph filters don't apply to Latest
     if (view === 'home') { $('#panel').hidden = true; $('#app').classList.remove('has-panel'); }
     else if (state.sel) openPanel(state.sel);
-    $('#filters').hidden = view === 'videos';
+    $('#filters').hidden = view === 'videos' || view === 'latest'; // Latest and Videos have their own side panels
+    $('#lt-side').hidden = view !== 'latest';
     $('#vid-side').hidden = view !== 'videos';
     $$('.only-graph').forEach(el => el.hidden = view !== 'graph');
     if (view === 'graph' && !state.trail && !state.full) state.trail = coreTrail();
