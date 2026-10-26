@@ -4,6 +4,8 @@ aka: [FLIR1, FLIR video, Tic Tac video]
 date: 2004-11-14
 media: navair-flir1
 url: https://www.navair.navy.mil/foia/documents
+stream: media/navair-flir1/video.mp4
+thumb: media/navair-flir1/thumb.jpg
 tags: [navy, aviator, sensor]
 rel:
   - [ recording of, inc-nimitz-2004 ]

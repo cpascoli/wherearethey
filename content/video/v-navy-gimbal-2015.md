@@ -4,6 +4,8 @@ aka: [Gimbal, Gimbal video]
 date: 2015-01
 media: navair-gimbal
 url: https://www.navair.navy.mil/foia/documents
+stream: media/navair-gimbal/video.mp4
+thumb: media/navair-gimbal/thumb.jpg
 tags: [navy, aviator, sensor]
 rel:
   - [ recording of, inc-roosevelt-2015 ]

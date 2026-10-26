@@ -4,6 +4,8 @@ aka: [GoFast, Go Fast, GoFast video]
 date: 2015-01
 media: navair-gofast
 url: https://www.navair.navy.mil/foia/documents
+stream: media/navair-gofast/video.mp4
+thumb: media/navair-gofast/thumb.jpg
 tags: [navy, aviator, sensor]
 rel:
   - [ recording of, inc-roosevelt-2015 ]
