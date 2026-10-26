@@ -58,5 +58,160 @@
   "d": "2026-10-23",
   "v": "skip",
   "why": "civilian video, not anchored"
+ },
+ "https://avi-loeb.medium.com/the-triangular-uap-in-the-7th-tranche-of-pursue-781dc0d27b92": {
+  "d": "2026-10-24",
+  "v": "runner-up",
+  "why": "Loeb on release 07 triangle (D176): mostly recap of the memo on file; only new point is UAPSAC aim to deploy sensors at PURSUE sites; score 9"
+ },
+ "https://www.foxbusiness.com/video/6407178025112": {
+  "d": "2026-10-24",
+  "v": "runner-up",
+  "why": "Burlison on Fox Business 2026-10-21, 'win the UFO race': no transcript reachable, only the description; score 9"
+ },
+ "https://thehill.com/homenews/house/6169367-democrats-majority-congress-ufo-sightings-transparency/": {
+  "d": "2026-10-24",
+  "v": "runner-up",
+  "why": "The Hill analysis 2026-10-23 on Democrats and UFOs: rests on Jeffries' 2023 remarks, no new on-record statement; page blocked by captcha; score 8"
+ },
+ "news.google.com: PURSUE release 07 coverage (NewsNation, CBS, Axios, Guardian, NY Post Catalina, Washington Times, Sci Am, etc.)": {
+  "d": "2026-10-24",
+  "v": "skip",
+  "why": "release 07 (2026-10-23) already filed as ev-pursue-release-07, incl. Catalina records and inc-western-us-triangle-2026"
+ },
+ "https://ufonews.co/post/former-uap-task-force-chief-describes-nonhuman-being-at-his-window-as-pentagon-feud-escalates": {
+  "d": "2026-10-24",
+  "v": "skip",
+  "why": "recap of Stratton CUOMO + Kirkpatrick/PARADIGM, both already on file"
+ },
+ "https://cybernews.com/news/jay-stratton-ufo-claims/": {
+  "d": "2026-10-24",
+  "v": "skip",
+  "why": "Stratton book-tour claims (Baier interview), before window, nothing new"
+ },
+ "news.google.com: Grusch on Joe Rogan (Economic Times, Starlust, Curiosmos)": {
+  "d": "2026-10-24",
+  "v": "skip",
+  "why": "JRE #2560 was 2026-09-30, outside window"
+ },
+ "news.google.com: Eric Weinstein / Steven Greer letter / Matthew Brown (Curiosmos)": {
+  "d": "2026-10-24",
+  "v": "skip",
+  "why": "content farm; not credible voices"
+ },
+ "news.google.com: James Fox on FOX 2 Detroit": {
+  "d": "2026-10-24",
+  "v": "skip",
+  "why": "filmmaker commentary on release 07; nothing new"
+ },
+ "news.google.com: Charlie Duke 'UFOs are demonic' (Creepy Catalog)": {
+  "d": "2026-10-24",
+  "v": "skip",
+  "why": "content farm; old remarks"
+ },
+ "news.google.com: Daily Mail 'Glowing UFOs over Atlantic' / Sun / Express": {
+  "d": "2026-10-24",
+  "v": "skip",
+  "why": "tabloid; no credible witness"
+ },
+ "news.google.com: Jay Stratton YouTube recap videos ('Top 10 things', 'FIRST-EVER interview')": {
+  "d": "2026-10-24",
+  "v": "skip",
+  "why": "re-uploads/recaps of material on file"
+ },
+ "news.google.com: Anadolu 'German AfD asks government about UFOs'": {
+  "d": "2026-10-24",
+  "v": "skip",
+  "why": "already suggested 2026-10-23 (Bundestag answer)"
+ },
+ "https://www.yahoo.com/news/politics/articles/democrats-address-ufo-sightings-returned-214356552.html": {
+  "d": "2026-10-25",
+  "v": "runner-up",
+  "why": "Yahoo copy of The Hill 2026-10-23 (judged 10-24 behind a captcha): contains a new on-record statement by Rep. Andre Carson calling for immediate release of the 'historical UAP record report'; not refiled because the Hill URL is already in seen.json; would score ~12, owner may file"
+ },
+ "https://avi-loeb.medium.com/comments-on-the-seventh-pentagon-uap-file-release-0b598e8d7c66": {
+  "d": "2026-10-25",
+  "v": "skip",
+  "why": "Loeb's transcript of his 10-23 NewsNation interview, already linked in 2026-10-23-loeb-sensors-at-pursue-sites; Isaacman quote is from an earlier show"
+ },
+ "news.google.com: PURSUE release 07 day-2 coverage (VICE, NewsNation, Independent, Axios, ABC, CBS Catalina, Daily Star, Daily Mail skinwalkers, LADbible, NTD Roswell, SMBtech McCoy/Bigelow/Sardinia)": {
+  "d": "2026-10-25",
+  "v": "skip",
+  "why": "release 07 (2026-10-23) already on file as ev-pursue-release-07; recaps"
+ },
+ "https://podcasts.apple.com/podcast/id6790817856": {
+  "d": "2026-10-25",
+  "v": "skip",
+  "why": "Safe Aerospace Podcast, Graves with ATC Jason Judy: episode dated 2026-07-10, outside window"
+ },
+ "news.google.com: 'LEAKED: Hellfire Missile Bounces Off UFO' (YouTube)": {
+  "d": "2026-10-25",
+  "v": "skip",
+  "why": "re-upload/recap of the Yemen Hellfire video shown at the 2025-09-09 hearing"
+ },
+ "news.google.com: Trace Cyrus 'aliens' (OK Magazine), Bradley Walsh UFO show (The Sun)": {
+  "d": "2026-10-25",
+  "v": "skip",
+  "why": "celebrity, not credible"
+ },
+ "news.google.com: Coast to Coast AM, Psicoactivo (Jim Ryder), Unisba Greer clip, Curiosmos": {
+  "d": "2026-10-25",
+  "v": "skip",
+  "why": "talk radio/podcasts/content farms, no credible new voice"
+ },
+ "news.google.com: Rep. Luna calls for end to threats (NewsNation)": {
+  "d": "2026-10-25",
+  "v": "skip",
+  "why": "off-topic"
+ },
+ "web search: AARO, UAPDA/NDAA, House Oversight hearing (Nov 2026)": {
+  "d": "2026-10-25",
+  "v": "skip",
+  "why": "nothing in window; November hearing only floated (Sentinel News 10-12), not announced"
+ },
+ "https://smbtech.au/news/us-lawmakers-enter-closed-door-talks-that-could-gut-ufo-transparency-bill-for-second-year-running/": {
+  "d": "2026-10-26",
+  "v": "skip",
+  "why": "write-up of the New Paradigm Institute NDAA campaign launched 2026-10-19 (outside window); advocacy, no official action"
+ },
+ "https://newparadigminstitute.org/learn/library/npi-launches-national-campaign-to-protect-uap-disclosure-in-defense-bill/": {
+  "d": "2026-10-26",
+  "v": "suggest",
+  "why": "NPI press release 2026-10-19 (outside window); points to an unfiled fact: Burlison's UAPDA adopted into the House FY2027 NDAA on 2026-07-22, now in conference"
+ },
+ "https://www.paradigm.news/p/exclusive-new-ufo-whistleblower-unmasked": {
+  "d": "2026-10-26",
+  "v": "skip",
+  "why": "2026-09-10, outside window; civilian claimant (Michael Spicer), not anchored"
+ },
+ "news.google.com: PURSUE release 07 day-3 coverage (Fox News FBI triangle, VICE, EarthSky, IBTimes Roswell/triangle, Express, Breitbart, MEAWW, Soap Central)": {
+  "d": "2026-10-26",
+  "v": "skip",
+  "why": "release 07 (2026-10-23) already on file as ev-pursue-release-07; recaps"
+ },
+ "news.google.com: NewsNation 'Scientist's solution to solve UFO mystery: New sensors' / IBTimes 'Put better sensors' (Loeb)": {
+  "d": "2026-10-26",
+  "v": "skip",
+  "why": "same Loeb NewsNation interview already filed as 2026-10-23-loeb-sensors-at-pursue-sites"
+ },
+ "news.google.com: NewsNation Elizabeth Vargas Reports 'black triangles part of long history: UAP experts'": {
+  "d": "2026-10-26",
+  "v": "skip",
+  "why": "commentary on release 07, no new on-record testimony"
+ },
+ "news.google.com: Unisba Media 'Jason Judy X Ryan Graves' (re-upload)": {
+  "d": "2026-10-26",
+  "v": "skip",
+  "why": "re-upload of the Safe Aerospace episode of 2026-07-10, already skipped 2026-10-25"
+ },
+ "news.google.com: IBTimes 'Singer claims Trump officials are aliens' (Trace Cyrus), Metro BA drone near-miss, Unisba Bermuda Triangle": {
+  "d": "2026-10-26",
+  "v": "skip",
+  "why": "celebrity / off-topic / content farm"
+ },
+ "web search: AARO, ODNI, UAP hearing, pilot/FAA sightings, YouTube interviews (Grusch, Elizondo, Mellon, Gallaudet, Graves, Fravor)": {
+  "d": "2026-10-26",
+  "v": "skip",
+  "why": "nothing new in window 2026-10-23..26"
  }
 }
