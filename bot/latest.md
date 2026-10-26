@@ -60,6 +60,13 @@ Otherwise it is one of:
   a long interview or hearing that deserves a full video entry with timestamped moments. Listed at the top of the PR.
 - **Skip**, with a one-line reason (off-topic, not credible, nothing new, outside the window, duplicate, content farm).
 
+**Legislation waits for a vote.** A bill or amendment (e.g. the UAP Disclosure Act in the FY2027 NDAA) is filed, as a
+news item or a suggested entry, only once it has been debated and voted on: a committee mark-up vote, a floor vote, or
+the final conference text agreed by both chambers, cited from an official record (congress.gov, a committee or House /
+Senate press release). Introductions, campaigns, lobbying, “closed-door talks” and predictions that it will be gutted
+are skips (“legislation: no vote yet”). Keep watching the FY2027 NDAA conference: when the agreed text is published or
+voted on, check what it keeps of the UAP Disclosure Act and suggest the full entry.
+
 ### Scoring and the cap
 
 Score every news-item candidate 0–3 on each:
