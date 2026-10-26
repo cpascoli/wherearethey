@@ -1,0 +1,214 @@
+                                                        UNCLASSIFIED
+
+
+
+
+                                              ALL-DOMAIN ANOMALY
+                                               RESOLUTION OFFICE
+
+                         Senate Armed Services Subcommittee on Emerging Threats and Capabilities
+
+
+                                                    Dr. Jon Kosloski
+                                                     Director, AARO
+
+
+
+
+ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)             UNCLASSIFIED
+                                                                                        UNCLASSIFIED
+
+
+
+
+                                        UAP REPORTING TRENDS: JANUARY 1, 1996 – OCTOBER 10, 2024
+
+                       REPORTED-UAP ALTITUDES                                  CLOSED CASES RESOLUTION OUTCOMES                              REPORTED UAP-MORPHOLOGY
+
+                                                                                                Bird(s), 6%                                       Square/Polygon, 3%
+                                                                              Aircraft, 1%                     Satellite(s), 1%   Triangle, 3%                         TicTac, 2%
+                                         Weather Balloons
+>60K   0.4%                                                                   Other, 1%                                           Disk, 1%
+                                                                                                                                                                        Orb, Round,
+                                                                             UAS(s), 16%                                          Cylinder, 5%                          Sphere, 31%
+60K           3.3%
+
+55K       2.3%
+
+50K                    6.1%
+
+45K           2.8%
+
+                                                                                                                                                                          Ambiguous
+40K             4.0%                                                                                                                                                        Sensor
+                                                                                                                                                                          Contact, 5%
+                                                   Commercial Air Traffic                                                           Lights, 46%
+35K              4.6%
+                                                                                                              Balloon(s), 75%
+30K                    6.1%                                                                                                                                               Other, 5%
+
+
+25K                                        17.8%                                                                  REPORTED-UAP HOTSPOTS
+
+20K                                                            25.8%
+
+                                                                Mt Everest
+15K                             10.0%
+
+10K                       8.0%
+
+ 5K                           8.7%
+
+
+
+
+ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)                                             UNCLASSIFIED                                                                                2
+                                                                 UNCLASSIFIED
+
+
+
+
+                                                       THE PUERTO RICO OBJECT
+
+▪ Event: On April 26, 2013, a U.S. Customs and Border Protection (USCBP) aircraft
+  recorded infrared (IR) video of a potential unidentified anomalous phenomenon
+  (UAP) over Puerto Rico’s Rafael Hernandez Airport. The video appears to show
+  an object traveling at high speed, splitting into two objects, and entering and
+  exiting the water. The object was deemed anomalous based on these initial
+  perceptions.
+▪ Findings: AARO, in coordination with Intelligence Community (IC) and Science
+  and Technology (S&T) partners assess with high confidence that the UAP did
+  not demonstrate any anomalous speeds or flight characteristics.
+
+▪ Two distinct objects were airborne in proximity to each other, rather than a
+  single object splitting into two.
+
+▪ Modeling and Minimum Separation Vectors analysis indicates the illusion of
+  splitting was likely due to the changing angle of sensor view allowing only
+  intermittent views of both objects.
+
+▪ The perception of high speed was attributed to
+  motion parallax.
+
+▪ Reconstruction confirmed the objects traveled at
+  wind speed in a straight line over land during the
+  entire observation period, never entering
+  the water.
+
+
+
+ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)                      UNCLASSIFIED       3
+                                                                UNCLASSIFIED
+
+
+
+
+                                                    THE PUERTO RICO OBJECT
+
+▪ Analytic Factors: Perception of objects’
+  fading in and out due to Thermal
+  Crossover.
+▪ Trajectory reconstruction shows the
+  objects traveled southwest in a straight
+  line at a consistent speed of ≈3.6
+  meters per second while slowly
+  descending to ≈200 meters.
+▪ Winds were 7 knots (3.6 m/s) out of the
+  east-northeast. Cloud cover was
+  approximately 50 percent, with scattered
+  clouds at 914 meters (3000 feet).
+
+
+
+
+                                              Vector analysis is used to plot the line of sight of the sensor as a function of time. Using a closest-approach
+                                                                              method, a track of the object can be estimated
+
+
+
+
+ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)                     UNCLASSIFIED                                                                                    4
+                                                                     UNCLASSIFIED
+
+
+
+
+                                                                      GO FAST
+
+▪ Event: In January 2015, U.S. Navy aircraft recorded an object                     * Video released by DoD in 2017
+  appearing to travel at high speeds close to the ocean surface off
+  Florida’s east coast.
+
+▪ Findings: Following in-depth computational analysis of Navy aircraft’s
+  flight characteristics and sensor readings, AARO, in coordination with
+  S&T partners, assesses with high confidence the UAP did not
+  demonstrate any anomalous speeds or flight characteristics.
+
+▪ Analytic Factors: The UAP’s altitude is assessed with high confidence
+  as approximately 13,000 feet above sea level at a calculated velocity
+  of approximately 45 mph / 39 knots.
+    ▪ Analysis of contemporaneous weather patterns in the area at the
+      time of event indicate winds were approximately 60 knots at
+      13,000 feet
+
+▪ Analysis of its flight path in relation to the Navy aircraft revealed the
+  object maintained a relatively straight, slightly rising trajectory with a
+  slow, curving descent near the end of the analyzed video.
+    ▪ High confidence analysis of the UAP’s exact position was not
+      possible given a lack of precise positional data from the
+      observing Navy aircraft.
+
+
+
+ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)                          UNCLASSIFIED                                     5
+                                                                 UNCLASSIFIED
+
+
+
+
+                                                            MT. ETNA OBJECT
+▪ Event: In 2018, a U.S. UAV flying over the Mediterranean Sea observed
+  an eruption by Italy’s Mt. Etna, capturing video of a potential UAP
+  seemingly passing through the volcano's plume with no apparent impact
+  to its performance, altitude and bearing.
+
+▪ Findings: AARO, in coordination with IC and S&T partners, assesses with
+  moderate confidence that the object was a balloon drifting with the wind
+  approximately 170 kilometers from the volcano.
+
+▪ Analytic Factors: Coordinated analysis employed full-motion video
+  analysis software, 3D modeling, pixel examination — as well as novel
+  speed and distance calculation techniques — to reach this conclusion.
+
+▪ The estimated distance between the UAP and the UAV is based on
+  weather analysis of the cloud deck and wind speeds.
+
+▪ AARO and its partners disproved the object flew through the ash plume
+  by conducting an analysis of the luminosity of the object’s pixels in
+  relation to a sample range of pixels immediately around it.
+
+▪ To validate the estimated UAP speed and bearing, 3D modeling and wind
+  calculations were used to estimate the UAP’s location when the UAV
+  operator lost sight of it. Subsequent video analysis found faint tones of
+  the UAP where the modeling assessed it would traverse, further
+  validating the findings.
+
+ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)                      UNCLASSIFIED   6
+                                                       UNCLASSIFIED
+
+
+
+
+                                              ALL-DOMAIN ANOMALY
+                                              RESOLUTION OFFICE
+
+                        Senate Armed Services Subcommittee on Emerging Threats and Capabilities
+
+                                                    Dr. Jon Kosloski
+                                                    Director, AARO
+
+
+
+
+ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)            UNCLASSIFIED
+
