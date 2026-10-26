@@ -1109,6 +1109,7 @@
       <header class="lt-head">
         <div class="lt-top"><div class="home-kicker" title="The last ${LATEST.windowDays} days, sorted by when things happened">Latest</div>
           </div>
+        <button class="btn small only-mobile vb-open-side" data-open-side>Filters${ltFiltered() ? ' · on' : ''}</button>
         ${ltFiltered() ? `<p class="lt-filtering">Filtered: ${esc(on.join(' · '))} <button class="link" data-lt-clear>show everything</button></p>` : ''}
       </header>
       ${ltWhen.has('upcoming') || ltWhen.has('recent') ? `<div class="lt-list">${list.map(card).join('') || `<p class="muted">Nothing matches these filters in the last ${LATEST.windowDays} days.</p>`}</div>` : ''}
@@ -1123,6 +1124,7 @@
     store.set('latestSeen', today); // the next visit marks what was added after today
   }
   $('#view-latest').addEventListener('click', e => {
+    if (e.target.closest('[data-open-side]')) { $('#side').classList.add('open'); return; }
     if (e.target.closest('[data-lt-clear]')) { ltCats = new Set(LT_CAT_KEYS); ltWhen = new Set(LT_WHEN_KEYS); renderLatest(); return; }
     if (e.target.closest('[data-lt-more]')) { latestShowAll = true; renderLatest(); }
   });
@@ -1255,7 +1257,8 @@
     const res = searchEntities(q, 12, onMap);
     ddIndex = -1;
     dd.innerHTML = (onMap ? `<div class="dd-head">${res.length ? 'On the map' : `Nothing on the map matches “${esc(q)}”`}</div>` : '') + res.map(e => `<div ${ddTyped(e)} data-goto="${e.id}"><div><div class="t">${esc(e.name)} ${ddType(e)}</div><div class="s">${esc(subtitle(e))}</div></div></div>`).join('') +
-      `${res.length ? '<div class="dd-sep"></div>' : ''}<div class="dd-item" data-tsearch="${esc(q)}"><span>🔎</span><div><div class="t">Search transcripts and documents for “${esc(q)}”</div><div class="s">${KB.stats.transcripts} videos · ${KB.stats.transcriptHours} h of speech · ${KB.stats.documents} documents · ${KB.stats.documentPages} pages</div></div></div>`;
+      `${res.length ? '<div class="dd-sep"></div>' : ''}<div class="dd-item" data-dsearch="${esc(q)}"><span>📄</span><div><div class="t">Search inside documents for “${esc(q)}”</div><div class="s">${KB.stats.documents} documents · ${KB.stats.documentPages.toLocaleString('en-US')} pages, opened at the page</div></div></div>`
+      + `<div class="dd-item" data-tsearch="${esc(q)}"><span>🎥</span><div><div class="t">Search video transcripts for “${esc(q)}”</div><div class="s">${KB.stats.transcripts} videos · ${KB.stats.transcriptHours} h of speech, on the Videos page</div></div></div>`;
     dd.hidden = false;
   }
   $('#q').addEventListener('input', renderDropdown);
@@ -1273,8 +1276,29 @@
   document.addEventListener('click', e => { if (!e.target.closest('.search')) $('#q-results').hidden = true; });
   $('#q-results').addEventListener('click', e => {
     const ts = e.target.closest('[data-tsearch]');
-    if (ts) { $('#q-results').hidden = true; $('#tq').value = ts.dataset.tsearch; go('videos'); runTranscriptSearch(); }
+    if (ts) { $('#q-results').hidden = true; searchVideosFor(ts.dataset.tsearch); return; }
+    const ds = e.target.closest('[data-dsearch]');
+    if (ds) { showDocResults(ds.dataset.dsearch); return; }
+    if (e.target.closest('[data-dd-back]')) { requestAnimationFrame(renderDropdown); return; }
   });
+  // document full text, shown in the top dropdown: the matching pages of each document, each opening the PDF there.
+  // Rendered on the next frame, so the click that asked for it is not taken as a click outside the search box.
+  async function showDocResults(q) {
+    const dd = $('#q-results');
+    requestAnimationFrame(() => { dd.innerHTML = `<div class="dd-head">Searching ${KB.stats.documents} documents for “${esc(q)}”…</div>`; dd.hidden = false; });
+    trackSearch(q, 'documents');
+    const r = await searchDocuments(q);
+    if ($('#q').value.trim() !== q.trim()) return;
+    const hl = t => esc(t).replace(new RegExp(`(${r.needle.split(' ').filter(Boolean).map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi'), '<mark>$1</mark>');
+    const pages = r.dOut.reduce((n, x) => n + x[1].length, 0);
+    requestAnimationFrame(() => {
+      dd.innerHTML = `<div class="dd-head dd-doc-head"><button class="link" data-dd-back>‹ Back</button><span>${r.dTotal ? `${r.dTotal} matches on ${pages} page${pages > 1 ? 's' : ''} in ${r.dOut.length} document${r.dOut.length > 1 ? 's' : ''}` : `No document mentions “${esc(q)}”`}</span></div>`
+        + r.dOut.slice(0, 15).map(([d, hits]) => `<div class="dd-doc"><a class="dd-doc-t" href="${hrefOf(d.id)}" data-goto="${esc(d.id)}">${esc(d.name)}<span>${hits.length} p.</span></a>`
+          + hits.slice(0, 3).map(h => `<a class="dd-doc-hit" href="${esc(fileUrl(h.file))}#page=${h.page}" target="_blank" title="Open the PDF at page ${h.page}"><span class="ts">p.${h.page}</span><span>${hl(h.snip)}${h.n > 1 ? ` <span class="muted">(${h.n}×)</span>` : ''}</span></a>`).join('')
+          + (hits.length > 3 ? `<div class="small muted dd-doc-more">+${hits.length - 3} more pages</div>` : '') + '</div>').join('')
+        + (r.dOut.length > 15 ? `<div class="small muted dd-doc-more">+${r.dOut.length - 15} more documents</div>` : '');
+    });
+  }
   document.addEventListener('keydown', e => {
     if (e.key === '/' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); $('#q').focus(); }
     if (e.key === 'Escape' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName) && state.sel) { if (state.reading) setReading(false); else select(null); }
@@ -1757,24 +1781,18 @@
     });
   }
 
-  function renderVideoList() {
-    if ($('#tq').value.trim()) return;
-    const list = videos.filter(v => !(state.credibleOnly && v.cred === 'outside')).sort((a, b) => String(b.date).localeCompare(String(a.date)));
-    $('#tq-info').textContent = `${list.length} videos · ${KB.stats.transcriptHours} hours transcribed`;
-    $('#vid-list').innerHTML = list.map(v => `<div class="vl-item ${state.video === v.id ? 'on' : ''}" data-open-video="${v.id}">
-      <img src="${vthumb(v)}" alt="" loading="lazy"><div><div class="t">${esc(v.name)}</div><div class="s">${esc([v.channel, fmtD(v.date), fmtDur(v.duration)].filter(Boolean).join(' · '))}</div></div></div>`).join('');
-  }
   document.addEventListener('click', e => { if (e.target.closest('[data-close-video]')) { e.preventDefault(); closeVideo(); } });
   $('#vid-list').addEventListener('click', e => {
     const o = e.target.closest('[data-open-video]');
     if (o) { openVideo(o.dataset.openVideo, 0, false); return; }
   });
 
-  let tqTimer;
+  // the Videos search box: titles, people and cases filter the list at once; transcripts are searched after a pause
+  let tqTimer, tqListTimer;
   $('#tq').addEventListener('input', () => {
-    clearTimeout(tqTimer);
-    if ($('#tq').value.trim().length >= 2) $('#tq-info').textContent = 'Searching…';
-    tqTimer = setTimeout(runTranscriptSearch, 300);
+    clearTimeout(tqTimer); clearTimeout(tqListTimer);
+    tqListTimer = setTimeout(() => { renderVidSide(); if (!state.video) renderBrowse(); }, 150);
+    tqTimer = setTimeout(runTranscriptSearch, 350);
   });
   // document full text (extracted PDFs), loaded lazily like transcripts
   const DT = new Map();
@@ -1797,17 +1815,15 @@
   // one-to-one character normalisation, so match offsets point back into the original page text
   const normCache = new Map();
   const normPage = (key, txt) => { let n = normCache.get(key); if (n === undefined) { n = txt.toLowerCase().replace(/[^\p{L}\p{N}']/gu, ' '); normCache.set(key, n); } return n; };
-  let tqScope = store.get('tqScope', 'videos');
   let lastSearch = null;
 
   async function runTranscriptSearch() {
     trackSearch($('#tq').value, 'transcripts');
     const q = $('#tq').value.trim();
-    if (q.length < 2) { lastSearch = null; renderVideoList(); return; }
+    if (q.length < 2) { lastSearch = null; return; }
     const vids = videos.filter(v => v.transcript && !(state.credibleOnly && v.cred === 'outside'));
-    const docs = docEnts.filter(e => !(state.credibleOnly && e.cred === 'outside'));
-    if (TR.size < vids.length || DT.size < docs.length) $('#tq-info').textContent = 'Loading transcripts and documents (first search only)…';
-    await Promise.all([...vids.map(v => loadTranscript(v.id)), ...docs.map(d => loadDocText(d.id))]);
+    if (TR.size < vids.length) $('#tq-info').textContent = 'Loading transcripts (first search only)…';
+    await Promise.all(vids.map(v => loadTranscript(v.id)));
     if ($('#tq').value.trim() !== q) return;
     const needle = q.toLowerCase().replace(/[^\p{L}\p{N}' ]+/gu, ' ').replace(/\s+/g, ' ').trim();
     // "non-human" should also match "non human" and "nonhuman" in auto-captions
@@ -1825,8 +1841,17 @@
       if (hits.length) { vTotal += hits.length; vOut.push([v, hits]); }
     }
     vOut.sort((a, b) => b[1].length - a[1].length);
-    // documents: one hit per matching page, with a snippet around the first match
-    const reG = new RegExp(re.source, 'gi');
+    lastSearch = { q, needle, vOut, vTotal };
+    renderVidSide();
+    if (!state.video && state.view === 'videos') renderBrowse();
+  }
+  // document full text, searched from the top search bar: one hit per matching page, with a snippet around the
+  // first match
+  async function searchDocuments(q) {
+    const docs = docEnts.filter(e => !(state.credibleOnly && e.cred === 'outside'));
+    await Promise.all(docs.map(d => loadDocText(d.id)));
+    const needle = q.toLowerCase().replace(/[^\p{L}\p{N}' ]+/gu, ' ').replace(/\s+/g, ' ').trim();
+    const reG = new RegExp(needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/ /g, '\\s*'), 'gi');
     const dOut = [];
     let dTotal = 0;
     for (const d of docs) {
@@ -1842,35 +1867,12 @@
         const a = Math.max(0, m.index - 90), b = Math.min(txt.length, m.index + m[0].length + 110);
         hits.push({ file: part.file, page: i + 1, n, snip: (a ? '…' : '') + txt.slice(a, b) + (b < txt.length ? '…' : '') });
       }));
-      if (hits.length) { dTotal += hits.reduce((s, h) => s + h.n, 0); dOut.push([d, hits]); }
+      if (hits.length) { dTotal += hits.reduce((s2, h) => s2 + h.n, 0); dOut.push([d, hits]); }
     }
     dOut.sort((a, b) => b[1].length - a[1].length);
-    lastSearch = { q, needle, vOut, vTotal, dOut, dTotal };
-    renderSearchResults();
+    return { needle, dOut, dTotal };
   }
-  function renderSearchResults() {
-    const r = lastSearch;
-    if (!r) return;
-    if (tqScope === 'videos' && !r.vOut.length && r.dOut.length) tqScope = 'docs';
-    if (tqScope === 'docs' && !r.dOut.length && r.vOut.length) tqScope = 'videos';
-    const hl = s => esc(s).replace(new RegExp(`(${r.needle.split(' ').map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi'), '<mark>$1</mark>');
-    $('#tq-info').innerHTML = `<div class="seg tq-scope"><button data-scope="videos" class="${tqScope === 'videos' ? 'on' : ''}">Videos ${r.vTotal}</button><button data-scope="docs" class="${tqScope === 'docs' ? 'on' : ''}">Documents ${r.dTotal}</button></div>
-      <div>${tqScope === 'videos' ? (r.vTotal ? `${r.vTotal} matches in ${r.vOut.length} videos` : 'No matches in transcripts') : (r.dTotal ? `${r.dTotal} matches on ${r.dOut.reduce((s, x) => s + x[1].length, 0)} pages in ${r.dOut.length} documents` : 'No matches in documents')}</div>`;
-    if (tqScope === 'videos') {
-      $('#vid-list').innerHTML = r.vOut.map(([v, hits]) => `<div class="hit-video" data-open-video="${v.id}" style="cursor:pointer">${esc(v.name)}<span>${hits.length}</span></div>` +
-        hits.slice(0, 40).map(([t, s]) => `<div class="hit" data-play="${v.id}@${t}"><button class="ts">${fmtT(t)}</button><span>${hl(s)}</span></div>`).join('') +
-        (hits.length > 40 ? `<div class="small muted" style="padding:2px 8px 6px">+${hits.length - 40} more — open the video and search its transcript</div>` : '')).join('');
-    } else {
-      $('#vid-list').innerHTML = r.dOut.map(([d, hits]) => `<div class="hit-video" data-goto="${d.id}" style="cursor:pointer" title="Open the file card">${esc(d.name)}<span>${hits.length} p.</span></div>` +
-        hits.slice(0, 30).map(h => `<a class="hit doc-hit" href="${esc(fileUrl(h.file))}#page=${h.page}" target="_blank" title="Open the PDF at page ${h.page}"><span class="ts">p.${h.page}</span><span>${hl(h.snip)}${h.n > 1 ? ` <span class="muted">(${h.n}×)</span>` : ''}</span></a>`).join('') +
-        (hits.length > 30 ? `<div class="small muted" style="padding:2px 8px 6px">+${hits.length - 30} more pages</div>` : '')).join('');
-    }
-  }
-  $('#tq-info').addEventListener('click', e => {
-    const b = e.target.closest('[data-scope]'); if (!b) return;
-    tqScope = b.dataset.scope; store.set('tqScope', tqScope);
-    renderSearchResults();
-  });
+
 
   let yt = null, ytReady = null, ytPending = null, ytReadyFlag = false, syncTimer = null, curTab = 'moments';
   const playYT = ({ id, t, autoplay }) => (autoplay ? yt.loadVideoById({ videoId: id, startSeconds: t }) : yt.cueVideoById({ videoId: id, startSeconds: t }));
@@ -1917,6 +1919,7 @@
     setHash({ replace });
     $('#player-empty').hidden = true;
     $('#vid-browse').hidden = true; $('#player-col').hidden = false;
+    vsShowFilters = false; renderVidSide(); // the side panel becomes the playlist
     $('#player-wrap').classList.remove('x-embed');
     $$('.vl-item').forEach(el => el.classList.toggle('on', el.dataset.openVideo === id));
     // show title, moments and transcript at once; the YouTube player loads in parallel
@@ -2467,7 +2470,7 @@
     const res = searchEntities(e.target.value, 8);
     const dd = $('#hq-dd');
     dd.innerHTML = res.map(x => `<div ${ddTyped(x)} data-hq="${x.id}"><div><div class="t">${esc(x.name)} ${ddType(x)}</div><div class="s">${esc(subtitle(x))}</div></div></div>`).join('')
-      + (e.target.value.trim() ? `<div class="dd-sep"></div><div class="dd-item" data-hq-t="1"><span>🔎</span><div><div class="t">Search transcripts and documents for “${esc(e.target.value)}”</div></div></div>` : '');
+      + (e.target.value.trim() ? `<div class="dd-sep"></div><div class="dd-item" data-hq-t="1"><span>🔎</span><div><div class="t">Search video transcripts for “${esc(e.target.value)}”</div></div></div>` : '');
     dd.hidden = !e.target.value.trim();
   });
   $('#view-home').addEventListener('keydown', e => {
@@ -2477,7 +2480,7 @@
     const it = e.target.closest('[data-hq]');
     const tq = e.target.closest('[data-hq-t]');
     if (it) { e.preventDefault(); exploreFrom(it.dataset.hq); } // a home search starts a clean trail
-    if (tq) { e.preventDefault(); $('#tq').value = $('#hq').value; go('videos'); runTranscriptSearch(); }
+    if (tq) { e.preventDefault(); searchVideosFor($('#hq').value); }
   });
 
   // Leaving the app for the landing page: stop media and free the heavy views (rebuilt on return)
@@ -2513,7 +2516,24 @@
     return 'interview';
   }
   const VKINDS = [['all', 'All'], ['congress', 'Congress hearings'], ['citizen', 'Citizen Hearing'], ['conference', 'Conferences'], ['interview', 'Interviews & podcasts'], ['news', 'News'], ['archive', 'Archive & official footage']]; // trailers show under All and on their film's card
-  let vbKind = 'all', vbQ = '';
+  // side-panel filters (VKINDS without All), decades, speakers, "has moments"; the search box (#tq) matches titles,
+  // people and cases and, from two letters, the transcripts
+  const VKIND_KEYS = VKINDS.map(([k]) => k).filter(k => k !== 'all');
+  const decadeOf = v => (v.y0 ? `${Math.floor(v.y0 / 10) * 10}s` : 'undated');
+  let vbKinds = new Set(VKIND_KEYS), vbDecades = null, vbPeople = new Set(), vbMoments = false, vsShowFilters = false;
+  const vbBase = () => videos.filter(v => !(state.credibleOnly && v.cred === 'outside'));
+  const vbDecadeKeys = () => { const ks = [...new Set(vbBase().map(decadeOf))].sort((a, b) => (a === 'undated') - (b === 'undated') || b.localeCompare(a)); vbDecades ??= new Set(ks); return ks; };
+  const vbQuery = () => ($('#tq')?.value || '').trim().toLowerCase();
+  // a video passes every filter except the one named in `skip` (for faceted counts); trailers count as passing
+  // the category filter only when every category is on (they show under All, as before)
+  const vbPass = (v, skip) => (skip === 'kind' || (vbKinds.size === VKIND_KEYS.length ? true : vbKinds.has(vidKind(v))))
+    && (skip === 'dec' || vbDecades.has(decadeOf(v)))
+    && (skip === 'ppl' || !vbPeople.size || vidPeople(v).some(id => vbPeople.has(id)))
+    && (!vbMoments || v.moments?.length)
+    && (skip === 'q' || !vbQuery() || vbQuery().split(/\s+/).every(w => vbText(v).includes(w)));
+  const vbSort = (a, b) => (a.series && a.series === b.series && a.part != null && b.part != null ? b.part - a.part : 0) || String(b.date || '').localeCompare(String(a.date || ''));
+  const vbFilterCount = () => (vbKinds.size < VKIND_KEYS.length) + (vbDecades && vbDecades.size < vbDecadeKeys().length) + (vbPeople.size > 0) + vbMoments;
+  const vbFiltered = () => { vbDecadeKeys(); return vbBase().filter(v => vbPass(v)).sort(vbSort); };
   const vidPeople = v => [...new Set([...(v.moments || []).map(m => m.speaker), ...adj.get(v.id).filter(x => x.dir === 'out' && x.label === 'features').map(x => x.other)].filter(id => byId.get(id)?.type === 'person'))];
   // the filter box also matches the people tied to a video (speakers, features, any link), not just its own text
   const vbTextCache = new Map();
@@ -2535,41 +2555,102 @@
     try { yt?.pauseVideo?.(); } catch { /* not ready */ }
     $('#local-video').pause?.();
     renderBrowse();
+    renderVidSide();
   }
   function renderBrowse() {
-    const base = videos.filter(v => !(state.credibleOnly && v.cred === 'outside'));
-    const q = vbQ.trim().toLowerCase();
-    let list = base.filter(v => (vbKind === 'all' || vidKind(v) === vbKind) && (!q || q.split(/\s+/).every(w => vbText(v).includes(w))));
-    // newest first; sessions of one recording go by session number, last first (the 2013 Citizen Hearing is mostly dated by year only)
-    list.sort((a, b) => (a.series && a.series === b.series && a.part != null && b.part != null ? b.part - a.part : 0) || String(b.date || '').localeCompare(String(a.date || '')));
-    const counts = Object.fromEntries(VKINDS.map(([k]) => [k, k === 'all' ? base.length : base.filter(v => vidKind(v) === k).length]));
+    const base = vbBase(), q = vbQuery();
+    vbDecadeKeys();
+    let list = base.filter(v => vbPass(v)).sort(vbSort);
     // “Start here”: hand-picked (top_pick: 1, 2… in the video's frontmatter), plus the recording of the latest
-    // congressional hearing, so a new hearing shows up without editing the list; at most eight (two rows)
+    // congressional hearing, so a new hearing shows up without editing the list; at most eight (two rows).
+    // Shown only when no filter or search is on.
     const picks = base.filter(v => v.topPick != null).sort((a, b) => a.topPick - b.topPick);
     const latestHearing = ents.filter(e => e.type === 'hearing' && !/citizen/i.test(e.id) && e.date)
       .sort((a, b) => String(b.date).localeCompare(String(a.date)))
       .map(h => base.find(v => adj.get(v.id).some(x => x.dir === 'out' && x.label === 'recording of' && x.other === h.id))).find(Boolean);
     if (latestHearing && !picks.includes(latestHearing)) picks.splice(Math.min(2, picks.length), 0, latestHearing);
     const featured = picks.slice(0, 8);
-    const showFeatured = vbKind === 'all' && !q && featured.length > 0;
+    const filtering = vbFilterCount() > 0 || !!q;
+    const showFeatured = !filtering && featured.length > 0;
     if (showFeatured) list = list.filter(v => !featured.includes(v)); // listed once, at the top
+    const hits = q.length >= 2 ? transcriptHitsHTML(false) : '';
     $('#vid-browse').innerHTML = `<div class="vb-head"><h2>Videos</h2><p class="muted">Hearings, interviews and archival footage, with synced transcripts and curated moments. ${base.length} videos · ${KB.stats.transcriptHours} hours transcribed.</p>
-      <div class="vb-bar"><input id="vb-q" type="search" placeholder="Filter by title, person, case…" value="${esc(vbQ)}" autocomplete="off"></div>
-      <div class="seg vb-kinds">${VKINDS.map(([k, l]) => `<button data-vkind="${k}" class="${vbKind === k ? 'on' : ''}">${l} ${counts[k]}</button>`).join('')}</div></div>
-      ${showFeatured && featured.length ? `<h3 class="vb-sec">Start here <span class="muted small">top picks and the latest hearing</span></h3><div class="vb-grid">${featured.map(vidCard).join('')}</div>` : ''}
-      <h3 class="vb-sec">${showFeatured ? 'More videos' : `${list.length} video${list.length === 1 ? '' : 's'}`}</h3>
-      <div class="vb-grid">${list.map(vidCard).join('') || '<p class="muted">No videos match.</p>'}</div>`;
+      <button class="btn small only-mobile vb-open-side" data-open-side>Search &amp; filters${filtering ? ` · ${vbFilterCount() + !!q} on` : ''}</button>
+      ${filtering ? `<p class="lt-filtering">${q ? `Matching “${esc($('#tq').value.trim())}”` : 'Filtered'}${vbFilterCount() ? ` · ${vbFilterCount()} filter${vbFilterCount() > 1 ? 's' : ''} on` : ''} <button class="link" data-vb-clear>show everything</button></p>` : ''}</div>
+      ${showFeatured ? `<h3 class="vb-sec">Start here <span class="muted small">top picks and the latest hearing</span></h3><div class="vb-grid">${featured.map(vidCard).join('')}</div>` : ''}
+      <h3 class="vb-sec">${showFeatured ? 'More videos' : `${list.length} video${list.length === 1 ? '' : 's'}${q ? ' by title, person or case' : ''}`}</h3>
+      <div class="vb-grid">${list.map(vidCard).join('') || '<p class="muted">No videos match.</p>'}</div>
+      ${hits ? `<section class="vb-hits">${hits}</section>` : ''}`;
   }
-  $('#vid-browse').addEventListener('input', e => {
-    if (e.target.id !== 'vb-q') return;
-    vbQ = e.target.value;
-    clearTimeout(renderBrowse.t);
-    renderBrowse.t = setTimeout(() => { const pos = e.target.selectionStart; renderBrowse(); const el = $('#vb-q'); el.focus(); el.setSelectionRange(pos, pos); }, 200);
-  });
+  // the transcript matches for the current search, among the videos the side-panel filters let through
+  function transcriptHitsHTML(compact) {
+    const q = vbQuery();
+    if (!lastSearch || lastSearch.q.toLowerCase() !== q) return `<h3 class="vb-sec">In transcripts</h3><p class="muted small">Searching ${KB.stats.transcriptHours} hours of transcripts…</p>`;
+    const ok = new Set(vbBase().filter(v => vbPass(v, 'q')).map(v => v.id));
+    const rows = lastSearch.vOut.filter(([v]) => ok.has(v.id));
+    const total = rows.reduce((n, r) => n + r[1].length, 0);
+    const hl = s => esc(s).replace(new RegExp(`(${lastSearch.needle.split(' ').map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi'), '<mark>$1</mark>');
+    const perVideo = compact ? 3 : 6, videosShown = compact ? 8 : 20;
+    return `<h3 class="vb-sec">In transcripts <span class="muted small">${total ? `${total} passage${total > 1 ? 's' : ''} in ${rows.length} video${rows.length > 1 ? 's' : ''}` : `no matches for “${esc(q)}”`}</span></h3>`
+      + rows.slice(0, videosShown).map(([v, hs]) => `<div class="hit-video" data-open-video="${v.id}" style="cursor:pointer">${esc(v.name)}<span>${hs.length}</span></div>`
+        + hs.slice(0, perVideo).map(([t, sn]) => `<div class="hit" data-play="${v.id}@${t}"><button class="ts">${fmtT(t)}</button><span>${hl(sn)}</span></div>`).join('')
+        + (hs.length > perVideo ? `<div class="small muted hit-more">+${hs.length - perVideo} more in this video: open it and search its transcript</div>` : '')).join('')
+      + (rows.length > videosShown ? `<p class="small muted">+${rows.length - videosShown} more videos</p>` : '');
+  }
+  // the side panel: filters while browsing; while a video plays, the videos the filters and search let through
+  function renderVidSide() {
+    if (state.view !== 'videos') return;
+    const base = vbBase(), decs = vbDecadeKeys(), q = vbQuery();
+    const playing = !!state.video && !vsShowFilters;
+    $('#vs-filters').hidden = playing; $('#vs-playlist').hidden = !playing;
+    const count = (skip, key) => { const m = new Map(); for (const v of base) if (vbPass(v, skip)) { const k = key(v); m.set(k, (m.get(k) || 0) + 1); } return m; };
+    const kN = count('kind', vidKind), dN = count('dec', decadeOf);
+    const kColor = { congress: TYPES.hearing.color, citizen: TYPES.event.color, conference: TYPES.organization.color, interview: TYPES.video.color, news: TYPES.source.color, archive: TYPES.document.color };
+    $('#vs-kinds').innerHTML = facetRows(VKINDS.filter(([k]) => k !== 'all').map(([k, l]) => ({ k, label: l, n: kN.get(k) || 0, color: kColor[k] })), vbKinds);
+    $('#vs-decades').innerHTML = facetRows(decs.map(k => ({ k, label: k === 'undated' ? 'Undated' : k, n: dN.get(k) || 0, color: 'var(--accent)' })), vbDecades);
+    const pN = new Map();
+    for (const v of base) if (vbPass(v, 'ppl')) for (const id of vidPeople(v)) pN.set(id, (pN.get(id) || 0) + 1);
+    const top = [...pN].filter(([, n]) => n > 1).sort((a, b) => b[1] - a[1] || byId.get(a[0]).name.localeCompare(byId.get(b[0]).name)).slice(0, 16).map(x => x[0]);
+    for (const id of vbPeople) if (!top.includes(id)) top.push(id);
+    $('#vs-people').innerHTML = top.map(id => `<button class="chip ${vbPeople.has(id) ? 'on' : ''}" data-vp="${esc(id)}">${esc(byId.get(id).name)}<span class="n">${pN.get(id) || 0}</span></button>`).join('') || '<p class="muted small">No speakers for these filters.</p>';
+    $('#vs-moments').checked = vbMoments;
+    $('#vs-kinds-clear').hidden = vbKinds.size === VKIND_KEYS.length;
+    $('#vs-dec-clear').hidden = vbDecades.size === decs.length;
+    $('#vs-people-clear').hidden = !vbPeople.size;
+    const list = base.filter(v => vbPass(v)).sort(vbSort);
+    $('#tq-info').textContent = q ? `${list.length} video${list.length === 1 ? '' : 's'} by title, person or case${q.length >= 2 && lastSearch?.q.toLowerCase() === q ? ` · ${lastSearch.vTotal} transcript passages` : ''}` : `${base.length} videos · ${KB.stats.transcriptHours} hours transcribed`;
+    if (playing) {
+      const n = vbFilterCount() + !!q;
+      $('#vs-back').textContent = `‹ Filters${n ? ` (${n} on)` : ''}`;
+      $('#vs-pl-info').textContent = `${list.length} video${list.length === 1 ? '' : 's'}`;
+      $('#vid-list').innerHTML = (list.map(v => `<div class="vl-item ${state.video === v.id ? 'on' : ''}" data-open-video="${v.id}">
+        <img src="${vthumb(v)}" alt="" loading="lazy"><div><div class="t">${esc(v.name)}</div><div class="s">${esc([v.channel, fmtD(v.date), fmtDur(v.duration)].filter(Boolean).join(' · '))}</div></div></div>`).join('') || '<p class="muted small" style="padding:8px">No videos match.</p>')
+        + (q.length >= 2 ? `<div class="vs-hits">${transcriptHitsHTML(true)}</div>` : '');
+    }
+    $('#vs-to-list').hidden = !(state.video && vsShowFilters);
+  }
+  const vbChanged = () => { renderVidSide(); if (!state.video) renderBrowse(); clearTimeout(vbChanged.t); vbChanged.t = setTimeout(() => track('filter_change', { view: 'videos', kinds: [...vbKinds].sort().join(','), decades: vbDecades.size, people: [...vbPeople].join(','), moments: vbMoments }), 1500); };
+  bindFacet($('#vs-kinds'), () => ({ sel: vbKinds, all: VKIND_KEYS }), sel => { vbKinds = sel; vbChanged(); });
+  bindFacet($('#vs-decades'), () => ({ sel: vbDecades, all: vbDecadeKeys() }), sel => { vbDecades = sel; vbChanged(); });
+  $('#vs-people').addEventListener('click', e => { const c = e.target.closest('[data-vp]'); if (!c) return; const id = c.dataset.vp; vbPeople.has(id) ? vbPeople.delete(id) : vbPeople.add(id); vbChanged(); });
+  $('#vs-moments').addEventListener('change', e => { vbMoments = e.target.checked; vbChanged(); });
+  $('#vs-kinds-clear').addEventListener('click', () => { vbKinds = new Set(VKIND_KEYS); vbChanged(); });
+  $('#vs-dec-clear').addEventListener('click', () => { vbDecades = new Set(vbDecadeKeys()); vbChanged(); });
+  $('#vs-people-clear').addEventListener('click', () => { vbPeople.clear(); vbChanged(); });
+  $('#vs-back').addEventListener('click', () => { vsShowFilters = true; renderVidSide(); });
+  $('#vs-to-list-btn').addEventListener('click', () => { vsShowFilters = false; renderVidSide(); });
+  const vbClearAll = () => { vbKinds = new Set(VKIND_KEYS); vbDecades = new Set(vbDecadeKeys()); vbPeople.clear(); vbMoments = false; $('#tq').value = ''; lastSearch = null; vbChanged(); };
   $('#vid-browse').addEventListener('click', e => {
-    const k = e.target.closest('[data-vkind]'); if (k) { vbKind = k.dataset.vkind; renderBrowse(); return; }
+    if (e.target.closest('[data-vb-clear]')) { vbClearAll(); return; }
+    if (e.target.closest('[data-open-side]')) { $('#side').classList.add('open'); return; }
     const c = e.target.closest('[data-open-video]'); if (c) openVideo(c.dataset.openVideo, 0, false);
   });
+  function searchVideosFor(q) {
+    $('#tq').value = q;
+    go('videos');
+    if (state.video) closeVideo(); else { renderVidSide(); renderBrowse(); }
+    runTranscriptSearch();
+  }
   function closeVideo() {
     state.video = null;
     $$('.vl-item').forEach(el => el.classList.remove('on'));
@@ -2752,7 +2833,7 @@
     else if (state.view === 'latest') renderLatest();
     else if (state.view === 'home') renderHome();
     else if (state.view === 'videos') {
-      renderVideoList();
+      renderVidSide();
       if (!state.video) showBrowse();
     }
     if (filtersChangedFlag && cy && state.view !== 'graph') applyGraphFilter();
@@ -2830,7 +2911,7 @@
     const side = $('#side');
     if (!side.classList.contains('open')) return;
     const path = e.composedPath();
-    if (!path.includes(side) && !path.includes($('#btn-side'))) side.classList.remove('open');
+    if (!path.includes(side) && !path.includes($('#btn-side')) && !path.some(n => n.dataset?.openSide !== undefined)) side.classList.remove('open'); // in-page "Filters" buttons open it too
   });
 
   // theme

@@ -49,7 +49,7 @@
       <span class="brand-text"><b>WHERE ARE THEY</b><small>UAP · NHI CASE ARCHIVE</small></span>
     </a>
     <div class="search">
-      <input id="q" type="search" placeholder="Search people, programs, incidents…  ( / )" autocomplete="off" spellcheck="false">
+      <input id="q" type="search" placeholder="Search people, cases, documents…  ( / )" autocomplete="off" spellcheck="false">
       <div id="q-results" class="dropdown" hidden></div>
     </div>
     <nav class="views" id="views">
@@ -135,10 +135,32 @@
       </div>
       <div id="vid-side" hidden>
         <div class="vs-search">
-          <input id="tq" type="search" placeholder="Search transcripts and documents…" autocomplete="off" spellcheck="false">
+          <input id="tq" type="search" placeholder="Search videos &amp; transcripts…" autocomplete="off" spellcheck="false" aria-label="Search videos and transcripts">
           <div class="muted small" id="tq-info"></div>
         </div>
-        <div id="vid-list" class="vid-list"></div>
+        <div id="vs-filters">
+          <div class="vs-to-list" id="vs-to-list" hidden><button class="link" id="vs-to-list-btn">Back to the playlist ›</button></div>
+          <section class="f-block">
+            <h4>Category <button class="link" id="vs-kinds-clear" hidden title="Show every category again">clear</button></h4>
+            <div id="vs-kinds" class="f-types"></div>
+            <div class="f-hint"><span class="hint-mouse">Click to toggle · double-click to show only one</span><span class="hint-touch">Tap to toggle · hold to show only one</span></div>
+          </section>
+          <section class="f-block">
+            <h4>Decade <button class="link" id="vs-dec-clear" hidden title="Show every decade again">clear</button></h4>
+            <div id="vs-decades" class="f-types"></div>
+          </section>
+          <section class="f-block">
+            <h4>Speakers <button class="link" id="vs-people-clear" hidden>clear</button></h4>
+            <div id="vs-people" class="chips"></div>
+          </section>
+          <section class="f-block">
+            <label class="check" style="margin:0"><input type="checkbox" id="vs-moments"> Only videos with curated moments</label>
+          </section>
+        </div>
+        <div id="vs-playlist" hidden>
+          <div class="vs-pl-head"><button class="link" id="vs-back">‹ Filters</button><span class="muted small" id="vs-pl-info"></span></div>
+          <div id="vid-list" class="vid-list"></div>
+        </div>
       </div>
     </aside>
 
