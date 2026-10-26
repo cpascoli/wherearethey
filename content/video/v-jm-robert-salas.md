@@ -29,7 +29,7 @@ moments:
     speaker: bob-salas
     refs: [ inc-malmstrom-1967, doc-341smw-history-1967 ]
   - t: "36:37"
-    text: "Salas calls the Condon study a whitewash, citing Robert Low's memo, and says Low wrote that the Air Force's Col. Robert Hippler told him the service thought EMP from nuclear testing caused the shutdowns."
+    text: "Salas calls the Condon study, whose report ended Project Blue Book, a whitewash, citing Robert Low's memo, and says Low wrote that the Air Force's Col. Robert Hippler told him the service thought EMP from nuclear testing caused the shutdowns."
     speaker: bob-salas
     refs: [ inc-malmstrom-1967, project-blue-book ]
   - t: "39:19"

@@ -7,11 +7,11 @@ rel:
   - [ about, project-blue-book ]
 moments:
   - t: "0:18"
-    text: "Hynek: “None of the evidence that I have examined would indicate any proof at all that we are being visited by extraterrestrials.”"
+    text: "Hynek, Project Blue Book's scientific consultant: “None of the evidence that I have examined would indicate any proof at all that we are being visited by extraterrestrials.”"
     speaker: j-allen-hynek
     refs: [ project-blue-book ]
   - t: "0:30"
-    text: "Brown, asked what the Air Force is hiding: “We have not been hiding anything; the investigations have been made public.”"
+    text: "Air Force Secretary Harold Brown, asked what the Air Force is hiding in its UFO investigations (Project Blue Book): “We have not been hiding anything; the investigations have been made public.”"
     speaker: harold-brown
     refs: [ project-blue-book ]
 ---

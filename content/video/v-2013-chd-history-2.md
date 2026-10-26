@@ -14,7 +14,6 @@ moments:
   - t: "3:22"
     text: "Historian Richard Dolan: most UFO documents now public came out by the accident of a strengthened Freedom of Information Act; in the late 1970s “over 10 000 pages of documents relating to ufos were released”, until a 1982 order made FOIA harder to use."
     speaker: richard-dolan
-    refs: [ project-blue-book ]
   - t: "6:25"
     text: "Dolan reads the CIA's chief of scientific intelligence, H. Marshall Chadwell, in December 1952: the reports “convince us that there is something going on that must have immediate attention”, objects near major defence installations not attributable to natural phenomena or known aircraft."
     speaker: richard-dolan
