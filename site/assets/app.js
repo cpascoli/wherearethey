@@ -2182,7 +2182,7 @@
           <p class="hero-qualifier">All that we know so far.</p>
           <p class="hero-lede">An open, sourced archive of what officials, pilots, radar operators, intelligence officers and scientists have said <em>on the record</em> about unidentified anomalous phenomena and non-human intelligence.</p>
           <div class="hero-search">
-            <input id="hq" type="search" placeholder="Search a name, program or incident: Grusch, AAWSAP, Malmstrom…" autocomplete="off" spellcheck="false">
+            <input id="hq" type="search" placeholder="Search a person, program or case: Grusch, AARO, Tic Tac, Roswell…" autocomplete="off" spellcheck="false">
             <div id="hq-dd" class="dropdown" hidden></div>
           </div>
           <div class="hero-cta">
