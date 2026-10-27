@@ -470,6 +470,9 @@ body.is-home #btn-side { display: none; } /* no side panel on the landing page *
 .hero:has(.hero-search .dropdown:not([hidden])) { overflow: visible; z-index: 4; }
 .hero:has(.hero-search .dropdown:not([hidden])) .hero-scroll { display: none; }
 .hero-search input { scroll-margin-top: 12px; }
+/* landing page: one search box at a time. The header's hides while the hero's is on screen (body.hero-q) */
+.top .search { transition: opacity .15s; }
+body.hero-q .top .search { opacity: 0; visibility: hidden; }
 .hero-cta { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
 .hero-cta .btn { padding: 10px 18px; font-size: 14px; text-decoration: none; }
 .hero-scroll { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); color: var(--muted); font-family: var(--mono); z-index: 1; animation: bob 2.6s ease-in-out infinite; }
@@ -524,6 +527,10 @@ body.is-home #btn-side { display: none; } /* no side panel on the landing page *
 @media (max-width: 860px) {
   .hero::after { background: linear-gradient(180deg, color-mix(in srgb, var(--bg) 55%, transparent), var(--bg) 92%); }
   .hero-inner, .home-wrap { padding-left: 16px; padding-right: 16px; }
+  /* phones: the hero starts just below the header instead of being centred in a tall box */
+  .hero { min-height: 0; align-items: flex-start; }
+  .hero-inner { padding-top: 28px; padding-bottom: 40px; }
+  .hero-scroll { display: none; }
   .paths, .ways { grid-template-columns: 1fr; }
   .latest-item { grid-template-columns: 1fr; gap: 2px; }
   .home-stats { grid-template-columns: 1fr 1fr; }

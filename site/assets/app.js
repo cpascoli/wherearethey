@@ -1285,12 +1285,11 @@
   });
   // document full text, shown in the top dropdown: the matching pages of each document, each opening the PDF there.
   // Rendered on the next frame, so the click that asked for it is not taken as a click outside the search box.
-  async function showDocResults(q) {
-    const dd = $('#q-results');
+  async function showDocResults(q, dd = $('#q-results'), input = '#q') {
     requestAnimationFrame(() => { dd.innerHTML = `<div class="dd-head">Searching ${KB.stats.documents} documents for “${esc(q)}”…</div>`; dd.hidden = false; });
     trackSearch(q, 'documents');
     const r = await searchDocuments(q);
-    if ($('#q').value.trim() !== q.trim()) return;
+    if ($(input).value.trim() !== q.trim()) return;
     const hl = t => esc(t).replace(new RegExp(`(${r.needle.split(' ').filter(Boolean).map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi'), '<mark>$1</mark>');
     const pages = r.dOut.reduce((n, x) => n + x[1].length, 0);
     requestAnimationFrame(() => {
@@ -2472,7 +2471,8 @@
     const res = searchEntities(e.target.value, 8);
     const dd = $('#hq-dd');
     dd.innerHTML = res.map(x => `<div ${ddTyped(x)} data-hq="${x.id}"><div><div class="t">${esc(x.name)} ${ddType(x)}</div><div class="s">${esc(subtitle(x))}</div></div></div>`).join('')
-      + (e.target.value.trim() ? `<div class="dd-sep"></div><div class="dd-item" data-hq-t="1"><span>🔎</span><div><div class="t">Search video transcripts for “${esc(e.target.value)}”</div></div></div>` : '');
+      + (e.target.value.trim() ? `<div class="dd-sep"></div><div class="dd-item" data-hq-d="1"><span>📄</span><div><div class="t">Search inside documents for “${esc(e.target.value)}”</div><div class="s">${KB.stats.documents} documents · ${KB.stats.documentPages.toLocaleString('en-US')} pages, opened at the page</div></div></div>`
+        + `<div class="dd-item" data-hq-t="1"><span>🎥</span><div><div class="t">Search video transcripts for “${esc(e.target.value)}”</div><div class="s">${KB.stats.transcripts} videos · ${KB.stats.transcriptHours} h of speech, on the Videos page</div></div></div>` : '');
     dd.hidden = !e.target.value.trim();
     // phones: bring the search box to the top of the screen so the results have room above the bottom menu
     // (after the keystroke: the browser's own keep-the-caret-visible scroll would cancel a smooth scroll started now)
@@ -2489,7 +2489,18 @@
     const tq = e.target.closest('[data-hq-t]');
     if (it) { e.preventDefault(); exploreFrom(it.dataset.hq); } // a home search starts a clean trail
     if (tq) { e.preventDefault(); searchVideosFor($('#hq').value); }
+    if (e.target.closest('[data-hq-d]')) { e.preventDefault(); showDocResults($('#hq').value, $('#hq-dd'), '#hq'); }
+    if (e.target.closest('#hq-dd [data-dd-back]')) { e.preventDefault(); requestAnimationFrame(() => $('#hq').dispatchEvent(new Event('input', { bubbles: true }))); }
   });
+  // the header search hides on the landing page while the hero's own search box is on screen, and returns once
+  // it scrolls out of view (one search box at a time)
+  function heroSearchInView() {
+    const box = state.view === 'home' && $('#view-home .hero-search');
+    const r = box && box.getBoundingClientRect();
+    document.body.classList.toggle('hero-q', !!r && r.bottom > $('.top').getBoundingClientRect().bottom && r.top < innerHeight);
+  }
+  $('#view-home').addEventListener('scroll', heroSearchInView, { passive: true });
+  addEventListener('resize', heroSearchInView);
 
   // Leaving the app for the landing page: stop media and free the heavy views (rebuilt on return)
   function teardownApp() {
@@ -2826,6 +2837,7 @@
     if (!keepSel) select(null);
     setHash(); // push the new view's history entry first, so views that adjust it (e.g. default video) replace their own entry
     refreshView(false);
+    requestAnimationFrame(heroSearchInView); // the header search hides behind the landing page's own
   }
   function refreshView(filtersChangedFlag) {
     if (state.view === 'graph') {
