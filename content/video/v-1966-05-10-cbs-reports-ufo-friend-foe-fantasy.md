@@ -11,6 +11,8 @@ rel:
 moments:
   - t: "3:00"
     text: "Cronkite: the flying-saucer mystery of 1966 “began here, near Dexter, Michigan, late in March”. Farmer Frank Mannor describes a red light that came down, stopped at the top of the trees and showed a blue and a white light; the narration says it stayed over his swamp more than four hours, seen by his family, neighbours and the police, and no one photographed it."
+  - t: "4:24"
+    text: "Sgt. Newell Schneider of the sheriff's office, who saw the Dexter object and drew it for CBS: “it moved very rapidly at any speed or rather any direction it wanted to go… it could change and go to the right or the left or go crossways without hesitating a bit.”"
   - t: "6:44"
     text: "Hynek, sent by the Air Force as its chief scientific consultant on UFOs, explains the Michigan sightings as marsh gas: lights that appear and go out in different places give “the illusion of motion”."
     speaker: j-allen-hynek
@@ -27,6 +29,10 @@ moments:
     basis: first-hand
   - t: "9:25"
     text: "Mannor, after weeks of ridicule, with beer bottles thrown at his house: he is sorry he reported what he saw, and if one landed by his pump “I'd never say a word… I'm bitter and disgusted in the whole matter.”"
+  - t: "15:55"
+    text: "Aviation historian Charles Gibbs-Smith, at the Victoria and Albert Museum: “I believe that about 5% of these things are interplanetary… and that some of them are, in fact, inhabited by intelligent beings of some kind.”"
+  - t: "17:12"
+    text: "Gibbs-Smith on the Oldfield film, shot by a couple on their first airliner flight near Manchester: “It is nothing airborne we have ever seen”, moved by “electro-gravitic force of some kind that we know nothing whatever about.” CBS reports that a BBC cameraman then sat in the same seat with a similar camera and filmed the same “UFO”: “the reflection of the tail section of the plane itself.”"
   - t: "27:59"
     text: "Keyhoe: Air Force spokesmen “are simply following orders to explain away all UFO sightings as quickly as possible when they become public and deny that UFOs really exist.”"
     speaker: donald-keyhoe
@@ -60,6 +66,8 @@ moments:
   - t: "46:59"
     text: "Sagan: rare visits are “not implausible”, but several spaceships a day is “straining credulity”; the contact stories describe benevolent, all-powerful beings in white robes: “This isn't science. This is religion.”"
     speaker: carl-sagan
+  - t: "49:24"
+    text: "Cronkite's conclusion: scientists find no evidence that anything out there has come here, and “you could not keep a spaceship a secret. Too many professionals with too many powerful instruments are probing the skies these days.”"
 ---
 
 The CBS Reports hour on the 1966 UFO wave, reported by Walter Cronkite and first broadcast on 10 May 1966, five weeks after the House Armed Services hearing. It follows the March sightings in Michigan, Hynek's swamp-gas explanation and the ridicule of the witnesses, NICAP's charge of an Air Force cover-up, the Air Force's denials, the radar and camera networks that would have seen a spacecraft, and astronomers Carl Sagan and Thornton Page on the scientific case. It concludes that scientists find no evidence anything has come here.
