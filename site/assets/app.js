@@ -223,7 +223,7 @@
     renderHist();
     $('#f-mentions').checked = state.showMentions;
     const s = KB.stats;
-    $('#f-stats').innerHTML = `<b>${s.entities}</b> entries · <b>${s.edges}</b> links<br><b>${s.transcripts}</b> transcripts · <b>${s.transcriptHours}</b> hours · <b>${s.mentions.toLocaleString()}</b> mentions<br>Built ${new Date(KB.built).toLocaleString()}<div class="side-links">© ${new Date().getFullYear()} Carlo Pascoli · <a href="/about">About</a> · <a href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener">GitHub</a> · <a href="/privacy">Privacy</a>${window.GA_ID ? ' · <a href="#" data-open-consent>Cookies</a>' : ''}</div>` +
+    $('#f-stats').innerHTML = `<b>${s.entities}</b> entries · <b>${s.edges}</b> links<br><b>${s.transcripts}</b> transcripts · <b>${s.transcriptHours}</b> hours · <b>${s.mentions.toLocaleString()}</b> mentions<br>Built ${new Date(KB.built).toLocaleString()}<div class="side-links">© ${new Date().getFullYear()} Carlo Pascoli · <a href="/about">About</a> · <a href="https://x.com/WhereAreTheyUAP" target="_blank" rel="noopener" data-social="x" data-placement="side-footer">X</a> · <a href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener" data-social="github" data-placement="side-footer">GitHub</a> · <a href="/privacy">Privacy &amp; cookies</a></div>` +
       (KB.warnings.length ? `<details><summary>${KB.warnings.length} build warning${KB.warnings.length > 1 ? 's' : ''}</summary><ul>${KB.warnings.map(w => `<li>${esc(w)}</li>`).join('')}</ul></details>` : '');
   }
   function renderHist() {
@@ -2240,7 +2240,7 @@
         <footer class="home-foot">
           <div><b>WHERE ARE THEY</b> is a personal research archive. It collects public, on-record statements and official documents. It does not make claims of its own: every statement is attributed, and every status can be checked against its source.</div>
           <div class="muted">Built ${new Date(KB.built).toLocaleDateString()} · ${KB.stats.entities} files · ${KB.stats.edges.toLocaleString()} links · sources include congressional records, war.gov/UFO (PURSUE), the CIA and FBI reading rooms, NARA and The Black Vault.</div>
-          <div class="home-links">© ${new Date().getFullYear()} Carlo Pascoli · <a href="/about">About</a> · <a href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener">GitHub</a> · <a href="/privacy">Privacy &amp; cookies</a>${window.GA_ID ? ' · <a href="#" data-open-consent>Cookie settings</a>' : ''}</div>
+          <div class="home-links">© ${new Date().getFullYear()} Carlo Pascoli · <a href="/about">About</a> · <a class="foot-social" href="https://x.com/WhereAreTheyUAP" target="_blank" rel="noopener" data-social="x" data-placement="home-footer"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> @WhereAreTheyUAP</a> · <a class="foot-social" href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener" data-social="github" data-placement="home-footer"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg> GitHub</a> · <a href="/privacy">Privacy &amp; cookies</a></div>
         </footer>
       </div>`;
     startHero();
@@ -2740,6 +2740,8 @@
     const a = t.closest('a[href]'); if (!a) return;
     const href = a.getAttribute('href') || '';
     let url; try { url = new URL(a.href); } catch { return; }
+    // our X and GitHub links: which network, and where on the page (header, more-menu, home-footer, side-footer)
+    if (a.dataset.social) { track('social_click', { network: a.dataset.social, placement: a.dataset.placement || clickCtx || state.view }); return; }
     if (/\.pdf(#|$)/i.test(href)) track('file_open', { file_name: url.pathname.split('/').pop(), page: (href.match(/#page=(\d+)/) || [])[1], context: clickCtx || state.view });
     else if (/^https?:$/.test(url.protocol) && url.host !== location.host) track('link_out', { link_domain: url.host.replace(/^www\./, ''), link_url: a.href, context: clickCtx || state.view });
   }, true);

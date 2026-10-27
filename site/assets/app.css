@@ -775,6 +775,12 @@ body.resizing iframe { pointer-events: none; }
 .more-menu a:hover { background: var(--panel-2); text-decoration: none; }
 .more-menu a small { color: var(--muted); font-size: 12px; }
 .more-menu .mm-sep { height: 1px; background: var(--border); margin: 6px 4px; }
+.more-menu .mm-social { grid-template-columns: 22px 1fr; column-gap: 8px; align-items: center; }
+.more-menu .mm-social .mm-ic { grid-row: span 2; display: flex; color: var(--text); }
+.more-menu .mm-social b, .more-menu .mm-social small { grid-column: 2; }
+.social-btn { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+.social-btn:hover { color: var(--text); text-decoration: none; }
+.foot-social { display: inline-flex; align-items: center; gap: 5px; vertical-align: -2px; }
 @media (min-width: 861px) { .more-menu .mm-about { display: none; } } /* desktop shows About in the top bar */
 /* the bottom tab bar holds five: Latest, Explore, World, Videos, More (Timeline moves into More); desktop keeps Timeline as a tab */
 @media (min-width: 861px) { .more-menu .mm-narrow { display: none; } }
