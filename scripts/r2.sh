@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-# Sync heavy library files (PDFs, images, video, HTML copies of public-domain books) with Cloudflare R2 via rclone.
+# Sync heavy library files (PDFs, images, video, HTML copies of public-domain books) with Cloudflare R2 via rclone,
+# plus the media files of the videos we stream ourselves: only the files named by a video entry's `stream:` and
+# `thumb:` lines (content/video/*.md). Every other file in media/ stays local.
 #
 #   npm run r2:push     upload new/changed files to R2 (never deletes anything remotely)
 #   npm run r2:pull     download everything from R2 into library/ (e.g. on a new machine)
@@ -18,9 +20,20 @@ if ! rclone listremotes | grep -qx "${REMOTE}:"; then
   exit 1
 fi
 
+# the self-hosted video files, one path per line (e.g. media/navair-gimbal/video.mp4)
+HOSTED="$(mktemp)"; trap 'rm -f "$HOSTED"' EXIT
+grep -h -E '^(stream|thumb): *media/' content/video/*.md | sed -E 's/^(stream|thumb): *//; s/[[:space:]]+#.*$//; s/[[:space:]]*$//' | sort -u > "$HOSTED"
+missing=0
+while IFS= read -r f; do [ -f "$f" ] || { echo "missing locally: $f (named by a video entry's stream:/thumb:)" >&2; missing=1; }; done < "$HOSTED"
+
 case "${1:-}" in
-  push)  rclone copy library "${REMOTE}:${BUCKET}/library" "${FILTERS[@]}" --progress --transfers 8 --s3-no-check-bucket ;;
-  pull)  rclone copy "${REMOTE}:${BUCKET}/library" library "${FILTERS[@]}" --progress --transfers 8 ;;
-  check) rclone check library "${REMOTE}:${BUCKET}/library" "${FILTERS[@]}" --size-only --one-way ;;
+  push)  rclone copy library "${REMOTE}:${BUCKET}/library" "${FILTERS[@]}" --progress --transfers 8 --s3-no-check-bucket
+         [ "$missing" = 0 ] || { echo "not pushing media until the missing files above are restored" >&2; exit 1; }
+         echo "self-hosted video files: $(wc -l < "$HOSTED" | tr -d ' ')"
+         rclone copy . "${REMOTE}:${BUCKET}" --files-from "$HOSTED" --progress --transfers 4 --s3-no-check-bucket ;;
+  pull)  rclone copy "${REMOTE}:${BUCKET}/library" library "${FILTERS[@]}" --progress --transfers 8
+         rclone copy "${REMOTE}:${BUCKET}" . --files-from "$HOSTED" --progress --transfers 4 ;;
+  check) rclone check library "${REMOTE}:${BUCKET}/library" "${FILTERS[@]}" --size-only --one-way
+         rclone check . "${REMOTE}:${BUCKET}" --files-from "$HOSTED" --size-only --one-way ;;
   *) echo "usage: scripts/r2.sh push|pull|check" >&2; exit 1 ;;
 esac
