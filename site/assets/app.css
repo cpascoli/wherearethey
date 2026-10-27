@@ -465,6 +465,11 @@ body.is-home #btn-side { display: none; } /* no side panel on the landing page *
   background: color-mix(in srgb, var(--panel) 92%, transparent); outline: none; backdrop-filter: blur(4px); }
 .hero-search input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
 .hero-search .dropdown { top: 56px; z-index: 5; }
+/* the hero clips its dotted background (overflow: hidden); while the search results are open it lets them overlay
+   the sections below */
+.hero:has(.hero-search .dropdown:not([hidden])) { overflow: visible; z-index: 4; }
+.hero:has(.hero-search .dropdown:not([hidden])) .hero-scroll { display: none; }
+.hero-search input { scroll-margin-top: 12px; }
 .hero-cta { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
 .hero-cta .btn { padding: 10px 18px; font-size: 14px; text-decoration: none; }
 .hero-scroll { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); color: var(--muted); font-family: var(--mono); z-index: 1; animation: bob 2.6s ease-in-out infinite; }

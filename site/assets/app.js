@@ -1241,7 +1241,9 @@
       const name = e.name.toLowerCase(), aka = e.aka.join(' ').toLowerCase(), txt = searchText(e);
       if (!words.every(w => txt.includes(w))) continue;
       let s = 0;
-      if (name === q) s += 200; if (name.startsWith(q)) s += 100; if (name.includes(q)) s += 60; if (aka.includes(q)) s += 45;
+      // an exact alias (an acronym such as AAWSAP) ranks almost like the exact name
+      if (name === q) s += 200; else if (e.aka.some(a => a.toLowerCase() === q)) s += 190;
+      if (name.startsWith(q)) s += 100; if (name.includes(q)) s += 60; if (aka.includes(q)) s += 45;
       s += Math.min(20, adj.get(e.id).length);
       if (e.cred === 'outside') s -= 30;
       scored.push([s, e]);
@@ -2472,6 +2474,12 @@
     dd.innerHTML = res.map(x => `<div ${ddTyped(x)} data-hq="${x.id}"><div><div class="t">${esc(x.name)} ${ddType(x)}</div><div class="s">${esc(subtitle(x))}</div></div></div>`).join('')
       + (e.target.value.trim() ? `<div class="dd-sep"></div><div class="dd-item" data-hq-t="1"><span>🔎</span><div><div class="t">Search video transcripts for “${esc(e.target.value)}”</div></div></div>` : '');
     dd.hidden = !e.target.value.trim();
+    // phones: bring the search box to the top of the screen so the results have room above the bottom menu
+    // (after the keystroke: the browser's own keep-the-caret-visible scroll would cancel a smooth scroll started now)
+    if (!dd.hidden && innerWidth <= 860) setTimeout(() => {
+      const v = $('#view-home'), off = $('#hq').getBoundingClientRect().top - v.getBoundingClientRect().top - 12;
+      if (off > 40) v.scrollTo({ top: v.scrollTop + off, behavior: 'smooth' });
+    }, 80);
   });
   $('#view-home').addEventListener('keydown', e => {
     if (e.target.id === 'hq' && e.key === 'Enter') $('#hq-dd .dd-item')?.click();
