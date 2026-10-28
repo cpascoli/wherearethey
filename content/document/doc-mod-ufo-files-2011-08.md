@@ -46,6 +46,12 @@ rel:
   - [ released in, uk-national-archives, "Opened at The National Archives on 11 August 2011" ]
   - [ prepared by, uk-mod ]
   - [ part of, doc-tna-mod-ufo-files-guides ]
+  - [ about, inc-lakenheath-1956, "DEFE 24/2031, pp. 154–165, 253" ]
+  - [ about, inc-rendlesham-1980, "DEFE 24/2033 and 2034: Lord Hill-Norton's questions" ]
+  - [ about, inc-belgian-wave-1989, "DEFE 31/185, pp. 247–51: De Brouwer's account" ]
+  - [ about, inc-alderney-2007, "DEFE 24/2081, pp. 39–47: the CAA papers" ]
+  - [ about, philip-corso, "DEFE 24/2047, pp. 239–240" ]
+  - [ about, nick-pope, "DEFE 24/1958 and 2033: papers on his book" ]
 ---
 
 The 34 Ministry of Defence UFO files opened at The National Archives on 11 August 2011. Each is a digital copy of an MoD registered file, with the names of members of the public and witnesses redacted. Our copies come from public mirrors of the release (The Black Vault, archive.org) and are OCR'd for search; page numbers are those of the PDFs.

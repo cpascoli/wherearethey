@@ -30,6 +30,9 @@ rel:
   - [ prepared by, uk-mod ]
   - [ part of, doc-tna-mod-ufo-files-guides ]
   - [ includes, doc-mod-defe-24-1931 ]
+  - [ about, inc-calvine-1990, "DEFE 24/1940, pp. 113–116: the MoD papers on the photographs" ]
+  - [ about, inc-alitalia-lydd-1991, "DEFE 24/1955, pp. 89–122" ]
+  - [ about, inc-rendlesham-1980, "DEFE 24/1929, pp. 225–263, and other files" ]
 ---
 
 The 19 Ministry of Defence UFO files opened at The National Archives on 20 October 2008. Each is a digital copy of an MoD registered file, with the names of members of the public and witnesses redacted. Our copies come from public mirrors of the release (The Black Vault, archive.org) and are OCR'd for search; page numbers are those of the PDFs.

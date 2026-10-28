@@ -26,6 +26,8 @@ rel:
   - [ part of, doc-tna-mod-ufo-files-guides ]
   - [ includes, doc-mod-defe-24-1972 ]
   - [ includes, doc-mod-defe-24-2086 ]
+  - [ about, inc-rendlesham-1980, "DEFE 24/1948, opening with Halt's memo" ]
+  - [ about, inc-belgian-wave-1989, "DEFE 24/1960, pp. 320–324, and DEFE 24/1970, pp. 86–87" ]
 ---
 
 The 14 Ministry of Defence UFO files opened at The National Archives on 17 August 2009. Each is a digital copy of an MoD registered file, with the names of members of the public and witnesses redacted. Our copies come from public mirrors of the release (The Black Vault, archive.org) and are OCR'd for search; page numbers are those of the PDFs.

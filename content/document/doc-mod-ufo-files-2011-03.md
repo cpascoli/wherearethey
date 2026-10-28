@@ -47,6 +47,12 @@ rel:
   - [ released in, uk-national-archives, "Opened at The National Archives on 3 March 2011" ]
   - [ prepared by, uk-mod ]
   - [ part of, doc-tna-mod-ufo-files-guides ]
+  - [ about, inc-tornado-north-sea-1990, "DEFE 24/2041 and DEFE 24/2027" ]
+  - [ about, inc-boston-skegness-1996, "DEFE 24/2032, pp. 419–450: the RAF investigation" ]
+  - [ about, inc-uk-reentry-1978, "DEFE 24/2048, pp. 108–138" ]
+  - [ about, inc-flying-saucer-hoax-1967, "DEFE 24/1986, pp. 305–311" ]
+  - [ about, inc-bromley-2003, "DEFE 24/2036, pp. 176–179" ]
+  - [ about, philip-corso, "DEFE 24/1986, pp. 157–158: the MoD assessment of his book" ]
 ---
 
 The 35 Ministry of Defence UFO files opened at The National Archives on 3 March 2011. Each is a digital copy of an MoD registered file, with the names of members of the public and witnesses redacted. Our copies come from public mirrors of the release (The Black Vault, archive.org) and are OCR'd for search; page numbers are those of the PDFs.

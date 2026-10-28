@@ -37,6 +37,10 @@ rel:
   - [ released in, uk-national-archives, "Opened at The National Archives on 21 June 2013" ]
   - [ prepared by, uk-mod ]
   - [ part of, doc-tna-mod-ufo-files-guides ]
+  - [ about, inc-birmingham-police-helicopter-2008, "DEFE 24/2450, pp. 41–45: the Airprox report" ]
+  - [ about, inc-lyneham-radar-1994, "DEFE 24/2454, pp. 155–160" ]
+  - [ about, inc-tern-hill-2008, "DEFE 24/2625, pp. 107–112" ]
+  - [ about, inc-rendlesham-1980, "DEFE 24/2628, p. 144: “we consider the incident closed”" ]
 ---
 
 The 25 Ministry of Defence UFO files opened at The National Archives on 21 June 2013. Each is a digital copy of an MoD registered file, with the names of members of the public and witnesses redacted. Our copies come from public mirrors of the release (The Black Vault, archive.org) and are OCR'd for search; page numbers are those of the PDFs.
