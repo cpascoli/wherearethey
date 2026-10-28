@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search the MoD UFO files · Where Are They</title>
+  <link rel="canonical" href="https://wherearethey.info/mod-files">
+  <meta name="description" content="Search the full text of the UK Ministry of Defence UFO files released at The National Archives in 2008–2013: tens of thousands of OCR'd pages, each opened at the page in the PDF.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='5' fill='%237cc4ff'/><circle cx='16' cy='16' r='13' fill='none' stroke='%237cc4ff' stroke-width='2' stroke-dasharray='4 4'/></svg>">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Serif:ital@1&display=swap">
+  <link rel="stylesheet" href="/assets/page.css">
+  <style>
+    main { max-width: 860px; }
+    .mf-q { display: flex; gap: 8px; margin: 18px 0 10px; }
+    .mf-q input { flex: 1; min-width: 0; font: inherit; font-size: 17px; padding: 10px 12px; background: var(--panel); color: var(--text); border: 1px solid var(--border); border-radius: 6px; }
+    .mf-q input:focus { outline: none; border-color: var(--accent); }
+    .mf-filters { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 4px; }
+    .mf-filters .lbl { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); align-self: center; margin-right: 4px; }
+    .chip { font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+    .chip[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+    .chip span { color: var(--muted); font-size: 12px; margin-left: 3px; }
+    .mf-status { font-size: 14px; color: var(--muted); margin: 14px 0 6px; min-height: 1.4em; }
+    .mf-res { list-style: none; padding: 0; margin: 0; }
+    .mf-res li { padding: 14px 0; border-bottom: 1px solid var(--border); }
+    .mf-res .t { font-weight: 600; }
+    .mf-res .t a { text-decoration: none; }
+    .mf-res .m { font-size: 13px; color: var(--muted); margin: 2px 0 6px; }
+    .mf-res .x { font-size: 15px; line-height: 1.55; overflow-wrap: anywhere; }
+    .mf-res mark { background: color-mix(in srgb, var(--accent) 30%, transparent); color: inherit; padding: 0 1px; border-radius: 2px; }
+    .mf-more { margin: 16px 0 40px; }
+    .note { font-size: 14px; color: var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="/">← Where Are They</a>
+  <div class="kicker" style="margin-top:22px">Primary records · experimental</div>
+  <h1>Search the MoD UFO files</h1>
+  <p class="lede">The full text of the UK Ministry of Defence's UFO files, opened at The National Archives between 2008 and 2013: sighting reports, letters from the public, policy papers and Parliamentary briefings. Each result opens the PDF at the page.</p>
+  <p class="note">The pages are machine-read (OCR) from scans of typescript, forms and handwriting, so spellings are often garbled and some pages can't be found by search at all. Names of members of the public and witnesses are redacted in the originals. These are raw records, not verified accounts: the cases we have checked are filed as incidents in the archive.</p>
+
+  <form class="mf-q" role="search" id="mf-form">
+    <input id="mf-input" type="search" placeholder="e.g. Rendlesham, radar, Cosford, triangle" autocomplete="off" aria-label="Search the MoD UFO files">
+    <button type="submit">Search</button>
+  </form>
+  <div class="mf-filters" id="mf-release"></div>
+  <div class="mf-filters" id="mf-series"></div>
+  <div class="mf-status" id="mf-status" aria-live="polite"></div>
+  <ol class="mf-res" id="mf-res"></ol>
+  <div class="mf-more"><button id="mf-more" hidden>More results</button></div>
+</main>
+<script type="module">
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const PAGE = 10;
+  const pf = await import('/pagefind-mod/pagefind.js');
+  await pf.options({ excerptLength: 40 });
+  const sel = { release: new Set(), series: new Set() };
+  let results = [], shown = 0, seq = 0;
+
+  // filter chips with page counts (counts follow the current query once one is typed)
+  function renderFilters(counts) {
+    for (const k of ['release', 'series']) {
+      const order = k === 'release' ? v => { const d = new Date('1 ' + v); return isNaN(d) ? 0 : d.getTime(); } : v => v;
+      const vals = Object.keys(counts[k] || {}).sort((a, b) => order(a) < order(b) ? -1 : 1);
+      $('#mf-' + k).innerHTML = `<span class="lbl">${k === 'release' ? 'Released' : 'Series'}</span>` + vals.map(v =>
+        `<button class="chip" type="button" data-k="${k}" data-v="${esc(v)}" aria-pressed="${sel[k].has(v)}">${esc(v)}<span>${(counts[k][v] || 0).toLocaleString('en-US')}</span></button>`).join('');
+    }
+  }
+  renderFilters(await pf.filters());
+
+  const filtersArg = () => Object.fromEntries(Object.entries(sel).filter(([, s]) => s.size).map(([k, s]) => [k, { any: [...s] }]));
+  async function run() {
+    const q = $('#mf-input').value.trim();
+    const my = ++seq;
+    history.replaceState(null, '', q ? `?q=${encodeURIComponent(q)}` : location.pathname);
+    if (!q) { $('#mf-res').innerHTML = ''; $('#mf-status').textContent = ''; $('#mf-more').hidden = true; renderFilters(await pf.filters()); return; }
+    $('#mf-status').textContent = 'Searching…';
+    const t0 = performance.now();
+    const r = await pf.search(q, { filters: filtersArg() });
+    if (my !== seq) return;
+    results = r.results; shown = 0;
+    $('#mf-res').innerHTML = '';
+    renderFilters(r.filters && Object.keys(r.filters).length ? r.filters : await pf.filters());
+    $('#mf-status').textContent = results.length ? `${results.length.toLocaleString('en-US')} page${results.length > 1 ? 's' : ''} · ${Math.round(performance.now() - t0)} ms` : `No pages match “${q}”.`;
+    await more(my);
+  }
+  async function more(my = seq) {
+    const batch = await Promise.all(results.slice(shown, shown + PAGE).map(r => r.data()));
+    if (my !== seq) return;
+    shown += batch.length;
+    $('#mf-res').insertAdjacentHTML('beforeend', batch.map(d => {
+      const m = d.meta;
+      return `<li><div class="t"><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(m.title)}</a></div>
+        <div class="m">${esc(m.desc || '')}${m.dates ? ` · ${esc(m.dates)}` : ''} · <a href="${esc(m.doc)}">released ${esc(m.release)}</a></div>
+        <div class="x">…${d.excerpt}…</div></li>`;
+    }).join(''));
+    $('#mf-more').hidden = shown >= results.length;
+  }
+  $('#mf-form').addEventListener('submit', e => { e.preventDefault(); run(); });
+  let timer; $('#mf-input').addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(run, 300); });
+  $('#mf-more').addEventListener('click', () => more());
+  document.addEventListener('click', e => {
+    const c = e.target.closest('.chip'); if (!c) return;
+    const s = sel[c.dataset.k]; s.has(c.dataset.v) ? s.delete(c.dataset.v) : s.add(c.dataset.v);
+    run();
+  });
+  const q0 = new URLSearchParams(location.search).get('q');
+  if (q0) { $('#mf-input').value = q0; run(); } else $('#mf-input').focus();
+</script>
+</body>
+</html>
