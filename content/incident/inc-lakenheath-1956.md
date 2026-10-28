@@ -31,6 +31,12 @@ facts:
     basis: documented
     status: documented
     source: https://ufologie.patrickgross.org/htm/bentwaters56condon.htm
+  - text: "In 2001 Freddie Wimbledon, a retired RAF fighter controller on duty at RAF Neatishead that night, wrote that “this activity was clearly seen on Neatishead's radar”; a Venom was vectored to the object and called “Judy”, then lost it, and the target stayed behind the fighter, “following the Venom's every move” (DEFE 24/2031, pp. 154–55)."
+    status: claimed
+    source: library/docs/mod-ufo/highlights-guide-09-08-11.pdf
+  - text: "The MoD files record that the pilot of an RAF Venom scrambled that night was Air Commodore Anthony Davis (also spelled Davies in the guide), later head of the MoD's UFO desk, and that in 2001 an MoD archive search confirmed all records of the incident had been lost or destroyed (DEFE 24/2031, pp. 164–65, 253)."
+    status: documented
+    source: library/docs/mod-ufo/highlights-guide-09-08-11.pdf
 ---
 
 On the night of 13–14 August 1956, over about five hours, U.S. and RAF ground radar at RAF Bentwaters and RAF Lakenheath in Suffolk tracked targets moving at very high speeds, some of them stopping and turning abruptly, with matching visual sightings reported from the ground and the air.

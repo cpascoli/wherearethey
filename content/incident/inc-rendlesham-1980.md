@@ -24,6 +24,18 @@ facts:
     status: claimed
     by: jim-penniston
     source: v-2013-chd-rendlesham-1@1:07:10
+  - text: "In 2000 MoD records staff found that Defence Intelligence files for 1980–82, including those on Rendlesham, had been destroyed while files from the surrounding years survived; officials warned that if this “apparent anomaly in the records” became public “it could be interpreted to mean that a deliberate attempt had been made to eradicate the records covering this incident” (DEFE 24/2026, p. 182)."
+    status: documented
+    source: library/docs/mod-ufo/mar-2011-highlights-guide.pdf
+  - text: "A Suffolk police inspector wrote in 1999 that his officers' role had been “minimal”, that witness testimony had been “substantially embellished” over the years, and that the three constables called to the site on 26 December 1980 remained “unconvinced [the] occurrence was genuine”; he added that the Orford Ness lighthouse beams “caused strange visual effects” in some conditions (DEFE 24/2033, pp. 104–105)."
+    claims: [ rendlesham-craft-landed ]
+    stance: disputes
+    basis: relayed
+    status: documented
+    source: library/docs/mod-ufo/highlights-guide-09-08-11.pdf
+  - text: "Answering an inquiry from the U.S. in 2008, the MoD said it “had little interest in the matter at the time and even less interest now. Put simply, we consider the incident closed” (DEFE 24/2628, p. 144)."
+    status: documented
+    source: library/docs/mod-ufo/ufo-highlights-guide-2013.pdf
 ---
 
 Over three nights in late December 1980, U.S. Air Force personnel at RAF Woodbridge in Suffolk, one of two neighbouring RAF bases (with RAF Bentwaters) then used by the USAF, reported unexplained lights in the adjacent Rendlesham Forest. Around 03:00 on 26 December, security patrolmen including Sgt. Jim Penniston and John Burroughs went into the forest to investigate lights descending among the trees. Penniston later said he approached and touched a small craft; his account is not independently corroborated.

@@ -11,11 +11,11 @@ facts:
   - text: "In his written account, kept in the MoD file DEFE 24/1931, he says that after the order to fire was authenticated he locked on at 15 miles to a blip that “was burning a hole in the radar with its incredible intensity”: “I had a lock on that had the proportions of a flying aircraft carrier.”"
     status: claimed
     by: milton-torres
-    source: library/docs/doc-mod-defe-24-1931.pdf
+    source: library/docs/mod-ufo/defe-24-1931.pdf
   - text: "He writes that a civilian who “looked like a well dressed IBM salesman” debriefed him the next day and “threatened me with a national security breach if I breathed a word about it to anyone.”"
     status: claimed
     by: milton-torres
-    source: library/docs/doc-mod-defe-24-1931.pdf
+    source: library/docs/mod-ufo/defe-24-1931.pdf
   - text: "When the files were released in October 2008 he told Sky News: “It was some kind of space alien craft. It was so fast, it was so incredible ... it was absolutely death-defying.”"
     status: claimed
     by: milton-torres

@@ -1286,7 +1286,7 @@
   // document full text, shown in the top dropdown: the matching pages of each document, each opening the PDF there.
   // Rendered on the next frame, so the click that asked for it is not taken as a click outside the search box.
   async function showDocResults(q, dd = $('#q-results'), input = '#q') {
-    requestAnimationFrame(() => { dd.innerHTML = `<div class="dd-head">Searching ${KB.stats.documents} documents for “${esc(q)}”…</div>`; dd.hidden = false; });
+    requestAnimationFrame(() => { dd.innerHTML = `<div class="dd-head">Searching ${KB.stats.documents + (state.docsOptin ? KB.stats.optinDocuments || 0 : 0)} documents for “${esc(q)}”…${state.docsOptin ? ' (loading the MoD UFO files the first time can take a while)' : ''}</div>`; dd.hidden = false; });
     trackSearch(q, 'documents');
     const r = await searchDocuments(q);
     if ($(input).value.trim() !== q.trim()) return;
@@ -1297,7 +1297,9 @@
         + r.dOut.slice(0, 15).map(([d, hits]) => `<div class="dd-doc"><a class="dd-doc-t" href="${hrefOf(d.id)}" data-goto="${esc(d.id)}">${esc(d.name)}<span>${hits.length} p.</span></a>`
           + hits.slice(0, 3).map(h => `<a class="dd-doc-hit" href="${esc(fileUrl(h.file))}#page=${h.page}" target="_blank" title="Open the PDF at page ${h.page}"><span class="ts">p.${h.page}</span><span>${hl(h.snip)}${h.n > 1 ? ` <span class="muted">(${h.n}×)</span>` : ''}</span></a>`).join('')
           + (hits.length > 3 ? `<div class="small muted dd-doc-more">+${hits.length - 3} more pages</div>` : '') + '</div>').join('')
-        + (r.dOut.length > 15 ? `<div class="small muted dd-doc-more">+${r.dOut.length - 15} more documents</div>` : '');
+        + (r.dOut.length > 15 ? `<div class="small muted dd-doc-more">+${r.dOut.length - 15} more documents</div>` : '')
+        + (KB.stats.optinPages ? `<label class="dd-optin"><input type="checkbox" data-dd-optin ${state.docsOptin ? 'checked' : ''}> Also search the MoD UFO files <span class="muted">(${KB.stats.optinPages.toLocaleString('en-US')} more pages; a large download)</span></label>` : '');
+      dd.querySelector('[data-dd-optin]')?.addEventListener('change', ev => { state.docsOptin = ev.target.checked; track('filter_change', { view: 'documents', mod_files: state.docsOptin }); showDocResults(q, dd, input); });
     });
   }
   document.addEventListener('keydown', e => {
@@ -1849,7 +1851,8 @@
   // document full text, searched from the top search bar: one hit per matching page, with a snippet around the
   // first match
   async function searchDocuments(q) {
-    const docs = docEnts.filter(e => !(state.credibleOnly && e.cred === 'outside'));
+    // the bulk MoD UFO files are searched only when the visitor ticks the box (their text is a large download)
+    const docs = docEnts.filter(e => !(state.credibleOnly && e.cred === 'outside') && (!e.doctext.optin || state.docsOptin));
     await Promise.all(docs.map(d => loadDocText(d.id)));
     const needle = q.toLowerCase().replace(/[^\p{L}\p{N}' ]+/gu, ' ').replace(/\s+/g, ' ').trim();
     const reG = new RegExp(needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/ /g, '\\s*'), 'gi');

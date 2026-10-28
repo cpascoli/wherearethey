@@ -11,24 +11,24 @@ rel:
 facts:
   - text: "A British solicitor sent the Ministry of Defence a former American pilot's typed narrative in July 1988, asking whether, “31 years after the event”, an experiment in “electronic warfare” had been taking place with the pilot as a “guinea pig”, and whether the technology existed in 1957 to create such radar illusions (DEFE 24/1931, p. 260)."
     status: documented
-    source: library/docs/doc-mod-defe-24-1931.pdf
+    source: library/docs/mod-ufo/defe-24-1931.pdf
   - text: "In the narrative (pp. 261–263) the pilot, Milton Torres, says two F-86Ds of the 514th Fighter Interceptor Squadron were scrambled from five-minute alert at RAF Manston on 20 May 1957 and vectored over the North Sea east of East Anglia, where ground radar had been watching a blip “orbiting the East Anglia area” that was “motionless for long intervals”; he was ordered to fire a full salvo of rockets, asked for and received authentication, and “selected 24 rockets to salvo.”"
     status: claimed
     by: milton-torres
-    source: library/docs/doc-mod-defe-24-1931.pdf
+    source: library/docs/mod-ufo/defe-24-1931.pdf
   - text: "He locked on at 15 miles to a return with “the proportions of a flying aircraft carrier”; about ten seconds before rocket release the overtake reversed, the blip moved away and broke lock, and the ground station told him it was off their scope as well. He never saw it: he was in cloud the whole time."
     status: claimed
     by: milton-torres
-    source: library/docs/doc-mod-defe-24-1931.pdf
+    source: library/docs/mod-ufo/defe-24-1931.pdf
   - text: "His wingman's letter in the same file (pp. 67–69) agrees that “we did chase UFO's that evening” but differs on the rest: he recalls a training flight, landing at RAF Bentwaters to be armed with live rockets, several “unknowns” across more than one GCI site, never getting a lock-on, and no one telling him to keep quiet; he adds that he had “no reason to believe it was not as recounted” by Torres."
     status: claimed
-    source: library/docs/doc-mod-defe-24-1931.pdf
+    source: library/docs/mod-ufo/defe-24-1931.pdf
   - text: "An MoD memo of 18 November 1988 records a Daily Express enquiry about a solicitor's claim that on 20 May 1957 two USAF jets based at RAF Manston “were armed and ordered to fire on a UFO “the size of an aircraft carrier”” (DEFE 24/1931, p. 66)."
     status: documented
-    source: library/docs/doc-mod-defe-24-1931.pdf
+    source: library/docs/mod-ufo/defe-24-1931.pdf
   - text: "In 1989 the solicitor wrote to the MoD that the addresses it had recommended had replied that “the American Air Force appear to have no “official” record of the above event” (DEFE 24/1942, p. 261)."
     status: documented
-    source: library/docs/doc-mod-defe-24-1942.pdf
+    source: library/docs/mod-ufo/defe-24-1942.pdf
   - text: "David Clarke, who worked with the National Archives on the release, said the CIA once had a program to create phantom radar signals and that this may have been an electronic-warfare exercise, but that “there's no doubt something very unusual happened.”"
     status: claimed
     by: david-clarke
