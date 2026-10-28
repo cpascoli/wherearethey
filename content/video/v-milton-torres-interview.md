@@ -1,7 +1,12 @@
 ---
 name: "Milton Torres interview: ordered to fire 24 rockets at a UFO over England (1957)"
 youtube: Xk0INH_DI1M
-date: 2009   # recorded after the October 2008 MoD release (the narration says the order is "finally verified after 52 years"); the YouTube upload of 2022-07-24 is a re-upload
+date: 2009   # first published by its videographer, Richard Bradley Jr., in November 2009 (two parts); the YouTube upload of 2022-07-24 is a re-upload
+links:
+  - label: Original upload by Richard Bradley Jr., part 1 (2009)
+    url: https://www.youtube.com/watch?v=84UfSwxEDzo
+  - label: Original upload by Richard Bradley Jr., part 2 (2009)
+    url: https://www.youtube.com/watch?v=A0fJqqYzy-g
 rel:
   - [ features, milton-torres ]
   - [ about, inc-manston-1957 ]
