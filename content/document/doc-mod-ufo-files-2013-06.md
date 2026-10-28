@@ -71,4 +71,6 @@ The 25 Ministry of Defence UFO files opened at The National Archives on 21 June 
 - **DEFE 24/2628**: UFO correspondence — 2007 Dec 19 - 2008 Dec 23
 - **DEFE 24/2629**: UFO Parliamentary questions and correspondence — 2008 Jul 28 - 2008 Sep 14
 
+Search the full text of these files on the [MoD UFO files search page](/mod-files?release=Jun%202013).
+
 *Sources: The National Archives' catalogue (descriptions, covering dates and opening date of each file)*

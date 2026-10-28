@@ -67,4 +67,6 @@ The 25 Ministry of Defence UFO files opened at The National Archives on 12 July 
 - **DEFE 24/2090**: UFO correspondence with Dr D Clarke — 2005 Sep 01 - 2008 Jul 31
 - **DEFE 24/2093**: UFO press coverage — 2004 Feb 01 - 2008 Apr 30
 
+Search the full text of these files on the [MoD UFO files search page](/mod-files?release=Jul%202012).
+
 *Sources: The National Archives' catalogue (descriptions, covering dates and opening date of each file)*

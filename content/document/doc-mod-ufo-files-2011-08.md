@@ -91,4 +91,6 @@ The 34 Ministry of Defence UFO files opened at The National Archives on 11 Augus
 - **DEFE 24/2091**: Digital copy of DEFE 24/2091 : UFO correspondence — 2003 Feb 01 - 2003 Dec 31
 - **DEFE 24/2094**: Requests for information on UFOs under the Freedom of Information Act 2000 — 2007 Aug 01 - 2007 Dec 31
 
+Search the full text of these files on the [MoD UFO files search page](/mod-files?release=Aug%202011).
+
 *Sources: The National Archives' catalogue (descriptions, covering dates and opening date of each file)*

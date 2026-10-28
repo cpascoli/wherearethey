@@ -115,7 +115,7 @@ export async function build({ check = false, quiet = false } = {}) {
     if (d.shelf_featured) e.shelfFeatured = true;
     // a picture for any file (site/assets/images/…): shown on its Latest card, at the top of its page and as its share image
     if (d.image) { e.image = String(d.image); if (d.image_caption) e.imageCaption = String(d.image_caption); }
-    // documents whose full text is searched only when the visitor opts in (the bulk MoD UFO files: tens of thousands of OCR'd pages)
+    // documents whose full text is searched on a page of their own, not in the main document search (the bulk MoD UFO files)
     if (d.search === 'optin') e.searchOptin = true;
     if (d.top_pick != null) e.topPick = Number(d.top_pick); // videos: order in “Start here” on the Videos page
     if (d.series) { e.series = String(d.series); if (d.part != null) e.part = Number(d.part); } // a session of a multi-part recording (series = the hearing/event id)
@@ -214,9 +214,10 @@ export async function build({ check = false, quiet = false } = {}) {
       if (pages.some(Boolean)) parts.push({ file: f, pages });
     }
     if (!parts.length) continue;
-    doctexts.set(e.id, parts);
     const n = parts.reduce((a, p) => a + p.pages.length, 0);
-    if (e.searchOptin) { optinDocs++; optinPages += n; e.doctext = { pages: n, optin: true }; continue; }
+    // bulk collections are searched on their own page (Pagefind index by scripts/mod-index.mjs), so no doctext file
+    if (e.searchOptin) { optinDocs++; optinPages += n; continue; }
+    doctexts.set(e.id, parts);
     docPages += n;
     e.doctext = { pages: n };
   }
@@ -424,7 +425,7 @@ export async function build({ check = false, quiet = false } = {}) {
     entities: entities.length,
     byType: Object.fromEntries([...TYPES, 'source'].map(t => [t, entities.filter(e => e.type === t).length])),
     edges: edges.size, videos: videoByYt.size, transcripts: transcripts.size, mentions: mentionCount, textLinks,
-    documents: doctexts.size - optinDocs, documentPages: docPages, optinDocuments: optinDocs, optinPages,
+    documents: doctexts.size, documentPages: docPages, optinDocuments: optinDocs, optinPages,
     transcriptHours: Math.round(entities.filter(e => e.transcript).reduce((a, e) => a + (e.duration || 0), 0) / 3600), // whole hours: shown on the homepage and in descriptions
   };
 

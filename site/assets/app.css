@@ -87,7 +87,8 @@ input { font: inherit; color: inherit; }
 .dd-sep { border-top: 1px solid var(--border); margin: 6px 0; }
 .dd-doc-head { display: flex; gap: 12px; align-items: center; }
 .dd-doc-head .link { font-family: inherit; text-transform: none; letter-spacing: 0; }
-.dd-optin { display: flex; gap: 8px; align-items: baseline; padding: 10px 14px; border-top: 1px solid var(--border); font-size: 13px; cursor: pointer; }
+.dd-mod { display: block; padding: 10px 14px; border-top: 1px solid var(--border); font-size: 13px; color: var(--accent); text-decoration: none; }
+.dd-mod:hover { text-decoration: underline; }
 .dd-doc { padding: 4px 0 8px; border-bottom: 1px solid var(--border); }
 .dd-doc:last-child { border-bottom: 0; }
 .dd-doc-t { display: flex; justify-content: space-between; gap: 10px; padding: 6px 10px 2px; font-weight: 600; font-size: 13px; color: var(--text); }

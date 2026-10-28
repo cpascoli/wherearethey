@@ -51,6 +51,6 @@ facts:
 
 From 2008 to 2013 The National Archives in Kew opened the Ministry of Defence's UFO files in ten releases: the papers of the MoD's “UFO desk” and of the Defence Intelligence branch DI55, from sighting reports and letters from the public to policy papers, Parliamentary briefings and the decision to close the desk in 2009. The historian David Clarke, consultant to the programme, bookmarked the key stories in each release, and the Archives published a highlights guide for each with file and page references.
 
-This entry holds those finding aids: the highlights guides of October 2008, March 2011, August 2011 and 2013, the July 2012 briefing guide, the 2013 research guide to all UFO records and the press release for the final release (the August 2009 guide is filed separately). The files themselves are filed by release, and the cases they document are linked from here.
+This entry holds those finding aids: the highlights guides of October 2008, March 2011, August 2011 and 2013, the July 2012 briefing guide, the 2013 research guide to all UFO records and the press release for the final release (the August 2009 guide is filed separately). The files themselves are filed by release, and the cases they document are linked from here. All 36,000 pages can be searched on the [MoD UFO files search page](/mod-files).
 
 *Sources: The National Archives (UK), guides published 2008–2013*

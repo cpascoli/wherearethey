@@ -47,4 +47,6 @@ The 14 Ministry of Defence UFO files opened at The National Archives on 17 Augus
 - **DEFE 24/1976**: UFO reports — 1996 June 1 - 1996 Aug 31
 - **DEFE 24/2086**: UFO reports sightings, 30/31 March 1993 — 1993 March 01-1993 June 30 (filed separately, with its own entry)
 
+Search the full text of these files on the [MoD UFO files search page](/mod-files?release=Aug%202009).
+
 *Sources: The National Archives' catalogue (descriptions, covering dates and opening date of each file)*

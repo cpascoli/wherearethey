@@ -6,6 +6,8 @@
 #   npm run r2:push     upload new/changed files to R2 (never deletes anything remotely)
 #   npm run r2:pull     download everything from R2 into library/ (e.g. on a new machine)
 #   npm run r2:check    compare local and remote without transferring
+#   npm run r2:index    rebuild the MoD UFO files search index (scripts/mod-index.mjs) with PDF links to R2 and
+#                       sync it to R2 under pagefind-mod/ (Netlify proxies /pagefind-mod/* there; see netlify.toml)
 #
 # One-time setup: an rclone remote named "r2" (override with R2_REMOTE) and a bucket
 # named "wherearethey" (override with R2_BUCKET). See README → "Heavy files (R2)".
@@ -33,7 +35,10 @@ case "${1:-}" in
          rclone copy . "${REMOTE}:${BUCKET}" --files-from "$HOSTED" --progress --transfers 4 --s3-no-check-bucket ;;
   pull)  rclone copy "${REMOTE}:${BUCKET}/library" library "${FILTERS[@]}" --progress --transfers 8
          rclone copy "${REMOTE}:${BUCKET}" . --files-from "$HOSTED" --progress --transfers 4 ;;
+  index) export FILES_BASE="${FILES_BASE:-$(sed -nE 's/^[[:space:]]*FILES_BASE = "([^"]+)".*/\1/p' netlify.toml)}"
+         node scripts/mod-index.mjs
+         rclone sync site/pagefind-mod "${REMOTE}:${BUCKET}/pagefind-mod" --progress --transfers 32 --fast-list --s3-no-check-bucket ;;
   check) rclone check library "${REMOTE}:${BUCKET}/library" "${FILTERS[@]}" --size-only --one-way
          rclone check . "${REMOTE}:${BUCKET}" --files-from "$HOSTED" --size-only --one-way ;;
-  *) echo "usage: scripts/r2.sh push|pull|check" >&2; exit 1 ;;
+  *) echo "usage: scripts/r2.sh push|pull|check|index" >&2; exit 1 ;;
 esac

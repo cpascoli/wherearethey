@@ -33,4 +33,6 @@ The 8 Ministry of Defence UFO files opened at The National Archives on 14 May 20
 - **DEFE 24/1924**: UFO reports — 1985 Jan 01 - 1986 May 01
 - **DEFE 24/1925**: UFO reports — 1985 Oct 01 - 1986 Sept 01
 
+Search the full text of these files on the [MoD UFO files search page](/mod-files?release=May%202008).
+
 *Sources: The National Archives' catalogue (descriptions, covering dates and opening date of each file)*

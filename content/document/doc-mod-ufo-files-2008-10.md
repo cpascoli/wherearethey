@@ -57,4 +57,6 @@ The 19 Ministry of Defence UFO files opened at The National Archives on 20 Octob
 - **DEFE 24/1956**: UFO correspondence — 01 August 1991 - 31 July 1992
 - **DEFE 24/1957**: UFO correspondence — 01 July 1992 - 30 November 1992
 
+Search the full text of these files on the [MoD UFO files search page](/mod-files?release=Oct%202008).
+
 *Sources: The National Archives' catalogue (descriptions, covering dates and opening date of each file)*

@@ -1285,8 +1285,12 @@
   });
   // document full text, shown in the top dropdown: the matching pages of each document, each opening the PDF there.
   // Rendered on the next frame, so the click that asked for it is not taken as a click outside the search box.
+  // MoD UFO files: a Pagefind index (site/pagefind-mod, built by scripts/mod-index.mjs) fetched in small pieces per query
+  let modPf = null;
+  const modFilesCount = q => (modPf ||= import('/pagefind-mod/pagefind.js').catch(() => null))
+    .then(pf => pf ? pf.search(q.trim()) : null).then(r => r?.results.length || 0).catch(() => 0);
   async function showDocResults(q, dd = $('#q-results'), input = '#q') {
-    requestAnimationFrame(() => { dd.innerHTML = `<div class="dd-head">Searching ${KB.stats.documents + (state.docsOptin ? KB.stats.optinDocuments || 0 : 0)} documents for “${esc(q)}”…${state.docsOptin ? ' (loading the MoD UFO files the first time can take a while)' : ''}</div>`; dd.hidden = false; });
+    requestAnimationFrame(() => { dd.innerHTML = `<div class="dd-head">Searching ${KB.stats.documents} documents for “${esc(q)}”…</div>`; dd.hidden = false; });
     trackSearch(q, 'documents');
     const r = await searchDocuments(q);
     if ($(input).value.trim() !== q.trim()) return;
@@ -1298,8 +1302,14 @@
           + hits.slice(0, 3).map(h => `<a class="dd-doc-hit" href="${esc(fileUrl(h.file))}#page=${h.page}" target="_blank" title="Open the PDF at page ${h.page}"><span class="ts">p.${h.page}</span><span>${hl(h.snip)}${h.n > 1 ? ` <span class="muted">(${h.n}×)</span>` : ''}</span></a>`).join('')
           + (hits.length > 3 ? `<div class="small muted dd-doc-more">+${hits.length - 3} more pages</div>` : '') + '</div>').join('')
         + (r.dOut.length > 15 ? `<div class="small muted dd-doc-more">+${r.dOut.length - 15} more documents</div>` : '')
-        + (KB.stats.optinPages ? `<label class="dd-optin"><input type="checkbox" data-dd-optin ${state.docsOptin ? 'checked' : ''}> Also search the MoD UFO files <span class="muted">(${KB.stats.optinPages.toLocaleString('en-US')} more pages; a large download)</span></label>` : '');
-      dd.querySelector('[data-dd-optin]')?.addEventListener('change', ev => { state.docsOptin = ev.target.checked; track('filter_change', { view: 'documents', mod_files: state.docsOptin }); showDocResults(q, dd, input); });
+        + '<div class="dd-mod" hidden></div>';
+    });
+    // the MoD UFO files have their own search page: here, just how many of their pages match, and a link there
+    modFilesCount(q).then(n => {
+      const slot = dd.querySelector('.dd-mod');
+      if (!n || !slot || $(input).value.trim() !== q.trim()) return;
+      slot.outerHTML = `<a class="dd-mod" href="/mod-files?q=${encodeURIComponent(q.trim())}" data-mod-files>${n.toLocaleString('en-US')} page${n > 1 ? 's' : ''} in the MoD UFO files mention “${esc(q.trim())}” →</a>`;
+      dd.querySelector('[data-mod-files]').addEventListener('click', () => track('select_content', { content_type: 'mod_files_search', item_id: q.trim(), method: 'document_search' }));
     });
   }
   document.addEventListener('keydown', e => {
@@ -1851,8 +1861,8 @@
   // document full text, searched from the top search bar: one hit per matching page, with a snippet around the
   // first match
   async function searchDocuments(q) {
-    // the bulk MoD UFO files are searched only when the visitor ticks the box (their text is a large download)
-    const docs = docEnts.filter(e => !(state.credibleOnly && e.cred === 'outside') && (!e.doctext.optin || state.docsOptin));
+    // the bulk MoD UFO files are searched on their own page (/mod-files), not here
+    const docs = docEnts.filter(e => !(state.credibleOnly && e.cred === 'outside') && !e.doctext.optin);
     await Promise.all(docs.map(d => loadDocText(d.id)));
     const needle = q.toLowerCase().replace(/[^\p{L}\p{N}' ]+/gu, ' ').replace(/\s+/g, ' ').trim();
     const reG = new RegExp(needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/ /g, '\\s*'), 'gi');
