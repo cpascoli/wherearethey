@@ -21,4 +21,4 @@ facts:
 
 U.S. Army lieutenant colonel (1915–1998) who served on President Eisenhower’s National Security Council staff and at the Army’s Foreign Technology Desk. In *The Day After Roswell* (1997, with William Birnes) he claimed he seeded technology recovered at Roswell into U.S. industry. Historians and the Army dispute much of the book.
 
-*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Philip_J._Corso)*
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Philip_J._Corso) · his lecture of 22 February 1998 (video on file)*
