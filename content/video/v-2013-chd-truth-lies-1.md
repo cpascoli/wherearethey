@@ -55,6 +55,9 @@ moments:
     text: "Journalist Antonio Huneeus says he worked on one of Rockefeller's projects, “the UFO briefing document”, compiled in 1995 to be sent to members of Congress and world leaders."
     speaker: antonio-huneeus
     refs: [ doc-ufo-briefing-document-1995 ]
+  - t: "43:21"
+    text: "The official French UFO group at CNES, then COMETA and GEIPAN, supplied material for the Rockefeller UFO briefing document, among its case histories “the famous UFO landing case in Trans-en-Provence in 1981”."
+    refs: [ inc-trans-en-provence-1981, geipan ]
   - t: "50:29"
     text: "Answering Rep. Roscoe Bartlett on anti-gravity, Greer says sources who had been in the National Security Agency's vault told him that by October 1954 “we really figured out gravity control”."
     speaker: steven-greer
