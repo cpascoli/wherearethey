@@ -4,6 +4,9 @@ date: 1993-03-31
 aka: [Cosford incident, Cosford UFO, RAF Cosford 1993, RAF Shawbury UFO, 31 March 1993 UFO, Cosford black triangle, Cosford triangle]
 place: { name: "RAF Cosford and RAF Shawbury, Shropshire, and across Devon, Cornwall, South Wales and the Midlands", lat: 52.64, lng: -2.31 }
 tags: [law-enforcement, military, radar, uk]
+links:
+  - label: Darren Perks, “The Cosford UFO Witness” (HuffPost UK, 2012)
+    url: https://www.huffingtonpost.co.uk/darren-perks/the-cosford-ufo-witness_b_1639573.html
 witnesses: 70
 outcome: disputed
 outcome_note: "The MoD found that the re-entry of the rocket that launched Cosmos 2238 matched many of the high-altitude sightings around 1.10 am, but noted that it did not explain the low-level sightings, the low hum or the RAF Shawbury report."
@@ -37,10 +40,16 @@ facts:
   - text: "In a later television interview a Met Office witness at the base described the object as “black, solid triangular”, blocking out the stars, and Nick Pope said multiple witnesses near RAF Shawbury reported “a clearly structured black triangular craft”, the description by which the case is now best known."
     status: claimed
     source: v-7news-coulthart-uk-ufos-pope-cosford@5:14
+  - text: "Darren Perks, then a 16-year-old air cadet and a frequent visitor to RAF Shawbury, wrote in 2012 that at about 11 pm on 30 March 1993 in north Shrewsbury he watched a slow-moving object about 300 ft up: “It was a black triangle shape, structured, approx 200ft in length”, which “blocked out the stars”, with a faint red or orange glow at the two rear points and a brilliant white light at the front moving back and forth “as if was looking for something”."
+    status: claimed
+    source: https://www.huffingtonpost.co.uk/darren-perks/the-cosford-ufo-witness_b_1639573.html
+  - text: "He wrote that it moved at about walking speed with “a very low humming sound” for some two minutes, then “shot off to the north at incredible speed making no sounds at all”; he did not report it to the authorities, and linked it to the Cosford incident only in 2007."
+    status: claimed
+    source: https://www.huffingtonpost.co.uk/darren-perks/the-cosford-ufo-witness_b_1639573.html
 ---
 
 In the early hours of 31 March 1993 police officers, RAF Police patrols, soldiers on guard and members of the public across Cornwall, Devon, South Wales, Shropshire and Staffordshire reported bright lights, or a large object, moving at speed or hovering; at least seventy people saw something. At RAF Cosford two RAF Police officers watched two lights cross the airfield at about 1,000 feet, and a Met Office observer at RAF Shawbury described a huge craft, between a C-130 and a Boeing 747 in size, moving slowly, humming and shining a beam at the ground. The witnesses' descriptions in the file range from pairs of lights to a 150–200-metre object; the black triangle of later accounts comes from witnesses interviewed on television and from Nick Pope, who handled the case at the MoD. No military aircraft were flying.
 
 The MoD's UFO desk checked radar and air traffic records and found nothing it judged significant; its head told the Assistant Chief of the Air Staff there seemed to be evidence of an object “of unknown origin”, a rare admission in the files. The re-entry of the Russian rocket that launched the Cosmos 2238 satellite later accounted for many of the high-level sightings around 1.10 am, but, as the MoD itself noted, not for the low-level ones.
 
-*Source: MoD file DEFE 24/2086, The National Archives (opened August 2009)*
+*Sources: MoD file DEFE 24/2086, The National Archives (opened August 2009) · Darren Perks, HuffPost UK, 3 July 2012*
