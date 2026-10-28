@@ -40,7 +40,7 @@
   <div class="kicker" style="margin-top:22px">Primary records · experimental</div>
   <h1>Search the MoD UFO files</h1>
   <p class="lede">The full text of the UK Ministry of Defence's UFO files, opened at The National Archives between 2008 and 2013: sighting reports, letters from the public, policy papers and Parliamentary briefings. Each result opens the PDF at the page.</p>
-  <p class="note">The pages are machine-read (OCR) from scans of typescript, forms and handwriting, so spellings are often garbled and some pages can't be found by search at all. Names of members of the public and witnesses are redacted in the originals. These are raw records, not verified accounts: the cases we have checked are filed as incidents in the archive.</p>
+  <p class="note">The pages are machine-read (OCR) from scans of typescript, forms and handwriting, so spellings are often garbled and some pages can't be found by search at all. Names of members of the public and witnesses are redacted in the originals. Blank forms are left out, and a paper filed more than once is shown once, with its other copies listed. These are raw records, not verified accounts: the cases we have checked are filed as incidents in the archive.</p>
 
   <form class="mf-q" role="search" id="mf-form">
     <input id="mf-input" type="search" placeholder="e.g. Rendlesham, radar, Cosford, triangle" autocomplete="off" aria-label="Search the MoD UFO files">
@@ -98,7 +98,7 @@
       const m = d.meta;
       return `<li><div class="t"><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(m.title)}</a></div>
         <div class="m">${esc(m.desc || '')}${m.dates ? ` · ${esc(m.dates)}` : ''} · <a href="${esc(m.doc)}">released ${esc(m.release)}</a></div>
-        <div class="x">…${d.excerpt}…</div></li>`;
+        <div class="x">…${d.excerpt}…</div>${m.also ? `<div class="m">Also filed as ${esc(m.also)}</div>` : ''}</li>`;
     }).join(''));
     $('#mf-more').hidden = shown >= results.length;
   }
