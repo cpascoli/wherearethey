@@ -1,7 +1,7 @@
 ---
 name: "Cosford incident: police and RAF sightings across western England and Wales"
 date: 1993-03-31
-aka: [Cosford incident, Cosford UFO, RAF Cosford 1993, RAF Shawbury UFO, 31 March 1993 UFO]
+aka: [Cosford incident, Cosford UFO, RAF Cosford 1993, RAF Shawbury UFO, 31 March 1993 UFO, Cosford black triangle, Cosford triangle]
 place: { name: "RAF Cosford and RAF Shawbury, Shropshire, and across Devon, Cornwall, South Wales and the Midlands", lat: 52.64, lng: -2.31 }
 tags: [law-enforcement, military, radar, uk]
 witnesses: 70
@@ -28,9 +28,18 @@ facts:
   - text: "The head of the MoD's UFO secretariat told the Assistant Chief of the Air Staff in April 1993 that “there would seem to be some evidence on this occasion that an unidentified object (or objects) of unknown origin was operating over the UK.”"
     status: documented
     source: library/docs/mod-ufo/defe-24-2086.pdf
+  - text: "The RAF Police log records that the Met Officer at RAF Shawbury saw two lights travel towards him over the airfield “moving erratically at hundreds of miles per hour unlike any aircraft”, “appearing to be searching for something”, heard a low humming noise and watched for five minutes; he had been a Met Officer for eight years “and had never seen anything like it before”."
+    status: documented
+    source: library/docs/mod-ufo/defe-24-2086.pdf
+  - text: "Descriptions of the shape in the MoD file vary: two bright circular lights (RAF Police at Cosford), a cream-lit object of an estimated 200 metres with a humming noise (a witness at Rugeley, who believed it had landed but found nothing), an oval about 150 metres long (a Staffordshire Police report), a “Large Catamaran” (witnesses quoted by a civilian research group), and triangular formations of three lights (members of the public)."
+    status: documented
+    source: library/docs/mod-ufo/defe-24-2086.pdf
+  - text: "In a later television interview a Met Office witness at the base described the object as “black, solid triangular”, blocking out the stars, and Nick Pope said multiple witnesses near RAF Shawbury reported “a clearly structured black triangular craft”, the description by which the case is now best known."
+    status: claimed
+    source: v-7news-coulthart-uk-ufos-pope-cosford@5:14
 ---
 
-In the early hours of 31 March 1993 police officers, RAF Police patrols, soldiers on guard and members of the public across Cornwall, Devon, South Wales, Shropshire and Staffordshire reported bright lights, or a large object, moving at speed or hovering; at least seventy people saw something. At RAF Cosford two RAF Police officers watched two lights cross the airfield at about 1,000 feet, and a Met Office observer at RAF Shawbury described a huge craft shining a beam at the ground. No military aircraft were flying.
+In the early hours of 31 March 1993 police officers, RAF Police patrols, soldiers on guard and members of the public across Cornwall, Devon, South Wales, Shropshire and Staffordshire reported bright lights, or a large object, moving at speed or hovering; at least seventy people saw something. At RAF Cosford two RAF Police officers watched two lights cross the airfield at about 1,000 feet, and a Met Office observer at RAF Shawbury described a huge craft, between a C-130 and a Boeing 747 in size, moving slowly, humming and shining a beam at the ground. The witnesses' descriptions in the file range from pairs of lights to a 150–200-metre object; the black triangle of later accounts comes from witnesses interviewed on television and from Nick Pope, who handled the case at the MoD. No military aircraft were flying.
 
 The MoD's UFO desk checked radar and air traffic records and found nothing it judged significant; its head told the Assistant Chief of the Air Staff there seemed to be evidence of an object “of unknown origin”, a rare admission in the files. The re-entry of the Russian rocket that launched the Cosmos 2238 satellite later accounted for many of the high-level sightings around 1.10 am, but, as the MoD itself noted, not for the low-level ones.
 
