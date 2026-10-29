@@ -344,6 +344,8 @@
       { selector: 'node.trail', style: { 'border-width': 3, 'border-color': css('--accent'), 'border-style': 'solid', 'font-size': 11, 'font-weight': 600, opacity: 1 } },
       { selector: 'edge.trail', style: { 'line-color': css('--accent'), width: 3, label: 'data(label)', opacity: 1 } },
       { selector: 'node.big', style: { 'font-size': 12.5, 'min-zoomed-font-size': 5.5, 'text-max-width': 160 } }, // exploring: labels readable zoomed out
+      { selector: 'node.later', style: { opacity: 0.22 } }, // a story's steps still to come
+      { selector: 'edge.later', style: { opacity: 0.06 } },
       { selector: '.hidden', style: { display: 'none' } },
     ];
   }
@@ -418,7 +420,8 @@
   function applyGraphFilter() {
     if (!cy) return;
     const nv = visible.size, ne = KB.edges.filter(x => visible.has(x.s) && visible.has(x.t) && (x.kind !== 'mention' || state.showMentions)).length;
-    if ($('#hud') && state.trail?.core) setTimeout(() => { $('#hud').innerHTML = `Key files · <b>${cy.nodes().not('.hidden').length}</b> files · <b>${cy.edges().not('.hidden').length}</b> links between them`; });
+    if ($('#hud') && state.trail?.story) setTimeout(() => { $('#hud').innerHTML = `Story · <b>${cy.nodes().not('.hidden').length}</b> files · <b>${cy.edges().not('.hidden').length}</b> links between them`; });
+    else if ($('#hud') && state.trail?.core) setTimeout(() => { $('#hud').innerHTML = `Key files · <b>${cy.nodes().not('.hidden').length}</b> files · <b>${cy.edges().not('.hidden').length}</b> links between them`; });
     else if ($('#hud') && state.trail) setTimeout(() => { $('#hud').innerHTML = `Exploring · <b>${cy.nodes().not('.hidden').length}</b> files on screen · <b>${cy.edges().not('.hidden').length}</b> links${state.credibleOnly ? ' · official sources only' : ''}`; });
     else if ($('#hud')) $('#hud').innerHTML = `Case network · <b>${nv}</b> files · <b>${ne}</b> links${state.credibleOnly ? ' · official sources only' : ''}`;
     const shown = state.trail ? trailShown() : null;
@@ -427,11 +430,24 @@
       cy.nodes().forEach(n => n.toggleClass('hidden', !show(n.id())));
       cy.edges().forEach(ed => ed.toggleClass('hidden', (ed.data('kind') === 'mention' && !state.showMentions) || !show(ed.data('source')) || !show(ed.data('target'))));
       // the trail: its files and the links between them (the path)
-      cy.elements().removeClass('trail');
+      cy.elements().removeClass('trail later');
       cy.nodes().toggleClass('big', !!state.trail);
       const steps = new Set(state.trail?.steps || []);
       for (const id of steps) cy.getElementById(id).addClass('trail');
       if (steps.size > 1) cy.edges().filter(ed => !ed.hasClass('hidden') && steps.has(ed.data('source')) && steps.has(ed.data('target'))).addClass('trail');
+      // a story: the current step outlined, with its links to the steps before it; later steps wait, faded
+      const story = state.trail?.story && storyById(state.trail.story);
+      if (story) {
+        const at = state.trail.at, cur = new Set(story.steps[at].ids), done = new Set(story.steps.slice(0, at).flatMap(st => st.ids));
+        const later = new Set(story.steps.slice(at + 1).flatMap(st => st.ids).filter(id => !cur.has(id) && !done.has(id)));
+        for (const id of cur) cy.getElementById(id).addClass('trail');
+        for (const id of later) cy.getElementById(id).addClass('later');
+        cy.edges().not('.hidden').forEach(ed => {
+          const a = ed.data('source'), b = ed.data('target');
+          if (later.has(a) || later.has(b)) ed.addClass('later');
+          else if ((cur.has(a) && (cur.has(b) || done.has(b))) || (cur.has(b) && done.has(a))) ed.addClass('trail');
+        });
+      }
     });
     renderTrailBar();
   }
@@ -562,9 +578,10 @@
   // slow to draw and unreadable at a glance. It is a trail with no steps whose files are pinned on screen, so
   // search, selection and the menu work as in any trail; following a file starts a real trail from it.
   // "Show the full network" leaves it (state.full), "Back to the key files" and "Exit trail" return to it.
-  const EXPLORE = KB.explore || { core: [], starts: [] };
+  const EXPLORE = KB.explore || { core: [], starts: [], stories: [] };
   const coreTrail = () => ({ core: true, steps: [], open: new Set(), pinned: new Set(EXPLORE.core.filter(id => byId.has(id))) });
   function enterCore() {
+    if (new URLSearchParams(location.search).has('story')) history.replaceState(history.state, '', '/explore');
     state.full = false;
     state.trail = coreTrail();
     hideGraph(); // hidden at once: the files would show at their old places until the layout runs
@@ -588,6 +605,33 @@
     if (state.sel !== id) select(id, { from: 'trail', noPanel: window.innerWidth <= 860 });
     if (window.innerWidth <= 860) closePanel(); // on a phone the panel would cover the graph you're exploring
     trailChanged(id, { relayout: true });
+  }
+  // Stories (content/explore.json `stories`): a trail that opens with all of a story's files on screen, told step by
+  // step: the current step is outlined with its links to the earlier ones, later steps wait faded. Following or
+  // opening a file works as in any trail, and the story stays on screen. /explore?story=<id> opens one.
+  function storyById(id) { return (EXPLORE.stories || []).find(s => s.id === id); }
+  function startStory(id, at = 0) {
+    const s = storyById(id); if (!s) return;
+    const ids = s.steps.flatMap(st => st.ids).filter(x => byId.has(x));
+    clearFilters(null);
+    if (ids.some(x => byId.get(x).cred === 'outside')) state.credibleOnly = false;
+    if (ids.some(x => resolved(byId.get(x)))) state.hideExplained = false;
+    state.full = false;
+    state.trail = { story: id, at: Math.max(0, Math.min(at, s.steps.length - 1)), steps: [], open: new Set(), pinned: new Set(ids) };
+    if (state.view !== 'graph') go('graph');
+    history.replaceState(history.state, '', `/explore?story=${encodeURIComponent(id)}`);
+    if (window.innerWidth <= 860) closePanel();
+    trailChanged(null, { relayout: true });
+  }
+  function storyStep(i) {
+    const T = state.trail, s = T?.story && storyById(T.story); if (!s) return;
+    const at = Math.max(0, Math.min(i, s.steps.length - 1)); if (at === T.at) return;
+    T.at = at;
+    applyGraphFilter();
+    highlight(state.sel);
+    // bring the step into view, with the files of earlier steps it links to
+    const cur = cy.nodes('.trail').not('.hidden');
+    frameEles(cur.union(cur.connectedEdges('.trail').connectedNodes()), true);
   }
   function expandFile(id) {
     const T = state.trail;
@@ -642,7 +686,10 @@
     if (bar.hidden) return;
     const hiddenNote = nh ? `<span class="tb-hidden">${nh} hidden · <button class="link" data-unhide>show</button></span>` : '';
     if (T?.core) {
-      bar.innerHTML = `<div class="tb-row tb-starts"><span class="tb-lbl">Start from</span>${EXPLORE.starts.filter(s => byId.has(s.id)).map(s => `<button class="tb-start" style="--c:${TYPES[byId.get(s.id).type].color}" data-core-start="${esc(s.id)}">${esc(s.label)}</button>`).join('')}</div>
+      const stories = (EXPLORE.stories || []).filter(s => byId.has(s.steps[0]?.ids[0]));
+      const starts = stories.length ? `<span class="tb-lbl">Start a story</span>${stories.map(s => `<button class="tb-start" style="--c:${TYPES[byId.get(s.steps[0].ids[0]).type].color}" data-story-start="${esc(s.id)}" title="${esc(s.blurb || '')}">${esc(s.label)}</button>`).join('')}`
+        : `<span class="tb-lbl">Start from</span>${EXPLORE.starts.filter(s => byId.has(s.id)).map(s => `<button class="tb-start" style="--c:${TYPES[byId.get(s.id).type].color}" data-core-start="${esc(s.id)}">${esc(s.label)}</button>`).join('')}`;
+      bar.innerHTML = `<div class="tb-row tb-starts">${starts}</div>
         <div class="tb-row tb-tools"><span class="tb-hint">${narrowScreen() ? 'The key files · tap to read · double-tap to follow' : 'The key files of the story · click one to read it · double-click to follow its connections'}</span>${hiddenNote}
           <button class="btn small" data-full>Show the full network</button></div>`;
       return;
@@ -651,9 +698,17 @@
       bar.innerHTML = `<div class="tb-row tb-tools">${hiddenNote}<button class="btn small" data-core>◎ Back to the key files</button></div>`;
       return;
     }
+    const story = T.story && storyById(T.story);
+    const storyRows = story ? (() => {
+      const st = story.steps[T.at], last = story.steps.length - 1;
+      return `<div class="tb-row tb-story"><span class="tb-lbl">Story</span><b class="tb-stitle">${esc(story.title)}</b>
+        <span class="tb-dots">${story.steps.map((x, i) => `<button class="tb-dot ${i === T.at ? 'on' : i < T.at ? 'done' : ''}" data-story-at="${i}" title="${esc(x.title)}" aria-label="Step ${i + 1}: ${esc(x.title)}">${i + 1}</button>`).join('')}</span>
+        <button class="btn small" data-story-at="${T.at - 1}" ${T.at === 0 ? 'disabled' : ''}>‹ Back</button><button class="btn small primary" data-story-at="${T.at + 1}" ${T.at === last ? 'disabled' : ''}>Next ›</button></div>
+        <div class="tb-row tb-caption"><div><b>${esc(st.title)}.</b> ${esc(st.text)}</div><div class="tb-files">${st.ids.filter(id => byId.has(id)).map(id => `<button class="tb-start tb-file" style="--c:${TYPES[byId.get(id).type].color}" data-trail-open="${esc(id)}" title="Open the file card">${esc(byId.get(id).name)}</button>`).join('')}</div></div>`;
+    })() : '';
     const steps = T ? T.steps.map(id => `<span class="tb-step ${state.sel === id ? 'on' : ''} ${T.open.has(id) ? '' : 'closed'}" style="--c:${TYPES[byId.get(id).type].color}"><button class="tb-name" data-trail-open="${esc(id)}" title="Open the file card">${esc(byId.get(id).name)}</button>${T.steps.length > 1 ? `<button class="tb-x" data-trail-pop="${esc(id)}" title="Take off the trail" aria-label="Take off the trail">×</button>` : ''}</span>`).join('<span class="tb-sep">›</span>') : '';
-    bar.innerHTML = `${T ? `<div class="tb-row"><span class="tb-lbl">Trail</span>${steps}</div>` : ''}
-      <div class="tb-row tb-tools">${T && T.steps.length === 1 ? `<span class="tb-hint">${narrowScreen() ? 'Tap to read · double-tap to follow · hold for more' : 'Click a file to read it · double-click to follow it · right-click for more'}</span>` : ''}
+    bar.innerHTML = `${storyRows}${T.steps.length ? `<div class="tb-row"><span class="tb-lbl">Trail</span>${steps}</div>` : ''}
+      <div class="tb-row tb-tools">${story && !T.steps.length ? `<span class="tb-hint">${narrowScreen() ? 'Tap a file to read it · double-tap to follow it' : 'Click a file to read it · double-click to follow its connections · ← → to move through the story'}</span>` : ''}${T && T.steps.length === 1 ? `<span class="tb-hint">${narrowScreen() ? 'Tap to read · double-tap to follow · hold for more' : 'Click a file to read it · double-click to follow it · right-click for more'}</span>` : ''}
         ${hiddenNote}
         <button class="btn small" data-trail-exit>◎ Back to the key files</button></div>`;
   }
@@ -661,6 +716,8 @@
     const op = e.target.closest('[data-trail-open]'); if (op) { select(op.dataset.trailOpen, { from: 'trail' }); return; }
     const pp = e.target.closest('[data-trail-pop]'); if (pp) { popStep(pp.dataset.trailPop); return; }
     if (e.target.closest('[data-trail-exit]')) { exitTrail(); return; }
+    const ss = e.target.closest('[data-story-start]'); if (ss) { track('explore_start', { item_id: ss.dataset.storyStart, method: 'story' }); startStory(ss.dataset.storyStart); return; }
+    const sa = e.target.closest('[data-story-at]'); if (sa) { storyStep(+sa.dataset.storyAt); return; }
     const cs = e.target.closest('[data-core-start]'); if (cs) { track('explore_start', { item_id: cs.dataset.coreStart, method: 'starting_point' }); exploreFrom(cs.dataset.coreStart); return; }
     if (e.target.closest('[data-full]')) { showFull(); return; }
     if (e.target.closest('[data-core]')) { enterCore(); return; }
@@ -707,6 +764,10 @@
   });
   document.addEventListener('pointerdown', e => { if ($('#node-menu') && !e.composedPath().includes($('#node-menu'))) closeNodeMenu(); }, true);
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeNodeMenu(); });
+  document.addEventListener('keydown', e => { // ← → move through a story
+    if (state.view !== 'graph' || !state.trail?.story || e.metaKey || e.ctrlKey || e.altKey || e.target.closest('input, textarea, select, [contenteditable]')) return;
+    if (e.key === 'ArrowRight') { e.preventDefault(); storyStep(state.trail.at + 1); } else if (e.key === 'ArrowLeft') { e.preventDefault(); storyStep(state.trail.at - 1); }
+  });
 
   // Positions computed at build time (scripts/layout.mjs) for the default view and the full network
   const LAYOUT = window.KB_LAYOUT || null;
@@ -2462,8 +2523,8 @@
     state.tags.clear();
     state.yr = [MIN_Y, MAX_Y];
     state.showMentions = false;
-    state.credibleOnly = ent.cred !== 'outside';
-    if (resolved(ent)) state.hideExplained = false; // opening an explained case shows it
+    state.credibleOnly = !ent || ent.cred !== 'outside';
+    if (ent && resolved(ent)) state.hideExplained = false; // opening an explained case shows it
     state.hiddenIds.clear();
     filtersChanged();
   }
@@ -3013,6 +3074,7 @@
       if (initial && r.sel && byId.has(r.sel) && innerWidth > 860) state.reading = !explore && qs.get('panel') !== 'side' && r.view !== 'videos'; // beside a video: the side panel
       if ((r.sel || null) !== state.sel) { select(r.sel && byId.has(r.sel) ? r.sel : null); if (initial && state.sel) openPanel(state.sel); }
       if (explore) { track('explore_start', { item_id: r.sel, method: 'url' }); startTrail(r.sel); }
+      else if (initial && r.view === 'graph' && !r.sel && storyById(qs.get('story'))) { track('explore_start', { item_id: qs.get('story'), method: 'url' }); startStory(qs.get('story')); }
       if (r.view === 'videos' && r.video && byId.has(r.video) && (r.video !== state.video || r.t || initial)) openVideo(r.video, r.t || 0, false);
       else if (r.view === 'videos' && !r.video && state.video) closeVideo();
     } finally { routing = false; }

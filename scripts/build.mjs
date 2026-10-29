@@ -439,6 +439,22 @@ export async function build({ check = false, quiet = false } = {}) {
     if (!e) errors.push(`content/explore.json: unknown id "${id}"`);
     else if (OFF_GRAPH.has(e.type) || ['video', 'source'].includes(e.type)) errors.push(`content/explore.json: "${id}" is not a graph file`);
   }
+  // stories: ordered steps of linked files; every file must exist on the graph, and every step must link to an earlier one
+  const linkedPairs = new Set([...edges.values()].filter(x => x.kind !== 'mention').flatMap(x => [`${x.s}|${x.t}`, `${x.t}|${x.s}`]));
+  for (const st of explore.stories || []) {
+    const before = [];
+    (st.steps || []).forEach((step, i) => {
+      for (const id of step.ids || []) {
+        const e = byId.get(id);
+        if (!e) errors.push(`content/explore.json: story "${st.id}" step ${i + 1}: unknown id "${id}"`);
+        else if (OFF_GRAPH.has(e.type) || e.type === 'source') errors.push(`content/explore.json: story "${st.id}": "${id}" is not a graph file`);
+      }
+      const reach = new Set(before), own = step.ids || [];
+      for (let grew = true; grew;) { grew = false; for (const id of own) if (!reach.has(id) && [...reach].some(r => linkedPairs.has(`${r}|${id}`))) { reach.add(id); grew = true; } }
+      if (i > 0) for (const id of own) if (!reach.has(id)) warnings.push(`content/explore.json: story "${st.id}" step ${i + 1}: "${id}" has no link to the steps before it`);
+      before.push(...own);
+    });
+  }
 
   if (!quiet || check) {
     for (const w of warnings) console.warn(`  warn  ${w}`);
@@ -468,7 +484,7 @@ export async function build({ check = false, quiet = false } = {}) {
     return { ...e, body: '', bodyLazy: true };
   });
   fs.writeFileSync(path.join(out, 'records.js'), `window.KB_RECORD_BODIES=${JSON.stringify(recordBodies)};window.KBR&&KBR();\n`);
-  const kb = { built: new Date().toISOString(), filesBase: process.env.FILES_BASE || null, entities: kbEntities, edges: edgeList, inverse: INVERSE, explore: { core: explore.core || [], starts: explore.starts || [] }, stats: { ...stats, generic: undefined }, warnings, errors };
+  const kb = { built: new Date().toISOString(), filesBase: process.env.FILES_BASE || null, entities: kbEntities, edges: edgeList, inverse: INVERSE, explore: { core: explore.core || [], starts: explore.starts || [], stories: explore.stories || [] }, stats: { ...stats, generic: undefined }, warnings, errors };
   fs.writeFileSync(path.join(out, 'kb.js'), `window.KB=${JSON.stringify(kb)};\n`);
   fs.writeFileSync(path.join(out, 'mentions.js'), `window.KB_MENTIONS=${JSON.stringify(mentions)};\nwindow.KB_TOGETHER=${JSON.stringify(together)};\n`);
   for (const [vid, t] of transcripts) {
