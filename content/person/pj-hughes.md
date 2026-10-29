@@ -2,9 +2,11 @@
 name: P.J. Hughes
 aka:
   - PJ Hughes
+  - Patrick Hughes
+  - Patrick "PJ" Hughes
 credentials:
   - category: military
-    role: U.S. Navy aviation technician, E-2 Hawkeye squadron (USS Nimitz)
+    role: "Aviation Electronics Technician, Second Class Petty Officer, VAW-117 (E-2C Hawkeye squadron, USS Nimitz), 2004"
 tags:
   - navy
   - radar
@@ -27,6 +29,14 @@ facts:
     status: claimed
     by: david-fravor
     source: https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/
+  - text: "In his own words, on camera in 2019: after the flight that was airborne during Fravor's intercept, “my commanding officer showed up at our door with two guys in Air Force uniforms and took those bricks”, within half an hour of his locking them away; they were signed out to the commanding officer and “they never came back”."
+    status: claimed
+    by: pj-hughes
+    source: v-2019-03-30-pj-hughes-hawkeye-data@1:08
+  - text: "In 2023 he said the two men wore U.S. Air Force flight suits and never spoke, that he believes they were couriers qualified to carry classified material rather than investigators, and that he assumes chain-of-custody paperwork was done above his level “but I have no way to prove it”."
+    status: claimed
+    by: pj-hughes
+    source: v-2023-02-13-tim-ventura-pj-hughes@11:15
 ---
 
 P. J. Hughes was a U.S. Navy aviation technician with the USS Nimitz's E-2 Hawkeye airborne early-warning squadron in 2004. One of his routine jobs was securing the aircraft's data recorders, which the crew call "bricks".
