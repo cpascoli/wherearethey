@@ -9,7 +9,7 @@ links:
     url: https://www.huffingtonpost.co.uk/darren-perks/the-cosford-ufo-witness_b_1639573.html
 witnesses: 70
 outcome: disputed
-outcome_note: "The MoD found that the re-entry of the rocket that launched Cosmos 2238 matched many of the high-altitude sightings around 1.10 am, but noted that it did not explain the low-level sightings, the low hum or the RAF Shawbury report."
+outcome_note: "The low-level sightings, the hum and beam reported at RAF Shawbury and the large dark object described by police and military witnesses remain unexplained; the MoD matched only the high-altitude lights seen around 1.10 am to the re-entry of the rocket that launched Cosmos 2238."
 outcome_source: doc-mod-defe-24-2086
 seo_title: "Cosford incident 1993: the MoD's own file on the RAF sightings"
 facts:
