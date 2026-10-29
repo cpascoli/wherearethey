@@ -46,6 +46,16 @@ facts:
   - text: "He wrote that it moved at about walking speed with “a very low humming sound” for some two minutes, then “shot off to the north at incredible speed making no sounds at all”; he did not report it to the authorities, and linked it to the Cosford incident only in 2007."
     status: claimed
     source: https://www.huffingtonpost.co.uk/darren-perks/the-cosford-ufo-witness_b_1639573.html
+  - text: "The Devon UFO Research Organisation's interim report, sent to the MoD and filed in DEFE 24/2086, records a police sergeant at Ilfracombe who said that at about 1.10 am, driving down into Lynton with another officer, they saw two very large bright white lights approaching from the north across the Bristol Channel, at an estimated 2,000 feet; as the lights passed overhead “both officers discerned a structure between the lights” and estimated that an object some 500 feet wide had passed over them at low altitude (DEFE 24/2086, pp. 79–80)."
+    status: documented
+    source: library/docs/mod-ufo/defe-24-2086.pdf
+  - text: "In its final report (DEFE 24/2086, pp. 12–13), the organisation attributed most of the 1.10 am police reports to the re-entry of the rocket that launched Cosmos 2238, but not the Lynton officers' sighting: they saw a third, smaller light between the two, “two white vapour like trails” behind them, and objects at an elevation of 40 degrees between 1,000 and 2,000 feet away; the author wrote that he hardly thought the officers “could be mistaken in their judgements”."
+    status: documented
+    source: library/docs/mod-ufo/defe-24-2086.pdf
+  - text: "Sgt. Barry Mitchell and Officer Gus Cottey of Barnstaple Police later told the Lynton sighting on camera: Mitchell took the three lights to be fixed to one object that, had it been a conventional aircraft of that size, would have been deafening; Cottey said they kept quiet until another officer in Cornwall reported the same over the radio."
+    status: claimed
+    by: barry-mitchell
+    source: v-sightings-cosford-1993-pope-devon-police@3:09
 ---
 
 In the early hours of 31 March 1993 police officers, RAF Police patrols, soldiers on guard and members of the public across Cornwall, Devon, South Wales, Shropshire and Staffordshire reported bright lights, or a large object, moving at speed or hovering; at least seventy people saw something. At RAF Cosford two RAF Police officers watched two lights cross the airfield at about 1,000 feet, and a Met Office observer at RAF Shawbury described a huge craft, between a C-130 and a Boeing 747 in size, moving slowly, humming and shining a beam at the ground. The witnesses' descriptions in the file range from pairs of lights to a 150–200-metre object; the black triangle of later accounts comes from witnesses interviewed on television and from Nick Pope, who handled the case at the MoD. No military aircraft were flying.
