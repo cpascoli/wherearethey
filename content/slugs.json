@@ -283,7 +283,9 @@
 "doc-ea-expediente-681104-valencia-sagunto":"document/spanish-air-force-file-681104-lights-between-valencia-and-sagunto",
 "doc-ea-expediente-761119-canarias":"document/spanish-air-force-file-761119-the-luminous-phenomenon-over-the",
 "doc-ea-expediente-791111-manises":"document/spanish-air-force-file-791111-791117-791128-unusual-phenomena-in",
+"doc-faa-jal1628-tamefuji-interview":"document/faa-record-of-interview-with-jal-first-officer-takanori-tamefuji",
 "doc-faa-jal1628-terauchi-interview":"document/faa-record-of-interview-with-jal-captain-kenju-terauchi-jal-1628",
+"doc-faa-jal1628-tsukuba-interview":"document/faa-record-of-interview-with-jal-flight-engineer-yoshio-tsukuba",
 "doc-fab-noite-oficial-ovnis-1986":"document/brazilian-air-defence-command-report-on-the-events-of-19-20-may",
 "doc-fbi-majestic-12":"document/fbi-file-majestic-12",
 "doc-fravor-statement-2023-07-26":"document/david-fravor-written-statement-house-oversight-hearing-july-26",
@@ -1178,6 +1180,7 @@
 "stephen-bassett":"person/stephen-bassett",
 "steven-greer":"person/steven-greer",
 "summer-lee":"person/summer-lee",
+"takanori-tamefuji":"person/takanori-tamefuji",
 "tania-vassie":"person/tania-vassie",
 "taro-kono":"person/taro-kono",
 "task-force-declassification":"organization/task-force-declassification",
@@ -1446,4 +1449,5 @@
 "wright-patterson-afb":"place/wright-patterson-afb",
 "yasukazu-hamada":"person/yasukazu-hamada",
 "yoshiharu-asakawa":"person/yoshiharu-asakawa",
+"yoshio-tsukuda":"person/yoshio-tsukuda",
 "yuli-platov":"person/yuli-platov"}
