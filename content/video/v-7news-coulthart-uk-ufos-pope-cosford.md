@@ -24,10 +24,7 @@ moments:
     speaker: nick-pope
     refs: [ inc-cosford-1993 ]
   - t: "4:18"
-    text: "Darren Perks, then an air cadet, speaking publicly for the first time: the object was moving north very slowly, with an erratic white light at the front, “as if it was searching for something”, then “just shot off, gone”."
-    refs: [ inc-cosford-1993 ]
-  - t: "5:14"
-    text: "A witness from the Met Office service at the base (not named on screen): it was “black, solid triangular”, blocking out the stars, and “Myself nor my superiors at the Met have any conventional explanation for what was seen.”"
+    text: "Darren Perks, then an air cadet, speaking publicly for the first time: the object was moving north very slowly, with an erratic white light at the front, “as if it was searching for something”, then “just shot off, gone”. At 5:14 he goes on: it blocked out the stars, “It was black, solid triangular”, and “Myself nor my superiors at the Met have any conventional explanation for what was seen.”"
     refs: [ inc-cosford-1993 ]
   - t: "5:45"
     text: "The narration: MoD investigators asked their American counterparts whether the U.S. was flying secret test aircraft over Britain; Pope: “They gave us absolutely cast iron assurances that there was no such craft.”"
@@ -72,7 +69,7 @@ moments:
     refs: [ inc-cosford-1993 ]
 ---
 
-A report by Ross Coulthart for Australia's Seven Network on the British government's UFO files, built around Nick Pope, who handled UFO reports at the Ministry of Defence in the early 1990s and calls the 1993 Cosford incident his turning point. It adds two Cosford witnesses on camera, an air cadet and a Met Office witness, a retired RAF radar commander's 1971 case, Col. Charles Halt on Rendlesham, and psychologist Chris French for the sceptical view.
+A report by Ross Coulthart for Australia's Seven Network on the British government's UFO files, built around Nick Pope, who handled UFO reports at the Ministry of Defence in the early 1990s and calls the 1993 Cosford incident his turning point. It adds a Cosford witness on camera, Darren Perks, then an air cadet, a retired RAF radar commander's 1971 case, Col. Charles Halt on Rendlesham, and psychologist Chris French for the sceptical view.
 
 The Cosford file itself (DEFE 24/2086) records the Met officer's report and the MoD minute Pope quotes; it also records that a Russian rocket re-entry explained many of the high-level sightings, which the report does not mention.
 

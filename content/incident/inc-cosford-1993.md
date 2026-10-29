@@ -37,9 +37,9 @@ facts:
   - text: "Descriptions of the shape in the MoD file vary: two bright circular lights (RAF Police at Cosford), a cream-lit object of an estimated 200 metres with a humming noise (a witness at Rugeley, who believed it had landed but found nothing), an oval about 150 metres long (a Staffordshire Police report), a “Large Catamaran” (witnesses quoted by a civilian research group), and triangular formations of three lights (members of the public)."
     status: documented
     source: library/docs/mod-ufo/defe-24-2086.pdf
-  - text: "In a later television interview a Met Office witness at the base described the object as “black, solid triangular”, blocking out the stars, and Nick Pope said multiple witnesses near RAF Shawbury reported “a clearly structured black triangular craft”, the description by which the case is now best known."
+  - text: "In a later television interview Darren Perks described the object as “black, solid triangular”, blocking out the stars, and Nick Pope said multiple witnesses near RAF Shawbury reported “a clearly structured black triangular craft”, the description by which the case is now best known."
     status: claimed
-    source: v-7news-coulthart-uk-ufos-pope-cosford@5:14
+    source: v-7news-coulthart-uk-ufos-pope-cosford@4:18
   - text: "Darren Perks, then a 16-year-old air cadet and a frequent visitor to RAF Shawbury, wrote in 2012 that at about 11 pm on 30 March 1993 in north Shrewsbury he watched a slow-moving object about 300 ft up: “It was a black triangle shape, structured, approx 200ft in length”, which “blocked out the stars”, with a faint red or orange glow at the two rear points and a brilliant white light at the front moving back and forth “as if was looking for something”."
     status: claimed
     source: https://www.huffingtonpost.co.uk/darren-perks/the-cosford-ufo-witness_b_1639573.html
