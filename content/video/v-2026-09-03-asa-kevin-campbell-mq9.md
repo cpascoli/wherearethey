@@ -1,7 +1,7 @@
 ---
 name: "Former DISA contractor Kevin Campbell: UAP seen live on MQ-9 feeds over East Asian seas (Americans for Safe Aerospace, 2026)"
 youtube: rq2WLEq4cvw
-date: 2026-09-03
+date: 2026-09-03   # published; recorded most likely in May 2026, between PURSUE releases 1 and 2 (see the body)
 tags: [military, international]
 rel:
   - [ features, kevin-campbell ]
@@ -46,5 +46,7 @@ moments:
 Ryan Graves of Americans for Safe Aerospace interviews Kevin Campbell, a former Defense Information Systems Agency contractor who monitored U.S. military drone feeds from Hill Air Force Base. Campbell describes three events on MQ-9 feeds over the East China Sea and Yellow Sea, around 2023–24: small spherical objects a few feet above the water, one seen briefly in colour as a rust-coloured elongated shape, and one he watched live before it vanished. He says he reported them through ASA to the FBI, and believes one is among the videos members of Congress requested in 2026. He does not claim to know what the objects were.
 
 AARO describes the records that answered that request as found on a classified network, uploaded by users under their own titles, many without a substantiated chain of custody, which fits his account of clips saved by colleagues. No record confirms which video, if any, shows his sightings.
+
+The interview was published on 3 September 2026 but recorded earlier, most likely in May 2026: at 1:21 Graves says ASA “is gonna be at Oshkosh this year, a big fly-in at the end of July”, and at 24:22, when Campbell compares his sightings to the Department of War's videos, Graves notes that “depending on when this airs, that might best be referred to as the first drop”. Only PURSUE release 1 (8 May 2026) was out; the Yellow Sea video PR100, whose brief colour frame shows a dark object, came in release 4 (10 July 2026), after the recording.
 
 *Source: Americans for Safe Aerospace podcast (YouTube, 3 September 2026). Whisper transcript.*
