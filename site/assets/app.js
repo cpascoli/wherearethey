@@ -702,16 +702,16 @@
     const story = T.story && storyById(T.story);
     const storyRows = story ? (() => {
       const st = story.steps[T.at], last = story.steps.length - 1;
-      return `<div class="tb-row tb-story"><span class="tb-lbl">Story</span><b class="tb-stitle">${esc(story.title)}</b>
+      return `<div class="tb-row tb-story"><nav class="tb-crumb" aria-label="Breadcrumb"><button class="tb-crumb-home" data-trail-exit title="Back to the key files">◎ Key files</button><span class="tb-sep">›</span><b class="tb-stitle">${esc(story.title)}</b></nav>
         <span class="tb-dots">${story.steps.map((x, i) => `<button class="tb-dot ${i === T.at ? 'on' : i < T.at ? 'done' : ''}" data-story-at="${i}" title="${esc(x.title)}" aria-label="Step ${i + 1}: ${esc(x.title)}">${i + 1}</button>`).join('')}</span>
-        <button class="btn small" data-story-at="${T.at - 1}" ${T.at === 0 ? 'disabled' : ''}>‹ Back</button><button class="btn small primary" data-story-at="${T.at + 1}" ${T.at === last ? 'disabled' : ''}>Next ›</button></div>
+        ${T.at > 0 ? `<button class="btn small" data-story-at="${T.at - 1}">‹ Back</button>` : ''}${T.at < last ? `<button class="btn small primary" data-story-at="${T.at + 1}">Next ›</button>` : `<button class="btn small" data-trail-exit>◎ Back to the key files</button>`}</div>
         <div class="tb-row tb-caption"><div><b>${esc(st.title)}.</b> ${esc(st.text)}</div><div class="tb-files">${st.ids.filter(id => byId.has(id)).map(id => `<button class="tb-start tb-file" style="--c:${TYPES[byId.get(id).type].color}" data-trail-open="${esc(id)}" title="Open the file card">${esc(byId.get(id).name)}</button>`).join('')}</div></div>`;
     })() : '';
     const steps = T ? T.steps.map(id => `<span class="tb-step ${state.sel === id ? 'on' : ''} ${T.open.has(id) ? '' : 'closed'}" style="--c:${TYPES[byId.get(id).type].color}"><button class="tb-name" data-trail-open="${esc(id)}" title="Open the file card">${esc(byId.get(id).name)}</button>${T.steps.length > 1 ? `<button class="tb-x" data-trail-pop="${esc(id)}" title="Take off the trail" aria-label="Take off the trail">×</button>` : ''}</span>`).join('<span class="tb-sep">›</span>') : '';
     bar.innerHTML = `${storyRows}${T.steps.length ? `<div class="tb-row"><span class="tb-lbl">Trail</span>${steps}</div>` : ''}
       <div class="tb-row tb-tools">${story && !T.steps.length ? `<span class="tb-hint">${narrowScreen() ? 'Tap a file to read it · double-tap to follow it' : 'Click a file to read it · double-click to follow its connections · ← → to move through the story'}</span>` : ''}${T && T.steps.length === 1 ? `<span class="tb-hint">${narrowScreen() ? 'Tap to read · double-tap to follow · hold for more' : 'Click a file to read it · double-click to follow it · right-click for more'}</span>` : ''}
         ${hiddenNote}
-        <button class="btn small" data-trail-exit>◎ Back to the key files</button></div>`;
+        ${story ? '' : '<button class="btn small" data-trail-exit>◎ Back to the key files</button>'}</div>`; // a story has its own way back (breadcrumb)
   }
   $('#view-graph').addEventListener('click', e => {
     const op = e.target.closest('[data-trail-open]'); if (op) { select(op.dataset.trailOpen, { from: 'trail' }); return; }
