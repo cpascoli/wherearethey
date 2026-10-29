@@ -24,7 +24,11 @@ moments:
     speaker: nick-pope
     refs: [ inc-cosford-1993 ]
   - t: "4:18"
-    text: "Darren Perks, then an air cadet, speaking publicly for the first time: the object was moving north very slowly, with an erratic white light at the front, “as if it was searching for something”, then “just shot off, gone”. At 5:14 he goes on: it blocked out the stars, “It was black, solid triangular”, and “Myself nor my superiors at the MoD have any conventional explanation for what was seen.”"
+    text: "Darren Perks, then an air cadet, speaking publicly for the first time: the object was moving north very slowly, with an erratic white light at the front, “as if it was searching for something”, then “just shot off, gone”. At 5:10 he goes on: it blocked out the stars, “It was black, solid triangular”."
+    refs: [ inc-cosford-1993 ]
+  - t: "5:18"
+    text: "Pope: “Myself nor my superiors at the MoD have any conventional explanation for what was seen. To this day, it's completely unexplained.”"
+    speaker: nick-pope
     refs: [ inc-cosford-1993 ]
   - t: "5:45"
     text: "The narration: MoD investigators asked their American counterparts whether the U.S. was flying secret test aircraft over Britain; Pope: “They gave us absolutely cast iron assurances that there was no such craft.”"
