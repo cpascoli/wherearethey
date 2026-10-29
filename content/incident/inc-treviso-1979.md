@@ -5,9 +5,6 @@ match: [Cecconi]
 date: 1979-06-18
 place: { name: "Treviso Sant'Angelo air base, Italy", lat: 45.65, lng: 12.19 }
 tags: [aviator, air-force, international, radar, photo]
-outcome: disputed
-outcome_note: "A 2 November 1984 Defence Ministry letter, known only from a researcher's reproduction, reportedly said photo-interpreters had identified a cylindrical balloon made of black plastic bags. The Air Force's own later tables (1986 and the current archive) catalogue the event as unidentified."
-outcome_source: http://www.arpnet.it/ufo/orland17.htm
 rel:
 facts:
   - text: "The Italian Air Force archive records that Air Force personnel reported a cylindrical black object at about 3,000 m over Treviso on the morning of 18 June 1979, and that the event was catalogued as O.V.N.I."

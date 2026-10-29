@@ -5,9 +5,6 @@ place: { name: "White Mountains, New Hampshire", lat: 44, lng: -71.65 }
 tags:
   - abduction
   - missing-time
-outcome: disputed
-outcome_note: "Project Blue Book attributed the original sighting to a temperature inversion and later to Jupiter; the abduction account emerged under hypnosis in 1964."
-outcome_source: doc-bluebook-lincoln-nh-1961
 rel:
   - [ investigated by, project-blue-book ]
 facts:
