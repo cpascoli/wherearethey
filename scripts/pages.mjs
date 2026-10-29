@@ -38,6 +38,7 @@ const dayOffset = (iso, days) => new Date(Date.parse(iso) + days * 864e5).toISOS
 // the last day an entry's date covers ("2026-10" → 2026-10-31); year-only dates are too coarse for news
 const dateEnd = d => /^\d{4}-\d{2}-\d{2}$/.test(d) ? d : /^\d{4}-\d{2}$/.test(d) ? new Date(Date.UTC(+d.slice(0, 4), +d.slice(5, 7), 0)).toISOString().slice(0, 10) : null;
 export function latestSplit(entities, today = new Date().toISOString().slice(0, 10)) {
+  entities = entities.filter(e => !e.noLatest); // `latest: false` in the frontmatter
   const from = dayOffset(today, -LATEST.windowDays), until = dayOffset(today, LATEST.upcomingDays), since = dayOffset(today, -LATEST.addedDays);
   const recent = entities.filter(e => LATEST.types.includes(e.type) && e.date && dateEnd(e.end || e.date) >= from && dateEnd(e.date) && e.date <= until)
     .sort((a, b) => String(b.date).localeCompare(String(a.date)) || String(b.added).localeCompare(String(a.added)));

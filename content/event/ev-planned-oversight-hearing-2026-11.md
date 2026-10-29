@@ -1,6 +1,7 @@
 ---
 name: Planned House Oversight UAP hearing (November 2026, not yet scheduled)
 date: 2026-11
+latest: false   # off Latest until a date is announced
 tags:
   - congress
 rel:

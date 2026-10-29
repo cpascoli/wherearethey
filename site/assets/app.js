@@ -1023,7 +1023,7 @@
   function latestData() {
     const today = isoToday();
     const from = dayOffset(today, -LATEST.windowDays), until = dayOffset(today, LATEST.upcomingDays), since = dayOffset(today, -LATEST.addedDays);
-    let recent = ents.filter(e => LATEST.types.includes(e.type) && e.date && dateEnd(e.date) && dateEnd(e.end || e.date) >= from && e.date <= until)
+    let recent = ents.filter(e => !e.noLatest && LATEST.types.includes(e.type) && e.date && dateEnd(e.date) && dateEnd(e.end || e.date) >= from && e.date <= until)
       .sort((a, b) => String(b.date).localeCompare(String(a.date)) || String(b.added).localeCompare(String(a.added)));
     // a hearing and its recording (or transcript) make one card: the hearing, with the recording's play button
     const ids = new Set(recent.map(e => e.id));
@@ -1034,10 +1034,10 @@
       return true;
     });
     // featured entries (frontmatter `featured: <until date>`) are pinned above the dated list
-    const featured = ents.filter(e => e.featured && e.featured >= today).sort((a, b) => String(b.date).localeCompare(String(a.date)));
+    const featured = ents.filter(e => !e.noLatest && e.featured && e.featured >= today).sort((a, b) => String(b.date).localeCompare(String(a.date)));
     recent = recent.filter(e => !featured.includes(e));
     const inRecent = new Set([...recent, ...featured].map(e => e.id));
-    const added = ents.filter(e => !inRecent.has(e.id) && !folded.has(e.id) && !['record', 'source'].includes(e.type) && e.added >= since && e.added > LATEST.baseline)
+    const added = ents.filter(e => !e.noLatest && !inRecent.has(e.id) && !folded.has(e.id) && !['record', 'source'].includes(e.type) && e.added >= since && e.added > LATEST.baseline)
       .sort((a, b) => String(b.added).localeCompare(String(a.added)) || a.name.localeCompare(b.name));
     return { featured, recent, added, folded, today };
   }

@@ -110,6 +110,8 @@ export async function build({ check = false, quiet = false } = {}) {
     if (d.seo_title) e.seoTitle = String(d.seo_title);
     if (d.seo_description) e.seoDescription = String(d.seo_description);
     // Latest: pinned above the dated list until this date (YYYY-MM-DD), then it drops back into place
+    // `latest: false` keeps an entry off Latest, the homepage strip and the RSS feed (e.g. an event not yet confirmed)
+    if (d.latest === false) e.noLatest = true;
     if (d.featured) e.featured = d.featured instanceof Date ? d.featured.toISOString().slice(0, 10) : String(d.featured);
     // books & films: shown first, as a large “featured” card, on the Documentaries / Books page
     if (d.shelf_featured) e.shelfFeatured = true;
