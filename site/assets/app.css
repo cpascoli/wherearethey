@@ -855,6 +855,8 @@ html:not(.js) .top, html:not(.js) .app, html:not(.js) .views, html:not(.js) .mor
   .tb-starts { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-right: -8px; padding-right: 8px; }
   .tb-starts::-webkit-scrollbar { display: none; }
   .tb-start { font-size: 13.5px; padding: 6px 12px 6px 14px; }
+  .tb-lbl-start { flex: none; line-height: 1.25; } /* two lines at most: “Start” / “a story” */
+  .tb-lbl-start span { display: block; white-space: nowrap; }
 }
 /* a story: title, numbered steps, back/next, the step's caption and files */
 .tb-story { gap: 8px; }
@@ -872,6 +874,13 @@ html:not(.js) .top, html:not(.js) .app, html:not(.js) .views, html:not(.js) .mor
 .tb-file { font-size: 12px; padding: 3px 9px 3px 11px; }
 @media (max-width: 860px) {
   .tb-story .tb-stitle, .tb-story .tb-crumb .tb-sep { display: none; }
+  /* one line on phones: breadcrumb, step dots, Back and Next (8 steps fit from 360px up) */
+  .tb-story { flex-wrap: nowrap; gap: 5px; }
+  .tb-story .tb-crumb { flex: none; padding: 2px 4px; }
+  .tb-dots { gap: 2px; flex: 0 1 auto; min-width: 0; overflow-x: auto; scrollbar-width: none; } /* very narrow phones: the dots scroll, Next stays on the line */
+  .tb-dots::-webkit-scrollbar { display: none; }
+  .tb-dot { width: 21px; height: 21px; font-size: 10.5px; flex: none; }
+  .tb-story .btn { flex: none; padding-left: 8px; padding-right: 8px; }
   .tb-caption { font-size: 13px; max-height: 32vh; overflow-y: auto; }
 }
 /* incident outcome: explained / partly explained / hoax */

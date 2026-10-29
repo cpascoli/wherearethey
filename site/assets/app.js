@@ -689,7 +689,7 @@
     const hiddenNote = nh ? `<span class="tb-hidden">${nh} hidden · <button class="link" data-unhide>show</button></span>` : '';
     if (T?.core) {
       const stories = (EXPLORE.stories || []).filter(s => byId.has(s.steps[0]?.ids[0]));
-      const starts = stories.length ? `<span class="tb-lbl">Start a story</span>${stories.map(s => `<button class="tb-start" style="--c:${TYPES[byId.get(s.steps[0].ids[0]).type].color}" data-story-start="${esc(s.id)}" title="${esc(s.blurb || '')}">${esc(s.label)}</button>`).join('')}`
+      const starts = stories.length ? `<span class="tb-lbl tb-lbl-start">Start <span>a story</span></span>${stories.map(s => `<button class="tb-start" style="--c:${TYPES[byId.get(s.steps[0].ids[0]).type].color}" data-story-start="${esc(s.id)}" title="${esc(s.blurb || '')}">${esc(s.label)}</button>`).join('')}`
         : `<span class="tb-lbl">Start from</span>${EXPLORE.starts.filter(s => byId.has(s.id)).map(s => `<button class="tb-start" style="--c:${TYPES[byId.get(s.id).type].color}" data-core-start="${esc(s.id)}">${esc(s.label)}</button>`).join('')}`;
       bar.innerHTML = `<div class="tb-row tb-starts">${starts}</div>
         <div class="tb-row tb-tools"><span class="tb-hint">${narrowScreen() ? 'The key files · tap to read · double-tap to follow' : 'The key files of the story · click one to read it · double-click to follow its connections'}</span>${hiddenNote}</div>`;
@@ -702,7 +702,7 @@
     const story = T.story && storyById(T.story);
     const storyRows = story ? (() => {
       const st = story.steps[T.at], last = story.steps.length - 1;
-      return `<div class="tb-row tb-story"><nav class="tb-crumb" aria-label="Breadcrumb"><button class="tb-crumb-home" data-trail-exit title="Back to the key files">◎ Key files</button><span class="tb-sep">›</span><b class="tb-stitle">${esc(story.title)}</b></nav>
+      return `<div class="tb-row tb-story"><nav class="tb-crumb" aria-label="Breadcrumb"><button class="tb-crumb-home" data-trail-exit title="Back to the key files">Key files</button><span class="tb-sep">›</span><b class="tb-stitle">${esc(story.title)}</b></nav>
         <span class="tb-dots">${story.steps.map((x, i) => `<button class="tb-dot ${i === T.at ? 'on' : i < T.at ? 'done' : ''}" data-story-at="${i}" title="${esc(x.title)}" aria-label="Step ${i + 1}: ${esc(x.title)}">${i + 1}</button>`).join('')}</span>
         ${T.at > 0 ? `<button class="btn small" data-story-at="${T.at - 1}">‹ Back</button>` : ''}${T.at < last ? `<button class="btn small primary" data-story-at="${T.at + 1}">Next ›</button>` : ''}</div>
         <div class="tb-row tb-caption"><div><b>${esc(st.title)}.</b> ${esc(st.text)}</div><div class="tb-files">${st.ids.filter(id => byId.has(id)).map(id => `<button class="tb-start tb-file" style="--c:${TYPES[byId.get(id).type].color}" data-trail-open="${esc(id)}" title="Open the file card">${esc(byId.get(id).name)}</button>`).join('')}</div></div>`;
