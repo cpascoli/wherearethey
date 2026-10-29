@@ -702,14 +702,16 @@
     const story = T.story && storyById(T.story);
     const storyRows = story ? (() => {
       const st = story.steps[T.at], last = story.steps.length - 1;
-      return `<div class="tb-row tb-story"><nav class="tb-crumb" aria-label="Breadcrumb"><button class="tb-crumb-home" data-trail-exit title="Back to the key files">Key files</button><span class="tb-sep">›</span><b class="tb-stitle">${esc(story.title)}</b></nav>
+      // a pager: ‹ 1 2 3 › — on the first step the left arrow becomes ✕ (back to the key files); no › on the last
+      return `<div class="tb-row tb-story"><b class="tb-stitle">${esc(story.title)}</b><nav class="tb-pager" aria-label="Story steps">
+        ${T.at > 0 ? `<button class="tb-arrow" data-story-at="${T.at - 1}" title="Previous step" aria-label="Previous step"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>` : `<button class="tb-arrow tb-close" data-trail-exit title="Back to the key files" aria-label="Close the story and go back to the key files"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>`}
         <span class="tb-dots">${story.steps.map((x, i) => `<button class="tb-dot ${i === T.at ? 'on' : i < T.at ? 'done' : ''}" data-story-at="${i}" title="${esc(x.title)}" aria-label="Step ${i + 1}: ${esc(x.title)}">${i + 1}</button>`).join('')}</span>
-        ${T.at > 0 ? `<button class="btn small" data-story-at="${T.at - 1}">‹ Back</button>` : ''}${T.at < last ? `<button class="btn small primary" data-story-at="${T.at + 1}">Next ›</button>` : ''}</div>
+        ${T.at < last ? `<button class="tb-arrow tb-next" data-story-at="${T.at + 1}" title="Next step" aria-label="Next step"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>` : ''}</nav></div>
         <div class="tb-row tb-caption"><div><b>${esc(st.title)}.</b> ${esc(st.text)}</div><div class="tb-files">${st.ids.filter(id => byId.has(id)).map(id => `<button class="tb-start tb-file" style="--c:${TYPES[byId.get(id).type].color}" data-trail-open="${esc(id)}" title="Open the file card">${esc(byId.get(id).name)}</button>`).join('')}</div></div>`;
     })() : '';
     const steps = T ? T.steps.map(id => `<span class="tb-step ${state.sel === id ? 'on' : ''} ${T.open.has(id) ? '' : 'closed'}" style="--c:${TYPES[byId.get(id).type].color}"><button class="tb-name" data-trail-open="${esc(id)}" title="Open the file card">${esc(byId.get(id).name)}</button>${T.steps.length > 1 ? `<button class="tb-x" data-trail-pop="${esc(id)}" title="Take off the trail" aria-label="Take off the trail">×</button>` : ''}</span>`).join('<span class="tb-sep">›</span>') : '';
     bar.innerHTML = `${storyRows}${T.steps.length ? `<div class="tb-row"><span class="tb-lbl">Trail</span>${steps}</div>` : ''}
-      <div class="tb-row tb-tools">${story && !T.steps.length ? `<span class="tb-hint">${narrowScreen() ? 'Tap a file to read it · double-tap to follow it' : 'Click a file to read it · double-click to follow its connections · ← → to move through the story'}</span>` : ''}${T && T.steps.length === 1 ? `<span class="tb-hint">${narrowScreen() ? 'Tap to read · double-tap to follow · hold for more' : 'Click a file to read it · double-click to follow it · right-click for more'}</span>` : ''}
+      <div class="tb-row tb-tools">${story && !T.steps.length ? `<span class="tb-hint">${narrowScreen() ? 'Tap a file to read it · double-tap to follow it' : 'Click a file to read it · double-click to follow its connections · ← → to move through the story · Esc to close it'}</span>` : ''}${T && T.steps.length === 1 ? `<span class="tb-hint">${narrowScreen() ? 'Tap to read · double-tap to follow · hold for more' : 'Click a file to read it · double-click to follow it · right-click for more'}</span>` : ''}
         ${hiddenNote}
         ${story ? '' : '<button class="btn small" data-trail-exit>◎ Back to the key files</button>'}</div>`; // a story has its own way back (breadcrumb)
   }
@@ -763,7 +765,11 @@
     }
   });
   document.addEventListener('pointerdown', e => { if ($('#node-menu') && !e.composedPath().includes($('#node-menu'))) closeNodeMenu(); }, true);
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeNodeMenu(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('#node-menu')) { closeNodeMenu(); e.menuClosed = true; } });
+  document.addEventListener('keydown', e => { // Escape closes a story (when no menu, card or field has it)
+    if (e.key !== 'Escape' || e.menuClosed || state.view !== 'graph' || !state.trail?.story || state.sel || e.target.closest('input, textarea, select, [contenteditable]')) return;
+    exitTrail();
+  });
   document.addEventListener('keydown', e => { // ← → move through a story
     if (state.view !== 'graph' || !state.trail?.story || e.metaKey || e.ctrlKey || e.altKey || e.target.closest('input, textarea, select, [contenteditable]')) return;
     if (e.key === 'ArrowRight') { e.preventDefault(); storyStep(state.trail.at + 1); } else if (e.key === 'ArrowLeft') { e.preventDefault(); storyStep(state.trail.at - 1); }
