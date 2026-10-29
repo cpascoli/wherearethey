@@ -76,6 +76,10 @@ facts:
     status: claimed
     by: eric-burlison
     source: v-2026-10-15-dr-phil-burlison-lure-ufos@43:44
+  - text: "On a podcast published on 26 October 2026, Burlison said Grusch “was on my team for 18 months” and “left our office in September because he had other opportunities that required him to leave his post with us”; his office is still trying to verify Grusch's claims. (In the Dr. Phil interview aired on 15 October, he had said Grusch would leave in the next few months.)"
+    status: claimed
+    by: eric-burlison
+    source: 2026-10-26-burlison-grusch-footage-trail
   - text: "Opening the November 2024 hearing, Rep. Glenn Grothman said that agencies briefing the committee, including the DoD and IC inspectors general and AARO, had not been able to substantiate the claims Grusch made in 2023, despite members questioning them inside and outside the SCIF."
     claims: [ recovered-non-human-craft ]
     stance: disputes
