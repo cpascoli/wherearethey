@@ -577,7 +577,7 @@
   // Explore opens on a small map of the key files (content/explore.json) rather than the whole network, which is
   // slow to draw and unreadable at a glance. It is a trail with no steps whose files are pinned on screen, so
   // search, selection and the menu work as in any trail; following a file starts a real trail from it.
-  // "Show the full network" leaves it (state.full), "Back to the key files" and "Exit trail" return to it.
+  // /explore?full (no button: the whole network is too big to read) leaves it (state.full); "Back to the key files" and "Exit trail" return to it.
   const EXPLORE = KB.explore || { core: [], starts: [], stories: [] };
   const coreTrail = () => ({ core: true, steps: [], open: new Set(), pinned: new Set(EXPLORE.core.filter(id => byId.has(id))) });
   function enterCore() {
@@ -629,9 +629,7 @@
     T.at = at;
     applyGraphFilter();
     highlight(state.sel);
-    // bring the step into view, with the files of earlier steps it links to
-    const cur = cy.nodes('.trail').not('.hidden');
-    frameEles(cur.union(cur.connectedEdges('.trail').connectedNodes()), true);
+    frameEles(cy.nodes('.trail').not('.hidden'), true); // bring the step's own files into view
   }
   function expandFile(id) {
     const T = state.trail;
@@ -690,8 +688,7 @@
       const starts = stories.length ? `<span class="tb-lbl">Start a story</span>${stories.map(s => `<button class="tb-start" style="--c:${TYPES[byId.get(s.steps[0].ids[0]).type].color}" data-story-start="${esc(s.id)}" title="${esc(s.blurb || '')}">${esc(s.label)}</button>`).join('')}`
         : `<span class="tb-lbl">Start from</span>${EXPLORE.starts.filter(s => byId.has(s.id)).map(s => `<button class="tb-start" style="--c:${TYPES[byId.get(s.id).type].color}" data-core-start="${esc(s.id)}">${esc(s.label)}</button>`).join('')}`;
       bar.innerHTML = `<div class="tb-row tb-starts">${starts}</div>
-        <div class="tb-row tb-tools"><span class="tb-hint">${narrowScreen() ? 'The key files · tap to read · double-tap to follow' : 'The key files of the story · click one to read it · double-click to follow its connections'}</span>${hiddenNote}
-          <button class="btn small" data-full>Show the full network</button></div>`;
+        <div class="tb-row tb-tools"><span class="tb-hint">${narrowScreen() ? 'The key files · tap to read · double-tap to follow' : 'The key files of the story · click one to read it · double-click to follow its connections'}</span>${hiddenNote}</div>`;
       return;
     }
     if (!T) {
@@ -719,7 +716,6 @@
     const ss = e.target.closest('[data-story-start]'); if (ss) { track('explore_start', { item_id: ss.dataset.storyStart, method: 'story' }); startStory(ss.dataset.storyStart); return; }
     const sa = e.target.closest('[data-story-at]'); if (sa) { storyStep(+sa.dataset.storyAt); return; }
     const cs = e.target.closest('[data-core-start]'); if (cs) { track('explore_start', { item_id: cs.dataset.coreStart, method: 'starting_point' }); exploreFrom(cs.dataset.coreStart); return; }
-    if (e.target.closest('[data-full]')) { showFull(); return; }
     if (e.target.closest('[data-core]')) { enterCore(); return; }
     if (e.target.closest('[data-unhide]')) { state.hiddenIds.clear(); trailChanged(null, { relayout: true }); return; }
   });
