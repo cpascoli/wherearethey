@@ -202,9 +202,13 @@
     // so picking types narrows the themes and picking themes narrows the types.
     const credOk = e => !(state.credibleOnly && e.cred === 'outside') && !(state.hideExplained && resolved(e));
     const tagOk = e => !state.tags.size || e.tags.some(t => state.tags.has(t));
+    // the timeline shows only dated files, and not people or videos (see renderTimeline): its Types list offers just
+    // the types that appear on it, counted by their dated files
+    const onTimeline = state.view === 'timeline', tlOk = e => !onTimeline || (e.y0 && e.type !== 'video' && e.type !== 'person');
     const counts = {};
-    for (const e of ents) if (credOk(e) && tagOk(e)) counts[e.type] = (counts[e.type] || 0) + 1;
-    $('#f-types').innerHTML = graphTypes.filter(t => counts[t]).map(t => `
+    for (const e of ents) if (credOk(e) && tagOk(e) && tlOk(e)) counts[e.type] = (counts[e.type] || 0) + 1;
+    const listTypes = onTimeline ? graphTypes.filter(t => ents.some(e => e.type === t && tlOk(e))) : graphTypes;
+    $('#f-types').innerHTML = listTypes.filter(t => counts[t]).map(t => `
       <label class="f-type ${state.types.has(t) ? '' : 'off'}" data-type="${t}" title="Click to toggle · double-click to show only this type">
         <span class="sw" style="background:${TYPES[t].color}"></span>${TYPES[t].plural}<span class="n">${counts[t]}</span>
       </label>`).join('') || '<p class="muted small">No types match the selected themes.</p>';
@@ -215,7 +219,7 @@
     $('#f-tags').innerHTML = tags.map(([t, n]) => `<button class="chip ${state.tags.has(t) ? 'on' : ''} ${n ? '' : 'dim'}" data-tag="${esc(t)}">${esc(t)}<span class="n">${n}</span></button>`).join('')
       || '<p class="muted small">No themes for the selected types.</p>';
     $('#f-tags-clear').hidden = !state.tags.size;
-    $('#f-types-clear').hidden = graphTypes.every(t => state.types.has(t)); // shown once any type is switched off
+    $('#f-types-clear').hidden = listTypes.every(t => state.types.has(t)); // shown once any type is switched off
     // years
     const a = $('#f-yr-a'), b = $('#f-yr-b');
     for (const el of [a, b]) { el.min = MIN_Y; el.max = MAX_Y; el.step = 1; }
@@ -2893,6 +2897,7 @@
     state.view = view;
     $('#side').classList.remove('open'); // close the mobile filter drawer on navigation
     store.set('view', view);
+    renderFilters(); // the Types list depends on the view (the timeline offers only the types it shows)
     for (const v of VIEWS) $('#view-' + v).hidden = v !== view;
     const narrow = matchMedia('(max-width: 860px)').matches; // the bottom tab bar folds Timeline into More
     $$('#views [data-group], #views [data-view]').forEach(a => a.classList.toggle('active', [...(a.dataset.group || a.dataset.view).split(' '), ...(narrow && a.dataset.groupNarrow ? a.dataset.groupNarrow.split(' ') : [])].includes(view)));
