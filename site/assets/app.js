@@ -1285,6 +1285,10 @@
   });
   // document full text, shown in the top dropdown: the matching pages of each document, each opening the PDF there.
   // Rendered on the next frame, so the click that asked for it is not taken as a click outside the search box.
+  // MoD UFO files: a Pagefind index (site/pagefind-mod, built by scripts/mod-index.mjs) fetched in small pieces per query
+  let modPf = null;
+  const modFilesCount = q => (modPf ||= import('/pagefind-mod/pagefind.js').catch(() => null))
+    .then(pf => pf ? pf.search(q.trim()) : null).then(r => r?.results.length || 0).catch(() => 0);
   async function showDocResults(q, dd = $('#q-results'), input = '#q') {
     requestAnimationFrame(() => { dd.innerHTML = `<div class="dd-head">Searching ${KB.stats.documents} documents for “${esc(q)}”…</div>`; dd.hidden = false; });
     trackSearch(q, 'documents');
@@ -1297,7 +1301,15 @@
         + r.dOut.slice(0, 15).map(([d, hits]) => `<div class="dd-doc"><a class="dd-doc-t" href="${hrefOf(d.id)}" data-goto="${esc(d.id)}">${esc(d.name)}<span>${hits.length} p.</span></a>`
           + hits.slice(0, 3).map(h => `<a class="dd-doc-hit" href="${esc(fileUrl(h.file))}#page=${h.page}" target="_blank" title="Open the PDF at page ${h.page}"><span class="ts">p.${h.page}</span><span>${hl(h.snip)}${h.n > 1 ? ` <span class="muted">(${h.n}×)</span>` : ''}</span></a>`).join('')
           + (hits.length > 3 ? `<div class="small muted dd-doc-more">+${hits.length - 3} more pages</div>` : '') + '</div>').join('')
-        + (r.dOut.length > 15 ? `<div class="small muted dd-doc-more">+${r.dOut.length - 15} more documents</div>` : '');
+        + (r.dOut.length > 15 ? `<div class="small muted dd-doc-more">+${r.dOut.length - 15} more documents</div>` : '')
+        + '<div class="dd-mod" hidden></div>';
+    });
+    // the MoD UFO files have their own search page: here, just how many of their pages match, and a link there
+    modFilesCount(q).then(n => {
+      const slot = dd.querySelector('.dd-mod');
+      if (!n || !slot || $(input).value.trim() !== q.trim()) return;
+      slot.outerHTML = `<a class="dd-mod" href="/mod-files?q=${encodeURIComponent(q.trim())}" data-mod-files>${n.toLocaleString('en-US')} page${n > 1 ? 's' : ''} in the MoD UFO files mention “${esc(q.trim())}” →</a>`;
+      dd.querySelector('[data-mod-files]').addEventListener('click', () => track('select_content', { content_type: 'mod_files_search', item_id: q.trim(), method: 'document_search' }));
     });
   }
   document.addEventListener('keydown', e => {
@@ -1423,6 +1435,13 @@
           </div>`).join('')}</div></div>`);
       }
     }
+    // curated moments
+    const ms = e.type === 'video' ? (e.moments || []).map(m => ({ video: e.id, ...m })) : (momentsFor.get(e.id) || []);
+    if (ms.length) {
+      h.push(`<div class="p-sec"><h4>Video moments <span>${ms.length}</span></h4><div data-collapse="10" data-fixed>${ms.sort((a, b) => a.video.localeCompare(b.video) || a.t - b.t).map(m => `
+        <div class="moment"><button class="ts" data-play="${m.video}@${m.t}">▶ ${fmtT(m.t)}</button><div><div>${esc(m.text)}</div>
+        <div class="who">${m.speaker && m.speaker !== e.id ? chip(m.speaker) : ''}${e.type !== 'video' ? chip(m.video) : m.refs.map(r => chip(r)).join('')}</div></div></div>`).join('')}</div></div>`);
+    }
     if (e.pursue) {
       const pu = e.pursue;
       const local = e.files.find(f => f.endsWith('.pdf'));
@@ -1434,22 +1453,6 @@
     if (e.links.length || e.files.length) {
       const amzP = e.type === 'book' && amazonLink(e.isbn);
       h.push(`<div class="p-sec p-side" id="sec-links"><h4>Sources, links & files</h4><ul class="p-links">${amzP ? `<li><a href="${esc(amzP.url)}" target="_blank" rel="noopener sponsored">Buy on Amazon (${esc(amzP.store)}) ↗</a></li>` : ''}${e.links.map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.url)} ↗</a></li>`).join('')}${e.files.map(f => `<li><a href="${esc(fileUrl(f))}" target="_blank">📄 ${esc(f.split('/').pop())}</a></li>`).join('')}</ul></div>`);
-    }
-    if (e.facts.length) {
-      h.push(`<div class="p-sec" id="sec-claims"><h4>Notes & claims <span>${e.facts.length}</span></h4><ul class="facts" data-collapse="8">${e.facts.map(f => {
-        const src = f.source ? (f.source.file ? `<a href="${esc(fileUrl(f.source.file))}" target="_blank">📄 ${esc(f.source.file.split('/').pop())}</a>` : f.source.url ? `<a href="${esc(f.source.url)}" target="_blank" rel="noopener">source ↗</a>`
-          : byId.get(f.source.id)?.type === 'video' ? `<button class="ts" data-play="${f.source.id}@${f.source.t || 0}">▶ ${f.source.t != null ? fmtT(f.source.t) : 'video'}</button> ${chip(f.source.id)}`
-          : `source: ${chip(f.source.id)}`) : '';
-        const needs = !f.source && f.status !== 'documented' ? `<span class="needs" title="Add a source: video timestamp, document or link">needs source</span>` : '';
-        return `<li class="fact" style="--st:var(--${f.status})"><div>${esc(f.text)}</div><div class="meta"><span class="stamp" title="${esc(STATUS[f.status].hint)}">${STATUS[f.status].label}</span>${f.by && f.by !== e.id ? `<span>by ${chip(f.by)}</span>` : ''}${src}${needs}</div></li>`;
-      }).join('')}</ul></div>`);
-    }
-    // curated moments
-    const ms = e.type === 'video' ? (e.moments || []).map(m => ({ video: e.id, ...m })) : (momentsFor.get(e.id) || []);
-    if (ms.length) {
-      h.push(`<div class="p-sec"><h4>Video moments <span>${ms.length}</span></h4><div data-collapse="12">${ms.sort((a, b) => a.video.localeCompare(b.video) || a.t - b.t).map(m => `
-        <div class="moment"><button class="ts" data-play="${m.video}@${m.t}">▶ ${fmtT(m.t)}</button><div><div>${esc(m.text)}</div>
-        <div class="who">${m.speaker && m.speaker !== e.id ? chip(m.speaker) : ''}${e.type !== 'video' ? chip(m.video) : m.refs.map(r => chip(r)).join('')}</div></div></div>`).join('')}</div></div>`);
     }
     // news items linked to this entry (either direction), newest first
     if (e.type !== 'news') {
@@ -1510,6 +1513,16 @@
     h.push(renderDots(e));
     if (e.type === 'claim') h.push(claimPeople(e));
     if (e.tags.length) h.push(`<div class="p-sec p-side"><h4>Themes</h4><div class="chips">${e.tags.map(t => `<button class="chip ${state.tags.has(t) ? 'on' : ''}" data-filter-tag="${esc(t)}">${esc(t)}</button>`).join('')}</div></div>`);
+    // notes & claims come last, after the videos and links
+    if (e.facts.length) {
+      h.push(`<div class="p-sec" id="sec-claims"><h4>Notes & claims <span>${e.facts.length}</span></h4><ul class="facts" data-collapse="5" data-fixed>${e.facts.map(f => {
+        const src = f.source ? (f.source.file ? `<a href="${esc(fileUrl(f.source.file))}" target="_blank">📄 ${esc(f.source.file.split('/').pop())}</a>` : f.source.url ? `<a href="${esc(f.source.url)}" target="_blank" rel="noopener">source ↗</a>`
+          : byId.get(f.source.id)?.type === 'video' ? `<button class="ts" data-play="${f.source.id}@${f.source.t || 0}">▶ ${f.source.t != null ? fmtT(f.source.t) : 'video'}</button> ${chip(f.source.id)}`
+          : `source: ${chip(f.source.id)}`) : '';
+        const needs = !f.source && f.status !== 'documented' ? `<span class="needs" title="Add a source: video timestamp, document or link">needs source</span>` : '';
+        return `<li class="fact" style="--st:var(--${f.status})"><div>${esc(f.text)}</div><div class="meta"><span class="stamp" title="${esc(STATUS[f.status].hint)}">${STATUS[f.status].label}</span>${f.by && f.by !== e.id ? `<span>by ${chip(f.by)}</span>` : ''}${src}${needs}</div></li>`;
+      }).join('')}</ul></div>`);
+    }
     h.push(`<div class="p-edit">Edit <code>${esc(e.file)}</code><button class="link" data-copy="${esc(e.file)}">copy path</button></div>`);
     return h.join('');
   }
@@ -1635,7 +1648,7 @@
   // Long lists start collapsed: show the first N items (×factor in reading view) with a “show all” toggle
   function applyCollapse(root, factor = 1) {
     for (const box of root.querySelectorAll('[data-collapse]')) {
-      const n = +box.dataset.collapse * (box.closest('.p-side') ? 1 : factor); // side-column lists stay short in reading view too
+      const n = +box.dataset.collapse * (box.closest('.p-side') || box.hasAttribute('data-fixed') ? 1 : factor); // side-column lists, and moments and notes (data-fixed), stay short in reading view too
       const items = [...box.children];
       if (items.length <= n + 1) continue;
       items.slice(n).forEach(el => el.classList.add('collapsed'));
@@ -1849,7 +1862,8 @@
   // document full text, searched from the top search bar: one hit per matching page, with a snippet around the
   // first match
   async function searchDocuments(q) {
-    const docs = docEnts.filter(e => !(state.credibleOnly && e.cred === 'outside'));
+    // the bulk MoD UFO files are searched on their own page (/mod-files), not here
+    const docs = docEnts.filter(e => !(state.credibleOnly && e.cred === 'outside') && !e.doctext.optin);
     await Promise.all(docs.map(d => loadDocText(d.id)));
     const needle = q.toLowerCase().replace(/[^\p{L}\p{N}' ]+/gu, ' ').replace(/\s+/g, ' ').trim();
     const reG = new RegExp(needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/ /g, '\\s*'), 'gi');

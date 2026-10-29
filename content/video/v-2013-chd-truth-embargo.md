@@ -43,11 +43,13 @@ moments:
     basis: opinion
   - t: "41:43"
     text: "Jeffrey Torres testifies for his father, Maj. Milton Torres (“major milton john taurus” in the captions), a U.S. Air Force fighter pilot who flew from RAF Manston in England in the 1950s."
+    refs: [ milton-torres, inc-manston-1957 ]
   - t: "46:10"
     text: "He says his father received “the authentication code to fire” on a hot mission to shoot down an object over the North Sea, and that his radar showed a target “as big as an aircraft carrier”."
+    refs: [ inc-manston-1957 ]
   - t: "49:02"
     text: "Torres says the object broke lock on all radars and left at a speed his father estimated as “mach 10”, and that an NSA man later “swore dad to secrecy”. The case surfaced in the Ministry of Defence files released in 2008."
-    refs: [ uk-national-archives ]
+    refs: [ inc-manston-1957, doc-mod-defe-24-1931 ]
   - t: "1:14:55"
     text: "Dolan recommends NASA engineer Paul Hill's posthumous study “unconventional flying objects a scientific analysis” on how UFOs might move without breaking physics."
 ---

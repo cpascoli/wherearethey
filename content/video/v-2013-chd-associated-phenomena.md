@@ -25,6 +25,7 @@ moments:
   - t: "35:32"
     text: "Heseltine cites the night of 30–31 March 1993, “the costford incident” (Cosford), when more than 24 police officers tracked at least one object across six counties of Britain."
     speaker: gary-heseltine
+    refs: [ inc-cosford-1993 ]
   - t: "36:14"
     text: "Heseltine: in October 1984 near RAF Northolt two uniformed officers on patrol saw a silent black triangle at low altitude, “the size of three football fields”."
     speaker: gary-heseltine

@@ -37,6 +37,9 @@ facts:
     status: claimed
     by: nick-pope
     source: v-2013-chd-rendlesham-1@33:55
+  - text: "The MoD files released in 2011 hold papers on his decision, as a serving official, to publish Open Skies, Closed Minds; an MoD briefing suggests the book may have contributed to an increase in letters and sighting reports “from 373 in 1995 to 609 in 1996” (DEFE 24/2033, p. 35)."
+    status: documented
+    source: library/docs/mod-ufo/highlights-guide-09-08-11.pdf
 ---
 
 Nick Pope is a former UK Ministry of Defence civil servant who ran the ministry's UFO desk in the Secretariat (Air Staff) from 1991 to 1994, investigating public and military reports for the British government. He has since become the best-known British official voice on the subject, through books, broadcasts, the 2007 National Press Club panel and the Rendlesham Forest panel of the 2013 Citizen Hearing.

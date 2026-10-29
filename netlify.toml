@@ -29,6 +29,13 @@
   [headers.values]
     Cache-Control = "no-store"
 
+# The MoD UFO files search index (scripts/mod-index.mjs, ~37,000 small files) lives on R2, uploaded with
+# `npm run r2:index`, so the Netlify build stays fast; served from our own origin for the /mod-files page and the app.
+[[redirects]]
+  from = "/pagefind-mod/*"
+  to = "https://pub-86f038fb92684457b9683cd2fd44620e.r2.dev/pagefind-mod/:splat"
+  status = 200
+
 # removed duplicates: old links point to the version we kept
 [[redirects]]
   from = "/video/two-airmen-finally-tell-the-story-of-their-terrifying-ufo"

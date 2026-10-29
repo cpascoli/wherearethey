@@ -27,6 +27,9 @@ moments:
   - t: "12:06"
     text: "Nick Pope says the MoD's air-safety concern was collision: there were near misses close enough that a pilot “flinched and called on one occasion, \"Look out. Look out.\"”"
     speaker: nick-pope
+  - t: "12:54"
+    text: "On the 1981 Trans-en-Provence landing, a slide from the briefing document quoting the French space agency's conclusion: “physical phenomenon of unexplained nature, high probability of electromagnetic mode of propulsion”."
+    refs: [ inc-trans-en-provence-1981, geipan ]
   - t: "16:21"
     text: "Huneeus cites the 1976 Tehran case, when a huge object “was flying over Tehran” and an Iranian F-4 lost its weapons and instruments, documented by the U.S. government and evaluated by the Defense Intelligence Agency."
     speaker: antonio-huneeus

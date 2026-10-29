@@ -16,7 +16,9 @@
     "add:doc": "node scripts/add-document.mjs",
     "r2:push": "scripts/r2.sh push",
     "r2:pull": "scripts/r2.sh pull",
-    "r2:check": "scripts/r2.sh check"
+    "r2:check": "scripts/r2.sh check",
+    "index:mod": "node scripts/mod-index.mjs",
+    "r2:index": "scripts/r2.sh index"
   },
   "dependencies": {
     "csv-parse": "^7.0.3",
@@ -25,5 +27,8 @@
     "marked": "^14.1.0",
     "puppeteer-core": "^23.11.1",
     "yaml": "^2.6.0"
+  },
+  "devDependencies": {
+    "pagefind": "^1.4.0"
   }
 }

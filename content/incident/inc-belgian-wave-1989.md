@@ -37,6 +37,9 @@ facts:
     stance: disputes
     status: claimed
     source: https://ufologie.patrickgross.org/htm/belstu03.htm
+  - text: "The MoD files hold a detailed account of the events by Col. Wilfried De Brouwer of the Belgian Air Force, who says the “incident remains unresolved” (DEFE 31/185, pp. 247–51)."
+    status: documented
+    source: library/docs/mod-ufo/highlights-guide-09-08-11.pdf
 ---
 
 From 29 November 1989, when gendarmes and others around Eupen reported large, slow, silent triangular craft with lights at the corners, Belgium saw a wave of sightings that lasted into 1990 and beyond; the Eupen sightings alone drew 143 witness reports, most of them submitted after media coverage.
