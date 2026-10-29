@@ -1237,7 +1237,6 @@
   }
 
   // ───────────── claims ledger ─────────────
-  const claimStatus = new Set(store.get('claimStatus', ['documented', 'claimed', 'unverified']));
   // strongest first: statements made first-hand or from documents (either way), then volume; keep in sync with pages.mjs
   const claimWeight = c => c.assertions.filter(a => a.basis === 'first-hand' || a.basis === 'documented').length;
   const claimOrder = (a, b) => claimWeight(b) - claimWeight(a) || b.assertions.length - a.assertions.length;
@@ -1250,38 +1249,8 @@
         <div class="cc-name">${esc(c.name)}</div>${first ? `<div class="small muted">First on file: ${esc(byId.get(first.by)?.name || byId.get(first.on)?.name || '')}, ${esc(fmtD(first.date))}</div>` : ''}</a>`;
     }).join('') || '<p class="muted">No claims yet.</p>';
   }
-  function renderClaims() {
-    renderClaimCards();
-    $('#c-status').innerHTML = Object.entries(STATUS).map(([k, v]) => `<button data-cst="${k}" class="${claimStatus.has(k) ? 'on' : ''}" title="${esc(v.hint)}">${v.label}</button>`).join('');
-    const q = $('#cq').value.trim().toLowerCase();
-    const rows = [];
-    for (const e of ents) {
-      if (!visible.has(e.id)) continue;
-      for (const f of e.facts) {
-        if (!claimStatus.has(f.status)) continue;
-        const by = f.by ? byId.get(f.by) : null;
-        if (q && !(f.text + ' ' + e.name + ' ' + (by?.name || '')).toLowerCase().includes(q)) continue;
-        rows.push({ e, f, by });
-      }
-    }
-    const order = { documented: 0, claimed: 1, unverified: 2 };
-    rows.sort((a, b) => order[a.f.status] - order[b.f.status] || String(b.e.date || '').localeCompare(String(a.e.date || '')));
-    $('#cq-count').textContent = `${rows.length} statements`;
-    $('#claims').innerHTML = rows.map(({ e, f, by }) => {
-      const src = f.source ? (f.source.file ? `<a href="${esc(fileUrl(f.source.file))}" target="_blank">📄 ${esc(f.source.file.split('/').pop())}</a>` : f.source.url ? `<a href="${esc(f.source.url)}" target="_blank" rel="noopener">source ↗</a>`
-        : byId.get(f.source.id)?.type === 'video' ? `<button class="ts" data-play="${f.source.id}@${f.source.t || 0}">▶ ${f.source.t != null ? fmtT(f.source.t) : 'video'}</button>` : chip(f.source.id)) : (f.status !== 'documented' ? '<span class="needs">needs source</span>' : '');
-      return `<div class="claim" style="--st:var(--${f.status})"><div>${esc(f.text)}</div>
-        <div class="meta"><span class="stamp" style="--st:var(--${f.status})">${STATUS[f.status].label}</span><span>re: ${chip(e.id)}</span>${(f.claims || []).map(c => `<span>claim: ${chip(c)}</span>`).join('')}${by && by.id !== e.id ? `<span>by ${chip(by.id)}</span>` : by ? '<span>self-reported</span>' : ''}${src}</div></div>`;
-    }).join('') || '<p class="muted">No statements match.</p>';
-  }
-  $('#cq').addEventListener('input', renderClaims);
-  $('#c-status').addEventListener('click', e => {
-    const b = e.target.closest('[data-cst]'); if (!b) return;
-    const k = b.dataset.cst;
-    claimStatus.has(k) && claimStatus.size > 1 ? claimStatus.delete(k) : claimStatus.add(k);
-    store.set('claimStatus', [...claimStatus]);
-    renderClaims();
-  });
+  // /claims lists the claims only; each claim's page gathers the statements that support or dispute it
+  function renderClaims() { renderClaimCards(); }
 
   // ───────────── global search ─────────────
   const searchCache = new Map();
