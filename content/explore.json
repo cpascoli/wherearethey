@@ -1,22 +1,504 @@
 {
   "_about": "What Explore opens on: a small map of the key files (core) instead of the whole network, and the starting points shown above it. Edit freely; ids must exist (npm run check). Keep it to the well-sourced core of the story.",
   "core": [
-    "aatip", "aawsap", "uaptf", "aaro", "doc-aaro-historical-record-report-v1", "legacy-program", "crash-retrieval", "project-blue-book",
-    "h-2023-07-26", "h-2024-11-13", "h-2024-11-19", "h-2025-09-09",
-    "inc-nimitz-2004", "inc-roosevelt-2015", "inc-roswell-1947", "inc-rendlesham-1980", "inc-malmstrom-1967",
-    "david-grusch", "luis-elizondo", "david-fravor", "ryan-graves", "chris-mellon", "jay-stratton",
-    "sean-kirkpatrick", "jon-kosloski", "harry-reid", "kirsten-gillibrand", "anna-paulina-luna"
+    "aatip",
+    "aawsap",
+    "uaptf",
+    "aaro",
+    "doc-aaro-historical-record-report-v1",
+    "legacy-program",
+    "crash-retrieval",
+    "project-blue-book",
+    "h-2023-07-26",
+    "h-2024-11-13",
+    "h-2024-11-19",
+    "h-2025-09-09",
+    "inc-nimitz-2004",
+    "inc-roosevelt-2015",
+    "inc-roswell-1947",
+    "inc-rendlesham-1980",
+    "inc-malmstrom-1967",
+    "david-grusch",
+    "luis-elizondo",
+    "david-fravor",
+    "ryan-graves",
+    "chris-mellon",
+    "jay-stratton",
+    "sean-kirkpatrick",
+    "jon-kosloski",
+    "harry-reid",
+    "kirsten-gillibrand",
+    "anna-paulina-luna"
   ],
   "starts": [
-    { "label": "The Tic Tac (Nimitz)", "id": "inc-nimitz-2004" },
-    { "label": "David Grusch", "id": "david-grusch" },
-    { "label": "Grusch's sworn statement", "id": "doc-grusch-statement-2023-07-26" },
-    { "label": "The 2023 UFO hearing", "id": "h-2023-07-26" },
-    { "label": "The 2017 New York Times story", "id": "ev-nyt-2017" },
-    { "label": "AATIP & the Pentagon", "id": "aatip" },
-    { "label": "Roswell", "id": "inc-roswell-1947" },
-    { "label": "UFOs at nuclear bases", "id": "inc-malmstrom-1967" },
-    { "label": "Crash retrieval", "id": "crash-retrieval" },
-    { "label": "The 2021 ODNI report", "id": "doc-odni-2021-preliminary-assessment" }
+    {
+      "label": "The Tic Tac (Nimitz)",
+      "id": "inc-nimitz-2004"
+    },
+    {
+      "label": "David Grusch",
+      "id": "david-grusch"
+    },
+    {
+      "label": "Grusch's sworn statement",
+      "id": "doc-grusch-statement-2023-07-26"
+    },
+    {
+      "label": "The 2023 UFO hearing",
+      "id": "h-2023-07-26"
+    },
+    {
+      "label": "The 2017 New York Times story",
+      "id": "ev-nyt-2017"
+    },
+    {
+      "label": "AATIP & the Pentagon",
+      "id": "aatip"
+    },
+    {
+      "label": "Roswell",
+      "id": "inc-roswell-1947"
+    },
+    {
+      "label": "UFOs at nuclear bases",
+      "id": "inc-malmstrom-1967"
+    },
+    {
+      "label": "Crash retrieval",
+      "id": "crash-retrieval"
+    },
+    {
+      "label": "The 2021 ODNI report",
+      "id": "doc-odni-2021-preliminary-assessment"
+    }
+  ],
+  "stories": [
+    {
+      "id": "tic-tac",
+      "label": "The Tic Tac (Nimitz)",
+      "title": "The Tic Tac: the USS Nimitz encounter, 2004",
+      "blurb": "Navy radar operators and pilots meet an object they cannot identify; thirteen years later it becomes the case that opened the disclosure era.",
+      "steps": [
+        {
+          "title": "Strange radar tracks, November 2004",
+          "ids": [
+            "inc-nimitz-2004",
+            "kevin-day",
+            "gary-voorhis"
+          ],
+          "text": "Radar operators on the cruiser USS Princeton, part of the USS Nimitz strike group training off southern California, tracked anomalous objects for about two weeks. Kevin Day sent fighters to intercept one."
+        },
+        {
+          "title": "The intercept, 14 November",
+          "ids": [
+            "david-fravor",
+            "alex-dietrich"
+          ],
+          "text": "Cmdr. David Fravor and Lt. Cmdr. Alex Dietrich, in two F/A-18Fs, watched a white, wingless object about 40 feet long, shaped like a Tic Tac, for roughly five minutes; Fravor says it mirrored his descent and then accelerated out of sight."
+        },
+        {
+          "title": "FLIR1",
+          "ids": [
+            "chad-underwood",
+            "v-navy-flir1-2004"
+          ],
+          "text": "Later that day Lt. Chad Underwood filmed an object with his jet's infrared targeting pod: the video now known as FLIR1."
+        },
+        {
+          "title": "The story breaks, December 2017",
+          "ids": [
+            "ev-nyt-2017",
+            "luis-elizondo",
+            "chris-mellon",
+            "aatip",
+            "harry-reid"
+          ],
+          "text": "The New York Times published FLIR1 with its first reporting on the Pentagon's secret UFO study, AATIP, featuring Fravor and Luis Elizondo, helped by Chris Mellon, and naming Senator Harry Reid."
+        },
+        {
+          "title": "The Pentagon confirms, April 2020",
+          "ids": [
+            "ev-dod-videos-2020",
+            "doc-dod-statement-navy-videos-2020"
+          ],
+          "text": "The Department of Defense officially released FLIR1, with Gimbal and GoFast; the Navy confirmed that the videos show unidentified aerial phenomena."
+        },
+        {
+          "title": "Under oath, July 2023",
+          "ids": [
+            "h-2023-07-26",
+            "doc-fravor-statement-2023-07-26"
+          ],
+          "text": "Fravor described the encounter under oath to the House Oversight Committee."
+        },
+        {
+          "title": "Still unresolved",
+          "ids": [
+            "doc-odni-2021-preliminary-assessment",
+            "scott-bray",
+            "sean-kirkpatrick"
+          ],
+          "text": "The intelligence community's 2021 assessment covers the case, and Deputy Director of Naval Intelligence Scott Bray called it one that “simply remains unresolved”. Tim Gallaudet says AARO's first director, Sean Kirkpatrick, called the Tic Tac a DARPA experiment; Gallaudet rejects this."
+        }
+      ]
+    },
+    {
+      "id": "nyt-2017",
+      "label": "The 2017 New York Times story",
+      "title": "The 2017 New York Times story",
+      "blurb": "How a secret Pentagon study program, its insiders and a Navy video became public, and what the government did next. The articles reported a study program and Navy encounters, not a crash-retrieval program.",
+      "steps": [
+        {
+          "title": "16 December 2017",
+          "ids": [
+            "ev-nyt-2017",
+            "leslie-kean"
+          ],
+          "text": "The New York Times revealed that the Pentagon had run a secret program to study UFOs. Leslie Kean was one of its reporters."
+        },
+        {
+          "title": "The program",
+          "ids": [
+            "aatip",
+            "aawsap",
+            "harry-reid",
+            "robert-bigelow",
+            "james-lacatski"
+          ],
+          "text": "Behind it was AAWSAP, a $22 million Defense Intelligence Agency program funded at Senator Harry Reid's direction and run from 2009 to 2012, managed by James Lacatski, with Robert Bigelow's company as contractor; the 2017 story called it AATIP."
+        },
+        {
+          "title": "The insiders",
+          "ids": [
+            "luis-elizondo",
+            "chris-mellon",
+            "to-the-stars",
+            "tom-delonge"
+          ],
+          "text": "Luis Elizondo, who says he led AATIP, and former Pentagon official Chris Mellon were the story's sources; both then worked for To The Stars, the company founded by Tom DeLonge."
+        },
+        {
+          "title": "The evidence",
+          "ids": [
+            "inc-nimitz-2004",
+            "david-fravor",
+            "v-navy-flir1-2004"
+          ],
+          "text": "The story centred on the 2004 Nimitz “Tic Tac” encounter, with pilot David Fravor on the record and the FLIR1 video, which Mellon provided."
+        },
+        {
+          "title": "The Pentagon confirms, April 2020",
+          "ids": [
+            "ev-dod-videos-2020"
+          ],
+          "text": "The Department of Defense officially released FLIR1 and two later Navy videos, and the Navy confirmed they show unidentified aerial phenomena."
+        },
+        {
+          "title": "The government takes it up",
+          "ids": [
+            "uaptf",
+            "doc-odni-2021-preliminary-assessment",
+            "aaro"
+          ],
+          "text": "In August 2020 the Pentagon set up the UAP Task Force. Its work produced the intelligence community's 2021 Preliminary Assessment: of 144 reports, only one was identified. Its successor is AARO."
+        }
+      ]
+    },
+    {
+      "id": "grusch",
+      "label": "David Grusch",
+      "title": "David Grusch: the whistleblower",
+      "blurb": "An intelligence officer says he was told of a decades-long crash-retrieval program hidden from Congress; the Pentagon's UAP office says it found no evidence.",
+      "steps": [
+        {
+          "title": "An intelligence officer",
+          "ids": [
+            "david-grusch",
+            "nro",
+            "uaptf"
+          ],
+          "text": "David Grusch, a former Air Force and National Reconnaissance Office intelligence officer, served on the UAP Task Force from 2019 to 2021."
+        },
+        {
+          "title": "Where it came from",
+          "ids": [
+            "jay-stratton",
+            "eric-davis"
+          ],
+          "text": "Jay Stratton, the task force's first director, introduced Grusch to the physicist Eric Davis, who says he briefed Grusch and his NRO boss for two and a half days."
+        },
+        {
+          "title": "The complaint, May 2022",
+          "ids": [
+            "ev-grusch-icig-complaint-2022",
+            "icig"
+          ],
+          "text": "Grusch filed a complaint with the Intelligence Community Inspector General, alleging that information about crash-retrieval programs was being withheld from Congress. According to Grusch, the Inspector General found it “credible and urgent”; it has not published its determination."
+        },
+        {
+          "title": "Under oath, July 2023",
+          "ids": [
+            "h-2023-07-26",
+            "doc-grusch-statement-2023-07-26",
+            "tim-burchett",
+            "nancy-mace",
+            "anna-paulina-luna"
+          ],
+          "text": "Before the House Oversight Committee he testified: “I was informed, in the course of my official duties, of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access.”"
+        },
+        {
+          "title": "The allegation",
+          "ids": [
+            "crash-retrieval",
+            "legacy-program"
+          ],
+          "text": "The “legacy program”, a long-running effort said to retrieve and reverse-engineer craft and remains of non-human origin, is the central allegation of the debate. Its existence has not been officially confirmed."
+        },
+        {
+          "title": "The Pentagon's answer, March 2024",
+          "ids": [
+            "aaro",
+            "sean-kirkpatrick",
+            "doc-aaro-historical-record-report-v1"
+          ],
+          "text": "AARO's Historical Record Report, overseen by Sean Kirkpatrick: “AARO found no evidence that any USG investigation, academic-sponsored research, or official review panel has confirmed that any sighting of a UAP represented extraterrestrial technology.”"
+        },
+        {
+          "title": "Since",
+          "ids": [
+            "eric-burlison"
+          ],
+          "text": "Grusch later worked on Rep. Eric Burlison's staff, leaving in September 2026; Burlison says his office is still trying to verify his claims."
+        }
+      ]
+    },
+    {
+      "id": "gimbal-gofast",
+      "label": "Gimbal & GoFast",
+      "title": "Gimbal and GoFast: USS Theodore Roosevelt, 2014–15",
+      "blurb": "Navy fighter crews report near-daily encounters off the East Coast; two of their videos are released by the Pentagon, and one is later explained.",
+      "steps": [
+        {
+          "title": "Off the East Coast, 2014–15",
+          "ids": [
+            "inc-roosevelt-2015",
+            "ryan-graves"
+          ],
+          "text": "F/A-18 crews from the USS Theodore Roosevelt strike group reported frequent encounters with unidentified objects, including near-midair collisions. Lt. Ryan Graves flew in the group."
+        },
+        {
+          "title": "The videos",
+          "ids": [
+            "v-navy-gimbal-2015",
+            "v-navy-gofast-2015",
+            "ev-dod-videos-2020",
+            "doc-dod-statement-navy-videos-2020"
+          ],
+          "text": "Two infrared videos, Gimbal and GoFast, were published in 2017–18 and officially released by the Department of Defense in April 2020; the Navy confirmed they show unidentified aerial phenomena."
+        },
+        {
+          "title": "A safety warning that vanished",
+          "ids": [
+            "tim-gallaudet"
+          ],
+          "text": "Rear Adm. Tim Gallaudet, then Oceanographer of the Navy, testified that a secure email about the safety concerns vanished from his and the other recipients' inboxes the day after it arrived."
+        },
+        {
+          "title": "Under oath, July 2023",
+          "ids": [
+            "h-2023-07-26",
+            "doc-graves-statement-2023-07-26"
+          ],
+          "text": "Graves told the House Oversight Committee that after a radar upgrade in 2014 his squadron began detecting unknown objects off Virginia Beach: “advanced UAP are a national security and an aviation safety problem.”"
+        },
+        {
+          "title": "GoFast explained",
+          "ids": [
+            "doc-nasa-uap-study-2023",
+            "doc-aaro-gofast",
+            "aaro"
+          ],
+          "text": "NASA (2023) and then AARO (2025) found that GoFast's apparent speed low over the water is parallax: the object was at about 13,000 feet, drifting with the wind. Neither identifies it."
+        },
+        {
+          "title": "Gimbal, still disputed",
+          "ids": [
+            "sean-kirkpatrick",
+            "marik-von-rennenkampff"
+          ],
+          "text": "Marik von Rennenkampff says Kirkpatrick twice told him the Gimbal object was a balloon reflecting sunlight. No official explanation of Gimbal, or of the squadron's other tracks and near misses, has been published."
+        }
+      ]
+    },
+    {
+      "id": "nuclear",
+      "label": "UFOs at nuclear bases",
+      "title": "UFOs at nuclear bases",
+      "blurb": "Missile officers and airmen describe objects over nuclear sites; the Air Force's own records give a technical explanation for the best-known case.",
+      "steps": [
+        {
+          "title": "Malmstrom, March 1967",
+          "ids": [
+            "inc-malmstrom-1967",
+            "bob-salas"
+          ],
+          "text": "At Malmstrom AFB, Montana, all ten Minuteman missiles of Echo Flight shut down on 16 March 1967. Robert Salas says that at Oscar Flight guards reported a glowing oval hovering over the gate, and six to eight of his missiles then dropped offline."
+        },
+        {
+          "title": "The Air Force record",
+          "ids": [
+            "doc-341smw-history-1967",
+            "robert-jamison"
+          ],
+          "text": "The missile wing's own histories document the Echo Flight investigation; they trace the shutdown to a noise pulse in the logic coupler and call the UFO rumours “disproven”. Robert Jamison, who restarted missiles at Oscar Flight, did not himself see an object."
+        },
+        {
+          "title": "Going public, 2010",
+          "ids": [
+            "ev-ufo-nukes-press-conference-2010",
+            "robert-hastings"
+          ],
+          "text": "Researcher Robert Hastings brought seven former Air Force officers and airmen to the National Press Club to describe incidents at nuclear sites from the 1960s to 1980. The Air Force's position: no UFO it evaluated was ever a threat to national security."
+        },
+        {
+          "title": "F.E. Warren, 1976",
+          "ids": [
+            "inc-warren-1976"
+          ],
+          "text": "Capt. Bruce Fenstermacher, on alert at a launch control facility in Wyoming, says a large, silent, cigar-shaped object moved from one launch facility to another for an hour and a half."
+        },
+        {
+          "title": "Rendlesham, December 1980",
+          "ids": [
+            "inc-rendlesham-1980",
+            "charles-halt"
+          ],
+          "text": "At RAF Woodbridge, next to RAF Bentwaters in England, U.S. airmen reported lights in Rendlesham Forest; the deputy base commander, Lt. Col. Charles Halt, led a search and reported “Unexplained Lights” to the UK Ministry of Defence."
+        },
+        {
+          "title": "Asked in Congress",
+          "ids": [
+            "scott-bray"
+          ],
+          "text": "In 2022 Deputy Director of Naval Intelligence Scott Bray said the UAP Task Force had no official data on the reported Malmstrom shutdowns."
+        }
+      ]
+    },
+    {
+      "id": "roswell",
+      "label": "Roswell",
+      "title": "Roswell, 1947",
+      "blurb": "From a 'flying disc' press release and a weather balloon, to crashed craft and bodies, to the Air Force's two reports.",
+      "steps": [
+        {
+          "title": "July 1947",
+          "ids": [
+            "inc-roswell-1947",
+            "wright-patterson-afb"
+          ],
+          "text": "Rancher Mac Brazel found debris near Corona, New Mexico; Roswell Army Air Field announced a recovered “flying disc”, then within hours called it a weather balloon. An FBI message said the material was flown to Wright Field."
+        },
+        {
+          "title": "The story returns, 1978",
+          "ids": [
+            "stanton-friedman",
+            "jesse-marcel-jr",
+            "kevin-randle",
+            "donald-schmitt"
+          ],
+          "text": "In 1978 Stanton Friedman interviewed Maj. Jesse Marcel, who said the balloon story was a cover; books from 1980 onwards, by Friedman, Kevin Randle, Donald Schmitt and others, added a crashed craft and bodies."
+        },
+        {
+          "title": "Congress asks, 1995",
+          "ids": [
+            "doc-gao-roswell-1995"
+          ],
+          "text": "The GAO found two records from 1947, and learned that the base's administrative records and outgoing messages for the period had been destroyed without recorded authority."
+        },
+        {
+          "title": "The Air Force's answer, 1994–97",
+          "ids": [
+            "doc-af-roswell-case-closed-1997"
+          ],
+          "text": "The Air Force identified the debris as a Project MOGUL balloon train (1994) and the accounts of bodies as 1950s test dummies and accidents (1997)."
+        },
+        {
+          "title": "Corso's claim, 1997",
+          "ids": [
+            "philip-corso"
+          ],
+          "text": "Lt. Col. Philip Corso claimed he seeded technology recovered at Roswell into U.S. industry; historians and the Army dispute much of his book."
+        },
+        {
+          "title": "The bigger allegation",
+          "ids": [
+            "crash-retrieval"
+          ],
+          "text": "Roswell is the founding case of the crash-retrieval allegation."
+        }
+      ]
+    },
+    {
+      "id": "crash-retrieval",
+      "label": "Crash retrieval",
+      "title": "Crash retrieval: the central allegation",
+      "blurb": "The claim that the U.S. holds crashed craft of non-human origin, from Roswell to Grusch, and the official findings against it.",
+      "steps": [
+        {
+          "title": "Roswell",
+          "ids": [
+            "crash-retrieval",
+            "inc-roswell-1947",
+            "philip-corso",
+            "doc-af-roswell-case-closed-1997"
+          ],
+          "text": "The allegation begins with Roswell (1947) and claims such as Philip Corso's; the Air Force attributes the debris to a MOGUL balloon and the bodies to test dummies."
+        },
+        {
+          "title": "Magenta, 1933",
+          "ids": [
+            "inc-magenta-1933"
+          ],
+          "text": "Grusch calls an alleged 1933 crash at Magenta, Italy, the earliest retrieval he can discuss publicly. None of it has been confirmed, and the 1933 papers have not been tested."
+        },
+        {
+          "title": "The Wilson notes",
+          "ids": [
+            "doc-wilson-memo",
+            "ev-wilson-memo-leak",
+            "eric-davis"
+          ],
+          "text": "Notes presented as Eric Davis's record of a 2002 conversation with retired Vice Adm. Thomas Wilson describe a reverse-engineering program at an aerospace contractor. Entered into a House record in 2022, they are a public document whose contents are unproven."
+        },
+        {
+          "title": "The whistleblower, 2022–23",
+          "ids": [
+            "david-grusch",
+            "ev-grusch-icig-complaint-2022",
+            "h-2023-07-26",
+            "jay-stratton"
+          ],
+          "text": "David Grusch's 2022 complaint and 2023 testimony made the allegation a congressional matter: he says he was told of “a multi-decade UAP crash retrieval and reverse engineering program”."
+        },
+        {
+          "title": "The legacy program",
+          "ids": [
+            "legacy-program",
+            "jake-barber"
+          ],
+          "text": "The “legacy program” is the name for the alleged effort. Its existence has not been officially confirmed. Jake Barber says he flew a helicopter on a retrieval mission; no released record supports his account."
+        },
+        {
+          "title": "The official finding",
+          "ids": [
+            "aaro",
+            "sean-kirkpatrick",
+            "jon-kosloski",
+            "doc-aaro-historical-record-report-v1"
+          ],
+          "text": "AARO's 2024 report, overseen by Sean Kirkpatrick, found no empirical evidence of reverse-engineered extraterrestrial technology; his successor Jon Kosloski reported “no verifiable evidence” of extraterrestrial beings or technology."
+        }
+      ]
+    }
   ]
 }
