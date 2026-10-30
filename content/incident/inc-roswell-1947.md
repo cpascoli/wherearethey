@@ -26,6 +26,9 @@ facts:
     basis: documented
     status: documented
     source: doc-af-roswell-case-closed-1997
+  - text: "The only contemporary record of Mac Brazel's own account, the Roswell Daily Record of 9 July 1947, says that “on June 14 he and 8-year old son Vernon” came upon the debris, that he “did not see it fall from the sky”, and that “on July 4 he, his wife, Vernon and a daughter Betty, age 14, went back to the spot” to collect it. The date of 4 July as the night of a crash comes from later accounts, among them Philip Corso's book (1997)."
+    status: claimed
+    source: https://ufology.patrickgross.org/rw/p/roswelldailyrecord9jul1947.htm
 ---
 
 In early July 1947, rancher Mac Brazel found debris of tinfoil, paper, tape and sticks scattered across his ranch near Corona, New Mexico. Maj. Jesse Marcel of Roswell Army Air Field collected it, and on 8 July the base announced that it had recovered a "flying disc". Within hours Gen. Roger Ramey retracted the statement in Fort Worth and identified the material as a weather balloon.
