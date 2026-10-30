@@ -12,6 +12,7 @@
     "watchlist": "node scripts/watchlist.mjs",
     "fetch": "node scripts/fetch-video.mjs",
     "find": "node scripts/find.mjs",
+    "dvids:thumbs": "node scripts/dvids-thumbs.mjs",
     "import:pursue": "node scripts/import-pursue.mjs",
     "add:doc": "node scripts/add-document.mjs",
     "r2:push": "scripts/r2.sh push",

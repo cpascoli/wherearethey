@@ -424,6 +424,17 @@ mark { background: rgba(227, 179, 65, .4); color: inherit; border-radius: 3px; p
 @media (min-width: 1500px) { .player-col { max-width: 1200px; } }
 
 /* watch list in dossiers */
+.dv-frame { position: relative; aspect-ratio: 16/9; background: #000; border-radius: 3px; overflow: hidden; cursor: pointer; }
+.dv-frame img { width: 100%; height: 100%; object-fit: contain; display: block; border: 0; max-height: none; border-radius: 0; background: #000; }
+.dv-frame .wplay { font-size: 28px; }
+.dv-frame:hover .wplay, .dv-frame:focus-visible .wplay { opacity: 1; }
+.dv-frame.playing { cursor: auto; }
+.record-card > .dv-frame { width: 100%; max-width: 760px; }
+.dv-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.dv-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.dv-item { display: grid; gap: 4px; align-content: start; }
+.dv-item .wt { color: inherit; text-decoration: none; }
+.dv-item .wt:hover { text-decoration: underline; }
 .watch { display: grid; gap: 8px; }
 .watch-item { display: grid; grid-template-columns: 128px 1fr; gap: 12px; align-items: start; padding: 6px; margin: 0 -6px; border-radius: 4px; cursor: pointer; }
 .watch-item:hover { background: var(--panel-2); }

@@ -136,6 +136,8 @@
   // thumbnail for any video entry (non-YouTube videos get a neutral placeholder)
   const VIDEO_PLACEHOLDER = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180"><rect width="320" height="180" fill="#131a1f"/><circle cx="160" cy="90" r="26" fill="none" stroke="#6fcfbf" stroke-width="3"/><path d="M152 76 L174 90 L152 104 Z" fill="#6fcfbf"/></svg>')}`;
   const vthumb = v => (v.youtube ? thumb(v.youtube) : v.thumb ? fileUrl(v.thumb) : VIDEO_PLACEHOLDER);
+  // a PURSUE video on DVIDS, played in place: the poster frame, replaced by DVIDS's own player on click
+  const dvidsPlayer = (pu, title) => `<div class="dv-frame" data-dvids="${esc(pu.dvidsId)}" role="button" tabindex="0" title="Play the official video (DVIDS)" aria-label="Play: ${esc(title)}">${pu.poster ? `<img src="${esc(pu.poster)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ''}<span class="wplay">▶</span></div>`;
   const vsource = v => (v.youtube ? { url: `https://www.youtube.com/watch?v=${v.youtube}`, label: 'YouTube' } : { url: v.url, label: v.url && /x\.com|twitter\.com/.test(v.url) ? 'X' : 'Source' });
   const subtitle = e => {
     if (e.credentials?.length) return e.credentials[0].role;
@@ -1473,6 +1475,15 @@
           </div>`).join('')}</div></div>`);
       }
     }
+    // official footage: the DVIDS videos of the PURSUE records linked to this entry (one tile per video), playable in place
+    if (e.type !== 'record' && e.type !== 'video') {
+      const seen = new Set();
+      const foot = [...new Set(adj.get(e.id).filter(x => x.kind !== 'mention').map(x => x.other))].map(id => byId.get(id))
+        .filter(r => r?.type === 'record' && r.pursue?.dvidsId && !seen.has(r.pursue.dvidsId) && seen.add(r.pursue.dvidsId))
+        .sort((a, b) => String(a.pursue.incident_date || a.date || '').localeCompare(String(b.pursue.incident_date || b.date || '')) || a.name.localeCompare(b.name));
+      if (foot.length) h.push(`<div class="p-sec" id="sec-footage"><h4>Official footage <span>${foot.length} video${foot.length > 1 ? 's' : ''} · DVIDS</span></h4><div class="dv-grid" data-collapse="6">${foot.map(r => `
+        <div class="dv-item">${dvidsPlayer(r.pursue, r.name)}<a class="wt" href="${hrefOf(r.id)}" data-goto="${esc(r.id)}">${esc(r.pursue.title || r.name)}</a><div class="ws">${esc([r.pursue.code, r.pursue.incident_location, r.pursue.incident_date].filter(Boolean).join(' · '))}</div></div>`).join('')}</div></div>`);
+    }
     // curated moments
     const ms = e.type === 'video' ? (e.moments || []).map(m => ({ video: e.id, ...m })) : (momentsFor.get(e.id) || []);
     if (ms.length) {
@@ -1483,7 +1494,7 @@
     if (e.pursue) {
       const pu = e.pursue;
       const local = e.files.find(f => f.endsWith('.pdf'));
-      h.push(`<div class="record-card">${pu.thumbnail ? `<a href="${esc(pu.file || pu.thumbnail)}" target="_blank" rel="noopener"><img src="${esc(pu.thumbnail)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></a>` : ''}
+      h.push(`<div class="record-card">${pu.dvidsId ? dvidsPlayer(pu, e.name) : pu.thumbnail ? `<a href="${esc(pu.file || pu.thumbnail)}" target="_blank" rel="noopener"><img src="${esc(pu.thumbnail)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></a>` : ''}
         <dl class="rec-meta"><dt>Agency</dt><dd>${esc(pu.agency || '—')}</dd><dt>Released</dt><dd>${esc(fmtD(pu.released))} · Release ${String(pu.release).padStart(2, '0')}</dd>
         <dt>Incident</dt><dd>${esc([pu.incident_date, pu.incident_location].filter(Boolean).join(' · ') || '—')}</dd><dt>Format</dt><dd>${esc((pu.format || '').toUpperCase())}${pu.redaction ? ' · redacted' : ''}</dd></dl>
         <div class="rec-actions">${pu.file ? `<a class="btn small" href="${esc(pu.file)}" target="_blank" rel="noopener">Official file ↗</a>` : ''}${local ? `<a class="btn small primary" href="${esc(fileUrl(local))}" target="_blank">Local copy</a>` : ''}${pu.dvids ? `<a class="btn small" href="${esc(pu.dvids)}" target="_blank" rel="noopener">DVIDS video ↗</a>` : ''}</div></div>`);
@@ -2914,8 +2925,17 @@
     if (filtersChangedFlag && cy && state.view !== 'graph') applyGraphFilter();
   }
 
+  // swap a DVIDS poster for the DVIDS embed player
+  function playDvids(el) {
+    const id = el.dataset.dvids;
+    track('video_play_click', { video_id: `dvids-${id}`, context: 'official_footage' });
+    el.outerHTML = `<div class="dv-frame playing"><iframe src="https://www.dvidshub.net/video/embed/${encodeURIComponent(id)}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy" title="DVIDS video ${esc(id)}"></iframe></div>`;
+  }
+  document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.classList?.contains('dv-frame') && e.target.dataset.dvids) { e.preventDefault(); playDvids(e.target); } });
   // global click delegation for entity links / play buttons
   document.addEventListener('click', e => {
+    const dv = e.target.closest('.dv-frame');
+    if (dv) { e.preventDefault(); playDvids(dv); return; }
     const play = e.target.closest('[data-play]');
     if (play) {
       e.preventDefault();

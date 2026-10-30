@@ -31,6 +31,8 @@ export async function build({ check = false, quiet = false } = {}) {
   const errors = [];
   const warnings = [];
   const raw = readEntries();
+  const dvidsFile = path.join(ROOT, 'content', 'dvids.json');
+  const DVIDS = fs.existsSync(dvidsFile) ? JSON.parse(fs.readFileSync(dvidsFile, 'utf8')) : {};
   const byId = new Map();
 
   for (const r of raw) {
@@ -104,7 +106,12 @@ export async function build({ check = false, quiet = false } = {}) {
     if (d.match) e.match = arr(d.match).map(String);
     if (d.nomatch) e.nomatch = true;
     if (d.channels) e.channels = arr(d.channels).map(String);
-    if (d.pursue) e.pursue = d.pursue;
+    if (d.pursue) {
+      e.pursue = d.pursue;
+      // DVIDS video: its id and poster frame (content/dvids.json, filled by scripts/dvids-thumbs.mjs), so pages can play it in place
+      const dv = String(d.pursue.dvids || '').match(/\/video\/(\d+)/)?.[1];
+      if (dv) e.pursue = { ...d.pursue, dvidsId: dv, ...(DVIDS[dv]?.poster && { poster: DVIDS[dv].poster }) };
+    }
     if (d.witnesses != null) e.witnesses = Number(d.witnesses);
     // search results: optional hand-written page title and meta description (otherwise generated in pages.mjs)
     if (d.seo_title) e.seoTitle = String(d.seo_title);
