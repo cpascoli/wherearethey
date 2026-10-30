@@ -24,11 +24,17 @@ function gitLastChanged() {
   return out;
 }
 
+// the committed lock (HEAD): a page whose content changes and then changes back gets its committed date back
+function committedLock() {
+  try { return JSON.parse(execFileSync('git', ['show', 'HEAD:content/lastmod.json'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 << 20 })); }
+  catch { return {}; }
+}
+
 // pages: [{ path, title, description, body, file? }] → Map(path → YYYY-MM-DD)
 export function pageDates(pages, { save = !process.env.NETLIFY } = {}) {
   const lock = fs.existsSync(LOCK) ? JSON.parse(fs.readFileSync(LOCK, 'utf8')) : {};
   const today = new Date().toISOString().slice(0, 10);
-  let git = null, changed = false;
+  let git = null, head = null, changed = false;
   const dates = new Map();
   for (const p of pages) {
     const h = crypto.createHash('sha1').update(`${p.title}\n${p.description}\n${p.body || ''}`).digest('hex').slice(0, 12);
@@ -38,8 +44,13 @@ export function pageDates(pages, { save = !process.env.NETLIFY } = {}) {
       lock[p.path] = { d: (p.file && git.get(p.file)) || today, h };
       changed = true;
     } else if (cur.h !== h && save) {
-      lock[p.path] = { d: today, h };
+      head ||= committedLock();
+      lock[p.path] = { d: head[p.path]?.h === h ? head[p.path].d : today, h };
       changed = true;
+    } else if (save && cur.d === today) {
+      // unchanged since the last build, but dated today: if it matches the committed version, restore that date
+      head ||= committedLock();
+      if (head[p.path]?.h === h && head[p.path].d !== cur.d) { lock[p.path] = { ...head[p.path] }; changed = true; }
     }
     dates.set(p.path, lock[p.path].d);
   }
