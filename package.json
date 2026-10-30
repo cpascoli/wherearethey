@@ -18,7 +18,8 @@
     "r2:pull": "scripts/r2.sh pull",
     "r2:check": "scripts/r2.sh check",
     "index:mod": "node scripts/mod-index.mjs",
-    "r2:index": "scripts/r2.sh index"
+    "r2:index": "scripts/r2.sh index",
+    "archive:sources": "node scripts/archive-sources.mjs"
   },
   "dependencies": {
     "csv-parse": "^7.0.3",

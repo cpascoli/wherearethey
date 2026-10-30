@@ -7,6 +7,8 @@
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  // a web source also gets its archived copy on the Wayback Machine (the latest snapshot), for pages that move, vanish or go behind a paywall
+  const archived = u => /^https?:\/\//i.test(u || '') && !/(^|\.)archive\.org\//i.test(u.replace(/^https?:\/\//i, '')) ? ` <a class="arch" href="https://web.archive.org/web/${esc(u)}" target="_blank" rel="noopener" title="Archived copy (Internet Archive Wayback Machine)">archived</a>` : '';
   const store = {
     get(k, d) { try { const v = localStorage.getItem('wat:' + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
     set(k, v) { try { localStorage.setItem('wat:' + k, JSON.stringify(v)); } catch { /* storage unavailable */ } },
@@ -1359,7 +1361,7 @@
   const assertionSource = a => {
     const s = a.source; if (!s) return '';
     if (s.file) return `<a href="${esc(fileUrl(s.file))}" target="_blank">📄 ${esc(s.file.split('/').pop())}</a>`;
-    if (s.url) { let host = s.url; try { host = new URL(s.url).hostname.replace(/^www\./, ''); } catch { /* keep */ } return `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(host)} ↗</a>`; }
+    if (s.url) { let host = s.url; try { host = new URL(s.url).hostname.replace(/^www\./, ''); } catch { /* keep */ } return `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(host)} ↗</a>${archived(s.url)}`; }
     const se = byId.get(s.id);
     return se?.type === 'video' ? `<button class="ts" data-play="${s.id}@${s.t || 0}">▶ ${fmtT(s.t || 0)}</button> ${chip(s.id)}` : chip(s.id);
   };
@@ -1422,7 +1424,7 @@
     const meta = [e.type !== 'book' && e.type !== 'film' && fmtRange(e) && (e.type === 'video' ? 'Published ' : '') + fmtRange(e), e.place?.name, // books and films: the year is already in the credits line
       e.type === 'video' && [e.channel, fmtDur(e.duration)].filter(Boolean).join(' · ')].filter(Boolean);
     if (meta.length) h.push(`<div class="p-meta">${meta.map(m => `<span>${esc(m)}</span>`).join('')}</div>`);
-    if (e.type === 'news') h.push(`<div class="p-meta"><span>${esc(NEWS_KIND[e.kind]?.label || e.kind)}</span>${e.outlet ? `<span>${esc(e.outlet)}</span>` : ''}${e.url ? `<a class="btn small" href="${esc(e.url)}" target="_blank" rel="noopener">Original source ↗</a>` : ''}</div>`);
+    if (e.type === 'news') h.push(`<div class="p-meta"><span>${esc(NEWS_KIND[e.kind]?.label || e.kind)}</span>${e.outlet ? `<span>${esc(e.outlet)}</span>` : ''}${e.url ? `<a class="btn small" href="${esc(e.url)}" target="_blank" rel="noopener">Original source ↗</a>${archived(e.url)}` : ''}</div>`);
     if (e.type === 'incident' && e.credVia?.length) h.push(`<div class="p-meta"><span>On record via ${e.credVia.map(id => chip(id)).join(' ')}</span></div>`);
     if (e.witnesses || e.coverage?.length) {
       h.push(`<div class="mass-box"><div class="mb-head"><span class="mb-n">${e.witnesses ? `~${e.witnesses.toLocaleString()}` : '?'}</span> witnesses${e.cred === 'mass' ? ' · <b>included as a mass sighting</b>' : ''}</div>${e.coverage?.length ? `<div class="mb-cov">Contemporary coverage: ${e.coverage.map(c => {
@@ -1552,7 +1554,7 @@
     // notes & claims come last, after the videos and links
     if (e.facts.length) {
       h.push(`<div class="p-sec" id="sec-claims"><h4>Notes & claims <span>${e.facts.length}</span></h4><ul class="facts" data-collapse="5" data-fixed>${e.facts.map(f => {
-        const src = f.source ? (f.source.file ? `<a href="${esc(fileUrl(f.source.file))}" target="_blank">📄 ${esc(f.source.file.split('/').pop())}</a>` : f.source.url ? `<a href="${esc(f.source.url)}" target="_blank" rel="noopener">source ↗</a>`
+        const src = f.source ? (f.source.file ? `<a href="${esc(fileUrl(f.source.file))}" target="_blank">📄 ${esc(f.source.file.split('/').pop())}</a>` : f.source.url ? `<a href="${esc(f.source.url)}" target="_blank" rel="noopener">source ↗</a>${archived(f.source.url)}`
           : byId.get(f.source.id)?.type === 'video' ? `<button class="ts" data-play="${f.source.id}@${f.source.t || 0}">▶ ${f.source.t != null ? fmtT(f.source.t) : 'video'}</button> ${chip(f.source.id)}`
           : `source: ${chip(f.source.id)}`) : '';
         const needs = !f.source && f.status !== 'documented' ? `<span class="needs" title="Add a source: video timestamp, document or link">needs source</span>` : '';

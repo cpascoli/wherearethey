@@ -1037,3 +1037,6 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
 .p-image { margin: 6px 0 14px; }
 .p-image img { display: block; width: 100%; max-width: 720px; border-radius: 4px; }
 .p-image figcaption { font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.4; max-width: 720px; }
+/* archived copy of a web source (Wayback Machine), beside the original link */
+.arch { color: var(--muted); font-size: .92em; margin-left: 2px; }
+.arch:hover { color: var(--accent); }

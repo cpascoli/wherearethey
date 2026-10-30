@@ -127,7 +127,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
   const imageOf = e => (e.cover ? SITE_URL + e.cover : e.image ? SITE_URL + e.image : e.type === 'video' ? thumbOf(e) : null);
   const sourceHtml = s => {
     if (!s) return '';
-    if (s.url) { let host = s.url; try { host = new URL(s.url).hostname.replace(/^www\./, ''); } catch {} return `<a href="${esc(s.url)}" rel="noopener">${esc(host)}</a>`; }
+    if (s.url) { let host = s.url; try { host = new URL(s.url).hostname.replace(/^www\./, ''); } catch {} return `<a href="${esc(s.url)}" rel="noopener">${esc(host)}</a>${/(^|\.)archive\.org\//i.test(s.url.replace(/^https?:\/\//i, '')) ? '' : ` (<a href="https://web.archive.org/web/${esc(s.url)}" rel="noopener nofollow">archived</a>)`}`; }
     if (s.file) return `<a href="${esc(fileUrl(s.file))}">${esc(s.file.split('/').pop())}</a>`;
     const e = byId.get(s.id);
     if (!e) return esc(s.id);
