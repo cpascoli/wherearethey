@@ -7,7 +7,7 @@ rel:
   - [ paired with, dow-uap-d103 ]
   - [ paired with, dow-uap-d104 ]
   - [ paired with, dow-uap-d105 ]
-  - [ documents, project-blue-book, "Blue Book's investigation of the 1952 Tremonton film" ]
+  - [ documents, project-blue-book, Blue Book's investigation of the 1952 Tremonton film ]
 tags:
   - pursue
 name: DOW-UAP-D102 — Project Blue Book File on Tremonton Film, Utah, 1952
@@ -20,7 +20,7 @@ pursue:
   release: 6
   released: 2026-09-18
   format: pdf
-  incident_date: 7/2/52
+  incident_date: 7/2/1952
   incident_location: Tremonton, Utah
   file: https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D102_Project-Blue-Book-File-on-Tremonton-Film-Utah-1952.pdf
   thumbnail: https://www.war.gov/medialink/ufo/sept-18/release-06/thumbs/DOW-UAP-D102_Project-Blue-Book-File-on-Tremonton-Film-Utah-1952.jpg

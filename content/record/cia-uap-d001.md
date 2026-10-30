@@ -14,7 +14,7 @@ pursue:
   release: 2
   released: 2026-05-22
   format: pdf
-  incident_date: 12/20/73
+  incident_date: 12/20/1973
   incident_location: USSR
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/052226/release_02/documents/CIA-UAP-D001_Intelligence_Information_Report_USSR_1973.pdf

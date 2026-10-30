@@ -2,7 +2,7 @@
 rel:
   - [ released in, ev-pursue-release-04 ]
   - [ released by, department-of-war ]
-  - [ reviewed, project-blue-book, "The Air Force Scientific Advisory Board's ad hoc committee review of Blue Book" ]
+  - [ reviewed, project-blue-book, The Air Force Scientific Advisory Board's ad hoc committee review of Blue Book ]
 tags:
   - pursue
 name: DOW-UAP-D092 — Department of the Air Force Committee to Review Project Bluebook, 1966-1967
@@ -14,7 +14,7 @@ pursue:
   release: 4
   released: 2026-07-10
   format: pdf
-  incident_date: 4/17/67
+  incident_date: 4/17/1967
   incident_location: Various
   file: https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D092_DAF-Committee-to-Review-Project-Bluebook_1966-1967.pdf
   thumbnail: https://www.war.gov/medialink/ufo/071026/release_04/thumbnails/DOW-UAP-D092_DAF-Committee-to-Review-Project-Bluebook_1966-1967.jpg

@@ -19,7 +19,7 @@ pursue:
   release: 6
   released: 2026-09-18
   format: pdf
-  incident_date: 4/6/10
+  incident_date: 4/6/2010
   incident_location: Las Vegas, Nevada
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D142_AAWSAP-DIRD-Concepts-for-Extracting-Energy-from-the-Quantum-Vacuum-April-6-2010.pdf

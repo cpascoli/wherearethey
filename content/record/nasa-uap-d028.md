@@ -15,7 +15,7 @@ pursue:
   release: 4
   released: 2026-07-10
   format: aud
-  incident_date: 12/21/72
+  incident_date: 12/21/1972
   incident_location: Texas
   dvids: https://www.dvidshub.net/video/1014116
   paired:

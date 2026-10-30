@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 11/9/23
+  incident_date: 11/9/2023
   incident_location: Syria
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d74-mission-report-syria-november-2023.pdf

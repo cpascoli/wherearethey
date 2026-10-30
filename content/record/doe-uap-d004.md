@@ -14,7 +14,7 @@ pursue:
   release: 4
   released: 2026-07-10
   format: pdf
-  incident_date: 3/22/49
+  incident_date: 3/22/1949
   incident_location: New Mexico
   file: https://www.war.gov/medialink/ufo/071026/release_04/documents/DOE-UAP-D004_Los-Alamos-Conference-on-Aerial-Phenomena_1949.pdf
   thumbnail: https://www.war.gov/medialink/ufo/071026/release_04/thumbnails/DOE-UAP-D004_Los-Alamos-Conference-on-Aerial-Phenomena_1949.jpg

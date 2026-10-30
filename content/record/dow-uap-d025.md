@@ -16,7 +16,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 1/25/24
+  incident_date: 1/25/2024
   incident_location: Mediterranean Sea
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d25-mission-report-greece-january-2024.pdf

@@ -16,7 +16,7 @@ pursue:
   release: 7
   released: 2026-10-23
   format: pdf
-  incident_date: 4/10/09
+  incident_date: 4/10/2009
   incident_location: Las Vegas, Nevada
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D169-BAASS_Monthly_Report-March_2009.pdf

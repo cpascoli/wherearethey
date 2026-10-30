@@ -14,7 +14,7 @@ pursue:
   release: 7
   released: 2026-10-23
   format: pdf
-  incident_date: 8/27/52
+  incident_date: 8/27/1952
   incident_location: Italy
   file: https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D157-Air-Intelligence_Information-Report-Italy-1953.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release-07/thumbnails/DOW-UAP-D157_Air-Intelligence_Information-Report-Italy-1953.jpg

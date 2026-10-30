@@ -7,7 +7,7 @@ rel:
   - [ paired with, dow-uap-d102 ]
   - [ paired with, dow-uap-d103 ]
   - [ paired with, dow-uap-d105 ]
-  - [ documents, project-blue-book, "The Tremonton film became the subject of a Blue Book investigation" ]
+  - [ documents, project-blue-book, The Tremonton film became the subject of a Blue Book investigation ]
 tags:
   - pursue
 name: DOW-UAP-D104 — Final Personnel Record for Newhouse, Delbert C., U.S. Navy, 1957
@@ -19,7 +19,7 @@ pursue:
   release: 6
   released: 2026-09-18
   format: pdf
-  incident_date: 5/2/57
+  incident_date: 5/2/1957
   incident_location: N/A
   file: https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D104_Final-Personnel-Record-for-Newhouse-Delbert-C-US-Navy-1957.pdf
   thumbnail: https://www.war.gov/medialink/ufo/sept-18/release-06/thumbs/DOW-UAP-D104_Final-Personnel-Record-for-Newhouse-Delber-C-US-Navy-1957.jpg

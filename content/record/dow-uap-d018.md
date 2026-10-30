@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 12/1/22
+  incident_date: 12/1/2022
   incident_location: Iraq
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d18-mission-report-iraq-december-2022.pdf

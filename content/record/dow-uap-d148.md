@@ -19,7 +19,7 @@ pursue:
   release: 6
   released: 2026-09-18
   format: pdf
-  incident_date: 11/20/10
+  incident_date: 11/20/2010
   incident_location: Las Vegas, Nevada
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D148_AAWSAP-DIRD-Detection-and-High-Resolution-Tracking-of-Vehicles-at-Hypersonic-Velocities-November-20-2010.pdf

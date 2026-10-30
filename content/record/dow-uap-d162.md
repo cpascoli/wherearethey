@@ -14,7 +14,7 @@ pursue:
   release: 7
   released: 2026-10-23
   format: pdf
-  incident_date: 12/1/53
+  incident_date: 12/1/1953
   incident_location: Alaska
   file: https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D162-Air_Intelligence_Information_Report_Alaska-1953.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release-07/thumbnails/DOW-UAP-D162_Air_Intelligence_Information_Report_Alaska-1953.jpg

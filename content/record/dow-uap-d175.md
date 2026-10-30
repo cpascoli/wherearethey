@@ -18,7 +18,7 @@ pursue:
   release: 7
   released: 2026-10-23
   format: pdf
-  incident_date: 11/23/10
+  incident_date: 11/23/2010
   incident_location: Las Vegas, Nevada
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D175-BAASS_Self-Assessment_of_UAP_Analysis_Capabilities_November_2010.pdf

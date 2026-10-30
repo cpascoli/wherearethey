@@ -19,7 +19,7 @@ pursue:
   release: 6
   released: 2026-09-18
   format: pdf
-  incident_date: 1/3/11
+  incident_date: 1/3/2011
   incident_location: Las Vegas, Nevada
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D152_AAWSAP-DIRD-Negative-Mass-Propulsion-January-3-2011.pdf

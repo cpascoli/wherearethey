@@ -14,7 +14,7 @@ pursue:
   release: 2
   released: 2026-05-22
   format: pdf
-  incident_date: 5/20/86
+  incident_date: 5/20/1986
   incident_location: New Mexico
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/052226/release_02/documents/DOE-UAP-D003_Pajarito_Astronomers.pdf

@@ -18,7 +18,7 @@ pursue:
   release: 5
   released: 2026-08-07
   format: pdf
-  incident_date: 11/13/63
+  incident_date: 11/13/1963
   incident_location: Bahia, Brazil
   file: https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/EOP-UAP-D001_NASC-Inquiry-into-Bahia-Brazil-Incident_November-13-1963.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release_05/Aug_07/thumbnails/EOP-UAP-D001_NASC-Inquiry-into-Bahia-Brazil-Incident_November-13-1963.jpg

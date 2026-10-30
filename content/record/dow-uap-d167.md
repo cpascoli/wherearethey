@@ -18,7 +18,7 @@ pursue:
   release: 7
   released: 2026-10-23
   format: pdf
-  incident_date: 12/10/08
+  incident_date: 12/10/2008
   incident_location: San Fransisco, California
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D167-Project_Capella-December-2008.pdf

@@ -13,7 +13,7 @@ pursue:
   release: 4
   released: 2026-07-10
   format: pdf
-  incident_date: 10/10/74
+  incident_date: 10/10/1974
   incident_location: Various
   file: https://www.war.gov/medialink/ufo/071026/release_04/documents/FBI-UAP-D014_Correspondence-Relating-to-UFO-Sightings_1967_1974.pdf
   thumbnail: https://www.war.gov/medialink/ufo/071026/release_04/thumbnails/FBI-UAP-D014_Correspondence-Relating-to-UFO-Sightings_1967_1974.jpg

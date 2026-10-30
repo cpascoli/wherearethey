@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 6/7/24
+  incident_date: 6/7/2024
   incident_location: Gulf of Oman
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d27-mission-report-united-arab-emirates-october-2023.pdf

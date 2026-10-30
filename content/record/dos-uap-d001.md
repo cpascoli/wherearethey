@@ -18,7 +18,7 @@ pursue:
   release: 5
   released: 2026-08-07
   format: pdf
-  incident_date: 11/14/63
+  incident_date: 11/14/1963
   incident_location: Bahia, Brazil
   file: https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOS-UAP-D001_Diplomatic-Cable_Brazil_November-14-1963.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release_05/Aug_07/thumbnails/DOS-UAP-D001_Diplomatic-Cable_Brazil_November-14-1963.jpg

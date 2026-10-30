@@ -7,7 +7,7 @@ rel:
   - [ paired with, dow-uap-d103 ]
   - [ paired with, dow-uap-d104 ]
   - [ paired with, dow-uap-d105 ]
-  - [ reviewed by, project-blue-book, "The film became one of the visual cases reviewed by Project Blue Book" ]
+  - [ reviewed by, project-blue-book, The film became one of the visual cases reviewed by Project Blue Book ]
 tags:
   - pursue
 name: DOW-UAP-PR159 — Historical Film of Reported UFOs, Utah, 1952
@@ -20,7 +20,7 @@ pursue:
   release: 6
   released: 2026-09-18
   format: vid
-  incident_date: 7/2/52
+  incident_date: 7/2/1952
   incident_location: Tremonton, Utah
   dvids: https://www.dvidshub.net/video/1023402
   paired:

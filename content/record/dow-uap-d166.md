@@ -16,7 +16,7 @@ pursue:
   release: 7
   released: 2026-10-23
   format: pdf
-  incident_date: 11/1/08
+  incident_date: 11/1/2008
   incident_location: Las Vegas, Nevada
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D166-MUFON-Reports_Prepared_for_BAASS-November_2008.pdf

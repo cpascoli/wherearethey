@@ -2,7 +2,7 @@
 rel:
   - [ released in, ev-pursue-release-06 ]
   - [ released by, department-of-war ]
-  - [ preceded, project-blue-book, "Previews methods such as diffraction-grating photography later used by Blue Book" ]
+  - [ preceded, project-blue-book, Previews methods such as diffraction-grating photography later used by Blue Book ]
 tags:
   - pursue
 name: DOW-UAP-PR160 — Presentation by Captain Edward J. Ruppelt, 1952
@@ -15,7 +15,7 @@ pursue:
   release: 6
   released: 2026-09-18
   format: aud
-  incident_date: 3/26/52
+  incident_date: 3/26/1952
   incident_location: Boston, Massachusetts
   dvids: https://www.dvidshub.net/video/1023407
 links:

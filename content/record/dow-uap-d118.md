@@ -19,7 +19,7 @@ pursue:
   release: 6
   released: 2026-09-18
   format: pdf
-  incident_date: 12/14/09
+  incident_date: 12/14/2009
   incident_location: Las Vegas, Nevada
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D118_AAWSAP-DIRD-Aerospace-Applications-of-Programmable-Matter-December-14-2009.pdf

@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 3/18/45
+  incident_date: 3/18/1945
   incident_location: Germany
   file: https://www.war.gov/medialink/ufo/release_1/331_120752_numeric_files_1944–1945_37153_german_armament_equipment_documents.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release_1/thumbnail/331_120752_numeric_files_1944–1945_37153_german_armament_equipment_documents.jpg

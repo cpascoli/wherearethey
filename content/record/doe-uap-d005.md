@@ -15,7 +15,7 @@ pursue:
   release: 4
   released: 2026-07-10
   format: pdf
-  incident_date: 9/1/15
+  incident_date: 9/1/2015
   incident_location: Texas
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/071026/release_04/documents/DOE-UAP-D005_Pantex-Unidentified-Object-Incident-Report_2015.pdf

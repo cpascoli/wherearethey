@@ -13,7 +13,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 12/5/65
+  incident_date: 12/5/1965
   incident_location: Low Earth Orbit
   file: https://www.war.gov/medialink/ufo/release_1/255_t_763_r1b_transcripts.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release_1/thumbnail/255_t_763_r1b_transcripts.jpg

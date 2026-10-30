@@ -33,6 +33,6 @@ links:
 
 **Official PURSUE description** (Department of War / AARO, release 07):
 
-This document is an FBI FD-302, a form the Federal Bureau of Investigation (FBI) uses to record interviews. This FD-302 records a 2026 interview with two Federal Special Agents, in which the interviewees describe an incident reported as involving unidentified anomalous phenomena (UAP) at a national security site in 2026.
+This document is an FBI FD-302, a form the Federal Bureau of Investigation (FBI) uses to record interviews. This FD-302 records a 2026 interview with two Federal Special Agents, in which the interviewees describe an incident reported as involving unidentified anomalous phenomena (UAP) at a national security site in 2026. The report is accompanied by 9 digitally rendered FBI forensic sketches depicting the primary incident, as confirmed by the Special Agents in their eyewitness account.
 
 <!-- your notes below this line are kept on re-import -->

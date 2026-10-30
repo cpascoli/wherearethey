@@ -18,7 +18,7 @@ pursue:
   release: 6
   released: 2026-09-18
   format: pdf
-  incident_date: 9/22/08
+  incident_date: 9/22/2008
   incident_location: Washington, D.C.
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D111_AAWSAP-Solicitation-and-Original-Order-September-22-2008.pdf

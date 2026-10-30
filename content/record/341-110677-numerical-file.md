@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 10/14/55
+  incident_date: 10/14/1955
   incident_location: Azerbaijan
   file: https://www.war.gov/medialink/ufo/release_1/341_110677_numerical_file_5-2500.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release_1/thumbnail/341_110677_numerical_file_5-2500.jpg

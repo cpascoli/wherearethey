@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 10/31/23
+  incident_date: 10/31/2023
   incident_location: Arabian Gulf
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf

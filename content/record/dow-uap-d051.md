@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 3/23/26
+  incident_date: 3/23/2026
   incident_location: Pacific Time Zone
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d51-email-correspondence-pacific-time-zone-march-2023.pdf

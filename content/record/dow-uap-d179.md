@@ -14,7 +14,7 @@ pursue:
   release: 7
   released: 2026-10-23
   format: pdf
-  incident_date: 6/25/52
+  incident_date: 6/25/1952
   incident_location: Catalina Island, California
   featured: true
   file: https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D179_Unresolved_UAP_Report_Catalina_Island-1952.pdf

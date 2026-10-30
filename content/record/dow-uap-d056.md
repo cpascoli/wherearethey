@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 8/24/20
+  incident_date: 8/24/2020
   incident_location: Arabian Sea
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d56-range-fouler-debrief-arabian-sea-august-2020.pdf

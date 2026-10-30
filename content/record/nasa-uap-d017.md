@@ -14,7 +14,7 @@ pursue:
   release: 3
   released: 2026-06-12
   format: pdf
-  incident_date: 6/9/65
+  incident_date: 6/9/1965
   incident_location: North Atlantic Ocean
   file: https://www.war.gov/medialink/ufo/061226/release_03/documents/NASA-UAP-D017_Preliminary-Gemini-4-Crew-Debriefing_Part2_1965.pdf
   thumbnail: https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/NASA-UAP-D017_Preliminary-Gemini-4-Crew-Debriefing_Part2_1965.jpg

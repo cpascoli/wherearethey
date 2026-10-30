@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 7/14/24
+  incident_date: 7/14/2024
   incident_location: Gulf of Aden
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d75-mission-report-gulf-of-aden-july-2024.pdf

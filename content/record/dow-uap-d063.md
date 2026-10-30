@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 10/1/20
+  incident_date: 10/1/2020
   incident_location: Strait of Hormuz
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d63-mission-report-strait-of-hormuz-october-2020.pdf

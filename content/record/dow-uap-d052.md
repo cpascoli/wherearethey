@@ -13,7 +13,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 10/31/24
+  incident_date: 10/31/2024
   incident_location: N/A
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d52-email-correspondance-na-august-2024.pdf

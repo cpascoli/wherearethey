@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 7/31/22
+  incident_date: 7/31/2022
   incident_location: Syria
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d16-mission-report-syria-july-2022.pdf

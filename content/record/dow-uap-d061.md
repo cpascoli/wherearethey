@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 8/27/20
+  incident_date: 8/27/2020
   incident_location: Arabian Gulf
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d61-mission-report-persian-gulf-august-2020.pdf

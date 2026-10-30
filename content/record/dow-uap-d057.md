@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 9/4/20
+  incident_date: 9/4/2020
   incident_location: Gulf of Aden
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d57-mission-report-gulf-of-aden-september-2020.pdf

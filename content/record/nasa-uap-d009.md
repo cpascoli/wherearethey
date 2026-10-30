@@ -13,7 +13,7 @@ pursue:
   release: 2
   released: 2026-05-22
   format: aud
-  incident_date: 12/7/72
+  incident_date: 12/7/1972
   incident_location: Cislunar Space
   dvids: https://www.dvidshub.net/video/1007872
 links:

@@ -16,7 +16,7 @@ pursue:
   release: 5
   released: 2026-08-07
   format: pdf
-  incident_date: 1/9/47
+  incident_date: 1/9/1947
   incident_location: Sweden
   file: https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D099_Intelligence-Review-of-Ghost-Rocket-Incidents_1947.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release_05/Aug_07/thumbnails/DOW-UAP-D099_Intelligence-Review-of-Ghost-Rocket-Incidents_1947.jpg

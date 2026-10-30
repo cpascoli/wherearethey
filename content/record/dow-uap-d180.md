@@ -17,7 +17,7 @@ pursue:
   release: 7
   released: 2026-10-23
   format: pdf
-  incident_date: 8/31/54
+  incident_date: 8/31/1954
   incident_location: N/A
   file: https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D180_Final-Personnel-Record-for-McCoy-Howard-M-US-Air-Force-1954.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release-07/thumbnails/DOW-UAP-D180_Final-Personnel-Record-for-McCoy-Howard-M-US-Air-Force-1954.jpg

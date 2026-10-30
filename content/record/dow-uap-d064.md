@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 11/2/20
+  incident_date: 11/2/2020
   incident_location: Iran
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d64-mission-report-iran-november-2020.pdf

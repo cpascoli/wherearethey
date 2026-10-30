@@ -14,7 +14,7 @@ pursue:
   release: 4
   released: 2026-07-10
   format: pdf
-  incident_date: 12/10/48
+  incident_date: 12/10/1948
   incident_location: Virginia
   file: https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D093_Analysis-of-Flying-Object-Incidents-in-the-US_1948.pdf
   thumbnail: https://www.war.gov/medialink/ufo/071026/release_04/thumbnails/DOW-UAP-D093_Analysis-of-Flying-Object-Incidents-in-the-US_1948.jpg

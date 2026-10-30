@@ -16,7 +16,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 10/29/23
+  incident_date: 10/29/2023
   incident_location: Aegean Sea
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d35-mission-report-greece-october-2023.pdf

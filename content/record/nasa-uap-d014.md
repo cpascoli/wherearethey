@@ -14,7 +14,7 @@ pursue:
   release: 2
   released: 2026-05-22
   format: aud
-  incident_date: 7/21/61
+  incident_date: 7/21/1961
   incident_location: North Atlantic Ocean
   dvids: https://www.dvidshub.net/video/1007878
 links:

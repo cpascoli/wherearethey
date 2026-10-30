@@ -18,7 +18,7 @@ pursue:
   release: 5
   released: 2026-08-07
   format: vid
-  incident_date: 9/8/21
+  incident_date: 9/8/2021
   dvids: https://www.dvidshub.net/video/1017802
   paired:
     - DOW-UAP-PR117

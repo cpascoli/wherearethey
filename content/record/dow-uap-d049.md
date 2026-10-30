@@ -13,7 +13,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 2/3/00
+  incident_date: 2/3/2000
   incident_location: N/A
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d49-launch-summary-february-2000.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d49-launch-summary-february-2000.jpg

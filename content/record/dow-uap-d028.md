@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 9/20/24
+  incident_date: 9/20/2024
   incident_location: Iraq
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d28-mission-report-east-china-sea-2024.pdf

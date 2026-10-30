@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 3/31/23
+  incident_date: 3/31/2023
   incident_location: Iraq
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/dow-uap-d20-mission-report-iraq-2023.pdf

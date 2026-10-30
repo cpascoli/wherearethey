@@ -21,7 +21,7 @@ pursue:
   release: 5
   released: 2026-08-07
   format: pdf
-  incident_date: 9/8/21
+  incident_date: 9/8/2021
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D101_IIR_Unresolved-UAP-Report-Gulf-of-Oman_2021.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release_05/Aug_07/thumbnails/DOW-UAP-D101_IIR_Unresolved-UAP-Report-Gulf-of-Oman_2021.jpg

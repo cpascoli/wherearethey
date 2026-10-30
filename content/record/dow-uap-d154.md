@@ -3,7 +3,7 @@ rel:
   - [ released in, ev-pursue-release-06 ]
   - [ released by, department-of-war ]
   - [ paired with, dow-uap-pr160 ]
-  - [ preceded, project-blue-book, "Previews methods such as diffraction-grating photography later used by Blue Book" ]
+  - [ preceded, project-blue-book, Previews methods such as diffraction-grating photography later used by Blue Book ]
 tags:
   - pursue
 name: DOW-UAP-D154 — Transcript of a Presentation by Captain Edward J. Ruppelt, 1952
@@ -16,7 +16,7 @@ pursue:
   release: 6
   released: 2026-09-18
   format: pdf
-  incident_date: 3/26/52
+  incident_date: 3/26/1952
   incident_location: Boston, Massachusetts
   file: https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D154_Transcript-of-a-Presentation-by-Captain-Edward-J-Ruppelt-1952.pdf
   thumbnail: https://www.war.gov/medialink/ufo/sept-18/release-06/thumbs/DOW-UAP-D154_Transcript-of-a-Presentation-by-Captain-Edward-J-Ruppelt-1952.jpg

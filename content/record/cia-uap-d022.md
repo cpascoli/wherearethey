@@ -15,7 +15,7 @@ pursue:
   release: 5
   released: 2026-08-07
   format: pdf
-  incident_date: 2/1/65
+  incident_date: 2/1/1965
   incident_location: Caribbean Sea
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/CIA-UAP-D022_Unidentified-Flying-Object-Reported-near-Puerto-Rico_1965.pdf

@@ -16,7 +16,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 1/27/94
+  incident_date: 1/27/1994
   incident_location: Kazakhstan
   file: https://www.war.gov/medialink/ufo/release_1/dos-uap-d2-cable-2-kazakhstan-january-1994.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release_1/thumbnail/dos-uap-d2-cable-2-kazakhstan-january-1994.jpg

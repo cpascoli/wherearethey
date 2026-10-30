@@ -19,7 +19,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 8/31/20
+  incident_date: 8/31/2020
   incident_location: Arabian Gulf
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/DOW-UAP-D042-Range-Fouler-Debrief-Arabian-Gulf-2023.pdf

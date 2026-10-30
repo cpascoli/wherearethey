@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 9/1/23
+  incident_date: 9/1/2023
   incident_location: United States
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release_1/serial-4-redacted_redacted.pdf

@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 9/12/03
+  incident_date: 9/12/2003
   incident_location: Mexico
   file: https://www.war.gov/medialink/ufo/release_1/059uap00013.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release_1/thumbnail/059uap00013.jpg

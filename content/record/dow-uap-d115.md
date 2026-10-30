@@ -18,7 +18,7 @@ pursue:
   release: 6
   released: 2026-09-18
   format: pdf
-  incident_date: 5/18/10
+  incident_date: 5/18/2010
   incident_location: Washington, D.C.
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D115_AAWSAP-Contract-Modification-P00004-May-18-2010.pdf

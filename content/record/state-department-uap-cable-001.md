@@ -14,7 +14,7 @@ pursue:
   release: 1
   released: 2026-05-08
   format: pdf
-  incident_date: 1/24/85
+  incident_date: 1/24/1985
   incident_location: Papua New Guinea
   file: https://www.war.gov/medialink/ufo/release_1/dos-uap-d1-cable-1-papua-new-guinea-january-1985.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release_1/thumbnail/dos-uap-d1-cable-1-papua-new-guinea-january-1985.jpg
