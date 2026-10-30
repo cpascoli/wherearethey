@@ -1481,8 +1481,12 @@
       const foot = [...new Set(adj.get(e.id).filter(x => x.kind !== 'mention').map(x => x.other))].map(id => byId.get(id))
         .filter(r => r?.type === 'record' && r.pursue?.dvidsId && !seen.has(r.pursue.dvidsId) && seen.add(r.pursue.dvidsId))
         .sort((a, b) => String(a.pursue.incident_date || a.date || '').localeCompare(String(b.pursue.incident_date || b.date || '')) || a.name.localeCompare(b.name));
-      if (foot.length) h.push(`<div class="p-sec" id="sec-footage"><h4>Official footage <span>${foot.length} video${foot.length > 1 ? 's' : ''} · DVIDS</span></h4><div class="dv-grid" data-collapse="6">${foot.map(r => `
-        <div class="dv-item">${dvidsPlayer(r.pursue, r.name)}<a class="wt" href="${hrefOf(r.id)}" data-goto="${esc(r.id)}">${esc(r.pursue.title || r.name)}</a><div class="ws">${esc([r.pursue.code, r.pursue.incident_location, r.pursue.incident_date].filter(Boolean).join(' · '))}</div></div>`).join('')}</div></div>`);
+      if (foot.length) {
+        const many = foot.length > 24; // past that, a counter instead of dots
+        h.push(`<div class="p-sec" id="sec-footage"><h4>Official footage <span>${foot.length} video${foot.length > 1 ? 's' : ''} · DVIDS</span></h4><div class="dv-car" tabindex="-1"><div class="dv-track">${foot.map((r, i) => `
+          <div class="dv-slide" aria-roledescription="slide" aria-label="${i + 1} of ${foot.length}">${dvidsPlayer(r.pursue, r.name)}<div class="dv-cap"><a class="wt" href="${hrefOf(r.id)}" data-goto="${esc(r.id)}">${esc(r.pursue.title || r.name)}</a><div class="ws">${esc([r.pursue.code, r.pursue.incident_location, r.pursue.incident_date].filter(Boolean).join(' · '))}</div></div></div>`).join('')}</div>${foot.length > 1 ? `
+          <div class="dv-nav"><button class="dv-prev" aria-label="Previous video" disabled>‹</button><span class="dv-dots">${many ? '' : foot.map((_, i) => `<button class="dv-dot${i ? '' : ' on'}" data-dv-at="${i}" aria-label="Video ${i + 1}"></button>`).join('')}<span class="dv-count">1 / ${foot.length}</span></span><button class="dv-next" aria-label="Next video">›</button></div>` : ''}</div></div>`);
+      }
     }
     // curated moments
     const ms = e.type === 'video' ? (e.moments || []).map(m => ({ video: e.id, ...m })) : (momentsFor.get(e.id) || []);
@@ -2925,17 +2929,45 @@
     if (filtersChangedFlag && cy && state.view !== 'graph') applyGraphFilter();
   }
 
-  // swap a DVIDS poster for the DVIDS embed player
+  // swap a DVIDS poster for the DVIDS embed player (the poster stays underneath, to come back to)
   function playDvids(el) {
     const id = el.dataset.dvids;
     track('video_play_click', { video_id: `dvids-${id}`, context: 'official_footage' });
-    el.outerHTML = `<div class="dv-frame playing"><iframe src="https://www.dvidshub.net/video/embed/${encodeURIComponent(id)}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy" title="DVIDS video ${esc(id)}"></iframe></div>`;
+    el.dataset.was = id; delete el.dataset.dvids; el.classList.add('playing');
+    el.insertAdjacentHTML('beforeend', `<iframe src="https://www.dvidshub.net/video/embed/${encodeURIComponent(id)}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="DVIDS video ${esc(id)}"></iframe>`);
   }
-  document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.classList?.contains('dv-frame') && e.target.dataset.dvids) { e.preventDefault(); playDvids(e.target); } });
+  function stopDvids(el) { el.querySelector('iframe')?.remove(); el.dataset.dvids = el.dataset.was; delete el.dataset.was; el.classList.remove('playing'); }
+  // the footage carousel: one video at a time, ‹ › and dots (or a counter), swipe on phones (scroll snap)
+  const carAt = car => { const t = car.querySelector('.dv-track'); return Math.round(t.scrollLeft / (t.clientWidth || 1)); };
+  function carGo(car, i) {
+    const t = car.querySelector('.dv-track'), n = t.children.length;
+    i = Math.max(0, Math.min(n - 1, i));
+    t.scrollTo({ left: i * t.clientWidth, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    carMark(car, i);
+  }
+  function carMark(car, i) {
+    const t = car.querySelector('.dv-track'), n = t.children.length;
+    car.querySelectorAll('.dv-dot').forEach((d, k) => d.classList.toggle('on', k === i));
+    const c = car.querySelector('.dv-count'); if (c) c.textContent = `${i + 1} / ${n}`;
+    const p = car.querySelector('.dv-prev'), x = car.querySelector('.dv-next');
+    if (p) p.disabled = i === 0; if (x) x.disabled = i === n - 1;
+    [...t.children].forEach((s, k) => { if (k !== i) s.querySelectorAll('.dv-frame.playing').forEach(stopDvids); }); // a video left behind stops
+  }
+  document.addEventListener('scroll', e => {
+    const t = e.target; if (!t.classList?.contains('dv-track')) return;
+    clearTimeout(t._st); t._st = setTimeout(() => carMark(t.closest('.dv-car'), carAt(t.closest('.dv-car'))), 120);
+  }, true);
+  document.addEventListener('keydown', e => {
+    if ((e.key === 'Enter' || e.key === ' ') && e.target.classList?.contains('dv-frame') && e.target.dataset.dvids) { e.preventDefault(); playDvids(e.target); return; }
+    const car = e.target.closest?.('.dv-car');
+    if (car && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) { e.preventDefault(); e.stopPropagation(); carGo(car, carAt(car) + (e.key === 'ArrowRight' ? 1 : -1)); }
+  }, true);
   // global click delegation for entity links / play buttons
   document.addEventListener('click', e => {
-    const dv = e.target.closest('.dv-frame');
+    const dv = e.target.closest('.dv-frame[data-dvids]');
     if (dv) { e.preventDefault(); playDvids(dv); return; }
+    const cb = e.target.closest('.dv-prev, .dv-next, .dv-dot');
+    if (cb) { const car = cb.closest('.dv-car'); carGo(car, cb.dataset.dvAt != null ? +cb.dataset.dvAt : carAt(car) + (cb.classList.contains('dv-next') ? 1 : -1)); return; }
     const play = e.target.closest('[data-play]');
     if (play) {
       e.preventDefault();

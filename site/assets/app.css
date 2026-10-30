@@ -431,10 +431,21 @@ mark { background: rgba(227, 179, 65, .4); color: inherit; border-radius: 3px; p
 .dv-frame.playing { cursor: auto; }
 .record-card > .dv-frame { width: 100%; max-width: 760px; }
 .dv-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.dv-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
-.dv-item { display: grid; gap: 4px; align-content: start; }
-.dv-item .wt { color: inherit; text-decoration: none; }
-.dv-item .wt:hover { text-decoration: underline; }
+.dv-car { outline: none; }
+.dv-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; }
+.dv-track::-webkit-scrollbar { display: none; }
+.dv-slide { flex: 0 0 100%; scroll-snap-align: start; display: grid; gap: 6px; align-content: start; }
+.dv-slide .dv-frame { max-width: 760px; width: 100%; }
+.dv-cap .wt { color: inherit; text-decoration: none; }
+.dv-cap .wt:hover { text-decoration: underline; }
+.dv-nav { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 10px; max-width: 760px; }
+.dv-nav > button { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--border); background: var(--panel-2); color: var(--text); font-size: 20px; line-height: 1; cursor: pointer; display: grid; place-items: center; padding: 0 0 2px; }
+.dv-nav > button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.dv-nav > button:disabled { opacity: .3; cursor: default; }
+.dv-dots { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px; flex: 0 1 auto; }
+.dv-dot { width: 8px; height: 8px; border-radius: 50%; border: 0; padding: 0; background: var(--border); cursor: pointer; }
+.dv-dot.on { background: var(--accent); transform: scale(1.25); }
+.dv-count { font-family: var(--mono); font-size: 11px; color: var(--muted); margin-left: 6px; min-width: 44px; }
 .watch { display: grid; gap: 8px; }
 .watch-item { display: grid; grid-template-columns: 128px 1fr; gap: 12px; align-items: start; padding: 6px; margin: 0 -6px; border-radius: 4px; cursor: pointer; }
 .watch-item:hover { background: var(--panel-2); }
