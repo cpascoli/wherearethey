@@ -4,6 +4,9 @@ aka:
   - Blue Book
 date: "1952"
 end: "1969"
+links:
+  - label: Popular Mechanics — 50 Years Ago, the Air Force Tried to Make UFOs Go Away (2019)
+    url: https://www.popularmechanics.com/military/research/a30257166/project-blue-book-anniversary/
 tags:
   - air-force
   - foia
@@ -39,6 +42,12 @@ facts:
     basis: documented
     status: documented
     source: doc-bolender-memo-1969
+  - text: "Mark O'Connell, biographer of J. Allen Hynek, told Popular Mechanics in 2019 that once Blue Book proved unable to say whether UFOs were a threat, “its mission became one of ‘making the UFOs go away’”, and that “The worst sin one could commit on the Blue Book staff was to mark a case ‘unexplained.’” The article puts the number of cases some researchers consider unexplained at 3,000 to 5,000, against the Air Force's 701."
+    status: claimed
+    source: https://www.popularmechanics.com/military/research/a30257166/project-blue-book-anniversary/
+  - text: "According to the researcher Brad Sparks, as reported by Popular Mechanics, Blue Book went on receiving reports after its closure was announced on 17 December 1969 and was not shut down until 30 January 1970."
+    status: unverified
+    source: https://www.popularmechanics.com/military/research/a30257166/project-blue-book-anniversary/
 ---
 
 Project Blue Book was the U.S. Air Force's study of unidentified flying objects from March 1952 to 17 December 1969, run from Wright-Patterson Air Force Base in Ohio, with the astronomer J. Allen Hynek as its scientific consultant throughout. It followed the earlier Projects Sign and Grudge.
