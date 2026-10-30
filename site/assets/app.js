@@ -135,10 +135,10 @@
   const thumb = yt => `https://i.ytimg.com/vi/${yt}/mqdefault.jpg`;
   // thumbnail for any video entry (non-YouTube videos get a neutral placeholder)
   const VIDEO_PLACEHOLDER = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180"><rect width="320" height="180" fill="#131a1f"/><circle cx="160" cy="90" r="26" fill="none" stroke="#6fcfbf" stroke-width="3"/><path d="M152 76 L174 90 L152 104 Z" fill="#6fcfbf"/></svg>')}`;
-  const vthumb = v => (v.youtube ? thumb(v.youtube) : v.thumb ? fileUrl(v.thumb) : VIDEO_PLACEHOLDER);
+  const vthumb = v => (v.youtube ? thumb(v.youtube) : v.thumb ? fileUrl(v.thumb) : v.dvids?.poster || VIDEO_PLACEHOLDER);
   // a PURSUE video on DVIDS, played in place: the poster frame, replaced by DVIDS's own player on click
   const dvidsPlayer = (pu, title) => `<div class="dv-frame" data-dvids="${esc(pu.dvidsId)}" role="button" tabindex="0" title="Play the official video (DVIDS)" aria-label="Play: ${esc(title)}">${pu.poster ? `<img src="${esc(pu.poster)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ''}<span class="wplay">▶</span></div>`;
-  const vsource = v => (v.youtube ? { url: `https://www.youtube.com/watch?v=${v.youtube}`, label: 'YouTube' } : { url: v.url, label: v.url && /x\.com|twitter\.com/.test(v.url) ? 'X' : 'Source' });
+  const vsource = v => (v.youtube ? { url: `https://www.youtube.com/watch?v=${v.youtube}`, label: 'YouTube' } : { url: v.url, label: v.url && /x\.com|twitter\.com/.test(v.url) ? 'X' : v.dvids ? 'DVIDS' : 'Source' });
   const subtitle = e => {
     if (e.credentials?.length) return e.credentials[0].role;
     if (e.type === 'video') return [e.channel, fmtD(e.date), fmtDur(e.duration)].filter(Boolean).join(' · ');
@@ -1992,12 +1992,22 @@
     $$('.vl-item').forEach(el => el.classList.toggle('on', el.dataset.openVideo === id));
     // show title, moments and transcript at once; the YouTube player loads in parallel
     if (!same) { curTab = v.moments?.length ? 'moments' : v.chapters?.length ? 'chapters' : 'transcript'; renderVideoDetail(v); }
-    if (v.local || v.stream) {
+    if (v.local || v.stream || v.dvids) {
       const el = $('#local-video');
       $('#yt').hidden = true; el.hidden = false;
       try { yt?.pauseVideo?.(); } catch { /* not ready */ }
-      // dev server: local copy in media/; public site: our own copy streamed from R2 (videos with `stream:`)
-      if (!same) { el.src = v.local ? '/' + v.local : fileUrl(v.stream); if (v.thumb) el.poster = fileUrl(v.thumb); }
+      // dev server: local copy in media/; public site: our own copy streamed from R2 (videos with `stream:`),
+      // or DVIDS's own MP4 (U.S. government media, served from DVIDS's CDN); if that fails, DVIDS's embed player
+      if (!same) {
+        el.src = v.local ? '/' + v.local : v.stream ? fileUrl(v.stream) : v.dvids.mp4;
+        el.poster = v.thumb ? fileUrl(v.thumb) : v.dvids?.poster || '';
+        el.onerror = !v.local && !v.stream && v.dvids ? () => {
+          if (state.video !== id) return;
+          el.hidden = true; el.removeAttribute('src');
+          $('#player-empty').hidden = false;
+          $('#player-empty').innerHTML = `<iframe class="dv-embed" src="https://www.dvidshub.net/video/embed/${encodeURIComponent(v.dvids.id)}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="${esc(v.name)}"></iframe>`;
+        } : null;
+      }
       el.currentTime = t;
       if (autoplay) el.play().catch(() => {});
     } else if (!v.youtube) {

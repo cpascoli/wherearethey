@@ -686,6 +686,7 @@ body.resizing iframe { pointer-events: none; }
 /* X posts embedded in the player (X serves the video) */
 .player-wrap.x-embed { aspect-ratio: auto; min-height: 320px; background: transparent; overflow: visible; }
 .player-wrap.x-embed #yt, .player-wrap.x-embed #local-video { display: none !important; }
+.player-empty .dv-embed { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .player-wrap.x-embed .player-empty { position: static; padding: 0; display: block; }
 .x-post { max-width: 560px; margin: 0 auto; min-height: 320px; display: grid; place-items: center; }
 .x-post .twitter-tweet { margin: 0 !important; }

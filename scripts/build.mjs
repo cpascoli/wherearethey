@@ -139,6 +139,9 @@ export async function build({ check = false, quiet = false } = {}) {
     // videos we host ourselves on R2 (only with an explicit decision): stream file and thumbnail, relative to FILES_BASE
     if (d.stream) e.stream = String(d.stream);
     if (d.thumb) e.thumb = String(d.thumb);
+    // videos on DVIDS (U.S. government media): played in our own player from DVIDS's MP4, with its poster (content/dvids.json)
+    const dvv = r.type === 'video' && String(d.url || '').match(/dvidshub\.net\/video\/(\d+)/)?.[1];
+    if (dvv && DVIDS[dvv]?.mp4) e.dvids = { id: dvv, mp4: DVIDS[dvv].mp4, ...(DVIDS[dvv].poster && { poster: DVIDS[dvv].poster }) };
     if (d.coverage) e.coverage = arr(d.coverage).map(c => (typeof c === 'string' ? { outlet: c } : c));
     // incidents: where the case stands — open (default), disputed, explained or hoax — with a short note and its source
     if (r.type === 'incident') {
