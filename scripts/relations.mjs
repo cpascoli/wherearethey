@@ -62,7 +62,7 @@ const PAIRS = [
   ['quoted in', 'quotes'], ['quotes', 'quoted in'], ['defined in', 'defines'], ['defines', 'defined in'], ['assessed in', 'assesses'], ['names', 'named in'], ['mentions', 'mentioned in'],
   ['recording of', 'recordings'], ['transcript of', 'transcript'], ['trailer of', 'trailer'], ['found among papers of', 'papers contained'], ['contributed to', 'contributions from'],
   ['statement about', 'statements by'], ['speaks in', 'speakers'], ['interviewed in', 'interviewed'], ['covered by', 'covered'], ['covered', 'covered by'], ['basis for', 'based on'], ['based on', 'basis for'],
-  ['response to', 'response'], ['supported by', 'supported'], ['supported', 'supported by'], ['answered', 'answered by'], ['requested', 'requested by'], ['requested by', 'requested'], ['governed', 'governed by'], ['governed by', 'governed'], ['obtained', 'obtained by'], ['obtained by', 'obtained'],
+  ['response to', 'response'], ['supported by', 'supported'], ['supported', 'supported by'], ['answered', 'answered by'], ['requested', 'requested by'], ['requested by', 'requested'], ['governed', 'governed by'], ['governed by', 'governed'], ['consultant to', 'consulted'], ['consulted', 'consultant to'], ['obtained', 'obtained by'], ['obtained by', 'obtained'],
   ['leaked', 'leaked by'], ['declassified', 'declassified by'], ['declassified by', 'declassified'], ['mandated', 'mandated by'], ['mandated by', 'mandated'], ['established', 'established by'], ['established by', 'established'],
   // added in the 2026-10 review of "related to" links
   ['portrays', 'portrayed in'], ['example', 'example of'], ['example of', 'example'], ['term used by', 'uses the term'], ['alleges', 'alleged by'], ['alleged by', 'alleges'],
