@@ -38,12 +38,12 @@ moments:
     speaker: kevin-campbell
     refs: [ aaro ]
   - t: "42:53"
-    text: "Asked about the videos Rep. Luna requested from the Department of War, Campbell: one on her list, by date, time and region, “I'm like 99% sure that that is one of my videos”, and he knows drone names on the list. He adds that the location, in “China's backyard”, makes a secret U.S. test unlikely."
+    text: "Asked about the videos Rep. Luna requested from the Department of War, Campbell: one on her list, by date, time and region, “I'm like 99% sure that that is one of my videos”, and “the names like toxic and wily, those are in the list. I've, I've watched those drones personally”. (The published letter of 31 March 2026 lists clips by “Toxic 6” and “Wiley”, and one East China Sea MQ-9 video, item 22, dated 1/5/23, released as PR057b; he does not say which item is his.) He adds that the location, in “China's backyard”, makes a secret U.S. test unlikely."
     speaker: kevin-campbell
-    refs: [ anna-paulina-luna, inc-east-asia-us-military-uap-2021-2025 ]
+    refs: [ anna-paulina-luna, inc-east-asia-us-military-uap-2021-2025, doc-oversight-uap-request-2026-03-31 ]
 ---
 
-Ryan Graves of Americans for Safe Aerospace interviews Kevin Campbell, a former Defense Information Systems Agency contractor who monitored U.S. military drone feeds from Hill Air Force Base. Campbell describes three events on MQ-9 feeds over the East China Sea and Yellow Sea, around 2023–24: small spherical objects a few feet above the water, one seen briefly in colour as a rust-coloured elongated shape, and one he watched live before it vanished. He says he reported them through ASA to the FBI, and believes one is among the videos members of Congress requested in 2026. He does not claim to know what the objects were.
+Ryan Graves of Americans for Safe Aerospace interviews Kevin Campbell, a former Defense Information Systems Agency contractor who monitored U.S. military drone feeds from Hill Air Force Base. Campbell describes three events on MQ-9 feeds over the East China Sea and Yellow Sea, around 2023–24: small spherical objects a few feet above the water, one seen briefly in colour as a rust-coloured elongated shape, and one he watched live before it vanished. He says he reported them through ASA to the FBI, and believes one is among the videos Rep. Luna requested in 2026 (the letter of 31 March 2026: its only East China Sea MQ-9 item, no. 22, is dated 5 January 2023 and was released as PR057b, but he does not identify his video). He does not claim to know what the objects were.
 
 AARO describes the records that answered that request as found on a classified network, uploaded by users under their own titles, many without a substantiated chain of custody, which fits his account of clips saved by colleagues. No record confirms which video, if any, shows his sightings.
 
