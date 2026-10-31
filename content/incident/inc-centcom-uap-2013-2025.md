@@ -8,6 +8,7 @@ tags: [military, pursue, international]
 rel:
   - [ documented in, pursue ]
   - [ investigated by, aaro ]
+  - [ documented in, dow-uap-pr027 ]
   - [ documented in, dow-uap-d038 ]
   - [ documented in, dow-uap-pr036 ]
   - [ documented in, dow-uap-d060 ]
