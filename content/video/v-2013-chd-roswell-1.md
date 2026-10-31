@@ -52,7 +52,7 @@ moments:
   - t: "39:10"
     text: "Jesse Marcel Jr.: his father woke the family in the night after collecting debris from the Foster ranch; “i was 11 years old at the time”."
     speaker: jesse-marcel-jr
-    refs: [ inc-roswell-1947 ]
+    refs: [ inc-roswell-1947, jesse-marcel ]
   - t: "40:36"
     text: "Marcel Jr. passes round “a replica of one of the i-beams” he saw in the debris, describing foil that returned to its shape and black plastic-like pieces."
     speaker: jesse-marcel-jr
@@ -62,15 +62,16 @@ moments:
   - t: "41:56"
     text: "Marcel Jr. says his father flew the material to Gen. Ramey's office in Fort Worth and, back home, told them “you will never talk about this this is a non-event”."
     speaker: jesse-marcel-jr
-    refs: [ inc-roswell-1947 ]
+    refs: [ inc-roswell-1947, jesse-marcel ]
   - t: "50:00"
     text: "Marcel Jr.'s daughter, a hypnotherapist, says that under forensic hypnosis her father again described holding the beam to look at “the purple reflecting symbols”."
     refs: [ inc-roswell-1947 ]
   - t: "51:23"
     text: "The family quotes Maj. Jesse Marcel, interviewed three decades later: “it was not anything from this earth that i am quite sure of”."
-    refs: [ inc-roswell-1947 ]
+    refs: [ inc-roswell-1947, jesse-marcel ]
     claims: [ roswell-crashed-craft ]
     basis: relayed
+    claim_by: jesse-marcel
   - t: "1:02:15"
     text: "Marcel Jr. says Senate staffer Dick D'Amato interviewed him in a secure room under the Capitol and, pointing to Whitley Strieber's novel *Majestic*, told him “this is not fiction”."
     speaker: jesse-marcel-jr
@@ -86,7 +87,7 @@ moments:
   - t: "1:24:21"
     text: "Asked whether his father saw bodies, Marcel Jr. answers: “no he did not see the body”."
     speaker: jesse-marcel-jr
-    refs: [ inc-roswell-1947 ]
+    refs: [ inc-roswell-1947, jesse-marcel ]
     claims: [ recovered-non-human-bodies ]
     stance: context
     basis: relayed
@@ -103,7 +104,7 @@ moments:
   - t: "1:39:05"
     text: "Schmitt says that when Maj. Marcel demanded to see the counter-intelligence report, Capt. Sheridan Cavitt replied “it's out of my hands take it up with washington”."
     speaker: donald-schmitt
-    refs: [ inc-roswell-1947 ]
+    refs: [ inc-roswell-1947, jesse-marcel, sheridan-cavitt ]
 ---
 
 The first Roswell panel of the Citizen Hearing: researchers Donald Schmitt, Stanton Friedman and Kevin Randle, and Jesse Marcel Jr. with his son and daughter on Maj. Jesse Marcel and the 1947 debris, followed by questions from the former members of Congress. The Air Force attributes the debris to Project Mogul balloons (see the Roswell file). Auto-captions.

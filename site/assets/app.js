@@ -126,7 +126,8 @@
   const fileNo = e => { let h = 2166136261; for (const c of e.id) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return `${PREFIX[e.type] || 'X'}-${(h >>> 0).toString(16).toUpperCase().slice(-4).padStart(4, '0')}`; };
   // Library files: served locally by the dev server, or from Cloudflare R2 on the hosted site (FILES_BASE at build time)
   const hrefOf = id => byId.get(id)?.path || '/'; // the file's own page (/person/david-fravor)
-  const fileUrl = f => (KB.filesBase ? `${KB.filesBase.replace(/\/$/, '')}/${f}` : `/${f}`);
+  // a file of ours (on R2 via filesBase, or the dev server); absolute URLs (e.g. a video streamed from archive.org) pass through
+  const fileUrl = f => (/^https?:\/\//.test(f) ? f : KB.filesBase ? `${KB.filesBase.replace(/\/$/, '')}/${f}` : `/${f}`);
   const fmtT = s => { s = Math.max(0, Math.floor(s)); const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60; return (h ? h + ':' + String(m).padStart(2, '0') : m) + ':' + String(x).padStart(2, '0'); };
   const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const fmtD = d => { if (!d) return ''; const [y, m, day] = String(d).split('-'); return [day && +day, m && MONTHS[+m - 1], y].filter(Boolean).join(' '); };

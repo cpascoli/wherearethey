@@ -120,7 +120,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     .replace('/*BOOT_FILES*/[]', JSON.stringify(BOOT.map(f => [`/${f}?v=${ver[f]}`, fs.statSync(path.join(site, f)).size])));
   fs.writeFileSync(path.join(site, 'version.json'), JSON.stringify({ build }) + '\n');
   const byId = new Map(entities.map(e => [e.id, e]));
-  const fileUrl = f => (filesBase ? `${filesBase.replace(/\/$/, '')}/${f}` : `/${f}`);
+  const fileUrl = f => (/^https?:\/\//.test(f) ? f : filesBase ? `${filesBase.replace(/\/$/, '')}/${f}` : `/${f}`);
   const link = id => { const e = byId.get(id); return e ? `<a href="${e.path}">${esc(e.name)}</a>` : esc(id); };
   const videoUrl = (v, t) => (v.youtube ? `https://www.youtube.com/watch?v=${v.youtube}${t ? `&t=${Math.floor(t)}s` : ''}` : v.url || null);
   const thumbOf = v => (v.youtube ? `https://i.ytimg.com/vi/${v.youtube}/hqdefault.jpg` : v.thumb ? fileUrl(v.thumb) : null);

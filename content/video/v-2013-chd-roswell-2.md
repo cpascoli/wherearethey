@@ -66,7 +66,7 @@ moments:
   - t: "46:56"
     text: "Jesse Marcel Jr. says he asked his father before he died whether debris would still be at the site: “no, they vacuumed the place up.”"
     speaker: jesse-marcel-jr
-    refs: [ inc-roswell-1947 ]
+    refs: [ inc-roswell-1947, jesse-marcel ]
   - t: "50:33"
     text: "A researcher cites the “FBI telex” sent from the Dallas office at 6:17 that evening, after Gen. Ramey's weather-balloon announcement, arguing that it shows the balloon story did not match what Wright Field had been told."
     refs: [ inc-roswell-1947, wright-patterson-afb ]

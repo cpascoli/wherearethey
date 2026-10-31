@@ -40,7 +40,7 @@ moments:
   - t: "45:45"
     text: "Jesse Marcel Jr. on the debris his father brought home: “not from this earth”."
     speaker: jesse-marcel-jr
-    refs: [ inc-roswell-1947 ]
+    refs: [ inc-roswell-1947, jesse-marcel ]
     claims: [ roswell-crashed-craft ]
     basis: first-hand
   - t: "46:25"
