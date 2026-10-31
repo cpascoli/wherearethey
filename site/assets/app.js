@@ -163,6 +163,14 @@
   const allTypes = Object.keys(TYPES);
   // PURSUE records and news items stay out of the graph and the type filter; they appear in context (dossiers, index, search, Latest)
   const offGraph = t => t === 'record' || t === 'news' || t === 'claim';
+  // a file off the graph (record, news, claim) is shown on Explore through the graph file it belongs to: the most
+  // specific one it is linked to (the incident it documents, the video that records it…), the release event last
+  const ANCHOR_RANK = ['incident', 'person', 'program', 'hearing', 'document', 'video', 'place', 'concept', 'film', 'book', 'organization', 'source', 'event'];
+  const graphAnchor = id => {
+    const c = (adj.get(id) || []).filter(x => x.kind !== 'mention').map(x => byId.get(x.other)).filter(o => o && !offGraph(o.type) && visible.has(o.id));
+    const rank = o => (ANCHOR_RANK.indexOf(o.type) + 1 || 99) + (/^ev-pursue-release/.test(o.id) ? 50 : 0);
+    return c.sort((a, b) => rank(a) - rank(b))[0]?.id || null;
+  };
   const graphTypes = allTypes.filter(t => !offGraph(t));
   const TYPES_BEFORE_SHELF = ['person', 'incident', 'hearing', 'program', 'organization', 'document', 'record', 'video', 'event', 'concept', 'place', 'source'];
   const state = {
@@ -339,7 +347,7 @@
         'border-width': 0, 'overlay-opacity': 0,
       } },
       { selector: 'node.outside', style: { 'background-opacity': 0.45, 'border-width': 1.5, 'border-color': css('--outside'), 'border-style': 'dashed' } },
-      { selector: 'node:selected', style: { 'border-width': 3, 'border-color': css('--accent'), 'border-style': 'solid' } },
+      { selector: 'node:selected', style: { 'border-width': 3, 'border-color': css('--accent'), 'border-style': 'solid', 'underlay-color': css('--accent'), 'underlay-opacity': 0.28, 'underlay-padding': 9, 'underlay-shape': 'ellipse' } }, // the open file: a ring and a soft halo
       { selector: 'edge', style: {
         width: 1, 'line-color': css('--edge'), 'curve-style': 'straight', opacity: 0.85, 'overlay-opacity': 0,
         'target-arrow-shape': 'none', 'font-size': 8, color: css('--muted'), 'text-rotation': 'autorotate',
@@ -794,12 +802,24 @@
   // a layout fits the whole graph; bring the selected file and its connections back into view afterwards
   // (an animated layout can still be moving the nodes when it reports done: tidy up once they have stopped)
   const whenStill = fn => cy.nodes().some(n => n.animated()) ? setTimeout(() => whenStill(fn), 60) : fn();
+  // a file picked from search opens full width on desktop (as its own address does); collapsing it (⤡ or R) shows the
+  // trail already started from it, with the file in the middle
+  function readFromSearch() {
+    if (!state.sel || state.reading) { if (state.sel) openPanel(state.sel); return; }
+    state.reading = true; openPanel(state.sel); setHash({ replace: true });
+  }
+  // frame what a trail shows; a trail started from one file (search, a link, "Explore from here") keeps that file in the middle
+  function frameTrail(instant = false) {
+    const T = state.trail; if (!cy || !T) return;
+    const root = !T.story && !T.core && T.steps.length === 1 ? cy.getElementById(T.steps[0]) : null;
+    frameEles(cy.nodes().not('.hidden'), true, instant, root?.length && !root.hasClass('hidden') ? root : null);
+  }
   const reframeSel = () => {
     if (state.view !== 'graph') { if (instantFrame) { instantFrame = false; fadeIn(); } return; }
     whenStill(() => {
       if (state.trail?.core) { pullInCore(); orientCore(); } else if (state.trail) pullOutliers();
       const instant = instantFrame; instantFrame = false;
-      if (state.trail) setTimeout(() => { frameEles(cy.nodes().not('.hidden'), true, instant); if (instant) fadeIn(); }, instant ? 0 : 50);
+      if (state.trail) setTimeout(() => { frameTrail(instant); if (instant) fadeIn(); }, instant ? 0 : 50);
       else { if (state.sel) setTimeout(() => frameHood(cy.getElementById(state.sel)), 50); if (instant) fadeIn(); }
     });
   };
@@ -877,10 +897,17 @@
     if (!cy || n.removed() || n.hasClass('hidden')) return;
     frameEles(n.closedNeighborhood().nodes().not('.hidden'));
   }
-  function frameEles(hood, always = false, instant = false) {
+  // centre: a node to keep in the middle of the view (a trail just started from one file); the frame then becomes
+  // the smallest box centred on it that still holds everything
+  function frameEles(hood, always = false, instant = false, centre = null) {
     if (!cy || !hood.length) return;
     const { w, h } = viewArea();
-    const rb = hood.renderedBoundingBox(), m = 24, bb = hood.boundingBox(), pad = 40;
+    const rb = hood.renderedBoundingBox(), m = 24, pad = 40;
+    let bb = hood.boundingBox();
+    if (centre?.length) {
+      const c = centre.position(), dx = Math.max(c.x - bb.x1, bb.x2 - c.x), dy = Math.max(c.y - bb.y1, bb.y2 - c.y);
+      bb = { x1: c.x - dx, x2: c.x + dx, y1: c.y - dy, y2: c.y + dy, w: 2 * dx, h: 2 * dy };
+    }
     // room taken by the trail bar (top) and the legend (bottom)
     const cr = cy.container().getBoundingClientRect(), tb = $('#trail-bar'), lg = $('#legend');
     const top = tb && !tb.hidden ? Math.max(pad, tb.getBoundingClientRect().bottom - cr.top + 16) : pad;
@@ -896,6 +923,7 @@
   let noFrame = false; // set while handling a click on a node in the graph
   function highlight(id, hover = false) {
     if (!cy) return;
+    if (id && !cy.getElementById(id).length && offGraph(byId.get(id)?.type)) id = graphAnchor(id); // an off-graph file lights up the file it belongs to
     cy.batch(() => {
       cy.elements().removeClass('faded hl');
       if (!id) return;
@@ -1747,13 +1775,14 @@
     const root = document.documentElement;
     root.dataset.vt = kind; // open | close | expand | collapse: picks the keyframes in app.css
     const t = document.startViewTransition(update);
+    t.ready.catch(() => {}); // a transition skipped by the next one rejects; nothing to do
     t.finished.finally(() => { if (root.dataset.vt === kind) delete root.dataset.vt; });
   }
   function setReading(on) {
     panelTransition(on ? 'expand' : 'collapse', () => {
       state.reading = on;
       if (state.sel) openPanel(state.sel);
-      if (!on) afterResize();
+      if (!on) { afterResize(); if (state.view === 'graph' && state.trail) setTimeout(() => frameTrail(), 80); } // the graph was laid out behind the file
     });
   }
   // Drag the panel's left edge to resize (desktop); width remembered per browser
@@ -3025,9 +3054,13 @@
         if (!visible.has(ent.id)) clearFilters(ent);
         else if (!state.types.has(ent.type)) { state.types.add(ent.type); filtersChanged(); }
         startTrail(ent.id);
-        if (window.innerWidth > 860 && state.sel === ent.id) openPanel(ent.id); // desktop: the card opens alongside
-        if (window.innerWidth <= 860) $('#side').classList.remove('open');
+        if (window.innerWidth > 860) readFromSearch(); // desktop: the file opens full width, the trail ready behind it
+        else $('#side').classList.remove('open');
         return;
+      }
+      if (fromSearch && ent && offGraph(ent.type)) {
+        const a = graphAnchor(ent.id);
+        if (a) { startTrail(a); select(ent.id, { from: 'link', noPanel: window.innerWidth <= 860 }); if (window.innerWidth > 860) readFromSearch(); else $('#side').classList.remove('open'); return; }
       }
       if (state.view === 'home' || (fromSearch && state.view !== 'graph')) go('graph'); // records: Explore with the card open
       // following a link from the reading view stays in the reading view: the new file opens full width
