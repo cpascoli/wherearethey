@@ -1,9 +1,12 @@
 ---
+files:
+  - library/pursue/dow-uap-d168.pdf
 rel:
   - [ released in, ev-pursue-release-07 ]
   - [ released by, department-of-war ]
   - [ mentions, project-blue-book ]
   - [ about, aawsap ]
+  - [ mentions, inc-roswell-1947, "Appendix 2 is the 2002 sealed affidavit of the Roswell base public information officer, Walter Haut" ]
   - [ prepared by, bigelow-aerospace, "BAASS, Bigelow Aerospace's AAWSAP contractor, set out its plan for the DIA contract" ]
 tags:
   - pursue

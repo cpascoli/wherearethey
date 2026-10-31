@@ -43,6 +43,12 @@ facts:
     status: claimed
     by: james-lacatski
     source: book-inside-covert-ufo-program
+  - text: "BAASS's Project Management Plan of December 2008 told the DIA that BAASS affiliated personnel “have a list of about ten individuals who have worked in various parts or have been affiliated with the programs involving retrieval of advanced aerospace hardware or of associated biological material”, and proposed that, “Under the premise that biological material of potentially non-human origin has been recovered”, DIA lobby for “access to medical samples”. It appended Walter Haut's 2002 Roswell affidavit."
+    claims: [ recovered-non-human-bodies ]
+    stance: context
+    basis: documented
+    status: documented
+    source: dow-uap-d168
 ---
 
 The Advanced Aerospace Weapon System Applications Program was a $22 million Defense Intelligence Agency program, funded in the 2008 and 2010 defense appropriations at Senator Harry Reid's direction, established in 2009 and ended in 2012. Its contractor, which AARO leaves unnamed, was BAASS, a subsidiary of Robert Bigelow's Bigelow Aerospace, as its own monthly reports in the PURSUE release show. AARO says the contract covered research in 12 aerospace-technology areas and did not specify UFO investigation, but the contractor studied UFO reports and related phenomena, including at Bigelow's Skinwalker Ranch in Utah, with the support of the DIA program manager, by his own account James Lacatski. AARO also says it was the same program as AATIP.
