@@ -6,7 +6,6 @@ date: 2023
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr100 ]
-  - [ about, inc-east-asia-us-military-uap-2021-2025 ]
 moments:
   - t: "0:01"
     text: "In infrared, the sensor tracks an area of contrast, keeping it generally centred; from 0:09 it zooms in and keeps tracking (AARO)."

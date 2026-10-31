@@ -7,7 +7,6 @@ tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr057a ]
   - [ recording of, dow-uap-pr057b ]
-  - [ about, inc-east-asia-us-military-uap-2021-2025 ]
 moments:
   - t: "0:07"
     text: "An area of contrast enters from the left and exits near the centre right (AARO)."

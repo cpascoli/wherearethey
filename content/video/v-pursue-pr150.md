@@ -6,7 +6,6 @@ date: 2023
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr150 ]
-  - [ about, inc-east-asia-us-military-uap-2021-2025 ]
 moments:
   - t: "0:06"
     text: "An area of contrast enters from the bottom edge (AARO)."

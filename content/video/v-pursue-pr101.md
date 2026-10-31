@@ -6,7 +6,6 @@ date: 2024
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr101 ]
-  - [ about, inc-east-asia-us-military-uap-2021-2025 ]
 moments:
   - t: "0:13"
     text: "Zoomed in, an elongated area of contrast, left of centre (AARO)."

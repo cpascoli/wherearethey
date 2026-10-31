@@ -6,7 +6,6 @@ date: 2021-04-12
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr061 ]
-  - [ about, inc-centcom-uap-2013-2025 ]
 moments:
   - t: "3:02"
     text: "An area of contrast enters at the upper right and leaves at the lower right; the sensor pans to centre it (AARO). Until then the clip shows the colour camera's view of the mountains."

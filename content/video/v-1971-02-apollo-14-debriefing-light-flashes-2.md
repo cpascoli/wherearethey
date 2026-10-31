@@ -7,7 +7,6 @@ tags: [nasa, astronaut, pursue]
 rel:
   - [ recording of, nasa-uap-d027 ]
   - [ features, edgar-mitchell ]
-  - [ about, nasa ]
 moments:
   - t: "2:58"
     text: "One crewman concentrated on the shapes discussed before the flight: “it was either a streak, and just a rather simple streak, or it was a flash, and rather a simple flash. Nothing too exotic about it”."

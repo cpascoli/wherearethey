@@ -6,7 +6,6 @@ date: 2020-11-23
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr055 ]
-  - [ about, inc-centcom-uap-2013-2025 ]
 moments:
   - t: "0:03"
     text: "After a card reading “zoomed in”, an area of contrast moves left to right near the top left and fades into the background (AARO)."

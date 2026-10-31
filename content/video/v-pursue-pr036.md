@@ -6,7 +6,6 @@ date: 2020-05
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr036 ]
-  - [ about, inc-centcom-uap-2013-2025 ]
 moments:
   - t: "0:05"
     text: "An area of contrast briefly enters from the left; the sensor pans away and cycles contrast and zoom (AARO). The range-fouler report, D038, describes “a solid white object making erratic movements above the water”."

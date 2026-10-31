@@ -6,7 +6,6 @@ date: 2021
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr051 ]
-  - [ about, inc-centcom-uap-2013-2025 ]
 moments:
   - t: "0:01"
     text: "The sensor keeps an area of contrast centred (AARO)."

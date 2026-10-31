@@ -6,7 +6,6 @@ date: 2023
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr148 ]
-  - [ about, inc-east-asia-us-military-uap-2021-2025 ]
 moments:
   - t: "0:04"
     text: "The sensor pans to track an area of contrast (AARO)."

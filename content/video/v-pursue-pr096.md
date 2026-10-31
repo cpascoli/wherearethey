@@ -6,7 +6,6 @@ date: 2018-07-03
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr096 ]
-  - [ about, inc-centcom-uap-2013-2025 ]
 moments:
   - t: "0:13"
     text: "Two areas of contrast enter at the lower right; the sensor pans to centre them (AARO)."

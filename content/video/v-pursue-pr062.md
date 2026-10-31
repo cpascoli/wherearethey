@@ -6,7 +6,6 @@ date: 2021-04-12
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr062 ]
-  - [ about, inc-centcom-uap-2013-2025 ]
 moments:
   - t: "0:00"
     text: "For the whole clip the sensor pans and cycles zoom to keep an area of contrast centred (AARO)."

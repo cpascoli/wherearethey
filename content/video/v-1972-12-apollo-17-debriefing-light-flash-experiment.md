@@ -7,7 +7,6 @@ tags: [nasa, astronaut, pursue]
 rel:
   - [ recording of, nasa-uap-d028 ]
   - [ features, harrison-schmitt ]
-  - [ about, nasa ]
 moments:
   - t: "11:19"
     text: "On visual sightings during rendezvous: from the lunar module the command module could be seen in sunlight at about a hundred miles, and identified as the command module."

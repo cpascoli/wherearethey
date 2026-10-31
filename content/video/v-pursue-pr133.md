@@ -6,7 +6,6 @@ date: 2024
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr133 ]
-  - [ about, inc-centcom-uap-2013-2025 ]
 moments:
   - t: "0:00"
     text: "The sensor tracks an area of contrast, zooming out from 0:05 to keep it in view (AARO). The mission report, D107, describes it as “look[ing] like a white round orbit… moving as fast as 500 miles per hour.”"

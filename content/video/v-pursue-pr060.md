@@ -6,7 +6,6 @@ date: 2021-04-12
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr060 ]
-  - [ about, inc-centcom-uap-2013-2025 ]
 moments:
   - t: "0:00"
     text: "An area of contrast crosses the frame from right to left as the sensor pans and zooms to follow it (AARO); the footage is from a daytime colour camera over bare mountains, the object a small point."

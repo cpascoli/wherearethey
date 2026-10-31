@@ -6,7 +6,6 @@ date: 2019
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr098 ]
-  - [ about, inc-centcom-uap-2013-2025 ]
 moments:
   - t: "0:02"
     text: "An area of contrast becomes visible and the sensor tracks it (AARO)."

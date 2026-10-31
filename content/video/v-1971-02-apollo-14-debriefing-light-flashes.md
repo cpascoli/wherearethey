@@ -7,7 +7,6 @@ tags: [nasa, astronaut, pursue]
 rel:
   - [ recording of, nasa-uap-d026 ]
   - [ features, edgar-mitchell ]
-  - [ about, nasa ]
 moments:
   - t: "4:00"
     text: "The medical debriefing of the Apollo 14 crew begins; most of the session covers exercise, food and water, sleep and re-entry."

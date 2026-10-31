@@ -6,7 +6,6 @@ date: 2022-05
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr019 ]
-  - [ about, inc-centcom-uap-2013-2025 ]
 moments:
   - t: "0:02"
     text: "At the two-second mark an area of contrast crosses the bottom third of the frame from left to right (AARO): a single streak in the frames. The paired mission report, D010, calls it a “possible missile”, and four other objects not in the video “possible birds”."

@@ -6,7 +6,6 @@ date: 2022-08-26
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr050 ]
-  - [ about, inc-centcom-uap-2013-2025 ]
 moments:
   - t: "0:01"
     text: "Four areas of contrast cross the frame together, entering from the lower left and leaving near the bottom centre (AARO); in the frames they are four bright points, each with a long straight trail, all parallel."

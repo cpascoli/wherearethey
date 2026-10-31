@@ -7,7 +7,6 @@ tags: [nasa, astronaut, pursue]
 rel:
   - [ recording of, nasa-uap-d012 ]
   - [ features, wally-schirra ]
-  - [ about, nasa ]
 moments:
   - t: "0:00"
     text: "Schirra: “I have the little white objects that seem to come from the capsule itself, and drift off”."
@@ -17,6 +16,7 @@ moments:
     speaker: wally-schirra
   - t: "2:22"
     text: "At five hours fifteen minutes, near sunset: “I'm getting a real burst of light in the window, and I really don't know what it is.”"
+    refs: [ nasa ]
     speaker: wally-schirra
 ---
 

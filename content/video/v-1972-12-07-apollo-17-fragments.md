@@ -6,7 +6,6 @@ date: 1972-12-07
 tags: [nasa, astronaut, pursue]
 rel:
   - [ recording of, nasa-uap-d009 ]
-  - [ about, nasa ]
 moments:
   - t: "0:00"
     text: "On the way to the Moon a crew member reports “very bright particles or fragments” drifting by: “Looks like the 4th of July”; “They're very, uh, jagged, angular, uh, fragments. They're tumbling.”"

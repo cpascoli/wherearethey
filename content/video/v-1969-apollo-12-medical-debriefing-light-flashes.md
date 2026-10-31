@@ -6,7 +6,6 @@ date: 1969
 tags: [nasa, astronaut, pursue]
 rel:
   - [ recording of, nasa-uap-d008 ]
-  - [ about, nasa ]
 moments:
   - t: "0:00"
     text: "The debriefers ask about the “coronal discharges” the crew reported; a crew member recalls that the Apollo 11 crew had seen flashes at night in the dark spacecraft."

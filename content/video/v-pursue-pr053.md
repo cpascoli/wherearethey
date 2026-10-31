@@ -6,7 +6,6 @@ date: 2022-10-15
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr053 ]
-  - [ about, inc-centcom-uap-2013-2025 ]
 moments:
   - t: "0:01"
     text: "An area of contrast crosses the frame from left to right (AARO)."

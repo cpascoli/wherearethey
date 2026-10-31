@@ -7,7 +7,6 @@ tags: [nasa, astronaut, pursue]
 rel:
   - [ recording of, nasa-uap-d013 ]
   - [ features, scott-carpenter ]
-  - [ about, nasa ]
 moments:
   - t: "0:00"
     text: "Carpenter: more white particles below the capsule; one “It's going faster than I am”, their motion is random, and “They look exactly like snowflakes to me.”"

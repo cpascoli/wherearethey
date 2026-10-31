@@ -6,7 +6,6 @@ date: 1961-07-21
 tags: [nasa, astronaut, pursue]
 rel:
   - [ recording of, nasa-uap-d014 ]
-  - [ about, nasa ]
 moments:
   - t: "0:00"
     text: "A short, noisy exchange in which the recovery forces discuss something in the water about three quarters of a mile to a mile out; AARO describes it as a dye pack that did not activate."

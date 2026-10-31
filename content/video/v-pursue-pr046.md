@@ -6,7 +6,6 @@ date: 2024
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr046 ]
-  - [ about, inc-east-asia-us-military-uap-2021-2025 ]
 moments:
   - t: "0:00"
     text: "The sensor focuses on an area of contrast that AARO describes as “a football-shaped body with three radial projections: one oriented vertically, and two oriented downward at a 45-degree angle”."

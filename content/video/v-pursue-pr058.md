@@ -6,7 +6,6 @@ date: 2024
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr058 ]
-  - [ about, inc-east-asia-us-military-uap-2021-2025 ]
 moments:
   - t: "0:01"
     text: "A title card: “[CALLSIGN] recording - 8x speed possible changes of shape stabilized and enhanced 38 secs.” AARO notes the video “was digitally altered prior to its upload”."

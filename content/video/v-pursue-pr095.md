@@ -6,7 +6,6 @@ date: 2020-05-05
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr095 ]
-  - [ about, inc-centcom-uap-2013-2025 ]
 moments:
   - t: "0:00"
     text: "The sensor tracks an area of contrast (AARO)."

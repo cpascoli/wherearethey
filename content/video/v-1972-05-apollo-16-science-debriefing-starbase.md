@@ -6,10 +6,10 @@ date: 1972-05
 tags: [nasa, pursue]
 rel:
   - [ recording of, nasa-uap-d025 ]
-  - [ about, nasa ]
 moments:
   - t: "31:59"
     text: "A magnetometer investigator notes that the magnetic low over the far-side crater Van de Graaff matches the “great big hole” in the laser altimeter data, but “I can't see any scientific justification for connecting the two results”; reminded of the gamma-ray data: “the secondary peak is also in Van de Graaff I don't know what it means it could be an alien star”, which AARO transcribes as “Could be an alien starbase or something, I don't know”. He goes straight on to the next slide."
+    refs: [ nasa ]
   - t: "34:09"
     text: "A blow-up of the Van de Graaff region: the anomaly sits between two craters, which “kind of shoots holes in the theory” that it was a meteorite impact in a magnetised crust."
 ---

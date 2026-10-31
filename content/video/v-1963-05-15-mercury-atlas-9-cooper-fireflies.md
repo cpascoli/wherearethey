@@ -7,7 +7,6 @@ tags: [nasa, astronaut, pursue]
 rel:
   - [ recording of, nasa-uap-d010 ]
   - [ features, gordon-cooper ]
-  - [ about, nasa ]
 moments:
   - t: "0:00"
     text: "Cooper, at one hour 21 minutes: “I am observing John's fireflies drifting away from me”, some of them a considerable distance out to the rear, as the sun comes up behind him."

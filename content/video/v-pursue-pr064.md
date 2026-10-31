@@ -6,7 +6,6 @@ date: 2017-07
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr064 ]
-  - [ about, inc-centcom-uap-2013-2025 ]
 moments:
   - t: "0:14"
     text: "After 13 seconds with no content, an area of contrast crosses the frame from the left edge to the right in about a second (AARO)."

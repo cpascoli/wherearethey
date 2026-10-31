@@ -6,7 +6,6 @@ date: 2020-10-29
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr079 ]
-  - [ about, inc-centcom-uap-2013-2025 ]
 moments:
   - t: "0:02"
     text: "The sensor pans to track an area of contrast, zooming in and out (AARO)."

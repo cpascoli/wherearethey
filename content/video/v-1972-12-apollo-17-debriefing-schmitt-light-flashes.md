@@ -7,7 +7,6 @@ tags: [nasa, astronaut, pursue]
 rel:
   - [ recording of, nasa-uap-d029 ]
   - [ features, harrison-schmitt ]
-  - [ about, nasa ]
 moments:
   - t: "0:00"
     text: "The tape opens: “continuation of section 23.0 with Jack Schmidt”, a section-by-section technical debriefing of the flight."

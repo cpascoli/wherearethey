@@ -6,7 +6,6 @@ date: 2023
 tags: [military, pursue, sensor-video]
 rel:
   - [ recording of, dow-uap-pr047 ]
-  - [ about, inc-east-asia-us-military-uap-2021-2025 ]
 moments:
   - t: "0:00"
     text: "For the whole clip the sensor tracks three areas of contrast that “appear to maintain a fixed position and orientation relative to one another” (AARO)."

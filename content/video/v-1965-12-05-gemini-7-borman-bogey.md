@@ -8,12 +8,12 @@ rel:
   - [ recording of, nasa-uap-d003a ]
   - [ features, frank-borman ]
   - [ features, jim-lovell ]
-  - [ about, nasa ]
 moments:
   - t: "0:00"
     text: "Gemini Control's commentator introduces the tape: at the start of the second revolution, near Antigua, the crew had reported “several objects”; a line breakdown had kept it from the press until now."
   - t: "0:46"
     text: "Borman: “We have a bogey at 10 o'clock high.”"
+    refs: [ nasa ]
     speaker: frank-borman
   - t: "1:33"
     text: "Houston asks: “Gemini 7, is that the booster or is that an actual sighting?” The answer: “actual sighting”; the crew also have the booster in sight, and “very, very many, looks like hundreds of little particles going by the left out about three to four miles”."

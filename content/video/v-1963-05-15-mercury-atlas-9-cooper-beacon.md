@@ -7,7 +7,6 @@ tags: [nasa, astronaut, pursue]
 rel:
   - [ recording of, nasa-uap-d011 ]
   - [ features, gordon-cooper ]
-  - [ about, nasa ]
 moments:
   - t: "0:00"
     text: "Cooper describes sunrise: “the brilliant blue of sun rising in the east. Bright blue band underneath all this haze layer.”"
