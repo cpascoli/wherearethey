@@ -9,10 +9,8 @@ rel:
 moments:
   - t: "0:00"
     text: "The sensor tracks an area of contrast, keeping it centred (AARO)."
-    refs: [ inc-centcom-uap-2013-2025 ]
   - t: "0:50"
     text: "The sensor pans away from it (AARO); much of the rest is the colour camera's view of the terrain."
-    refs: [ inc-centcom-uap-2013-2025 ]
 ---
 
 The fourth of the four 12 April 2021 clips over Afghanistan (item 11 of the House Oversight Task Force letter), released as PR063 in PURSUE release 02.

@@ -9,16 +9,12 @@ rel:
 moments:
   - t: "0:01"
     text: "The sensor pans to track an area of contrast (AARO)."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
   - t: "0:20"
     text: "Tracking continues; parts of the object intermittently lose distinctiveness against the background (AARO)."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
   - t: "1:35"
     text: "Zoomed in, the sensor pans right to left; the object leaves the frame at the right edge several times (AARO)."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
   - t: "2:06"
     text: "The sensor zooms and pans without the object for the rest of the clip (AARO)."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
 ---
 
 Five minutes of infrared footage reported by INDOPACOM from the East China Sea in 2025; released as PR105 in PURSUE release 04.

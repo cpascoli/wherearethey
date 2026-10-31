@@ -9,10 +9,8 @@ rel:
 moments:
   - t: "3:02"
     text: "An area of contrast enters at the upper right and leaves at the lower right; the sensor pans to centre it (AARO). Until then the clip shows the colour camera's view of the mountains."
-    refs: [ inc-centcom-uap-2013-2025 ]
   - t: "4:01"
     text: "The sensor changes modes as the object becomes indistinct (AARO)."
-    refs: [ inc-centcom-uap-2013-2025 ]
 ---
 
 The second of the four 12 April 2021 clips over Afghanistan (item 11 of the House Oversight Task Force letter), released as PR061 in PURSUE release 02.

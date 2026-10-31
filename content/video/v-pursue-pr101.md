@@ -9,13 +9,11 @@ rel:
 moments:
   - t: "0:13"
     text: "Zoomed in, an elongated area of contrast, left of centre (AARO)."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
   - t: "0:29"
     text: "Zoomed in again: “a “line” of several areas of contrast” moving from bottom right to top left (AARO)."
     refs: [ inc-east-asia-us-military-uap-2021-2025 ]
   - t: "0:34"
     text: "The sensor follows them for about a minute as they grow less distinct with distance (AARO)."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
 ---
 
 1 minute 46 seconds of infrared footage reported by INDOPACOM from the South China Sea in 2024; released as PR101 in PURSUE release 04.

@@ -9,7 +9,6 @@ rel:
 moments:
   - t: "0:00"
     text: "The sensor pans to track an area of contrast for the whole clip (AARO)."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
 ---
 
 19 seconds of infrared footage reported by INDOPACOM from the Yellow Sea in 2023; released as PR143 in PURSUE release 06.

@@ -9,10 +9,8 @@ rel:
 moments:
   - t: "0:01"
     text: "The sensor tracks an area of contrast near the centre (AARO)."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
   - t: "0:21"
     text: "It exits the field of view at the top of the frame (AARO); the sensor zooms in and out without finding it again."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
 ---
 
 36 seconds of infrared footage reported by INDOPACOM from the East China Sea in 2024; released as PR102 in PURSUE release 04.

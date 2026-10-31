@@ -9,13 +9,10 @@ rel:
 moments:
   - t: "0:06"
     text: "An area of contrast enters from the bottom edge (AARO)."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
   - t: "0:08"
     text: "A rectangular “focus box” appears, a display element, and the sensor pans to follow the object (AARO)."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
   - t: "0:52"
     text: "The platform's own structure occludes the sensor, blurring and blocking the right side of the frame (AARO)."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
 ---
 
 57 seconds of infrared footage reported by INDOPACOM from the Yellow Sea in 2023; released as PR150 in PURSUE release 06.

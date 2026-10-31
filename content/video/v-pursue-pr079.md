@@ -9,16 +9,12 @@ rel:
 moments:
   - t: "0:02"
     text: "The sensor pans to track an area of contrast, zooming in and out (AARO)."
-    refs: [ inc-centcom-uap-2013-2025 ]
   - t: "1:02"
     text: "A second area of contrast enters from the top left; both stay in frame for about 15 seconds (AARO)."
-    refs: [ inc-centcom-uap-2013-2025 ]
   - t: "1:18"
     text: "The sensor follows the second object and the first leaves the frame at the bottom (AARO)."
-    refs: [ inc-centcom-uap-2013-2025 ]
   - t: "1:59"
     text: "The sensor tracks an object that grows less distinct; the rest of the clip has no content (AARO)."
-    refs: [ inc-centcom-uap-2013-2025 ]
 ---
 
 Four minutes of infrared footage from CENTCOM's area, uploaded to a classified network the same month under the title “29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP’s”; item 27 of the House Oversight Task Force letter, released as PR079 in PURSUE release 02. AARO's description shows two objects at most at once.

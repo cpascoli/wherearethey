@@ -9,10 +9,8 @@ rel:
 moments:
   - t: "0:01"
     text: "The sensor pans to track an area of contrast (AARO)."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
   - t: "0:12"
     text: "An auto-tracking reticle locks around it for the rest of the clip (AARO)."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
 ---
 
 1 minute 16 seconds of infrared footage reported by INDOPACOM from the East China Sea in 2024; released as PR103 in PURSUE release 04.

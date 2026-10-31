@@ -12,16 +12,16 @@ moments:
     refs: [ inc-centcom-uap-2013-2025, dow-uap-d107 ]
   - t: "1:43"
     text: "A “focus box” appears; the sensor follows the object until it exits the bottom of the frame (AARO)."
-    refs: [ inc-centcom-uap-2013-2025, dow-uap-d107 ]
+    refs: [ dow-uap-d107 ]
   - t: "2:29"
     text: "An auto-tracking reticle fails to lock on, and the object leaves the frame to the right (AARO)."
-    refs: [ inc-centcom-uap-2013-2025, dow-uap-d107 ]
+    refs: [ dow-uap-d107 ]
   - t: "3:23"
     text: "Zoomed out, the sensor finds the object again, now much smaller, and keeps panning to follow it (AARO)."
-    refs: [ inc-centcom-uap-2013-2025, dow-uap-d107 ]
+    refs: [ dow-uap-d107 ]
   - t: "4:30"
     text: "Zoomed in, the object crosses the frame and exits at the top (AARO)."
-    refs: [ inc-centcom-uap-2013-2025, dow-uap-d107 ]
+    refs: [ dow-uap-d107 ]
 ---
 
 Almost five minutes of infrared footage submitted by CENTCOM with a mission report (DOW-UAP-D107); the release dates the footage 2024 and the catalogue 2025. Released as PR133 in PURSUE release 06.

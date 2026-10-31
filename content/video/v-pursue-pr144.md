@@ -9,10 +9,8 @@ rel:
 moments:
   - t: "0:00"
     text: "An area of contrast above and left of centre (AARO)."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
   - t: "0:03"
     text: "The sensor magnifies and tracks it to the end (AARO)."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
 ---
 
 27 seconds of infrared footage reported by INDOPACOM from the Yellow Sea in 2023; released as PR144 in PURSUE release 06.

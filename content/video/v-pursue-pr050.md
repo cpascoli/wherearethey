@@ -12,7 +12,6 @@ moments:
     refs: [ inc-centcom-uap-2013-2025 ]
   - t: "0:05"
     text: "Another area of contrast enters from the top left corner (AARO)."
-    refs: [ inc-centcom-uap-2013-2025 ]
 ---
 
 An infrared clip from CENTCOM's area, uploaded to a classified network in June 2024 under the title “4 UAP Formation Iran 26 Aug 2022 over water [CALLSIGN]”; item 1 of the House Oversight Task Force letter, released as PR050 in PURSUE release 02. AARO gives its length as 20 seconds; the DVIDS file runs 10.

@@ -9,10 +9,8 @@ rel:
 moments:
   - t: "0:00"
     text: "The sensor pans to track an area of contrast (AARO)."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
   - t: "0:16"
     text: "It increases magnification and keeps the object near the centre to the end (AARO)."
-    refs: [ inc-east-asia-us-military-uap-2021-2025 ]
 ---
 
 49 seconds of infrared footage reported by INDOPACOM from the Yellow Sea in 2023; released as PR151 in PURSUE release 06.

@@ -9,13 +9,10 @@ rel:
 moments:
   - t: "0:03"
     text: "After a card reading “zoomed in”, an area of contrast moves left to right near the top left and fades into the background (AARO)."
-    refs: [ inc-centcom-uap-2013-2025 ]
   - t: "0:11"
     text: "A card: “sharpened, zoomed motion tracked contrast enhanced slow to 60% speed”, then the enhanced replay (AARO)."
-    refs: [ inc-centcom-uap-2013-2025 ]
   - t: "0:30"
     text: "After a card reading “original video”, the unaltered clip: the object appears at the top centre, moves down and left, then right, and fades (AARO)."
-    refs: [ inc-centcom-uap-2013-2025 ]
 ---
 
 A 47-second infrared clip over Afghanistan, edited with enhanced replays before its upload to a classified network in June 2024; released as PR055 in PURSUE release 02.

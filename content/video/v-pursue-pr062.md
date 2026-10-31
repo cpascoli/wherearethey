@@ -9,7 +9,6 @@ rel:
 moments:
   - t: "0:00"
     text: "For the whole clip the sensor pans and cycles zoom to keep an area of contrast centred (AARO)."
-    refs: [ inc-centcom-uap-2013-2025 ]
 ---
 
 The third of the four 12 April 2021 clips over Afghanistan (item 11 of the House Oversight Task Force letter), released as PR062 in PURSUE release 02.
