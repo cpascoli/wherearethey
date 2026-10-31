@@ -1481,7 +1481,8 @@
       const foot = [...new Set(adj.get(e.id).filter(x => x.kind !== 'mention').map(x => x.other))].map(id => byId.get(id))
         .filter(r => r?.type === 'record' && r.pursue?.dvidsId && !seen.has(r.pursue.dvidsId) && seen.add(r.pursue.dvidsId))
         .sort((a, b) => String(a.pursue.incident_date || a.date || '').localeCompare(String(b.pursue.incident_date || b.date || '')) || a.name.localeCompare(b.name));
-      if (foot.length) {
+      // an agency that released a large share of the records (the Department of War) would get a catalogue, not evidence: none there
+      if (foot.length && !(e.type === 'organization' && foot.length > 20)) {
         const many = foot.length > 24; // past that, a counter instead of dots
         h.push(`<div class="p-sec" id="sec-footage"><h4>Official footage <span>${foot.length} video${foot.length > 1 ? 's' : ''} · DVIDS</span></h4><div class="dv-car" tabindex="-1"><div class="dv-track">${foot.map((r, i) => `
           <div class="dv-slide" aria-roledescription="slide" aria-label="${i + 1} of ${foot.length}">${dvidsPlayer(r.pursue, r.name)}<div class="dv-cap"><a class="wt" href="${hrefOf(r.id)}" data-goto="${esc(r.id)}">${esc(r.pursue.title || r.name)}</a><div class="ws">${esc([r.pursue.code, r.pursue.incident_location, r.pursue.incident_date].filter(Boolean).join(' · '))}</div></div></div>`).join('')}</div>${foot.length > 1 ? `
