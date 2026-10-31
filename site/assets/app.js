@@ -137,6 +137,9 @@
   // thumbnail for any video entry (non-YouTube videos get a neutral placeholder)
   const VIDEO_PLACEHOLDER = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180"><rect width="320" height="180" fill="#131a1f"/><circle cx="160" cy="90" r="26" fill="none" stroke="#6fcfbf" stroke-width="3"/><path d="M152 76 L174 90 L152 104 Z" fill="#6fcfbf"/></svg>')}`;
   const vthumb = v => (v.youtube ? thumb(v.youtube) : v.thumb ? fileUrl(v.thumb) : v.dvids?.poster || VIDEO_PLACEHOLDER);
+  // the video entry (with moments) that records an official record, if any
+  const recVideo = id => adj.get(id)?.map(x => byId.get(x.other)).find(v => v?.type === 'video' && v.rel?.some(l => l.label === 'recording of' && l.id === id)) || null;
+  const momentsBtn = v => (v?.moments?.length ? `<button class="ts" data-play="${v.id}@0" title="Open in the player with its moments">▶ ${v.moments.length} moment${v.moments.length > 1 ? 's' : ''}</button>` : '');
   // a PURSUE video on DVIDS, played in place: the poster frame, replaced on click by a player for DVIDS's MP4 (DVIDS's own player without one)
   const dvidsPlayer = (pu, title) => `<div class="dv-frame" data-dvids="${esc(pu.dvidsId)}"${pu.mp4 ? ` data-mp4="${esc(pu.mp4)}"` : ''} role="button" tabindex="0" title="Play the official video (DVIDS)" aria-label="Play: ${esc(title)}">${pu.poster ? `<img src="${esc(pu.poster)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ''}<span class="wplay">▶</span></div>`;
   const vsource = v => (v.youtube ? { url: `https://www.youtube.com/watch?v=${v.youtube}`, label: 'YouTube' } : { url: v.url, label: v.url && /x\.com|twitter\.com/.test(v.url) ? 'X' : v.dvids ? 'DVIDS' : 'Source' });
@@ -1459,9 +1462,11 @@
     if (e.type !== 'video' && e.type !== 'claim') {
       const WATCH = { 'trailer of': 'Trailer', 'recording of': 'Recording', features: 'Appearance', about: 'About this', 'speaks in': 'Speaks in' };
       const vids = new Map();
+      // a video of an official record shown in the footage carousel below is reached from there, not listed twice
+      const inFootage = new Set(e.type === 'record' ? [] : adj.get(e.id).map(x => byId.get(x.other)?.pursue?.dvidsId).filter(Boolean));
       for (const x of adj.get(e.id)) {
         const v = byId.get(x.other);
-        if (v?.type !== 'video') continue;
+        if (v?.type !== 'video' || (v.dvids && inFootage.has(v.dvids.id))) continue;
         const label = x.dir === 'in' ? WATCH[x.label] : x.label === 'speaks in' ? WATCH['speaks in'] : null;
         if (label && !vids.has(v.id)) vids.set(v.id, label);
       }
@@ -1486,7 +1491,7 @@
       if (foot.length && !(e.type === 'organization' && foot.length > 20)) {
         const many = foot.length > 24; // past that, a counter instead of dots
         h.push(`<div class="p-sec" id="sec-footage"><h4>Official footage <span>${foot.length} video${foot.length > 1 ? 's' : ''} · DVIDS</span></h4><div class="dv-car" tabindex="-1"><div class="dv-track">${foot.map((r, i) => `
-          <div class="dv-slide" aria-roledescription="slide" aria-label="${i + 1} of ${foot.length}">${dvidsPlayer(r.pursue, r.name)}<div class="dv-cap"><a class="wt" href="${hrefOf(r.id)}" data-goto="${esc(r.id)}">${esc(r.pursue.title || r.name)}</a><div class="ws">${esc([r.pursue.code, r.pursue.incident_location, r.pursue.incident_date].filter(Boolean).join(' · '))}</div></div></div>`).join('')}</div>${foot.length > 1 ? `
+          <div class="dv-slide" aria-roledescription="slide" aria-label="${i + 1} of ${foot.length}">${dvidsPlayer(r.pursue, r.name)}<div class="dv-cap"><a class="wt" href="${hrefOf(r.id)}" data-goto="${esc(r.id)}">${esc(r.pursue.title || r.name)}</a><div class="ws">${esc([r.pursue.code, r.pursue.incident_location, r.pursue.incident_date].filter(Boolean).join(' · '))}</div>${momentsBtn(recVideo(r.id)) ? `<div class="wlinks">${momentsBtn(recVideo(r.id))}</div>` : ''}</div></div>`).join('')}</div>${foot.length > 1 ? `
           <div class="dv-nav"><button class="dv-prev" aria-label="Previous video" disabled>‹</button><span class="dv-dots">${many ? '' : foot.map((_, i) => `<button class="dv-dot${i ? '' : ' on'}" data-dv-at="${i}" aria-label="Video ${i + 1}"></button>`).join('')}<span class="dv-count">1 / ${foot.length}</span></span><button class="dv-next" aria-label="Next video">›</button></div>` : ''}</div></div>`);
       }
     }
@@ -1503,7 +1508,7 @@
       h.push(`<div class="record-card">${pu.dvidsId ? dvidsPlayer(pu, e.name) : pu.thumbnail ? `<a href="${esc(pu.file || pu.thumbnail)}" target="_blank" rel="noopener"><img src="${esc(pu.thumbnail)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></a>` : ''}
         <dl class="rec-meta"><dt>Agency</dt><dd>${esc(pu.agency || '—')}</dd><dt>Released</dt><dd>${esc(fmtD(pu.released))} · Release ${String(pu.release).padStart(2, '0')}</dd>
         <dt>Incident</dt><dd>${esc([pu.incident_date, pu.incident_location].filter(Boolean).join(' · ') || '—')}</dd><dt>Format</dt><dd>${esc((pu.format || '').toUpperCase())}${pu.redaction ? ' · redacted' : ''}</dd></dl>
-        <div class="rec-actions">${pu.file ? `<a class="btn small" href="${esc(pu.file)}" target="_blank" rel="noopener">Official file ↗</a>` : ''}${local ? `<a class="btn small primary" href="${esc(fileUrl(local))}" target="_blank">Local copy</a>` : ''}${pu.dvids ? `<a class="btn small" href="${esc(pu.dvids)}" target="_blank" rel="noopener">DVIDS video ↗</a>` : ''}</div></div>`);
+        <div class="rec-actions">${pu.file ? `<a class="btn small" href="${esc(pu.file)}" target="_blank" rel="noopener">Official file ↗</a>` : ''}${local ? `<a class="btn small primary" href="${esc(fileUrl(local))}" target="_blank">Local copy</a>` : ''}${pu.dvids ? `<a class="btn small" href="${esc(pu.dvids)}" target="_blank" rel="noopener">DVIDS video ↗</a>` : ''}${momentsBtn(recVideo(e.id))}</div></div>`);
     }
     if (e.links.length || e.files.length) {
       const amzP = e.type === 'book' && amazonLink(e.isbn);
@@ -2605,6 +2610,7 @@
   function vidKind(v) {
     const rels = adj.get(v.id).filter(x => x.dir === 'out');
     if (rels.some(x => x.label === 'trailer of')) return 'trailer';
+    if (rels.some(x => x.label === 'recording of' && byId.get(x.other)?.type === 'record')) return 'archive'; // official records' own footage and audio (PURSUE)
     const rec = rels.filter(x => ['recording of', 'records'].includes(x.label) && ['hearing', 'event'].includes(byId.get(x.other)?.type)).map(x => x.other);
     if (v.series === 'h-2013-citizen-hearing' || rec.includes('h-2013-citizen-hearing')) return 'citizen';
     if (rec.some(id => byId.get(id).type === 'hearing' || CONGRESS_EVENTS.has(id)) || /hearing|testimony before|subcommittee|committee/i.test(v.name)) return 'congress';

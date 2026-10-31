@@ -32,7 +32,7 @@ facts:
   - text: "Several of these videos were released in answer to a House request: AARO dates it to 6 March 2026 and describes it as from eight members asking for 51 potentially UAP-related records, while the letter the Oversight Committee published is dated 31 March 2026, signed by Anna Paulina Luna alone and lists 46 items, among them “22. MQ-9 observer UAP in East China Sea, 1/5/23” and “24. EP-3 Observed UAP in the ECS, 6/9/21”. AARO says it found the responsive material “held on a classified network” and that “Many of these materials lack a substantiated chain-of-custody”; PR057a and PR057b are the same Yellow Sea video of January 2023, uploaded by two users under different titles, one in June 2024."
     status: documented
     source: dow-uap-pr057a
-  - text: "In the 2023 Yellow Sea report PR100, the sensor tracks an object in infrared, switches for a few seconds to its daytime camera, which shows “a dark object superimposed against a blue background”, and then loses it in infrared."
+  - text: "In the 2023 Yellow Sea report PR100, the sensor tracks an object in infrared, switches for a few seconds (1:04–1:10) to its daytime camera, which shows “a dark object superimposed against a blue background”, and then loses it in infrared."
     status: documented
     source: dow-uap-pr100
   - text: "Kevin Campbell, a former Defense Information Systems Agency contractor who monitored drone feeds from Hill AFB, says he saw three such events on MQ-9 feeds over the East China Sea and Yellow Sea around 2023–24, small spheres a few feet above the water, one watched live, and that he is “99% sure” one is among the videos members of Congress requested; he does not say which, and no record confirms it."
