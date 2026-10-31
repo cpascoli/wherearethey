@@ -430,7 +430,7 @@ mark { background: rgba(227, 179, 65, .4); color: inherit; border-radius: 3px; p
 .dv-frame:hover .wplay, .dv-frame:focus-visible .wplay { opacity: 1; }
 .dv-frame.playing { cursor: auto; }
 .record-card > .dv-frame { width: 100%; max-width: 760px; }
-.dv-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.dv-frame iframe, .dv-frame video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #000; }
 .dv-car { outline: none; }
 .dv-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; }
 .dv-track::-webkit-scrollbar { display: none; }

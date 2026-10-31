@@ -136,8 +136,8 @@
   // thumbnail for any video entry (non-YouTube videos get a neutral placeholder)
   const VIDEO_PLACEHOLDER = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180"><rect width="320" height="180" fill="#131a1f"/><circle cx="160" cy="90" r="26" fill="none" stroke="#6fcfbf" stroke-width="3"/><path d="M152 76 L174 90 L152 104 Z" fill="#6fcfbf"/></svg>')}`;
   const vthumb = v => (v.youtube ? thumb(v.youtube) : v.thumb ? fileUrl(v.thumb) : v.dvids?.poster || VIDEO_PLACEHOLDER);
-  // a PURSUE video on DVIDS, played in place: the poster frame, replaced by DVIDS's own player on click
-  const dvidsPlayer = (pu, title) => `<div class="dv-frame" data-dvids="${esc(pu.dvidsId)}" role="button" tabindex="0" title="Play the official video (DVIDS)" aria-label="Play: ${esc(title)}">${pu.poster ? `<img src="${esc(pu.poster)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ''}<span class="wplay">▶</span></div>`;
+  // a PURSUE video on DVIDS, played in place: the poster frame, replaced on click by a player for DVIDS's MP4 (DVIDS's own player without one)
+  const dvidsPlayer = (pu, title) => `<div class="dv-frame" data-dvids="${esc(pu.dvidsId)}"${pu.mp4 ? ` data-mp4="${esc(pu.mp4)}"` : ''} role="button" tabindex="0" title="Play the official video (DVIDS)" aria-label="Play: ${esc(title)}">${pu.poster ? `<img src="${esc(pu.poster)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ''}<span class="wplay">▶</span></div>`;
   const vsource = v => (v.youtube ? { url: `https://www.youtube.com/watch?v=${v.youtube}`, label: 'YouTube' } : { url: v.url, label: v.url && /x\.com|twitter\.com/.test(v.url) ? 'X' : v.dvids ? 'DVIDS' : 'Source' });
   const subtitle = e => {
     if (e.credentials?.length) return e.credentials[0].role;
@@ -2939,14 +2939,23 @@
     if (filtersChangedFlag && cy && state.view !== 'graph') applyGraphFilter();
   }
 
-  // swap a DVIDS poster for the DVIDS embed player (the poster stays underneath, to come back to)
+  // swap a DVIDS poster for a player: our <video> on DVIDS's MP4 (starts at once), or DVIDS's embed player if there is
+  // no MP4 or it fails to load; the poster stays underneath, to come back to
+  const dvEmbed = id => `<iframe src="https://www.dvidshub.net/video/embed/${encodeURIComponent(id)}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="DVIDS video ${esc(id)}"></iframe>`;
   function playDvids(el) {
-    const id = el.dataset.dvids;
+    const id = el.dataset.dvids, mp4 = el.dataset.mp4;
     track('video_play_click', { video_id: `dvids-${id}`, context: 'official_footage' });
+    document.querySelectorAll('.dv-frame.playing').forEach(stopDvids); // one at a time
     el.dataset.was = id; delete el.dataset.dvids; el.classList.add('playing');
-    el.insertAdjacentHTML('beforeend', `<iframe src="https://www.dvidshub.net/video/embed/${encodeURIComponent(id)}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="DVIDS video ${esc(id)}"></iframe>`);
+    if (!mp4) { el.insertAdjacentHTML('beforeend', dvEmbed(id)); return; }
+    const v = document.createElement('video');
+    Object.assign(v, { src: mp4, controls: true, autoplay: true, playsInline: true, preload: 'auto' });
+    const poster = el.querySelector('img')?.src; if (poster) v.poster = poster;
+    v.onerror = () => { v.remove(); if (el.classList.contains('playing')) el.insertAdjacentHTML('beforeend', dvEmbed(id)); };
+    el.append(v);
+    v.play().catch(() => {});
   }
-  function stopDvids(el) { el.querySelector('iframe')?.remove(); el.dataset.dvids = el.dataset.was; delete el.dataset.was; el.classList.remove('playing'); }
+  function stopDvids(el) { el.querySelector('video')?.pause(); el.querySelectorAll('video, iframe').forEach(x => x.remove()); el.dataset.dvids = el.dataset.was; delete el.dataset.was; el.classList.remove('playing'); }
   // the footage carousel: one video at a time, ‹ › and dots (or a counter), swipe on phones (scroll snap)
   const carAt = car => { const t = car.querySelector('.dv-track'); return Math.round(t.scrollLeft / (t.clientWidth || 1)); };
   function carGo(car, i) {

@@ -108,9 +108,9 @@ export async function build({ check = false, quiet = false } = {}) {
     if (d.channels) e.channels = arr(d.channels).map(String);
     if (d.pursue) {
       e.pursue = d.pursue;
-      // DVIDS video: its id and poster frame (content/dvids.json, filled by scripts/dvids-thumbs.mjs), so pages can play it in place
+      // DVIDS video: its id, poster frame and MP4 (content/dvids.json, filled by scripts/dvids-thumbs.mjs), so pages can play it in place
       const dv = String(d.pursue.dvids || '').match(/\/video\/(\d+)/)?.[1];
-      if (dv) e.pursue = { ...d.pursue, dvidsId: dv, ...(DVIDS[dv]?.poster && { poster: DVIDS[dv].poster }) };
+      if (dv) e.pursue = { ...d.pursue, dvidsId: dv, ...(DVIDS[dv]?.poster && { poster: DVIDS[dv].poster }), ...(DVIDS[dv]?.mp4 && { mp4: DVIDS[dv].mp4 }) };
     }
     if (d.witnesses != null) e.witnesses = Number(d.witnesses);
     // search results: optional hand-written page title and meta description (otherwise generated in pages.mjs)
