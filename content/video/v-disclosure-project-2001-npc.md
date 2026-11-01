@@ -48,6 +48,18 @@ moments:
     text: "Robert Salas corrects his card (he left the Air Force as a captain), then describes the March 16, 1967 loss of six to eight Minuteman missiles at Oscar Flight while guards reported a glowing red object at the gate."
     speaker: bob-salas
     refs: [ inc-malmstrom-1967 ]
+  - t: "44:15"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: first-hand
+    text: "Salas: a second call came, the guard's voice “very clearly frightened”: “a bright glowing red object hovering outside the front gate it was was oval shaped”, and the other guards were out with their weapons drawn; he woke his commander, Fred Meiwald."
+    speaker: bob-salas
+    refs: [ inc-malmstrom-1967 ]
+  - t: "44:46"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: first-hand
+    text: "As he told Meiwald about the calls, his missiles went down one after the other: “they went into a no-go condition”, unlaunchable; “we lost somewhere between uh six and eight weapons that morning”, within minutes of the second call. The command post then told them a very similar incident had happened at Echo Flight."
+    speaker: bob-salas
+    refs: [ inc-malmstrom-1967 ]
   - t: "45:16"
     claims: [ malmstrom-ufo-missile-shutdown ]
     basis: documented

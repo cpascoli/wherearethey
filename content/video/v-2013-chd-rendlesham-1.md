@@ -49,6 +49,12 @@ moments:
     text: "Penniston: about a week later, Halt told them a team from Langley had cordoned off the site and controlled entry for several days."
     speaker: jim-penniston
     refs: [ inc-rendlesham-1980, charles-halt ]
+  - t: "31:47"
+    text: "Pope: the British government's declassified file holds Halt's memo and the Defence Intelligence Staff's assessment of the radiation readings reported from the landing site, a document that “suggests that the readings were about seven times higher.”"
+    speaker: nick-pope
+    refs: [ inc-rendlesham-1980, doc-halt-memo ]
+    claims: [ rendlesham-craft-landed ]
+    basis: relayed
   - t: "33:55"
     text: "Pope: when a UFO was also tracked on radar, the MoD would “decouple” the two, calling radar “not an exact science” and treating it separately from the eyewitness testimony."
     speaker: nick-pope
@@ -99,6 +105,9 @@ moments:
     text: "Bartlett questions the radiation evidence: residual radiation the next day would require something left behind. Pope cites three triangular indentations and scorched trees noted by the disaster preparedness officer."
     refs: [ nick-pope, inc-rendlesham-1980 ]
   - t: "1:40:20"
+    claims: [ uap-injuries ]
+    stance: context
+    basis: first-hand
     text: "Penniston says their watches were 45 minutes off and radio contact was lost for over 45 minutes; Bartlett suggests he may have been unconscious for that time."
     speaker: jim-penniston
     refs: [ inc-rendlesham-1980 ]

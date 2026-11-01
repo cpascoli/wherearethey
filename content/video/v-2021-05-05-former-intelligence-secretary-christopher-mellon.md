@@ -40,6 +40,9 @@ moments:
     text: "J. Allen Hynek was told to explain cases away; his 1966 “swamp gas” explanation in Michigan angered the public and Gerald Ford, and Congress took a fleeting interest."
     speaker: chris-mellon
     refs: [ j-allen-hynek, gerald-ford, h-1966-04-05 ]
+    claims: [ government-ufo-disinformation ]
+    stance: supports
+    basis: relayed
 ---
 
 A nine-minute clip from Christopher Mellon's 2021 appearance on The Joe Rogan Experience: how a home movie seen at age seven started his interest, the Maui tracking-station videotape he obtained as a Senate Intelligence Committee staffer, a Pentagon search for the Edwards AFB film described by an astronaut, and the Robertson Panel's role in the stigma.

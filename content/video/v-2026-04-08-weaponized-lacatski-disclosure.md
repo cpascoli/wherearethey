@@ -39,6 +39,8 @@ moments:
     text: "Asked whether disclosure will go beyond his approved statement that the U.S. holds a craft it got inside: not under this administration or a near-term one, but “it'll go further you know in the future”."
     speaker: james-lacatski
     refs: [ crash-retrieval ]
+    claims: [ recovered-non-human-craft ]
+    basis: first-hand
   - t: "1:29:18"
     text: "On the program's record: “we failed at times we failed at the university we failed in brazil”, but “we didn't fail at all on the research that bass did”."
     speaker: james-lacatski

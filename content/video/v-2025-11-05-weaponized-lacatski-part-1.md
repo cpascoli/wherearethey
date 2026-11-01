@@ -45,6 +45,8 @@ moments:
     text: "Asked again about the craft, Lacatski will not go beyond the books' approved wording that the U.S. holds a craft and has accessed its interior."
     speaker: james-lacatski
     refs: [ crash-retrieval ]
+    claims: [ recovered-non-human-craft ]
+    basis: first-hand
 ---
 
 Part 1 of a 2025 WEAPONIZED interview in which James Lacatski reads a prepared statement of what he would tell Congress: that AAWSAP and its successor KONA BLUE were classified programs, that everything he may say is in his books, that false documents about the programs sit in government files, and that the public is being "played". AARO's 2024 report disagrees on several points, notably that KONA BLUE was never approved and that AAWSAP was cancelled for lack of merit. Transcribed with Whisper.

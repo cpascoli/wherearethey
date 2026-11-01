@@ -12,6 +12,8 @@ moments:
     text: "Elizondo: AATIP had medical doctors studying pilots who came back from close UAP encounters with sunburn-like skin, consistent with superficial radiation exposure."
     speaker: luis-elizondo
     refs: [ aatip ]
+    claims: [ uap-injuries ]
+    basis: first-hand
   - t: "37:57"
     text: "Elizondo says he has been personally threatened, and believes he is still alive because he has never violated his security oath."
     speaker: luis-elizondo

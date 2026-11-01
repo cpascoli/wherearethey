@@ -72,6 +72,8 @@ moments:
   - t: "1:08:09"
     text: "Asked by Mace whether injured government employees are compensated, Elizondo: “That is correct”, adding that he has seen U.S. government documentation for several individuals injured in UAP incidents."
     speaker: luis-elizondo
+    claims: [ uap-injuries ]
+    basis: first-hand
   - t: "1:16:07"
     text: "Gallaudet on the USS Omaha case off southern California: bridge watchstanders saw an object with no exhaust or control surfaces go from the air into the sea — transmedium travel."
     speaker: tim-gallaudet

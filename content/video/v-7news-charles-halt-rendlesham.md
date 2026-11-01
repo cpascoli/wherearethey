@@ -32,6 +32,8 @@ moments:
     speaker: charles-halt
     refs: [ inc-rendlesham-1980 ]
   - t: "36:20"
+    claims: [ government-ufo-disinformation ]
+    basis: relayed
     text: "Halt says Penniston and four others independently told him they were interrogated by AFOSI with British personnel present, given injections and hypnotized."
     speaker: charles-halt
     refs: [ jim-penniston, inc-rendlesham-1980 ]

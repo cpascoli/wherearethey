@@ -60,19 +60,48 @@ facts:
     source: v-2025-05-01-hearing-a@1:01:58
   - text: "On Fox News in October 2026 he said: \"I have seen non-human beings and non-human craft with my own eyes\", and that both the government and defense contractors hold craft of non-human origin."
     claims: [ recovered-non-human-craft ]
+    stance: supports
     basis: first-hand
     status: claimed
     by: jay-stratton
     source: v-2026-10-13-fox-special-report-stratton@5:19
-  - text: "The Hollywood Reporter reports that Stratton and the UAP Task Force received the National Intelligence Meritorious Unit Citation in October 2024, and that he holds the DIA Director's Award."
-    status: unverified
-    source: https://www.hollywoodreporter.com/lifestyle/arts/jay-stratton-memoir-out-of-the-shadows-release-1236612113/
+  - text: "On Jesse Watters Primetime three days later he said witnesses to crash recoveries describe numerous types of recovered bodies, and that the book details what he and his family saw at home."
+    claims: [ recovered-non-human-bodies ]
+    stance: supports
+    basis: relayed
+    status: claimed
+    by: jay-stratton
+    source: v-2026-10-16-fox-watters-stratton@3:34
+  - text: "Asked by Bret Baier about a passage in the book, \"our bait would be a nuclear submarine\", he said he had access to a nuclear submarine that he could put out off the East Coast, with a Navy P-3 aircraft, and that on the first mission a UAP appeared and data was collected."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-10-13-fox-special-report-stratton@6:40
+  - text: "Asked what a friend meant by warning him that \"they've done worse than threaten people\" to keep their secrets, he said that throughout history some secrets are so impactful to national security \"that steps have been taken to remove the problem and the people\"."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-10-13-fox-special-report-stratton@8:57
+  - text: "He says he has advised the White House since the files were ordered released, but does not think the President has seen the real evidence: \"he's still being shielded from the truth\"."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-10-13-fox-special-report-stratton@9:55
+  - text: "Asked why he wrote a book, he said he first briefed Congress in 2007, Senator Harry Reid, and kept briefing for 16 years until he retired."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-10-13-fox-special-report-stratton@10:55
+  - text: "On NewsNation he described the being he says he saw at his family home, \"looking at my son through the window as I got up to go to work\": \"a very large head, very small black eyes, very small nose if it had one, and a small slit for a mouth\". He says he was \"very, very awake\", that it was not the first time he had seen it, and that when he ran outside to chase it, \"it was completely gone\"."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-10-20-cuomo-jay-stratton@3:01
+  - text: "Jeremy Corbell says Stratton has since clarified, on Jake Tapper's show, that the sighting of a being was a personal encounter outside his son's window, not something he saw in an official capacity."
+    status: claimed
+    by: jeremy-corbell
+    source: v-2026-10-21-weaponized-stratton-first-interview@11:16
 ---
 
 Jay Stratton is a retired U.S. intelligence official who spent more than 16 years investigating unidentified anomalous phenomena for the government. He joined the Army in 1989 and served almost 33 years across the military and the national intelligence community, rising to the Senior Executive Service. At the Defense Intelligence Agency he was chief of air and space warfare, responsible for emerging and disruptive aerospace technologies. He describes himself as an aerospace engineer, and spent much of his career with the Office of Naval Intelligence.
 
 He was at the centre of every modern Pentagon UAP effort. In 2009, on loan to DIA, he worked on the Reid-funded AAWSAP and, by his account, helped found it. He contacted Commander David Fravor that year to investigate the 2004 Nimitz "Tic Tac" encounter. He then worked on AATIP, the informal successor, alongside Luis Elizondo, and says the Navy's Gimbal and GoFast videos reached his desk first. After the 2017 New York Times revelations he briefed Congress and became the first director of the Navy-led UAP Task Force (2020–2021). Its work fed the Director of National Intelligence's 2021 preliminary assessment, and David Grusch served as the NRO's liaison to it. AARO credits the task force with standardising and destigmatising UAP reporting. The same AARO report says AATIP was never an official program, with no staff or budget of its own.
 
-Stratton gave his first on-camera interview in 2022 and appeared in *The Age of Disclosure* (2025). His memoir *Out of the Shadows* (October 2026) debuted at No. 3 on The New York Times hardcover nonfiction list. In it, and on television, he says a "legacy program" has hidden recovered non-human craft for 80 years. He also says he has personally seen non-human craft and beings, the latter at his family home. AARO's founding director, Sean Kirkpatrick, calls the program "fictitious" and accuses Stratton of national-security violations. Knapp and Corbell report that the book confirms he is "Axelrod", the intelligence official in *Skinwalkers at the Pentagon* whose family experienced phenomena at home.
+Stratton gave his first on-camera interview in 2022 and appeared in *The Age of Disclosure* (2025). His memoir *Out of the Shadows* (October 2026) debuted at No. 3 on The New York Times hardcover nonfiction list. In it, and on television, he says a "legacy program" has hidden recovered non-human craft for 80 years. He also says he has personally seen non-human craft and beings, the latter at his family home, which Jeremy Corbell says he has since clarified was a personal encounter, not one in an official capacity. He describes an operation that used a nuclear submarine as bait to draw in a UAP, says that where secrets matter enough "steps have been taken to remove the problem and the people", and says he first briefed Congress, Senator Reid, in 2007. AARO's founding director, Sean Kirkpatrick, calls the program "fictitious" and accuses Stratton of national-security violations. Knapp and Corbell report that the book confirms he is "Axelrod", the intelligence official in *Skinwalkers at the Pentagon* whose family experienced phenomena at home.
 
-*Sources: Out of the Shadows (publisher's biography) · Fox News Special Report, 13 Oct 2026 · WEAPONIZED (2022 interview) · Gallaudet and Fravor testimony (2024, 2023) · AARO historical report (2024) · Elizondo, Newsweek (2024)*
+*Sources: Out of the Shadows (publisher's biography) · Fox News Special Report, 13 Oct 2026 · Fox News Jesse Watters Primetime, 16 Oct 2026 · NewsNation (Cuomo), 20 Oct 2026 · WEAPONIZED (2022 interview; 21 Oct 2026) · Gallaudet and Fravor testimony (2024, 2023) · AARO historical report (2024) · Elizondo, Newsweek (2024)*

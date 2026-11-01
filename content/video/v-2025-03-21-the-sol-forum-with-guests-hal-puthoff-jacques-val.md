@@ -34,6 +34,9 @@ moments:
     text: "Vallée on the 1945 crash near Trinity, two years before Kenneth Arnold: three insect-like entities about three and a half feet tall, alive after the crash; he compares it with Socorro and Valensole, where similar oval craft and beings were studied by official agencies."
     speaker: jacques-vallee
     refs: [ inc-socorro-1964 ]
+    claims: [ recovered-non-human-craft ]
+    stance: supports
+    basis: relayed
   - t: "1:07:35"
     text: "His invariants: objects that appear suddenly and disappear by “fading in place” without accelerating, as in unpublished reports from executives of a craft twice the size of a 747."
     speaker: jacques-vallee

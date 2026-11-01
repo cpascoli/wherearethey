@@ -18,10 +18,14 @@ moments:
     text: "Does the U.S. government have non-human craft? \"Yes it does.\" \"I have seen non-human beings and non-human craft with my own eyes.\""
     speaker: jay-stratton
     refs: [ crash-retrieval, nhi ]
+    claims: [ recovered-non-human-craft ]
+    basis: first-hand
   - t: "5:48"
     text: "\"Both the defense contractor community and the government have craft of non-human origin\"; he says there is an ongoing program to capture and reverse-engineer the technology, in a secret Cold War race."
     speaker: jay-stratton
     refs: [ legacy-program, crash-retrieval ]
+    claims: [ recovered-non-human-craft ]
+    basis: first-hand
   - t: "6:40"
     text: "Baier reads from the book: \"our bait would be a nuclear submarine\". Stratton says he put a submarine off the East Coast with a Navy P-3, and on the first mission a UAP appeared and data was collected."
     speaker: jay-stratton

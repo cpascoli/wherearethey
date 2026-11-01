@@ -29,6 +29,9 @@ moments:
     text: "In a recorded statement, Jacques Vallée says the database he set up for the DIA-sponsored program at Bigelow Aerospace held “hundreds of reports of creatures live or dead associated with crashed or” landed vehicles, some similar to those described in Varginha."
     speaker: jacques-vallee
     refs: [ aawsap ]
+    claims: [ recovered-non-human-bodies ]
+    stance: context
+    basis: relayed
   - t: "43:08"
     text: "Fox: “numerous witnesses reported a cigar- shaped object in distress” that crashed outside Varginha; days later three young women met a creature, and firefighters and military police captured two non-human beings."
     speaker: james-fox

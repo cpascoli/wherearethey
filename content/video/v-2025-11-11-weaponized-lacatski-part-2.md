@@ -15,6 +15,8 @@ moments:
     text: "Asked what he meant by saying the craft in U.S. possession makes the technology in Initial Revelations “look primitive”: “It means it's very advanced, and that's all I can say.”"
     speaker: james-lacatski
     refs: [ book-inside-covert-ufo-program, crash-retrieval ]
+    claims: [ recovered-non-human-craft ]
+    basis: first-hand
   - t: "2:51"
     text: "“Do these books constitute disclosure? In my opinion, yes. They are my disclosure, and they are the public's disclosure.” He says 99% of the program's information is releasable, but the government owns the reports."
     speaker: james-lacatski

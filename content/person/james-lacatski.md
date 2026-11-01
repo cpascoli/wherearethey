@@ -18,6 +18,9 @@ rel:
   - [ initiated, kona-blue ]
 facts:
   - text: "His 2023 book says that at a 2011 meeting in the Capitol he told a U.S. Senator and an agency Under Secretary that the United States “was in possession of a craft of unknown origin and had successfully gained access to its interior.” He repeated that the government holds such a craft in interviews in October 2023 and November 2025."
+    claims: [ recovered-non-human-craft ]
+    stance: supports
+    basis: first-hand
     status: claimed
     by: james-lacatski
     source: book-inside-covert-ufo-program
@@ -56,12 +59,39 @@ facts:
     by: james-lacatski
     source: v-2025-11-05-weaponized-lacatski-part-1@8:50
   - text: "AARO's 2024 report says the KONA BLUE proposal for DHS “was never approved or stood up” and that “no extraterrestrial craft or bodies were ever collected”."
-    claims: [ recovered-non-human-bodies ]
+    claims: [ recovered-non-human-craft, recovered-non-human-bodies ]
     stance: disputes
     basis: documented
     claim_by: aaro
     status: documented
     source: doc-aaro-historical-record-report-v1
+  - text: "He says AARO's deputy director told him that \"Kona Blue was established as the home for all these paranormal UFO crap\"."
+    status: claimed
+    by: james-lacatski
+    source: v-2025-11-05-weaponized-lacatski-part-1@14:00
+  - text: "He says the program stopped after its second year because BAASS \"was too successful\": Senator Reid told him on a secure line that he could not give the money that year because of the 2010 election, and the technical work passed to another Pentagon unit."
+    status: claimed
+    by: james-lacatski
+    source: v-2025-11-05-weaponized-lacatski-part-1@33:24
+  - text: "In 2021 he said over a hundred reports went to the DIA and that the program's database is \"probably the largest UFO database that exists in the world and is currently being used by the U.S. military\"."
+    status: claimed
+    by: james-lacatski
+    source: v-2021-10-12-mystery-wire-skinwalkers-authors@1:05
+  - text: "Asked in 2023 whether AARO uses AAWSAP's case database, he said AARO had not contacted them, but \"the lead of the UAP task force from whence Arrow evolved did have it.\""
+    status: claimed
+    by: james-lacatski
+    source: v-2023-10-17-weaponized-lacatski-kelleher@55:41
+  - text: "In 2021 he said: \"The name AATIP was a nickname for OSAP for certain security reasons\", and that AATIP at the Pentagon \"was basically zero funded\", looked at military encounters that had film, and had no contract."
+    claims: [ aatip-official-program ]
+    stance: context
+    basis: first-hand
+    status: claimed
+    by: james-lacatski
+    source: v-2021-10-12-mystery-wire-skinwalkers-authors@2:14
+  - text: "In 2026 he said that modified, transmitting \"government gsa approved phones\" were found at BAASS in Las Vegas, that suspected tracking devices had been removed from vehicles, and that individuals at BAASS tried to send the program's worldwide database \"off-site to parties unknown\"."
+    status: claimed
+    by: james-lacatski
+    source: v-2026-04-08-weaponized-lacatski-disclosure@42:48
 ---
 
 James Lacatski is a retired Defense Intelligence Agency intelligence officer and rocket scientist who conceived and managed AAWSAP (2008–2012), the $22 million program funded at Senator Harry Reid's direction and contracted to Robert Bigelow's BAASS. By the 8 News Now account, his interest followed a visit to Bigelow's Skinwalker Ranch in the mid-2000s, during which he reported a strange encounter of his own. Hal Puthoff says Lacatski issued the request for proposals that Bigelow's company won.
@@ -70,6 +100,6 @@ AAWSAP commissioned the Defense Intelligence Reference Documents on future techn
 
 He has told the program's story in four Pentagon-cleared books: *Skinwalkers at the Pentagon* (2021) and *Inside the US Government Covert UFO Program: Initial Revelations* (2023), with Colm Kelleher and George Knapp, then *New Insights* (2025) and *Future Visions* (2026) on his own. The 2023 book says that at a 2011 Capitol meeting he told a senator and an agency under secretary that the U.S. held a craft of unknown origin and had gained access to its interior; the Pentagon's DOPSR cleared it without endorsing its accuracy. He has confirmed the statement in interviews since, without going further.
 
-In 2025 and 2026 interviews he called himself the creator of both AAWSAP and KONA BLUE, which he says were classified, described the books as his disclosure, and said false documents about both programs sit in government files. He argues that UFOs are part of a larger paranormal phenomenon. David Grusch wants him to testify in a classified setting. AARO's 2024 report disagrees on the essentials: it says the program was cancelled for lack of merit, KONA BLUE was never approved, and no craft or bodies were ever recovered. The AAWSAP contract documents are now public through PURSUE.
+In 2025 and 2026 interviews he called himself the creator of both AAWSAP and KONA BLUE, which he says were classified, described the books as his disclosure, and said false documents about both programs sit in government files. He says the program stopped after its second year because Senator Reid could not give the money in the 2010 election year, that its database, which he calls the largest UFO database in the world, went to the UAP Task Force, and that people at BAASS tried to send it off-site. He argues that UFOs are part of a larger paranormal phenomenon. David Grusch wants him to testify in a classified setting. AARO's 2024 report disagrees on the essentials: it says the program was cancelled for lack of merit, KONA BLUE was never approved, and no craft or bodies were ever recovered. The AAWSAP contract documents are now public through PURSUE.
 
-*Sources: AARO historical report (2024) · DOPSR case 22-SB-0151 · September 9, 2025 hearing (Knapp) · WEAPONIZED (2023, November 2025 parts 1 and 2) · Mystery Wire (2021, January 2026) · 8 News Now (April 2026) · [8 News Now (November 2025)](https://www.8newsnow.com/investigators/scientist-reveals-details-of-top-secret-ufo-research-in-las-vegas/) · PURSUE release 06 · [Wikipedia](https://en.wikipedia.org/wiki/Advanced_Aerospace_Threat_Identification_Program)*
+*Sources: AARO historical report (2024) · DOPSR case 22-SB-0151 · September 9, 2025 hearing (Knapp) · WEAPONIZED (2023, November 2025 parts 1 and 2, April 2026) · Mystery Wire (2021, January 2026) · 8 News Now (April 2026) · [8 News Now (November 2025)](https://www.8newsnow.com/investigators/scientist-reveals-details-of-top-secret-ufo-research-in-las-vegas/) · PURSUE release 06 · [Wikipedia](https://en.wikipedia.org/wiki/Advanced_Aerospace_Threat_Identification_Program)*

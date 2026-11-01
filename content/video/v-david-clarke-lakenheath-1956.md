@@ -46,6 +46,9 @@ moments:
     text: "Clarke: several radars on different frequencies, ground approach, ground interception, airborne and height-finder, saw the targets over about six hours."
     speaker: david-clarke
     refs: [ inc-lakenheath-1956 ]
+    claims: [ lakenheath-1956-unknown ]
+    stance: supports
+    basis: relayed
   - t: "1:07:12"
     text: "Clarke says a FOIA request found that the MoD's unredacted Condign report on UAP was “accidentally destroyed”."
     speaker: david-clarke

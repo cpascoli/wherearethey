@@ -24,6 +24,8 @@ moments:
     text: "Knapp reads the start of chapter 9: in 2011, at the Capitol, Lacatski stated “that the United States was in possession of a craft of unknown origin and had successfully gained access to its interior.” Lacatski: “The wording that you read is correct”, and the meeting happened: “it's true. Yes.”"
     speaker: james-lacatski
     refs: [ book-inside-covert-ufo-program, crash-retrieval ]
+    claims: [ recovered-non-human-craft ]
+    basis: first-hand
   - t: "25:03"
     text: "Kelleher: AAWSAP ran two parallel tracks, UFO performance and the effects of UFOs on humans; Skinwalkers at the Pentagon reported mostly the second (medical, physiological, psychological and paranormal effects), the new book the first."
     speaker: colm-kelleher

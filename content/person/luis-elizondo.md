@@ -64,12 +64,56 @@ facts:
     status: claimed
     by: luis-elizondo
     source: v-2024-11-13-hearing-a@1:57:30
+  - text: "Asked under oath, yes or no, whether the government has run secret UAP crash-retrieval programs designed to reverse-engineer craft, he said yes, while saying that documentation he signed three years earlier bars him from discussing crash retrievals."
+    claims: [ recovered-non-human-craft ]
+    stance: supports
+    basis: relayed
+    status: claimed
+    by: luis-elizondo
+    source: v-2024-11-13-hearing-a@1:07:47
+  - text: "He agreed under oath with Grusch's description of a multi-decade crash-retrieval and reverse-engineering program and, asked whether UAP programs are operating without proper congressional oversight, answered: \"One hundred percent.\""
+    claims: [ programs-hidden-from-congress ]
+    stance: supports
+    basis: relayed
+    status: claimed
+    by: luis-elizondo
+    source: v-2024-11-13-hearing-a@1:24:24
+  - text: "He testified that there is enough data to suggest a relationship between UAP and sensitive military installations, nuclear equities and Department of Energy sites, going back decades."
+    claims: [ uap-nuclear-sites ]
+    stance: supports
+    basis: first-hand
+    status: claimed
+    by: luis-elizondo
+    source: v-2024-11-13-hearing-a@1:20:16
+  - text: "On Jillian Michaels's podcast he said AATIP had medical doctors studying pilots who came back from close UAP encounters with sunburn-like skin, which he says is consistent with superficial radiation exposure."
+    claims: [ uap-injuries ]
+    stance: supports
+    basis: first-hand
+    status: claimed
+    by: luis-elizondo
+    source: v-jillian-michaels-elizondo@33:51
+  - text: "On the same podcast he said that some people he worked with or knew are now missing or dead, that there is an ongoing FBI investigation, and that he lives heavily guarded after being warned to be careful."
+    status: claimed
+    by: luis-elizondo
+    source: v-jillian-michaels-elizondo@2:54
+  - text: "He says he has been personally threatened, and believes he is still alive because he has never violated his security oath."
+    status: claimed
+    by: luis-elizondo
+    source: v-jillian-michaels-elizondo@37:57
+  - text: "He says he and David Grusch were both threatened while at the U.S. Space Force and told to keep quiet, \"otherwise we would have our mouths shut for us\"."
+    status: claimed
+    by: luis-elizondo
+    source: v-jillian-michaels-elizondo@1:20:51
+  - text: "He relays that a week-long White House-sponsored meeting in 2004 concluded that the public was not ready for disclosure, and says its participants, not he, should tell the story."
+    status: claimed
+    by: luis-elizondo
+    source: v-jillian-michaels-elizondo@1:35:53
 ---
 
 Luis "Lue" Elizondo is a former U.S. Army counterintelligence special agent who became the public face of the Pentagon's UAP programs after he resigned in October 2017. He studied microbiology and immunology, served briefly in Army military intelligence, and became a civilian counterintelligence special agent and special agent in charge, working counterterrorism and counterespionage cases. From 2008 he worked in the Office of the Under Secretary of Defense for Intelligence, where he says his last role was managing a special access program for the White House and the National Security Council.
 
 He says that around 2009 he was recruited into the DIA-run AAWSAP effort and its informal successor, AATIP. He says he worked on AATIP with James Lacatski and Jay Stratton, describing Stratton as his equal, and it was the AATIP effort that handled the Navy's GOFAST, GIMBAL and FLIR videos. The Pentagon has disputed his role. In 2019 a spokesperson said he had "no responsibilities with regard to the AATIP program" while in his office, and AARO's 2024 report calls AATIP an informal community of interest with no staff or budget. Fellow insiders, including Stratton and David Fravor, have described him as part of the effort.
 
-He says he resigned in protest at the secrecy around the subject. He then joined To The Stars Academy and was a central figure in *The New York Times* story of December 2017 that revealed the program and the Navy videos. He wrote *Imminent* (2024) and testified to Congress under oath in November 2024. There he said UAP are real, that the United States holds UAP technology and bodies, and that whistleblowers have been threatened. He moderated the May 2025 congressional briefing and appears in *The Age of Disclosure* (2025).
+He says he resigned in protest at the secrecy around the subject. He then joined To The Stars Academy and was a central figure in *The New York Times* story of December 2017 that revealed the program and the Navy videos. He wrote *Imminent* (2024) and testified to Congress under oath in November 2024. There he said UAP are real, that the United States holds UAP technology and bodies, and that whistleblowers have been threatened; he also said the data link UAP to military installations, nuclear equities and Department of Energy sites, and that he has seen government documentation of people injured by UAP. On Jillian Michaels's podcast he said that AATIP's doctors studied pilots with radiation-like burns, that he and David Grusch were threatened while at the Space Force, that people he knew are missing or dead, and that an FBI investigation is under way. He moderated the May 2025 congressional briefing and appears in *The Age of Disclosure* (2025).
 
-*Sources: November 13, 2024 hearing (transcript) · Elizondo, Newsweek (2024) · The Intercept (2019) · AARO historical report (2024) · The New York Times (2017)*
+*Sources: November 13, 2024 hearing (transcript) · Elizondo, Newsweek (2024) · The Intercept (2019) · AARO historical report (2024) · The New York Times (2017) · Jillian Michaels podcast (Elizondo interview)*

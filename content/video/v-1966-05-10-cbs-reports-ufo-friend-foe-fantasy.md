@@ -49,6 +49,9 @@ moments:
     text: "Hynek: spaceships are possible but not probable, and “To this time there is no proof that I would consider valid scientific proof that we have been visited by spaceships”; most reports are balloons, meteors, satellites, aircraft and birds."
     speaker: j-allen-hynek
     refs: [ project-blue-book ]
+    claims: [ official-no-nhi-evidence ]
+    stance: supports
+    basis: first-hand
   - t: "31:55"
     text: "Hynek: among the many easily explained reports “there is this residue of most interesting cases that intrigue me in the same way that a good mystery story intrigues me”; pilots and radar trackers are the witnesses he most likes to question."
     speaker: j-allen-hynek
