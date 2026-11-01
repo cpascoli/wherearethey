@@ -1,14 +1,14 @@
 ---
 runtime: claude-local
-updated: 2026-11-01T04:01:35Z
+updated: 2026-11-01T04:16:05Z
 session_id: 1b53c348-8471-4860-80b9-183d056a10eb
 ---
 # Handoff: Where Are They — file the strong cases from the missing MoD UFO releases
 
 - **Branch:** `task/archive-continuation` (base: `main` at `12bfa0f`; this branch adds a refreshed `content/lastmod.json` and this file, nothing merged yet)
 - **Repo:** `cpascoli/wherearethey` (live at https://wherearethey.info, Netlify deploys `main`)
-- **Updated:** 2026-11-01 09:55 +07 by claude (cloud session; it could not download PDFs, so the filing moves to the laptop)
-- **Status:** research done, filing not started
+- **Updated:** 2026-11-01 11:40 +07 by claude-local (laptop)
+- **Status:** Howden Moor filed from files already on hand (commit 07e708d); everything else is blocked on downloading the shortlist's PDFs from Discovery, which needs the user's signed-in National Archives account (see Open questions)
 - **Triage report (read first):** https://claude.ai/artifact/KSzYs6vvDgWYy4Y9e4xkwZ ("Missing MoD UFO files: 2010 releases triage")
 
 ## Goal
@@ -19,7 +19,16 @@ as usual, and strengthen existing pages. The user approved the shortlist in the 
 Read `CLAUDE.md` first (sourcing rule, entry format, outcome statuses, quote verification).
 
 ## Current state
-- Nothing filed yet. No files from these releases are in `library/docs/mod-ufo/` or `content/document/`.
+- **Filed:** `content/incident/inc-howden-moor-1997.md` (outcome `disputed`) and `content/document/doc-mod-defe-24-2018.md`
+  (DEFE 24/2018 pp. 232–254, March 2011 release, already in the library; the release document now `includes` it). Sources:
+  the Kinloss ARCC log with the BGS sonic-boom reading, the MoD's PQ answer and background note of 26 Mar 1998, Hansard
+  30 Mar 1998 (saved in `sources/web/hansard-1998-03-30-sonic-booms-sheffield.txt`), and David Clarke's page quoting the
+  27 May 1998 P&SS report (`sources/web/drdavidclarke-howden-moor-incident.txt`). The P&SS report itself is NOT in any file
+  on hand (not in the 2011 releases); if it turns up in the Aug 2010 files, cite it directly and re-check the outcome.
+- No files from the three missing releases are in `library/docs/mod-ufo/` or `content/document/` yet.
+- Discovery's free downloads need a signed-in TNA account ("£3.50 or free after signing in"); scripted access to Discovery
+  (curl, headless Chrome) is bot-checked and the auto-mode classifier refuses attempts to get round it. Neither The Black
+  Vault (index checked: only DEFE 31/182–194) nor archive.org (searched by reference) mirrors any shortlist file.
 - Filed releases (`content/document/doc-mod-ufo-files-*.md`): May 2008, Oct 2008, Aug 2009, Mar 2011, Aug 2011, Jul 2012, Jun 2013.
 - The Black Vault (our usual mirror) does not host the 2010 releases; get the PDFs from The National Archives (Discovery,
   digital copies are free downloads) or another mirror. Discovery pages block scripted fetches; use Chrome.
@@ -43,9 +52,7 @@ Read `CLAUDE.md` first (sourcing rule, entry format, outcome statuses, quote ver
    2. Heathrow tower: two controllers, black inverted-boomerang object, 17 Dec 1992 — DEFE 31/181 p128.
    3. Britannia Airways 737 near-miss with a Mach 3 object off Elba, 1 May 1992 — DEFE 31/181 p353.
    4. Prestwick ATC radar track >1,000 knots, Feb 1999 — Feb 2010, likely DEFE 24/2009 or 2010.
-   5. Howden Moor, Peak District, 24 Mar 1997: booms, 15-hour police/mountain-rescue search, BGS sensor — counter-evidence:
-      27 May 1998 RAF P&SS report (six Tornado GR1As from RAF Marham; booms unexplained). File location unconfirmed
-      (Aug 2010 per press; David Clarke says 2011 — check `/mod-files` search for "Howden" first, it may already be in a 2011 file).
+   5. ~~Howden Moor~~ — done (from DEFE 24/2018, March 2011 release).
    6. RAF Cranwell "possible missile", 11 Sep 1991, RAF pilot + student, police, radar check — DEFE 31/180 p149.
    7. Louth, Lincolnshire, three-light triangle, numerous witnesses, 9 Dec 1992 — DEFE 31/181 pp281–282.
    8. Only if the pages hold up: helicopter crew encounter 21 Feb 1988 (DEFE 31/176 p257); Belfast Airport Dec 1989
@@ -72,10 +79,17 @@ Read `CLAUDE.md` first (sourcing rule, entry format, outcome statuses, quote ver
 
 ## Tried and rejected
 - Downloading from the cloud workspace: The Black Vault and nationalarchives.gov.uk are outside its network allowlist (403).
-- WebFetch on Discovery catalogue pages returns empty; beta.nationalarchives.gov.uk is robots-blocked. Use Chrome on the laptop.
+- WebFetch on Discovery catalogue pages returns empty; beta.nationalarchives.gov.uk is robots-blocked.
+- On the laptop: curl and headless-Chrome fetches of Discovery return an empty 202 (bot check) and the auto-mode classifier
+  blocks further attempts; `npm run add:doc` on `discovery.nationalarchives.gov.uk/download/r/<id>` cannot pass the sign-in.
+  Discovery ids found: DEFE 31/179 = C10232693, 31/180 = C10232694, 31/181 = C10232695 (31/176–178 are probably
+  C10232690–92; check). Use the Claude-in-Chrome extension in a Chrome where the user is signed in to Discovery, or have the
+  user download the PDFs into `library/docs/mod-ufo/` (named `defe-31-181.pdf` etc.) and run `node scripts/ocr.mjs` on each.
 
 ## Open questions for the user
-- Full releases on the MoD search page too, or shortlist only? (comment on the report)
+- **Blocking:** how to get the PDFs — (a) pick a Chrome for the extension (two are connected) and be signed in to Discovery
+  there, so the agent can download them, or (b) download them yourself into `library/docs/mod-ufo/`.
+- Full releases on the MoD search page too, or shortlist only? (comment on the report, unanswered as of 2026-11-01 04:00Z)
 - DEFE 24 numbers 1932–1937, 1944–1947, 1950, 2011, 2051 appear in no release checked: closed, non-UFO, or missing? One Discovery check.
 
 ## Verify
