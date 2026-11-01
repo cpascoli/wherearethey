@@ -8,6 +8,8 @@ rel:
   - [ about, inc-ariel-1994 ]
 moments:
   - t: "1:28"
+    claims: [ ariel-school-landing ]
+    stance: context
     text: "The film's opening: the children's accounts (“his eyes were down here”), a teacher's “they were absolutely credible”, and Harvard psychiatrist John Mack, who says “we came away convinced it's an extraordinary event occurred here”."
     refs: [ inc-ariel-1994, john-mack ]
   - t: "8:34"

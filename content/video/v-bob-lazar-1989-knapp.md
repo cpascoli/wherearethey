@@ -8,6 +8,8 @@ rel:
   - [ about, area-51 ]
 moments:
   - t: "4:38"
+    claims: [ area-51-alien-craft ]
+    basis: first-hand
     text: "Lazar, first appearing in shadow as “Dennis”, says there are nine flying discs of extraterrestrial origin at the test site."
     speaker: bob-lazar
     refs: [ area-51 ]
@@ -20,6 +22,8 @@ moments:
     speaker: george-knapp
     refs: [ bob-lazar ]
   - t: "7:33"
+    claims: [ recovered-non-human-craft, area-51-alien-craft ]
+    basis: first-hand
     text: "Lazar describes the craft's power source as an antimatter reactor driving gravity amplifiers."
     speaker: bob-lazar
     refs: [ area-51 ]
@@ -28,6 +32,9 @@ moments:
     speaker: bob-lazar
     refs: [ area-51 ]
   - t: "10:09"
+    claims: [ area-51-alien-craft ]
+    stance: context
+    basis: relayed
     text: "Knapp reports mixed polygraph results: inconclusive on the first examiner's tests, no deception found by a second and third, while a fourth suggested Lazar might be relating information learned from someone else."
     speaker: george-knapp
     refs: [ bob-lazar ]

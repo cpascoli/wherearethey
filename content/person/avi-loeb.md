@@ -48,6 +48,13 @@ facts:
     status: claimed
     by: garry-nolan
     source: v-lex-fridman-garry-nolan-2022@1:29:40
+  - text: "Asked in October 2026 about reports that alien craft are “being held by corporations like Lockheed Martin”, he said: “I haven't seen any evidence for that, and the people I speak with have not seen any evidence for that.”"
+    status: claimed
+    by: avi-loeb
+    source: v-2026-10-23-newsnation-the-hill-avi-loeb@2:07
+    claims: [ recovered-non-human-craft ]
+    stance: context
+    basis: opinion
 ---
 
 Avi Loeb is a Harvard astrophysicist who chaired the university's astronomy department from 2011 to 2020. He has become the leading academic voice for searching the sky for technological objects with open scientific instruments rather than relying on classified data or testimony.

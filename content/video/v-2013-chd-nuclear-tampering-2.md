@@ -38,7 +38,7 @@ moments:
     speaker: bob-salas
     refs: [ inc-malmstrom-1967 ]
     claims: [ government-ufo-disinformation ]
-    basis: first-hand
+    basis: opinion
   - t: "44:28"
     text: "A panellist says a Boeing bench test showed that a certain frequency of electromagnetic pulse injected into the missiles' logic coupler disabled it, and that the later shielding answered both nuclear-blast EMP and the 1967 incidents."
     refs: [ boeing, inc-malmstrom-1967 ]

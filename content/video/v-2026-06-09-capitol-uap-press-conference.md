@@ -30,6 +30,8 @@ moments:
     text: "Rep. Moskowitz: \"I don't know what the full truth is but I know we're being lied to.\" He says agencies have fought to strip UAP language from bills."
     speaker: jared-moskowitz
   - t: "16:07"
+    claims: [ recovered-non-human-bodies ]
+    basis: relayed
     text: "Leslie Kean says the focus should shift to biology. She says Kirk McConnell was present in classified settings when credible sources briefed senators, including Marco Rubio, about recovered non-human bodies."
     speaker: leslie-kean
     refs: [ kirk-mcconnell ]

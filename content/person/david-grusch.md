@@ -43,7 +43,7 @@ facts:
     by: david-grusch
     source: v-jre-david-grusch@15:09
   - text: "Testified under oath that he “was informed in the course of my official duties of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access”, and that the U.S. government “absolutely” possesses UAP, “based on interviewing over 40 witnesses over 4 years”."
-    claims: [ recovered-non-human-craft ]
+    claims: [ recovered-non-human-craft, programs-hidden-from-congress ]
     basis: relayed
     status: claimed
     by: david-grusch
@@ -94,6 +94,43 @@ facts:
     claim_by: aaro
     status: documented
     source: doc-aaro-historical-record-report-v1
+  - text: "He says what he took to the Inspector General and briefed to Congress is “the fact that we've had this recovery program”, with the material spread across big contractors, the CIA, the Office of Naval Intelligence and federally funded research centres, unknown to most of Congress and to many presidents."
+    status: claimed
+    by: david-grusch
+    claims: [ programs-hidden-from-congress ]
+    basis: relayed
+    source: v-2026-08-13-dr-phil-david-grusch@6:36
+  - text: "He says he and colleagues interviewed about 40 people, up to generals and agency directors, cross-checked their accounts and documents, and were refused access by the program's “gatekeepers”."
+    status: claimed
+    by: david-grusch
+    claims: [ programs-hidden-from-congress ]
+    basis: relayed
+    source: v-jre-david-grusch@12:57
+  - text: "Asked by Rep. Tim Burchett which facilities hold recovered material, Burchett remarking that Congress keeps talking about going to Area 51 but “there's nothing there anymore”, Grusch said he could not say publicly but had given the information to the intelligence committees and the Inspector General."
+    status: claimed
+    by: tim-burchett
+    claims: [ area-51-alien-craft, programs-hidden-from-congress ]
+    stance: context
+    basis: opinion
+    source: v-2023-07-26-hearing-a@1:20:06
+  - text: "Asked whether UAP show interest in nuclear technology, Graves and Fravor said yes and Grusch called it a fair assessment; he would not confirm or deny Department of Energy involvement in public."
+    status: claimed
+    by: david-grusch
+    claims: [ uap-nuclear-sites ]
+    basis: opinion
+    source: v-2023-07-26-hearing-a@1:57:28
+  - text: "He testified that he has personal knowledge of people injured working on legacy UAP reverse-engineering."
+    status: claimed
+    by: david-grusch
+    claims: [ uap-injuries ]
+    basis: first-hand
+    source: v-2023-07-26-hearing-a@1:59:04
+  - text: "He says he cleared the 1933 retrieval in Magenta, Italy, for public discussion to show the phenomenon is old and international, and that Pope Pius XII and the Vatican back-channelled it through the OSS to Roosevelt."
+    status: claimed
+    by: david-grusch
+    claims: [ magenta-1933-crash ]
+    basis: relayed
+    source: v-jre-david-grusch@16:42
 ---
 
 David Grusch is a former U.S. Air Force intelligence officer and Afghanistan combat veteran whose 2023 testimony made the crash-retrieval allegation a matter of congressional record. He served 14 years as an intelligence officer, seven active and seven in the reserve, reaching the rank of Major. In his reserve role he sat on the National Reconnaissance Office director's briefing staff, which coordinated the President's Daily Brief, and represented the NRO on the UAP Task Force from 2019 to 2021. From 2021 to 2023 he was a GS-15 at the National Geospatial-Intelligence Agency, where he co-led the agency's UAP analysis.

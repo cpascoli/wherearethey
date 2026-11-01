@@ -59,6 +59,8 @@ moments:
     speaker: nick-pope
     refs: [ inc-rendlesham-1980 ]
   - t: "10:56"
+    claims: [ government-ufo-disinformation ]
+    basis: opinion
     text: "Halt, asked whether someone in the U.S. government knows more than it says: “I suspect there's more than one agency that knows a lot more than what they're letting on.”"
     speaker: charles-halt
   - t: "11:15"

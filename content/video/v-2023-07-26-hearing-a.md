@@ -34,7 +34,7 @@ moments:
     speaker: david-grusch
     refs: [ uaptf, sap, cap ]
   - t: "32:06"
-    claims: [ recovered-non-human-craft ]
+    claims: [ recovered-non-human-craft, programs-hidden-from-congress ]
     basis: relayed
     text: "Grusch: informed in the course of his official duties of a multi-decade UAP crash retrieval and reverse-engineering program, to which he was denied access."
     speaker: david-grusch
@@ -94,6 +94,8 @@ moments:
     speaker: david-grusch
     refs: [ jared-moskowitz, legacy-program ]
   - t: "1:11:52"
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
     text: "Asked whether Kirkpatrick's “no credible evidence” statement is correct, Grusch says “It is not accurate,” adding that some of the roughly 30 people who went to AARO were also people he interviewed."
     speaker: david-grusch
     refs: [ sean-kirkpatrick, aaro, h-2023-04-19 ]
@@ -102,7 +104,7 @@ moments:
     speaker: david-grusch
     refs: [ nhi, tim-burchett ]
   - t: "1:20:06"
-    claims: [ area-51-alien-craft ]
+    claims: [ area-51-alien-craft, programs-hidden-from-congress ]
     stance: context
     basis: opinion
     text: "Burchett asks Grusch which facilities hold recovered material, remarking that Congress keeps talking about going to Area 51 but “there's nothing there anymore”; Grusch says he can't say publicly but gave the information to the intelligence committees and the Inspector General."
@@ -149,6 +151,8 @@ moments:
     claims: [ uap-nuclear-sites ]
     basis: opinion
   - t: "1:59:04"
+    claims: [ uap-injuries ]
+    basis: first-hand
     text: "Grusch says he has personal knowledge of people injured working on legacy UAP reverse-engineering."
     speaker: david-grusch
     refs: [ crash-retrieval, legacy-program ]

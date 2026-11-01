@@ -45,6 +45,20 @@ facts:
     status: claimed
     by: chad-underwood
     source: v-2020-08-17-corbell-chad-underwood@12:10
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
+  - text: "He told Corbell the object showed no tail, no wings and above all no exhaust plume, “the biggest giveaway … because that's just nothing but heat”; it was “just this elongated thing”."
+    status: claimed
+    by: chad-underwood
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
+    source: v-2020-08-17-corbell-chad-underwood@6:59
+  - text: "He says it was no black project: he has been debriefed and signed NDAs before after seeing classified programs, and that never happened here; asked what it was: “I have no … idea.”"
+    status: claimed
+    by: chad-underwood
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
+    source: v-2020-08-17-corbell-chad-underwood@16:37
 ---
 
 Chad Underwood is a former U.S. Navy F/A-18 pilot with Strike Fighter Squadron 41, the "Black Aces". On 14 November 2004, about an hour after David Fravor's encounter, he flew the next sortie from USS Nimitz, found the object on radar and recorded the infrared "FLIR1" video of it on his targeting pod. He also coined the name "Tic Tac". The video circulated within the carrier group, was published by The New York Times in 2017 and was officially released by the Pentagon in 2020. He later became a flight instructor and worked in the aerospace industry.

@@ -34,6 +34,12 @@ facts:
   - text: "A remark attributed to him about telepathy and about Russell Targ having worked for him circulates online; it has not been traced to a recording or transcript."
     status: unverified
     by: james-ryder
+  - text: "Asked at the September 2025 hearing to name gatekeepers, Knapp named Dr. James Ryder at Lockheed, and said the CIA primarily gave contractors the material and told them to keep it quiet."
+    status: claimed
+    by: george-knapp
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
+    source: v-2025-09-09-hearing-a@2:20:24
 ---
 
 James T. Ryder was a vice president at Lockheed Martin. He is known in the UAP field almost entirely through allegations made by others, and no statement by him on the subject has been verified.

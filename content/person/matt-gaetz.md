@@ -21,6 +21,8 @@ facts:
     status: claimed
     by: matt-gaetz
     source: v-2023-07-26-hearing-a@1:39:57
+    claims: [ eglin-orb-not-human ]
+    basis: relayed
   - text: "He told the hearing that he, Tim Burchett and Anna Paulina Luna “were not afforded access to all of the flight crew and initially we were not afforded access to images and to radar”, until, after “a bit of a discussion about how authorities flow in the United States of America”, they saw the image and met one crew member."
     status: documented
     by: matt-gaetz

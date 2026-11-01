@@ -15,6 +15,30 @@ facts:
     status: claimed
     by: richard-dolan
     source: https://redwheelweiser.com/?p=106974
+  - text: "Asked at the 2013 Citizen Hearing for documents behind Roswell, he cited the July 1947 FBI message and asked why a balloon would be sent to Wright Field, noting that the GAO found the base's records for the period gone."
+    status: claimed
+    by: richard-dolan
+    source: v-2013-chd-history-2@1:09:01
+    claims: [ roswell-crashed-craft ]
+    basis: documented
+  - text: "On the CIA's 1953 Robertson Panel he said “they used the word debunk”, that it is in the document itself, as part of a deliberate effort to ridicule the subject through the media."
+    status: claimed
+    by: richard-dolan
+    source: v-2013-chd-history-2@1:32:59
+    claims: [ government-ufo-disinformation ]
+    basis: documented
+  - text: "He argued that decades of secret research on recovered technology may have created within the classified world “a breakaway” society far ahead of public science."
+    status: claimed
+    by: richard-dolan
+    source: v-2013-chd-truth-embargo@38:50
+    claims: [ recovered-non-human-craft ]
+    basis: opinion
+  - text: "Closing the hearing, he concluded that the cover-up has “long ago gravitated away from formal presidential authority into international and private hands”."
+    status: claimed
+    by: richard-dolan
+    source: v-2013-chd-closing@32:05
+    claims: [ programs-hidden-from-congress ]
+    basis: opinion
 ---
 
 Richard Dolan is an American historian and author who studied history at Alfred University, Oxford and the University of Rochester, where he did graduate work on Cold War national security policy. His two-volume *UFOs and the National Security State* (2000; 2009) is a chronology of the U.S. government's handling of the subject from 1941 to 1991, drawn largely from declassified documents, and the first volume carries a foreword by Jacques Vallée. He also co-wrote the speculative *A.D. After Disclosure*.

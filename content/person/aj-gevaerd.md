@@ -26,6 +26,30 @@ facts:
     status: claimed
     by: aj-gevaerd
     source: https://ufology.patrickgross.org/htm/ufobr01.htm
+  - text: "At the 2013 Citizen Hearing he said the Brazilian Air Force's 1977 “Operation Saucer” (Operação Prato) in the Amazon produced over 500 photographs and 16 hours of film of UFOs, some at close range."
+    status: claimed
+    by: aj-gevaerd
+    claims: [ colares-craft-observed ]
+    basis: relayed
+    source: v-2013-chd-south-america-1@15:15
+  - text: "He said Operação Prato began because people around Colares could not leave and “over a thousand people were attacked” by lights during that period, so community leaders asked the state of Pará for help."
+    status: claimed
+    by: aj-gevaerd
+    claims: [ uap-injuries ]
+    basis: relayed
+    source: v-2013-chd-south-america-2@8:41
+  - text: "He described beams of light that attacked people and animals around Colares, and craft “like a can” with “two human-like creatures inside of it”."
+    status: claimed
+    by: aj-gevaerd
+    claims: [ uap-injuries, colares-craft-observed ]
+    basis: relayed
+    source: v-2013-chd-south-america-2@44:37
+  - text: "On Varginha 1996 he said a craft crashed and “at least two creatures were captured”, and that U.S. doctors were sent by the U.S. consulate in São Paulo."
+    status: claimed
+    by: aj-gevaerd
+    claims: [ varginha-beings-captured ]
+    basis: relayed
+    source: v-2013-chd-south-america-2@58:58
 ---
 
 A. J. Gevaerd (1962–2022) was a Brazilian ufologist, a former chemistry teacher who in 1988 founded *Revista UFO*, Brazil's long-running UFO magazine, and directed the Brazilian Center for Flying Saucer Research and MUFON's Brazilian branch. He said he had carried out more than 700 field investigations in Brazil, and he was the leading promoter of the 1996 Varginha case and of the 1977 Operação Prato, whose commander, Col. Uyrangê Hollanda, gave him a long interview in 1997.

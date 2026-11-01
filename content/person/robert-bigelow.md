@@ -43,6 +43,8 @@ facts:
   - text: "George Knapp testified that he confirmed on the record that Bigelow and a trusted AAWSAP colleague negotiated a deal with senior Lockheed Martin executives for BAASS to receive unusual material stored in California. Luis Elizondo testified that the transfer was blocked and required a Secretary of the Air Force memo that never came."
     status: claimed
     by: george-knapp
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
     source: v-2025-09-09-hearing-a@50:08
   - text: "AARO's report says executives of the companies named by interviewees denied on the record that they had ever recovered, possessed or reverse-engineered extraterrestrial technology."
     status: documented

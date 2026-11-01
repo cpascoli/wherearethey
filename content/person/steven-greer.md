@@ -50,6 +50,36 @@ facts:
     status: claimed
     by: garry-nolan
     source: v-lex-fridman-garry-nolan-2022@47:41
+  - text: "At the 2013 Citizen Hearing he said the Roswell event was actually the downing of an extraterrestrial vehicle by an electromagnetic system hidden near the base."
+    status: claimed
+    by: steven-greer
+    claims: [ roswell-crashed-craft ]
+    basis: relayed
+    source: v-2013-chd-science-technology@18:01
+  - text: "He listed facilities he says run secret programmes, from Edwards and Area 51's S-4 to the Dugway Proving Ground in Utah, which he called the most important, all underground."
+    status: claimed
+    by: steven-greer
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
+    source: v-2013-chd-science-technology@20:53
+  - text: "He says Admiral Tom Wilson, head of intelligence for the Joint Staff, found one of the project compartments listed in a National Reconnaissance Office document in Greer's briefing and was told: “Sir, you do not have a need to” know."
+    status: claimed
+    by: steven-greer
+    claims: [ programs-hidden-from-congress ]
+    basis: relayed
+    source: v-2013-chd-truth-lies-1@5:23
+  - text: "He says Admiral Wilson told him “the best thing I have is a B-2 stealth”, while the secret organisation had far more, and that DIA director Gen. Patrick Hughes was angry at being denied access."
+    status: claimed
+    by: steven-greer
+    claims: [ programs-hidden-from-congress ]
+    basis: relayed
+    source: v-2013-chd-truth-lies-1@1:14:25
+  - text: "He cited a CIA document from the first Bush administration on relations with the media, saying agencies can get outlets to “alter or delay and stop stories”."
+    status: claimed
+    by: steven-greer
+    claims: [ government-ufo-disinformation ]
+    basis: opinion
+    source: v-2013-chd-truth-lies-2@31:28
 ---
 
 Greer is the best-known organiser of witness-based "disclosure" campaigns, and the main promoter of CE-5. He holds no official role, so he is **outside the archive's criteria**. His importance here is that he gathered and recorded testimony from people who did hold official roles, most visibly at the 2001 National Press Club event. His own claims, about contact with extraterrestrials or about whom he briefed, are his account only. Critics have challenged his films and his CE-5 claims.

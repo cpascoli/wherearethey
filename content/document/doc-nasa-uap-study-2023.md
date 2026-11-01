@@ -29,6 +29,12 @@ facts:
   - text: "It recommends that NASA use its Earth-observing satellites and commercial imagery, multispectral data, AI and machine-learning techniques and crowdsourced smartphone reporting, and help reduce the stigma of reporting, including through the aviation safety reporting system."
     status: documented
     source: library/docs/doc-nasa-uap-study-2023.pdf
+  - text: "In the Navy video the GoFast object appears to race across the sea surface; NASA's team, like AARO, found it was at about 13,000 feet, moving at roughly wind speed, the apparent speed coming from parallax."
+    claims: [ gimbal-gofast-not-conventional ]
+    stance: context
+    basis: documented
+    status: documented
+    source: v-navy-gofast-2015@0:20
 ---
 
 The final report of NASA's independent study team on UAP, published on 14 September 2023. Announced in June 2022, the team examined how NASA could help understand UAP with unclassified data. It concluded that the data needed for scientific conclusions do not yet exist, found no conclusive evidence of an extraterrestrial origin, and recommended systematic, multi-sensor data collection. It also includes a worked analysis showing that the GoFast object need not have been moving at extraordinary speed.

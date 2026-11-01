@@ -26,6 +26,8 @@ moments:
     speaker: james-lacatski
     refs: [ aawsap, kona-blue ]
   - t: "14:00"
+    claims: [ government-ufo-disinformation ]
+    basis: relayed
     text: "Lacatski says AARO's deputy director told him “Kona Blue was established as the home for all these paranormal UFO crap”, and that “we're all being played like a fiddle”, by what he calls a repeated counterintelligence operation."
     speaker: james-lacatski
     refs: [ kona-blue, aaro ]

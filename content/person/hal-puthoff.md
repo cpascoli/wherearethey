@@ -87,6 +87,32 @@ facts:
     status: claimed
     by: hal-puthoff
     source: v-jre-hal-puthoff-2025@1:17:42
+  - text: "On Bob Lazar, he said in 2022 that “behind the scenes we can check on his clearances” and that he has “reason to be skeptical”, though he cannot rule things out."
+    claims: [ area-51-alien-craft ]
+    stance: disputes
+    basis: first-hand
+    status: claimed
+    by: hal-puthoff
+    source: v-2022-02-11-eric-weinstein-debates-cia-ufo-expert-hal-puthoff@55:40
+  - text: "Citing Edward Teller's point that open electronics outpaced classified nuclear work, he said in 2025 that “the compartmentalization is too strong”."
+    claims: [ programs-hidden-from-congress ]
+    stance: context
+    basis: opinion
+    status: claimed
+    by: hal-puthoff
+    source: v-2025-03-21-the-sol-forum-with-guests-hal-puthoff-jacques-val@1:38:21
+  - text: "In his 2018 presentation he cited the Brazilian Air Force's 1977–78 investigation, with about 1,000 pages, 500 photographs and 15 hours of film, and a list of medical injuries."
+    claims: [ colares-craft-observed, uap-injuries ]
+    basis: relayed
+    status: claimed
+    by: hal-puthoff
+    source: v-hal-puthoff-2018-presentation@25:01
+  - text: "On Joe Rogan's podcast he described Colares, Brazil, as weeks of activity investigated by the Brazilian Air Force, with beams that harmed people, the one clearly hostile case he knows; he dates it to the 1980s, though Operação Prato was 1977."
+    claims: [ colares-craft-observed, uap-injuries ]
+    basis: relayed
+    status: claimed
+    by: hal-puthoff
+    source: v-jre-hal-puthoff-2025@1:44:02
 ---
 
 Harold "Hal" Puthoff is an American physicist and former naval intelligence officer who has been at the centre of government-funded research into the anomalous for half a century. After a PhD at Stanford, work in laser physics and service as a naval officer at the NSA, he joined SRI International. There, in the early 1970s with Russell Targ and the artist Ingo Swann, he began the CIA-funded remote-viewing research that grew into the Stargate program and ran for about 23 years. He later founded EarthTech International and the Institute for Advanced Studies at Austin, which studies zero-point energy and advanced propulsion.

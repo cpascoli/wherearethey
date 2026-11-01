@@ -38,6 +38,25 @@ facts:
     status: claimed
     by: luis-elizondo
     source: https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html
+  - text: "Alex Dietrich says her first suspicion after the 2004 Nimitz encounter was that they had been vectored into a live range and the Tic Tac was a surface- or subsurface-to-air missile, and that Pentagon officials from ONI, AATIP and the UAP Task Force have since assured her that possibility was eliminated."
+    status: claimed
+    by: alex-dietrich
+    claims: [ tic-tac-beyond-known-technology ]
+    stance: context
+    basis: first-hand
+    source: v-2021-06-15-alex-dietrich-the-nimitz-event-summary-time-diffe@39:29
+  - text: "Luis Elizondo says AATIP had medical doctors studying pilots who came back from close UAP encounters with sunburn-like skin, consistent with superficial radiation exposure."
+    status: claimed
+    by: luis-elizondo
+    claims: [ uap-injuries ]
+    basis: first-hand
+    source: v-jillian-michaels-elizondo@33:51
+  - text: "David Grusch says that in the AATIP/AAWSAP archives he read a stolen foreign-adversary assessment discussing the U.S. reverse-engineering program, and that when he sought the full report the holding agency debriefed him from his accesses."
+    status: claimed
+    by: david-grusch
+    claims: [ recovered-non-human-craft ]
+    basis: first-hand
+    source: v-jre-david-grusch@41:19
 ---
 
 AATIP, the Advanced Aerospace Threat Identification Program, is the name under which the Pentagon's UFO work became public when *The New York Times* revealed it in December 2017. In that account, and in Luis Elizondo's, it was a Pentagon effort funded at Senator Harry Reid's request that studied military encounters; the Times told the 2004 Nimitz "Tic Tac" case alongside it.

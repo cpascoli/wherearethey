@@ -21,6 +21,8 @@ facts:
     status: claimed
     by: edgar-mitchell
     source: v-2013-chd-opening@2:17
+    claims: [ roswell-crashed-craft ]
+    basis: relayed
   - text: "He said that, according to former intelligence, military and government people he relied on: “There have been ET visitation, there have been crashed craft, there have been … material and bodies recovered”, and that some reverse engineering had been done."
     said: unknown
     claims: [ recovered-non-human-craft ]

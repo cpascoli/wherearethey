@@ -33,6 +33,8 @@ facts:
     status: claimed
     by: david-grusch
     source: v-jre-david-grusch@29:16
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
   - text: Commissioned technical papers (the DIRDs) on traversable wormholes, warp drives, negative energy and high-frequency gravitational-wave communications.
     status: documented
     source: doc-dirds
@@ -49,6 +51,32 @@ facts:
     basis: documented
     status: documented
     source: dow-uap-d168
+  - text: "James Lacatski says “The name AATIP was a nickname for OSAP for certain security reasons that we've put into the book”, and that AATIP at the Pentagon “was basically zero funded”, looked at military encounters that had film, and had no contract."
+    status: claimed
+    by: james-lacatski
+    claims: [ aatip-official-program ]
+    stance: context
+    basis: first-hand
+    source: v-2021-10-12-mystery-wire-skinwalkers-authors@2:14
+  - text: "David Grusch says that in the AATIP/AAWSAP archives he read a stolen foreign-adversary assessment discussing the U.S. reverse-engineering program, and that when he sought the full report the holding agency debriefed him from his accesses."
+    status: claimed
+    by: david-grusch
+    claims: [ recovered-non-human-craft ]
+    basis: first-hand
+    source: v-jre-david-grusch@41:19
+  - text: "George Knapp testified in September 2025 that he has confirmed on the record that Robert Bigelow and an AAWSAP colleague negotiated with Lockheed Martin executives for BAASS to receive unusual material stored in California: “That material was not made here.”"
+    status: claimed
+    by: george-knapp
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
+    source: v-2025-09-09-hearing-a@50:08
+  - text: "Hal Puthoff says that when asked to examine any recovered materials he negotiated with aerospace executives, who said that if they had any “it'd be too highly classified” to share, even with the program's Top Secret clearances."
+    status: claimed
+    by: hal-puthoff
+    claims: [ recovered-non-human-craft ]
+    stance: context
+    basis: first-hand
+    source: v-jre-hal-puthoff-2025@1:00:11
 ---
 
 The Advanced Aerospace Weapon System Applications Program was a $22 million Defense Intelligence Agency program, funded in the 2008 and 2010 defense appropriations at Senator Harry Reid's direction, established in 2009 and ended in 2012. Its contractor, which AARO leaves unnamed, was BAASS, a subsidiary of Robert Bigelow's Bigelow Aerospace, as its own monthly reports in the PURSUE release show. AARO says the contract covered research in 12 aerospace-technology areas and did not specify UFO investigation, but the contractor studied UFO reports and related phenomena, including at Bigelow's Skinwalker Ranch in Utah, with the support of the DIA program manager, by his own account James Lacatski. AARO also says it was the same program as AATIP.

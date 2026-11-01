@@ -16,6 +16,13 @@ facts:
   - text: At the May 17, 2022 HPSCI hearing he asked officials about “the Admiral Wilson memo or EW Notes Memo”. Neither Moultrie nor Bray said they knew of it. He then asked unanimous consent to enter the memo into the record, and Chairman Carson replied “Without objection.”
     status: documented
     source: doc-transcript-2022-05-17
+  - text: "At the same hearing he asked about the reported Malmstrom incident in which ten ICBMs went offline under a red orb; Scott Bray answered that the data is not in the task force's holdings: “I have heard stories.”"
+    status: claimed
+    by: mike-gallagher
+    source: v-2022-05-17-hearing@56:57
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    stance: context
+    basis: relayed
 ---
 
 Mike Gallagher, a Republican U.S. Representative from Wisconsin (2017–2024) and former Marine Corps intelligence officer, sat on the House Intelligence Committee. At the 17 May 2022 hearing he asked officials about the "Admiral Wilson memo"; neither Ronald Moultrie nor Scott Bray said they knew of it, and he had it entered into the record without objection. He appears in *The Age of Disclosure* (2025).

@@ -12,6 +12,14 @@ facts:
     status: claimed
     by: harold-brown
     source: v-hynek-harold-brown-press@0:30
+  - text: "A longer cut of his statement after the 5 April 1966 hearing, shown by CBS Reports in May 1966: “We have not been hiding anything… The hearing this morning was public for just that reason. In those cases where, for lack of data or lack of a convincing hypothesis, the sighting has been kept in the unidentified category, we've been perfectly willing to say that, too.”"
+    said: 1966-04-05
+    status: claimed
+    by: harold-brown
+    source: v-1966-05-10-cbs-reports-ufo-friend-foe-fantasy@8:41
+    claims: [ government-ufo-disinformation ]
+    stance: disputes
+    basis: first-hand
 rel:
   - [ testified at, h-1966-04-05 ]
 ---

@@ -97,7 +97,16 @@ facts:
   - text: "Hal Puthoff says a layered bismuth–magnesium sample, said to come from Roswell debris, was analysed at Oak Ridge through AARO: the isotopes were terrestrial, but the layering was unexplained."
     status: claimed
     by: hal-puthoff
+    claims: [ roswell-crashed-craft ]
+    stance: context
+    basis: first-hand
     source: v-jre-hal-puthoff-2025@1:29:45
+  - text: "George Knapp testified in September 2025 that Bob Salas, who saw UFOs over a nuclear ICBM base as missiles went down, was also disregarded: “It almost looks like AARO operated as a counterintelligence operation.”"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: relayed
+    status: claimed
+    by: george-knapp
+    source: v-2025-09-09-hearing-a@2:15:30
 ---
 
 The All-domain Anomaly Resolution Office is the Pentagon office responsible for UAP reports across the air, sea, space and transmedium domains. Required by section 1683 of the Fiscal Year 2022 NDAA, it was approved in a Deputy Secretary of Defense memorandum of 15 July 2022, published on 20 July, which made it the Department's focal point for UAP, replaced the short-lived AOIMSG and ordered the Navy's UAP Task Force wound down. Its directors have been the physicist Sean Kirkpatrick (2022–2023), Tim Phillips as acting director, and Jon T. Kosloski, who arrived on detail from the NSA on 26 August 2024.

@@ -13,6 +13,19 @@ facts:
   - text: An official memo from Deputy Base Commander Lt. Col. Charles Halt to the UK Ministry of Defence describing the Rendlesham events, including radiation readings in the depressions where the object had been seen. Released through FOIA in 1983.
     status: documented
     source: https://commons.wikimedia.org/wiki/File:Halt_Memorandum.jpg
+  - text: "Halt said in 2010 that Third Air Force decided it was a British affair, so he wrote a “cleaned-up memo” of unexplained lights for the MoD; he later learned that the airmen involved had been harshly interrogated."
+    status: claimed
+    by: charles-halt
+    source: v-2010-09-28-disclosure-conference-national-press-club-27-sept@26:05
+    claims: [ rendlesham-craft-landed ]
+    stance: context
+    basis: first-hand
+  - text: "Nick Pope said at the 2013 Citizen Hearing that the British government's declassified file holds Halt's memo and the Defence Intelligence Staff's assessment of the radiation readings reported from the landing site, a document that “suggests that the readings were about seven times higher.”"
+    status: claimed
+    by: nick-pope
+    source: v-2013-chd-rendlesham-1@31:47
+    claims: [ rendlesham-craft-landed ]
+    basis: relayed
 ---
 
 Lt. Col. Charles Halt's one-page memo "Unexplained Lights", dated 13 January 1981, is the official account sent by the deputy base commander at RAF Bentwaters/Woodbridge to the UK Ministry of Defence about the Rendlesham Forest events of December 1980.

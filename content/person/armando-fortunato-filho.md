@@ -11,6 +11,13 @@ facts:
   - text: "He says he performed the autopsy of the 23-year-old military police officer Marco Eli Chereze, whose unexpected death from what seemed a simple abscess under the arm led the state military police commander to request an investigation for suspected medical error, and that the infection was caused by a highly virulent, multi-drug-resistant bacterium that spread through the body and caused septic shock."
     status: claimed
     source: v-2026-01-20-newsnation-varginha-press-conference@1:15:40
+  - text: "He said the infection that killed Chereze was caused by “a highly virulent and multi-drugresistant bacterium” that spread through the body and caused septic shock; he did not say where it came from."
+    status: claimed
+    by: armando-fortunato-filho
+    source: v-2026-01-20-newsnation-varginha-press-conference@1:18:39
+    claims: [ uap-injuries ]
+    stance: context
+    basis: first-hand
 ---
 
 Armando Fortunato Filho is a physician with a law degree who worked for more than thirty years in forensic medicine for the Minas Gerais civil police, as a forensic pathologist and medical examiner, and served as president of Varginha's medical association and the city's health secretary.

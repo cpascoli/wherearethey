@@ -12,6 +12,8 @@ rel:
   - [ discusses, lockheed-martin, "He says AAWSAP was “trying to get Lockheed Martin to transfer material”, which CIA leadership denied" ]
 moments:
   - t: "6:36"
+    claims: [ programs-hidden-from-congress ]
+    basis: relayed
     text: "Grusch: what he took to the Inspector General and briefed to Congress is “the fact that we've had this recovery program”, with the material spread across big contractors, the CIA, the Office of Naval Intelligence and federally funded research centres, unknown to most of Congress and to many presidents."
     speaker: david-grusch
     refs: [ crash-retrieval, legacy-program ]

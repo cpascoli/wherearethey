@@ -14,6 +14,8 @@ facts:
     status: claimed
     by: nick-pope
     source: v-2013-chd-rendlesham-1@12:30
+    claims: [ rendlesham-craft-landed ]
+    basis: opinion
   - text: "He says the MoD file shows USAFE commander Gen. Charles Gabriel took items from the Rendlesham investigation back to Ramstein without informing the British."
     status: claimed
     by: nick-pope
@@ -26,10 +28,14 @@ facts:
     status: claimed
     by: nick-pope
     source: v-2013-chd-rendlesham-1@6:40
+    claims: [ rendlesham-craft-landed ]
+    basis: relayed
   - text: "Later in the same session he said the Defence Intelligence Staff's assessment of the readings, released under the UK Freedom of Information Act, “suggests that the readings were about seven times higher.”"
     status: claimed
     by: nick-pope
     source: v-2013-chd-rendlesham-1@31:47
+    claims: [ rendlesham-craft-landed ]
+    basis: relayed
   - text: "He says some Defence Intelligence Staff UFO files covering the period were destroyed, but that he knows of no evidence this was a deliberate cover-up."
     status: claimed
     by: nick-pope
@@ -91,6 +97,13 @@ facts:
   - text: "The MoD files released in 2011 hold papers on his decision, as a serving official, to publish Open Skies, Closed Minds; an MoD briefing suggests the book may have contributed to an increase in letters and sighting reports “from 373 in 1995 to 609 in 1996” (DEFE 24/2033, p. 35)."
     status: documented
     source: library/docs/mod-ufo/highlights-guide-09-08-11.pdf
+  - text: "Challenged by a panel member that residual radiation the next day would require something left behind, he cited three triangular indentations and scorched trees noted by the disaster preparedness officer."
+    status: claimed
+    by: nick-pope
+    claims: [ rendlesham-craft-landed ]
+    stance: context
+    basis: relayed
+    source: v-2013-chd-rendlesham-1@1:35:45
 ---
 
 Nick Pope is a former UK Ministry of Defence civil servant who ran the ministry's UFO desk in the Secretariat (Air Staff) from 1991 to 1994, investigating public and military reports for the British government. He has since become the best-known British official voice on the subject, through books, broadcasts, the 2007 National Press Club panel and the Rendlesham Forest panel of the 2013 Citizen Hearing. He says he came to the desk as a sceptic; most sightings were misidentifications, but "around five percent appeared to defy conventional explanation".

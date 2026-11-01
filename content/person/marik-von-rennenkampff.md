@@ -25,14 +25,22 @@ facts:
   - text: "At Disclosure Forum 2026 he said former AARO director Sean Kirkpatrick twice told him the Gimbal object was a balloon reflecting sunlight, which he disputes because the encounter was at night and the aircrew described it moving against 120-knot winds."
     status: claimed
     by: marik-von-rennenkampff
+    claims: [ gimbal-gofast-not-conventional ]
+    stance: disputes
+    basis: relayed
+    claim_by: sean-kirkpatrick
     source: v-2026-08-28-disclosure-forum-national-security@1:18:44
   - text: "He says the Langley objects showed bright flashing lights for 17 nights, which the Air Combat Command commander called “close encounters at Langley”, and argues that is not how espionage is done; he relays former NORAD commander Gen. Glen VanHerck's statement that they tried and failed to jam them."
     status: claimed
     by: marik-von-rennenkampff
+    claims: [ langley-drones-unidentified ]
+    basis: opinion
     source: v-2026-08-28-disclosure-forum-national-security@9:26
   - text: "He says his analysis with citizen scientists reconstructs the Gimbal object's 3D flight path with high confidence that it was at the close range the aircrew described, and notes AARO has issued no case resolution for Gimbal. Michael Shellenberger says von Rennenkampff has won the Gimbal argument against Mick West's lens-glare explanation."
     status: claimed
     by: marik-von-rennenkampff
+    claims: [ gimbal-gofast-not-conventional ]
+    basis: opinion
     source: v-2026-08-28-disclosure-forum-national-security@1:17:19
   - text: "He says the oldest PURSUE documents, from 1944–45, describe the same fiery-orb morphology as recent cases released through PURSUE, and relays that former acting AARO director Tim Phillips said the two morphologies that perplexed him were fiery spheres and black triangles."
     status: claimed
@@ -41,6 +49,9 @@ facts:
   - text: "He keeps a 5–10% possibility that the Tic Tac was U.S. technology, because Fravor and Dietrich recall pitot-tube-like protrusions in the higher-quality video."
     status: claimed
     by: marik-von-rennenkampff
+    claims: [ tic-tac-beyond-known-technology ]
+    stance: context
+    basis: opinion
     source: v-2026-08-28-disclosure-forum-national-security@1:26:30
 ---
 

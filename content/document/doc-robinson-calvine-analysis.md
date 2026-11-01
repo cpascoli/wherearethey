@@ -17,6 +17,11 @@ facts:
   - text: "It also states that \"there is insufficient data to reach any conclusion regarding what the unidentified object might be\", that neither date nor location can be derived from the print, and that \"if the image is the result of a hoax, no evidence of this is present in the image.\""
     status: documented
     source: library/docs/doc-robinson-calvine-analysis.pdf
+  - text: "A 2026 news retrospective on the case recounts that on 4 August 1990 two chefs from Pitlochry walking above Calvine saw a silent diamond-shaped object, about 80 ft by later estimates, and took six photographs."
+    claims: [ calvine-craft-photographed ]
+    basis: relayed
+    status: claimed
+    source: v-2026-05-07-the-story-of-the-calvine-ufo-photograph-in-case-y@0:55
 ---
 
 A 36-page technical study of the only surviving Calvine print by Andrew Robinson, senior lecturer in photography at Sheffield Hallam University (version 5, June 2024). It examines the paper, film type (a black-and-white print most likely made from a *Daily Record* copy negative on Ilford XP-1), grain, the object, the jet and the landscape, matches the print to the MoD's 1990 photocopies, and reconstructs the timeline from the sighting on 4 August 1990 to the negatives reaching the MoD on 10 September.

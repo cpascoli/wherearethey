@@ -19,6 +19,18 @@ facts:
   - text: Project Magnet was a Transport Canada UFO study approved on 2 December 1950 under senior radio engineer Wilbert B. Smith, with some help from the Defence Research Board and National Research Council; Smith set up an observatory at Shirley's Bay near Ottawa in October 1952, and the project was formally shut down in mid-1954.
     status: claimed
     source: https://en.wikipedia.org/wiki/Project_Magnet_(Canada)
+  - text: "At the 2013 Citizen Hearing Grant Cameron said Wilbert Smith, the head of Project Magnet, was asked how much material the Americans had handled and “replied tons of it”."
+    status: claimed
+    by: grant-cameron
+    source: v-2013-chd-global-1@28:07
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
+  - text: "Cameron also said Smith's son testified that his father told him shortly before his death that “he did see a flying saucer and the bodies outside of Washington DC”."
+    status: claimed
+    by: grant-cameron
+    source: v-2013-chd-documents-proof@58:47
+    claims: [ recovered-non-human-bodies ]
+    basis: relayed
 ---
 
 Project Magnet was a small Canadian government study of unidentified flying objects, approved in December 1950 and run by Wilbert B. Smith, a senior radio engineer at the Department of Transport, with some help from the Defence Research Board and the National Research Council. Smith hoped UFOs might reveal a way to use the Earth's magnetic field for propulsion. In October 1952 he set up an observatory at Shirley's Bay outside Ottawa; his 1952 and 1953 reports argued that UFOs were probably extraterrestrial craft manipulating magnetism. The project was formally shut down in mid-1954, though Smith carried on privately until his death in 1962. A parallel committee, Project Second Storey, met from 1952 to consider the question.

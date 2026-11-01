@@ -75,6 +75,12 @@ facts:
   - text: "Counter-evidence: AARO's 2024 report says DIA “cancelled the program in 2012 due to lack of merit and the utility of the deliverables”, that the KONA BLUE proposal “was never approved or stood up”, and that “no extraterrestrial craft or bodies were ever collected—this material was only assumed to exist by KONA BLUE advocates”."
     status: documented
     source: doc-aaro-historical-record-report-v1
+  - text: "Kelleher says AAWSAP ran two parallel tracks, UFO performance and the effects of UFOs on humans, and that the earlier book, Skinwalkers at the Pentagon, reported mostly the second, the medical, physiological, psychological and paranormal effects, while this book reports the first."
+    status: claimed
+    by: colm-kelleher
+    source: v-2023-10-17-weaponized-lacatski-kelleher@25:03
+    claims: [ uap-injuries ]
+    basis: relayed
 glimpses:
   - text: "He stated that the United States was in possession of a craft of unknown origin and had successfully gained access to its interior."
     where: "Back-cover passage: James Lacatski at a 2011 meeting in the Capitol"

@@ -24,6 +24,8 @@ moments:
     speaker: bob-salas
     refs: [ inc-malmstrom-1967 ]
   - t: "9:37"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: first-hand
     text: "Dwynne Arneson, then officer in charge of the 28th Air Division communications centre in Great Falls, says that in March 1967 a message passed through his centre reporting that a UFO had shut down several missile silos in Montana."
     speaker: dwynne-arneson
     refs: [ inc-malmstrom-1967 ]
@@ -40,6 +42,9 @@ moments:
     speaker: robert-jamison
     refs: [ inc-malmstrom-1967 ]
   - t: "17:52"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    stance: context
+    basis: first-hand
     text: "Jamison says his targeting team was held back about an hour and a half, then drove to Oscar Flight, 120 miles from the base, and restarted three or four missiles. He says he saw nothing unusual in the field."
     speaker: robert-jamison
     refs: [ inc-malmstrom-1967 ]

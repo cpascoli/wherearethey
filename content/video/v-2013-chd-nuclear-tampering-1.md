@@ -14,6 +14,8 @@ rel:
   - [ features, david-scott ]
 moments:
   - t: "3:40"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: first-hand
     text: "Salas: as he started to brief his commander, “we lost alert status on all 10 missiles while this object was above our facility,” each reporting a guidance and control system failure."
     speaker: bob-salas
     refs: [ inc-malmstrom-1967 ]
@@ -30,6 +32,9 @@ moments:
     speaker: bob-salas
     refs: [ inc-malmstrom-1967, doc-341smw-history-1967 ]
   - t: "12:00"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    stance: context
+    basis: relayed
     text: "Salas: Boeing engineer Robert Kaminski, who led the Echo investigation, was told not to submit his final report because the incident was reported as a UFO event."
     speaker: bob-salas
     refs: [ inc-malmstrom-1967, doc-341smw-history-1967 ]
@@ -58,6 +63,9 @@ moments:
     text: "Fenstermacher: his flight security controller reported a silent, “fat cigar” shaped object with a pulsating white light 80–100 ft above the launch control facility, which then moved over the launch facilities."
     speaker: bruce-fenstermacher
   - t: "44:20"
+    claims: [ uap-nuclear-sites ]
+    stance: context
+    basis: first-hand
     text: "Fenstermacher says the missiles never went offline. Back at base, an officer tore up the crew's personal notes and had them sign documents; they were told the incident was classified and “officially never happened.”"
     speaker: bruce-fenstermacher
   - t: "55:00"

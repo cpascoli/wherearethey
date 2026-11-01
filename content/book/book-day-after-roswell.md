@@ -34,6 +34,12 @@ facts:
   - text: "It spent three weeks on the New York Times bestseller list. Reviews were sceptical, and The Guardian included it in a 2001 list of the “Top 10 literary hoaxes”."
     status: claimed
     source: https://en.wikipedia.org/wiki/The_Day_After_Roswell
+  - text: "Paul Hellyer, speaking in Toronto in 2005, called the book “the unimpeachable source” of his talk, repeating Corso's claim that a UFO crashed near Roswell around 4 July 1947."
+    status: claimed
+    by: paul-hellyer
+    source: v-hellyer-toronto-2005-part1@8:01
+    claims: [ roswell-crashed-craft ]
+    basis: relayed
 glimpses:
   - text: "had a great deal of expertise not only as a military officer but also in the fields of intelligence and national security."
     where: "Foreword by Sen. Strom Thurmond, as quoted by Government Executive, which also printed his withdrawal of it"

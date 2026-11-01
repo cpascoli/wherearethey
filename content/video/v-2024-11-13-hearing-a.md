@@ -86,6 +86,8 @@ moments:
     basis: relayed
     claim_by: aaro
   - t: "1:20:16"
+    claims: [ uap-nuclear-sites ]
+    basis: first-hand
     text: "Elizondo: there is enough data to suggest a relationship between UAP and sensitive military installations, nuclear equities and Department of Energy sites, going back decades."
     speaker: luis-elizondo
   - t: "1:21:56"
@@ -114,6 +116,8 @@ moments:
     speaker: tim-gallaudet
     refs: [ inc-roosevelt-2015 ]
   - t: "1:57:30"
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
     text: "Elizondo: a DOPSR-cleared document says AAWSAP tried to collect material of unknown origin; an aerospace contractor asked to divest material collected in the 1950s, but the transfer to Bigelow Aerospace was blocked — it needed a Secretary of the Air Force memo that never came."
     speaker: luis-elizondo
     refs: [ aawsap, bigelow-aerospace, lockheed-martin, crash-retrieval ]

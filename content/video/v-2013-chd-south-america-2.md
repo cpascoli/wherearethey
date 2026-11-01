@@ -61,6 +61,7 @@ moments:
     refs: [ inc-operacao-prato-1977 ]
   - t: "47:34"
     text: "He says the commander, Col. Uyrangê Hollanda, told him over two days of interviews that he and his men had “a close encounter with the creatures”."
+    speaker: aj-gevaerd
     refs: [ inc-operacao-prato-1977, uyrange-hollanda ]
     claims: [ colares-craft-observed ]
     basis: relayed

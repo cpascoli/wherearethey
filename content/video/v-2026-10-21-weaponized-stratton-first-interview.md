@@ -37,6 +37,9 @@ moments:
     speaker: jay-stratton
     refs: [ boeing, lockheed-martin ]
   - t: "20:01"
+    claims: [ gimbal-gofast-not-conventional ]
+    stance: context
+    basis: first-hand
     text: "On the Gimbal and GoFast videos and the \"sphere with a cube\" Lt. Graves saw: \"those things came across my desk. I was the first one to get them in the Pentagon because it was my job\"; he took them to Air Force colleagues to rule out U.S. systems."
     speaker: jay-stratton
     refs: [ inc-roosevelt-2015, ryan-graves ]

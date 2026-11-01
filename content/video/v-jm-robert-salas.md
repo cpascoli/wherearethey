@@ -21,6 +21,8 @@ moments:
     text: "Clip of targeting officer Robert Jamison: called in to restart Oscar Flight's missiles, he saw all ten off alert on the job-control board and was briefed on what to do if crews met UFOs in the field."
     refs: [ inc-malmstrom-1967 ]
   - t: "25:14"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: relayed
     text: "Salas plays his recorded call with crew commander Fred Meiwald (later a colonel), who confirms the guard's calls, an injured guard and missiles going down during the UFO reports, though not how many."
     speaker: bob-salas
     refs: [ inc-malmstrom-1967 ]
@@ -33,14 +35,21 @@ moments:
     speaker: bob-salas
     refs: [ inc-malmstrom-1967, project-blue-book ]
   - t: "39:19"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: relayed
     text: "Salas: his co-author James Klotz confirmed with the DOE that there were no nuclear tests on 16 or 24 March 1967; the EMP simulators of the time required fixed structures taking days to build, not something that could be brought to a site unnoticed."
     speaker: bob-salas
     refs: [ inc-malmstrom-1967 ]
   - t: "43:12"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: opinion
     text: "Salas: Boeing's bench test could knock out a missile's logic coupler with an injected signal, but its report could not explain how a signal could reach each missile through triple-shielded cables and shut ten down within seconds."
     speaker: bob-salas
     refs: [ inc-malmstrom-1967 ]
   - t: "57:53"
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    stance: context
+    basis: first-hand
     text: "Salas: he long told the story as Echo Flight until Meiwald told him in 1996 they had been at Oscar Flight, and he chose to keep speaking despite the non-disclosure agreement he signed."
     speaker: bob-salas
     refs: [ inc-malmstrom-1967, doc-341smw-history-1967 ]

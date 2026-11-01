@@ -16,6 +16,12 @@ facts:
     status: claimed
     by: antonio-huneeus
     source: v-2013-chd-truth-lies-1@35:12
+  - text: "At the 2013 Citizen Hearing he cited the 1976 Tehran case, when a huge object “was flying over Tehran” and an Iranian F-4 lost its weapons and instruments, as documented by the U.S. government and evaluated by the Defense Intelligence Agency."
+    status: claimed
+    by: antonio-huneeus
+    claims: [ tehran-1976-object ]
+    basis: documented
+    source: v-2013-chd-global-2@16:21
 ---
 
 Antonio Huneeus is a Chilean-born journalist who studied at the Sorbonne and the University of Chile and has reported on UFOs internationally for more than three decades, as a consulting editor of *FATE* and a writer for *Open Minds*, from New York. He helped edit the 1995 *UFO Briefing Document* funded by Laurance Rockefeller, and has specialised in official investigations abroad: Chile's CEFAA, France's GEIPAN, the Soviet files and the U.S. records on cases in other countries.

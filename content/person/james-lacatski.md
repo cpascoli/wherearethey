@@ -68,6 +68,8 @@ facts:
   - text: "He says AARO's deputy director told him that \"Kona Blue was established as the home for all these paranormal UFO crap\"."
     status: claimed
     by: james-lacatski
+    claims: [ government-ufo-disinformation ]
+    basis: relayed
     source: v-2025-11-05-weaponized-lacatski-part-1@14:00
   - text: "He says the program stopped after its second year because BAASS \"was too successful\": Senator Reid told him on a secure line that he could not give the money that year because of the 2010 election, and the technical work passed to another Pentagon unit."
     status: claimed

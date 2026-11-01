@@ -18,6 +18,12 @@ facts:
     status: claimed
     by: colm-kelleher
     source: https://www.liberationtimes.com/home/former-head-of-us-government-ufo-program-confirms-government-possesses-advanced-craft-of-unknown-origin
+  - text: "He says AAWSAP ran two parallel tracks, UFO performance and the effects of UFOs on humans, and that Skinwalkers at the Pentagon reported mostly the second, the medical, physiological, psychological and paranormal effects, while the 2023 book reports the first."
+    status: claimed
+    by: colm-kelleher
+    source: v-2023-10-17-weaponized-lacatski-kelleher@25:03
+    claims: [ uap-injuries ]
+    basis: relayed
 ---
 
 Colm Kelleher is a biochemist who worked on UAP research for Robert Bigelow at BAASS, the contractor for the Pentagon's AAWSAP, alongside the DIA's James Lacatski.

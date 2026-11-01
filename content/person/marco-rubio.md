@@ -17,6 +17,16 @@ facts:
     status: claimed
     by: marco-rubio
     source: v-2025-12-20-age-of-disclosure-rubio-presidents@0:19
+    claims: [ programs-hidden-from-congress ]
+    stance: context
+    basis: opinion
+  - text: "In a 2026 clip from the film he says the real risk in transferring technology “that is not useful to us today to a corporate entity” is that over decades the company comes to control access to it for its own purposes, not national security, creating extraordinary power in corporate hands."
+    status: claimed
+    by: marco-rubio
+    source: v-2026-07-07-age-of-disclosure-rubio-contractors@0:00
+    claims: [ programs-hidden-from-congress ]
+    stance: context
+    basis: opinion
 ---
 
 Marco Rubio is a U.S. politician who represented Florida in the Senate from 2011 to 2025, where he was acting chair and then vice chair of the Senate Intelligence Committee, and has served as Secretary of State since 2025. As a senator he co-sponsored UAP provisions in the intelligence authorization bills that required the government to report on unidentified aerial phenomena.

@@ -5,6 +5,8 @@ rel:
   - [ published by, jesse-michels ]
 moments:
   - t: "2:45"
+    claims: [ recovered-non-human-craft ]
+    basis: first-hand
     text: "Describing a retrieval mission, Barber says he flew a helicopter over a ridge and saw an “egg” sitting on the ground."
     speaker: jake-barber
     refs: [ crash-retrieval ]

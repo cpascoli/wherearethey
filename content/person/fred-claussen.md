@@ -12,6 +12,9 @@ facts:
   - text: "He said that, according to a Brazilian air traffic controller, on or about 20 January 1996 a U.S. Air Force cargo plane, most likely a C-17, flew into Brazilian airspace without clearance and landed at Viracopos airport in Campinas, where witnesses spoke of it loading an unusual cargo, and that if this is true “30 to 40 Americans” would have direct knowledge of the flight; he set out the orders and records such a mission would have generated."
     status: claimed
     source: v-2026-01-20-newsnation-varginha-press-conference@2:09:16
+    by: fred-claussen
+    claims: [ varginha-beings-captured ]
+    basis: relayed
   - text: "He says that while flying the F-15 he intercepted a UFO and that his gun-camera film was immediately confiscated."
     status: claimed
     source: v-2026-01-20-newsnation-varginha-press-conference@2:07:50

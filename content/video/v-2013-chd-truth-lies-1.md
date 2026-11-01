@@ -48,6 +48,9 @@ moments:
     speaker: grant-cameron
     refs: [ inc-roswell-1947, doc-gao-roswell-1995 ]
   - t: "30:13"
+    claims: [ roswell-crashed-craft ]
+    stance: disputes
+    basis: relayed
     text: "Cameron quotes President Clinton in Belfast in 1995: “As far as I know, an alien spacecraft did not crash in Roswell, New Mexico.” He mocks the Air Force's 1997 explanation of “wooden dummy” crash-test figures."
     speaker: grant-cameron
     refs: [ inc-roswell-1947, doc-af-roswell-case-closed-1997 ]

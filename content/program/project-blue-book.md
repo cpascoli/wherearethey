@@ -48,6 +48,18 @@ facts:
   - text: "According to the researcher Brad Sparks, as reported by Popular Mechanics, Blue Book went on receiving reports after its closure was announced on 17 December 1969 and was not shut down until 30 January 1970."
     status: unverified
     source: https://www.popularmechanics.com/military/research/a30257166/project-blue-book-anniversary/
+  - text: "In 1966 Blue Book's scientific consultant J. Allen Hynek said spaceships are possible but not probable, and “To this time there is no proof that I would consider valid scientific proof that we have been visited by spaceships”; most reports are balloons, meteors, satellites, aircraft and birds."
+    status: claimed
+    by: j-allen-hynek
+    claims: [ official-no-nhi-evidence ]
+    basis: first-hand
+    source: v-1966-05-10-cbs-reports-ufo-friend-foe-fantasy@31:12
+  - text: "Daniel Sheehan says that, as special counsel to a Congressional Research Service inquiry, he was shown classified Blue Book microfilm including official Air Force photographs of a “crashed saucer on the ground” in snow, and traced the symbols on its dome."
+    status: claimed
+    by: daniel-sheehan
+    claims: [ recovered-non-human-craft ]
+    basis: first-hand
+    source: v-2013-chd-history-2@27:56
 ---
 
 Project Blue Book was the U.S. Air Force's study of unidentified flying objects from March 1952 to 17 December 1969, run from Wright-Patterson Air Force Base in Ohio, with the astronomer J. Allen Hynek as its scientific consultant throughout. It followed the earlier Projects Sign and Grudge.

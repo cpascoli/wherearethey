@@ -27,6 +27,8 @@ facts:
     status: claimed
     by: kenju-terauchi
     source: v-jal1628-archive-compilation@0:10
+    claims: [ jal1628-unknown-craft ]
+    basis: first-hand
 ---
 
 Kenju Terauchi was the captain of Japan Air Lines cargo flight 1628, a Boeing 747, with about 29 years' flying experience. On 17 November 1986, flying over Alaska from Iceland to Anchorage, he and his two crew members reported lights that paced the aircraft for many minutes.

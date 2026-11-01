@@ -130,6 +130,23 @@ facts:
     status: claimed
     by: hal-puthoff
     source: v-jre-hal-puthoff-2025@1:29:45
+  - text: "At the 2013 Citizen Hearing the investigative writer Peter Robbins traced the media's ridicule of UFOs to a pattern that “begins the week after the roswell” report in 1947, and argued that the Truman administration asked editors to “toe the line” and not treat the subject seriously."
+    claims: [ government-ufo-disinformation ]
+    basis: opinion
+    status: claimed
+    source: v-2013-chd-associated-phenomena@1:36:58
+  - text: "Paul Hellyer said that deception began with Roswell, when the base's “disc” announcement was replaced by a balloon story."
+    claims: [ government-ufo-disinformation, roswell-crashed-craft ]
+    basis: opinion
+    status: claimed
+    by: paul-hellyer
+    source: v-hellyer-interview-2019@3:04
+  - text: "Larry Lemke says his father, at the Berkeley Radiation Laboratory from about 1955 to 1965, told him he had been tasked to work on recovered UFO material, “a piece of that thing that crashed” in New Mexico, including the so-called Roswell memory foil; he notes his father never actually said Roswell."
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
+    status: claimed
+    by: larry-lemke
+    source: v-2025-03-21-the-sol-forum-with-guests-hal-puthoff-jacques-val@1:41:07
 ---
 
 In early July 1947, rancher Mac Brazel found debris of tinfoil, paper, tape and sticks scattered across the Foster ranch near Corona, New Mexico. Maj. Jesse Marcel of Roswell Army Air Field collected it with the counter-intelligence agent Sheridan Cavitt, and on 8 July the base's public information officer, Walter Haut, put out a release saying it had recovered a "flying disc". Within hours Gen. Roger Ramey identified the material in Fort Worth as a weather balloon and radar target; the Star-Telegram quoted Marcel describing "the remnants of the kite and balloon", and the Roswell Daily Record printed Brazel's own account the next day.

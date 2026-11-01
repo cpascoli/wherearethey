@@ -11,6 +11,9 @@ rel:
 facts:
   - text: "In a written statement read at the January 2026 press conference, he said he had access only to tissue fragments from the autopsy of officer Marco Eli Chereze, that the bacterium was of extremely high aggressiveness and lethality, beyond the limits of a conventional infection, which “raises the hypothesis of its alien origin”, and that an exhumation was awaited for molecular studies."
     status: claimed
+    claims: [ uap-injuries ]
+    basis: opinion
+    by: joao-baptista-janini
     source: v-2026-01-20-newsnation-varginha-press-conference@1:22:19
 ---
 

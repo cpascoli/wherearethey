@@ -37,6 +37,8 @@ facts:
     status: claimed
     by: tim-gallaudet
     source: v-2024-11-13-hearing-a@44:03
+    claims: [ gimbal-gofast-not-conventional ]
+    basis: relayed
   - text: "Under oath: “The very next day, that email disappeared from my account and those of the other recipients without explanation”, and the subject was never raised again. He concluded the information sat within a special access program run by an intelligence agency."
     status: claimed
     by: tim-gallaudet
@@ -49,6 +51,9 @@ facts:
     status: claimed
     by: tim-gallaudet
     source: v-jm-tim-gallaudet@10:14
+    claims: [ gimbal-gofast-not-conventional ]
+    stance: context
+    basis: opinion
   - text: "He testified that analysts called an object in satellite imagery not yet shared with Congress “the button”, a disc-shaped object, and that bridge watchstanders on USS Omaha saw an object with no exhaust or control surfaces go from the air into the sea."
     status: claimed
     by: tim-gallaudet
@@ -61,6 +66,9 @@ facts:
     status: claimed
     by: tim-gallaudet
     source: v-2024-11-13-hearing-a@1:18:39
+    claims: [ tic-tac-beyond-known-technology ]
+    stance: context
+    basis: relayed
   - text: "At the May 2025 congressional briefing he said: “today I call on the American scientific enterprise to mainstream UAP research and development”, crediting Avi Loeb's Galileo Project, Diana Pasulka and the Sol Foundation."
     status: claimed
     by: tim-gallaudet
@@ -73,6 +81,20 @@ facts:
     status: claimed
     by: tim-gallaudet
     source: v-jm-tim-gallaudet@30:49
+  - text: "At the November 2024 hearing he said withholding UAP information from Congress infringes its oversight duties: “This UAP issue may be the greatest issue of our time, and it is being hid from you.”"
+    status: claimed
+    by: tim-gallaudet
+    source: v-2024-11-13-hearing-a@2:23:32
+    claims: [ programs-hidden-from-congress ]
+    basis: opinion
+  - text: "In 2026 he said Sean Kirkpatrick had recently said in person in Arlington that the Tic Tac was a DARPA experiment, a narrative he rejects."
+    status: claimed
+    by: tim-gallaudet
+    source: v-2026-08-28-disclosure-forum-national-security@1:23:32
+    claims: [ tic-tac-beyond-known-technology ]
+    stance: disputes
+    basis: relayed
+    claim_by: sean-kirkpatrick
 ---
 
 Tim Gallaudet is a retired U.S. Navy rear admiral and PhD oceanographer. He served as Oceanographer of the Navy and commanded the Naval Meteorology and Oceanography Command, then was Assistant Secretary of Commerce for Oceans and Atmosphere and acting Administrator of NOAA (2017–2021). He says he never signed a non-disclosure agreement on UAP, which leaves him free to speak as a private citizen.

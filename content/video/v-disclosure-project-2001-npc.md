@@ -91,6 +91,8 @@ moments:
     text: "George Filer III, retired USAF intelligence officer, describes chasing a UFO on his aircraft's radar after a call from London control in the winter of 1962."
     speaker: george-filer
   - t: "1:10:39"
+    claims: [ recovered-non-human-bodies ]
+    basis: first-hand
     text: "Clifford Stone, retired Army Sergeant First Class, claims he took part in recoveries of crashed craft, some with bodies, including live occupants."
     speaker: clifford-stone
     refs: [ crash-retrieval ]

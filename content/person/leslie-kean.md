@@ -42,6 +42,8 @@ facts:
     status: claimed
     by: leslie-kean
     source: v-2026-06-09-capitol-uap-press-conference@16:07
+    claims: [ recovered-non-human-bodies ]
+    basis: relayed
   - text: "Rep. Tim Burchett told the July 2023 hearing that her New York Times article is how he learned of the Tic Tac case."
     status: documented
     by: tim-burchett

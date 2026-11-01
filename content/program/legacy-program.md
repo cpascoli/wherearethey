@@ -161,6 +161,12 @@ facts:
     status: claimed
     by: sean-kirkpatrick
     source: https://www.paradigm.news/p/exclusive-ex-pentagon-ufo-lead-accuses
+  - text: "Larry Lemke says his father, at the Berkeley Radiation Laboratory from about 1955 to 1965, told him he had been tasked to work on recovered UFO material, “a piece of that thing that crashed” in New Mexico, including the so-called Roswell memory foil, though his father never actually said Roswell."
+    claims: [ roswell-crashed-craft ]
+    basis: relayed
+    status: claimed
+    by: larry-lemke
+    source: v-2025-03-21-the-sol-forum-with-guests-hal-puthoff-jacques-val@1:41:07
 ---
 
 "Legacy program" is the name given since 2023 to the alleged long-running, highly compartmented effort, government and contractor, to retrieve and reverse-engineer craft and biological remains of non-human origin, said to date back to the 1940s and to be hidden from Congress. The term entered proposed law in the UAP Disclosure Act of July 2023, which defined a "legacy program" as all government, industry, academic and private endeavours to collect, exploit or reverse-engineer technologies of unknown origin or examine non-human biological evidence; the enacted FY2024 NDAA kept only a narrower records requirement. The program's existence has not been officially confirmed. This entry describes what is alleged; the people who make the wider allegation, and the official answers to it, are under [crash retrieval](/concept/crash-retrieval).

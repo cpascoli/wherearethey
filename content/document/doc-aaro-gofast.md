@@ -16,6 +16,12 @@ facts:
   - text: "AARO puts the object at about 13,000 feet, not near the ocean's surface as it appears, moving at about 72–161 mph relative to the ground depending on heading, or about 5–92 mph once the 69 mph westerly wind at that altitude is compensated for. It did not move against the wind in any simulation."
     status: documented
     source: library/docs/doc-aaro-gofast.pdf
+  - text: "In the Navy video the object appears to race across the sea surface; AARO's resolution found it was at about 13,000 feet, moving at roughly wind speed, the apparent speed coming from parallax."
+    claims: [ gimbal-gofast-not-conventional ]
+    stance: context
+    basis: documented
+    status: documented
+    source: v-navy-gofast-2015@0:20
 ---
 
 AARO's official resolution of the "Go Fast" video, one of the three Navy videos the Department of Defense released in 2020. Modelling the aircraft's and the object's geometry for every possible wind direction, AARO finds that the apparent high speed low over the water is a parallax effect. The object was at about 13,000 feet, drifting at or near wind speed, and showed no anomalous performance. It does not identify the object. NASA's 2023 study reached a similar result.

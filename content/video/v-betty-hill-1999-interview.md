@@ -13,6 +13,8 @@ moments:
     speaker: barney-betty-hill
     refs: [ doc-bluebook-lincoln-nh-1961, inc-hill-1961 ]
   - t: "44:58"
+    claims: [ hill-abduction ]
+    basis: first-hand
     text: "On the “star map” and the Zeta Reticuli interpretation."
     speaker: barney-betty-hill
 ---

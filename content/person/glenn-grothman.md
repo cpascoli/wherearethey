@@ -14,10 +14,15 @@ facts:
   - text: "In November 2024 Grothman said briefings with the DoD and IC inspectors general and AARO had not substantiated David Grusch's 2023 claims."
     status: claimed
     by: glenn-grothman
+    claims: [ recovered-non-human-craft ]
+    stance: disputes
+    basis: relayed
     source: v-2024-11-13-hearing-a@31:33
   - text: "He described the drone swarm over Langley AFB in December 2023 as drones about 20 feet long, flying over 100 mph above 3,000 feet, of still unknown origin."
     status: claimed
     by: glenn-grothman
+    claims: [ langley-drones-unidentified ]
+    basis: relayed
     source: v-2024-11-13-hearing-a@32:37
 ---
 

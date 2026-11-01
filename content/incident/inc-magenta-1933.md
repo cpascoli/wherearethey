@@ -29,10 +29,14 @@ facts:
     status: claimed
     by: david-grusch
     source: v-jre-david-grusch@16:42
+    claims: [ magenta-1933-crash ]
+    basis: relayed
   - text: "At the May 1, 2025 congressional UAP briefing, physicist Eric Davis said the crash-retrieval programmes date back to 1944 and “the US Army's recovery of a craft that crashed in Italy back in 1933”, which the Army recovered when it invaded Italy and brought back to Wright Field. In the same remarks he said he had briefed Grusch for two and a half days before Grusch filed his Inspector General complaint."
     status: claimed
     by: eric-davis
     source: v-2025-05-01-hearing-a@1:03:25
+    claims: [ recovered-non-human-craft, magenta-1933-crash ]
+    basis: relayed
   - text: "Only one document, a 1936 sheet, has been forensically tested: consultant Antonio Garavaglia's 2000 report concluded that “only the sample examined” could be considered original and authentic. The 1933 telegrams have not been tested, and the papers carry no protocol numbers or official stamps."
     status: claimed
     source: https://www.dailymail.co.uk/news/article-12252381/Italian-researcher-shares-evidence-files-secret-UFO-crash-Italy.html
@@ -42,6 +46,12 @@ facts:
   - text: "The Pope, the bell shape and the American recovery are absent from the 1996 papers, which speak only of a disc or cigar; they enter the story with William Brophy Jr.'s 2010 account of his father's experiences. No archive, historian or independent researcher has confirmed the crash, RS/33 or the recovery."
     status: claimed
     source: https://umbralog.com/story/magenta-crash-and-mussolini-s-gabinetto-rs-33-1933
+  - text: "At the 2013 Citizen Hearing Roberto Pinotti said the documents show the Fascist government set up a secret scientific team headed by Guglielmo Marconi to study unconventional flying vehicles after the alleged 1933 Magenta crash; the documents have not been independently authenticated."
+    status: claimed
+    by: roberto-pinotti
+    source: v-2013-chd-global-1@9:05
+    claims: [ magenta-1933-crash ]
+    basis: relayed
 ---
 
 According to documents that surfaced six decades later, an "unconventional" craft crashed or landed near Magenta, west of Milan, on 13 June 1933. Papers mailed anonymously in 1996 to the Italian researcher Roberto Pinotti include telegrams, said to be by personal order of Mussolini, ordering "absolute silence" about an "alleged landing on national soil of unknown aircraft", and notes describing a secret study group, "Gabinetto RS/33", said to have been chaired by Guglielmo Marconi, with the wreck stored in the SIAI-Marchetti hangars at Vergiate.

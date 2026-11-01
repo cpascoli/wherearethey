@@ -54,10 +54,25 @@ facts:
     status: claimed
     by: george-knapp
     source: v-2025-09-09-hearing-a@2:15:30
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: relayed
   - text: "Reviewing Jay Stratton's memoir in October 2026, he said Stratton acknowledges being “Axelrod”, the intelligence official in Knapp's book *Skinwalkers at the Pentagon* whose family experienced phenomena at home."
     status: claimed
     by: george-knapp
     source: v-2026-10-21-weaponized-stratton-first-interview@12:15
+  - text: "He testified that congressional investigator Richard D'Amato, sent by Senators Robert Byrd and Harry Reid, got into Area 51 and came to believe the reverse-engineering program had moved inside corporations."
+    status: claimed
+    by: george-knapp
+    claims: [ area-51-alien-craft ]
+    basis: relayed
+    source: v-2025-09-09-hearing-a@1:59:32
+  - text: "In his 1989 reports he described mixed polygraph results for Lazar: inconclusive on the first examiner's tests, no deception found by a second and third, while a fourth suggested Lazar might be relating information learned from someone else."
+    status: claimed
+    by: george-knapp
+    claims: [ area-51-alien-craft ]
+    stance: context
+    basis: relayed
+    source: v-bob-lazar-1989-knapp@10:09
 ---
 
 George Knapp is the chief investigative reporter at KLAS-TV in Las Vegas and a Peabody Award winner who has covered UFOs since 1987. He calls it "likely the biggest story I will ever cover". He is a reporter rather than a witness, and says belief has nothing to do with it. What drew him in, he says, was the FOIA paper trail of officials admitting "these things are real".

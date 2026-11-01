@@ -19,6 +19,18 @@ facts:
     status: claimed
     by: james-lacatski
     source: https://www.8newsnow.com/investigators/scientist-reveals-details-of-top-secret-ufo-research-in-las-vegas/
+  - text: "Colm Kelleher says AAWSAP ran two parallel tracks, UFO performance and the effects of UFOs on humans, and that Skinwalkers at the Pentagon reported mostly the second (medical, physiological, psychological and paranormal effects), the new book the first."
+    status: claimed
+    by: colm-kelleher
+    source: v-2023-10-17-weaponized-lacatski-kelleher@25:03
+    claims: [ uap-injuries ]
+    basis: relayed
+  - text: "David Grusch says AAWSAP's real purpose was a bigoted, waived special access program that Reid requested to receive material: Lockheed Martin wanted to divest 1950s hull fragments to Bigelow's facility, but the CIA killed the transfer, so the program turned to Skinwalker Ranch."
+    status: claimed
+    by: david-grusch
+    source: v-jre-david-grusch@29:16
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
 ---
 
 Skinwalker Ranch is a 512-acre property in Utah's Uinta Basin with a long local reputation for strange lights, cattle mutilations and other reported phenomena. Robert Bigelow bought it in 1996 and his National Institute for Discovery Science studied it for years; Brandon Fugal acquired it in 2016.

@@ -23,8 +23,9 @@ facts:
     status: documented
     source: https://thedebrief.org/pentagon-confirms-retirement-of-aaro-director-sean-kirkpatrick-as-new-deputy-director-is-named/
   - text: "Testifying to the Senate Armed Services Committee in April 2023, he said: “AARO has found no credible evidence thus far of extraterrestrial activity, off world technology, or objects that defy the known laws of physics.”"
-    claims: [ recovered-non-human-craft ]
+    claims: [ recovered-non-human-craft, recovered-non-human-bodies ]
     stance: disputes
+    basis: documented
     status: documented
     by: sean-kirkpatrick
     source: doc-transcript-2023-04-19
@@ -59,6 +60,10 @@ facts:
     status: claimed
     by: marik-von-rennenkampff
     source: v-2026-08-28-disclosure-forum-national-security@1:18:44
+    claims: [ gimbal-gofast-not-conventional ]
+    stance: disputes
+    basis: relayed
+    claim_by: sean-kirkpatrick
   - text: "Answering Jay Stratton's memoir in October 2026, he called the claim that he was controlled by the Legacy Program “the most absurd thing I've heard today”, said Congress's only classified information on “this fictitious program” concerns what national-security violations “Jay and his band of pseudo-scientists have committed”, and said: “There is no legacy program.”"
     said: 2026-10
     claims: [ recovered-non-human-craft, programs-hidden-from-congress ]
@@ -66,6 +71,14 @@ facts:
     status: claimed
     by: sean-kirkpatrick
     source: https://www.paradigm.news/p/exclusive-ex-pentagon-ufo-lead-accuses
+  - text: "Tim Gallaudet said in 2026 that Kirkpatrick had recently said in person in Arlington that the Tic Tac was a DARPA experiment, a narrative Gallaudet rejects."
+    status: claimed
+    by: tim-gallaudet
+    source: v-2026-08-28-disclosure-forum-national-security@1:23:32
+    claims: [ tic-tac-beyond-known-technology ]
+    stance: disputes
+    basis: relayed
+    claim_by: sean-kirkpatrick
 ---
 
 Sean Kirkpatrick is a physicist and former intelligence-community scientist who was the founding director of AARO, the Pentagon's All-domain Anomaly Resolution Office, from July 2022 to December 2023. He is the most prominent official sceptic of the modern disclosure movement, and an essential counterpoint in this archive.

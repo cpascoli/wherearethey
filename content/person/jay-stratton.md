@@ -41,6 +41,8 @@ facts:
   - text: "Testifying under oath in July 2023, David Fravor said Stratton contacted him in 2009 to investigate the Nimitz encounter and that, unbeknownst to all, he was part of the AATIP program in the Pentagon led by Lue Elizondo."
     status: claimed
     by: david-fravor
+    claims: [ aatip-official-program ]
+    basis: relayed
     source: library/docs/doc-transcript-2023-07-26.pdf
   - text: "Luis Elizondo wrote in 2024 that he worked on AATIP alongside colleagues including \"Jay Stratton, who took over after I resigned from AATIP in 2017\", and that colleagues like Jay \"were my equals\"."
     status: claimed
@@ -49,6 +51,9 @@ facts:
   - text: "In his first on-camera interview (2022), Stratton said the Gimbal and GoFast videos \"came across my desk. I was the first one to get them in the Pentagon\", that he took them to Lockheed Skunk Works and Boeing Phantom Works to rule out U.S. technology, and that he was the one who told the press they were unidentified."
     status: claimed
     by: jay-stratton
+    claims: [ gimbal-gofast-not-conventional ]
+    stance: context
+    basis: first-hand
     source: v-2026-10-21-weaponized-stratton-first-interview@20:01
   - text: "Tim Gallaudet says Stratton later confirmed to him why a 2015 email containing the GoFast video was deleted from recipients' computers: it was still unclear whether the object was adversary technology."
     status: claimed
@@ -96,6 +101,12 @@ facts:
     status: claimed
     by: jeremy-corbell
     source: v-2026-10-21-weaponized-stratton-first-interview@11:16
+  - text: "On NewsNation in October 2026 he described the Legacy Program as “comprised of CIA, the Air Force, the Department of Energy, and the defense contractor community”, keeping “this 80-year secret from not only Congress, but the president”, in a race to reverse-engineer craft of non-human origin: “the country that wins that race is the superpower for the next 100 years.”"
+    claims: [ programs-hidden-from-congress ]
+    basis: relayed
+    status: claimed
+    by: jay-stratton
+    source: v-2026-10-20-cuomo-jay-stratton@5:32
 ---
 
 Jay Stratton is a retired U.S. intelligence official who spent more than 16 years investigating unidentified anomalous phenomena for the government. He joined the Army in 1989 and served almost 33 years across the military and the national intelligence community, rising to the Senior Executive Service. At the Defense Intelligence Agency he was chief of air and space warfare, responsible for emerging and disruptive aerospace technologies. He describes himself as an aerospace engineer, and spent much of his career with the Office of Naval Intelligence.

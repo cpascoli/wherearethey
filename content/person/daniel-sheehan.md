@@ -25,6 +25,18 @@ facts:
   - text: "In 1988 a federal judge dismissed the Christic Institute's suit over the La Penca bombing, which Sheehan led, and fined the institute under the rule against frivolous lawsuits."
     status: claimed
     source: https://en.wikipedia.org/wiki/Daniel_Sheehan_(attorney)
+  - text: "He says material he learned of while representing John Mack described beings recovered at Roswell, including “a living being” that “they brought to Wright-Patterson”."
+    status: claimed
+    by: daniel-sheehan
+    claims: [ recovered-non-human-bodies ]
+    basis: relayed
+    source: v-2013-chd-truth-lies-1@21:20
+  - text: "Eric Weinstein has suggested that Sheehan was “fed wrong information” about UFOs to discredit him over his Iran-Contra work with the Christic Institute; Hal Puthoff said he knows of such operations only from being on the receiving end."
+    status: claimed
+    claims: [ government-ufo-disinformation ]
+    stance: context
+    basis: opinion
+    source: v-2022-02-11-eric-weinstein-debates-cia-ufo-expert-hal-puthoff@31:53
 ---
 
 Daniel Sheehan is an American constitutional and public-interest lawyer, a Harvard Law graduate (1970) who worked on the Pentagon Papers case for The New York Times and on the Watergate, Karen Silkwood and Greensboro massacre cases. He founded the Christic Institute, whose 1986 conspiracy suit over the La Penca bombing in Nicaragua was dismissed in 1988, with the institute fined for bringing a frivolous suit, and later the Romero Institute.

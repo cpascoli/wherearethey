@@ -59,7 +59,7 @@ moments:
     text: "Asked “Did you see any of this wreckage or any of the material?”, Haut answers: “None whatsoever.” (His sealed affidavit of 2002 says he was shown the craft and bodies in Building 84.)"
     speaker: walter-haut
     refs: [ inc-roswell-1947, dow-uap-d168 ]
-    claims: [ recovered-non-human-bodies ]
+    claims: [ recovered-non-human-bodies, roswell-crashed-craft ]
     stance: disputes
     basis: first-hand
   - t: "1:14:39"

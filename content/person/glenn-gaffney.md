@@ -26,6 +26,8 @@ facts:
     status: claimed
     by: eric-davis
     source: v-jm-eric-davis@18:08
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
   - text: "Dylan Borland agrees that Gaffney has been named as a leader of the legacy program; Michael Shellenberger says he has not verified Chris Sharp's report naming Gaffney as the gatekeeper who blocked the transfer."
     status: claimed
     by: dylan-borland

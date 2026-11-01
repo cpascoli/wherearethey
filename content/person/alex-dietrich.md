@@ -40,10 +40,15 @@ facts:
     status: claimed
     by: tim-gallaudet
     source: doc-transcript-2024-11-13
+    claims: [ tic-tac-beyond-known-technology ]
+    stance: context
+    basis: relayed
   - text: "Former Senate staffer Kirk McConnell says sitting down with Fravor and Dietrich made the Tic Tac the case that convinced him more than any other."
     status: claimed
     by: kirk-mcconnell
     source: v-2026-08-28-disclosure-forum-national-security@1:21:26
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: relayed
   - text: "On 60 Minutes in May 2021 she said the object was “unidentified and that's why it was so unsettling to us”, described its movement as having “no predictable trajectory … like a ping pong ball”, and said that, unarmed, she “felt the vulnerability of not having anything to defend ourselves”."
     status: claimed
     by: alex-dietrich
@@ -60,6 +65,9 @@ facts:
     status: claimed
     by: alex-dietrich
     source: v-2021-06-15-alex-dietrich-the-nimitz-event-summary-time-diffe@39:29
+    claims: [ tic-tac-beyond-known-technology ]
+    stance: context
+    basis: first-hand
   - text: "Asked by sceptic Mick West about his parallax-and-size theory for Fravor's sighting, she said it is “just as plausible as any of the others” she has heard, and that “there is no big conspiracy”."
     status: claimed
     by: alex-dietrich
@@ -72,6 +80,8 @@ facts:
     status: claimed
     by: alex-dietrich
     source: v-2025-03-18-avc-alex-dietrich@10:56
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
 ---
 
 Alex Dietrich is a retired U.S. Navy lieutenant commander and F/A-18F pilot who served 20 years, including two combat deployments with VFA-41 over Iraq and Afghanistan. On 14 November 2004 she flew the second Super Hornet in David Fravor's flight during the USS Nimitz "Tic Tac" encounter. While Fravor spiralled down towards the object, she stayed high as cover, giving a second, overhead view of the white, wingless object over a patch of disturbed water before it shot away.

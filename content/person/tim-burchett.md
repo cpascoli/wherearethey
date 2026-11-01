@@ -27,6 +27,9 @@ facts:
   - text: "He asked David Grusch under oath where recovered material is held, remarking that Congress keeps talking about going to Area 51 but “there is nothing there anymore anyway”; Grusch said he could not say publicly but had given the information to the intelligence committees and the Inspector General."
     status: documented
     by: tim-burchett
+    claims: [ area-51-alien-craft, programs-hidden-from-congress ]
+    stance: context
+    basis: opinion
     source: doc-transcript-2023-07-26
   - text: "He joined Reps. Anna Paulina Luna and Matt Gaetz on the 2023 visit to Eglin AFB after pilots alleged a UAP cover-up; Luna says they were initially denied access to information and to the pilots."
     status: claimed
@@ -48,6 +51,12 @@ facts:
     status: claimed
     by: tim-gallaudet
     source: v-jm-tim-gallaudet@25:14
+  - text: "At the July 2023 hearing Matt Gaetz described an Eglin AFB disclosure he had sought a briefing on with Burchett and Luna: four craft in diamond formation on radar over the Gulf, and an orb whose approach knocked out the pilot's radar and FLIR."
+    claims: [ eglin-orb-not-human ]
+    basis: relayed
+    status: claimed
+    by: matt-gaetz
+    source: v-2023-07-26-hearing-a@1:39:57
 ---
 
 Tim Burchett is a Republican U.S. Representative from Tennessee, in Congress since 2019 and before that mayor of Knox County. He is one of the most outspoken members of Congress on UAP secrecy. He frames the issue less as "little green men" than as unaccounted-for taxpayer money and an executive branch that will not answer to Congress.

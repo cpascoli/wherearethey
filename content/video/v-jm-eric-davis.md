@@ -16,6 +16,8 @@ moments:
     speaker: eric-davis
     refs: [ nro, david-grusch, jay-stratton ]
   - t: "18:08"
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
     text: "Davis claims Glenn Gaffney, then head of the CIA's science and technology directorate, blocked a contractor from sharing its crash-retrieval material with AAWSAP."
     speaker: eric-davis
     refs: [ glenn-gaffney, aawsap ]
@@ -32,6 +34,9 @@ moments:
     speaker: eric-davis
     refs: [ inc-holloman-1964 ]
   - t: "33:18"
+    claims: [ recovered-non-human-craft ]
+    stance: context
+    basis: relayed
     text: "Davis says he was told the CIA shut down the effort in 1989 for lack of progress, and that there are no alien reproduction vehicles."
     speaker: eric-davis
     refs: [ legacy-program, crash-retrieval ]

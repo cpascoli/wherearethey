@@ -55,6 +55,9 @@ moments:
     speaker: hal-puthoff
     refs: [ nhi ]
   - t: "1:29:45"
+    claims: [ roswell-crashed-craft ]
+    stance: context
+    basis: first-hand
     text: "The one sample he can discuss: a layered bismuth–magnesium piece said to come from Roswell debris (via Art Bell and Linda Moulton Howe). It was analysed at Oak Ridge through AARO; the isotopes were terrestrial, but the layering was unexplained, and replicating two layers cost an aerospace firm over $1 million."
     speaker: hal-puthoff
     refs: [ sample-bismuth-magnesium, inc-roswell-1947, linda-moulton-howe, aaro ]
@@ -79,6 +82,7 @@ moments:
     speaker: hal-puthoff
     refs: [ inc-operacao-prato-1977 ]
   - t: "1:46:26"
+    claims: [ recovered-non-human-craft ]
     text: "How many craft has the U.S. recovered? “More than 10” in U.S. possession, with more worldwide."
     speaker: hal-puthoff
     refs: [ crash-retrieval ]

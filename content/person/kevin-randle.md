@@ -25,6 +25,18 @@ facts:
     stance: context
     basis: opinion
     source: v-2013-chd-roswell-1@1:33:46
+  - text: "At the 2013 Citizen Hearing he said the rancher's son Bill Brazel later found pieces at the site, including a wire that carried light end to end, “which of course is fiber optics”, and foil that unfolded itself."
+    claims: [ roswell-crashed-craft ]
+    basis: relayed
+    status: claimed
+    by: kevin-randle
+    source: v-2013-chd-roswell-1@25:54
+  - text: "He disputes the Air Force's Mogul explanation on the diary of project leader Albert Crary, which says “flight number four had been canceled”, the very flight the Air Force blamed."
+    claims: [ roswell-crashed-craft ]
+    basis: documented
+    status: claimed
+    by: kevin-randle
+    source: v-2013-chd-roswell-1@32:27
 ---
 
 Kevin Randle is an American writer and retired lieutenant colonel who flew helicopters in Vietnam, served as an Air Force intelligence and public affairs officer, and deployed to Iraq with the Iowa National Guard before retiring in 2009. The author of more than 80 books, mostly science fiction and history, he is best known for his work on the 1947 Roswell case, beginning with *UFO Crash at Roswell* (1991) with Donald Schmitt, with whom he broke in 1995 over Schmitt's false claims about his background.

@@ -10,6 +10,9 @@ rel:
 facts:
   - text: "At the January 2026 press conference he said he witnessed “the crash of a non-terrestrial craft on January 13th”, picked up a foil-like fragment that resumed its shape when crumpled, and was struck with a rifle and threatened by a soldier at the site."
     status: claimed
+    claims: [ varginha-beings-captured ]
+    basis: first-hand
+    by: carlos-de-souza
     source: v-2026-01-20-newsnation-varginha-press-conference@46:46
 ---
 

@@ -20,6 +20,9 @@ moments:
     speaker: james-lacatski
     refs: [ aawsap ]
   - t: "2:14"
+    claims: [ aatip-official-program ]
+    stance: context
+    basis: first-hand
     text: "Lacatski: “The name AATIP was a nickname for OSAP for certain security reasons that we've put into the book.” AATIP at the Pentagon, he says, “was basically zero funded”, looked at military encounters that had film, and had no contract."
     speaker: james-lacatski
     refs: [ aatip, aawsap ]

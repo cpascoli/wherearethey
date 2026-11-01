@@ -26,8 +26,11 @@ facts:
     by: jon-kosloski
     source: v-2024-11-19-hearing@6:17
   - text: "He testified that AARO held over 1,600 UAP reports, that many resolve to birds, balloons, unmanned systems and, increasingly, Starlink satellite flares, and that “to date AARO has not discovered any verifiable evidence of extraterrestrial beings, activity or technology.”"
-    status: claimed
+    status: documented
     by: jon-kosloski
+    claims: [ recovered-non-human-craft, recovered-non-human-bodies ]
+    stance: disputes
+    basis: documented
     source: v-2024-11-19-hearing@7:38
   - text: "He also said: “AARO does not believe every object is a bird, a balloon or a UAV. We do have some very anomalous objects”, and that the office's most interesting cases are triangles and cylinders."
     status: claimed
@@ -53,6 +56,20 @@ facts:
     status: claimed
     by: dylan-borland
     source: v-jm-dylan-borland@1:58:03
+  - text: "He testified that AARO assesses with high confidence that the GoFast object was near 13,000 feet, not skimming the water, and that parallax made it look fast, and said AARO published its calculations so that the public can “check our math.”"
+    claims: [ gimbal-gofast-not-conventional ]
+    stance: disputes
+    basis: documented
+    status: documented
+    by: jon-kosloski
+    source: v-2024-11-19-hearing@15:40
+  - text: "Tim Gallaudet concedes AARO's parallax explanation for GoFast, which Kosloski presented to the Senate in November 2024, “I don't dispute that”, but says the object was spherical, without control surfaces and in formation with others, while the pilots saw dozens."
+    claims: [ gimbal-gofast-not-conventional ]
+    stance: context
+    basis: opinion
+    status: claimed
+    by: tim-gallaudet
+    source: v-jm-tim-gallaudet@10:14
 ---
 
 Jon T. Kosloski is a mathematician, physicist and engineer who spent most of his career at the National Security Agency leading research in optics, computing and cryptomathematics. He was named director of the Pentagon's All-domain Anomaly Resolution Office on 26 August 2024, succeeding founding director Sean Kirkpatrick and acting director Tim Phillips.

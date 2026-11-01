@@ -18,7 +18,7 @@ moments:
     text: "Pinotti says documents show the Fascist government set up a secret scientific team “headed by guliamo marconi” (Guglielmo Marconi) to study unconventional flying vehicles, after the alleged 1933 Magenta crash. The documents have not been independently authenticated."
     speaker: roberto-pinotti
     refs: [ inc-magenta-1933, book-mussolini-e-gli-ufo ]
-    claims: [ recovered-non-human-craft ]
+    claims: [ magenta-1933-crash ]
     basis: relayed
   - t: "11:00"
     text: "The president of the “world chinese ufo federation” says China has “tens of millions” of UFO enthusiasts and that many Chinese scholars are convinced UFOs and aliens exist."

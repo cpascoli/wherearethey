@@ -49,6 +49,41 @@ facts:
     status: claimed
     by: barry-goldwater
     source: v-1994-larry-king-ufo-cover-up-live@1:04:13
+  - text: "Philip Corso said in a 1998 lecture that as post duty officer at Fort Riley, Kansas, after the war, a sergeant showed him six crates in the veterinary building, and that under a tarpaulin “I saw a body in there”, with an oversized head, long arms, four fingers and a skin-tight suit, floating in liquid; the drivers said it was an extraterrestrial, “on their way to Wright-Patterson Air Force Base and they come from New Mexico”."
+    status: claimed
+    by: philip-corso
+    source: v-1998-02-22-corso-day-after-roswell-lecture@4:28
+    claims: [ recovered-non-human-bodies ]
+    basis: first-hand
+  - text: "At the 2013 Citizen Hearing Grant Cameron said a later letter from Robert Sarbacher confirmed “that the americans did have bodies and they did have a craft”, as Sarbacher had heard from scientists returning from Wright-Patterson meetings."
+    status: claimed
+    by: grant-cameron
+    source: v-2013-chd-global-1@31:55
+    claims: [ recovered-non-human-bodies, recovered-non-human-craft ]
+    basis: relayed
+  - text: "Richard French said at the Citizen Hearing that he was asked to review items from the Roswell crash site, where “an unknown number of humanoids either killed or injured” were found; the craft's parts had markings like “Arabic”, and parts and casualties went to Wright-Patterson's Foreign Technology Division."
+    status: claimed
+    by: richard-french
+    source: v-2013-chd-roswell-2@3:07
+    claims: [ recovered-non-human-craft, recovered-non-human-bodies ]
+    basis: relayed
+  - text: "Donald Schmitt cited Brig. Gen. Arthur Exon of Wright Field's testing division, who said there was “a unanimous consensus that the materials had to be from space”."
+    status: claimed
+    by: donald-schmitt
+    source: v-2013-chd-roswell-1@1:22:46
+    claims: [ roswell-crashed-craft ]
+    basis: relayed
+  - text: "A researcher at the Citizen Hearing cited the “FBI telex” sent from the Dallas office at 6:17 that evening, after Gen. Ramey's weather-balloon announcement, arguing that it shows the balloon story did not match what Wright Field had been told."
+    status: claimed
+    source: v-2013-chd-roswell-2@50:33
+    claims: [ roswell-crashed-craft ]
+    basis: documented
+  - text: "At the May 2025 congressional briefing Eric Davis said the crash-retrieval programmes go back to 1944 and the U.S. Army's recovery of a craft that crashed in Italy in 1933, which it brought back to Wright Field."
+    status: claimed
+    by: eric-davis
+    source: v-2025-05-01-hearing-a@1:03:25
+    claims: [ recovered-non-human-craft, magenta-1933-crash ]
+    basis: relayed
 ---
 
 Wright-Patterson Air Force Base, near Dayton, Ohio, known in the 1940s as Wright Field, was the centre of the U.S. Air Force's UFO investigations for more than two decades. Its Air Materiel Command took over Project Sign in January 1948 after Lt. Gen. Nathan Twining's 1947 letter, and the base later housed Project Grudge and, from 1952 to 1969, Project Blue Book. In 1952 the CIA found its Air Technical Intelligence Center to be the only group giving the subject serious effort.

@@ -11,6 +11,9 @@ facts:
   - text: "In her 2026 statement she said the creature looked as frightened of them as they were of it: brown, with red eyes and a shine on its body as if it had been oiled."
     status: claimed
     source: v-2026-01-20-newsnation-varginha-press-conference@1:04:36
+    by: valquiria-silva
+    claims: [ varginha-beings-captured ]
+    basis: first-hand
 ---
 
 On 20 January 1996, aged 14, she was one of the three young women who said they saw a creature on a vacant lot in Jardim Andere, Varginha, with her sister Liliane and their friend Kátia Xavier.

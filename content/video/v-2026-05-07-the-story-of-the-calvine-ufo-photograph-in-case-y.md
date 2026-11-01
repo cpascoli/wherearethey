@@ -7,6 +7,8 @@ rel:
   - [ about, inc-calvine-1990 ]
 moments:
   - t: "0:55"
+    claims: [ calvine-craft-photographed ]
+    basis: relayed
     text: "4 August 1990: two chefs from Pitlochry walking above Calvine see a silent diamond-shaped object, about 80 ft by later estimates, and take six photographs."
     refs: [ inc-calvine-1990, doc-robinson-calvine-analysis ]
   - t: "1:45"

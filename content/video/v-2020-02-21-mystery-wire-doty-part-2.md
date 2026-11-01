@@ -22,6 +22,8 @@ moments:
     speaker: richard-doty
     refs: [ project-blue-book, dia ]
   - t: "3:57"
+    claims: [ government-ufo-disinformation ]
+    basis: first-hand
     text: "Why the secrets are kept: new aircraft “such as the 117, the F-22 … the SR-71” have to fly and will be seen, “so that's why there's a program that may be discredit or disinformed people that, Hey, what you're seeing is UFOs. It's not … U S craft.”"
     speaker: richard-doty
     refs: [ uap-disinformation ]

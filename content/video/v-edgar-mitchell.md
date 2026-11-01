@@ -7,6 +7,8 @@ moments:
     text: "Mitchell: many sightings misperceive natural phenomena, but a large number appear well documented and do not match anything in our arsenal; that falls short of proving extraterrestrial origin."
     speaker: edgar-mitchell
   - t: "5:12"
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
     text: "Mitchell: “There have been ET visitation, there have been crashed craft, there have been… material and bodies recovered”, according to former intelligence, military and government people he relies on."
     speaker: edgar-mitchell
     refs: [ crash-retrieval ]

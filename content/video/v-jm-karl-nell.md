@@ -23,6 +23,8 @@ moments:
     text: "Nell's six reasons for government non-disclosure: national security, no plan, societal disruption, covert agreements benefiting from the status quo, covering up misdeeds, and bureaucratic inertia."
     speaker: karl-nell
   - t: "20:53"
+    claims: [ government-ufo-disinformation ]
+    basis: documented
     text: "Nell: the 1953 CIA Robertson Panel recommended debunking the topic and monitoring civilian UFO groups, and Edward Condon wrote the Colorado study's conclusion before it was complete, leading to Blue Book's closure."
     speaker: karl-nell
     refs: [ doc-robertson-panel-1953, project-blue-book ]

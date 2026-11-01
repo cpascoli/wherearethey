@@ -15,6 +15,8 @@ facts:
     status: claimed
     by: jake-barber
     source: v-jm-jake-barber@2:45
+    claims: [ recovered-non-human-craft ]
+    basis: first-hand
 ---
 
 Jake Barber is a former intelligence officer and helicopter pilot who says he flew a helicopter on a classified mission to retrieve a UAP. His account, given in interviews, is not supported by any released official record.

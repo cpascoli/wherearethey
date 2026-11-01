@@ -69,6 +69,18 @@ facts:
     status: claimed
     by: tim-gallaudet
     source: v-2024-11-13-hearing-a@1:18:39
+  - text: "He testified that no one contacted him until 2009, when Jay Stratton of the Pentagon's AATIP program, led by Lue Elizondo, asked to investigate."
+    status: claimed
+    by: david-fravor
+    source: v-2023-07-26-hearing-a@36:06
+    claims: [ aatip-official-program ]
+    basis: relayed
+  - text: "From the aircrew he knows, he says the Gimbal and GoFast videos were shot by the same person, and that the new APG-79 radar showed about five other objects in a V ahead of the Gimbal object, which reversed course, as Ryan Graves has also described."
+    status: claimed
+    by: david-fravor
+    source: v-lex-fridman-david-fravor@2:45:23
+    claims: [ gimbal-gofast-not-conventional ]
+    basis: relayed
 ---
 
 David Fravor is a retired U.S. Navy commander and F/A-18F pilot whose account of the 2004 "Tic Tac" encounter is the best-known pilot testimony of the modern UAP era. A former enlisted Marine and Naval Academy graduate, he flew for the Navy for 18 years, served as an accident investigator, and has since worked in the private sector, much of it in defense. In November 2004 he commanded Strike Fighter Squadron 41, the "Black Aces", aboard USS Nimitz.

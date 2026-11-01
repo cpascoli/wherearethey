@@ -17,6 +17,8 @@ moments:
     text: "How it began: Paul Bennewitz, whose Thunder Scientific Laboratories held Air Force and Navy contracts, told the security police chief at Manzano, then the Air Force's largest nuclear weapons storage area, that he had filmed objects over the mountain; as base counterintelligence officer, Doty opened an investigation."
     speaker: richard-doty
   - t: "12:00"
+    claims: [ government-ufo-disinformation ]
+    basis: first-hand
     text: "“Paul was the easiest person to convince that what he was … seeing was, in fact, UFOs. And that's all we had to do … So I had to do was agree with him.” He denies feeding him information, and says nine other people were involved."
     speaker: richard-doty
     refs: [ uap-disinformation ]

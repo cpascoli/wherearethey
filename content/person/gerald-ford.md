@@ -11,6 +11,12 @@ facts:
   - text: After the March 1966 Michigan sightings, which the Air Force attributed to “swamp gas”, he called for a congressional investigation. This led to the April 5, 1966 House Armed Services hearing.
     status: documented
     source: https://www.fordlibrarymuseum.gov/library/document/0054/4525586.pdf
+  - text: "Chris Mellon said in 2021 that J. Allen Hynek was told to explain cases away, and that his 1966 “swamp gas” explanation in Michigan angered the public and Gerald Ford, after which Congress took a fleeting interest."
+    claims: [ government-ufo-disinformation ]
+    basis: relayed
+    status: claimed
+    by: chris-mellon
+    source: v-2021-05-05-former-intelligence-secretary-christopher-mellon@7:08
 ---
 
 Gerald Ford was House Minority Leader (R-Michigan) from 1965 to 1973 and later the 38th President of the United States. After the March 1966 Michigan sightings, which the Air Force attributed to "swamp gas", he called for a congressional investigation, which led to the House Armed Services Committee hearing on UFOs on 5 April 1966.

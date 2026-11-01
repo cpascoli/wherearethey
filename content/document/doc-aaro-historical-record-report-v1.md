@@ -38,6 +38,13 @@ facts:
   - text: The report never uses the phrase “legacy program”. It addresses the same allegations as claims that the U.S. government recovered off-world craft and biological remains and runs “a program or programs to reverse engineer the recovered technology”.
     status: documented
     source: library/docs/doc-aaro-historical-record-report-v1.pdf
+  - text: "Tim Gallaudet testified in November 2024 that a meeting with AARO turned into “an hours-long influence operation” to defend its historical record report and to suggest the Tic Tac was American technology, which Fravor and Dietrich reject."
+    claims: [ tic-tac-beyond-known-technology ]
+    stance: context
+    basis: relayed
+    status: claimed
+    by: tim-gallaudet
+    source: v-2024-11-13-hearing-a@1:18:39
 ---
 
 AARO's *Historical Record Report, Volume 1* (March 2024), mandated by the FY2022 and FY2023 NDAAs, reviews U.S. government involvement with UAP since 1945, covering about two dozen investigative efforts from Project Blue Book to the present, and interviews with people who claimed knowledge of secret programmes.

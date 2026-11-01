@@ -11,6 +11,9 @@ facts:
   - text: "Hal Puthoff says the layered sample came from a man whose grandfather allegedly picked up Roswell debris. It went to Art Bell and then Linda Moulton Howe, and was analysed at Oak Ridge through a U.S. Army contract and AARO. The isotopes were terrestrial, but the hair-thin layering was unexplained, and an aerospace firm spent over $1 million bonding just two layers."
     status: claimed
     by: hal-puthoff
+    claims: [ roswell-crashed-craft ]
+    stance: context
+    basis: first-hand
     source: v-jre-hal-puthoff-2025@1:29:45
   - text: "AARO concluded that the sample is “a manufactured, terrestrial alloy and does not represent off-world technology or possess any exceptional qualities”, mostly magnesium, zinc and bismuth."
     status: documented

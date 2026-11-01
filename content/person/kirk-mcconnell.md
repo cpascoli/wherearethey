@@ -24,6 +24,8 @@ facts:
   - text: "He says the case that convinced him more than any other was the Tic Tac, after sitting down with David Fravor and Alex Dietrich: multiple experienced eyewitnesses, radar from the E-2C, the Aegis cruiser and an F/A-18, and infrared."
     status: claimed
     by: kirk-mcconnell
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: relayed
     source: v-2026-08-28-disclosure-forum-national-security@1:21:26
   - text: "At the May 2025 briefing, drawing on 37 years as a congressional staffer, he said the key is first-hand sources who can testify to direct involvement in “this so-called legacy program of crash retrievals, reverse engineering”, but that they are frightened for their clearances, careers and personal safety."
     status: claimed

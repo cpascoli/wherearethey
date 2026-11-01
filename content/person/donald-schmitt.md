@@ -24,6 +24,24 @@ facts:
     status: claimed
     by: kevin-randle
     source: https://centerforinquiry.org/wp-content/uploads/sites/29/docs/SUN/SUN36.pdf
+  - text: "At the 2013 Citizen Hearing he cited Brig. Gen. Arthur Exon of Wright Field's testing division as saying there was “a unanimous consensus that the materials had to be from space”."
+    claims: [ roswell-crashed-craft ]
+    basis: relayed
+    status: claimed
+    by: donald-schmitt
+    source: v-2013-chd-roswell-1@1:22:46
+  - text: "He relayed rancher Mac Brazel's reply to a suggestion of monkeys in rockets, “They weren't any monkeys. They weren't human”, and said Brazel's granddaughter heard him speak of “the poor unfortunate creatures”."
+    claims: [ recovered-non-human-bodies, roswell-crashed-craft ]
+    basis: relayed
+    status: claimed
+    by: donald-schmitt
+    source: v-2013-chd-roswell-2@16:16
+  - text: "He says the Air Force's 1994 report relied on Sheridan Cavitt, the counter-intelligence officer, who told its investigator Col. Richard Weaver he recognised a balloon at once, after telling Schmitt and Randle he had not been there: “we caught him in a flat lie”."
+    claims: [ roswell-crashed-craft ]
+    basis: relayed
+    status: claimed
+    by: donald-schmitt
+    source: v-2013-chd-roswell-2@29:34
 ---
 
 Donald Schmitt is an American Roswell researcher from Wisconsin, formerly with the J. Allen Hynek Center for UFO Studies, who has co-written several books on the 1947 case, first with Kevin Randle (*UFO Crash at Roswell*, 1991) and later with Tom Carey (*Witness to Roswell*). He says they have interviewed more than 600 people connected with the case, and he has led archaeological digs at the debris field.

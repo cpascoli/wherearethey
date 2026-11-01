@@ -72,6 +72,36 @@ facts:
     status: claimed
     by: chris-mellon
     source: v-2025-05-01-hearing-a@2:27:07
+  - text: "In 2021 he said the stigma began with the 1953 Robertson Panel, which in writing advocated that the subject be debunked and discredited, and that the government did so “extremely successfully”."
+    claims: [ government-ufo-disinformation ]
+    basis: documented
+    status: claimed
+    by: chris-mellon
+    source: v-2021-05-05-former-intelligence-secretary-christopher-mellon@6:07
+  - text: "He said J. Allen Hynek was told to explain cases away, and that his 1966 “swamp gas” explanation in Michigan angered the public and Gerald Ford, after which Congress took a fleeting interest."
+    claims: [ government-ufo-disinformation ]
+    basis: relayed
+    status: claimed
+    by: chris-mellon
+    source: v-2021-05-05-former-intelligence-secretary-christopher-mellon@7:08
+  - text: "On 60 Minutes in 2021 he said the Nimitz objects seemed to have unlimited loiter time and dropped from 60,000–80,000 feet to near the sea “in seconds”, with acceleration far beyond anything the U.S. can build."
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: relayed
+    status: claimed
+    by: chris-mellon
+    source: v-2021-05-16-navy-pilots-recall-unsettling-2004-uap-sighting@5:45
+  - text: "He calls the Nimitz case the strongest, for its number of witnesses, sensor data and quality of testimony, and says he used it from the start."
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: opinion
+    status: claimed
+    by: chris-mellon
+    source: v-2026-07-21-christopher-mellon-on-the-strongest-evidence-we-a@1:35
+  - text: "In April 2025 he said the government still cannot identify the drones that flew over Langley Air Force Base for weeks, forcing an F-22 squadron to move, and that the Air Force said it did not have a single video of them."
+    claims: [ langley-drones-unidentified ]
+    basis: relayed
+    status: claimed
+    by: chris-mellon
+    source: v-2025-04-22-cuomo-christopher-mellon@2:29
 ---
 
 Chris Mellon is a former U.S. intelligence official who did more than anyone outside government to put the Navy UAP videos in front of the public and Congress. He spent nearly a decade on Capitol Hill, ending as minority staff director of the Senate Select Committee on Intelligence. He then served as Deputy Assistant Secretary of Defense for Intelligence under Presidents Clinton and George W. Bush. In that role he sat on the Pentagon committee that oversees special access programs, where he says he never saw anything related to UAP.

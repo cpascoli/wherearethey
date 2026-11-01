@@ -13,6 +13,8 @@ facts:
     status: claimed
     by: larry-warren
     source: v-disclosure-project-2001-npc@1:03:36
+    claims: [ rendlesham-craft-landed ]
+    basis: first-hand
 ---
 
 Warren's account of Rendlesham differs from those of other base personnel, and some of them dispute it.

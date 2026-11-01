@@ -16,6 +16,13 @@ facts:
     status: unverified
     by: jesse-marcel-jr
     source: https://www.youtube.com/watch?v=uhV_m_BH8Po
+  - text: "Asked at the 2013 Citizen Hearing whether his father saw bodies, he answered: “no he did not see the body”."
+    claims: [ recovered-non-human-bodies ]
+    stance: context
+    basis: relayed
+    status: claimed
+    by: jesse-marcel-jr
+    source: v-2013-chd-roswell-1@1:24:21
 ---
 
 Jesse Marcel Jr. was a flight surgeon and colonel in the U.S. Army National Guard and the son of Maj. Jesse Marcel, the intelligence officer who collected the Roswell debris in 1947. According to the 2013 Citizen Hearing record, he testified on its Roswell panels that as an eleven-year-old he handled debris his father brought home in July 1947; he died later in 2013. These details are not yet confirmed from a primary source here.

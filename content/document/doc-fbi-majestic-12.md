@@ -32,6 +32,18 @@ facts:
   - text: Most researchers regard MJ-12 as a forgery. It is kept here as a case study in disinformation, and because it is often cited alongside genuine records.
     status: documented
     source: library/docs/doc-fbi-majestic-12.pdf
+  - text: "On the 1988 television special UFO Cover-Up?: Live!, James Oberg said that “the MJ12 stories, which seem to change every time we hear them” from Falcon cannot be checked."
+    claims: [ government-ufo-disinformation ]
+    stance: context
+    basis: opinion
+    status: claimed
+    source: v-1988-10-14-ufo-cover-up-live@1:18:06
+  - text: "At the 2013 Citizen Hearing Robert Wood said a Government Printing Office veteran judged from the type that a manual among the MJ-12 papers “was authentically printed by the government for some reason in 1954”."
+    claims: [ recovered-non-human-craft ]
+    basis: opinion
+    status: claimed
+    by: robert-wood
+    source: v-2013-chd-documents-proof@5:51
 ---
 
 This FBI file concerns the "Majestic 12" documents: a purported 1952 "briefing document for President-elect Eisenhower" describing a secret committee that managed recovered crashed craft, including at Roswell, which surfaced among ufologists in 1984.

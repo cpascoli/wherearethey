@@ -27,6 +27,8 @@ moments:
     claims: [ recovered-non-human-craft ]
     basis: first-hand
   - t: "25:03"
+    claims: [ uap-injuries ]
+    basis: relayed
     text: "Kelleher: AAWSAP ran two parallel tracks, UFO performance and the effects of UFOs on humans; Skinwalkers at the Pentagon reported mostly the second (medical, physiological, psychological and paranormal effects), the new book the first."
     speaker: colm-kelleher
     refs: [ book-skinwalkers-at-the-pentagon, book-inside-covert-ufo-program, skinwalker-ranch ]

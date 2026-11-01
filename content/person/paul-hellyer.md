@@ -48,6 +48,18 @@ facts:
   - text: He repeated the “Project Serpo” alien-exchange story, which originated with former AFOSI agent Richard Doty, who later admitted to spreading disinformation. His later claims relied on secondhand sources he did not identify.
     status: unverified
     source: https://en.wikipedia.org/wiki/Paul_Hellyer
+  - text: "In his 2005 Toronto talk he called Philip Corso's book The Day After Roswell “the unimpeachable source” of the talk, repeating Corso's claim that a UFO crashed near Roswell around 4 July 1947."
+    status: claimed
+    by: paul-hellyer
+    source: v-hellyer-toronto-2005-part1@8:01
+    claims: [ roswell-crashed-craft ]
+    basis: relayed
+  - text: "In a later interview he said deception began with Roswell, when the base's “disc” announcement was replaced by a balloon story."
+    status: claimed
+    by: paul-hellyer
+    source: v-hellyer-interview-2019@3:04
+    claims: [ roswell-crashed-craft, government-ufo-disinformation ]
+    basis: opinion
 ---
 
 Canada's Minister of National Defence during the unification of the armed forces. Decades after leaving office, he became one of the highest-ranking former officials anywhere to say publicly that extraterrestrials visit Earth, beginning with his September 2005 Toronto speech and continuing at the 2013 Citizen Hearing until his death in 2021.

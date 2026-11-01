@@ -45,6 +45,8 @@ moments:
     speaker: david-fravor
     refs: [ inc-nimitz-2004, aatip, harry-reid, george-knapp ]
   - t: "2:13:32"
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: opinion
     text: "Fravor doubts it was secret human technology: a leap that large would leave traces in research, and hiding it for 16 years is unlikely, though the F-117 shows secrets can be kept for a while."
     speaker: david-fravor
     refs: [ inc-nimitz-2004 ]

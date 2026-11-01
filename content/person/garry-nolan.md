@@ -19,10 +19,15 @@ facts:
     status: claimed
     by: garry-nolan
     source: v-garry-nolan@1:22
+    claims: [ uap-injuries ]
+    stance: context
+    basis: first-hand
   - text: "He says brain scans of some of those individuals showed white-matter damage, which he likens to walking into a jet's exhaust plume rather than anything aimed at the brain."
     status: claimed
     by: garry-nolan
     source: v-garry-nolan@4:12
+    claims: [ uap-injuries ]
+    basis: first-hand
   - text: "He found higher connectivity in the caudate and putamen in many “experiencers” and their families, which he thinks marks higher intuition, not an ability to communicate with UFOs."
     status: claimed
     by: garry-nolan
@@ -55,6 +60,26 @@ facts:
     status: claimed
     by: garry-nolan
     source: v-garry-nolan@2:53
+  - text: "Asked in 2021 why the government does not fund such work, he speculated that maybe it has, and that someone is saying the researchers are wasting their time “on exhaust, we have the engine”."
+    status: claimed
+    by: garry-nolan
+    source: v-2021-12-10-these-are-parts-of-an-alien-ufo-stanford-scientis@13:34
+    claims: [ recovered-non-human-craft ]
+    stance: context
+    basis: opinion
+  - text: "He says that the first time the hangar doors open and some craft is shown, “the questions are unlimited”, and that if anyone admits access to technology denied to another contractor, imagine “the legal fights”."
+    status: claimed
+    by: garry-nolan
+    source: v-2026-04-04-age-of-disclosure-nolan@0:00
+    claims: [ recovered-non-human-craft ]
+    stance: context
+    basis: opinion
+  - text: "He calls the Ariel School sighting in Zimbabwe his most fascinating case: 50–60 children who saw a craft and small figures, drew the same pictures, and got the message “you are not taking care of your planet”."
+    status: claimed
+    by: garry-nolan
+    source: v-lex-fridman-garry-nolan-2022@12:28
+    claims: [ ariel-school-landing ]
+    basis: opinion
 ---
 
 Garry Nolan is a professor of pathology at Stanford University School of Medicine, an immunologist and inventor known for pioneering single-cell analysis. He is the most prominent mainstream laboratory scientist to work openly on UAP, and he insists on talking about data rather than conclusions, a rule he credits to Jacques Vallée.

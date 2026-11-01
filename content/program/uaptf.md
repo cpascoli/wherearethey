@@ -58,6 +58,13 @@ facts:
     status: claimed
     by: colm-kelleher
     source: v-2023-10-17-weaponized-lacatski-kelleher@57:27
+  - text: "Alex Dietrich says her first suspicion after the 2004 Nimitz encounter was that they had been vectored into a live range and the Tic Tac was a surface- or subsurface-to-air missile, and that Pentagon officials from ONI, AATIP and the UAP Task Force have since assured her that possibility was eliminated."
+    status: claimed
+    by: alex-dietrich
+    claims: [ tic-tac-beyond-known-technology ]
+    stance: context
+    basis: first-hand
+    source: v-2021-06-15-alex-dietrich-the-nimitz-event-summary-time-diffe@39:29
 ---
 
 The Unidentified Aerial Phenomena Task Force was formally established by Deputy Secretary of Defense David Norquist in August 2020, approved on 4 August and announced on 14 August, under the Under Secretary of Defense for Intelligence and Security with the Office of Naval Intelligence. Its job was to detect, analyse and catalogue UAP that could threaten U.S. national security. Scott Bray told the House in 2022 that it was built on the Navy's initial efforts to respond to aviators' reports from the training ranges, and AARO's historical report says the Navy was asked to lead it. Its work produced the ODNI's *Preliminary Assessment* of June 2021: 144 reports, one of them identified.

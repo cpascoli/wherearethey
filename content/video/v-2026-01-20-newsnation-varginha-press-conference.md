@@ -55,6 +55,9 @@ moments:
     claims: [ varginha-beings-captured ]
     basis: first-hand
   - t: "52:59"
+    claims: [ varginha-beings-captured ]
+    stance: context
+    basis: first-hand
     speaker: carlos-de-souza
     text: "De Souza says that at the crash site, among Army vehicles, a soldier struck him with a rifle and ordered him to leave “or I'll split your skull”, and that two men in suits later threatened him at a petrol station."
     refs: [ inc-varginha-1996 ]
@@ -82,6 +85,9 @@ moments:
     claims: [ varginha-beings-captured ]
     basis: first-hand
   - t: "1:05:27"
+    claims: [ varginha-beings-captured ]
+    stance: context
+    basis: first-hand
     text: "(Portuguese) Luíza Helena da Silva, the sisters' mother: at the site half an hour later she saw a footprint with three long toes; later four men in black opened a case of money and offered to make the family rich if she had the girls say on TV that they had seen an animal or a sick person. She refused."
     refs: [ inc-varginha-1996 ]
   - t: "1:08:18"
@@ -91,6 +97,8 @@ moments:
     text: "(Portuguese) An unnamed former Army soldier says he saw the being through a door at the hospital and drove it from Varginha to Três Corações and on to Campinas, where other soldiers took over, and later heard the Americans had it."
     refs: [ inc-varginha-1996 ]
   - t: "1:11:49"
+    claims: [ varginha-beings-captured ]
+    basis: relayed
     text: "(Portuguese) Marta, sister of military police officer Marco Eli Chereze: her brother, 23, took part in the capture and died of a cause still undetermined; she asks the authorities to say what happened."
     refs: [ inc-varginha-1996 ]
   - t: "1:15:40"
@@ -98,6 +106,9 @@ moments:
     speaker: armando-fortunato-filho
     refs: [ inc-varginha-1996 ]
   - t: "1:18:39"
+    claims: [ uap-injuries ]
+    stance: context
+    basis: first-hand
     text: "Fortunato Filho: the infection was caused by “a highly virulent and multi-drugresistant bacterium” that spread through the body and caused septic shock."
     speaker: armando-fortunato-filho
     refs: [ inc-varginha-1996 ]
@@ -108,6 +119,9 @@ moments:
     claims: [ uap-injuries ]
     basis: opinion
   - t: "1:55:47"
+    claims: [ varginha-beings-captured ]
+    stance: context
+    basis: first-hand
     text: "Neurosurgeon Ítalo Venturelli: in 2023 he told Fox's team only that he had seen a video of a non-human creature at the hospital on 20 January 1996; a near-fatal heart attack in 2024 moved him to say more."
     speaker: italo-venturelli
     refs: [ inc-varginha-1996 ]

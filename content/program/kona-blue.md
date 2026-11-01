@@ -15,6 +15,12 @@ facts:
   - text: AARO found that it was a proposed special access program at DHS, whose origins trace to people involved in the DIA's AAWSAP/AATIP program. It was never approved or stood up, and no data or material was transferred to DHS. It was not reported to Congress at the time because it was never established, though the Deputy Secretary of Defense later sent a congressional notification once it was identified.
     status: documented
     source: library/docs/doc-aaro-historical-record-report-v1.pdf
+  - text: "James Lacatski says AARO's deputy director told him “Kona Blue was established as the home for all these paranormal UFO crap”, and that “we're all being played like a fiddle” by what he calls a repeated counterintelligence operation."
+    status: claimed
+    by: james-lacatski
+    source: v-2025-11-05-weaponized-lacatski-part-1@14:00
+    claims: [ government-ufo-disinformation ]
+    basis: relayed
 ---
 
 KONA BLUE was a special access programme proposed to the Department of Homeland Security around 2011 by people involved in the DIA's AAWSAP/AATIP work. Interviewees told AARO it was a sensitive DHS compartment created to hide the retrieval and exploitation of "non-human biologics".

@@ -47,13 +47,23 @@ facts:
     status: claimed
     by: david-grusch
     source: v-jre-david-grusch@26:55
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
   - text: "George Knapp testified that congressional investigator Richard D'Amato, sent by Senators Robert Byrd and Reid, got into Area 51 and came to believe the reverse-engineering program had moved inside corporations."
     status: claimed
     by: george-knapp
     source: v-2025-09-09-hearing-a@1:59:32
+    claims: [ area-51-alien-craft ]
+    basis: relayed
   - text: "Harry Reid's former chief of staff Susan McCue said of Jay Stratton's claim that Reid was mistakenly briefed on the legacy program: “I've heard that a few times but am not able to confirm”."
     status: claimed
     source: https://www.paradigm.news/p/exclusive-ex-pentagon-ufo-lead-accuses
+  - text: "Grusch also says AAWSAP's real purpose was a bigoted, waived special access program Reid requested to receive material, and that when the CIA killed Lockheed Martin's planned transfer of 1950s hull fragments to Bigelow's facility, the program turned to Skinwalker Ranch."
+    status: claimed
+    by: david-grusch
+    source: v-jre-david-grusch@29:16
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
 ---
 
 Harry Reid was a Democratic U.S. Senator from Nevada (1987–2017) and Senate Majority Leader (2007–2015), and the politician most responsible for the Pentagon's modern UAP programs. By his own account his interest came from Robert Bigelow, the Las Vegas billionaire who was a longtime friend and, according to FEC records, a contributor to his campaign committee and leadership PAC from 1998 to 2010.

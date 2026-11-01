@@ -23,6 +23,12 @@ facts:
   - text: "The file includes the manuscript cover, credited to James T. Lacatski, Colm A. Kelleher and George Knapp (copyright 2022). An internal email describes it as a 143-page manuscript by a former DIA employee that also went through DIA prepublication review, and notes that some of the authors' earlier work was cleared in May 2021."
     status: documented
     source: library/docs/doc-dopsr-22-sb-0151.pdf
+  - text: "At the September 2025 hearing George Knapp said James Lacatski had told him the U.S. had managed to get inside a craft with no wings, rotor, tail or fuel, and that it took 14 months of DOPSR review to clear two sentences on it."
+    status: claimed
+    by: george-knapp
+    source: v-2025-09-09-hearing-a@1:48:03
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
 ---
 
 This 22-page Pentagon file records the prepublication clearance of the second book by former DIA scientist James Lacatski with Colm Kelleher and George Knapp. In a letter of 24 April 2023, the Defense Office of Prepublication and Security Review (DOPSR) answers Lacatski's request of July 2022: the manuscript "The U.S. Government's Secret UAP/UFO Program: The Beginning - Initial Planning and Investigations" is "CLEARED for public release", published later in 2023 as *Inside the US Government Covert UFO Program*.

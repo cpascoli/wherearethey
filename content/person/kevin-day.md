@@ -34,6 +34,8 @@ facts:
     status: claimed
     by: kevin-day
     source: v-2019-10-12-nimitz-encounters-kevin-day@10:37
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
   - text: "He says that through the bridge's “big eyes” binoculars he saw, about 40 miles away, “a boring white light in the sky”, and counted about a hundred objects between 10 and 16 November; asked what they were: “I do not have a clue.”"
     status: claimed
     by: kevin-day

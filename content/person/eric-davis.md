@@ -50,6 +50,8 @@ facts:
     status: claimed
     by: eric-davis
     source: v-2025-05-01-hearing-a@59:50
+    claims: [ programs-hidden-from-congress ]
+    basis: relayed
   - text: "He says a materials scientist hired by Ben Rich at Skunk Works told him the recovered materials' elements were identifiable by mass spectrometry but structured in a way no one could fabricate on Earth, and that only engineers and materials scientists, no physicists, work in the legacy programs."
     status: claimed
     by: eric-davis
@@ -58,6 +60,8 @@ facts:
     status: claimed
     by: eric-davis
     source: v-2025-05-01-hearing-a@1:30:23
+    claims: [ roswell-crashed-craft, recovered-non-human-bodies ]
+    basis: relayed
   - text: "He also says he was told the CIA shut down its effort in 1989 for lack of progress, and that there are no “alien reproduction vehicles”."
     status: claimed
     by: eric-davis
@@ -69,6 +73,18 @@ facts:
   - text: "AARO's 2024 historical report found “no empirical evidence” for claims that the U.S. government and private companies have been reverse-engineering extraterrestrial technology, and traced modern claims largely to individuals tied to the cancelled AAWSAP/AATIP program."
     status: documented
     source: doc-aaro-historical-record-report-v1
+  - text: "He says the crash-retrieval programmes go back to 1944 and the U.S. Army's recovery of a craft that crashed in Italy in 1933, which it brought back to Wright Field."
+    status: claimed
+    by: eric-davis
+    source: v-2025-05-01-hearing-a@1:03:25
+    claims: [ magenta-1933-crash ]
+    basis: relayed
+  - text: "Hal Puthoff says Davis interviewed General Exon, a former Wright-Patterson commander, who said Roswell “was the real deal”."
+    status: claimed
+    by: hal-puthoff
+    source: v-jre-hal-puthoff-2025@1:37:13
+    claims: [ roswell-crashed-craft ]
+    basis: relayed
 ---
 
 Eric W. Davis is an astrophysicist who has spent three decades in privately and government-funded research on UAP and advanced propulsion. In 1996 Robert Bigelow hired him at the National Institute for Discovery Science, whose advisers included Hal Puthoff and astronaut Edgar Mitchell. He then joined Puthoff at EarthTech International in Austin. Under the DIA's AAWSAP contract he wrote Defense Intelligence Reference Documents, including "Traversable Wormholes, Stargates, and Negative Energy", and Luis Elizondo has called him a chief scientist of AAWSAP/AATIP. More recently he worked for the Aerospace Corporation in Huntsville, supporting NASA's space nuclear propulsion office.

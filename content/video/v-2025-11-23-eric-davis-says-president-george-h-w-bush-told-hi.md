@@ -9,6 +9,8 @@ rel:
   - [ about, inc-holloman-1964 ]
 moments:
   - t: "0:08"
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
     text: "Eric Davis: in private conversations in 2003, George H.W. Bush told him that as CIA director in the Ford administration “he was not briefed on the legacy UAP crash retrieval program, but he later found out about it.”"
     speaker: eric-davis
     refs: [ legacy-program ]

@@ -31,6 +31,9 @@ moments:
     text: "After the 2017 New York Times story, he says half his ready room raised their hands about \"the cubes and spheres\". He names sightings at Norfolk, Lemoore, Fallon and Pax River."
     speaker: ryan-graves
   - t: "38:20"
+    claims: [ recovered-non-human-craft ]
+    stance: context
+    basis: opinion
     text: "On David Grusch's crash-retrieval claims: Graves was never exposed to such programmes, but says nothing in Grusch's background suggests he is lying."
     speaker: ryan-graves
     refs: [ david-grusch ]

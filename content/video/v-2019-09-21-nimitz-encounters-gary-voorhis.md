@@ -10,6 +10,8 @@ rel:
   - [ related to, kevin-day ]
 moments:
   - t: "2:22"
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: first-hand
     text: "Voorhis: the SPY radar team took the whole system down to clear what they thought was clutter; recalibrating only made the tracks clearer, and they tracked unknowns for three to five days."
     speaker: gary-voorhis
     refs: [ inc-nimitz-2004 ]

@@ -25,6 +25,13 @@ facts:
   - text: "Most of the file is weather data (constant-pressure charts and upper-air soundings) gathered for the inversion analysis. It ends with a clipping of the 1966 magazine serialisation of Betty Hill's hypnosis sessions."
     status: documented
     source: library/docs/doc-bluebook-lincoln-nh-1961.pdf
+  - text: "In a 1999 interview, when the interviewer cited the record that Pease AFB radar tracked an unknown object at 2:14 a.m., Betty Hill said Pease released the radar report but the pilots' reports are still classified; the Blue Book analysis sheet in this file attributes the radar return to a temperature inversion."
+    status: claimed
+    by: barney-betty-hill
+    claims: [ hill-abduction ]
+    stance: context
+    basis: relayed
+    source: v-betty-hill-1999-interview@18:12
 ---
 
 The U.S. Air Force's Project Blue Book file on Betty and Barney Hill's September 1961 sighting, filed under Lincoln, New Hampshire. It covers only the sighting reported at the time, not the abduction account that emerged under hypnosis in 1964. The Air Force carried the case as insufficient data, attributed the radar return and the light to a temperature inversion, and later called the object "in all probability Jupiter".

@@ -65,6 +65,18 @@ facts:
     status: claimed
     by: anna-paulina-luna
     source: v-2026-06-09-capitol-uap-press-conference@2:54
+  - text: "At the July 2023 hearing Rep. Matt Gaetz described the Eglin disclosure he had sought a briefing on with her and Rep. Burchett: four craft in diamond formation on radar over the Gulf, and an orb whose approach knocked out the pilot's radar and FLIR."
+    status: claimed
+    by: matt-gaetz
+    source: v-2023-07-26-hearing-a@1:39:57
+    claims: [ eglin-orb-not-human ]
+    basis: relayed
+  - text: "She says Rep. Gaetz has since said publicly that they saw material he does not believe was made by mankind, and that this is why declassification is needed."
+    status: claimed
+    by: anna-paulina-luna
+    source: v-jre-anna-paulina-luna@1:16:30
+    claims: [ eglin-orb-not-human ]
+    basis: relayed
 ---
 
 Anna Paulina Luna is a Republican U.S. Representative from Florida, elected in 2022, and a U.S. Air Force veteran. She is the House member who has done most to turn UAP into a standing oversight issue. As an airfield manager with the Portland Air National Guard, she says she saw F-15 pilots refuse to talk about an incursion by something that had outperformed them.

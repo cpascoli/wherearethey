@@ -17,6 +17,8 @@ facts:
     status: claimed
     by: jim-penniston
     source: v-2013-chd-rendlesham-1@1:06:30
+    claims: [ rendlesham-craft-landed ]
+    basis: first-hand
   - text: "He says he never believed in UFOs “and I still don't”, describing it as a craft of unknown origin."
     status: claimed
     by: jim-penniston
@@ -25,6 +27,8 @@ facts:
     status: claimed
     by: jim-penniston
     source: v-2013-chd-rendlesham-1@39:10
+    claims: [ uap-injuries ]
+    basis: first-hand
   - text: "He says he paced the craft off at about 9 by 9 feet and 6½–7 feet tall, too small in his view to be piloted, and that it hovered about two feet off the ground with no landing gear and did not move when pushed."
     status: claimed
     by: jim-penniston
@@ -37,6 +41,9 @@ facts:
     status: claimed
     by: jim-penniston
     source: v-2013-chd-rendlesham-1@1:40:20
+    claims: [ uap-injuries ]
+    stance: context
+    basis: first-hand
   - text: "His lawyer Patrick Frascogna told the 2013 hearing that Penniston's photographs of the craft came back from the base lab overexposed, and that FOIA requests to the Air Force, DIA, NSA, AFOSI and the VA found no records on him or John Burroughs."
     status: claimed
     source: v-2013-chd-rendlesham-1@19:34
@@ -44,6 +51,30 @@ facts:
     status: claimed
     by: charles-halt
     source: v-7news-charles-halt-rendlesham@1:02:09
+  - text: "He says he had given AFOSI a full written statement, “four pages”, with the craft's temperature, its position above the ground and the glyphs, which the wing commander never saw."
+    status: claimed
+    by: jim-penniston
+    source: v-2013-chd-rendlesham-2@13:07
+    claims: [ rendlesham-craft-landed ]
+    basis: first-hand
+  - text: "He says the craft hovered and turned before leaving, which told him “it's intelligent control of some kind”, and that he has never seen technology that could do what it did."
+    status: claimed
+    by: jim-penniston
+    source: v-2013-chd-rendlesham-2@22:07
+    claims: [ rendlesham-craft-landed ]
+    basis: first-hand
+  - text: "He says AFOSI agents he did not know threatened him in a “good cop bad cop” interview, then handed him a typed half-page statement that was not his and said “we want you to memorize” it as his official account for the wing commander."
+    status: claimed
+    by: jim-penniston
+    source: v-2013-chd-rendlesham-2@9:50
+    claims: [ government-ufo-disinformation ]
+    basis: first-hand
+  - text: "Charles Halt says Penniston and four others independently told him they were interrogated by AFOSI with British personnel present, given injections and hypnotized."
+    status: claimed
+    by: charles-halt
+    source: v-7news-charles-halt-rendlesham@36:20
+    claims: [ government-ufo-disinformation ]
+    basis: relayed
 ---
 
 Jim Penniston was a staff sergeant in the U.S. Air Force Security Police at RAF Woodbridge, England. Early on 26 December 1980 he led the patrol, with John Burroughs and Edward Cabansag, that went into Rendlesham Forest after lights were reported, and he is the only witness who says he touched a craft.

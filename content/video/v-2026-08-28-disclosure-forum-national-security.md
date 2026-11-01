@@ -40,6 +40,9 @@ moments:
     speaker: marik-von-rennenkampff
     refs: [ inc-wright-patterson-2024, wright-patterson-afb ]
   - t: "35:38"
+    claims: [ programs-hidden-from-congress ]
+    stance: context
+    basis: first-hand
     text: "Mellon: he sat on the Defense Department committee that reviews all special access programs and reports them to Congress, and “never saw anything related to UAP”, though workarounds such as alternative compensatory control measures exist."
     speaker: chris-mellon
     refs: [ sap, legacy-program ]
@@ -48,6 +51,9 @@ moments:
     speaker: chris-mellon
     refs: [ sap ]
   - t: "37:15"
+    claims: [ recovered-non-human-craft ]
+    stance: context
+    basis: relayed
     text: "Mellon: one of the main crash-retrieval sources he first brought to Congress in 2019 said the program was closed because it was making no headway and spending a lot of money."
     speaker: chris-mellon
     refs: [ crash-retrieval, legacy-program ]

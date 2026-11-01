@@ -8,6 +8,12 @@ facts:
   - text: "Choy, a founding member of the Peruvian Air Force's office for anomalous aerial phenomena (OIFAA), testified at the 2013 Citizen Hearing on Disclosure."
     status: unverified
     source: h-2013-citizen-hearing
+  - text: "At the 2013 Citizen Hearing he relayed witness accounts that in the 1980s an object fell in Peru and its remains were taken away by helicopters “definitively not part of the peruvian armed forces”; asked whose they were, he said “apparently they were american”."
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
+    status: claimed
+    by: anthony-choy
+    source: v-2013-chd-south-america-2@22:42
 rel:
   - [ testified at, h-2013-citizen-hearing ]
 ---

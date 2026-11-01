@@ -24,6 +24,25 @@ facts:
     basis: documented
     status: documented
     source: library/docs/doc-af-roswell-case-closed-1997.pdf
+  - text: "At the 2013 Citizen Hearing Kevin Randle disputed the Air Force's Mogul explanation: the diary of project leader Albert Crary says “flight number four had been canceled”, the very flight the Air Force blamed."
+    status: claimed
+    by: kevin-randle
+    source: v-2013-chd-roswell-1@32:27
+    claims: [ roswell-crashed-craft ]
+    basis: documented
+  - text: "At the same hearing Stanton Friedman called the Air Force's explanation “Project Mogul nonsense”: Mogul's purpose was secret, but its balloons and radar reflectors were ordinary materials the officers would have recognised."
+    status: claimed
+    by: stanton-friedman
+    source: v-2013-chd-roswell-2@20:41
+    claims: [ roswell-crashed-craft ]
+    basis: opinion
+  - text: "Grant Cameron quoted President Clinton in Belfast in 1995: “As far as I know, an alien spacecraft did not crash in Roswell, New Mexico.” He mocked the Air Force's 1997 explanation of “wooden dummy” crash-test figures."
+    status: claimed
+    by: grant-cameron
+    source: v-2013-chd-truth-lies-1@30:13
+    claims: [ roswell-crashed-craft ]
+    stance: disputes
+    basis: relayed
 ---
 
 The U.S. Air Force's second Roswell report, *The Roswell Report: Case Closed*, released in June 1997 at a Pentagon news conference. Following the 1994 report, which identified the 1947 debris as a Project MOGUL balloon train, it addresses the later claims of alien bodies. It attributes them to anthropomorphic test dummies dropped from high-altitude balloons in the 1950s, and to a 1956 aircraft accident and a 1959 balloon mishap. It is the official counter-assessment to the crash-retrieval story. Our copy is a capture of the report's summary page on af.mil.

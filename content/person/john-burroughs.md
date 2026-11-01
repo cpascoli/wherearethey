@@ -12,10 +12,18 @@ facts:
     status: claimed
     by: john-burroughs
     source: v-2013-chd-rendlesham-1@43:00
+    claims: [ rendlesham-craft-landed, uap-injuries ]
+    basis: first-hand
   - text: "He says a VA doctor told him she had no DD Form 214 or medical records for him from 1979 to 1982."
     status: claimed
     by: john-burroughs
     source: v-2013-chd-rendlesham-1@47:30
+  - text: "He also says that besides his physical problems he now has a pacemaker defibrillator, at 52, and that they still do not know what they were exposed to."
+    status: claimed
+    by: john-burroughs
+    source: v-2013-chd-rendlesham-2@44:06
+    claims: [ uap-injuries ]
+    basis: first-hand
 rel:
   - [ testified at, h-2013-citizen-hearing ]
   - [ witness, inc-rendlesham-1980 ]

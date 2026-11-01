@@ -30,6 +30,13 @@ facts:
   - text: "A 2024 history by the U.S. Army Intelligence Center of Excellence says that in 1978 “then-Lt. Col. Marcel claimed in an interview with ufologists (researchers of UFOs) that the materials were “extraterrestrial.”” and that “shortly after the 1947 incident, Marcel's personnel file noted his tendency to exaggerate.”"
     status: documented
     source: https://www.dvidshub.net/news/475677/intelligence-agents-investigate-ufos-roswell-7-jul-1947
+  - text: "Asked at the 2013 Citizen Hearing whether his father saw bodies, Jesse Marcel Jr. answered: “no he did not see the body”."
+    status: claimed
+    by: jesse-marcel-jr
+    source: v-2013-chd-roswell-1@1:24:21
+    claims: [ recovered-non-human-bodies ]
+    stance: context
+    basis: relayed
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Jesse_Marcel

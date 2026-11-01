@@ -21,6 +21,12 @@ facts:
     claims: [ magenta-1933-crash ]
     basis: relayed
     source: https://openlibrary.org/works/OL23807479W
+  - text: "At the 2013 Citizen Hearing, Roberto Pinotti said the documents show that the Fascist government set up a secret scientific team “headed by guliamo marconi” (Guglielmo Marconi) to study unconventional flying vehicles after the alleged 1933 Magenta crash; the documents have not been independently authenticated."
+    status: claimed
+    by: roberto-pinotti
+    source: v-2013-chd-global-1@9:05
+    claims: [ magenta-1933-crash ]
+    basis: relayed
 ---
 
 *Mussolini e gli UFO* ("Mussolini and the UFOs", Idea Libri, 2001) is the book in which the Italian researchers Roberto Pinotti and Alfredo Lissoni set out the documents they say they received anonymously in 1996: papers describing a craft that crashed near Magenta, Lombardy, in 1933, and a secret study group, "Gabinetto RS/33", under Guglielmo Marconi, set up by Mussolini's government to examine it. If genuine, it would be the earliest crash-retrieval case on record.

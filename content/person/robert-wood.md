@@ -22,7 +22,21 @@ facts:
   - text: "He says a Government Printing Office veteran judged the SOM 1-01 manual authentically printed by the government in 1954; the MJ-12 papers are widely regarded as forgeries."
     status: claimed
     by: robert-wood
+    claims: [ recovered-non-human-craft ]
+    basis: opinion
     source: v-2013-chd-documents-proof@5:51
+  - text: "His conclusion at the 2013 Citizen Hearing, which he calls “incredibly wild”: those in charge have kept secret the greatest story of mankind while spending staggering sums on hidden underground facilities and reverse engineering."
+    claims: [ recovered-non-human-craft ]
+    basis: opinion
+    status: claimed
+    by: robert-wood
+    source: v-2013-chd-documents-proof@10:59
+  - text: "He says he read a classified version of the report on the Iranian Air Force F-4 pilot “attempting to fire a missile at a ufo only to have his control shut down” as he thought about firing."
+    claims: [ tehran-1976-object ]
+    basis: relayed
+    status: claimed
+    by: robert-wood
+    source: v-2013-chd-science-technology@9:01
 ---
 
 Robert M. Wood is an American aerospace engineer with a degree in aeronautical engineering from the University of Colorado and a PhD in physics from Cornell, who worked for 43 years at Douglas Aircraft and McDonnell Douglas, managing research and development projects, radar work and studies for the space station. In the late 1960s he ran a small company project on how UFOs might be propelled, which hired Stanton Friedman, and he later managed a remote-viewing study funded by the company's founder, James S. McDonnell.

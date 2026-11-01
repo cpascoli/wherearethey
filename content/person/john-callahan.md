@@ -13,6 +13,8 @@ facts:
     status: claimed
     by: john-callahan
     source: v-2013-chd-pilots-aviation@4:35
+    claims: [ jal1628-unknown-craft ]
+    basis: first-hand
   - text: "He says that at a briefing for President Reagan's scientific staff, a CIA officer said “this event never happened, we were never here”, confiscated the data and swore those present to secrecy."
     status: claimed
     by: john-callahan
@@ -33,9 +35,18 @@ facts:
     status: claimed
     by: john-callahan
     source: v-2013-chd-pilots-aviation@1:04:30
+    claims: [ jal1628-unknown-craft ]
+    stance: context
+    basis: first-hand
   - text: "The FAA's Alaskan Region news release of 5 March 1987 said the agency was “unable to confirm the event”: experts replaying the radar data at the Atlantic City technical center determined that the second target near the JAL flight was not another aircraft but “a split radar return from the JAL Boeing 747”, an “uncorrelated primary and beacon target return”."
     status: documented
     source: https://documents.theblackvault.com/documents/ufos/jal1628/733667-001-022.pdf
+  - text: "At the Disclosure Project's 2001 press conference he described the JAL 1628 radar data being briefed to President Reagan's science staff, the CIA and the FBI, and a CIA man saying “this meeting never happened.”"
+    status: claimed
+    by: john-callahan
+    source: v-disclosure-project-2001-npc@14:26
+    claims: [ jal1628-unknown-craft ]
+    basis: relayed
 ---
 
 John Callahan was Division Chief of Accidents and Investigations at the Federal Aviation Administration in the 1980s, and the official behind the best-known claim of a government cover-up of radar data on a UFO.

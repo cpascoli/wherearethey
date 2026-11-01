@@ -22,6 +22,8 @@ moments:
     text: "Pupils say the headmaster told a special assembly it was probably a weather balloon and that they must not talk to the press."
     refs: [ inc-westall-1966 ]
   - t: "15:05"
+    claims: [ westall-craft-landed ]
+    basis: relayed
     text: "A researcher says he has been in contact with “more than 200 people who were witnesses at Westall that day”; the science teacher Andrew Greenwood told him that more than half the student body, over 300 children, saw what he saw from the sports ground."
     refs: [ inc-westall-1966 ]
   - t: "16:39"

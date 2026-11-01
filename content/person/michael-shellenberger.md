@@ -20,6 +20,8 @@ facts:
     status: claimed
     by: michael-shellenberger
     source: v-2024-11-13-hearing-a@56:33
+    claims: [ immaculate-constellation-exists ]
+    basis: relayed
   - text: "The 12-page report he brought was entered into the hearing record at Rep. Nancy Mace's request as “Report, Pentagon, ‘Immaculate Constellation’”; entry confirms provenance, not accuracy."
     status: documented
     source: doc-immaculate-constellation
@@ -51,6 +53,12 @@ facts:
     status: claimed
     by: david-grusch
     source: v-2026-06-09-capitol-uap-press-conference@25:11
+  - text: "Asked at the hearing for evidence for Immaculate Constellation, he said the report described cases new to him, so it was not circular reporting, and that more than one other source confirmed the program's name."
+    status: claimed
+    by: michael-shellenberger
+    claims: [ immaculate-constellation-exists ]
+    basis: relayed
+    source: v-2024-11-13-hearing-a@1:21:56
 ---
 
 Michael Shellenberger is an American journalist and author who publishes the newsletter Public. He is known for books and reporting on energy, the environment and government censorship. He came to UAP as a reporter on government secrecy rather than as a believer, and calls himself agnostic about what the phenomenon is.

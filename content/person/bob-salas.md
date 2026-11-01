@@ -59,6 +59,12 @@ facts:
     status: claimed
     by: george-knapp
     source: v-2025-09-09-hearing-a@2:15:30
+  - text: "He says the Air Force wanted a way out of investigating UFOs, and that if it had let him and fellow officers Figel and Meiwald speak to the Condon committee about their incident, it would have found a serious problem."
+    claims: [ government-ufo-disinformation ]
+    basis: opinion
+    status: claimed
+    by: bob-salas
+    source: v-2013-chd-nuclear-tampering-2@40:22
 ---
 
 Robert Salas is a former U.S. Air Force captain who was a Minuteman missile launch officer at Malmstrom Air Force Base, Montana. He is the best-known witness to the claim that UFOs have interfered with American nuclear weapons.

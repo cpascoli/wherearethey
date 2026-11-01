@@ -21,6 +21,12 @@ facts:
   - text: "From 1957 to 1969 he directed the National Investigations Committee on Aerial Phenomena (NICAP), the largest civilian UFO group in the United States in that period, which pressed for congressional hearings."
     status: claimed
     source: https://en.wikipedia.org/wiki/Donald_Keyhoe
+  - text: "On CBS Reports in May 1966 Keyhoe said Air Force spokesmen “are simply following orders to explain away all UFO sightings as quickly as possible when they become public and deny that UFOs really exist.”"
+    claims: [ government-ufo-disinformation ]
+    basis: opinion
+    status: claimed
+    by: donald-keyhoe
+    source: v-1966-05-10-cbs-reports-ufo-friend-foe-fantasy@27:59
 ---
 
 Donald Keyhoe (1897–1988) was a U.S. Marine Corps aviator, a Naval Academy graduate who left the Marines after an injury, managed Charles Lindbergh's 1927 tour and became a prolific aviation writer, returning to naval aviation training in the Second World War and retiring as a major. His article "Flying Saucers Are Real" in *True* in January 1950, and the book that followed, were among the most widely read pieces ever written on the subject; Edward Ruppelt wrote that Keyhoe generally had his facts right but that his interpretation of them was another matter.

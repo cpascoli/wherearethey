@@ -115,6 +115,49 @@ facts:
     basis: documented
     status: documented
     source: doc-aaro-historical-record-report-v1
+  - text: "Grusch told the July 2023 hearing that he was informed in the course of his official duties of a multi-decade UAP crash-retrieval and reverse-engineering program, to which he was denied access."
+    claims: [ programs-hidden-from-congress ]
+    basis: relayed
+    status: claimed
+    by: david-grusch
+    source: v-2023-07-26-hearing-a@32:06
+  - text: "Asked by Rep. Tim Burchett at the same hearing which facilities hold recovered material, with the remark that Congress keeps talking about going to Area 51 but “there's nothing there anymore”, Grusch said he could not say publicly but had given the information to the intelligence committees and the Inspector General."
+    claims: [ area-51-alien-craft ]
+    stance: context
+    basis: opinion
+    status: claimed
+    by: tim-burchett
+    source: v-2023-07-26-hearing-a@1:20:06
+  - text: "Grusch also said at the hearing that he has personal knowledge of people injured working on legacy UAP reverse-engineering."
+    claims: [ uap-injuries ]
+    basis: first-hand
+    status: claimed
+    by: david-grusch
+    source: v-2023-07-26-hearing-a@1:59:04
+  - text: "At the November 2024 hearing Elizondo agreed with Grusch that the U.S. has run a multi-decade crash-retrieval and reverse-engineering program, and said UAP programs are operating without proper congressional oversight: “One hundred percent.”"
+    claims: [ programs-hidden-from-congress, recovered-non-human-craft ]
+    basis: relayed
+    status: claimed
+    by: luis-elizondo
+    source: v-2024-11-13-hearing-a@1:24:24
+  - text: "At the May 2025 briefing Davis said the crash-retrieval programs are more secret than the Manhattan Project, hidden from Congress under presidential emergency action directives dating from Eisenhower and exempt from FOIA."
+    claims: [ programs-hidden-from-congress ]
+    basis: relayed
+    status: claimed
+    by: eric-davis
+    source: v-2025-05-01-hearing-a@59:50
+  - text: "Davis also said the crash-retrieval programmes go back to 1944 and the U.S. Army's recovery of a craft that crashed in Italy in 1933, brought back to Wright Field."
+    claims: [ magenta-1933-crash ]
+    basis: relayed
+    status: claimed
+    by: eric-davis
+    source: v-2025-05-01-hearing-a@1:03:25
+  - text: "Knapp told the September 2025 hearing that the congressional investigator Richard D'Amato, sent by Senators Robert Byrd and Harry Reid, got into Area 51 and came to believe the reverse-engineering program had moved inside corporations."
+    claims: [ area-51-alien-craft ]
+    basis: relayed
+    status: claimed
+    by: george-knapp
+    source: v-2025-09-09-hearing-a@1:59:32
 ---
 
 "Crash retrieval and reverse engineering" is the allegation that the United States, and possibly other nations, have recovered craft of non-human origin, in some accounts with their occupants, and run secret programmes to study and copy their technology. The modern story has a lineage. The FBI's 1950 Hottel memo relayed an informant's tale of three saucers recovered in New Mexico; Leonard Stringfield collected retrieval accounts from 1978 and said himself they could be considered hearsay; Bob Lazar's 1989 interviews with George Knapp, about working on recovered alien craft at a site called S-4 near Area 51, became the template for the genre, though his account is unverified and he is outside this archive's sourcing criteria; and Col. Philip Corso's 1997 book *The Day After Roswell* claimed he fed Roswell artifacts into industry, a claim the MoD was told rested on a record of unreliable testimony. The unverified Wilson–Davis notes of 2002, entered into a House record in 2022, describe a former DIA director refused access to a contractor's reverse-engineering programme.

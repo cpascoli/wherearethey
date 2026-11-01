@@ -34,6 +34,8 @@ moments:
     speaker: george-knapp
     refs: [ james-lacatski, aawsap ]
   - t: "50:08"
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
     text: "Knapp says he has confirmed on the record that Robert Bigelow and an AAWSAP colleague negotiated with Lockheed Martin executives for BAASS to receive unusual material stored in California: “That material was not made here.”"
     speaker: george-knapp
     refs: [ robert-bigelow, lockheed-martin, aawsap, crash-retrieval ]
@@ -46,6 +48,8 @@ moments:
     speaker: dylan-borland
     refs: [ aaro ]
   - t: "54:32"
+    claims: [ recovered-non-human-craft ]
+    basis: first-hand
     text: "Borland says he was later exposed to classified information from “the UAP legacy crash retrieval program” through a special access program, and has faced over a decade of reprisals."
     speaker: dylan-borland
     refs: [ legacy-program, crash-retrieval ]
@@ -93,6 +97,8 @@ moments:
     speaker: george-knapp
     refs: [ eric-burlison ]
   - t: "1:48:03"
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
     text: "Knapp: James Lacatski told him the U.S. had managed to get inside a craft with no wings, rotor, tail or fuel; it took 14 months of DOPSR review to clear two sentences on it."
     speaker: george-knapp
     refs: [ james-lacatski, crash-retrieval, doc-dopsr-22-sb-0151 ]
@@ -113,6 +119,8 @@ moments:
     speaker: george-knapp
     refs: [ bob-salas, inc-malmstrom-1967, aaro ]
   - t: "2:20:24"
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
     text: "Asked to name gatekeepers, Knapp names Dr. James Ryder at Lockheed, and says the CIA primarily gave contractors the material and told them to keep it quiet."
     speaker: george-knapp
     refs: [ james-ryder, lockheed-martin, cia ]

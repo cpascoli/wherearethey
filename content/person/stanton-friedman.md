@@ -28,6 +28,24 @@ facts:
   - text: "When Philip Klass challenged him to find examples of the pica typeface used in an MJ-12 memo, Friedman produced 14 and Klass paid him $1,000; Friedman also showed that some MJ-12 papers were clearly hoaxes."
     status: claimed
     source: https://en.wikipedia.org/wiki/Stanton_T._Friedman
+  - text: "At the 2013 Citizen Hearing he said “there were at least three flying saucer crashes in new mexico” in early July 1947, including one near Corona."
+    status: claimed
+    by: stanton-friedman
+    source: v-2013-chd-roswell-1@14:14
+    claims: [ roswell-crashed-craft ]
+    basis: opinion
+  - text: "He called the Air Force's explanation “Project Mogul nonsense”: Mogul's purpose was secret, but its balloons and radar reflectors were ordinary materials the officers would have recognised."
+    status: claimed
+    by: stanton-friedman
+    source: v-2013-chd-roswell-2@20:41
+    claims: [ roswell-crashed-craft ]
+    basis: opinion
+  - text: "Asked for the best evidence of beings, he cited Betty and Barney Hill, “carefully investigated by Dr. Benjamin Simon”, a psychiatrist who held ten hypnosis sessions with each."
+    status: claimed
+    by: stanton-friedman
+    source: v-2013-chd-roswell-2@13:31
+    claims: [ hill-abduction ]
+    basis: opinion
 ---
 
 Stanton Friedman (1934–2019) was an American-Canadian nuclear physicist who left industry in 1970 to research UFOs full time. For fourteen years he had worked on classified nuclear propulsion programmes for General Electric, Aerojet, Westinghouse, TRW and McDonnell Douglas, where he was hired for the company's late-1960s UFO propulsion study. Calling himself "the flying saucer physicist", he lectured at more than 600 colleges, submitted a statement to the 1968 House symposium on UFOs and appeared twice at the United Nations.

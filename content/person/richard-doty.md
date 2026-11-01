@@ -37,14 +37,20 @@ facts:
     status: claimed
     by: richard-doty
     source: v-2025-02-28-rebelliously-curious-doty@20:47
+    claims: [ government-ufo-disinformation ]
+    basis: first-hand
   - text: "He says headquarters had him show the journalist Linda Moulton Howe a document sent by armed forces courier, with no indication of which parts were true, and that such material was “probably 60% truth and 40% non-truth”, prepared by what he calls the DIA's “Special Means Committee”."
     status: claimed
     by: richard-doty
     source: v-2025-02-28-rebelliously-curious-doty@1:25:56
+    claims: [ government-ufo-disinformation ]
+    basis: first-hand
   - text: "He says that because secret aircraft such as the F-117, the F-22 and the SR-71 have to fly and will be seen, “there's a program that may be discredit or disinformed people that, Hey, what you're seeing is UFOs. It's not … U S craft.”"
     status: claimed
     by: richard-doty
     source: v-2020-02-21-mystery-wire-doty-part-2@3:57
+    claims: [ government-ufo-disinformation ]
+    basis: first-hand
   - text: "He says that in 1983 or 1984 he and three other agents attended a UFO conference on a collection assignment, taking photographs and making contacts, and that researcher Bill Moore was an AFOSI source who reported back to them."
     status: claimed
     by: richard-doty
@@ -61,12 +67,21 @@ facts:
     status: claimed
     by: richard-doty
     source: v-2020-02-21-mystery-wire-doty-part-4@1:32
+    claims: [ area-51-alien-craft ]
+    stance: context
+    basis: first-hand
   - text: "A 2026 episode on the Ellsworth AFB case argues that the “L9 incident” document, claiming aliens fired a beam at security police in November 1977, was a fabrication tied to Doty and meant to discredit the real case."
     status: unverified
     source: v-michels-ellsworth-reunion-2026@1:51:39
   - text: "Paul Hellyer repeated the “Project Serpo” alien-exchange story, which is widely traced to Doty."
     status: unverified
     source: https://en.wikipedia.org/wiki/Paul_Hellyer
+  - text: "On Bennewitz: “Paul was the easiest person to convince that what he was … seeing was, in fact, UFOs. And that's all we had to do … So I had to do was agree with him.” He denies feeding him information, and says nine other people were involved."
+    status: claimed
+    by: richard-doty
+    source: v-2025-02-28-rebelliously-curious-doty@12:00
+    claims: [ government-ufo-disinformation ]
+    basis: first-hand
 ---
 
 Richard "Rick" Doty is a former special agent of the Air Force Office of Special Investigations (AFOSI), who says he served from 1978 to 1988, mainly at Kirtland Air Force Base in New Mexico. He is the best-known figure in the history of government UFO disinformation. By his own account, he helped feed false UFO stories to the Albuquerque businessman and researcher Paul Bennewitz to keep him from exposing classified work at Kirtland, watched UFO conferences on collection assignments, handled the researcher Bill Moore as a source, and was ordered to show the journalist Linda Moulton Howe a document mixing truth and deception. His name is attached to several of the most influential forged or doubtful UFO documents, including the MJ-12 papers, which AFOSI itself called "completely bogus".

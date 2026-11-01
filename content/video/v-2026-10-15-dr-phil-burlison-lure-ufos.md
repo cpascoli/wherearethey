@@ -30,6 +30,8 @@ moments:
     speaker: eric-burlison
     refs: [ inc-western-us-orbs-2025, usper-statement-about-uap-sighting ]
   - t: "28:53"
+    claims: [ recovered-non-human-craft ]
+    basis: opinion
     text: "On recovered craft: \"I would be surprised if that were not true\", though he does not hold a security clearance and cannot be certain."
     speaker: eric-burlison
     refs: [ crash-retrieval ]

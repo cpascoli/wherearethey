@@ -32,17 +32,23 @@ facts:
     by: scott-bray
     source: doc-transcript-2022-05-17
   - text: "He testified that “When it comes to material that we have, we have no material”, and that no emanations had been detected suggesting anything nonterrestrial."
-    status: claimed
+    status: documented
     by: scott-bray
     source: v-2022-05-17-hearing@53:02
+    claims: [ recovered-non-human-craft ]
+    stance: disputes
+    basis: documented
   - text: "He said there had been no collisions but “at least 11 near misses”, that no communication signals had been detected from the objects, and that the task force had never fired on a UAP."
     status: documented
     by: scott-bray
     source: doc-transcript-2022-05-17
   - text: "He cited the 2004 Nimitz incident as an unexplained case: “We have data on that, and that simply remains unresolved”, and said there had been at least 11 near misses."
-    status: claimed
+    status: documented
     by: scott-bray
     source: v-2022-05-17-hearing@1:16:04
+    claims: [ tic-tac-beyond-known-technology ]
+    stance: context
+    basis: documented
   - text: "Asked by Rep. Mike Gallagher about the reported Malmstrom incident in which ten ICBMs went offline, he said the data was not in the task force's holdings: “I have heard stories. I have not seen the official data on that.”"
     status: documented
     by: scott-bray
@@ -51,6 +57,13 @@ facts:
     status: documented
     by: scott-bray
     source: doc-transcript-2022-05-17
+  - text: "Asked by Rep. Mike Gallagher about the reported Malmstrom incident in which ten ICBMs went offline under a red orb, he said the data is not in the task force's holdings: “I have heard stories.”"
+    status: claimed
+    by: scott-bray
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    stance: context
+    basis: first-hand
+    source: v-2022-05-17-hearing@56:57
 ---
 
 Scott Bray was Deputy Director of Naval Intelligence and the official face of the Navy's UAP effort when Congress held its first open UAP hearing in more than 50 years, before the House Intelligence subcommittee on 17 May 2022. The Navy had run the UAP Task Force since August 2020, building on aviators' reports from training ranges, and Bray had approved its security classification guide.

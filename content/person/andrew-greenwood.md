@@ -12,6 +12,19 @@ facts:
     status: claimed
     by: andrew-greenwood
     source: v-7news-spotlight-ufo-phenomenon-2021@53:17
+  - text: "He recalls teaching a Year 9 science class when a pupil burst in: “Mr Greenwood, there’s a flying saucer!”"
+    status: claimed
+    by: andrew-greenwood
+    claims: [ westall-craft-landed ]
+    basis: first-hand
+    source: v-7news-spotlight-ufo-phenomenon-2021@46:42
+  - text: "In archival footage he says two men, one in uniform, told him he had seen nothing and threatened him with losing his job and prosecution."
+    status: claimed
+    by: andrew-greenwood
+    claims: [ westall-craft-landed ]
+    stance: context
+    basis: first-hand
+    source: v-abc-westall-australian-story@21:40
 ---
 
 Science teacher at Westall High School who saw the 1966 object after a pupil ran into his class. He gave interviews close to the time and again decades later (7NEWS Spotlight, 2021), and his account has stayed consistent: an object over the school grounds, followed by pressure from RAAF officers to stay silent. As a civilian he is not an official source, but Westall qualifies under the mass-sighting rule.

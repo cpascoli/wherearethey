@@ -21,10 +21,14 @@ facts:
     status: claimed
     by: parviz-jafari
     source: v-npc-2007-ufo-close-encounters@25:45
+    claims: [ tehran-1976-object ]
+    basis: first-hand
   - text: "He says smaller objects separated from the main one, that when one came towards him he tried to fire a heat-seeking missile but his weapons panel went out and his radio was garbled, and that one object landed in an open area, radiating enough light to see the sand."
     status: claimed
     by: parviz-jafari
     source: v-npc-2007-ufo-close-encounters@26:40
+    claims: [ tehran-1976-object ]
+    basis: first-hand
   - text: "The U.S. defense attaché report of the incident, circulated by the DIA, records that the second F-4's weapons control panel and communications went dead as the pilot prepared to fire an AIM-9; the DIA evaluator called it an outstanding case that met all criteria for a valid study of the UFO phenomenon."
     status: documented
     source: doc-dia-tehran-1976

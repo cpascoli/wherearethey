@@ -43,6 +43,8 @@ moments:
     speaker: uyrange-hollanda
     refs: [ inc-operacao-prato-1977 ]
   - t: "72:30"
+    claims: [ colares-craft-observed ]
+    basis: first-hand
     text: "The craft stood vertically in front of the boat, about 100 m tall, then rose and shot away with red and green lights. He interprets this as “an intelligence… a merciful intelligence”."
     speaker: uyrange-hollanda
     refs: [ inc-operacao-prato-1977, nhi ]
