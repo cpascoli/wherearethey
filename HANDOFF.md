@@ -1,69 +1,87 @@
-# Handoff: Where Are They — UAP archive, ongoing content and app work
+# Handoff: Where Are They — file the strong cases from the missing MoD UFO releases
 
-- **Branch:** `task/archive-continuation` (base: `main`; everything else is already merged and pushed to `main` at `12bfa0f`)
+- **Branch:** `task/archive-continuation` (base: `main` at `12bfa0f`; this branch adds a refreshed `content/lastmod.json` and this file, nothing merged yet)
 - **Repo:** `cpascoli/wherearethey` (live at https://wherearethey.info, Netlify deploys `main`)
-- **Updated:** 2026-11-01 08:26 +07 by claude-code-local
-- **Status:** done (no task in progress); this branch only adds a refreshed `content/lastmod.json` and this file
-- **Claude session id (same-machine resume only):** 3f4eb228-05c1-4262-8f20-f078c634e0a6
+- **Updated:** 2026-11-01 09:55 +07 by claude (cloud session; it could not download PDFs, so the filing moves to the laptop)
+- **Status:** research done, filing not started
+- **Triage report (read first):** https://claude.ai/artifact/KSzYs6vvDgWYy4Y9e4xkwZ ("Missing MoD UFO files: 2010 releases triage")
 
 ## Goal
-An open-ended curation session on a sourced UAP/NHI archive: file official records, videos and testimony with
-verified quotes, moments (timestamped notes on videos), counter-evidence and links. The last request
-(file Linda Moulton Howe's 1998 "Agent Kewper" audio) is finished and live. Read `CLAUDE.md` first: it is the
-project's rulebook (sourcing rule, entry format, statuses, commands).
+Three National Archives MoD UFO releases are missing from the archive: **March 2009**, **February 2010**, **August 2010**
+(about 48 files). The user does NOT want them bulk-filed as graph content. File only the strong cases (unresolved, with
+pilots / controllers / military / police witnesses, instrument data, or many independent witnesses), with counter-evidence
+as usual, and strengthen existing pages. The user approved the shortlist in the report's Recommendation section.
+Read `CLAUDE.md` first (sourcing rule, entry format, outcome statuses, quote verification).
 
 ## Current state
-- All 149 PURSUE (war.gov/UFO) DVIDS videos/audio have entries in `content/video/` with moments:
-  NASA's 15 recordings (`v-19xx-*`, transcribed), military/FBI/police sensor clips (`v-pursue-*`, moments from
-  AARO's timecoded descriptions, some checked against frames), Ruppelt 1952 (`v-1952-03-26-ruppelt-presentation`).
-- They play in our own `<video>` player from DVIDS's MP4 (URLs + posters in `content/dvids.json`, filled by
-  `npm run dvids:thumbs`). Incident/org pages show them in an "Official footage" carousel with "▶ N moments".
-- New incidents this session: `inc-lake-huron-2023`, `inc-uscg-tyndall-2024`, `inc-pacific-uaptf-2019`,
-  `inc-us-domestic-uap-1996-2026`. Roswell gained `jesse-marcel`, `sheridan-cavitt`, `irving-newton`,
-  `walter-haut`, the 1995 Air Force report, two National Archives 1990 reunion tapes (streamed from archive.org).
-- Film `film-the-anonymous-interview` + two audio entries `v-1998-lmh-agent-kewper-1/2` (streamed from our R2 copy,
-  `stream: media/lmh-kewper-1998-N/audio.mp3`, uploaded and verified `audio/mpeg`).
-- App (`site/assets/app.js`): search picks open full width on desktop with a trail started behind; records/news/claims
-  anchor on a graph file (`graphAnchor`); single-file trails centre on their file; selected node has a halo.
+- Nothing filed yet. No files from these releases are in `library/docs/mod-ufo/` or `content/document/`.
+- Filed releases (`content/document/doc-mod-ufo-files-*.md`): May 2008, Oct 2008, Aug 2009, Mar 2011, Aug 2011, Jul 2012, Jun 2013.
+- The Black Vault (our usual mirror) does not host the 2010 releases; get the PDFs from The National Archives (Discovery,
+  digital copies are free downloads) or another mirror. Discovery pages block scripted fetches; use Chrome.
+
+## File lists (from the Archives' research guides; verify against Discovery)
+- **March 2009:** DEFE 24/1938; DEFE 31/176, 177, 178, 179, 180, 181 (DI55, Nov 1987–Apr 1993). Highlights guide:
+  https://cdn.nationalarchives.gov.uk/documents/mar-2009-highlights-guide.pdf (gives page numbers per case).
+- **February 2010 (24 files, >6,000 pages, 1994–2000):** reports DEFE 24/1977, 1988, 1989, 1990, 2007, 2008, 2009, 2010;
+  PQs 1971; correspondence 1966–1969, 1979–1981, 1994; persistent correspondents 2000, 2002, 2003, 2016, 2017, 2029
+  (the guide also lists 2091, which we already have under Aug 2011).
+- **August 2010 (18 files):** DEFE 24/1973, 1978, 1982, 1983, 1991, 1992, 1993, 1995, 1996, 1998, 2001, 2004, 2012, 2013,
+  2014, 2015, 2042, 2045 (list from the release's own PDF names; the 2013 guide omits 1991 and 2004).
 
 ## Next steps
-1. Merge this branch into `main` and push only when the user says "push" (their rule): `git checkout main && git merge task/archive-continuation`.
-2. Optional, offered to the user and not yet requested: frame-check more of the auto-generated sensor-video moments
-   (`content/video/v-pursue-pr*.md`, generated by scripts in the old job dir, see "Files"), or add moments beyond AARO's.
-3. Open threads from earlier sessions (none started): re-run `npm run archive:sources` for ~60 failed pages; file the
-   Project Grudge report (Commons PDF); 34 `related to` links (`npm run check -- --related`); missing MoD releases.
+1. Download only the files that back the shortlist below into `library/docs/mod-ufo/` (`npm run add:doc` or Chrome),
+   OCR with `node scripts/ocr.mjs`. Each gets its own `content/document/` entry WITHOUT `search: optin` (CLAUDE.md:
+   "files that back a case get their own document").
+2. New incidents, strongest first (find the pages, verify every quote word for word against our `.txt`):
+   1. BA 5061 near-miss on the Manchester approach, 6 Jan 1995 (Capt Roger Wills, F/O Mark Stuart; no radar return;
+      CAA called the object "unassessable") — Feb 2010, report file not yet identified (try 1977/1988).
+   2. Heathrow tower: two controllers, black inverted-boomerang object, 17 Dec 1992 — DEFE 31/181 p128.
+   3. Britannia Airways 737 near-miss with a Mach 3 object off Elba, 1 May 1992 — DEFE 31/181 p353.
+   4. Prestwick ATC radar track >1,000 knots, Feb 1999 — Feb 2010, likely DEFE 24/2009 or 2010.
+   5. Howden Moor, Peak District, 24 Mar 1997: booms, 15-hour police/mountain-rescue search, BGS sensor — counter-evidence:
+      27 May 1998 RAF P&SS report (six Tornado GR1As from RAF Marham; booms unexplained). File location unconfirmed
+      (Aug 2010 per press; David Clarke says 2011 — check `/mod-files` search for "Howden" first, it may already be in a 2011 file).
+   6. RAF Cranwell "possible missile", 11 Sep 1991, RAF pilot + student, police, radar check — DEFE 31/180 p149.
+   7. Louth, Lincolnshire, three-light triangle, numerous witnesses, 9 Dec 1992 — DEFE 31/181 pp281–282.
+   8. Only if the pages hold up: helicopter crew encounter 21 Feb 1988 (DEFE 31/176 p257); Belfast Airport Dec 1989
+      (DEFE 24/1938 pp2–9; DEFE 31/179 pp209–217). Maybe: black triangle near Michael Howard's home, Kent, 8 Mar 1997.
+3. Strengthen existing pages:
+   - `inc-rendlesham-1980`: DEFE 24/1995 (Penniston + Halt interview transcripts), 24/2042 (2002 Ombudsman ruling),
+     24/1983 (MoD position statement, as counter-evidence).
+   - `inc-calvine-1990`: add DEFE 31/179 and 31/180 as local sources (already cited by reference).
+   - `inc-tornado-north-sea-1990`: DI55's Soviet rocket-body explanation (DEFE 31/180 pp180–182) — decide `outcome` per the rules.
+   - Cosford 1993 (search `content/incident` for cosford): DI55's Cosmos re-entry finding (DEFE 31/181 pp46–72) if missing.
+4. Open choice, asked in a comment on the report and not yet answered: also add the full three releases to the
+   `/mod-files` search page (release documents with `search: optin`, ~48 files, OCR, then the user's `r2:push` + `r2:index`)?
+   That adds nothing to the graph. Ask before doing it.
+5. `npm run check`, commit on this branch; merge to `main` and push only when the user says "push".
 
 ## Decisions (and why)
-- Commit locally, push only when the user says "push"; user runs `npm run r2:push` / `r2:index` themselves — Netlify build minutes and their control over publishing.
-- Sensor-video entries get NO `about` link to their incident/org; only the 1–3 strongest moments carry `refs: [ <incident> ]` — otherwise they duplicated the carousel in "Watch" and flooded "Video moments" (user complaint on the NASA page).
-- Records/news/claims are not graph nodes; search opens them via `graphAnchor` — user picked "PR001" and saw nothing selected.
-- Counter-evidence is always included (e.g. Cavitt/Newton on Marcel, Biden's "most likely balloons" on Lake Huron, PR021 "probable SU-27/35").
-- President's 2023 remarks are a web source, not a document — user did not want them as a graph node.
-- Anonymous witnesses get no person file; never publish the real name a researchers' readme suggests for "Agent Kewper" (private, unconfirmed).
-- Quotes are verified word for word against our own copies (record text, transcripts, `library/docs/*.txt`, local `sources/web/*.txt`, which stay uncommitted for copyright).
+- Shortlist only, no bulk graph entries — user's explicit wish ("only the interesting ones … not explained and resolved").
+- Skipped on purpose: single-witness civilian reports (Ebbw Vale "tube of light" 1997, Kingstanding 1997, Wakefield 1995,
+  East Grinstead 1995), the Churchill wartime-sighting letter (third-hand hearsay), Bonnybridge (a councillor's request, not
+  a sighting), explained cases (Ford Mondeo airship, refuelling exercise, jettisoned fuel, Cosmos re-entry as a standalone case),
+  the 4 Jan 1992 North Atlantic captain report (DI55: possibly meteorological), all correspondence/FOI/PQ files.
+- Boston/Skegness 1996 is already filed (`inc-boston-skegness-1996`), so not on the shortlist.
+- Commit locally, push only on the user's "push"; the user runs `npm run r2:push` / `r2:index` themselves.
 
 ## Tried and rejected
-- yt-dlp / `npm run fetch` on YouTube — bot check or HTTP 429; do not use the user's Chrome cookies. Use oEmbed for metadata, audio from other hosts + `node scripts/transcribe.mjs`.
-- Streaming the Kewper MP3 from raw.githubusercontent.com — served as `application/octet-stream` + `nosniff`, risky on iOS; we stream our R2 copy instead.
-- DVIDS embed iframe in headless Chrome returns 403 (bot protection); it works in a normal browser. Our player uses DVIDS's MP4 directly.
-- NARA "Roswell Mystery" volumes 7, 12, 15, 16 — silent or studio footage; not filed.
+- Downloading from the cloud workspace: The Black Vault and nationalarchives.gov.uk are outside its network allowlist (403).
+- WebFetch on Discovery catalogue pages returns empty; beta.nationalarchives.gov.uk is robots-blocked. Use Chrome on the laptop.
+
+## Open questions for the user
+- Full releases on the MoD search page too, or shortlist only? (comment on the report)
+- DEFE 24 numbers 1932–1937, 1944–1947, 1950, 2011, 2051 appear in no release checked: closed, non-UFO, or missing? One Discovery check.
 
 ## Verify
 ```
-npm run check            # expect "0 warnings · 0 errors" (the "34 related to" note is old and fine)
-npm run dev              # http://localhost:4321 ; rebuild ~2 min
-node <job tmp>/vq.mjs <video-id>   # moment quotes vs transcript (see Files)
+npm run check            # expect "0 warnings · 0 errors"
+npm run dev              # http://localhost:4321
 ```
-Manual: https://wherearethey.info/organization/nasa (carousel + 10 video moments, no Watch list);
-search "PR001" → full-width record, collapse (⤡) → its video centred in the graph with a halo.
-
-## Open questions for the user
-- none
+Manual: each new incident page shows its facts with page-cited sources and counter-evidence; Rendlesham shows the new files.
 
 ## Files that matter
-- `CLAUDE.md` — project rules and commands (updated this session: footage entries, search behaviour, record anchors).
-- `site/assets/app.js` — app; `scripts/build.mjs`, `scripts/pages.mjs` — build; `scripts/relations.mjs` — link labels (new: `shown at`/`showed`).
-- `scripts/dvids-thumbs.mjs`, `content/dvids.json` — DVIDS posters/MP4s.
-- `content/video/v-pursue-*.md`, `content/video/v-19*-*.md` — the footage entries.
-- Helper scripts (outside the repo, same machine only): `/Users/carlo/.claude/jobs/3f4eb228/tmp/` — `tx.mjs` (print transcript), `vq.mjs` (verify moment quotes), `qfacts.py`, `rec/hs.mjs` (page text via headful Chrome), generators `cc/mk.py`, `cc2/mk.py`, `u33/mk.py`.
+- `CLAUDE.md` — rules; `content/document/doc-mod-ufo-files-*.md` — release document format; `content/document/doc-mod-defe-24-1931.md` — single-file case document format.
+- `content/incident/inc-calvine-1990.md`, `inc-rendlesham-1980.md`, `inc-tornado-north-sea-1990.md`, `inc-boston-skegness-1996.md` — pages to extend / reference.
+- `scripts/ocr.mjs`, `scripts/mod-index.mjs`, `site/mod-files.html`.
 - Do not commit the user's untracked files: `docs/`, `reports/`, `research_notes/`, `media/3ghztFdMnmw/`, `start.sh`, `sources/web/*`.
