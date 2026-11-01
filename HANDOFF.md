@@ -1,6 +1,6 @@
 ---
 runtime: claude-local
-updated: 2026-11-01T05:28:11Z
+updated: 2026-11-01T05:46:17Z
 session_id: 1b53c348-8471-4860-80b9-183d056a10eb
 ---
 # Handoff: Where Are They — file the strong cases from the missing MoD UFO releases
@@ -8,7 +8,7 @@ session_id: 1b53c348-8471-4860-80b9-183d056a10eb
 - **Branch:** `task/archive-continuation` (base: `main` at `12bfa0f`; this branch adds a refreshed `content/lastmod.json` and this file, nothing merged yet)
 - **Repo:** `cpascoli/wherearethey` (live at https://wherearethey.info, Netlify deploys `main`)
 - **Updated:** 2026-11-01 12:40 +07 by claude-local (laptop)
-- **Status:** shortlist filed (9 new or extended cases, 10 documents), all committed on this branch; two optional files not yet downloaded (see Next steps); nothing pushed since the pickup commits
+- **Status:** shortlist filed (10 new or extended cases, 12 documents), all committed on this branch; only DEFE 31/176 (optional) left; nothing pushed since the pickup commits
 - **Triage report (read first):** https://claude.ai/artifact/KSzYs6vvDgWYy4Y9e4xkwZ ("Missing MoD UFO files: 2010 releases triage")
 
 ## Goal
@@ -31,19 +31,17 @@ Read `CLAUDE.md` first (sourcing rule, entry format, outcome statuses, quote ver
 - **Documents:** case docs `doc-mod-defe-24-1961`, `-24-1983`, `-24-1995`, `-24-2018`, `-24-2042`, `-31-179`, `-31-180`, `-31-181`;
   release docs `doc-mod-ufo-files-2009-03` (4 of 7 files held), `-2010-02` (24/1988, 24/2007 held), `-2010-08` (24/1983, 24/1995,
   24/2042 held), all `search: optin`; the March 2009 highlights guide added to `doc-tna-mod-ufo-files-guides`.
-- **Library:** `library/docs/mod-ufo/defe-{31-179,31-180,31-181,24-1938,24-1983,24-1988,24-1995,24-2007,24-2042}.pdf` + `.txt`
+- **Library:** `library/docs/mod-ufo/defe-{31-179,31-180,31-181,24-1938,24-1983,24-1988,24-1995,24-2007,24-2008,24-2042}.pdf` + `.txt`
   (the Archives' digital copies, downloaded by the user into `tmp/pdfs/defe/` in parts and merged with `pdfunite`; the `.txt` are
   committed, the PDFs need the user's `npm run r2:push`). Also in `tmp/pdfs/defe/` but not merged or used: DEFE 24/1977, 2009, 2010.
   Page numbers in the Archives' PDFs run one lower than the highlights guides' numbers.
 - **Decided not to file:** Belfast Airport 1989 (DEFE 24/1938 pp. 5–8, 31/179 pp. 208–213: one civilian witness; the checks are in
   `doc-mod-defe-31-179`'s facts); the Kent triangle of 8 Mar 1997 (not in DEFE 24/1988; its only "Michael Howard" entry is a hoax call).
-- **Not found:** Prestwick radar track Feb 1999 is not in DEFE 24/2007 (its Feb 1999 pages are ordinary reports): it needs DEFE 24/2008.
+- **Prestwick 1999** was in DEFE 24/2008 (not 2007): filed as `inc-prestwick-radar-1999`, outcome open (radar replays of three sites did not support the sighting; no explanation offered).
 - The user answered the scope question: **shortlist only**, no full releases on the search page.
 
 ## Next steps
-1. If the user downloads **DEFE 24/2008** (C10518759) into `tmp/pdfs/defe/`: merge parts with `pdfunite` into
-   `library/docs/mod-ufo/defe-24-2008.pdf`, `node scripts/ocr.mjs` it, grep for Prestwick / "1000 knots" / Feb 1999, file the case
-   if the pages hold up (ATC radar track, controllers), add the file to `doc-mod-ufo-files-2010-02`.
+1. ~~DEFE 24/2008~~ — done: `inc-prestwick-radar-1999` filed (pp. 274–276, 298–301), `doc-mod-defe-24-2008`, file added to the Feb 2010 release doc.
 2. If the user downloads **DEFE 31/176** (C10232690): check p. 256 (guide p. 257) for the 21 Feb 1988 helicopter report; file only if a
    location and crew are given; add the file to `doc-mod-ufo-files-2009-03`.
 3. The user runs `npm run r2:push` (new PDFs) and, if wanted, `npm run r2:index` for the search page; merge to `main` and push only on "push".
@@ -68,7 +66,7 @@ Read `CLAUDE.md` first (sourcing rule, entry format, outcome statuses, quote ver
   user download the PDFs into `library/docs/mod-ufo/` (named `defe-31-181.pdf` etc.) and run `node scripts/ocr.mjs` on each.
 
 ## Open questions for the user
-- Whether to order DEFE 24/2008 and DEFE 31/176 (asked; the user downloads from Discovery into `tmp/pdfs/defe/`, which works well:
+- Whether to order DEFE 31/176 (optional; asked; the user downloads from Discovery into `tmp/pdfs/defe/`, which works well:
   Discovery splits big files into `DEFE-xx-yyyy-1_N.pdf` parts).
 - (answered: shortlist only)
 - DEFE 24 numbers 1932–1937, 1944–1947, 1950, 2011, 2051 appear in no release checked: closed, non-UFO, or missing? One Discovery check.
