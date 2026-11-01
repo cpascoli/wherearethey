@@ -51,6 +51,15 @@ facts:
   - text: "These three documents were withheld as internal advice when the MoD released over 170 pages of its Rendlesham file in 2001; in 2002 the Parliamentary Ombudsman, while commending the MoD's handling, recommended their release as no harm could arise from twenty-year-old papers whose substance was public, and the MoD complied (pp. 18, 47–52)."
     status: documented
     source: library/docs/mod-ufo/defe-24-2042.pdf
+  - text: "The MoD's line in 1996, drafted for a letter from David Alton MP and for Martin Redmond MP's questions, was that Halt's report “was examined by the Department at the time and no other evidence of any matter of defence significance was found”; “all available evidence was examined at the time and we are satisfied that nothing of defence concern occurred in the location on the nights in question. No additional information has come to light over the last 15 years which calls the original judgement into question.” Asked who had assessed it and what interviews were held, the minister was to answer that “The report was assessed by the staff in my Department responsible for air defence matters. Since the judgement was that it contained nothing of defence significance no further action was taken”; Halt was never interviewed (DEFE 24/1983, pp. 76–78, 229–230)."
+    claims: [ rendlesham-craft-landed ]
+    stance: disputes
+    basis: documented
+    status: documented
+    source: library/docs/mod-ufo/defe-24-1983.pdf
+  - text: "Answering Redmond on 10 June 1996, the minister said that apart from the deputy base commander's report, “the documents held by my Department are internal staffing papers and correspondence from members of the public relating to the alleged events” (p. 116)."
+    status: documented
+    source: library/docs/mod-ufo/defe-24-1983.pdf
   - text: "Answering an inquiry from the U.S. in 2008, the MoD said it “had little interest in the matter at the time and even less interest now. Put simply, we consider the incident closed” (DEFE 24/2628, p. 144)."
     status: documented
     source: library/docs/mod-ufo/ufo-highlights-guide-2013.pdf
@@ -62,4 +71,4 @@ In the early hours of 28 December the deputy base commander, Lt. Col. Charles Ha
 
 Sceptics attribute the first night's lights to a bright fireball seen over southern England that night, and the flashing light to the Orford Ness lighthouse about five miles away: timings on Halt's tape put the light's flashes five seconds apart, the lighthouse's rate. Local police and foresters judged the depressions to be rabbit diggings, and the star-like lights have been matched to bright stars.
 
-*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Rendlesham_Forest_incident) · Halt memo (1981) · MoD file DEFE 24/2042 (The National Archives, opened August 2010)*
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Rendlesham_Forest_incident) · Halt memo (1981) · MoD files DEFE 24/1983 and DEFE 24/2042 (The National Archives, opened August 2010)*
