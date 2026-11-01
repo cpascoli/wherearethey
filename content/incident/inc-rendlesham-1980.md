@@ -33,6 +33,24 @@ facts:
     basis: relayed
     status: documented
     source: library/docs/mod-ufo/highlights-guide-09-08-11.pdf
+  - text: "The MoD's background note for three Parliamentary questions in October 1983, prompted by the News of the World's story, says Halt's report “was examined by the Air Staff and DS 8. It was concluded that there was nothing of defence interest in the alleged sighting. There was, of course, no question of any contact with ‘alien beings’ nor was any unidentified object seen on any radar recordings, as alleged in the News of the World.” It adds that a BBC investigation had concluded that “a possible explanation for the lights seen by the USAF personnel was the pulsating light of the Orfordness lighthouse some 6 - 7 miles away” (DEFE 24/2042, pp. 21, 25)."
+    claims: [ rendlesham-craft-landed ]
+    stance: disputes
+    basis: documented
+    status: documented
+    source: library/docs/mod-ufo/defe-24-2042.pdf
+  - text: "Defence minister Lord Trefgarne wrote to David Alton MP in June 1985 that “the report submitted by Col Halt in January 1981 was examined by those in the Department responsible for such matters and, as I have made clear in the past, it was considered to have no defence significance. We have since seen nothing to alter this view” (p. 28)."
+    status: documented
+    source: library/docs/mod-ufo/defe-24-2042.pdf
+  - text: "A former MoD Under Secretary (name redacted), who had headed the division supporting RAF operations from 1969 to 1972, wrote to Alton in May 1985 that “the very existence of this report was denied by the MOD until persistent researchers in the US secured its release under the American Freedom of Information Act in 1983”, and: “Unless Lt.Col. Halt was out of his mind, there is clear evidence in his report that British airspace and territory were intruded upon by an unidentified vehicle on two occasions in late December 1980 and that no authority was able to prevent this. If, on the other hand, Halt's report cannot be believed, there is equally clear evidence of a serious misjudgement of events by USAF personnel at an important base in British territory. Either way, the case can hardly be without Defence significance.” (pp. 30–31)"
+    claims: [ rendlesham-craft-landed ]
+    stance: context
+    basis: opinion
+    status: documented
+    source: library/docs/mod-ufo/defe-24-2042.pdf
+  - text: "These three documents were withheld as internal advice when the MoD released over 170 pages of its Rendlesham file in 2001; in 2002 the Parliamentary Ombudsman, while commending the MoD's handling, recommended their release as no harm could arise from twenty-year-old papers whose substance was public, and the MoD complied (pp. 18, 47–52)."
+    status: documented
+    source: library/docs/mod-ufo/defe-24-2042.pdf
   - text: "Answering an inquiry from the U.S. in 2008, the MoD said it “had little interest in the matter at the time and even less interest now. Put simply, we consider the incident closed” (DEFE 24/2628, p. 144)."
     status: documented
     source: library/docs/mod-ufo/ufo-highlights-guide-2013.pdf
@@ -44,4 +62,4 @@ In the early hours of 28 December the deputy base commander, Lt. Col. Charles Ha
 
 Sceptics attribute the first night's lights to a bright fireball seen over southern England that night, and the flashing light to the Orford Ness lighthouse about five miles away: timings on Halt's tape put the light's flashes five seconds apart, the lighthouse's rate. Local police and foresters judged the depressions to be rabbit diggings, and the star-like lights have been matched to bright stars.
 
-*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Rendlesham_Forest_incident) · Halt memo (1981)*
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Rendlesham_Forest_incident) · Halt memo (1981) · MoD file DEFE 24/2042 (The National Archives, opened August 2010)*

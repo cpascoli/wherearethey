@@ -28,6 +28,9 @@ facts:
   - text: Andrew Robinson's analysis for Sheffield Hallam University dates the negatives' arrival at the MoD to 10 September 1990 and their return to the Daily Record by 14 September, citing an MoD ministerial briefing (DEFE 31/179, pp. 156–157); the negatives have not been seen since.
     status: documented
     source: library/docs/doc-robinson-calvine-analysis.pdf
+  - text: "DEFE 31/180, the DI55 file for 1991–92, holds photocopies of the Calvine images (pp. 36–37) and a Defence Intelligence imagery tasking form (p. 55) enclosing five vu-foils “of an unidentified flying object” and asking for line drawings “with size and dimension where possible”; it is “a retask of an original passed in Sept 90”, the “original negatives are not available”, and the sensitivity of the material “suggests very special handling”, so the task was to go ad hoc to DI55 with minimum handling by listed personnel."
+    status: documented
+    source: library/docs/mod-ufo/defe-31-180.pdf
   - text: The surviving print is a genuine copy of the photograph the MoD analysed in 1990 and shows a real scene before the camera with no sign of later manipulation; there is insufficient data to say what the object is, and a hoax staged in front of the camera cannot be excluded.
     claims: [ calvine-craft-photographed ]
     stance: context

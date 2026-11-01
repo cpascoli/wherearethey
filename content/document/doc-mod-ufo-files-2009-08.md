@@ -25,6 +25,7 @@ rel:
   - [ prepared by, uk-mod ]
   - [ part of, doc-tna-mod-ufo-files-guides ]
   - [ includes, doc-mod-defe-24-1972 ]
+  - [ includes, doc-mod-defe-24-1961 ]
   - [ includes, doc-mod-defe-24-2086 ]
   - [ about, inc-rendlesham-1980, "DEFE 24/1948, opening with Halt's memo" ]
   - [ about, inc-belgian-wave-1989, "DEFE 24/1960, pp. 320–324, and DEFE 24/1970, pp. 86–87" ]
