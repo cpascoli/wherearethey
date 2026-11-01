@@ -8,7 +8,7 @@ aka:
 tags:
   - government
 facts:
-  - text: "The Department of War runs PURSUE at war.gov/UFO and is its largest contributor, with 257 of the 450 records in releases 01–06."
+  - text: "The Department of War runs PURSUE at war.gov/UFO and is its largest contributor, with 284 of the 478 records released through release 07 (October 2026)."
     status: documented
     source: pursue
 ---

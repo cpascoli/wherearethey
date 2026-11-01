@@ -24,7 +24,7 @@ moments:
   - t: "41:25"
     text: "Wiggins: “A self-luminous tic-tac-shaped object emerged from the ocean before linking up with three other similar objects”; the four left together with near-instantaneous acceleration, no sonic boom or exhaust, and radar tracks then dropped."
     speaker: alexandro-wiggins
-    refs: [ inc-uss-jackson-2023, inc-nimitz-2004 ]
+    refs: [ inc-uss-jackson-2023 ]
   - t: "42:25"
     text: "Wiggins: from years of operating there, “unidentified objects reoccur in United States operation areas off southern California.”"
     speaker: alexandro-wiggins

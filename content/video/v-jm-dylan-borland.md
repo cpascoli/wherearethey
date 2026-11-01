@@ -35,6 +35,10 @@ moments:
     text: "Borland believes the program has a genetics component consistent with Grusch's “biologics”, and agrees Glenn Gaffney has been named as a leader of the legacy program."
     speaker: dylan-borland
     refs: [ david-grusch, glenn-gaffney, legacy-program ]
+  - t: "1:19:05"
+    text: "Borland floats “the theory that a lot of that was red teaming the legacy program”: AATIP, OSAP and the UAP Task Force as a third party outside the program's “very group think”, meant to “have new theories come through and feed it back in”; “most of the people I know believe that there is some element that all of that was getting fed back into Legacy”."
+    speaker: dylan-borland
+    refs: [ legacy-program, aatip, uaptf ]
   - t: "1:36:24"
     text: "Borland: AARO's memorandum recorded his triangle sighting while the rest was placed in a special access program; he says AARO director Tim Phillips acknowledged his two drawings were classified under a security classification guide."
     speaker: dylan-borland

@@ -9,8 +9,11 @@ rel:
   - [ features, david-fravor ]
   - [ features, chris-mellon ]
   - [ about, inc-nimitz-2004 ]
-  - [ related to, uaptf ]
+  - [ mentions, uaptf, "The Pentagon set up the UAP Task Force in August 2020 to collect and analyze evidence gathered by service members" ]
 moments:
+  - t: "0:27"
+    text: "Whitaker: last August the Pentagon set up the UAP Task Force to collect and analyze evidence gathered by service members, who are now being encouraged to report these strange encounters."
+    refs: [ uaptf ]
   - t: "0:50"
     text: "Dietrich: “It was unidentified and that's why it was so unsettling to us … because we couldn't classify it”, but warns against jumping to conclusions or sensationalising it as “little green men”."
     speaker: alex-dietrich

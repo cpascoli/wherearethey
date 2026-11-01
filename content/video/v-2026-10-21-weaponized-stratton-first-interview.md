@@ -32,6 +32,10 @@ moments:
     text: "Knapp: “he was the only person I know of that was OSAP, ATIP and UAP task force.”"
     speaker: george-knapp
     refs: [ jay-stratton, aawsap, aatip, uaptf ]
+  - t: "18:41"
+    text: "Stratton: when something seemed to exceed U.S. technology he went to “industry experts”, Lockheed's “Skunk Works” and Boeing's “Phantom Works”, to brief them and ask “is this you?”; sometimes they answered “Jay, we can't talk to you”, because the work was on their own independent research and development money or with the Air Force."
+    speaker: jay-stratton
+    refs: [ boeing, lockheed-martin ]
   - t: "20:01"
     text: "On the Gimbal and GoFast videos and the \"sphere with a cube\" Lt. Graves saw: \"those things came across my desk. I was the first one to get them in the Pentagon because it was my job\"; he took them to Air Force colleagues to rule out U.S. systems."
     speaker: jay-stratton

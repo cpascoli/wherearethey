@@ -18,8 +18,11 @@ moments:
     speaker: jay-stratton
     refs: [ aawsap, uaptf ]
   - t: "2:31"
+    claims: [ recovered-non-human-bodies ]
+    basis: first-hand
     text: "Asked whether he has seen a body, or something that looked like it could be alive and sentient: “Absolutely.”"
     speaker: jay-stratton
+    refs: [ crash-retrieval ]
   - t: "3:01"
     text: "“What I witnessed initially was this humanoid-looking creature … looking at my son through the window as I got up to go to work”; he stresses he was “very, very awake” and adds: “That wasn't the first time I saw it”."
     speaker: jay-stratton
