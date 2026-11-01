@@ -16,6 +16,8 @@ links:
     url: https://vimeo.com/64939351
   - label: IMDb
     url: https://www.imdb.com/title/tt4083634/
+  - label: Howe's 1998 audio interview with the same witness (unofficial archive, GitHub)
+    url: https://github.com/richgel999/uap_resources/tree/main/kewper_lmh_interview
 facts:
   - text: "Corbell's description: in 1998 Linda Moulton Howe brought “a witness under the pseudonym AGENT KEWPER” on Coast to Coast AM, who said he had first-hand experience of extraterrestrials and their technologies and was then warned to cease all contact with her; “Fifteen years later, and fearing the end was near, the witness emerged from the shadows”, and Richard Dolan conducted the interview."
     status: claimed
