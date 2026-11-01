@@ -27,7 +27,7 @@ moments:
   - t: "11:10"
     text: "Callahan: at a briefing for the President's scientific staff and three CIA officers, a CIA man said “this event never happened, we were never here,” confiscated the data and swore those present to secrecy, adding it was the first time they had more than a minute of radar data on a UFO."
     speaker: john-callahan
-    refs: [ inc-jal-1628-1986 ]
+    refs: [ inc-jal-1628-1986, h-2013-citizen-hearing ]
   - t: "12:10"
     text: "Maj. George Filer (USAF, ret.): in January 1962, flying a KB-50J tanker from RAF Sculthorpe, London control asked his crew to intercept an unidentified object hovering on radar near Stonehenge."
     speaker: george-filer

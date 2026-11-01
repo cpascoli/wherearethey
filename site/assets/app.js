@@ -106,7 +106,8 @@
     for (const m of v.moments || []) {
       for (const id of new Set([...m.refs, m.speaker, ...of].filter(Boolean))) {
         if (!momentsFor.has(id)) momentsFor.set(id, []);
-        momentsFor.get(id).push({ video: v.id, ...m });
+        // a moment of the recording that names the hearing or event itself is one of its highlights, shown first
+        momentsFor.get(id).push({ video: v.id, ...m, hi: of.includes(id) && m.refs.includes(id) });
       }
     }
   }
@@ -1526,8 +1527,10 @@
     // curated moments
     const ms = e.type === 'video' ? (e.moments || []).map(m => ({ video: e.id, ...m })) : (momentsFor.get(e.id) || []);
     if (ms.length) {
-      h.push(`<div class="p-sec"><h4>Video moments <span>${ms.length}</span></h4><div data-collapse="10" data-fixed>${ms.sort((a, b) => a.video.localeCompare(b.video) || a.t - b.t).map(m => `
-        <div class="moment"><button class="ts" data-play="${m.video}@${m.t}">▶ ${fmtT(m.t)}</button><div><div>${esc(m.text)}</div>
+      // highlights first (moments tagged to the hearing or event itself), then the rest in session order
+      const part = id => byId.get(id)?.part || 0;
+      h.push(`<div class="p-sec"><h4>Video moments <span>${ms.length}</span></h4><div data-collapse="10" data-fixed>${ms.sort((a, b) => (b.hi ? 1 : 0) - (a.hi ? 1 : 0) || part(a.video) - part(b.video) || a.video.localeCompare(b.video) || a.t - b.t).map(m => `
+        <div class="moment${m.hi ? ' hi' : ''}"><button class="ts" data-play="${m.video}@${m.t}">▶ ${fmtT(m.t)}</button><div><div>${esc(m.text)}</div>
         <div class="who">${m.speaker && m.speaker !== e.id ? chip(m.speaker) : ''}${e.type !== 'video' ? chip(m.video) : m.refs.map(r => chip(r)).join('')}</div></div></div>`).join('')}</div></div>`);
     }
     if (e.pursue) {

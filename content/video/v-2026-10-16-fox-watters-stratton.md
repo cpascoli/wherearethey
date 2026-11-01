@@ -10,7 +10,7 @@ moments:
   - t: "1:06"
     text: "Stratton: the program \"gatekeeping the secret for over 80 years\" is in a secret Cold War race with adversaries to reverse-engineer the technology, \"like the Manhattan Project on steroids\"."
     speaker: jay-stratton
-    refs: [ legacy-program ]
+    refs: [ legacy-program, book-out-of-the-shadows ]
   - t: "1:55"
     text: "At DIA, responsible for emerging and disruptive technologies, he was shown a video of a black triangle over a nuclear missile silo; he says he determined it was neither ours nor an adversary's."
     speaker: jay-stratton
@@ -23,7 +23,7 @@ moments:
   - t: "3:34"
     text: "He says witnesses to crash recoveries describe numerous types of recovered bodies, and that the book details what he and his family saw at home."
     speaker: jay-stratton
-    refs: [ crash-retrieval ]
+    refs: [ crash-retrieval, book-out-of-the-shadows ]
     claims: [ recovered-non-human-bodies ]
     basis: relayed
 ---

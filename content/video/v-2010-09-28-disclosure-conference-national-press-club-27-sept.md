@@ -22,7 +22,7 @@ moments:
     basis: first-hand
     text: "Salas: on 24 March 1967, as deputy crew commander at Oscar Flight with Lt. Fred Meiwald, his topside guard reported strange lights, then called back screaming about a red glowing object about 30 ft across hovering above the front gate."
     speaker: bob-salas
-    refs: [ inc-malmstrom-1967 ]
+    refs: [ inc-malmstrom-1967, ev-ufo-nukes-press-conference-2010 ]
   - t: "9:37"
     claims: [ malmstrom-ufo-missile-shutdown ]
     basis: first-hand
@@ -34,13 +34,13 @@ moments:
     basis: relayed
     text: "Arneson says his Boeing supervisor, the engineer who investigated the Echo Flight shutdown, told him the missiles \"did not go down by themselves\" and that the Air Force told Boeing to stop the investigation and send no report."
     speaker: dwynne-arneson
-    refs: [ inc-malmstrom-1967, doc-341smw-history-1967 ]
+    refs: [ inc-malmstrom-1967, doc-341smw-history-1967, ev-ufo-nukes-press-conference-2010 ]
   - t: "13:17"
     claims: [ malmstrom-ufo-missile-shutdown ]
     basis: relayed
     text: "Robert Jamison, a missile targeting team commander, says that before being sent to restart Oscar Flight he was told a UFO had been seen over Roy, Montana, and saw on the job-control board that all of Oscar Flight was down, which he was told had happened once before, at Echo Flight."
     speaker: robert-jamison
-    refs: [ inc-malmstrom-1967 ]
+    refs: [ inc-malmstrom-1967, ev-ufo-nukes-press-conference-2010 ]
   - t: "17:52"
     claims: [ malmstrom-ufo-missile-shutdown ]
     stance: context
@@ -54,7 +54,7 @@ moments:
     basis: first-hand
     text: "On his memo: Third Air Force decided it was a British affair, so he wrote a \"cleaned-up memo\" of unexplained lights for the MoD. He later learned that the airmen involved had been harshly interrogated."
     speaker: charles-halt
-    refs: [ inc-rendlesham-1980, doc-halt-memo ]
+    refs: [ inc-rendlesham-1980, doc-halt-memo, ev-ufo-nukes-press-conference-2010 ]
   - t: "28:37"
     text: "Jerome Nelson: in the winter of 1963–64 his guard at Atlas site 9 near Roswell reported a fully illuminated round object hovering silently over the silo and shining a light on it, several times over the following month."
     speaker: jerome-nelson
@@ -69,7 +69,7 @@ moments:
     basis: first-hand
     text: "Fenstermacher: the topside security controller described a silent object “shaped like a fat cigar”, a white pulsating light with red and blue lights between the pulsations, above the launch control facility; it then moved along the access road and stopped over one of the missile silos."
     speaker: bruce-fenstermacher
-    refs: [ inc-warren-1976 ]
+    refs: [ inc-warren-1976, ev-ufo-nukes-press-conference-2010 ]
   - t: "45:12"
     text: "Fenstermacher: the SAC command post at F.E. Warren laughed, “When it eats the SAT team, call me back”; the security alert team never reached the launch facility as the object moved on, and the command post was not logging the calls until he demanded the officer in charge."
     speaker: bruce-fenstermacher
@@ -77,7 +77,7 @@ moments:
   - t: "48:50"
     text: "Robert Salas says the participants have signed affidavits. He reads the Air Force statement that no UFO it evaluated was ever a threat to national security, and calls it misleading."
     speaker: bob-salas
-    refs: [ inc-malmstrom-1967 ]
+    refs: [ inc-malmstrom-1967, ev-ufo-nukes-press-conference-2010 ]
 ---
 
 Complete recording of the 27 September 2010 press conference organised by researcher Robert Hastings at the National Press Club, from Hastings's introduction through all seven statements and the question-and-answer session (the extended version, with English subtitles). A third-party upload; the transcript comes from YouTube's automatic captions.

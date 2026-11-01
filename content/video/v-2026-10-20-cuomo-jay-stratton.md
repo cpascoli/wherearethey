@@ -12,7 +12,7 @@ moments:
   - t: "1:45"
     text: "Asked whether he has seen an intelligent life form that is not human: “I have, and I go into great detail in my book”, in the line of duty from the DIA's original UAP program through the UAP Task Force, 2005 to the 2020s."
     speaker: jay-stratton
-    refs: [ uaptf ]
+    refs: [ uaptf, book-out-of-the-shadows ]
   - t: "1:55"
     text: "Stratton: his account covers what he saw in the line of duty from DIA's “original UAP program called OSAP, all the way through the UAP task force”, from 2005 into the 2020s."
     speaker: jay-stratton
@@ -36,7 +36,7 @@ moments:
     claims: [ programs-hidden-from-congress ]
     text: "On the Legacy Program: “comprised of CIA, the Air Force, the Department of Energy, and the defense contractor community”, keeping “this 80-year secret from not only Congress, but the president”, in a race to reverse-engineer craft of non-human origin: “the country that wins that race is the superpower for the next 100 years.”"
     speaker: jay-stratton
-    refs: [ legacy-program, cia ]
+    refs: [ legacy-program, cia, book-out-of-the-shadows ]
 ---
 
 Jay Stratton, former director of the UAP Task Force, interviewed by Chris Cuomo on NewsNation's *CUOMO* about his memoir *Out of the Shadows*, broadcast on 20 October 2026 and posted by NewsNation the next day. Pressed for specifics, Stratton describes seeing a non-human being looking at his son through a window at his home near Washington, earlier encounters with seven- to eight-foot beings during field investigations, and the "Legacy Program" he says hides recovered craft from Congress and the president. All of it is his own account; no other witness or record is cited. Transcribed with Whisper.

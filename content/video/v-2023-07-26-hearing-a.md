@@ -8,7 +8,7 @@ moments:
   - t: "16:14"
     text: "Ranking Member Garcia notes that AARO director Sean Kirkpatrick testified his office has found no evidence of extraterrestrial activity, and that NASA has said the same."
     speaker: robert-garcia
-    refs: [ sean-kirkpatrick, aaro, h-2023-04-19 ]
+    refs: [ sean-kirkpatrick, aaro, h-2023-04-19, h-2023-07-26 ]
   - t: "22:34"
     text: "Moskowitz: if there is “nothing to conceal”, Congress should be let into Wright-Patterson Air Force Base, the Dugway Proving Ground “or even Groom Lake in Nevada”; he believes more is known about the 171 uncharacterized reports in AARO's analysis."
     speaker: jared-moskowitz
@@ -24,7 +24,7 @@ moments:
     basis: relayed
     text: "Graves: off Virginia Beach, two F/A-18 Super Hornets were split by a UAP, a dark gray or black cube inside a clear sphere, that came within 50 feet of the lead aircraft; the squadron filed a safety report but got no official acknowledgement."
     speaker: ryan-graves
-    refs: [ inc-roosevelt-2015 ]
+    refs: [ inc-roosevelt-2015, h-2023-07-26 ]
   - t: "29:36"
     text: "Grusch says he became a whistleblower through a PPD-19 urgent-concern filing with the Intelligence Community Inspector General in May 2022."
     speaker: david-grusch
@@ -38,11 +38,11 @@ moments:
     basis: relayed
     text: "Grusch: informed in the course of his official duties of a multi-decade UAP crash retrieval and reverse-engineering program, to which he was denied access."
     speaker: david-grusch
-    refs: [ crash-retrieval ]
+    refs: [ crash-retrieval, h-2023-07-26 ]
   - t: "34:29"
     text: "Fravor describes looking down from his F/A-18 at the small white “Tic Tac” object in 2004."
     speaker: david-fravor
-    refs: [ inc-nimitz-2004 ]
+    refs: [ inc-nimitz-2004, h-2023-07-26 ]
     claims: [ tic-tac-beyond-known-technology ]
     basis: first-hand
   - t: "35:52"
@@ -58,7 +58,7 @@ moments:
   - t: "49:27"
     text: "Asked whether the government possesses UAP, Grusch answers “Absolutely, based on interviewing over 40 witnesses over 4 years,” and says he gave the exact locations to the Inspector General."
     speaker: david-grusch
-    refs: [ crash-retrieval, icig ]
+    refs: [ crash-retrieval, icig, h-2023-07-26 ]
     claims: [ recovered-non-human-craft ]
     basis: relayed
   - t: "50:26"
@@ -98,7 +98,7 @@ moments:
     basis: relayed
     text: "Asked whether Kirkpatrick's “no credible evidence” statement is correct, Grusch says “It is not accurate,” adding that some of the roughly 30 people who went to AARO were also people he interviewed."
     speaker: david-grusch
-    refs: [ sean-kirkpatrick, aaro, h-2023-04-19 ]
+    refs: [ sean-kirkpatrick, aaro, h-2023-04-19, h-2023-07-26 ]
   - t: "1:19:34"
     text: "Grusch: “I like to use the term nonhuman. I do not like to denote origin,” and dates the government's awareness to “previously 1930's.”"
     speaker: david-grusch
@@ -136,13 +136,13 @@ moments:
   - t: "1:49:13"
     text: "Asked whether the U.S. has the bodies of the pilots, Grusch: “biologics came with some of these recoveries”, and they were nonhuman — “the assessment of people with direct knowledge on the program I talked to that are currently still on the program.”"
     speaker: david-grusch
-    refs: [ nhi, crash-retrieval ]
+    refs: [ nhi, crash-retrieval, h-2023-07-26 ]
     claims: [ recovered-non-human-bodies ]
     basis: relayed
   - t: "1:54:59"
     text: "Fravor: “probably the most credible UFO sighting in history,” with “four sets of human eyeballs” plus the sensors: “It is not a joke.”"
     speaker: david-fravor
-    refs: [ inc-nimitz-2004 ]
+    refs: [ inc-nimitz-2004, h-2023-07-26 ]
     claims: [ tic-tac-beyond-known-technology ]
     basis: first-hand
   - t: "1:57:28"

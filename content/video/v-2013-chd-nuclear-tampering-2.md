@@ -21,6 +21,7 @@ moments:
     speaker: bob-salas
   - t: "14:05"
     text: "A former member reads a press report that the “citizen hearing foundation is paying them twenty thousand dollars plus expenses” and calls it insulting to suggest they could be bought; the fee was for five days of hearings."
+    refs: [ h-2013-citizen-hearing ]
   - t: "16:14"
     text: "Roscoe Bartlett describes the congressional EMP Commission, which he says found an electromagnetic-pulse attack could end the U.S. as a sovereign nation, to explain why missile vulnerability matters."
   - t: "17:43"

@@ -13,7 +13,7 @@ rel:
 moments:
   - t: "0:51"
     text: "The six former members of Congress sign a letter to the “veterans affairs administration” and the President asking for the release of Jim Penniston's and John Burroughs's Air Force medical records."
-    refs: [ inc-rendlesham-1980 ]
+    refs: [ inc-rendlesham-1980, h-2013-citizen-hearing ]
   - t: "2:29"
     text: "Paul Hellyer, Canada's former defence minister, says that in office he saw UFO sighting reports but “was too busy to be concerned about them at the time”, unifying the armed forces."
     speaker: paul-hellyer

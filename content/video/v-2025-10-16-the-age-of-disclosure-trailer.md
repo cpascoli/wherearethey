@@ -11,6 +11,7 @@ moments:
     text: "“We've had repeated instances of something operating in the airspace over restricted nuclear facilities and it's not ours.”"
   - t: "0:20"
     text: "“I have seen with my own eyes non-human craft and non-human beings.”"
+    refs: [ film-age-of-disclosure ]
   - t: "0:36"
     text: "“Even presidents have been operating on a need-to-know basis.”"
   - t: "0:48"

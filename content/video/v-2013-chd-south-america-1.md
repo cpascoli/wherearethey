@@ -61,7 +61,7 @@ moments:
   - t: "1:02:34"
     text: "From about 100 metres he saw that “this balloon was not a balloon”: about 10 m across, a cream enamelled dome on a wide silver metallic base, with no wings, engines or windows. “I am convinced that there is extraterrestrial technology and life.”"
     speaker: oscar-santa-maria
-    refs: [ inc-la-joya-1980 ]
+    refs: [ inc-la-joya-1980, h-2013-citizen-hearing ]
   - t: "1:13:48"
     text: "Argentine journalist Alejandro Chionetti on the Argentine Air Force's UFO commission, now led by “Commodore Guillermo Aloy”."
     refs: [ cefae ]

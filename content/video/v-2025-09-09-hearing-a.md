@@ -8,11 +8,11 @@ moments:
   - t: "19:46"
     text: "Luna, opening: former AARO director Sean Kirkpatrick “attacked our witnesses and members on this Committee”; she calls him “a documented liar”."
     speaker: anna-paulina-luna
-    refs: [ sean-kirkpatrick, aaro ]
+    refs: [ sean-kirkpatrick, aaro, h-2025-09-09 ]
   - t: "35:30"
     text: "Nuccetelli: the incursions began on October 14, 2003, when Boeing contractors reported a massive glowing red square silently hovering over two missile defense sites (the “Vandenberg Red Square”)."
     speaker: jeffrey-nuccetelli
-    refs: [ inc-vandenberg-2003 ]
+    refs: [ inc-vandenberg-2003, h-2025-09-09 ]
   - t: "35:50"
     text: "Nuccetelli: “Official Air Force records of this event are in possession by AARO and the FBI.”"
     speaker: jeffrey-nuccetelli
@@ -24,7 +24,7 @@ moments:
   - t: "41:25"
     text: "Wiggins: “A self-luminous tic-tac-shaped object emerged from the ocean before linking up with three other similar objects”; the four left together with near-instantaneous acceleration, no sonic boom or exhaust, and radar tracks then dropped."
     speaker: alexandro-wiggins
-    refs: [ inc-uss-jackson-2023 ]
+    refs: [ inc-uss-jackson-2023, h-2025-09-09 ]
   - t: "42:25"
     text: "Wiggins: from years of operating there, “unidentified objects reoccur in United States operation areas off southern California.”"
     speaker: alexandro-wiggins
@@ -38,7 +38,7 @@ moments:
     basis: relayed
     text: "Knapp says he has confirmed on the record that Robert Bigelow and an AAWSAP colleague negotiated with Lockheed Martin executives for BAASS to receive unusual material stored in California: “That material was not made here.”"
     speaker: george-knapp
-    refs: [ robert-bigelow, lockheed-martin, aawsap, crash-retrieval ]
+    refs: [ robert-bigelow, lockheed-martin, aawsap, crash-retrieval, h-2025-09-09 ]
   - t: "51:25"
     text: "Knapp on the Russian files he gave the Task Force: a USSR-wide order to collect UFO reports, feeding an analysis program he calls Thread III that aimed to build superior technology from what was learned."
     speaker: george-knapp
@@ -52,7 +52,7 @@ moments:
     basis: first-hand
     text: "Borland says he was later exposed to classified information from “the UAP legacy crash retrieval program” through a special access program, and has faced over a decade of reprisals."
     speaker: dylan-borland
-    refs: [ legacy-program, crash-retrieval ]
+    refs: [ legacy-program, crash-retrieval, h-2025-09-09 ]
   - t: "55:03"
     text: "Borland: at about 01:30 he saw a roughly 100 ft equilateral triangle take off from near the NASA hangar at Langley AFB."
     speaker: dylan-borland
@@ -91,7 +91,7 @@ moments:
   - t: "1:44:30"
     text: "Burlison plays a video he describes as taken on 30 October 2024: an MQ-9 tracking an orb off Yemen as another MQ-9 fires a Hellfire missile at it."
     speaker: eric-burlison
-    refs: [ inc-yemen-mq9-orb-2024 ]
+    refs: [ inc-yemen-mq9-orb-2024, h-2025-09-09 ]
   - t: "1:46:12"
     text: "Watching the Yemen video, Knapp: “that's a hellfire missile smacking into that UFO and just bounced right off”; Burlison adds that the debris seemed to be carried along with the object."
     speaker: george-knapp
@@ -101,7 +101,7 @@ moments:
     basis: relayed
     text: "Knapp: James Lacatski told him the U.S. had managed to get inside a craft with no wings, rotor, tail or fuel; it took 14 months of DOPSR review to clear two sentences on it."
     speaker: george-knapp
-    refs: [ james-lacatski, crash-retrieval, doc-dopsr-22-sb-0151 ]
+    refs: [ james-lacatski, crash-retrieval, doc-dopsr-22-sb-0151, h-2025-09-09 ]
   - t: "1:59:32"
     claims: [ area-51-alien-craft ]
     basis: relayed
@@ -131,7 +131,7 @@ moments:
   - t: "2:24:36"
     text: "Luna: the Task Force will move to seek immunity so Borland and others can testify in a SCIF without exposure under the Espionage Act."
     speaker: anna-paulina-luna
-    refs: [ dylan-borland ]
+    refs: [ dylan-borland, h-2025-09-09 ]
   - t: "2:27:21"
     text: "Replaying the Yemen video, Luna asks whether anything in the U.S. arsenal can split a Hellfire missile like that; Nuccetelli and Wiggins say nothing to their knowledge, Borland would answer in a SCIF."
     speaker: anna-paulina-luna

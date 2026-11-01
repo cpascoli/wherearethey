@@ -34,7 +34,7 @@ moments:
     basis: relayed
     text: "Von Rennenkampff relays former NORAD commander Gen. Glen VanHerck's statement on 60 Minutes that they tried to jam the Langley objects and failed."
     speaker: marik-von-rennenkampff
-    refs: [ inc-langley-2023 ]
+    refs: [ inc-langley-2023, ev-disclosure-forum-2026 ]
   - t: "10:49"
     text: "Von Rennenkampff: Wright-Patterson AFB was shut down in 2024 because of drone activity, with 15 to 30 objects on radar according to FOIA records."
     speaker: marik-von-rennenkampff
@@ -45,7 +45,7 @@ moments:
     basis: first-hand
     text: "Mellon: he sat on the Defense Department committee that reviews all special access programs and reports them to Congress, and “never saw anything related to UAP”, though workarounds such as alternative compensatory control measures exist."
     speaker: chris-mellon
-    refs: [ sap, legacy-program ]
+    refs: [ sap, legacy-program, ev-disclosure-forum-2026 ]
   - t: "36:23"
     text: "Mellon: people who think the government can't keep a secret are wrong; of hundreds of SAPs he knew, none leaked except one used in combat."
     speaker: chris-mellon
@@ -56,11 +56,11 @@ moments:
     basis: relayed
     text: "Mellon: one of the main crash-retrieval sources he first brought to Congress in 2019 said the program was closed because it was making no headway and spending a lot of money."
     speaker: chris-mellon
-    refs: [ crash-retrieval, legacy-program ]
+    refs: [ crash-retrieval, legacy-program, ev-disclosure-forum-2026 ]
   - t: "55:31"
     text: "Mellon: “nobody has ever been prosecuted for bringing classified information to Congress” in a secure setting; the Disclosure Foundation offers free legal advice to potential whistleblowers."
     speaker: chris-mellon
-    refs: [ uapdf ]
+    refs: [ uapdf, ev-disclosure-forum-2026 ]
   - t: "1:07:23"
     text: "Von Rennenkampff on PURSUE: six law enforcement officers saw fiery reddish orbs at western test ranges in 2023, and in late 2025 senior intelligence officials in a helicopter saw reddish-orange orbs; the government released 32 infrared images."
     speaker: marik-von-rennenkampff
@@ -68,7 +68,7 @@ moments:
   - t: "1:09:14"
     text: "Von Rennenkampff: the oldest PURSUE documents, from 1944–45, describe the same fiery-orb morphology as recent cases, as do Blue Book reports including the 1952 Washington sightings; he calls the releases a form of soft disclosure."
     speaker: marik-von-rennenkampff
-    refs: [ pursue, inc-dc-1952, project-blue-book, doc-war-gov-ufo ]
+    refs: [ pursue, inc-dc-1952, project-blue-book, doc-war-gov-ufo, ev-disclosure-forum-2026 ]
   - t: "1:12:59"
     text: "Mellon: he has helped Rep. Eric Burlison compile lists of specific UAP videos, and has seen some in classified settings that he thinks would “move the needle”."
     speaker: chris-mellon
@@ -96,7 +96,7 @@ moments:
     basis: relayed
     text: "McConnell: the Tic Tac case convinced him, after he sat down with David Fravor and Alex Dietrich: multiple witnesses, radar from the E-2C, the Aegis cruiser and an F/A-18, and infrared."
     speaker: kirk-mcconnell
-    refs: [ inc-nimitz-2004, david-fravor, alex-dietrich ]
+    refs: [ inc-nimitz-2004, david-fravor, alex-dietrich, ev-disclosure-forum-2026 ]
   - t: "1:23:32"
     claims: [ tic-tac-beyond-known-technology ]
     stance: disputes
@@ -104,7 +104,7 @@ moments:
     claim_by: sean-kirkpatrick
     text: "Gallaudet: Sean Kirkpatrick recently said in person in Arlington that the Tic Tac was a DARPA experiment, a narrative Gallaudet rejects."
     speaker: tim-gallaudet
-    refs: [ sean-kirkpatrick, inc-nimitz-2004 ]
+    refs: [ sean-kirkpatrick, inc-nimitz-2004, ev-disclosure-forum-2026 ]
   - t: "1:26:30"
     claims: [ tic-tac-beyond-known-technology ]
     stance: context
@@ -122,7 +122,7 @@ moments:
   - t: "1:30:18"
     text: "Mellon: The New York Times, through Helene Cooper and Leslie Kean, ran the story; when the committees did not react, he called Kirk McConnell, who set up the meetings that brought in Navy witnesses."
     speaker: chris-mellon
-    refs: [ ev-nyt-2017, leslie-kean, kirk-mcconnell ]
+    refs: [ ev-nyt-2017, leslie-kean, kirk-mcconnell, ev-disclosure-forum-2026 ]
 ---
 
 The national security panel of Disclosure Forum 2026, held on 25 June 2026 in the Senate's Kennedy Caucus Room and published by the Disclosure Foundation on 28 August 2026. NBC News correspondent Gadi Schwartz moderates Christopher Mellon, Rear Adm. Tim Gallaudet, Kirk McConnell and Marik von Rennenkampff.

@@ -192,7 +192,11 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     }
     // a hearing, event or news page lists the moments of its recordings, linked into each video
     if (['hearing', 'event', 'news'].includes(e.type)) {
-      const recs = (near.get(e.id) || []).filter(x => x.dir === 'in' && x.label === 'recording of' && byId.get(x.other)?.moments?.length).map(x => byId.get(x.other));
+      const recs = (near.get(e.id) || []).filter(x => x.dir === 'in' && x.label === 'recording of' && byId.get(x.other)?.moments?.length).map(x => byId.get(x.other))
+        .sort((a, b) => (a.part || 0) - (b.part || 0));
+      // the moments tagged to the hearing or event itself are its highlights, listed first
+      const hi = recs.flatMap(v => v.moments.filter(m => m.refs.includes(e.id)).map(m => [v, m]));
+      if (hi.length) h.push(`<h2>Highlights</h2><ol class="ssr-moments">${hi.map(([v, m]) => `<li><a href="${v.path}?t=${Math.floor(m.t)}">${hms(m.t)}</a> ${m.speaker ? `${link(m.speaker)}: ` : ''}${esc(m.text)}</li>`).join('')}</ol>`);
       for (const v of recs) h.push(`<h2>Key moments: ${esc(v.name)}</h2><ol class="ssr-moments">${v.moments.map(m => `<li><a href="${v.path}?t=${Math.floor(m.t)}">${hms(m.t)}</a> ${m.speaker ? `${link(m.speaker)}: ` : ''}${esc(m.text)}</li>`).join('')}</ol>`);
     }
     // a hearing transcript lists the moments of the hearing's recordings; a written statement, those of its author

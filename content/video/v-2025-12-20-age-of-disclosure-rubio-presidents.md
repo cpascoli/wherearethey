@@ -13,6 +13,7 @@ moments:
   - t: "0:19"
     text: "“Even presidents have been operating on a need-to-know basis”, the rationale being deniability; he doubts a president would even know whom to ask."
     speaker: marco-rubio
+    refs: [ film-age-of-disclosure ]
     claims: [ programs-hidden-from-congress ]
     stance: context
     basis: opinion

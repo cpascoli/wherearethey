@@ -24,7 +24,7 @@ moments:
     stance: context
     basis: documented
     text: "The object appears to race across the sea surface; AARO and NASA later found it was at about 13,000 feet, moving at roughly wind speed, the apparent speed coming from parallax."
-    refs: [ doc-aaro-gofast, doc-nasa-uap-study-2023 ]
+    refs: [ doc-aaro-gofast, doc-nasa-uap-study-2023, ev-dod-videos-2020 ]
 ---
 
 The 34-second infrared video recorded by an F/A-18 crew off the U.S. East Coast in January 2015, during the USS Theodore Roosevelt's pre-deployment exercises. It seems to show a small object skimming the ocean at high speed. It was published by To The Stars Academy and The New York Times in December 2017, and the Department of Defense authorized its official release on 27 April 2020.

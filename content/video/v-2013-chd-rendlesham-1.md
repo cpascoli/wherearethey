@@ -16,7 +16,7 @@ moments:
     basis: relayed
     text: "Pope: the Ministry of Defence's Defence Intelligence Staff assessed the radiation readings at the landing site as “significantly higher than the average background.”"
     speaker: nick-pope
-    refs: [ inc-rendlesham-1980, doc-halt-memo ]
+    refs: [ inc-rendlesham-1980, doc-halt-memo, h-2013-citizen-hearing ]
   - t: "8:15"
     text: "Pope: the MoD file shows that Gen. Charles Gabriel, commander of U.S. Air Forces in Europe, visited the twin bases soon after the incident and took items from the investigation back to Ramstein without informing the British."
     speaker: nick-pope
@@ -86,7 +86,7 @@ moments:
     basis: first-hand
     text: "Penniston says the craft hovered about two feet off the ground with no landing gear, did not move when pushed, and felt like smooth metal, warmer than the freezing air."
     speaker: jim-penniston
-    refs: [ inc-rendlesham-1980 ]
+    refs: [ inc-rendlesham-1980, h-2013-citizen-hearing ]
   - t: "1:09:05"
     text: "Pope: Halt's memo, released under FOIA in 1983, forced the authorities to acknowledge an incident after the press office had said nothing occurred."
     speaker: nick-pope

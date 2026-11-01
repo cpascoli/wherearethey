@@ -17,7 +17,7 @@ moments:
   - t: "5:19"
     text: "Does the U.S. government have non-human craft? \"Yes it does.\" \"I have seen non-human beings and non-human craft with my own eyes.\""
     speaker: jay-stratton
-    refs: [ crash-retrieval, nhi ]
+    refs: [ crash-retrieval, nhi, book-out-of-the-shadows ]
     claims: [ recovered-non-human-craft ]
     basis: first-hand
   - t: "5:48"
@@ -29,6 +29,7 @@ moments:
   - t: "6:40"
     text: "Baier reads from the book: \"our bait would be a nuclear submarine\". Stratton says he put a submarine off the East Coast with a Navy P-3, and on the first mission a UAP appeared and data was collected."
     speaker: jay-stratton
+    refs: [ book-out-of-the-shadows ]
   - t: "8:57"
     text: "On a friend's warning that \"they've done worse than threaten people\": \"steps have been taken to remove the problem and the people\"."
     speaker: jay-stratton
@@ -43,7 +44,7 @@ moments:
   - t: "10:55"
     text: "Why a book? He says he first briefed Congress in 2007, Senator Harry Reid, and kept briefing for 16 years until he retired."
     speaker: jay-stratton
-    refs: [ harry-reid ]
+    refs: [ harry-reid, book-out-of-the-shadows ]
 ---
 
 Bret Baier's interview with Jay Stratton, former DIA chief of air and space warfare and first director of the UAP Task Force, broadcast on Fox News's *Special Report* the day before his memoir *Out of the Shadows* was published. Stratton says on the record that he has personally seen non-human craft and beings, and that the government and defense contractors hold such craft. He offers no documents on air. AARO's 2024 historical report found no empirical evidence for such a program, and the program's existence is disputed by AARO's founding director, Sean Kirkpatrick. The segment opens with a podcast clip of the Health and Human Services secretary describing a meeting with former crash-retrieval team members. Transcribed locally with Whisper.

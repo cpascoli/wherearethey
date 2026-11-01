@@ -44,6 +44,7 @@ moments:
   - t: "45:24"
     text: "French: during about 12 years, “my primary job as a member of the osi was to debunk” UFO reports, with any explanation, such as swamp gas, to maintain secrecy."
     speaker: richard-french
+    refs: [ h-2013-citizen-hearing ]
     claims: [ government-ufo-disinformation ]
     basis: first-hand
   - t: "1:09:01"

@@ -36,7 +36,7 @@ moments:
     basis: relayed
     text: "John Callahan, retired FAA division manager for accidents and investigations, describes the JAL 1628 radar data being briefed to President Reagan's science staff, CIA and FBI, and a CIA man saying “this meeting never happened.”"
     speaker: john-callahan
-    refs: [ inc-jal-1628-1986, doc-faa-jal1628-terauchi-interview ]
+    refs: [ inc-jal-1628-1986, doc-faa-jal1628-terauchi-interview, ev-disclosure-project-2001 ]
   - t: "18:26"
     text: "Callahan says he still has the controllers' voice tapes, his video of the radar playback and the target printouts, and is prepared to swear to it before Congress."
     speaker: john-callahan
@@ -50,7 +50,7 @@ moments:
   - t: "27:58"
     text: "Kolbeck: on 15 September 1994 the Mexico City radar held one apparently motionless object for about five hours; the radar technicians confirmed the system was working well, and the next day he learned of a sighting by many people southeast of the airport."
     speaker: enrique-kolbeck
-    refs: [ inc-mexico-city-radar-1992 ]
+    refs: [ inc-mexico-city-radar-1992, ev-disclosure-project-2001 ]
   - t: "30:28"
     text: "Cmdr. Graham Bethune (USN, ret.) describes a night flight from Keflavik to Argentia on February 10, 1951, when a glowing object rose from the sea and paced the aircraft."
     speaker: graham-bethune
@@ -71,7 +71,7 @@ moments:
     basis: first-hand
     text: "As he told Meiwald about the calls, his missiles went down one after the other: “they went into a no-go condition”, unlaunchable; “we lost somewhere between uh six and eight weapons that morning”, within minutes of the second call. The command post then told them a very similar incident had happened at Echo Flight."
     speaker: bob-salas
-    refs: [ inc-malmstrom-1967 ]
+    refs: [ inc-malmstrom-1967, ev-disclosure-project-2001 ]
   - t: "45:16"
     claims: [ malmstrom-ufo-missile-shutdown ]
     basis: documented
@@ -86,7 +86,7 @@ moments:
     basis: first-hand
     text: "Larry Warren, a USAF security specialist at RAF Bentwaters in 1980, describes a three-night UFO event near the base's nuclear weapons store."
     speaker: larry-warren
-    refs: [ inc-rendlesham-1980 ]
+    refs: [ inc-rendlesham-1980, ev-disclosure-project-2001 ]
   - t: "1:05:58"
     text: "George Filer III, retired USAF intelligence officer, describes chasing a UFO on his aircraft's radar after a call from London control in the winter of 1962."
     speaker: george-filer
@@ -95,7 +95,7 @@ moments:
     basis: first-hand
     text: "Clifford Stone, retired Army Sergeant First Class, claims he took part in recoveries of crashed craft, some with bodies, including live occupants."
     speaker: clifford-stone
-    refs: [ crash-retrieval ]
+    refs: [ crash-retrieval, ev-disclosure-project-2001 ]
 ---
 
 The full May 9, 2001 Disclosure Project press conference at the National Press Club in Washington, D.C., introduced by actor John Cypher and hosted by Steven Greer. About twenty retired military, FAA, intelligence and contractor witnesses each spoke for a few minutes, then took questions from about 1:34:00. The moments use the witnesses' own introductions. Their service details are **self-described** and appear here only as they were said.

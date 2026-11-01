@@ -19,7 +19,7 @@ moments:
   - t: "16:45"
     text: "Loeb: “We should invest a billion dollars in figuring out what is in our sky” — AI analysis of state-of-the-art sensor data, useful for defense even if every object turns out to be human-made."
     speaker: avi-loeb
-    refs: [ galileo-project ]
+    refs: [ galileo-project, h-2025-05-01 ]
   - t: "25:57"
     text: "Loeb: the Galileo Project's observatories watch the sky in infrared, optical, radio and audio and now triangulate objects; sites in Pennsylvania and Nevada would bring the total to three."
     speaker: avi-loeb
@@ -34,6 +34,7 @@ moments:
   - t: "44:10"
     text: "Gallaudet: “today I call on the American scientific enterprise to mainstream UAP research”, which is shunned because of stigma and decades of DoD and intelligence disinformation."
     speaker: tim-gallaudet
+    refs: [ h-2025-05-01 ]
   - t: "47:27"
     text: "Gallaudet relays a former SH-60 crew chief aboard USS Dwight D. Eisenhower in 2021 who filmed a metallic sphere on FLIR above the ship before it accelerated away; F/A-18s on that deployment met UAP frequently, and videos were kept on a squadron share drive in a folder named “range foulers”."
     speaker: tim-gallaudet
@@ -46,7 +47,7 @@ moments:
     basis: relayed
     text: "Davis: the crash-retrieval programs are more secret than the Manhattan Project, hidden from Congress under presidential emergency action directives dating from Eisenhower and exempt from FOIA."
     speaker: eric-davis
-    refs: [ crash-retrieval, legacy-program ]
+    refs: [ crash-retrieval, legacy-program, h-2025-05-01 ]
   - t: "1:01:39"
     text: "Davis: one four-star general and one three-star admiral located these crash-retrieval programs; the general got in with “super user” access."
     speaker: eric-davis
@@ -64,7 +65,7 @@ moments:
   - t: "1:04:55"
     text: "Dr. Davis: recovered craft are “not of this Earth.”"
     speaker: eric-davis
-    refs: [ crash-retrieval ]
+    refs: [ crash-retrieval, h-2025-05-01 ]
     claims: [ recovered-non-human-craft ]
     basis: relayed
   - t: "1:15:04"
@@ -91,7 +92,7 @@ moments:
   - t: "1:39:35"
     text: "Mellon: the solid-state phased-array radars, the most powerful emitters on the planet, have reported zero UAP to AARO in some 20 years, though ships and aircraft in their coverage report them constantly."
     speaker: chris-mellon
-    refs: [ aaro ]
+    refs: [ aaro, h-2025-05-01 ]
   - t: "1:54:29"
     text: "Mellon reads from a 2019 report: USS Paul Hamilton observed four drones within about 200 yards for 2 hours 20 minutes, 60–80 miles offshore; the ship's counter-drone systems were ineffective."
     speaker: chris-mellon
@@ -105,7 +106,7 @@ moments:
   - t: "2:12:30"
     text: "McConnell, after 37 years as a congressional staffer: the key is first-hand sources from the legacy crash-retrieval program, but they fear for their clearances, careers and safety."
     speaker: kirk-mcconnell
-    refs: [ legacy-program, crash-retrieval ]
+    refs: [ legacy-program, crash-retrieval, h-2025-05-01 ]
   - t: "2:15:32"
     text: "Mellon: he published a Signal message from a very senior official describing a Secretary of the Air Force memo, a recovery site and the Air Force gatekeeper, yet no one in Congress has followed up."
     speaker: chris-mellon
@@ -116,7 +117,7 @@ moments:
   - t: "2:27:07"
     text: "Mellon warns that UAP sightings and alleged recoveries are blended in the public mind; if recoveries are never confirmed, it could discredit the urgent and very real UAP issue; he adds that he does not know how secure AARO is in the long term."
     speaker: chris-mellon
-    refs: [ aaro ]
+    refs: [ aaro, h-2025-05-01 ]
   - t: "2:47:41"
     text: "Gold shows NASA lunar horizon glow images, from Surveyor sketches to a Blue Ghost lander photo, and questions the levitated-dust explanation; he calls it an unidentified anomalous phenomenon worth studying."
     speaker: michael-gold

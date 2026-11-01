@@ -50,6 +50,7 @@ moments:
   - t: "41:09"
     text: "Pope: the MoD long downplayed its interest, but “i'm not aware of any cover-up or conspiracy” in the sense theorists mean; the UFO desk closed in 2009."
     speaker: nick-pope
+    refs: [ h-2013-citizen-hearing ]
     claims: [ government-ufo-disinformation ]
     stance: disputes
     basis: first-hand

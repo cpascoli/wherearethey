@@ -14,7 +14,7 @@ rel:
 moments:
   - t: "0:00"
     text: "The F/A-18's targeting pod tracks the object in infrared (IR): a small white-hot shape with no visible wings or exhaust plume."
-    refs: [ inc-nimitz-2004 ]
+    refs: [ inc-nimitz-2004, ev-dod-videos-2020 ]
   - t: "0:16"
     text: "The pod switches to its TV camera and narrows in: the object shows as a dark, elongated shape."
     refs: [ inc-nimitz-2004 ]

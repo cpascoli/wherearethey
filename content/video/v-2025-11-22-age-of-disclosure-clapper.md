@@ -13,7 +13,7 @@ moments:
   - t: "0:08"
     text: "“When I served in the air force uh there was an active program to uh track anomalous uh activities that uh you know we couldn't otherwise explain. Many of them connected with uh ranges out west notably um Area 51.”"
     speaker: james-clapper
-    refs: [ area-51 ]
+    refs: [ area-51, film-age-of-disclosure ]
 ---
 
 A 30-second clip from *The Age of Disclosure* (2025) in which James Clapper, later Director of National Intelligence, says that during his Air Force career there was an active program to track unexplained activity, much of it around the test ranges in the West such as Area 51. Christopher Mellon has described hearing Clapper tell a similar story on the documentary's set.

@@ -22,7 +22,7 @@ moments:
   - t: "31:15"
     text: "McConnell: as extraordinary as the Varginha witnesses' claims sound, “similar reports” of crash retrievals and the recovery of non-human beings have reached senators and staff in their investigation."
     speaker: kirk-mcconnell
-    refs: [ inc-varginha-1996 ]
+    refs: [ inc-varginha-1996, ev-varginha-press-conference-2026 ]
     claims: [ recovered-non-human-bodies ]
     basis: relayed
   - t: "34:25"
@@ -35,7 +35,7 @@ moments:
   - t: "43:08"
     text: "Fox: “numerous witnesses reported a cigar- shaped object in distress” that crashed outside Varginha; days later three young women met a creature, and firefighters and military police captured two non-human beings."
     speaker: james-fox
-    refs: [ inc-varginha-1996 ]
+    refs: [ inc-varginha-1996, ev-varginha-press-conference-2026 ]
     claims: [ varginha-beings-captured ]
     basis: relayed
   - t: "44:00"
@@ -51,7 +51,7 @@ moments:
   - t: "46:46"
     speaker: carlos-de-souza
     text: "Carlos de Souza, an ultralight pilot and geography teacher, in his first public statement in 26 years: “I witnessed the crash of a non-terrestrial craft on January 13th”, a cigar-shaped object releasing white smoke with a tear down its side."
-    refs: [ inc-varginha-1996 ]
+    refs: [ inc-varginha-1996, ev-varginha-press-conference-2026 ]
     claims: [ varginha-beings-captured ]
     basis: first-hand
   - t: "52:59"
@@ -75,7 +75,7 @@ moments:
   - t: "1:02:43"
     speaker: katia-xavier
     text: "(Portuguese) Kátia Xavier: she was two metres from the creature, brown with red eyes, oily skin, a large head, three fingers and a big foot; she has never changed a syllable of her account in thirty years."
-    refs: [ inc-varginha-1996 ]
+    refs: [ inc-varginha-1996, ev-varginha-press-conference-2026 ]
     claims: [ varginha-beings-captured ]
     basis: first-hand
   - t: "1:04:36"
@@ -111,7 +111,7 @@ moments:
     basis: first-hand
     text: "Fortunato Filho: the infection was caused by “a highly virulent and multi-drugresistant bacterium” that spread through the body and caused septic shock."
     speaker: armando-fortunato-filho
-    refs: [ inc-varginha-1996 ]
+    refs: [ inc-varginha-1996, ev-varginha-press-conference-2026 ]
   - t: "1:22:19"
     text: "Pathologist João Baptista Janini, in a statement read for him: the bacterium went beyond a conventional infection, which “raises the hypothesis of its alien origin”; an exhumation for molecular studies is awaited."
     speaker: joao-baptista-janini
@@ -128,7 +128,7 @@ moments:
   - t: "1:58:50"
     text: "Venturelli: behind a makeshift partition lay a being like a seven-year-old child, calm and breathing well; “Its eyes were lilac and teardropshaped”, the skin white, the arms very thin, three fingers and an opposing thumb."
     speaker: italo-venturelli
-    refs: [ inc-varginha-1996 ]
+    refs: [ inc-varginha-1996, ev-varginha-press-conference-2026 ]
     claims: [ varginha-beings-captured, recovered-non-human-bodies ]
     basis: first-hand
   - t: "2:07:50"
@@ -137,7 +137,7 @@ moments:
   - t: "2:09:16"
     text: "Claussen, relaying a Brazilian air traffic controller: around 20 January 1996 a U.S. Air Force cargo plane, most likely a C-17, entered Brazilian airspace without clearance and landed at Campinas; if true, “30 to 40 Americans had direct knowledge of this flight”."
     speaker: fred-claussen
-    refs: [ inc-varginha-1996 ]
+    refs: [ inc-varginha-1996, ev-varginha-press-conference-2026 ]
     claims: [ varginha-beings-captured ]
     basis: relayed
 ---

@@ -15,6 +15,7 @@ moments:
   - t: "0:49"
     text: "“we are absolutely not alone in this universe”, he says; what keeps him up at night is that the technology “does stuff that we can't do”."
     speaker: brett-feddersen
+    refs: [ film-age-of-disclosure ]
 ---
 
 A 90-second clip from *The Age of Disclosure* (2025), posted by the film's official channel, on UAP as a hazard to aviation, ending with the former NSC and FAA security official Brett Feddersen.

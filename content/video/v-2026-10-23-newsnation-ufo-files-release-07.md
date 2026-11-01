@@ -16,7 +16,7 @@ moments:
     refs: [ ev-pursue-release-07, pursue ]
   - t: "0:29"
     text: "The report speaks of “three separate reports” of “a black triangle-shaped craft”, and says “All three times this craft was flying over sensitive military sites.” The release itself has two records of the triangle, an AARO memorandum and an FBI report. They describe one incident by federal agents at a national security site, with observations over two days."
-    refs: [ inc-western-us-triangle-2026, dow-uap-d176, fbi-uap-d043 ]
+    refs: [ inc-western-us-triangle-2026, dow-uap-d176, fbi-uap-d043, ev-pursue-release-07 ]
   - t: "0:50"
     text: "“A 200 to 300-foot elevation that this craft flew at, about nine feet long, about a 13-foot wingspan”: AARO's debrief gives 200 to 300 feet above the ridge line, a six-to-nine-foot fuselage and a thirteen-to-fifteen-foot wingspan."
     refs: [ dow-uap-d176 ]
@@ -28,7 +28,7 @@ moments:
     refs: [ dow-uap-d176, fbi-uap-d043 ]
   - t: "1:43"
     text: "Unnamed officials, according to the report, said “the U.S. may even be years away from developing any technology like what these military personnel saw.” Neither record says this, and the witnesses are federal law-enforcement agents, not military personnel; AARO reaches no conclusion on the object."
-    refs: [ inc-western-us-triangle-2026 ]
+    refs: [ inc-western-us-triangle-2026, ev-pursue-release-07 ]
   - t: "1:57"
     text: "The report mentions “flying cylinder-shaped objects” from “the 60s and 70s in Saudi Arabia, in Sweden”. The release's Saudi Arabia and Sweden reports date from 1957 and 1953: a B-52's gunnery-scope return and a shining, nearly round metallic object seen from a DC-3."
     refs: [ dow-uap-d155, dow-uap-d163 ]

@@ -9,7 +9,7 @@ moments:
   - t: "31:33"
     text: "Grothman: briefings with the DoD and IC inspectors general and AARO have not been able to substantiate David Grusch's 2023 claims, despite Members questioning them inside and outside the SCIF."
     speaker: glenn-grothman
-    refs: [ david-grusch, aaro ]
+    refs: [ david-grusch, aaro, h-2024-11-13 ]
     claims: [ recovered-non-human-craft ]
     stance: disputes
     basis: relayed
@@ -32,7 +32,7 @@ moments:
     basis: relayed
     text: "Gallaudet recounts the urgent flight-safety email received during the 2015 exercise, with the “GoFast” video attached."
     speaker: tim-gallaudet
-    refs: [ inc-roosevelt-2015 ]
+    refs: [ inc-roosevelt-2015, h-2024-11-13 ]
   - t: "45:10"
     text: "Gallaudet: the next day the GoFast email “disappeared from my account and those of the other recipients without explanation”, and the subject was never raised again; he concluded the information sat in an intelligence-agency special access program."
     speaker: tim-gallaudet
@@ -40,13 +40,13 @@ moments:
   - t: "49:18"
     text: "Elizondo: “UAP are real. Advanced technologies not made by our government or any other government are monitoring sensitive military installations around the globe. Furthermore, the U.S. is in possession of UAP technologies, as are some of our adversaries.”"
     speaker: luis-elizondo
-    refs: [ crash-retrieval ]
+    refs: [ crash-retrieval, h-2024-11-13 ]
     claims: [ recovered-non-human-craft ]
     basis: relayed
   - t: "56:33"
     text: "Shellenberger: the whistleblower report says Immaculate Constellation is a parent USAP consolidating UAP imagery and signature intelligence from tasked and untasked platforms; cases include orbs forcing an F-22 out of its patrol area."
     speaker: michael-shellenberger
-    refs: [ immaculate-constellation, doc-immaculate-constellation ]
+    refs: [ immaculate-constellation, doc-immaculate-constellation, h-2024-11-13 ]
     claims: [ immaculate-constellation-exists ]
     basis: relayed
   - t: "57:46"
@@ -66,7 +66,7 @@ moments:
   - t: "1:07:47"
     text: "Elizondo says documentation he signed three years earlier bars him from discussing crash retrievals; asked yes or no, he says the government has run secret UAP crash-retrieval programs designed to reverse-engineer craft."
     speaker: luis-elizondo
-    refs: [ crash-retrieval, legacy-program ]
+    refs: [ crash-retrieval, legacy-program, h-2024-11-13 ]
     claims: [ recovered-non-human-craft ]
     basis: relayed
   - t: "1:08:09"
@@ -110,7 +110,7 @@ moments:
     speaker: michael-gold
   - t: "1:45:15"
     text: "Asked by Rep. Garcia, all four witnesses say part of the government is knowingly concealing UAP evidence; Gallaudet sees “strong evidence that they are nonhuman higher intelligence”, Elizondo agrees, Shellenberger and Gold do not know."
-    refs: [ tim-gallaudet, luis-elizondo, michael-shellenberger, michael-gold, nhi ]
+    refs: [ tim-gallaudet, luis-elizondo, michael-shellenberger, michael-gold, nhi, h-2024-11-13 ]
   - t: "1:51:43"
     text: "Gallaudet: he believes an intelligence agency treated the GoFast email as “spillage” into a lower classification, which is why the communications were removed."
     speaker: tim-gallaudet
@@ -125,7 +125,7 @@ moments:
     claims: [ recovered-non-human-bodies ]
     text: "Asked by Rep. Burlison whether the U.S. possesses bodies, Elizondo: “Yes. Yes, sir”, adding it was discussed at the Pentagon but the collection predates his birth."
     speaker: luis-elizondo
-    refs: [ nhi, crash-retrieval, eric-burlison ]
+    refs: [ nhi, crash-retrieval, eric-burlison, h-2024-11-13 ]
   - t: "2:07:09"
     text: "Gallaudet: the 2020–2022 DoD UAP Task Force led by Jay Stratton had the first comprehensive whole-of-government approach, which witnesses want restored."
     speaker: tim-gallaudet
@@ -133,6 +133,7 @@ moments:
   - t: "2:23:32"
     text: "Gallaudet: withholding UAP information from Congress infringes its oversight duties — “This UAP issue may be the greatest issue of our time, and it is being hid from you.”"
     speaker: tim-gallaudet
+    refs: [ h-2024-11-13 ]
     claims: [ programs-hidden-from-congress ]
     basis: opinion
 ---

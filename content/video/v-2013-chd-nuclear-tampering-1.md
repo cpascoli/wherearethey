@@ -18,7 +18,7 @@ moments:
     basis: first-hand
     text: "Salas: as he started to brief his commander, “we lost alert status on all 10 missiles while this object was above our facility,” each reporting a guidance and control system failure."
     speaker: bob-salas
-    refs: [ inc-malmstrom-1967 ]
+    refs: [ inc-malmstrom-1967, h-2013-citizen-hearing ]
   - t: "8:02"
     claims: [ malmstrom-ufo-missile-shutdown ]
     basis: relayed

@@ -13,7 +13,7 @@ moments:
     basis: relayed
     text: "Eric Davis: in private conversations in 2003, George H.W. Bush told him that as CIA director in the Ford administration “he was not briefed on the legacy UAP crash retrieval program, but he later found out about it.”"
     speaker: eric-davis
-    refs: [ legacy-program ]
+    refs: [ legacy-program, film-age-of-disclosure ]
   - t: "0:18"
     text: "Bush told him “there were a number of crash retrievals that had taken place since the uh mid 1940s”, Davis says."
     speaker: eric-davis

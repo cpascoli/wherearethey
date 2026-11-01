@@ -62,7 +62,7 @@ moments:
   - t: "41:56"
     text: "Marcel Jr. says his father flew the material to Gen. Ramey's office in Fort Worth and, back home, told them “you will never talk about this this is a non-event”."
     speaker: jesse-marcel-jr
-    refs: [ inc-roswell-1947, jesse-marcel ]
+    refs: [ inc-roswell-1947, jesse-marcel, h-2013-citizen-hearing ]
   - t: "50:00"
     text: "Marcel Jr.'s daughter, a hypnotherapist, says that under forensic hypnosis her father again described holding the beam to look at “the purple reflecting symbols”."
     refs: [ inc-roswell-1947 ]
@@ -97,7 +97,7 @@ moments:
     refs: [ inc-roswell-1947 ]
   - t: "1:33:46"
     text: "Pressed for any 1947 record of bodies, Randle concedes: “we have no documentation from that time frame”, only people who spoke about it later."
-    refs: [ inc-roswell-1947 ]
+    refs: [ inc-roswell-1947, h-2013-citizen-hearing ]
     claims: [ recovered-non-human-bodies ]
     stance: context
     basis: opinion

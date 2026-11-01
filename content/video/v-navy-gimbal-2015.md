@@ -15,7 +15,7 @@ moments:
     claims: [ gimbal-gofast-not-conventional ]
     basis: first-hand
     text: "A crew member says there is a whole fleet of them on the aircraft's situation display (the “ASA”); Ryan Graves says he saw that fleet on the radar display in the debrief."
-    refs: [ inc-roosevelt-2015, ryan-graves ]
+    refs: [ inc-roosevelt-2015, ryan-graves, ev-dod-videos-2020 ]
   - t: "0:11"
     claims: [ gimbal-gofast-not-conventional ]
     basis: first-hand

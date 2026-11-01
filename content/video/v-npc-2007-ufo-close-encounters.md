@@ -30,7 +30,7 @@ moments:
     basis: first-hand
     text: "De Brouwer introduces himself as former chief of operations of the Belgian Air Force and describes the 1989–90 wave and the F-16 scrambles."
     speaker: wilfried-de-brouwer
-    refs: [ inc-belgian-wave-1989 ]
+    refs: [ inc-belgian-wave-1989, ev-npc-2007 ]
   - t: "15:43"
     text: "Air France captain Jean-Charles Duboc describes the 1994 sighting of a huge object near Paris, studied by the French COMETA group and GEIPAN."
     speaker: jean-charles-duboc
@@ -43,7 +43,7 @@ moments:
     basis: first-hand
     text: "Jafari: as squadron commander he flew the second F-4 and locked on with radar at 25 miles; the return was comparable to a 707 tanker, and the object flashed red, green, orange and blue."
     speaker: parviz-jafari
-    refs: [ inc-tehran-1976, doc-dia-tehran-1976 ]
+    refs: [ inc-tehran-1976, doc-dia-tehran-1976, ev-npc-2007 ]
   - t: "26:40"
     claims: [ tehran-1976-object ]
     basis: first-hand
@@ -74,23 +74,23 @@ moments:
     basis: first-hand
     text: "James Penniston describes his close approach to the craft at Rendlesham in 1980."
     speaker: jim-penniston
-    refs: [ inc-rendlesham-1980 ]
+    refs: [ inc-rendlesham-1980, ev-npc-2007 ]
   - t: "1:02:27"
     claims: [ rendlesham-craft-landed ]
     basis: first-hand
     text: "Col. Charles Halt describes investigating the December 1980 events as deputy base commander at RAF Bentwaters."
     speaker: charles-halt
-    refs: [ inc-rendlesham-1980 ]
+    refs: [ inc-rendlesham-1980, ev-npc-2007 ]
   - t: "1:06:50"
     claims: [ jal1628-unknown-craft ]
     basis: relayed
     text: "John Callahan, former FAA accidents and investigations division chief, on the 1986 Japan Airlines 1628 case: “an event that never happened.”"
     speaker: john-callahan
-    refs: [ inc-jal-1628-1986, doc-faa-jal1628-terauchi-interview ]
+    refs: [ inc-jal-1628-1986, doc-faa-jal1628-terauchi-interview, ev-npc-2007 ]
   - t: "1:17:54"
     text: "Symington: in 1997, during his second term as governor of Arizona, he saw “a massive delta-shaped craft that silently navigated over the Peak uh area in North Phoenix”, with huge embedded lights on its leading edge; as a pilot and former Air Force officer he says it resembled no man-made object and was “certainly not high flares”, because “I've never seen flares fly in formation”."
     speaker: fife-symington
-    refs: [ inc-phoenix-lights-1997 ]
+    refs: [ inc-phoenix-lights-1997, ev-npc-2007 ]
 date: 2007-11-12   # recorded / first broadcast (the YouTube upload is later)
 ---
 

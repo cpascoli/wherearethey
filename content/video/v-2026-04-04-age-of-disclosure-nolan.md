@@ -10,7 +10,7 @@ moments:
   - t: "0:00"
     text: "Nolan: the first time you open up the hangar doors and show some craft, “the questions are unlimited”; if anyone admits access to technology denied to another contractor, imagine “the legal fights”."
     speaker: garry-nolan
-    refs: [ legacy-program ]
+    refs: [ legacy-program, film-age-of-disclosure ]
     claims: [ recovered-non-human-craft ]
     stance: context
     basis: opinion

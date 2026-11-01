@@ -15,7 +15,7 @@ moments:
   - t: "12:15"
     text: "Knapp: in the book Stratton acknowledges he is \"Axelrod\", the intelligence official in Skinwalkers at the Pentagon whose family experienced phenomena at home after visiting Skinwalker Ranch."
     speaker: george-knapp
-    refs: [ book-skinwalkers-at-the-pentagon, jay-stratton, skinwalker-ranch ]
+    refs: [ book-skinwalkers-at-the-pentagon, jay-stratton, skinwalker-ranch, book-out-of-the-shadows ]
   - t: "14:59"
     text: "George Knapp: Stratton, on loan from the Office of Naval Intelligence to DIA, worked with James Lacatski and “came up with the idea for OSAP” (AAWSAP); he did its very first investigation, of the Tic Tac, interviewing the key witnesses."
     speaker: george-knapp

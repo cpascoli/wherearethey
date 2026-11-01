@@ -19,14 +19,14 @@ moments:
   - t: "1:11"
     text: "Loeb: “we don't know what they are.” Two types of objects “are being spotted by the Pentagon, the intelligence community, and they are hovering over strategic assets.” (In his own transcript he names them: orbs and triangles.)"
     speaker: avi-loeb
-    refs: [ inc-western-us-triangle-2026, inc-western-us-orbs-2025 ]
+    refs: [ inc-western-us-triangle-2026, inc-western-us-orbs-2025, ev-pursue-release-07 ]
   - t: "1:21"
     text: "“If you have a down-to-earth approach, you would say they are coming from adversarial nations, because it's not our government that is flying them.” He cites the Chinese balloon shot down in 2023: finding one ant means there are more under the sink."
     speaker: avi-loeb
   - t: "1:40"
     text: "On the PURSUE files: “we won't be able to, given the data that we're given in these tranches, it's not good enough.”"
     speaker: avi-loeb
-    refs: [ pursue ]
+    refs: [ pursue, ev-pursue-release-07 ]
   - t: "1:47"
     text: "“My hope is to partner with the Pentagon and put better sensors at the locations where these objects are found.”"
     speaker: avi-loeb
@@ -34,7 +34,7 @@ moments:
   - t: "2:07"
     text: "On reports that alien craft are “being held by corporations like Lockheed Martin”: “I haven't seen any evidence for that, and the people I speak with have not seen any evidence for that.”"
     speaker: avi-loeb
-    refs: [ lockheed-martin ]
+    refs: [ lockheed-martin, ev-pursue-release-07 ]
     claims: [ recovered-non-human-craft ]
     stance: context
     basis: opinion

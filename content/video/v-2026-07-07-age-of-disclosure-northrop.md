@@ -10,6 +10,7 @@ moments:
   - t: "0:00"
     text: "Northrop: “There is not only a source of power of which we're not acquainted, but there is also a source of propulsion which we're not acquainted”; UFOs seem to have unlimited power, perhaps like fusion."
     speaker: jack-northrop
+    refs: [ film-age-of-disclosure ]
   - t: "0:44"
     text: "Their ability to hover, accelerate very rapidly and move far faster than supersonic aircraft, “without sonic booms”, indicates a unique propulsion that would be of tremendous value."
     speaker: jack-northrop
