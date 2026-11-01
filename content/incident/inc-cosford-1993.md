@@ -49,6 +49,12 @@ facts:
   - text: "In its final report (DEFE 24/2086, pp. 12–13), the organisation attributed most of the 1.10 am police reports to the re-entry of the rocket that launched Cosmos 2238, but not the Lynton officers' sighting: they saw a third, smaller light between the two, “two white vapour like trails” behind them, and objects at an elevation of 40 degrees between 1,000 and 2,000 feet away; the author wrote that he hardly thought the officers “could be mistaken in their judgements”."
     status: documented
     source: library/docs/mod-ufo/defe-24-2086.pdf
+  - text: "The Plymouth UFO Research Group's report on the night, filed in DI55's papers (DEFE 31/181, pp. 45–59), quotes an Irish Department of Transport investigation of the “numerous reports from members of the public, including civilian and military pilots”, which found that “A check by Air Traffic Services could not relate the sightings to any known civil air traffic operating at the time. Nor were any unidentified objects observed on radar”, that the Irish military had no operations in progress and the Met Service no atmospheric explanation; its second part, of 19 April 1993, accepted a USAF Institute of Technology finding that the rocket body of Cosmos 2238, international designator 1993-018B, decayed over Ireland on a north-west to south-east track between 01.06 and 01.12 local time, as “the logical explanation of the phenomena”."
+    status: claimed
+    source: library/docs/mod-ufo/defe-31-181.pdf
+  - text: "The same report says RAF Fylingdales confirmed to the investigators that Cosmos 2238 “came over Lands End at 01.10am on the 31/3/93”, that the group accepted the re-entry for the high-level 1.10 am police sightings but not for the earlier ones over Ireland and Cornwall, and that the MoD's desk officer told a Devon investigator the Ministry was treating the sightings “very seriously” and asked him to “keep it as low key as much as possible” (pp. 54–58)."
+    status: claimed
+    source: library/docs/mod-ufo/defe-31-181.pdf
   - text: "Sgt. Barry Mitchell and Officer Gus Cottey of Barnstaple Police later told the Lynton sighting on camera: Mitchell took the three lights to be fixed to one object that, had it been a conventional aircraft of that size, would have been deafening; Cottey said they kept quiet until another officer in Cornwall reported the same over the radio."
     status: claimed
     by: barry-mitchell

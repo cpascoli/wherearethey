@@ -23,10 +23,13 @@ facts:
   - text: "An MoD draft reply of 1993 says: “There is absolutely no evidence of any “unidentified aircraft” having been encountered, nor is there any reason to suppose that there is any UFO connection with what remains a tragic accident.”"
     status: documented
     source: library/docs/mod-ufo/defe-24-1972.pdf
+  - text: "DI55's file DEFE 31/181 holds a full copy of the RAF Aircraft Accident Report (pp. 240–245): date 8 September 1970, aircraft Lightning F6 XS 894, sortie “Tactical Evaluation Exercise — Night Shadowing and Shepherding of Low Speed Targets”, casualties “One killed”, unit No 5 Squadron, RAF Binbrook. It records that the pilot, a USAF exchange officer with 121 hours on the Lightning, 18 of them at night, had been categorised “Limited combat ready” after eight weeks on the squadron, that the Taceval team had switched the exercise to shadowing Shackletons at 160 knots and 1,500 feet without the station's knowledge, that he reported contact with lights and had to manoeuvre to slow down, and that a Royal Navy minesweeper located the wreckage nearly two months later. The report makes no mention of any unidentified object."
+    status: documented
+    source: library/docs/mod-ufo/defe-31-181.pdf
 ---
 
 On the night of 8 September 1970 an RAF Lightning F6, XS894, flown by Capt. William Schaffner, a U.S. Air Force exchange pilot at RAF Binbrook, went into the North Sea off Flamborough Head during a night exercise; the aircraft was recovered from the seabed, but the pilot was never found. In 1992 the Grimsby Evening Telegraph published a series claiming he had been vectored onto a high-speed unidentified contact and ordered to ditch, with a purported transcript of his last transmissions, and the story spread through UFO books and television.
 
 The Ministry of Defence's UFO desk traced the Board of Inquiry papers and found the Lightning had been shadowing an RAF Shackleton in a training exercise; the Board blamed a rushed, unfamiliar task, the pilot's loss of height awareness and a badly serviced canopy firing unit. The file includes the RAF flight-safety magazine's rebuttal, “Don't believe everything you read!”. No source for the “transcript” has been identified.
 
-*Source: MoD file DEFE 24/1972, The National Archives*
+*Sources: MoD files DEFE 24/1972 and DEFE 31/181 (pp. 186–267: the 1992 press cuttings and correspondence, with the accident report at pp. 240–245), The National Archives*

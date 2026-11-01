@@ -25,6 +25,15 @@ facts:
   - text: The MoD's surviving papers (DEFE 24/1940/1, pp. 113–116, opened at the UK National Archives in 2009) include a September 1990 Sec(AS) briefing and handwritten summary of the sighting; photocopies of the images appear in the files of Defence Intelligence's DI55 (DEFE 31/180/1), showing they were examined by DI55 and RAF photo analysts.
     status: claimed
     source: https://en.wikipedia.org/wiki/Calvine_UFO_photograph
+  - text: "The UFO desk's minute to the minister's office of 14 September 1990, in DI55's file, says the six negatives received from the Scottish Daily Record on 10 September were “alleged to have been taken near the A9 road at Clavine, north of Pitlochrie on the evening of 4 August. They show a large stationary, diamond-shaped object past which, it appears, a small jet aircraft is flying. The negatives have been considered by the relevant staffs who have established that the jet aircraft is a Harrier (and also identified a barely visible second aircraft, again probably a Harrier) but have reached no definite conclusion regarding the large object.” It adds that there was “no record of Harriers operating in the area at the time” and that the negatives “have now been returned to the Scottish Daily Record” (DEFE 31/179, p. 156)."
+    claims: [ calvine-craft-photographed ]
+    stance: context
+    basis: documented
+    status: documented
+    source: library/docs/mod-ufo/defe-31-179.pdf
+  - text: "The “defensive lines to take” prepared for the newspaper were: “Have looked at photographs, no definite conclusions reached regarding large diamond-shaped object”, “Confident that jet aircraft is a Harrier”, no record of Harriers at the location and time, and no other reports of unusual air activity; if pressed on who studied the pictures, the answer was the staff “responsible for air defence of UK” (p. 157)."
+    status: documented
+    source: library/docs/mod-ufo/defe-31-179.pdf
   - text: Andrew Robinson's analysis for Sheffield Hallam University dates the negatives' arrival at the MoD to 10 September 1990 and their return to the Daily Record by 14 September, citing an MoD ministerial briefing (DEFE 31/179, pp. 156–157); the negatives have not been seen since.
     status: documented
     source: library/docs/doc-robinson-calvine-analysis.pdf
