@@ -16,6 +16,7 @@ rel:
   - [ prepared by, uk-mod ]
   - [ part of, doc-tna-mod-ufo-files-guides ]
   - [ includes, doc-mod-defe-24-1983 ]
+  - [ includes, doc-mod-defe-24-1995 ]
   - [ includes, doc-mod-defe-24-2042 ]
   - [ about, inc-rendlesham-1980, "DEFE 24/1983 (the MoD's line in 1996), DEFE 24/1995 and DEFE 24/2042 (the papers released on the Ombudsman's recommendation in 2002)" ]
 ---

@@ -60,6 +60,23 @@ facts:
   - text: "Answering Redmond on 10 June 1996, the minister said that apart from the deputy base commander's report, “the documents held by my Department are internal staffing papers and correspondence from members of the public relating to the alleged events” (p. 116)."
     status: documented
     source: library/docs/mod-ufo/defe-24-1983.pdf
+  - text: "In the account he gave the journalist AJS Rayl in 1997, filed with the MoD by a correspondent, Penniston says that on reaching the East Gate he took the glow in the woods for an aircraft crash, that while he phoned the security controller “they, in turn, were in contact with Heathrow Airport's Control Tower in London and RAF Bawdsey Eastern Radar in East Anglia. I was told they reported a bogie about three miles out from Bentwaters but had lost contact with it 15 minutes previously”, and that in the clearing “There was an object sitting in a clearing. It was emitting mostly white light at that point, very bright … I found it very strange that there was no sound coming from the object, but the animals around us were in a frenzy”; its silhouette “was not a conventional aircraft” (DEFE 24/1995, pp. 73–74)."
+    said: 1997
+    claims: [ rendlesham-craft-landed ]
+    basis: first-hand
+    status: claimed
+    by: jim-penniston
+    source: library/docs/mod-ufo/defe-24-1995.pdf
+  - text: "Halt's 1997 account, in the same file, says he went into the forest on the second night “determined to put an end to this UFO nonsense”, watched a “sun-red glowing object” move through the trees and break into five objects, and saw an object to the south send down “a small pencil-like beam, sort of like a laser beam”; he estimates that 30 to 40 people around the two bases saw the beams that night, says the lighthouse “was clearly visible the whole time” and was not what they saw, and concludes: “Something unexplained happened. To this day, I don't know what it was.” He adds: “I never personally saw even a definite shaped craft” (pp. 81–85)."
+    said: 1997
+    claims: [ rendlesham-craft-landed ]
+    basis: first-hand
+    status: claimed
+    by: charles-halt
+    source: library/docs/mod-ufo/defe-24-1995.pdf
+  - text: "Replying to the correspondent in November 1997, the UFO desk wrote that the air defence experts of the time “were satisfied that nothing had occurred to suggest that the UK Air Defence Region had been breached by unauthorised foreign military activity on the nights in question. In the absence of evidence corroborating Col Halt's memo, which was sent some two weeks after the events in 1980, and in the light of the Department's air defence remit, no action was then deemed necessary.” (p. 68)"
+    status: documented
+    source: library/docs/mod-ufo/defe-24-1995.pdf
   - text: "Answering an inquiry from the U.S. in 2008, the MoD said it “had little interest in the matter at the time and even less interest now. Put simply, we consider the incident closed” (DEFE 24/2628, p. 144)."
     status: documented
     source: library/docs/mod-ufo/ufo-highlights-guide-2013.pdf
@@ -71,4 +88,4 @@ In the early hours of 28 December the deputy base commander, Lt. Col. Charles Ha
 
 Sceptics attribute the first night's lights to a bright fireball seen over southern England that night, and the flashing light to the Orford Ness lighthouse about five miles away: timings on Halt's tape put the light's flashes five seconds apart, the lighthouse's rate. Local police and foresters judged the depressions to be rabbit diggings, and the star-like lights have been matched to bright stars.
 
-*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Rendlesham_Forest_incident) · Halt memo (1981) · MoD files DEFE 24/1983 and DEFE 24/2042 (The National Archives, opened August 2010)*
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Rendlesham_Forest_incident) · Halt memo (1981) · MoD files DEFE 24/1983, DEFE 24/1995 and DEFE 24/2042 (The National Archives, opened August 2010)*

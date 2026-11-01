@@ -1,14 +1,14 @@
 ---
 runtime: claude-local
-updated: 2026-11-01T04:16:05Z
+updated: 2026-11-01T05:28:11Z
 session_id: 1b53c348-8471-4860-80b9-183d056a10eb
 ---
 # Handoff: Where Are They — file the strong cases from the missing MoD UFO releases
 
 - **Branch:** `task/archive-continuation` (base: `main` at `12bfa0f`; this branch adds a refreshed `content/lastmod.json` and this file, nothing merged yet)
 - **Repo:** `cpascoli/wherearethey` (live at https://wherearethey.info, Netlify deploys `main`)
-- **Updated:** 2026-11-01 11:40 +07 by claude-local (laptop)
-- **Status:** Howden Moor filed from files already on hand (commit 07e708d); everything else is blocked on downloading the shortlist's PDFs from Discovery, which needs the user's signed-in National Archives account (see Open questions)
+- **Updated:** 2026-11-01 12:40 +07 by claude-local (laptop)
+- **Status:** shortlist filed (9 new or extended cases, 10 documents), all committed on this branch; two optional files not yet downloaded (see Next steps); nothing pushed since the pickup commits
 - **Triage report (read first):** https://claude.ai/artifact/KSzYs6vvDgWYy4Y9e4xkwZ ("Missing MoD UFO files: 2010 releases triage")
 
 ## Goal
@@ -19,54 +19,35 @@ as usual, and strengthen existing pages. The user approved the shortlist in the 
 Read `CLAUDE.md` first (sourcing rule, entry format, outcome statuses, quote verification).
 
 ## Current state
-- **Filed:** `content/incident/inc-howden-moor-1997.md` (outcome `disputed`) and `content/document/doc-mod-defe-24-2018.md`
-  (DEFE 24/2018 pp. 232–254, March 2011 release, already in the library; the release document now `includes` it). Sources:
-  the Kinloss ARCC log with the BGS sonic-boom reading, the MoD's PQ answer and background note of 26 Mar 1998, Hansard
-  30 Mar 1998 (saved in `sources/web/hansard-1998-03-30-sonic-booms-sheffield.txt`), and David Clarke's page quoting the
-  27 May 1998 P&SS report (`sources/web/drdavidclarke-howden-moor-incident.txt`). The P&SS report itself is NOT in any file
-  on hand (not in the 2011 releases); if it turns up in the Aug 2010 files, cite it directly and re-check the outcome.
-- No files from the three missing releases are in `library/docs/mod-ufo/` or `content/document/` yet.
-- Discovery's free downloads need a signed-in TNA account ("£3.50 or free after signing in"); scripted access to Discovery
-  (curl, headless Chrome) is bot-checked and the auto-mode classifier refuses attempts to get round it. Neither The Black
-  Vault (index checked: only DEFE 31/182–194) nor archive.org (searched by reference) mirrors any shortlist file.
-- Filed releases (`content/document/doc-mod-ufo-files-*.md`): May 2008, Oct 2008, Aug 2009, Mar 2011, Aug 2011, Jul 2012, Jun 2013.
-- The Black Vault (our usual mirror) does not host the 2010 releases; get the PDFs from The National Archives (Discovery,
-  digital copies are free downloads) or another mirror. Discovery pages block scripted fetches; use Chrome.
-
-## File lists (from the Archives' research guides; verify against Discovery)
-- **March 2009:** DEFE 24/1938; DEFE 31/176, 177, 178, 179, 180, 181 (DI55, Nov 1987–Apr 1993). Highlights guide:
-  https://cdn.nationalarchives.gov.uk/documents/mar-2009-highlights-guide.pdf (gives page numbers per case).
-- **February 2010 (24 files, >6,000 pages, 1994–2000):** reports DEFE 24/1977, 1988, 1989, 1990, 2007, 2008, 2009, 2010;
-  PQs 1971; correspondence 1966–1969, 1979–1981, 1994; persistent correspondents 2000, 2002, 2003, 2016, 2017, 2029
-  (the guide also lists 2091, which we already have under Aug 2011).
-- **August 2010 (18 files):** DEFE 24/1973, 1978, 1982, 1983, 1991, 1992, 1993, 1995, 1996, 1998, 2001, 2004, 2012, 2013,
-  2014, 2015, 2042, 2045 (list from the release's own PDF names; the 2013 guide omits 1991 and 2004).
+- **Filed as incidents** (all with page-cited facts and a case document for the file they come from):
+  `inc-howden-moor-1997` (DEFE 24/2018, disputed), `inc-manchester-near-miss-1995` (DEFE 24/1961 pp. 381–382 + Hansard 1996 +
+  BUFORA transcription of the airmiss report), `inc-cranwell-missile-1991` (DEFE 31/180 p. 148), `inc-heathrow-tower-1992`
+  (DEFE 31/181 p. 127), `inc-louth-triangle-1992` (31/181 pp. 280–281, handwritten), `inc-britannia-elba-1992` (31/181 pp. 351–352).
+- **Extended:** `inc-rendlesham-1980` (DEFE 24/1983: the 1996 line; 24/1995: Penniston's and Halt's 1997 accounts, the Nov 1997
+  reply; 24/2042: the 1983 note, Trefgarne 1985, a former Under Secretary's letter, the 2002 Ombudsman case), `inc-calvine-1990`
+  (31/179 pp. 156–157 brief and press lines; 31/180 p. 55 imagery tasking form), `inc-tornado-north-sea-1990` (31/180 pp. 156, 164,
+  178, 181; outcome left open: the 1991 papers only order a Fylingdales check), `inc-cosford-1993` (31/181 pp. 45–59, the PUFORG
+  report with the Irish findings), `inc-lightning-xs894-1970` (31/181 pp. 240–245, the full accident report).
+- **Documents:** case docs `doc-mod-defe-24-1961`, `-24-1983`, `-24-1995`, `-24-2018`, `-24-2042`, `-31-179`, `-31-180`, `-31-181`;
+  release docs `doc-mod-ufo-files-2009-03` (4 of 7 files held), `-2010-02` (24/1988, 24/2007 held), `-2010-08` (24/1983, 24/1995,
+  24/2042 held), all `search: optin`; the March 2009 highlights guide added to `doc-tna-mod-ufo-files-guides`.
+- **Library:** `library/docs/mod-ufo/defe-{31-179,31-180,31-181,24-1938,24-1983,24-1988,24-1995,24-2007,24-2042}.pdf` + `.txt`
+  (the Archives' digital copies, downloaded by the user into `tmp/pdfs/defe/` in parts and merged with `pdfunite`; the `.txt` are
+  committed, the PDFs need the user's `npm run r2:push`). Also in `tmp/pdfs/defe/` but not merged or used: DEFE 24/1977, 2009, 2010.
+  Page numbers in the Archives' PDFs run one lower than the highlights guides' numbers.
+- **Decided not to file:** Belfast Airport 1989 (DEFE 24/1938 pp. 5–8, 31/179 pp. 208–213: one civilian witness; the checks are in
+  `doc-mod-defe-31-179`'s facts); the Kent triangle of 8 Mar 1997 (not in DEFE 24/1988; its only "Michael Howard" entry is a hoax call).
+- **Not found:** Prestwick radar track Feb 1999 is not in DEFE 24/2007 (its Feb 1999 pages are ordinary reports): it needs DEFE 24/2008.
+- The user answered the scope question: **shortlist only**, no full releases on the search page.
 
 ## Next steps
-1. Download only the files that back the shortlist below into `library/docs/mod-ufo/` (`npm run add:doc` or Chrome),
-   OCR with `node scripts/ocr.mjs`. Each gets its own `content/document/` entry WITHOUT `search: optin` (CLAUDE.md:
-   "files that back a case get their own document").
-2. New incidents, strongest first (find the pages, verify every quote word for word against our `.txt`):
-   1. BA 5061 near-miss on the Manchester approach, 6 Jan 1995 (Capt Roger Wills, F/O Mark Stuart; no radar return;
-      CAA called the object "unassessable") — Feb 2010, report file not yet identified (try 1977/1988).
-   2. Heathrow tower: two controllers, black inverted-boomerang object, 17 Dec 1992 — DEFE 31/181 p128.
-   3. Britannia Airways 737 near-miss with a Mach 3 object off Elba, 1 May 1992 — DEFE 31/181 p353.
-   4. Prestwick ATC radar track >1,000 knots, Feb 1999 — Feb 2010, likely DEFE 24/2009 or 2010.
-   5. ~~Howden Moor~~ — done (from DEFE 24/2018, March 2011 release).
-   6. RAF Cranwell "possible missile", 11 Sep 1991, RAF pilot + student, police, radar check — DEFE 31/180 p149.
-   7. Louth, Lincolnshire, three-light triangle, numerous witnesses, 9 Dec 1992 — DEFE 31/181 pp281–282.
-   8. Only if the pages hold up: helicopter crew encounter 21 Feb 1988 (DEFE 31/176 p257); Belfast Airport Dec 1989
-      (DEFE 24/1938 pp2–9; DEFE 31/179 pp209–217). Maybe: black triangle near Michael Howard's home, Kent, 8 Mar 1997.
-3. Strengthen existing pages:
-   - `inc-rendlesham-1980`: DEFE 24/1995 (Penniston + Halt interview transcripts), 24/2042 (2002 Ombudsman ruling),
-     24/1983 (MoD position statement, as counter-evidence).
-   - `inc-calvine-1990`: add DEFE 31/179 and 31/180 as local sources (already cited by reference).
-   - `inc-tornado-north-sea-1990`: DI55's Soviet rocket-body explanation (DEFE 31/180 pp180–182) — decide `outcome` per the rules.
-   - Cosford 1993 (search `content/incident` for cosford): DI55's Cosmos re-entry finding (DEFE 31/181 pp46–72) if missing.
-4. Open choice, asked in a comment on the report and not yet answered: also add the full three releases to the
-   `/mod-files` search page (release documents with `search: optin`, ~48 files, OCR, then the user's `r2:push` + `r2:index`)?
-   That adds nothing to the graph. Ask before doing it.
-5. `npm run check`, commit on this branch; merge to `main` and push only when the user says "push".
+1. If the user downloads **DEFE 24/2008** (C10518759) into `tmp/pdfs/defe/`: merge parts with `pdfunite` into
+   `library/docs/mod-ufo/defe-24-2008.pdf`, `node scripts/ocr.mjs` it, grep for Prestwick / "1000 knots" / Feb 1999, file the case
+   if the pages hold up (ATC radar track, controllers), add the file to `doc-mod-ufo-files-2010-02`.
+2. If the user downloads **DEFE 31/176** (C10232690): check p. 256 (guide p. 257) for the 21 Feb 1988 helicopter report; file only if a
+   location and crew are given; add the file to `doc-mod-ufo-files-2009-03`.
+3. The user runs `npm run r2:push` (new PDFs) and, if wanted, `npm run r2:index` for the search page; merge to `main` and push only on "push".
+4. Optional polish: `inc-cranwell-missile-1991` is thin (one page, no outcome); `inc-britannia-elba-1992` has no incident date.
 
 ## Decisions (and why)
 - Shortlist only, no bulk graph entries — user's explicit wish ("only the interesting ones … not explained and resolved").
@@ -87,9 +68,9 @@ Read `CLAUDE.md` first (sourcing rule, entry format, outcome statuses, quote ver
   user download the PDFs into `library/docs/mod-ufo/` (named `defe-31-181.pdf` etc.) and run `node scripts/ocr.mjs` on each.
 
 ## Open questions for the user
-- **Blocking:** how to get the PDFs — (a) pick a Chrome for the extension (two are connected) and be signed in to Discovery
-  there, so the agent can download them, or (b) download them yourself into `library/docs/mod-ufo/`.
-- Full releases on the MoD search page too, or shortlist only? (comment on the report, unanswered as of 2026-11-01 04:00Z)
+- Whether to order DEFE 24/2008 and DEFE 31/176 (asked; the user downloads from Discovery into `tmp/pdfs/defe/`, which works well:
+  Discovery splits big files into `DEFE-xx-yyyy-1_N.pdf` parts).
+- (answered: shortlist only)
 - DEFE 24 numbers 1932–1937, 1944–1947, 1950, 2011, 2051 appear in no release checked: closed, non-UFO, or missing? One Discovery check.
 
 ## Verify
