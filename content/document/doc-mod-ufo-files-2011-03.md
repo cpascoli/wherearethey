@@ -47,6 +47,7 @@ rel:
   - [ released in, uk-national-archives, "Opened at The National Archives on 3 March 2011" ]
   - [ prepared by, uk-mod ]
   - [ part of, doc-tna-mod-ufo-files-guides ]
+  - [ includes, doc-mod-defe-24-2018 ]
   - [ about, inc-tornado-north-sea-1990, "DEFE 24/2041 and DEFE 24/2027" ]
   - [ about, inc-boston-skegness-1996, "DEFE 24/2032, pp. 419–450: the RAF investigation" ]
   - [ about, inc-uk-reentry-1978, "DEFE 24/2048, pp. 108–138" ]
