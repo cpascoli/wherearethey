@@ -1,3 +1,8 @@
+---
+runtime: claude-local
+updated: 2026-11-01T04:01:35Z
+session_id: 1b53c348-8471-4860-80b9-183d056a10eb
+---
 # Handoff: Where Are They — file the strong cases from the missing MoD UFO releases
 
 - **Branch:** `task/archive-continuation` (base: `main` at `12bfa0f`; this branch adds a refreshed `content/lastmod.json` and this file, nothing merged yet)
