@@ -12,7 +12,7 @@ facts:
   - text: In 2001 Greer said the project had identified over 400 witnesses and recorded about 120 hours of interviews, and was offering Congress and the media a briefing document of nearly 500 pages.
     status: claimed
     by: steven-greer
-    source: v-disclosure-project-2001-npc@12:10
+    source: v-disclosure-project-2001-npc@12:08
 ---
 
 The Disclosure Project was founded by the physician Steven Greer in 1993 to collect testimony from former government, military, intelligence and contractor personnel about UFOs and to press for congressional hearings. At its National Press Club event in May 2001 Greer said it had identified over 400 witnesses and recorded about 120 hours of interviews.

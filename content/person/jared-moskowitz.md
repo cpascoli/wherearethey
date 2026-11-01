@@ -13,7 +13,7 @@ facts:
   - text: "At the July 2023 hearing Moskowitz said that if there is nothing to conceal, Congress should be allowed into Wright-Patterson, Dugway Proving Ground or Groom Lake (Area 51)."
     status: claimed
     by: jared-moskowitz
-    source: v-2023-07-26-hearing-a@22:40
+    source: v-2023-07-26-hearing-a@22:34
   - text: "In September 2025 he said: “I don't know on this subject. But I do know when we are being lied to, and we are definitely being lied to.”"
     status: claimed
     by: jared-moskowitz

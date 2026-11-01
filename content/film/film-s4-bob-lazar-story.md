@@ -25,7 +25,7 @@ links:
 facts:
   - text: "Luigi Vendittelli's 2026 documentary, narrated by Bob Lazar himself, recreating what Lazar says he saw at the S4 facility near Area 51 in 1988–89, with interviews with George Knapp, Gene Huff, Mario Santa Cruz and Joy Lazar. The producers' description presents him as a former Los Alamos physicist and promises \"never-before-seen evidence\"."
     status: claimed
-    source: v-2026-03-18-s4-the-bob-lazar-story-release-trailer-out-now-20
+    source: https://www.youtube.com/watch?v=c3qBNo3PAjU
   - text: "Released digitally in 2026 (Amazon, Apple TV and the WANA Channel), with a listed runtime of 114 minutes."
     status: claimed
     source: https://letterboxd.com/film/s4-the-bob-lazar-story/

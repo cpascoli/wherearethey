@@ -17,6 +17,14 @@ rel:
   - [ features, jean-claude-ribes ]
   - [ features, anthony-choy ]
 moments:
+  - t: "0:53"
+    text: "Filmmaker James Fox opens the Veterans Day event, thanking the panellists who travelled from Iran, Peru, Chile and the UK, and journalist Leslie Kean of the Coalition for Freedom of Information, without whom “this event could not have happened”."
+    speaker: james-fox
+    refs: [ ev-npc-2007 ]
+  - t: "1:52"
+    text: "Moderator Fife Symington thanks Fox for twelve years of investigative work and says Fox and Kean pulled the panel together: “I don't think there's ever been a more uh high level or distinguished group”."
+    speaker: fife-symington
+    refs: [ ev-npc-2007 ]
   - t: "4:58"
     claims: [ belgian-triangles ]
     basis: first-hand
@@ -79,6 +87,10 @@ moments:
     text: "John Callahan, former FAA accidents and investigations division chief, on the 1986 Japan Airlines 1628 case: “an event that never happened.”"
     speaker: john-callahan
     refs: [ inc-jal-1628-1986, doc-faa-jal1628-terauchi-interview ]
+  - t: "1:17:54"
+    text: "Symington: in 1997, during his second term as governor of Arizona, he saw “a massive delta-shaped craft that silently navigated over the Peak uh area in North Phoenix”, with huge embedded lights on its leading edge; as a pilot and former Air Force officer he says it resembled no man-made object and was “certainly not high flares”, because “I've never seen flares fly in formation”."
+    speaker: fife-symington
+    refs: [ inc-phoenix-lights-1997 ]
 date: 2007-11-12   # recorded / first broadcast (the YouTube upload is later)
 ---
 

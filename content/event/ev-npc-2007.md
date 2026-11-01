@@ -34,7 +34,7 @@ facts:
     source: v-npc-2007-ufo-close-encounters@0:53
   - text: "Moderator Fife Symington, a former Air Force captain and two-term governor of Arizona, said Fox and Kean were responsible for pulling the panel together."
     status: documented
-    source: v-npc-2007-ufo-close-encounters@2:30
+    source: v-npc-2007-ufo-close-encounters@1:52
   - text: "Symington said the panellists had all signed a request for the U.S. government to reopen the investigation into the phenomenon, which had ended with Project Blue Book in 1969."
     status: documented
     source: v-npc-2007-ufo-close-encounters@4:22

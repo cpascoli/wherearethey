@@ -21,6 +21,10 @@ moments:
   - t: "16:15"
     text: "Journalist Antonio Huneeus on Grenada's 1977–78 initiative at the United Nations, led by Prime Minister Eric Gairy (“I have myself seen an unidentified flying object”), which ended when his government was overthrown in 1979."
     speaker: antonio-huneeus
+  - t: "18:08"
+    text: "Huneeus: a letter from astronaut Gordon Cooper, then a Disney vice-president, was read into the 1978 UN hearing: “we need to have a top-level coordinated program to scientifically collect and analyze data from all over” concerning any type of encounter."
+    speaker: antonio-huneeus
+    refs: [ gordon-cooper ]
   - t: "23:53"
     text: "Attorney Daniel Sheehan says that after the 1976 election Jimmy Carter asked CIA director George H. W. Bush for a UFO briefing and was refused, which led the Congressional Research Service to look into the subject."
     speaker: daniel-sheehan

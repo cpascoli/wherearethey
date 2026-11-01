@@ -15,7 +15,7 @@ facts:
   - text: "Arizona's governor, Fife Symington, said he saw “a massive delta-shaped craft that silently navigated over the Peak uh area in North Phoenix”, with huge embedded lights on its leading edge, and that it was “certainly not high flares” because “I've never seen flares fly in formation”."
     status: claimed
     by: fife-symington
-    source: v-npc-2007-ufo-close-encounters@1:18:04
+    source: v-npc-2007-ufo-close-encounters@1:17:54
   - text: "Lt. Col. Richard French said a silent craft nearly a mile long passed “less than a hundred yards” from him in north Scottsdale, heading towards Tucson, and that the gunnery-flare explanation could not fit."
     status: claimed
     by: richard-french

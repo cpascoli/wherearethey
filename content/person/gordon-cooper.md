@@ -22,7 +22,7 @@ facts:
   - text: "In a letter read into the 1978 United Nations discussion of UFOs, Cooper called for a top-level coordinated program to study them scientifically."
     status: claimed
     by: gordon-cooper
-    source: v-2013-chd-history-2@18:00
+    source: v-2013-chd-history-2@18:08
   - text: "Asked about Edwards in a 1978 interview for OMNI, Cooper said: “I didn't get to see anything personally, it was all second hand evidence really.”"
     status: claimed
     by: gordon-cooper

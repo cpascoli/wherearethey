@@ -12,6 +12,10 @@ rel:
   - [ features, jared-moskowitz ]
   - [ features, leslie-kean ]
 moments:
+  - t: "0:00"
+    text: "James Fox opens: thirty years of investigating, seven documentaries; Congress's hearings mark “a dramatic shift towards transparency”; with the President's directive to release UAP files more craft are being captured on government sensors, and today's focus is on reports of non-human beings connected to the craft."
+    speaker: james-fox
+    refs: [ ev-capitol-uap-press-conference-2026 ]
   - t: "2:54"
     text: "Rep. Luna credits the task force on declassification and asks the White House to grant whistleblowers temporary or permanent immunity."
     speaker: anna-paulina-luna

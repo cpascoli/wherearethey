@@ -45,7 +45,7 @@ facts:
   - text: "Grusch says that in early 2019 his boss at the NRO forwarded him an email from the UAP Task Force director asking for a representative, and that he volunteered."
     status: claimed
     by: david-grusch
-    source: v-jre-david-grusch@4:15
+    source: v-jre-david-grusch@4:10
   - text: "Hal Puthoff calls Grusch a “top UAP investigator for NRO, the National Reconnaissance Office”, who then transferred to the NGA."
     status: claimed
     by: hal-puthoff
@@ -53,7 +53,7 @@ facts:
   - text: "Eric Davis says he met Grusch at Jay Stratton's request, when Grusch was the NRO's liaison officer to the UAP Task Force, and briefed him and his NRO boss through the Aerospace Corporation, the federally funded research centre that supports the NRO, at its Colorado Springs campus where the NRO is a tenant."
     status: claimed
     by: eric-davis
-    source: v-jm-eric-davis@10:18
+    source: v-jm-eric-davis@9:56
   - text: "Davis says that after Grusch filed his whistleblower complaint he and his wife were harassed “by someone in the National reconnaissance office”, and then harassed at home by unknown people."
     status: claimed
     by: eric-davis

@@ -27,6 +27,10 @@ moments:
   - t: "15:38"
     text: "Dolan quotes the 1948 Air Force intelligence report “Analysis of Flying Object Incidents in the U.S.”: “some type of flying object has been observed. The origin of the devices is not ascertainable.”"
     speaker: richard-dolan
+  - t: "22:56"
+    text: "Cameron: three years after closing Blue Book the Air Force, at the direction of its Secretary, contracted two documentary producers at the Pentagon and gave them “a film of extraterrestrials landing at Holloman Air Force Base”, of which they used 8 seconds in the final production; another film marked top secret was never returned, and a CIA agent was present throughout."
+    speaker: grant-cameron
+    refs: [ inc-holloman-1964 ]
   - t: "31:40"
     text: "Friedman argues that Blue Book Special Report No. 14 (Battelle, 1955) found about 21.5% of cases unknown, against the 3% cited in the Air Force press release."
     speaker: stanton-friedman

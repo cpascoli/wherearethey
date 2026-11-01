@@ -19,7 +19,7 @@ facts:
   - text: "On 15 September 1994, he said, the radar held one apparently motionless object for about five hours; radar technicians confirmed the system was working, and the next day people southeast of the airport reported a large disc."
     status: claimed
     by: enrique-kolbeck
-    source: v-disclosure-project-2001-npc@28:14
+    source: v-disclosure-project-2001-npc@27:58
 ---
 
 Between 1992 and 1994 air traffic controllers at Mexico City's international airport recorded a series of unidentified radar contacts and near-collision reports. Enrique Kolbeck, one of the airport's radar controllers, described them at the Disclosure Project press conference in Washington in 2001: fifteen objects detected west of Toluca airport on 4 March 1992; two near-collisions reported by domestic airliners in July and August 1994, one of them briefly seen on radar; and on 15 September 1994 a single, apparently stationary contact held for about five hours, which technicians confirmed was not a radar fault.

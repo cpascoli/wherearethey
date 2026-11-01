@@ -11,10 +11,10 @@ rel:
   - [ witness, inc-ellsworth-1977 ]
   - [ testified to, aaro ]
 facts:
-  - text: Came forward decades later and in 2023 was invited to give testimony under oath to AARO.
+  - text: Came forward decades later and in March 2023 gave AARO an interview of more than four hours; he says he was promised a copy, was told the office does not record interviews, and never heard back.
     status: claimed
     by: mario-woods
-    source: v-michels-mario-woods-2025@55:36
+    source: v-michels-mario-woods-2025@55:39
 ---
 
 Mario Woods is a former U.S. Air Force security policeman at Ellsworth Air Force Base, South Dakota. He says that in November 1977 he and Sgt. Michael Johnson answered an alarm at the N-5 Minuteman silo and saw a massive, pulsating spherical craft over the site, followed by hours of missing time, after which they were questioned separately and medically examined.

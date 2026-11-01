@@ -13,6 +13,10 @@ rel:
   - [ features, bob-salas ]
   - [ features, dwynne-arneson ]
 moments:
+  - t: "0:03"
+    text: "Robert Hastings opens: declassified documents and the testimony of former military personnel “confirm beyond any doubt the reality of ongoing UFO incursions at nuclear weapons sites”; over 37 years he has interviewed more than 120 of them."
+    speaker: robert-hastings
+    refs: [ ev-ufo-nukes-press-conference-2010 ]
   - t: "1:47"
     claims: [ malmstrom-ufo-missile-shutdown ]
     basis: first-hand
@@ -55,6 +59,16 @@ moments:
   - t: "42:21"
     text: "Bruce Fenstermacher: in autumn 1976, as a crew commander at F.E. Warren, his topside guard reported a huge white pulsating \"pregnant cigar\" over the launch control facility that moved from silo to silo. The command post at first laughed it off."
     speaker: bruce-fenstermacher
+  - t: "44:11"
+    claims: [ uap-nuclear-sites ]
+    basis: first-hand
+    text: "Fenstermacher: the topside security controller described a silent object “shaped like a fat cigar”, a white pulsating light with red and blue lights between the pulsations, above the launch control facility; it then moved along the access road and stopped over one of the missile silos."
+    speaker: bruce-fenstermacher
+    refs: [ inc-warren-1976 ]
+  - t: "45:12"
+    text: "Fenstermacher: the SAC command post at F.E. Warren laughed, “When it eats the SAT team, call me back”; the security alert team never reached the launch facility as the object moved on, and the command post was not logging the calls until he demanded the officer in charge."
+    speaker: bruce-fenstermacher
+    refs: [ inc-warren-1976 ]
   - t: "48:50"
     text: "Robert Salas says the participants have signed affidavits. He reads the Air Force statement that no UFO it evaluated was ever a threat to national security, and calls it misleading."
     speaker: bob-salas

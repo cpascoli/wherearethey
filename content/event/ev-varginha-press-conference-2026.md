@@ -17,7 +17,7 @@ rel:
 facts:
   - text: "On the 30th anniversary of the Varginha incident, filmmaker James Fox presented witnesses in Washington: crash witness Carlos de Souza, forensic examiner Armando Fortunato Filho, a written statement by pathologist João Baptista Macuco Janini, neurosurgeon Ítalo Venturelli and retired USAF Col. Fred Claussen, with recorded statements from six Brazilian witnesses whose U.S. visas were denied. Kirk McConnell and Rep. Eric Burlison also spoke."
     status: documented
-    source: v-2026-01-20-newsnation-varginha-press-conference
+    source: v-2026-01-20-newsnation-varginha-press-conference@44:37
 ---
 
 A press conference at the National Press Club, broadcast live by NewsNation, at which James Fox presented testimony from his updated documentary Moment of Contact. It was a press event, not a hearing: nothing was said under oath to Congress, and no documents or physical evidence were presented. Brazil's Senator Eduardo Girão attended in a private capacity.

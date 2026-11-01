@@ -23,6 +23,14 @@ moments:
     text: "Greer claims unacknowledged special access projects take in “at least 40 to 80 billion per year” and hold technologies that could change the world."
     speaker: steven-greer
     refs: [ usap ]
+  - t: "9:28"
+    text: "Greer states the campaign's goals: “open honest hearings on the subject in the US Congress”, “a permanent ban on the weaponization of space”, and a study of classified technologies to see how they could be declassified for peaceful energy generation."
+    speaker: steven-greer
+    refs: [ ev-disclosure-project-2001, disclosure-project ]
+  - t: "12:08"
+    text: "Greer offers Congress and the media “a nearly 500 page briefing document” with witness transcripts and a four-hour videotape summary “of the 120 hours that we have in interviews so far”."
+    speaker: steven-greer
+    refs: [ disclosure-project ]
   - t: "14:26"
     claims: [ jal1628-unknown-craft ]
     basis: relayed
@@ -39,6 +47,10 @@ moments:
   - t: "25:29"
     text: "Enrique Kolbeck, radar controller at Mexico City International Airport, lists radar detections and near-misses with airliners in 1992 and 1994."
     speaker: enrique-kolbeck
+  - t: "27:58"
+    text: "Kolbeck: on 15 September 1994 the Mexico City radar held one apparently motionless object for about five hours; the radar technicians confirmed the system was working well, and the next day he learned of a sighting by many people southeast of the airport."
+    speaker: enrique-kolbeck
+    refs: [ inc-mexico-city-radar-1992 ]
   - t: "30:28"
     text: "Cmdr. Graham Bethune (USN, ret.) describes a night flight from Keflavik to Argentia on February 10, 1951, when a glowing object rose from the sea and paced the aircraft."
     speaker: graham-bethune

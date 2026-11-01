@@ -5,6 +5,13 @@ date: 2025-05-01   # the hearing day (the YouTube upload is later)
 rel:
   - [ recording of, h-2025-05-01 ]
 moments:
+  - t: "0:00"
+    text: "The host opens: the briefing will run as three panel discussions with ten-minute breaks, and turns first to Rep. Luna."
+    refs: [ h-2025-05-01 ]
+  - t: "0:22"
+    text: "Luna opens: until the last Congress Rep. Burchett led the investigation “solely on his own”; now there is “a complete push for transparency out of the current administration” and bicameral, bipartisan support. The National Archives has put its UAP records online, two more hearings are scheduled, and a staffer has heard from someone wanting to come forward about a crash retrieval program."
+    speaker: anna-paulina-luna
+    refs: [ h-2025-05-01 ]
   - t: "3:37"
     text: "Burlison credits DNI Tulsi Gabbard, whose Director's Initiatives Group is harmonizing classification guides to allow responsible releases, and says this will be systemic change, not a one-time data dump."
     speaker: eric-burlison

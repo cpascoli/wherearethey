@@ -19,7 +19,7 @@ facts:
     basis: first-hand
     status: claimed
     by: bob-lazar
-    source: v-bob-lazar-1989-knapp
+    source: v-bob-lazar-1989-knapp@7:33
   - text: "First appearing in shadow as “Dennis”, he said there were nine flying discs at S-4, a few miles south of Groom Lake, and described being walked past the disc he called the “sport model” in a hangar before seeing nine craft in connected hangars."
     claims: [ area-51-alien-craft ]
     basis: first-hand

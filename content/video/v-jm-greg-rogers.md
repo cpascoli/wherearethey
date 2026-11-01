@@ -5,6 +5,10 @@ rel:
   - [ published by, jesse-michels ]
   - [ about, inc-cape-canaveral-1992 ]
 moments:
+  - t: "0:02"
+    text: "Cold open: Rogers, chief of aerospace medicine in 1992, says a major showed him “a saucer 20 ft across”, “no rivets, uh, no seams”, marked US Air Force; asked why it was built that way, the major said “We got it from them.”"
+    speaker: gregory-rogers
+    refs: [ inc-cape-canaveral-1992 ]
   - t: "33:54"
     text: "Rogers: in spring 1992, after inspecting clean rooms at Cape Canaveral with an EG&G escort, a major stopped him: “I've got something to show you even you have never seen.”"
     speaker: gregory-rogers

@@ -16,7 +16,7 @@ rel:
 facts:
   - text: "Filmmaker James Fox, Rep. Anna Paulina Luna, Rep. Eric Burlison, Rep. Tim Burchett, Rep. Jared Moskowitz, journalist Leslie Kean and former intelligence officer David Grusch spoke at an unsworn press conference on Capitol Hill calling on the President to declassify UAP records and grant immunity to whistleblowers."
     status: documented
-    source: v-2026-06-09-capitol-uap-press-conference
+    source: v-2026-06-09-capitol-uap-press-conference@0:00
   - text: "Luna said the task force was asking the White House to grant temporary or permanent immunity to whistleblowers who can reveal the locations of craft or advanced technologies. At the end she said the White House was considering immunity."
     status: claimed
     by: anna-paulina-luna

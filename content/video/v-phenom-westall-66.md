@@ -13,5 +13,8 @@ moments:
     text: "A witness on the oval describes the object about 50 ft up and Greenwood coming towards them."
     speaker: andrew-greenwood
     refs: [ inc-westall-1966 ]
+  - t: "57:24"
+    text: "A former student: she and another girl went over the fence behind Tania Vassie, “Tania was in the lead”; where the object had come down there was “a great big round patch” of flattened yellow grass in a swirl, and the disc then rose again."
+    refs: [ tania-vassie, inc-westall-1966 ]
 ---
 

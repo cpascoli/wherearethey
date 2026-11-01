@@ -5,6 +5,10 @@ youtube: R8TqBrrqL4U
 rel:
   - [ features, david-grusch ]
 moments:
+  - t: "4:10"
+    text: "Grusch: in early 2019 his boss at the National Reconnaissance Office forwarded him an email from the UAP Task Force director looking for a representative; he volunteered, with a physics degree, a master's in intelligence analysis and clearances, expecting weather balloons or a misidentified U.S. program."
+    speaker: david-grusch
+    refs: [ nro, uaptf ]
   - t: "11:15"
     text: "Grusch: in fall 2019 a very senior intelligence official introduced him to a PhD-level source who said, in a secure facility, that he had worked on a program reverse-engineering crash material recovered over decades."
     speaker: david-grusch

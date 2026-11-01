@@ -10,7 +10,7 @@ facts:
   - text: Moderated the November 12, 2007 National Press Club panel of international officials and pilots. He also says he personally saw the 1997 “Phoenix Lights”.
     status: claimed
     by: fife-symington
-    source: v-npc-2007-ufo-close-encounters@1:18:10
+    source: v-npc-2007-ufo-close-encounters@1:17:54
 rel:
   - [ witness, inc-phoenix-lights-1997 ]
 ---

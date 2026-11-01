@@ -17,7 +17,7 @@ facts:
   - text: "Rogers says an Air Force major at Cape Canaveral showed him security footage of a white saucer about 20 feet wide levitating inside a military hangar; no footage or record has been released."
     status: claimed
     by: gregory-rogers
-    source: v-jm-greg-rogers@0:11
+    source: v-jm-greg-rogers@0:02
   - text: "He describes the craft on the closed-circuit feed as a pearly white saucer about 20 feet across, with no seams or rivets, black markings and “US Air Force” lettering, which lifted off and rotated 360 degrees each way."
     status: claimed
     by: gregory-rogers

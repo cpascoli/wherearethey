@@ -23,6 +23,10 @@ moments:
     text: "Borland: after two or three minutes the center light flashed and it climbed from about 100 feet to at least airliner altitude in two to three seconds, then drifted east over the Atlantic; the friend on the phone, a federal officer, has not come forward."
     speaker: dylan-borland
     refs: [ inc-langley-2012 ]
+  - t: "46:03"
+    text: "Borland: in New Insights Lacatski “talks about UFOs as puzzles”, almost consciousness puzzles: the by-product may be technology we can use, “maybe you end up with fiber optics”, while the original purpose stays beyond us."
+    speaker: dylan-borland
+    refs: [ book-covert-ufo-new-insights, james-lacatski ]
   - t: "52:08"
     text: "Borland: he knows for a fact the government holds cell-phone video of a triangle from within 100 feet, and is sure the U.S. has recovered craft “not made by humanity” — while saying he has never claimed they are extraterrestrial."
     speaker: dylan-borland

@@ -30,7 +30,7 @@ facts:
   - text: "Paul Hellyer said Greer was “the first person to brief me” after he went public, over a three-hour lunch in Toronto."
     status: claimed
     by: paul-hellyer
-    source: v-hellyer-hannibal-tv-2017@22:37
+    source: v-hellyer-hannibal-tv-2017@22:41
   - text: "Edgar Mitchell said Greer “did indeed mount an initiative and did go to Washington, did speak with high-level government people.”"
     status: claimed
     by: edgar-mitchell

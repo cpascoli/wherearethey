@@ -11,6 +11,10 @@ moments:
   - t: "8:24"
     text: "Davis says he briefed Senate Intelligence and Armed Services Committee staff in classified settings in 2019 and 2022, but was never invited to testify."
     speaker: eric-davis
+  - t: "9:56"
+    text: "Davis: Jay Stratton introduced him to Grusch and his NRO government customer, a GS-15; they invited him through the Aerospace Corporation, “the ffrdc that supports nro”, and flew him to Colorado Springs, where the NRO office is a tenant on the Aerospace campus, to brief them."
+    speaker: eric-davis
+    refs: [ nro, david-grusch, jay-stratton ]
   - t: "18:08"
     text: "Davis claims Glenn Gaffney, then head of the CIA's science and technology directorate, blocked a contractor from sharing its crash-retrieval material with AAWSAP."
     speaker: eric-davis

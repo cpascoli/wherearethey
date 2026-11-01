@@ -17,7 +17,7 @@ rel:
 facts:
   - text: "Researcher Robert Hastings presented seven former U.S. Air Force personnel who described UFO incidents at nuclear-weapons sites: Dwynne Arneson, Bruce Fenstermacher, Charles Halt, Robert Jamison, Patrick McDonough, Jerome Nelson and Robert Salas."
     status: documented
-    source: v-2010-09-28-disclosure-conference-national-press-club-27-sept
+    source: v-2010-09-28-disclosure-conference-national-press-club-27-sept@0:03
   - text: "Salas said the participants had signed affidavits attesting to their statements. He read the Air Force's position that \"no UFO reported, investigated, and evaluated by the Air Force was ever an indication of threat to our national security\" and called it misleading."
     status: claimed
     by: bob-salas

@@ -26,11 +26,14 @@ facts:
     source: v-disclosure-project-2001-npc@14:26
   - text: "Witnesses included John Callahan (FAA), Lt. Col. Charles Brown (USAF/OSI), Cmdr. Graham Bethune (USN), Robert Salas (USAF missile officer), Col. Dwynne Arneson (USAF), Enrique Kolbeck (Mexican air traffic control), Larry Warren and George Filer (USAF), and Clifford Stone (U.S. Army)."
     status: documented
-    source: v-disclosure-project-2001-npc
-  - text: "Greer called for open congressional hearings, a ban on weapons in space, and declassification of energy and propulsion technology. Congress held no hearings in response. The next open congressional UAP hearing came in May 2022, the first in more than fifty years."
+    source: v-disclosure-project-2001-npc@2:50
+  - text: "Greer called for open congressional hearings, a ban on weapons in space, and declassification of energy and propulsion technology."
     status: claimed
     by: steven-greer
-    source: v-disclosure-project-2001-npc@9:30
+    source: v-disclosure-project-2001-npc@9:28
+  - text: "Congress held no hearings in response. The next open congressional UAP hearing came in May 2022, the first in more than fifty years."
+    status: documented
+    source: h-2022-05-17
 ---
 
 The best-known civilian-organised witness event before the 2017 New York Times story. The organiser is outside the archive's criteria, but several speakers held official roles and their accounts are recorded here as testimony. Callahan's JAL 1628 account and Salas's Malmstrom account are independently backed by records already in the archive.

@@ -18,10 +18,10 @@ links:
 facts:
   - text: "A two-part documentary series written and directed by Dean Alioto, released digitally worldwide on January 8, 2025. Its producers describe it as exploring the UFO phenomenon with insights from NASA, France's space agency CNES and Oxford, first-hand witnesses, and the possible viewpoint of extraterrestrial visitors."
     status: claimed
-    source: v-2024-12-20-the-alien-perspective-official-trailer-2025-docum
+    source: https://www.youtube.com/watch?v=05Sk-Zsuq4k
   - text: "Interviewees named by the producers include the physicist Michio Kaku, the comedian and UFO researcher Dave Foley, the journalist Leslie Kean and NASA's Elisa Quintana, deputy project scientist for the TESS mission. Alioto previously consulted on James Fox's The Phenomenon (2020)."
     status: claimed
-    source: v-2024-12-20-the-alien-perspective-official-trailer-2025-docum
+    source: https://www.youtube.com/watch?v=05Sk-Zsuq4k
 ---
 
 A 2025 two-part documentary by Dean Alioto that tries to turn the usual question around: rather than asking what an encounter with extraterrestrials would mean for us, it asks how visitors might see us. It mixes interviews with scientists and commentators, among them Michio Kaku, NASA's Elisa Quintana and the journalist Leslie Kean, with first-hand witness accounts, including of the 1980 Rendlesham Forest incident, and animated sequences by Arvid Steen.

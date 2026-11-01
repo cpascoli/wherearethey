@@ -33,7 +33,7 @@ facts:
   - text: "Grant Cameron told the 2013 Citizen Hearing that the producers were given a film of extraterrestrials landing at Holloman and used 8 seconds of it in the final production."
     status: claimed
     by: grant-cameron
-    source: v-2013-chd-opening@23:01
+    source: v-2013-chd-opening@22:56
   - text: "A claim that a few seconds of the real footage appear in the 1974 film was later debunked: analysis showed the shot was part of the reenactment."
     status: claimed
     source: https://en.wikipedia.org/wiki/UFOs:_Past,_Present,_and_Future

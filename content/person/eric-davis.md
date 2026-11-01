@@ -34,10 +34,6 @@ facts:
     status: claimed
     by: eric-davis
     source: v-2025-05-01-hearing-a@1:04:55
-  - text: "Has said that defense contractors such as Lockheed Martin hold retrieved craft inside unacknowledged special access programs kept from congressional oversight."
-    status: claimed
-    by: eric-davis
-    source: doc-wilson-memo
   - text: "He is the reported author of the 2002 notes of a conversation with former DIA director Adm. Thomas Wilson, entered into the House Intelligence Committee record in 2022. He says he would need a lawyer to assess the circumstances in which Wilson gave him information before discussing it; neither man has confirmed the notes."
     status: claimed
     by: eric-davis
@@ -49,7 +45,7 @@ facts:
   - text: "He says that, while assigned to the Aerospace Corporation in Huntsville supporting NASA's space nuclear propulsion office, he met David Grusch “at the behest of Jay Stratton” and briefed him and his NRO boss for two and a half days just before COVID; that material formed part of Grusch's classified Inspector General complaint."
     status: claimed
     by: eric-davis
-    source: v-2025-05-01-hearing-a@1:01:39
+    source: v-2025-05-01-hearing-a@1:02:29
   - text: "He says the crash-retrieval programs go back to the U.S. Army's 1944 recovery of a craft that crashed in Italy in 1933, are hidden from Congress under presidential emergency action directives dating from Eisenhower, and are funded through shell companies and contractors' internal R&D."
     status: claimed
     by: eric-davis

@@ -44,6 +44,10 @@ moments:
     refs: [ inc-varginha-1996 ]
     claims: [ varginha-beings-captured ]
     basis: relayed
+  - t: "44:37"
+    text: "Fox: “I believe in this case because this could settle the debate once and for all that we're not alone”; he thanks the Brazilian witnesses and the translator, and introduces Carlos de Souza, an early crash witness who gave one statement in 1996 and then “vanished for the better part of 26 years”."
+    speaker: james-fox
+    refs: [ ev-varginha-press-conference-2026, carlos-de-souza ]
   - t: "46:46"
     speaker: carlos-de-souza
     text: "Carlos de Souza, an ultralight pilot and geography teacher, in his first public statement in 26 years: “I witnessed the crash of a non-terrestrial craft on January 13th”, a cigar-shaped object releasing white smoke with a tear down its side."

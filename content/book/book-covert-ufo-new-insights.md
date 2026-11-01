@@ -46,7 +46,7 @@ glimpses:
     via: "Life in Jonestown (review)"
     url: https://lifeinjonestown.substack.com/p/the-old-insights-were-sexier
   - text: "New Insights describes AAWSAP activity from June 2009 to January 2010"
-    where: "On the book’s scope, as quoted"
+    where: "On the book’s scope; the review attributes the sentence to Lacatski (“he writes”)"
     via: "Life in Jonestown (review)"
     url: https://lifeinjonestown.substack.com/p/the-old-insights-were-sexier
 ---

@@ -44,7 +44,7 @@ facts:
   - text: "At the July 2023 hearing, Rep. Jared Moskowitz said that if there is nothing to conceal, Congress should be allowed into Wright-Patterson, Dugway Proving Ground or Groom Lake (Area 51)."
     status: claimed
     by: jared-moskowitz
-    source: v-2023-07-26-hearing-a@22:40
+    source: v-2023-07-26-hearing-a@22:34
   - text: "Former Senator Barry Goldwater said in 1994 that he believed “at Wright-Patterson Field if you could get into certain places you'd find out what the Air Force and the government knows about UFOs”, and that Gen. Curtis LeMay angrily refused his request to see a room there; he said he could not back it up."
     status: claimed
     by: barry-goldwater

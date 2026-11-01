@@ -54,4 +54,8 @@ moments:
   - t: "1:09:20"
     text: "French says that during the 1997 Phoenix Lights he saw a silent craft nearly a mile long pass within 100 yards of him, and rejects the official explanation of flares."
     speaker: richard-french
+  - t: "1:11:28"
+    text: "French: the craft “made absolutely no sound”, passed “less than a hundred yards” from him, was “nearly a mile” long and about 60 feet across, and headed for Tucson, where the smaller objects he had been told were parachute targets entered it through what looked like little doors."
+    speaker: richard-french
+    refs: [ inc-phoenix-lights-1997 ]
 ---
