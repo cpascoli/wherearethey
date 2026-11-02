@@ -24,6 +24,10 @@ facts:
     source: library/docs/doc-geipan-af3532.pdf
 ---
 
-GEIPAN's public case file on Air France flight 3532, with its summary, classification and attachments: the investigation report, a Météo-France radiosonde check, the air-defence (CODA) chronology and the gendarmerie statements. Our copies are a capture of the case page and the investigation report.
+GEIPAN's public case file on Air France flight 3532, the A320 whose crew saw a phenomenon over Coulommiers on 28 January 1994. It holds the summary, the classification and the attachments: the investigation report, a Météo-France radiosonde check, the air-defence (CODA) chronology and the gendarmerie statements. Our copies are a capture of the case page and the investigation report.
 
-*Sources: GEIPAN (CNES), case 1994-01-01345*
+The file records the captain and copilot describing a brown or dark red disc that changed shape before suddenly disappearing, while the chief steward thought it looked like a weather balloon. A 50-second unidentified radar track crossed the flight's path and vanished at the same moment, though the investigators stayed cautious about linking the two.
+
+GEIPAN classifies the case D1, unexplained, but lists its weaknesses: the crew reported it three years later, the steward's statement is missing, and the radar track is inconsistent with the object observed. The captain, Jean-Charles Duboc, later accepted on French television that the radar trace was not his object.
+
+*Sources: GEIPAN (CNES), case 1994-01-01345 · France 3 (2007)*

@@ -27,6 +27,6 @@ facts:
 
 Late on Friday 13 December 2024, during a wave of drone sightings in the U.S. Northeast, Wright-Patterson Air Force Base near Dayton, Ohio, closed its airspace for about four hours after small unmanned aerial systems were seen over and around the base. A tower recording obtained by The War Zone warns a medical transport flight of "heavy UAS movement on the base".
 
-The base's public affairs office confirmed the sightings and said the drones did not affect base residents, facilities or assets. No origin was announced. Like the Langley incursions of December 2023, the episode raised questions about the defence of U.S. bases against small drones. The base described them only as small unmanned aerial systems.
+The base's public affairs office confirmed the sightings and said the drones did not affect base residents, facilities or assets. No origin was announced. Like the Langley incursions of December 2023, the episode raised questions about the defence of U.S. bases against small drones. The base described them only as small unmanned aerial systems. No official record of the closure has been located in the archive.
 
 *Sources: [WVXU (2024)](https://www.wvxu.org/local-news/2024-12-15/wright-patterson-air-force-base-drones) · WCPO 9 (2024) · [The War Zone (2024)](https://www.twz.com/air/drone-incursions-closed-wright-patterson-air-force-bases-airspace-friday-night)*

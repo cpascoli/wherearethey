@@ -14,6 +14,10 @@ rel:
   - [ testified at, h-1968-07-29 ]
 ---
 
-James E. McDonald was an atmospheric physicist at the University of Arizona who argued in the 1960s that UFO reports deserved serious scientific study. He testified at the House Committee on Science and Astronautics' symposium on UFOs in July 1968.
+James E. McDonald was a senior physicist at the Institute of Atmospheric Physics of the University of Arizona who argued in the 1960s that UFO reports deserved serious scientific study. He was one of the six scientists who addressed the House Committee on Science and Astronautics' symposium on UFOs on 29 July 1968.
 
-*Sources: 1968 House symposium record*
+There he said he had studied the problem intensively for about two years, had interviewed several hundred witnesses in selected cases, and believed it was “a matter of extraordinary scientific importance.” Asked whether anything more should be done after the Air Force and Colorado studies, he answered “Emphatically, yes”, and proposed a broader basis of investigation, including a group in NASA. His Case 41 for the symposium covered the 1957 Edwards AFB Askania photographs, from interviews with both cameramen and their range director; Edwards had attributed the object to a weather balloon.
+
+He also contributed to *UFO's: A Scientific Debate* (1972), the papers of the 1969 AAAS symposium.
+
+*Sources: 1968 House symposium record · Edwards AFB case record · UFO's: A Scientific Debate (1972)*

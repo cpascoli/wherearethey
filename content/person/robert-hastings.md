@@ -24,6 +24,12 @@ facts:
   - text: "The sceptic Benjamin Radford wrote after the 2010 press conference that Hastings's claims offer no “new evidence or real proof” but rehash old, discredited reports."
     status: claimed
     source: https://en.wikipedia.org/wiki/Robert_Hastings_(ufologist)
+  - text: "Opening his 2010 National Press Club press conference, Hastings said declassified documents and the testimony of former military personnel “confirm beyond any doubt the reality of ongoing UFO incursions at nuclear weapons sites”, and that over 37 years he had interviewed “more than 120” of them."
+    claims: [ uap-nuclear-sites ]
+    basis: relayed
+    status: claimed
+    by: robert-hastings
+    source: v-2010-09-28-disclosure-conference-national-press-club-27-sept@0:03
 ---
 
 Robert Hastings (born 1950 in Albuquerque) is an American UFO researcher and author whose work centres on reports of UFOs at nuclear weapons sites. His father served in the U.S. Air Force at Malmstrom Air Force Base, Montana, and Hastings says that in March 1967, as a teenager working in the base control tower, he saw radar track five unidentified objects near the missile silos. He trained in photography at Ohio University, worked as a photographic technician and later as a laboratory analyst at Philips Semiconductors, and from 1981 lectured at hundreds of U.S. colleges.

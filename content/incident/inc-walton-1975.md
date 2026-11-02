@@ -21,6 +21,6 @@ On 5 November 1975, a seven-man forestry crew led by Mike Rogers was driving hom
 
 Walton was missing for five days, until he telephoned from a payphone in Heber on 11 November, saying he had been aboard a craft with non-human beings. The Arizona polygraph examiner C. E. Gilson tested the crew and found five of six truthful and one inconclusive; Walton failed an earlier test by examiner John McCarthy, who reported "gross deception". Walton's book *The Walton Experience* (1978) became the film *Fire in the Sky* (1993).
 
-The sceptic Philip J. Klass and others argued the event was a hoax to escape a penalty of about $2,500 for falling behind on the forestry contract.
+The sceptic Philip J. Klass and others argued the event was a hoax to escape a penalty of about $2,500 for falling behind on the forestry contract. No official record of the case has been located in the archive.
 
 *Sources: [Wikipedia](https://en.wikipedia.org/wiki/Travis_Walton_UFO_incident)*

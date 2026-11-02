@@ -30,8 +30,10 @@ facts:
     source: https://thehill.com/policy/defense/4937166-drone-flights-virginia-base/
 ---
 
-In December 2023, unidentified drones or aircraft repeatedly entered restricted airspace over Langley Air Force Base in Virginia on 17 nights in a row, according to Gen. Gregory Guillot, commander of NORAD and U.S. Northern Command.
+In December 2023 unidentified drones or aircraft repeatedly entered restricted airspace over Langley Air Force Base in Virginia, on 17 nights in a row according to Gen. Gregory Guillot, commander of NORAD and U.S. Northern Command. It is in the archive because senior officers and members of Congress have spoken of it on the record.
 
-No public attribution of the aircraft has been made.
+In March 2024 Guillot told the Senate Armed Services Committee that he was using the Langley events as “the centerpiece” of his counter-drone assessment: “I was not prepared for the number of incursions that I see.” In April Rep. Rob Wittman said Langley “had to close down” because of the drones; Air Force Secretary Frank Kendall did not address it. Rep. Glenn Grothman described drones about 20 feet long flying over 100 mph. Chris Mellon says the Air Force told Congress it had no video of them, and Dylan Borland says he knows what they were targeting.
 
-*Sources: [The Hill (2024)](https://thehill.com/policy/defense/4937166-drone-flights-virginia-base/)*
+No public attribution has been made. Kirk McConnell, a former Senate staffer, citing accounts from Langley among others, thinks the black triangles seen near bases are “probably ours”.
+
+*Sources: [The Hill (2024)](https://thehill.com/policy/defense/4937166-drone-flights-virginia-base/) · SASC hearing transcript (14 March 2024) · HASC hearing transcript (17 April 2024) · House Oversight hearing (13 November 2024)*

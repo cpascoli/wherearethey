@@ -14,6 +14,10 @@ facts:
     status: claimed
     by: calvin-parker
     source: v-fox10-calvin-parker-2023@1:34
+  - text: "Hickson's questioning at the Jackson County sheriff's office on the night of 11 October 1973 was recorded; on the tape he tells the officers: “I don't want no big publicity about the thing”."
+    status: documented
+    by: charles-hickson
+    source: v-pascagoula-sheriff-tape-1973@18:28
 ---
 
 On the evening of 11 October 1973, Charles Hickson, 45, and Calvin Parker, 17, were fishing on the west bank of the Pascagoula River in Mississippi when, they said, they heard a whirring sound, saw flashing blue lights and an oval object 30–40 feet across, and were taken aboard by three creatures with pincer-like hands and examined before being released.
@@ -22,4 +26,4 @@ The pair reported it to the police. Officers left them alone in a room with a re
 
 Sceptics, among them Joe Nickell, suggest Hickson may have had a hypnagogic (half-asleep) experience; Parker, who said he passed out at the start, offers little independent corroboration.
 
-*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Pascagoula_Abduction)*
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Pascagoula_Abduction) · Jackson County sheriff's office recording (1973)*

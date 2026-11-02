@@ -13,6 +13,8 @@ rel:
   - [ witness, inc-pretoria-road-1965 ]
 ---
 
-John Locken was a South African Police constable who, on patrol with Constable Koos de Klerk on 17 September 1965, said he saw a disc-shaped object rise from the road between Pretoria and Bronkhorstspruit; investigators reportedly found a scorched circle and a collapsed section of road surface.
+John Locken was a South African Police constable. On patrol with Constable Koos de Klerk on 17 September 1965, he said he saw a disc-shaped object rise from the road between Pretoria and Bronkhorstspruit.
+
+Investigators later reportedly found a scorched circle about 3 metres across, and part of the road surface had collapsed. The account comes from a secondary source: the two officers' statement and the reported road damage are the main evidence, and no official conclusion is recorded in the sources found.
 
 *Sources: Pretoria road incident record*

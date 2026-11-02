@@ -14,6 +14,10 @@ rel:
   - [ witness, inc-pascagoula-1973 ]
 ---
 
-Calvin Parker was the younger of the two men in the 1973 Pascagoula, Mississippi, abduction report: aged 17, he was fishing with Charles Hickson when, they said, they were taken aboard a craft. Parker said he passed out at the start of the encounter. He later told his story in interviews; several recordings are filed here.
+Calvin Parker was the younger of the two men in the October 1973 Pascagoula, Mississippi, abduction report. Then in his late teens, he says Charles Hickson had given him a job at the Pascagoula shipyard, and after his first day at work the two went fishing on the river.
 
-*Sources: Pascagoula incident record*
+In later interviews he describes blue lights, then three beings, “bulky looking creatures” in one account, who floated both men aboard a craft; an injection-like sensation that numbed him; and an examination by a being he felt say telepathically “we're not gonna harm you”. He says J. Allen Hynek, who flew down the next day, said something traumatic had really happened to them. He kept his account to himself, he says, until his 2018 book *Pascagoula — The Closest Encounter*.
+
+All of this is his testimony. The case rests on the two men's accounts, with no independent physical evidence; the incident file notes that Parker said he passed out at the start.
+
+*Sources: Pascagoula incident record · FOX10 News (2023) · UFO Congress (2019)*

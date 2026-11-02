@@ -23,4 +23,10 @@ facts:
     source: library/docs/doc-aaro-historical-record-report-v1.pdf
 ---
 
-A clear case where an insider's account and the official finding disagree. Puthoff stresses the unexplained manufacture; AARO says the material is ordinary, possibly USAF, alloy. Both accounts agree there is no non-terrestrial isotope signature.
+A layered metal sample, mostly magnesium and bismuth, said to come from the 1947 Roswell debris. It is in the archive because an insider's account and an official finding disagree about it.
+
+Hal Puthoff has described it in talks since 2018. He says it was sent anonymously to Art Bell by a man who found it in his grandfather's archives with a diary entry calling it a piece from Roswell, and that it then passed to Linda Moulton Howe. He says he cannot vouch for the diary story, “only data counts”: no lab could find anyone who made it, and an aerospace firm spent over $1 million bonding just two layers. He says To the Stars arranged, through a U.S. Army contract and AARO, for it to be analysed at Oak Ridge, where the isotopes proved terrestrial.
+
+AARO's 2024 historical report concludes that it is “a manufactured, terrestrial alloy” that does “not represent off-world technology”, possibly of USAF origin, and that the bismuth “was not a pure layer per initial claims”. Both accounts agree there is no non-terrestrial isotope signature.
+
+*Sources: Joe Rogan Experience #2314: Hal Puthoff · Hal Puthoff, 2018 presentation · Eric Weinstein and Hal Puthoff (2022) · AARO Historical Record Report, Volume 1*

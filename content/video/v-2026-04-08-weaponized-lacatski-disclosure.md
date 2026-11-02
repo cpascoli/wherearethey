@@ -31,6 +31,10 @@ moments:
     text: "From Future Visions: signals from the mesa, and the program's security scares. Lacatski says modified transmitting phones, “government gsa approved phones”, were found at BAASS in Las Vegas, suspected tracking devices had been removed from vehicles, and individuals at BAASS tried to send the program's worldwide database “off-site to parties unknown”."
     speaker: james-lacatski
     refs: [ book-covert-ufo-future-visions, aawsap ]
+  - t: "47:04"
+    text: "Lacatski: after FBI counterintelligence briefings they were fairly confident they were not being spied on; he can't speak to the ranch now, but “Brandon Fugal is doing a great job up there of furthering the research”."
+    speaker: james-lacatski
+    refs: [ brandon-fugal, skinwalker-ranch ]
   - t: "48:56"
     text: "Lacatski says that during KONA BLUE “there was a levitation of a human being”, reported by a reliable person, which he describes as an actual person in the air."
     speaker: james-lacatski

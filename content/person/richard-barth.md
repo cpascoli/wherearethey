@@ -9,7 +9,15 @@ facts:
   - text: "Says a hooded being paralysed him while he was guarding a Vandenberg missile site, and that he found himself aboard a craft over the base with four other beings. He says they told him they were inspecting the missiles to understand how they worked, to prevent nuclear war."
     status: claimed
     by: richard-barth
-    source: https://www.youtube.com/watch?v=Qe8br8yYEDM
+    source: v-michels-richard-barth-2026@28:30
+  - text: "Barth says he gave his DD-214 service record to the researcher Robert Hastings, who is “very, very thorough”."
+    status: claimed
+    by: richard-barth
+    source: v-michels-richard-barth-2026@16:24
+  - text: "He acknowledges the objection that he has no witnesses: “you have no witnesses. You know, you were out there by yourself.”"
+    status: claimed
+    by: richard-barth
+    source: v-michels-richard-barth-2026@1:16:33
 rel:
   - [ served at, vandenberg-sfb, "He says he guarded a Vandenberg missile site, where he describes an abduction" ]
 ---

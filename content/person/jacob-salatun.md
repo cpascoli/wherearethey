@@ -16,6 +16,10 @@ facts:
     source: https://en.wikipedia.org/wiki/Jacob_Salatun
 ---
 
-Indonesian Air Force officer (1927–2012) who rose to Air Marshal and founded the national space agency LAPAN. He is the senior official most associated with UFO research in Southeast Asia.
+Jacob Salatun (1927–2012) was an Indonesian Air Force officer who rose to Air Marshal and founded LAPAN, Indonesia's National Institute of Aeronautics and Space, in 1963. He is the senior official most associated with UFO research in Southeast Asia.
+
+According to his Wikipedia entry, he was Indonesia's first prominent UFO researcher. He wrote “Menjingkap Rahasia Piring Terbang” (1960) and “UFO, Salah Satu Masalah Dunia Masa Kini” (1982), in which he describes seeing and photographing a UFO himself, and he founded the Indonesian UFO study group SUFOI.
+
+These details come from a secondary source. No Indonesian official record, and no report of his own sighting, is on file.
 
 *Sources: [Wikipedia](https://en.wikipedia.org/wiki/Jacob_Salatun) · [UFO sightings in Indonesia](https://en.wikipedia.org/wiki/UFO_sightings_in_Indonesia)*

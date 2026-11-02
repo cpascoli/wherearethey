@@ -38,6 +38,10 @@ moments:
   - t: "26:26"
     text: "He describes the “El Bosque” case, an object caught on several videos of the Chilean Air Force's air parade at the academy in Santiago, released by Gen. Bermúdez."
     refs: [ cefaa ]
+  - t: "29:25"
+    text: "Huneeus closes with a quote from his interview with Gen. Bermúdez: “The official conclusion is that the anomalous aerial phenomenon known as unidentified flying objects is real”, in and outside controlled airspace and at sea."
+    speaker: antonio-huneeus
+    refs: [ ricardo-bermudez, cefaa ]
   - t: "32:11"
     text: "Retired Uruguayan colonel Ariel Sánchez says the Uruguayan Air Force's CRIDOVNI commission has studied about 1,300 cases over 30 years, with “3% of cases that have non-conventional characteristics”."
   - t: "44:36"

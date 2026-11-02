@@ -18,8 +18,10 @@ facts:
     source: v-1990-04-30-vremya-ufo-moscow@1:41
 ---
 
-Vladimir Ivanovich Stroynetsky was a major serving in a military unit outside Moscow during the spring 1990 wave of sightings along the Yaroslavl Highway. He reported the lights to the newspaper *Rabochaya Tribuna* and then described them on camera to Soviet state television's *Vremya*.
+Vladimir Ivanovich Stroynetsky was a major serving in a military unit outside Moscow during the spring 1990 wave of sightings along the Yaroslavl Highway. He reported the lights to the newspaper *Rabochaya Tribuna* and then described them on camera to Soviet state television's *Vremya*. His account came weeks after the 21 March 1990 air-defence alert in the same region.
 
-His account came weeks after the 21 March 1990 air-defence alert in the same region.
+According to the CIA's press service translation, he told *Rabochaya Tribuna* (15 April 1990) that he and several hundred other witnesses had repeatedly seen UFOs over the highway at an estimated 500–800 m, many of which "looked like great triangular milk cartons", and that their speed rose with the frequency of their flashes. On *Vremya* on 30 April he described a huge mass, about the size of two aircraft, rimmed with welding-like flashes, rising silently over the forest at his unit and coming to within about 40–50 m, so that they drove away.
+
+No official explanation has been published, and the *Vremya* crew, waiting at the site, saw nothing and noted there was not a single photograph.
 
 *Sources: CIA/FBIS FB PN 90-123; Vremya, 30 April 1990 (Gosteleradiofond)*

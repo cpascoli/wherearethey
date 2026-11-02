@@ -9,6 +9,9 @@ facts:
     status: claimed
     by: meng-zhaoguo
     source: https://en.wikipedia.org/wiki/UFO_sightings_in_China
+  - text: "At the 2013 Citizen Hearing, the president of the World Chinese UFO Federation relayed the case: in June 1994 a farm ranger saw “a flying disc within 100 m”, was struck on the head by lightning from the sky when he returned the next day, and later “claimed that aliens had implanted some objects into his body”."
+    status: claimed
+    source: v-2013-chd-global-2@28:04
 rel:
   - [ witness, inc-meng-zhaoguo-1994 ]
 ---

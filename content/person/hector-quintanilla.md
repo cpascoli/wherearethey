@@ -16,6 +16,10 @@ facts:
     source: library/docs/doc-transcript-1966-04-05.pdf
 ---
 
-Hector Quintanilla was a U.S. Air Force officer who headed Project Blue Book from 1963 until its closure in 1969. He testified at the House Armed Services Committee hearing on UFOs in April 1966.
+Hector Quintanilla was a U.S. Air Force officer who headed Project Blue Book, the Air Force's UFO study at Wright-Patterson Air Force Base, from 1963 until its closure in 1969. He attended the House Armed Services Committee hearing on UFOs on 5 April 1966, the first open congressional hearing on the subject, as the Air Force's “UFO project officer”, with Air Force Secretary Harold Brown and the consultant J. Allen Hynek.
 
-*Sources: House Armed Services hearing (1966)*
+The printed record shows him answering members' questions. Asked by Rep. Stratton about UFO photographs published in *Life* magazine, he said the Air Force had asked for the negatives, “but the citizens will not turn the negatives over to the Air Force”, and that the Air Force had not investigated those cases. Asked whether any of the unexplained cases had been seen on radar, he answered: “No, sir.” The record also reproduces letters he signed as “Chief, Project Blue Book”.
+
+Over its lifetime Blue Book collected 12,618 reports, of which 701 remained "unidentified".
+
+*Sources: House Armed Services hearing (1966) · Project Blue Book record*

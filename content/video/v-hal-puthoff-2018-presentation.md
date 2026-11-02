@@ -26,6 +26,10 @@ moments:
     text: "Puthoff cites the Brazilian Air Force's 1977–78 investigation, with about 1,000 pages, 500 photographs and 15 hours of film, and a list of medical injuries."
     speaker: hal-puthoff
     refs: [ inc-operacao-prato-1977 ]
+  - t: "28:40"
+    text: "Puthoff on To The Stars Academy's principals: Tom DeLonge, the Blink-182 rock star with “a lifelong interest in the UFO area”, was “the action-oriented person” who asked why not set something up and make this more available to the public."
+    speaker: hal-puthoff
+    refs: [ tom-delonge, to-the-stars ]
   - t: "34:49"
     text: "Puthoff notes that Garry Nolan's genome analysis showed the Atacama skeleton to be human, not evidence of ET."
     speaker: hal-puthoff

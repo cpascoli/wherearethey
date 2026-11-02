@@ -21,6 +21,6 @@ On the evening of 3 October 1978, Hideichi Amano, a 29-year-old snack-bar owner 
 
 Amano reported the encounter to the police, who did not believe him. The story first reached the public through a Japanese television programme in November 1978, and the investigator Jun-Ichi Takanashi's account appeared in the *MUFON UFO Journal* and *Flying Saucer Review* in 1978–79. Later retellings, following the writer Jenny Randles, add that under hypnosis Amano described being given an object he took to be a bracelet for contacting the being.
 
-The case rests on Amano's testimony alone; there is no physical evidence or independent witness.
+The case rests on Amano's testimony alone; there is no physical evidence or independent witness. No official record of the case has been located in the archive.
 
 *Sources: [URECAT case file](https://ufologie.patrickgross.org/ce3/1978-10-03-japan-sayamacity.htm) · [UFO Insight](https://www.ufoinsight.com/aliens/encounters/sayama-city-alien-encounter) (secondary compilations)*

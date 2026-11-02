@@ -35,6 +35,10 @@ facts:
     source: v-de-brouwer-belgian-wave@2:42
 ---
 
-Belgian Air Force officer, later major general, who led the Air Force's response to the 1989–90 Belgian wave. He is notable for the military's openness: radar data were released and civilian researchers (SOBEPS) were brought in. He spoke at the 2007 National Press Club panel.
+Wilfried De Brouwer is a Belgian Air Force officer, later major general, who as head of operations coordinated the Air Force's response to the 1989–90 Belgian wave of triangle sightings, including the F-16 scrambles of March 1990, and presented the radar data publicly in July 1990. The case is notable for the military's openness. He spoke about it at the 2007 National Press Club panel.
 
-*Sources: [Wikipedia — Belgian UFO wave](https://en.wikipedia.org/wiki/Belgian_UFO_wave) · National Press Club, 2007*
+He says the Air Force first suspected weather or electromagnetic interference, but at certain moments could match visual observations with a radar return. On the night of 30–31 March 1990 a radar contact and a ground sighting confirmed by police led to two F-16s being sent up. He says their lock-ons gave speeds varying from 150 to 990 knots, with accelerations that would be impossible for a human pilot, and that witnesses described a machine hovering silently at low altitude.
+
+The pilots never saw anything. Later technical analyses attributed the F-16 locks to radar artefacts and atmospheric effects, and the famous Petit-Rechain triangle photograph was admitted in 2011 to be a hoax.
+
+*Sources: [Wikipedia — Belgian UFO wave](https://en.wikipedia.org/wiki/Belgian_UFO_wave) · National Press Club, 2007 · interview video*

@@ -16,6 +16,6 @@ facts:
 
 On 16 May 1979, near Baependi in Minas Gerais, Brazil, the farmer Arlindo Gabriel dos Santos said that while hunting he photographed a small object that then vanished, and that he was afterwards taken aboard a second craft by a humanoid crew.
 
-The case was investigated by the Brazilian ufologist Ubirajara Franco Rodrigues. It rests on the witness's testimony and his photograph.
+The case was investigated by the Brazilian ufologist Ubirajara Franco Rodrigues. It rests on the witness's testimony and his photograph. No official record of the case has been located in the archive.
 
 *Sources: [NICAP](http://www.nicap.org/790516baependidir.htm)*

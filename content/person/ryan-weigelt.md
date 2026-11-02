@@ -15,6 +15,8 @@ rel:
   - [ witness, inc-nimitz-2004 ]
 ---
 
-Ryan Weigelt served in the U.S. Navy with the USS Nimitz carrier strike group in 2004. Like Jason Turner, he says he saw much longer footage of the "Tic Tac" object than the short clip released in 2017.
+Ryan Weigelt served in the U.S. Navy with the USS Nimitz carrier strike group during the November 2004 "Tic Tac" encounter off southern California. He is one of the strike-group members, with Jason Turner, P. J. Hughes and the Princeton radar operators Kevin Day and Gary Voorhis, who have described observations related to the case.
 
-*Sources: Nimitz incident record*
+Like Turner, he says he saw much longer footage of the object than the short "FLIR1" clip that *The New York Times* published in 2017 and the Department of Defense released in 2020. His account is known from a Popular Mechanics article, and no longer footage has been released. The archive holds nothing more on him.
+
+*Sources: Nimitz incident record · Popular Mechanics*

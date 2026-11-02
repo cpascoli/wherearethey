@@ -21,6 +21,9 @@ facts:
     status: claimed
     by: mario-woods
     source: v-michels-mario-woods-2025@38:31
+  - text: "AARO's Historical Record Report (2024) says AARO interviewed five former USAF members who served around ICBM silos “at Malmstrom, Ellsworth, Vandenberg, and Minot USAF bases between 1966 and 1977”, some of whom claim UAP sightings near the silos. It does not name them or say whether this case is among their accounts."
+    status: documented
+    source: library/docs/doc-aaro-historical-record-report-v1.pdf
 ---
 
 In November 1977, Air Force security policemen Mario Woods and Michael Johnson answered an alarm at the November-5 (N-5) Minuteman silo near Ellsworth Air Force Base, South Dakota. Woods says they saw a massive, pulsating spherical craft hovering over the site, "the size of a Walmart building".
@@ -29,4 +32,4 @@ Both men describe hours of missing time, waking at a reservoir, being recovered,
 
 The claims come from the two witnesses' interviews; no official record of the event has been released.
 
-*Sources: Interviews with Jesse Michels (2025–2026)*
+*Sources: Interviews with Jesse Michels (2025–2026) · AARO Historical Record Report, Vol. 1 (2024)*

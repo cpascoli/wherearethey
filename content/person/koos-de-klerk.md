@@ -13,6 +13,8 @@ rel:
   - [ witness, inc-pretoria-road-1965 ]
 ---
 
-Koos de Klerk was a South African Police constable who, on patrol with Constable John Locken on 17 September 1965, said he saw a disc-shaped object rise from the road between Pretoria and Bronkhorstspruit.
+Koos de Klerk was a South African Police constable. On patrol with Constable John Locken on 17 September 1965, he said he saw a disc-shaped object rise from the road between Pretoria and Bronkhorstspruit.
+
+Investigators later reportedly found a scorched circle about 3 metres across, and part of the road surface had collapsed. The account comes from a secondary source, and no official conclusion is recorded in the sources found.
 
 *Sources: Pretoria road incident record*

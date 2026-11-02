@@ -26,10 +26,13 @@ facts:
   - text: "A Maryland ANG pilot, Lt. Col. Ed Jones, confirmed in 2007 that he had flown one of the aircraft that dropped flares that night."
     status: claimed
     source: https://en.wikipedia.org/wiki/Phoenix_Lights
+  - text: "Answering a Freedom of Information Act request on 1 May 1997, Luke Air Force Base wrote: “In summary, we have no records to give you”, adding that its aircraft “were not involved in any way” with what was seen over Phoenix that night and that its public-affairs staff had not said the lights were flares."
+    status: documented
+    source: library/docs/doc-luke-afb-foia-phoenix-1997.pdf
 ---
 
 On the evening of 13 March 1997 lights were reported across some 300 miles of Arizona and southern Nevada, from the Nevada line through Phoenix to the edge of Tucson. Many witnesses described a huge V- or carpenter's-square-shaped object with five lights passing slowly and silently overhead; later, around 10 p.m., a large number of people in the Phoenix area saw a row of brilliant lights hanging in the sky. Among the witnesses were the sitting governor, Fife Symington, a former Air Force officer and pilot, and Lt. Col. Richard French, who said the craft passed within a hundred yards of him.
 
 The official and sceptical accounts split the evening in two. The Maryland Air National Guard attributed the 10 p.m. lights to slow-falling illumination flares from A-10s on a training exercise at the Barry M. Goldwater Range, visible from Phoenix and seeming to wink out behind the Sierra Estrella; a pilot confirmed in 2007 that he had dropped them. The Guard's statement came in July 1997; in May, Luke Air Force Base had told a FOIA requester that its own aircraft were not involved and that it had never blamed flares. The earlier formation has been attributed by sceptics and an amateur astronomer to A-10s flying in formation to Davis-Monthan. Symington, who at the time mocked the reports with a staffer in an alien costume, said in 2007 that he had seen the craft himself and that it "did not resemble any man-made object".
 
-*Sources: National Press Club (2007) · Citizen Hearing (2013) · [Wikipedia](https://en.wikipedia.org/wiki/Phoenix_Lights)*
+*Sources: National Press Club (2007) · Citizen Hearing (2013) · [Wikipedia](https://en.wikipedia.org/wiki/Phoenix_Lights) · Luke AFB FOIA reply (1 May 1997)*

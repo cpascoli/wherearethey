@@ -25,6 +25,10 @@ facts:
     source: https://videolibrarian.com/reviews/documentary/moment-of-contact/
 ---
 
-The case is filed as the Varginha incident, with the Brazilian Army's 1997 inquiry, the later retractions by two soldiers, and the witnesses Fox presented at the National Press Club in January 2026 for the film's updated cut, Moment of Contact: New Revelations. The official trailer plays here from Regal Theatres' YouTube upload.
+James Fox's 2022 documentary about the 1996 Varginha incident in Brazil, narrated by Peter Coyote. It follows witnesses who say they saw a crashed craft and creatures, and allege that the military recovered them. The official trailer, from Regal Theatres' YouTube upload, introduces Carlos de Souza, Kátia Xavier and Liliane and Valquíria Silva, and puts at its centre the claim that military police officer Marco Eli Chereze captured a creature with his bare hands and later died of an infection.
 
-*Sources: Wikipedia (Varginha UFO incident, James Fox); Video Librarian.*
+Reviews were mixed. Video Librarian rated it 1.5 out of 5, calling it “pure infotainment for most of its length”, mostly “confused retellings” as witnesses look for places as they were in 1996.
+
+The case is filed as the Varginha incident, with the Brazilian Army's 1997 inquiry, which found no military involvement, the later retractions by two soldiers, and the witnesses Fox presented at the National Press Club in January 2026 for the film's updated cut, Moment of Contact: New Revelations.
+
+*Sources: Wikipedia (Varginha UFO incident, James Fox); Video Librarian; official trailer.*

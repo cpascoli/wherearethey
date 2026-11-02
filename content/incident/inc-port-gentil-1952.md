@@ -18,6 +18,10 @@ facts:
     source: https://www.cnes-geipan.fr/fr/cas/1952-06-00004
 ---
 
-An early maritime case in GEIPAN’s archive: in June 1952 the second captain and the captain of a ship anchored off Port-Gentil in Gabon watched a light that twice stopped and changed course, once directly over the ship. GEIPAN’s file is brief and the case is unexplained.
+An early maritime case in GEIPAN's archive. At 2.40 am on 1 June 1952 two officers of a ship anchored off Port-Gentil, in what was then French Equatorial Africa and is now Gabon, watched a luminous phenomenon.
+
+According to GEIPAN's summary, the second captain clearly saw an object coming from inland stop, turn right and resume its course, twice, the second turn directly above the ship. He telephoned the captain, who watched it through binoculars for three minutes.
+
+GEIPAN's file is brief: it names no other witnesses or checks, and offers no explanation. It classifies the case D, unexplained.
 
 *Source: GEIPAN (CNES), case 1952-06-00004, classified D (unexplained)*

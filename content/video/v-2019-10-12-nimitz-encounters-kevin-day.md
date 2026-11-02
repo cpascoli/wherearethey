@@ -39,6 +39,10 @@ moments:
   - t: "30:33"
     text: "Day: groups kept appearing until about 16 November — by his rough count about a hundred objects in total."
     speaker: kevin-day
+  - t: "33:26"
+    text: "Day says he came into the story through a YouTube video by Robert Powell: he commented “I was there, I was the air controller”, asked to be contacted, and “He did right away.”"
+    speaker: kevin-day
+    refs: [ robert-powell, inc-nimitz-2004 ]
 ---
 
 Kevin Day, the senior chief who ran the radar picture in the USS Princeton's Combat Information Center in November 2004, interviewed for the documentary *The Nimitz Encounters* in 2019. He describes several days of tracking groups of slow objects at 28,000 feet, the radar reset that confirmed them, and his recommendation to intercept. He says the object dropped to the sea in 0.78 seconds as Fravor's flight arrived, and that all the objects later dropped whenever fighters approached. He also says he saw a distant white light through the bridge binoculars and counted about a hundred objects over the week.

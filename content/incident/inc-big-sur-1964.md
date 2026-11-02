@@ -15,6 +15,10 @@ facts:
     status: claimed
     by: bob-jacobs
     source: https://en.wikipedia.org/wiki/Big_Sur_UFO
+  - text: "AARO's Historical Record Report (2024) records that an interviewee and a USAF videographer “claimed to have observed and recorded a UAP destroying an ICBM loaded with a “dummy” warhead, mid-flight”. It says AARO has not been able to recover “the alleged film of the ballistic missile reentry vehicle being shot down by a UAP in 1964”, but could correlate the general time and location with an antiballistic missile test, “which could have been the genesis for this observation”."
+    status: documented
+    source: library/docs/doc-aaro-historical-record-report-v1.pdf
+    stance: disputes
 ---
 
 In September 1964, Lt. Robert Jacobs commanded an Air Force photo-optical team on a mountaintop near Big Sur, California, filming an Atlas missile launched from Vandenberg Air Force Base with a dummy nuclear warhead through a powerful telescope camera.
@@ -23,4 +27,4 @@ Jacobs says the developed film showed a disc-shaped object approach the warhead 
 
 Kingston George, an engineer on the project, disputed the account in 1993 and 2009, arguing that the film showed the deployment of decoy warheads and chaff designed to confuse enemy defences.
 
-*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Big_Sur_UFO)*
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Big_Sur_UFO) · AARO Historical Record Report, Vol. 1 (2024)*

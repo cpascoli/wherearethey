@@ -23,6 +23,10 @@ facts:
     source: library/docs/doc-geipan-trans-en-provence-1981.pdf
 ---
 
-GEIPAN's public case file on the Trans-en-Provence landing trace, one of the most thoroughly analysed physical-trace cases on record. The file holds GEPAN Technical Note 16, the gendarmerie statement, weather and army aviation checks, photographs and the reports of the laboratories (INRA and others) that analysed the soil and plants. Our copy is a capture of the case page.
+GEIPAN's public case file on the Trans-en-Provence landing trace of 8 January 1981, one of the most thoroughly analysed physical-trace cases on record. It holds GEPAN Technical Note 16, the gendarmerie statement, weather and army aviation checks, photographs and the reports of the laboratories (INRA and others) that analysed the soil and plants. Our copy is a capture of the case page.
+
+The single witness, working on his property, described a grey circular object about 2.5 m across that landed for a few seconds and left a trace about 2 m wide. The gendarmerie sampled soil and wild alfalfa the next day, and GEPAN followed in February. Four laboratories found significant soil compaction, slight mineral deposits and heating below 600 °C; INRA found plant degradations correlated with distance from the trace, of undetermined cause.
+
+GEIPAN classifies the case D. It says the analyses gave no proof of the witness's account, which remains single, though his credibility is not in doubt, and that an unusual phenomenon occurred whose origin the inquiry could not determine.
 
 *Sources: GEIPAN (CNES), case 1981-01-00849*

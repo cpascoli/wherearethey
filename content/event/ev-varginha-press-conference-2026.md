@@ -20,6 +20,10 @@ facts:
     source: v-2026-01-20-newsnation-varginha-press-conference@44:37
 ---
 
-A press conference at the National Press Club, broadcast live by NewsNation, at which James Fox presented testimony from his updated documentary Moment of Contact. It was a press event, not a hearing: nothing was said under oath to Congress, and no documents or physical evidence were presented. Brazil's Senator Eduardo Girão attended in a private capacity.
+A press conference at the National Press Club on the 30th anniversary of the 1996 Varginha incident, broadcast live by NewsNation, at which James Fox presented testimony from the updated cut of his documentary Moment of Contact. It was a press event, not a hearing: nothing was said under oath to Congress, and no documents or physical evidence were presented. Brazil's Senator Eduardo Girão attended in a private capacity.
+
+Carlos de Souza, in his first public statement in 26 years, said: “I witnessed the crash of a non-terrestrial craft on January 13th.” The forensic examiner Armando Fortunato Filho described the autopsy of a young military policeman; neurosurgeon Ítalo Venturelli said he saw a being at the hospital; retired USAF Col. Fred Claussen relayed a controller's account of an unauthorised U.S. cargo flight. Six Brazilian witnesses, denied U.S. visas, spoke on recordings. Kirk McConnell said “similar reports” had reached Senate investigators, and Rep. Eric Burlison urged passage of the UAP Disclosure Act.
+
+These are accounts. The Brazilian Army's 1997 inquiry found no military involvement, and the case is filed as partly explained.
 
 *Sources: NewsNation live broadcast (20 January 2026)*

@@ -32,6 +32,10 @@ facts:
 nomatch: true
 ---
 
-Fox's best-known film, and the one that brought senior former officials such as Reid, Podesta and Richardson on camera.
+James Fox's 2020 documentary, released on 6 October 2020 and narrated by Peter Coyote. It is his best-known film, and the one that brought senior former officials on camera. It covers the Pentagon UFO videos, but mainly the history of sightings since World War II, including the Ariel School, Westall, Lonnie Zamora and Rendlesham cases, and makes a case for more scientific study.
+
+Its interviewees include former Senate Majority Leader Harry Reid, Clinton White House chief of staff John Podesta, former Deputy Assistant Secretary of Defense for Intelligence Christopher Mellon, former New Mexico governor Bill Richardson and journalist Leslie Kean. In the trailer, asked whether some evidence has not been released, Reid says: “I'm saying most of it hasn't seen the light of day.”
+
+CNN's Brian Lowry called it “an earnest documentary most notable for the former officials that lend credence to the notion the government knows much more than it has shared”, if “a little too breathless”. The Ariel School, Westall and Rendlesham cases have their own files here, with their sources.
 
 *Sources: Wikipedia (The Phenomenon); official trailer.*

@@ -20,6 +20,10 @@ facts:
     source: library/docs/doc-naa-flying-saucers-2018.pdf
 ---
 
-An article by Bill Edwards, senior reference officer at the National Archives of Australia, first published in the archive's magazine on 28 February 2018. It describes the RAAF's UFO records held in the national collection, including the 1954 Sea Fury incident and the 1978 Valentich disappearance. It summarises the archive's own records rather than the full files.
+An article by Bill Edwards, senior reference officer at the National Archives of Australia, first published in the archive's magazine on 28 February 2018. It describes the RAAF's UFO records held in the national collection, and is the source for the 1954 Nowra Sea Fury case and for the file on its pilot, Lt J. A. O'Farrell.
+
+The article states that the RAAF stopped investigating sightings in 1994, reasoning that only 3 per cent of reports could not be explained by natural phenomena and that these posed little or no threat to security. On the Sea Fury incident it records that O'Farrell, flying back to Nowra at night, saw two bright lights, each “a vague shape with the white light situated centrally on top”, which Nowra confirmed on radar before they left at tremendous speed.
+
+On Frederick Valentich's 1978 disappearance, it notes the later suggestion that a bright formation of planets and a star could have distracted the pilot. It summarises the records; it is not the full files.
 
 *Sources: National Archives of Australia (2018)*

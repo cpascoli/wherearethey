@@ -36,4 +36,10 @@ facts:
     source: h-2022-05-17
 ---
 
-The best-known civilian-organised witness event before the 2017 New York Times story. The organiser is outside the archive's criteria, but several speakers held official roles and their accounts are recorded here as testimony. Callahan's JAL 1628 account and Salas's Malmstrom account are independently backed by records already in the archive.
+The best-known civilian-organised witness event before the 2017 New York Times story. Steven Greer's Disclosure Project gathered about twenty retired military, FAA, intelligence and contractor witnesses at the National Press Club; each spoke briefly, and most said they were willing to testify under oath before Congress. Greer called for “open honest hearings on the subject in the US Congress”, a ban on weapons in space and the declassification of energy technologies.
+
+Several speakers held official roles. John Callahan, a retired FAA division manager, described the JAL 1628 radar data being briefed to Reagan's science staff, the CIA and the FBI. Robert Salas described the 1967 loss of Minuteman missiles at Malmstrom while guards reported a glowing red object at the gate. Enrique Kolbeck listed radar detections at Mexico City airport, and Graham Bethune a 1951 Navy flight. Clifford Stone claimed to have taken part in recoveries of crashed craft.
+
+The organiser is outside the archive's criteria, and the accounts are recorded as testimony. Callahan's and Salas's accounts are backed by records in the archive. Congress held no hearings in response; the next open one came in May 2022.
+
+*Sources: Disclosure Project press conference, National Press Club (May 9, 2001), full event · HPSCI open hearing on Unidentified Aerial Phenomena*

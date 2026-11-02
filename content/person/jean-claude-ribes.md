@@ -13,6 +13,10 @@ facts:
     source: v-npc-2007-ufo-close-encounters@19:58
 ---
 
-Jean-Claude Ribes is an astronomer with France's national space agency, CNES, and a member of the steering committee of GEIPAN, France's official UAP office. He spoke at the National Press Club event on UFOs in November 2007.
+Jean-Claude Ribes is an astronomer with France's national space agency, CNES, and a member of the steering committee of GEIPAN, the CNES office that collects and investigates reports of unidentified aerospace phenomena and publishes its case files online.
 
-*Sources: National Press Club (2007)*
+He spoke for GEIPAN at the National Press Club panel of 12 November 2007, organised by Leslie Kean and James Fox, at which current and former officers, pilots and officials from seven countries described official cases from their own countries. The panellists signed a request asking the U.S. government to reopen the investigation that had ended with Project Blue Book in 1969.
+
+Beyond that appearance, the archive holds no statements of his.
+
+*Sources: National Press Club (2007) · GEIPAN record*

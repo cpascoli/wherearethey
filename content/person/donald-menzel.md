@@ -21,6 +21,10 @@ facts:
     status: claimed
     by: donald-menzel
     source: https://en.wikipedia.org/wiki/Donald_Howard_Menzel
+  - text: "In his prepared statement for the 1968 House symposium, Menzel wrote: “With respect to UFO's my position is simply this. That natural explanations exist for the unexplained sightings.” He added that the Air Force had given him full access to its files and that “There is no vast conspiracy of either the Air Force or CIA to conceal the facts from the public”."
+    status: claimed
+    by: donald-menzel
+    source: library/docs/doc-transcript-1968-07-29.pdf
 ---
 
 Donald H. Menzel (1901–1976) was one of the first American theoretical astrophysicists, known for work on the solar chromosphere, stellar chemistry and gaseous nebulae, and director of the Harvard College Observatory from 1954 to 1966. In the Second World War he served as a U.S. Navy lieutenant commander heading an intelligence division, including code-breaking, and he worked with the Navy and Defense Department on radio propagation into the 1950s.

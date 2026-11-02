@@ -29,6 +29,10 @@ rel:
   - [ witness, inc-rendlesham-1980 ]
 ---
 
-John Burroughs was an airman first class in the U.S. Air Force Security Police at RAF Woodbridge in December 1980 and one of the patrolmen who went into Rendlesham Forest on 26 December to investigate lights among the trees. He has spoken about the incident publicly, including at the 2013 Citizen Hearing.
+John Burroughs was an airman first class in the U.S. Air Force Security Police at RAF Woodbridge in December 1980. With Sgt. Jim Penniston and Edward Cabansag he went into Rendlesham Forest early on 26 December to investigate lights among the trees, the first night of the Rendlesham incident. He co-wrote *Encounter in Rendlesham Forest* (2014) with Nick Pope and Penniston.
+
+At the 2013 Citizen Hearing he said his gums turned white shortly afterwards and a doctor later found a heart murmur, though his entry physical had been clean; that he now has a pacemaker defibrillator, at 52; and that a VA doctor told him she had no DD Form 214 or medical records for him from 1979 to 1982. The six former members of Congress at the hearing asked for his and Penniston's medical records to be released.
+
+These are his own accounts. The Ministry of Defence found nothing of defence significance and adopted no explanation; a sceptic's summary on its file points to a fireball and the Orford Ness lighthouse.
 
 *Sources: Rendlesham incident record · Citizen Hearing (2013)*

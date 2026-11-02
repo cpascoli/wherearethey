@@ -17,6 +17,8 @@ facts:
     source: v-npc-2007-ufo-close-encounters@28:41
 ---
 
-Rodrigo Bravo is a captain and pilot in Chilean Army aviation who has worked with CEFAA, Chile's official committee for the study of anomalous aerial phenomena. He spoke about Chile's official approach at the National Press Club event on UFOs in November 2007.
+Rodrigo Bravo is a captain and pilot in Chilean Army aviation who has worked with CEFAA, the committee for the study of anomalous aerial phenomena that Chile's civil aviation authority set up in 1997. He is the author of *Ufología aeronáutica* (2010), on UFO reports from aviation.
 
-*Sources: National Press Club (2007)*
+At the National Press Club panel of November 2007 he said that in 2000 Chilean Army aviation assigned him to research anomalous aerial phenomena and their effect on aerospace security, drawing on the army's files of reports from military pilots, and that a link was then set up between the army office and CEFAA. He described two cases: a Boeing 737 on final approach at Puerto Montt in 1988 that turned sharply to avoid a light, which he said was also seen by the tower and radar, and an army crew south of Santiago in 2000 that saw a cigar-shaped object later reported on radar. These are his accounts; the archive holds no case files for them.
+
+*Sources: National Press Club (2007) · Ufología aeronáutica*

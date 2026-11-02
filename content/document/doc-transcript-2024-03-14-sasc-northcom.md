@@ -21,6 +21,10 @@ facts:
     source: library/docs/doc-transcript-2024-03-14-sasc-northcom.pdf
 ---
 
-Official stenographic transcript of the Senate Armed Services Committee's posture hearing of 14 March 2024 with Gen. Gregory Guillot (NORAD and U.S. Northern Command) and Gen. Laura Richardson (U.S. Southern Command). In it Guillot gave his first public account of the drone incursions at Joint Base Langley-Eustis.
+Official stenographic transcript of the Senate Armed Services Committee's posture hearing of 14 March 2024 with Gen. Gregory Guillot (NORAD and U.S. Northern Command) and Gen. Laura Richardson (U.S. Southern Command). In it Guillot gave his first public account of the drone incursions at Joint Base Langley-Eustis, and it is the record the archive cites for the Langley case.
+
+Asked by Sen. Tim Kaine about drone threats to U.S. bases, Guillot said: “I was not prepared for the number of incursions that I see.” He said he was using the Langley events as “the centerpiece” of his 90-day assessment, because “this emerging capability outstrips the operational framework that we have to address it”. He named the Department of Homeland Security, the Department of Justice, the services and the Department of Energy as his partners.
+
+Guillot spoke of drones and of gaps in authority. The transcript does not say who flew them or what they were.
 
 *Sources: Senate Armed Services Committee (2024)*

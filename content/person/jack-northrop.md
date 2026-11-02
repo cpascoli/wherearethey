@@ -17,6 +17,10 @@ facts:
     source: v-2026-07-07-age-of-disclosure-northrop@0:00
 ---
 
-Jack Northrop (1895–1981) was an American aircraft designer who worked at Douglas and Lockheed, where he was chief engineer on the Lockheed Vega, and founded the Northrop Corporation in 1939, later known for flying-wing designs. *The Age of Disclosure* uses archival footage of him calling for serious scientific study of UFO propulsion.
+Jack Northrop (1895–1981) was an American aircraft designer who worked at Douglas and Lockheed, where he was chief engineer on the Lockheed Vega, and founded the Northrop Corporation in 1939, later known for flying-wing designs. He is in the archive for an archival clip used in *The Age of Disclosure* (2025).
+
+In the footage, posted by the film's official channel, Northrop says that with UFOs “There is not only a source of power of which we're not acquainted, but there is also a source of propulsion which we're not acquainted”. Their ability to hover, accelerate very rapidly and move far faster than supersonic aircraft “without sonic booms”, he says, indicates a unique propulsion that would be of tremendous value.
+
+He adds that he feels, with others who have studied it, that the subject “deserves the highest type of scientific study and at an early date”. The date and occasion of the recording are not stated.
 
 *Sources: [Wikipedia](https://en.wikipedia.org/wiki/Jack_Northrop) · The Age of Disclosure (2025)*

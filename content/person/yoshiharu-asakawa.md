@@ -11,6 +11,8 @@ facts:
     source: https://www.scmp.com/week-asia/politics/article/3264559/japan-sets-parliamentary-group-probe-ufo-sightings-move-research-mainstream
 ---
 
-Yoshiharu Asakawa is a member of Japan's National Diet and of the cross-party Diet league for UAP clarification. At the league's launch press conference in June 2024 he said he had personally seen a UFO.
+Yoshiharu Asakawa is a member of Japan's National Diet and of the cross-party Diet league for UAP clarification, founded in June 2024 and chaired by the former Defense Minister Yasukazu Hamada.
+
+At the league's launch press conference he and another member, Kei Endo, said they had personally seen UFOs, according to the South China Morning Post. The archive holds no details of what he saw, and no account of it in his own words. The league's founding statement calls UAP a potential national-security threat and urges Japan to create an office like the Pentagon's AARO.
 
 *Sources: [South China Morning Post (2024)](https://www.scmp.com/week-asia/politics/article/3264559/japan-sets-parliamentary-group-probe-ufo-sightings-move-research-mainstream)*

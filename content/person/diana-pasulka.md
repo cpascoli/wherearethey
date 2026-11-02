@@ -18,6 +18,10 @@ facts:
     source: v-jre-hal-puthoff-2025@1:40:30
 ---
 
-Diana Walsh Pasulka is a professor of religious studies at the University of North Carolina Wilmington, best known for *American Cosmic* (2019), which studies belief in UFOs and the scientists and insiders around the subject. The physicist Hal Puthoff says Pasulka told him that some recovered craft had been described to her as "donations".
+Diana Walsh Pasulka is a professor of religious studies at the University of North Carolina Wilmington. She is in the archive as the author of two books on belief in and experience of UFOs, *American Cosmic* (2019) and *Encounters* (2023), and as a figure others in the debate cite.
 
-*Sources: Joe Rogan Experience #2314*
+On a Hereticon panel hosted by Jesse Michels with Col. Karl Nell, she said religious studies is an academic discipline, not advocacy, and that she would not advocate belief in UFOs. She came to the subject in 2012, she said, while working in the Vatican archives on a book about “ascent narratives”, and named *American Cosmic* because the subject had not been talked about.
+
+The physicist Hal Puthoff says Pasulka told him that some craft were described to her as “donations”. That is his relay of a conversation; no statement of hers on it is filed. Her books report what people say they have experienced; they are not evidence of the phenomenon's nature.
+
+*Sources: Joe Rogan Experience #2314 · Hereticon panel (Jesse Michels) · American Cosmic (2019) · Encounters (2023)*

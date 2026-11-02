@@ -32,4 +32,8 @@ facts:
 
 Official transcript of Defense Minister Taro Kono's press conference of 15 September 2020, published in Japanese by Japan's Ministry of Defense. In it he announced the directive he had issued the day before on reporting unidentifiable aerial objects. Our copy is a PDF capture of the ministry's page.
 
+Kono said the directive asks the Self-Defense Forces to report such objects thoroughly, photograph them where possible and analyse them, including when they are seen outside air-defence scrambles. He said it concerns objects that cannot be identified, not objects from space, and that he and the U.S. defence secretary had discussed the issue at their recent meeting in Guam.
+
+He also set limits. Asked whether the SDF had already photographed such an object, he said there was no record of such an encounter. Asked about drones, he said it would be a lie to say they were not on his mind, and called the directive a more down-to-earth intelligence effort.
+
 *Sources: Ministry of Defense of Japan (2020)*

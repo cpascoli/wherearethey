@@ -23,6 +23,10 @@ facts:
     source: library/docs/doc-dod-statement-navy-videos-2020.pdf
 ---
 
-The Pentagon's press statement of 27 April 2020 authorising the official release of the three Navy videos: FLIR1 (November 2004, Nimitz) and Gimbal and GoFast (January 2015, Theodore Roosevelt). The videos are hosted in the Naval Air Systems Command FOIA reading room. Our copy is a PDF capture of the release page on war.gov.
+The Pentagon's press statement of 27 April 2020 authorising the official release of three unclassified Navy videos: FLIR1 (November 2004, Nimitz) and Gimbal and GoFast (January 2015, Theodore Roosevelt). It is the record that made the footage official, and the Nimitz and Roosevelt files cite it.
+
+The statement notes that the videos had been circulating since unauthorised releases in 2007 and 2017, and that the Navy had already acknowledged them as Navy videos. It says the department released them “in order to clear up any misconceptions by the public on whether or not the footage that has been circulating was real, or whether or not there is more to the videos”, after finding that the release revealed no sensitive capabilities or systems. It closes: “The aerial phenomena observed in the videos remain characterized as ‘unidentified.’”
+
+The statement does not analyse the footage. The videos themselves are hosted in the Naval Air Systems Command FOIA reading room; our copy is a PDF capture of the release page on war.gov.
 
 *Sources: U.S. Department of Defense (2020)*

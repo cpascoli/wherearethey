@@ -47,6 +47,10 @@ facts:
     basis: opinion
 ---
 
-U.S. Army lieutenant colonel (1915–1998) who served on President Eisenhower’s National Security Council staff and at the Army’s Foreign Technology Desk. In *The Day After Roswell* (1997, with William Birnes) he claimed he seeded technology recovered at Roswell into U.S. industry. Historians and the Army dispute much of the book.
+Philip J. Corso (1915–1998) was a U.S. Army lieutenant colonel who served on President Eisenhower's National Security Council staff and at the Foreign Technology Desk of Army Research and Development. In *The Day After Roswell* (1997, with William Birnes) he claimed he managed the reverse-engineering of artifacts recovered at Roswell and seeded them into U.S. industry.
 
-*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Philip_J._Corso) · his lecture of 22 February 1998 (video on file)*
+In a lecture of February 1998, filed here, he says he saw a body in a crate at Fort Riley, Kansas, that the artifacts were farmed out as ordinary R&D contracts with "No paper trail", and that "There was no government cover-up." He also contradicts parts of the lore: he calls Area 51 alien stories "greatly exaggerated" and underground bases "better than 90% fabrication".
+
+None of this is backed by a record. In 1997 the MoD was briefed that U.S. authorities had found Corso had "a previous track record of unreliable testimony", and an MoD assessment judged him not a reliable source. Senator Strom Thurmond withdrew his foreword to the book.
+
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Philip_J._Corso) · his lecture of 22 February 1998 (video on file) · MoD UFO files, DEFE 24/2047 and DEFE 24/1986 · Government Executive (1997)*

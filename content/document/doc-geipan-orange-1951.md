@@ -18,6 +18,10 @@ facts:
     source: library/docs/doc-geipan-orange-1951.pdf
 ---
 
-The 1951 French Air Ministry file on two Vampire pilots' sighting near Orange, published by GEIPAN with names blanked. It contains the base commander's letter, a synthesis of the observations and the pilots' signed statements.
+The 1951 French Air Ministry file on two fighter pilots' sighting near Orange, published by GEIPAN with the names blanked. It contains the base commander's letter, a synthesis of the observations and the pilots' signed statements, and is the source for the Orange-Caritat case.
+
+The commander of Base Aérienne 115 forwarded the reports of a lieutenant and a sergent-chef of the 5e Escadre de Chasse, who saw “un engin bizarre” during a morning exercise. He called them experienced observers, “des gens pondérés”, whose accounts were “absolument semblables”, and said he had questioned them himself about an hour and a half afterwards.
+
+According to the synthesis, the object was brilliant, without relief and without smoke. It first appeared spherical and stationary at about 10,000 ft, then became oblong and climbed away to the east as the pilots closed on it, faster than their Vampire jets, and disappeared during the pursuit. The file records the pilots' accounts; it offers no explanation.
 
 *Sources: GEIPAN (CNES), case 1951-06-00002*

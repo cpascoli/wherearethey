@@ -24,6 +24,10 @@ facts:
     source: library/docs/doc-holland-police-report-1994.pdf
 ---
 
-The Holland, Michigan, police report on the sightings of the night of 8 March 1994, written by Officer Jeff Velthouse. It records his own observation through binoculars, other witnesses' accounts, and his conversation with National Weather Service meteorologist Jack Bushong about radar returns. The report records what the witnesses said, not what the lights were.
+The Holland, Michigan, police report on the sightings of the night of 8 March 1994, written by Officer Jeff Velthouse after 911 dispatch received a number of calls. It is the primary record of the Holland case, and the source for the files on Velthouse and on National Weather Service meteorologist Jack Bushong.
+
+Velthouse records his own sighting through a resident's binoculars: red, green and white lights “oscillating, rather than blinking”, which “appeared to be different than a normal aircraft”, and two objects moving southwest. The weather service in Muskegon reported tracking three objects. Later that shift Bushong told him he had three radar returns, larger than normal aircraft, in a triangle, at 15,000–25,000 ft; one moved about 20 miles in roughly 10 seconds, and the Muskegon tower had also seen them on radar.
+
+The report records what the officer saw and what others told him, not what the lights were. It was closed on 9 March 1994 with no further information.
 
 *Sources: Holland Police Department report 940308035 (via WOOD TV8, 2021)*

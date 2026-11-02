@@ -25,4 +25,10 @@ facts:
     source: https://www.ibtimes.co.uk/burlison-considers-testimony-orange-uap-orbs-1824884
 ---
 
-The map pin is approximate: the official records withhold the facility’s location. Released through PURSUE in May 2026 (ODNI-UAP-D001 and the FBI 302).
+In late 2025 a team investigating unusual noises and UAP sightings in and near a sensitive military facility in the western United States encountered glowing orbs. The case is in the archive because the government released it: a first-hand account by a currently serving senior intelligence official (ODNI-UAP-D001) and his FBI 302 interview came out through PURSUE in May 2026, with infrared photographs taken from the ground.
+
+In the 302 the official says federal and state personnel searched areas where orbs had been seen before and, from a helicopter, found a “super-hot” orb hovering over the ground. According to the official description, it travelled 20 miles faster than the helicopter could follow, and four or five more orbs flared up and down over the next thirty minutes. Rep. Eric Burlison has described the event on the Dr. Phil podcast and said he would look into whether the witnesses could testify publicly.
+
+The records describe what was seen, not what it was. Avi Loeb says the released reports, with no measured speeds or raw sensor recordings, cannot settle it. The map pin is approximate: the records withhold the facility's location.
+
+*Sources: ODNI-UAP-D001 — USPER Narrative, Senior USIC Official · USPER Statement about UAP Sighting · [ibtimes.co.uk](https://www.ibtimes.co.uk/burlison-considers-testimony-orange-uap-orbs-1824884) · Dr. Phil Podcast with Rep. Burlison (2026) · Avi Loeb on NewsNation (2026)*

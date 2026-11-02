@@ -35,4 +35,10 @@ facts:
     source: https://www.theregister.com/2013/07/26/india_china_war_jupiter_mars_drones/
 ---
 
-A CIA document in the PURSUE release (CIA-UAP-016) records earlier reports of UFO sightings in Ladakh, Nepal, Sikkim and Bhutan, showing that the region has a long history of such reports.
+A run of luminous objects reported by Indian border troops over the India–China Line of Actual Control in Ladakh in 2012 and 2013. It is in the archive because the reports came from a military unit and were followed up with radar and astronomers; all of it is known from press reports, not from released records.
+
+According to UPI, an Indo-Tibetan Border Police unit at Thakung, near Pangong Tso, logged more than 100 sightings of yellowish spheres lifting from the Chinese side between August and October 2012, and the military had logged 329 by February 2013. A mobile radar and a spectrum analyser detected no signals, and officials ruled out drones and low-orbit satellites. Astronomers from Hanle reportedly called the objects “non celestial”.
+
+The counter-evidence is strong. Defence Minister A.K. Antony told the Lok Sabha in November 2012 there was “no conclusive proof” of such sightings, and The Register reported that astronomers taking measurements at Thakung identified the lights as Jupiter and Venus. A 1968 CIA report in the PURSUE release (CIA-UAP-016) records earlier sightings in the region. No official record of the sightings, including Antony's answer to the Lok Sabha, has been located in the archive.
+
+*Sources: UPI (2013) · DNA India (2012) · The Register (2013) · CIA-UAP-016*

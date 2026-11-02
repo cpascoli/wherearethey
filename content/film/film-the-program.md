@@ -27,6 +27,10 @@ facts:
 nomatch: true
 ---
 
-A behind-the-scenes account of the 2022–2023 congressional hearings. The official trailer plays here from a Film Threat upload, since the filmmakers have not posted one on YouTube.
+James Fox's 2024 documentary, his follow-up to The Phenomenon (2020) and Moment of Contact (2022), released by Lab 9 Films and narrated by Peter Coyote. It is a behind-the-scenes account of the bipartisan congressional effort to find out what U.S. intelligence agencies know about UAP, including the 2022 and 2023 hearings, the first public ones in over half a century.
 
-*Sources: FirstShowing (2024); Lab 9 Films.*
+According to its publicity, it features insiders, elected officials, physicists, intelligence officers and military whistleblowers, among them Christopher Mellon and Stanford's Garry Nolan. Much of the trailer is congressional hearing footage, including David Grusch's July 2023 answer that “biologics came with some of these recoveries”.
+
+The official trailer plays here from a Film Threat upload, since the filmmakers have not posted one on YouTube. The hearings it covers are in the archive in full.
+
+*Sources: FirstShowing (2024); Lab 9 Films; official trailer.*

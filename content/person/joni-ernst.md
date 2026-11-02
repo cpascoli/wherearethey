@@ -14,6 +14,10 @@ facts:
     source: v-2024-11-19-hearing@4:15
 ---
 
-Joni Ernst, a Republican U.S. Senator from Iowa, was the ranking member of the Senate Armed Services Subcommittee on Emerging Threats and Capabilities in 2024, the panel that holds the Senate's public hearings with AARO.
+Joni Ernst, a Republican U.S. Senator from Iowa, was the ranking member of the Senate Armed Services Subcommittee on Emerging Threats and Capabilities in 2024. The subcommittee, chaired by Kirsten Gillibrand, holds the Senate's public hearings with AARO.
 
-*Sources: Senate hearing record*
+Opening the hearing of 19 November 2024 with AARO's new director, Jon Kosloski, she asked whether UAP are tied to foreign adversaries such as China or Russia “leveraging advanced technologies beyond our current capabilities”, or are unknown scientific phenomena, and called for all agencies to work together to aggregate data. In questioning she asked whether AARO worked with universities; Kosloski said its university partnerships were “lacking” because data must first be declassified. She also asked how AARO balances public demand for transparency against the risk of revealing classified information.
+
+Her statements in the archive are questions, not claims about what UAP are.
+
+*Sources: Senate hearing record (19 November 2024)*

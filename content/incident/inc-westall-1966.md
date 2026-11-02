@@ -42,6 +42,6 @@ On 6 April 1966, more than 200 students and teachers at Westall High School and 
 
 Witnesses say school administrators and military officials told them not to discuss it. The science teacher Andrew Greenwood later said that RAAF officers visited him and warned him to stay silent, and that the headmaster told them to "go and jump in the lake".
 
-The researcher Keith Basterfield, working from National Archives of Australia records, has proposed a stray HIBAL high-altitude radiation-sampling balloon launched from Mildura, which would have looked silvery and trailed a parachute; the launch paperwork for the relevant days is missing, so the match is unconfirmed.
+The researcher Keith Basterfield, working from National Archives of Australia records, has proposed a stray HIBAL high-altitude radiation-sampling balloon launched from Mildura, which would have looked silvery and trailed a parachute; the launch paperwork for the relevant days is missing, so the match is unconfirmed. The National Archives of Australia records Basterfield cites are not on file here, and no official record of the case has been located in the archive.
 
 *Sources: ABC Australian Story · [Wikipedia](https://en.wikipedia.org/wiki/Westall_UFO)*

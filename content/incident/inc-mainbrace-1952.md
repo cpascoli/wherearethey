@@ -26,6 +26,10 @@ facts:
   - text: According to Edward Ruppelt (Project Blue Book), these sightings led the RAF to take UFOs seriously. The UK Air Ministry began investigating reports on a permanent basis in 1953.
     status: claimed
     source: https://www.gutenberg.org/ebooks/17346
+  - text: "In December 1967 the MoD's DI55, having recovered most of the 1951–52 intelligence files, wrote that the Topcliffe–Meteor incident during Exercise Mainbrace was typical of reports about the Meteor at the time and that the object “only appeared” to come from the aircraft: “There is no specific evidence in the files examined so far” that it tracked or came from it, and its trajectory was never established."
+    status: documented
+    source: library/docs/mod-ufo/defe-24-2030-1-1.pdf
+    stance: disputes
 ---
 
 Exercise Mainbrace, NATO's first large naval exercise in the North Atlantic in September 1952, involving some 80,000 personnel and 200 ships, produced several UFO reports from military observers.
@@ -34,4 +38,4 @@ On 19 September 1952, Flight Lt. John Kilburn and other RAF personnel at RAF Top
 
 According to Edward Ruppelt of Project Blue Book, the Mainbrace sightings led the RAF to take UFOs seriously, and the UK Air Ministry began investigating reports on a permanent basis in 1953. No explanation was published.
 
-*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Exercise_Mainbrace) · [Project 1947](http://www.project1947.com/shg/ukufo/1952topcliffe.htm) · Ruppelt, The Report on Unidentified Flying Objects (1956)*
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Exercise_Mainbrace) · [Project 1947](http://www.project1947.com/shg/ukufo/1952topcliffe.htm) · Ruppelt, The Report on Unidentified Flying Objects (1956) · MoD file DEFE 24/2030 (DI55 minute, 1967)*

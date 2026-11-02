@@ -17,6 +17,14 @@ facts:
     status: claimed
     by: ricardo-bermudez
     source: http://web.archive.org/web/20190331193822/https://www.huffpost.com/entry/groundbreaking-ufo-video-just-released-from-chilean_b_586d37bce4b014e7c72ee56b
+  - text: "Quoted by Antonio Huneeus at the 2013 Citizen Hearing, from a 2012 lecture, on the Pelican case of 24 June 2010, seen from two airliners approaching Santiago and a navy aircraft: “Three airplanes the same phenomenon.”"
+    status: claimed
+    by: ricardo-bermudez
+    source: v-2013-chd-south-america-1@24:41
+  - text: "From Huneeus's interview with him, as Huneeus quoted it at the Citizen Hearing: “The official conclusion is that the anomalous aerial phenomenon known as unidentified flying objects is real and is present within the controlled airspace and outside the controlled airspace. It is also present in the sea.”"
+    status: claimed
+    by: ricardo-bermudez
+    source: v-2013-chd-south-america-1@29:31
 ---
 
 Ricardo Bermúdez is a retired Chilean general who directed CEFAA, the committee within Chile's civil aviation authority (DGAC) that studies anomalous aerial phenomena, from its creation in 1997 until he retired on 1 January 2017, after which he remained an adviser to it.

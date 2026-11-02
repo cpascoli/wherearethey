@@ -15,6 +15,15 @@ facts:
     status: claimed
     by: garry-nolan
     source: v-lex-fridman-garry-nolan-2022@1:00:25
+  - text: "At the House Committee on Science and Astronautics symposium of 29 July 1968, the engineer James Harder testified that, to his knowledge, “there is only one well-authenticated finding” of physical fragments of UFOs, in Brazil in 1957, citing Olavo Fontes's account of the Ubatuba fragments; he said a piece analysed by neutron activation in California contained one-tenth of 1 percent of metallic elements other than magnesium."
+    status: documented
+    source: library/docs/doc-transcript-1968-07-29.pdf
 ---
 
-A civilian case with no official witness. It is in the archive because of Nolan's isotope analysis, which tests the claim instead of just repeating it.
+In 1957 a Brazilian newspaper columnist received a letter and three metal fragments from a writer who said a UFO had exploded over the beach at Ubatuba. A laboratory found the fragments were pure magnesium. Some ufologists argued for an extraterrestrial origin, while other investigators consider it a hoax.
+
+It is a civilian case with no official witness. It is in the archive because Stanford immunologist Garry Nolan tested the fragments instead of just repeating the story. He analysed pieces from two chains of custody said to come from the same object. One, he says, had “exactly the correct isotope ratios” for Earth; in the other “The magnesium ratios were way off”, an inhomogeneous mix of elements no one normally makes.
+
+Nolan does not claim this settles the case. He leaves open whether one of the two chains was a hoax.
+
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/UFO_sightings_in_Brazil) · Garry Nolan: UFOs and Aliens · “These Are Parts Of an Alien UFO!”: Garry Nolan at Stanford (2021) · House Committee on Science and Astronautics, symposium record (1968)*

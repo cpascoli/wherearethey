@@ -25,6 +25,6 @@ In 1990 Dan Isbell was an instructor at the Air Force Test Pilot School at Edwar
 
 Unlike the craft he had seen in England in 1980, it had no glowing edge. Having already been warned by the Air Force Office of Special Investigations for idly theorising about visual stealth, he assumed it might be a classified U.S. program, rode home and told no one. He told the story publicly in 2026 in his second interview with Ryan Graves.
 
-The account is Isbell's alone; he does not claim to know what the object was, and he and Graves both raise the possibility of a secret U.S. test article.
+The account is Isbell's alone; he does not claim to know what the object was, and he and Graves both raise the possibility of a secret U.S. test article. No official record of the sighting has been located in the archive.
 
 *Sources: Safe Aerospace Podcast, Dan Isbell Part 2 (2026)*

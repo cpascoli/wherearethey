@@ -26,6 +26,8 @@ facts:
     source: v-2024-11-13-hearing-a@32:37
 ---
 
-Glenn Grothman, a Republican U.S. Representative from Wisconsin, chairs the House Oversight Subcommittee on National Security, the Border, and Foreign Affairs, which held the July 2023 UAP hearing with David Grusch, David Fravor and Ryan Graves and co-hosted the November 2024 hearing.
+Glenn Grothman, a Republican U.S. Representative from Wisconsin, chairs the House Oversight Subcommittee on National Security, the Border, and Foreign Affairs. He chaired its 26 July 2023 hearing on UAP, with David Grusch, Ryan Graves and David Fravor as witnesses, and with Nancy Mace chaired the joint subcommittee hearing "Unidentified Anomalous Phenomena: Exposing the Truth" on 13 November 2024.
+
+Opening the 2024 hearing, he said that the agencies briefing the committee, including the DoD and intelligence-community inspectors general and AARO, had not been able to substantiate the claims Grusch made in 2023, despite members questioning them inside and outside the SCIF. He also described the drone swarm over Langley Air Force Base the previous December as drones about 20 feet long, flying over 100 mph above 3,000 feet, of still unknown origin.
 
 *Sources: House Oversight hearings (2023, 2024)*

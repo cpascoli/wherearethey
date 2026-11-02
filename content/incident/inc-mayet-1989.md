@@ -16,6 +16,9 @@ facts:
   - text: "After a local press article, a woman from Le Mans told them she too had seen an orange fireball that night at about 1.30 am, which had greatly frightened her dog; GEIPAN classifies the case D."
     status: claimed
     source: https://www.cnes-geipan.fr/fr/cas/1989-03-01170
+  - text: "GEIPAN's case record classifies the case D and rates the phenomenon “Phénomène étrange à très étrange/ de consistance moyenne à forte” (strange to very strange, of medium to strong consistency)."
+    status: documented
+    source: https://www.cnes-geipan.fr/fr/cas/1989-03-01170
 ---
 
 A vehicle-effect case from the Sarthe in 1989: a couple’s car stalled and its lights failed while a red-orange fireball crossed the sky, then restarted on its own; a woman in nearby Le Mans independently reported an orange fireball the same night. GEIPAN holds the gendarmerie report and classifies the case unexplained.

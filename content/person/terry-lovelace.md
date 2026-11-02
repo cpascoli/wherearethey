@@ -17,6 +17,10 @@ facts:
     status: claimed
     by: terry-lovelace
     source: https://search.worldcat.org/search?q=Incident+at+Devils+Den+Lovelace
+  - text: "John Blitch says that at a 2018 conference he heard Lovelace, a former PRP-qualified medic at Whiteman Air Force Base, tell of a camping trip after which the bottoms of his feet were burned; the two have since “become very good friends”."
+    status: claimed
+    by: john-blitch
+    source: v-michels-john-blitch-2025@1:21:36
 rel:
   - [ witness, inc-whiteman-1975 ]
   - [ witness, inc-devils-den-1977 ]

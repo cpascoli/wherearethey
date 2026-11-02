@@ -16,6 +16,10 @@ facts:
     basis: opinion
 ---
 
-Randall Nickerson is the filmmaker who directed *Ariel Phenomenon* (2022), a feature documentary made over about 15 years about the 1994 Ariel School sighting in Zimbabwe, following former pupils, the BBC's Tim Leach and the Harvard psychiatrist John Mack. He has discussed the film in interviews filed here.
+Randall Nickerson is the filmmaker who directed *Ariel Phenomenon* (2022), a feature documentary made over about 15 years about the September 1994 Ariel School sighting in Ruwa, Zimbabwe. The film follows former pupils interviewed as adults, the BBC's Tim Leach and the Harvard psychiatrist John Mack. He is in the archive as a reporter on the case, not a witness.
 
-*Sources: Ariel Phenomenon*
+In a podcast interview filed here he says he got pupils' names from the school in March 2008 and tracked them down across Africa, Europe and the U.S., and that some would not appear on camera for fear of ridicule. He says he recorded about 70 interviews, including radar operators and pilots in the region.
+
+His view that no one has ever come forward to say the sighting was something else, and that the children were plainly telling the truth, is his opinion. Sceptical explanations, from mass suggestion to misidentification, are set out in the Ariel School incident record.
+
+*Sources: Ariel Phenomenon · Matt's Movie Reviews Podcast #490 · Ariel incident record*

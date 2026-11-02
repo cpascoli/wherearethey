@@ -13,8 +13,10 @@ facts:
     source: https://search.worldcat.org/search?q=Incident+at+Devils+Den+Lovelace
 ---
 
-Terry Lovelace, an Air Force medic at Whiteman Air Force Base in Missouri, says that in 1975 he and an airman named Toby saw a silent triangular craft directly above one of the base's active nuclear missile silos.
+Terry Lovelace, an Air Force medic at Whiteman Air Force Base in Missouri and later an attorney, says that in 1975 he and an airman named Toby saw a silent triangular craft directly above one of the base's active nuclear missile silos. It is in the archive as an account from a serviceman about a nuclear site.
 
-The account comes from Lovelace's book *Incident at Devils Den*; no official record of the sighting has been released.
+The account comes from Lovelace's self-published book *Incident at Devils Den* (2018), which also describes a 1977 encounter with missing time while camping in Arkansas, filed separately. The second witness is known only by his first name.
+
+No official record of the Whiteman sighting has been released, and nothing on file corroborates it.
 
 *Sources: Lovelace, Incident at Devils Den*
