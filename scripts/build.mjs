@@ -188,6 +188,15 @@ export async function build({ check = false, quiet = false } = {}) {
   });
   const ent = new Map(entities.map(e => [e.id, e]));
 
+  // ── A video citation needs a moment: `source: video@t` with no moment within 45 s is a dead link for the reader ──
+  const hms = t => { const h = Math.floor(t / 3600), m = Math.floor(t % 3600 / 60), sec = Math.floor(t % 60); return (h ? h + ':' + String(m).padStart(2, '0') : m) + ':' + String(sec).padStart(2, '0'); };
+  for (const e of entities) for (const f of e.facts) {
+    const src = f.source; if (!src?.id) continue;
+    const v = ent.get(src.id); if (!v || v.type !== 'video') continue;
+    if (src.t == null) { warnings.push(`${e.file}: fact cites video "${src.id}" without a timestamp (use ${src.id}@h:mm:ss, or the video's URL for what its page says)`); continue; }
+    if (!v.moments.some(m => Math.abs(m.t - src.t) <= 45)) warnings.push(`${e.file}: fact cites ${src.id}@${hms(src.t)} but that video has no moment within 45 s of it (add one)`);
+  }
+
   // ── Video metadata + transcripts from media/<youtubeId>/ ──
   const transcripts = new Map();
   const videoByYt = new Map();

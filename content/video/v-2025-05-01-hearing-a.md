@@ -16,6 +16,10 @@ moments:
     text: "Burlison credits DNI Tulsi Gabbard, whose Director's Initiatives Group is harmonizing classification guides to allow responsible releases, and says this will be systemic change, not a one-time data dump."
     speaker: eric-burlison
     refs: [ odni ]
+  - t: "4:48"
+    text: "Burchett: “we do agree that this is the biggest cover up of our lifetime”, and to those who have lived in the shadows for believing as he does: “we believe you”; “we're going to blow the dad lid off of it”."
+    speaker: tim-burchett
+    refs: [ h-2025-05-01 ]
   - t: "16:45"
     text: "Loeb: “We should invest a billion dollars in figuring out what is in our sky” — AI analysis of state-of-the-art sensor data, useful for defense even if every object turns out to be human-made."
     speaker: avi-loeb

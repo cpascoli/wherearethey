@@ -47,6 +47,10 @@ moments:
   - t: "25:29"
     text: "Enrique Kolbeck, radar controller at Mexico City International Airport, lists radar detections and near-misses with airliners in 1992 and 1994."
     speaker: enrique-kolbeck
+  - t: "26:12"
+    text: "Kolbeck, Mexico City airport radar controller: on 4 March 1992 they detected 15 objects west of Toluca; on 28 July 1994 an Aeroméxico domestic flight had “almost a collision”, and flight 904 another the next week."
+    speaker: enrique-kolbeck
+    refs: [ inc-mexico-city-radar-1992 ]
   - t: "27:58"
     text: "Kolbeck: on 15 September 1994 the Mexico City radar held one apparently motionless object for about five hours; the radar technicians confirmed the system was working well, and the next day he learned of a sighting by many people southeast of the airport."
     speaker: enrique-kolbeck

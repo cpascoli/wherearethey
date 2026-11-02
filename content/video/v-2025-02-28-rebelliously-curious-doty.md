@@ -30,6 +30,10 @@ moments:
     text: "Doty says the case was code-named Project Seven Lambs, that his reporting went through AFOSI's counterintelligence directorate to the DIA, and that derivative parts of it went to the CIA, the NSA and the NRO."
     speaker: richard-doty
     refs: [ dia, cia ]
+  - t: "19:29"
+    text: "Doty: parts of the Bennewitz investigation went to the CIA, others to the NSA, and another “to the NRO, the National Reconnaissance Office, which at that time was still classified”; that is why nine other people were involved."
+    speaker: richard-doty
+    refs: [ nro, cia ]
   - t: "20:47"
     claims: [ government-ufo-disinformation ]
     basis: first-hand

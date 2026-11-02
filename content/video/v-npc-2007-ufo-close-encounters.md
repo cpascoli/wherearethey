@@ -65,6 +65,10 @@ moments:
     text: "Peruvian Air Force pilot Oscar Santa María describes firing on an unidentified object in his Sukhoi in 1980."
     speaker: oscar-santa-maria
     refs: [ inc-la-joya-1980 ]
+  - t: "37:47"
+    text: "Santa María: his unit commander ordered him to take off in his Sukhoi-22 to shoot down the spherical object, which was in restricted airspace without clearance; he fired 64 30 mm shells, some hit the object fully with no effect, “probably they were absorbed”."
+    speaker: oscar-santa-maria
+    refs: [ inc-la-joya-1980 ]
   - t: "49:04"
     text: "Capt. Ray Bowyer recounts the 2007 Alderney sighting and urges aircrew to report what they see."
     speaker: ray-bowyer

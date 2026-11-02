@@ -41,6 +41,10 @@ moments:
     text: "Grusch says that in his official duties he saw intelligence on foreign crash-retrieval efforts and U.S.-held audiovisual information on recovered vehicles and biological material, which he says he cross-verified internally."
     speaker: david-grusch
     refs: [ ev-capitol-uap-press-conference-2026 ]
+  - t: "21:34"
+    text: "Grusch: some foreign intelligence on U.S. retrieval efforts “has not been provided to Congress despite lawful requests” to the DIA, though it was analysed by centres “such as NASIC”; the DIA should stop obstructing Luna's task force."
+    speaker: david-grusch
+    refs: [ nasic, dia, task-force-declassification ]
   - t: "22:47"
     text: "Grusch says his federal litigation revealed that the Air Force sought an Espionage Act investigation of him after his 2023 testimony."
     speaker: david-grusch

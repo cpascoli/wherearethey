@@ -13,6 +13,7 @@ tags:
 rel:
   - [ run by, department-of-war ]
   - [ preceded by, project-grudge ]
+  - [ reviewed by, doc-robertson-panel-1953, "The CIA-convened panel reviewed Air Force UFO case histories and films in January 1953" ]
 facts:
   - text: A 1952–1969 U.S. Air Force program to investigate the nature and origin of unidentified flying objects.
     status: documented
@@ -45,9 +46,23 @@ facts:
   - text: "Mark O'Connell, biographer of J. Allen Hynek, told Popular Mechanics in 2019 that once Blue Book proved unable to say whether UFOs were a threat, “its mission became one of ‘making the UFOs go away’”, and that “The worst sin one could commit on the Blue Book staff was to mark a case ‘unexplained.’” The article puts the number of cases some researchers consider unexplained at 3,000 to 5,000, against the Air Force's 701."
     status: claimed
     source: https://www.popularmechanics.com/military/research/a30257166/project-blue-book-anniversary/
-  - text: "According to the researcher Brad Sparks, as reported by Popular Mechanics, Blue Book went on receiving reports after its closure was announced on 17 December 1969 and was not shut down until 30 January 1970."
-    status: unverified
-    source: https://www.popularmechanics.com/military/research/a30257166/project-blue-book-anniversary/
+  - text: "AARO's 2024 historical report records that the Air Force logged 12,618 UFO sightings between 1947 and 1969, that of those 701 were categorised as unidentified and never solved, and that there was no evidence indicating that the unidentified sightings were extraterrestrial vehicles."
+    status: documented
+    claims: [ official-no-nhi-evidence ]
+    basis: documented
+    claim_by: aaro
+    source: doc-aaro-historical-record-report-v1
+  - text: "In 1966 Air Force Secretary Harold Brown, asked what the Air Force was hiding, answered: “We have not been hiding anything; the investigations have been made public”."
+    status: claimed
+    by: harold-brown
+    claims: [ government-ufo-disinformation ]
+    stance: disputes
+    basis: first-hand
+    source: v-hynek-harold-brown-press@0:30
+  - text: "At the May 2022 House hearing, Under Secretary Ronald Moultrie told Rep. Gallagher that he knew of Blue Book and AATIP but of no official Defense Department UAP study between them."
+    status: documented
+    by: ronald-moultrie
+    source: v-2022-05-17-hearing@54:41
   - text: "In 1966 Blue Book's scientific consultant J. Allen Hynek said spaceships are possible but not probable, and “To this time there is no proof that I would consider valid scientific proof that we have been visited by spaceships”; most reports are balloons, meteors, satellites, aircraft and birds."
     status: claimed
     by: j-allen-hynek
@@ -68,4 +83,4 @@ In January 1953 the CIA convened the Robertson Panel, which reviewed Blue Book's
 
 Over its lifetime it collected 12,618 reports, of which 701 remained "unidentified". After the Condon Committee concluded that further study was unlikely to yield major discoveries, the Secretary of the Air Force closed the project, stating that no UFO had ever indicated a threat to national security, that there was no evidence of technology beyond contemporary knowledge, and no evidence that the unidentified sightings were extraterrestrial vehicles. Some of its records appear in the PURSUE releases.
 
-*Sources: [war.gov/UFO](https://www.war.gov/UFO/) · CIA history by Gerald K. Haines (1997) · AFR 200-2 (1954) · Bolender memo (1969) · [Wikipedia](https://en.wikipedia.org/wiki/Project_Blue_Book)*
+*Sources: [war.gov/UFO](https://www.war.gov/UFO/) · CIA history by Gerald K. Haines (1997) · AFR 200-2 (1954) · Bolender memo (1969) · AARO Historical Record Report, Vol. 1 (2024) · CBS Reports (1966) · May 17, 2022 hearing*

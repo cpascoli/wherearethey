@@ -15,6 +15,7 @@ links:
   - label: DoD announcement of Jon Kosloski as director (26 August 2024)
     url: https://www.defense.gov/News/Releases/Release/Article/3884318/department-of-defense-announces-the-new-director-all-domain-anomaly-resolution/
 rel:
+  - [ established by, doc-aaro-establishment-memo-2022, "Approved by the Deputy Secretary of Defense's memorandum of 15 July 2022, as required by section 1683 of the FY2022 NDAA" ]
   - [ revealed, kona-blue, "AARO found that it was a proposed special access program at DHS, never approved or stood up" ]
 facts:
   - text: "Required by section 1683 of the FY2022 NDAA, AARO was approved by the Deputy Secretary of Defense's memorandum of 15 July 2022 (published 20 July), which directed the USD(I&S) to establish it in place of the AOIMSG, made it “the DoD focal point for all UAP and UAP-related activities” and ordered the Navy's UAP Task Force disestablished. Its remit covers “anomalous, unidentified space, airborne, submerged, and transmedium objects.”"

@@ -18,6 +18,10 @@ moments:
     text: "Edgar Mitchell introduces himself as the Apollo 14 astronaut who grew up near Roswell, and says that starting with Roswell “we have been visited by aliens.”"
     speaker: edgar-mitchell
     refs: [ inc-roswell-1947, h-2013-citizen-hearing ]
+  - t: "6:17"
+    text: "Mitchell: since he went to the moon forty-some years ago, and his colleague Gordon Cooper “also had an incident” at Edwards Air Force Base, a UFO landing while he was on duty: “yes, we're not alone, we have been visited”."
+    speaker: edgar-mitchell
+    refs: [ gordon-cooper ]
   - t: "7:00"
     text: "Paul Hellyer: “like my friend Edgar Mitchell, I say without equivocation, we are not alone in the cosmos. We have neighbors.”"
     speaker: paul-hellyer
