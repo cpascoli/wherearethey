@@ -10,6 +10,17 @@ military personnel, pilots, radar/sensor operators, intelligence officers, acade
 - Incidents count as credible when linked to a credible person or a documented fact. **Mass-sighting rule:** an incident with `witnesses: <n>` ≥ 50 *and* at least one contemporary `coverage:` entry (outlet + date, from the time of the event) is included with the “Mass sighting” badge. Only cite coverage that actually dates from the event, and never mark Wikipedia-sourced facts as `documented`.
 - Incidents carry `outcome:` `open` (default) | `disputed` (shown as “Partly explained”: an official/credible explanation covers part of the core of the case — the sightings or evidence that make it notable — or is contested; an explanation of side reports only, e.g. the Cosmos 2238 re-entry for Cosford's high-altitude lights, leaves the case `open` and goes in its facts) | `explained` (a credible conventional explanation is established, e.g. an AARO or air-force resolution) | `hoax`, with `outcome_note:` (one sentence) and `outcome_source:` (required unless open). Explained and hoax cases stay in the archive (counter-evidence matters) but are hidden by the “Hide explained cases” filter, on by default. Don't mark a case explained on a private sceptic's theory alone.
 - Never upgrade a status without a source. Prefer the counter-evidence too (e.g. Kirkpatrick, AARO resolutions) — balance is part of credibility.
+- `unverified` is not a resting state: find a source, or drop the fact. A statement a named outlet, person or record attributes is `claimed` (it records that someone says it, without vouching for it); keep `unverified` only for what an unauthenticated document says (e.g. the Wilson–Davis notes).
+- Sworn testimony: what the witness asserts is `claimed` with `basis: first-hand`; use `documented` only when the point is that it was said on the record.
+
+### Editorial rules (from the 2026-11 content review)
+- **A file states what its moments say.** When you curate a moment for a person or case, give that file a fact (`by:`, `source: video@t`) in the same edit.
+- **Claims go on the fact and the moment.** A claim tagged on a fact citing `video@t` also sits on the moment there, and vice versa.
+- **A video citation needs a moment.** `npm run check` warns when `source: video@t` has no moment within 45 s, or a video is cited without a timestamp.
+- **One statement per fact, one speaker per `by:`.** Don't bundle two people's words in one fact: the second speaker's page never shows it.
+- **Hub files carry the counter-evidence** (AARO, Blue Book, the CIA, the concept pages) as a `documented` fact with `stance: disputes`, not only as a sentence in the body.
+- **Wikipedia is a last resort on central files.** Where a primary record is on file, cite it and name it in the Sources line.
+- **Read a source whole before curating it.** Moments from transcripts are checked against the transcript: a moment's `t` is where the speaker starts the point, its `speaker` is who actually speaks (not who the moment is about), and a documentary upload can repeat itself.
 
 ## Entry format — `content/<type>/<id>.md`
 Types: person, incident, hearing, program, organization, document, film, book, record (PURSUE, generated), video, event, concept, place, source.

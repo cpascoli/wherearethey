@@ -61,6 +61,7 @@ moments:
     basis: relayed
   - t: "1:13:23"
     text: "Friedman: “the NSA has released 156 top secret” Umbra UFO documents, nearly all blacked out, proof in his view that there has been a cover-up."
+    speaker: stanton-friedman
 ---
 
 The documents panel of the Citizen Hearing: aerospace engineer Robert Wood on the leaked "Majestic" documents and the 1954 SOM 1-01 manual, Linda Moulton Howe reading from it, nuclear physicist Stanton Friedman on archives and debunkers, and researcher Grant Cameron on the Canadian Wilbert Smith memos, followed by questions from the former members of Congress. The MJ-12 papers are widely regarded as forgeries (see the FBI file). Auto-captions.

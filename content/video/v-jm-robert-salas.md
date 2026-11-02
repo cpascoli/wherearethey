@@ -19,6 +19,7 @@ moments:
     refs: [ inc-malmstrom-1967 ]
   - t: "20:20"
     text: "Clip of targeting officer Robert Jamison: called in to restart Oscar Flight's missiles, he saw all ten off alert on the job-control board and was briefed on what to do if crews met UFOs in the field."
+    speaker: robert-jamison
     refs: [ inc-malmstrom-1967 ]
   - t: "25:14"
     claims: [ malmstrom-ufo-missile-shutdown ]
