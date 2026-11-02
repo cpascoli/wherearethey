@@ -30,7 +30,7 @@ facts:
   - text: "Edgar Mitchell said in 2013 that Cooper had an incident at Edwards Air Force Base in which a UFO landed while he was on duty."
     status: claimed
     by: edgar-mitchell
-    source: v-2013-chd-opening@6:10
+    source: v-2013-chd-opening@6:17
   - text: "Space historian Robert Pearlman, reviewing Leap of Faith, found it hard to understand how someone so connected with groundbreaking technology “could easily embrace ideas such as extraterrestrial visits with little more than anecdotal evidence”."
     status: claimed
     source: https://en.wikipedia.org/wiki/Gordon_Cooper

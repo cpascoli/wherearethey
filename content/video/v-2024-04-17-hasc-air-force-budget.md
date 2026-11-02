@@ -18,6 +18,10 @@ moments:
     text: "Kendall answers with threats to air bases by theater: Chinese precision, ballistic, cruise and hypersonic missiles in the Pacific, small UAVs in the Middle East and Europe. He does not mention Langley."
     speaker: frank-kendall
     refs: [ inc-langley-2023 ]
+  - t: "50:14"
+    text: "Kendall: the Army is “generally the lead” for research on the small-UAV problem, with the Air Force contributing and funding air-base security improvements."
+    speaker: frank-kendall
+    refs: [ inc-langley-2023, langley-afb ]
 ---
 
 The official House Armed Services Committee recording of the 17 April 2024 hearing on the Department of the Air Force's fiscal year 2025 budget, with Secretary of the Air Force Frank Kendall, Gen. David Allvin and Gen. B. Chance Saltzman. It is a general budget hearing, filed here for the exchange on the December 2023 drone incursions at Langley AFB; the official printed record is filed as a separate document.
