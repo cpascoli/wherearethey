@@ -7,7 +7,6 @@ tags: [radar, navy]
 rel:
   - [ features, gary-voorhis ]
   - [ about, inc-nimitz-2004 ]
-  - [ related to, kevin-day ]
 moments:
   - t: "2:22"
     claims: [ tic-tac-beyond-known-technology ]

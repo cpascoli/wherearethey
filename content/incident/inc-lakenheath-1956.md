@@ -8,7 +8,6 @@ end: 1956-08-14
 place: { name: "RAF Lakenheath / RAF Bentwaters, Suffolk, England", lat: 52.4093, lng: 0.561 }
 tags: [radar, air-force, aviator, international]
 rel:
-  - [ related to, project-blue-book ]
   - [ investigated by, david-clarke ]
 links:
   - label: Wikipedia — Lakenheath-Bentwaters incident

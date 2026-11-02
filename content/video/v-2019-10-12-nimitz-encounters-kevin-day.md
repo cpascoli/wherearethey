@@ -8,7 +8,6 @@ rel:
   - [ features, kevin-day ]
   - [ about, inc-nimitz-2004 ]
   - [ discusses, david-fravor, "Day's account of the object around Fravor differs from Fravor's own" ]
-  - [ related to, gary-voorhis ]
 moments:
   - t: "2:12"
     text: "Day: from about 10 November 2004, near San Clemente Island, tracks appeared “in groups of 5 to 10 at a time”, closely spaced, at 28,000 feet, 100 knots, heading south — off the commercial air routes, not considered hostile."

@@ -5,7 +5,7 @@ rel:
   - [ released in, ev-pursue-release-07 ]
   - [ released by, department-of-war ]
   - [ paired with, eop-uap-d002 ]
-  - [ related to, crash-retrieval ]
+  - [ concerns, crash-retrieval, "A 1962–64 interagency framework for the recovery, handling, analysis and disposition of material from U.S. and foreign activities in space, not of anything non-human" ]
   - [ concerns, nasa, Drafts proposed NASA as a holder of foreign space material ]
 tags:
   - pursue

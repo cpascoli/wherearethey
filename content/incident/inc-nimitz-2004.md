@@ -2,6 +2,11 @@
 name: USS Nimitz “Tic Tac” encounter
 match:
   - "Nimits"
+unmatch:   # a “tic-tac-shaped” object in another case is not this one
+  - "tic tac shaped"
+  - "tic tac shape"
+  - "tic tac like"
+  - "tic tac looking"
 aka:
   - Tic Tac
   - Nimitz

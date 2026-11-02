@@ -7,7 +7,7 @@ rel:
   - [ about, aawsap ]
   - [ about, skinwalker-ranch ]
   - [ prepared by, bigelow-aerospace, BAASS's report on its 2010 field deployments to the Utah ranch ]
-  - [ related to, book-skinwalkers-at-the-pentagon ]
+  - [ covered in, book-skinwalkers-at-the-pentagon, "The authors' account of AAWSAP's work at the ranch; this is BAASS's own report on its 2010 field deployments" ]
 tags:
   - pursue
 name: DOW-UAP-D174 — Utah Ranch Investigation Report, April 2010

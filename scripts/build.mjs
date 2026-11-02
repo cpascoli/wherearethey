@@ -105,6 +105,7 @@ export async function build({ check = false, quiet = false } = {}) {
     if (d.credentials) e.credentials = arr(d.credentials).map(c => ({ category: String(c.category || 'unknown'), role: c.role || '' }));
     if (d.match) e.match = arr(d.match).map(String);
     if (d.nomatch) e.nomatch = true;
+    if (d.unmatch) e.unmatch = arr(d.unmatch).map(String); // phrases starting with a matched alias that are NOT this entity (“tic-tac-shaped”)
     if (d.channels) e.channels = arr(d.channels).map(String);
     if (d.pursue) {
       e.pursue = d.pursue;
@@ -330,6 +331,8 @@ export async function build({ check = false, quiet = false } = {}) {
       termMap.get(key).add(e.id);
     }
   }
+  const unmatch = new Map(); // entity id → normalized phrases to skip
+  for (const e of entities) if (e.unmatch?.length) unmatch.set(e.id, e.unmatch.map(u => norm(u).replace(/\s+/g, ' ').trim().toLowerCase()));
   const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/ /g, '\\s+');
   const sortTerms = ts => ts.sort((a, b) => b.length - a.length).map(esc).join('|');
   const longTerms = [...termMap.keys()].filter(k => k.length > 4);
@@ -359,6 +362,7 @@ export async function build({ check = false, quiet = false } = {}) {
         const time = segs[si][0];
         for (const id of ids) {
           if (id === vid) continue;
+          if (unmatch.has(id) && unmatch.get(id).some(u => text.slice(m.index, m.index + 80).replace(/\s+/g, ' ').toLowerCase().startsWith(u))) continue;
           if (last.has(id) && time - last.get(id) < 30) continue;
           last.set(id, time);
           const snippet = [segs[si - 1]?.[1], segs[si][1], segs[si + 1]?.[1]].filter(Boolean).join(' ');

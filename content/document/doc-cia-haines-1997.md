@@ -20,7 +20,6 @@ rel:
   - [ about, uap-disinformation ]
   - [ discusses, doc-robertson-panel-1953, "Haines's history has a section on the Robertson Panel, 1952–53" ]
   - [ discusses, project-blue-book ]
-  - [ related to, area-51 ]
 facts:
   - text: "An internal CIA history by Gerald K. Haines, the National Reconnaissance Office historian, published in the CIA's journal Studies in Intelligence. It was written after DCI R. James Woolsey ordered a review of all Agency files on UFOs in late 1993, and examines the CIA's efforts to solve the UFO mystery, “its programs that had an impact on UFO sightings, and its attempts to conceal CIA involvement in the entire UFO issue.”"
     status: documented

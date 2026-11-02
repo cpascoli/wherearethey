@@ -7,12 +7,15 @@ tags: [aviator, navy]
 rel:
   - [ features, alex-dietrich ]
   - [ about, inc-nimitz-2004 ]
-  - [ related to, david-fravor ]
   - [ discusses, aaro, "Dietrich says AARO is a good idea, though she doesn't know they've “gotten it exactly right”" ]
 moments:
   - t: "5:26"
     text: "Dietrich: she flew with VFA-41, the Black Aces, from USS Nimitz and made two combat deployments, in 2005 and 2007, supporting troops in Iraq and Afghanistan."
     speaker: alex-dietrich
+  - t: "9:18"
+    text: "Dietrich: new to the squadron and a lieutenant junior grade, she flew on the wing of the commanding officer, Commander David Fravor; he had a senior lieutenant in his back seat, she a department head, a lieutenant commander, and her job was to keep sight of her lead."
+    speaker: alex-dietrich
+    refs: [ david-fravor ]
   - t: "10:12"
     text: "Dietrich: at merge plot someone called “look in the water”; she saw churning white water in a calm sea with no apparent source, and without that anchor point she doubts she would have picked up the object."
     speaker: alex-dietrich

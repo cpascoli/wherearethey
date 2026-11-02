@@ -15,7 +15,6 @@ links:
 rel:
   - [ authored by, ch-bolender ]
   - [ about, project-blue-book ]
-  - [ related to, dow-uap-d095 ]
   - [ cited in, doc-shellenberger-testimony ]
 facts:
   - text: An internal Air Force memo, “Unidentified Flying Objects (UFO)”, dated October 20, 1969, recommending the end of Project Blue Book. It states that continuing the project “cannot be justified, either on the ground of national security or in the interest of science,” citing the Condon (University of Colorado) study and the National Academy of Sciences review.

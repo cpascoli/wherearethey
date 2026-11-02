@@ -10,7 +10,6 @@ credentials:
 tags: [aviator, air-force, nuclear]
 rel:
   - [ helped by, ryan-graves, "He came forward to Graves's Americans for Safe Aerospace, and Graves arranged an FBI interview" ]
-  - [ related to, george-knapp ]
   - [ links to, inc-rendlesham-1980, "He links his own sighting that night to the Rendlesham Forest incident" ]
   - [ witness, inc-upper-heyford-1980 ]
   - [ witness, inc-edwards-triangle-1990 ]

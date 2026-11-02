@@ -7,7 +7,7 @@ credentials:
     role: Professor of religious studies, University of North Carolina Wilmington; author of American Cosmic
 tags: [academia]
 rel:
-  - [ related to, crash-retrieval ]
+  - [ commented on, crash-retrieval, "Hal Puthoff says Pasulka told him that some craft were described to her as “donations”" ]
 facts:
   - text: Writer and professor of religious studies at the University of North Carolina Wilmington, best known for “American Cosmic”.
     status: claimed

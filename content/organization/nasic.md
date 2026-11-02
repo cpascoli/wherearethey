@@ -20,7 +20,6 @@ rel:
   - [ ran, project-sign, "AARO: ATIC, NASIC's forerunner, “assumed control of Project SIGN on January 23, 1948”" ]
   - [ ran, project-grudge, "AARO and the CIA's 1952 records place Projects Sign, Grudge and Blue Book under ATIC, NASIC's forerunner" ]
   - [ ran, project-blue-book, "AARO and the CIA's 1952 records place Projects Sign, Grudge and Blue Book under ATIC, NASIC's forerunner" ]
-  - [ related to, dia ]
   - [ documented in, dow-uap-d180, "Personnel record of Col. Howard McCoy, intelligence chief at Air Materiel Command when Sign and Grudge began" ]
   - [ assessed in, doc-cia-osi-flying-saucers-1952, "The CIA found ATIC, NASIC's forerunner at Wright-Patterson, the only group giving the subject serious effort" ]
 links:

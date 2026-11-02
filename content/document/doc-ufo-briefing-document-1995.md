@@ -14,8 +14,8 @@ links:
   - label: Internet Archive (PDF)
     url: https://archive.org/details/pdfy-uHw9zGct4dsyqXcU
 rel:
-  - [ related to, project-blue-book ]
-  - [ related to, project-sign ]
+  - [ discusses, project-blue-book, "Summarises the Air Force's investigations, Project Sign, Project Grudge and Project Blue Book, among the official statements it collects" ]
+  - [ discusses, project-sign, "Dates the Air Force's publicly known UFO investigation to Project Sign, opened in January 1948" ]
 facts:
   - text: A 148-page compilation by Don Berliner (with Marie Galbraith and Antonio Huneeus), presented by three civilian research organizations (CUFOS, FUFOR and MUFON) in December 1995. Its acknowledgements credit Laurance S. Rockefeller for financial support.
     status: documented

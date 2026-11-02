@@ -17,8 +17,7 @@ links:
 rel:
   - [ authored by, nathan-twining ]
   - [ led to, project-sign ]
-  - [ related to, dow-uap-d100 ]
-  - [ related to, 18-100754-general-1946-7-vol-2 ]
+  - [ followed by, dow-uap-d100, "The memo asked for a detailed study; this AMC file holds the 1947–48 memoranda and correspondence on Project Sign, the study that followed" ]
   - [ quoted in, doc-ufo-briefing-document-1995 ]
 facts:
   - text: A letter from Headquarters, Air Materiel Command (Wright Field) to the Commanding General, Army Air Forces, signed by Lt. Gen. Nathan Twining. It states that “the phenomenon reported is something real and not visionary or fictitious.”

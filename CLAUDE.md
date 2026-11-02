@@ -22,6 +22,7 @@ The id is the filename. Frontmatter (YAML) + optional Markdown body (bio/summary
 name: David Fravor
 aka: [Fravor]                  # used for search AND transcript name-matching
 match: [Fraver]                # extra transcript spellings (auto-captions misspell names)
+unmatch: ["tic tac shaped"]    # phrases that begin with an alias but mean something else (not matched)
 credentials: [{ category: aviator, role: "Commander, U.S. Navy (ret.)" }]
 date: 2004-11-14               # YYYY | YYYY-MM | YYYY-MM-DD ; `end:` for ranges
 place: { name: "…", lat: 31.5, lng: -117.8 }

@@ -5,7 +5,7 @@ date: 1973-10-11
 rel:
   - [ features, charles-hickson ]
   - [ about, inc-pascagoula-1973 ]
-  - [ related to, fred-diamond ]
+  - [ recorded by, fred-diamond, "Audio from the questioning at his Jackson County sheriff's office on the night of the event" ]
 moments:
   - t: "1:30"
     text: "Hickson tells officers about a circling blue light hovering two or three feet up, about 25–30 yards from the pier where he and Calvin Parker were fishing."

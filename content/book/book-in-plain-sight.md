@@ -8,7 +8,6 @@ isbn: 978-1-4607-5906-6
 tags: [disclosure, crash-retrieval]
 rel:
   - [ authored by, ross-coulthart ]
-  - [ related to, v-7news-spotlight-ufo-phenomenon-2021 ]
 links:
   - label: Google Books
     url: https://books.google.com/books?id=UcFnzgEACAAJ

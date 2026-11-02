@@ -11,7 +11,6 @@ tags:
   - crash-retrieval
   - disclosure
 rel:
-  - [ related to, skinwalker-ranch ]
   - [ authored by, james-lacatski ]
   - [ authored by, colm-kelleher ]
   - [ authored by, george-knapp ]
@@ -19,7 +18,7 @@ rel:
   - [ cleared in, doc-dopsr-22-sb-0151 ]
   - [ followed by, book-covert-ufo-new-insights ]
   - [ about, kona-blue, "Lacatski calls AAWSAP and its successor KONA BLUE “Both classified programs”; AARO says KONA BLUE was never approved" ]
-  - [ related to, crash-retrieval ]
+  - [ claims about, crash-retrieval, "Lacatski stated that the United States “was in possession of a craft of unknown origin and had successfully gained access to its interior”" ]
 links:
   - label: Google Books
     url: https://books.google.com/books/about/Inside_the_U_S_Government_Covert_UFO_Pro.html?id=Yt5a0AEACAAJ

@@ -24,7 +24,6 @@ rel:
   - [ testified at, h-2025-05-01 ]
   - [ testified at, h-2024-11-13 ]
   - [ informed by, jay-stratton, "Stratton told him the deleted GoFast email had been treated as spillage" ]
-  - [ related to, chris-mellon ]
   - [ accused, aaro, "He accused AARO of an influence operation" ]
   - [ disputes, sean-kirkpatrick, "He rejects Kirkpatrick's DARPA explanation for the Tic Tac and called a meeting with AARO's leadership an “influence operation”" ]
   - [ partly accepts, doc-aaro-gofast, "He concedes AARO's point that GoFast was not fast (“I don't dispute that”) but disputes its wider conclusions" ]

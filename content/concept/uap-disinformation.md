@@ -16,7 +16,7 @@ rel:
   - [ documented in, doc-aaro-historical-record-report-v1 ]
   - [ example, doc-fbi-majestic-12, "AFOSI called the MJ-12 “briefing document” fabricated and “completely bogus”" ]
   - [ example, richard-doty, "Former AFOSI agent who says he fed false UFO stories to researchers on orders" ]
-  - [ related to, linda-moulton-howe ]
+  - [ example, linda-moulton-howe, "Doty says he was ordered to show her a document that mixed true information with deception" ]
   - [ example, area-51, "An Air Force colonel reportedly gave doctored saucer photos to a bar owner near Area 51 to shield stealth tests" ]
   - [ example, project-blue-book, "The CIA history says Blue Book investigators who knew of the U-2 flights “tried to explain away such sightings” as natural phenomena" ]
   - [ investigated by, aaro, "AARO sees disinformation and secrecy around weapons programs as the source of much UFO lore" ]
