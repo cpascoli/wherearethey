@@ -5,7 +5,7 @@ date: 2026-09-03   # published; recorded most likely in May 2026, between PURSUE
 tags: [military, international]
 rel:
   - [ features, kevin-campbell ]
-  - [ features, ryan-graves ]
+  - [ hosted by, ryan-graves ]
   - [ about, inc-east-asia-us-military-uap-2021-2025 ]
 moments:
   - t: "1:56"

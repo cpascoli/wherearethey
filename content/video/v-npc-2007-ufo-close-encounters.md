@@ -69,6 +69,10 @@ moments:
     text: "Santa María: his unit commander ordered him to take off in his Sukhoi-22 to shoot down the spherical object, which was in restricted airspace without clearance; he fired 64 30 mm shells, some hit the object fully with no effect, “probably they were absorbed”."
     speaker: oscar-santa-maria
     refs: [ inc-la-joya-1980 ]
+  - t: "44:01"
+    text: "Choy, founding member of the Peruvian Air Force's anomalous aerial phenomena office: on 13 October 2001 at Chulucanas eight red-orange spheres were filmed before hundreds of people, suspended in silence for over five hours; the Air Force had him investigate."
+    speaker: anthony-choy
+    refs: [ ev-npc-2007 ]
   - t: "49:04"
     text: "Capt. Ray Bowyer recounts the 2007 Alderney sighting and urges aircrew to report what they see."
     speaker: ray-bowyer

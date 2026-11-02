@@ -5,8 +5,8 @@ youtube: Qu8pudJk_-A
 tags: [aawsap, crash-retrieval]
 rel:
   - [ features, james-lacatski ]
-  - [ features, george-knapp ]
-  - [ features, jeremy-corbell ]
+  - [ hosted by, george-knapp ]
+  - [ hosted by, jeremy-corbell ]
   - [ about, aawsap ]
   - [ about, kona-blue ]
   - [ about, book-inside-covert-ufo-program ]

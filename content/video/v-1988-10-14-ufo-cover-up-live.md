@@ -37,6 +37,11 @@ moments:
     refs: [ inc-roswell-1947 ]
     claims: [ recovered-non-human-bodies ]
     basis: relayed
+  - t: "44:04"
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
+    text: "Asked to “level with us”, Bill Moore and Stanton Friedman state as fact: a strange spacecraft exploded, pieces were recovered, several bodies found and removed, the story covered up “at the highest level”; “Flying saucers are real. Period.”"
+    refs: [ inc-roswell-1947, stanton-friedman, crash-retrieval ]
   - t: "45:45"
     text: "Jesse Marcel Jr. on the debris his father brought home: “not from this earth”."
     speaker: jesse-marcel-jr

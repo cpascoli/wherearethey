@@ -5,8 +5,8 @@ youtube: rW02-PuPMJ8
 tags: [aawsap, skinwalker]
 rel:
   - [ features, james-lacatski ]
-  - [ features, george-knapp ]
-  - [ features, jeremy-corbell ]
+  - [ hosted by, george-knapp ]
+  - [ hosted by, jeremy-corbell ]
   - [ about, book-covert-ufo-future-visions ]
   - [ about, aawsap ]
   - [ about, kona-blue ]

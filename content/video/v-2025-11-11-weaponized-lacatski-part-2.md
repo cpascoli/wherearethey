@@ -5,8 +5,8 @@ youtube: cggMuAjFJcI
 tags: [aawsap, crash-retrieval]
 rel:
   - [ features, james-lacatski ]
-  - [ features, george-knapp ]
-  - [ features, jeremy-corbell ]
+  - [ hosted by, george-knapp ]
+  - [ hosted by, jeremy-corbell ]
   - [ about, book-covert-ufo-new-insights ]
   - [ about, aawsap ]
   - [ about, kona-blue ]
@@ -20,7 +20,7 @@ moments:
   - t: "2:51"
     text: "“Do these books constitute disclosure? In my opinion, yes. They are my disclosure, and they are the public's disclosure.” He says 99% of the program's information is releasable, but the government owns the reports."
     speaker: james-lacatski
-    refs: [ book-skinwalkers-at-the-pentagon, book-inside-covert-ufo-program, book-covert-ufo-new-insights, book-covert-ufo-future-visions ]
+    refs: [ aawsap, book-skinwalkers-at-the-pentagon, book-inside-covert-ufo-program, book-covert-ufo-new-insights, book-covert-ufo-future-visions ]
   - t: "6:25"
     text: "Lacatski distinguishes KONA BLUE the compartment, “reputed to be for recovered technology”, from KONA BLUE the program, which he says was first described in Skinwalkers at the Pentagon."
     speaker: james-lacatski

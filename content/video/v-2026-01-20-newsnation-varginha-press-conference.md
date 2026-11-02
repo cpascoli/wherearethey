@@ -140,6 +140,14 @@ moments:
     refs: [ inc-varginha-1996, ev-varginha-press-conference-2026 ]
     claims: [ varginha-beings-captured ]
     basis: relayed
+  - t: "2:27:52"
+    text: "Rep. Eric Burlison: as public outcry after Oliver Stone's film led Congress to pass the JFK records act unanimously, he hopes this film creates the same momentum; no government, “no matter how powerful”, may withhold whether we are alone."
+    speaker: eric-burlison
+    refs: [ ev-varginha-press-conference-2026, inc-varginha-1996 ]
+  - t: "2:30:55"
+    text: "Burlison: “It's time for action and it's time to get the receipts”, and time to pass the UAP Disclosure Act."
+    speaker: eric-burlison
+    refs: [ ev-varginha-press-conference-2026, doc-uap-disclosure-act-2023 ]
 ---
 
 The full press conference, broadcast live by NewsNation, at which James Fox presented the Varginha witnesses from his updated film Moment of Contact. The six statements recorded in Brazil (about 59:30 to 1:13:00) are in Portuguese; YouTube's captions show only “foreign speech” there, so that stretch of the transcript was made with Whisper, and the moments translate it. Nothing was said under oath, and the claims are the speakers' own; the Army's 1997 inquiry and later retractions by two soldiers are filed with the incident.

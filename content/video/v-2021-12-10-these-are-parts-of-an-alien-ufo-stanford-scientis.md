@@ -34,9 +34,11 @@ moments:
     refs: [ inc-ubatuba-1957 ]
   - t: "21:30"
     text: "Puthoff, by phone, on the bismuth–magnesium sample: it was sent anonymously by someone claiming to be an Army officer, who found it in his grandfather's archives with a diary entry calling it a piece from Roswell."
+    speaker: hal-puthoff
     refs: [ sample-bismuth-magnesium, inc-roswell-1947 ]
   - t: "22:15"
     text: "The thin layers could act as terahertz waveguides about a thirtieth of the wavelength, so “30 wave guides” fit in the volume of one."
+    speaker: hal-puthoff
     refs: [ sample-bismuth-magnesium ]
   - t: "24:19"
     text: "Nolan wants a standard testing process for such samples, with results handed “to the true believers and to the skeptics” to argue over data."

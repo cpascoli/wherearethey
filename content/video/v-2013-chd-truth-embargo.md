@@ -10,6 +10,9 @@ rel:
   - [ features, linda-moulton-howe ]
   - [ includes, film-the-anonymous-interview, "The session opens with the interview, its first 17 minutes" ]
 moments:
+  - t: "0:45"
+    text: "The session opens with a screening of The Anonymous Interview, the account of a man who says he was a CIA agent, shown in shadow, which runs for its first 17 minutes."
+    refs: [ film-the-anonymous-interview ]
   - t: "4:19"
     text: "In a video interview recorded by Richard Dolan, an unnamed 77-year-old man who says he worked under a CIA cover name from the late 1950s says Project Blue Book “was kind of partially a fraud”. Asked by the interviewer whether some of the Blue Book cases were “completely fictitious”, he answers “yes”, adding that the cases came to them from Fort Belvoir. His identity and service are unverified."
     refs: [ project-blue-book, uap-disinformation ]

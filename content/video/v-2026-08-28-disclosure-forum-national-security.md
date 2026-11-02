@@ -10,7 +10,7 @@ rel:
   - [ features, tim-gallaudet ]
   - [ features, kirk-mcconnell ]
   - [ features, marik-von-rennenkampff ]
-  - [ features, gadi-schwartz ]
+  - [ moderated by, gadi-schwartz, "Introduced at the opening as the panel's moderator, a correspondent from NBC" ]
 moments:
   - t: "0:29"
     claims: [ langley-drones-unidentified ]

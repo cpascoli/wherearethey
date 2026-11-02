@@ -4,8 +4,8 @@ date: 2026-10-21
 youtube: 9GblwqzGFAY
 rel:
   - [ features, jay-stratton ]
-  - [ features, george-knapp ]
-  - [ features, jeremy-corbell ]
+  - [ hosted by, george-knapp ]
+  - [ hosted by, jeremy-corbell ]
   - [ about, book-out-of-the-shadows ]
 moments:
   - t: "11:16"
