@@ -13,7 +13,7 @@ facts:
     said: 2013-05
     claims: [ roswell-crashed-craft ]
     basis: first-hand
-    status: unverified
+    status: claimed
     by: jesse-marcel-jr
     source: https://www.youtube.com/watch?v=uhV_m_BH8Po
   - text: "Asked at the 2013 Citizen Hearing whether his father saw bodies, he answered: “no he did not see the body”."

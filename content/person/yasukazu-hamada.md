@@ -12,7 +12,7 @@ links:
     url: https://en.wikipedia.org/wiki/Yasukazu_Hamada
 facts:
   - text: "Former Defense Minister Hamada chairs the cross-party Diet league for UAP clarification, founded on 6 June 2024, which urges Japan to set up an office like the Pentagon's AARO."
-    status: unverified
+    status: claimed
     source: https://www.scmp.com/week-asia/politics/article/3264559/japan-sets-parliamentary-group-probe-ufo-sightings-move-research-mainstream
 ---
 

@@ -23,7 +23,7 @@ facts:
     by: eric-burlison
     source: https://www.sentinel-news.org/p/congress-eyes-a-new-uap-hearing
   - text: Possible witnesses include the intelligence personnel involved in the late-2025 orb encounter near a Western U.S. military facility, among them a career ODNI official.
-    status: unverified
+    status: claimed
     source: https://www.sentinel-news.org/p/congress-eyes-a-new-uap-hearing
 ---
 

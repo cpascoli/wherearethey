@@ -18,8 +18,6 @@ facts:
     status: claimed
     by: steven-greer
     source: https://en.wikipedia.org/wiki/Steven_M._Greer
-  - text: "No official body has documented a CE-5 result. Critics say lights seen during sessions are easily explained as satellites, aircraft or flares, and that the sessions are not controlled tests."
-    status: unverified
 ---
 
 CE-5 is a civilian practice, not an official program. It is in the archive because it is widely discussed and tied to Greer and the Disclosure Project. It falls **outside the archive's criteria**: no government, military or scientific source has confirmed any contact.

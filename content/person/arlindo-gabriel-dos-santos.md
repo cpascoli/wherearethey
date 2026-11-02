@@ -6,7 +6,7 @@ credentials:
 tags: [abduction]
 facts:
   - text: "Dos Santos said that in May 1979, while hunting near Baependi, he photographed a small object and was then taken aboard a second craft by a humanoid crew."
-    status: unverified
+    status: claimed
     by: arlindo-gabriel-dos-santos
     source: http://www.nicap.org/790516baependidir.htm
 rel:

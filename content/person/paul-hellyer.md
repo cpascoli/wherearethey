@@ -46,7 +46,7 @@ facts:
     by: paul-hellyer
     source: https://en.wikipedia.org/wiki/Paul_Hellyer
   - text: He repeated the “Project Serpo” alien-exchange story, which originated with former AFOSI agent Richard Doty, who later admitted to spreading disinformation. His later claims relied on secondhand sources he did not identify.
-    status: unverified
+    status: claimed
     source: https://en.wikipedia.org/wiki/Paul_Hellyer
   - text: "In his 2005 Toronto talk he called Philip Corso's book The Day After Roswell “the unimpeachable source” of the talk, repeating Corso's claim that a UFO crashed near Roswell around 4 July 1947."
     status: claimed

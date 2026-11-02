@@ -32,7 +32,7 @@ facts:
     by: leonard-stringfield
     source: https://archive.org/details/leonard-stringfield-retrievals-of-the-third-kind
   - text: "He says that in the mid-1950s he was “asked by the Air Defense Command to screen and report UFO activity by code name, FOX TROT KILO 3-0 BLUE”, working with the Ground Observer Corps."
-    status: unverified
+    status: claimed
     by: leonard-stringfield
     source: https://archive.org/details/leonard-stringfield-retrievals-of-the-third-kind
   - text: "Michael Shellenberger's written testimony to Congress cites Stringfield's 1978 paper and Status Reports throughout its timeline of alleged crash retrievals from 1948 to the 1960s, including anonymous accounts of bodies and materials at Wright-Patterson Air Force Base."

@@ -6,7 +6,7 @@ credentials:
 tags: [journalist]
 facts:
   - text: "Nickerson directed Ariel Phenomenon, a documentary made over about 15 years about the 1994 Ariel School sighting, released on 20 May 2022."
-    status: unverified
+    status: claimed
     source: https://www.kxan.com/business/press-releases/ein-presswire/667434341/the-definitive-documentary-of-ariel-school-ufo-sighting-now-streaming/
   - text: "Nickerson says no one has ever come forward to say the Ariel sighting was something else, and that the children were plainly telling the truth."
     status: claimed

@@ -7,7 +7,7 @@ credentials:
 tags: [congress, international]
 facts:
   - text: "Koizumi became secretary-general of the cross-party Diet league for UAP clarification when it was founded on 6 June 2024."
-    status: unverified
+    status: claimed
     source: https://www.scmp.com/week-asia/politics/article/3264559/japan-sets-parliamentary-group-probe-ufo-sightings-move-research-mainstream
 ---
 

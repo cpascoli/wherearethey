@@ -7,7 +7,7 @@ tags:
 rel:
 facts:
   - text: "Sandra Larson said that on 26 August 1975, driving from Fargo to Bismarck, she, her daughter and her daughter's boyfriend saw glowing orange spheres over Interstate 94 and lost about an hour. There is no physical evidence or independent corroboration."
-    status: unverified
+    status: claimed
     by: sandra-larson
     source: https://hpr1.com/the-sandra-larson-incident/
 ---

@@ -19,7 +19,7 @@ facts:
     status: documented
     source: doc-ea-expediente-761119-canarias
   - text: "Researchers V.-J. Ballester Olmos and Ricardo Campo, writing in the Spanish Air Force's Revista de Aeronáutica y Astronáutica (2001), matched the sighting to four Poseidon launches that day by USS Alexander Hamilton. Two were at 17:07 GMT, and two at 19:08 and 19:09 GMT, which they call a perfect correlation with the 19:15 reports."
-    status: unverified
+    status: claimed
     source: https://www.academia.edu/16027101/Identificados_Los_OVNIS_de_Canarias_fueron_misiles_Poseidon
 ---
 

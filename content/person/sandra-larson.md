@@ -7,7 +7,7 @@ tags:
   - abduction
 facts:
   - text: "Larson said that on 26 August 1975, driving from Fargo to Bismarck, she, her daughter and her daughter's boyfriend saw glowing orange spheres over Interstate 94 and lost about an hour; she later described an abduction under hypnosis. There is no independent corroboration."
-    status: unverified
+    status: claimed
     by: sandra-larson
     source: https://hpr1.com/the-sandra-larson-incident/
 rel:

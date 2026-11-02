@@ -18,8 +18,6 @@ links:
 rel:
   - [ transcript of, h-1968-07-29 ]
 facts:
-  - text: No audio or video recording of the symposium is known to survive. The printed proceedings, with prepared papers from the participants, are the primary record.
-    status: unverified
 ---
 
 The printed proceedings of the House Committee on Science and Astronautics' Symposium on Unidentified Flying Objects on 29 July 1968, chaired by Rep. J. Edward Roush. Six scientists testified: the astronomer J. Allen Hynek, the atmospheric physicist James E. McDonald, the astronomer Carl Sagan, the sociologist Robert L. Hall, the civil engineer James A. Harder and Robert M. L. Baker Jr.

@@ -71,10 +71,10 @@ facts:
     stance: context
     basis: first-hand
   - text: "A 2026 episode on the Ellsworth AFB case argues that the “L9 incident” document, claiming aliens fired a beam at security police in November 1977, was a fabrication tied to Doty and meant to discredit the real case."
-    status: unverified
+    status: claimed
     source: v-michels-ellsworth-reunion-2026@1:51:39
   - text: "Paul Hellyer repeated the “Project Serpo” alien-exchange story, which is widely traced to Doty."
-    status: unverified
+    status: claimed
     source: https://en.wikipedia.org/wiki/Paul_Hellyer
   - text: "On Bennewitz: “Paul was the easiest person to convince that what he was … seeing was, in fact, UFOs. And that's all we had to do … So I had to do was agree with him.” He denies feeding him information, and says nine other people were involved."
     status: claimed

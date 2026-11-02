@@ -11,7 +11,7 @@ rel:
   - [ studied by, stargate ]
 facts:
   - text: "Remote-viewing research began at SRI in 1972 under physicists Harold Puthoff and Russell Targ, and grew into the government-funded Stargate program."
-    status: unverified
+    status: claimed
     source: https://en.wikipedia.org/wiki/Stargate_Project_(U.S._Army_unit)
 ---
 

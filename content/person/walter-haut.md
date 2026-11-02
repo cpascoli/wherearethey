@@ -35,7 +35,7 @@ facts:
     by: walter-haut
     source: v-1990-07-roswell-reunion-haut-shirkey-wilcox@1:13:08
   - text: "The 2002 document was composed by the ufologist Donald Schmitt and signed by Haut, then 80, at the International UFO Museum, on the understanding that it would stay sealed until his death; Schmitt later said Haut did not write it himself. An earlier affidavit Haut signed in 1993 mentions no bodies or second crash site."
-    status: unverified
+    status: claimed
     source: https://en.wikipedia.org/wiki/Walter_Haut
   - text: "In 1994 he said KGFL radio “put it on the wire and they were cut off about halfway through”, and that the station manager was warned from Washington not to suggest more than a balloon; he said nothing of a craft or bodies."
     status: claimed

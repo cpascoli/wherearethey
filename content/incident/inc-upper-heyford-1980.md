@@ -23,7 +23,7 @@ facts:
     by: dan-isbell
     source: v-2026-10-08-air-force-test-pilot-saw-a-silent-triangular-craf@1:07:03
   - text: An anonymous witness (alias "Smith Jones") on Linda Moulton Howe's Earthfiles podcast in November 2024 described a large triangular craft with a glowing underside at RAF Upper Heyford on 27 December 1980, with reports from RAF Croughton and Bentwaters; Isbell says this man's sighting was at about 1:15 a.m. on the 27th over a weapons storage area, some three hours after his own.
-    status: unverified
+    status: claimed
     source: https://podcast.earthfiles.com/e/108-nov-6-2024-whose-silent-triangle-craft-hovered-over-three-american-raf-bases-in-december-1980
 ---
 

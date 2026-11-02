@@ -15,7 +15,7 @@ facts:
     status: documented
     source: library/docs/doc-bluebook-korea-1952.pdf
   - text: Press accounts added details not in the case file, including a speed of about 200 mph and “blue flames like those of a cooking stove”.
-    status: unverified
+    status: claimed
     source: https://en.wikipedia.org/wiki/Wonsan-Sunchon_UFO_incident
   - text: "ATIC reached no conclusion on the objects' identity or origin; its propulsion group ruled out jet, pulse-jet, ram-jet and rocket exhaust. Tentative explanations in the file include a flare towed by an aircraft, the exhaust of an La-9 or La-11 Soviet fighter, an aircraft-mounted searchlight, and balloons."
     status: documented

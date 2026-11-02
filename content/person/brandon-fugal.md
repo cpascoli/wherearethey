@@ -9,7 +9,7 @@ tags:
   - skinwalker
 facts:
   - text: "Fugal acquired Skinwalker Ranch in 2016."
-    status: unverified
+    status: claimed
     source: https://en.wikipedia.org/wiki/Skinwalker_Ranch
 ---
 

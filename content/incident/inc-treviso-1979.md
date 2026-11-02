@@ -14,10 +14,10 @@ facts:
     status: claimed
     source: http://www.arpnet.it/ufo/orland17.htm
   - text: "According to the same account, the Defence Ministry wrote to researcher Antonio Chiumiento on 2 November 1984 that the object had been photographed with the onboard cameras and \"inequivocabilmente identificato dal personale fotointerprete in un pallone di forma cilindrica, realizzato con sacchi di plastica nera\". In November 1984 a schoolteacher said a hot-air balloon launched by his pupils was the cause. In 1985 Epoca published three of the photographs, supplied by the Ministry."
-    status: unverified
+    status: claimed
     source: http://www.arpnet.it/ufo/orland17.htm
   - text: "The same account says the Air Force General Staff told CISU on 11 October 1994 that it held neither the aerial photographs nor any further documentation on the case."
-    status: unverified
+    status: claimed
     source: http://www.arpnet.it/ufo/orland17.htm
 ---
 

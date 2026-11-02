@@ -8,7 +8,7 @@ rel:
   - [ about, robert-bigelow ]
 facts:
   - text: "Robert Bigelow bought Skinwalker Ranch, a 512-acre property in Utah, in 1996."
-    status: unverified
+    status: claimed
     source: https://en.wikipedia.org/wiki/Skinwalker_Ranch
 ---
 

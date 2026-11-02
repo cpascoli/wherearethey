@@ -8,7 +8,7 @@ tags:
   - consciousness
 facts:
   - text: "Physicists Harold Puthoff and Russell Targ ran government-funded remote-viewing experiments at SRI from 1972, the research that grew into the Stargate program."
-    status: unverified
+    status: claimed
     source: https://en.wikipedia.org/wiki/Stargate_Project_(U.S._Army_unit)
 ---
 

@@ -6,7 +6,7 @@ credentials:
 tags: [abduction]
 facts:
   - text: "Meng said that in June 1994 he saw an object crash on a mountainside in Heilongjiang and was struck by a beam of light when he approached."
-    status: unverified
+    status: claimed
     by: meng-zhaoguo
     source: https://en.wikipedia.org/wiki/UFO_sightings_in_China
 rel:

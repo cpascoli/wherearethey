@@ -8,7 +8,7 @@ rel:
   - [ reported on, inc-magenta-1933 ]
 facts:
   - text: "Pinotti says documents mailed to him anonymously in 1996 describe a 1933 crash near Magenta and a secret study group, “Gabinetto RS/33”; their authenticity has not been established."
-    status: unverified
+    status: claimed
     by: roberto-pinotti
     source: https://www.dailymail.co.uk/news/article-12252381/Italian-researcher-shares-evidence-files-secret-UFO-crash-Italy.html
   - text: "At the 2013 Citizen Hearing he said the documents show the Fascist government set up a secret scientific team headed by Guglielmo Marconi to study unconventional flying vehicles after the alleged 1933 Magenta crash; the documents have not been independently authenticated."

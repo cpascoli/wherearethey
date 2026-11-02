@@ -9,7 +9,7 @@ rel:
   - [ type of, usap, "Alleged to be an unacknowledged special access programme for UAP imagery and sensor data" ]
 facts:
   - text: An alleged unacknowledged special access program for collecting UAP imagery and sensor data. It is described in a whistleblower report that Michael Shellenberger submitted to Congress in November 2024.
-    status: unverified
+    status: claimed
     source: doc-immaculate-constellation
   - text: "The Department of Defense has publicly stated that it has “no record, present or historical” of a special access program called Immaculate Constellation; the NSA would neither confirm nor deny holding records on the allegation."
     claims: [ immaculate-constellation-exists ]

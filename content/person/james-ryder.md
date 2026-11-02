@@ -31,9 +31,6 @@ facts:
   - text: "AARO's 2024 report says the executives, scientists and chief technology officers of the companies named by interviewees met its director and “denied on the record that they have ever recovered, possessed, or engaged in reverse-engineering of extraterrestrial technology”."
     status: documented
     source: doc-aaro-historical-record-report-v1
-  - text: "A remark attributed to him about telepathy and about Russell Targ having worked for him circulates online; it has not been traced to a recording or transcript."
-    status: unverified
-    by: james-ryder
   - text: "Asked at the September 2025 hearing to name gatekeepers, Knapp named Dr. James Ryder at Lockheed, and said the CIA primarily gave contractors the material and told them to keep it quiet."
     status: claimed
     by: george-knapp
