@@ -17,7 +17,8 @@ links:
 rel:
   - [ authored by, nathan-twining ]
   - [ led to, project-sign ]
-  - [ followed by, dow-uap-d100, "The memo asked for a detailed study; this AMC file holds the 1947–48 memoranda and correspondence on Project Sign, the study that followed" ]
+  - [ copy held as, 18-100754-general-1946-7-vol-2, "The AMC general file for 1946–47 holds the letter itself: “AMC Opinion Concerning ‘Flying Discs’”, 23 September 1947, to Brig. Gen. George Schulgen" ]
+  - [ cited in, dow-uap-d100, "A memorandum in this Project Sign file records that the letter was attached to an R&R to the Director of Research and Development, the Director of Intelligence concurring with AMC's recommendation of a specific project to study the “flying disc” situation" ]
   - [ quoted in, doc-ufo-briefing-document-1995 ]
 facts:
   - text: A letter from Headquarters, Air Materiel Command (Wright Field) to the Commanding General, Army Air Forces, signed by Lt. Gen. Nathan Twining. It states that “the phenomenon reported is something real and not visionary or fictitious.”
