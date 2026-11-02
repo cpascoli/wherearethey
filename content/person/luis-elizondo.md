@@ -110,6 +110,24 @@ facts:
     status: claimed
     by: luis-elizondo
     source: v-jillian-michaels-elizondo@1:35:53
+  - text: "He says that at AATIP “the president wasn't briefed”, nor the secretary of defense at the time, and only a few members of Congress were, while the government told the public UAP were not real and spent, by his account, $22 million on the research."
+    status: claimed
+    by: luis-elizondo
+    claims: [ programs-hidden-from-congress ]
+    basis: first-hand
+    source: v-jillian-michaels-elizondo@1:04:30
+  - text: "On the claim of a government arrangement allowing abductions, he says his Pentagon work was airframes, materials and propulsion, not occupants; he heard of such an arrangement, said to date from the 1950s, but “was not privy to the specifics” and has no first-hand knowledge."
+    status: claimed
+    by: luis-elizondo
+    source: v-jillian-michaels-elizondo@7:14
+  - text: "He says he “tangentially brushed up against” the Stargate remote-viewing program as it ended: recruited in the Army by a remote viewer, before Congress pulled the funding and he became an operations officer."
+    status: claimed
+    by: luis-elizondo
+    source: v-jillian-michaels-elizondo@55:47
+  - text: "He says he and other AATIP members met Amy Eskridge in Huntsville, where she said she and her father had built an anti-gravity device and were being harassed; he did not know her personally and cannot say whether she was ill."
+    status: claimed
+    by: luis-elizondo
+    source: v-jillian-michaels-elizondo@26:13
 ---
 
 Luis "Lue" Elizondo is a former U.S. Army counterintelligence special agent who became the public face of the Pentagon's UAP programs after he resigned in October 2017. He studied microbiology and immunology, served briefly in Army military intelligence, and became a civilian counterintelligence special agent and special agent in charge, working counterterrorism and counterespionage cases. From 2008 he worked in the Office of the Under Secretary of Defense for Intelligence, where he says his last role was managing a special access program for the White House and the National Security Council.

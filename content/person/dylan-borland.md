@@ -57,6 +57,28 @@ facts:
     status: claimed
     by: kirk-mcconnell
     source: v-2026-08-28-disclosure-forum-national-security@7:24
+  - text: "His timeline as he gives it: BAE Systems from 2015 to 2018, then a contractor at DTRA from January 2019 to summer 2024; his clearance, he says, has never been revoked, and he has never had a security violation, failed a polygraph or been arrested."
+    status: claimed
+    by: dylan-borland
+    source: v-jm-dylan-borland@1:45:20
+  - text: "He says he came forward in 2023 not for UFOs but because whistleblowers affiliated with the UAP Task Force said lives were in danger; he sat with congressional staffers in a SCIF on 3 March, went to AARO at their suggestion at the end of March, and then to the Inspector General. AARO, he says, did not record the conversation."
+    status: claimed
+    by: dylan-borland
+    source: v-jm-dylan-borland@1:46:47
+  - text: "He says he has never spoken to Kirkpatrick or Kosloski: the AARO staff he met wanted him to talk to Kirkpatrick, who “ducked me”; AARO also asked him to name the people and the program, which he refused to protect the person he thought in danger."
+    status: claimed
+    by: dylan-borland
+    source: v-jm-dylan-borland@2:00:38
+  - text: "Asked by Michels whether the Langley triangle was non-human or ours, he said “I know for a fact it was not human-made and not ours”, reasoning from AARO's choice to leave his sighting unclassified while classifying his other drawings; at the 2025 hearing he had declined to answer that in public."
+    status: claimed
+    by: dylan-borland
+    source: v-jm-dylan-borland@2:21:05
+  - text: "On non-human bodies he says “I am sure these things exist”, from what he was told and what AARO and the IG confirmed to him in SCIFs, but elsewhere in the same interview: “I don't know about bodies and freezers.”"
+    status: claimed
+    by: dylan-borland
+    claims: [ recovered-non-human-bodies ]
+    basis: relayed
+    source: v-jm-dylan-borland@52:32
 ---
 
 Dylan Borland is a former U.S. Air Force geospatial intelligence specialist and one of three witnesses at the House Oversight task force's whistleblower hearing on September 9, 2025. He served from 2010 to 2013 as an imagery analyst supporting special-operations ISR, was medically discharged, and then worked for BAE Systems and as a counter-WMD analyst at the Defense Threat Reduction Agency.
