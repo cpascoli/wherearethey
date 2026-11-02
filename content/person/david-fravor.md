@@ -39,7 +39,7 @@ facts:
     status: claimed
     by: david-fravor
     source: v-2023-07-26-hearing-a@34:29
-  - text: "He says the following crew, with Chad Underwood operating the targeting pod, recorded the roughly 90-second FLIR video released in 2017. The radar tape showing jamming of the APG-73 radar was never released, and the video shows no infrared plume from any normal propulsion system."
+  - text: "He says the following crew, Chad Underwood among them, recorded the roughly 90-second FLIR video released in 2017. The radar tape showing jamming of the APG-73 radar was never released, and the video shows no infrared plume from any normal propulsion system."
     status: claimed
     by: david-fravor
     source: v-2023-07-26-hearing-a@54:34

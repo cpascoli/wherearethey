@@ -10,6 +10,10 @@ rel:
   - [ about, inc-nimitz-2004 ]
   - [ discusses, david-fravor, "Underwood explains how Fravor sent him out with tapes running" ]
 moments:
+  - t: "1:34"
+    text: "Corbell introduces the voice: “Lieutenant Commander Chad Underwood, a badass Navy weapon systems officer with VFA-41 in the F/A-18 Super Hornet with the legendary Black Aces.”"
+    speaker: jeremy-corbell
+    refs: [ chad-underwood ]
   - t: "4:26"
     text: "Underwood: call sign “Nuts”, VFA-41 Black Aces aboard USS Nimitz in November 2004, serving under Dave Fravor — “I filmed the Tic Tac FLIR video”, in peacetime operations off San Diego."
     speaker: chad-underwood
