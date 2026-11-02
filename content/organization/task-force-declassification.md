@@ -32,6 +32,10 @@ facts:
   - text: "Most visible UAP-focused members: Luna, Burchett, Mace and Burlison. Jasmine Crockett is the Democratic counterpart; Raja Krishnamoorthi, Summer Lee and Dave Min are also listed on the Democratic side."
     status: claimed
     source: https://oversight.house.gov/release/chairman-comer-and-rep-luna-announce-republican-appointments-to-declassification-and-transparency-task-force/
+  - text: "Luna says the task force holds no declassification authority of its own; it exists to be “the pit bull and the attack dog” pushing agencies to release files on UAP and on the JFK, MLK and RFK cases."
+    status: claimed
+    by: anna-paulina-luna
+    source: v-jre-anna-paulina-luna@12:13
 ---
 
 The Task Force on the Declassification of Federal Secrets was established inside the House Oversight Committee on 11 February 2025 by Chairman James Comer, with Rep. Anna Paulina Luna as chair. Its broad declassification mandate covers the JFK, RFK and MLK assassination records, the Epstein files, COVID-19 origins, 9/11 files and UAP.

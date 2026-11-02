@@ -45,7 +45,7 @@ facts:
   - text: "Anna Paulina Luna says Gaetz has since said publicly that they saw material he does not believe was made by mankind."
     status: claimed
     by: anna-paulina-luna
-    source: v-jre-anna-paulina-luna@1:16:30
+    source: v-jre-anna-paulina-luna@1:16:46
 ---
 
 Matt Gaetz was a Republican U.S. Representative for Florida's 1st district from 2017 to 2024. His district includes Eglin Air Force Base, and he sat on the Armed Services Committee, including the subcommittee that oversees DARPA and advanced technologies.

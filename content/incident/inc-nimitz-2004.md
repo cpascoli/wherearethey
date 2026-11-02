@@ -103,6 +103,18 @@ facts:
     status: claimed
     by: david-fravor
     source: v-lex-fridman-david-fravor@2:13:32
+  - text: "Fravor says the training flight carried no live ordnance, only a CATM-9 inert Sidewinder training round; the Princeton's controller first asked what ordnance they carried, which made him laugh."
+    status: claimed
+    by: david-fravor
+    source: v-lex-fridman-david-fravor@1:15:44
+  - text: "Fravor says that just before the New York Times story a Navy commander called him about a FOIA request on the incident: officially only the ship's situation reports existed, “third hand” and inaccurate, and he kept quiet about the unofficial report."
+    status: claimed
+    by: david-fravor
+    source: v-lex-fridman-david-fravor@1:55:21
+  - text: "On the other aircrew, Fravor says his wingman's back-seater has talked but is “off the grid”, her pilot appeared unnamed on television, and the pilot of Underwood's jet barely recalls the flight."
+    status: claimed
+    by: david-fravor
+    source: v-lex-fridman-david-fravor@1:46:09
 ---
 
 In November 2004, radar operators on the cruiser USS Princeton, part of the USS Nimitz carrier strike group training off southern California, tracked anomalous objects for about two weeks. On 14 November, F/A-18F Super Hornets led by Cmdr. David Fravor, with Lt. Cmdr. Alex Dietrich flying a second jet, were vectored to one of the contacts. The four aircrew watched a white, wingless object about 40 feet long, shaped like a Tic Tac, over a disturbance in the water for roughly five minutes; Fravor says it mirrored his descent and then accelerated out of sight.

@@ -11,6 +11,15 @@ rel:
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Harrison_Schmitt
+facts:
+  - text: "In the Apollo 17 crew debriefing he reported light flashes “just about continuously during the whole flight” whenever he was dark-adapted, and possibly one on the lunar surface during the first revolution."
+    status: documented
+    by: harrison-schmitt
+    source: v-1972-12-apollo-17-debriefing-schmitt-light-flashes@16:54
+  - text: "The only interval without flashes, for all three crewmen, was the hour they wore blindfolds for the light-flash experiment; afterwards he saw them again."
+    status: documented
+    by: harrison-schmitt
+    source: v-1972-12-apollo-17-debriefing-schmitt-light-flashes@17:36
 ---
 
 Harrison "Jack" Schmitt is a geologist and former NASA astronaut, the lunar module pilot of Apollo 17 in December 1972 and the only professional scientist to walk on the Moon. He later served one term as a U.S. Senator for New Mexico.

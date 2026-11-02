@@ -8,6 +8,14 @@ credentials:
 tags: [law-enforcement, police, uk]
 rel:
   - [ witness, inc-cosford-1993, "On patrol near Lynton, North Devon, with Sgt. Barry Mitchell, he saw lights come in over the Bristol Channel at about 1.10 am on 31 March 1993" ]
+facts:
+  - text: "Says he and Mitchell at first decided not to report what they had seen, “very difficult to come out of the closet so to speak”, until another officer in Cornwall reported the same over the radio and others followed."
+    status: claimed
+    by: gus-cottey
+    source: v-sightings-cosford-1993-pope-devon-police@4:09
+  - text: "The Devon UFO Research Organisation's report in the Ministry of Defence's case file records the account of the Lynton sergeant and constable without their names."
+    status: documented
+    source: doc-mod-defe-24-2086
 ---
 
 Gus Cottey was a police officer with Barnstaple Police in North Devon (Devon and Cornwall Constabulary). He was on patrol with Sgt. Barry Mitchell near Lynton at about 1.10 am on 31 March 1993 when the two officers stopped to watch bright lights cross from the Bristol Channel and pass over them.

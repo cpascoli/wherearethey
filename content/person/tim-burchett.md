@@ -57,6 +57,10 @@ facts:
     status: claimed
     by: matt-gaetz
     source: v-2023-07-26-hearing-a@1:39:57
+  - text: "Luna says Burchett was “on his own little island” on UAP before she arrived in Congress, that his bill on FAA reporting of UAP was stopped by “the chairman of Intel”, that the Senate bill “had no teeth”, and that he drew a primary challenger backed by that chairman."
+    status: claimed
+    by: anna-paulina-luna
+    source: v-jre-anna-paulina-luna@27:04
 ---
 
 Tim Burchett is a Republican U.S. Representative from Tennessee, in Congress since 2019 and before that mayor of Knox County. He is one of the most outspoken members of Congress on UAP secrecy. He frames the issue less as "little green men" than as unaccounted-for taxpayer money and an executive branch that will not answer to Congress.

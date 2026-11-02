@@ -4,13 +4,13 @@ aka:
   - Underwood
 credentials:
   - category: aviator
-    role: U.S. Navy F/A-18 pilot, VFA-41
+    role: "U.S. Navy F/A-18F aircrew, VFA-41; in the back seat, operating the radar and targeting pod, of the jet that recorded the FLIR1 video, by Fravor's account"
 tags:
   - aviator
   - navy
 rel:
   - [ witness, inc-nimitz-2004 ]
-  - [ fellow witness, david-fravor, "About an hour after Fravor's encounter he flew the next sortie and recorded the FLIR1 video" ]
+  - [ fellow witness, david-fravor, "About an hour after Fravor's encounter his jet flew the next sortie and he recorded the FLIR1 video" ]
 links:
   - { label: "Navy Pilot Who Filmed the ‘Tic Tac’ UFO Speaks (New York Magazine, December 2019)", url: "https://nymag.com/intelligencer/2019/12/tic-tac-ufo-video-q-and-a-with-navy-pilot-chad-underwood.html" }
 facts:
@@ -59,6 +59,10 @@ facts:
     claims: [ tic-tac-beyond-known-technology ]
     basis: first-hand
     source: v-2020-08-17-corbell-chad-underwood@16:37
+  - text: "Fravor says Underwood was in the back seat of the jet that took off after his own flight and recorded the video; he told the next crew “dude, get video”, and says Underwood was determined to find the object. New York Magazine presents Underwood as a pilot; on a two-seat F/A-18F the back-seater runs the radar and sensors."
+    status: claimed
+    by: david-fravor
+    source: v-lex-fridman-david-fravor@1:15:13
 ---
 
 Chad Underwood is a former U.S. Navy F/A-18 pilot with Strike Fighter Squadron 41, the "Black Aces". On 14 November 2004, about an hour after David Fravor's encounter, he flew the next sortie from USS Nimitz, found the object on radar and recorded the infrared "FLIR1" video of it on his targeting pod. He also coined the name "Tic Tac". The video circulated within the carrier group, was published by The New York Times in 2017 and was officially released by the Pentagon in 2020. He later became a flight instructor and worked in the aerospace industry.

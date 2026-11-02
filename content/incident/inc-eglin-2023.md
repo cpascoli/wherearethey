@@ -42,7 +42,7 @@ facts:
   - text: "Rep. Anna Paulina Luna says the visit with Gaetz and Burchett followed pilots' allegations that the Air Force was covering up UAP incidents. She says the Pentagon tried to cancel it, the base commander refused access, and the members were told they lacked read-in to a special access program; only one pilot was eventually made available. She says the visit led to her declassification task force."
     status: claimed
     by: anna-paulina-luna
-    source: v-jre-anna-paulina-luna@1:12:45
+    source: v-jre-anna-paulina-luna@1:14:12
   - text: "AARO's resolution does not name the congressional case. Its details (date, four radar objects apparently in formation, radar failure, still images only) match Gaetz's account. Where they differ, AARO attributes the missing video to recording equipment that was already broken and the radar failure to a pre-existing fault, not to the object."
     said: 2023-10-14
     claims: [ eglin-orb-not-human ]

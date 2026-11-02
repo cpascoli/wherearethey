@@ -44,7 +44,7 @@ facts:
   - text: "She calls every AARO briefing her group received in a SCIF “a nothing burger”, and says people who wanted to brief the task force told her they had been instructed by members of House leadership not to, without saying who."
     status: claimed
     by: anna-paulina-luna
-    source: v-jre-anna-paulina-luna@28:31
+    source: v-jre-anna-paulina-luna@28:47
   - text: "She says David Grusch has worked with the task force to chase leads on contractors said to hold the technology, and that he faced threats against himself and his wife before testifying and a smear campaign afterward."
     status: claimed
     by: anna-paulina-luna
@@ -74,9 +74,21 @@ facts:
   - text: "She says Rep. Gaetz has since said publicly that they saw material he does not believe was made by mankind, and that this is why declassification is needed."
     status: claimed
     by: anna-paulina-luna
-    source: v-jre-anna-paulina-luna@1:16:30
+    source: v-jre-anna-paulina-luna@1:16:46
     claims: [ eglin-orb-not-human ]
     basis: relayed
+  - text: "She says she opened a SCIF to anyone with a clearance to brief the task force on UAP and invited “some of the biggest names in UFO lore”; they “all got SCIF flu” and did not show: either “full of crap” or scared for their lives."
+    status: claimed
+    by: anna-paulina-luna
+    source: v-jre-anna-paulina-luna@1:09:47
+  - text: "She says witnesses tell her whistleblower protections cannot secure their physical safety, and that a former combat controller suggested by David Grusch refused to testify at the September 2025 hearing: “I'm not touching this.”"
+    status: claimed
+    by: anna-paulina-luna
+    source: v-jre-anna-paulina-luna@1:10:44
+  - text: "She says that under the new administration the task force has received briefings from the FBI and ODNI where it would previously have been stonewalled, and will push for what it saw to be made public."
+    status: claimed
+    by: anna-paulina-luna
+    source: v-jre-anna-paulina-luna@29:37
 ---
 
 Anna Paulina Luna is a Republican U.S. Representative from Florida, elected in 2022, and a U.S. Air Force veteran. She is the House member who has done most to turn UAP into a standing oversight issue. As an airfield manager with the Portland Air National Guard, she says she saw F-15 pilots refuse to talk about an incursion by something that had outperformed them.

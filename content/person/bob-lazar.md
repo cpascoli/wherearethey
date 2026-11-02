@@ -56,6 +56,13 @@ facts:
     status: claimed
     by: dylan-borland
     source: v-2025-09-09-hearing-a@2:39:53
+  - text: "Stanton Friedman, on live television in 1994, separated the question of craft at Area 51 from Lazar's truthfulness: “I find that nothing checks out. He isn't a scientist. He didn't go to MIT.” Asked whether Lazar was a liar: “Yes.”"
+    status: claimed
+    by: stanton-friedman
+    source: v-1994-larry-king-ufo-cover-up-live@32:15
+    claims: [ area-51-alien-craft ]
+    stance: disputes
+    basis: opinion
 ---
 
 Bob Lazar says that in 1988–89 he worked on recovered alien craft at S-4, a site a few miles south of Area 51's Groom Lake base. His account, first broadcast by George Knapp on KLAS-TV in Las Vegas in 1989, became the template for modern crash-retrieval stories. He sits outside this archive's credible-sources rule because his credentials have never been verified, but he is kept for reference because he is so widely cited.

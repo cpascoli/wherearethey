@@ -12,6 +12,11 @@ rel:
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Jim_Lovell
+facts:
+  - text: "On Gemini 7 he described the spent booster at his 2 o'clock position as “a brilliant body of the sun against the black background”, with brilliant particles around it."
+    status: documented
+    by: jim-lovell
+    source: v-1965-12-05-gemini-7-borman-bogey@3:13
 ---
 
 Jim Lovell (1928–2025) was a U.S. Navy test pilot and NASA astronaut who flew on Gemini 7, Gemini 12 and Apollo 8, and commanded Apollo 13.

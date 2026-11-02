@@ -37,6 +37,18 @@ facts:
     status: claimed
     by: kevin-randle
     source: v-2013-chd-roswell-1@32:27
+  - text: "In 1994, after six years on the case, he said: “we still don't know what happened other than it was a crash of an alien spacecraft”, and that the craft and “the bodies” were hidden to exploit them."
+    status: claimed
+    by: kevin-randle
+    said: 1994
+    source: v-1994-larry-king-ufo-cover-up-live@49:30
+    claims: [ roswell-crashed-craft ]
+    basis: opinion
+  - text: "His first on-record critique of the Air Force's Mogul report, in 1994: the Air Force had announced a saucer, then a weather balloon, and now said it had lied in 1947; the report implied special Mogul balloons, yet its own flight 4 of 4 June 1947 was “standard weather balloons”."
+    status: claimed
+    by: kevin-randle
+    said: 1994
+    source: v-1994-larry-king-ufo-cover-up-live@1:10:14
 ---
 
 Kevin Randle is an American writer and retired lieutenant colonel who flew helicopters in Vietnam, served as an Air Force intelligence and public affairs officer, and deployed to Iraq with the Iowa National Guard before retiring in 2009. The author of more than 80 books, mostly science fiction and history, he is best known for his work on the 1947 Roswell case, beginning with *UFO Crash at Roswell* (1991) with Donald Schmitt, with whom he broke in 1995 over Schmitt's false claims about his background.

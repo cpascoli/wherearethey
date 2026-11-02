@@ -49,6 +49,16 @@ facts:
     status: claimed
     by: tim-burchett
     source: v-2023-07-26-hearing-a@1:20:06
+  - text: "Kevin Randle, a Roswell crash proponent, said in 1994 that what goes on at Area 51 is “just experimentation on the next generation of fighter or bomber aircraft”, and that he did not think alien evidence was there: “that's my personal opinion”."
+    status: claimed
+    by: kevin-randle
+    source: v-1994-larry-king-ufo-cover-up-live@1:54:09
+    claims: [ area-51-alien-craft ]
+    stance: disputes
+    basis: opinion
+  - text: "Rep. James Bilbray of Nevada said in the same 1994 broadcast that the base's secrecy was justified and that the trouble began with the rumour of “a captured spaceship” and “bodies of aliens”; the programme said he had toured much of the base and seen nothing unearthly."
+    status: claimed
+    source: v-1994-larry-king-ufo-cover-up-live@27:13
 ---
 
 Area 51 is a highly classified U.S. Air Force facility at Groom Lake in the Nevada desert, used since the 1950s to test secret aircraft such as the U-2 and later stealth designs. The CIA officially acknowledged it in 2013, when a declassified history of the U-2 programme was released under the Freedom of Information Act; the declassified record traces the U-2 (from 1955), the A-12 OXCART, captured Soviet MiGs and the F-117 to the site.

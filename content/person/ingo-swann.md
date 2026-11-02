@@ -19,6 +19,10 @@ facts:
     status: claimed
     by: hal-puthoff
     source: v-jre-hal-puthoff-2025@3:27
+  - text: "Joe McMoneagle says Swann's training system, used for General Stubblebine's recruits in 1982–84, “never was approved by Hal Puthoff”, who tolerated it to keep the research going."
+    status: claimed
+    by: joe-mcmoneagle
+    source: v-srs-joe-mcmoneagle@4:01:54
 ---
 
 Ingo Swann (1933–2013) was an artist and psychic who from 1972 was the central subject of the remote-viewing experiments at the Stanford Research Institute that drew the CIA's interest and grew into the Stargate programme. He is credited with proposing coordinate-based "controlled remote viewing", which Harold Puthoff and Russell Targ developed and tested; Puthoff says Swann affected a heavily shielded device at Stanford and drew its unpublished interior. His claimed abilities are outside this archive's sourcing criteria.

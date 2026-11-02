@@ -39,7 +39,7 @@ facts:
     status: claimed
     by: david-fravor
     source: v-2023-07-26-hearing-a@34:29
-  - text: "He says the following crew, led by Chad Underwood, recorded the roughly 90-second FLIR video released in 2017. The radar tape showing jamming of the APG-73 radar was never released, and the video shows no infrared plume from any normal propulsion system."
+  - text: "He says the following crew, with Chad Underwood operating the targeting pod, recorded the roughly 90-second FLIR video released in 2017. The radar tape showing jamming of the APG-73 radar was never released, and the video shows no infrared plume from any normal propulsion system."
     status: claimed
     by: david-fravor
     source: v-2023-07-26-hearing-a@54:34
@@ -81,6 +81,22 @@ facts:
     source: v-lex-fridman-david-fravor@2:45:23
     claims: [ gimbal-gofast-not-conventional ]
     basis: relayed
+  - text: "He says that at the time of the encounter he had some 3,000 flight hours over 18 years, and told his back-seater he was “pretty weirded out”: it was like nothing he had seen."
+    status: claimed
+    by: david-fravor
+    source: v-lex-fridman-david-fravor@1:26:42
+  - text: "He says his own jet's tapes recorded nothing because he tried to lock the object with his radar and “it wouldn't lock”; his one regret is that the helmet camera stayed off."
+    status: claimed
+    by: david-fravor
+    source: v-lex-fridman-david-fravor@2:10:26
+  - text: "He says he had commanded the squadron for a month at the time, with 17 aircrew and 300 sailors to run, and that had the object carried another country's emblem “it would have went high order”."
+    status: claimed
+    by: david-fravor
+    source: v-lex-fridman-david-fravor@2:51:55
+  - text: "He says he is not part of To The Stars Academy, though he talks to Elizondo and DeLonge often."
+    status: claimed
+    by: david-fravor
+    source: v-lex-fridman-david-fravor@3:31:46
 ---
 
 David Fravor is a retired U.S. Navy commander and F/A-18F pilot whose account of the 2004 "Tic Tac" encounter is the best-known pilot testimony of the modern UAP era. A former enlisted Marine and Naval Academy graduate, he flew for the Navy for 18 years, served as an accident investigator, and has since worked in the private sector, much of it in defense. In November 2004 he commanded Strike Fighter Squadron 41, the "Black Aces", aboard USS Nimitz.

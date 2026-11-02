@@ -10,6 +10,19 @@ tags: [government, international]
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Minoru_Kihara
+facts:
+  - text: "At his press conference on 11 May 2026 he said he had seen the footage published by the United States, and that Japan gathers and analyses information on unidentifiable objects in the air routinely and in close cooperation with the U.S.; he would not say whether Japan was told in advance."
+    status: documented
+    by: minoru-kihara
+    source: v-2026-05-11-kihara-press-conference-uap@10:19
+  - text: "He said any Japanese disclosure would be judged case by case, weighing among other things whether it would reveal Japan's intelligence-gathering capabilities; he did not say whether Japan holds footage of its own."
+    status: documented
+    by: minoru-kihara
+    source: v-2026-05-11-kihara-press-conference-uap@10:59
+  - text: "Asked for his impression of the footage, he said it was his first viewing and the government would analyse it carefully."
+    status: documented
+    by: minoru-kihara
+    source: v-2026-05-11-kihara-press-conference-uap@11:23
 ---
 
 Minoru Kihara is a member of Japan's House of Representatives for the Liberal Democratic Party. He was Minister of Defense from 2023 to 2024 and became Chief Cabinet Secretary, the government's chief spokesman, in 2025.

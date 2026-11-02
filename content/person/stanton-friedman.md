@@ -46,6 +46,11 @@ facts:
     source: v-2013-chd-roswell-2@13:31
     claims: [ hill-abduction ]
     basis: opinion
+  - text: "He called the Air Force's 1994 Roswell report “a terrible piece of work”, its attachments “internally inconsistent”, a “massive misrepresentation”; and said its account that his interviews followed a 1978 National Enquirer article was “total baloney”, as the article appeared two years after he found Marcel."
+    status: claimed
+    by: stanton-friedman
+    said: 1994
+    source: v-1994-larry-king-ufo-cover-up-live@1:11:17
 ---
 
 Stanton Friedman (1934–2019) was an American-Canadian nuclear physicist who left industry in 1970 to research UFOs full time. For fourteen years he had worked on classified nuclear propulsion programmes for General Electric, Aerojet, Westinghouse, TRW and McDonnell Douglas, where he was hired for the company's late-1960s UFO propulsion study. Calling himself "the flying saucer physicist", he lectured at more than 600 colleges, submitted a statement to the 1968 House symposium on UFOs and appeared twice at the United Nations.
