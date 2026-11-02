@@ -8,7 +8,7 @@ tags:
 facts:
   - text: "A fellow Westall student recalls Vassie leading a group of girls over the fence towards where the object had come down."
     status: claimed
-    source: v-phenom-westall-66@57:24
+    source: v-phenom-westall-66@8:21
 rel:
   - [ witness, inc-westall-1966 ]
 ---

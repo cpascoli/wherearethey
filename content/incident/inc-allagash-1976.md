@@ -8,7 +8,7 @@ facts:
   - text: "Four art students, Jim and Jack Weiner, Charlie Foltz and Chuck Rak, were on a camping and canoe trip. They report a glowing sphere that approached their canoe at Eagle Lake, followed by missing time; later hypnotic regressions describe examinations aboard a craft."
     status: claimed
     source: v-michels-allagash-2026@39:04
-  - text: "The witnesses say Jim Weiner still has bald patches and benign tumours on his shins, and that tissue passed through military pathology could not be identified."
+  - text: "Charlie Foltz says Jim Weiner had bald patches on his shins for years and that his twin Jack had tumours in the same spots on his legs; asked whether they were benign, he says “We never knew”."
     status: claimed
     source: v-michels-allagash-2026@1:35:38
 ---

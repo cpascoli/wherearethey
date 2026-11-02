@@ -17,7 +17,7 @@ facts:
     status: claimed
     by: jorge-polanco
     source: v-polanco-chango-interview@11:21
-  - text: "He says Bariloche was one of three sightings he had, the others on 6 February 1995 near Córdoba and 11 August 1996 departing Trelew, and that the air force refused to open an official investigation, so he went public."
+  - text: "He says Bariloche was one of three sightings he had, the others on 6 February 1995 near Córdoba and 11 August 1996 departing Trelew."
     status: claimed
     by: jorge-polanco
     source: v-polanco-chango-interview@4:55

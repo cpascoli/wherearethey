@@ -82,6 +82,20 @@ facts:
     source: v-2025-02-28-rebelliously-curious-doty@12:00
     claims: [ government-ufo-disinformation ]
     basis: first-hand
+  - text: "Doty says he served as an AFOSI counterintelligence officer “from 1978 until 1988”, at Kirtland Air Force Base and on the Nellis range; Mario Woods places him at Ellsworth in November 1977, which Doty does not address here."
+    status: claimed
+    by: richard-doty
+    source: v-2025-02-28-rebelliously-curious-doty@5:03
+  - text: "Doty says an NSA facility at Kirtland was firing lasers at Soviet satellites and Paul Bennewitz had tapped into the signals: “My job was to conduct a counterintelligence deception operation to keep Paul from learning the truth”."
+    status: claimed
+    by: richard-doty
+    claims: [ government-ufo-disinformation ]
+    basis: first-hand
+    source: v-2025-02-28-rebelliously-curious-doty@23:57
+  - text: "Of the courier packet he showed Linda Moulton Howe, he says some he knew from being briefed into the program four years earlier, much he did not, and nothing marked what was true or deception."
+    status: claimed
+    by: richard-doty
+    source: v-2025-02-28-rebelliously-curious-doty@50:30
 ---
 
 Richard "Rick" Doty is a former special agent of the Air Force Office of Special Investigations (AFOSI), who says he served from 1978 to 1988, mainly at Kirtland Air Force Base in New Mexico. He is the best-known figure in the history of government UFO disinformation. By his own account, he helped feed false UFO stories to the Albuquerque businessman and researcher Paul Bennewitz to keep him from exposing classified work at Kirtland, watched UFO conferences on collection assignments, handled the researcher Bill Moore as a source, and was ordered to show the journalist Linda Moulton Howe a document mixing truth and deception. His name is attached to several of the most influential forged or doubtful UFO documents, including the MJ-12 papers, which AFOSI itself called "completely bogus".

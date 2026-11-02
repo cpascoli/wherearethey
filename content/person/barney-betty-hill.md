@@ -13,7 +13,7 @@ facts:
   - text: "Betty Hill retold the September 1961 White Mountains encounter in a 1999 interview, including the “star map” later linked to Zeta Reticuli."
     status: claimed
     by: barney-betty-hill
-    source: v-betty-hill-1999-interview@44:58
+    source: v-betty-hill-1999-interview@15:21
   - text: "Under hypnosis in 1964 Betty Hill described an object with a ramp and a door filling a clearing, and being led up the ramp and down a corridor into a room."
     claims: [ hill-abduction ]
     basis: first-hand

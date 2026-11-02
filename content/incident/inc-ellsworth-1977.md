@@ -13,7 +13,7 @@ facts:
     status: claimed
     by: mario-woods
     source: v-michels-mario-woods-2025@19:14
-  - text: "Both men describe hours of missing time, waking at a reservoir, being recovered, interrogated apart and medically examined. The Air Force then separated the two men and one was discharged. A joint hypnotic regression in 2026 describes beings and an examination aboard the craft."
+  - text: "Both men describe hours of missing time, waking at a reservoir, being recovered, interrogated apart and medically examined. Johnson says he left the Air Force after an Article 15, with an honourable discharge. A joint hypnotic regression in 2026 describes beings and an examination aboard the craft."
     status: claimed
     by: mario-woods
     source: v-michels-ellsworth-reunion-2026@39:49
@@ -25,7 +25,7 @@ facts:
 
 In November 1977, Air Force security policemen Mario Woods and Michael Johnson answered an alarm at the November-5 (N-5) Minuteman silo near Ellsworth Air Force Base, South Dakota. Woods says they saw a massive, pulsating spherical craft hovering over the site, "the size of a Walmart building".
 
-Both men describe hours of missing time, waking at a reservoir, being recovered, questioned separately and medically examined, after which the Air Force separated them and one was discharged. A joint hypnotic regression in 2026 produced accounts of beings and an examination aboard the craft.
+Both men describe hours of missing time, waking at a reservoir, being recovered, questioned separately and medically examined, after which, Johnson says, he left the Air Force after an Article 15 with an honourable discharge. A joint hypnotic regression in 2026 produced accounts of beings and an examination aboard the craft.
 
 The claims come from the two witnesses' interviews; no official record of the event has been released.
 
