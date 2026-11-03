@@ -24,6 +24,14 @@ facts:
     status: claimed
     by: chaz-king
     source: https://www.yahoo.com/news/articles/aliens-over-central-coast-documentary-130000244.html
+  - text: "Chaz King, area supervisor that night at Space Launch Complex 4, describes the object over the entry control point as square, turning “rectangular” as it came close, about the size of a football field; Nuccetelli's sworn testimony describes the same witnesses' craft as triangular."
+    status: claimed
+    by: chaz-king
+    source: v-2025-09-26-chaz-king-eye-witness-to-the-vandenberg-uap-speak@28:05
+  - text: "Nuccetelli says the witnesses' statements and police reports went up the chain to the base command post, that OSI did not share its own investigation, and that the blotter entries from the wave of sightings are gone."
+    status: claimed
+    by: jeffrey-nuccetelli
+    source: v-2025-09-26-chaz-king-eye-witness-to-the-vandenberg-uap-speak@40:31
 ---
 
 On 14 October 2003, Boeing contractors at Vandenberg Air Force Base in California reported a massive glowing red square hovering silently over two missile-defence sites. Security Forces personnel later reported a craft larger than a football field hovering over an entry control point.
