@@ -45,6 +45,10 @@ facts:
     status: claimed
     by: jake-barber
     source: v-jm-jake-barber@2:00:13
+  - text: "Don Paul Bales, a military and law-enforcement veteran who says he has known Barber since 1996 and worked on his team, confirms Barber's account of a covert role behind his aircraft-mechanic record (“a perfect cover story”), and says he has seen credentials and orders Barber was issued."
+    status: claimed
+    by: don-paul-bales
+    source: v-2025-01-27-why-military-veteran-don-paul-bales-believes-uap@4:37
 ---
 
 Jake Barber is a former U.S. Air Force airman and helicopter pilot who says he later worked as a contractor for the intelligence community, running helicopter companies that waited on calls from a crash-retrieval program. In a January 2025 interview with Jesse Michels he describes two retrievals at a California desert test range: a white “egg” about 20 feet long, and a dark eight-sectioned disc whose load was declared to carry “biologics”. He says he has never seen a non-human body, does not know where the egg went, and has no first-hand knowledge of the operation Michael Herrera described.
