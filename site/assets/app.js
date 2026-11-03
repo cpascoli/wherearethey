@@ -366,6 +366,8 @@
       { selector: 'edge.trail', style: { 'line-color': css('--accent'), width: 3, label: 'data(label)', opacity: 1 } },
       { selector: 'node.big', style: { 'font-size': 12.5, 'min-zoomed-font-size': 5.5, 'text-max-width': 160 } }, // exploring: labels readable zoomed out
       { selector: 'node.later', style: { opacity: 0.22 } }, // a story's steps still to come
+      { selector: 'node.anchor', style: { opacity: 0.35 } }, // a type view: the key files of other types, for context
+      { selector: 'edge.anchor', style: { opacity: 0.12 } },
       { selector: 'edge.later', style: { opacity: 0.06 } },
       { selector: '.hidden', style: { display: 'none' } },
     ];
@@ -438,21 +440,37 @@
     applyGraphFilter();
     layoutGraph(false, { instant: true }); // first draw: framed in place, not flown in
   }
+  // The key-files map with the types narrowed (one type, or a few: double-click Programs, People…) shows every file of
+  // those types, not only the key ones, with the key files of the other types faded behind them as anchors: most links
+  // run between types, so without them a type alone is a scatter of unconnected dots. All types, or cleared: the key
+  // files. Capped so a narrowing that still covers most of the archive (all but videos, say) stays the key-files map.
+  const TYPE_VIEW_MAX = 450;
+  const typeView = () => !!state.trail?.core && state.types.size < graphTypes.length && visible.size <= TYPE_VIEW_MAX;
+  function typeAnchors() {
+    if (!typeView()) return null;
+    return new Set([...state.trail.pinned].filter(id => !visible.has(id) && !state.hiddenIds.has(id) && !(state.credibleOnly && byId.get(id)?.cred === 'outside')));
+  }
   function applyGraphFilter() {
     if (!cy) return;
     const nv = visible.size, ne = KB.edges.filter(x => visible.has(x.s) && visible.has(x.t) && (x.kind !== 'mention' || state.showMentions)).length;
     if ($('#hud') && state.trail?.story) setTimeout(() => { $('#hud').innerHTML = `Story · <b>${cy.nodes().not('.hidden').length}</b> files · <b>${cy.edges().not('.hidden').length}</b> links between them`; });
+    else if ($('#hud') && typeView()) setTimeout(() => { $('#hud').innerHTML = `${[...state.types].map(t => TYPES[t].plural).join(', ')} · all <b>${cy.nodes('.tv').length}</b> files, with the key files faded for context · <b>${cy.edges().not('.hidden').length}</b> links`; });
     else if ($('#hud') && state.trail?.core) setTimeout(() => { $('#hud').innerHTML = `Key files · <b>${cy.nodes().not('.hidden').length}</b> files · <b>${cy.edges().not('.hidden').length}</b> links between them`; });
     else if ($('#hud') && state.trail) setTimeout(() => { $('#hud').innerHTML = `Exploring · <b>${cy.nodes().not('.hidden').length}</b> files on screen · <b>${cy.edges().not('.hidden').length}</b> links${state.credibleOnly ? ' · official sources only' : ''}`; });
     else if ($('#hud')) $('#hud').innerHTML = `Case network · <b>${nv}</b> files · <b>${ne}</b> links${state.credibleOnly ? ' · official sources only' : ''}`;
-    const shown = state.trail ? trailShown() : null;
-    const show = id => visible.has(id) && !state.hiddenIds.has(id) && (!shown || shown.has(id));
+    const anchors = typeAnchors(), tv = !!anchors;
+    const shown = tv ? null : state.trail ? trailShown() : null;
+    const show = id => (visible.has(id) || !!anchors?.has(id)) && !state.hiddenIds.has(id) && (!shown || shown.has(id));
     cy.batch(() => {
       cy.nodes().forEach(n => n.toggleClass('hidden', !show(n.id())));
       cy.edges().forEach(ed => ed.toggleClass('hidden', (ed.data('kind') === 'mention' && !state.showMentions) || !show(ed.data('source')) || !show(ed.data('target'))));
       // the trail: its files and the links between them (the path)
-      cy.elements().removeClass('trail later');
-      cy.nodes().toggleClass('big', !!state.trail);
+      cy.elements().removeClass('trail later anchor tv');
+      cy.nodes().toggleClass('big', !!state.trail && !tv); // a type view has hundreds of files: normal labels
+      if (tv) {
+        cy.nodes().forEach(n => { if (anchors.has(n.id())) n.addClass('anchor'); else if (visible.has(n.id())) n.addClass('tv'); });
+        cy.edges().forEach(ed => { if (anchors.has(ed.data('source')) || anchors.has(ed.data('target'))) ed.addClass('anchor'); });
+      }
       const steps = new Set(state.trail?.steps || []);
       for (const id of steps) cy.getElementById(id).addClass('trail');
       if (steps.size > 1) cy.edges().filter(ed => !ed.hasClass('hidden') && steps.has(ed.data('source')) && steps.has(ed.data('target'))).addClass('trail');
@@ -818,7 +836,8 @@
   const reframeSel = () => {
     if (state.view !== 'graph') { if (instantFrame) { instantFrame = false; fadeIn(); } return; }
     whenStill(() => {
-      if (state.trail?.core) { pullInCore(); orientCore(); } else if (state.trail) pullOutliers();
+      if (typeView()) orientCore(); // loose files are tiled by the layout, not pulled in
+      else if (state.trail?.core) { pullInCore(); orientCore(); } else if (state.trail) pullOutliers();
       const instant = instantFrame; instantFrame = false;
       if (state.trail) setTimeout(() => { frameTrail(instant); if (instant) fadeIn(); }, instant ? 0 : 50);
       else { if (state.sel) setTimeout(() => frameHood(cy.getElementById(state.sel)), 50); if (instant) fadeIn(); }
@@ -886,7 +905,7 @@
       nodeRepulsion: n => 9000, idealEdgeLength: ed => (ed.data('kind') === 'mention' ? 160 : 75), edgeElasticity: () => 0.4,
       gravity: 0.3, gravityRangeCompound: 1.5, numIter: 3000, nodeSeparation: 90, packComponents: true, tile: true,
       tilingPaddingVertical: 38, tilingPaddingHorizontal: 90, // room for two-line labels on unconnected nodes
-      ...(state.trail?.core ? CORE_SPACING : state.trail ? { ...TRAIL_SPACING, gravity: 0.15 } : {}), // exploring: fewer files, so give each one room
+      ...(typeView() ? {} : state.trail?.core ? CORE_SPACING : state.trail ? { ...TRAIL_SPACING, gravity: 0.15 } : {}), // exploring: fewer files, so give each one room
     } : {
       name: 'cose', animate: animate ? 'end' : false, animationDuration: 600, randomize: !animate, fit: true, padding: 40,
       nodeRepulsion: () => 14000, idealEdgeLength: () => 70, edgeElasticity: () => 80, gravity: 0.35, numIter: 1600,
