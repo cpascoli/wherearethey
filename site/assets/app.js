@@ -1227,6 +1227,16 @@
       </section>` : ''}`;
     store.set('latestSeen', today); // the next visit marks what was added after today
   }
+  // Desktop: Latest opens with its first item in the side panel, so the wide layout isn't a lone list. It is a preview:
+  // the address stays /latest, it isn't tracked as a click, and it is dropped on leaving Latest.
+  function previewLatest() {
+    if (state.view !== 'latest' || state.sel || innerWidth <= 860) return;
+    const first = $('#latest [data-goto]')?.dataset.goto;
+    if (!first || !byId.has(first)) return;
+    state.autoSel = first;
+    const was = routing; routing = true;
+    try { select(first, { from: 'auto' }); } finally { routing = was; }
+  }
   $('#view-latest').addEventListener('click', e => {
     if (e.target.closest('[data-open-side]')) { $('#side').classList.add('open'); return; }
     if (e.target.closest('[data-lt-clear]')) { ltCats = new Set(LT_CAT_KEYS); ltWhen = new Set(LT_WHEN_KEYS); renderLatest(); return; }
@@ -2805,6 +2815,7 @@
   let routing = false; // true while applying a URL, so the steps don't push history entries of their own
   function urlFor() {
     if (state.view === 'videos' && state.video) return hrefOf(state.video); // the video's page
+    if (state.sel && state.view === 'latest' && state.sel === state.autoSel) return VIEW_PATH.latest; // Latest's preview, not a chosen file
     if (state.sel && state.view !== 'home') return hrefOf(state.sel);
     if (state.view === 'shelf') return shelfTab === 'book' ? '/books' : '/documentaries';
     return VIEW_PATH[state.view] || '/';
@@ -2907,6 +2918,7 @@
   }, 5000);
   $('#local-video')?.addEventListener('ended', () => videoTick(state.video, 1, 1, true));
   function select(id, { from, noPanel = false } = {}) { // noPanel: select without opening the card (phones, while exploring)
+    if (from !== 'auto') state.autoSel = null; // a real selection ends Latest's preview
     state.sel = id;
     if (id && !routing) track('select_content', { content_type: byId.get(id)?.type, item_id: id, method: clickCtx || from || 'link' });
     // exploring: a file opened from search or a link that isn't on screen is pinned there (no connections yet)
@@ -2945,8 +2957,10 @@
     $$('#views [data-group], #views [data-view]').forEach(a => a.classList.toggle('active', [...(a.dataset.group || a.dataset.view).split(' '), ...(narrow && a.dataset.groupNarrow ? a.dataset.groupNarrow.split(' ') : [])].includes(view)));
     $('#app').classList.toggle('is-home', view === 'home');
     document.body.classList.toggle('is-home', view === 'home'); // the header sits outside #app
+    if (state.autoSel && view !== 'latest') { if (state.sel === state.autoSel) state.sel = null; state.autoSel = null; } // Latest's preview stays on Latest
     if (view === 'home') { $('#panel').hidden = true; $('#app').classList.remove('has-panel'); }
     else if (state.sel) openPanel(state.sel);
+    else if (!state.sel) closePanel();
     $('#filters').hidden = view === 'videos' || view === 'latest'; // Latest and Videos have their own side panels
     $('#lt-side').hidden = view !== 'latest';
     $('#vid-side').hidden = view !== 'videos';
@@ -2955,6 +2969,7 @@
     if (!keepSel) select(null);
     setHash(); // push the new view's history entry first, so views that adjust it (e.g. default video) replace their own entry
     refreshView(false);
+    if (view === 'latest') setTimeout(previewLatest); // after any route has applied its own selection
     requestAnimationFrame(heroSearchInView); // the header search hides behind the landing page's own
   }
   function refreshView(filtersChangedFlag) {
@@ -3171,6 +3186,7 @@
       if (r.view === 'videos' && r.video && byId.has(r.video) && (r.video !== state.video || r.t || initial)) openVideo(r.video, r.t || 0, false);
       else if (r.view === 'videos' && !r.video && state.video) closeVideo();
     } finally { routing = false; }
+    if (state.view === 'latest' && !state.sel) setTimeout(previewLatest); // Back to Latest shows its preview again
     // store the state on this entry
     history.replaceState({ view: state.view, sel: state.sel, video: state.video }, '', urlFor() + (state.view === 'videos' && state.video ? searchFor() : location.search));
   }
