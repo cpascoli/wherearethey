@@ -32,10 +32,22 @@ facts:
     status: claimed
     by: jeffrey-nuccetelli
     source: v-2025-09-26-chaz-king-eye-witness-to-the-vandenberg-uap-speak@40:31
+  - text: "Grant Best, the patrolman who called in the object by the flight line, says “It didn't land”: it came down for about 15 seconds and left towards the coast. He dates it to about 15 or 16 October 2003, within days of the red square, where Nuccetelli's testimony puts the landing about a week later."
+    status: claimed
+    by: grant-best
+    source: v-2025-10-20-grant-best-vandenberg@36:36
+  - text: "Best describes the next-day questioning by men who said they were OSI as routine (he was “not in trouble”), whereas Nuccetelli has described the OSI debriefing of the flight-line witness as hostile and intimidating."
+    status: claimed
+    by: grant-best
+    source: v-2025-10-20-grant-best-vandenberg@53:01
+  - text: "Best says the Santa Barbara County sheriff and the Lompoc and Santa Maria police regularly called the base asking what it was flying, and that he doubts a week went by without a call about an unidentified object."
+    status: claimed
+    by: grant-best
+    source: v-2025-10-20-grant-best-vandenberg@56:03
 ---
 
 On 14 October 2003, Boeing contractors at Vandenberg Air Force Base in California reported a massive glowing red square hovering silently over two missile-defence sites. Security Forces personnel later reported a craft larger than a football field hovering over an entry control point.
 
 Jeffrey Nuccetelli described the incursions under oath to the House Oversight Committee on 9 September 2025. Chaz King, another Security Forces member on duty, gave his account in the 2025 documentary *The Age of Disclosure*.
 
-*Sources: House Oversight hearing (9 September 2025) · [San Luis Obispo Tribune (2025)](https://www.yahoo.com/news/articles/aliens-over-central-coast-documentary-130000244.html)*
+*Sources: House Oversight hearing (9 September 2025) · [San Luis Obispo Tribune (2025)](https://www.yahoo.com/news/articles/aliens-over-central-coast-documentary-130000244.html) · The Jeff Nuccetelli Podcast with Chaz King and Grant Best (2025)*
