@@ -173,6 +173,9 @@
     return c.sort((a, b) => rank(a) - rank(b))[0]?.id || null;
   };
   const graphTypes = allTypes.filter(t => !offGraph(t));
+  // the timeline is of events: videos (upload dates), people (birth dates) and documents (release dates) appear
+  // through the events they're part of
+  const OFF_TIMELINE = new Set(['video', 'person', 'document']);
   const TYPES_BEFORE_SHELF = ['person', 'incident', 'hearing', 'program', 'organization', 'document', 'record', 'video', 'event', 'concept', 'place', 'source'];
   const state = {
     view: 'graph', sel: null,
@@ -221,7 +224,7 @@
     const tagOk = e => !state.tags.size || e.tags.some(t => state.tags.has(t));
     // the timeline shows only dated files, and not people or videos (see renderTimeline): its Types list offers just
     // the types that appear on it, counted by their dated files
-    const onTimeline = state.view === 'timeline', tlOk = e => !onTimeline || (e.y0 && e.type !== 'video' && e.type !== 'person');
+    const onTimeline = state.view === 'timeline', tlOk = e => !onTimeline || (e.y0 && !OFF_TIMELINE.has(e.type));
     const counts = {};
     for (const e of ents) if (credOk(e) && tagOk(e) && tlOk(e)) counts[e.type] = (counts[e.type] || 0) + 1;
     const listTypes = onTimeline ? graphTypes.filter(t => ents.some(e => e.type === t && tlOk(e))) : graphTypes;
@@ -967,7 +970,7 @@
   // ───────────── timeline ─────────────
   function renderTimeline() {
     // videos (upload dates) and people (birth dates) aren't events: they appear through the events they're part of
-    const items = ents.filter(e => e.y0 && e.type !== 'video' && e.type !== 'person' && visible.has(e.id)).sort((a, b) => String(a.date).localeCompare(String(b.date)) || a.name.localeCompare(b.name));
+    const items = ents.filter(e => e.y0 && !OFF_TIMELINE.has(e.type) && visible.has(e.id)).sort((a, b) => String(a.date).localeCompare(String(b.date)) || a.name.localeCompare(b.name));
     if (!items.length) { $('#timeline').innerHTML = '<p class="muted" style="padding:24px">Nothing dated matches the current filters.</p>'; return; }
     const groups = new Map();
     for (const e of items) { const d = Math.floor(e.y0 / 10) * 10; if (!groups.has(d)) groups.set(d, []); groups.get(d).push(e); }
