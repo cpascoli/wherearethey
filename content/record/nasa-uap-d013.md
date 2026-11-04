@@ -5,7 +5,7 @@ rel:
 tags:
   - pursue
 name: NASA-UAP-D013 — Mercury Atlas 7, May 24, 1962
-date: 2962-05-24
+date: 1962-05-24
 pursue:
   code: NASA-UAP-D013
   title: Mercury Atlas 7, May 24, 1962

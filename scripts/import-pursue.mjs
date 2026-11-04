@@ -64,6 +64,18 @@ function toIso(d) {
   if (y < 100) y += y <= 30 ? 2000 : 1900;
   return `${y}-${String(m[1]).padStart(2, '0')}-${String(m[2]).padStart(2, '0')}`;
 }
+// a catalogue date that cannot be right (a future year: NASA-UAP-D013 is catalogued "5/24/2962" for the 1962 Mercury-Atlas 7
+// flight its title names) is replaced by a date found in the record's title, or dropped
+function saneDate(d, title) {
+  const y = d && parseInt(String(d).slice(0, 4), 10);
+  if (d && y >= 1800 && y <= new Date().getFullYear() + 1) return d;
+  const t = String(title || '');
+  const months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+  const m = t.toLowerCase().match(/\b([a-z]+) (\d{1,2}), (\d{4})\b/);
+  if (m && months.includes(m[1])) return `${m[3]}-${String(months.indexOf(m[1]) + 1).padStart(2, '0')}-${m[2].padStart(2, '0')}`;
+  const alt = looseDate(t);
+  return alt && parseInt(alt, 10) <= new Date().getFullYear() + 1 ? alt : undefined;
+}
 function looseDate(s) {
   s = String(s || '').trim();
   const iso = toIso(s);
@@ -156,7 +168,7 @@ for (const r of rows) {
   const pairs = [r['Video Pairing'], r['PDF Pairing']].join('|').split('|').map(s => s.trim()).filter(Boolean);
   const own = {
     name: `${code} — ${title}`,
-    date: looseDate(r['Incident Date']) || undefined,
+    date: saneDate(looseDate(r['Incident Date']), title) || undefined,
     place: PLACE_FIX[code] || (g ? { name: loc, lat: g.lat, lng: g.lng } : undefined),
     pursue: {
       code, title, agency: r.Agency, release, released: toIso(r['Release Date']), format: type,

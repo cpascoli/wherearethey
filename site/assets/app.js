@@ -86,7 +86,9 @@
   const yearOf = d => (d ? parseInt(String(d).slice(0, 4), 10) : null);
   for (const e of ents) { e.y0 = yearOf(e.date); e.y1 = yearOf(e.end) ?? e.y0; }
   const NOW_Y = new Date().getFullYear();
-  const dated = ents.filter(e => e.y0 && e.type !== 'video');
+  // the year filter is about events: people's birth dates and videos' upload dates don't set its range or filter them
+  const undatedForYears = e => e.type === 'video' || e.type === 'person';
+  const dated = ents.filter(e => e.y0 && !undatedForYears(e));
   const MIN_Y = Math.min(1940, ...dated.map(e => e.y0));
   const MAX_Y = Math.max(NOW_Y, ...dated.map(e => e.y1));
   const videos = ents.filter(e => e.type === 'video');
@@ -202,11 +204,11 @@
       (!state.tags.size || e.tags.some(t => state.tags.has(t)));
     const inRange = e => e.y0 && e.y0 <= state.yr[1] && e.y1 >= state.yr[0];
     const v = new Set();
-    for (const e of ents) if (base(e) && (full || (e.y0 && e.type !== 'video' ? inRange(e) : false))) v.add(e.id);
+    for (const e of ents) if (base(e) && (full || (e.y0 && !undatedForYears(e) ? inRange(e) : false))) v.add(e.id);
     if (!full) {
       // undated things (people, concepts, videos…) stay if they connect to something in range
       for (const e of ents) {
-        if (v.has(e.id) || !base(e) || (e.y0 && e.type !== 'video')) continue;
+        if (v.has(e.id) || !base(e) || (e.y0 && !undatedForYears(e))) continue;
         if (adj.get(e.id).some(x => x.kind !== 'mention' && v.has(x.other) && byId.get(x.other).y0 && byId.get(x.other).type !== 'video')) v.add(e.id);
       }
     }
