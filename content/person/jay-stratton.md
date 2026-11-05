@@ -2,7 +2,7 @@
 name: Jay Stratton
 image: /assets/images/person-jay-stratton.jpg
 portrait: /assets/images/person-jay-stratton-portrait.jpg
-image_caption: "Jay Stratton. Portrait photograph."
+image_caption: "Jay Stratton. Photo from his IMDb profile; photographer not credited."
 seo_title: "Jay Stratton: UAP Task Force director, claims and sources"
 aka:
   - Stratton

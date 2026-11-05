@@ -275,7 +275,7 @@ mark { background: rgba(227, 179, 65, .4); color: inherit; border-radius: 3px; p
 
 /* ── Detail panel ── */
 .panel-close { position: absolute; top: 10px; right: 10px; z-index: 2; }
-#panel-body { padding: 20px 22px 60px; }
+#panel-body { padding: 20px 22px 60px; container: panel / inline-size; } /* the dossier's width, for headers that stack when the panel is narrow */
 .p-kicker { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; padding-right: 30px; }
 .badge { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; padding: 2px 8px; border-radius: 5px; background: var(--panel-2); color: var(--muted); border: 1px solid var(--border); }
 .badge.type { color: #fff; border-color: transparent; }
@@ -767,6 +767,12 @@ body.resizing iframe { pointer-events: none; }
 .p-portrait figcaption { font-size: 11px; color: var(--muted); margin-top: 5px; line-height: 1.35; }
 #panel-body.reading .p-head.has-portrait { grid-template-columns: minmax(0, 1fr) 240px; gap: 0 40px; margin-bottom: 10px; }
 #panel-body.reading .p-head.has-portrait .p-title { margin-top: 2px; }
+/* a narrow side panel (dragged smaller) behaves like a phone: name and credentials first, the photo or cover below */
+@container panel (max-width: 520px) {
+  #panel-body .p-head.has-portrait, #panel-body .p-head.has-cover { grid-template-columns: 1fr; gap: 4px; }
+  #panel-body .p-head.has-portrait .p-portrait { justify-self: center; width: 100%; max-width: 240px; margin: 8px 0 12px; }
+  #panel-body .p-head.has-cover .p-cover { justify-self: center; max-width: 180px; margin: 8px 0 14px; }
+}
 @media (max-width: 600px) { /* phones: title first, the cover centred below it */
   .p-head.has-portrait { grid-template-columns: 1fr; gap: 4px; }
   .p-head.has-portrait .p-portrait { justify-self: center; width: 100%; max-width: 260px; margin: 8px 0 12px; }
