@@ -1,0 +1,2441 @@
+Management of Public
+Reporting of Unidentified
+Aerial Phenomena
+in Canada
+
+
+Report of the
+Sky Canada Project                                              June 2025
+
+
+   Office of the Chief         Bureau du conseiller
+   Science Advisor of Canada   scientifique en chef du Canada
+ © His Majesty the King in Right of Canada, as represented by
+the Chief Science Advisor of Canada (2025)
+
+Cette publication est aussi disponible en français sous le titre :
+Gestion des signalements publics de phénomènes aériens non
+identifiés au Canada
+
+Contact:
+data.donnees@ocsa-bcsc.gc.ca
+
+Office of the Chief Science Advisor of Canada
+235 Queen Street
+Ottawa, Ontario
+K1A 0H5 Canada
+
+Cat. No. Iu37-59/2025E-PDF
+ISBN 978-0-660-78645-2
+
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+Table of Contents
+EXECUTIVE SUMMARY                                                                             4
+
+MESSAGE FROM THE CHIEF SCIENCE ADVISOR OF CANADA                                              8
+
+A. INTRODUCTION                                                                              11
+
+B. OBJECTIVES                                                                                13
+
+C. BACKGROUND: UAPS AND SCIENCE                                                              14
+   From UFOs to UAPs: Evolving Terminology and Broadened Scope                               14
+   Science and the Search for Extraterrestrial Life: Promising Scientific Approaches         15
+   Common Explanations for UAPs                                                              18
+   Tackling the Puzzle: Using Technology to Study UAP Sightings                              19
+   Breaking the Stigma: The Challenges of Academic Research on UAPs                          20
+D. UAPS AND THE PUBLIC                                                                       21
+   Misinformation and Disinformation in the Public Dialogue on UAPs                          22
+   UAP Sightings in the Media and the Public                                                 23
+   UAP Sightings in Canada: Incidence and Reporting                                          24
+E. METHODOLOGY AND FINDINGS                                                                  25
+   The History of UAP Reporting in Canada                                                    25
+           Federal Government                                                                26
+           Consultations with Federal Departments and Agencies                               28
+           Citizen-Led UAP Groups and Organizations                                          33
+   Global Perspectives on UAP Reporting: An Overview of National Approaches                  34
+           Management of UAP reports in the Americas                                         34
+           Management of UAP reports in Europe                                               36
+           Management of UAP reports in Oceania                                              38
+           Management of UAP reports in Asia                                                 38
+F. RECOMMENDATIONS TO ENHANCE UAP REPORTING AND RESEARCH IN CANADA                           40
+
+G. CONCLUSION                                                                                43
+
+APPENDIX A: MAIN ORGANIZATIONS AND INDIVIDUALS CONSULTED                                     44
+
+APPENDIX B: CANADIAN SURVEY OF PUBLIC VIEWS OF UAPS                                          45
+
+ADDITIONAL SOURCES CONSULTED                                                                 55
+
+ENDNOTES                                                                                     56
+
+
+                                                                                       # 3
+Executive
+Summary
+Introduction                                                       Key findings
+The Sky Canada Project, led by the Office of the Chief Science
+Advisor of Canada (OCSA), was initiated to review current
+                                                                   The landscape of UAP reporting
+practices surrounding public reporting of unidentified aerial      in Canada
+phenomena (UAPs) in Canada. The project was spurred by             Some public sources estimate that Canadians report some-
+increased public interest and recent developments in other         where between 600 and 1,000 UAP sightings annually. Accord-
+countries, particularly the United States, where formal proce-     ing to the survey commissioned for the Sky Canada Project,
+dures for addressing UAP sightings are in development. The         one in four respondents say they have personally witnessed a
+study explores the current reporting landscape, identifies gaps    UAP in their lifetime. However, only 10% reported their sightings
+and provides recommendations to enhance transparency and           and 40% of respondents would not know whom to contact for
+scientific inquiry on UAP issues in Canada.                        reporting. Interestingly, a majority of respondents support the
+                                                                   idea of establishing a federal government service to gather UAP
+Methodology                                                        reports and make findings publicly available.
+
+The Office of the Chief Science Advisor gathered information       Consultations with many federal departments and agencies re-
+from federal departments and agencies, stakeholders, experts       vealed that they occasionally receive UAP sighting information
+and other organizations on how UAP observations reported by        and reports from their stakeholders and the public. However,
+the public are handled in Canada. The main organizations and       few of these organizations investigate these sightings unless
+individuals consulted are listed in Appendix A. We also exam-      they pertain to specific aspects of their respective mandates,
+ined publicly available records such as historical UAP data, as    such as national security, transportation safety or public safety.
+well as reports and investigations related to UAPs. This includ-   Most departments do not compile the reports they receive,
+ed examining historical practices and archives, as well as cur-    making it difficult to provide information on the number of
+rent procedures and challenges associated with collecting and      reports or the type of responses given to witnesses. Currently,
+analyzing reliable data. We reviewed the approaches taken by       UAP reports are scattered across multiple government and
+some other countries, mostly G7 nations and a few members of       nongovernment organizations.
+the Commonwealth. In addition, in 2024, we commissioned the
+                                                                   Canada, like many other countries, has several citizen-driven
+private firm Earnscliffe Strategies1 to conduct an online survey
+                                                                   organizations dedicated to receiving, investigating and dis-
+of Canadians to gauge public views on the topic of UAPs. The
+                                                                   cussing reports of UAPs. Nonetheless, their presence does not
+results of the survey are presented in Appendix B.
+                                                                   address the fragmented way that UAP sightings are handled by
+                                                                   both the authorities and the scientific community.
+
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+                                                                                                        An airplane often leaves
+                                                                                                        behind a “condensation
+                                                                                                        trail” or “contrail”:
+                                                                                                        a linear cloud of frozen
+                                                                                                        water vapour from engine
+                                                                                                        exhaust. While a normal
+                                                                                                        atmospheric phenomenon,
+                                                                                                        contrails are frequently
+                                                                                                        linked with conspiracy
+                                                                                                        theories of secret programs
+                                                                                                        of geoengineering or even
+                                                                                                        UAPs.
+
+
+
+
+Gaps identified in Canada                                            International comparisons
+The Sky Canada Project has highlighted several gaps and areas        The management of UAP reporting in several countries was
+for potential improvements with respect to UAP reporting in          also examined. While there is no single model or universally
+Canada. They include:                                                established operating standard, the processes in place in a few
+                                                                     countries, notably the United States, France and Chile, provide
+• Lack of a cohesive and standardized system for reporting           interesting examples of coordinated, transparent, and scientifi-
+  and follow-up: UAP reports are received by various federal         cally driven approaches to UAP reporting.
+  organizations in different forms with little coordination or
+  oversight, leading to inconsistent data collection that hin-       In the United States, the Department of Defense’s All-domain
+  ders scientific investigations.                                    Anomaly Resolution Office (AARO) established in 2022 has
+• Absence of public engagement: There is no official, acces-         structured approaches for collecting and investigating data
+  sible platform for Canadians to report UAP sightings, obtain       on UAP sightings, and for communicating findings. In addi-
+  potential explanations or review reliable information about        tion, NASA released an independent study in September 2023
+  UAPs. This situation contributes to the proliferation of misin-    focused on how best to collect future UAP data to advance
+  formation and disinformation.                                      scientific study. Following the release of this report, NASA an-
+                                                                     nounced the creation of a new position: Director of Unidentified
+• Limited analysis of UAP reports: Reports of UAP sightings          Anomalous Phenomena Research, to further the study of UAPs
+  are not further analyzed unless they are deemed to pose            and coordinate research efforts.
+  safety or security risks. Individuals reporting sightings rarely
+  receive follow-ups.                                                Similarly, France’s GEIPAN (Groupe d’Études et d’Informations
+• Insufficient scientific involvement: Efforts to study UAPs         sur les Phénomènes Aérospatiaux Non identifiés / UAP Study
+  with scientific rigour and engage the Canadian scientific          and Information Group) operates under the French space agen-
+  community have been limited.                                       cy CNES (Centre national d’études spatiales / National Space
+                                                                     Study Centre) since 1977. Its mission is to collect, investigate
+• Insufficient efforts to enhance science literacy, including        and archive UAP reports, and make its findings available to
+  around planetary sciences, combined with the lack of               the public.
+  a transparent and cohesive system for UAP reporting and
+  analysis, exacerbates the impact of misinformation                 In Chile, the SEFAA (Sección de Estudios de Fenómenos Aéreos
+  and disinformation.                                                Anómalos / Section for the Study of Anomalous Aerial Phe-
+                                                                     nomena), serves as the official body responsible for collecting,
+                                                                     analyzing and scientifically studying UAPs. It operates within
+                                                                     the General Directorate of Civil Aeronautics.
+
+
+
+
+                                                                                                                             # 5
+Recommendations                                                      Communications:
+                                                                     4. Support public dialogue: A proactive strategy to increase
+The following actions are proposed for consideration by the             transparency and communication with the public regarding
+Government of Canada in order to: 1) improve coordination and           UAPs should be developed.
+analysis of UAP reports in Canada, 2) promote public trust and
+mitigate disinformation, and 3) enhance scientific rigour and        5. Promote intra-governmental collaborations: An internal
+science literature surrounding UAPs.                                    directive to ensure collaboration among all federal agencies
+                                                                        with relevant expertise or data would aid the lead organiza-
+                                                                        tion in providing explanations to witnesses and correlating
+Reporting and data oversight:                                           recent observations with previous reports.
+1. Identify a lead: A federal department or agency responsible
+   for managing public UAP data should be identified.                6. Improve media relations: The lead organization should play
+                                                                        a significant role in mitigating misinformation and disinfor-
+2. Establish a dedicated service: This service would collect            mation by responding to public and media inquiries related
+   testimonies, investigate cases and post its analyses publicly.       to UAPs, and by documenting and communicating common
+   It would proactively inform Canadians about UAPs.                    misinterpretations of observations.
+
+3. Enhance reporting capacity in civil aviation: Transport           7. Promote application of up-to-date evidence to effectively
+   Canada should encourage pilots, cabin crews, and air traffic         address misinformation and disinformation: Among other
+   controllers to report UAP sightings without fear of stigmatiza-      things, a multidisciplinary expert panel should be set up
+   tion. In collaboration with NAV CANADA, they should analyze          to advise the lead organization on effective approaches to
+   UAP reports to track trends and provide pilots with explana-         countering misinformation and disinformation.
+   tions, helping to reduce distractions during flights.
+
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+Research:                                                           Conclusion
+8. Facilitate open access and open data: Data related to
+   UAPs should be made available to the public for transparen-      A more structured approach to the management of UAP report-
+   cy and to support research.                                      ing in Canada would be beneficial on many grounds. It would
+                                                                    enhance transparency and combat disinformation; it would
+9. Conduct surveys: Periodic surveys of Canadians should be         also demonstrate Canada’s commitment to scientific rigour
+   carried out to gauge their perceptions of UAPs and assess        and inquiry. This will not only improve public trust but also posi-
+   the impact of the dedicated services.                            tion Canada alongside some of its allies as leaders in the global
+10. Support citizen science: Participatory science initiatives      effort to elucidate the nature of UAPs.
+    and programs should be developed to enable volunteer
+    participation in the study of UAPs.                             Adopting a science-based, collaborative approach will help
+                                                                    address public concerns, demystify UAPs, and potentially
+11. Provide tools for data collection: The development and          reveal valuable insights into aerial phenomena that are
+    deployment of publicly accessible digital and portable tools    currently unexplained.
+    should be supported to facilitate the reporting of UAP sight-
+    ings and help collect standardized data.
+12. Build on Canada’s strength in astronomy and aerospace
+    research: Canada has a superb talent pool and physical re-
+    search infrastructure dedicated to that sector. The members
+    of that community should be given opportunities to be part
+    of the public dialogue on UAPs.
+
+International collaboration:
+13. Information sharing: The lead organization should establish
+    partnerships with international entities dedicated to UAPs,
+    such as AARO and NASA (U.S.A.), GEIPAN (France), and
+    SEFAA (Chile).
+14. Cooperation in research and communication: Canada
+    should actively engage with international partners for re-
+    search collaborations and public awareness efforts.
+
+
+
+
+                                                                                                                              # 7
+Message from the
+Chief Science
+Advisor of Canada
+                                    Whether satellites, drones, planes or atmospheric
+                                    events, no one would deny that there is more and
+                                    more activity in the skies above us. Our ability to
+                                    understand what we observe depends on a multitude
+                                    of factors, such as time of day, cloud cover, distance
+                                    and colour contrast.
+                                    Rarely does anyone mistake a flock of geese flying in V forma-
+                                    tion for a fighter squadron flying at high altitudes. But some-
+                                    times what is being observed in the sky is not immediately
+                                    clear, and a person may wonder if what they are seeing is a
+                                    natural phenomenon, a new type of aircraft or something
+                                    else altogether.
+
+                                    The world of aviation continues to grow and diversify, serving
+                                    business, national defence, tourism and recreational needs.
+                                    More than 100,000 commercial flights take place every day
+                                    around the world. Engineers seek to improve the shape of
+                                    aircraft and find lighter, stronger materials to make them faster
+                                    and more efficient. To save energy and reduce the environmen-
+                                    tal impact of air travel, there are even plans to use airships
+                                    and balloons of various types for passenger transportation
+                                    and cargo.
+
+                                    Meanwhile, drone technology is becoming increasingly afford-
+                                    able and ever more impressive, allowing virtually anyone to
+                                    pilot devices as small as a bird or as large as a vehicle. Can we
+                                    identify these devices at night as well as during the day? Can
+                                    we accurately assess their distance and speed based solely on
+                                    their navigation lights?
+
+
+
+
+ REPORT OF THE SKY CANADA PROJECT
+A light moving slowly across the night sky could be a drone                             The preparation of this report has garnered more public anti­
+100 metres above the ground or a satellite at an altitude of                            cipation than any project in the history of this office. Numerous
+600 kilometres reflecting the sun. To the naked eye, a train of                         individuals and organizations have stepped forward to offer
+Starlink communication satellites appears as faint points of                            their assistance, and we are grateful for their interest.
+light moving in a straight line and in complete silence. If the
+observer fails to recognize the signs of that new technology,                           On behalf of the Sky Canada Project Team,a I would like to
+will there be someone nearby to offer the correct information?                          thank the many contributors who agreed to answer our ques-
+Or will the observer rely on social media to share what was                             tions in support of our work: federal public servants, journal-
+seen and find some explanations?                                                        ists, Canadian and foreign academics, subject matter experts
+                                                                                        and members of the public. Our study could not have been
+Social media and the Internet have it all—from the good and the                         completed without their input.
+very good to the bad and the ugly. Which Canadian website can
+people visit to report sightings of unidentified aerial phenome-
+na (UAPs)? To which official organization can they send photos,
+videos or detailed descriptions for help in understanding what
+they cannot explain on their own? It was with these questions in
+mind that we launched the Sky Canada Project.
+
+Our goal was to find the current resources and processes in
+place for handling and following up on UAP reports, to compare
+them with the best practices in other countries, and to make
+recommendations for potential improvements. Accordingly,
+this report focuses on the services available to the Canadian
+public for reporting UAPs, and not on the UAPs themselves;
+understanding this distinction is critical to reading the report.                       Mona Nemer, C.M., C.Q., FRSC, FCIC
+The Sky Canada Project is not about investigating what UAPs
+are. It is about science informing and serving everyone.                                Chief Science Advisor of Canada
+
+
+
+
+a       Sky Canada Project Team: Luc Gauthier, Marc Legault, Jean-François Lepage, Serge Nadon, Gary Slater, Valérie Verrier.
+
+
+
+                                                                                                                                                 # 9
+REPORT OF THE SKY CANADA PROJECT
+A. Introduction
+Since the dawn of humanity, the sky has been a pro-         As humanity evolved, so too did its understanding of its en-
+found source of fascination, wonder and inspiration.        vironment. The emergence of scientific disciplines such as
+                                                            astronomy, geology, biology, physics and chemistry marked a
+Often regarded as a mysterious and unattainable             transformative shift from mythological interpretations to empir-
+realm, it has also been envisioned as the dwelling          ical inquiry. From the groundbreaking heliocentric model pro-
+place of divine beings and mythical animals, a can-         posed by Copernicus, to Galileo’s telescopic revelations, and
+vas for legends and a foundation for countless belief       onward to the ages of genomics, aeronautics and artificial intel-
+systems. Across civilizations, humans have sought           ligence, each advance has brought clarity to phenomena once
+meaning in celestial phenomena—whether eclipses,            deemed supernatural. The motions of planets, the lifespans
+                                                            of stars, the evolution of living organisms and the mechanics
+comets, clouds or enigmatic lights in the night sky—        of weather systems have become comprehensible, enriching
+interpreting these events through the lens of religion,     our grasp of nature. Yet, despite these monumental strides, the
+culture and imagination.                                    sky retains some of its mystique. As much a symbol of what we
+                                                            have learned as what we have yet to discover, the sky continues
+                                                            to inspire a desire of exploration, reflection, and wonder.
+
+                                                            In Canada, as elsewhere in the world, people marvel at the
+                                                            skies and, on occasion, are intrigued by what are now referred
+                                                            to as “Unidentified Aerial Phenomena” (UAPs), which some-
+                                                            times arouse considerable curiosity and debate. Reports from
+                                                            pilots, military personnel and civilians alike describe at times
+                                                            the sightings of strange lights, unusually moving objects, or
+                                                            phenomena in the sky for which no immediate explanation
+                                                            can be provided.
+
+                                                            While many of these reports can be attributed to optical illu-
+                                                            sions, atmospheric phenomena or human activity, a minority
+                                                            remain unexplained for a myriad of reasons, including a lack
+                                                            of reliable data that prevents rigorous scientific analysis. Yet,
+                                                            these unexplained sightings generate interest and can be the
+                                                            source of misinformation or disinformation. One of the primary
+                                                            issues with misinformation and disinformation is their impact
+                                                            on public trust. When people are repeatedly exposed to false
+                                                            narratives, they may become skeptical of credible sources,
+                                                            including scientists, journalists and government institutions.
+
+
+
+
+Night sky over mountains showing features such as the
+Milky Way (right), a shooting star (top center) and a
+bright planet (lower left). This rich panorama presents
+phenomena that can be challenging to accurately interpret
+without careful observation.
+
+
+
+
+                                                                                                                    # 11
+In early 2023, several high-profile incidents in Canada caught
+the public’s attention. Over a two-week period, four unidenti-
+fied objects flew over North American airspace. The first, and
+most widely reported in the media, was a high-altitude balloon
+which flew across Alaska, western Canada, and easterly across
+the United States from January 28 to February 4. The U.S. Air
+Force eventually shot it down over U.S. territorial waters off
+the coast of South Carolina. From the recovered debris, it was
+identified as originating from a foreign country and carried
+sophisticated equipment.
+
+One week later, on February 11, 2023, the North American
+Aerospace Defense Command (NORAD) ordered the down-
+ing of a smaller balloon over Yukon Territory. Two other small
+high-altitude balloons were shot down over U.S. airspace—one
+in northern Alaska on February 10, and the second over Lake
+Huron on February 12. According to a brief statement by an
+RCMP spokesperson to CTVNews.ca2 the recovered debris from
+the shores of Lake Huron were deemed not to be of national
+security concern.
+
+These recent incidents highlighted the importance of govern-
+ment investigation of what appears in the sky and how complex
+it is to distinguish between natural occurrences, common
+technological devices and potential security concerns. This
+report aims to set a milestone in Canada’s pursuit of a better
+approach to the management and study of UAPs.
+
+
+
+
+                                                                 3D render of a high-altitude instrumented balloon in the
+                                                                 sky, seen from below. Similar objects in the North American
+                                                                 sky were the source of the 2023 incidents.
+
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+B. Objectives
+In early 2023, the OCSA announced the creation                        This report presents the Sky Canada Project’s
+of the Sky Canada Project. At the outset, its main                    findings, including:
+objectives were:                                                      • the challenges associated with collecting and analyzing
+                                                                        reliable data on UAP sightings,
+• to review current UAP reporting methods in Canada
+  and propose improvements as needed,                                 • a review of Canada’s historical federal government prac­­tices
+                                                                        for UAP reporting,
+• to enable Canada’s federal government to optimize
+  the collection and analysis of UAP observations in a                • a description of how Canadian government departments
+  transparent manner,                                                   and agencies currently receive and manage UAP-related
+                                                                        information from their partners and the public, as well as a
+• to provide insight for better tools to combat misinformation
+                                                                        brief overview of non-government groups that also receive
+  and disinformation,
+                                                                        UAP sighting reports from the public,
+• to encourage participatory science and public understanding
+                                                                      • a summary of the approaches taken by a few other countries.
+  of aerial phenomena,
+• to support monitoring of Canada’s airspace.                         The report offers fourteen recommendations for improving
+                                                                      reporting and data collection on UAP sightings in Canada.
+Furthermore, in order to assess Canada’s readiness to collab-
+orate with its allies with respect to UAP reporting, an important
+secondary objective was to compare Canada’s practices with
+those in other countries, in particular G7 nations.
+
+The OCSA established clear boundaries on what the Sky Cana-
+da Project did not intend to address. The project was not meant
+to prove or disprove the existence of extraterrestrial life or
+extraterrestrial visitors. The collection or analysis of first-hand
+data such as photos, videos or individual UAP sighting reports
+was not part of the project. Lastly, the project should not be
+seen as an endeavour to make the Office of the Chief Scientific
+Advisor the primary point of contact for reporting UAP sightings
+in Canada. Additionally, it is not meant to position the OCSA
+as the lead organization for initiating or managing international
+collaborations related to UAP research or investigations.
+
+
+
+
+                                                                                                                            # 13
+C. Background:
+UAPs and Science
+The mystery of unidentified phenomena in the sky
+has long fascinated humanity, capturing the public
+                                                                     From UFOs to UAPs:
+imagination and arousing both skepticism and curi-                   Evolving Terminology and
+osity. The terminology which describes unidentified                  Broadened Scope
+events taking place in the sky has evolved over time,
+reflecting a shift in both scientific approach and                   Until recently, the term “UFO” was used to describe aerial
+societal perception. The transition from the once-                   phenomena that could not be conclusively identified. UFOs are
+                                                                     by their very definition unidentified but this does not imply that
+ubiquitous term “UFO” (Unidentified Flying Object)                   they are of extraterrestrial origin, that they defy natural or sci-
+to the more recent and nuanced “UAP” (Unidentified                   entific explanation, or that they would not be identifiable with
+Aerial or Anomalous Phenomenon) signals a broad-                     access to additional or better data and tools.
+ening of scope and a move toward greater credibility
+                                                                     The abbreviation “UAP” (Unidentified Aerial or Anomalous
+and openness.                                                        Phenomenon) is a newer and increasingly more prevalent
+Historically, UFOs have been linked with extraterrestrial spec-      term. UAP includes a broader set of movements (such as being
+ulation and often met with ridicule. This section explores the       stationary in the air, falling, or floating and submerging in water)
+evolution of terminology, the implications of this shift for re-     as well as phenomena that are not material objects (such as
+search and public perception, and the role of science and tech-      gases and lights).
+nology in analyzing these enigmatic occurrences. This section
+                                                                     This shift in terminology has the potential to reduce the histori-
+also delves into the broader search for extraterrestrial life, the
+                                                                     cal stigma associated with UFO sightings. Reporting witnesses
+potential of new discoveries in astrobiology, and the challenges
+                                                                     were often met with skepticism and ridicule, leading to negative
+faced by researchers working in this often-stigmatized field.
+                                                                     perceptions and arbitrary judgments being cast upon them.
+                                                                     Stigmatization can have significant consequences, such as
+                                                                     discouraging witnesses from coming forward and hindering sci-
+                                                                     entific inquiry. The new, more encompassing UAP terminology
+                                                                     can help promote greater transparency, credibility and accep-
+                                                                     tance of research in professional and scientific circles and in
+                                                                     the wider public.
+
+                                                                     While the term UFO continues to be used, governments and oth-
+                                                                     er organizations are gradually adopting the more comprehensive
+                                                                     term UAP. This report will use the abbreviation UAP when de-
+                                                                     scribing more recent activities, and UFO when dealing with more
+                                                                     historical ones, although they will be largely interchangeable.
+3D rendering of the International Space Station orbiting
+the Earth (credit NASA). It often appears as a bright,
+steadily moving point in the sky at dawn or dusk,
+illuminated by sunlight reflecting off the station,
+though observers may not always recognize it.
+
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+                                                                                          How the Scientific Method Might
+                                                                                          Apply to UAPs
+                                                                                          The scientific method is a systematic and iterative process
+                                                                                          used to investigate the universe around us, acquire new
+                                                                                          knowledge and refine or correct existing understandings
+                                                                                          of the world. Applying it to UAPs could involve several key
+                                                                                          steps, including:
+
+                                                                                          Observation: Gather reports and data on UAP sightings,
+                                                                                          including, but not limited to, eyewitness accounts, photo-
+                                                                                          graphs and videos, radar data and physical evidence, ensur-
+                                                                                          ing that the information collected is objective and unbiased.
+                                                                                          This may include developing new instruments specifically
+                                                                                          designed to enhance the accuracy and reliability of the data.
+
+                                                                                          Hypothesis: For each case under investigation, explore
+Citizens observe the night sky from their campsites.                                      possible explanations for the sighting. This could range from
+The skies in remote locations reveal more stars and natural                               natural phenomena to advanced human-made technology
+atmospheric phenomena.                                                                    and may include fraud and instrument malfunction.
+
+                                                                                          Experimentation: Test the hypothesis. While traditional
+Science and the Search for                                                                experiments might be challenging due to the elusive nature
+Extraterrestrial Life: Promising                                                          of UAPs (the sighting cannot be repeated like an experi-
+                                                                                          ment in controlled laboratory conditions), researchers
+Scientific Approaches                                                                     may conduct simulations, analyze existing or past data,
+                                                                                          or use observational tools (like radar or satellites) to gather
+No extraterrestrial life has been detected to date, but most                              additional information.
+scientists involved in that quest consider it only a matter of
+time until its discovery. They reason that with billions of sun-like                      Analysis: Review and analyze the data to look for patterns,
+stars just in our own Milky Way galaxy, there is a high probability                       anomalies or correlations. This might include comparing
+that some may have Earth-like planets orbiting them. Based on                             UAP reports with known atmospheric phenomena or the
+this argument, it is plausible that extraterrestrial life existed in                      behaviour and flight path of aircraft.
+the past, or today, or may eventually appear on other planets                             Conclusion: Draw conclusions based on the analysis.
+outside our solar system; maybe even intelligent life capable                             This could involve categorizing a given UAP into known
+of technological progress. Most Canadians share this view, as                             phenomena, unexplained sightings due to lack of data,
+shown by an Ipsos poll of over 1,001 Canadians conducted                                  or areas needing further investigation.
+in May 2021, which indicates that a solid majority of (65%) of
+those surveyed believe in the existence of intelligent life else-                         Communication: Share findings with the scientific commu-
+where in the universe.3                                                                   nity, government agencies and the public, through research
+                                                                                          papers, or reports and through a publicly accessible online
+Science is based on rigorous and systematic investigations,                               portal.
+and substantial evidence must be gathered and verified before
+conclusions are drawn. This is especially true when scientists                            Applying the scientific method to UAPs makes it possible to
+deal with extraordinary claims, such as the presence of extra-                            ensure a rigorous and objective approach to understand-
+terrestrial vehicles in the sky. This is what renowned astron-                            ing these phenomena while promoting critical thinking and
+omer and author Carl Sagan meant when he famously said,                                   advancing scientific knowledge.
+“Extraordinary claims require extraordinary evidence.”b
+
+
+
+b       Sagan, Carl. Broca’s Brain: Reflections on the Romance of Science. New York: Ballantine Books, 1980.
+
+
+                                                                                                                                               # 15
+                                                              The search for extraterrestrial life involves several fields, in-
+                                                              cluding astronomy, biology and planetary science, and relies
+                                                              on both theoretical models and empirical evidence. Although
+                                                              there is as yet no evidence that life beyond Earth exists, there
+                                                              are reasons to be optimistic about this possibility, including:
+
+                                                              • Exoplanet Discovery: Instruments like the James Webb
+                                                                Space Telescope (JWST) allow scientists to analyze the
+                                                                atmospheres of thousands of exoplanets (planets outside
+                                                                our solar system). Many of them are in the “habitable zone”
+                                                                of their sun.
+                                                              • Astrobiology and Extremophiles: The discovery of extrem-
+                                                                ophiles—organisms that thrive in extreme conditions—has
+                                                                broadened our understanding of where life might exist
+                                                                and what extraterrestrial life might look like, especially in
+                                                                harsh environments.
+                                                              • Solar System Planets: Mars is attracting particular atten-
+                                                                tion due to evidence of past liquid water. NASA’s Persever-
+                                                                ance rover is exploring Mars for signs of ancient microbial
+                                                                life. Moons like Jupiter’s Europa and Saturn’s Enceladus,
+                                                                which have subsurface oceans beneath icy surfaces, are
+                                                                also considered potential habitats for microbial life.
+                                                              • SETI: The Search for Extraterrestrial Intelligence (SETI) uses
+                                                                radio telescopes to look for signals from technology-based
+                                                                civilizations. No signal has yet been confirmed despite
+                                                                several decades of research. Projects like Breakthrough
+                                                                Listen aim to scan millions of star systems for signs of such
+                                                                civilizations.
+                                                              • Bio- and Techno-Signature Research: Scientists are
+                                                                looking for observable indicators which could suggest the
+                                                                presence of life (bio signatures) or technology (techno
+                                                                signatures). These indicators can take the form of chemical
+                                                                markers, such as particular gases or organic molecules, that
+                                                                are produced by living organisms or by technological means.
+                                                                New models are being developed to predict what these
+                                                                markers might be on different types of exoplanets.
+
+
+
+
+Radio telescopes similar to those used by the Search for
+Extraterrestrial Intelligence (SETI) program, a privately
+funded initiative looking for signals that may have been
+emitted by advanced civilizations outside the solar system.
+
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+Remote communication with extraterrestrial civilizations, if it
+ever occurs, will be more of a marathon than a sprint due to the
+vast distances between solar systems. Even signals travelling
+at the speed of light can take thousands of years to travel either
+way. The unlikelihood of another technologically advanced
+civilization nearby, the absence of SETI signals so far, and the
+immense challenges of interstellar travel are the main reasons
+why there is a strong consensus among scientists that UAPs
+are not extraterrestrial vehicles. But, as always in science, new
+evidence (such as SETI signals or other data) could change the
+prevailing scientific assessment.
+
+
+
+
+3D rendering of the James Webb Space Telescope (credit NASA), the most powerful space telescope ever built, operational since
+July 2022.
+
+
+
+
+                                                                                                                     # 17
+Common Explanations
+for UAPs
+Most UAP sightings can be explained through careful investiga-
+tion and analysis, given sufficient reliable data. For example,
+France’s GEIPAN (Groupe d’Études et d’Informations sur les
+Phénomènes Aérospatiaux Non-identifiés, or Unidentified
+Aerospace Phenomenon Research and Information Group),
+which investigates UAP sightings in France, reports that of the
+3,188 cases collected by 2025, only 3.2% of cases remained
+unidentified after investigation. Furthermore, 31.4% of cas-
+es could not be explained due to insufficient data.4 Similarly,
+Mutual UFO Network (MUFON) Canada reports that, of the
+321 sightings it investigated in 2023, 31% could not be conclu-
+sively explained due to information being too vague.
+
+In most instances, UAP observations can be accounted for by
+relatively simple explanations, including:                         Lenticular clouds can have shapes similar to that of
+                                                                   a saucer.
+• Conventional Aircraft: UAPs can be conventional aircraft
+  that are not immediately recognized, especially if they are
+  seen from a distance or in poor visibility conditions.
+• Weather Phenomena: Atmospheric conditions can create
+  unusual visual effects. For example, ice crystals, storms,
+  clouds, or temperature inversions can sometimes make
+  lights or objects appear in unusual and hard-to-identify ways.
+• Astronomical Objects: Planets, stars or meteors can
+  sometimes be misidentified because their appearance can
+  change based on atmospheric conditions or their position in
+  the sky.
+• Man-Made Objects: Weather balloons, drones, telecom-
+  munication balloons and satellites, sky lanterns or experi-
+  mental aircraft can also be classified as UAPs by observers.
+  These objects may have unusual flight patterns or lighting
+  that can cause confusion.
+• Optical Illusions: Reflections, lens flares or other optical
+  effects can create the appearance of something unusual in
+  the sky.
+• Human Error: Misinterpretation of everyday objects or phe-
+  nomena, such as aircraft lights seen from a different angle,
+  can lead to UAP reports.
+
+Nonetheless, some UAP sightings—for which data exist—remain
+unexplained even after investigation.
+                                                                   Sprites are a natural phenomena that occur high above thun-
+                                                                   derstorm clouds and produce luminous red-orange flashes that
+                                                                   last only a few milliseconds. Photo credit: Nicolas Escurat
+
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+Tackling the Puzzle:
+Using Technology to Study
+UAP Sightings
+New technologies can contribute to UAP reporting and anal-
+ysis. For example, the tech startup Enigma Labs launched
+a real-time iOS application5 for smartphones in 2023. This
+application captures sightings and compiles them into a stan-
+dardized, easily searchable database that can be analyzed by
+the public and researchers alike. It also allows users to share
+information about their observations. The Enigma app includes
+over 14,000 UAP sighting reports from Canada, some of which
+cover historical sighting reports downloaded from other sourc-
+es. Interestingly, the survey by Earnscliffe Strategies for the Sky
+Canada Project found that two in five respondents are interest-
+ed in using a mobile phone application to document UAPs (see
+Appendix B).
+
+The use of artificial intelligence (AI) in this context is particu-
+larly promising. With the growing volume of data enabled by
+smart-phone technologies such as Enigma Labs’ application,
+AI could significantly streamline and standardize the process of
+examining and assessing UAP sightings. AI can assist in sifting
+through vast amounts of data from various sources, such as
+databases tracking airplane locations, satellites, stars, planets
+and weather conditions. This capability could aid in interpreting
+visual data from UAP sightings more accurately, and in identify-
+ing trends.
+
+Another example is Harvard University’s Galileo Project6 which
+is developing instruments specifically designed to monitor the
+sky in an empirical, systematic way. The Galileo Project uses
+technology, including AI tools, to analyze collected data and
+detect anomalies that might otherwise go unnoticed. By apply-
+ing a data-driven approach, the Galileo Project aims to bring
+more scientific rigour to UAP studies.
+
+Such initiatives could be crucial in transitioning from anecdotal
+evidence to more scientifically rigorous analysis and may con-
+tribute to enhancing the quality of UAP research.
+
+
+
+
+                                                                      Observatories, like the one on Mont-Mégantic in Québec,
+                                                                      use telescopes to look at objects in the night sky,
+                                                                      helping us better understand the cosmos.
+
+
+
+
+                                                                                                                        # 19
+Breaking the Stigma:                                                    Empowering Discovery:
+The Challenges of Academic                                              The Role of Participatory Science
+                                                                        in Engaging Communities
+Research on UAPs                                                        Participatory science, historically called citizen science,
+Despite the fact that there can be a valid scientific rationale for     involves engaging public volunteers as research assis-
+studying UAPs, many academic research communities seem to               tants in scientific projects. It allows researchers to col-
+fear stigma associated with pursuing research on this topic. A          lect vast amounts of data over larger geographical areas
+recent survey7 of 1,460 tenured and tenure-track faculty mem-           and longer periods than would be feasible with a small
+bers in 144 research-intensive universities in the United States        team of scientists and a limited number of instruments.
+revealed that 53% believed that UAP-related research would              This approach not only accelerates scientific discovery,
+jeopardize their tenure or promotion, even though only 7% had           but just as importantly, strengthens public confidence
+a negative opinion of this type of research.                            in science. Additionally, participatory science fosters
+                                                                        scientific literacy by providing new opportunities for
+A review by the OCSA of two of Canada’s main federal research           individuals to actively participate in research initiatives,
+funding agencies found very few funded projects related to              collaborating with professional scientists in data collec-
+UAPs. For example, over the past 25 years, there have been              tion, analysis and interpretation, while learning about the
+no grant or funding applications directly related to UAPs at the        scientific method. As noted in the House of Commons
+Natural Sciences and Engineering Research Council of Canada             Standing Committee on Science and Research Report on
+(NSERC), and only 7 applications and 2 grants or scholarships           Citizen Science (2023),8 these initiatives are particularly
+from the Social Sciences and Humanities Research Council                valuable for addressing data gaps and informing public
+(SSHRC). Consistent with this, the OCSA only found a dozen              policy, especially in the health (e.g., influenza tracking)
+graduate level dissertations related to UAPs in Canada over             and environmental fields (e.g., species monitoring). Such
+the same 25-year period. Among these was Matthew Hayes’                 contributions demonstrate the vital role citizen scientists
+research at Trent University that gave rise to a comprehensive          can play in advancing knowledge and supporting evi-
+book titled Search for the Unknown: Canada’s UFO Files and              dence-based decision-making.
+the Rise of Conspiracy Theory (McGill-Queen’s University Press,
+Montréal, 2022). The book explores the history of UAP sightings
+in Canada, the response from the government and the resulting
+perception from the public.
+
+The application of the scientific method, advancements in
+data-gathering technology and initiatives like participatory sci-
+ence represent important steps toward addressing UAP sight-
+ings with objectivity and precision.
+
+
+
+
+                                                                      The aurora borealis, with its spectacular, shimmering
+                                                                      lights, has long inspired curiosity and reflection, raising
+                                                                      profound questions about the natural world.
+
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+D. UAPs and the Public
+The way reports of UAP sightings are framed and                  Despite the intrigue, the discourse around UAPs is often
+disseminated significantly influences public                     fragmented, with inconsistent reporting mechanisms and
+                                                                 varying levels of credibility among sources. The rise of
+perception. Some sightings gain widespread attention,            conspiracy theories, disinformation and sensationalism
+fuelled by compelling eyewitness accounts,                       can further muddy the waters, making it harder for the
+documented evidence, or extraordinary circumstances.             public to discern fact from fiction.
+Media coverage and pop culture have further shaped
+these narratives, embedding certain cases into the               This section explores the intricate relationship between UAP
+                                                                 sightings, media coverage, and public perceptions. It examines
+collective memory. In particular, well-documented                how certain sightings gain prominence, the role of media in
+Canadian sightings, such as the Falcon Lake encounter            shaping perceptions, and the broader cultural and scientific
+or the Shag Harbour incident, have become cultural               implications of these phenomena. It also provides an overview
+touchstones, commemorated not only in local lore but             of the history of UAP reports in Canada.
+also through initiatives like the Royal Canadian Mint’s
+UAP-themed coins—as highlighted later.
+
+
+
+
+The township of Moonbeam,in northern Ontario, known for its roadside flying saucer landmark.
+Credit: By P199 - Own work, CC BY-SA 3.0,
+https://commons.wikimedia.org/w/index.php?curid=1857305
+
+
+
+
+                                                                                                                      # 21
+Misinformation and
+Disinformation in the Public
+Dialogue on UAPs
+With growing fascination, complexity and uncertainty, the UAP        Research has shown that conspiracy theories are contagious:12
+field has also experienced a rise in misinformation and disin-       once they take hold, they are difficult to debunk. There is a
+formation. These challenges significantly impact today’s digital     cognitive bias that people tend to believe the first piece of
+landscape, influencing public opinion and decision-making.           information they hear, even if it is later proven false.13 Reactive
+False information spreads through a complex interplay of social      strategies like debunking (trying to disprove the misinformation)
+media, online news sites, traditional media and public events.       or striking back tend to be less effective than preventive strat-
+In fact, the interactions along these channels can amplify           egies.14 Such prevention—also called “prebunking”—appears
+misinformation, making it difficult for the public to distinguish    to be the most successful approach.15 This involves providing
+reliable information from speculation, falsehoods or sen-            correct information ahead of time to prevent the spread of
+sationalism. The involvement of credible sources including           falsehoods.
+government agencies and the scientific community is crucial in
+addressing this informational vacuum. To achieve this, a clear       False stories often spread faster than factual corrections,
+and transparent framework for data reporting and analysis            as they tend to be more emotionally compelling. Therefore,
+must be established.                                                 inaction is never the best option.16 An open and transparent
+                                                                     dialogue with the public, especially from trusted figures such
+The Sky Canada Project examined current government report-           as scientists, is essential in reducing information gaps and
+ing practices on UAPs to determine the extent to which these         building trust in institutions. When people trust the sources of
+practices could address two types of information-related             information, they are less likely to embrace conspiracy theo-
+problems: misinformation and disinformation. Misinformation          ries.17 This highlights the need for a reliable, credible source
+refers to inaccurate or false information that circulates unin-      of information on UAPs, one that can quickly and accurately
+tentionally in the public sphere, often long after the information   provide explanations to the witnesses, the media and the
+has been proven wrong, while disinformation involves false           broader public.
+information deliberately intended to mislead people.
+                                                                     Another major concern is the role of technology in accelerat-
+In recent years, disinformation, misinformation and conspiracy       ing the spread of false information. Social media platforms,
+theories have increasingly caught the attention of researchers       recommendation algorithms and deepfake technology make
+from various fields (such as communication, economics, jour-         it increasingly difficult to distinguish between fact and fiction.
+nalism, marketing, philosophy, psychology, political science,        Ultimately, combating misinformation and disinformation re-
+sociology, and more). One key insight from this research is the      quires a combination of media literacy, responsible technology
+importance of rapidly offering clear explanations to counter, or     use and proactive fact-checking efforts from both individuals
+at least reduce, the spread of misleading ideas.                     and institutions. The involvement of credible sources including
+                                                                     government agencies and the scientific community can help
+In today’s world of information overload, gaps in information        fill the informational vacuum in the public sphere. For this to
+are often quickly filled by disinformation or misinformation.9       happen, a clear and transparent framework for data reporting
+When people experience uncertainty or fear, they are more like-      and analysis needs to be in place.
+ly to seek explanations to regain control over their situation.10
+Disinformation provides false but sometimes comforting expla-
+nations, which can be appealing, even if they are not based on
+fact. People may seek explanations that confirm their existing
+beliefs, potentially leading them to accept biased conclusions
+or conspiracy theories.11
+
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+UAP Sightings in the Media
+and the Public
+Public sightings of Unidentified Aerial Phenomena can be per-      The following five sightings are among the best known UAP
+plexing to individuals who experience them, prompting a search     cases reported in Canada over the past decades, and have
+for information and answers. While this search can open            been commemorated by the Royal Canadian Mint on coins:
+people up to scientific reasoning, it can also make the public
+vulnerable to misinformation, disinformation and conspiracy        • May 20, 1967, near Falcon Lake, Manitoba: Stefan Micha-
+theories, especially if they do not know which trusted organiza-     lak, who claimed to have encountered a landed UFO while
+tions can help them.                                                 prospecting for minerals, was allegedly burned by a blast of
+                                                                     hot gas or air.
+Although most reports of UAP sightings attract little attention,   • October 4, 1967, Shag Harbour, Nova Scotia: Witnesses
+some become famous. Sightings that are documented by                 reported seeing a row of lights descending and entering the
+video or photography, made by front-line witnesses such as           water. Emergency crews, including the RCMP and the Coast
+police or military officers, or shared by multiple independent       Guard, responded under the assumption of a plane crash,
+witnesses, tend to be considered more credible. Flight charac-       but no wreckage was found.
+teristics which appear to defy known laws of physics increase
+public interest. Sightings that occur over long periods of time,   • October 26, 1978, near Clarenville, Newfoundland and
+large geographic areas, or in broad daylight are more notice-        Labrador: Several witnesses, including a constable of the
+able. When reported sightings fuel media coverage, prompt            Royal Canadian Mounted Police (RCMP), reported seeing an
+government action or scientific research, or permeate pop            oval-shaped object over the harbour. No material evidence
+culture through movies or books, they can embed themselves           was found.
+in collective memory.                                              • November 7, 1990, Montréal, Quebec: A large oval-shaped
+                                                                     luminous phenomenon was observed in the evening over
+                                                                     the rooftop pool of the Bonaventure Hotel by about forty
+                                                                     witnesses including journalists and police officers. Air traffic
+                                                                     controllers confirmed there was no radar activity in the area.
+                                                                   • December 11, 1996, Yukon: At least 31 people in four
+                                                                     different areas of Yukon reported seeing a row of lights in
+                                                                     the sky, which many described as resembling a spacecraft.
+                                                                     The phenomenon was later observed by several others in
+                                                                     different locations.
+
+
+
+
+                                                                   The silver coin produced by the Royal Canadian Mint in 2022
+                                                                   to commemorate the December 11, 1996 UAP incident in Yukon.
+                                                                   Image credit: © 2024 Royal Canadian Mint. All rights reserved
+
+
+
+
+                                                                                                                           # 23
+                                                                                                        Geminids meteor shower in
+                                                                                                        Canadian wilderness. Image
+                                                                                                        composite created from 47
+                                                                                                        individual photos.
+
+
+
+
+UAP Sightings in Canada:
+Incidence and Reporting
+Given the ephemeral nature of UAP sightings, reporting and           In Canada, the longest and most recognized collection of UAP
+analyzing them can bring together very different people and          sightings is “The Canadian UFO Survey” produced by a group of
+institutions, often in a haphazard way. UAP sightings can come       Manitoba-based volunteers called Ufology Research, directed
+from a variety of sources, including ordinary citizens, airline      by Mr. Chris Rutkowski. In 2023, they tallied 570 UFO reports;
+pilots and military personnel, and can be reported to different      since 1989, over 24,000 Canadian UFO reports have been cata-
+authorities depending on the circumstances.                          logued. The major sources for this collection include other UFO
+                                                                     organizations such as the U.S.-based National UFO Reporting
+The incidence of UAP sightings has been analyzed over the            Center (NUFORC), cases reported directly to Ufology Research
+years by various survey organizations and researchers. In 1974,      and Canadian government agencies. Of note, data from anoth-
+Gallup conducted what may have been the first survey of the          er organization, MUFON Canada, was not available to Ufology
+Canadian public regarding UFOs. The results showed that 67%          Research in 2023 (MUFON separately reported 321 cases in
+of respondents had heard of UFOs, while 8% believed they             2023) suggesting that the list may be incomplete. The survey
+had seen one.18 By 1978, 81% of Canadians had heard of UFOs          conducted by Earnscliffe in 2024 also suggests that the number
+while 10% thought they had seen one.                                 of sightings may be higher.
+The 2024 Earnscliffe survey for the Sky Canada Project found         While advancements in technology and scientific inquiry have
+that 27% of the 1,008 respondents reported having observed an        improved our ability to investigate UAPs, the lack of standard-
+object or phenomenon in the sky that they could not identify,        ized reporting mechanisms, fragmented data collection, and
+with 11% claiming to have made such an observation in the            the spread of misinformation complicate efforts to correctly
+past year (see Appendix B).                                          evaluate the number of UAP cases in Canada every year.
+Based on data published by a number of organizations, it can
+be estimated that between 600 and 1,000 cases of UAP sight-
+ings are reported each year in Canada.19 20 In the absence of
+a single data collection organization, the number and nature
+of these observations cannot be established conclusively for
+many reasons, including the possibility that the same sighting is
+reported separately by more than one organization. This makes
+it difficult to get a precise idea of the scale of the phenomenon.
+
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+E. Methodology and Findings
+The Office of the Chief Science Advisor (OCSA) gath-
+ered information from federal departments and agen-
+                                                               The History of UAP Reporting
+cies, stakeholders, experts and other organizations,           in Canada
+on how UAP observations reported by the public are             In Canada, UAPs can be reported through multiple channels
+handled in Canada. The main organizations and indi-            involving federal, provincial and civil society organizations. At
+viduals consulted are listed in Appendix A. We also            the federal level, Transport Canada maintains the Civil Aviation
+examined publicly available records such as histor-            Daily Occurrence Reporting System (CADORS) for incidents
+ical UAP data, as well as reports and investigations           affecting aviation safety, including UAP sightings. The Royal
+related to UAPs. This included examining historical            Canadian Air Force (RCAF) and the Department of National De-
+                                                               fence also monitor aerospace activity and may receive reports
+practices and archives, as well as current procedures          through their operational networks.
+and challenges associated with collecting and an-
+alyzing reliable data. Finally, we reviewed the ap-            Historically, the National Research Council of Canada (NRC)
+proaches taken by a few other countries to compare             collected and studied UAP reports from 1967 until the 1990s.
+                                                               Also, law enforcement agencies such as the Royal Canadian
+with Canada and seek best practices.                           Mounted Police (RCMP), the Ontario Provincial Police (OPP),
+                                                               and the Sûreté du Québec (SQ) may also serve as points of
+                                                               contact for UAP sightings, particularly in cases involving public
+                                                               safety. Civil society organizations, such as the Ufology Re-
+                                                               search of Manitoba and MUFON Canada compile and analyze
+                                                               UAP data from citizens. Additionally, local observatories, aca-
+                                                               demic institutions, and amateur astronomy groups sometimes
+                                                               act as informal channels for reporting and analyzing unfamiliar
+                                                               aerial observations.
+
+                                                               These diverse pathways illustrate the lack of a cohesive and
+                                                               standardized system for reporting and follow-up to UAP phe-
+                                                               nomena in Canada. The following section outlines the key
+                                                               information gathered during the Project.
+
+
+
+
+Some members of the Sky Canada project team researching
+documents from the archives of the National Research Council
+in Ottawa.
+
+
+
+
+                                                                                                                       # 25
+Federal Government
+The history of UAP reporting within the federal government
+spans several decades but includes extended periods with
+minimal or no activity. Additionally, different federal depart-
+ments were transiently involved, often transferring the respon-
+sibility to other federal organizations.
+
+In 1950, the Department of Transport granted one of their
+engineers, Wilbert Smith, permission to do part-time research
+to investigate whether some UFOs could use the power of
+Earth’s magnetic field as a source of propulsion. This was
+called Project Magnet,21 and Smith gradually expanded its
+scope to include investigations into the validity of UFO obser-
+vations. At one point, Smith launched a balloon over Ottawa
+to monitor UFO-related public and media reports of the event.
+He also established a UFO observatory on the outskirts of Ot-
+tawa. Although his efforts in detecting UFOs were unsuccess-
+ful, they did attract media interest, as well as unwelcome at-
+tention for the department. Unable to convince his colleagues
+of the merits of his research, Smith had to continue his work
+privately after the Department of Transport terminated Project
+Magnet in 1954.
+
+In 1952, the Defence Research Board (DRB), Canada’s then
+military science agency within the Department of National De-
+fence (DND), established a committee called Project Second
+Storey to examine the occurrences of “flying saucers” passing
+over Canadian territory as reported by different branches of
+the armed services. The Committee was chaired by the Na-
+tional Research Council of Canada (NRC) astronomer Dr. Pe-
+ter Millman; it included members from various arms of the Ca-
+nadian military intelligence and other government agencies.
+                                                                                     NRC’s Astronomer and Researcher Emeritus Peter Millman,
+The committee did not investigate UFO sightings, but it devel-                       here at the Herzberg Institute of Astrophysics circa 1960’s.
+oped a standardized form22 to facilitate the reporting of UFOs                       Millman chaired Project Second Storey in the 1950’s and
+across various government departments. This form was never                           was responsible for the non-meteoritic file at NRC until
+broadly adopted or used. The committee held six meetings                             he retired.
+from 1952 to 1954 and concluded that “UFOs neither posed a
+security threat, nor were of scientific interest.”c It recommend-
+                                                                                     Between 1954 and 1967, public reports continued to be sub-
+ed ending all investigations by the Canadian military.
+                                                                                     mitted to various federal departments and agencies including
+                                                                                     the Royal Canadian Mounted Police, Transport Canada, and
+                                                                                     the Department of National Defence, as well as to local police
+                                                                                     departments and non-federal entities. These organizations
+                                                                                     occasionally conducted inquiries or logged sightings for re-
+                                                                                     cord-keeping purposes.
+
+
+c       Hayes, Matthew, Search for the Unknown: Canada’s UFO Files and the Rise of Conspiracy Theory, McGill-Queen’s University Press, 2022, Montreal.
+
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+In 1967, on the recommendation of the Minister of National          Today, the legacy of these efforts is preserved through archives
+Defence, the responsibility for overseeing UFO reports was          such as those at Library and Archives Canada, which serve as
+transferred to the NRC, which then became the main service for      a valuable resource for understanding the historical context of
+receiving UFO reports from the public. This transfer of respon-     the UAP issue in Canada. The records highlight the challenges
+sibility included the declassification of DND’s Project Second      of balancing public interest, scientific inquiry and government
+Storey and the Department of Transport’s Project Magnet, as         priorities in addressing a complex and often ill-defined subject.
+well as taking over the management of previous UFO reports.         While interest in UAPs is undiminished, these historical lessons
+According to the NRC, until 1995, they were officially tasked       underscore the importance of transparency, collaboration and
+with collecting information on UFOs from the public, munici-        a rigorous approach to future investigations.
+palities, and other federal departments such as the RCMP and
+DND. Dr. Peter Millman, in charge of investigating and answer-
+ing queries on behalf of the NRC, would often offer explana-
+tions (such as stars, planets, meteors, optical phenomena) for
+the sightings submitted by the public. Most, but not all, UFO
+reports received by the NRC were compiled into what became
+known as the “Non-Meteoritic Sightings” file.
+
+In 1995, the NRC stopped collecting UFO reports altogether.
+All related material was transferred to what is now known as Li-
+brary and Archives Canada (LAC), which presently holds these
+records. LAC’s collection of UFO documents, estimated at
+15,000 pages, of which some 9,500 have been digitized, is open
+to the public and provides valuable information on the history
+of UFO sightings and the Canadian government response to
+them. As for Dr. Millman’s personal archives, which are avail-
+able to the public through the NRC archiving service, they
+contain only few documents related to the UFO topic.
+
+The history of UAP reporting within the Canadian federal gov-
+ernment reflects a fluctuating level of interest and responsi-
+bility over time, with various departments and agencies inter-
+mittently engaging in investigations. From early initiatives such
+as Project Magnet and Project Second Storey to the eventual
+transfer of UFO reporting to the National Research Council of
+Canada, the government’s approach evolved but often lacked
+continuity and consistent focus. These efforts were shaped by
+a combination of scientific curiosity, public interest and insti-
+tutional caution. While projects like those led by Wilbert Smith
+and Dr. Peter Millman sought to provide scientific frameworks
+for understanding UAP sightings, they faced skepticism within
+government circles and often struggled to gain traction. The
+limited adoption of standardized reporting mechanisms and
+the eventual cessation of formal investigations in 1995 marked
+a decline in federal involvement.
+
+
+
+                                                                    The first page of a version of the UAP reporting form
+                                                                    developed as part of Canada’s Project Second Storey in
+                                                                    the 1950’s.
+
+
+
+
+                                                                                                                           # 27
+Consultations with Federal
+Departments and Agencies
+The Sky Canada Project sought to gain insight on the domes-
+tic front by identifying organizations in Canada that typically
+receive witness reports of UAP sightings and examined whether
+and how they collect, investigate and follow up on these re-
+ports. The OCSA consulted with, and gathered this information
+from federal government departments and agencies, as well
+as from several non-governmental organizations and individu-
+als interested in UAPs. It should be noted that participation in
+these consultations was entirely voluntary in nature. The type of
+response and the level of engagement varied from one orga-
+nization to another, but in general the team was able to meet
+and exchange with senior representatives of all organizations
+contacted. A list of organizations and individuals consulted is
+included in Appendix A.
+Federal departments and agencies were asked specific ques-
+tions aimed at understanding the role they played, if any, in UAP
+report management. Specifically, they were asked whether the
+Canadian public is contacting their organization to report UAP
+sightings. If so, how frequently, what follow-up is done, and how
+is the information safeguarded.
+
+These consultations revealed that federal departments and           View of a cloudy sky from the cockpit of an airplane in
+agencies do receive UAP sighting information and reports from       flight. Pilots often report visual phenomena that they are
+                                                                    unable to immediately identify. These reports are registered
+their stakeholders and the public. However, few of these orga-
+                                                                    in Transport Canada’s CADORS system.
+nizations are currently investigating these sightings unless they
+pertain to specific aspects of their respective mandates, such
+as national security, transportation safety or public safety, and
+those instances are fairly rare. Additionally, most departments
+                                                                    Transport Canada (TC) and NAV CANADA
+do not compile the reports they receive, making it difficult to     Transport Canada is the federal department responsible for
+provide information on the number of reports or the type of         road, rail, marine and air transportation. Its Civil Aviation
+responses given to witnesses.                                       Directorate collects reports on various incidents (including
+                                                                    UAP sightings) from pilots, air traffic controllers and the public.
+Responses from federal departments and agencies that have           These reports are shared publicly through the Civil Aviation Dai-
+received UAP-related information are summarized below, along        ly Occurrence Reporting System (CADORS), which is accessi-
+with insights from media and online sources.                        ble on Transport Canada’s CADORS website.23 Specifically, CA-
+                                                                    DORS collects and distributes basic information on incidents
+                                                                    involving Canadian-registered aircraft at Canadian airports, in
+                                                                    Canadian sovereign airspace, and international airspace for
+                                                                    which Canada has accepted responsibility.
+
+                                                                    NAV CANADA is a private, not-for-profit corporation; it has been
+                                                                    Canada’s air navigation service provider since 1996. It over-
+                                                                    sees air traffic activity through a sophisticated network of area
+                                                                    control centres, air traffic control (ATC) towers, flight service
+                                                                    stations, maintenance centres, flight information centres and
+                                                                    navigation aids across the country.
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+In the case of UAP sightings, pilots typically report their sightings                   In January 2024, CTVNews.ca25 reported on Transport Canada’s
+to the nearest ATC tower, flight service station or other air traffic                   CADORS online database. They identified only 17 events report-
+unit. These units file an Aviation Occurrence Report (AOR)                              ed by pilots in 2023 that could be considered UAPs,26 spanning
+with NAV CANADA, which subsequently gets sent to Transport                              all types of occurrences and sightings. As such, UAP sightings
+Canada’s CADORS team for assessment and processing.                                     make up a very small portion (about 0.08%) of all incidences
+                                                                                        reported by pilots. They are so rare in CADORS that Transport
+UAP sighting reports from the public can also be reported to                            Canada is not incentivized to dedicate time and effort to ex-
+Transport Canada through the online aviation incident reporting                         plaining them. In fact, when such incidents do not raise serious
+application. Reports filed in this way may also be published                            safety concerns, Canadian authorities do not investigate further.
+through CADORS, provided they meet the criteria for inclusion.
+
+Analysts at Transport Canada use these UAP reports to create a
+                                                                                        Canadian Coast Guard (CCG)
+CADORS record based on the details of the occurrence. These                             The Canadian Coast Guard (CCG) is a special operating agency
+are then assigned as “events” in CADORS, under three catego-                            within Fisheries and Oceans Canada (but soon to be trans-
+ries depending on the information provided: “Weather Balloon,                           ferred to the Department of National Defence). Its mission is
+Meteor, Rocket, UFO and Intelligence Sighting”; “Laser Interfer-                        to ensure the safety of mariners in Canadian waters, protect
+ence”; or “Other Operational Incidences.”                                               Canada’s marine environment, and support the safe and effi-
+                                                                                        cient movement of maritime trade. The CCG rarely receives
+Examination of CADORS reports allows for follow-up on high-risk                         reports on UAPs, although it has procedures on how to treat
+events while looking for trends and emerging risks through ag-                          such reports. As part of its annual Notice to Mariners,27 pro-
+gregate analysis by Transport Canada. Further follow-up may be                          cedures on what are termed Vital Intelligence Sightings, any
+undertaken by various organizations including Transport Canada,                         waterborne object which appears to be hostile, suspicious or
+NAV CANADA, the Transportation Safety Board of Canada, and                              unidentified should be reported and handled as a “MERINTe
+the North American Aerospace Defense Command (NORAD).                                   Report”. MERINT messages are transmitted to the nearest or
+                                                                                        most convenient Canadian or U.S. coast guard station. From
+NAV CANADA provides about 80% of the aviation occurrence                                2010 to 2022, only two MERINT reports were filed, both to the
+information in each CADORS record.24 Other sources of infor-                            CCG’s Western region.
+mation used to create or supplement a CADORS record include
+the information received from the Transportation Safety Board
+(TSB), the Royal Canadian Mounted Police (RCMP), aircraft
+operators and other agencies. NAV CANADA is also responsible
+for the collection, evaluation and dissemination of special mes-
+sages called NOTAMs.d NOTAMs are short-term notices filed by
+NAV CANADA to alert aircraft pilots of potential hazards along
+a flight route or at locations that could affect a flight, such as
+presence of wildlife, volcanic ash warning, satellites, rocket
+launch, solar storm, etc.
+
+
+
+
+                                                                                        Atlantic Coastline in Canada. The Canadian Coast Guard has
+                                                                                        procedures on how to report UAPs through the MERINT system.
+
+
+d        Notam refers to Notice to Airmen.
+e        MERINT refers to Communication Instructions for Reporting by Merchant Vessels of Vital Intelligence Sightings.
+
+
+
+                                                                                                                                               # 29
+Department of National Defence (DND)                                 Library and Archives Canada (LAC)
+The Sky Canada Project focuses primarily on the civilian aspects     The LAC’s collection of government records on UAPs includes
+of UAP sightings in Canada, excluding military sightings and pro-    files from 1947 to 1995 primarily received from four federal
+cesses. Nonetheless, meetings were held with representatives of      organizations:
+the Department of National Defence, North American Aerospace
+Defense Command (NORAD), the Canadian Armed Forces, and              • the Department of National Defence;
+Defence Research and Development Canada (DRDC) to discuss            • the Department of Transport;
+the goals of the Sky Canada Project and receive any information
+                                                                     • the National Research Council of Canada; and
+they wanted to share.
+                                                                     • the Royal Canadian Mounted Police.
+DRDC, the scientific research arm of DND, has informed the
+OCSA that it has no formal program on UAPs and no capacity or        LAC’s records include correspondence, reports, memos and
+mandate to collect, receive or analyze citizens’ reports on UAPs.    procedural forms. Some focus on specific UFO sightings, while
+                                                                     others address general reporting processes or policies for
+The Royal Canadian Air Force (RCAF) does not typically investi-
+                                                                     documenting phenomena. The files served multiple purposes,
+gate sightings of unexplained phenomena outside the context of
+                                                                     such as explaining unusual aerial observations, investigating
+investigating potential threats or distress. The RCAF collaborates
+                                                                     some sightings or responding to public inquiries.
+with U.S. Federal Aviation Administration and Transport Canada
+to enforce safety and security regulations.                          The entire LAC collection (over 15,000 pages) is publicly acces-
+                                                                     sible. Users can locate these documents through LAC’s online
+Media reported that the RCAF represented the Canadian Armed
+                                                                     search tools by using keywords like “UFO” or “non-meteoritic”
+Forces at a May 2023 Five Eyes briefing on UAPs. The informal
+                                                                     and filing a request to LAC. A subset of the digitized records
+meeting was hosted by the United States at the Pentagon, where
+                                                                     (around 9,500 pages) are directly available online through LAC’s
+a presentation on UAPs was made by the U.S. All-domain Anom-
+                                                                     digital archives on the Canadian Heritage website. To highlight
+aly Resolution Office (AARO). While the details of the meeting
+                                                                     this collection, in 2005, LAC organized an online exhibition enti-
+remain classified, it was characterized as boosting cooperation
+                                                                     tled “Canada’s UFOs: The Search for the Unknown”.28
+on reporting and analyzing unexplained sightings. The OCSA was
+not able to access first-hand information about this meeting.        Many researchers and authors have mined LAC’s UFO docu-
+                                                                     ment collection to write books on various related subjects,
+National Research Council of Canada (NRC)                            including, most recently, Matthew Hayes for Search for the
+As mentioned earlier, from 1967 to 1995, the NRC was the main        Unknown: Canada’s UFO Files and the Rise of Conspiracy
+federal government organization responsible for receiving UAP        Theory (2022), and Chris Rutkowski for Canada’s UFOs:
+sighting reports in Canada. Within NRC, they were collated           Declassified (2022). These works highlight the rich resources
+by the Herzberg Institute of Astrophysics and kept under the         available in LAC’s UAP-related records and their value for
+responsibility of Dr. Peter Millman, in his “non-meteoritic sight-   understanding the governmental and societal responses that
+ings” case reports—a term referring to cases unrelated to me-        these phenomena inspired.
+teors. The files gathered by the NRC were transferred to Library
+and Archives Canada (LAC) in 1995, where they are accessible
+to the public.
+
+The NRC continues to receive occasional requests for infor-
+mation on archived UAP-related documents. According to
+their records, they processed about 40 inquiries (e.g., sight-
+ings, questions, media requests) related to UAPs over the last
+decade. These inquiries were referred to other government
+departments, such as Transport Canada and LAC, as well as
+local astronomy clubs such as centres of the Royal Astronomi-
+cal Society of Canada.
+
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+Royal Canadian Mounted Police (RCMP) and                            Historically, the RCMP has conducted some investigations into
+                                                                    “unidentified flying objects,” and many of these records have
+Provincial and Local Police Forces                                  been declassified and are publicly available through Library
+Most municipalities and provinces in Canada do not have their       and Archives Canada.
+own police services, they rely on the Royal Canadian Mount-
+ed Police (RCMP). The RCMP serves approximately 73% of              During consultations with the OCSA, the RCMP acknowledged
+Canada’s landmass and holds a federal investigative mandate         the growing public interest in UAPs and the proliferation of mis-
+across the entire country. Consequently, the RCMP receives re-      information and disinformation on the subject. They noted the
+ports of UAPs from the public throughout Canada. However, the       potential value of a dedicated office responsible for providing
+RCMP generally does not investigate UAP sightings, as its oper-     factual information and serving as a centralized body to which
+ational focus is on public safety and criminal investigations.      UAP reports could be referred. This would allow the RCMP to stay
+                                                                    focused on criminal investigations and threats to public safety.
+Currently, the RCMP does not have a formal policy for the
+collection or dissemination of UAP reports. As a result, there is   Additionally, the RCMP coordinates with provincial and mu-
+no classification system specific to UAPs. Such reports are typi-   nicipal police departments as needed. The primary mission of
+cally categorized as non-offence (non-criminal) incidents under     these local and provincial police services is to ensure public
+the Aeronautics Act—Other Activities. This classification also      safety, and they typically approach UAP-related calls from this
+encompasses a variety of other vessel sightings within Canadi-      perspective. RCMP consultations with these organizations
+an airspace, such as drones.                                        revealed that they lack standardized systems for collecting and
+                                                                    organizing UAP reports, as well as formal policies regarding
+When members of the public contact the RCMP, the nature of          such incidents. Like the RCMP, these local and provincial police
+the call is assessed and classified before any investigation is     departments recognized the potential benefits of a centralized
+undertaken. However, there is no specific guidance for RCMP         body to which local UAP sightings could be directed.
+call takers or members regarding UAP reports. The calls can be
+categorized as “suspicious vehicle,” for example, and lost in a
+large number of non-UAP reports. It was therefore impossible
+for the RCMP to provide statistics about UAP reports.
+
+
+
+
+                                                                                                       Drones appear more
+                                                                                                       frequently in the sky.
+                                                                                                       At dusk, their small
+                                                                                                       bodies blend into the
+                                                                                                       fading light, making them
+                                                                                                       surprisingly difficult
+                                                                                                       to identify.
+
+
+
+
+                                                                                                                           # 31
+                                                                    Environment and Climate Change
+                                                                    Canada (ECCC)
+                                                                    The Meteorological Service of Canada (MSC), which is part of
+                                                                    Environment and Climate Change Canada (ECCC), provides
+                                                                    weather and environmental forecasting services and infor-
+                                                                    mation to Canadians. The MSC gets many inquiries related to
+                                                                    meteorological features, weather, water quantity, ice, air quality
+                                                                    and climate as well as the instruments and data it manages.
+                                                                    Some of these inquiries concern lines of clouds that frequent-
+                                                                    ly form behind aircraft during flight, commonly referred to as
+                                                                    condensation trails or contrails. These contrails are composed
+                                                                    primarily of water vapour that condenses and freezes in the
+                                                                    cold upper atmosphere, creating visible streaks in the sky. This
+                                                                    topic frequently becomes the subject of speculation as it is
+                                                                    often associated with conspiracy theories that typically involve
+                                                                    allegations of secret government programs, such as geoengi-
+                                                                    neering or chemical dispersal, and occasionally link the trails
+                                                                    to UAPs.
+
+                                                                    While MSC responds to all queries, they do not catalogue,
+                                                                    collect, analyze or curate the numerous requests they receive.
+                                                                    Standard responses may be used for common questions.
+                                                                    ECCC also operates a weather application that provides the
+                                                                    public with scientific explanations of weather phenomena.
+                                                                    MSC stated that their resources are fully committed to the
+                                                                    weather forecasting enterprise with no capacity to take on addi-
+                                                                    tional responsibilities like analyzing UAP reports.
+Canadian Space Agency President Lisa Campbell and Chief
+Science Advisor Mona Nemer, and members of their teams,
+during a visit in 2024.
+                                                                        The OCSA’s consultations with federal departments
+Canadian Space Agency (CSA)                                             and agencies provide a valuable snapshot of the
+                                                                        current state of UAP reporting and management in
+The mission of the Canadian Space Agency (CSA) is to promote            Canada. While some departments, such as Transport
+the peaceful use and development of space, to advance the               Canada, have established mechanisms for collecting
+knowledge of space through science, and to ensure that space            and analyzing UAP-related data, most organizations
+science and technology provide social and economic benefits             do not investigate sightings unless they intersect with
+for Canadians. The CSA is not currently involved in any UAP             their specific mandates, such as national security or
+issues, nor does it collect UAP sighting reports. If members of         transportation safety. The lack of centralized data com-
+the public contact the CSA about UAPs, either to obtain in-             pilation and standardized reporting processes makes
+formation or to report a sighting, they would be informed that          it challenging to identify trends or conduct comprehen-
+this type of service is not available. The CSA’s purview pertains       sive analyses of UAP reports.
+to matters concerning space, not activities within the Earth’s
+atmosphere (where most UAP cases take place).
+
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+Citizen-Led UAP Groups
+and Organizations
+While governmental efforts to study and catalogue UAP sight-
+ings have fluctuated over time, citizen-led initiatives have re-
+mained steady. By bridging gaps left by federal agencies and le-
+veraging publicly available sources, citizen-led efforts continue
+to play an indispensable role in the study of UAPs, maintaining
+a consistent commitment to transparency and investigation,
+with different degrees of rigour.
+
+Among the most prominent contributors to this field is Chris
+Rutkowski, whose dedication to investigating UFO sightings
+began in 1975 while he was a student of physics and mathe-
+matics. Over the decades, Rutkowski transitioned into science       Amateur astronomers install their telescopes prior to an
+                                                                    event. Citizens engaging in science by observing the sky.
+communications at the University of Manitoba and the expe-
+rience gained during his long career further solidified his role
+as a key figure in UFO research. Mr. Rutkowski is a co-founder      Such organizations and initiatives provide platforms for re-
+of Ufology Research, and in 1989 he and his colleagues began        porting sightings, conducting some investigations and sharing
+publishing the yearly Canadian UFO Survey, which tracks and         information. Some have links with similar organizations in other
+analyzes UFO sightings in Canada. The Canadian UFO Survey           countries. Their existence is indicative of a gap in the way UAP
+continues to be published to this day.                              sightings are treated by both the authorities and the scientific
+                                                                    community. But their lack of financial resources limits their
+In 1988, Rutkowski met with NRC Astronomer and Researcher           actions and prevents them from offering a full suite of services.
+Emeritus Peter Millman at the Herzberg Institute in Ottawa.
+After Dr. Millman’s passing, he met with other staff from the       At the individual level, several journalists and commentators
+Institute in 1995, where he offered to assist with collect-         currently cover UAP issues. For example, Daniel Otis is a Cana-
+ing UFO reports if needed. This led to Rutkowski eventually         dian journalist recognized for his reporting over the last few years
+receiving reports directly from federal agencies such as DND        on UAPs and related topics. He has explored various aspects of
+and Transport Canada starting in 2000. However, by 2020,            UAPs, including government and military investigations, as well
+the direct submission of UFO reports from federal depart-           as public perceptions. His articles often examine the implica-
+ments decreased significantly. At present, Ufology Research         tions of UAP sightings and the growing interest from both the
+still includes information from federal sources in its annual       public and authorities in understanding these phenomena.
+Survey, but relies primarily on publicly available sources (e.g.,
+civil aviation reports) and information obtained through formal     Christian Page is another respected journalist in this field,
+access to information requests.                                     known for his research and writing on UAPs and the paranor-
+                                                                    mal. He has contributed to discussions regarding the im-
+Today, Canada, like many other countries, has several citi-         plications of UAP sightings, including their potential impact
+zen-driven organizations dedicated to receiving, investigating      on science, government policy and public perception. Page
+and discussing reports of UAPs. MUFON Canada is a non-profit        frequently investigates the intersection of technology, defence
+organization that relies on civilian volunteers to study reported   and the unexplained phenomena observed in the skies. He
+UAP sightings.                                                      has also advocated for transparency and further research into
+                                                                    UAPs, emphasizing the need for a systematic approach to un-
+There are numerous groups at the provincial level as well. For      derstanding these occurrences.
+example, within the province of Quebec, there is the Associ-
+ation québécoise d’ufologie (AQU), the Réseau OVNI-ALERTE           Together, Otis, Page and others serve as key figures in the pub-
+(UFO-Alert Network), the Groupe d’Assistance et de Recherche        lic conversation on UAPs, each using their platforms to push for
+sur les Phénomènes Aérospatiaux Non-identifiés (GARPAN),            greater transparency, accountability and understanding in this
+while UFO*BC investigates BC and Yukon sightings.                   evolving field.
+
+
+
+
+                                                                                                                              # 33
+Global Perspectives on
+UAP Reporting: An Overview
+of National Approaches
+The study of unidentified aerial phenomena has become an
+area of increased interest globally, with various countries
+adopting different approaches to the collection, analysis and
+management of UAP data. Historically, many nations, including
+Canada, housed UAP offices within their defence departments.
+However, over time, these offices were closed, and responsibil-
+ity for UAP oversight was transferred to other organizations.
+
+A comparative analysis was carried out to examine the UAP
+practices in several peer countries. As summarized to follow,
+the strategies employed by different nations vary and can in-
+volve either or both government and non-government entities.
+
+Management of UAP reports in
+the Americas
+United States                                                        Image from one of the UAP videos released by the Pentagon
+Over the past several years, the U.S. government has ramped          in 2020. (credit Pentagon). Note: The appearance of U.S.
+                                                                     Department of Defense (DoW) visual information does not
+up its efforts to gather and analyze data related to UAPs. In
+                                                                     imply or constitute DoW endorsement.
+April 2020, the U.S. Department of Defense (DOD) released
+three UAP videos in order to “clear up any misconceptions by
+the public on whether or not the footage that has been circulat-     Increased government interest and commitment to the scientif-
+ing was real, or whether or not there is more to the videos.”29 In   ic study of UAPs culminated in the creation, in 2022, of All-do-
+its statement, the Navy also noted that the “aerial phenomena        main Anomaly Resolution Office (AARO)30 in the Pentagon. The
+observed in the videos remain characterized as ‘unidentified.’”      objective of AARO is to investigate government reports of UAPs,
+That same year the Pentagon established the Unidentified Aeri-       improve data collection, standardize reporting requirements
+al Phenomena Task Force.                                             and mitigate the potential threats to safety and security posed
+                                                                     by UAPs. Its mission is to “Minimize technical and intelligence
+On June 25, 2021, the U.S. Office of the Director of National        surprise by synchronizing scientific, intelligence, and opera-
+Intelligence released a report to the U.S. Congress entitled         tional detection identification, attribution, and mitigation of
+“Preliminary Assessment: Unidentified Aerial Phenomena”              unidentified anomalous phenomena in the vicinity of national
+examining 144 military UAP reports from recent decades.              security areas.” In February 2024, AARO released Volume 1
+                                                                     (of 2) of a study that reviews all U.S. government investigative
+                                                                     efforts and programs on UAPs from 1945 to the present.31
+                                                                     On June 1, 2024, AARO released its second report32 on 757 UAP
+                                                                     reports from May 1, 2023, to June 1, 2024. As of the publishing
+                                                                     date, 174 cases were resolved and found to be objects such
+                                                                     as balloons, birds, unmanned aerial systems, satellites and
+                                                                     aircraft. Of the remaining unresolved cases, AARO continues
+                                                                     to collect and analyze the information by working with military
+                                                                     and technical partners. AARO underscores that, to date, they
+                                                                     have discovered no evidence of extraterrestrial beings, activity
+                                                                     or technology.
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+In parallel, the National Aeronautics and Space Administration        Lastly, the Safe Airspace for Americans Act35 was introduced
+(NASA) undertook an Independent Study to evaluate how it can          in the House of Representatives in January 2024. The bill pro-
+contribute to ongoing government efforts. The report, released        poses that the Federal Aviation Administration (FAA) develop
+in September 2023 focused on how best to collect future UAP           procedures for reporting, collecting, storing, inve stigating and
+data to advance their scientific study.33 It also defines a mul-      analyzing UAP incidents. The legislation also seeks to protect
+tifaceted approach to the scientific study of UAPs, acknowl-          witnesses—who report sightings of UAPs—from adverse con-
+edging the need for collaboration across different sectors and        sequences such as medical disqualification, or reprisals from
+disciplines. Similar to the AARO report, the Independent Study        employers or the government based solely on their reporting
+Team’s review of unclassified government documents found no           of UAPs.
+evidence of extraterrestrial activity. Following the release of the
+report, NASA announced the creation of the position of Director       Mexico
+of Unidentified Anomalous Phenomena Research to further               Most reports of UAP sightings in Mexico come through media
+study and coordinate research efforts pertaining to UAPs.             outlets, independent researchers and social media platforms,
+The incursion of four high-altitude balloons into North Ameri-        which play a significant role in documenting and spreading
+can airspace in early 2023 prompted President Biden to ask the        information about such events. While there is no dedicated,
+U.S. intelligence community to take a closer look at the UAP          official government agency in Mexico for UAP reporting, there
+issue. He directed an interagency team to study the broader           have been instances of government engagement. In Sep-
+policy implications for detection, analysis and disposition of        tember 2023, the Mexican Congress held hearings on UAPs,
+unidentified aerial objects that pose either safety or security       including a presentation by Jaime Maussan on mummified
+risks. The President also announced his staff would engage            bodies of extraterrestrials. This evidence was later debunked
+with their relevant foreign counterparts in order to share infor-     by Mexican scientists.36 The legislative assembly was holding
+mation and try to gain their perspectives as well.34                  hearings to discuss the U.S. government’s actions and policies
+                                                                      regarding UAPs.37
+
+                                                                      Chile
+                                                                      The SEFAA (Sección de Estudios de Fenómenos Aéreos
+                                                                      Anómalos, or Section for the Study of Anomalous Aerial Phe-
+                                                                      nomena),38 serves as the official body in Chile responsible for
+                                                                      collecting, analyzing and scientifically studying UAPs. It oper-
+                                                                      ates within the General Directorate of Civil Aeronautics (DGAC)
+                                                                      of the Chilean Air Force. The primary mission of the SEFAA is to
+                                                                      gather information on UAP sightings reported by airline crews or
+                                                                      the general public. This information is analyzed to assess any po-
+                                                                      tential risks to the safety of air operations and national security.
+
+                                                                      One notable aspect of SEFAA’s operations is its commitment
+                                                                      to transparency and accessibility. The organization makes its
+                                                                      findings and information regarding UAPs available to the public,
+                                                                      aiming to foster openness and understanding of these phenom-
+                                                                      ena. SEFAA publishes monthly reports detailing the cases it has
+                                                                      received, investigated, and closed, allowing interested individu-
+                                                                      als to stay informed about its activities.39
+
+
+
+
+The cover page of AARO’s February 2024 “Report on the His-
+torical Record of U.S. Government Involvement with Unidenti-
+fied Anomalous Phenomena (UAP) Volume I”.
+
+
+
+
+                                                                                                                                # 35
+Management of UAP reports in Europe                              GEIPAN has a team of three full-time employees to manage the
+                                                                 reporting process. Members of the public can file a UAP sight-
+France                                                           ing report through a form that is available online. Reports are
+France’s government-funded organization charged with man-        investigated through the efforts of over 20 trained volunteers
+aging UAP reports is housed within its space agency, the         throughout France. GEIPAN has a large number of government
+CNES (Centre national d’études spatiales, or National Centre     partners (including the military, civil aviation, meteorological
+for Space Studies). The CNES office called GEIPAN (Groupe        offices, Alternative Energies and Atomic Energy Commission,
+d’Études et d’Informations sur les Phénomènes Aérospatiaux       and the French national police, among others) and external
+Non identifiés, or Unidentified Aerospace Phenomenon Re-         contacts from complementary fields (including astronomy,
+search and Information Group), has been studying UAPs since      aeronautics, meteorology, psychology, imaging, drone technol-
+1977. Its mission is to collect, investigate and archive UAP     ogy, electromagnetism, etc.). GEIPAN’s steering committee is
+reports and make its findings available to the public. By ano-   chaired by an established aerospace expert and includes rep-
+nymizing sightings, GEIPAN allows further study of observed      resentatives of the country’s civil and military authorities. The
+phenomena by external scientific teams. The principles guiding   steering committee’s mission is to analyze the performance of
+GEIPAN include low operational costs, public service, respect    GEIPAN and make recommendations to CNES.
+for witnesses and a commitment to transparency, neutrality       The French organization Méprises du Ciel (Misunderstandings
+and objective investigation.                                     of the sky) also receives UAP sightings from GEIPAN and the
+                                                                 public. This organization helps educate the public about the
+                                                                 mischaracterization of UAPs. While it is difficult to establish a
+                                                                 direct causal relationship between these investigative efforts
+                                                                 and changes in public perspective, there are indications that in
+                                                                 France, UAP-related conspiracies are decreasing and are less
+                                                                 prevalent compared with other countries.40
+
+
+
+
+                                                                                                     Solar eclipse (left) and
+                                                                                                     Venus (right) in Embrun,
+                                                                                                     France. Venus frequently
+                                                                                                     sparks UAP reports from the
+                                                                                                     public, due to its bright
+                                                                                                     and striking appearance.
+
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+                                                                     Italy
+                                                                     Italy has two well-known private non-profit UAP-related organi-
+                                                                     zations: the CUN (Centro ufologico nazionale, or National Ufo-
+                                                                     logical Center),43 and the CISU (Centro Italiano Studi Ufologici,
+                                                                     or Italian Center for Ufological Studies).44 They were estab-
+                                                                     lished in 1965 and 1985 respectively. Both are involved in col-
+                                                                     lecting and cataloguing testimonies of UAP sightings and public
+                                                                     reporting. The two organizations are also provided access to
+                                                                     the Italian Ministry of Defence’s unclassified UAP investigations
+                                                                     which are carried out by the Italian Air Force.
+
+                                                                     United Kingdom
+                                                                     The United Kingdom’s Ministry of Defence (MoD) was in charge
+                                                                     of investigating UFO reports from 1950 to 2009. From the
+                                                                     outset, the MoD set up a working group under its Chief Science
+                                                                     Advisor to study the UFO phenomenon. In June 1951, the work-
+                                                                     ing group concluded that UFO sightings could be explained by
+                                                                     “astronomical or meteorological phenomena; misidentification
+                                                                     of aircraft, balloons, birds, optical illusions and psychological
+                                                                     delusions, and deliberate hoaxes.”f It recommended that “no
+                                                                     further investigation of reported mysterious aerial phenome-
+Northern lights in German countryside. All over the world,
+people are captivated, their eyes fixed on the sky, marveling        na be undertaken, unless and until some material evidence
+at such natural spectacles.                                          becomes available.”g Nonetheless, the MoD kept a UFO hotline
+                                                                     and email address to receive sighting reports, as well as a small
+                                                                     team of investigators. It published annual reports from 1997 to
+Germany                                                              2009, listing the dates, times, location and brief descriptions of
+For over 50 years, Germany’s contact point for UAP reporting         all UFO sightings. The MoD closed this program in 2009. Since
+has been the GEP (Gesellschaft zur Erforschung des UFO-              then, UAP sightings in the UK can be reported to local authori-
+Phänomens, or The Society for Research into the UFO Phe-             ties or associations like the British UFO Research Association
+nomena),41 a Ludenscheid-based non-profit citizen science            (BUFORA).
+organization. The GEP receives public reports of UAP sightings,
+conducts investigations on a case-by-case basis, and makes           European Union
+its findings public. Since 1980, it has published its findings       The European Union (EU), as an entity, has not developed spe-
+in its bimonthly Journal für UFO-Forschung (Journal of UFO           cific laws or regulations regarding UAPs. However, the Europe-
+Research). According to GEP’s annual report,42 they have             an Commission has put in place an “aviation reporting portal”45
+received an average of 342 reports per year from 2022 to 2024.       that provides common reporting forms for individuals to report
+Over 90% of reports received have been explained as conven-          UAP occurrences. In spite of this development, the European
+tional causes with the remainder being unexplained due to            Commission considers that the area of UAPs is under the juris-
+insufficient data.                                                   diction of the Member States,46 which allows them to address
+                                                                     these phenomena according to their national security needs.
+
+
+
+
+f       Flying Saucer Working Party—Wikipedia
+g       UK Government Flying Saucer Working Party (ianridpath.com)
+
+
+
+                                                                                                                             # 37
+Management of UAP reports in Oceania                               Management of UAP reports in Asia
+Australia                                                          Japan
+From 1950 to 1996, the Royal Australian Air Force (RAAF) was       According to media sources, Japan’s Defense Minister in-
+responsible for investigating UAP sightings in Australia.47 How-   structed the Japanese Defense Forces in 2020 to record and
+ever, the RAAF ceased its involvement in public UAP investi-       photograph any object they encounter or that enters Japanese
+gations in 1996, citing a perceived lack of scientific value and   airspace, and to take steps for the “necessary analysis” of the
+compelling reasons to continue dedicating resources to these       sightings.52 This directive underscores the importance placed
+activities.                                                        on monitoring and documenting UAPs by the Japanese gov-
+                                                                   ernment, as well as the recognition of the need for thorough
+Today, public sightings of UAPs in Australia can be reported to    analysis and investigation including information provided by
+the local police or other third-party organizations such as the    the public. The Japanese military announced in February 2023
+Mutual UFO Network (MUFON) for Australia and New Zealand           a new policy to consider unidentified drones and balloons as
+and the Australian Centre for UFO Studies (ACUFOS). Defence        legitimate targets to be shot down.53
+flight safety incidents (including those potentially caused by
+UAPs) are handled by the Defence Aviation Safety Authority         On May 28, 2024, ruling and opposition lawmakers in Japan
+(DASA), while the Civil Aviation Safety Authority (CASA) handles   held a meeting to address UAP issues, and, on June 6, 2024,
+civilian aviation safety.                                          they created a nonpartisan group to ramp up abilities to detect
+                                                                   and analyze UAPs.54
+New Zealand
+New Zealand also had a period, spanning from 1954 to 2009,         China
+during which the military collected public UFO sightings, ap-      The rise of UAP research in China coincided with the country’s
+parently without investigating them.48 New Zealand’s military      reform period in the late 1970s. As part of the first wave of
+released hundreds of documents detailing claims of UFO sight-      reforms, public interest in UAPs began to emerge.55 In Septem-
+ings to the national archives.49 Today, members of the public      ber 1979, students at Wuhan University established the China
+can still report UAP sightings to both the New Zealand Civil       UFO Enthusiasts’ Liaison Office, which later evolved into the
+Aviation Authority (CAA)50 and the New Zealand Defence Force       China UFO Research Association. The association expanded,
+(NZDF). Additionally, there are civilian groups, such as Ufocus    opening branches in other cities.
+NZ,51 that gather reports from the public and pilots.
+                                                                   The Journal of UFO Research, founded in 1981 in Lanzhou by
+                                                                   the Gansu People’s Publishing House, became the most widely
+                                                                   read UAP research magazine in Asia by the 1990s.56 Following
+                                                                   the success of the China UFO Research Association, several
+                                                                   localized societies were established, including the Beijing UFO
+                                                                   Society, which was founded in 1984. The Beijing UFO Society
+                                                                   claimed to have collected a significant number of photographs
+                                                                   and first-hand accounts of UAPs through its fieldwork.
+
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+During the 1990s, interest in UAPs and extraterrestrial life
+surged as state media began covering the topic and publishing
+restrictions were relaxed.57 However, the China UFO Research
+Association disbanded in 1997.
+
+Recently, China has a dedicated task force within the People’s
+Liberation Army (PLA) to investigate Unidentified Aerial Phe-
+nomena (UAP). This task force employs a multi-tiered reporting
+system to manage UAP sightings, collecting data from military
+radar stations, air force pilots, police stations, weather sta-
+tions and observatories affiliated with the Chinese Academy
+of Sciences. Reports undergo preliminary analysis at regional
+military commands before being centralized in a national data-
+base. To handle the vast amount of data and identify patterns,
+the PLA utilizes artificial intelligence (AI) to assess the nature
+and potential threat level of these phenomena. This approach
+enables the PLA to rapidly determine whether observed objects
+are foreign aircraft, natural occurrences or potentially other-
+worldly in origin.58
+
+
+    The recent global developments in the study and inves-
+    tigation of UAPs demonstrate an increasing commit-
+    ment to scientific inquiry and national security. Coun-
+    tries such as the United States, France and Chile have
+    established formal governmental bodies to investigate
+    UAP sightings, while others have relied on non-gov-
+    ernmental organizations or citizen science groups to
+    collect and analyze reports. The growing recognition of
+    the need for robust data collection and international
+    cooperation reflects a shared interest in understanding
+    these phenomena and a global shift toward a more
+    systematic and open approach to the study of UAPs.
+
+
+
+
+                                                                     Comet C/2023 A3 (Tsuchinshan ATLAS), Chicheng Iceberg
+                                                                     Ridge, Hebei Province, China (2024). A massive object
+                                                                     entering Earth’s atmosphere disintegrates, leaving behind
+                                                                     a bright trail.
+
+
+
+
+                                                                                                                       # 39
+F. Recommendations to
+Enhance UAP Reporting and
+Research in Canada
+The Sky Canada Project highlights a significant gap in              To enable thorough scientific studies of UAP sightings, a range
+Canada’s approach to UAP phenomena, as most fed-                    of data collection and investigative activities would be required.
+                                                                    For instance, standardized protocols should be established to
+eral entities lack the capacity, mandate or resources               ensure data are comparable in their content and format. The
+to address this issue systematically. Public interest in            fragmented nature of UAP reporting across various depart-
+greater transparency and improved reporting mech-                   ments and agencies in Canada complicates the application of
+anisms underscores the need for coordinated ac-                     scientific principles. This lack of coordination results in incon-
+tion. Insights from non-governmental organizations,                 sistent information collection across the government, making
+citizen-driven groups, and independent journalists                  it onerous—if not impossible—for researchers to access and
+                                                                    compile data for rigorous, science-based analysis. Additionally,
+reveal the enduring public fascination with UAPs                    the fact that investigations of reporting are not easily available,
+and the potential value of establishing more robust                 contributes to distrust and disinformation.
+frameworks for data collection and investigation.
+                                                                    During the Sky Canada Project, the Office of the Chief Science
+The survey by Earnscliffe (see Appendix B) found that interest in   Advisor received about 250 inquiries from Canadians regarding
+UAPs is generally moderate. However, half the respondents felt      various aspects of the project, including inquiries about where
+that the Canadian government should do something about UAP          to report UAP sightings and requests for government assistance
+sightings and devote funds to the effort, including for investi-    to interpret photos and videos, despite the Sky Canada website
+gation. The majority of respondents felt that the government        clearly stating that the Office was not offering that service nor
+should set up a service to enable Canadians to report their         collecting such information.
+sightings and attached importance to transparency of informa-
+tion on the subject.                                                Together, the analysis presented in this report suggests that
+                                                                    Canada would benefit from an improved process for reporting,
+Moving forward, the Sky Canada Project serves as a crucial          collecting, and studying UAP sightings. The approach should be
+foundation for discussions on enhancing federal oversight and       more rigorous, transparent and coordinated than is currently
+public engagement regarding UAPs. By fostering collaboration        the case.
+across departments and with civilian organizations, Canada
+can develop a more cohesive and transparent approach to             The following actions are proposed for consideration by the
+understanding and addressing these phenomena.                       Government of Canada in order to: 1) improve coordination
+                                                                    and analysis of UAP reports in Canada, 2) promote public trust
+                                                                    and mitigate disinformation, 3) enhance scientific rigour and
+                                                                    science literacy surrounding UAPs, and 4) position Canada for
+                                                                    greater collaboration with other countries on a topic that has no
+                                                                    geographic borders:
+
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+Reporting and Data oversight:                                     Communications:
+1. Identify a lead: A federal department or agency responsi-      4. Support public dialogue: A proactive strategy to increase
+   ble for managing public UAP data should be identified. The        transparency and communication with the public regard-
+   lead should be a trusted and recognized scientific organiza-      ing UAPs should be developed. Such a strategy could bring
+   tion, have the capacity to communicate with the public and        together trusted publicly facing organizations, including
+   an already established international scientific network. For      science centres and museums, as well as public libraries.
+   example, the Canadian Space Agency could be considered         5. Promote intra-governmental collaborations: An internal
+   for such a role.                                                  directive to ensure collaboration among all federal agencies
+                                                                     with relevant expertise or data would aid the lead organiza-
+2. Establish a dedicated service: This service would collect         tion in providing explanations to witnesses and correlating
+   testimonies, investigate cases and post its analyses pub-         recent observations with previous reports. Additionally,
+   licly. It would proactively inform Canadians about UAPs. To       since some departments would continue to receive reports
+   achieve these goals, it could convene a network of govern-        under their mandates (for example, Transport Canada or the
+   ment and academic partners and experts to conduct scien-          RCMP), they should be encouraged to forward their data as
+   tific analyses and follow up with witnesses. The example of       appropriate to the lead organization.
+   GEIPAN in France is worth considering.
+                                                                  6. Improve media relations: The lead organization should play
+3. Enhance reporting capacity in civil aviation: Transport           a significant role in mitigating misinformation and disinfor-
+   Canada should encourage pilots, cabin crews and air traffic       mation by responding to public and media inquiries related
+                                                                     to UAPs, and by documenting and communicating com-
+   controllers to report UAP sightings without fear of stigma-       mon misinterpretations of observations. Examples of such
+   tization. In collaboration with NAV CANADA, they should           approaches, including interactive digital tools, are found in
+   analyze UAP reports to track trends and provide pilots with       other countries.
+   explanations, helping to reduce distractions during flights.
+   These reports could be correlated and merged with those        7. Promote application of up-to-date evidence to effective-
+   submitted by the public on similar sightings.                     ly address misinformation and disinformation: Among
+                                                                     others, a multidisciplinary expert panel should be set up
+                                                                     to advise the lead organization on effective approaches to
+                                                                     countering misinformation and disinformation.
+
+
+
+
+                                                                                                     Commercial aircraft at
+                                                                                                     Vancouver Airport. More than
+                                                                                                     100,000 flights take place
+                                                                                                     every day around the world.
+
+
+
+
+                                                                                                                         # 41
+Research:
+8. Facilitate open access and open data: Data related to
+   UAPs should be made available to the public for transparen-
+   cy and to support research.
+9. Conduct surveys: Periodic surveys of Canadians should be
+   carried out to gauge their perceptions of UAPs and assess
+   the impact of the dedicated services.
+10. Support citizen science: Participatory science initiatives
+    and programs should be developed to enable volunteer
+    participation in the study of UAPs. Among other benefits,
+    such activities tend to increase the likelihood of informed
+    citizenry and enhance interest of youth in science and tech-
+    nology careers.
+11. Provide tools for data collection: The development and
+    deployment of publicly accessible digital and portable
+    tools should be supported, such as bilingual applications
+    for smart phones and interactive platforms, to provide
+    information, including for data collection and ongoing
+    research programs.
+12. Build on Canada’s strength in astronomy and aerospace
+    research: Canada has a superb talent pool and physical
+    research infrastructure, and is part of major international ini-
+    tiatives aimed at understanding our planet and the universe,
+    and developing tools for space travel and exploration. The
+    sector should be further supported and given opportunities
+    to be part of the public dialogue.
+
+International Collaboration:
+13. Information sharing: The lead organization should estab-
+    lish partnerships with international entities dedicated to
+    UAPs, such as AARO and NASA (U.S.A.), GEIPAN (France),
+    and SEFAA (Chile), to share data, methodologies and best
+    practices in UAP research and investigation.
+14. Cooperation in research and communication: Canada
+    should actively engage with international partners for re-
+    search collaborations and public awareness efforts.
+
+
+
+
+                                                                       Modern technologies make it possible to track the movement
+                                                                       of aircrafts and other objects in the sky, providing better
+                                                                       visibility and accurate real-time tracking.
+
+
+
+
+    REPORT OF THE SKY CANADA PROJECT
+G. Conclusion
+Reports of unusual objects or phenomena in the sky              Most UAP cases can be explained by a thorough investigation,
+have long captivated the public, often generating               but some remain unsolved, suggesting the need for further
+                                                                analysis using advanced analytical tools. Investigating these
+mystery, amazement and considerable debate.                     phenomena may yield technological progress and a better un-
+UAP sightings invariably prompt questions that                  derstanding of our universe. Ultimately, investigating UAPs calls
+bridge science, media, and culture, presenting                  for interdisciplinary and international collaboration.
+opportunities for exploration but also potential
+for misinterpretation.                                          If enacted, the recommendations given in this report can drive
+                                                                progress in several key areas. Their first goal is to increase
+                                                                government transparency on UAPs, potentially reducing related
+                                                                conspiracy theories and misinformation. Second, setting up
+                                                                clear and efficient reporting systems for UAP observations will
+                                                                greatly simplify the process, encourage more public participa-
+                                                                tion and support citizen-driven science. Improved data from
+                                                                public reports will enable more comprehensive and accurate
+                                                                research analyses.
+
+                                                                Investigating UAP reports may also enhance airspace securi-
+                                                                ty by identifying threats, thus strengthening national security
+                                                                through the proactive mitigation of risks from UAPs. Finally,
+                                                                these measures will enable Canada to eventually join interna-
+                                                                tional efforts concerning UAP sightings, fostering a comprehen-
+                                                                sive global approach to understand and address the UAP issue.
+                                                                Canada can ensure that the UAP mysteries inspire future gener-
+                                                                ations by fostering curiosity, critical thinking, and open-minded
+                                                                investigation.
+
+                                                                The investigation and study of Unidentified Aerial Phenomena
+                                                                does belong to humanity’s quest for knowledge and under-
+                                                                standing. Adopting more transparent communications and
+                                                                robust scientific methods will be a significant step forward in
+                                                                promoting public understanding and combating misinforma-
+                                                                tion. It is in this spirit that the recommendations in this report
+                                                                have been formulated.
+
+
+
+
+North America lights-up in the night sky, as seen from space.
+
+
+
+
+                                                                                                                          # 43
+Appendix A: Main Organizations
+and Individuals Consulted
+(in alphabetical order)
+
+Organizations                                        Individuals and Experts
+•   Canadian Coast Guard                             •   Ballester Olmos, Vicente-Juan
+•   Canadian Nuclear Safety Commission               •   Belley, Michel
+•   Canadian Space Agency                            •   Casault, Jean
+•   Department of National Defence (DND)             •   Dubé, Louis
+•   Defence Research and Development Canada (DRDC)   •   Hayes, Matthew
+•   GEIPAN (France)                                  •   Kirkpatrick, Sean
+•   Library and Archives Canada (LAC)                •   Lafleur, Claude
+•   Meteorological Service of Canada (MSC) at ECCC   •   Lamontagne, Robert
+•   MUFON Canada                                     •   Leduc, Marc
+•   National Research Council of Canada (NRC)        •   Masson, Eric
+•   NAV CANADA                                       •   Mysyk, W. Kim
+•   Ontario Provincial Police (OPP)                  •   Otis, Daniel
+•   Royal Canadian Mounted Police (RCMP)             •   Page, Christian
+•   Sûreté du Québec (SQ)                            •   Rutkowski, Chris
+•   Transport Canada                                 •   Schwarcz, Joe
+                                                     •   Temos, Nicholas
+                                                     •   Vadnais, Yann
+                                                     •   Whiteley, Iya
+
+
+
+
+     REPORT OF THE SKY CANADA PROJECT
+Appendix B: Canadian Survey
+of Public Views of UAPs
+The Office of the Chief Science Advisor hired Earnscliffe Strategies to conduct an online survey of Canadians to
+gauge public views of UAPs. The survey, which was completed by 1,008 members of Leger’s online panel be-
+tween August 15 and 27, 2024, took approximately 8 minutes to complete.
+Respondents to the survey were selected among individuals who volunteered or registered to participate in
+online surveys. To enhance methodological rigour and ensure the sample resembled the broader population,
+the data were weighted by age, gender and region to align with the Canadian population (18+), based on current
+Statistics Canada figures. The handling of this non-probability sample aligns with the Standards for the Conduct
+of Government of Canada Public Opinion Research – Online Surveys. Note that the results of such self-selected
+participant surveys cannot be described as statistically projectable to the entire Canadian population.
+The main survey results are presented in the charts below, grouped in four categories.
+
+1. Perceptions of UAPs
+  Chart 1: Overall, how concerned, if at all, would you say you are
+  with UAPs observed over Canadian territory?
+                                                                      Very concerned
+                                                                      Somewhat concerned
+                                                                      Not very concerned
+  5%
+  5%      25%
+          25%           36% 36%         29%    29%
+                                                 5%     5%            Not at all concerned
+                                                                      Don't Know∕No Response
+
+
+
+
+ A minority (30%) of respondents are concerned with                               Source: Earnscliffe, 2024
+ UAPs in Canada.
+
+
+
+
+                                                                                                              # 45
+Chart 2: How strongly do you agree or disagree with the statement:
+“UAPs represent an issue for ﬂight safety in Canada”?
+                                                             Strongly agree
+                                                             Somewhat agree
+                                                             Neither agree nor disagree
+ 10%         29%            22%       12%    11%     15%     Somewhat disagree
+                                                             Strongly disagree
+                                                             Don't Know∕No Response
+
+
+
+Nearly 40% of respondents consider that UAPs represent                   Source: Earnscliffe, 2024
+a ﬂight safety issue.
+
+
+
+
+Chart 3: How strongly do you agree or disagree with the statement:
+“The nature of some UAPs has not been conﬁrmed”?
+                                                             Strongly agree
+                                                             Somewhat agree
+                                                             Neither agree nor disagree
+       23%           32%            19%     5% 5%   16%      Somewhat disagree
+                                                             Strongly disagree
+                                                             Don't Know∕No Response
+
+
+
+Over half (55%) of Canadian respondents agree that the                   Source: Earnscliffe, 2024
+nature of some UAPs has not been conﬁrmed.
+Chart 4: How strongly do you agree or disagree with each of
+the following statements?
+
+   I believe there is                                                                                     Strongly agree
+  false information                                                                                       Somewhat agree
+                                    36%                         30%              16%   4%3% 11%
+      about UAPs in                                                                                       Neither agree nor disagree
+       social media                                                                                       Somewhat disagree
+                                                                                                          Strongly disagree
+  I believe there is                                                                                      Don't Know∕No Response
+ false information
+                               23%                       32%               21%     5% 4%   15%
+     about UAPs in
+mainstream media
+
+
+The majority of respondents believe that there is false information about                                  Source: Earnscliffe, 2024
+UAPs in social media and mainstream media.
+
+
+
+
+Chart 5: What do you think is behind, or the source, of UAPs?
+
+                         Don't Know∕No Response                                                                              71%
+
+                          Aliens∕Extraterrestrial life               10%
+
+                        Foreign governments∕spies               6%
+
+   Natural phenomena∕Weather∕Celestial objects                  5%
+
+      Drones∕Satellites∕Aircraft∕Weather balloons              4%
+                                                                                   Only a minority of respondents
+                 Government/federal government                 3%                  pointed to a possible source
+                                                                                   of UAPs.
+                                             Military          3%
+
+                                               Other            5%
+
+                                            Nothing       1%                                              Source: Earnscliffe, 2024
+ Chart 6: How strongly do you agree or disagree with the statement:
+ “At present, there is no proof of the existence of extraterrestrial civilizations”?
+
+                                                                     Strongly agree
+                                                                     Somewhat agree
+       25%           21%           23%        12%   6%   13%         Neither agree nor disagree
+                                                                     Somewhat disagree
+                                                                     Strongly disagree
+                                                                     Don't Know∕No Response
+
+
+ Only half of respondents agree that there is no proof of the                     Source: Earnscliffe, 2024
+ existence of extraterrestrial civilizations.
+
+
+
+2. Interest in UAPs
+ Chart 7: How much attention, if any, have you paid to stories
+ about UAPs over the past two or three years?
+
+                                                                                 A lot of attention
+                                                                                 Some attention
+  7%          26%                  34%                   31%    2%               A little attention
+                                                                                 No attention at all
+                                                                                 Don't Know∕No Response
+
+
+ Two-thirds of respondents have paid at least some attention                        Source: Earnscliffe, 2024
+ to stories about UAPs.
+Chart 8: In general, how interested are you, if at all, in each of the following?
+
+
+   News about UAP                                                                       Very interested
+                         23%               39%               17%      16%   5%
+sightings in Canada                                                                     Somewhat interested
+                                                                                        Not very interested
+Coverage of UAPs in                                                                     Not at all interested
+                       15%           36%               23%           21%    6%
+ mainstream media
+                                                                                        Don't Know∕No Response
+
+  Coverage of UAPs
+                       11%     27%               23%           31%          7%
+    in social media
+
+
+The majority of respondents are interested in news about UAP sightings                  Source: Earnscliffe, 2024
+in Canada and coverage of UAPs in mainstream media.
+
+
+
+
+Chart 9: In general, how interested are you, if at all, in each of the following?
+
+
+   News about UAP                                                                          Very interested
+    sightings in the     18%               35%                 20%           21%   5%      Somewhat interested
+      United States                                                                        Not very interested
+                                                                                           Not at all interested
+   News about UAP                                                                          Don't Know∕
+   sightings outside                                                                       No Response
+                         17%               34%                20%           22%    6%
+           Canada∕
+      United States
+
+
+
+More than half of respondents are at least somewhat interested in news about            Source: Earnscliffe, 2024
+UAPs outside Canada.
+ Chart 10: How likely would you be to use a mobile phone application to
+ report information about or help identify UAPs?
+      Use a mobile                                                                          Very likely
+  phone application                                                                         Somewhat likely
+                         14%       29%            21%             29%          7%
+      to report info
+                                                                                            Not very likely
+       about UAPs
+                                                                                            Not at all likely
+                                                                                            Don't know∕
+       Use a mobile
+                                                                                            No response
+  phone application
+                         17%      34%            20%              22%          6%
+     to help identify
+               UAPs
+
+
+
+40% of respondents are likely to use a mobile phone application                          Source: Earnscliffe, 2024
+to document UAPs.
+
+
+
+
+3. UAP Sightings and Reporting
+ Chart 11: Over the course of your life, have you ever seen an object or phenomenon in the
+ sky that you could not identify? If so, when did this occur?
+
+
+                                        DK∕NR
+                                                             Within the last
+                                         5%                    year 11%
+
+                                                             2-5 years ago
+                                                                  21%
+
+                         No               Yes
+                                                             6-10 years ago
+                        68%               27%
+                                                                  22%
+
+                                                               More than
+                                                              10 years ago
+                                                                  43%
+                                                               DK∕NR 3%
+
+
+
+
+Over 1 in 4 respondents (27%) claim to have had a personal                     DK∕NR = Don't know∕No response
+experience with a UAP over the course of their life.                                  Source: Earnscliffe, 2024
+Chart 12: A) Did you report or attempt to report your observations?
+B) To whom did you formally report your observations?
+  A                                                   B
+                                                       A non-governmental organization                                        45%
+
+                                                    The police∕law enforcement∕military                   23%
+
+                                                                              The media             18%
+       No                          Yes
+      91%                          9%             An educational or research institution          15%
+
+                                                                  The federal government          13%
+
+                                                      A provincial∕territorial government         13%
+
+                                                              Don't Know∕No Response        4%
+
+
+
+
+Among the respondents who have seen a UAP, only 1 in 10 reported                                    Source: Earnscliffe, 2024
+or tried to report their experience.
+
+Chart 13: Who would you contact today if you wanted to report a UAP sighting?
+
+
+                               Don't Know∕No Response                                                   38%
+
+       The police∕law enforcement or military authorities                                   28%
+
+                                               The media                           17%
+
+                   An educational or research institution                    13%
+
+                                 The federal government                      13%
+
+                      A provincial∕territorial government                  11%
+
+                       A non-governmental organization                6%
+
+                                         Nothing ∕ nobody       2%
+
+                                          Family ∕ friends    1%
+
+                                            Social media     0%
+
+                                                   Other      1%                                         Source: Earnscliffe, 2024
+
+Nearly 40% of respondents would not know who to contact to report a UAP sighting.
+ Chart 14: To the best of your knowledge, are there any organizations or groups
+ speciﬁcally investigating UAPs (or UFOs) in Canada?
+                                 Yes
+                                 2%
+
+              No
+             20%
+
+                                                Half (50%) of respondents say
+                                 Yes, but       there is an organization or group
+                                  I don’t
+                                                speciﬁcally investigating UAPs
+                                   know
+                                    the         in Canada, but most can’t name
+                                  name          that organization.
+                                    48%
+         DK∕NR
+          30%                                                         DK∕NR = Don't know∕No response
+                                                                             Source: Earnscliffe, 2024
+
+
+
+
+4. Role of the Federal Government
+ Chart 15: Do you think reports of UAP (UFO) sightings are something that the
+ Government of Canada needs to do anything about?
+
+
+                 DK∕NR
+                  22%
+
+
+                                                Half of respondents feel that the
+                                       Yes      Government of Canada should do
+                                       49%      something about UAP sightings.
+
+
+              No
+             29%                                                      DK∕NR = Don't know∕No response
+                                                                             Source: Earnscliffe, 2024
+Chart 16: How important is it, if at all, that the Government of
+Canada do each of the following?
+          Establish a
+   service∕agency to                                                                 Very important
+   whom Canadians       19%          36%                21%          17%   8%        Somewhat important
+        could report
+   sightings of UAPs                                                                 Not very important
+
+   Make information                                                                  Not at all important
+         on reported                                                                 Don't Know∕
+                              33%                38%               14%   9% 6%
+   sightings publicly                                                                No Response
+           available
+
+
+
+The majority (55%) of respondents feel it is important that a service∕agency be        Source: Earnscliffe, 2024
+established to whom Canadians could report UAP sightings, and 71% would
+like the Government to make information about sightings publicly available.
+
+
+
+Chart 17: How strongly do you agree or disagree with each of the
+following statements?
+   The Government                                                                 Strongly agree
+   of Canada needs
+       to take UAPs     17%         32%                25%         8% 9%   9%     Somewhat agree
+           seriously
+                                                                                  Neither agree nor disagree
+
+    The Government                                                                Somewhat disagree
+  of Canada should                                                                Strongly disagree
+  inform Canadians        27%              33%               20%     6% 6% 7%
+         about UAPs                                                               Don't Know∕
+                                                                                  No Response
+
+
+About half (49%) of respondents agree that the Government of Canada                    Source: Earnscliffe, 2024
+needs to take UAPs seriously and 60% agree that the Government
+should keep Canadians informed.
+Chart 18: How important is it, if at all, that the Government of Canada
+support citizen science initiatives on UAPs?
+
+                                                                            Very important
+
+                                                                            Somewhat important
+    19%                 39%                 19%        13%    9%            Not very important
+
+                                                                            Not at all important
+
+                                                                            Don't Know∕
+                                                                            No Response
+
+
+Nearly 60% of respondents say that it is important for the                    Source: Earnscliffe, 2024
+Government of Canada to support citizen science initiatives on UAPs.
+
+
+
+
+Chart 19: How strongly would you support or oppose the Government of Canada
+dedicating public funds to transparently investigate sightings reported by Canadians?
+
+                                                                       Strongly support
+
+                                                                       Somewhat support
+    10%                39%                 23%        17%    11%
+                                                                       Somewhat oppose
+
+                                                                       Strongly oppose
+
+                                                                       Don't Know∕No Response
+
+About half of respondents (49%) would support the Government                  Source: Earnscliffe, 2024
+of Canada dedicating public funds to investigate UAP sightings.
+
+
+
+
+  REPORT OF THE SKY CANADA PROJECT
+Additional Sources Consulted
+Bronner, Gérald. (2015). “Why Do Conspiracy Theories Thrive? The Example of          Lits, Grégoire, Louise-Amélie Cougnon, Alexandre Heeren, Bernard Hanseeuw,
+Charlie Hebdo.” Diogène, No. 249–250, pp. 9–20.                                      & Nathan Gurnet. (2020). “Analysis of the COVID-19 ‘Infodemic’ in Francophone
+                                                                                     Belgium”. 57 pages.
+CBC News. (June 7, 2023). “Canada Attends First-of-Its-Kind UFO Briefing at
+the Pentagon”. Available at https://www.cbc.ca/news/world/five-eyes-ufo-brief-       National Aeronautics and Space Administration. (September 2023). “Unidentified
+ing-1.6868907.                                                                       Anomalous Phenomena, Independent Study Team Report”. Available at https://
+                                                                                     science.nasa.gov/wp-content/uploads/2023/09/uap-independent-study-team-fi-
+CBC News. (June 25, 2023). “Manitoba MP Suggests Canada, Allies Aware of             nal-report.pdf.
+‘Recovered UAP’ or UFO Materials in Note to Defence Minister”. Available at
+https://www.cbc.ca/news/canada/manitoba/ufo-uap-manitoba-larry-maguire-de-           National Archives of Australia. (February 28, 2018) “Flying saucers—fact or fic-
+fence-minister-1.6885580.                                                            tion?”. Available at https://www.naa.gov.au/blog/flying-saucers-fact-or-fiction.
+Centro Italiano Studi Ufologici. (2024). Available at www.cisu.org.                  National Library of New Zealand. (2010). “Unidentified flying objects (UFO) files :
+                                                                                     copies release to the public”, New Zealand Defence Force. Available at https://nat-
+CTVNews.ca. (March 1, 2023). “Document Reveals First Known Canadian UFO              lib.govt.nz/records/22979464.
+Study in Nearly 30 Years Now Underway”. Available at https://www.ctvnews.ca/
+sci-tech/article/document-reveals-first-known-canadian-ufo-study-in-nearly-30-       Pugliese, David. (April 16, 2024). “Canada Joins Secret Pentagon Meeting on UFOs:
+years-now-underway/.                                                                 DND Can’t Figure Out Who Attended.” Ottawa Citizen . Available at https://ottawac-
+                                                                                     itizen.com/news/national/defence-watch/e-t-call-ndhq-canadian-forces-loses-in-
+CTVNews.ca. (June 6, 2023). “Canadian Military joined recent U.S. forum on UFOs;     terest-in-ufos.
+Pentagon trying to Identify ‘Metallic’ Orbs”. Available at https://www.ctvnews.ca/
+sci-tech/article/canadian-military-joined-recent-us-forum-on-ufos-pentagon-try-      Reichstadt, Rudy. (2019). “L’opium des imbéciles”. Grasset, Paris. 185 pages.
+ing-to-identify-metallic-orbs/.
+                                                                                     Society for the Study of the UFO Phenomenon eV. (2024). Available at www.ufo-for-
+CTVNews.ca. (June 16, 2023). “Here’s How the Canadian Government and Military        schung.de.
+Handle UFO Reports”. Available at https://www.ctvnews.ca/sci-tech/article/her-
+es-how-the-canadian-government-and-military-handle-ufo-reports/.                     Stepney, Eva Surawy, and Clare Lally (April 2024). “Disinformation: Sources, Spread
+                                                                                     and Impact”. UK Parliament POSTnote 719. Available at https://researchbriefings.
+CTVNews.ca. (January 6, 2024). “What We Expect to Learn About UFOs in 2024”.         files.parliament.uk/documents/POST-PN-0719/POST-PN-0719.pdf.
+Available at https://www.ctvnews.ca/sci-tech/article/what-we-expect-to-learn-
+about-ufos-in-2024/.                                                                 Ufology Research. (2024). “The 2023 Canadian UFO Survey”. Manitoba. Available at
+                                                                                     https://www.canadianuforeport.com/survey/essay/Surveyessay2023.pdf.
+CTVNews.ca. (March 1, 2024). “Canadian Government’s Top Science Advisor
+Provides Update on Official UFO Study,”. Available at https://www.ctvnews.ca/sci-    United Kingdom Government. (2024). “Unidentified Flying Object (UFO) reports
+tech/article/canadian-governments-top-science-advisor-provides-update-on-of-         1997 to 2009”. Available at https://www.gov.uk/government/publications/ufo-re-
+ficial-ufo-study/#:~:text=Top%20science%20and%20technology%20head-                   ports-in-the-uk.
+lines%2C%20all%20in%20one%20place&text=In%20March%202023%2C%20                       University of Ottawa. “Arthur Bray Fonds - Archives and Special Collections (30-
+CTVNews.ca,%2C%22%20Nemer%20said%20on%20Tuesday.                                     003).” University of Ottawa Archives, Ottawa, ON.
+Frank, Adam. (2023). “The Little Book of Aliens”, New York, NY. Harper Collins       Wagner-Egger, Pascal, & Adrian Bangerter. (2007). “The Truth is Out There: Cor-
+Publishers.                                                                          relates of Belief in Conspiracy Theories.” International Review of Social Psychology,
+Leger. (November 28, 2023) “Belief in Conspiracy Theories: Survey of Canadians       20(4), 31–61.
+and Americans”. Available at https://leger360.com/wp-content/uploads/2024/02/
+Leger_Conspiracy_Theories_Canada-US.pdf.
+
+
+
+
+                                                                                                                                                              # 55
+Endnotes
+1   Earnscliffe Strategy Group. (October 2024). “POR Study on Sky Canada: A Nationwide Survey for the Office of the Chief Science Advisor of Canada” (OCSA): Research
+    Report”, Government of Canada Publications, ISBN: Iu4-443/2024E-PDF978-0-660-74710-1.
+2   CTVNews.ca. (November 15, 2024). “Police in Canada collected wreckage after object shot down over Lake Huron”. Available at https://www.ctvnews.ca/canada/police-in-
+    canada-collected-wreckage-after-object-shot-down-over-lake-huron-1.7110602.
+3   Ipsos. (July 19, 2021). “The Truth is Out There: Factum”. Toronto. Available at https://www.ipsos.com/en-ca/news-polls/Truth-Out-There-Two-Three-Canadians-Believe-
+    Alien-Life.
+4   Groupe d’Etude et d’Information sur les Phénomènes Aérospatiaux Non identifiés. Available at https://www.cnes-geipan.fr/en.
+5   Enigma Labs. (2024). “The #1 Destination for UFO Sighting Alerts”. Available at https://enigmalabs.io/.
+6   Harvard University. (2024). “The Galileo Project”. Available at https://projects.iq.harvard.edu/galileo/home.
+7   Yingling, Marissa E., and Charlton W. Yingling. (2024). “Academic freedom and the unknown: credibility, criticism, and inquiry among the professoriate”. Humanities and
+    Social Sciences Communications, 11, Article number: 987. Available at https://doi.org/10.1057/s41599-024-03351-4.
+8   House of Commons, Standing Committee on Science and Research. (2023). “The role and contributions of citizen scientists”. (44th Parliament, 1st Session, Sixth Report).
+    Ottawa: House of Commons. Available at https://www.ourcommons.ca/DocumentViewer/en/44-1/SRSR/report-6/.
+9   Eberl, Jakob-Moritz, Huber, Robert A., & Greussing, Esther. (2021). “From populism to the ‘plandemic’: Why populists believe in COVID-19 conspiracies”. Journal of Elec-
+    tions, Public Opinion and Parties, 31:sup1, 272-284. DOI: 10.1080/17457289.2021.1924730. Available at https://doi.org/10.1080/17457289.2021.1924730.
+10 Van Prooijen, Jan-Willem, & Karen M. Douglas. (2017). “Conspiracy Theories as Part of History: The Role of Societal Crisis Situations.” Memory Studies, 10(3), 323–333. DOI:
+    10.1177/1750698017701615.
+11 Goreis, Andreas, & Martin Voracek. (2019). “A Systematic Review and Meta-Analysis of Psychological Research on Conspiracy Beliefs: Field Characteristics, Measure-
+    ment Instruments, and Associations with Personality Traits.” Frontiers in Psychology, 10, Article 205, 13 pages. Available at https://www.frontiersin.org/articles/10.3389/
+    fpsyg.2019.00205/full.
+12 Eberl, Jakob-Moritz, Robert A. Huber, & Esther Greussing. (2021). “From Populism to the ‘Plandemic’: Why Populists Believe in COVID-19 Conspiracies”. Journal of Elec-
+   tions, Public Opinion and Parties, 31(Suppl. 1), 272–284. DOI: 10.1080/17457289.2021.1924730;
+13 Krekó, Péter. (2020). “Countering Conspiracy Theories and Misinformation”. In Butter, Michael, & Knight, Peter (Eds.), Routledge Handbook of Conspiracy Theories, pp. 242-
+   256. London: Routledge.
+14 Krekó, Péter. (2020). “Countering Conspiracy Theories and Misinformation”. In Butter, Michael, & Knight, Peter (Eds.), Routledge Handbook of Conspiracy Theories, pp. 242-
+   256. London: Routledge.
+15 Overgaard, Christian Staal Bruun, Dudo, Anthony, Lease, Matthew, Masullo, Gina M., Stroud, Natalie Jomini, Stroud, Scott R., & Woolley, Samuel. (2021). “Building Con-
+   nective Democracy: Interdisciplinary Solutions to the Problem of Polarisation”. In Tumber, Howard, & Waisbord, Silvio (Eds.), The Routledge Companion to Media Misrepre-
+   sentation and Populism, pp. 569-578. London: Routledge.
+16 McIntyre, Lee. (2021). “How to Talk with a Science Denier: Conversations with Flat Earthers, Climate Deniers, and Others Who Defy Reason”. Cambridge/London: The MIT
+   Press.
+17 Eberl, Jakob-Moritz, Robert A. Huber, & Esther Greussing. (2021). “From Populism to the ‘Plandemic’: Why Populists Believe in COVID-19 Conspiracies.” Journal of Elec-
+   tions, Public Opinion and Parties, 31(Suppl. 1), 272–284. DOI: 10.1080/17457289.2021.1924730.
+
+
+
+
+     REPORT OF THE SKY CANADA PROJECT
+18 Hayes, Matthew. (2022). “Search for the Unknown: Canada’s UFO Files and the Rise of Conspiracy Theory”. McGill-Queen’s Press, 2022.
+19 Rutkowski, Chris. (March, 2023). “Canadian UFO Survey”, Ufology Research. Available at http://canadianuforeport.com/index.html.
+20 CTVNews.ca. (May 6, 2022). “Canada’s defence minister was briefed on UFOs ahead of U.S. intel report”. Available at https://www.ctvnews.ca/politics/article/canadian-
+   defence-minister-was-briefed-on-ufos-ahead-of-us-intel-report/.
+21 Hayes, Matthew. (2022). “Search for the Unknown—Canada’s UFO Files and the Rise of Conspiracy Theory”, McGill-Queen’s University Press.
+22 “Project Second Storey Sighting Report,” n.d. Reprint of Project Magnet Report file. X30-3, box 1126.1. University of Ottawa Archives, Ottawa, ON.
+23 Transport Canada. “Civil Aviation Daily Occurrence Reporting System (CADORS)”. Available at https://wwwapps.tc.gc.ca/saf-sec-sur/2/cadors-screaq/m.aspx?lang=eng.
+24 Transport Canada, The Civil Aviation Daily Occurrence Reporting System (CADORS). Available at https://tc.canada.ca/en/aviation/publications/aviation-safety-letter/
+   issue-2-2021/civil-aviation-daily-occurrence-reporting-system-cadors.
+25 CTVNews.ca. (January 26, 2024). “Multiple flights reported ‘strange lights’ in the sky over Quebec during one day in 2023”. Available at https://www.ctvnews.ca/sci-tech/
+   article/multiple-flights-reported-strange-lights-in-the-sky-over-quebec-during-one-day-in-2023/.
+26 Based on summary results drawn from Transport Canada’s Civil Aviation Daily Occurrence Reporting System (CADORS) database from January 1, 2023, to December 31,
+   2023.
+27 Canadian Coast Guard, Notice to Mariners. Available at https://publications.gc.ca/collections/collection_2022/mpo-dfo/Fs151-4-2022-eng.pdf.
+28 Archived webpages from Library and Archives Canada, Canada’s UFOs: The Search for the Unknown. Available at https://webarchiveweb.wayback.bac-lac.canada.ca/
+   web/20060119031333/https://www.collectionscanada.ca/ufo/index-e.html.
+29 The Department of Defense. (April 27, 2020). “Statement by the Department of Defense on the Release of Historical Navy Videos”, Available at https://www.defense.gov/
+   News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/.
+30 All-domain Anomaly Resolution Office (AARO). The Department of Defense. AARO Home page. Available at https://www.aaro.mil/.
+31 All-domain Anomaly Resolution Office (AARO). (February 2024). “Report on the Historical Record of U.S. Government Involvement with Unidentified Anomalous Phenom-
+   ena (UAP) Volume I”. The Department of Defense. Available at https://www.aaro.mil/Portals/136/PDFs/AARO_Historical_Record_Report_Vol_1_2024.pdf.
+32 Office of the Director of National Intelligence. (November 14, 2024). “2024 Consolidated Annual Report on Unidentified Anomalous Phenomena”. Available at https://
+   www.dni.gov/index.php/newsroom/reports-publications/reports-publications-2024/4020-uap-2024.
+33 National Aeronautics and Space Administration (NASA). (September 14, 2023). “UPDATE: NASA Shares UAP Independent Study Report; Names Director”. Available at
+   https://www.nasa.gov/news-release/update-nasa-shares-uap-independent-study-report-names-director/.
+34 The White House. (December 13, 2023). “Press Briefing by Press Secretary Karine Jean-Pierre and National Security Council Coordinator for Strategic Com-
+   munications John Kirby”. Available at https://bidenwhitehouse.archives.gov/briefing-room/press-briefings/2023/12/13/press-briefing-by-press-secretary-kar-
+   ine-jean-pierre-and-nsc-coordinator-for-strategic-communications-john-kirby-33/.
+35 H.R.6967 - 118th Congress (2023-2024). (January 19, 2024). “Safe Airspace for Americans Act”. Congress.gov | Library of Congress. Available at https://www.congress.
+   gov/bill/118th-congress/house-bill/6967.
+36 Osborne, Margaret. (September 14, 2023). “Alleged Alien Corpses Displayed to Mexican Congress Did Not Convince Scientists”. Smithsonian Magazine. Available at
+   https://www.smithsonianmag.com/smart-news/alleged-aliens-corpses-displayed-to-mexican-congress-did-not-convince-scientists-180982900/.
+37 Trela, Nate. (September 20, 2023). “No, Mexico’s Congress did not declare that aliens are real: Fact check”. USA Today. Available at https://www.usatoday.com/story/
+   news/factcheck/2023/09/20/mexican-congress-shown-alien-bodies-still-studying-uap-fact-check/70869481007/.
+
+
+
+
+                                                                                                                                                                  # 57
+38 Sección de estudios de fenómenos aéreos anómalos (SEFAA). Available at https://sefaa.dgac.gob.cl/.
+39 Sección de estudios de fenómenos aéreos anómalos (SEFAA). Available at https://sefaa.dgac.gob.cl/category/casos-resueltos/.
+40 IFOP Group. (2023).“Étude sur les croyances irrationnelles et les superstitions aux États-Unis et en France”. Available at https://www.ifop.com/publication/etude-sur-les-
+   croyances-irrationnelles-et-les-superstitions-aux-etats-unis-et-en-france/.
+41 Gesellschaft zur Erforschung des UFO-Phänomens e.V. Available at www.ufo-forschung.de/.
+42 Gesellschaft zur Erforschung des UFO-Phänomens e.V. (2024). “UFO|UAP Case Investigations Annual Report 2024”. GEP-UFO-UAP-2024.pdf. Available at: https://www.
+   ufo-forschung.de/downloads.
+43 Centro Ufologico Nazionale. Available at centroufologiconazionale.eu.
+44 EuroUFO The Virtual Community of Scientifically Oriented European UFO Researchers. Available at https://www.euroufo.net/.
+45 European Commission. Aviation Reporting Portal. Available at https://aviationreporting.eu/.
+46 European Parliament. Available at https://www.europarl.europa.eu/doceo/document/E-9-2024-000318-ASW_EN.html.
+47 New Space Economy, “Unidentified Aerial Phenomena: The Australian Government’s Perspective”. Available at https://newspaceeconomy.ca/2024/04/10/unidentified-ae-
+   rial-phenomena-the-australian-governments-perspective/#:~:text=From%201947%20to%201996%2C%20the,recording%20and%20investigation%20of%20UAP.
+48 British Broadcasting Corporation. (December 22, 2010). “New Zealand releases UFO government files”. Available at https://www.bbc.com/news/world-asia-pacif-
+   ic-12057314.
+49 New Zealand Archives. Available at https://collections.archives.govt.nz/en/web/arena/home#/.
+50 Civil Aviation Authority of New Zealand. “Report an aviation related concern”. Available at https://www.aviation.govt.nz/about-us/contact-us/report-an-aviation-safe-
+   ty-concern/.
+51 Ufocus NZ. Available at https://ufocusnz.org.nz/.
+52 Japan Times. (September 14, 2020). “Japanese Defense Ministry unveils protocol for encountering UFOs”. Available at https://www.japantimes.co.jp/news/2020/09/14/
+   national/japan-defense-ministry-ufo/.
+53 Independent. (February 17, 2023). “Japanese military announces new policy to shoot down all UFOs including balloons and drones”. Available at https://www.indepen-
+   dent.co.uk/asia/japan/japan-drones-balloons-china-ufo-b2284196.html.
+54 The Japan News. (May 29, 2024). “Japan Lawmakers to Create Group for Govt Probes into UFOs”. Available at https://japannews.yomiuri.co.jp/politics/politics-govern-
+   ment/20240529-188959/.
+55 Enigma Labs. (2023, May 2). “China’s UAP Research Associations”. Enigma Labs. https://enigmalabs.io/library/30848c73-c9f2-447f-b09a-340b5b5f725c.
+56 The World of Chinese. (2022, June 28). “Close encounters: Inside the curious world of China’s alien hunters”. Available at https://www.theworldofchinese.com/2022/06/
+   close-encounters-inside-the-curious-world-of-chinas-alien-hunters/.
+57 The World of Chinese. (2022, June 28). “Close encounters: Inside the curious world of China’s alien hunters”. Available at https://www.theworldofchinese.com/2022/06/
+   close-encounters-inside-the-curious-world-of-chinas-alien-hunters/.
+58 The Byte. (June 5, 2021).Futurism. (2021, May 6). “China’s military is tracking UFOs”. Available at https://futurism.com/the-byte/chinas-military-tracking-ufos.
+
+
+
+
+     REPORT OF THE SKY CANADA PROJECT
+# 59
+

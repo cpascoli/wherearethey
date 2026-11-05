@@ -13,6 +13,7 @@ moments:
     text: "Peter Davenport, director of the National UFO Reporting Center since 1994, says that over 19 years he has gathered “approximately 86 000 written reports”."
   - t: "14:13"
     text: "Davenport cites the November 2006 O'Hare case: “a disc estimated to be some 30 to 40 feet” across hovering above gate C17 for perhaps ten minutes, then punching a hole through the overcast."
+    refs: [ inc-ohare-2006 ]
   - t: "23:53"
     text: "Investigative writer Peter Robbins introduces himself as co-author of “left at east gate”, Larry Warren's account of Rendlesham, a bestseller in Britain. Robbins later disowned Warren's account."
     refs: [ book-left-at-east-gate, larry-warren, inc-rendlesham-1980 ]

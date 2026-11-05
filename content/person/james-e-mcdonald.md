@@ -12,6 +12,7 @@ facts:
     source: library/docs/doc-transcript-1968-07-29.pdf
 rel:
   - [ testified at, h-1968-07-29 ]
+  - [ investigated, inc-rb47-1957, "Klass credits him with “locating the original reports in the UFO archives at Maxwell AF Base”" ]
 ---
 
 James E. McDonald was a senior physicist at the Institute of Atmospheric Physics of the University of Arizona who argued in the 1960s that UFO reports deserved serious scientific study. He was one of the six scientists who addressed the House Committee on Science and Astronautics' symposium on UFOs on 29 July 1968.

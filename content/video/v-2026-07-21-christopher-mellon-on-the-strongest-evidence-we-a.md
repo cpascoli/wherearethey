@@ -27,6 +27,7 @@ moments:
   - t: "3:10"
     text: "He also cites a case in which a Navy electronic-warfare aircraft tracked an object for hours as it circled and emitted radar signals (the captions call it Socorro; the description fits the 1957 RB-47 case)."
     speaker: chris-mellon
+    refs: [ inc-rb47-1957 ]
   - t: "3:56"
     text: "Mellon says he refers to public information, but some powerful data that has not been made public is hard to explain conventionally."
     speaker: chris-mellon
