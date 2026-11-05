@@ -1480,7 +1480,9 @@
     h.push(`<div class="p-kicker"><span class="badge type" style="background:${t.color}">${t.label}</span>${e.cred ? `<span class="badge ${e.cred}" title="${esc(CRED[e.cred].hint)}">${CRED[e.cred].label}</span>` : ''}${e.outcome && e.outcome !== 'open' ? `<span class="badge outcome-${e.outcome}" title="${esc(OUTCOME[e.outcome].hint)}">${OUTCOME[e.outcome].label}</span>` : ''}${e.type === 'claim' ? `<span class="badge claim-${e.status}" title="${esc(CLAIM_STATUS[e.status].hint)}">${CLAIM_STATUS[e.status].label}</span>` : ''}</div>`);
     if (e.outcome && e.outcome !== 'open' && e.outcomeNote) h.push(`<div class="p-outcome outcome-${e.outcome}"><b>${OUTCOME[e.outcome].label}.</b> ${esc(e.outcomeNote)}${e.outcomeSource ? ` <span class="src">${e.outcomeSource.id ? chip(e.outcomeSource.id) : e.outcomeSource.url ? `<a href="${esc(e.outcomeSource.url)}" target="_blank" rel="noopener">source ↗</a>` : ''}</span>` : ''}</div>`);
     // books and films with a cover: the title block on the left, the cover beside it (stacked on phones)
-    const head = [], hp = x => (e.cover ? head : h).push(x);
+    // people with a portrait: name and credentials on the left, the photo on the right (on phones the photo below)
+    const portrait = e.type === 'person' && e.portrait;
+    const head = [], hp = x => (e.cover || portrait ? head : h).push(x);
     hp(`<h2 class="p-title">${esc(e.name)}</h2>`);
     if (e.type === 'claim' && e.statusNote) hp(`<div class="p-outcome claim-${e.status}"><b>${CLAIM_STATUS[e.status].label}.</b> ${esc(e.statusNote)}${e.statusSource ? ` <span class="src">${e.statusSource.id ? (byId.get(e.statusSource.id)?.type === 'video' ? `<button class="ts" data-play="${e.statusSource.id}@${e.statusSource.t || 0}">▶ ${fmtT(e.statusSource.t || 0)}</button> ` : '') + chip(e.statusSource.id) : e.statusSource.url ? `<a href="${esc(e.statusSource.url)}" target="_blank" rel="noopener">source ↗</a>` : ''}</span>` : ''}</div>`);
     // credentials right under the name: on this archive they are the headline fact (they decide the source badge)
@@ -1489,7 +1491,8 @@
     if (e.aka.length) hp(`<div class="p-aka">Also: ${e.aka.map(esc).join(' · ')}</div>`);
     if (e.type === 'film' || e.type === 'book') hp(`<div class="p-meta">${esc([e.credits, shelfMeta(e), e.isbn ? `ISBN ${e.isbn}` : ''].filter(Boolean).join(' · '))}</div>`);
     if (e.cover) h.push(`<div class="p-head has-cover"><div class="p-head-main">${head.join('')}</div><img class="p-cover" src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" loading="lazy"></div>`);
-    if (e.image) h.push(`<figure class="p-image"><img src="${esc(e.image)}" alt="${esc(e.imageCaption || e.name)}" loading="lazy">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>`);
+    if (portrait) h.push(`<div class="p-head has-portrait"><div class="p-head-main">${head.join('')}</div><figure class="p-portrait"><img src="${esc(e.portrait)}" alt="${esc(e.imageCaption || e.name)}">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure></div>`);
+    if (e.image && !portrait) h.push(`<figure class="p-image"><img src="${esc(e.image)}" alt="${esc(e.imageCaption || e.name)}" loading="lazy">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>`);
     const meta = [e.type !== 'book' && e.type !== 'film' && fmtRange(e) && (e.type === 'video' ? 'Published ' : '') + fmtRange(e), e.place?.name, // books and films: the year is already in the credits line
       e.type === 'video' && [e.channel, fmtDur(e.duration)].filter(Boolean).join(' · ')].filter(Boolean);
     if (meta.length) h.push(`<div class="p-meta">${meta.map(m => `<span>${esc(m)}</span>`).join('')}</div>`);

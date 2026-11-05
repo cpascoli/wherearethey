@@ -760,7 +760,16 @@ body.resizing iframe { pointer-events: none; }
 /* reading view: the header uses the body's columns (.rd-grid), the cover lined up with the right-hand column's content */
 #panel-body.reading .p-head.has-cover { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 0 48px; }
 #panel-body.reading .p-head.has-cover .p-cover { justify-self: start; max-width: 200px; margin-left: 33px; }
+/* people with a portrait: name and credentials on the left, the photo on the right, top-aligned */
+.p-head.has-portrait { display: grid; grid-template-columns: minmax(0, 1fr) minmax(96px, 150px); gap: 18px; align-items: start; margin-bottom: 6px; }
+.p-portrait { margin: 6px 0 0; justify-self: end; width: 100%; }
+.p-portrait img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 4px; background: var(--panel-2); }
+.p-portrait figcaption { font-size: 11px; color: var(--muted); margin-top: 5px; line-height: 1.35; }
+#panel-body.reading .p-head.has-portrait { grid-template-columns: minmax(0, 1fr) 240px; gap: 0 40px; margin-bottom: 10px; }
+#panel-body.reading .p-head.has-portrait .p-title { margin-top: 2px; }
 @media (max-width: 600px) { /* phones: title first, the cover centred below it */
+  .p-head.has-portrait { grid-template-columns: 1fr; gap: 4px; }
+  .p-head.has-portrait .p-portrait { justify-self: center; width: 100%; max-width: 260px; margin: 8px 0 12px; }
   .p-head.has-cover { grid-template-columns: 1fr; gap: 4px; }
   .p-head.has-cover .p-cover { justify-self: center; max-width: 180px; margin: 8px 0 14px; }
 }
