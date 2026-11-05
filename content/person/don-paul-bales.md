@@ -8,6 +8,7 @@ credentials:
     role: "Former full-time police officer; 25 years combined military and law-enforcement service (by his account)"
 tags: [military]
 rel:
+  - [ member of, skywatcher, "Skywatcher's site lists him among its people, and he speaks of its public work" ]
   - [ vouches for, jake-barber, "He says he has known Barber since 1996, served with him, and confirms Barber's account of being diverted into a covert intelligence role" ]
   - [ worked with, jake-barber, "He says he worked on Barber's team as a subcontractor, moving and protecting people and material and dealing with security officials" ]
 facts:

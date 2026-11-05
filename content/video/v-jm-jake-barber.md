@@ -64,11 +64,11 @@ moments:
   - t: "47:53"
     text: "Barber says that since leaving the program his team has worked with AARO: they summoned the egg in August in daylight, tracked it at “10,000 mph”, and showed videos and a report to AARO's new director. UAP come in “more than eight” classes."
     speaker: jake-barber
-    refs: [ aaro, nhi ]
+    refs: [ skywatcher, aaro, nhi ]
   - t: "53:08"
     text: "Barber says Garry Nolan is on his new team, Skywatcher Technologies, and was in the desert when the egg was summoned, but “he didn't see it with his own eyes because no one did. It was moving too fast”; Nolan saw the data afterwards."
     speaker: jake-barber
-    refs: [ garry-nolan, aaro ]
+    refs: [ skywatcher, garry-nolan, aaro ]
   - t: "59:10"
     claims: [ recovered-non-human-bodies ]
     stance: context
@@ -131,7 +131,7 @@ moments:
   - t: "2:19:13"
     text: "Barber says Skywatcher went to New Jersey in December 2024 to support a DoD–FBI task force: on the first night orange orbs appeared over Picatinny Arsenal for 40–45 minutes at a time, like large battery drones, lights off above 400 feet."
     speaker: jake-barber
-    refs: [ fbi ]
+    refs: [ skywatcher, fbi ]
   - t: "2:56:56"
     claims: [ recovered-non-human-bodies ]
     stance: context

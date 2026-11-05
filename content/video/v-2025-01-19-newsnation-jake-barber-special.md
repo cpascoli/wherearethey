@@ -106,14 +106,15 @@ moments:
   - t: "36:10"
     text: "Barber: his organization, Skywatcher, recruits people from within the program and works “in coordination with government agencies” he will not name yet, funded by venture capital, to produce the sensor data and film the public wants."
     speaker: jake-barber
+    refs: [ skywatcher ]
   - t: "37:37"
     text: "Of a Skywatcher summoning in August 2024, Barber says the psionic asset reported he was “piloting” a craft, then after four or five minutes cried “get me out of here”; overwatch Fred Baker saw a disc, and the egg dropped."
     speaker: jake-barber
-    refs: [ ce-5, remote-viewing ]
+    refs: [ skywatcher, ce-5, remote-viewing ]
   - t: "38:52"
     text: "Nolan, present that night, says what he saw was the person attempting the call in distress at the moment of the “supposed interaction”; something showed up later in the rooftop observer's drawing and video."
     speaker: garry-nolan
-    refs: [ ce-5 ]
+    refs: [ skywatcher, ce-5 ]
   - t: "39:23"
     text: "Showing frames, Barber says the object crossed the sensor's whole 69° field of view in 0.84 seconds, an upright oval he calls “exactly the same thing” as the egg he saw in the program."
     speaker: jake-barber

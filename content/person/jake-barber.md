@@ -76,6 +76,10 @@ facts:
     status: claimed
     by: garry-nolan
     source: v-2025-01-19-newsnation-jake-barber-special@38:52
+  - text: "Ross Coulthart said in August 2026 that he took Barber to Congress, where he sat down with a committee and gave his evidence."
+    status: claimed
+    by: ross-coulthart
+    source: v-2026-08-09-coulthart-qa-skywatcher-went-government@29:27
   - text: "NewsNation said it confirmed that in fall 2024 he met staffers of Senator Marco Rubio."
     status: claimed
     source: v-2025-01-19-newsnation-jake-barber-special@40:43
@@ -83,6 +87,6 @@ facts:
 
 Jake Barber is a former U.S. Air Force airman and helicopter pilot who says he later worked as a contractor for the intelligence community, running helicopter companies that waited on calls from a crash-retrieval program. He went public in a NewsNation special presented by Ross Coulthart on 19 January 2025, and gave a fuller account in an interview with Jesse Michels later that month. He describes two retrievals at a California desert test range: a white “egg” about 20 feet long, and a dark eight-sectioned disc whose load was declared to carry “biologics”. He says he has never seen a non-human body, does not know where the egg went, and has no first-hand knowledge of the operation Michael Herrera described.
 
-He says he approached the Senate Intelligence Committee, went through the Pentagon's prepublication review alongside David Grusch, and now runs Skywatcher, a venture he says has summoned UAP and briefed AARO. He attributes a radiation-like illness to one escort mission. His account is his own testimony; no released official record supports it.
+He says he approached the Senate Intelligence Committee, went through the Pentagon's prepublication review alongside David Grusch, and co-founded Skywatcher, a venture he says has summoned UAP and briefed AARO; it went quiet in 2025. He attributes a radiation-like illness to one escort mission. His account is his own testimony; no released official record supports it.
 
-*Sources: NewsNation special (19 January 2025) · Interview with Jesse Michels (video, January 2025)*
+*Sources: NewsNation special (19 January 2025) · Interview with Jesse Michels (video, January 2025) · Ross Coulthart, Reality Check Q&A (August 2026)*

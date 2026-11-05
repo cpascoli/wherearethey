@@ -44,7 +44,7 @@ moments:
   - t: "23:39"
     text: "Bales: the one sighting he can discuss publicly, from Skywatcher's public work, is one he missed: members of his team saw an object pass directly over his entry control point while he was facing the other way."
     speaker: don-paul-bales
-    refs: [ jake-barber ]
+    refs: [ skywatcher, jake-barber ]
   - t: "24:14"
     text: "Bales on his role for Barber: moving and protecting people and things (he holds a hazmat driving licence), not piloting, and communicating with high-level security officials on Barber's behalf; his law-enforcement background, he says, made him useful."
     speaker: don-paul-bales

@@ -9,6 +9,15 @@ rel:
   - [ authored, book-in-plain-sight ]
   - [ interviewed, david-grusch ]
 facts:
+  - text: "In August 2026 he reported, from confidential sources, that Skywatcher had dissolved and that a covert government operation at White Sands Missile Range now summons and shoots down craft with Skywatcher's methods; he linked the El Paso airspace closure of February 2026 to it."
+    status: claimed
+    basis: relayed
+    source: v-2026-08-09-coulthart-qa-skywatcher-went-government@17:39
+  - text: "He said the fear among his sources is that this operation is compromised by people from the covert legacy program that “has been retrieving and attempting to reverse engineer NHI craft for decades”."
+    status: claimed
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
+    source: v-2026-08-09-coulthart-qa-skywatcher-went-government@22:47
   - text: Australian investigative journalist (born 1962), and NewsNation's senior special investigations correspondent as of 2023. He interviewed David Grusch for NewsNation in June 2023 and openly advocates for UFO disclosure.
     status: claimed
     source: https://en.wikipedia.org/wiki/Ross_Coulthart
