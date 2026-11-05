@@ -1,0 +1,2521 @@
+Zeitschrift für Anomalistik                                                   Band 6 (2006), S. 58-115
+
+
+
+
+         Eine Widerlegung des EMBLA 2002-Berichts zur
+         optischen Luftraumüberwachung in Hessdalen 1
+                                        MATTEO LEONE 2
+
+      Zusammenfassung – Im August 2002 wurde von der Sektion für Physik eines italieni-
+      schen Wissenschaftlerteams unter dem Codenamen EMBLA eine wissenschaftliche
+      Expedition in das Hessdalen-Tal (Norwegen) mit dem Ziel durchgeführt, eine uniden-
+      tifizierte atmosphärische Lichterscheinung zu untersuchen. Dem EMBLA 2002-Bericht
+      zufolge gibt es Belege für ein unbekanntes atmosphärisches Lichtphänomen, das „fähig
+      ist, eine Leuchtleistung von bis zu 100 kW zu erzeugen“. In diesem Aufsatz werden die
+      durch das Wissenschaftlerteam gesammelten photometrischen und spektroskopischen
+      Daten reanalysiert und Gründe für die Zurückweisung der vorgeschlagenen Schlussfol-
+      gerungen dargelegt. Darüber hinaus wird eine Erklärung vorgeschlagen, welche die
+      vorliegenden Belege im Rahmen eines bekannten Phänomens zufriedenstellend ein-
+      ordnen kann. Trotz dieser negativen Befunde legt das in Hessdalen zusammengetrage-
+      ne anekdotische Material nahe, dass klar umrissene, spezifische Studien zu anomalen
+      atmosphärischen Phänomenen unterstützt werden sollten.
+
+      Schlüsselbegriffe: unidentifiziertes atmosphärisches Lichtphänomen – UFO – Hessdalen
+
+
+
+
+1   Anmerkung der Redaktion: Vom 17.-19. August 2007 wird die aktuelle Jahrestagung der Society for
+    Scientific Exploration (SSE) in Rosos nahe dem Hessdalen-Tal in Norwegen stattfinden. Aus diesem
+    Anlass dokumentieren wir hier in deutschsprachiger Übersetzung einen der mittlerweile klassischen
+    Texte zur Kontroverse um die seit 1981 auftretenden anomalen Lichterscheinungen von Hessdalen.
+    Diese erstmals 2003 in italienischer Sprache publizierte Studie von Matteo Leone (in Englisch: Leone
+    2003) blieb ihrerseits nicht unwidersprochen (siehe z.B. Teodorani 2004a, 2004b), und die durch sie
+    ausgelöste Kontroverse ist bis heute im Gang und unabgeschlossen (siehe z.B. Leone 2006; Teodora-
+    ni 2006). Lesern, die nicht nur an der Einschätzung von Leone interessiert sind, sondern sich durch
+    die Hinzuziehung der Veröffentlichungen anderer Autoren ein umfassendes und ausgewogenes Ur-
+    teil bilden möchten, empfehlen wir die Homepages www.itacomm.net/PH/ und www.hessdalen.org,
+    wo zahlreiche Studien zu den Hessdalen-Phänomenen zusammengestellt sind. Der vorliegende Text
+    wurde von Ingbert Jüdt unter Mithilfe von Thorsten Siebenborn aus dem Englischen übersetzt und
+    dabei geringfügig überarbeitet. Wir danken Matteo Leone für die Übersetzungs- und Abdrucker-
+    laubnis.
+2   Dr. Matteo Leone ist Physiker an der Universität Bari in Italien und wissenschaftlicher Berater des
+    Comitato Italiano per il Progetto Hessdalen (CIPH). Seminario di Storia della Scienza, University of
+    Bari, Piazza Umberto I, 1, I-70121 Bari, Italien. E-Mail: matteo.leone@usa.net.
+    Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen                            59
+
+         A rebuttal of the EMBLA 2002 report on the optical survey in Hessdalen
+
+     Abstract – In August 2002 a scientific expedition to the Hessdalen valley (Norway) was
+     carried out by the physics section of an Italian team of scientists, code-named EMBLA.
+     It aimed at investigating an unidentified atmospheric light-phenomenon. According to
+     the EMBLA 2002 report, there was evidence for an unknown atmospheric light phe-
+     nomenon “able to produce a luminous power of up to 100 kW”. In this paper the
+     photometrical and spectroscopical data collected by the team of scientists are reana-
+     lysed and reasons for rejecting the suggested conclusions are presented. Furthermore,
+     an explanation is proposed that satisfactorily explains the evidence in terms of a known
+     phenomenon. In spite of these negative findings, the anecdotal evidence collected in
+     Hessdalen suggests that clearly-defined, specific studies into the field of anomalous ae-
+     rial phenomena should be supported.
+
+     Keywords: unidentified atmospheric light-phenomenon – UFO – Hessdalen
+
+
+                                                  Einleitung
+
+Hessdalen ist ein sich über 12 Kilometer erstreckendes, dünn besiedeltes Tal in Zentralnorwe-
+gen, südöstlich von Trondheim und nahe der schwedischen Grenze (Bygdekatalog 2000;
+Dalsbygda 1992; Haltdalen 1995). Seit November 1981 wurde von den Bewohnern des Tals
+eine Serie nicht identifizierter Leuchterscheinungen berichtet. Den Sichtungsberichten zufol-
+ge wurden schwebende oder sich mit unterschiedlichen Geschwindigkeiten bewegende Lich-
+ter beobachtet.
+
+   „Diese Lichter konnten überall sein. Manchmal wurden sie als knapp über den Hausdächern oder dem Bo-
+   den befindlich gemeldet. Manchmal konnten sie hoch oben in der Luft sein. Meistens wurden sie unterhalb
+   der Spitzen der nahe gelegenen Berge gemeldet. Niemand hatte eine Erklärung für die Lichter.
+   Die Lichter schienen bestimmte, unterschiedliche Formen zu haben. Dies zeigte sich auf den Fotos. Sie konn-
+   ten die Form eines Projektils haben, mit der spitzen Seite nach unten. Sie konnten so rund wie ein Fußball
+   sein. Sie konnten wie ein umgedrehter ‚Weihnachtsbaum’ sein. Die Farben waren meist weiß oder gelblich-
+   weiß. [...] Die Lichter traten mehrmals am Tag auf, aber meistens während der Abend- und Nachtzeit. [...] Im
+   Winter gab es mehr Lichter, im Sommer wurden so gut wie keine Lichter beobachtet. Ein Grund hierfür
+   könnte sein, dass im Sommer in Hessdalen fast die ganze Nacht hindurch Tageslicht herrscht.“ (Strand 1985)
+
+Nachdem sich keine offizielle Behörde um diese unbekannten Lichter zu kümmern schien,
+etablierte im Juni 1983 eine kleine Gruppe aus fünf Mitgliedern unter der Leitung von Leif
+Havik, Odd-Gunnar Roed, Erling Strand, Håken Ekstrand und Jan Fjellander ein „Projekt
+Hessdalen“. Diese Gruppe sicherte sich technische Unterstützung durch die Norwegische
+Organisation für Verteidigungsforschung, die Universitäten von Oslo und die Universität
+Bergen. Das Projekt umfasste drei Stationen mit Beobachtern und ihren Kameras (einige mit
+60                                                 M. Leone
+
+
+Beugungsgittern ausgerüstet), ein Spektrometer, ein Infrarotsichtgerät, einen Seismographen,
+einen Geigerzähler, einen Magnetographen und einen Laser. Die Felduntersuchungen in
+Hessdalen begannen am 21. Januar 1984 und endeten am 26. Februar 1984 (Strand 1985).
+
+     „Lichter, die unterhalb der Gebirgsrücken dokumentiert wurden, müssen ihren Ursprung in der Hessdalen-
+     Region haben, aber Lichter, die oberhalb des Kammes dokumentiert wurden, können ihren Ursprung in
+     großer Distanz haben. Ohne Dreieckspeilung oder andere Informationen ist es unmöglich, die Distanzen
+     der Lichter zu bestimmen. Einige der als Lichter beobachteten Ereignisse wurden jedoch auch durch Radar
+     verfolgt. Dem Augenschein nach implizieren die Radarmessungen Geschwindigkeiten von bis zu 30.000
+     km/h. [...] Während eines viertägigen Zeitraums wurden in zehn Fällen unbekannte Lichter gesichtet, und
+     der Fluxgate-Magnetometer registrierte 21 Pulse, von denen vier mit der Beobachtung von Lichtern zu kor-
+     respondieren scheinen und eine Beziehung zwischen einigen der Lichter und den magnetischen Störungen
+     nahelegen. Die Beugungsgitter auf den Kameras sollten spektroskopische Daten ermitteln: die Spektren
+     scheinen kontinuierlich zu sein und enthalten keine Anhaltspunkte für Emissionslinien oder Absorptionsli-
+     nien“. (Sturrock 1998, 1999).
+
+Das „Projekt Hessdalen“ wurde in den Wintern 1985 und 1986 mit weiteren Felduntersu-
+chungen in dem Gebiet fortgesetzt (Hynek 1985). Die Sichtungsserie endete angeblich im
+Jahre 1986. Obwohl fotografische, spektrografische und Radardaten gesammelt worden wa-
+ren, kam das Projekt Hessdalen zu keiner klaren Antwort, und die Untersucher waren unter-
+schiedlicher Ansicht über die Natur des Phänomens. Nach Roed hatten die Lichter wahr-
+scheinlich eine „komplexe“ natürliche Ursache, obwohl sie „intelligent in ihren Bewegungen
+schienen“. Strand auf der anderen Seite merkte an, „wenn die Lichter natürlichen Ursprungs
+sind, wäre es seltsam, dass sie über einen Zeitraum von fünf Jahren existieren und ausschließ-
+lich in Hessdalen und nirgendwo sonst dokumentiert sind“ (Clark 1998). Weitere Untersu-
+chungen und Feldstudien wurden durch andere private Forscher fortgesetzt. Ein Ergebnis
+dieser Bemühungen war die Erklärung mehrerer Sichtungen als Fehlwahrnehmungen astro-
+nomischer Körper und Flugzeuge (Henke 1987). Andere erwiesen sich als durch Temperatur-
+unterschiede in Luftschichten verursachte Brechung entfernter Lichtquellen (Krogh 1985;
+Devereux 1989). Nichtsdestotrotz blieb ein „Restbestand“ von „nicht identifizierbaren“ Licht-
+beobachtungen übrig (Devereux 1989). Obwohl der zwischen 1982 und 1984 aufgetretene
+Spitzenwert der Aktivität nicht mehr erreicht wurde, wurden auch in den folgenden Jahren
+Sichtungen unidentifizierter Lichter berichtet. Angeblich beläuft sich die Sichtungsrate zur
+Zeit auf etwa 20 Berichte pro Jahr (Sturrock 1998, 1999).
+   Um sich dieser wissenschaftlichen Anomalie zu stellen, wurde auf Initiative von zwei As-
+sistenzprofessoren an der Østfold-Hochschule (Sarpsborg, Norwegen) – Erling Strand (zuvor
+Mitbegründer des Hessdalen-Projektes), Institut für Computerwissenschaften, und Bjørn
+Gitle Hauge, Abteilung für Ingenieurwesen und Naturwissenschaften – in Hessdalen eine
+permanente automatische Messstation (Automatic Measurement Station, AMS) mit dem Ziel
+aufgestellt, die Westseite des Tals dauerhaft durch automatische Videokameras zu überwa-
+chen (Strand 2002).
+    Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen                        61
+
+   Im August 2000 und 2001 führte ein italienisches Forscherteam – Physiker, Ingenieure und
+Techniker vom CNR-IRA (Nationaler Forschungsrat, Institut für Radioastronomie, Bologna,
+Italien) – gemeinsam mit den Østfold-Forschern in Hessdalen unter dem Codenamen
+EMBLA-Projekt eine Messreihe durch, sowohl im optischen als auch im Radiofrequenzbe-
+reich (Hauge 2001; Teodorani et al. 2000, 2001).
+   Da das EMBLA-Team nicht offiziell vom CNR mit dieser Aufgabe beauftragt worden war,
+bedurfte die Mission einer Quelle finanzieller Unterstützung. Das Problem wurde durch ein
+im Juli 2000 eigens zu diesem Zweck eingerichtetes ziviles Spendensammlungs-Komitee ge-
+löst. Dieses Komitee ist ein ehrenamtlich arbeitender Verein unter dem Vorsitz von Renzo
+Cabassi, dessen Ziel die Förderung wissenschaftlicher Studien von Hessdalen-ähnlichen Phä-
+nomenen ist (Cabassi 2001; CIPH 2002). Die beiden EMBLA-Missionen der Jahre 2000 und
+2001 wurden vollständig durch die CIPH unterstützt und finanziert.
+   Die radiooptische EMBLA 2000-Mission resümierend schrieben Teodorani et al. (2000),
+dass „ohne jeden Zweifel unstrukturierte und plasmaähnliche Lichter häufig mit ‚strukturier-
+ten Objekten’ koexistieren“. Die Leiter der optischen EMBLA 2001-Mission gehen darüber
+hinaus so weit zu schließen: „1. die Leuchterscheinungen sind ein thermisches Plasma; 2. die
+Lichtkugeln sind keine Einzelobjekte, sondern setzen sich aus vielen kleinen Bestandteilen
+zusammen, die ab und zu um einen gemeinsamen Schwerpunkt vibrieren; 3. die Lichtkugeln
+sind in der Lage, kleinere Lichtkugeln auszustoßen; 4. die Lichtkugeln verändern fortlaufend
+ihre Form; 5. die Zunahme der Helligkeit der Lichtkugeln ist auf eine Vergrößerung der Sen-
+derfläche zurückzuführen“ (Teodorani et al. 2001). Während eines Seminars in Hessdalen
+legte Teodorani (2002) öffentlich dar, dass „die annähernde Kugelform der Plasmoide auf
+eine Art von Zentralkraft ähnlich der Schwerkraft zurückzuführen ist, welche den Plasmoiden
+die Form eines ‚Mini-Sterns’ verleiht. [...] Anhand der Aufzeichnungen besteht kein Zweifel,
+dass das Phänomen Merkmale von Selbststeuerung bezüglich Energiehaushalt zeigt, und es ist
+bislang nicht möglich, einen Mechanismus natürlichen Ursprungs anzugeben, der fähig ist,
+spontan mit einem so überraschenden Wirkungsgrad zu agieren.“
+   In der Zeit vom 5. bis zum 18. August 2002 wurde in Hessdalen eine dritte EMBLA-
+Mission durchgeführt. Eines ihrer Resultate ist ein Aufsatz der Autoren Massimo Teodorani
+und Gloria Nobili mit dem Titel „EMBLA 2002 – An Optical and Ground Survey in Hessda-
+len“:
+   „Diesmal bestand die wissenschaftliche Expedition aus zwei Gruppen: einer Gruppe von Ingenieuren und
+   einer Gruppe von Physikern. Die Ingenieurgruppe bestand aus Stelio Montebugnoli, Leiter der Radioastro-
+   nomiestation der CNR-IRA in Medicina (Bologne, Italien) und seinem Assistenten, Marco Poloni. Die Phy-
+   sikergruppe [bestand aus Massimo Teodorani und Gloria Nobili und] widmete sich hauptsächlich fünf Tä-
+   tigkeiten: 1. dem Fotografieren der Lichtphänomene, 2. Spektralmessungen der Lichtphänomene, 3. an eini-
+   gen Orten Messungen der Strahlungsverteilung mit Geigerzählern, 4. dem Sammeln von Bodenproben in
+   der vermuteten Nähe der Lichtphänomene, 5. Vorschläge für biophysikalische Untersuchungen“ (Teodora-
+   ni & Nobili 2002).
+62                                      M. Leone
+
+
+   Soweit man es anhand von Teodoranis und Nobilis „Bodenprobenanalyse“ sagen kann,
+gibt es keinen Anlass zu der Annahme, dass die entnommene Probe in irgendeinem Zusam-
+menhang mit den Lichterscheinungen steht, die von den Einwohnern Hessdalens gelegentlich
+gesichtet werden (Teodorani & Nobili 2002, S. 13). Insoweit die vom EMBLA-Physikerteam
+dokumentierten Daten es dem Autor nicht ermöglichen, die angeblich „sehr nahe Sichtung
+einer Lichtkugel“ zu überprüfen, wird das Thema der Bodenuntersuchungen hier nicht erör-
+tert.
+   Anders als frühere Missionen wurde EMBLA 2002 nur teilweise vom CIPH finanziert. Ins-
+besondere die „Physikergruppe“ wurde vom Komitee aufgrund von Meinungsverschiedenhei-
+ten zu methodischen Fragen der in den vorangegangenen Jahren abgeschlossenen Daten-
+sammlung und -analyse nicht finanziell unterstützt (mit Ausnahme der leihweisen Überlas-
+sung eines Übertragungsgitters).
+   Allerdings erhielt das EMBLA-Ingenieurteam (unter Leitung von Stelio Montebugnoli,
+dem Direktor und führenden Technologen des CNR) eine Zuwendung des italienischen Ko-
+mitees: die Feldmessungen mittels eines Pulsradars niedriger Leistung (Montebugnoli et al.
+2002) und die Erfahrung des Ingenieurteams verdienten diese Unterstützung.
+   Im August 2002 wurde der Verfasser dieses Aufsatzes – was Teodorani & Nobili (2002)
+nicht klarstellen – vom CIPH beauftragt, Sichtungsberichte der Talbewohner zu sammeln
+und die Methodik der in Hessdalen durchgeführten Datensammlung zu evaluieren. Zur sel-
+ben Zeit wurde Flavio Gori (NASA Inspire Project) mit der Aufzeichnung und Auswertung
+von Radiosignalen in der VLF-Region mit dem Ziel beauftragt, mögliche Zusammenhänge
+zwischen Leuchtphänomenen und Radioemissionen zu studieren. Gori und der Verfasser
+dieses Aufsatzes wurden vom CIPH bei der Erfüllung dieser Zielsetzungen unterstützt und
+finanziert. Die Felduntersuchungen des CIPH wurden am 1. August 2002 aufgenommen und
+endeten am 8. August 2002.
+
+                         Argumente für die Hessdalen-Lichter
+
+Die These von unidentifizierten Luftphänomenen im Hessdalen-Tal beruht auf verschiedenen
+Arten von Belegen wie Aussagen von Augenzeugen, Fotos und Videos sowie nichtoptischen
+Instrumentenaufzeichnungen. Da eine umfassende Betrachtung der bislang gesammelten
+Beweismittel außerhalb der Zielsetzung dieses Aufsatzes liegt, beschränken ich mich auf eine
+kurze Erörterung:
+
+Aussagen von Augenzeugen
+Obwohl Teodorani und Nobili fest davon überzeugt sind, dass die als „unidentifizierte flie-
+gende Objekte“ bezeichneten Phänomene so schwer fassbar sind, dass eine wissenschaftliche
+Untersuchung unmöglich ist (z. B. Teodorani & Nobili 2002, S. 16), zeigen die Fallstudien der
+    Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen   63
+
+von der Universität von Colorado im Auftrag der US-Luftwaffe durchgeführten „Scientific
+Study of Unidentified Flying Objects“, dass das Gegenteil der Fall ist und die Sichtungen un-
+identifizierter Phänomene durch Augenzeugen der wissenschaftlichen Forschung zugänglich
+sind (Condon & Gillmor 1969).
+    In Bezug auf das, was wissenschaftliche Beweismittel ausmacht, bemerkte der MIT-
+Physiker Philip Morrison während eines von der American Association for the Advancement
+of Science geförderten Symposions, dass die „Abwesenheit von Menschen in der Indizienkette
+kein Kriterium für eine gute Beweislage ist“ (Morrison 1969). Wenngleich er einräumte, dass
+es solche Kriterien gibt, fügte er hinzu, dass „unter dem Gesichtspunkt des Schlussfolgerns
+aus Ereignissen ein Zeuge einfach ein besonders feines und komplexes Beobachtungsinstru-
+ment ist“.
+    Berichte über unidentifizierte fliegende Objekte stellten über Jahrzehnte hinweg nachweis-
+lich ein wissenschaftliches Problem dar. Eine Reihe von Astronomen und Physikern haben
+die wissenschaftliche Gemeinschaft damit vertraut gemacht, unter ihnen der Astronom und
+frühere Berater des „Project Blue Book“ der US-Luftwaffe J. A. Hynek (1969, 1972), der Ast-
+rophysiker und Computerwissenschaftler J. F. Vallée (1965, 1966), der Atmosphärenphysiker
+J. E. McDonald (1967, 1969) sowie die CNES-Ingenieure C. Poher und A. Esterle (CNES 1979
+- 1983). Dieses Problem hat sowohl mit Psychologie als auch mit Physik zu tun.
+    Zur der psychologischen Seite ist wohlbekannt, dass bei Augenzeugenberichten Probleme
+auftreten hinsichtlich der Wahrnehmung von Ereignissen, dem Bewahren von Informationen
+im bzw. dem Abrufen von Informationen aus dem Gedächtnis (Loftus 1979). Jedoch sind
+einige Erscheinungen von potentiellem wissenschaftlichen Interesse – wie vorübergehende
+Leuchtphänomene in der unteren Atmosphäre – in ihrem Auftreten so unvorhersagbar, dass
+die einzigen Beweisquellen spontan beobachtende Zeugen sind (Corliss 1982).Von mehreren
+Psychologen mit einem anhaltenden Interesse an den methodologischen Problemen des Stu-
+diums von Berichten über unidentifizierte fliegende Objekte wurden spezielle Techniken mit
+dem Ziel entwickelt, spontane menschliche Beobachter als Quelle wissenschaftlicher Daten zu
+nutzen (Shepard 1968, 1979; Haines 1976, 1979, 1980).
+    Während der Vor-Ort-Untersuchungen im Hessdalen-Tal im August 2002 haben der Ver-
+fasser dieses Aufsatzes und Flavio Gori von mehreren Talbewohnern bezeugte Sichtungen
+unidentifizierter Lichter und Objekte gesammelt. Während die vom Autor bislang zusam-
+mengetragene Sammlung von anekdotischem Beweismaterial nicht auf eine spezifische Kon-
+stante im angeblichen „Hessdalen-Phänomen“ insgesamt hindeutet, entziehen sich einige
+Augenzeugenberichte von Hessdalen-Einwohnern gleichwohl einer konventionellen Erklä-
+rung und erfordern weitere, tiefer gehende Untersuchungen. Um sich des von E. J. Ruppelt,
+dem ehemaligen Leiter des „Project Blue Book“ der US-Luftwaffe, geprägten Akronyms zu
+bedienen: es handelt sich bei den dokumentierten Phänomenen um UFOs im buchstäblichen
+64                                                  M. Leone
+
+
+Sinne, d. h. um Unidentifizierte Fliegende Objekte (Ruppelt 1956).3 Obwohl die meisten Sich-
+tungen von Lichtern in Hessdalen durch leicht erkennbare, konventionelle Stimuli verursacht
+wurden, bleiben einige wenige unerklärte Sichtungen übrig.
+
+Automatische Messstationen (Automatic Measurement Stations, AMS)
+Vom 30. September bis zum 3. Oktober 1997 wurde am Pocantico Conference Center in Tar-
+rytown, New York, ein Arbeitstreffen abgehalten, bei dem ein aus neun Wissenschaftlern
+unterschiedlicher Fach- und Interessensgebiete bestehender wissenschaftlicher Ausschuss mit
+mehreren Untersuchern von Berichten über unidentifizierte fliegende Objekte zusammentraf
+(Sturrock 1998, 1999). Die Zielsetzung dieses viertägigen Arbeitstreffens war die Prüfung von
+vorgeblichem, mit UFO-Berichten zusammenhängendem physikalischem Beweismaterial, in
+der Absicht, eine Einschätzung zu treffen, ob die weitere Beschaffung und Untersuchung
+solchen Beweismaterials für die Lösung des UFO-Problems hilfreich wäre, nämlich zu einer
+Bestimmung des Grundes oder der Gründe solcher Berichte gelangen zu können. Der Aus-
+schuss kam zu dem Schluss, dass „es insofern wertvoll wäre, UFO-Berichte sorgfältig auszu-
+werten, weil immer dann, wenn es zu unerklärten Beobachtungen kommt, die Möglichkeit
+besteht, dass Wissenschaftler durch das Studium dieser Beobachtungen etwas Neues lernen“
+(Sturrock 1998, 1999). Während des Treffens hielt Erling Strand einen zusätzlichen Vortrag
+über die Untersuchung der wiederkehrenden Phänomene im Hessdalen-Tal. Als Ergebnis
+dieses Vortrags schloss der Ausschuss, dass
+     „es verdienstvoll wäre, eine nicht allzu komplizierte Gruppe von Instrumenten zu entwerfen und aufzustel-
+     len. Diese sollte entsprechend eines strengen Protokolls in Gebieten betrieben werden, in denen die Wahr-
+     scheinlichkeit für bedeutsame Sichtungen ziemlich hoch erscheint. Es wird empfohlen, dass in einem ersten
+     Schritt zwei separate Videorecorder mit identischen Weitwinkelobjektiven ausgerüstet und auf zwei entfernt
+     stehende Stative installiert werden, um die Chance zu reduzieren, dass von den Videorecordern entdeckte,
+     scheinbare Bewegungen auf Handbewegungen des Bedieners oder auf Bodenvibrationen zurückzuführen
+     sind. Es wäre ebenfalls nützlich, zwei identische Kameras aufzustellen, von denen eine mit einem Beugungs-
+     gitter ausgerüstet wird. Die bisherige Erfahrung in Hessdalen zeigt jedoch, dass ein Beugungsgitter zur Ge-
+     winnung spektroskopischer Informationen möglicherweise nicht ausreichend ist. In Anbetracht der großen
+     Bedeutung spektroskopischer Daten wäre die Entwicklung und Aufstellung spezieller Ausrüstung für die
+     Gewinnung hochauflösender spektroskopischer Daten aus vorübergehenden, beweglichen Quellen sehr
+
+
+3    „In vielen Fällen wurde eindeutig nachgewiesen, dass Menschen Ballons, Flugzeuge, Sterne und viele
+     andere gewöhnliche Objekte als UFOs gemeldet haben. Die Leute, die solche Meldungen machen,
+     erkennen diese gewöhnlichen Objekte nicht, weil etwas in ihrer Umgebung vorübergehend ein un-
+     vertrautes Aussehen annimmt. [...] Zur Idenitifikation eines UFOs gründete das Projekt seine Ar-
+     beitsweise auf eine wohlbekannte psychologische Annahme. Diese Annahme lautet, dass, um eine
+     Reaktion eines Sinnesorgans zu bewirken, ein Stimulus vorhanden sein muss. Wenn Sie denken, Sie
+     hätten ein UFO gesehen, müssen Sie irgendetwas gesehen haben. Reine Halluzinationen sind außer-
+     ordentlich selten“ (Ruppelt 1956, S. 15, 17).
+     Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen        65
+
+    wünschenswert. Dies könnte ein nichttriviales Problem darstellen“ (Sturrock 1998, 1999).
+
+   Im Anschluss an das Pocantico-Arbeitstreffen wurde in Hessdalen eine automatische
+Messstation errichtet. Wie in der Einleitung dargestellt, wurde diese Station von Erling Strand
+und Bjørn Gitle Hauge an der Østfold-Hochschule entwickelt und vorbereitet, welche die
+gegenwärtige Basis des Hessdalen-Projekts ist. Diese Station umfasst eine Weitwinkel-
+Schwarzweißkamera im sichtbaren Bereich mit CCD (der Ausgang der CCD-Kamera wird
+automatisch in einen Rechner eingespeist, der einen Videorecorder auslöst) und einen Satz
+von zwei CCD-Farbkameras zur Dreieckspeilung des Phänomens (Strand 2002). Sobald sich
+ein plötzliches Licht im Sichtfeld der CCD-Kamera zeigt, wird ein Alarmbild an die Website
+des Projekts Hessdalen gesendet und der Videorecorder wird gestartet und läuft 15 Sekunden
+lang. Obwohl die große Mehrzahl der Alarme auf leicht zu identifizierende Lichtquellen zu-
+rückzuführen sind, bleiben ein paar optische Stimuli unerklärt und verdienen weitere Beach-
+tung (Strand 2002).
+   Diese Systeme sind ein wichtiger Schritt auf dem Weg zu einer vollständigen Umsetzung
+der Empfehlungen des Pocantico-Arbeitstreffens. Die Entwicklung einer Spezialausrüstung
+zur automatischen Gewinnung spektroskopischer Daten von vorübergehenden beweglichen
+Quellen steht noch aus. Dieses Problem könnte durch einen Import von Methoden und Aus-
+rüstung aus dem Gebiet der „Meteorspektroskopie“ behoben werden (Majden 1998; Majden,
+Borovicka 1998).
+
+Aufzeichnungen nichtoptischer Geräte
+Während der Hessdalen-Felduntersuchungen des Jahres 1984 wurde eine Anzahl von visuel-
+len „high-strangeness – high-probability“-Sichtungen4 durch Geräteaufzeichnungen bestärkt
+(Strand 1985). Am 12. Februar 1984 richteten die Beobachter einen Laserstrahl (633 nm;
+Energie = 0,4 / 0,76 mW) auf vorbeiziehende Lichter. Bei einer Gesamtzahl von 9 reagierte
+das Licht in allen Fällen bis auf einen in einer merkwürdigen Weise: den Zeugen zufolge „än-
+derte“ ein sich langsam bewegendes, regelmäßig blinkendes Licht „seine Blinksequenz von
+einem regelmäßig blinkenden Licht zu einem regelmäßig doppelt blinkenden Licht“ (Strand
+1985). Am 27. Februar 1984 wurde ein sich mit 8500 m/s bewegendes helles Licht durch Ra-
+dar verfolgt. Bei einer anderen Gelegenheit zeigte sich ein unter ständiger visueller Beobach-
+tung stehendes unidentifiziertes Licht auf dem Radar nur bei jedem zweiten Umlauf der Ra-
+darschüssel. „Aber in den meisten Fällen – 33 insgesamt – konnte weder das Auge noch die
+Kamera etwas sehen, wenn das Radar etwas zeigte“ (Clark 1998). Hin und wieder wurden von
+den Beobachtern innerhalb der Radarreichweite „nadel-ähnliche Signale“ entdeckt, gleich-
+wohl „sahen wir zu derselben Zeit, zu der wir die Lichter sahen, auf dem Spektrometer gar
+
+
+4   Eine operationale Definition von Merkwürdigkeits/Wahrscheinlichkeits-Indizes wurde von Hynel
+    (1972) vorgeschlagen.
+66                                                  M. Leone
+
+
+nichts“ (Strand 1985).
+   Bislang sind die meisten der während der EMBLA-Missionen gesammelten nichtoptischen
+Belege mit dem angeblichen Leuchtphänomen nicht korreliert. Hinsichtlich der „nadel-
+ähnlichen“ Signale „konnte kein Leuchtphänomen gemeldet werden, während das Personal
+die Bildschirme der Radiospektrometer überwachte“ (Teodorani et al. 2000, S. 6). Was die
+Radaraufzeichnungen betrifft, so wurde 2002 ein unidentifiziertes Echo entdeckt, jedoch „war
+es unmöglich, irgend etwas an demselben Punkt des Himmels mit Ferngläsern und tragbaren
+Teleskopen zu sehen“ (Montebugnoli et al. 2002). Andere interessante Beobachtungen inner-
+halb des Niedrigfrequenzbereichs (VLF) wurden von Gori (2002) durchgeführt. Diese Auf-
+zeichnungen waren ebenfalls nicht mit visuellen Sichtungen korreliert.
+
+                        Optische Luftraumüberwachung im August 2002
+
+Nach Angabe der Autoren des physikalischen EMBLA 2002-Berichts wurden im August 2002
+„mehrere Lichtphänomene ... an verschiedenen Positionen“ des Hessdalen-Tals aufgezeich-
+net. Obwohl sie „unidentifiziert“ blieben, sind die Berichte über diese Phänomene nicht im
+EMBLA-Bericht enthalten. Das „bestätigte ‚Hessdalen-Phänomen’“ wies ein regelmäßiges
+Verhaltensmuster auf (vgl. Abb. 1):
+     „Nur die Bilder eines vom Aspåskjolen-Punkt aus in Richtung Süden gesehenen, blinkenden
+     Lichts wurden als dem Hessdalen-Phänomen zuzuschreibend bestätigt und dementsprechend
+     für eine Analyse in Betracht gezogen: von diesem Typ des Phänomens wurden insgesamt 15 Fotos auf-
+     genommen, wovon 6 für die Analyse verwendet wurden. Das Lichtphänomen wurde an exakt dieser Positi-
+     on beinahe jeden Abend bzw. nachts gesehen, meistens zwischen 10 Uhr abends und Mitternacht. In fast al-
+     len Fällen schien sich dieses Licht sehr dicht über dem Boden zu befinden; es blinkte sehr schnell mit einer
+     Pulsrate von weniger als einer halben Sekunde, und die gesamte Erscheinung dauerte von einer bis hin zu 30
+     Sekunden, meistens 5 Sekunden. Gelegentlich wurde dieses Verhalten mehrfach in einer einzelnen Nacht
+     beobachtet [Herv. v. Verf.]“ (Teodorani, & Nobili, 2002, S. 2 f.).
+
+Es ist interessant, anzumerken, dass nach Teodorani et al. (2000) dieses seltsame „blinkende
+Licht“ auch in den vorangehenden Jahren häufig gesehen wurde. Im August 2000 wurde die-
+ses Licht als „Typ 1“ klassifiziert (Teodorani et al. 2000, S. 9 f.). Im August 2001
+     „war der allergrößte Teil der Ziele auf sehr intensive ›blinkende Lichter‹ zurückzuführen, die überwiegend
+     von Aspåskjolen in Richtung Süden gesichtet wurden. Diese Lichtphänomene dauerten von 5 bis zu 60 Se-
+     kunden. Das Blinken war stets irregulär. Diese ›Lichtkugeln‹ wurden jedes Mal auf den Berghöhen gesehen“
+     (Teodorani et al. 2000, S. 16).
+     Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen                              67
+
+
+
+
+Abbildung 1: Beispiel eines laut EMBLA-Physikerteam „echten Lichtphänomens“. Dieses unbearbeitete Foto
+             wurde vom Aspåskjolen-Punkt im August 2002 aufgenommen. Das Licht erscheint bei densel-
+             ben Winkeln wie in den im EMBLA 2002-Physikbericht veröffentlichten Bildfolgen. (© CIPH,
+             Hessdalen 2002).
+
+
+Im EMBLA-Bericht 2002 fehlen zu diesem Phänomen die grundlegenden Informationen von
+Datum und Uhrzeit ihres Auftretens. In Erwiderung auf diese naheliegende Bemerkung sagt
+das EMBLA-Physikerteam, dass
+
+   „das Datum des Auftretens der Lichtphänomene im Allgemeinen nicht als relevanter Parameter für die Ana-
+   lyse betrachtet wurde, da das Lichtphänomen [...] normalerweise an fast allen Tagen beobachtet wurde. [...]
+   Der Parameter ›Zeit‹ [...] ist von einem eigentlich statistischen Gesichtspunkt aus gesehen in keiner Weise ob-
+   jektiv – in derselben Weise, wie die Videodaten die ganze Zeit über auf automatisiertem Wege von den au-
+   tomatischen Messstationen erhoben werden“ (Teodorani & Nobili, 2002, S. 3).
+
+Die Gründe, die das EMBLA-Team dazu bewegten, auf die Aufzeichnung von Parametern zu
+verzichten, die – wie Datum und Uhrzeit – zur unabhängigen Stützung (oder Falsifizierung)
+seiner Daten geeignet wären, wenn andere Zeugen das Lichtphänomen beobachtet oder die
+automatischen Messstationen ein Licht gefilmt hätten, sind nicht leicht zu verstehen. Im Üb-
+rigen verzichten die EMBLA-Forscher durch die Nichterhebung dieser elementaren Informa-
+tion auf die Möglichkeit, nachträglich eine Dreieckspeilung des Phänomens vorzunehmen.
+   Der Autor dieses Aufsatzes hatte allerdings während seines mehrwöchigen Aufenthalts in
+Hessdalen zwei Gelegenheiten, die beinahe bewegungslosen und punktförmigen Lichtphä-
+68                                          M. Leone
+
+
+nomene zu beobachten, die von Teodorani und Nobili vom Aspåskjolen-Gelände aus gesich-
+tet und fotografiert worden waren. Die erste Sichtung fand am 6. August 2002 um 21:50
+UT(C) statt, die zweite am 7. August 2002 um 21:05 (Leone 2002).
+    Während das EMBLA-Team das Phänomen mit bloßem Auge oder durch das Objektiv ei-
+ner Reflexkamera beobachtete, beobachtete es der Verfasser mit bloßem Auge und (bei einer
+Gelegenheit) durch einen tragbares Linsenteleskop (Stein Optik, 60mm Durchmesser, 30x –
+90x Vergrößerung) und identifizierte es mit Leichtigkeit als ein Paar von Autoscheinwerfern.
+Obwohl der Verfasser Teodorani über diese erfolgreiche Identifizierung unterrichtete, geht
+das EMBLA 2002-Papier nicht auf die Erklärung durch Scheinwerfer ein.
+    Teodorani (2003, S. 2) 5 zufolge sah der Verfasser dieses Aufsatzes „bei einer Gelegenheit
+gemeinsam mit uns allen ein Auto (und dies geschah regelmäßig bei vielen Gelegenheiten)
+und ermittelte vermutlich auch dessen korrekte Entfernung, aber das tatsächliche Phänomen
+befand sich nicht dort, wo der unerfahrene Verfasser behauptet.“ Diese Aussagen implizieren,
+dass der Verfasser zwar Autoscheinwerfer sah, dass diese Sichtung aber etwas anderes betref-
+fen als das vom EMBLA-Team beobachtete „tatsächliche Phänomen“. Teodoranis Hypothese
+ist jedoch nicht stichhaltig:
+1. Am Beobachtungsstandort erwartete das Team entsprechend der Erfahrung des Vorjah-
+     res, dass das Licht tief über dem Horizont in südlicher Richtung auf einen Sattel zu und
+     zwischen zwei hohen Gipfeln (Hessjøhøgda und Nyvollhøgda) erscheinen sollte.
+2. Jedes Mal, wenn sich dieses bestimmte Licht zeigte, sprang das EMBLA-Physikerteam
+     erregt auf und richtete die Aufmerksamkeit des Beobachters auf die helle, stationäre,
+     punktförmige Leuchterscheinung.
+3. Da dieses bestimmte Licht die einzige bedeutsame Lichtquelle mit diesem Azimut und
+     diesem Höhenwinkel war, war keine Verwechslung des optischen Stimulus möglich.
+4. Nach der ersten von Leone berichteten Sichtung (6. August, 21:50) richtete der Verfasser
+     das Linsenteleskop auf die erwarteten Winkelkoordinaten.
+5. Als das Licht zum zweiten Mal erschien, wurden mehrere Handlungen ausgeführt: das
+     EMBLA-Ingenieurteam fuhr mit der Aufzeichnung von Radardaten für eine mögliche
+     Korrelation mit der optischen Sichtung fort, das EMBLA-Physikerteam fotografierte und
+     nahm Spektralmessungen vor und das CIPH-Team sammelte VLF-Daten (Gori 2002).
+     Zur gleichen Zeit betrachtete der Verfasser das Licht durch das Linsenteleskop und identi-
+     fizierte es mit Leichtigkeit als ein Paar von Fahrzeugscheinwerfern.
+6. Nach Teodorani betraf diese Sichtung (7. August, 21:05) das „echte“ Phänomen. Als der
+     Verfasser ihn über das Resultat der Beobachtung mit dem Teleskop unterrichtete, antwor-
+     tete er, dass er dem Verfasser nicht glaube, weil die Sichtungen seinen Erwartungen zufol-
+
+
+5    Dieser kurze Aufsatz des Leiters des EMBLA-Physikerteams wurde als Replik auf Leone (2003) ver-
+     fasst.
+    Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen                       69
+
+    ge das seit August 2000 bezeugte unerklärte Licht betreffe.
+    Zusammengefasst: sowohl der Verfasser als auch das EMBLA-Team beobachteten exakt
+dasselbe Leuchtphänomen, und der einzige Unterschied bestand in der Unfähigkeit des
+EMBLA-Physikerteams, seine wahre Natur zu bestimmen oder die zu einer korrekten Identi-
+fizierung erforderlichen Arbeitsmittel (z.B. ein gebräuchliches tragbares Teleskop) aufzustel-
+len.
+    Da das Licht während der Saison 2002 und davor wiederkehrendes Verhalten, Erschei-
+nungsform und Position aufwies, wird vorgeschlagen, dass sich hinter jeder Sichtung des
+EMBLA-Physikerteams eines solchen entsprechenden Lichtes eine Quelle von der Art eines
+Scheinwerfers verbirgt. Da die gesamten optischen Belege im physikalischen Bericht EMBLA
+2002 ein entsprechendes Licht betreffen, ist es vernünftig, zu folgern, dass der gesamte Be-
+stand der von Teodorani 2002 zusammengetragenen optischen Daten in dieser Weise erklär-
+bar ist.
+
+                       Lineare und winkelbezogene Bildvermessungen
+
+Der gesamte Bestand der visuellen, fotometrischen und spektrografischen Belege, von denen
+der EMBLA 2002-Aufsatz berichtet, wurde „vom Aspåskjolen-Beobachtungsstandort“ aus
+gesammelt (Teodorani & Nobili 2002, S. 7). Seine genauen geografischen Koordinaten und
+seine Höhe über NN werden der Vorstellungskraft des Lesers überlassen. Ebenso unbestimmt
+bleiben Azimut und Höhenwinkel der Leuchterscheinung. Da das EMBLA-Team die opti-
+schen Daten zu dem Leuchtphänomen ausschließlich von einem einzigen Beobachtungs-
+standort aus sammelte, ist es nicht möglich, die genaue lineare Distanz zwischen Phänomen
+und Beobachter und somit die tatsächliche Größe des Phänomens zu schätzen. Allerdings
+könnten Azimut und Höhenwinkel mit hinreichender Genauigkeit aufgezeichnet werden,
+indem man eine Kamera auf einem Theodoliten fixiert. Die Erhebung solcher Daten ist eine
+Frage des Prinzips, weil sie eine Dreieckspeilung des Phänomens ermöglichen, sofern andere
+Beobachtungen von anderen Standorten aus verfügbar werden sollten. Es ist enttäuschend,
+festzustellen, dass das EMBLA-Team dieser offensichtlichen Vorgehensweise nicht gefolgt ist.
+Im Gegenteil: man wies sie zurück, indem man es für ausgemacht hielt, dass die Entfernung
+des Phänomens eine bekannte Größe sei:
+
+   „ … die Entfernung des Phänomens ... wird mit annähernd 9 km [der Skarvan-Hügel] vom
+   Aspåskjolen-Beobachtungsstandort angenommen. Dieser aus Hessdalen-Karten abgeleitete Entfernungs-
+   wert wird durch eine der Spuren an der Hügelkuppe (Richtung Süden: Kompassweisung von Aspåskjolen =
+   187,7°) bestätigt, die von dem durch die Ingenieurgruppe betriebenen Radar aufgezeichnet wurde“ (Teodo-
+   rani und Nobili,2002, S. 7; Herv. M. L.).
+
+Wenige Sekunden nach jeder Sichtung maß der Verfasser den Azimut des Phänomens, indem
+er einen Kompass genau auf den Punkt ausrichtete, an dem das Phänomen sich zeigte: 185°
+70                                          M. Leone
+
+
+(+/- 5°). Durch einen Vergleich einer Landschaftsaufnahme Richtung Süden mit der Bildfolge
+1-6 (Teodorani & Nobili 2002, S. 4) und den Abbildungen 8-9 (Teodorani & Nobili 2002, S.
+18 f.) ist eine genauere Schätzung des Azimuts der Erscheinung möglich.6
+   Der Beobachtungspunkt (im EMBLA-Bericht als Aspåskjolen bezeichnet) ist eine Wiese
+(Länge: 11°10’53” Ost; Breite: 62°50’16” Nord; Höhe: 690 m) im nördlichen Hessdalen-Tal,
+auf der rechten Seite einer Landstraße, die Hessdalskjølen entlang der Hauptstraße FV576 mit
+Åsbardet verbindet (Hessdalskjølen 1995, Haltdalen 1995).
+   Das „blinkende Licht” erschien – aus der Beobachterperspektive – zwischen zwei hohen
+Gipfeln des südlichen Landstrichs: Hessjøhøgda (Länge: 11°08’21” Ost; Breite: 62°41’47”
+Nord; Höhe: 1057 m) auf der rechten und Nyvollhøgda auf der linken Seite (Länge: 11°10’32”
+Ost; Breite: 62°40’29” Nord; Höhe: 1044 m) (Dalsbygda, 1992). Tabelle 1 zeigt die Winkelko-
+ordinaten dieser Berggipfel vom Standort „Aspåskjolen“ aus gesehen (Dalsbygda 1992, Halt-
+dalen 1995).
+   Durch eine Reihe Längen- und Winkelvermessungen eines farbigen Ausdrucks des Posi-
+tivs der südwärts gerichteten Landschaftsaufnahme (Abb. 2, für eine andere Aufnahme des-
+selben Sichtbereichs siehe Cabassi 2001, S. 7) und durch Längenmessungen der Abbildung
+des Lichts auf den im EMBLA 2002-Bericht veröffentlichten vergrößerten Aufnahmen (Teo-
+dorani & Nobili,2002, S. 4) ist es möglich, die horizontalen und vertikalen Winkel des Leucht-
+phänomens bezüglich der Berggipfel zu schätzen.
+   Sei 1,0 die Entfernung zwischen den beiden Berggipfeln. Dann beträgt die scheinbare hori-
+zontale Entfernung zwischen dem Licht und Hessjøhøgda 0,38 und die scheinbare vertikale
+Entfernung 0,14.
+   Die geschätzten Winkel des Lichts sind in Tabelle 2 angegeben. Erstens sei angemerkt, dass
+der Azimutwert nahe bei dem oben beschriebenen Vor-Ort-Messwert liegt (der Fehlerwert
+wurde durch das Gauß’sche Fehlerfortpflanzungsgesetz von Messungen auf einem Fotoposi-
+tiv im Format 18x10 ermittelt).7 Zweitens – und am wichtigsten – ist der von Teodorani ange-
+gebene Wert (187,7°) insofern nicht verlässlich, als er zwei Grad außerhalb des Fehlerbereichs
+des Azimuts liegt.
+   Wichtige Daten über die tatsächliche Position des Lichts können durch eine geometrische
+Analyse der gesamten bei Teodorani & Nobili (2002, S. 4) verfügbaren Bildfolgen gewonnen
+werden. In Abbildung 3 werden die scheinbaren Positionen des Lichts in Bezug auf den Hegg-
+sethødga-Rücken dargestellt (die Bilder 4 und 6 wurden verworfen, da ihr Kontrast zu gering
+
+6    Streng genommen muss die Kompassmessung um die magnetische Abweichung korrigiert werden.
+     Da diese Abweichung in Norwegen unter 1°, also unter der Genauigkeit des Kompasses liegt (siehe
+     http://www.ngdc.noaa.gov/cgi-bin/seg/gmag/fldsnth1.pl), wird die magnetische Abweichung hier
+     nicht berücksichtigt.
+7    Der Verfasser dankt Nicolosi und Ricchetti (2003) für die Überprüfung und Korrektur der ur-
+     sprünglichen Schätzung der Höhenwinkel des Lichts durch den Verfasser.
+    Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen           71
+
+ist, um verlässliche Messungen zu gestatten). Da die vier Bilder geringfügige Verzerrungen
+um die Linsenachse herum aufweisen, wurden die tatsächlichen Lichtpositionen entspre-
+chend modifiziert, bevor die Bilder übereinander gelegt wurden.
+
+     Tabelle 1: Winkelkoordinaten von Berggipfeln, vom Standort „Aspåskjolen“ aus gesehen.
+
+                         Berg              Azimut (°) Höhenwinkel (°)
+                         Hessjøhøgda       187.7          +1.3
+                         Nyvollhøgda       180.9          +1.1
+
+
+     Tabelle 2: Winkelkoordinaten des Leuchtphänomens, vom Standort „Aspåskjolen“ aus gesehen.
+
+                            Merkmal           Azimut (°) Höhenwinkel (°)
+                       “blinkendes Licht” 185.1 ± 0.4            – 0.3 ± 0.4
+
+
+
+
+Abbildung 2: Blick vom Aspåskjolen-Beobachtungsstandort in südliche Richtung auf die Land-
+             schaft Hessdalens. Man erkennt den Varhuskjolen-Hügel im Vordergrund. Das
+             „blinkende Licht“ erschien innerhalb des gekennzeichneten Rechtecks (vgl. Abb. 1).
+72                                                                M. Leone
+
+
+                                        Heggsethogda ridge        light's positions        Linear fit (light's positions)
+
+                                        25
+
+
+
+
+             angular elevation (a.u.)
+                                        20
+
+                                        15
+
+                                        10
+
+                                        5
+
+                                        0
+                                             0        10     20          30           40        50          60
+                                                                      azimuth (a.u.)
+
+
+
+Abbildung 2: Scheinbare Lichtpositionen relativ zum Heggsethødga-Rücken: geometrische Darstellung auf
+             der Grundlage von vier Bildern aus Teodorani und Nobili 2002 (S. 4, Abb. 1).
+
+
+Tabelle 1: Winkelabstandsmessungen in drei EMBLA-Bildern (Quelle: Teodorani & Nobili 2002, S. 4).
+
+             Licht-Winkelabstand zum                               Licht – Winkelabstand zum
+  Bild                                                                                                     Δx1              Δx2
+                  linken Rand (x1)                                Schnittpunkt beider Berge (x2)
+
+
+     Nr.                                         mm                             mm                        mm                mm
+
+     2                                           32                              23
+
+     3                                           47                              29                       +15               +6
+
+     5                                           42                              26                       +10               +3
+
+
+
+
+Das auffälligste Ergebnis ist, dass der scheinbaren Höhenwinkel des Lichts konstant unabhän-
+gig vom scheinbaren Azimut ist (Abb. 3). Ein anderes auffälliges Ergebnis betrifft die schein-
+bare Position des Schnittpunkts zwischen zwei Bergen im Hintergrund (Hessjøhøgda und
+Nyvollhøgda), der nahe der oberen linken Seite der EMBLA-Bilder sichtbar ist. Aus der Ana-
+lyse der Bilder 2, 3 und 5 (Nr. 1 wurde verworfen, da dieses Merkmal dort nicht abgebildet ist)
+geht hervor, dass der Winkelabstand zwischen dem Schnittpunkt und dem Licht nicht im
+erwarteten Verhältnis zum scheinbaren Winkelabstand des Lichts variiert.
+   Tabelle 3 zeigt, dass der scheinbare horizontale Winkelabstand zwischen dem Licht und
+dem Bergrückenschnittpunkt weniger als halb so groß ist wie der entsprechende Abstand
+    Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen   73
+
+zwischen dem Licht und dem linken Bildrand (wie durch die Baumreihe im Vordergrund
+angezeigt wird; jedes Bild zeigt denselben Ausschnitt des Heggsethødga-Hügels, weshalb die
+Bildkanten als Bezugspunkt verwendet werden können).
+   Entgegen den Behauptungen des EMBLA-Physikerteams, dass „die Verarbeitung zeigt,
+dass das Lichtphänomen einige zehn Meter über dem Boden beobachtet wurde” und dass „die
+Positionsveränderungen als ungefähr 100 Meter senkrecht zum Betrachter bestimmt werden
+können” (Teodorani & Nobili, 2002, S. 3), verweisen die oben diskutierten Ergebnisse auf eine
+andere Schlussfolgerung. Beide Effekte, die Konstanz der scheinbaren Höhenwinkel und die
+Anomalie im scheinbaren Abstand des Lichts, kann durch eine einzelne Hypothese leicht
+erklärt werden: das Licht befindet sich auf dem Hügel hinter Heggsethødga (nämlich
+Løbergsvollen-Heggsetvollen). Entsprechend dieser Hypothese ist die Veränderung des Azi-
+muts des Lichts weit davon entfernt, echt zu sein, sondern sie ist das Resultat nicht dokumen-
+tierter Veränderungen des EMBLA-Beobachtungspunktes. Am Aspåskjolen-Beobachtungs-
+standort befanden sich die Kameras von einem Abend zum nächsten nicht an festen Standor-
+ten, und Verschiebungen von bis zu einem Dutzend Metern kamen häufig vor. Abstände
+dieser Größenordnung sind konsistent mit den auf den EMBLA-Bildern beobachtbaren
+scheinbaren Bewegungen.
+   Sollte das Licht sich über dem Heggsethødga-Hügel befinden, würde ein „echter“ Versatz
+des Lichts auf dem Heggsethødga-Rücken (Δx1) zu einem scheinbar gleichgroßen Versatz
+bezüglich der Berge im Hintergrund führen. Tabelle 3 zeigt, dass dies nicht der Fall ist. Im
+Gegenteil: wenn sich das Licht auf dem Løbergsvollen-Heggsetvollen-Hügel befindet, kann
+erwartet werden, dass der Effekt einer Veränderung des Beobachtungspunktes auch die
+scheinbare Position auf den Bildern im umgekehrten Verhältnis zum Abstand vom Aspåskjo-
+len-Beobachtungsstandort beeinflusst. Wenn ein solcher Positionswechsel den scheinbaren
+Azimut des Heggsethødga-Rückens um einen bestimmten Faktor verändert, würde die erwar-
+tete Azimutveränderung eines Scheinwerfers auf dem Løbergsvollen-Heggsetvollen-Hügel
+viel kleiner sein (um einen Faktor nahe bei dem Verhältnis der Entfernungen, d.h. 4,2 / 11,5).
+Die entsprechend erwartete Veränderung der Berge im Hintergrund würde sehr viel kleiner
+sein. Diese Erwartung stimmt qualitativ mit den Messungen der EMBLA-Bilder in Tabelle 3
+überein.
+
+    Ergebnisse eines Besuchs vor Ort und Analyse der topographischen Karten
+
+Eine umfassende Ortsbesichtigung wurde vom CIPH-Team im vergangenen August vorge-
+nommen. Der Bereich von Hessdalen, in dem die oben zitierten Aufnahmen gemacht wur-
+den, wurde in Augenschein genommen und fotografiert. Die Vor-Ort-Erhebung und die
+Untersuchung topografischer Karten zeigt, dass sich in der Richtung des Auftretens des Phä-
+nomens mehrere Hügel befinden. Die wichtigsten, auf der rechten Seite des Tals (mit Blick
+nach Süden) sind (in abnehmenden Abstand zum Beobachtungsort) Løbergsvollen-Heggset-
+74                                            M. Leone
+
+
+vollen, die Skarvan-Gipfel und Heggsethøgda. Das Licht erschien knapp über der Kante des
+Heggsethøgda-Hügels. Der Boden ist überwiegend von Wald und gelegentlich von Kulturland
+bedeckt. Es befinden sich keine bewohnten Häuser in Sichtlinie (die in etwa parallel zum
+Fluss Hesja verläuft).
+   Bei der Auswertung der gesammelten Daten versäumen es die Autoren des EMBLA-
+Aufsatzes, eine wichtige Möglichkeit in Betracht zu ziehen, nämlich das Vorhandensein von
+Landstraßen entlang der Sichtlinie (in dieser Gegend Norwegens gibt es viele private, gebüh-
+renpflichtige Straßen mit geringem Verkehrsaufkommen, die nach der Entrichtung von Ge-
+bühren zur Durchfahrt offenstehen, wobei die Gebühren dazu dienen, für die Straßen anfal-
+lende Unterhaltskosten der Landeigentümer zu bestreiten). Im Anschluss an die im vorherge-
+henden Abschnitt erörterten Daten ist daher die Einbeziehung von Informationen aus Stra-
+ßenkarten naheliegend.
+   Die Untersuchung topografischer Karten zeigt, dass zumindest eine Straße mit den erfor-
+derlichen Winkelkoordinaten existiert: nämlich eine auf dem Løbergsvollen-Heggsetvollen-
+Hügel gelegene private Straße, die den Hessjøen-See (720 m ü. d. M.) mit der Landstraße
+FV576 (die das ganze Hessdalen-Tal in Nord-Süd-Richtung durchquert) nahe Fjellheim ver-
+bindet. Die Referenz zur Auffindung dieser Landstraße in Karten des Hessdalen-Tals im
+Maßstab 1:50000 (Dalsbygda, 1995) ist 32VPQ103579. Diese Straße befindet sich ungefähr
+11500 Meter südlich von Aspåskjolen in 760 m Meereshöhe und ist vom Beobachtungspunkt
+ungehindert einsehbar. Darüber hinaus weist sie in annähernder Süd-Nord-Richtung auf den
+Beobachtungspunkt (Tabelle 4).
+
+Tabelle 4: Winkelkoordinaten der Løbergsvollen-Heggsetvollen-Straße (Topografische Karte 1:50000)
+
+                        Azimut                                             185,2° ± 0,3°
+                     Höhenwinkel                                             0,3° ± 0,1°
+
+
+Diese Straße weist eine ausgezeichnete Übereinstimmung mit der Position des oben darge-
+stellten „blinkenden Lichts“ auf. Der Fehlerbereich des Azimuts ist im Wesentlichen der tat-
+sächlichen Position des Beobachtungsstandortes geschuldet, während der Fehlerwert der
+Höhenwinkel aus der Länge der Straße resultiert. Die Länge des relevanten Straßenabschnitts
+(mehrere zehn Meter) ist unter der Scheinwerferhypothese der Größenordnung nach konsi-
+stent mit der durchschnittlichen Dauer jeder Sichtung.
+   Obwohl die obenstehenden Beobachtungen die Løbergsvollen-Heggsetvollen-Hypothese
+unterstützen, ist es angemessen, auch die Situation auf anderen Hügeln entlang der Sichtlinie
+zu prüfen. Durch Ziehen einer Linie mit einer Neigung von 185° vom Beobachtungsstandort
+des betreffenden Bildes entdeckte der Verfasser, dass die Ideallinie relativ zum Heggsethødga-
+Rücken einen „Traktorveg“, also einen Feldweg kreuzt. Dieser Weg grenzt an ein Wald- und
+     Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen        75
+
+Moorgebiet, verläuft hinab zum Hesja-Fluss und endet in Heggset. Die Referenz zur Auffin-
+dung dieses Feldweges in den handelsüblichen topografischen Karten des Maßstabes 1:50000
+(Haltdalen, 1995) ist 32VPQ111653. Dieser Abschnitt des Feldweges beginnt am Hegg-
+sethødga-Rücken und weist in annähernde Nordrichtung, also auf den Beobachtungsort zu.
+Das Höhenmuster der Landschaft zeigt, dass dieser Straßenabschnitt weder vom Hügel im
+Vordergrund (Vårhuskjølen) noch vom Heggsethødga-Rücken selbst verdeckt wird (siehe
+Tabelle 5).8
+
+Tabelle 5: Winkelkoordinaten der Heggsethødga-Straße (Topografische Karte 1:50 000).
+
+                        Azimut                                              184.1° ± 0.7°
+                     Höhenwinkel                                            – 0.1° ± 0.1°
+
+
+Wie auch ohne Betrachtung der geometrischen Analyse der gesamten EMBLA-Bild-sequenz
+ersichtlich ist, befinden sich die ermittelten Werte noch innerhalb des Fehlerbereichs der
+Position des blinkenden Lichts, aber ihre Übereinstimmung ist deutlich weniger genügend als
+die mit der Løbergsvollen-Heggsetvollen-Straße.
+   Somit gibt es innerhalb des Messfehlers eine gute Übereinstimmung zwischen den Winkel-
+koordinaten des Lichts und denen von mindestens einer Landstraße in Sichtlinie. Diese Stra-
+ße weist ohne Sichtbehinderung auf den Beobachtungsort und verläuft im relevanten Ab-
+schnitt nahezu horizontal. Sie verläuft auf dem Rücken des Løbergsvollen-Heggsetvollen-
+Hügels auf einer Höhe von 760 m. Dieses erste annähernde Ergebnis besagt, dass dort fahren-
+de Kraftfahrzeuge in Richtung auf den Beobachtungsstandort leuchten können. Eine weniger
+wahrscheinliche Möglichkeit ist der Heggsethødga-Feldweg, der nahezu eben auf einer Höhe
+von 680 m verläuft.
+   Man ist berechtigt zu sagen, dass der beste Kandidat die Løbergsvollen-Heggsetvollen-
+Straße ist. Die wichtigsten Gründe sind: bessere Winkelkoordinaten, geeigneterer Straßentyp
+
+
+8   Geringfügig andere Werte für das Gebiet Holtålensør-Trøndelag erhält man aufgrund der vom
+    Statens kartverk, Sør-Trøndelag, veröffentlichten Karten des 1:5000 “Økonomisk kartwerk”. Die
+    betreffenden Karten haben die Schlüssel „CR 112-5-4 – Engesvollen“ (Engesvollen 1995), „CR 112-
+    5-2 – Vårus“ (Vårus 1995) und „CR 113-5-4 – Hessdalskjølen“ (Hessdalskjølen 1995). Der Hegg-
+    sethødga-Rücken wird von Engesvollen (1995) and Vårus (1995) abgedeckt. Diese Unterschiede
+    sind vermutlich zurückzuführen auf die unterschiedlichen, in den topografischen Karten 1:50000
+    und 1:5000 verwendeten geometrischen Projektionen. Das Erfordernis konsistenter Daten lässt es
+    angemessen erscheinen, trotz der geringeren Genauigkeit die Schätzung der Straßenkoordinaten aus
+    der topografischen Karte zu entnehmen. Ich erinnere daran, dass die Koordinaten des blinkenden
+    Lichts vom Verfasser aufgrund von Berggipfelkoordinaten entsprechend einer Karte im Maßstab
+    1:50000 ermittelt wurden.
+76                                                   M. Leone
+
+
+(die hohe Sichtungsfrequenz passt ersichtlich besser zu dem Straßenverkehr auf einer privaten
+Landstraße als zum Verkehrsaufkommen auf einem kleinen Feldweg), höhere Erklärungskraft
+der Resultate aus der geometrischen Analyse der EMBLA-Bildsequenz sowie eine bessere
+Erklärung des scheinbaren Schwebens über dem Heggsethødga-Rücken.
+
+                              Schätzung der optischen Ausgangsleistung
+
+In den vergangenen Jahren haben verschiedene Untersucher Versuche unternommen, in
+Fällen von Sichtungen unidentifizierter Lichtquellen die optische Lichtstärke zu schätzen.
+Besondere Anstrengungen wurden unternommen, um Schätzungen aus fotografischen Bele-
+gen (Maccabee 1979, 1980, 1987, 1999) und Zeugenaussagen (Vallee 1990, 1998; Ballester &
+Fernández 1987) abzuleiten. Diese Studien entwickeln interessante Verfahren zur Berechnung
+optischer Lichtleistungen durch Umkehrung fotometrischer Standardgleichungen. Es wurde
+angemerkt, dass
+
+     „durch diese Vorgehensweise sofort offensichtliche Bedenken hervorgerufen werden. Die Leuchtquelle ist
+     per definitionem ein unbekanntes Phänomen. Wir wissen nicht, ob das Licht eine primäre Manifestation ih-
+     res internen physikalischen Zustands ist (wie das bei der Sonne der Fall ist), oder ob es eine sekundäre Folge
+     ist wie im Falle des Mondes oder eines Autoscheinwerfers. Wir wissen nicht einmal, ob der größte Teil der
+     elektromagnetischen Energie im sichtbaren Spektrum abgestrahlt wird, auf welches menschliche Zeugen
+     und die meisten Kameras reagieren” (Vallée 1998).
+
+   Wie oben dargestellt, sammelte das EMBLA-Physikerteam eine große Menge von Belegdo-
+kumenten über ein wiederkehrendes Leuchtphänomen. Sollten diese Dokumente hinreichen-
+den Verlässlichkeitskriterien für die Gewinnung quantitativer Daten hinsichtlich Entfernung
+und Helligkeit genügen, könnten grobe Schätzungen der Lichtleistung vorgenommen werden.
+Obwohl die Aufnahmen des Leuchtphänomens das Team in die Lage versetzten, Helligkeits-
+schätzungen vorzunehmen, gelangten sie bedauerlicherweise nicht zu verlässlichen Einschät-
+zungen der Entfernung.
+   Den Verfassern des EMBLA-Physikberichts zufolge war es durch Anwendung der Technik
+der „Blenden-Fotometrie” (Teodorani & Nobili 2002, S. 4) auf eine Sequenz von Aufnahmen
+
+     „möglich, die Größenordnung der vom Lichtphänomen emittierten Energie zu schätzen. Diese Aufgabe
+     wurde durch den Einsatz der Software Iris gelöst, nachdem zuvor Verstärkungs- und Vergrößerungsopera-
+     tionen (Bildinterpolation) mit dem Programm Adobe Photoshop 5.5 durchgeführt wurden, wodurch kleine
+     Ausschnitte aus einer gegebenen Fotografie erzeugt wurden. Anschließend wurde Blendenfotometrie ange-
+     wandt, indem das Lichtphänomen durch Anwendung konzentrischer Kreise auf Fotos gemessen wurde, bei
+     denen der externe Radius exakt dem Radius der Lichtkugel entspricht. Auf diese Weise wird die scheinbare
+     Helligkeit direkt als Wert in erg/sek berechnet und anschließend mit dem Faktor 1 x 10-7 multipliziert, wo-
+     durch sich derselbe Parameter in Watt ergibt” (Teodorani & Nobili 2002, S. 7).
+    Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen   77
+
+
+Teodorani und Nobili ermitteln die absolute Helligkeit (LABS) des Phänomens nach der For-
+mel L ABS = L APP ⋅ 4πd , wobei LAPP die scheinbare Helligkeit und d die Entfernung des
+                         2
+
+Phänomens in Metern ist. Man erhält LAPP , weil man „weiß, dass LAPP = LEXP / t, wobei t die
+Belichtungszeit (in Sekunden) und LEXP die soeben am Foto bestimmte Leuchtstärke ist.“ Die
+Ergebnisse werden in einer Tabelle zusammengefasst, in der die absolute Leuchtstärke als im
+                 4        5
+Intervall 3.6 ⋅10 − 1 ⋅10 W befindlich berichtet wird. Wir wollen die Argumente des Ver-
+fassers analysieren, um die Verlässlichkeit dieser Schätzung zu prüfen.
+1. Die Entfernung d „wird mit ungefähr 9 km angenommen”. Wie wir im vorhergehenden
+    Abschnitt dargelegt haben, sind die Gründe für diese Annahme (d.h. die Azimutdaten)
+    wahrscheinlich falsch.
+2. Das EMBLA-Team nimmt eine gleichförmige Strahlung in alle Richtungen (einen 4π-
+   Strahlungskörper) an. Da die optische Datenerhebung von einem einzigen Beobachtungs-
+   standort aus vorgenommen wurde und keine unabhängige Bestätigung einer gleichzeitigen
+   Sichtung vorliegt, ist dies eine willkürliche Annahme. Im Gegenteil zeigt die visuelle Beo-
+   bachtung durch ein Linsenteleskop, dass die Lichtquellen nicht-gleichförmig strahlende
+   Autoscheinwerfer waren.
+3. Der von den Verfassern veröffentlichten Tabelle zufolge werden sowohl LAPP als auch LABS
+   in Watt ausgedrückt. Da die Zahlen in der Spalte LABS durch die Berechnung als
+    L ABS = L APP ⋅ 4πd 2 ermittelt werden und d in Metern ausgedrückt wird, ist die Bedeu-
+    tung der LAPP-Zahlen unklar.
+Um mögliche Missverständnisse zu vermeiden, halte ich in der nachfolgenden Tabelle 6 eini-
+ge Informationen über optische Mengengrößen, Maßeinheiten und Symbole fest.
+Fassen wir zusammen: Teodorani und Nobili nehmen eine entfernte, homogene und punkt-
+förmige Lichtquelle an. Folglich schätzen sie den Gesamtausstoß an Lichtleistung (LABS), in-
+dem sie die Intensität I mit dem Raumwinkel (4π) multiplizieren:
+                                           L ABS = 4π ⋅ I = E ⋅ 4πd 2
+  d. h.
+                                           L ABS = L APP ⋅ 4πd 2
+Die fragwürdigen Annahmen von Teodorani und Nobili führen sie fast zwangsläufig zu einer
+Überschätzung der absoluten Leuchtstärke. Was das Bild 5 anbetrifft, wo der höchste Wert
+für LAPP auftritt, so ergibt die Einfügung der Werte für Entfernung und scheinbare Helligkeit
+in die obige Gleichung entsprechend Teodorani und Nobili (2002, S. 7) eine absolute Leucht-
+stärke von etwa
+
+                                                                   (
+                         L ABS = L APP ⋅ 4πd 2 = 9.8 ⋅ 10 −5 ⋅ 4π 9 ⋅ 10 3   ) = 10 W
+                                                                             2    5
+78                                           M. Leone
+
+
+Tabelle 5:   Mengen und Maßeinheiten der Radiometrie und Fotometrie
+             (lm = Lumen, sr = Steradiant, cd = Candela; lx = Lux; nt = Nit)
+
+             Energie Q                   Radiometrie                Fotometrie         EMBLA-
+                                                                                        Bericht
+
+     Leistung (Durchflußmenge)           Strahlungsfluß             Lichtstrom           LABS
+               dQ/dT                         Φ (W)                   ΦV (lm)
+
+  Intensität (Leistung pro Rich-          Strahlstärke               Lichtstärke
+     tungseinheit) dQ/dtdω                  I (W/sr)               IV (lm/sr = cd)
+
+Flußdichte (Leistung pro Flächen-     Bestrahlungsstärke E     Beleuchtungsstärke EV     LAPP
+         einheit) dQ/dA                     (W/m2)                  (lm/m2 = lx)
+
+Flußdichte (Durchflußmenge pro         Strahlungsdichte L         Leuchtdichte LV
+Raumbetrachtunswinkeleinheit)              (W/m2sr)
+                                                                   (lm/m2sr = nt)
+             Φ/Aω
+
+
+
+Seien d1 und d2 zwei allgemeine Terme der Entfernung zwischen dem Licht und dem Beo-
+bachtungspunkt. Entsprechend der folgenden Gleichung
+                                                         LdAPP
+                                                            1
+                                                                 d 22
+                                                               =
+                                                            2
+                                                         LdAPP   d 12
+kann die scheinbare Helligkeit (W/m2) für eine allgemeine Entfernung geschätzt werden. Um
+von diesen Werten eine Schätzung der Beleuchtungsstärke abzuleiten, ist es erforderlich, eine
+Umwandlung der fotooptischen in radiometrische Einheiten vorzunehmen. Die Definition
+von „candela” (cd = lm/sr, siehe Tab. 6) – der Einheit der Lichtstärke – besagt, dass es sich um
+683 lm/W bei 555 nm handelt. Diese Definition geht von einer monochromatischen Licht-
+quelle aus. Im Fall von Quellen mit spektralen Anteilen wie dem Schwarzkörperspektrum
+eines Halogenscheinwerfers erfolgt die Umwandlung weniger direkt. Diese Umwandlung
+beinhaltet eine Integration des Produkts der Lichtquelle (W) und der Lichtausbeute Vλ über
+die betreffende Wellenlänge. Die Lichtausbeutungskurven für Standardbeobachter wurden
+von der Internationalen Beleuchtungskommission (Commission Internationale de l'Éclaira-
+ge, C.I.E.) im Jahre 1924 spezifiziert und 1933 von der General Conference on Weights and
+Measures übernommen (Engel 1968). Die relativen Werte der Lichtausbeute (Augenempfind-
+lichkeit) für unterschiedliche Wellenlängen kann in PHLOX (2003) nachgeschlagen werden
+und wird in Abbildung 4 dargestellt.
+    Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen   79
+
+
+
+                                    1
+                                  0,9
+                                  0,8
+
+
+
+
+            luminous efficiency
+                                  0,7
+                                  0,6
+                                  0,5
+                                  0,4
+                                  0,3
+                                  0,2
+                                  0,1
+                                    0
+                                     380   480        580          680            780
+                                                 wavelength (nm)
+
+
+
+
+      Abbildung 4: Lichtausbeutungskurve für das menschliche Auge (Quelle: PHLOX 2003)
+
+
+Wenn EV die Beleuchtungsstärke (lx), Eλ die Bestrahlungsstärke (Flussdichte) bei der Wellen-
+länge λ (Wm-2), Vλ Lichtausbeutungsfunktion und Km = 683 lm/W, so ist die Beleuchtungs-
+stärke gegeben durch die Formel:
+                                                            ∞
+                                                  EV = K m ∫ E λVλ dλ
+                                                            0
+Dies bedeutet, dass die pro Sekunde bei einer bestimmten Wellenlänge vom Spektrum eines
+Halogenscheinwerfers ausgestrahlte Energie mit der Lichtausbeutungskurve multipliziert
+werden muss (Abbildung 5).
+
+
+
+
+Abbildung 5: Halogenspektrum (3200 K) und Lichtausbeutungskurve für den
+             Standardbeobachter multipliziert mit einem Halogenspektrum.
+80                                         M. Leone
+
+
+Sei E die Bestrahlungsstärke (W/m2) im Bereich von 3800-6800 Å und X der Mittelwert der
+in Abbildung 5 dargestellten Resultierenden. Um den Umrechnungsfaktor zwischen lx und
+W/m2 zu ermitteln, können wir die Gleichung auch schrieben als
+                                                        ∞
+                                             EV = K m ∫ E λ Vλ dλ = K m X E
+                                                         0
+
+ X kann geschätzt werden als das Verhältnis zwischen den von den in Abbildung 5 dargestell-
+ten Kurven umschriebenen Flächen. Sein Wert beträgt 0,38.
+   Wenn d1 = 25 m (Standardentfernung für internationale Bestimmungen für Kraftfahrzeug-
+scheinwerferbeleuchtung, festgesetzt von der VN-Wirtschaftskommission für Europa
+(UN/ECE) (ECE Regulation 2002, S. 18)) und d2 = 11500 m (Entfernung zwischen der
+Løbergsvollen-Heggsetvollen-Straße und dem Beobachtungspunkt), so ergibt sich
+                                             L25            5   11500
+                                              APP = 2.1 ⋅ 10 ⋅ L APP
+                                                                                          11500
+Wenn die Lichtquelle ein Paar von Autoscheinwerfern in 11500 m Entfernung war, L APP =
+                                                                                     25
+(3.5 ÷ 9.8) x 10-5 W/m2 (Teodorani & Nobili 2002, S. 7), so ergibt die Formel L APP = (7.4 ÷
+20.7) W/m2. Daher folgt: EVmin = 7.4 x 0.38 x 683 = 1920 lx und EVmax = 20.7 x 0.38 x 683 =
+5370 lx.
+   Die Kraftfahrzeugscheinwerferbeleuchtung wird durch strenge internationale Bestimmun-
+gen geregelt, die von der UN-Wirtschaftskommission für Europa (United Nations Economic
+Commission for Europe) herausgegeben werden. Für den Fall eines einzelnen Scheinwerfers,
+der ein Fernlicht und ein Abblendlicht liefern soll, soll die maximale Beleuchtungsstärke (EM)
+– gemessen auf einem in 25 m Entfernung vom Scheinwerfer senkrecht aufgestellten Schirm –
+„in keinem Fall 240 lux überschreiten“ 9 (ECE Regulation 2002, S. 18). Normalerweise verfügt
+ein Auto über zwei Scheinwerfer.
+   Entsprechend dieser Bestimmung soll die von allen Autoscheinwerfern emittierte maxima-
+le Lichtstärke (IM) 225000 cd nicht überschreiten. Dementsprechend sollte unabhängig von
+der Anzahl der Scheinwerfer „die maximale Lichtstärke des Fernlichts, ausgedrückt in Kilo-
+candelas mittels der Formel IM = 0.625 EM berechnet werden” (a.a.O.).
+   Es ergibt sich:
+                                                      I M 225000
+                                             EM =        =       = 360 lx
+                                                      d2    25 2
+Daraus folgt, dass die Beleuchtungsstärke – unter der Hypothese, dass die Autoscheinwerfer
+sich auf der Løbergsvollen-Heggsetvollen-Straße befanden – um eine Größenordnung höher
+liegt als von Autoscheinwerfern erwartet würde. Wenn sich andererseits die Autoscheinwerfer
+
+
+9    Die Beleuchtungsstärke wird gemessen am Schnittpunkt (HV) der optischen Achse mit dem Schein-
+     werferglas (ECE Regulation 2002, S. 18).
+     Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen                81
+
+auf der Heggsethødga-Straße befunden hätten, würde die Schätzung der optischen Energie
+um den Faktor (4.2 / 11.5)2 = 0.13 niedriger liegen. Somit würde das Ergebnis im zweiten Fall
+mit der ECE-Bestimmung über die maximale Beleuchtungsstärke übereinstimmen.
+   Da die Art der Quelle ein abgeschlossenes Thema ist und die Løbergsvollen-Heggsetvollen-
+Straße der geeignetere Kandidat zu sein scheint, würde dieses Resultat die Verlässlichkeit der
+fotometrischen Messungen des EMBLA-Physikerteam in Frage stellen.
+   Um die Gründe für diese offenkundige Abweichung zu verstehen, ist eine Prüfung der
+Verfahrensweise erforderlich, die vom EMBLA-Physikerteam bei der Schätzung der scheinba-
+ren Leuchtstärke befolgt wurde.
+   Ein erster fragwürdiger Schritt, den Teodoranis und Nobilis Aufsatz vollzieht, betrifft den
+Parameter Zeit10. Das EMBLA-Physikerteam nimmt „eine durchschnittliche tatsächliche
+Dauer des Lichtphänomens von t = 5 Sekunden (an) … : dies ist einfach der Wert der ‘tat-
+sächlichen Belichtungszeit’ die sich an den Fotos orientiert, welche das Lichtphänomen zei-
+gen” (Teodorani und Nobili 2002, S. 7). Unter Annahme dieser Belichtungszeit bestimmten
+sie die scheinbare Helligkeit mittels der Gleichung LAPP = LEXP / t, wobei „LEXP … die der Foto-
+grafie entnommene Leuchtstärke“ ist” (a. a. O.). Da das EMBLA-Physikerteam die tatsächli-
+che Dauer jeder Sichtung des blinkenden Lichts nicht aufgezeichnet hat, fragt man sich, ob
+nicht dieses ungesicherte Wissen für die oben erwähnte Diskrepanz verantwortlich ist. Teo-
+dorani und Nobili selbst merken an: “das gesamte Auftreten [des Lichts] dauerte zwischen 1
+und 30 Sekunden, am häufigsten 5 Sekunden” (a. a. O., S. 3). Wenn in gewissen Fällen die
+Dauer des Lichts bis zu 30/5 = 6 mal so lange anhielt wie der willkürlich angenommene Wert,
+dann würde dies implizieren, dass manche Schätzungen von LAPP bezüglich der vom EMBLA-
+Physikerteam berichteten Daten bis zu 6fach überschätzt sein können. Daher könnte die Un-
+sicherheit hinsichtlich der Größe des Zeitparameters für die Diskrepanz zwischen den expe-
+rimentellen Daten und theoretischen Schätzungen bezüglich 11,5 km vom Beobachtungs-
+punkt entfernten Scheinwerfern verantwortlich sein.
+
+
+
+
+10 Bei extremen Beleuchtungsstufen oder Belichtungszeiten besteht eine herabgesetzte Filmempfind-
+   lichkeit, so dass eine erhöhte Beleuchtung zum Ausgleich für kurze Belichtungszeiten keine ange-
+   messene Belichtung mehr gestattet. Dieser Umstand wird als „Versagen des Reziprozitätsgesetzes“
+   bezeichnet, weil das Reziprozitätsgesetz (der Betrag der Belichtung (E) (exposure), der der Film aus-
+   gesetzt ist, ist proportional zur Lichtintensität (i) auf dem Film, multipliziert mit der Belichtungszeit
+   (t), daher gilt E = it) die Filmempfindlichkeit bei sehr kurzen und sehr langen Belichtungszeiten
+   nicht mehr beschreibt. Bei Farbfilmen muss der Fotograf darüber hinaus die Reaktionszeit des Films
+   sowie Schwankungen im Farbgleichgewicht berücksichtigen, weil die Reaktionszeit für jede der E-
+   mulsionsschichten unterschiedlich sein kann. Farbkontrastschwankungen können überhaupt nicht
+   berücksichtigt werden, und Kontrastfehler können daher auftreten. Es ist nicht klar, ob das EMBLA-
+   Physikerteam diese Effekte bei der Schätzung der Belichtungszeit berücksichtigt hat.
+82                                       M. Leone
+
+
+                      Eine alternative Schätzung der Lichtstärke
+
+Da die obige Diskussion die Verlässlichkeit der fotometrischen Daten des EMBLA-
+Physikerteams in Frage stellt, wird im Folgenden eine alternative Schätzung der Lichtstärke
+von einem Fotopositivabzug entwickelt. Das überprüfte Foto wurde im August 2002 aufge-
+nommen und betrifft das vom EMBLA-Physikerteam analysierte Leuchtphänomen. Da für
+diese Untersuchung keine Belichtungsmesserausrüstung zur Verfügung stand, wird hier nur
+eine grobe Annäherung versucht. Um die Übereinstimmung zwischen der Leuchtstärke und
+der Scheinwerfererklärung zu prüfen, wird die jetzige Schätzung unter der Annahme entwi-
+ckelt, dass die Lichtquelle eine von der Kamera nicht aufgelöste punktförmige Quelle war
+(was offensichtlich ist, wenn es um 11,5 km entfernte Scheinwerfer geht). Diese Annahme
+wurde hinsichtlich des EMBLA-Physikberichts bereits von Maccabee (2002) in Erwägung
+gezogen.
+   Wie von Maccabee (1987, 1999) demonstriert, kann man die Lichtstärke einer punktför-
+migen Quelle in lm/sr oder cd (siehe Tab. 6) mittels der folgenden Gleichung berechnen:
+                                                H ⋅ Ai ⋅ R 2 ⋅ e bR
+                                           IV =
+                                                    T ⋅ A⋅t
+Diese Gleichung „kann durch die Umkehrung fotometrischer Standardgleichungen gebildet
+werden, welche die Belichtungszeit in Begriffen der Intensität der Quelle ausdrücken” (Mac-
+cabee 1987, S. 165). HAi ist die innerhalb der Grenzen des Bildes gespeicherte fotometrische
+Energie (lm· s), wobei H die durchschnittliche Belichtungsstufe (lm· s/m2) und Ai die Bildflä-
+che (m2) ist. R ist die Entfernung der Kamera zur Lichtquelle (m), b ist die atmosphärische
+Absorption (m-1), T ist die Durchlässigkeit der Kameralinse, t ist die Belichtungsdauer (s) und
+A ist die Fläche der Blende (m2). Diese Fläche ist gegeben durch
+                                           A = (π 4) ⋅ (F f # )
+                                                                  2
+
+
+    wobei F die Brennweite der Linse (hier: 28 mm) und f# die Blendeneinstellung (hier: 2,8)
+ist. Dementsprechend ist A = 7.85 · 10-5 m2.
+    Die Bildfläche Ai wird als annähernde Kreisfläche mit einem Radius von 0,05 mm betrach-
+tet.11 R wird mit 11500 m angenommen (Entfernung von Løbergsvollen-Heggsetvollen zum
+Beobachtungspunkt). Die Fehlerkorrekturen für atmosphärische Absorption (ebR) und die
+Durchlässigkeit der Kameralinse (T) kann mit annähernd 1 gleichgesetzt werden, da sie diese
+auf eine Größenordnung abzielende Schätzung nicht ernsthaft beeinflussen. Der Parameter t
+wird mit 5 Sekunden angenommen. Die letzte verbleibende Größe für die Berechnung der
+
+
+11 Diese lineare Messung wurde mittels des Programms Photoshop 5.0 auf einem eingescannten Bild
+   eines Farbpositivabzugs ausgeführt. Die Messung wurde korrigiert entsprechend dem geometri-
+   schen Verhältnis zwischen dem 12x18 cm Positivabzug und dem 24x36 mm Negativ.
+    Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen    83
+
+Intensität der Quelle ist das mittlere H über das ganze Bild. Die charakteristischen Kurven für
+den Film, welche die Lichtempfindlichkeit des Films grafisch darstellen (auch Schwärzungs-
+kurven oder D-LogE-Kurven genannt), stammen vom Filmhersteller.
+   Bei dieser Kurvenfamilie wird die Dichte als Funktion des Logarithmus von H abgebildet.
+Die Form der Kurve stellt die Farbempfindlichkeit für eine große Bandbreite von Belichtun-
+gen und für einen bestimmten Entwicklungsverlauf dar. Mit abnehmender Neigung der Kur-
+ve sinkt auch die Fähigkeit des Films, den Kontrast zwischen unterschiedlichen Belichtungs-
+zeiten abzubilden, und endet ganz, wenn die Kurve horizontal verläuft. Die rechte Seite der
+Kurve geht in Sättigung über (Eastman Kodak Company Staff 1997). In diesem Kurvenab-
+schnitt sinkt die Rate der Dichtezunahme bei steigender Belichtungszeit allmählich ab, bis ein
+Maximum erreicht wird. Dies wird „Maximaldichte” genannt. Jenseits dieses Punkts können
+sich Belichtungsveränderungen nicht mehr als Dichteveränderungen auswirken.
+
+
+
+
+Abbildung 6: Schwärzungskurven eines KODAK Gold 200-Films (Quelle: KODAK GOLD 100 and
+             200 Filme, August 2000).
+
+Um den H-Parameter zu bestimmen, wird hier die der Maximaldichte entsprechende Belich-
+tungszeit des für die Aufnahme verwendeten Films (KODAK Gold 200) betrachtet. Die cha-
+rakteristischen Kurven für die drei Farben Rot, Grün und Blau werden in Abbildung 6 darge-
+stellt. Die rechte Seite der Kurve entspricht einer Überbelichtung des Bildes. Der log H-
+Höchstwert der von der Firma Kodak bereitgestellten Kurven ist 1,0. Dies entspricht H = 10
+lx· s (oder lm· s/m2). Daher wird angenommen, dass der relevante Bereich des Films überbe-
+84                                                 M. Leone
+
+
+lichtet wurde und einer Beleuchtung von 10 lx· s ausgesetzt war.
+   Mit den obigen Daten ergibt die Gleichung (5) IV = 2.6 · 104 cd, ein Wert, der deutlich un-
+terhalb der von Autoscheinwerfern emittierten maximalen Lichtstärke liegt (siehe die ECE-
+Bestimmung). Diese grobe Schätzung zeigt, dass die Lichtstärke des vom EMBLA-Physiker-
+teams registrierten Lichts mit dem übereinstimmt, was im Falle von Autoscheinwerfern er-
+wartet werden darf. Darüber hinaus unterstützt dieses Resultat die Schlussfolgerung, dass die
+von Teodorani und Nobili dargelegten fotometrischen Schätzungen der scheinbaren Leucht-
+kraft nicht sehr verlässlich sind.
+
+                           Diskussion des Leuchtstärke/Größe-Gesetzes
+
+Aufgrund der Nachverarbeitung von während des EMBLA-Feldaufenthalts 2001 aufgenom-
+menen Videobildern berücksichtigen Teodorani und Nobili geringfügige Zeitabweichungen.
+Die von ihnen vorgeschlagene Erklärung für die gesammelten Daten lautet, dass
+
+     „die Helligkeit eines blinkenden und unbeweglichen Lichtphänomens auch dann wächst, wenn
+     sich das Lichtphänomen anscheinend ausdehnt (Zunahme von R). Aus der Thermodynamik wis-
+     sen wir, dass wenn eine Plasmakugel [dies ist die vom EMBLA-Physikerteam vorgeschlagene Quelle der
+     Hessdalen-Lichter (Teodorani et al. 2001)] sich ausdehnt, sie … mit einer deutlichen Abnahme der Leucht-
+     stärke (Intensität pro Pixel) schnell abkühlen muss, aber dies geschieht im Falle des Hessdalen-Phänomens
+     nicht. Die Leuchtstärke unterliegt hier einem linearen Wachstum aufgrund einer offenbar ausschließlichen
+     Abhängigkeit der Leuchtstärke vom Parameter R2 (Stefan-Boltzmann-Gesetz), die in diesem besonderen Fall
+     im Vergleich mit der sehr schwachen Abhängigkeit der Leuchtstärke vom Parameter TE [Effektivtempera-
+     tur] sehr stark ausfällt.” (Teodorani und Nobili 2002, S. 8 f.)
+
+Sei A die scheinbare Größe des Leuchtphänomens „wie von einer Canon XM-1-Videokamera
+registriert” und k eine Konstante. Aus einer „Kurve, die eine Zunahme der scheinbaren
+Leuchtstärke mit der Größe einer unbeweglichen blinkenden Lichtkugel zeigt” (Teodorani
+und Nobili, 2002, S. 9), folgt somit
+                                                     L APP = kA
+Um die lineare Beziehung zwischen scheinbarer Leuchtstärke und scheinbarer Größe zu er-
+klären, merken Teodorani und Nobili an, dass
+
+     „dieser experimentelle Beleg, welcher zeigt, dass in diesen Lichtphänomenen die Temperatur bei einer Aus-
+     dehnung der strahlenden Oberfläche konstant bleibt oder sehr geringfügig abnimmt, in hohem Maße ano-
+     mal wäre, wenn die Zunahme der Leuchtstärke von einer einzelnen Lichtkugel verursacht würde, aber sie
+     kann sehr gut erklärt werden, wenn die scheinbare ‚Ausdehnung’ der strahlenden Oberfläche nicht von einer
+     einzelnen Lichtkugel, sondern vom plötzlichen Auftreten mehrerer anderer Lichtkugeln in großer Nähe
+     zum ersten verursacht wäre.” (Teodorani und Nobili 2002, S. 9)
+
+Sie nehmen also an, dass die scheinbare Größe mit der tatsächlichen Größe einer Anzahl
+    Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen    85
+
+angeblicher „Lichtkugeln“ korreliert. Diese Annahme ist jedoch von zweifelhafter Verläss-
+lichkeit, weil die Daten vermutlich von einer gesättigten Lichtquelle herrühren.12 Wenn S die
+Anzahl der Berechnungen ist, die einen Pixel sättigen, und N der scheinbare Radius der gesät-
+tigten Quelle (in Pixel), dann ergibt sich die Gesamtzahl der Berechnungen Stot durch die
+Anzahl der gesättigten Pixel plus der Anzahl der Pixel in einer ungesättigten Korona mit ei-
+nem Radius von einem Pixel:
+                          [                             ]
+   S tot = Sπ ( N − 1) + aSπN 2 − aSπ (N − 1) = Sπ ( N − 1) + πaS (2 N − 1)
+                      2                             2                2
+
+
+   wobei a ein zufällig zwischen 0 und 1 variierender Parameter ist. Die Sättigungszahl S kann
+einem Schaubild entnommen werden, sie ist gleich der maximalen Anzahl von Berechnun-
+gen geteilt durch die Anzahl der Pixel der Quelle mit der entsprechenden Anzahl von Berech-
+nungen. Der Ausdruck in eckigen Klammern gibt die Streuung der Berechnungen einer Quel-
+le vom Radius N unter der Voraussetzung an, dass S bekannt ist. Die auf diese Weise ermittel-
+te Funktion ist der im EMBLA-Schaubild abgebildeten sehr ähnlich, und die Sättigungshypo-
+these stimmt mit der linearen Abhängigkeit von scheinbarer Größe und Leuchtstärke überein.
+Änderungen von Stot könnten durch Bäume in der Sichtlinie, durch scheinbare Drehungen
+der Autoscheinwerfer oder eine Kombination von beidem hervorgerufen sein.
+
+                     Kritik der Schätzung der Effektivtemperatur
+
+Im Abschnitt „Spektroskopie” diskutiert das EMBLA-Physikerteam die Merkmale des „mit
+einem ROS-Beugungsgitter in Verbindung mit einer mit einem 270mm-Objektiv versehenen
+Praktika BX-20 Reflexkamera registrierten Spektrums eines Hessdalen-Lichtphänomens”
+(Teodorani & Nobili 2002, S. 11). Dieser Abschnitt folgt auf einen anderen, in dem die Ver-
+fasser durch fotometrische Berechnungen die von den Lichtern ausgestrahlte „Gesamtener-
+gie“ ermitteln. (Teodorani & Nobili 2002, S. 7). Durch Anwendung des Stefan-Boltzmann-
+Gesetzes (unter der Hypothese, dass „das Lichtphänomen … sich wie eine aus ionisierten
+Teilchen im thermodynamischen Gleichgewicht bestehende Lichtkugel“ verhält, ermittelt das
+EMBLA-Team die angebliche Effektivtemperatur des Phänomens und merkt an: „Die spekt-
+roskopisch abgeleitete Farbtemperatur entspricht nicht der aus der Fotometrie abgeleiteten
+Effektivtemperatur“ (Teodorani & Nobili 2002, S. 12).
+   Während die behauptete fotometrische Effektivtemperatur zwischen 8853 und 10878 K
+liegt, führt die Spektralanalyse das EMBLA-Team zu Werten im Bereich von 4400 und 6300
+K. Dieses Ergebnis überrascht nicht, da ihre fotometrischen Schätzungen aus einer fragwürdi-
+gen Bestimmung der beteiligten Parameter folgen. Einige Anmerkungen scheinen angebracht.
+
+
+12 Der Verfasser dankt Michele Moroni für den Hinweis auf das Problem der Sättigung sowie für
+   einige wichtige Korrekturen und Verbesserungen der ursprünglichen Berechnung der scheinbaren
+   Leuchtstärke und scheinbaren Größe.
+86                                            M. Leone
+
+
+Erstens: Hinsichtlich der Größe des Phänomens stellen sie fest, dass „es … möglich (ist), ei-
+nen Vergleich mit der Größe der Bäume zu ziehen“ und dass „ein Mittelwert von R = 10m …
+angenommen werden (kann)“ (Teodorani & Nobili 2002, S. 7). Da (a) das Phänomen nicht
+vollständig stationär verharrte, (b) das Bild durch eine lange Belichtungszeit gewonnen wurde
+und (c) die Höhe der Bäume aufgrund der Überschätzung der Entfernung (diese Bäume be-
+finden sich auf dem Heggsethødga-Rücken in 4 km Entfernung vom Beobachtungspunkt)
+ebenfalls überschätzt wurde, entbehrt die Annahme von 10 m jeder Grundlage.
+Zweitens: Das EMBLA-Team unterstellt „die Gültigkeit der Gleichung L ABS = 4πR σTE ,
+                                                                                             2    4
+
+
+wobei R der Radius des Leuchtphänomens, σ = 5.6697 x 10-8 J s-1 m-2 K-4 die Stefan-
+Boltzmann-Konstante und TE die Effektivtemperatur ist” (Teodorani und Nobili 2002, S. 7).
+Wie vom Physikerteam angemerkt wird, beruht diese Annahme auf der „willkürlich gemach-
+ten Hypothese, dass das Phänomen sich wie eine Lichtkugel verhält, die sich aus ionisierten
+Partikeln im thermodynamischen Gleichgewicht besteht (Theorie des schwarzen Strahlers)“
+(a. a. O.). Diese willkürliche Annahme wird durch einige Rechenfehler noch verschlimmert.
+Entsprechend der Tabelle, welche die geschätzte Effektivtemperatur angibt, würde dieser
+Wert im Bereich zwischen 8853 und 10878 K liegen. Dieses Ergebnis steht jedoch nicht im
+Einklang mit dem Stefan-Boltzmann-Gesetz.13 Für Bild 1 werden vom EMBLA-Team die
+folgenden Werte angegeben: LABS = 61 041 W; Gesamtenergie = 3.05 · 1012 erg (3.05 · 105 J); TE
+= 9622 K. Wenn man die vom EMBLA-Physikerteam selbst geschätzten Parameterwerte in
+die folgende Formel einfügt, dann liegt die „korrekte“ Effektivtemperatur unterhalb der Um-
+gebungstemperatur.
+                        1                                       1
+          ⎛ L     ⎞ 4 ⎛            61,041            ⎞ 4
+     TE = ⎜ ABS2 ⎟ = ⎜                            −8 ⎟
+                                                         ≅ 171 K
+          ⎝ 4πR σ ⎠   ⎝ 4 ⋅ 3.14 ⋅ 100 ⋅ 5.67 ⋅ 10 ⎠
+
+
+13 Die Gesamtleistung pro Flächeneinheit eines Schwarzkörperstrahlers (LABS/A) wird durch eine In-
+   tegration der Planckschen Strahlungsformel über alle Wellenlängen erreicht. Die pro Flächeneinheit
+   ausgestrahlte Leistung als Funktion der Wellenlänge ist
+
+                                     dL ABS 1   2πhc 2
+                                              =
+                                                      (
+                                      dλ A λ5 e hc λkT − 1          )
+     Ihre Integration bildet die Schlussform des Stefan-Boltzmann-Gesetzes:
+
+                  L ABS   2π 5 k 4 4         ⎡               W ⎤
+                        =     3 2
+                                  T = σT 4 = ⎢5.6697 ⋅ 10 −8 2 4 ⎥T 4
+                    A     15h c              ⎣              m K ⎦
+     Daher folgt für einen sphärischen Radiator:
+
+                                          L ABS = 4πR 2σT 4
+    Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen   87
+
+
+Die wahrscheinliche Quelle für diesen Fehler dürfte der Umgang des EMBLA-Teams mit der
+Maßeinheit für LABS sein. Es stellt sich heraus, dass die umgekehrte Schätzung der absoluten
+Leuchtstärke (aus dem von Teodorani und Nobili angegebenen TE-Wert)
+   L ABS = 4πR 2σTE4 = 4 ⋅ 3.14 ⋅ 100 ⋅ 5.67 ⋅ 10 −8 ⋅ (9622 ) = 6.1 ⋅ 1011 W
+                                                                 4
+
+
+ergibt, ein Wert, der 107 mal höher liegt als der von Teodorani und Nobili engegebene Wert,
+d. h. er ist um einen numerischen Faktor fehlerhaft, der dem Umrechnungsfaktor von W
+nach erg/s entspricht.
+    In einer kürzlich erhaltenen e-mail hat Teodorani behauptet, dass der Verfasser hinsicht-
+lich seiner Schätzung der Effektivtemperatur einem Irrtum erliegt. Er hat zunächst ange-
+merkt, dass die Stefan-Boltzmann-Gleichung „zum Studium der Sterne und nicht von Schein-
+werfern“ dient, womit er offenbar mit dem Verfasser übereinstimmt, dass diese Gleichung
+von zweifelhaftem Wert für die Untersuchung der von ihm nicht erkannten Autoscheinwerfer
+ist. Zweitens ist seiner Ansicht nach der Wert von 171 K falsch, weil sein LABS-Wert in die
+Stefan-Boltzmann-Gleichung „ohne die Umwandlung von Watt in erg/s“ (also um einen 107-
+Faktor) eingefügt wird, bevor die Temperatur berechnet wird (Teodorani, zit. n. Sabadin
+2003).
+    Teodoranis Analyse ist nicht korrekt. Dem Stefan-Boltzmann-Gesetz zufolge (siehe bei-
+spielsweise Piragino & Pisent 1984, S. 572, S. 579) ist die von einem Schwarzkörperstrahler
+pro Sekunde und Flächeneinheit (A) ausgestrahlte Energie proportional zur vierten Potenz
+der absoluten Temperatur und beträgt (in Teodoranis Schreibweise)
+                                                             [
+                                           L ABS A = σT 4 Jm −2 s −1    ]
+   wobei σ = 5.6697 · 10 W m K (oder J s m K ). Dieser Wert ist exakt derselbe konstan-
+                       -8     -2   -4       -1   -2   -4
+
+te Wert wie von Teodorani und Nobili (2002, S. 7) angegeben. Wie ersichtlich ist, werden so-
+wohl diese Konstante als auch die anderen Werte (LABS, A, T) bereits in SI-Einheiten ausge-
+drückt, weshalb es für den vorgeschlagenen Wechsel der Maßeinheit keine Rechtfertigung
+gibt. Eine Umwandlung der LABS-Messung in erg/s, wie Teodorani das macht, würde zu einem
+inkonsistenten Wert ohne jede physikalische Bedeutung führen. Ein numerisches Beispiel
+kann die Korrektheit dieses Verfahrens demonstrieren. Wenn man in die obige Gleichung die
+Werte der absoluten Leuchtstärke und Fläche der Sonne einfügt und sie in SI-Einheiten an-
+gibt, dann folgt aufgrund LABS = 3.9 · 1026 W und R = 6.96 · 108 m
+
+                 1                                                            1
+    ⎛ L     ⎞ 4 ⎛                     3.9 ⋅ 10 26 W          ⎞ 4
+T = ⎜ ABS2 ⎟ = ⎜⎜                                            ⎟ = 5800 K
+                                                          −4 ⎟
+    ⎝ 4πR σ ⎠
+                                      17    2       −8 −2
+                ⎝ 4 ⋅ 3.14 ⋅ 4.84 ⋅ 10 m ⋅ 5.67 ⋅ 10 Wm K ⎠
+88                                                  M. Leone
+
+
+in perfekter Übereinstimmung mit der Temperatur der Sonne.14 Dieselbe Vorgehensweise mit
+den von Teodorani für das „blinkende Licht” in Hessdalen angegebenen Werten für LABS und
+R würde zu einer effektiven Temperatur von 171 K führen. Darin besteht das Problem.
+   Darüber hinaus überzeugt Teodoranis Ansatz nicht aus einem tiefer liegenden theoreti-
+schen Grund. Er stellt fest, dass das Stefan-Boltzmann-Gesetz in einer Leuchtstärke „im sicht-
+baren Bereich von Δλ = 3800-6800 Å“ resultiert (Teodorani & Nobili 2002, S. 7). Dies ist nicht
+zutreffend. Diese Formel betrifft die Lichtleistung (über das gesamte Spektrum) und daher die
+Gesamtenergie pro Flächeneinheit eines Schwarzkörperstrahlers. Wenn die Temperatur nahe
+der der Sonne liegt (5800 K), besteht nur eine geringe Differenz zwischen beiden Leuchtstär-
+ken. Bei tieferen Temperaturen wie 3200 K jedoch umfasst die Differenz bereits zwei Größen-
+ordnungen, und bei einer Temperatur von 171 K sind dies 49 Größenordnungen! Wenn man
+daher, wie Teodorani, eine Leuchtstärke im Bereich von 3800-6800 Å in die Gleichung ein-
+fügt, erhält man eine Effektivtemperatur, die in keiner Weise (nicht einmal der Größenord-
+nung nach) mit der Temperatur des Objekts korreliert.
+
+                                                Spektralanalyse
+
+Wie aus dem vorangehenden Abschnitt klar wird, ist die – aus den oben erörterten nicht
+verlässlichen Annahmen – korrekt geschätzte Effektivtemperatur bedeutungslos und steht in
+offenem Widerspruch mit den durch die spektroskopischen Daten ermittelten Werten. Auf
+der anderen Seite gibt es, wie im Folgenden gezeigt werden soll, keinen Widerspruch zwi-
+schen den aus der Spektralanalyse resultierenden Zahlen und der Scheinwerferhypothese. Das
+EMBLA-Team schreibt:
+     „Durch den Einsatz der Praktika-Spiegelreflexkamera in Verbindung mit einem [vom CIPH geliehenen]
+     ROS-Beugungsgitter war es möglich, eine Reihe von Spektren sowohl von bekannten Lichtern als auch von
+     dem vermutlichen Hessdalen-Licht zu ermitteln. Die Merkmale des Beugungsgitters wurden als passend für
+     punktförmige Lichter wie die obigen Lichtquellen erachtet. Spektren von Straßenlaternen mit sehr gut identi-
+     fizierbaren Linien wurden als ‚Kalibrierungslampen’ verwendet, um eine Positions-Wellenlänge-Kali-
+     brierung des relevanten Spektrums zu ermöglichen. In diesem Fall wurde das Spektrum einer Natrium-
+     dampflampe (typisches gelbes Licht) verwendet, obwohl auch eine Quecksilberdampf-Hochdrucklampe
+     (typisches weißes Licht) in Betracht gezogen wurde. … Außerdem wurden einige Testspektren auch von
+     anderen Lichtquellen wie Auto- und Traktorlampen, Xenon-, Krypton- und Wolframblitzlichtern, Halo-
+     genlampen, Feuer, Neonröhren und LED-Lichtern ermittelt: diese wurden als Vergleich verwendet. Nur ei-
+     nes von drei Spektren (bei zehn Versuchen) wurde für die Analyse herangezogen, da die anderen zuviel Rau-
+     schen enthielten. … Das in diesem Jahr ermittelte Spektrum erscheint als ein kontinuierliches Spektrum oh-
+     ne aufgelöste Linien. Es zeigt eine Zusammensetzung aus zwei hohen Spitzen bei 5750 und 6600 Å und einer
+     deutlich kleineren Spitze bei 4500 Å.” (Teodorani und Nobili 2002, S. 10 f.)
+
+
+
+14 Für Daten zur solaren Physik siehe z. B. http://www.astro.wisc.edu/~dolan/constants/calc.html.
+    Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen                           89
+
+Wie oben ausgeführt, ermitteln Teodorani und Nobili drei Temperaturwerte (6300, 5100 und
+4400 K) „durch die willkürliche Annahme, dass das Spektrum von einer Art ionisiertem und/
+oder angeregtem Ionen-und Elektronengas im thermodynamischen Gleichgewicht herrührt“
+(Teodorani & Nobili 2002, S. 12). Das Spektrum wird in Abbildung 7 dargestellt.
+
+
+
+
+          Abbildung 7: Vom EMBLA-Physikerteam im August 2002 ermitteltes Spektrum
+                                  (Quelle: Teodorani & Nobili 2002).
+
+
+Aufgrund einiger Analogien mit den Spektra, die von Leuchtstoffröhren, Xenon-Gasent-
+ladungslampen, Kohlebogenlampen, Fluoreszenzleuchten, Blitzlichtern und Tageslicht-
+Leuchtstoffröhren werden sie zu der Annahme geführt, dass „das aufgezeichnete Spektrum …
+von mehreren zusammengesetzten Lichtquellen herrühren (könnte), die mehr oder weniger
+einem künstlichen Licht ähneln, aber nicht notwendigerweise dieselben Geräte sind, welche
+ein solches Leuchten vom chemisch-physikalischen Standpunkt aus erzeugen“ (a.a.O.).
+Nichtsdestotrotz formulieren sie eine andere Deutung, „die möglicherweise realistischer ist“:
+die drei Maxima (peaks) „rühren von einer Vermischung vieler sehr eng beieinander liegen-
+der Emissionslinien her“ (a.a.O.). Unter den in Betracht kommenden Elementen listen sie auf:
+Silizium vermischt mit Neon (5750 Å-Maximum), Sauerstoff, Stickstoff, Neon, Argon und
+Natrium (4500 Å), ferner Kalzium und Natrium vermischt mit Silizium (6600 Å). Andere,
+schwächere von Teodorani und Nobili gesammelte Spektren gleichen angeblich dem im
+EMBLA-Aufsatz gezeigten:
+   „Nachdem wir sichergestellt haben, dass die Hauptmaxima die Position hinsichtlich Wellenlänge und Form
+   in drei verschiedenen Spektren, die zu drei verschiedenen Zeiten und unterschiedlichen Lichtereignissen be-
+   stimmt wurden, nicht ändern, haben wir eine weitere Demonstration des Tatbestands, dass R, der Radius der
+90                                                M. Leone
+
+
+     Licht ausstrahlenden Fläche, der einzige für die Lichtstärkenveränderungen verantwortliche Parameter ist
+     und nicht die Temperatur T. Daher ist die Konstanz der Farbtemperatur ein gesicherter Tatbe-
+     stand“ (Teodorani & Nobili 2002, S. 14).
+
+Für die Beurteilung dieses Resultats ist es wichtig, die beiden grundlegenden Typen von Fahr-
+zeugbeleuchtungen zu analysieren: Glüh- und Gasentladungslampen.
+   Im Glühlampenscheinwerfer wird das Licht von einem dünnen Wolframfaden erzeugt, der
+bei Erhitzung durch elektrischen Strom leuchtet. Die Fadentemperatur in einer Wolfram-
+drahtglühbirne liegt im Allgemeinen zwischen 2800 und 3200 K, wobei höhere Temperaturen
+größere Leuchtstärken ergeben. Wenn die Fadentemperatur erhöht wird, erhöht sich jedoch
+auch die Verdampfungsrate, was zu einer Verkürzung der Lebensdauer aufgrund einer
+Schwärzung der Glühbirne führt. Um die Verdampfung des Fadens zu vermindern, wird der
+Glühbirne ein träges Gas oder eine Mischung träger Gase hinzugefügt. Längere Lebensdauer
+und erhöhte Effizienz werden mit der Wolframhalogenlampe erzielt, die dem Füllgas ein
+Halogen hinzufügt und die sich eine umkehrbare Reaktion zwischen dem Wolfram und dem
+Halogen zunutze macht. In Halogenlampen wird das verdampfte Wolfram dem Faden durch
+einen chemischen Transportprozess wieder zugeführt, welcher eine Schwärzung der Glühbir-
+ne verhindert. Dieser regenerative Zyklus ermöglicht die Verwendung einer höheren Faden-
+temperatur (Rechtsteiner & Ganske 1998). Bezüglich des Spektrums liegt die Farbtemperatur
+einer Standardglühlampe bei 2800 K, während ein Halogenscheinwerfer üblicherweise 3200 K
+erreicht. In den vergangenen Jahren kamen neue Halogenlampen auf den Markt, die bis zu
+4000 K liefern (OSRAM 2000a). Auch die Sonne ist ein Leuchtkörper: das Standard-
+Sonnenlicht ist mit 5400 K festgesetzt. Es ist nicht überraschend, dass diese Farbtemperatur
+mit einer Wellenlänge einhergeht, die nahe bei dem Wert für maximale Empfindlichkeit der
+Retina liegt (555 nm). Als Folge dieser Kennzahlen strahlt eine Wolframfadenlampe überwie-
+gend im Infrarotbereich. Somit ist das Spektrum bei den sichtbaren Frequenzen eine kontinu-
+ierliche glatte Linie, die mit zunehmender Wellenlänge ansteigt. Die ECE-Bestimmungen
+(1992, 2002) führen verwaltungstechnische Vorkehrungen und technische Voraussetzungen
+für Scheinwerfer mit Halogenfadenlampen der folgenden Kategorien: H1, H2, H3, HB3, HB4,
+H7, H8, H9, HIR1, HIR2 und/oder H11.
+   Hochenergie-Entladungslampen (High-Intensity Discharge lamps, HID) verwenden einen
+elektrischen Lichtbogen zur Erzeugung eines intensiven Lichts. Der Lichtbogen wird mittels
+einer Kapsel (Birne) mit zwei aneinandergrenzenden Elektroden in großer Nähe erzeugt. Die
+Kapsel leitet diese beiden Anschlüsse an ein elektronisches Vorschaltgerät. Dies ist ein elekt-
+ronisches Bauteil, das als Zündvorrichtung der Gasentladung dient. Die HID-Kapsel ist vaku-
+umversiegelt mit einer angereicherten Mischung an Edelgasen und Salzen der Alkalimetalle.
+Ein elektrischer Hochspannungsbogen wird zwischen beiden Elektroden aufgebaut, der Xe-
+nongas zur Entladung von Photonen anregt (Wang 2002). Standard-HID-Scheinwerfer er-
+zeugen Licht bei 4100 K. In den letzten Jahren hat die HID-Automobiltechnologie Scheinwer-
+fer entwickelt, die 5400 K erreichen, also nahe bei der Farbtemperatur der Sonne liegen (OS-
+    Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen   91
+
+RAM 2000b). Mit steigender Farbtemperatur wechselt die Farbe des Lichts von Gelb über
+Weiß zu Weißblau. HID-Scheinwerfer erzeugen Licht bei einer höheren Farbtemperatur als
+normale Halogenscheinwerfer, was ihnen ein reinweißes Erscheinungsbild gibt. Ein Problem
+besteht darin, dass eine Entladungslampe ihre Strahlung nicht in einer schönen glatten Kurve
+mit Strahlung auf allen Wellenlängen emittiert. Eine Entladungsquelle weist in ihrem ausge-
+stoßenen Spektrum ausgeprägte „Spitzen“ auf, die von den spezifischen Elementen stammen,
+die für die Füllmischung des Lichtbogens verwendet werden. Die normalerweise verwendete
+Methode besteht darin, den Ausstoß der Lichtbogenquelle an eine Glühfadenquelle anzupas-
+sen und die Farbtemperatur dieser Quelle zu verwenden. Wenn die Anpassung auf diese Wei-
+se vorgenommen wird, bezeichnet man die Farbtemperatur der Entladungsquelle als „korre-
+lierte Farbtemperatur“, die eine hilfreiche Annäherung bietet (Wood 2000). Die ECE-
+Bestimmungen (1996, 2001) führen verwaltungstechnische Vorkehrungen und technische
+Voraussetzungen für Scheinwerfer mit Gasentladungslampen in den Kategorien D1S/D2S
+und D1R/D2R..
+    Somit hat jeder Scheinwerfertyp seine eigene besondere Farbtemperatur, und dieser Para-
+meter ist unabhängig von der scheinbaren Größe des Leuchtphänomens. Kurz, dieses Ergeb-
+nis stimmt mit dem „Phänomen der konstanten Farbtemperatur“ überein.
+    Wie oben dargelegt, war das vom EMBLA-Team ermittelte Spektrum aus „zwei Spitzen bei
+5750 und 6600 Å und einer deutlich kleineren Spitze bei 4500 Å zusammengesetzt“ (Teodo-
+rani & Nobili 2002, S. 11). War die Leuchtquelle ein Glühlampen- oder ein Gasentladungs-
+scheinwerfer? Obwohl die Diskontinuitäten im Hessdalen-Spektrum auf eine Entladungs-
+quelle zu verweisen scheinen, führt die Suche nach einer „schuldigen“ HID nicht zum Erfolg.
+Während die Stärke der Spektralemission eines D2- und D4-HID aufgrund zweier Emissions-
+linien bei 569 nm (Scandium) und 589 nm (Natrium) zwischen 550 und 600 nm am höchsten
+ist, also dort, wo das EMBLA-Spektrum eine breite Spitze um 575 nm aufweist, stimmen
+andere Merkmale mit dem vom EMBLA-Team ermittelten Spektrum nicht überein. Auffällig
+ist das Fehlen der großen 660 nm-Spitze (Schimke & Grundmann 2002). Die D2- und D4-
+Spektren sind in Abbildung 8 dargestellt.
+    Bessere Ergebnisse erhalten wir, wenn wir eine Halogenglühlampe in Betracht ziehen. In
+Abbildung 9 wird ein typisches Spektrum einer Glühfadenlampe dargestellt. Wie ersichtlich
+ist, ist die Spektralverteilung von Glühfadenlampen kontinuierlich und folgt sehr eng einer
+Schwarzkörperverteilung. Da es keine Emissionslinien oder -bereiche gibt, ist es interessant
+anzumerken, dass in Übereinstimmung mit dem vom EMBLA-Team ermittelten Spektrum
+die meisten Emissionen im Bereich von 400-700 nm bei hohen Wellenlängen erfolgen.
+92                                                                                            M. Leone
+
+
+                          20000
+
+
+                          18000
+
+
+
+
+                                                                                                         569nm Sc
+                                                                                   508nm Sc
+                          16000
+
+
+
+
+                                                                      474nm Sc
+
+
+
+
+                                                                                              546nm Hg
+                          14000
+
+
+                          12000
+     In tensity [a.u .]
+
+
+
+
+                          10000
+                                                                                                                                                            D2
+                                                                                                                                                            D4
+                                                     436nm Hg
+
+
+
+
+                                                                                                                                     631nm Sc
+                           8000
+
+
+                           6000
+                                          405nm Sc
+
+
+
+
+                           4000
+
+
+
+
+                                                                                                                    589nm Na
+                           2000
+
+
+                              0
+                               350      400                     450              500          550                              600              650   700    750   800   850
+                                                                                                            Wav e le nth [nm]
+
+
+                                      Abbildung 8: Spektralvergleich von D2- und D4-Scheinwerfern
+                                                   (Quelle: Schimke & Grundmann 2002).
+
+
+
+
+                                     Abbildung 9: Spektrum eines Wolframfadens in einer Glühbirne
+                                                  (Quelle: Rechtsteiner & Ganske 1998).
+     Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen      93
+
+                     Die Halogenscheinwerfer-Farbfilm-Hypothese
+
+Obwohl die Emissionen bei hohen Wellenlängen einer Glühfadenlichtquelle mit dem allge-
+meinen spektroskopischen Resultat der optischen EMBLA-Erhebung übereinstimmen, muss
+das Problem der „anomalen Spitzen“ bei 6600, 5750 und 4500 Å noch geklärt werden. Steht
+das Vorhandensein von Emissionsspitzen in dem vom EMBLA-Physikerteam ermittelten
+Spektrum tatsächlich im Widerspruch zu dem erwarteten Spektrum von Halogenscheinwer-
+fern?
+   Um diese Frage zu beantworten, ist es wichtig, sowohl die Lichtquelle als auch das Mess-
+system, d. h. den fotografischen Film, zu betrachten. Es ist wichtig, zur Kenntnis zu nehmen,
+dass die für die Aufnahme des Hessdalen-Spektrums verwendete Reflexkamera einen Film
+verwendete (Kodak Ektachrome 100), dessen spektrale Empfindlichkeitskurve im Bereich von
+400-700 nm nicht flach verläuft. Abbildung 10 zeigt eine solche Kurve (Kodak Ektachrome
+100, 2002). Da der vom EMBLA-Physikerteam verwendete Film eine spektrale Empfindlich-
+keitskurve entsprechend Abbildung 10 aufweist, ist – in Übereinstimmung mit dem von der
+GEPAN ermittelten Spektrum15 – zu erwarten, dass das Spektrum eines Glühfadenlichts eine
+Grenze des Rotanteils bei ungefähr 650 nm hat, übereinstimmend mit dem Cyan-Empfind-
+lichkeitseinschnitt. Dies ist genau das, was das Hessdalen-Spektrum zeigt. Die „zweite große
+Spitze“ bei 6600 Å (Teodorani & Nobili 2002, S. 12) ist daher das Ergebnis der spektralen
+Empfindlichkeitskurve eines Kodak Ektachrome 100-Films anstatt einer tatsächlichen Emis-
+sionsspitze.
+   Während Farbfilme und panchromatische Schwarzweißfilme für alle Wellenlängen des
+sichtbaren Lichts empfindlich sind, sind kaum zwei Filme für alle Wellenlängen gleicherma-
+ßen empfindlich. Spektrale Empfindlichkeit beschreibt die relative Empfindlichkeit der Emul-
+sion für das Spektrum innerhalb des Empfindlichkeitsbereichs des Films. Die fotografische
+Emulsion hat inhärent die Empfindlichkeit lichtempfindlicher Silberhalidkristalle. Wie in
+Abbildung 10 gezeigt wird, weist der Kodak Ektachrome 100-Film drei spektrale Empfind-
+lichkeitskurven auf – jeweils eine für die rotempfindliche (Cyan-Farbstoff produzierende), die
+grünempfindliche (Magenta-Farbstoff produzierende) und die blauempfindliche (Gelb-Farb-
+stoff produzierende) Emulsionschicht. Die Daten werden ermittelt, indem man den Film über
+das ganze Spektrum reichenden, 10 nm breiten, kalibrierten Strahlungsbändern aussetzt, und
+die Empfindlichkeit wird als umgekehrter Wert der für die Erzeugung einer bestimmten
+
+15 Zum Vergleich findet sich auch bei Louange (1983) das Spektrum eines Glühfaden-Autoschein-
+   werfers. Das Spektrum wurde in den 1980er Jahren von der GEPAN (eine Abteilung der französi-
+   schen Raumfahrtbehörde CNES, die sich mit dem Studium „nichtidentifizierter Luftraumphänome-
+   ne“ befasst) aufgenommen. Solche Versuchsreihen gestatteten es der GEPAN, einen Katalog von
+   Spektra aufzubauen, die von verschiedenen bekannten Lichtquellen ausgestrahlt werden, als Refe-
+   renz zur Auswertung von Fotografien, die unidentifizierte fliegende Lichter zeigen.
+94                                           M. Leone
+
+
+Dichte erforderlichen Belichtung ausgedrückt. Die in nm ausgedrückte Strahlung wird auf der
+horizontalen, der Logarithmus der Empfindlichkeit auf der vertikalen Achse abgetragen, was
+eine Kurve der spektralen Empfindlichkeit ergibt (Eastman Kodak 1997). Dieser Film gibt
+Farben so wider, wie sie vom menschlichen Auge wahrgenommen werden: unser Auge ver-
+fügt über drei Gruppen von Rezeptoren (Zapfen) mit Empfindlichkeitsspitzen, die wir als Rot
+(580 nm), Grün (540 nm) und Blau (450 nm) bezeichnen. Licht beliebiger Wellenlängen im
+von 400 bis 700 nm reichenden sichtbaren Bereich erregt einen oder mehrere dieser Rezeptor-
+typen.
+
+
+
+
+     Abbildung 10:   Spektrale Empfindlichkeitskurve des vom EMBLA-Team verwendeten Farbfilms
+                     (Quelle: Eastman Kodak 2002a).
+
+Ein erster Blick auf die Kodak-Kurven zeigt, dass die maximalen Intensitäten sich bei Wellen-
+längen der angeblichen „Spitzen“ des EMBLA-Physikerteams befinden (Abbildung 7). Ist dies
+Zufall? Keineswegs. Wie wohlbekannt ist, kann eine mit einem Beugungsgitter oder einem
+Prisma ausgestattete Kamera zur Fotografie einer großen Bandbreite von Spektra verwendet
+werden. Die Aufzeichnung fotografischer Spektra erfordert jedoch Sorgfalt in der Auswahl
+des Films. Was astronomische Spektra (d.h. punktförmige Lichtquellen wie die Hessdalen-
+Lichter) betrifft, so „lohnt sich der Einsatz von Farbfilmen nicht, weil das dominierende
+spektrale Merkmal von den Farbfiltern des Films herrührt: man erhält keinen glatten Farbver-
+lauf. Sogar bei Schwarzweißfilmen ist Vorsicht mit den ziemlich plötzlichen Empfindlich-
+    Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen                            95
+
+keitswechseln bei unterschiedlichen Wellenlängen geboten, die als breite Spektralbänder in
+Erscheinung treten” (Fosbury 1999).
+   Der erste Schritt bei der Analyse der Möglichkeit, dass die „Spitzen“ in dem vom EMBLA-
+Team ermittelten Spektrum das Ergebnis eines Halogenlichts sind, das mittels eines Films
+einer bestimmten spektralen Empfindlichkeit aufgenommen wurde, besteht darin, die theore-
+tische relative Intensität gegen die Wellenlänge zu schätzen. Entsprechend des Planckschen
+Gesetzes ist die Schwarzkörper-Bestrahlungsstärke Eλ,T gegeben durch
+                                                                        2πhc 2                 1
+                                                             E λ ,T =
+                                                                         λ   5
+                                                                                       (e   hc λkT
+                                                                                                     −1)
+                                                                                 −34
+wobei h das Plancksche Wirkungsquantum ( 6.63 ⋅ 10                                     J s), k die Boltzmann-Konstante
+          −23                                                                8
+( 1.38 ⋅ 10     J K ), c die Lichtgeschwindigkeit ( 3 ⋅ 10 m s-1), λ die Wellenlänge und T die
+                                  -1
+
+absolute Temperatur ist. Somit ist das Spektrums eines Schwarzkörperstrahlers von 3200 K –
+entsprechend einem typischen Halogenscheinwerfer (OSRAM 2000a) – im sichtbaren Be-
+reich in etwa linear (siehe Abbildung 11).
+
+
+                                                    Halogen spectrum (3200 K)
+
+                                  1,2
+                                       1
+                arbitrary units
+
+
+
+
+                                  0,8
+                                  0,6
+                                  0,4
+                                  0,2
+                                       0
+                                        350   400      450     500      550            600           650   700
+                                                             wavelength (nm)
+
+
+
+            Abbildung 11: Spektrum eines Schwarzkörperstrahlers bei 3200 K.
+
+Der zweite Schritt besteht darin, die effektive Leistung pro Flächeneinheit zu schätzen, die
+vom fotografischen Film aufgenommen wird. Dies wird erreicht durch eine Korrektur der
+obigen Werte durch den Logarithmus der spektralen Empfindlichkeit der Gelb-, Magenta-
+und Cyan-Schichten des Films (Abbildung 10). Die relativen Intensitäten (Abbildung 11)
+werden in Intervallen von 25 nm mit der spektralen Empfindlichkeit des Films multipliziert.
+Das Resultat wird in Abbildung 12 dargestellt.
+96                                                           M. Leone
+
+
+                                                      Expected halogen spectrum
+
+
+                                         20
+
+
+
+
+                       arbitrary units
+                                         15
+                                         10
+                                           5
+                                           0
+                                            350     400    450     500    550      600   650   700
+                                                                 wavelength (nm)
+
+
+
+ Abbildung 12: Von einem Kodakfilm aufgezeichnete Leistung pro Flächeneinheit und Wellenlänge.
+
+Der dritte und letzte Schritt besteht darin, das aufgrund der obigen Hypothese erwartete
+Spektrum mit dem vom EMBLA-Team ermittelten Spektrum zu vergleichen. Aus Abbildung
+12 geht hervor, dass das von einem gewöhnlichen Halogenscheinwerfer emittierte Spektrum,
+wenn es mit einem Ektachrome 100-Film aufgenommen wird, ziemlich genau auf das von
+Teodorani und Nobili ermittelte Spektrum passt (siehe Tabelle 7).
+
+Tabelle 7: Parallelen zwischen dem vom EMBLA-Physikerteam ermittelten und dem gemäß der
+           Scheinwerferhypothese erwarteten Spektrum.
+
+Übereinstimmung                          Teodorani und Nobilis Spektrum              Spektrum von Halogenschein-
+                                                                                       werfern auf Kodak-Film
+           1                                      Drei breite Bänder                      Drei breite Bänder
+           2                                      4500, 5750, 6600 Å                     4500, 5500, 6500 Å
+           3                             höchste „Spitzen“ bei 5750 und             höchste „Spitzen“ bei 5500 und
+                                                    6600 Å                                     6500 Å
+
+
+
+Unabhängig vom Verfasser hat auch R. Levin (persönliche Korrespondenz, 31. Jan. 2003) –
+ein Spezialist der Firma OSRAM Sylvania – das vom EMBLA-Physikerteam ermittelte Spekt-
+rum ausgewertet. Seinem Urteil zufolge ist das Spektrum ein Artefakt des Messsystems. Diese
+Schlussfolgerung stimmt mit den in diesem Abschnitt erörterten Befunden überein. Dem
+OSRAM-Spezialist zufolge ist
+
+     „das Licht … ein Glühfadenscheinwerfer und das Muster … ein Artefakt des Meßsystems. … Das Spektral-
+                   Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen                 97
+
+   bild am oberen Ende des Spektrums [Abb. 7] legt nahe, dass das Spektrum der Lichtquelle über den ganzen
+   Film verteilt ist. … Farbfilme haben keine glatte Empfindlichkeitskurve. Stattdessen gibt es drei relativ schma-
+   le Empfindlichkeitsbereiche, einen für jede Farbe. Ich habe die Empfindlichkeitskurven für Ektachrome ge-
+   rade nicht zur Hand, aber ich verwende eine typische standardisierte Empfindlichkeit für Farbfilme (ANSI
+   Ph3.37-1969, entwickelt für die Bewertung selektiver Durchlässigkeit fotografischer Linsen). Wenn ich diese
+   mit dem Spektrum eines Glühfadenscheinwerfers multipliziere, dann sind die Resultate dem [Hessdalen-]
+   Spektrum sehr ähnlich. Ich weiß nicht, welcher Film tatsächlich verwendet wurde, daher habe ich die relative
+   Empfindlichkeit zwischen den drei Bändern nicht ausgeglichen, aber ich denke, darin besteht das Problem.
+   Ein panchromatischer Schwarzweißfilm würde das tatsächliche Spektrum aufzeichnen.”
+
+Die von dem OSRAM-Spezialisten erzielten Ergebnisse, entsprechend der Hypothese, dass
+das Spektrum das Resultat eines Halogenscheinwerfers und eines Farbfilms ist, werden in
+Abbildung 13 dargestellt.
+
+                                             3100 K Incandescent with Typical Color Film
+                              10
+
+
+
+                              8
+    Relative Spectral Power
+
+
+
+
+                              6
+
+
+
+                              4
+
+
+
+                              2
+
+
+
+                              0
+                               300     400                500                     600           700                   800
+                                                                Wavelength - nm
+
+
+
+
+Abbildung 13: Glühfadenspektrum auf typischem Farbfilm (R. Levin, persönliche Korrespondenz, 31.1.2003).
+
+
+Die qualitativen Entsprechungen zwischen dem hypothetischen Spektrum, dem hypotheti-
+schen Spektrum des Verfassers und dem empirischen Spektrum des EMBLA-Physikerteams
+sind bemerkenswert (siehe den in Abbildung 14 dargestellten Spektrenvergleich).
+98                                                            M. Leone
+
+
+
+                                                        Spectral comparison
+
+                          120
+                          100
+        arbitrary units   80                                                                    Teodorani
+                          60                                                                    Leone
+                          40                                                                    Levin
+
+                          20
+                           0
+                                0
+                                     5
+                                          0
+                                               5
+                                                    0
+                                                         5
+                                                              0
+                                                                   5
+                                                                        0
+                                                                             5
+                                                                                  0
+                                                                                       5
+                                                                                            0
+                           40
+                                    42
+                                         45
+                                              47
+                                                   50
+                                                        52
+                                                             55
+                                                                  57
+                                                                       60
+                                                                            62
+                                                                                 65
+                                                                                      67
+                                                                                           70
+                                                        wavelength (nm)
+
+
+Abbildung 14: Spektrenvergleich zwischen a) dem empirischen EMBLA-Spektrum, b) dem Spektrum des
+              Verfassers und c) dem des OSRAM-Spezialisten.
+
+
+Um die Fahrzeugscheinwerferhypothese auch quantitativ zu testen, hat der Verfasser eine
+statistische Prüfung des empirischen gegen das theoretische Spektrum vorgenommen. Das
+Verhältnis zwischen dem von Teodorani erhobenen empirischen Spektrum und dem von
+einer Glühfaden-Lichtquelle emittierten theoretischen Spektrum wurde durch die Berech-
+nung des nichtparametrischen Spearman-Rangkorrelationskoeffizienten bestimmt (Galeotti
+1983; Siegel und Castellan 1992). Es wurde die folgende Vorgehendweise befolgt:
+    a) Da keine Rohdaten verfügbar waren, wurden lineare Messungen der Intensität des
+EMBLA-Spektrums und Abbildungen der Empfindlichkeit des KODAK-Films in Abständen
+von 5 nm durchgeführt (siehe Abb. 15 und 16).
+    b) Die EMBLA-Werte wurden mit dem umgekehrten Wert der spektralen Empfindlichkeit
+des Films multipliziert. Dadurch wurde das theoretische Spektrum der Lichtquelle unabhän-
+gig vom Korrekturwert für die Empfindlichkeit des Films ermittelt (Abb. 17). Dieser Schritt
+war erforderlich, um zwei unabhängige Spektra zu erhalten.
+    c) Jeder Intensitätswert des EMBLA-Spektrums wurde der Größenordnung nach von 1 bis
+n geordnet (wobei n die Grundgesamtheit ist, d. h. die Anzahl der Klassen, in die das Spekt-
+rum unterteilt wurde).
+    d) Das von einer Glühfaden-Lichtquelle (Autoscheinwerfer) emittierte Licht wurde eben-
+falls von 1 bis n geordnet. Insofern ein Glühfadenspektrum (3200 K) im sichtbaren Bereich
+nahezu linear ansteigt (Leone 2003, S. 22), ist der Rang direkt proportional zur Wellenlänge.
+    Im letzten Schritt wurde der Spearman-Korrelationskoeffizient berechnet, indem das Ver-
+     Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen                99
+
+hältnis des EMBLA-Spektrums zur Filmempfindlichkeit (Abb. 17) und das Spektrum einer
+Glühfadenlampe (3200 K) berechnet wurden. Das Ergebnis ist Tabelle 8 zu entnehmen.16
+
+
+                                            70
+                                            60
+
+
+
+
+                  intensity (a.u.)
+                                            50
+                                            40
+                                            30
+                                            20
+                                            10
+                                             0
+                                         0
+                                         5
+                                         0
+                                         5
+                                         0
+                                         5
+                                         0
+                                         5
+                                         0
+                                         5
+                                         0
+                                         5
+                                       40
+                                       42
+                                       45
+                                       47
+                                       50
+                                       52
+                                       55
+                                       57
+                                       60
+                                       62
+                                       65
+                                       67
+                                                              wavelength (nm)
+
+
+       Abbildung 15: Empirisches EMBLA-Spektrum (Quelle: Teodorani & Nobili 2002).
+                     Die durchgezogene Linie zeigt das Rauschniveau an.
+
+
+                                                40
+                                                35
+                                                30
+                               sensitivity(*)
+
+
+
+
+                                                25
+                                                20
+                                                15
+                                                10
+                                                 5
+                                                 0
+                                                  350   450          550        650
+                                                          w avelength (nm )
+
+
+
+Abbildung 16: Spektrale Empfindlichkeitskurve eines Kodak Ektachrome 100-Films (Quelle: Kodak
+              Ektachrome 100, 2002). Empfindlichkeit = Umgekehrter Wert der zur Erzeugung der
+              angegebenen Dichte erforderlichen Belichtung (erg/cm2):
+
+
+                                                                                      6∑ d 2
+16 Die Formel des Spearmanschen Rangkorrelationskoeffizienten lautet r = 1 −
+                                                                                       (       )
+                                                                                                   , wobei d
+                                                                                      n n2 −1
+   die Rangdifferenz ist. Anstelle der Rohdaten werden die Datenpunkte in jeder Menge von 1 bis n ge-
+   ordnet. Der Parameter d wird für jede Wellenlänge aus der Differenz eines Rangpaars berechnet.
+100                                                M. Leone
+
+
+
+                                      10
+
+                                      8
+
+
+
+
+                   intensity (a.u.)
+                                      6
+
+                                      4
+
+                                      2
+
+                                      0
+                                       350   450              550        650
+                                                   wavelength (nm)
+
+
+Abbildung 17: Verhältnis des EMBLA-Spektrums zur Filmempfindlichkeit. Die durchgehende Linie ist
+              das erwartete Glühfadenspektrum.
+
+Tabelle 8: Schätzung des Spearman-Korrelationskoeffizienten.
+
+            Datenserie                        Stichprobengröße           r            p-Wert
+
+ EMBLA vs. Halogenscheinwerfer                        50               0.383            <.01
+
+
+
+Dieses Ergebnis zeigt eine ziemlich starke Abhängigkeit der beiden Datenserien. Die Korrela-
+tion zwischen dem empirischen EMBLA-Spektrum und dem erwarteten theoretischen
+Scheinwerferspektrum ist auf dem 1%-Niveau signifikant (Holl 1990; Siegel & Castellan
+1992), d. h. die Wahrscheinlichkeit, dass diese Übereinstimmung auf Zufallsfaktoren zurück-
+zuführen ist, liegt bei weniger als 1%. Abbildung 15 zeigt, dass die vom EMBLA-Physikerteam
+ermittelten spektroskopischen Daten in einigen Wellenlängenbereichen sehr nahe am
+Rauschniveau liegen (λ < 415 nm; 480 nm < λ < 535 nm; 600 nm < λ < 620 nm). Würden nur
+die Klassen außerhalb dieser Bereiche berücksichtigt (vgl. Abbildung 18), so würde der Spear-
+man-Koeffizienz noch weitaus signifikanter ausfallen. Wie in Tabelle 9 dargestellt, wird dann
+die Wahrscheinlichkeit, dass die Korrelation zwischen dem EMBLA-Spektrum und dem
+Glühfadenscheinwerfer dem Zufall geschuldet ist, verschwindend gering.
+
+Tabelle 9: Schätzung des Spearman-Korrelationskoeffizienten entsprechend des in Abbildung 18
+           dargestellten Spektrums.
+            Datenserie                        Stichprobengröße           r            p-Wert
+
+ EMBLA vs. Halogenscheinwerfer                        33               0.730           <.001
+     Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen            101
+
+
+
+                                         10
+
+                                               8
+
+
+
+
+                    intensity (a.u.)
+                                               6
+
+                                               4
+
+                                               2
+
+                                               0
+                                                400      450   500      550   600      650   700
+                                                                wavelength (nm)
+
+
+Abbildung 18: Verhältnis des EMBLA-Spektrums zur Filmempfindlichkeit (Auslassung der
+              Bereiche λ < 415 nm; 480 nm < λ < 535 nm; 600 nm < λ < 620 nm).
+              Die durchgehende Linie ist das erwartete Glühfadenspektrum.
+
+
+                                                   100
+                                intensity (a.u.)
+
+
+
+
+                                                    80
+                                                    60
+                                                    40
+                                                    20
+                                                     0
+                                                     0
+                                                     0
+                                                     0
+                                                     0
+                                                     0
+                                                     0
+                                                     0
+                                                     0
+                                                     0
+                                                     0
+                                                   40
+                                                   43
+                                                   46
+                                                   49
+                                                   52
+                                                   55
+                                                   58
+                                                   61
+                                                   64
+                                                   67                wavelength (nm)
+
+Abbildung 19: Empirisches EMBLA-Spektrum (Histogramm) und theoretisches Schein-
+              werfer-plus-Filmempfindlichkeits-Spektrum (Linie). Das empirische Spekt-
+              rum weist relativ zum theoretischen Spektrum eine Rechtsverschiebung auf.
+              Dieser Effekt resultiert wahrscheinlich aus einer Belichtungszeit, die höher als
+              die maximal empfohlene liegt.
+
+
+Wie vorstehend erörtert, besteht eine Fehlerquelle des EMBLA-Spektrums in dem geringen
+Verhältnis von Signal und Rauschen in mehreren Wellenlängebereichen. Nichtsdestotrotz ist
+die Korrelation zwischen empirischen und theoretischen Spektren unter der Scheinwerfer-
+hypothese stark und unbezweifelbar. Das erwartete theoretische Spektrum, das durch die
+Multiplikation eines Glühfadenlampenspektrums mit der Filmempfindlichkeitskurve erzielt
+102                                         M. Leone
+
+
+wird, ist in Abbildung 19 dargestellt (kontinuierliche Linie). Ihre höhere Auflösung in Bezug
+auf das Spektrum in Abb. 12 rührt von dem geringeren Berechnungsintervall der EMBLA-
+Daten her (5 nm). In Abb. 19 wird auch das empirische EMBLA-Spektrum abgebildet. Legt
+man beide aufeinander, dann zeigt sich, dass eine weitere mögliche Abweichungsquelle –
+außer dem geringen Signal/Rauschen-Verhältnis – in einer Art von Wellenlängenverschie-
+bung in Richtung auf den rechten Rand besteht. Dieser Effekt manifestiert sich in den Wel-
+lenlängenspitzen der Magenta- und Cyan-Schicht des EMBLA-Spektrums.
+   Ein solches Resultat überrascht nicht, wenn man die Charakteristika des verwendeten
+Films in Betracht zieht. Dem technischen Beiblatt des Kodachrome 100-Films zufolge sind
+bezüglich der Einstellungen für lange und kurze Belichtungszeiten signifikante Farbverschie-
+bungen in die Cyan-Richtung (rechtes Ende des Spektrums) möglich, wenn länger als 1 Se-
+kunde belichtet wird:
+
+   „Keine Filterkorrektur oder Belichtungsanpassung ist notwendig für Belichtungszeiten zwi-
+   schen 1/10000 und 1/10 Sekunde. Bei 1 Sekunde verwenden Sie einen CC05M-Filter und er-
+   höhen Sie die Belichtungszeit um 1/3 Blendenstufe. Wir empfehlen keine Belichtungszeiten von
+   mehr als 1 Sekunde. Bei längeren Belichtungszeiten können deutliche Farbgleichgewichtsver-
+   schiebungen in die Cyan-Grün-Richtung oder Kontrastfehler auftreten.” (Kodak Ektachrome
+   100 2002, Herv. M. L.)
+
+   Da das EMBLA-Physikerteam angibt, eine mittlere Belichtungszeit von ungefähr 5 Sekun-
+den verwendet zu haben, kann dieses Merkmal einer Verschiebung im empirischen EMBLA-
+Spektrum auf diese Weise erklärt werden. Ein niedriges Signal/Rauschen-Verhältnis sowie ein
+Verschiebungseffekt sind die wahrscheinlichen Gründe hinter der ersichtlichen Oszillation
+um das erwartete lineare Glühfadenspektrum (siehe Abb. 17 und 18).
+   Das resultierende theoretische Fahrzeugscheinwerfer-plus-Filmempfindlichkeits-Spektrum
+hat nur eine qualitative Bedeutung, da die maximale theoretische Höhe (bei 555 nm) so ge-
+wählt wurde, dass sie zur maximalen experimentellen Höhe passt. Da (a) das EMBLA-
+Physikerteam die spektroskopischen Daten nur in willkürlichen Einheiten veröffentlichte
+(Teodorani & Nobili 2002, S. 11), (b) die Größenordnung von Fehlern unbekannt (aber wahr-
+scheinlich sehr hoch) ist und (c) das empirische EMBLA-Spektrum von breiten Bereichen mit
+niedriger Signal/Rauschen-Relation durchzogen und durch einen Verschiebungseffekt be-
+lastet ist, der auf höhere als vom Hersteller empfohlene Belichtungszeiten zurückzuführen ist,
+lassen diese Punkte es nicht zu, einen verlässlichen Anpassungstest (z. B. einen Chi2-Test)
+durchzuführen. Nichtsdestotrotz stellt der berechnete Spearman-Rangkorrelationskoeffizient
+ohne vernünftigen Zweifel den Nachweis einer engen Korrelation zwischen den empirischen
+EMBLA-Daten und dem erwarteten theoretischen Spektrum des Lichts dar.
+     Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen       103
+
+                             Anomalous Lights vs. Headlights
+
+Wie oben dargelegt, sind einige der im Hessdalen-Tal gemeldeten angeblich anomalen Lichter
+auf gewöhnliche Fahrzeugscheinwerfer zurückzuführen. Dies bedeutet nicht, dass die Ge-
+samtheit der Sichtung unidentifizierter Lichter in Hessdalen in dieser Weise erklärt werden
+kann. Damit wird lediglich ausgesagt, dass Fahrzeugscheinwerfer eine Quelle von Täuschun-
+gen sein können. Die optische EMBLA-Studie 2002 zeigt, dass auch wissenschaftliche Unter-
+sucher nicht vor solchen Irrtümern sicher sind.
+   Wie die in der wissenschaftlichen Mainstream-Literatur veröffentlichten anomalen Beo-
+bachtungen zeigen17, wurden schwache nächtliche Lichter seit Jahrhunderten als „Irrlichter“,
+„Feuerschiffe“, „Leichenkerzen“ (im Englischen will-o’-the-wisps, jack-o’-lanterns, ghost
+lights, fireships, corpse lights) und unter vielen anderen Namen dokumentiert. Beispiele von
+Orten, an denen schwache nächtliche Lichter gründlich studiert wurden, sind die Brown
+Mountain-Lichter (North Carolina), die Tri-State-, Ozark- oder Hornet-Lichter (Oklahoma),
+die Marfa-Lichter (Texas), die Min-Min-Lichter (Australien), die Yakima-Lichter (Staat Wa-
+shington) und natürlich die Hessdalen-Lichter (Corliss 2001).
+   Während ein kleiner Rest an schwer zuzuordnenden Sichtungen zu verbleiben scheint,
+kann an vielen bekannten Orten „die große Mehrheit der gesichteten Lichter angemessen als
+gebrochenes, von Menschen erzeugtes Licht (Autos, Straßenlaternen etc.) erklärt werden“
+(Corliss 2001, S. 291). So auch im Fall der Hessdalen-Lichter.
+   Seit dem späten 19. Jahrhundert wurden in North Carolina die Brown Mountain-Lichter
+gesichtet. Diesem Problem widmeten sich zwei offizielle, von der Regierung unterstützte wis-
+senschaftliche Studien sowie mehrere private Forschungsgruppen (Corliss 2001, S. 299-301).
+Beide von der Regierung unterstützte Studien machten für alle gesichteten Lichter menschli-
+che Aktivität verantwortlich. Im Jahr 1922 ordnete ein Wissenschaftler des U.S. Geological
+Survey, G. R. Mansfield, „47 Prozent der Lichter Automobilscheinwerfern, 33 Prozent Loko-
+motivscheinwerfern, 10 Prozent stationären Lichtern und 10 Prozent Buschfeuern zu“ (Kane
+1983, zit. nach Corliss 2001, S. 300). Weitere Feldforschungen ergaben, dass für einen kleinen
+Bruchteil der Beobachtungen weiterhin eine überzeugende Erklärung fehlt (Frizzell 1984, zit.
+nach Corliss 2001, S. 300-301).
+   Was die Tri-State-Lichter betrifft, so haben „mehrere Wissenschaftler, die die Tri-State-
+Erscheinungen in Augenschein genommen haben, … sich davon überzeugt, dass alles als
+atmosphärische Brechung von Autoscheinwerfern erklärt werden kann“, die auf einem als
+„Devil´s Promenade“ bezeichneten einsamen Abschnitt einer Landstraße fuhren (Corliss
+2001, S. 302). Unter den Wissenschaftlern, die dieses Phänomen studierten, war auch der
+
+
+17 Corliss (2002) bietet eine historische Darstellung zur Identifikation und Sammlung von Berichten
+   über Anomalien in der wissenschaftlichen Literatur im Rahmen des sog. Sourcebook Project. Siehe
+   auch die grundlegenden Arbeiten von Charles Fort (1941, 1974).
+104                                      M. Leone
+
+
+Berater des Projekts Blue Book, J.A. Hynek (1973, zit. nach Corliss 2001, S. 302).
+   Die Marfa-Lichter, benannt nach einer kleinen Viehzüchter-Gemeinde im Westen von Te-
+xas, können fast jede Nacht beobachtet werden. Allerdings, „so wie bei den meisten der
+Brown Mountain-Lichter und einigen der Tri-State-Spuklichter, kann leicht nachgewiesen
+werden, dass nahezu alle Marfa-Lichter nicht mehr sind als Automobilscheinwerfer, die 24
+Meilen [39 km] südlich von Marfa einen Hügel auf dem Highway 67 erklimmen. Dies zeigt
+eine Dreieckspeilung der Lichter ebenso wie Beobachtungen mit Hochleistungsteleskopen“
+(Corliss 2001, S. 304; siehe auch Bunnell 2001; Lindee 1992).
+   Von August bis September 2000 analysierte eine Firma, die weltweit kommerzielle luft-
+und satellitengestützte Sensoranalysen von Bodenbedeckungen durchführt, die Marfa-Lichter.
+Durch eine Kombination von computersimulierter Bodenverteilung mit topografischen Kar-
+ten des U.S. Geological Survey und einem Höhenmodell kam die Untersuchung zu dem
+Schluss, dass „Autoscheinwerfer, die in die Richtung auf den Beobachtungspunkt zeigen und
+von der konkaven Bodenoberfläche entlang des Highway 67 reflektiert werden, die Quelle der
+Lichter sind. Der hochgradig reflektierende Boden wirkt als Spiegeloberfläche, die die beo-
+bachteten Phänomene erzeugt” (Alto Technology 2001). Nichtsdestotrotz gibt es zwei Klassen
+von Daten, die weiterhin unerklärt bleiben: erstens wurden einige Marfa-Lichter bereits 1883
+von Viehtreibern beobachtet – lange bevor Autos und Highway 67 existierten, zweitens be-
+schreiben einige der in der Literatur veröffentlichten Anekdoten angebliche Nahbegegnungen
+mit Marfa-Lichtern (Corliss 2001, S. 304).
+
+                                   Schlussfolgerungen
+
+Die vorliegende Reanalyse der optischen Hessdalen-Studie 2002 führte den Verfasser dieses
+Aufsatzes zu der Schlussfolgerung, dass das gesamte von Teodorani & Nobili (2002) präsen-
+tierte optische Belegmaterial mit der Scheinwerferhypothese konsistent ist. Mehrere unter-
+schiedliche Anhaltspunkte führen zu dieser Schlussfolgerung: das „blinkende Licht” erwies
+sich bei einer Beobachtung durch ein tragbares Linsenteleskop seitens des Verfassers als
+durch ein Paar von Autoscheinwerfern verursacht, das Leuchtphänomen trat in großer Nähe
+zu einer Landstraße auf, deren Winkelkoordinaten (Azimut und Höhenwinkel) vom Beo-
+bachtungsstandort aus mit denen des „blinkenden Lichts” übereinstimmen; seine Leuchtstär-
+ke stimmt überein mit der Lichtemission eines hypothetischen Fahrzeugs, das sich auf der
+genannten Landstraße bewegt, und sein Spektrum ist konsistent mit einem von Autoschein-
+werfern emittierten Spektrum. Diese Hypothese ist durch ein kontrolliertes Experiment mit
+einem Paar Autoscheinwerfern leicht verifizierbar (oder falsifizierbar).
+   Daraus folgt, konträr zu den Behauptungen des EMBLA-Physikerteams: (a) emittiert das
+beobachtete Leuchtphänomen keine „Leistung in der Größenordnung von 100 kW”, (b) seine
+Zunahme der Leuchtstärke ist nicht verursacht „durch viele Licht-Spheroide, die einen an-
+fänglichen Lichtkeim umgeben”, (c) es schwebt nicht „einige zehn Meter über den Hügelkup-
+    Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen   105
+
+pen” (Teodorani & Nobili 2002, S. 17).
+    Es war die Absicht dieses Aufsatzes, aufzuzeigen, dass die optische Studie in Hessdalen
+vom August 2002 sowohl hinsichtlich der Vorgehensweise bei der Datenerhebung als auch
+bei der Datenauswertung mangelhaft war. Nichtsdestotrotz verdient das Thema der im Hess-
+dalen-Tal beobachteten Leuchtphänomene weitere Beachtung. Eine fortgesetzte Auseinander-
+setzung mit dem Thema wird jedoch keine verlässlichen Ergebnisse erzielen, wenn nicht ein
+Programm zur Erhebung von Augenzeugenberichten und zur intensiven wissenschaftlichen
+Überwachung für das Auftreten der angeblichen Leuchtphänomene gestartet wird. Die wäh-
+rend des Feldaufenthalts von 1984 ermittelten Informationen sind vielversprechend, aber
+nicht abschließend, und die Forscher im Bereich anomaler Luftphänomene bedürfen besserer
+problembezogener Grundlagen. Diese Grundlagen umfassen eine sorgfältige Beachtung so-
+wohl von Verfahren der Erhebung von Zeugenaussagen als auch zum Thema der „objektiven”
+Beweismittel. Was den ersten Punkt angeht, so ist es unbedingt erforderlich, einige minimale
+Richtlinien zur Vermeidung einer Beeinflussung von Zeugen, dem Missverstehen von Aussa-
+gen und daraus folgenden falschen Schlüssen etc. einzuhalten. Seit einigen Jahren werden
+solche Richtlinien von den meisten zivilen Gruppen, die sich der Untersuchung von Berich-
+ten über unidentifizierte fliegende Objekte widmen, befolgt (Randles 1976; SOBEPS 1979;
+Fowler 1983; Russo 1993). Die vom AMS des Østfold College gesammelten Daten sind ein
+hilfreicher Beitrag zum zweiten Punkt, nämlich der intensiven wissenschaftlichen Überwa-
+chung des Tals. Während die gesammelten Daten noch immer einer tiefer gehenden Analyse
+zur Identifikation konventioneller Stimuli bedürfen, ist die Station von Strand und Hauge ein
+wichtiger Schritt in die richtige Richtung (Strand 2000). Wie im Pocantico-Workshop ange-
+merkt wurde, wird „diese automatische Station … sich hoffentlich nur als ein erster Schritt in
+Richtung auf die Entwicklung eines ganzen Netzes von Stationen erweisen” (Sturrock 1998,
+1999). Die Verfahrensweisen und Instrumente des EMBLA-Ingenieurteams (Montebugnoli et
+al. 2002) könnten ebenfalls zu interessanten Ergebnissen führen, vorausgesetzt dass ihr opti-
+scher Gegenpart den Schwerpunkt der EMBLA-Missionen nicht in die Irre führt, wie das
+durch die fragwürdige optische Studie von 2002 geschehen ist.
+
+                                      Danksagungen
+
+Diese Studie wurde vom Italienischen Komitee für das Projekt Hessdalen (CIPH) unterstützt
+http://www.itacomm.net/ph/). Der Verfasser dankt daher Renzo Cabassi und den anderen
+Mitgliedern des Komitees: Nico Conti, Roberto Labanti, Maurizio Morini, Marco Orlandi,
+Marco Piraccini, Roberto Raffaelli, Massimo Silvestri, Alessandro Zabini. Besonderen Dank
+schulde ich Flavio Gori für seine Unterstützung bei der Erhebung von Augenzeugenberichten
+während der Hessdalen-Feldforschung im August 2002, Stelio Montebugnoli und dem
+EMBLA-Ingenieurteam für nützliche Informationen über ihre Radiostudie, Peder Skogås für
+seine unschätzbare Tätigkeit als norwegischer Dolmetscher und für seine dem CIPH-Team
+106                                           M. Leone
+
+
+geleistete Hilfe, sich mit Augenzeugen aus Hessdalen zu treffen, Ellin and Birger Brattås (und
+ihre wunderbare Familie) für die wertvollen Informationen zum Hessdalen-Phänomen, Er-
+ling Strand und Bjørn Gitle Hauge für den Zugang zur AMS-Station, und allen Einwohnern
+Hessdalens, die sich bereiterklärt haben, dem Verfasser ihre Sichtungen mitzuteilen. Der
+Verfasser dankt weiterhin Giusy Marabello, Linguistin, für ihre Übersetzung von Quellen aus
+dem Deutschen, Salvatore Pierro, optischer Physiker, für seinen Hinweis auf die ECE-
+Bestimmungen und für einige wesentliche Verbesserungen meiner ursprünglichen Berech-
+nungen, Michele Moroni, Astrophysiker, für wichtige Anregungen zum Thema der Sättigung
+von Lichtquellen und zur statistischen Analyse der EMBLA-Daten und Robert Levin, Wissen-
+schaftler der Firma OSRAM Sylvania, für die unabhängige Unterstützung der Scheinwerfer-
+hypothese. Außerdem möchte der Verfasser Roberto Labanti seine Dankbarkeit für die sorg-
+fältige Lektüre mehrerer Entwürfe dieses Aufsatzes sowie für kluge Vorschläge und Kommen-
+tare ausdrücken, und ebenso Renzo Cabassi and Nico Conti für nützliche Empfehlungen, die
+es möglich machten, die ursprüngliche Vorlage wesentlich zu verbessern.
+   Wer meint, Sichtungen unidentifizierter fliegender Objekte, Hessdalen-ähnlicher Lichter
+oder anderer anomaler atmosphärischer Phänomene gemacht zu haben, ist eingeladen, dem
+Verfasser an seine Email-Adresse matteo.leone@usa.net oder über das Italienische Zentrum
+für UFO-Studien (CISU) zu schreiben, der seriösesten zivilen mit der Sammlung und Unter-
+suchung von UFO-Berichten befassten Organisation in Italiens (http://www.cisu.org). Jede
+Korrespondenz wird streng vertraulich behandelt.
+
+                                              Literatur
+
+Alto Technology (2001): Hyperspectral analysis of the Marfa Lights. Retrieved October 21, 2003,
+       http://www.watchingyou.com/marfa_janks_forward.html.
+Ballester Olmos, V.J.; Fernández Peris, J.A. (1987): Enciclopedia de los encuentros cercanos con OVNIS.
+        Plaza & Janes, Barcelona, 53-84.
+Bygdekatalog (2000): Holtalen. Grummerns Printing; Finland.
+Bunnell, J. (2001): Seeing Marfa Lights: A Viewer’s guide. Lacey Publishing Company, Cedar Creek, TX.
+Cabassi, R. (2001): I fenomeni di Hessdalen: un’ufologia per il XXI secolo? UFO – Rivista di Informa-
+       zione Ufologica 24, 7-12.
+CIPH (2002): Italian Committee for Project Hessdalen. Retrieved February 3, 2003, von der Website des
+       Italienischen Komitees für das Projekt Hessdalen: http://www.itacomm.net/ph/
+Clark, J. (1998): Hessdalen Lights. In: The UFO Encyclopedia. 2nd edition. Omnigraphics, Detroit, 484-
+         487.
+CNES (1979-1983) : Note Techniques 1-18. Groupe d’Etude des Phénomènes Aérospatiaux Non-
+      identifiés, Toulouse.
+Condon, E.U.; Gillmor, D.S. (1969): Scientific Study on Unidentified Flying Objects. New York: Bantam
+      Press, New York.
+     Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen           107
+
+Corliss, W.R. (1982): Lightning, auroras, nocturnal lights, and related luminous phenomena: A catalog
+         of geophysical anomalies. The Sourcebook Project, Glen Arm, MD.
+Corliss, W.R. (2001): Remarkable luminous phenomena in nature : A catalog of geophysical anomalies.
+         The Sourcebook Project, Glen Arm, MD.
+Corliss, W.R. (2002): A Search for Anomalies. Journal of Scientific Exploration 16, 439-453.
+Dalsbygda (1992): Norge 1:50000. Topografisk Hovedkartserie – M711. Blad 1620 II. Statens kartverk,
+       Hønefoss.
+Devereux, P. (1989): Earth Lights Revelation. Blandford Press, London, 140-144.
+Eastman Kodak Company Staff (1997a): General Curve Regions. In ders. Student filmmaker’s handbook
+      [Elektronische Version]. Rochester, NY: Silver Pixel Press. Retrieved June 17, 2003 from
+      http://www.kodak.com/US/en/motion/students/handbook/sensitometric3.jhtml.
+Eastman Kodak Company Staff (1997b): Color Sensitivity and Spectral Sensitivity. In ders.. Student
+      filmmaker’s handbook [Electronic version]. Rochester, NY: Silver Pixel Press. Retrieved January
+      21, 2003 from http://www.kodak.com/US/en/motion/students/handbook/sensitometric4.jhtml.
+ECE Regulation (1992): Addendum 1: Regulations No. 1 and No. 2. Revision 4 (1992, December). Uni-
+      form provisions concerning the approval of motor vehicle headlamps emitting an asymmetrical
+      passing beam and/or a driving beam and equipped with filament lamps of category R2. In:
+      United Nations: Agreement concerning the adoption of uniform conditions of approval and re-
+      ciprocal recognition of approval for motor vehicle equipment and parts (done at Geneva on 20
+      March 1958) [Elektronische Version]. Genf: United Nations Economic Commission for Europe.
+      Retrieved January 12, 2003, http://www.unece.org/trans/main/wp29/wp29regs/r001r4e_1.pdf;
+      http://www.unece.org/trans/main/wp29/wp29regs/r001r4e_2.pdf.
+ECE Regulation (1996): Addendum 97: Regulation No. 98. (1996, March). Uniform provisions concern-
+      ing the approval of motor vehicle headlamps equipped with gas-discharge light sources In:
+      United Nations: Agreement concerning the adoption of uniform technical prescriptions for
+      wheeled vehicles and conditions for reciprocal recognition of approvals granted on the basis of
+      these prescriptions [Elektronische Version]. Geneva: United Nations Economic Commission for
+      Europe. Retrieved January 17, 2003, http://www.unece.org/trans/main/wp29/wp29regs/
+      r098e_1.pdf.
+ECE Regulation (2001): Addendum 98: Regulation No. 99. (2001, August). Uniform provisions concern-
+      ing the approval of gas-discharge light sources for use in approved gas-discharge lamp units of
+      power-driven vehicles. In: United Nations: Agreement concerning the adoption of uniform
+      technical prescriptions for wheeled vehicles and conditions for reciprocal recognition of approv-
+      als granted on the basis of these prescriptions [Elektronische Version]. Geneva: United Nations
+      Economic Commission for Europe. Retrieved January 17, 2003, http://www.unece.org/trans/
+      main/wp29/wp29regs/r099r1e.pdf.
+ECE Regulation (2002): Addendum 7: Regulation 8. Revision 4 (2002, June). Uniform provisions con-
+      cerning the approval of motor vehicle headlamps emitting an asymmetrical passing beam or a
+      driving beam or both and equipped with halogen filament lamps (H1, H2, H3, HB3, HB4, H7,
+      H8, H9, HIR1, HIR2 and/or H11). In: United Nations: Agreement concerning the adoption of
+      uniform technical prescriptions for wheeled vehicles and conditions for reciprocal recognition
+108                                              M. Leone
+
+
+        of approvals granted on the basis of these prescriptions. [Elektronische Version]. Geneva:
+        United Nations Economic Commission for Europe. Retrieved January 12, 2003,
+        http://www.unece.org/trans/main/wp29/wp29regs/r008r4e.pdf.
+Engel, C.E. (1968): Photography for the scientist. Academic Press, London and New York.
+Fort, C. (1941): The books of Charles Fort. Henry Holt and Company, New York.
+Fort, C. (1974): The complete books of Charles Fort. Dover, New York.
+Fosbury, R. (1999): Photographing spectra. Natural colour. Retrieved January 21, 2003, from
+        http://www.stecf.org/~rfosbury/home/natural_colour/spectrophot/nc_spec_slitless.html.
+Fowler, R.E. (1983, ed.): MUFON Field Investigator’s Manual. B-W Graphics, Versailles, MI.
+Galeotti, P. (1983): Elementi di probabilità e statistica. Levrotto & Bella, Torino.
+Gori, F. (2002): Hessdalen 2002, Embla Mission: The I.C.P.H. Radio Experience. Retrieved February 3,
+        2003, from Italian Committee for Project Hessdalen web site: http://www.itacomm.net/ph/
+        embla2002/embla2002_e.htm.
+Haines, R.F. (1976) : UFO Appearance Recognition and Identification Test Procedure. UFO Phenomena
+        1, 39-54.
+Haines, R.F. (1979, ed.): UFO Phenomena and the Behavioral Scientist. Scarecrow Press, Metuchen.
+Haines, R.F. (1980) : Observing UFOs. Nelson-Hall, Chicago.
+Haltdalen (1995): Norge 1:50000. Topografisk Hovedkartserie – M711. Blad 16201. Statens kartverk,
+       Hønefoss.
+Hauge, B.G. (2001): Project Embla. Paper presented at the 2001 International Conference on Engineer-
+       ing Education, Oslo, Norway. Retrieved February 5, 2003 from Proceedings of the ICEE 2001
+       Conference web site: http://www.ineer.org/Events/ICEE2001/Proceedings/papers/297.pdf.
+Henke, R. (1987): Das Hessdalen-Phänomen im Lichte der Astronomie. CENAP Report 133, 31-36.
+Hessdalskjølen (1995): Økonomisk kartverk. Holtålensør-Trøndelag. CR 113-5-4. Statens kartverk.
+Holl, P. (1990): Elementi di statistica. Bologna: Il Mulino (ursprünglich veröffentlicht als: Quantitative
+         methods for economics, 1987).
+Hynek, J.A. (1969): Twenty-one Years of UFO Reports. American Association for the Advancement of
+       Science, 134th Meeting (December 27, 1969). In: Sagan & Page (1972), 37-51.
+Hynek, J.A. (1972): The UFO Experience. Regnery Press, Chicago.
+Hynek, J.A. (1985): Tracking the Hessdalen Lights. International UFO Reporter 10 (2), 10-11.
+ILFORD (1983): Document Technique. FP4. Film noir et blanc de rapidité moyenne 35 mm. Annex 2 of
+      Louange (1983).
+KODAK EKTACHROME 100 Professional Film (Kodak Publication No. E-27). (2002): [Elektronische
+    Version]. Rochester, NY: Eastman Kodak Company. Retrieved January 19, 2003 from
+    http://www.kodak.com/global/en/professional/support/techPubs/e27/e27.jhtml.
+KODAK GOLD 100 and 200 Films (Kodak Publication No. E-15). (2000): [Elektronische Version].
+    Rochester, NY: Eastman Kodak Company. Retrieved June 17, 2003 from
+    http://www.kodak.com/global/en/consumer/products/techInfo/e15/.
+     Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen               109
+
+Krogh, J.S. (1985): The Hessdalen Report. CENAP Report 116, 33-40.
+Leone, M. (2003): A rebuttal of the EMBLA 2002 report on the optical survey in Hessdalen. Retrieved
+       May 17, 2003, from the Italian Committee for Project Hessdalen web site:
+       http://www.itacomm.net/ph/rebuttal.pdf.
+Leone, M. (2006): Questioning Answers on the Hessdalen Phenomenon. Journal of Scientific Exploration
+       20, 39-68.
+Lindee, H. (1992): Ghost Lights in Texas. Skeptical Inquirer 16, 400-406.
+Loftus, E.F. (1979): Eyewitness Testimony. Harvard University Press, Cambridge.
+Louange, F. (1983) : Note Technique No. 18. Systeme d’acquisition et d’analyse de spectres photogra-
+      phiques. Le point sur l’utilisation des reseaux de diffraction. CNES – GEPAN, Toulouse.
+Maccabee, B. (1979): Photometric Properties of an Unidentified Bright Object seen off the Coast of New
+      Zealand. Applied Optics 18, 2527-2528.
+Maccabee, B. (1980): Photometric Properties of an Unidentified Bright Object seen off the Coast of New
+      Zealand: author’s reply to comments. Applied Optics 19, 1745-1746.
+Maccabee, B. (1987): Analysis and Discussion of the Images of a Cluster of Periodically Flashing Lights
+      Filmed Off the Coast of New Zealand. Journal of Scientific Exploration 1, 149-190.
+Maccabee, B. (1999): Optical Power Output of an Unidentified High Altitude Light Source. Journal of
+      Scientific Exploration 13, 199-211.
+Maccabee, B. (2002): Re: EMBLA 2002 – Hessdalen Optical & Ground Survey [Msg. 10-023]. Message
+      posted to: http://www.virtuallystrange.net/ufo/updates/2002/oct/m10-023.shtml
+McDonald, J.E. (1967): UFOs: Greatest Scientific Problem of Our Times? The Author, Tucson, AZ.
+McDonald, J.E. (1969): Science in Default: Twenty-two Years of Inadequate UFO Investigations. Ameri-
+     can Association for the Advancement of Science, 134th Meeting (December 27, 1969). In: Sagan
+     & Page (1972), 52-122.
+Majden, E.P. (1998): Meteor Spectroscopy with Inexpensive Holographic Gratings. Journal of the Royal
+      Astronomical Society of Canada 92, 91-92.
+Majden, E.P.; Borovicka, J. (1998): A Perseid Meteor Spectrum. Journal of the Royal Astronomical Soci-
+      ety of Canada 92, 153-56.
+Montebugnoli, S.; Monari, J.; Cattani, A.; Maccaferri, A.; Poloni, M.; Bortolotti, M.; Roma, M.; Hauge,
+      B.G.; Strand, E.; Cevolani, G. (2002): Measurements with a Low Power Pulsed Radar in the Hess-
+      dalen 2002 Camp. Retrieved February 5, 2002, from Italian Committee for Project Hessdalen
+      web site: http://www.itacomm.net/ph/radar/radar_e.pdf.
+Morrison, P. (1969): The Nature of Scientific Evidence: A Summary. In: Sagan & Page (1972), 276-290.
+Nicolosi, I.; Ricchetti, N. (2003): A simplified digital elevation model of Hessdalen valley. Retrieved May
+       17, 2003, from the “Sassalboproject” web site: http://www.sassalboproject.com/documenti/
+       hessdalen_3dmodel.pdf.
+OSRAM SYLVANIA (2000a): SilverStar High Performance Halogen. Retrieved January 2, 2003, from
+     Osram Sylvania web site: http://www.sylvania.com/auto/silverstar.htm.
+110                                              M. Leone
+
+
+OSRAM SYLVANIA (2000b): XENARC High Intensity Discharge FAQ. Retrieved January 2, 2003, from
+     Osram Sylvania web site: http://www.sylvania.com/xenarc/hidfaq.htm.
+PHLOX (2003): 12. Photometry training. Retrieved May 17, 2003 from the PHLOX corporation web
+     site: http://www.phlox-gc.com/eng/pdf/Photometry_Training.pdf.
+Piragino, G.; Pisent, G. (1984): Fisica generale e sperimentale. Vol. II: Elettrostatica – Corrente elettrica
+       – Elettromagnetismo – Ottica. Piccin, Padova.
+Randles. J. (1976): UFO Investigation - A Field Investigator’s Handbook. BUFORA, London.
+Rechtsteiner, G.A.; Ganske, J.A. (1998): Using Natural and Artificial Light Sources to Illustrate Quan-
+       tum Mechanical Concepts. The Chemical Educato 3, 4. Retrieved January 2, 2003 from:
+       http://chemed.boisestate.edu/sbibs/samples/spapers/34samplejg.htm.
+Ruppelt, E.J. (1956): The Report on Unidentified Flying Objects. Doubleday and Company, Garden
+       City.
+Russo, E. (1993): Manuale di metodologia di indagine ufologica (2nd ed). Upiar, Torino.
+Sabadin, C. (2003): Dal Dott. Massimo Teodorani [Msg. 2904]. Message posted to:
+       http://groups.yahoo.com/group/ufo-italia/message/2904.
+Sagan, C.; Page, T. (1972, eds.): UFOs : A Scientific Debate. Cornell University Press. Ithaca, NY.
+Schimke, C.; Grundmann, D. (2002): Hg-free HID for Automotive Lighting. OSRAM Global Automotive
+      Lighting, May 2002.
+Shepard, R.N. (1968): Some psychologically oriented techniques for the scientific investigation of uni-
+       dentified aerial phenomena. In U.S. House of representatives. Committee on Science and Astro-
+       nautics. Symposium on Unidentified Flying Objects (pp. 223-235) [Elektronische Version].
+       Washington, D.C.: U.S. Government Printing Office. Retrieved May 19, 2001, from the National
+       Capital Area Skeptics web site: http://912a-87.umd.edu/ufosymposium/shepard.html.
+Shepard, R.N. (1979): Reconstruction of Witnesses’ Experiences of Anomalous Phenomena. In: Haines
+       (1979), 188-224.
+Siegel, S.; Castellan, N.J. (1992): Statistica non parametrica. McGraw-Hill, Milano (originally published
+         as: Nonparametric statistics for the behavioral sciences (2nd edition), 1988).
+SOBEPS (1979) : Guide de l’enquêteur. Société Belge d’Etude des Phénomènes Spatiaux.
+Strand, E. (1985): Project Hessdalen 1984: Final Technical Report. Part One. Project Hessdalen, Duken,
+        Norway.
+Strand, E. (2002): Automatic Measurement Station (AMS). Retrieved January 9, 2003, from Project
+        Hessdalen web site: http://hessdalen.hiof.no/station/
+Sturrock, P.A. et al. (1998): Physical Evidence Related to UFO Reports. Journal of Scientific Exploration
+       12, 170.
+Sturrock, P.A. (1999): The UFO Enigma. A new review of the physical evidence. Warner Books, New
+       York.
+Teodorani, M. (2002): A physical study of the Hessdalen anomaly and the SETV hypothesis. Paper
+      presented at the first Norsk UFO-Senter workshop, Holtalen, Norway. Retrieved February 5,
+     Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen            111
+
+       2003, from the Project Hessdalen web site: http://www.hessdalen.org/reports/
+       Workshop2002_Massimo.pdf.
+Teodorani, M. (2003): M. Teodorani’s reply to M. Leone’s confutation of EMBLA 2002 paper. Retrieved
+      May 17, 2003 from the “Camelot Chronicles” web site: http://members.xoom.virgilio.it/
+      camelotchr/Download/2003/Re_Rebuttal.pdf.
+Teodorani, M. (2004a): Some final notes on the “rebuttal phenomenon”.
+      http://www.camelotchronicles.com/Altro/teod2004eng.htm.
+Teodorani, M. (2004b): A long-term scientific survey of the Hessdalen phenomenon. Journal of Scientific
+      Exploration 18, 217-251.
+Teodorani, M. (2006): Hessdalen Research: A Few Non-Questioning Answers. Journal of Scientific Ex-
+      ploration 20, 66-67.
+Teodorani, M., Montebugnoli, S.; Monari, J. (2000): First Steps of the EMBLA Project in Hessdalen: A
+      Preliminary Report. Retrieved February 5, 2003, from Italian Committee for Project Hessdalen
+      web site: http://www.itacomm.net/ph/embla2000/embla2000_e.htm (see also another version on
+      National Institute for Discovery Science web site: http://198.63.56.18/pdf/hessdalen.pdf and in
+      European Journal for UFO and Abduction Studies 2, 3-24.
+Teodorani, M., Strand, E.P.; Hauge, B.G. (2001): EMBLA 2001: The Optical Mission. Retrieved February
+      5, 2003, from Italian Committee for Project Hessdalen web site:
+      http://www.itacomm.net/ph/embla2001/embla2001_e.pdf.
+Teodorani, M.; Nobili, G. (2002): EMBLA 2002: An Optical and Ground Survey in Hessdalen. Retrieved
+      February 5, 2003, from the Project Hessdalen web site:
+      http://hessdalen.org/reports/EMBLA_2002_2.pdf.
+Vallee, J.F. (1965): Anatomy of a phenomenon. Henry Regency, Chicago.
+Vallee, J.F. (1966): Challenge to Science. Henry Regency, Chicago.
+Vallee, J.F. (1990): Confrontations. Ballantine Books, New York.
+Vallee, J.F. (1998): Estimates of Optical Power Output in Six Cases of Unexplained Aerial Objects with
+         Defined Luminosity Characteristics. Journal of Scientific Exploration 12, 345-358.
+Vårus (1995): Økonomisk kartverk. Holtålensør-Trøndelag. CR 112-5-2. Statens kartverk.
+Wang, R. (2002): HIDo’s & HIDon’ts. The HID lighting tutorial. Retrieved January 12, 2003, from:
+      http://www.intellexual.net/hid.htm.
+Wood, M. (2000): Color Temperature of Metal Halide Sources. Retrieved January 5, 2003, from:
+      http://www.highend.com/news/colortemp.html.
+112                                        M. Leone
+
+
+Kommentare zu Leone:
+Eine Widerlegung des EMBLA 2002-Berichts
+über die optische Vermessung in Hessdalen
+
+GERD H. HÖVELMANN 18
+Hessdalen-Irritationen
+
+Die teils kontroversen Diskussionen um den Charakter der Hessdalen-Lichter, die sich an
+Leones Scheinwerfer-Theorie einer kleinen Gruppe von Einzelereignissen entzündet haben
+und die Leone seither mit dem von ihm so genannten EMBLA-Physikerteam ausficht, habe
+ich bereits auf den in Leones Literaturverzeichnis angegebenen Websites sowie in den ein-
+schlägigen Beiträgen verfolgt, die in den vergangenen Jahren im Journal of Scientific Explora-
+tion erschienen sind (Leone 2006; Teodorani 2004; Teodorani 2006). Diese Diskussionen
+vermitteln bisher den Eindruck, dass Teodoranis Repliken im Wesentlichen ausweichend
+sind: Leones aufwendige, aber vorderhand plausible Erklärungen der hier in Frage stehenden
+Einzelereignisse sind nach meiner Einschätzung bisher nicht wirkungsvoll bestritten worden.
+Das Argument, es handelt sich ja eben nur um einen kleinen Auszug aus jedenfalls ansonsten
+weiterhin erklärungsbedürftigen Lichtphänomenen, scheint mir – zumal gerade dieser Punkt
+von Leone gar nicht bestritten, sondern ausdrücklich hervorgehoben wird – eher eine Aus-
+flucht als ein Gegenargument. Und Teodoranis etwas pausbäckige Versicherung, man wisse
+„as a result of expertise acquired during 2 months of non-stop sky-watching at several spots“
+(Teodorani 2006, p. 66) Scheinwerfer-Lichter sehr wohl von „echten“ Lichtphänomenen in
+Hessdalen zu unterscheiden, ist für sich genommen ebenfalls nicht dazu angetan, nennens-
+werte Zweifel an Leones Analyse und Argumenten zu wecken.
+   Dies alles aber unterstellt und auch weiterhin angenommen, dass Leones gründliche, mit
+beträchtlichem Aufwand betriebene Studie zutreffend Autoscheinwerfer als die verantwortli-
+chen Lichtquellen im konkret betrachteten Fall ermittelt, so verbleibt für den fernen Betrach-
+ter der Lichtbeobachter mindestens eine nachhaltige Irritation: Wenn man sich anschickt, die
+ja nicht nur aus dem Tal von Hessdalen, sondern auch aus vielen anderen Weltgegenden
+gemeldeten und dokumentierten Lichtphänomene (Corliss 1982, 2001) zu untersuchen, dann
+sollte man von den betreffenden Untersuchungsleitern doch erwarten dürfen, dass wenigstens
+die naheliegendsten potentiellen Irrtumsquellen systematisch kontrolliert werden. Das heißt
+für entsprechende Orte, so auch für Hessdalen, wo sich seit rund einem Vierteljahrhundert
+
+
+18 Gerd H. Hövelmann, M.A., Philosoph und Linguist, war bis 1993 wissenschaftlicher Mitarbeiter am
+   Institut für Philosophie der Universität Marburg und ist seither selbständig. E-Mail:
+   hoevelmann.communication@kmpx.de
+    Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen    113
+
+immer wieder Wissenschaftler-Teams, teils mit Finanzierung und Apparaturen aus universi-
+tären Einrichtungen, zur Registrierung und Untersuchung der beschriebenen Lichtphänome-
+ne einfinden, dass beim Auftreten entsprechender Lichterscheinungen, die nicht vor freiem
+Himmel, sondern vor dem Hintergrund von Landschaftsformationen zu beobachten sind,
+mindestens festgestellt werden muss, ob die mutmaßlichen Ursprungsorte dieser Lichter für
+Menschen zugänglich sind. Hier aber zeigt sich, dass augenscheinlich selbst existierende Stra-
+ßen im betreffenden Gebiet nicht nur nicht berücksichtigt und in Forschungsberichten ent-
+sprechend gewürdigt, sondern möglicherweise noch nicht einmal registriert worden sind.
+Dies sind Versäumnisse, die jeden vernünftigen Pessimismus übertreffen.
+   Das Vorhandensein entsprechender Straßen und Wege gäbe den Untersuchern sogar die
+Möglichkeit an die Hand, die Bobachtungsbedingungen systematisch zu variieren. Wir reden
+hier ja nicht von Oslo und nicht von Trondheim, nicht von Bergen und nicht von Lilleham-
+mer, sondern vom dünn besiedelten Hessdalen-Tal in Zentralnorwegen. Ohne nennenswer-
+ten logistischen, administrativen, finanziellen und apparativen Aufwand sollte es möglich
+sein, die betreffenden Wege und (Privat-)Straßen, in deren Bereich Lichtphänomene wahrge-
+nommen worden sind, für einige Tage zu sperren. die Eigentümer entsprechend zu entschä-
+digen und abzuwarten, ob die beobachteten Lichter weiterhin auftreten. Besser noch wäre es,
+in dem aus der Ferne einsehbaren Wege- oder Straßenbereich ein- und ausfahrende Fahrzeu-
+ge automatisch oder durch zwei Mitarbeiter am Beginn und Ende der einsehbaren Strecke
+registrieren zu lassen. Lichtphänomene, die mit der Passage eines Fahrzeugs zeitlich zusam-
+menfallen, könnten dann bei der Fallanalyse systematisch ausgeschlossen oder gesondert
+berücksichtigt werden. Dafür ist freilich zusätzlich erforderlich, dass der fernstehende Licht-
+beobachter seine Aufzeichnungen jeweils mit Datum und genauer Uhrzeit versieht, wobei die
+Uhren des Beobachters und der Straßenkontrolleure synchronisiert sein sollten. Stattdessen,
+wie Teodorani, auf eine Zeitregistrierung, „owing to the practical problem of writing notes at
+night“ (Teodorani 2006, p. 67), nahezu vollständig zu verzichten, macht allerdings auch ein
+solches Arrangement zunichte.
+   Im Übrigen sind, wie auch Leone einräumt, weltweit zahlreiche ungewöhnliche Leuchter-
+scheinungen registriert, für die Automobilscheinwerfer als Ursache zweifellos nicht in Frage
+kommen. William Corliss hat viele einschlägige Quellen aus meist natur- oder technikwissen-
+schaftlichen Fachzeitschriften zusammengetragen (Corliss 1982, 2001). Auch von diesen
+werden sich manche auf bisher übersehene Ursachen zurückführen lassen, auch wenn sie aus
+Zeiten vor der Erfindung des Automobils stammen. Für andere dürfte es – zumal im Nachhi-
+nein – ersichtlich schwieriger werden, plausible Verursachungsszenarien zu ersinnen oder
+festzustellen. Sie werden folglich legitimem Zweifel nicht mehr entzogen werden können.
+Daneben existieren zahlreiche weitere, zwar charakteristisch beschriebene, aber heute kaum
+noch überprüfbare Fallbeschreibungen von Lichterscheinungen – so etwa des Haldenwald-
+lichts im schweizerischen Obersimmenthal (Küeffer 1913, S. 87) –, die in die Folklore vieler
+Länder Einzug gehalten haben, ferner stark verfremdende literarische Ausgestaltungen sol-
+114                                             M. Leone
+
+
+cher Lichterscheinungen (etwa Ludin 1950), die ihre mutmaßlichen Ursprünge gleichwohl
+noch erahnen lassen.
+   Da es in der einschlägigen Literatur nach meiner Kenntnis ansonsten bisher nicht regist-
+riert ist, darf hier abschließend vielleicht ein besonders markantes Lichtphänomen nachgetra-
+gen werden. Hoffmann-Krayer (1910, S. 236) zitiert es im Originalwortlaut aus einer um 1610
+von dem Luzerner Apotheker und Stadtschreiber Renward Cysat19 angelegten Chronik:
+
+    Vngefarlich, Anno 1605, alls zwen vernampte [angesehene; G.H.H.] Ratsfründ diser Statt
+    sampt jren Dienern Geschefften halb gan Solothurn gereiset, vnd jm Heimkeer spat jn der
+    Nacht in den Wald zwischen Willisow vnd Buochholtz vngfar 3 Stund wyt von diser Statt,
+    kommen, hatt sich der gantz Wald gächling [plötzlich] entzündt vnd ergläntzt, glych alls ob es
+    alles ein Füwr wäre vnd so heiter, das man ein jeden Brieff daby hette läsen können; vnd ha-
+    ben doch kein Hitz noch andere Endrung by jnen selbs empfunden. Vnd diss hatt gewärt, bis
+    sy vss dem Wald kommen. Diss hand mir darnach ouch noch andre meer nammhafte Herren
+    vnd Personen glychs Fals allso bezügt, dass es jnen an disem Ort eben allso ouch begegnet sye.
+
+Hoch wahrscheinlich würde sich auch hierfür, sofern man Näheres über die Umstände wüss-
+te, eine eher prosaische Erklärung finden lassen. Autoscheinwerfer sind im Jahr 1605 freilich
+nicht unter den Lösungskandidaten.
+
+                                                Literatur
+
+Corliss, W.R. (1982): Lightning, Auroras, Nocturnal Lights, and Related Luminous Phenomena: A Cata-
+         log of Geophysical Anomalies. The Sourcebook Project, Glen Arm, MD.
+Corliss, W.R. (2001): Remarkable Luminous Phenomena in Nature: A Catalog of Geophysical Anoma-
+         lies. The Sourcebook Project, Glen Arm, MD.
+Hoffmann-Krayer, E. (1910): Cysatiana. Volkskundliches aus dem Kanton Luzern um die Wende des
+         16. Jahrhunderts. Schweizerisches Archiv für Volkskunde 14, 198-245.
+Küeffer, G. (1913). Sagen aus dem Obersimmenthal. Schweizerisches Archiv für Volkskunde 17, 77-98.
+Leone, M. (2006). Questioning answers on the Hessdalen phenomenon. Journal of Scientific Exploration 20,
+        39-66.
+Ludin, J. (1950). Spiel der Lichter über dem Land Tirol. In: Ludin, J.: Verzaubertes Alpenland. Abendländi-
+        sche Verlagsanstalt, Innsbruck, 126-132.
+
+
+
+
+19 Der Luzerner Apotheker und Stadtschreiber Renward Cysat (1545-1614) gilt als Begründer der
+   schweizerischen Volkskunde. Von Cysats Nachnamen leitet sich der Titel „Cysatiana“ her, den
+   Hoffmann-Krayer (1910) seinen umfangreichen Auszügen aus Cysats originaler Chronik aus dem
+   Jahr 1610 gegeben hat. Obgleich 400 Jahre alt, sollte sich der schweizerdeutsche Text auch dem heu-
+   tigen Leser noch ohne größere Beschwernisse erschließen.
+     Eine Widerlegung des EMBLA 2002-Berichts über die optische Vermessung in Hessdalen               115
+
+Teodorani, M. (2004): A long-term scientific survey of the Hessdalen phenomenon. Journal of Scientific
+       Exploration 18, 217-251.
+Teodorani, M. (2006): Hessdalen research: A few non-questioning answers. Journal of Scientific Exploration
+       20, 66-68.
+

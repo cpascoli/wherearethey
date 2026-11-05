@@ -1,0 +1,1344 @@
+Journal of Scientific Exploration, Vol. 35, No. 3, pp. 590–622, 2021           0892-3310/21
+
+
+
+                                                        RESEARCH ARTICLE
+
+
+ Are Hessdalen Lights a Reality, an Illusion, or a Mix of the Two?
+
+                                       G. Pascoli
+  Université de Picardie Jules Verne, Faculté des Sciences, Département de Physique,
+                                         France
+                 pascoli@u-picardie.fr; sciences.univers@gmail.com
+
+         Submitted April 14, 2021; Accepted May 23, 2021; Published September 30, 2021
+
+https://doi.org/10.31275/20212171
+Creative Commons License CC-BY-NC
+
+
+      Abstract—Hessdalen Lights (HLs in the following) are luminous, float-
+      ing, more or less spherical atmospheric phenomena, with a lifetime of a
+      few seconds to sometimes several minutes. These phenomena have been
+      seen in the Hessdalen Valley in Norway for decades. Unfortunately, a full
+      understanding of these baffling events is still lacking in spite of solid,
+      working scientific projects intended to explain them. This paper tries to
+      improve the situation. It raises the questions of where the energy for the
+      creation of the HLs comes from, and what its nature is: (geo)chemical,
+      electric, or other? We propose a new scenario for the Hessdalen lights. It
+      exploits the recent idea of stable and traversable wormholes whose po-
+      tential existence is beginning to be recognized in physics. Even though
+      appearing highly speculative, this hypothesis has so far not been explored
+      elsewhere, even though it possibly could supply a full description of the
+      wholeness of the phenomenon. On the other side, even if the probabil-
+      ity that an HL could indeed be a wormhole is maybe low, this question
+      should not be dismissed out of hand. These theoretical considerations
+      could help to increase knowledge and understanding of both HLs and
+      wormholes. In this framework, we discuss the stability, energetics, and
+      oversized dimensions of HLs. In physics, the final arbiter is not the the-
+      ory but the experiment. Thus, some ‘simple’ experiments are suggested
+      (high time-resolution photometry and magnetic field measurements).
+      Eventually, if the process described is real, after mastering it there would
+      be a free and inexhaustible source of energy, a tremendous breakthrough
+      after which we could forget controlled nuclear fusion.
+      Keywords: Hessdalen Lights; wormholes
+A r e H e s s d a l e n L i g h t s a R e a l i ty, a n I l l u s i o n , o r B o t h ?   59 1
+
+
+
+
+                                          INTRODUCTION
+      Hessdalen lights (HL) and related phenomena reported from
+other regions of the Earth (and also “big” ball lightning) are certainly a
+great challenge for the scientific community. Scientific studies of these
+events began with Project Hessdalen led by E. Strand in the summer of
+1983 (http://www.hessdalen.org) followed by the EMBLA Project in 1998
+(Teodorani, 2004, p. 217). Several explanations have been proposed, but
+unfortunately most of them are far from explaining the puzzling facts
+(energetics, sizes, erratic motions, velocities, etc). In spite of decades
+of intense interest and of the large datasets acquired during many
+observing campaigns by teams at the Hessdalen and Embla projects,
+no consensus has been established.
+      First, it seems unlikely that HLs are simple atmospheric phe-
+nomena, given that the sightings do not correlate with meteorological
+data. We know that ionized gas (nitrogen and oxygen are dominant,
+with a percentage of other elements such as Sc, Fe, etc.) is involved
+(Teodorani et al., 2001; Hauge, 2007).1 However, simple flames issuing
+from combustible gas (methane, etc.) or burning dusts of metal
+(scandium, etc.) also are excluded because HLs are insensitive to wind
+and gravity (most of the time the entities are approximately spherical).
+On the other hand, theoretical models based on possible geophysical
+or electrochemical sources existing on the site (Hessdalen Valley) fail to
+answer important key questions.
+      The first of these questions is relative to the creation of HLs. At
+this level, we could appeal to another perplexing phenomenon which
+seems to be correlated to the HLs, that is, ball lightning (BL in the
+following). In this case, the process of creation is usually identified
+with electric discharges occurring in stormy weather. Unfortunately,
+HLs can appear in clear weather, and the obvious exploitable source of
+energy feeding the BLs (a lightning strike) is not available for HLs.
+      On the other hand, the energy densities associated with BLs are
+mild,2 ~10−100 Jm−3 (Boerner, 2020), so “soft” models for BLs, within
+the framework of classical electrodynamics and/or chemistry, have
+also been invoked. They are based on chemical reactions (Fischer, 1981;
+Abrahamson & Dinnis, 2000), on electromagnetic radiation stored in
+a conducting shell (Endean, 1997; Engholm et al., 1990), or on light
+592                                                               G . Pa s co l i
+
+
+
+
+trapped inside a shell of low-density air (Torchigin, 2019). Many authors
+have subsequently tried to stick the various electromagnetic and/or (geo)
+chemical models which were seemingly suitable for the BLs to the HLs.
+Therefore, some rather interesting models have been proposed. For
+instance, Paiva and Taft (2010) have suggested that HLs are formed by a
+cluster of macroscopic Coulomb crystals in a dusty plasma produced by
+the ionization of air and dust by alpha particles during radon decay in the
+atmosphere. On the other hand, Monari et al. (2013) have hypothesized
+that the valley’s shape, microclimate, or unique geology might also act as
+a giant battery that powers the lights. However, the energies at stake are
+much higher (by a factor of 100–1000 for the energy density) than those
+supplied by ordinary (geo- and/or electro-) chemical reactions which are
+assumed to be present on the site. Therefore, to create a plasma ball a
+powerful source has to be found (even for a centimetric plasma ball as
+will be discussed below). What might be the nature of this source when
+ordinary chemical or electromagnetic processes are very likely not at
+its root? So what do we do when “simple” models based on the usual
+physics do not work? To answer this question, we need to inevitably
+enter into a world of new concepts supported by more exotic models.
+Thus it appears that the most recent physics should be involved to boost
+a domain whose study seems to be suspended today. Bear in mind that
+the primary goal of any researcher is to widen scientific information,
+even into unexplored areas.
+
+                THE WORMHOLE HYPOTHESIS
+      Black holes have been invoked for explaining BLs (Rabinowitz,
+2001), but the trouble with this idea is that black holes would describe
+a rectilinear trajectory like a meteorite entering the atmosphere.
+HLs often exhibit a chaotic (or erratic) trajectory similar to Brownian
+motion and definitely not a rectilinear trajectory. What is the cause of
+this rather surprising motion, assuming that this is real? In any case,
+wormholes, the near relatives of black holes, seem to be better adapted
+for explaining this very intriguing characteristic. And if black holes
+have proved their existence, it is very likely that stable (and traversable)
+wormholes also exist. The value of wormholes in physics is attested
+to, starting with the seminal paper of Morris and Thorne (1988). In
+this remarkable paper these authors demonstrate that maybe stable
+A r e H e s s d a l e n L i g h t s a R e a l i ty, a n I l l u s i o n , o r B o t h ?   593
+
+
+
+
+and traversable wormholes could be somewhat more than simple
+mathematical curiosities (Morris & Thorne, 1988 ; Morris et al., 1988).
+Stable and traversable wormholes have received increasing attention
+ever since as objects that could really exist in the real world; very
+possibly, at least, as cosmological relics created in the quantum stage,
+or during the inflationary period of the evolution of the Universe. These
+primordial wormholes may also initially have captured some magnetic
+lines of force (Kirillov & Savelova, 2020).
+      Understanding of the stable and traversable wormholes is in
+progress, but there remains a great amount of work to do. A good deal
+of time and effort must be devoted to working out how these strange
+entities might form, and what might keep them open.3 Unfortunately,
+we do not yet possess a theory unifying General Relativity and Quantum
+Mechanics. Thus, the entire landscape of all the possible types of stable
+wormholes is largely unknown. Options are wide open and physicists are
+strongly divided on these questions. Despite this rather uncomfortable
+situation, the cosmologists have succeeded in proposing a natural (and
+well-admitted) origin for the wormholes. In its very early (quantum)
+stage, the Universe should have a foamlike topological structure. Its
+relics might well survive the cosmological expansion, thus creating a
+certain distribution of wormholes in the Universe (a kind of porous
+medium). Moreover, the inflationary stage (Starobinsky, 1980; Guth,
+1981; Linde, 1982) should enormously stretch the characteristic scales,
+pushing the ends of these strange entities farther apart, and eventually
+making a web of “sleeping” wormholes of all sizes. A rich and complex
+mixture of silent wormholes could thus exist in the Universe (Kirillov
+& Savelova, 2011). These tunnels would still be minute in diameter,
+but the two ends (the mouths) could be millions of kilometers apart
+(with the only visible features in our three-dimensional space being
+these two mouths, which are seen as spheres). It is hard to predict how
+many wormholes there are; but if they follow a Maxwell-Boltzmann
+distribution (Kirillov & Savelova, 2011) the existence of a wormhole with
+a millimetric (or metric) throat must certainly be very rare. Moreover,
+that one of these sleeping wormholes intermittently links two stars,
+and remains locked in this situation for a short time, has to be an even
+rarer situation.
+      At the present time, in view of the difficulties encountered when
+594                                                                      G . Pa s co l i
+
+
+
+
+Figure 1. Schema of stars linked by a wormhole (from Dzhunushaliev et al., 2011).
+
+
+carrying out the mathematics, only very simple solutions have been
+imagined. Thus, Dzhunushaliev et al. (2011) imagine that a wormhole
+(of a metric? size) could link a couple of stars. In their model, two
+twin stars are shown and the wormhole (which can still be seen as an
+extradimensional channel) links the centers of these stars (Figure 1).4 In
+addition, the wormhole instantaneously follows the orbital motion of
+the two stars. These very special conditions of symmetry are obviously
+chosen in order to make the problem easily tractable.
+      However, an extension of this mathematical work is needed, even
+though the analysis of a situation with a broken symmetry is very likely
+a hard task. If two stars can be connected by a wormhole as shown by
+these authors, is it possible to conjecture that a star (the Sun) and one
+of its planets (the Earth)—de facto a highly asymmetric problem—also
+are connected by a similar shortcut in space? And in this case what
+would be the observed phenomenon in the atmosphere of this planet?
+The question is speculative but it warrants consideration, especially if it
+makes it possible to advance further our understanding of wormholes.
+Let us imagine for a moment that HLs have something to do with
+wormholes.5
+      Before we go any further, two important questions still deserve to
+be asked:
+      1. Could a wormhole’s mouth be locked in the Sun? In fact the
+A r e H e s s d a l e n L i g h t s a R e a l i ty, a n I l l u s i o n , o r B o t h ?   59 5
+
+
+
+
+wormhole’s mouth could be found anywhere in space. Most of the time
+the wormhole’s mouth resides in the void, but in this case the other
+extremity is not fed and remains invisible, and nothing happens. In
+our scenario one must imagine that, at times (rare), one mouth of the
+wormhole has been entrapped by the Sun and remains locked in it for
+a period of time. It is obviously a working hypothesis, but this situation
+could be achieved following the calculations realized by Dzhunushaliev
+et al. (2011) about this topic.
+      2. Why would the second mouth appear “only” at Hessdalen and
+only intermittently? In fact it is true that Hessdalen is in the area of the
+world where anomalous light phenomena are found. The big conun-
+drum is that hitherto no one has managed to correlate the phenomena
+with local meteorology and/or geology, even after forty years of ob-
+servations! De facto the phenomenon does not seem to be especially
+linked to Hessdalen Valley. This could be a mere coincidence. Thus,
+similar events have also been described elsewhere. Apart from fakes,
+hoaxes, optical illusions, or misidentifications, most of the so-called
+Unidentified Aerial Phenomena (UAPs), which are recurrent in several
+places in the world, are possibly Hessdalen-like phenomena not rec-
+ognized as such (Teodorani, 2014, table 1).
+       On the other hand are we entirely sure there is not another
+Hessdalen on the planet, for instance in the middle of the oceans (the
+majority of the Earth’s surface is covered by oceans, or about 71% of
+the surface of the Earth), or in a vast desert area such as the Antarctic
+or the Sahara (cold and hot deserts actually make up 1/3 of the land’s
+surface area), where there is no one to observe the phenomena? By
+contrast let us recall that only three percent of the world’s land surface
+is covered with urban areas. Unfortunately in a city the light pollution
+and skyglow prevent the observation of Hessdalen-type lights (it
+is admitted that in the United States and Europe 99 percent of the
+people cannot experience a natural night!). Eventually owing to the
+air traffic above urbanized regions the Hessdalen phenomena would
+go completely unnoticed (most of the time a typical Hessdalen light
+is just an unsignificant luminous point in the sky, with the legitimate
+question: Is it an airplane light or a “true” HL?).
+       There is moreover another answer to the second question (about
+the small area covered by the Hessdalen Valley where the phenomena
+596                                                                 G . Pa s co l i
+
+
+
+
+are seen). We can look at the study of volcanism on Earth, even if the
+proposed analogy cannot be taken at face value. Why would a small-
+volume hot spot volcano (as seen at Yellowstone for instance) appear
+at a well-located point at the Earth’s surface and not a few hundreds of
+kilometers away, and why is this type of event only intermittently active?
+In addition geologists indeed estimate there are only about 40 to 50 hot
+spots around the world. The orthodox response suggested today is that a
+hot spot is the mouth of a mantle plume6 which rises through the Earth’s
+mantle and which is deeply anchored at the core–mantle boundary.
+       Likewise let us imagine that the space is a kind of topological
+porous medium (Kirillov & Turaev, 2007) as is hypothesized in our
+scenario, of which we distinguish only three spatial dimensions (the
+smooth surface of the porous medium). The wormhole could then
+percolate by accident toward a specific point, and for a finite moment,
+i.e., in the present situation at Hessdalen and not in the nearby valley
+(bearing in mind that a wormhole of submillimetric size in diameter
+is obviously much more specifically located than a hot spot volcano of
+more than 100 km in diameter). This “conduit” in the fabric of space
+can also temporally (or definitely) disappear, like the mantle plume in
+the hot spot in volcanism. Maybe there is nothing special at Hessdalen;
+by the way the events have significantly decreased in recent years, even
+though the meteorology and the geology of the place have remained
+unchanged (how can we explain this fact if the phenomenon is
+specifically related to the location?). It is likely that there will be nothing
+left to observe at Hessdalen in a few decades. Thus we can even suggest
+that the same phenomena will one day reappear elsewhere on the
+Earth’s surface with a strong intensity (even though we cannot predict
+where and when this event will occur, just as we cannot predict the re-
+awakening of a volcano).
+       A practical analogy of HL with the so-called problem of the
+flexible pipe is quite interesting, even though they are different in
+many respects. The motion of a flexible pipe has been well-studied
+(Etlender et al., 2007; Xie et al., 2016). As far as we are concerned, with
+the wormhole problem both radiation and the magnetic field play the
+role performed by water in a pipe. On the other hand, we can proceed
+by analogy for the size of the mouth of the wormhole (whose possible
+cycle of closing and opening regulates for instance the mass or the
+A r e H e s s d a l e n L i g h t s a R e a l i ty, a n I l l u s i o n , o r B o t h ?   597
+
+
+
+
+radiation flux between the two stars) versus the section thickness of the
+pipe (which regulates the water fluxes). Eventually we must compare
+a foreseeable erratic and rapid shifting in the extradimensional space
+for the wormhole versus the wall motion in the radial direction in real
+space for the pipe. All these descriptions deserve a deep analysis with
+the aim of transposing them to the wormhole world and maybe would
+lead to decades of complex mathematical studies. In spite of the fact
+that the theory of wormholes is not yet fully developed, the pictorial
+analogy made above will be useful in the following section.
+      We know at least that a wormhole has two extremities connected
+by a “throat.” Let us imagine that one extremity is located somewhere
+in the earth’s atmosphere, but where is its counterpart? The mouth
+of a wormhole is usually invisible (as a naked black hole without its
+accretion disk) unless the other extremity is immersed in a medium
+that produces a strong radiation field. The only object in the solar
+system that generates a large radiation field is the interior of the Sun.
+We can then imagine that the wormhole funnels the radiation field of
+an interior zone of the Sun from one of its extremities up to the other
+extremity placed in the earth’s atmosphere (and very possibly also along
+magnetic field lines) (Figure 2). This suggestion is thus closely based on
+the model of Dzhunushaliev et al. (2011) where two twin stars are linked
+together, but with the difference that we suppose that the wormhole
+is traversable only by radiation and magnetic fields and definitely
+not through solar matter.7 Thus an unsuspected connection, other
+than gravitational or magnetic, would exist between the Sun and the
+Earth. Even though this connection appears prima facie like a remote
+possibility today, it might reflect reality in the future. Astrophysicists are
+searching wormholes, far away at the galactic center (Dai & Stojkovic,
+2019), whereas these entities may be far closer to home than we think.
+      To begin with, a first issue arises: What could the diameter of
+the throat of a wormhole connecting two stars be? Unfortunately,
+Dzhunushaliev et al. (2011) did not address this important question
+in their theoretical paper. Likewise what could be the diameter of the
+throat of a wormhole connecting a star of the solar type and a (telluric)
+planet? It turns out that HLs studies (see the text that follows) could
+eventually give an estimate of this diameter, of the order of 0.1 mm for
+a star–planet wormhole.
+59 8                                                             G . Pa s co l i
+
+
+
+
+Figure 2. Schema of a wormhole between Earth and the Sun.
+
+
+      On the other hand the mean temperature in the Sun is of the
+order of 105 K,8 and we shall take this value as the “surface” temperature
+of the (spherical) wormhole’s mouth in the earth’s atmosphere. We can
+now compare the mouth of the wormhole to a submillimetric star in
+the earth’s atmosphere. The remarkable idea of comparing an HL to a
+very small star has been suggested by Teodorani (2014). Note that once
+the power of an HL (100 kW) and the temperature of the source (105
+K) are fixed, the radius of the mouth of the wormhole is no longer a
+free parameter of the model but is automatically fixed by the Stefan–
+Boltzmann law. In order to avoid any ambiguity we must also specify
+that the very hot gas surrounding the wormhole cannot be detected by
+the observer (no more than the wormhole itself which is submillimetric
+in size). This region which emits a hard UV spectrum is constantly
+hidden from view by a surrounding shell of dense gas as we shall see
+below.9 This shell is optically thick, and radiates in the visible range at
+temperatures in the continuous range from 5000 to 300 K. The few
+spectra that we can analyze10 show features that are a recombination
+of line spectra of nitrogen and other species (atomic and molecular)
+directly produced in this shell.
+
+       THE PHOTOIONIZATION MODEL FOR THE HLS
+     In this part the hypothesis “wormhole” is not essential, a point
+source of the order of 100 kW is sufficient.11 The theory of photo-
+ionization in gaseous nebulae is indeed well-developed today (see
+Morisset, 2016, for instance). However a basic statement is sufficient
+for our purpose here. Also we refer only to seminal papers on this
+A r e H e s s d a l e n L i g h t s a R e a l i ty, a n I l l u s i o n , o r B o t h ?        59 9
+
+
+
+
+important topic. On the other hand we have taken a medium composed
+of pure dinitrogen (by far, dinitrogen is the most abundant gas in the
+Earth’s atmosphere, accounting for about 78.1% by volume of dry air),
+but the introduction of other gas (dioxygen) would not change the
+main conclusions of the paper. The recombination lines of nitrogen
+are prominent in the spectra of HLs (Hauge, 2007). In the following,
+the species N2, N+2, N, N+, and N++ are indexed 1, 2, 3, 4, 5, respectively.
+
+The Equations
+      The problem has seven variables: The species density nN++, nN+, nN,
+nN+, nN2 (m–3), the electronic density ne(m–3), and the temperature Te(K),
+  2
+and seven equations are needed:
+
+     — The neutrality of charge in each volume unit (a plasma is
+       globally neutral)
+
+				                                                                                      		   (1)
+
+     — The gas equilibrium equation
+       The Euler equation for a static spherical ball of gas is
+
+                   ∂
+                							                                                                        (2)
+                                                 ∂
+
+where P is the gas pressure,12 is the mass density, r the radius
+measured starting from the point source (the mouth’s wormhole
+which is assumed to be here a quasipoint source of energy), G the
+gravitational constant, and M the apparent gravitational mass of the
+wormhole.
+     First we begin by the estimation of the pressure gradient in the
+plasma ball, for a ball filled with plasma with a temperature of at least
+2000 K (the minimum threshhold for the temperature in a plasma).
+Taking the particle density in the atmosphere natm ~2.5 1025 m–3 and a
+mean mass for the molecules ~4.8 10–26 kg (dinitrogen or dioxygen),
+we find numerically for the gradient (with a radius for the plasma ball
+of the order of 1 m), ∂                   Eventually we find for the cor-
+                                     ∂
+600                                                                G . Pa s co l i
+
+
+
+
+responding acceleration field                                  It is a fully
+unrealistic value indeed (6 10 times the acceleration gravity at
+                                    4
+
+the surface of the Earth!). The gravitation being a long-range force,
+the influence of this gravitational field on the environment would
+be detected at a very large scale. This is obviously not the case. We
+deduce from this result that the gravity of the star–planet wormhole is
+necessarily low (contrarily to a black hole, the mouth of a wormhole can
+appear gravitationally neutral—a kind of massless or sleeping entity).13
+More generally no long-range force, gravitational or electrostatic,
+can contribute to the stability of a plasma ball such as an HL.14 The
+appropriate solution is then
+
+                                ∂
+		                                                                           (3)
+                                ∂
+
+and eventually we obtain the pressure equilibrium
+
+                                                                     T
+
+                                                                             (4)
+
+with nN 2atm = 2.7 1025 m–3 and Tatm = 298 K. The cohesion of the plasma
+ball (approximately spherical) is ensured by the ionizing point source.
+
+      — The photoionization-recombination equilibrium equations
+
+
+                                                                             (5)
+
+
+where Jv is the mean specific intensity of the radiation field detailed
+
+below (       supplies the number of photons per unit area per unit time
+
+per unit frequency) and s1,v(i) is the photoionization cross section from
+the fundamental level for the species i (vi is the threshold frequency).
+The total recombination rate coefficients for the transition i + 1 → i, a(i),
+are given by the fitted expression
+A r e H e s s d a l e n L i g h t s a R e a l i ty, a n I l l u s i o n , o r B o t h ?                      601
+
+
+
+
+          								                                                                                           (6)
+
+
+where the coefficients a, b c, d are from table 1 of the paper by
+Péquignot et al. (1991) (z is the ionic charge, z = 1 for the neutrals), and
+
+the normalized temperature t = 10–4                                 . The molecular recombination
+
+coefficients aD(i) are taken from Tamadate et al. (2020).
+     For the photoionization cross sections of the atomic N and its
+ions, we have chosen a well-known simple law for the species i, i.e.,
+
+				                                                                                                         (7)
+
+
+where a and s are coefficients which are supplied in the paper by
+Henry (1970) and vi are the threshold wavelengths tabulated in Table 1
+in this paper. For the molecular nitrogen N2, we have fitted published
+tabulated values using the downloading link https://home.strw.
+leidenuniv.nl/~ewine/photo . A counterpart curve has been used for the
+corresponding monocation
+     The mean specific intensity of the radiation field (Williams, 1968)
+is
+
+
+                                               TABLE 1
+                                        Threshold Wavelengths
+
+ Reactions                    Energies (eV)                Threshold                      Wavelengths (nm)
+                                                        frequencies (Hz)
+
+
+   N2 → N + N                         9.8                      2.4 1015                       v = 125
+                                                                                               D1
+   N →N+N
+      +
+      2
+                   +
+                                      9 .8                     2.4 10  15
+                                                                                              v = 125
+                                                                                               D2
+   N2 → N2+ + e−                      15.5                     3.8 1015                        v1 = 79
+   N → N+ + e−                        14.5                     3.5 1015                        v3 = 86
+   N+ → N++ + e−                     29.6                      7.1 1015                        v4 = 43
+602                                                      G . Pa s co l i
+
+
+
+
+							
+
+
+                                                                    (8)
+
+
+where the intensity of the source (i.e., the mouth of the wormhole
+assimilated to a black body) is
+
+
+								                                                           (9)
+                                       –
+
+
+
+The optical depth is given by
+
+                                '
+
+
+
+
+      						                                                      (10)
+
+      — The temperature equation
+
+					
+
+
+
+
+					                                                             (11)
+A r e H e s s d a l e n L i g h t s a R e a l i ty, a n I l l u s i o n , o r B o t h ?   603
+
+
+
+
+The Results
+     The equation system considered above has been normalized
+and solved by an iterative method at each point of radius r. MATLAB
+numerical computing was used throughout the calculations. The results
+are displayed in Figure 3.
+
+
+
+
+ Figure 3. Results of the equations using Matlab.
+
+
+
+We can see that HLs are described in the present context by a small
+quasi hollow ball filled with plasma at a low density (the unit on the
+abscissa is of the order of 1 cm). In the transition region (thickness < or
+~ a millimeter) the density increases by three orders of magnitude and
+the temperature rapidly drops from 105 K to 298 K. The surrounding
+thin shell is optically thick and radiates as a black body in the visible
+range (with a quasicontinous spectrum in the recombination lines by
+giving HL the appearance of an opaque disk). The energy contained in
+this hot plasma ball is
+
+
+		
+ (12)
+604                                                            G . Pa s co l i
+
+
+
+
+      This seems to be a relatively low energy, which would
+instantaneously dissipate within ~10−5 s without the input of energy
+from the wormhole (power 100 kW). This energy can increase the
+temperature of one kilogram of water by only 10−4 °C. There is no risk
+for the observer even at a short distance (nobody has been injured
+in Hessdalen Valley by an HL, or at least no claim has been made).
+Nevertheless the energy density which is associated is rather high, of
+the order of 500 kJ m−3. By comparison, let us note, however, that the
+energy density usually attributed to an “ordinary” (and not exceptional)
+ball lightning and produced by an electric discharge (for instance a
+strong lightning impact in stormy weather) is much weaker and of the
+order of 10–100 Jm−3 (Stenhoff, 1999). An HL cannot be generated by a
+weak electric source (such as a natural battery as proposed by Monari et
+al., 2013) and lighting strikes are excluded. Other chemical sources are
+dubious. Another more energetic source must be found, as suggested
+here.
+      However, and contrary to expectation, even with a continuous
+input of energy of 100 kW, the plasma ball is found to be very small
+given that its radius is of the order of one centimeter! Let us note that
+this result is independent of the ionizing nature of the point source (a
+wormhole, a black hole, or any other “exotic” particle). Only the power
+of the source matters and it is approximately fixed by the observation. A
+checking by a direct calculation of the radius of the Strömgren sphere,
+for the reaction                                       leads much more
+rapidly to a similar conclusion.
+      The number of ionizing photons (for the considered reaction)
+emitted from the mouth of the wormhole is
+
+								                                                                (13)
+
+
+or numerically                          .
+     The electronic density is given by
+
+
+                                                                        (14)
+A r e H e s s d a l e n L i g h t s a R e a l i ty, a n I l l u s i o n , o r B o t h ?   605
+
+
+
+
+let, with                                              e                              .
+
+The Strömgren radius is given by (cf for instance Osterbrock & Ferland,
+2005)
+
+
+                                                                                          (15)
+
+Inside the Strömgren sphere the simulations give            . From
+Equation (1) we find thus                        Eventually we obtain
+again
+
+
+
+
+     Again we find a diameter of the order of a few centimeters (smaller
+than a tennis ball).1 Nevertheless it is a rather deceptive result given
+that HLs are generally described as much bigger with a diameter of
+the order of one meter. Obviously, here the energetics is not a pitfall
+for a star–planet wormhole as it could be with an ordinary chemical
+source, and wormholes with a “bigger” diameter, for instance of the
+order of 1 mm, easily could supply a very high power of 10 MW (for a
+same temperature of 105 K), but even with such an impressive (but not
+observed) power, the radius of the HL would be no greater than 5 cm.
+It appears at last very difficult to fully ionize a cubemeter of air!15 So is
+an HL with a diameter of the order of one meter a reality, or an illusion
+produced by the brain of the observer seeing a bright point light source
+(with diffraction artifacts that spread the image of a point source on the
+retina)?
+
+Does a Skyglow Surround the Small Plasma Ball?
+      A prosaic scenario could however be supplied to explain the “big”
+size of HLs. It is well-known that soil dust aerosol is higher under cold
+climate conditions (as prevailing across Hessdalen Valley during the
+winter season, a period where the HLs are seen to be more numerous)
+as a consequence of dry air and weakened precipitations (Petit et al.,
+1999). Let’s assume a complex mixture of hybrid mineral aerosols is
+present in the atmosphere of Hessdalen Valley. In order to estimate the
+606                                                                  G . Pa s co l i
+
+
+
+
+extension of the diffusion zone produced by these aerosols illuminated
+by the plasma ball, the aerosol optical depth, which is a measure of the
+amount of light that aerosols scatter and absorb in the atmosphere,
+must be known. Complex organic aerosols constitute a large portion
+of these particles (Bzdek et al., 2014),16 but here we will take spherical
+microclusters made of pure silicon associated with soil dust.
+      We can estimate the dust concentration to be of the order of 1 µg
+m–3 in the atmosphere of Hessdalen (the mean dust concentration
+in the Arctic). Let particles have a mean radius r. The mass and the
+radius of a silicon atom are respectively 4.7 10−26 kg, 1.11 10−10 m. This
+gives for the particle density (with particles of micrometric size), 3 10–14
+r–3 (m–3). With an extinction cross section17 in the visible range ~2 x πr2,
+we find for the extension of the diffusion zone surrounding the plasma
+ball ~5 1012 r (m). We note that regardless of the size of the particle
+(micrometric or submicrometric) the medium surrounding the plasma
+ball is optically thin and therefore no diffuse glow of a metric size is
+created.18
+
+The Possibility of a Mixed Explanation
+     A closer look at an HL photograph (Figure 4), however, shows a
+rather inhomogeneous and patchy surface and definitely not a perfect
+small disk with a sharp circular boundary as often falsely related.
+
+
+
+
+Figure 4. Imprint of the wavering trajectory of the HL (taken from the Hessdalen
+          Project, E. Strand). Magnified enlargement on the right side.
+A r e H e s s d a l e n L i g h t s a R e a l i ty, a n I l l u s i o n , o r B o t h ?   607
+
+
+
+
+      On the contrary, well-individualized grains appear on this
+photograph and at some moment the “global” ball splits into several
+small pieces. The HL brightness strongly fluctuates and can even
+disappear and then a moment later suddenly reappear. This oscillation
+between appearance and extinction is difficult to explain, invoking for
+instance a chemical source or a point electric discharge for the HLs.
+What energy source can produce such strange phenomena?
+      Maybe a mixing of a real event (visualized by the small grains on
+the photograph) combined with an optical illusion (i.e., the extended
+disk) is a way to solve the problem. From the various and enigmatic
+reports of eyewitnesses, skeptics of HLs (or more generally BLs) often
+deduce that they are afterimages on the retina due to exposure of the
+intense flash of light from linear lighting. We know that lightning balls
+as an optical illusion often have been invoked in the literature (Argyle,
+1970; Berger, 1973; Peer et al., 2010; but see also for critics, Bäcker et
+al., 2007). However, it seems that at least a part of the phenomenon
+has a physical reality. It is well-known that after seeing a bright light,
+a persistent afterimage remains in the visual field for several minutes.
+Sometimes this afterimage is even complex (Taya & Ohinata, 2002) and
+the effect also similarly affects cameras. More precisely the persistence
+or recurrence of an image after the stimulus (the physical phenomenon)
+has been removed can produce on the retina or on a photograph the
+impression of an extended, diffuse, or granular picture instead of a
+unique, small, and sharp one.
+      We continue our investigation by now presenting more specifically
+two likely scenarios, labeled A and B, even though other possibilities
+arguably exist.
+      Scenario A. A wormhole subject to a very fast Brownian motion
+on the spot + a “slow” drift? This is the context in which the wormhole
+hypothesis appears most useful. We can imagine that the mouth of the
+wormhole fluctuates in diameter, alternating between a “large opening”
+(~.1 mm) and closing.19 The erratic appearance of this mouth in a spatial
+zone of ~1 m, approximately spherical in shape (Figure 5), can thus give
+the subjective impression of an extended luminous surface (taking into
+account the afterimage perception and the light trail, it is well-known
+that light trails create a sense of speed and energy in the images).
+      This effect can also easily explain the intriguing fact related by
+608                                                                     G . Pa s co l i
+
+
+
+
+Figure 5. An example of a typical Brownian motion of a quasipoint light source. The
+          resolution imaging device (eye or camera), if low, can strongly blur the
+          trajectory of the primary tiny source.
+
+
+witnesses: In some cases the HLs have also been perceived as suddenly
+animated with very rapid velocities, larger than the sound celerity in
+the air without sonic bang (Strand, 1990). This immediate description
+is obviously weird in view of the physics. Yet here the explanation is
+rather simple. When the mouth of the wormhole appears at one place
+it ionizes its immediate environment to form a plasma ball (more than
+one centimeter), then this ball collapses and then again reappears
+elsewhere leaving the illusory percepts of a continuous motion of a
+well-individualized small plasma ball, even though it is not the same
+piece of gas which is ionized each time (let us note in support of this
+claim that the luminous ball seen in Figure 4 appears to be a compact
+agglomerate of seemingly individualized patches of gas, but having
+approximately the same size, and this gives the impression that the
+“primary” HL draws a wavy “S” on the sky background). This is the so-
+called phi phenomenon which is an illusion of motion that arises when
+stationary objects (lightbulbs, for instance) are placed side by side and
+A r e H e s s d a l e n L i g h t s a R e a l i ty, a n I l l u s i o n , o r B o t h ?   609
+
+
+
+
+switched on rapidly one after another (Wertheimer, 1912; Kohler et al.,
+2008; Steinman et al., 2000). In reality, here the plasma ball is not at
+all subjected to a superfast translational displacement from one point
+to another one in space, given that the air is ionized on the spot (but
+submitted to a succession of cycles, each of them being composed of a
+rapid expansion of a hot ionized gas, ~10–5 s, a stability phase of a few
+seconds to a few minutes (the primary HL itself ), and then a “slow”
+contraction of a recombined cold gas, ~3 10–4 s). Thus the plasma gas
+forming the ball at a given moment does not move in a translational
+way and this is very likely why no sonic bang is associated with the
+phenomenon.20
+      As shown in Figure 4, on the magnified view (right side), we
+distinctly guess the fuzzy imprint of the wavering trajectory (which
+overlaps itself, but a straight track composed of small well-individualized
+patches, ending at each extremity with a sudden change of direction
+that is clearly visible) of the “primary” HL (i.e., the small plasma ball
+surrounding the wormhole’s mouth and instantaneously produced
+by ionization). The corresponding path is drawn superimposed on the
+“global” phenomena (registered by a low-time resolution camera or
+the eye) in Figure 6. A high time resolution imaging camera system
+with submicrosecond timing accuracy and very low remanence level
+should ensure easy confirmation (or refutation) of this statement. On
+the other hand a time-dependent model also remains to be created to
+theoretically establish this idea.
+
+
+
+
+Figure 6. Path of the trajectory from Figure 4 superimposed on the global phenomena.
+610                                                               G . Pa s co l i
+
+
+
+
+      Scenario B. A wormhole with multiple heads? Another daring
+hypothesis would be that the mouth of the wormhole splits into
+a multitude of very small heads21 (producing a structure that can be
+pictured as a kind of “swarm of bees”), for the same total power of
+~10–100 kW. The attractive interaction between these heads should
+naturally produce an extended cohesive spherical ball. This scenario is
+very different from scenario A where just one head with high-speed
+motion is present. The resulting effect would then be a metric or
+decametric in size plasma ball, appearing with a grainy texture, as seen
+in Figure 4 (enlargement on the right side). The great interest of this
+second scenario is that the ball could now be divided into two or three
+components during the interaction, and the result would be a geometric
+structure, i.e., respectively, a dumbbell or retaining a triangular shape
+(as in the impressive figure 5c in Teodorani, 2004).
+      Unfortunately this very interesting possibility has not been exam-
+ined in the literature on wormholes and it is difficult to say whether it
+is logically defensible (even though there exists no counterargument
+against it). But precisely because of this statement we can suggest
+that the study of HL phenomena is helping to advance knowledge of
+wormhole physics and vice-versa. Again, capturing an HL phenomenon
+with a ultra-high-speed camera is highly desirable in order to see how
+the ball can divide into several parts from one initial unit.
+
+The Magnetic Field
+      With an assumed magnetic field of the order of 10–1 tesla22 taken
+at the mouth of the wormhole, and assuming a decrease as r–2 for a
+monopolar field in the ball,23 we obtain 10–9 tesla at one meter from the
+HL. This value is very low (compared to the earth magnetic field ~5 10–5
+tesla). At 10 m this value falls to 10 picotesla, but this is still above the
+accuracy of the ultrasensitive magnetic sensors, ~1 picotesla (Abel et
+al., 2019).24 A protocol for measuring the field configuration is sketched
+in Figure 7. Even though this operation will not particularly be easy to
+achieve, this would enable us to conclude the presence of a monopolar
+field25 and therefore the likely existence of a wormhole at the center of
+the HLs.
+      The intensities that are supplied above are, however, minimal but
+A r e H e s s d a l e n L i g h t s a R e a l i ty, a n I l l u s i o n , o r B o t h ?   611
+
+
+
+
+Figure 7. Positioning of three magnetic sensors to measure the magnetic field
+          configuration at the mouth of a wormhole.
+
+could be much higher (cf Note 24). On the other hand, in addition the
+positioning of the three magnetic sensors as shown in Figure 7 naturally
+leads to a triangulation of the HL. This crucial experiment could thus
+contribute to the accurate determination of both the position (its size)
+and the luminosity of an HL, two key parameters in the understanding
+of the phenomenon; even though trapping any elusive thing such as an
+HL between three sensors represents a great challenge. Unfortunately,
+we must admit that as long as we have not realized this type of ex-
+periment, the full understanding of HLs will remain out of range.
+
+                       THE CREATION OF A WORMHOLE
+     Following the scenario described here, to create an HL or a big
+BL, a wormhole is appealing. However what process could build up a
+wormhole? The problem seems to have been moved from one area to
+another and ultimately left unsolved.
+     Brushing aside this question, we could even say that wormholes
+have existed since the time of the big bang where these entities were
+created by quantum fluctuations and then considerably expanded to
+millimetric or metric size during the inflationary phase. Thus worm-
+612                                                             G . Pa s co l i
+
+
+
+
+holes might have been prefabricated by nature at the very beginning
+of the Universe (Cramer, 2016). Unseen since the dawn of time, these
+sleeping wormholes are patiently awaiting matter or energy coming
+into close proximity, to reveal their fantastic nature.
+      Unfortunately, from an experimental point of view, the situation
+appears much more complicated with regard to the fact that an
+“immeasurable energy” seems needed to build a wormhole from
+nothing. However, the latter question is ill-posed and this requirement
+of an “immeasureable energy” is possibly a false appearance. A stable
+wormhole may be easier to create from “nothing” (more exactly not
+from nothing but in fact from the fabric of space–time) than we usually
+believe. The goal is asking the right question: What energy is required
+for burning down a gigantic forest of hundred-year-old oaks? Is the
+answer a very huge energy? No, just the energy contained in a match
+(a very small activation energy indeed). Most reckless people are
+unaware of this simple fact. Maybe the universe is actually full of stable
+topological defects and is similar to a porous Swiss cheese of which we
+see only the smooth surface.
+      In the special case of HLs a strong magnetic disturbance or
+a magnetically collimated particle flux sourced from the Sun and
+reaching the polar terrestrial regions (Hessdalen is located in a Nordic
+high-latitude region) is maybe this small match that triggers a hidden
+machine in the fabric of space–time producing a longitudinal rip
+between the Sun and the Earth. Subsequently an extradimensional
+submillimetric channel (a wormhole) could open up between the Sun
+and the Earth for a few seconds or even minutes.
+      Another point still deserves special attention. Let us imagine for a
+moment that a technology could be derived from this scenario (simply
+retrieving a primordial stable wormhole and domesticating it—after all,
+man did not create atoms but has learned how to use them to extract
+hidden nuclear energy). The exploitation of a centimetric star–planet
+wormhole located at the center of a simple spherical shell of water of
+a few meters in size located on this planet could supply a power of 100
+MW to its inhabitants (the power of a small nuclear reactor but without
+radioactive wastes). Will future generations be able to master this
+revolutionary technology, much more simply than the long-overdue
+controlled nuclear fusion?
+A r e H e s s d a l e n L i g h t s a R e a l i ty, a n I l l u s i o n , o r B o t h ?          613
+
+
+
+
+                                             CONCLUSION
+      This paper has been devoted to an understanding of Hessdalen
+lights and “big” ball lightnings a few decimeters or meters in size. If it
+is well-known that the Earth and the Sun interact through gravity and
+magnetic fields in usual space, we have shown that it could well be that
+they also interact in another more subtle extradimensional way. This
+bold remark could eventually constitute the first expected evidence that
+stable submillimetric wormholes exist in the universe and furthermore
+close to home. We end by emphazing that we are aware that this
+idea is highly speculative. However, it is located at the crossroads of
+several topics, such as plasma physics, magnetohydrodynamics, and
+wormhole theory (the latter still in its infancy). This is a remarkable
+field for investigation, even if a good deal of work remains to be done
+to specify exactly the nature and behavior of a star–planet wormhole.
+
+                                                     NOTES
+1
+    Let us notice, however, that the spectrochemical analysis and line
+    interpretation are unfortunately questionable in these works, due
+    to a too-low–resolution spectrum and a very low signal-to-noise
+    ratio. Even though very important, these works are just a first step.
+    We know that an accurate identification of the chemical elements is
+    strongly dependent on the spectral resolution level. A high spectral
+    resolution would be highly desirable, although we feel that this type
+    of experiment, realized on transient moving sources, is indeed a huge
+    challenge. Some suitable devices do exist and could be tested. For
+    instance, a slitless echellelike (multiorder) wide field spectograph is
+    able to allow a resolution of the order of                                            which is at
+  least a factor 10–100 times higher than the spectral resolution typically
+  obtained using a simple transmission grating (see for instance the
+  patent: https://patents.google.com/patent/US8749781). The wide field
+  of this kind of disperser allows one to obtain a good quality spectrum
+  even if the light ball is randomly moving (within an acceptably small
+  angular motion), in the case that it is sufficiently luminous.
+2
+  Remarkable exceptions have been noted, however (Nikitin et al.,
+  2018), even though some values appear to be overestimated in the
+  latter work.
+6 14                                                              G . Pa s co l i
+
+
+
+3
+  In pure (ordinary) General Relativity, static wormholes are unstable.
+  Imposing the stability of static wormholes requires a supplementary
+  ingredient. Several hypotheses were suggested, such as the presence
+  of an exotic negative mass (Morris & Thorne, 1988). However, static
+  and traversable wormholes solutions also have been found in the
+  vacuum of R2 gravity, a special case of F(R) theory where the role
+  of exotic matter is played by a modification of general relativity
+  (Duplessis & Easson, 2015), etc. The zoo of stable wormholes is
+  decidedly wide.
+4
+  We have reduced the Universe to a two-dimensional space (a plane),
+  so that we can visualize the wormhole in its entirety. Especially the
+  mouths of the wormholes are not circles as shown in Figure 1, but
+  spheres! In our three-dimensional world, locally, a wormhole would
+  appear as a sphere (the core of an HL?).
+5
+  Until now all models using conventional physics that have been
+  proposed (Paiva & Taft, 2010; Monari et al., 2013; and many other
+  equivalent or more exotic models), in order to explain the HLs,
+  encounter serious difficulties, and for more than four decades now.
+  From a theoretical point of view we can say that the topic of HLs is
+  at a standstill with standard physics. The challenge is twofold: the
+  energetics and the incredible motions of HLs, characterized by rapid
+  accelerations and abrupt changes of direction.
+     i. Let us consider first the energetics. In the case of a ball lightning
+  the energy is “easily” supplied by a lightning bolt. It is clear that we
+  can then attempt to treat the question with the help of conventional
+  physics. However, for the HLs no lightning bolt is present and the
+  question is: What is the nature of the energy source of HLs? How is a
+  large energy confined in a small volume (size less than or about equal
+  to 1 m) and, secondly, how does the cohesion of the plasma endure
+  for sometimes several minutes?
+     ii. The erratic motion of HLs, in turn, seems to defy laws of physics
+  (obviously in appearance only, and we will see that this is not a
+  problem with the wormhole hypothesis).
+     Nonetheless, it is difficult to understand why no explanation of all
+  these things has been supplied after nearly half a century of studies
+  (Hessdalen and EMBLA projects). Are we reluctant to receive an
+  explanation for HL phenomena in terms of standard physics? This
+A r e H e s s d a l e n L i g h t s a R e a l i ty, a n I l l u s i o n , o r B o t h ?   615
+
+
+
+
+   is why a speculative and unconventional hypothesis (a wormhole),
+   even though daring, deserves our attention, and we must take this
+   opportunity to move things along. In physics the credibility of a
+   hypothesis is not based on whether it is conventional or odd, but
+   upon its falsifiability. Falsifiability is the key concept in the separation
+   of science from pseudoscience. De facto we propose in “The
+   Magnetic Field” section an experiment to test it. A wormhole’s mouth
+   has a characteristic signature, it is clearly identified by its monopolar
+   magnetic field. Is this the case for HLs? We are convinced that it will
+   be a difficult task to extract this information from this unusual and
+   transient phenomenon. However, if this experiment were carried
+   out, and it proved positive, we would have taken a major step toward
+   understanding both HLs and wormholes. This should whet the
+   appetites of experimentalists.
+6
+   A mantle plume is a long thin conduit connecting the top of the
+   hot spot (the visible aerial part) to its base, locked at the core-mantle
+   surface.
+7
+   The wormhole under consideration is thus an entity “fitted” between
+   the nontraversable wormholes of the type Einstein–Rosen bridge,
+   captured by general relativity (and which serves no purpose in physics)
+   and the “more physical” wormhole analyzed by Dzhunushaliev et al.
+   (2011). We still have an opportunity to investigate a vast and varied
+   field of knowledge between these two limits.
+8
+   For this mean temperature, we take a round value near the geo-
+   metric average of the central temperature (107 K) and the surface’s
+   temperature (6000 K).
+9
+   If the wormhole’s mouth (P = 100 kW) were located outside the dense
+   earth’s atmosphere (i.e., for instance, located at 100 km in altitude
+   above our head), we could think that its apparent brightness should
+   be the same as a solar-type star (absolute luminosity ~3.83 1026 W)
+   located at 0.7 light-year, a short distance indeed; as the nearest star
+   to our solar system is 4.3 light-years away. However, the wormhole’s
+   mouth emits in the hard UV range while the Sun emits in the visible
+   range. The hard UV is completely absorbed by the Earth’s atmosphere.
+   Eventually this "star" would not be visible from the ground level.
+10
+   Once again let us note that these spectra were recorded with the
+   help of low-resolution spectrographs, in fact basic grating filters
+6 16                                                           G . Pa s co l i
+
+
+
+
+   mounted in front of video cameras and SLR cameras (Hauge, 2007).
+   More sophisticated devices are needed to obtain confirmation. High-
+   resolution spectroscopy is indeed of basic importance in this type
+   of research, for not only line identification but also for calculating
+   the number of atoms that contribute to a given excitation level that
+   produces the spectral line of a given chemical element. This would
+   provide a precise measurement of pressure, density and temperature
+   of the atmospheric plasma induced by the exit hole (where only the
+   radiation field passes) of a hypothetical wormhole.
+11
+   The content of this paragraph is independent of the nature of the
+   source, a wormhole, or something else (for instance a black hole, an
+   exotic particle made of dark energy, or Rydberg matter, etc.).
+12
+   We assume here that the radiation pressure in the ball of ionized gas
+   is negligible with respect to the gas pressure.
+13
+   The apparent gravitational mass of a wormhole’s mouth seen by an
+   outer observer can be positive, null, or even negative (Cramer et al.,
+   1995). For the other extremity of the wormhole, the inner pressure
+   gradient of the Sun must still be compensated by a negative mass,
+   M, forming a spherical shell lining the wall of the mouth. This mass
+   creates a repulsive gravity which prevents the solar matter from
+   entering the wormhole. It is easy to show that
+
+
+
+
+   With r ~ 10–4 m, we find M ~ –3 1017 kg. However, we think that the
+   introduction of a huge negative mass is problematic in theory, even
+   though some theoreticians of wormholes admit this possibility (so
+   far negative masses have never been detected in the Universe).
+   Recently, an exploration of the vacuum solutions of pure R2 gravity
+   uncovered solutions for the stability of wormholes without appeal to
+   elusive negative masses (Duplessis & Easson, 2015). This second path
+   is deemed much more credible.
+14
+   A magnetic field could still contribute to the stability of the
+   plasma ball. Nevertheless, taking into account the energetics it
+   would necessarily be very high. In this case we might detect some
+   environmental interferences (for instance on both the electrical
+   systems and the informatics devices, and this field might also have
+A r e H e s s d a l e n L i g h t s a R e a l i ty, a n I l l u s i o n , o r B o t h ?   617
+
+
+
+
+   left magnetic remanence behind in some ferromagnetic materials).
+   De facto magnetic recordings (Teodorani & Strand, 2001, especially
+   figure 5) seem to clearly suggest that a correlation exists between
+   HLs and magnetic pulsating events with a mean amplitude of a few
+   nanoteslas. With these values registered at a distance of 1 km we
+   deduce a magnetic intensity of a few milliteslas in the environment
+   of the HLs (both assuming a decrease of magnetic intensity by r–2 and
+   a radius for the “environment” of the plasma ball of the order of one
+   meter.
+   In addition, we can still imagine that a strong magnetic field is
+   confined deep inside the plasma ball and is rapidly decreasing toward
+   its surface. We know indeed that a magnetic field with a characteristic
+   monopolar configuration with rapid decrease in intensity can be
+   associated with a wormhole (see the section “The Magnetic Field”).
+15
+   In addition to the energy problem, the issue of the size is also recurrent
+   for HLs and BLs. Likewise in the laboratory BLs of a diameter larger
+   than a few centimeters seem difficult to produce, as low-energy
+   chemical processes are involved (Paiva et al., 2007). To fully ionize a
+   cubic meter of air at atmospheric pressure, a minimum of 100 MJ are
+   needed.
+16
+   Let us still note that HLs are seen in extremely dry air and that
+   tiny droplets are excluded. Urban and industrial areas are prolific
+   producers of sulfates, nitrates, black carbon, and other particles, but
+   that is not the case in Hessdalen Valley. It is in a boreal forest, where
+   organic particles such as amines are dominant (Kannosto et al., 2008).
+   The conclusion found for silicon microclusters is easily transposable
+   to these types of particles.
+17
+   Factor 2 (extinction efficiency) is a mean value for dielectric micro-
+   scopic or submicroscopic particles (with sizes comparable to the
+   wavelengths of the radiation in the visible range); the extinction
+   efficiency strongly oscillates around this value (Mie Theory).
+18
+   Let us note that a ball lightning (BL) has been observed with a
+   diameter estimated at 5 m (Cen et al., 2014). This is a rather strange
+   observation. Ordinarily a BL is generated by a cloud-to-ground
+   lightning strike and is of small size (centimetric). The lightning bolt
+   strikes the soil and a plasma of small silicon clusters (Si, Si2, Si3, …)
+   is generated (a kind of natural laser ablation). Thus the prominent
+6 18                                                              G . Pa s co l i
+
+
+
+
+   lines of the neutral radical Si (l = 478.2, 479.2, 568.4, 594.8, 615.5,
+   633.1, 655.6, 672.1 nm; cf the Charlotte Moore’s Tables) were clearly
+   identified in the spectrum. If the description is right this transient
+   chemical species (characterized by a very short lifetime) had spread
+   over a distance of 5 m from the impact point of the lightning strike.
+   However the diffusion coefficient in the stable air for an atomic
+   species is of the order of 10−5−10−4 m2s−1. Eventually, for a distance of
+   5 m we calculate a diffusion time immeasurably much greater than
+   the lifetime of free radicals such as Si which is very short (without
+   a continual input of energy). The evaluation of the diameter in this
+   observation is thus strongly questionable (the result is without doubt
+   linked to a very approximate evaluation of the distance).
+19
+   This wave effect assimilated to a kind of gravitational wave of strong
+   amplitude would deserve special attention by itself, but unfortunately
+   it is not yet fully described in the literature on wormholes.
+20
+   When the wormhole’s mouth is opening, an ionized ball instant-
+   aneously appears around it. A few moments later the wormhole’s
+   mouth is closing and the ionized ball instantaneously disappears,
+   leaving a trace in the sky with an afterimage effect (or an image
+   retention for a photographic device). The cycle can renew further
+   from a new position, giving to the observer the false impression of a
+   plasma ball acquiring an incredible (but obviously fictive) acceleration.
+   More precisely, it seems from Figure 4 that two phenomena are
+   superimposed with regard to the behavior of the wormhole, a
+   Brownian turmoil which is extremely rapid and jerky (difficult to
+   display with a low time resolution recording system), and a slow drift.
+21
+   Another analogy can also be made with a magnetic field bundle
+   which can be decomposed in a multitude of rope strands, as seen for
+   instance in the Sun’s atmosphere.
+22
+   This is the mean value attributed to the magnetic field deep in the
+   Sun. The magnetic field lines can funnel up to the mouth of the
+   wormhole where they very rapidly expand.
+23
+   Let us note that the mouth of a wormhole has the appearance of
+   a monopolar magnetic field, but it is not a magnetic monopole (a
+   particle) which very likely does not exist in nature.
+24
+   Let us note, however, that measurements of magnetic field carried out
+   at a distance of a few kilometers from HLs (Teodorani & Strand, 2001)
+A r e H e s s d a l e n L i g h t s a R e a l i ty, a n I l l u s i o n , o r B o t h ?   619
+
+
+
+
+   seem to supply much higher values, of the order of one nanotesla
+   (i.e., ~10–3 tesla when referred at one meter distance from the HL).
+   This suggests that values as high as 105 teslas could eventually be
+   reached at the mouth of the wormhole (radius ~0.1 mm). In the
+   framework of this interesting scenario a compression of the solar
+   magnetic field (10−1 tesla) by a factor of 106 would then be produced
+   in the throat of the hypothetical wormhole.
+25
+   As appropriate a magnetic field line ultimately forms a closed path
+   by passing by the wormhole channel and by looping through the real
+   space between the Earth and the Sun (Figure 2).
+
+                                              REFERENCES
+Abel, C., Bison, G., Griffith, W. C., Heil, W., Kirch, K., Koch, H.-C., Lauss, B.,
+        Mtchedlishvili, A., Pototschnig, M., Schmidt-Wellenburg, P., Schnabel, A.,
+        Pais, D., & Voigt, J. (2019). PicoTesla absolute field readings with a hybrid
+        3
+          He/87Rb magnetometer. European Physical Journal D: Atomic, Molecular,
+        Optical and Plasma Physics, 73(7), 150–155. https://doi.org/10.1140/epjd/
+        e2019-100094-1
+Abrahamson, J., & Dinnis, J. (2000). Ball lightning caused by oxidation of
+        nanoparticle networks from normal lightning strikes on soil. Nature, 403,
+        519–521.
+Argyle, A. (1970). Ball lightning as an optical illusion. Nature, 230(5290), 179–180.
+Bäcker, D., Boerner, H., Näther, K., & Näther, S. (2007). Multiple ball lightning
+        observations at Neuruppin, Germany. International Journal of Meteorology,
+        32(320), 193–200.
+Berger, K. (1973, January). Kugelblitz und Blitzforschung. Naturwissenschaften, 60,
+        485–492.
+Boerner, H. (2020). Ball lightning: A popular guide to a longstanding mystery in
+        atmospheric electricity. Springer.
+Bzdek, B. R., Lawler, M. J., Horan, A. J., Pennington, M. R., DePalma, J. W., Zhao,
+        J., Smith, J. N., & Johnston, M. V. (2014). Molecular constraints on particle
+        growth during new particle formation. Geophysical Research Letters, 41(16),
+        6045–6054. https://doi.org/10.1002/2014GL060160
+Cen, J., Yuan, P., & Xue, S. (2014, January 24). Observation of the optical and spectral
+        characteristics of ball lightning. Physical Review Letters, 112, 035001.
+Cramer, J. G. (2016). The quantum handshake—Entanglement, nonlocality, and
+        transactions. Springer.
+Cramer, J. G., Forward, R. L., Morris, M. S., Visser, M., Benford, G., & Landis, G. A.
+        (1995, March 15). Natural wormholes as gravitational lenses. Physical Review
+        D, 51(6), 3117–3120.
+62 0                                                                       G . Pa s co l i
+
+
+
+
+Dai, D.-C., & Stojkovic, D. (2019, October 10). Observing a wormhole. Physical
+        Review D, 100(8), 083513.
+Duplessis, F., & Easson, D. A. (2015, August 24). Traversable wormholes and non-
+        singular black holes from the vacuum of quadratic gravity. Physical Review
+        D, 92(4), 043516.
+Dzhunushaliev, V., Folomeev, V., Kleihaus, B., & Kunz, J. (2011, April 26). A star
+        harbouring a wormhole at its core. Journal of Cosmology and Astroparticle
+        Physics, 04, 031.
+Endean, V. G. (1997). Development of the radiation bubble model of ball lightning.
+        Journal of Meteorology UK, 22, 98–105.
+Engholm, C. D., Williams, E. R., & Dole, R. M. (1990, February 1). Meteoro-
+        logical and electrical conditions associated with positive cloud-to-ground
+        lightning. Monthly Weather Review, 118(2), 470–487.
+Etlender, R., Iben, U., & Bischoff, M. (2007). Simulation of wave propagation in
+        flexible hoses. In Fluid structure interaction and moving boundary problems
+        IV. WIT Transactions on The Built Environment, 92, 131.
+Fischer, E. (1981). Ball lightning—A combustion phenomenon. Naturwissenschaften,
+        68(11), 568–569.
+Guth, A. H. (1981, January 15). Inflationary universe: A possible solution to the
+        horizon and flatness problems. Physical Review D, 23(2), 347–356.
+Hauge, B. G. (2007). Optical spectrum analysis of the Hessdalen phenomenon.
+        https://www.itacomm.net/ph/2007_HAUGE.pdf
+Henry, R. J. W. (1970). Photoionization cross-sections for atoms and ions of carbon,
+        nitrogen, oxygen, and neon. The Astrophysical Journal, 161, 1153–1155.
+Kannosto, J., Virtanen, A., Lemmetty, M., Mäkelä, J. M., Keskinen, J., Junninen,
+        H., Hussein, T., Aalto, P., & Kulmala, M. (2008). Mode resolved density of
+        atmospheric aerosol particles. Atmospheric Chemistry and Physics Discussions,
+        8(17), 5327–5337.
+Kirillov, A. A., & Savelova, E. P. (2011). Density perturbations in a gas of wormholes.
+        Monthly Notices of the Royal Astronomical Society, 412(3), 1710–1720.
+Kirillov, A. A., & Savelova, E. P. (2020). Wormhole as a possible accelerator of high-
+        energy cosmic-ray particles. European Physical Journal C, 80(1), 45.
+Kirillov, A. A., & Turaev, D. (2007). Foam-like structure of the universe. Physics
+        Letters B, 656(1–3), 1–8.
+Kohler, A., Haddad, L., Singer, W., & Muckli, L. (2008, March). Deciding what
+        to see: The role of intention and attention in the perception of apparent
+        motion. Vision Research, 48(8), 1096–1106. https://doi.org/10.1016/j.
+        visres.2007.11.020
+Linde, A. D. (1982). A new inflationary universe scenario: A possible solution of
+        the horizon, flatness, homogeneity, isotropy, and primordial monopole
+        problems. Physics Letters B, 108(6), 389–393.
+A r e H e s s d a l e n L i g h t s a R e a l i ty, a n I l l u s i o n , o r B o t h ?   62 1
+
+
+
+
+Monari, J., Stelio Montebugnoli, S., & Serra, R. (2013). Hessdalen: A perfect “natural
+         battery”. http://www.itacomm.net/PH/CIPH/Articoli_-_Articles.html
+Morris, M. S., & Thorne, K. S. (1988). Wormholes in spacetime and their use for
+         interstellar travel: A tool for teaching general relativity. American Journal of
+         Physics, 56, 395.
+Morris, M. S., Thorne, K. S., & Yurtsever, U. (1988, September 26). Wormholes, time
+         machines, and the weak energy condition. Physical Review Letters, 61(13),
+         1446.
+Morisset, C. (2016, October). Planetary nebulae: Multi-wavelength probes of stellar
+         and galactic evolution. Proceedings of the International Astronomical Union
+         Vol. 12, Symposium S323: 43.
+Nikitin, A. I., Bychkov, V. L., Nikitina, T. F., Velichko, A. M., & Abakumov, V. I.
+         (2018). Sources and components of ball lightning theory. Journal of Physics:
+         Conference Series, 996(1), 012011. 10.1088/1742-6596/996/1/012011
+Osterbrock, D. E., & Ferland, G. J. (2005). Astrophysics of gaseous nebulae and active
+         galactic nuclei. University Science Books.
+Paiva G. S., & Taft, C.A. (2010). A hypothetical dusty plasma mechanism of
+         Hessdalen lights. Journal of Atmospheric and Solar-Terrestrial Physics, 72,
+         1200–1203.
+Paiva, G. S., Pavão, A. C., Alpes de Vasconcelos, E., Mendes, O., Jr., & Felisberto
+         da Silva, E., Jr. (2007, January). Production of ball-lightning-like luminous
+         balls by electrical discharges in silicon. Physics Review Letters, 98(4), 048501.
+Peer, J., Cooray, V., Cooray, G. & Kendl, A. (2010, October). Erratum and addendum
+         to ‘Transcranial stimulability of phosphenes by long lightning electro-
+         magnetic pulses’ [Physics Letters A, 374, 2932]. Physics Letters A, 374(47), 4797–
+         4799. https://doi.org/10.1016/j.physleta.2010.09.071
+Péquignot, D., Petitjean, P., & Boisson, C. (1991). Total and effective radiative
+         recombination coefficients. Astronomy and Astrophysics, 251, 680–688.
+Petit, J. R., Jouzel, J., Raynaud, D., Barkov, N. I., Barnola, J.-M., Basile, I., Bender,
+         M., Chappellaz, J., Davis, M., Delaygue, G., Delmotte, M., Kotlyakov, V. M.,
+         Legrand, M., Lipenkov, V. Y., Lorius, C., Pépin, L., Ritz, C., Saltzman, E., &
+         Stievenard, M. (1999). Climate and atmospheric history of the past 420,000
+         years from the Vostok ice core, Antarctica. Nature, 399(6735), 429–436.
+Rabinowitz, M. (2001). Ball lightning: Manifestation of cosmic little black holes.
+         Astrophysics and Space Science, 277, 409–426.
+Starobinsky, A. A. (1980). A new type of isotropic cosmological models without
+         singularity. Physics Letters B, 91(1), 99–102.
+Steinman, R. M., Pizlo, Z., & Pizlo, F. J. (2000). Phi is not beta, and why Wertheimer’s
+         discovery launched the Gestalt revolution. Vision Research, 40(17), 2257–2264.
+Stenhoff, M. (1999). Ball lightning: An unsolved problem in atmospheric physics. Kluver
+         Academic. ISBN 0-306-46150-1.
+62 2                                                                          G . Pa s co l i
+
+
+
+
+Strand, E. P. (1990). Project Hessdalen 1984—Final technical report: Part I. Second
+        International Symposium on Ball Lightning, Budapest, June 26–28.
+Tamadate, T., Higashi, H., Seto, T., & Hogan, C. J., Jr. (2020). Calculation of the
+        ion–ion recombination rate coefficient via a hybrid continuum-molecular
+        dynamics approach. Journal of Chemical Physics, 152(9), 094306 .
+Taya, R., & Ohinata, S. (2002). Afterimage oscillation after a brief light flash.
+        Japanese Psychological Research, 44(2), 99–106.
+Teodorani, M. (2004). A long-term scientific survey of the Hessdalen phenomenon.
+        Journal of Scientific Exploration, 18(2), 217–251.
+Teodorani, M. (2014). Instrumented monitoring of aerial anomalies: A scientific
+        approach to the investigation on anomalous atmospheric light phen-
+        omena. Workshop–CNES (National Center for Space Study)-GEIPAN, Paris,
+        France, July 8–9.
+Teodorani, M., & Strand, E. P. (2001). Data analysis of anomalous luminous
+        phenomena in Hessdalen. https://www.itacomm.net/PH/CIPH/Articoli_-_
+        Articles.html
+Teodorani, M., Strand, E., & Hauge, B. G. (2001). EMBLA 2001: The optical
+        mission. ICPH /CIPH (Italian Committee for Project Hessdalen). https://
+        www.itacomm.net/PH/CIPH/Articoli_-_Articles.html
+Torchigin, V. P. (2019, July). Physics of a ball lightning in a form of a bubble of light.
+        Optik, 188, 294–301.
+Wertheimer, M. (1912). Experimentelle Studien über das Sehen von Bewegung.
+        Zeitschrift für Psychologie, 61, 161–265.
+Williams, R. E. (1968). The ionization of planetary nebulae. In D. E. Osterbrock & C.
+        R. O’Dell (Eds.), IAU Symposium, Vol. 34, Planetary nebulae, p. 190.
+Xie, F., Zheng, X., Triantafyllou, M. S., Constantinides, Y., & Karniadakis, G. E.
+        (2016). The flow dynamics of the garden-hose instability. Journal of Fluid
+        Mechanics, 800, 595–612.
+

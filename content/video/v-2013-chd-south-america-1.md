@@ -10,6 +10,7 @@ rel:
   - [ features, aj-gevaerd ]
   - [ features, anthony-choy ]
   - [ features, oscar-santa-maria ]
+  - [ features, ariel-sanchez-rios ]
 moments:
   - t: "10:45"
     text: "Brazilian researcher A. J. Gevaerd, editor of UFO magazine, describes a meeting weeks earlier between six civilian researchers and “10 personnel from Army, Air Force and Navy at the Ministry of Defense of Brazil”, which promised them an open channel to the armed forces."
@@ -42,8 +43,14 @@ moments:
     text: "Huneeus closes with a quote from his interview with Gen. Bermúdez: “The official conclusion is that the anomalous aerial phenomenon known as unidentified flying objects is real”, in and outside controlled airspace and at sea."
     speaker: antonio-huneeus
     refs: [ ricardo-bermudez, cefaa ]
-  - t: "32:11"
+  - t: "30:45"
+    text: "Ariel Sánchez introduces himself as a retired Uruguayan colonel and a former technical director of the commission that, with the Uruguayan Air Force, receives citizens' UFO reports."
+    speaker: ariel-sanchez-rios
+    refs: [ cridovni ]
+  - t: "32:02"
     text: "Retired Uruguayan colonel Ariel Sánchez says the Uruguayan Air Force's CRIDOVNI commission has studied about 1,300 cases over 30 years, with “3% of cases that have non-conventional characteristics”."
+    speaker: ariel-sanchez-rios
+    refs: [ cridovni ]
   - t: "44:36"
     text: "Anthony Choy, of the Peruvian Air Force's UFO office, presents the recent Chulucanas sightings in northern Peru, where lights descended over the city and witnesses said “They heard \"Hello.\"”"
     speaker: anthony-choy

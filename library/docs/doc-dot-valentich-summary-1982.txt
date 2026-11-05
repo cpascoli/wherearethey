@@ -1,0 +1,108 @@
+[Transcription of the Department of Transport Aircraft Accident Investigation Summary Report, reference V116/783/1047, from the digitised file NAA: B1497, V116/783/1047 ("VH-DSJ - Cape Otway to King Island 21 October 1978 - Aircraft Missing [Valentich]"), pages 5-7 of 319, National Archives of Australia, item ID 10491375. Transcribed from screen captures of the NAA viewer; the PDF beside this file holds those captures.]
+
+COMMONWEALTH OF AUSTRALIA    DEPARTMENT OF TRANSPORT
+AIRCRAFT ACCIDENT INVESTIGATION SUMMARY REPORT
+Reference No. V116/783/1047
+Publication of this report is authorised by the Secretary under the provisions of Air Navigation Regulations 283 (1)
+
+1. LOCATION OF OCCURRENCE
+Not known. Height a.m.s.l.: -. Date: 21.10.78. Time (Local): Not known. Zone: EST
+
+2. THE AIRCRAFT
+Make and Model: Cessna 182L. Registration: VH-DSJ. Certificate of Airworthiness: Valid from 14 February 1968
+Certificate of Registration issued to: Cephus Day, 33 Reserve Road, Beaumauris, Victoria
+Operator: SAS Southern Air Services, Northern Avenue, Moorabbin Airport, Victoria
+Degree of damage to aircraft: Not known. Other property damaged: -
+Defects discovered: -
+
+3. THE FLIGHT
+Last or intended departure point: Moorabbin. Time of departure: 1819 hours. Next point of intended landing: King Island. Purpose of flight: Travel. Class of operation: Private
+
+4. THE CREW
+Name: Frederick VALENTICH. Status: Pilot. Age: 20. Class of licence: Private. Hours on type: Not known. Total hours: 150 (Approx.). Degree of injury: Presumed Fatal
+
+5. OTHER PERSONS (All passengers and persons injured on ground)
+[blank]
+
+6. RELEVANT EVENTS
+
+The pilot obtained a Class Four instrument rating on 11 May 1978 and he was therefore authorised to operate at night in visual meteorological conditions (VMC). On the afternoon of 21 October 1978 he attended the Moorabbin Briefing Office, obtained a meteorological briefing and, at 1723 hours, submitted a flight plan for a night VMC flight from Moorabbin to King Island and return. The cruising altitude nominated in the flight plan was below 5000 feet, with estimated time intervals of 41 minutes to Cape Otway and 28 minutes from Cape Otway to King Island. The total fuel endurance was shown as 300 minutes. The pilot made no arrangements for aerodrome lighting to be illuminated for his arrival at King Island. He advised the briefing officer and the operator's representative that he was uplifting friends at King Island and took four life jackets in the aircraft with him.
+
+The aircraft was refuelled to capacity at 1810 hours and departed Moorabbin at 1819 hours. After departure the pilot established two-way radio communications with Melbourne Flight Service Unit (FSU).
+
+The pilot reported Cape Otway at 1900 hours and the next transmission received from the aircraft was at 1906:14 hours. The following communications between the aircraft and Melbourne FSU were recorded from this time: (Note: The word/words in brackets are open to other interpretations.)
+
+TIME     FROM    TEXT
+1906:14  VH-DSJ  MELBOURNE this is DELTA SIERRA JULIET is there any known traffic below five thousand
+:23      FSU     DELTA SIERRA JULIET no known traffic
+:26      VH-DSJ  DELTA SIERRA JULIET I am seems (to) be a large aircraft below five thousand
+
+6. RELEVANT EVENTS (cont'd)
+:46      FSU     D D DELTA SIERRA JULIET what type of aircraft is it
+:50      VH-DSJ  DELTA SIERRA JULIET I cannot affirm it is four bright it seems to me like landing lights
+1907:04  FSU     DELTA SIERRA JULIET
+:32      VH-DSJ  MELBOURNE this (is) DELTA SIERRA JULIET the aircraft has just passed over over me at least a thousand feet above
+:43      FSU     DELTA SIERRA JULIET roger and it it is a large aircraft confirm
+:47      VH-DSJ  er unknown due to the speed it's travelling is there any airforce aircraft in the vicinity
+:57      FSU     DELTA SIERRA JULIET no known aircraft in the vicinity
+1908:18  VH-DSJ  MELBOURNE it's approaching now from due east towards me
+:28      FSU     DELTA SIERRA JULIET
+:42              // open microphone for two seconds //
+:49      VH-DSJ  DELTA SIERRA JULIET it seems to me that he's playing some sort of game he's flying over me two three times at a time at speeds I could not identify
+1909:02  FSU     DELTA SIERRA JULIET roger what is your actual level
+:06      VH-DSJ  my level is four and a half thousand four five zero zero
+:11      FSU     DELTA SIERRA JULIET and confirm you cannot identify the aircraft
+:14      VH-DSJ  affirmative
+:18      FSU     DELTA SIERRA JULIET roger standby
+:28      VH-DSJ  MELBOURNE DELTA SIERRA JULIET it's not an aircraft it is // open microphone for two seconds //
+:46      FSU     DELTA SIERRA JULIET MELBOURNE can you describe the er aircraft
+1909:52  VH-DSJ  DELTA SIERRA JULIET as it's flying past it's a long shape // open microphone for three seconds // (cannot) identify more than (that it has such speed) // open microphone for 3 seconds // before me right now Melbourne
+1910:07  FSU     DELTA SIERRA JULIET roger and how large would the er object be
+:20      VH-DSJ  DELTA SIERRA JULIET MELBOURNE it seems like it's stationary what I'm doing right now is orbiting and the thing is just orbiting on top of me also it's got a green light and sort of metallic (like) it's all shiny (on) the outside
+:43      FSU     DELTA SIERRA JULIET
+
+6. RELEVANT EVENTS (cont'd)
+:48      VH-DSJ  DELTA SIERRA JULIET // open microphone for 5 seconds // it's just vanished
+:57      FSU     DELTA SIERRA JULIET
+1911:03  VH-DSJ  MELBOURNE would you know what kind of aircraft I've got is it (a type) military aircraft
+:08      FSU     DELTA SIERRA JULIET confirm the er aircraft just vanished
+:14      VH-DSJ  SAY AGAIN
+:17      FSU     DELTA SIERRA JULIET is the aircraft still with you
+:23      VH-DSJ  DELTA SIERRA JULIET (it's ah nor) // open microphone 2 seconds // (now) approaching from the southwest
+:37      FSU     DELTA SIERRA JULIET
+:52      VH-DSJ  DELTA SIERRA JULIET the engine is is rough idling I've got it set at twenty three twenty four and the thing is (coughing)
+1912:04  FSU     DELTA SIERRA JULIET roger what are your intentions
+:09      VH-DSJ  my intentions are ah to go to King Island ah Melbourne that strange aircraft is hovering on top of me again // two seconds open microphone // it is hovering and it's not an aircraft
+:22      FSU     DELTA SIERRA JULIET
+:28      VH-DSJ  DELTA SIERRA JULIET MELBOURNE // 17 seconds open microphone //
+:49      FSU     DELTA SIERRA JULIET MELBOURNE
+
+There is no record of any further transmissions from the aircraft.
+
+The weather in the Cape Otway area was clear with a trace of stratocumulus cloud at 5000 to 7000 feet, scattered cirrus cloud at 30000 feet, excellent visibility and light winds. The end of daylight at Cape Otway was at 1918 hours.
+
+The Alert Phase of SAR procedures was declared at 1912 hours and, at 1933 hours when the aircraft did not arrive at King Island, the Distress Phase was declared and search action was commenced. An intensive air, sea and land search was continued until 25 October 1978, but no trace of the aircraft was found.
+
+7. OPINION AS TO CAUSE
+
+The reason for the disappearance of the aircraft has not been determined.
+
+Approved for publication: (A.R. Woodward) Delegate of the Secretary. Date: 27.4.1982
+
+[Page 18 of 319 in the same file: letter of 6 July 1983, reference V116/783/1047, to Dr I.S.F. Jones, R.A.N. Research Laboratory, Darlinghurst NSW, signed J. Sandercock, Superintendent. Transcribed from the body of the letter.]
+
+DRIFT OF MARINE WRECKAGE
+
+Recently a piece of an aircraft was found washed ashore on the west coast of Flinders Island (Tas). It was found on the beach at Parry's Bay, opposite the northern end of Flinders Island Aerodrome. The date of finding was 15 May 1983, and there is reason to believe the piece had not been on the beach more than a few days.
+
+The part has been identified as having come from a Cessna 182 aircraft between a certain range of serial numbers. The part is an engine cowl flap, for the control of airflow over the engine. It is 300mm long by 210mm wide, and 40mm at its deepest point. It had two side panels when first found. The piece was once white (acrylic paint), and is made of aluminium composition, now greatly eroded. The operating bolt, of steel, while heavily corroded, appears to have failed on impact or in flight (i.e. not by corrosion).
+
+A Cessna 182 aircraft on a flight from Moorabbin to King Island last reported position at Cape Otway, Victoria, at 1900 hours EST on 21 October 1978. The serial number of this aircraft falls within the range of serial numbers applicable to the part found.
+
+From previous knowledge of aircraft parts "walking" across the floor of tidal lakes and rivers, it is wondered if such a piece as described could travel from an area between Cape Otway and the northern tip of King Island, or from a position near the described area, under the influence of ocean currents.
+
+While it is not unknown for the cowl flap to separate from the aircraft in flight, to our knowledge there have been no recent cases in the Victoria/Tasmania area, and no wreckage of aircraft have been dumped at sea to our knowledge, nor are other Cessna aircraft missing in the waters of Bass Strait.
+
+Any information you could pass concerning the likelihood of this particular item being able to "travel", over a period of close to 5 years, would be a step toward solving the mystery of the disappearance of this aircraft and its sole occupant, and aid to its location.
+
+Please do not hesitate to call to discuss the matter. Attached please find a map showing the area of finding and two photographs of the item.

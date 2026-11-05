@@ -1,0 +1,1924 @@
+PHYSICAL EVIDENCE RELATED TO UFO REPORTS
+
+THE PROCEEDINGS OF A WORKSHOP HELD AT THE POCANTICO CONFERENCE CENTER,
+
+TARRYTOWN, NEW YORK, SEPTEMBER 29 - OCTOBER 4, 1997
+
+
+
+Director
+P.A. Sturrock
+
+Scientific Steering Committee
+T. E. Holzer, R. Jahn, D. E. Pritchard, H. E. Puthoff, C. R. Tolbert, and Y. Terzian
+
+Scientific Review Panel
+V. R. Eshleman (Co-Chair), T. E. Holzer (Co-Chair), J. R. Jokipii, F. Louange, H. J. Melosh, J. J. Papike,
+G. Reitz, C. R. Tolbert, and B. Veyret
+
+Investigators
+R. F. Haines, I. von Ludwiger, M. Rodeghier, J. F. Schuessler, E. Strand, M. D. Swords, J. F. Vallee, and
+J-J. Velasco
+
+Moderators
+D. E. Pritchard and H. E. Puthoff
+
+
+
+
+Table of Contents:
+(Other Supporting Documents)
+(Index of Some Photographic Evidence)
+
+
+Abstract (First Page of report)
+Preface
+Section 1. Report of the Scientific Review Panel
+Section 2. Introduction
+Section 3. Photographic Evidence
+Section 4. Luminosity Estimates
+Section 5. Radar Evidence
+Section 6. Hessdalen Project
+Section 7. Vehicle Interference
+Section 8. Interference with Aircraft Equipment
+Section 9. Apparent Gravitational and/or Inertial Effects
+Section 10. Ground Traces
+Section 11. Injuries to Vegetation
+Section 12. Physiological Effects on Witnesses
+Section 13. Analysis of Debris
+Section 14. Recommendations Concerning Implementation
+Section 15. Web Site: Supporting Documentation
+
+Appendix 1. The GEPAN/SEPRA Project - F. Louange; J. Velasco
+Appendix 2. Procedures for Analysis of Photographic Evidence - F. Louange
+Appendix 3. Formation Flying - V. R. Eshleman
+Appendix 4. Electromagnetic-Wave Ducting- V. R. Eshleman
+Appendix 5. Sprites - V. R. Eshleman
+Appendix 6. SETI and UFO Investigations Compared - V. R. Eshleman
+Appendix 7. Further Thoughts on SETI and UFO Investigations - F. Louange
+Appendix 8. Scientific Inference - P. A. Sturrock
+
+References
+
+
+The reference for this article is:
+Peter A. Sturrock et al. (1998). Physical evidence related to UFO reports. J. Scientific Exploration, 12, 2, 179.
+
+
+
+
+Journal of Scientific Exploration
+P. O. Box 5848, Stanford, CA 94309-5848 USA
+Phone: (650) 593-8581
+FAX: (650) 595-4466 (The machine is in a private, locked office.)
+email: sims@jse.com
+Direct questions to Marsha Sims, Executive Editor
+
+
+
+
+Abstract
+P. A. STURROCK
+
+
+The purpose of this four-day workshop was to review purported physical evidence associated with UFO reports, with a
+view to assessing whether the further acquisition and investigation of such evidence is likely to help solve the UFO
+problem, namely the determination of the cause or causes of these reports.
+
+Seven UFO investigators presented a variety of physical evidence that they claimed was associated with UFO reports:
+photographic evidence; luminosity estimates; radar evidence; interference with automobile functioning; interference with
+aircraft equipment; apparent gravitational or inertial effects; ground traces; injuries to vegetation; physiological effects
+on witnesses; and analysis of debris. There was in addition a presentation of investigations into recurrent phenomena that
+occur in the Hessdalen Valley in Norway.
+
+A review panel was composed of nine scientists of diverse expertise and interests. The panel offered comments and
+criticisms concerning the investigations that were presented, and also prepared a summary of their overall response, with
+the following key elements:
+
+Concerning the case material presented by the investigators, the panel concluded that a few reported incidents may have
+involved rare but significant phenomena such as electrical activity, but there was no convincing evidence pointing to
+unknown physical processes or to the involvement of extraterrestrial intelligence.
+
+The panel nevertheless concluded that it would be valuable to carefully evaluate UFO reports since, whenever there are
+unexplained observations, there is the possibility that scientists will learn something new by studying these observations.
+
+However, to be credible, such evaluations must take place with a spirit of objectivity and a willingness to evaluate rival
+hypotheses.
+
+The best prospect for achieving a meaningful evaluation of relevant hypotheses is likely to come from the examination
+of physical evidence.
+
+The chances of a significant advance are considered to be greater now than at the time of the Colorado Project that led to
+the Condon Report thirty years ago, because of advances in scientific knowledge and technical capabilities, and in view
+of the example of a modest but effective UFO research project provided by the French space agency CNES.
+
+
+
+
+Preface
+P. A. STURROCK
+
+
+In December 1996, Mr. Laurance S. Rockefeller, Chairman of the LSR Fund, invited me to review with him the status of
+our understanding of the problem posed by UFO reports. 1 We agreed that the problem is in a very unsatisfactory state
+of ignorance and confusion. I expressed the opinion that this problem will be resolved only by extensive and open
+professional scientific investigation, and that an essential prerequisite of such research is that more scientists acquire an
+interest in this topic.
+
+In searching for some way to encourage such interest, Rockefeller and his colleague Mr. Henry Diamond and I
+conceived of a workshop at which prominent investigators of UFO reports would meet with a panel of eight or nine
+scientists with wide-ranging interests and expertise. We agreed that the workshop should focus on physical evidence
+associated with UFO reports, and I agreed to serve as director.
+
+This workshop should be regarded as a typical enterprise of sponsored scientific research. With administrative support
+from the Society for Scientific Exploration, I submitted a proposal to the LSR Fund in February 1997. After some
+negotiation, this proposal was accepted, and the necessary funds were transferred from the Fund to the Society. The
+Society's role has been strictly administrative: the role of the Society is to encourage and support research, not to control
+or direct research. Accordingly, as is normal in sponsored research, responsibility for the conduct of the workshop and
+for the preparation of this report was vested in the director.
+
+This report contains the following material: a summary report prepared by the scientific review panel; an introduction;
+eleven sections dealing with specific types of physical evidence; reflections on how the panel's suggestions might be
+implemented; a guide to supporting documentation to be found on the Society's web site;2 and eight appendices. Except
+for the appendices and those sections for which the authorship is specified, many participants contributed to each
+section.
+
+It is a pleasure to extend my thanks to Laurance Rockefeller for his interest in and support of this project; to Henry
+Diamond and Charles Tolbert for their administrative support; and to all the participants who first struggled valiantly to
+present and to absorb complex information, and then worked for many months to present their thoughts and advice in
+what is hopefully a readable form.
+
+In re-reading the Condon Report that has played such an important role in the history of the UFO problem, I note that on
+October 31, 1968, University of Colorado President Dr. J. R. Smiley wrote in his letter of transmittal of their report to
+the Secretary of the Air Force, "We hope and believe that [this report] will have the effect of placing the controversy as
+to the nature of uniden tified flying objects in a proper scientific perspective. We also trust that it will stimulate scientific
+research along lines that may yield important new knowledge."
+
+------------------------------------------------------------------------
+
+1 For a history of the UFO concept, see for instance Jacobs (1975).
+2 http://www.jse.com
+
+
+Of course, this unofficial workshop lasting only three days is a very modest undertaking compared with the
+two-year-long Colorado Project that was supported by both the Air Force and the Central Intelligence Agency.
+Nevertheless, the intent and spirit of the workshop was such that all the participants would join with me in echoing the
+same aspirations that Dr. Smiley articulated in relation to the Condon Report almost thirty years ago.
+
+1. Summary Report of the Scientific Review Panel
+V. R. ESHLEMAN, T. E. HOLZER, R. JOKIPII, F. LOUANGE,
+H. J. MELOSH J. J. PAPIKE, G. REITZ, C. TOLBERT, AND B. VEYRET
+
+
+On September 30 - October 3, 1997, a workshop was convened at the Pocantico Conference Center in Tarrytown, New
+York, in which this scientific review panel met with the investigators. The panel and workshop director also met in San
+Francisco on November 28 - 30, 1997. The participants addressed the problem of understanding the cause or causes of
+UFO reports, which have continued worldwide for at least 50 years. The investigators were asked to present their
+strongest data to the review panel. The thrust of these presentations was that at least some of the phenomena are not
+easily explainable. The panel focused on incidents involving some form of physical evidence, with clear recognition of
+the dangers of relying wholly on the testimony of witnesses and of the importance of physical measurements for
+distinguishing among hypotheses.
+
+It may be valuable to carefully evaluate UFO reports to extract information about unusual phenomena currently
+unknown to science. However, to be credible to the scientific community, such evaluations must take place with a spirit
+of objectivity and a willingness to evaluate rival hypotheses.
+
+The history of earth science includes several examples of the final acceptance of phenomena originally dismissed as folk
+tales: two centuries ago, meteorites (then regarded as stones falling from the sky) were in this category. The reality of
+ephemeral phenomena such as ball lightning and sprites was questioned until quite recently.
+
+It was clear that at least a few reported incidents might have involved rare but significant phenomena such as electrical
+activity high above thunderstorms (e.g., sprites) or rare cases of radar ducting. On the other hand, the review panel was
+not convinced that any of the evidence involved currently unknown physical processes or pointed to the involvement of
+an extraterrestrial intelligence. A few cases may have their origins in secret military activities.
+
+It appears that most current UFO investigations are carried out at a level of rigor that is not consistent with prevailing
+standards of scientific research. However, the panel acknowledged the initiative and dedication of those investigators
+who made presentations at this workshop, both for their efforts to apply the tools of science to a complex problem long
+neglected by the academic community, and for their diligence in archiving and analyzing relevant observational data.
+
+The panel concluded that further analysis of the evidence presented at the workshop is unlikely to elucidate the cause or
+causes of the reports. However, the panel considers that new data, scientifically acquired and analyzed (especially of
+well documented, recurrent events), could yield useful information. In this case, physical scientists would have an
+opportunity to contribute to the resolution of the UFO problem.
+
+
+The panel made the following observations:
+The UFO problem is not a simple one, and it is unlikely that there is any simple universal answer.
+Whenever there are unexplained observations, there is the possibility that scientists will learn something new by studying
+those observations.
+Studies should concentrate on cases which include as much independent physical evidence as possible and strong
+witness testimony.
+Some form of formal regular contact between the UFO community and physical scientists could be productive.
+It is desirable that there be institutional support for research in this area.
+
+The GEPAN/SEPRA project of CNES (Centre National d'Études Spatiales - the National Center for Space Research) in
+France (see Appendix 1) has since 1977 provided a valuable model for a modest but effective organization for collecting
+and analyzing UFO observations and related data. Reflecting on evidence presented at the workshop that some witnesses
+of UFO events have suffered radiation-type injuries, the panel draws the attention of the medical community to a
+possible health risk associated with UFO events.
+
+The panel also reviewed some of the conclusions advanced in 1968 by Dr. Edward U. Condon, director of the Colorado
+Project. He asserted that "nothing has come from the study of UFOs in the past 21 years that has added to scientific
+knowledge," and that "further extensive study of UFOs probably cannot be justified in the expectation that science will
+be advanced thereby." While agreeing with the first conclusion and its extension to the present, the panel considers that
+there always exists the possibility that investigation of an unexplained phenomenon may lead to an advance in scientific
+knowledge.
+
+The panel considers that the chances of such an advance are greater now than they were in 1967 because of the advances
+in scientific knowledge and technical capabilities, and in view of the GEPAN/SEPRA model for data acquisition.
+
+2. Introduction
+P. A. STURROCK
+
+Over the last fifty years, people throughout the world have become familiar with UFO reports. These reports have been
+attributed to a wide range of causes including hoaxes, hallucinations, planets, stars, meteors, cloud formations, ball
+lightning, secret aircraft, and extraterrestrial spacecraft. Despite the abundance of such reports, and despite great public
+interest, the scientific community has shown remarkably little interest in this topic. This may be due in part to the fact
+that there are no public funds to support research into this issue, in part to the assumption that there are no data worth
+examining, in part to the belief that the Colorado study that led to the Condon Report (Condon & Gillmor, 1969) has
+effectively settled the question, and possibly in part to the perception that the topic is in some sense "not respectable."
+The relative importance of these four causes is unclear, but it seems likely that each has had some impact in dampening
+the interest of the scientific community in this subject.
+
+
+
+The general perception in the scientific community is that, if UFO reports pose a scientific problem at all, it has more to
+do with psychology and the science of perception than with physical science. Indeed, most reports simply comprise
+narrative accounts of what someone saw or thought he saw in the sky. Sometimes the reports involve more than one
+witness, and sometimes an event is witnessed from two or more different locations. However, the fact is that physical
+scientists cannot get involved in the UFO problem unless there is physical evidence. The purpose of this workshop was
+to assess whether or not there is any such evidence. If the answer is no, then there is no way that physical scientists can
+contribute to the resolution of this problem. If, on the other hand, the answer is yes, then it should be possible for
+physical scientists to contribute to the resolution of this problem.
+
+It should perhaps be stressed that it would be unreasonable to ask a panel of nine scientists, meeting for only a few days,
+to do much more than make a preliminary assessment of some limited category of evidence related to this complex and
+controversial topic. It would certainly be highly unreasonable to expect such a panel to solve, in only a few days, a
+problem that has remained unsolved for fifty years. Science advances by the development of an informed consensus on
+well defined questions (see, for instance, Ziman, 1968), but scientists can arrive at an informed consensus only if (1)
+sufficient research has been carried out, and (2) the results of that research have been presented to and evaluated by the
+scientific community. For the UFO problem, these first two essential steps have yet to be taken.
+
+A workshop to review claims of physical evidence related to UFO reports was held at the Pocantico Conference Center
+at Tarrytown, New York, from September 29 through October 4, 1997. The organization responsible for this workshop
+was the Society for Scientific Exploration. The Society was responding to an inquiry from Mr. Laurance S. Rockefeller,
+Chairman of the LSR Fund. Plans for the workshop were in the hands of Dr. Peter A. Sturrock, Professor of Applied
+Physics at Stanford University, who served as Director of the workshop. In developing plans, Sturrock was assisted by a
+steering committee comprising Dr. Thomas E. Holzer of the High Altitude Observatory of the National Center for
+Atmospheric Research, Boulder; Dr. Robert Jahn, Professor of Aerospace Engineering at Princeton University; Dr.
+David E. Pritchard, Professor of Physics at the Massachusetts Institute of Technology; Dr. Harold E. Puthoff, Director
+of the Institute for Advanced Studies in Austin; Dr. Yervant Terzian, Professor of Astronomy and Chairman of the
+Astronomy Department at Cornell University; and Dr. Charles R. Tolbert, Professor of Astronomy at the University of
+Virginia. Mr. Henry Diamond of Washington, DC, provided administrative advice and support. Puthoff and Pritchard
+served as moderators of the scientific sessions.
+
+Seven experienced UFO investigators were asked to review specific categories of evidence. Dr. Richard F. Haines of
+Los Altos, California, undertook to review photographic evidence and also reviewed aircraft equipment anomalies; Dr.
+Illobrand von Ludwiger of Feldkirchen-Westerham, Germany, discussed radar evidence; Dr. Mark Rodeghier of the
+Center for UFO Studies in Chicago discussed automobile engine anomalies; Mr. John F. Schuessler of Houston
+discussed injuries to witnesses; Dr. Erling Strand from Ostfeld, Norway, presented evidence involving video records and
+spectroscopic data; Dr. Michael D. Swords, Professor in the General Studies Science Department at Eastern Michigan
+University discussed inertial anomalies; Dr. Jacques F. Vallee of San Francisco presented energy estimates and also
+discussed material evidence; and M. Jean-Jacques Velasco of CNES, Toulouse, France, presented evidence concerning
+radar events, ground traces, and injuries to vegetation.
+
+Evidence presented at the workshop was studied by a Scientific Review Panel comprising Dr. Von R. Eshleman,
+Emeritus Professor of Electrical Engineering at Stanford University; Holzer; Dr. J. R. (Randy) Jokipii, Regents'
+Professor of Planetary Sciences and Astronomy at the University of Arizona in Tucson; Dr. Francois Louange,
+Managing Director of Fleximage, Paris, France; Dr. H. J. (Jay) Melosh, Professor of Planetary Science at the University
+of Arizona in Tucson; Dr. James J. Papike, Head of the Institute of Meteoritics and Professor of Earth and Planetary
+Sciences at the University of New Mexico in Albuquerque; Dr. Guenther Reitz of the German Aerospace Center,
+Institute for Aerospace Medicine, in Cologne, Germany; Tolbert; and Dr. Bernard Veyret of the Bioelectromagnetics
+Laboratory at the University of Bordeaux, France. Eshleman and Holzer served as co-chairs of this panel.
+
+The review panel and director met in executive session in San Francisco from November 28 to 30, 1997.
+
+Sections 3 to 13 contain brief summaries of the material presented at the workshop together with brief comments by the
+panel. Section 14 presents a summary of ideas that have been advanced by workshop participants as to how some of the
+panel's suggestions might be implemented. The appendices comprise correlative information and discussions.
+Supporting documentation may be found in articles cited in the reference list and on the web site [http://www.jse.com]
+(see Section 15).
+
+It is necessary to refer frequently to the official French research program that was set up in 1977 as "GEPAN," and
+restructured in 1988 as "SEPRA" (see Appendix 1). To avoid confusion, we refer to this project throughout (except in
+Appendix 1) as "GEPAN/SEPRA."
+
+3. Photographic Evidence
+
+
+Photographic evidence can contribute to a better understanding of the UFO phenomenon if the evidence has sufficiently
+strong credentials that the possibility of a hoax can be ruled out. It is also highly desirable that the photographic evidence
+be accompanied by strong witness testimony, but it is very difficult to meet these requirements (as in the case of
+remotely operated scientific monitoring stations) because of the unpredictable nature of UFO events (events that give
+rise to UFO reports). In order to be confident of the authenticity and flawless operation of the equipment and acquisition,
+it is necessary to plan an observational program very carefully. This approach has been adopted by Strand and is
+discussed further in Section 6. However, such equipment must normally be run in an automatic mode so it is unlikely
+that there will be witness testimony to accompany the data acquisition.
+
+On the other hand, photographic and similar evidence are sometimes acquired in connection with unexpected and
+incomprehensible UFO events. In these cases, there will normally (but not invariably) be witness testimony but, since the
+data acquisition was not planned, the equipment, operation and analysis will probably not be optimal and there may
+indeed be some question concerning the authenticity of the claimed data.
+
+Haines presented in some detail one case in which an intriguing photograph was obtained, but the intriguing aspect of
+the scene was unknown to the photographer at the time the photograph was taken. This event occurred on October 8,
+1981 at about 11:00 am Pacific Daylight Time on Vancouver Island, British Columbia, Canada. It has been described in
+detail elsewhere (Haines 1987), and a copy of that article is to be found on the Web Site (see Section 15).
+
+In 1984 Haines received on loan, directly from its owners, two connected frames of 35 mm color negative film. The
+lower number frame shows a child standing in front of a fireplace, and the higher number frame shows a daytime view of
+a mountain with evergreen trees on the bottom and a white cloud near the top of the mountain. The intriguing aspect of
+the latter frame was that it showed a silvery oval-shaped object set against the blue sky. The photographer and her family
+were making a rest stop in a Canadian provincial park and the exposure was made on impulse because of the beauty of
+the scene.
+
+Haines and his father, Donald Haines, spent four days with the principals of the case visiting their home and the site
+where the photograph was taken (north of Campbell River, British Columbia) exactly two years later. Fortunately, the
+weather conditions were comparable with those of October 8, 1981. Donald Haines, a registered civil engineer and land
+surveyor, carried out a land survey of the relevant area.
+
+The object appeared to be a disk with the near edge tipped downward, possibly with a rounded "dome" or protuberance
+on its upper surface. Richard Haines provided detailed information concerning the camera, the lens and the film. Haines
+had analyzed the negative using a microdensitometer; the blue sky and cloud were quite bright and the brightest spot on
+the disk was even brighter. The luminance gradient of the brightness of the disk was measured and found to be
+consistent with what would be expected for a diffusely reflecting metal object, with a shape similar to that indicated by
+the photograph and the known position of the Sun. The color photograph was also analyzed by making black and white
+enlargements on different wavelength-sensitive papers. The negative was also digitally scanned using a Perkin-Elmer
+scanning densitometer, using three separate color filters which matched the film's three dye layers.
+
+Haines was especially diligent in looking for evidence of a double exposure, but found no such evidence. He also looked
+for a possible significant linear alignment of pixels or grains which might result from the presence of a thin supporting
+line or thread, assuming that the object was a small model hanging beneath a balloon, but no such evidence was found.
+Haines tested for differential edge blur, such as might be produced by linear motion during the exposure, but found no
+such blur.
+
+Haines also attempted to identify the object in the photograph as something mundane. He considered, in particular, the
+possibility that a Frisbee had been thrown into the air and photographed. The principals did own a Frisbee, but it was
+dull black, not shiny, and the principals steadfastly denied having produced the photograph in this way. Haines
+experimented with several other Frisbees. He attached a dome to the top of one Frisbee and tried to fly it, but it would
+fly no more than about ten feet before losing lift. Haines also calculated that a Frisbee would have displayed noticeable
+edge blurring in the photograph.
+
+This case is instructive in showing what detailed analyses of a photograph can be made using modern analytical
+equipment, but it suffers from the severe drawback that there is no witness testimony to accompany the photograph.
+While the panel was impressed with Haines' thorough analysis of the evidence he had available, there was some concern
+that a film defect or blemish may have been introduced during processings, and there was considerable discussion
+concerning the crucial point that an object that had appeared on the photograph was apparently not seen by the
+photographer or by her companions. The picture was taken with a single-lens reflex camera, which means that the object
+must have been in the field of view of the viewing screen as the photograph was being taken. Haines explained that there
+is published research which shows how perceptual "blindness" can occur even when physical objects are clearly present
+in the environment. Louange also pointed out that an object that is angularly small, stationary, and not expected to be
+present, is not as likely to be noticed as a similar object that is moving.
+
+The panel expressed the opinion that detailed analysis of photographic evidence was unlikely by itself to yield evidence
+sufficient to convince a neutral scientist of the reality of a new strange phenomenon unless a number of additional
+detailed conditions are met (see Appendix 2). They also expressed concern that, now that modern digital techniques are
+easily available in photo laboratories, it may never be possible to rule out possible hoaxes without convincing,
+corroborative eye-witness accounts.
+
+For further information about photographic cases, see Section 15 and Appendix 2.
+
+4. Luminosity Estimates
+
+
+When witnesses of unidentified aerial objects are debriefed by investigators, some of the most striking statements
+concern the luminosity of the phenomenon, according to Vallee. It is not unusual to hear expressions such as "it lit up the
+whole landscape," or "every object in the area stood out, thrown into intense relief," but it is normally difficult to go
+beyond these subjective statements to obtain reliable quantitative estimates of the luminosity of the phenomenon. Vallee
+summarized data for six cases of unexplained aerial phenomena that have been reported by qualified observers over a 20
+year period, with a view to making estimates of the optical power output. Vallee's estimates range from a few kilowatts
+to many megawatts.
+
+Case #1 occurred on August 27, 1956, near McCleod, Alberta, Canada. The witnesses were two Royal Canadian Air
+Force pilots who were flying in a formation of four F86 Sabre jet aircraft. The planes were flying due west over the
+Canadian Rockies at 36,000 feet about one hour before sunset. One of the pilots saw a "bright light which was sharply
+defined and disk-shaped," that resembled "a shiny silver dollar sitting horizontal," situated below the planes but above a
+thick layer of clouds. It appeared to be considerably brighter than sunlight reflecting off the clouds. The duration of the
+sighting was estimated to be between 45 seconds and 3 minutes. The first pilot to notice the object reported the
+observation to the flight leader and then took a photograph on a Kodachrome color slide. This case and this photograph
+were subsequently analyzed by Dr. Bruce Maccabee (Maccabee, 1996). Maccabee has presented an argument against
+the propositions that the phenomenon is due either to reflection of sunlight by the clouds or to lightning. From the
+available data, Maccabee estimates the luminosity of the object (the power output within the spectral range of the film)
+to be many megawatts.
+
+Case #2 occurred in late September 1965 at Fort-de-France (Martinique). Two French submarines accompanied by a
+supply vessel were returning to France from Norfolk, Virginia, stopping at Martinique. One evening, according to the
+report, when there was a dark sky and clear weather, a large luminous object arrived slowly and silently from the west,
+flew to the south, made two complete loops in the sky above the vessels, and vanished like a rapidly extinguished light
+bulb. The object was observed by a highly qualified helmsman from the deck of one of the submarines. He took six pairs
+of binoculars to the conning tower and distributed them to his companions. There were in all 300 witnesses, including
+four officers on the submarine Junon, three officers on the submarine Daphne, a dozen French sailors, and personnel of
+the Martinique weather observatory. The appearance of the object was such as to suggest either a large ball of light or a
+disk on edge. Its color was that of a fluorescent tube, and its apparent luminosity was that of the full Moon. It moved
+slowly and horizontally, at a distance estimated to be about 10 kilometers, and left a whitish trace in the sky similar to
+the glow of a television screen. After the object first vanished, the halo remained visible for a full minute. Some time
+later the halo reappeared and the object then emerged as if "switched on." After further maneuvers, the object flew away.
+
+Based on the descriptions of the witnesses, Vallee estimates that the luminosity of the object was of the order of 2
+megawatts.
+
+Case #3, that occurred at Voreppe, France on November 5, 1976 at 8:10 p.m., was investigated by GEPAN/SEPRA
+(GEPAN 1976; see also Appendix 1). The director of a physics laboratory at the Nuclear Research Centre in Grenoble
+saw a luminous disk in the sky as he was driving. Several other witnesses reported a similar observation on the same
+day. The main witness, considered to be a reliable scientist, gave a precise description of the position (in front of
+mountains), size and speed, as well as of the luminosity of the disk compared to the luminosity of the moon. The
+illumination of the landscape was reported to have been brighter than the illumination produced by the full moon when it
+is at the zenith. From this fact, and from the relevant geometrical considerations, the GEPAN/SEPRA investigator
+estimated the minimum transmitted luminous energy to be 6 kW if the estimated altitude of 500 m was correct, or 24 kW
+if the altitude was 1,000 m.
+
+Case #4, that was also investigated by GEPAN/SEPRA, occurred at Gujan-Mestras, France, on June 19, 1978 at about 1
+a.m. GEPAN/SEPRA was advised by the Gendarmerie that three witnesses had reported seeing a large luminous object
+that had emitted a loud noise. They also reported that the public lighting in the town had been extinguished for a few
+minutes as if triggered by morning light. The GEPAN/SEPRA investigators carried out a site investigation and made
+measurements of the triggering threshold of the photo-cells that controlled the public lighting system. This information
+led the investigators to an estimated radiated energy in the range 40 kW to 5 MW.
+
+Vallee reviewed briefly two other cases: Case #5 occurred on December 30, 1966 in Haynesville, Louisiana, and Case
+#6 occurred on August 24, 1990 at Greifswald, Germany. Vallee cautioned the panel that the estimates of luminosity
+presented at the workshop are raw approximations derived from a comparison of the estimated intensity in the visible
+band with the intensity of known sources, such as the full moon and automobile headlights, and from assumptions
+concerning the distance and perhaps size of the source.
+
+The panel noted that the human eye is a very poor device for measuring absolute luminosities: the state of dark
+adaptation of the eye affects the amount of light reaching the retina, and different parts of the retina respond differently
+to light. Furthermore, the above luminosity estimates were apparently based on the assumption of isotropic emission.
+This may be a reasonable assumption for a natural phenomenon, but could be inappropriate if a case involves a
+technological device. For instance, aircraft landing lights are highly anisotropic. A 1 kW source that is beamed with a
+half-angle of 3.6 degrees has the same intensity as a 1 Mw isotropic emitter. Furthermore, the distance estimates may be
+quite dubious. Hence the power estimates derived for the above cases must be considered quite uncertain. The most
+promising cases will be those for which some form of physical interference took place (such as an effect on a public
+lighting system), but these call for detailed investigation by specialists familiar with such systems.
+
+For further information about luminosity estimates, see Section 15.
+
+5. Radar Evidence
+Velasco presented information on radar cases drawn in part from the files of GEPAN/SEPRA (see Appendix 1). He
+pointed out that one catalog (the "Weinstein catalog" now under development at GEPAN/SEPRA), with 489 cases in all,
+contains 101 (21%) radar/visual cases (cases that involve both radar detection and visual observation), and the files of
+the US Air Force Blue Book project contain 363 cases of which 76 (21%) are radar/visual cases. Since 1945, reports of
+aeronautical cases have been collected by order of the French Air Force Chief of Staff. From 1977 on, information from
+civil and military observations made in French air-space have been sent to GEPAN/SEPRA (see Appendix 1). It should
+be noted that civil radar information usually refers only to objects containing a transponder, whereas military radar
+equipment can detect any object greater than two square meters in radar equivalent surface area. From 1982 on, twelve
+French aeronautical cases were reported to GEPAN/SEPRA. Of these, only three or four cases may be considered to be
+radar-visual cases of the UFO type.
+
+One of these cases is particularly interesting. This case occurred on January 28, 1994, about 70 kilometers southeast of
+Paris, at a height of 11,700 meters, under excellent meteorological conditions. An object was first noticed by a steward
+who happened to be in the cockpit, and his observation was then confirmed by the copilot. The captain then saw the
+object. It was above the thick layer of altocumulus clouds at 10,500 meters. The captain described the object as
+resembling a gigantic disk (diameter about 1000 meters, thickness about 100 meters) with slightly fuzzy edges. The
+witnesses suddenly lost sight of the object when the edges appeared to go out of focus and the object disappeared.
+
+Corresponding radar information was obtained from the military air traffic control (ATC). The object was positively
+detected by radar for a period of 50 seconds. The apparent speed of the object was measured first as 110 knots, then as
+84 knots, and subsequently as zero. The altitude of the object was not recorded by radar. The radar was also tracking a
+nearby commercial aircraft and appeared to be in good working order. There appears to be good correspondence
+between the radar measurements and the visual observations.
+
+Von Ludwiger also presented information concerning radar evidence, drawing in part on the results of studies that he
+had carried out in association with other members of the Mutual UFO Network (MUFON) Central European Society
+(MUFON-CES). For a certain period of time, they were able to obtain records from both civil and military ATC radar
+systems. The Swiss Military ATC was particularly cooperative, and provided several hundred hours of radar data over
+the time period 1993 to 1996. Radar data were also obtained from Belgian sources through the good offices of Professor
+A. Messens (SOBEPS, 1991). Military ATC radar systems provide three-dimensional information, whereas civilian
+ATC radar systems provide only two-dimensional information. Furthermore, the functioning of civilian ATC radar
+systems normally depend upon the cooperation of a transponder in the object being tracked. For this reason, civilian
+ATC radar records are usually not helpful for the study of unidentified objects. Moreover, there is the general problem
+that ATC systems are designed to register only targets for which the flight characteristics fall within certain parameter
+ranges. For instance, any object that moves faster than Mach 4, or does not follow a smooth trajectory, will be rejected
+by the system whether civil or military, and so will not be tracked. A further limitation, relevant to the study in hand, is
+that conditions for a good radar record and conditions for a good visual sighting are quite different. An object can best
+be seen if it is at low altitude, but radar systems normally do not detect objects at low altitude.
+
+In the United States, the Federal Aviation Administration (FAA) radar routinely records on tape all targets, not just
+aircraft with transponders. Of course, radar systems record only objects that are sufficiently close and have high enough
+altitude. Although it is unlikely that private investigators will be able to obtain regular access to these records, such
+access has been granted on occasion. Such data can be very helpful in providing physical evidence for cases that have
+reliable witness testimony, in which case the records can be compared to witness testimony to determine whether an
+object seen visually
+was also recorded on radar, and -- if so -- to obtain accurate velocity estimates.
+
+According to von Ludwiger, there are many events, involving both visual observations and radar responses, in Swiss
+airspace but the radar records are not publicly available. However, one case for which radar records were released
+occurred on June 5, 1996 at about 2:30 p.m. Six employees, including radar operators, of the military ATC at
+Dubendorf, Switzerland observed from their building in Klothen a large silvery disk apparently at a distance of 1700
+meters. It appeared to be rotating and wobbling at an altitude of 1300 to 2000 meters. There was a corresponding
+recording of a target by three radar devices.
+
+Von Ludwiger also mentioned a number of other cases of radar targets, some of which followed curious trajectories
+unlike those of conventional aircraft. Recognition of these anomalous trajectories typically came some time after the
+events when the radar data were analyzed. Von Ludwiger considers this to be one reason that (except for two cases) it
+was normally not possible to find corresponding visual observations. Von Ludwiger considers that for many of these
+cases the most likely explanation involves anomalous atmospheric refraction of the radar signals, but that some cases for
+which the radar records showed very long connected trajectories may have been produced by real objects. (See
+Appendix 4.)
+The panel concludes from these presentations that the analysis of radar records is a very specialized activity that requires
+the services of radar experts. (See, in this connection, Appendix 4.) The panel also notes that information from military
+radar can be obtained only with the cooperation of military authorities, and that most military authorities do not offer this
+cooperation. Although intriguing cases have been presented by both Velasco and von Ludwiger, further study of this
+phenomenon by means of radar-visual cases may not be feasible unless the relevant authorities recognize the mission of
+an official UFO research organization (as has been done in France) and give the investigators clearance for access to
+some of the unexploited raw data. It would be necessary for the research organization to help implement adequate
+software modules that can read and store available data in a mode of operation that does not interfere with the primary
+mission of the system.
+
+6. Hessdalen Project
+
+
+Strand summarized the design and operation of the Hessdalen Project. Hessdalen is a valley in central Norway, 120
+kilometers south of Trondheim. The valley is 12 kilometers long and a maximum of 5 kilometers wide. The hills to the
+west and to the east rise to about 1,000 meters above sea level. Most people in the valley live at a height of about 800
+meters.
+
+In December 1981 the inhabitants of the Hessdalen valley began to report seeing strange lights. They were sometimes
+visible three or four times a day. There were hundreds of reports during the period 1981 to 1985, but the phenomenon
+began to decrease during 1984, and since 1985 there have been comparatively few sightings. Most observations were on
+winter nights: there were comparatively few during the summer or during the day.
+
+Witnesses reported observations that seemed to fit into three different categories:
+
+
+Type 1: A yellow "bullet," with the sharp end pointing down.
+Type 2: A strong blue-white light, sometimes flashing, always moving.
+Type 3: A pattern comprising many light sources with different colors that moved as if they were physically connected.
+
+
+
+In 1983, a small group with five participants set up "Project Hessdalen." They received assistance from the Norwegian
+Defense Research Establishment, the University of Oslo, and the University of Bergen. They carried out field work in
+the Hessdalen valley from January 21, 1984 to February 26, 1984, when up to 19 investigators were in the field at the
+same time. The project then involved three stations with observers and their cameras, some cameras fitted with gratings
+to obtain spectroscopic information. At the principal station, observers used the following equipment: cameras, some
+fitted with gratings; an infrared viewer; a spectrum analyzer; a seismograph; a magnetometer; radar equipment; a laser;
+and a Geiger counter.
+
+Lights that were recorded to be below the contours of the mountains must have originated in the Hessdalen region, but
+lights that were recorded to be above the crest line may have originated at a great distance. Without triangulation or
+other information, it is impossible to determine the distances of the lights. However, some of the events that were seen as
+lights were tracked also by radar. If taken at face value, the radar measurements would imply speeds up to 30,000
+kilometers per hour. (However, see Appendix 4.)
+
+During a period of four days, unknown lights were seen on 10 occasions, and the flux-gate magnetometer registered 21
+pulsations, of which 4 appear to correspond with the observations of lights, suggesting an association between some of
+the unknown lights and magnetic disturbances. The gratings on the cameras were intended to obtain spectroscopic data:
+the spectra appear to be continuous, with no indication of either emission lines or absorption lines.
+
+Observations continue to be reported from the Hessdalen valley; the rate is now about 20 reports per year. An automatic
+measurement station, for installation in Hessdalen, is now being developed and prepared at Ostfold College (Norway),
+which is the present base of Project Hessdalen. This station will include a CCD-type camera in the visible region. The
+output from the CCD-camera will be fed automatically to a computer which will trigger a video recorder. This automatic
+station will hopefully prove to be but a first step in the development of a network of stations.
+
+As a result of this presentation, the panel concluded that there would be merit to designing and deploying a
+not-too-complicated set of instruments. These should be operated according to a strict protocol in regions where the
+probability of significant sightings appears to be reasonably high. It is recommended that, as a first step, a set of two
+separate video recorders be equipped with identical wide-angle objectives and installed on two distant fixed tripods to
+help eliminate the possibility that some of the apparent motions detected by video recorders are due to the operators'
+hand movements or ground vibrations. It would also be useful to set up two identical cameras, one of which is fitted with
+a grating. However, experience so far at Hessdalen indicates that a grating may not be adequate for obtaining
+spectroscopic information. In view of the great importance of spectroscopic data, it would be highly desirable that
+special equipment be developed and deployed for obtaining high-resolution spectroscopic data from transient moving
+sources. This may be a nontrivial problem.
+
+If it proves possible to obtain useful results from a small system, such as suggested above, one may be able to make the
+case for the design and implementation of a permanent surveillance network. This should be designed as a multi-purpose
+system so that costs and data can both be shared. This could resemble the Eurociel project that was studied in Europe in
+the 1980s at the request of GEPAN/SEPRA. (See Appendix 1.)
+
+The panel notes that in cases that involve repeated, semi-regular sightings of lights (such as are said to occur at
+Hessdalen in Norway and at Marfa in Texas), it is difficult to understand why no rational explanation has been
+discovered, and it would seem that a small investment in equipment and time should produce useful results.
+
+7. Vehicle Interference
+
+
+Rodeghier reviewed a small but important fraction of UFO reports that are said to involve effects on electric lights,
+automobiles, and other machines of various sorts. These reports have occurred throughout the modern era of UFO
+reports (since 1947) and come from all over the world, although (as with all UFO reports) they come primarily from
+Western nations. Of such reports, those that involve claims of vehicle (mainly automobile) interference have received
+most attention. One such case is discussed below. A more comprehensive discussion of vehicle interference cases is
+presented in the report by Rodeghier (1981). (See Section 15.)
+
+Haines City, Florida, March 20, 1992
+
+Based on his review of the original MUFON report, Rodeghier presented the following summary of this case.
+
+At about 3:50 a.m. on March 20, 1992, patrolman Luis Delgado in Haines City (near Orlando), Florida, was checking
+the doors at local businesses. After turning onto 30th Street, he saw a green light in his rearview mirror. Seconds later,
+the interior of his patrol car was illuminated with a green glow. An object began pacing his car, moving from the right
+side to the front of the vehicle several times. Delgado called Police Dispatch at 3:52 a.m. and asked for backup and said
+"Something is following the vehicle." When the object moved in front of his car for the third time, Delgado pulled off
+the road. When he did so, the engine, lights, and radio on his patrol car ceased to function.
+
+The object was about 15 feet long and thin, with a 3-foot high center area. It was a strange color of green, and the color
+seemed to "flow over the surface." The object was hovering about 10 feet off the ground. As he was stopped, the object
+shone a bright white light into the interior of his vehicle. At that point Delgado got out of his car and tried to call Police
+Dispatch on his walkie-talkie, but it would not function. He noticed that the air around him had chilled and he could see
+his breath fog. According to weather records, the temperature at that time was about 60° F. Shortly thereafter, the object
+sped away at a fantastic speed in about two or three seconds, moving low over the ground. Another officer arrived just
+after the object had departed and found Delgado sitting in his police vehicle with the left door open and one foot on the
+ground. He was shaking and crying and unable to talk. Eventually he recovered and filed an incident report. The patrol
+car functioned normally after the event, and Delgado suffered no health problems. Review of the calls to the dispatcher
+indicate that the duration of the event was in the range 2 to 3 minutes.
+
+Rodeghier pointed out that the Haines City report is typical of many other vehicle interference reports in the following
+respects: according to the report, the object was quite close to the witness (a "close encounter" case); the object was of
+modest size; the object projected a beam of light into the vehicle; the witness did not suffer any injury; the witness did
+experience an anomalous effect (in this case, the chill in the air); and the object moved at very high speed when it
+departed.
+
+According to Rodeghier, many such cases have been reported, and he has prepared a catalog of 441 vehicle interference
+cases (Rodeghier, 1981). (See Section 15.) It is noteworthy that vehicles with diesel engines are affected only very rarely
+(less than 1% of all vehicle interference reports).
+
+According to Rodeghier, several hypotheses have been advanced to explain these effects:
+
+1.The ignition or other electrical system may have been disrupted by high static electric or magnetic fields.
+2.Ignition of the gas-air mixture may have been affected by ionization of the ambient air.
+3.Fuel may somehow have been prevented from entering or leaving the carburetor.
+4.The engine operation may have been disrupted by electric fields induced by an alternating magnetic field, possibly of
+low frequency.
+Clearly, laboratory tests on automobiles and their engines could be highly informative. Some such tests have in fact been
+carried out. Staff of the Colorado Project (Condon & Gillmor, 1969) attempted to determine the effect of a static
+magnetic field on a simulated automobile ignition system. The staff found that spark plugs continued to operate even in
+static magnetic fields as high as 20 kilogauss. The Colorado Project staff also investigated the possibility that an
+automobile involved in such a case might display a change in the pattern of its remanent magnetism (its "magnetic
+fingerprints"), but they found that this had not occurred for the one case they examined. Rodeghier reported that tests by
+Australian investigators on vehicles involved in two events (Adelaide, South Australia, 1977, and Liverpool Creek,
+Queensland, 1979) also found no changes in remanent magnetism. On the other hand, Randles and her colleagues
+(Randles, 1979) found a change in magnetism for a vehicle involved in an event that occurred at Thaxted, Essex,
+England in 1977.
+
+The panel found these reports to be intriguing. In order to contribute to the analysis of such cases, however, scientists
+would wish to have available evidence of a variety of types, certainly including narrative accounts, but also involving
+more concrete information such as radar records, tape recordings, etc.
+
+For further information about vehicle interference cases, see Section 15.
+
+8. Interference with Aircraft Equipment
+
+
+Richard Haines presented a summary of his extensive research into pilot-UFO-sighting reports. He now has a catalog of
+over 3,000 pilot reports, of which approximately 4% involve transient electromagnetic effects allegedly associated with
+the presence of strange objects. Another catalog of aircraft-UFO-encounter cases (referred to by Velasco in Section 5) is
+being compiled by Weinstein (1997) as a GEPAN/SEPRA project; this catalog currently contains several hundred air-
+craft-UFO-encounter cases.
+
+Haines pointed out some of the reasons that make pilot-UFO sighting reports especially valuable to the UFO
+investigator:
+
+
+
+1.Pilots have received a great deal of relevant specialized training and possess practical flight experiences which better
+qualify them to report accurately what they see.
+2.Pilots are highly motivated, yet do not over-react during stressful situations.
+3.Pilots can change their flight path so as to see the ground behind the object and thereby establish a maximum slant
+range to it.
+4.Pilots can use their radio to contact ground support for further information or assistance.
+5.Aircraft have a wide variety of instruments that react differently to electromagnetic radiation.
+
+
+Nevertheless, according to Haines, even an experienced pilot can be deceived by some of the unusual phenomena listed
+in Appendix 3.
+
+Haines focused on cases that appear to involve transient electromagnetic (EM) disturbances that occur only while one or
+more objects are seen flying near the airplane and which return to normal as soon as the object departs (Haines 1979;
+1992). Haines has compiled a catalog of 185 such EM events which occurred over a 51-year period (1944-1995), and
+has developed a taxonomy of electrical-system malfunctions on modern airplanes with which to categorize and better
+understand them. The largest category of effects is airborne radar contact, while the second largest category is radio
+interference or complete but temporary radio failure.
+
+Haines discussed two pilot reports in detail, one of which was an interesting case that occurred at 2105 EST on March
+12, 1977 between Buffalo and Albany, New York, that involved United Airlines flight 94, a nonstop flight from San
+Francisco to Boston. The DC-10 airplane was under the control of autopilot system #2 and was flying at 37,000 feet
+altitude. The entire sky was dark and clear ahead and above the airplane, except for a partial undercast with small clouds
+extending to about 20 miles ahead. The aircraft was flying at an indicated air speed of 275 knots (true air speed 530
+knots). The aircraft was about half way between Buffalo and Albany, and had just changed from contact with the
+"FROM" VOR (Very-High-Frequency Omnidirectional Bearing) signal emanating from Buffalo to the "TO" signal from
+Albany. The aircraft was just south of Syracuse, New York.
+
+Suddenly and unexpectedly, the airplane began to turn to the left, making a 15 degree bank. Within a few seconds, the
+First Officer and the Captain looked to the left side of their plane and saw an extremely bright white light at about their
+own altitude. Subsequently, the Flight Engineer also looked and saw the light source. It appeared to be perfectly round
+and its apparent diameter was about 3 degrees of arc. However, the Captain estimated the object to be about 1,000 yards
+away and to be about 100 feet in size, that corresponds to an angular size of 2 degrees. "Its intensity was remarkable --
+about the intensity of a flashbulb," he remarked. Boston ATC radioed to ask "United 94, where are you going?" The
+Captain replied "Well, let me figure this out. I will let you know." He then noticed that the three cockpit compasses (that
+use sensors in different parts of the plane) were all giving different readings. At this point, the Copilot turned off the
+autopilot and took manual control of the airplane.
+
+Based upon the fact that the object did not move laterally in the cockpit window during the 45 degree left heading
+change and from knowledge of the turn radius of this airplane at its stated velocity, Haines calculated the approximate
+distance to the object to be about 10 nautical miles. If the pilot's angular size estimate for the object is accurate, this
+suggests that the light source was about 2100 feet across. The object appeared to stay with the airplane for 4 to 5
+minutes, after which it departed very rapidly, disappearing within about 15 seconds behind them to the west. The
+Captain asked ATC if they had any radar traffic in that area and received a negative reply.
+
+The navigation system involves two gyro-suspended compasses, each coupled to a special circuit with a "mismatch
+annunciator flag." If the readings from the two compasses differ by 3 degrees or more, the autopilot should automatically
+disengage and the mismatch annunciator flag should be displayed (Powell, 1981). This forces the pilot to take manual
+control of the airplane.
+However in this event the readings on the two compasses differed by more than 3 degrees yet the airplane remained on
+autopilot and the mismatch annunciator flag was not displayed.
+
+Haines reviewed several possible interpretations of this event (cf. Perry & Geppert, 1997). It seems most probable that
+the malfunction of the three compasses was due to a transient perturbing magnetic field that disturbed the two primary
+magnetic compasses, the sensor on the wing tip nearest the object (which was controlling the active autopilot at the time)
+being disturbed more than the other wing-tip sensor. Upon landing, the compasses were checked and found to be in
+normal operating condition.
+
+In responding to this presentation, the panel took the position that evidence of interference with aircraft equipment is
+interesting but, in the absence of corroborative data from flight recorders and other mechanical or electrical recording
+equipment, the evidence presented must be regarded as anecdotal. It is quite possible that the persons making the report
+summarized above did indeed see unusual and striking phenomena. It does appear that the airplane departed from its
+normal flight path, but this could have happened for a variety of reasons. As with reports related to other categories of
+physical evidence, the evidence summarized in this section should be regarded as suggestive but far from sufficient to
+establish any actual physical linkage between the reported luminous phenomenon and the airplane's flight deviation. In
+order to improve our understanding of these phenomena, it will be necessary to establish more definite facts from the
+case work. To this end, there should be strong efforts to quantify the observations and to obtain multiple measurements
+of the same event, and investigators should bring a critical attitude to the compilation and analysis of the data.
+
+9. Apparent Gravitational and/or Inertial Effects
+
+
+In his presentation, Swords focused on reports with details that, if true, are difficult to understand in terms of our familiar
+concepts of gravity and inertia. For instance, a report may describe an object that is stationary, yet completely silent and
+has no visible means of support; there is no rush of air and no roar such as one would expect if the object were being
+supported by a downward jet of gas. It may be reported that the object makes an abrupt velocity change - either a very
+sudden acceleration or deceleration, or a sudden change of direction, or both, and the witness may describe the event as
+being completely silent. According to Newton's third law of motion, any sudden change of momentum of an object
+should be accompanied by an opposite change of momentum of either matter or a field to which the object is coupled.
+According to reports of the type described by Swords, there is no indication of what force might support the object or
+what momentum transfer may have occurred.
+
+It is clear that future reports must, if they are to be considered seriously by physical scientists, include very solid physical
+records that unfortunately present reports do not: most of these cases are anecdotal and therefore very difficult to assess.
+One of the better-documented cases occurred at approximately 11:00 p.m. on August 18, 1973. At that time, a helicopter
+of the US Army Reserve was en route from Columbus, Ohio, to Cleveland, Ohio. In discussing this case, Swords drew
+upon an investigation by Ms. Jennie Zeidman on behalf of the Center for UFO Studies (Zeidman, 1979; see also
+Zeidman, 1988). The four-man crew of an Army Reserve helicopter based in Cleveland, Ohio, flew to Columbus for
+their regularly scheduled physical examinations. At about 10:00 p.m., after the examinations had been concluded, they
+left the medical facility, drove back to the airport (a distance of two miles), filed a flight plan, and then took off at
+approximately 10:30 p.m. The night was clear, calm, starry and moonless, with 15-mile visibility. The helicopter was
+cruising at 90 knots at an altitude of 2500 feet mean sea level over mixed terrain averaging 1100 to 1200 feet elevation.
+According to their reports, one of the crewmen saw a single red light off to the left (west), apparently heading south,
+when they were about seven miles east-southeast of the Mansfield, Ohio, airport. The last altitude the commander noted
+was the initial altitude of 1800 feet msl (mean sea level), about 700 feet above ground level. At approximately 11:02
+p.m. (about three to four minutes after the above observation), the crew member in the right rear seat noticed a single
+steady red light on the eastern horizon. It appeared to be pacing the helicopter, and he reported this light to the aircraft
+commander. The light continued its approach and the commander took over the controls from his copilot and put the
+helicopter into a powered descent of approximately 500 fpm (feet per minute). He contacted Mansfield control tower
+but, after initial radio contact, the radios malfunctioned on both VHF and UHF. The red light increased in intensity and
+appeared to be on a collision course at a speed estimated to be above 600 knots. The commander increased the rate of
+descent to 2000 fpm.
+
+A collision appeared imminent, but the light suddenly decelerated and assumed a hovering relationship above and in
+front of the helicopter. The crew reported seeing a cigar-shaped gray metallic object that filled the entire windshield. It
+had a red light at the nose, a white light at the tail and a distinctive green beam that emanated from the lower part of the
+object. The green beam swung up over the helicopter nose through the main windshield and into the upper tinted
+window panels, bathing the cockpit in green light. There was no indication of noise or turbulence from the object. After
+a few seconds of hovering, the light accelerated and moved off to the west, showing only the white "tail" light. The
+object made a sharp 40 degree course change during its departure.
+
+While the object was still visible, the crew noted that the altimeter read 3500 feet with a rate of climb of 1000 fpm,
+despite the fact that the collective (the main power control that causes a helicopter to ascend or descend) was still in the
+full-down position. The commander raised the collective and the helicopter climbed nearly another 300 feet before
+positive control was regained, at which time the crew felt a slight bump. Radio contact with Akron/Canton was then
+easily achieved. If these accounts are correct, the helicopter ascended from 1800 feet to about 3800 feet even though the
+helicopter controls were set to cause it to descend.
+
+The Mansfield helicopter case is a particularly puzzling event since it involved not only the testimony of the helicopter
+crew but that of independent ground witnesses also. These witnesses include a mother, three of her children (ages 13, 11
+and 10), and a stepchild (age 13). The witnesses were originally driving in the family automobile, then parked it,
+whereupon two of the children got out of the car for a better view. All the witnesses first saw an unidentifiable pair of
+lights (one red, one green), and then the encounter between the "object" responsible for the lights and the oncoming
+helicopter. Their accounts are consistent in their essential elements, the most memorable aspect being the powerful green
+light that lit up both the ground and the helicopter. This element received further confirmation from another set of
+witnesses who were retiring that evening in a nearby house, when they were disturbed by the clattering of a helicopter
+and by a powerful beam of green light that swept over their house and brightly illuminated their son's bedroom. Related
+evidence comes from an airline pilot who (in the Mansfield area, about 1.5 hours before the helicopter event) reported
+unidentified traffic that had the appearance of a strong blue-green light source traveling at an altitude of about 30,000
+feet. Cleveland ATC could not detect any object painting an image on their radar screens and so were unable to identify
+the object.
+
+According to Swords, there was one item of physical evidence that could have been investigated but apparently was not.
+The commander reported that the magnetic compass began to spin during the event. The compass continued to spin after
+the event and it was subsequently removed because it was unserviceable. Swords reported that some years after the event
+Captain Coyne expressed the opinion that his compass, that had not previously malfunctioned, had somehow become
+demagnetized, but it was not clear whether this opinion was merely a conjecture or whether it was based on laboratory
+tests.
+
+The panel finds reports of this type quite interesting, but without the existence of any solid physical evidence (such as
+analysis of the magnetic compass might have provided), it is difficult for a panel composed of physical scientists to draw
+any conclusions. The panel also found it curious that the commander did not know where to go to report what appears to
+have been an extraordinary event. He contacted the Federal Aviation Authority Chief of Operations at Hopkins field, but
+this official could not suggest an agency with which the commander should file his report. About a month later, the
+commander filled out an operational hazard report. Rodeghier advised the panel that, since the termination of Project
+Blue Book in late 1969, there has been no official body to receive UFO reports in the U.S.A.
+
+For further information about the Mansfield helicopter case, see Section 15.
+
+10. Ground Traces
+
+
+A few of the reports that have been investigated by GEPAN/SEPRA show ground traces that may be associated with the
+events reported by witnesses. Similar cases have been documented by other investigators. Phillips (1975) prepared a
+catalog of 561 such cases as a CUFOS report.
+GEPAN/SEPRA has investigated only cases for which the following conditions are met:
+
+
+
+1.Information concerning the event has come to GEPAN/SEPRA from an official source such as the Gendarmerie, local
+police, etc.
+2.The event is recent (a few hours to a few days old).
+3.The area has been protected and the traces have been preserved.
+4.Sampling and measurements have taken place within a short time after the event.
+5.Meteorological conditions have been favorable for preservation of the traces (no rain, etc.).
+
+
+
+It is also desirable, but not essential that the event has independent credible multiple witnesses.
+
+The first steps -- to protect the site, to make measurements, and to begin collecting samples -- are usually carried out by
+the Gendarmerie who have a complete set of instructions in a manual prepared by GEPAN/SEPRA, who have also
+devised procedures to be implemented by specialized laboratories for the collection and analysis of samples. When the
+services of a specialized laboratory are requested, the laboratory personnel will go to the site for in situ sampling.
+
+Soil has the capability of retaining the effects of several processes including mechanical, thermal, magnetic, radioactive,
+and physicochemical processes.
+
+
+Mechanical: A continuous or brief mechanical pressure causes a distortion of the soil. The compression of the soil can
+be measured by a penetration instrument, for instance.
+
+Thermal: Measurement of the quantity of water in the soil, as compared to nearby control samples, allows determination
+of the amount of energy required to reduce the water content to that level.
+
+Magnetic: Some soils have a high magnetic remanence. In this case, it is useful to examine the magnetic pattern of the
+soil with the help of magnetometers either in situ or (after sampling) in a laboratory.
+
+Radioactivity: Such measurements may be made in situ or carried out on samples in the laboratory.
+
+Physicochemical: Samples from the trace region and control samples away from the trace region can be analyzed for
+molecular, atomic and isotopic composition, etc.
+
+Velasco described in detail their investigation of an event that occurred near Trans-en-Provence, France, on January 8,
+1981 at about 5:00 p.m. (Bounias, 1990; Vallee, 1990; Velasco, 1990; see Section 15.) One weakness of this case is that
+there was only one witness. The witness was working in his garden when he heard a low whistling sound. Upon turning
+around, he saw an ovoid object in the sky that approached the terrace at the bottom of the garden and landed. The
+witness moved forward cautiously to observe the strange phenomenon but, within a minute, the object rose and moved
+away in the same direction from which it had arrived. It continued to emit a low whistle. The witness approached the
+scene of the apparent landing and observed circular depressions, separated by a crown, on the ground.
+
+The Draguignan Gendarmerie arrived the next day (January 9) to investigate the report and, following GEPAN/SEPRA
+instructions, took samples from the ground and from the vegetation. The Gendarmerie found two concentric circles, one
+2.2 meters in diameter the second 2.4 meters in diameter. Between the two circles was a raised area 10 cm wide. They
+found, on this raised area, two sectors, diametrically opposite, each about 80 cm long, that contained black striations
+similar to abrasion traces.
+
+A team from GEPAN/SEPRA carried out a site visit on February 17, 1981, 40 days after the event. The trace was still
+visible since there had been very little rainfall since January 8. The arc-shaped area, lighter than the rest of the terrain,
+was still visible. The soil in this region was heavily compacted, forming a crust. Soil samples were taken both on January
+9 and on February 17. These samples were then forwarded to various laboratories equipped for physical and chemical
+analyses. It was found that the compacted soil had a thickness of 6-7 mm. There was no trace of organic compounds
+such as one might expect to be produced by combustion. There was some evidence of iron in the form of striations about
+1 micron thick, but the iron was not accompanied by chromium, manganese or nickel as would be the case for steel.
+There was some evidence of polymers. Traces of phosphate and zinc were also found. Traces visible as striations
+seemed to have been produced by a combination of mechanical and thermal effects.
+Visual and microscopic examination revealed that, apart from the striations, the soil had been compacted without major
+heating, since the structure of calcium carbonate was not affected. Velasco has made an order-of-magnitude estimate
+indicating that, to produce the measured compression of the soil, one would need a stationary object of about 700
+kilograms. On the other hand, the same indentations in the soil could have been made by an object of lower mass if the
+object were moving at a few meters per second at the time of impact.
+
+The panel was intrigued to learn that ground traces appear to be associated with some UFO reports. These traces could
+of course be spurious with no relation whatever to the reported event, they could be due to hoaxes, or they could in fact
+be related to a real event. Clearly, it is essential to devise measurement procedures that can distinguish between these
+three possibilities. For this to be possible, it would definitely be helpful to have "baseline" measurements for some likely
+spurious causes and for hoaxes. The possible spurious causes would of course depend upon the location in which the
+event occurs. For instance, in the Trans-en-Provence case in which the event occurred in a vegetable garden, the trace
+may have been caused by some piece of gardening equipment such as a metal water barrel. Similarly, someone
+perpetrating a hoax might have used a standard or manufactured wheeled object. Rather than leave the effects of such
+spurious causes or hoaxes up to speculation, it would clearly be advantageous to have firm information on which to base
+a judgment such as could be provided by relevant experiments. The investigators could move a water container to a
+similar patch of earth, or create a trace with a wheeled heavily laden object, and then compare measurements of those
+traces with measurements of the trace associated with the UFO report.
+
+Experiments such as the above could be specific to a particular case or they could be generic. If such experiments
+became the rule rather than the exception, it would become possible for an investigator to consult a catalog of spurious
+causes or of hoaxes as well as a catalog of claimed "real" events.
+
+For further information about the Trans-en-Provence case, see Section 15.
+
+11. Injuries to Vegetation
+
+
+In some cases that involve an apparent disturbance to the soil, there may also be an apparent injury to vegetation.
+Velasco stated that four such cases have been investigated by GEPAN/SEPRA: the "Christelle" case of November 27,
+1979; the "Trans-en-Provence" case of January 8, 1981; the "Amarante" case of October 21, 1982; and the "Joe le Taxi"
+case of September 7, 1987.
+
+In the Christelle case, in which grass was flattened in a uniform direction, plant physiology analysis was subsequently
+carried out by Professor Touze of the Laboratoire de Physiologie Végétale de l'Université Paul Sabatier (the Center for
+Plant Physiology, Paul Sabatier University), Toulouse. The Trans-en-Provence case will be discussed later in this
+section. In the Amarante case, that took place near Nancy, grass was lifted up, the amarante leaves withered, and the
+amarante fruit seemed to have exploded. The plant physiology was examined by Professor Abravanel , also of the
+Laboratoire de Physiologie Végétale de l'Université Paul Sabatier (the Center for Plant Physiology, Paul Sabatier
+University), Toulouse. In the Joe le Taxi case, birch leaves were affected by the incident, and a biochemical analysis was
+carried out by Professor Michel C. L. Bounias of the Biochemistry Laboratory at INRA (National Institute of Agronomy
+Research), University of Avignon.
+
+In the Trans-en-Provence case of January 8, 1981, discussed also in the previous section (Bounias, 1990; Vallee, 1990;
+Velasco, 1990; see Section 15), the Gendarmerie took one sample 1.5 meters from the center of a ground trace on
+January 9 and another sample, 20 meters from the center, on January 23. On February 17, 1981, investigators from
+GEPAN/SEPRA visited the site and took a series of samples beginning at the center of the ground trace and ending 10
+meters from the center. Bounias examined the samples in his laboratory. The principal procedure for biochemical
+analysis was that of determining the chromatograms of the pigments. This yielded information for a number of
+biochemical components (chlorophylides; xanthines; oxychlorophylls; lutein; chlorophyll A; chlorophyll B;
+pheophytins; and ß carotene).
+
+In samples taken from the periphery of the ground trace, the chlorophyll A content had been reduced by 33%, the
+chlorophyll B content by 28% and the pheophytin content by 31%. Bounias also found that the ß carotene content had
+been reduced by 50-57% and the violaxanthine content by 80%. The above changes, which normally occur as the result
+of aging of a plant, were found both in the samples removed by the Gendarmerie within one day of the event, and by the
+samples taken by the GEPAN/SEPRA investigators 40 days after the event. As one may see from the article by Bounias
+(1990), the biochemical changes show a strong correlation with distance from the center of the event. It appears that the
+magnitude of the effect is associated with a specific quantity (the difference in free enthalpy) associated with the
+biochemical change. According to Bounias, the glucide and amino-acid content of very young leaves had been changed
+to become nearer the content characteristic of old leaves.
+
+Bounias carried out certain experiments to try to determine what form of trauma may have been responsible for these
+biochemical changes. As a toxicologist, Bounias rejected the hypothesis that the changes could have been caused by a
+deliberate act involving chemical poisons. Bounias also found that some of the changes could have been caused by
+powerful microwave radiation. However, microwave radiation by itself would not explain the photosynthetic breakdown
+or certain other characteristics of the injuries. Bounias found no evidence of effects that one might expect to be produced
+by ionizing radiation. This is consistent with the fact that there was no trace of radioactivity at the site.
+
+Velasco also reported the GEPAN/SEPRA investigation into the "Amarante" case that occurred at Nancy on October
+21, 1982. The witness, who is a biologist, reported that an ovoid object descended into his garden but did not descend
+lower than 1 meter above the ground. The witness observed the object for 20 minutes before it took off vertically into
+the sky. The witness did not hear any sound or feel any heat during the encounter, nor were there traces on the ground.
+However the witness reported that, just before the object departed, the grass blades stood up straight. Subsequent
+investigations showed that this phenomenon could be reproduced in the laboratory by using very intense electric fields
+(several tens of kV/m).
+
+The GEPAN/SEPRA investigators found that the amarante plants located near the object had become desiccated
+whereas similar plants further away were in normal condition. The fruit of plants from the vicinity of the object looked
+as if they had been cooked. Further biochemical analyses of the samples gave results consistent with what one would
+expect of plants that had been dehydrated.
+
+The panel was impressed by the detailed information that can be obtained by laboratory investigation of samples of
+vegetation taken from the location of a claimed UFO incident. It appears that a great deal more could be done in the way
+of laboratory experiments to study the effects of various kinds of radiation and other forms of trauma upon vegetation.
+One should also examine the kinds of effects that could be produced by techniques that might be involved in a hoax,
+such as chemicals, heat from a blow torch, etc. Such studies would help identify a hoax, if it has been perpetrated, or the
+studies may lead to the conclusion that a hoax is a very unlikely explanation of the traces. In the latter case, it may or
+may not be possible to identify the type of technological device that would produce the radiation, or combination of
+radiations, necessary to produce the identified injuries to the vegetation.
+
+For further information about the Trans-en-Provence case, see Section 15.
+
+12. Physiological Effects on Witnesses
+
+
+UFO reports sometimes include references to physiological effects on witnesses. These effects can range from mild
+temporary sensations to long-term injuries. Such cases were reviewed by Schuessler. (See Schuessler, 1996, and Section
+15).
+
+Among the temporary sensations experienced by witnesses, Schuessler gave the following examples: a strong sensation
+of heat that was reported in association with an event at Mount Rouge, Quebec, Canada on September 20, 1972; a
+"cold" feeling reported by a witness to an event near Eggardon Hill, England, on September 24, 1974; an experience of
+shock, reported by two witnesses to an event near Tyler, Texas, on November 26, 1976; a sensation like being "hit with
+a wet blanket" and a very uncomfortable feeling of being unable to move, reported by two witnesses of an event that
+occurred near Anderson, Indiana, on August 12, 1981; and a tingling sensation, an inability to move, and an experience
+of having the hair on the neck stand on end, that were all reported by a witness of an event that occurred near Barnsley,
+Yorkshire, England, on August 15, 1986.
+
+Schuessler also described several cases in which witnesses experienced multiple sensations including the following:
+uncontrollable hand motion; eye irritation; difficulty in breathing; an acid taste in the mouth; a sensation of the hair on
+the arm standing up; loss of consciousness; eye damage so that the witness could barely see; a mark on the hand of a
+witness where she reported that she has been hit by a beam; a red crust of soft skin on the face that felt sensitive to the
+touch; and a sensation of heat. Physiological effects were reported that could be long lasting, including the following:
+burns; temporary deafness; singeing of hair; laceration; swelling; nausea, that could continue for months and could lead
+to weight loss; loss of sight that could take months to overcome; severe itching; memory loss; burn marks; double vision;
+nose bleeds; and change of urine color. For more information on cases leading to such effects, see Schuessler (1996).
+
+Schuessler gave an extensive account of a notable case that occurred near Dayton, Texas, on December 29, 1980
+(Schuessler, 1981; 1988; 1998). This is known as the "Cash-Landrum" case since it involved Betty Cash, then a 51 year
+old business woman, and Vickie Landrum, then a 57 year old employee in a restaurant. It also involved Landrum's
+grandson Colby, then 7 years old. According to their reports, they encountered a large diamond-shaped object hovering
+above the road in front of them. Flames were belching from the bottom of the craft. The interior of the car became hot,
+forcing them to leave the vehicle. However, Colby and Landrum returned to the vehicle out of fear. Cash remained
+outside the automobile for seven to ten minutes. The object rose into the night sky and moved away. According to their
+reports, the object was accompanied by 23 helicopters that Cash and Landrum assumed to be military.
+The witnesses were initially affected mainly by the heat and the bright light, and they developed headaches. During the
+night, Colby vomited repeatedly and his skin turned red. The same happened to Landrum. Cash fared even worse: large
+water blisters formed on her face and head, and by morning her eyes had swollen shut. The three witnesses continued to
+have severe nausea: even water would make them vomit; they developed diarrhea, and their health deteriorated severely.
+Cash was taken to a hospital where she was treated as a burn patient. This was the first of more than two dozen periods
+of hospital confinement for Cash.
+
+Schuessler listed the following medical problems developed by the three witnesses: eyes swollen, painful and watery;
+permanent damage to the eyes; stomach pains, vomiting and diarrhea; sores and scarring of skin, with loss of
+pigmentation; excessive hair loss over a several-week period, the new hair having a different texture from the old; loss of
+appetite, energy and weight; damage to fingernails and shedding of fingernails; increased susceptibility to disease; and
+cancer.
+
+The Cash-Landrum case seems to be unique in that there is detailed documentation of the injuries (photographs, etc.),
+and of the subsequent medical treatment. The case seems also to be unique in that it appeared to involve military
+helicopters, raising the possibility that a secret military operation was in progress (Schuessler, 1996).
+
+As Schuessler pointed out, most witnesses who suffer from injuries do not tell their physicians about the events that
+appear to have led to injuries and, if they do, they find that the physician does not believe them. Follow-up examinations
+are rare, and investigators usually collect little more than anecdotal data. Nevertheless, some patterns seem to emerge
+concerning the types of injury that are reported: it appears that burns (and/or sensation of heat) and eye problems are the
+most frequently reported forms of injury.
+
+The panel members were concerned with these accounts, since it appears that some events related to UFO reports may
+constitute a public health problem. However, the evidence is weakened by the fact that, in most cases, no unaffected and
+independent witness is present. The available evidence (that is admittedly sparse) seems to be indicative of microwave,
+infrared, visible, and ultraviolet radiation, although a few cases seem to point towards high doses of ionizing radiation
+such as X-rays or gamma rays. Most of the reported eye problems (sometimes long lasting) may be attributed to strong
+UV radiation. Superficial burns may be due to UV radiation, but deeper burns may be due to microwaves. It may be
+noted that injuries to vegetation (see Section 11), that include desiccation and "aging," also may be due in part to
+microwave radiation.
+
+Unfortunately, cases that involve injuries to animals and people are usually not well documented, and lack an adequate
+description of the injuries and of the follow-up investigations (if any). Research is also made difficult by the fact already
+mentioned that victims typically give no information to the attending physician and that, when they do, the physicians
+tend not to believe them. This does not help in the medical diagnosis and treatment. Some cases come to the attention of
+UFO investigators only years after the event. Nevertheless, it appears that the reported cases involve very uncommon
+injuries, that have probably been brought about by sources of intense radiation that are usually not accessible to the
+public.
+
+Schuessler's presentation included an account of the protocols developed by UFO medical experts for the investigation
+of such cases. The panel suggested that additional relevant tests include tests for radioactive contamination or intake, and
+also tests for possible chromosomal changes in the lymphocytes that might yield evidence of exposures to ionizing
+radiation. Investigators and physicians could employ some of the general procedures developed and published by the
+International Commission on Radiological Protection (ICRP), for responding to emergency and accidental exposures to
+ionizing radiations.
+
+For the well-being of victims, and for research purposes, it is important that victims receive treatment rapidly. For this to
+occur, it is necessary that doctors should be educated to immediately report cases of unusual injuries, such as those
+mentioned in this section, to an official organization. For research purposes, it is essential that there be strong witness
+testimony supplementary to that of the victims of the event. Furthermore, it would be helpful if an investigation protocol
+could be developed for this important category of cases that would guide the investigators as well as the examining
+physicians.
+
+For further information about physiological effects on witnesses, see Section 15.
+
+13. Analysis of Debris
+
+
+Vallee reviewed several cases in which material samples were reported to be associated with unexplained aerial events.
+Vallee specified four criteria that led to his selection: the documentation of witness testimony; the circumstances
+surrounding the recovery of the specimen; evidence linking the specimen to the reported object; and laboratory analysis
+of the samples.
+
+Vallee devoted most time to a case that occurred at Council Bluffs, Iowa, on December 17, 1977. Several residents of
+the town observed a bright flash at 7.45 p.m. The flash was followed by flames 8 to 10 feet high. When the witnesses
+reached the scene of the event, they found a large area of a dike at Big Lake Park, on the northern city limits, covered
+with a mass of molten metal that glowed red-orange and had ignited the grass.
+
+Police and firefighters reached the scene within minutes of the event. One law-enforcement officer described the molten
+mass as boiling and running down the edges of the levee over an area of about 4 to 6 feet in extent. The central part of
+the material remained warm to the touch for another two hours. There were 11 witnesses in all. Two of the eleven
+witnesses had observed a lighted object in the sky prior to the fall of the material.
+
+The sample recovered from the event was analyzed at Iowa State University and at the Griffin Pipe Products company. It
+was found that the metal was mainly iron with small amounts of alloying materials such as nickel and chromium. The
+analysts concluded that the material was similar to carbon steel. However, they eliminated the following four
+possibilities:
+
+a) An unknown person poured molten metal on the ground as a hoax;
+
+b) An unknown person created molten metal as a hoax by using thermite and ordinary metal;
+
+c) The material came from equipment from an aircraft; or
+
+d) The event was due to a meteoritic impact.
+
+The origin of the sample therefore remains unidentified.
+
+
+
+Vallee also discussed the following cases:
+
+Maury Island, Washington, June 21, 1947. Debris that was claimed to be associated with an aerial explosion appeared to
+be similar to debris from a Tacoma slag mill, leading the authorities to conclude that the case was probably a hoax.
+However, some aspects of the case have never been fully elucidated.
+
+Campinas, Brazil, December 14, 1954. An object, described as disk-like, was said to have wobbled and lost altitude and
+to have emitted a thin stream of silvery liquid that was subsequently determined to be tin.
+
+Vaddo Island, Sweden, November 11, 1956. Witnesses found a shiny "rock," hot to the touch, near the landing site of a
+strange object. The "rock" was found to be composed of tungsten carbide and cobalt.
+
+Vallee also gave brief mention of the following cases: Aurora, Texas, April 17, 1897; Washington, D. C., 1952;
+Ubatuba, Brazil, date on or before September 1957; Maumee, Ohio 1967; and an event that occurred in Bogota,
+Columbia either in 1975 or in 1976.
+
+The panel found that reports of unusual metallic residue following the observation of an unexplained aerial phenomenon
+are detailed enough for comparative studies to be undertaken. The Council Bluffs case is notable since the conditions of
+witness availability and reliability, on-site testimony from law-enforcement officers, and rapid analysis, appear to have
+been satisfied. Some of the other cases, such as the Bogota case and the Ubatuba case, are sufficiently intriguing to
+encourage investigators to expand their field investigations.
+
+None of the cases presented provide clear proof of a sample that is outside present scientific knowledge. Nevertheless,
+the panel encourages the search for further cases for which Vallee's four conditions are met, and urges that the associated
+material samples be subjected to careful analytical studies of elemental and isotopic compositions, etc.
+
+For further information about the analysis of debris, see Section 15.
+
+14. Recommendations Concerning Implementation
+
+P. A. STURROCK
+The purpose of this section is to summarize ideas of what might be done to implement the panel's suggestions that were
+presented in their Summary Report (Section 1). The panel's observations and recommendations may perhaps be
+summarized very briefly as follows: The UFO problem is not simple and should receive more attention, with an
+emphasis on physical evidence; regular contact between UFO investigators and the scientific community would be
+helpful, as also would institutional support; and the possibility of health risks associated with UFO events should not be
+ignored.
+
+The panel was greatly impressed by work reported from GEPAN/SEPRA, the French project originally GEPAN and
+now known as SEPRA (see Appendix 1), and there is no doubt that the best prospect for real advance in our
+understanding of the UFO problem would be the creation of similar projects in other countries, for the following
+reasons:
+
+1. Such a project could be mandated to obtain access to relevant data such as police records, radar records, etc.
+
+2. The project could organize and draw upon a network of laboratories and consultants.
+
+3. The project could set up and maintain a central database.
+
+4. The project could construct and operate one or more mobile "observatories" that would include a number of cameras
+and other detectors including, as a minimum, optical, infrared, spectroscopic, acoustic, magnetic and radiation
+instruments.
+
+5. New cases could be investigated from the outset purely on the basis of data collected by official channels and
+procedures.
+
+6. If there is indeed a health hazard associated with some events related to the UFO problem, some government office
+should offer a response to this hazard.
+
+
+Even the most speculative hypotheses could be evaluated by a well conceived and well supported project. For instance,
+an analysis of the isotopic composition of material specimens could provide evidence that a specimen is probably of
+extraterrestrial origin, and analysis of the spectra of stationary objects, if it were to yield evidence of red-shifts or
+blue-shifts corresponding to a fraction of the speed of light, could indicate that some extraordinary physical process is
+involved. However, material specimens are rare, and it would take special equipment (that does not now exist) to obtain
+high-resolution spectra of transient and unpredictable sources.
+
+We realize that not every country could duplicate GEPAN/SEPRA, since not every country has a national police force
+similar to the French gendarmerie. Furthermore, the creation of any such project would represent a political act that can
+be taken only by a national government for its own reasons or in response to public pressure.
+
+For these reasons, it is necessary to be realistic and look for more modest approaches that could be initiated without
+government action. It would appear that progress is most likely to come about through incremental changes in
+institutional support and incremental changes in level of interest, these changes occurring symbiotically. We therefore
+inquire into what small positive changes could be made by scientists and by private institutions such as societies,
+journals, universities and foundations.
+
+The most important change that could be made by scientists is to become curious. In view of the fact that modern UFO
+reports began in 1947, in view of the emergence of clear patterns in UFO reports (as was established some time ago by
+Poher [1973] among others), and in view of great public interest, it is remarkable that the scientific community has
+exhibited so little curiosity in the past.
+
+There is no doubt that this lack of curiosity is due in part to a lack of reliable and accessible information. When Sturrock
+carried out a survey of members of the American Astronomical Society in 1975, he asked if members would like to
+obtain more information about the UFO problem, and most respondents replied that they would (Sturrock, 1994; 1994b;
+1994c). Sturrock also asked whether members would like to acquire this information from lectures, symposia, books, or
+journal articles; most respondents wanted only journal articles. At that time, most editors of most scientific journals
+would not consider accepting an article on the UFO problem. Since that time, the Society for Scientific Exploration has
+been founded, and its journal is now in its 12th year of publication. However, the journal can be found in only a few
+university libraries. Hence the situation persists that it is not easy for scientists to obtain information about the UFO
+problem by the normal process of going to the library and looking up journal articles.
+
+Clearly, there is a need for a change in policy on the part of journal editors. The scientific community would become
+much better informed if the major multi-disciplinary scientific journals were to carry occasional review articles that
+could guide readers to the specialized journals where more detailed information could be found.
+
+Similarly, it would be very helpful if the major scientific societies were occasionally to include a review lecture or a
+review session containing several lectures devoted to the UFO problem. Specialized societies could also play an
+important role. For instance, a meteorological societycould review those meteorological phenomena that are most likely
+to be responsible for UFO reports.
+
+It is likely that more scientists at universities would take an interest in this problem if they felt that their activities would
+receive the same recognition and level of support as their more conventional research. Moreover, students would
+become better informed if there were occasional lectures or seminars on this subject. Investigators could help this
+process by developing resource material for such seminars.
+
+However, even without waiting for such a change in policy of journals, societies and universities, scientists could exhibit
+a great deal more curiosity than they do now. Of course, it must be professional curiosity if it is to lead to professional
+results. It is not enough for a scientist to occasionally pick up a tabloid at the supermarket check-out stand. To become at
+all knowledgeable about the subject, a scientist should read the Condon Report (Condon & Gillmor, 1969), the report of
+the UFO Subcommittee of the American Institute of Aeronautics and Astronautics (Kuettner et al., 1970) and its
+supporting articles (MacDonald, 1971; Thayer, 1971), and obtain as much information as possible about
+government-sponsored studies such as U. S. Air Force projects Sign, Grudge and Blue Book. [See, in particular, Blue
+Book Special Report No. 14 (ATIC 1955).] Jacobs (1975) remains an excellent introduction to the history of this topic.
+He or she would then be well advised to read some of the reports of GEPAN/SEPRA, the French official study group.
+(See Appendix 1.)
+
+Study of the material mentioned in the preceding paragraph may arouse sufficient interest that a scientist would wish to
+become involved in actual research. Unfortunately, it would be far more difficult for a scientist to plan effective research
+on the UFO problem than in his or her main research area. The scientist would therefore be well advised to collaborate
+with one or more investigators with experience in field work or some other aspect of UFO research. Such collaboration
+would be greatly facilitated if, as the panel recommended, there were "some form of formal regular contact between the
+UFO community and physical scientists." Such contact could help acquaint a broader spectrum of UFO investigators
+with the normal procedures, protocols and standards of scientific research.
+
+The proposed further contact could take the form of workshops similar to that held at Pocantico: such workshops could
+focus on some more limited as pect of physical evidence, or they could deal with quite different aspects of UFO
+research. The panel recognized the importance of "strong witness testimony," but of course physical scientists have no
+expertise relevant to that aspect of the problem; it might therefore be very helpful to hold a workshop dedicated to the
+collection and evaluation of witness testimony.
+
+In the absence of government funding for UFO research, foundations and corporations can play an important role. It is
+likely that significant progress would be made if funds were to be made available for the support of (a) further
+workshops similar to the Pocantico workshop, (b) a few research projects that might be identified during the workshops,
+and (c) one or more symposia at which the results of these research projects would be presented and discussed.
+
+The UFO problem is very complex and it is quite impossible to predict what might emerge from research into this area.
+But the same is true of any really innovative and exciting area of scientific research. As the panel remarked "Whenever
+there are unexplained observations, there is the possibility that scientists will learn something new by studying those
+observations." What is learned may bear no relation to the concepts that were entertained when the research was
+undertaken. We venture to hope that more scientists will take an interest in this curious subject so that there will be more
+progress in the second half century than there has been in the first half century. There could hardly be less.
+
+15. Web Site: Supporting Documentation
+
+
+The following documents may be found on the web site [http://www.jse.com].
+
+Section 3. Photographic Analysis
+
+Haines, R. F. (1987). Analysis of a UFO photograph. J. Scientific Exploration,1, 129.
+
+Haines, R. F., & Vallee, J. F. (1989). Photo analysis of an aerial disc over Costa Rica. J. Scientific Exploration, 3, 113.
+
+Haines, R. F., & Vallee, J. F. (1990). Photo analysis of an aerial disc over Costa Rica: New evidence. J. Scientific
+Exploration,4, 71.
+Section 4. Luminosity Estimates
+
+Vallee, J. F. (1998). Estimates of optical power output in six cases of unexplained aerial objects with defined luminosity
+characteristics. J. Scientific Exploration,12 (in press).
+
+Section 7. Vehicle Interference
+
+Rodeghier, M. (1981). UFO Reports Involving Vehicle Interference. Evanston, Illinois: Center for UFO Studies.
+Section 9. Apparent Gravitational and/or Inertial Effects
+
+Zeidman, J. (1979). A Helicopter-UFO Encounter over Ohio. Evanston, Illinois: Center for UFO Studies.
+
+Sections 10, 11. Ground Traces, Injuries to Vegetation
+
+Bounias, M. C. L. (1990). Biochemical traumatology as a potent tool for identifying actual stresses elicited by
+unidentified sources: Evidence for plant metabolic disorders in correlation with a UFO landing. J. Scientific Exploration,
+4, 1.
+
+Vallee, J. F. (1990). Return to Trans-en-Provence. J. Scientific Exploration,4, 19.
+
+Velasco, J-J. (1990). Report on the analysis of anomalous physical traces: The 1981 Trans-en-Provence case. J.
+Scientific Exploration, 4, 27.
+
+Section 12. Physiological Effects on Witnesses
+
+Schuessler, J. F. (1996). UFO-Related Human Physiological Effects. LaPorte, Texas: Geo Graphics Printing Co.
+
+Section 13. Analysis of Debris
+
+Vallee, J. F. (1998). Physical analyses in ten cases of unexplained aerial objects with material samples. J. Scientific
+Exploration, 12 (in press).
+
+Appendix 1.
+Offical UFO Investigations in France: the GEPAN/SEPRA Project
+F. LOUANGE AND J-J. VELASCO
+
+
+For more than 20 years, the French space agency has conducted a non-military but official investigation into UFO
+reports. In its first phase, the project was named GEPAN and its focus was primarily on UFO reports. Subsequently, the
+project was renamed SEPRA and was assigned a more general responsibility for studying all atmospheric reentry
+phenomena. In the body of the report, we have for convenience referred to the project as "GEPAN/SEPRA." This
+appendix gives a brief summary of the history, mission, operations and achievements of this project.
+
+The French space agency is known as CNES (Centre National d'Études Spatiales). It was founded in 1962 to conduct
+French space activities on a national basis and also in the context of the European Space Agency (ESA) or of other
+international collaborations. CNES currently has 2,500 employees. The CNES headquarters are in Paris but its technical
+center is in Toulouse.
+
+GEPAN (Groupe d'Études des Phénomènes Aérospatiaux Non-identifiés - Study Group for Unidentified Aerospace
+Phenomena) was established as a department of CNES in Toulouse in 1977. At that time, its head was Dr. Claude Poher,
+who had already performed statistical analyses of files containing several thousand observations worldwide (Poher,
+1973). CNES set up a scientific advisory board comprising astronomers, physicists, legal experts and other eminent
+citizens to monitor and guide GEPAN's activities.
+
+     The first tasks undertaken by GEPAN were:
+
+To establish data collection procedures in conjunction with the Air Force, civil aviation authorities, the Gendarmerie
+(French internal police), meteorological offices, the national police, etc.
+
+To conduct statistical analyses of eye-witness reports.
+
+To investigate previously reported cases.
+     These initial studies led to the following conclusions:
+
+
+Those events that remain unexplained after careful analysis are neither numerous nor frequent.
+
+The appearance of some reported phenomena cannot readily be interpreted in terms of conventional physical,
+psychological or psycho-social models.
+
+The existence of a physical component of these phenomena seems highly likely.
+
+
+
+Following these initial steps, GEPAN undertook to develop a more theoretical but rigorous approach to these studies. It
+was clear at the outset that it would be necessary to consider both the physical nature and the psychological nature of the
+phenomenon. In order to fully understand a witness's narrative account, it was necessary to consider not only the account
+but the psychology and personality of the witness, the physical environment in which the event occurred, and the
+witness's psycho-social environment.
+
+GEPAN negotiated agreements with the Gendarmerie Nationale, the Air Force, the Navy, the meteorological offices,
+police, etc. These negotiations led to procedures by which these organizations provided GEPAN with relevant reports,
+video tapes, films, etc., which were then processed and analyzed either by GEPAN or by associated laboratories.
+However, from 1979 on, GEPAN worked mainly with reports from the Gendarmerie since these reports proved to be
+best suited for GEPAN's purposes.
+
+GEPAN developed a classification system to reflect the level of difficulty in understanding the reports:
+
+
+Type A: The phenomenon is fully and unambiguously identified.
+
+Type B: The nature of the phenomenon has probably been identified but some doubt remains.
+
+Type C: The report cannot be analyzed since it lacks precision, so no opinion can be formed.
+
+Type D: The witness testimony is consistent and accurate but cannot be interpreted in terms of conventional phenomena.
+
+
+
+Reports of Type A and Type B were further subdivided into astronomical, aeronautical, space, miscellaneous, and
+identified. GEPAN carried out statistical analyses aimed at classifying cases according to sets of physical characteristics.
+
+     Two types of investigations were carried out on individual reports:
+
+
+Mini-investigations, that were applied to cases of limited significance; and
+
+Full investigations, that were applied to unexplained cases (Type D) in which effort was made to obtain as much
+information as possible, including gathering and analyzing physical and biological evidence.
+
+
+During the GEPAN phase, the project initiated several lines of research involving other laboratories and consultants.
+These were aimed at seeking a possible basis for modeling unexplained aspects of UFO reports, as well as seeking new
+techniques for the more active investigation of UFO events by the development of detection systems. These research
+topics included:
+
+
+Research on possible magnetohydrodynamic propulsion systems;
+
+Study of facilities to collect unexpected atmospheric phenomena on a worldwide basis, that led to the proposal of the
+Eurociel Project to develop a network of ground stations equipped with wide-angle observation systems and powerful
+real-time processing algorithms;
+Methodology for image analysis (photographs, videos, etc.); and
+
+Study of aeronautical cases, especially radar-visual cases.
+
+
+In 1988, GEPAN was replaced by SEPRA (Service d'Expertise des Phénomènes de Rentrées Atmosphériques -
+Atmospheric Re-entry Phenomena Expertise Department). M. J-J. Velasco, who had been a member of GEPAN since
+the very beginning, took charge of this new project that was then assigned a wider mission. This new project was called
+upon to investigate all re-entry phenomena including debris from satellites, launches, etc. However, the budget was
+drastically reduced so that research into UFO reports could not be maintained at the earlier level. Nevertheless, all
+existing official procedures concerning data collection have been maintained to ensure continuity in receiving reports.
+
+After 21 years of activity, the GEPAN/SEPRA files now contain about 3,000 UFO reports supplied by the Gendarmerie.
+About 100 of these reports were found to justify specific investigations. Of this number, only a few cases remain
+unexplained today.
+
+There have been attempts by SEPRA to increase the scope of the project at least to a European level, but this has not yet
+been successful. One of these attempts was the "Eurociel" project: the basic concept was to implement two sets of
+wide-angle optical detection stations, sited some tens of miles apart following a parallel of latitude, each station to be
+equipped with CCD-type cameras, with a minimum of one in the visible and one in the infrared. The output from these
+cameras would feed data into a microcomputer that triggers recording of the data when the computer determines that a
+change has suddenly occurred. The data from all these stations would be stored in a central facility to permit the
+calculation of trajectories. Such a system could detect lightning, meteors, unknown satellites, and other known or
+unknown phenomena.
+
+During the GEPAN phase, the project produced many reports and investigations and technical documents concerning
+topics related to the study of UFO events. These reports were made publicly available. These reports are no longer being
+disseminated, but some information can still be requested from CNES.
+
+Appendix 2.
+Procedures for Analysis of Photographic Evidence
+F. LOUANGE
+
+
+The Panel recommends that, given a new alleged UFO photograph, the decision to invest effort into its investigation
+should be taken only if both of the following conditions are fulfilled:
+
+a.the original documentation (negative, slide, videotape) is available, and
+b.there is at least one other independent source of information - either witness testimony or some other physical record.
+
+
+
+If, after visual examination, the displayed object has not been identified (planet, balloon, cloud, etc.), investigation
+should be performed in two steps:
+
+Step 1 consists of establishing or rejecting the authenticity of the photograph (or other record), taking into account
+evidence for unintentional false operation of equipment and various spurious phenomena that may affect the recording
+equipment. However, this concept of authenticity is at best relative, since in this area of investigation only negative
+conclusions may be considered as final, so that authenticity can never be demonstrated absolutely.
+
+Step 2, if warranted, consists of extracting as much information as possible from the photograph or other record, so as to
+obtain as much information as possible about the object of interest (size, shape, distance, albedo, emitted energy,
+spectrum, etc.).
+
+When the original film is available and analysis seems justified, all technical data concerning the site, viewing
+conditions, camera, film, processing, etc., must be collected. If the camera is available (in an ideal case still loaded with
+the original film), it must be used to perform the following calibrations:
+
+a.Photos of density patterns for relative photometry;
+b.Photos of sources calibrated in intensity, in various positions in the frame (for absolute photometry);
+c.Photos of spatial frequency patterns, to determine the modulation transfer function (MTF); and
+d.Photos taken at the same site as the original, eventually with models to simulate the object.
+The film should be processed under rigorously controlled conditions (if it has not already been processed commercially).
+If the camera is available but empty, the same operations should be conducted with a film of the same type as the
+original.
+
+The investigator should visit the original site and make measurements concerning the three-dimensional geometry of the
+observed landscape or this information should be extracted from detailed maps. If the photograph has been acquired at
+nighttime, an astronomical map of the sky at the time of acquisition will be necessary. The investigator should determine
+the meteorological conditions from the official offices or air bases in the neighborhood with particular attention to the
+horizontal visibility. The investigator should also take into account all quantified or quantifiable elements of the witness
+testimony including the estimated shape, angular size, velocity, color, etc.
+
+For analysis of the photograph, it is essential to work from the original negative. This should be carefully washed and
+examined under a microscope to look for possible tell-tale artifacts and scratches, and to check the regularity of the grain
+structure so as to detect multiple exposures. The negative should be analyzed by conventional photographic instruments
+(enlarger, projector, etc.), and the information on the negative should be digitized by a microdensitometer.
+
+Once digitized, the image may be analyzed by computer analysis, using the classical tools of contrast enhancement,
+noise suppression, contour detection, restoration, etc., and more specialized techniques such as maximum-entropy
+analysis that may be used to remove the effects of target motion and/or camera motion. Such analysis will assist in the
+detection of a possible hoax. For instance, a suspension thread may be brought into evidence through standard
+differential operations. Also, one may estimate the distance (hence the size) of the object through MTF computations,
+based on an analysis of atmospheric diffusion and contour blurring. If there are black areas on the object, it is possible to
+obtain estimates of the distance by comparing the luminance of such regions with other identified black parts of the
+scenery. If the object is nearer than the minimum depth of field, one should be able to detect geometrical distortions in
+the image. If the operator had a slight movement while taking the picture, analysis of the corresponding blur on the
+object and on other elements of the landscape may allow the calculation of a possible range for the distance of the
+object.
+
+In the case of a color photograph, one should carry out the above procedures in three steps using three appropriate color
+filters for scanning.
+
+If an event is recorded on a cine camera, each frame may be analyzed as above. However, it is now possible to obtain
+additional information by combining and comparing the sequence of images.
+
+In principle, images recorded by video cameras may be subjected to comparable analyses. However, video records
+suffer from one very important weakness: since the basic data is in electronic form, it could have been modified by the
+use of suitable electronic equipment, so that the authenticity of a video record will depend even more critically upon the
+credibility of the witness testimony.
+
+Appendix 3. Formation Flying
+V. R. ESHLEMAN
+
+A recurrent theme in certain UFO reports is the concept of an apparition that flies in formation with an aircraft-borne
+observer. Without making a judgment on any such reports, we could recommend that UFO investigators familiarize
+themselves with natural phenomena that display this "flying-in-formation" characteristic. Greenler (1980) is a useful
+resource, from which the attached list was made. The precise mechanisms for the origin of most of these phenomena
+have been determined and are explained in Greenler, but quite a few have still not been deciphered satisfactorily. Even
+an experienced observer might be surprised in seeing a particularly rare example. I have studied certain related
+phenomena in my research involving electromagnetic probing of planetary atmospheres, but was quite astonished a few
+years ago when I saw a particular example of the following list. A bright white light flew for minutes in perfect
+formation between my aircraft and the ground, with the air below and above apparently being transparently clear.
+
+Formation flying phenomena:
+
+Arcs: Kern, Lowitz, Wegener anthelic, Hastings anthelic, Tricken anthelic, Parry, alternate Parry, suncave Parry, sunvex
+Parry, upper tangent, lower tangent, supralateral, infralateral, circumzenithal, circumhorizontal, anthelic, subanthelic,
+contact.
+
+Halos: Hevel, 8 degree, 18 degree, 22 degree, 46 degree, circumscribed.
+
+Bows: fog, cloud, dew, supernumerary.
+
+Rainbows: primary and secondary; direct and reflected; raindrop and ice crystal; white, red, and red-to-blue.
+Pillars: sun, moon, city-light, anthelic.
+
+Rings or Circles: Bishop, Bottlinger, parhelic, subparhelic, coronal.
+
+Dogs: sun, moon, elongated, subsun.
+
+One should also consider:
+
+Nighttime: moon, Venus, Jupiter, bright stars, etc., gegenschein, zodiacal light, comet, in-cabin light reflected by
+window.
+
+Other forms: glory (specter of the Brocken), subsun, wet and dry heiligenschein, seven suns, lenticular and other distant
+small clouds, several different kinds of mirages.
+
+The phenomenon which was a special surprise to me is one in the final grouping, the subsun, due to particularly stably
+falling, flat, horizontal, hexagonal, ice crystals which were sufficiently few in number that the air appeared clear in every
+direction except the solar specular direction to the side of and below the airplane, where they efficiently mirrored the
+sun.
+
+Appendix 4. Electromagnetic-Wave Ducting
+V. R. ESHLEMAN
+
+It is possible that some of the radar cases presented to the panel have a natural explanation. It seems likely that some
+possible natural explanations could be investigated without cooperation or assistance from the controlling military
+authorities except for a time record of unidentified traces that occur during designated test periods.
+
+Some of the observations suggest that time-variable atmospheric ducting may on occasion result in echoes being
+obtained from distant ground locations as a result of refraction. Some of accounts described (a) groups or swarms of
+echoes that persist for some time in the same general location; (b) apparent trajectories of echo sources that exhibit
+sudden changes in the vertical and/or horizontal positions; and in particular (c) the tendency of apparent echo sources to
+concentrate over mountain tops. These are all characteristics to be expected of ducting conditions due to weather. These
+effects can come and go over long periods of time and they can also lead to scintillation or other changes over short time
+periods. (See, for instance, Hall & Barklay 1989.)
+
+An atmosphere is said to be "superrefractive" when a horizontal light or radio ray curves downward with a radius of
+curvature that is less than the distance to the center of the planet. The atmosphere of the planet Venus is at all times
+globally superrefractive below an altitude of about 30 kilometers. In principle, echoes could be obtained from every area
+of the spherical surface of Venus from a radar system located at any position on the surface. If the air of Venus were
+perfectly clear, an observer would see all areas of the surface, all areas repeating in range to indefinite distances. In the
+four giant planets also, the large gradients of refractivity (or density) in their atmospheres produce superrefractive
+conditions.
+
+The Earth's atmosphere is normally not superrefractive. However, common weather effects (in particular thermal
+inversions, where the air temperature increases with altitude, and/or the water-vapor content decreases with altitude) can
+and do produce regions of superrefraction that are localized geographically and in height. As a result, atmospheric ducts
+(channels that trap and conduct radar waves) can form that carry the signals far beyond the normal horizon. Such ducts
+can bend rays down to a distant surface area or, more easily, to a distant mountain top. Backscattering of the radar
+energy from the ground or from discrete objects on the ground then results in echoes that appear to the radar to be due to
+a target that is far away and (if the angle of elevation of the returning energy is measured) high in the atmosphere. A
+similar transient ducting of sound can produce the experience of hearing the whistle of only one particular train out of
+the many that originate at difference times from a busy track in the next valley.
+
+As is well known, atmospheric ducting is the explanation for certain optical mirages, and in particular the arctic illusion
+called "fata morgana" where distant ocean or surface ice, which is essentially flat, appears to the viewer in the form of
+vertical columns and spires, or "castles in the air."
+
+People often assume that mirages occur only rarely. This may be true of optical mirages, but conditions for radar
+mirages are more common, due to the role played by water vapor which strongly affects the atmospheric refractivity in
+relation to radio waves. Since clouds are closely associated with high levels of water vapor, optical mirages due to water
+vapor are often rendered undetectable by the accompanying opaque cloud. On the other hand, radar propagation is
+essentially unaffected by the water droplets of the cloud so that changes in water vapor content with altitude are very
+effective in producing atmospheric ducting and radar mirages.
+With regard to "impossible" flight paths that may appear to be indicated by some of the echoes obtained by military
+radars, it is important to note that the records presented to the panel are based on measured time delays and measured
+elevation and azimuth angles-of-arrival of the reflected energy from the echoing object. As presented, certain target
+positions were plotted as height versus time. But height is computed from two parameters: (1) the measured time delay,
+which is a very good indication of range; and (2) the measured vertical angle of arrival, which may not be a valid
+representation of the vertical direction to the target. In particular, when ducting occurs, reflections from distant and
+distinct surface targets (buildings, bridges, trucks, etc.) may be received at elevation angles of several degrees, so that a
+ground target at a range of 100 kilometers, for example, would appear to represent an object at a height of several
+kilometers. Atmospheric turbulence would distort the duct and could cause sudden changes in angle of perhaps a few
+tenths of a degree, which would be interpreted as a sudden change in altitude of the order of half a kilometer. The
+horizontal angle of arrival would also be affected by turbulence, adding to the chaotic character of the apparent flight
+path.
+
+Ducting to and from distant mountain tops requires less refractive bending than echoes to and from lower surface areas,
+and should therefore be more common. This may explain the concentration of apparent targets over mountains. A test of
+this hypothesis would be to place a radio receiver, tuned to the radar frequency, on or near the top of a mountain
+associated with unidentified targets. It should be connected to an antenna that has its unobstructed receiving lobe
+centered in the azimuthal direction of the radar and its vertical pattern extending from zero to at least several degrees in
+elevation. If ducting does in fact occur, the occurrence of unidentified radar echoes would be found to be correlated with
+major increases in the strengths of the radar signals measured by this receiver.
+
+Appendix 5. Sprites
+V. R. ESHLEMAN
+
+
+One of the optical displays reported by E. Strand may be of special significance as a tentative bridge across the wide gulf
+that exists between the UFO and scientific communities.
+
+Two women reported an unusual, colored, intermittent light display that slowly moved over two hours of observation
+made from a remote cabin in Norway in the post-midnight hours of August 3, 1991. The sky was clear until the end of
+the observation period, when a few clouds moved in. The key point about this display is that while there was no local
+thunderstorm activity, there was an electrical storm in the direction of the display, but the storm was 120 kilometers
+away. For decades, it has been conventional scientific wisdom that all of the visible electrical activity of such storms is
+within and below the clouds, that in this case would have been below the observers' horizon.
+
+Recent developments in the observations and theory of electrical activity in the high atmosphere (mesosphere and low
+ionosphere) demonstrate that this conventional wisdom is in error (see, for instance, Pasko et al., 1996; Sentman &
+Wescott, 1995). Some of the reports of observations in the Hessdalen area could be related to phenomena that occur
+above storms, up to an altitude of nearly 100 kilometers, well above the observers' horizon. This electrical activity goes
+by the names of "blue jets," " red sprites," and "short-lived elves." There have in fact been sporadic reports of these
+phenomena decades ago, but these reports were dismissed by the "experts." Now these events have been captured on
+film and video.
+
+This example can serve to remind us of the continual development and change that occurs in all fields of scientific
+knowledge, and of the potential advantages of open communication between the purported experts and interested
+amateur observers.
+
+Appendix 6. SETI and UFO Investigations Compared
+V. R. ESHLEMAN
+
+
+My perception is that the SETI (Search for Extraterrestrial Intelligence) and UFO studies of a decade ago shared
+positions beyond the pale of "respectable" science. They no doubt still do in the view of many scientists. However there
+have been several fundamental advances during the past few years that indirectly provide some increase in plausibility
+for both areas, and the SETI community seems to be responding with renewed vigor. It may be useful for our panel to
+consider some UFO-SETI comparisons, and the different cultures of their respective participants. These are my personal
+and incomplete thoughts on this subject.
+
+There have been recent advances concerning the question of the possible existence and state of extraterrestrial life
+(ETL). Knowledge that there is such life would increase the presumptive probability of extraterrestrial intelligent life
+(ETIL). SETI investigators search for the latter mainly by examining the radio spectrum for telltale electromagnetic
+signals that may be purposely sent or inadvertently leaked from a technological society. UFO investigators may invoke
+visitation by ETIL as a fallback or default explanation of an apparition or event which they believe cannot be explained
+any other way. There are huge gaps in our knowledge that must be filled in before we can pretend to understand either of
+these subjects.
+
+With regard to the first question, the existence and possible abode of ETL, three major recent developments are of
+particular note:
+
+
+1. It is only in the last few years that we have finally obtained direct evidence of the existence a planetary-sized body
+orbiting a star other than our Sun. We now have evidence for several (of order of 10), and more are being discovered as
+the Doppler observational technique is being improved. There are billions of stars in our galaxy alone, and these results
+suggest that stars may quite generally be accompanied by planets. One may expect that conditions on these planets
+would vary over a wide range, at least as wide as the range covered by the planets of our solar system. (See, for instance,
+Cosmovici et al.,1997.)
+
+2. Life that is fundamentally different from nearly all near-surface life on Earth has been found deep in terrestrial rock
+and in the deep ocean, where it exists under conditions long assumed to be so hostile as to be sterile. It would appear that
+near-surface and subterranean life forms are essentially independent and that either could exist without the other. It is
+also possible that life started several different times on Earth after epochs of total extinction caused by asteroidal and
+cometary impacts. These new findings suggest that life might have started independently at two levels on Earth, or that
+life can adapt to extraordinarily different environments. The development of life, under conditions that are thought to be
+favorable and under conditions that we previously thought to be unfavorable, may be the rule rather than the exception
+for the innumerable planets that probably exist in our galaxy. (See, for instance, Cosmovici et al.,1997.)
+
+3. A meteorite found in Antarctica and known to have come from Mars (from isotopic "fingerprinting" of its elements)
+has several detailed internal characteristics (structural, chemical, and elemental) that may, it is claimed, be attributed to
+effects of ancient microscopic life indigenous to Mars. (McKay et al.,1996). This interpretation is controversial and
+research on this and other meteorites is continuing.
+
+These subjects are currently being investigated widely and were featured among the many areas discussed at an
+international meeting in July 1996 held in Capri, Italy, on the subject of Astronomical and Biochemical Origins and the
+Search for Life in the Universe (Cosmovici et al.,1997). About 200 astronomers, biologists, chemists, physicists, and
+other scientists from 27 countries met for this Fifth International Conference on Bioastronomy and Colloquium No. 161
+of the International Astronomical Union. This meeting was supported by international and national scientific
+organizations including the International Astronomical Union, the International Scientific Radio Union, the National
+Aeronautical and Space Administration, the European Space Agency, the Consiglio Nazionale delle Richerche, and
+other Italian organizations; clearly, this was a mainstream scientific meeting. The SETI community was very visibly
+represented in all aspects of the conference, but the problem posed by UFO reports was never mentioned.
+
+However, the UFO and SETI communities share defining attributes including a surfeit of putative evidence that remains
+unidentified, and the lack of a single example that can be unequivocally verified, repeated, understood, or captured. That
+is, both are subject areas of investigation that totally lack identified objects. Then why is one moving into the
+mainstream of acceptable science while the other is not?
+
+It may not be generally realized that the several different groups of SETI observers have received and tabulated an
+appreciable number of URS, or unidentified radio signals, in the course of listening to billions of radio channels for
+hundreds of thousands of hours, looking in tens of thousands of directions. They measure signals that are noise and
+signals that range up to many times stronger than can be explained in terms of natural noise. They identify nearly all of
+the strong signals as coming from radio and TV stations, from military radars and various kinds of communications
+systems, from satellites and deep space probes launched by various national and international organizations, and from
+many kinds of equipment that leak electromagnetic energy over broad spectral bands. After very thoughtful and vigorous
+winnowing, there has been a residual number of strong signals received by every group that are, and will no doubt
+remain, unidentified. But these are not described and released to the media as something unusual or mysterious. This is
+because they could not be verified by other observers or by repeat observations at the same frequency and in the same
+direction in the sky. Improved techniques and protocols are being developed to markedly reduce the frequency of URS
+(even to the point where there may be concern that a real ETI signal could be discarded). Nevertheless, it is to be
+expected that continuing URS will persist in the SETI endeavor, and will remain unidentified and undiscussed.
+
+The SETI participants include a large fraction of scientifically trained radio astronomers, and they employ complex and
+expensive equipment that includes the largest antennas and most sensitive electronic and digital systems in the world.
+The UFO community is much broader and diverse, and cannot bring to bear the instrumental firepower that is routine in
+SETI research. In fact, no equipment is involved in most UFO case studies. The nature of UFO phenomena is such that
+it would be unreasonable to demand repeat observations of the same kind of incident and independent confirmation of
+events by different observers.
+
+However, the status of UFO studies may be improved if we can find a way to move in a direction where independent
+confirmation and repeatability could be realized and become routine. Where some level of repeatability exists but
+explanations are incomplete (e.g., in the Hessdalen project), more investigative resources are clearly required. Open
+channels of communication between UFO investigators and a broader scientific group may lead to natural explanations
+of many observations and thereby winnow the numerous reports to a few notable examples to which intense cooperative
+efforts could be applied.
+
+Appendix 7. Further Thoughts on SETI and UFO Investigations
+F. LOUANGE
+
+
+The SETI and UFO problems may or may not be related to each other. As there does not so far exist any proof
+concerning this question, it seems wise to keep those two problems apart and not to confuse them. The questions raised
+by the UFO and SETI problems are not at all comparable, and the strategies for their research are drastically different.
+The SETI problem corresponds to a one-bit theoretical question: does there exist, elsewhere in the universe, any form of
+intelligence that has reached the technological level of transmitting intelligent electromagnetic signals that humans could
+detect and identify? Although this question is undoubtedly exciting and justified by existing probabilistic computations
+about the existence of planets, the appearance of life, the duration of a civilization, etc., the final answer is theoretically
+Yes or No. However, only a Yes answer will be final, since a No answer may be revised in view of technical
+improvements of detection techniques.
+
+The UFO problem arises from the verified existence of a very large and coherent set of testimonies worldwide. Its
+approach is bound to be in three steps:
+
+
+
+Step 1. Try by all means to identify the stimulus that has led to the report: the report may be due to inadequate
+information, misinterpretation of a familiar phenomenon or device, an unusual astronomical or atmospheric
+phenomenon, an unusual technological device, or a hoax (perpetrated by the reporter or on the reporter).
+
+Step 2. If Step 1 has not yielded an explanation of the report, try to characterize the event that led to the report and
+compare it with other case descriptions.
+
+Step 3. For any case that is strong in testimony and rich in detail, one should try to define a model. In this activity, we
+are clearly not dealing with a simple question with a Yes /No (one-bit) answer. Different cases require analyses with
+different levels of complexity.
+
+The SETI and UFO problems also involve different approaches. Scientists may pursue the SETI project and remain in a
+very familiar environment: the relevant technological area is clearly identified and one may follow a predefined strategy
+by specifying the frequency search band, the required receiver sensitivity, the intrinsic properties of an intelligent signal,
+etc. On the other hand, research on the UFO problem is necessarily complex, multidisciplinary, unpredictable and must
+be expected to evolve as research progresses. The basic detection is usually carried out by unprepared human beings,
+and analysis may call upon a wide range of disciplines including human perception, psychology, astronomy, image
+processing, physics, chemistry, etc. Moreover, effective research in this field must be conducted with an open mind.
+
+Although in public opinion the UFO and SETI projects are closely associated, they should be kept clearly separated as
+far as serious research is concerned. The questions being addressed are quite different in nature: the SETI project aims at
+a simple Yes/No answer to the question of the existence of extraterrestrial intelligence, whereas research into the UFO
+project must be pursued with a completely open mind as to the questions that need to be posed and answered. Moreover,
+the respective technical strategies have nothing in common: SETI research is carried out primarily within the established
+framework of radio astronomy, whereas UFO research is necessarily multidisciplinary and innovative.
+
+Appendix 8. Scientific Inference
+P. A. STURROCK
+
+
+In attempting to resolve a complex problem such as that posed by UFO reports, one is very much in the "gray area" of
+scientific research that is not well defined: the facts are to some extent shaky; some of the hypotheses are speculative;
+and it is not clear how to evaluate the hypotheses on the basis of the facts and of other relevant information.
+Furthermore, one has the difficulty of relating the analysis of individual reports ("Is this report due to a hoax?") to the
+global questions represented by the hypotheses ("Are some reports due to hoaxes?"). In such a situation, it is essential to
+have some way to organize one's analysis of whatever research is being conducted. Scientific inference is the intellectual
+basis of science, and the procedures of scientific inference offer a framework for organizing such analyses. (See, for
+instance, Good, 1950; Jeffreys, 1973.)
+
+The formalism of scientific inference involves expressing all judgments in terms of probabilities. Where there are
+definite rules for deriving probabilities from the evidence, these rules can be used; otherwise, the probabilities may be
+regarded as subjective. If each judgment is made by several investigators, this can provide both a mean or consensus
+estimate and a measure of the degree of uncertainty of that estimate. For a recent exposition of this formalism, see for
+instance Sturrock (1994d).
+
+In investigating any specific case, it is necessary to work with a complete and mutually exclusive set of hypotheses. The
+following set of 8 hypotheses was used in Sturrock's survey of the members of the American Astronomical Society
+(Sturrock, 1994a; 1994b; 1994c):
+
+a. Hoax,
+b. Some well established phenomenon or device,
+c. Some well established but unfamiliar natural phenomenon,
+d. Some unfamiliar terrestrial technological device,
+e. Some hitherto unknown natural phenomenon,
+f. A technological device not of terrestrial origin,
+g. Some other cause which [the investigator] can specify, and
+h. Some other cause which [the investigator] cannot specify.
+
+An investigator may begin by assigning "prior probabilities" to these hypotheses, although this is not essential. If so,
+each value must be greater than zero and less than unity, and they must sum to unity. Once these prior probabilities have
+been assigned, the investigator should then forget about his prejudices. Bayes' theorem then provides a mechanism for
+updating one's assessment of probabilities on the basis of new evidence. The new evidence may be a single case or an
+analysis of a catalog of cases. When measurements are made in terms of "log-odds" defined by log[(p/(1 - p)] rather than
+the probability pitself, it turns out that investigators with very different prejudices should assign the same weight of
+evidence, measured by the change in log-odds, to the same experimental or observational data. Hence, although they
+may differ in their prejudices, they should be able to agree in their assessments of the evidence.
+
+It is even more convenient to work in terms of the quantity 10*log[p/(1-p)], since one may then use the familiar
+engineering term "db" or "decibel" to represent an assessment. For instance, if one begins with the assessment that the
+probability of an event being due to an extraterrestrial vehicle is 10-6, one could rephrase that as saying "my assessment
+is -60 db." If a certain research program made that proposition even more unlikely by, say, 10 db, one would then lower
+that assessment to -70 db. If, on the other hand, the evidence seemed to support that hypothesis with weight 10 db, the
+resulting assessment would be -50 db. If six separate and completely independent studies were each to yield evidence of
+10 db, the investigator would end up with an assessment of 0 db, which represents even odds of the proposition being
+true. That is, the evidence would have been just sufficient to change the mind of the investigator from being highly
+skeptical about the hypothesis to considering it just as likely to be true as not true.
+
+It is highly unlikely that any research project that is in operation for only one or two years will solve the UFO problem.
+However, it could and should provide useful relevant evidence, and that evidence should lead to a measurable change in
+the assessments of an interested scientist. In an area such as that of UFO research, that is all that can be expected. On the
+other hand, several research projects, each lasting a reasonable length of time, should provide sufficient evidence that an
+hypothesis may be effectively definitely established or definitely rejected.
+
+If these suggestions are considered to have merit, they could be developed into a more specific and more useful form by
+means of a workshop that brings together UFO investigators, professional investigators (of accidents, failures, etc.),
+physical scientists, and statisticians.
+
+References
+
+
+ATIC (1955).       Project Blue Book. Special Report No. 14: Analysis of Reports of Unidentified Aerial Phenomena.
+                   Air Technical Intelligence Center, Wright-Patterson Air Force Base, Ohio, Project No. 10073.
+
+Bounias, M. C. L. (1990). Biochemical traumatology as a potent tool for identifying actual stresses elicited by
+                          unidentified sources: evidence for plant metabolic disorders in correlation with a UFO
+                          landing. Journal of Scientific Exploration, 4, 1.
+
+Condon, E. U., & Gillmor, D. S. (1969).         Scientific Study of Unidentified Flying Objects. New York: Bantam
+                                                Press.
+
+Cosmovici, C., Bowyer, S., and Werthimer, D. (Eds). (1997).       IAU Colloquium 161, Proceedings of the 5th
+                                                                  International Conference on Bioastronomy, July 1-5,
+                                                                  1996. Capri: Editrice Compositori.
+
+GEPAN (1976). GEPAN Case No. 76305443.
+
+Good, I. J. (1950). Probability and the Weighing of Evidence. London: Griffin Press.
+
+Greenler, R. (1980). Rainbows, Halos, and Glories. Cambridge University Press.
+
+Haines, R. F. (1979).       A review of relected sightings from aircraft 1973 to 1978. Proc. 1979, MUFON UFO
+                            Symposium. San Francisco, Calif., July, 114.
+
+Haines, R. F. (1979).       A review of selected aerial phenomenon sightings from aircraft from 1942 to 1952. Proc.
+                            1983 MUFON UFO Symposium. Pasadena, Calif., July , 14.
+
+Haines, R. F. (1987).       Analysis of a UFO photograph. Journal of Scientific Exploration, 1, 129.
+
+Haines, R. F. (1992).       Fifty-six aircraft pilot sightings involving electromagnetic effects. Proc. 1992 MUFON UFO
+                            Symposium. Albuquerque, New Mexico, July, 102.
+
+Hall, M. P. M., & Barklay, L. W. (Eds.) (1989). Radiowave Propagation.London: Peter Peregrinus Ltd..
+
+Jacobs, D. M. (1975). The UFO Controversy in America. Indiana University Press.
+
+Jeffreys, H. (1973). Scientific Inference 3rd edition; Cambridge University Press.
+
+Kuettner, J. P., et al.(1970). UFO. An appraisal of the problem. A statement by the UFO Subcommittee of the AIAA.
+                                      Astronautics and Aeronautics, 8, 11, 49.
+
+Ludwiger, I. von (1983). MUFON-CES-Bericht Nr. 9 (Mutual UFO Network-Central European Section).
+
+Maccabee, B. (1996). Private communication to J. F. Vallee.
+
+MacDonald, J. E. (1971). UFO encounter I. Sample case selected by the UFO subcommittee of the AIAA.
+                         Lakenheath, England: Radar-visual case, August 13-14, 1956. Astronautics and Aeronautics,
+                         9, No. 7, 66.
+
+McKay, D. S., et al. (1996).          Search for a past life on Mars: Possible relic biogenic activity in Martian meteorite
+                                      ALH 84001. Science, 237, 924.
+
+Pasko, V. P., Inan, U. S., and Bell, T. F. (1996).      Sprites as luminous columns of ionization produced by qua-
+                                                        si-electrostatic thundercloud fields. Geophys. Res. Lett., 23, 649.
+Perry, T. S., & Geppert, L. (1997). Do portable electronics endanger flight? Part I, Air Line Pilot August, 20.
+
+Phillips, T. (1975). Physical Traces Associated with UFO Sightings. Evanston, Illinois: Center for UFO Studies.
+
+Poher, C. (1973). Études statistiques portant sur 1000 témoignages d'observations d'UFO. GEPAN Report. CNES:
+                  Toulouse, France.
+
+Randles, J., & Warrington, P. (1979). UFOs: A British Viewpoint. London: Robert Hale.
+
+Powell, J. (1981). Aircraft Radio Systems. London: Pitman.
+
+Rodeghier. M. (1981). UFO Reports Involving Vehicle Interference. Evanston, Illinois: Center for UFO Studies.
+
+Schuessler, J. F. (1981). Cash-Landrum radiation case. MUFON UFO Journal, No. 165 November, 3.
+
+Schuessler, J. F. (1988).   Medical injuries resulting from a UFO encounter. Proc. Second CUFOS Conference.
+                            Chicago, Illinois, September 25-27, 1981. Ed. M. Hynek; Chicago, Illinois: CUFOS, 59.
+Schuessler, J. F. (1996). UFO-Related Human Physiological Effects. LaPorte, Texas: Geo Graphics Printing Co.
+
+Schuessler, J. F. (1998). The Cash-Landrum Incident. LaPorte, Texas: Geo Graphics Printing Co.
+
+Sentman, D. D., & Wescott, E. M. (1995).       Red sprites and blue jets: thunderstorm excited optical emissions in the
+                                               stratosphere, mesosphere and ionosphere. Phys. Plasmas,2, 254.
+
+SOBEPS (1991). Vague d'OVNI sur la Belgique SOBEPS asbi, 74 Avenue Paul Janson, Bruxelles.
+
+Sturrock, P. A. (1994a).    Report on a survey of the membership of the American Astronomical Society Concerning
+                            the UFO problem: Part 1. Journal of Scientific Exploration, 8, 1.
+
+Sturrock, P. A. (1994b).    Report on a survey of the membership of the American Astronomical Society Concerning
+                            the UFO Problem: Part 2. Journal of Scientific Exploration, 8, 153.
+
+Sturrock, P. A. (1994c).    Report on a survey of the membership of the American Astronomical Society Concerning
+                            the UFO Problem: Part 3. Journal of Scientific Exploration, 8, 309.
+
+Sturrock, P. A. (1994d). Applied scientific inference. Journal of Scientific Exploration, 8, 491.
+
+Thayer, G. D. (1971).       UFO encounter II. Sample case selected by the UFO subcommittee of the AIAA. L-
+                            akenheath, England, Radar-Visual Case, August 13-14, 1956. Astronautics and Aeronautics,
+                            9, No. 9, 60.
+
+Vallee, J. F. (1990). Return to Trans-en-Provence. J. Scientific Exploration, 4, 19.
+
+Velasco, J-J. (1990).       Report on the analysis of anomalous physical traces: The 1981 Trans-en-Provence case. J.
+                            Scientific Exploration,4, 27.
+
+Weinstein, D. (1997).       UFO/Aircraft Encounters: Military, Airliner, Private Pilots UFO Sightings 1942 to 1996
+                            (privately published).
+
+Zeidman, J. (1979). A Helicopter-UFO Encounter over Ohio. Report of the Center for UFO Studies. Chicago, Illinois.
+
+Zeidman, J. (1988). Green light over Mansfield. International UFO Reporter. Nov./Dec., 13.
+
+Ziman, J. M. (1968). Public Knowledge: An Essay Concerning the Social Dimension of Science. Cambridge University
+Press.
+

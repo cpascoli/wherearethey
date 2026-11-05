@@ -12,9 +12,12 @@ links:
   - label: Wikipedia — Ariel School UFO incident
     url: https://en.wikipedia.org/wiki/Ariel_School_UFO_incident
 facts:
-  - text: Visited Ariel School on September 19, 1994, three days after the sighting, and filmed interviews with the children for the BBC. These were among the earliest recorded accounts.
+  - text: "The BBC footage from Ariel School, very likely his, carries the on-screen dateline 19 September 1994, three days after the sighting; its interviews with the children are among the earliest recorded accounts."
+    status: documented
+    source: v-ariel-1994-bbc-report@0:18
+  - text: "The researcher Gideon Reid writes that Leach, at Cynthia Hind's request, faxed John Mack's research programme at Harvard about the Zimbabwe reports, which led to Mack's visit in November 1994."
     status: claimed
-    source: https://en.wikipedia.org/wiki/Ariel_School_UFO_incident
+    source: https://www.skeptic.org.uk/2026/07/the-seemingly-impossible-task-of-getting-access-to-the-ariel-ufos-impossible-archive/
   - text: Appears in the documentary Ariel Phenomenon (2022), credited as former head of the Foreign Correspondents' Association in Zimbabwe. The film presents his reporting on the case as having put his career at risk.
     status: documented
     source: https://www.imdb.com/title/tt20216382/

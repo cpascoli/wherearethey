@@ -38,6 +38,13 @@ moments:
   - t: "19:58"
     text: "Astronomer Jean-Claude Ribes of the French national space agency (CNES) speaks for GEIPAN, France's official UAP investigation office."
     speaker: jean-claude-ribes
+  - t: "24:16"
+    claims: [ tehran-1976-object ]
+    stance: context
+    basis: first-hand
+    text: "Jafari: at about 11 p.m. on 18 September 1976 residents were frightened by an object circling low over Tehran, like a star but bigger and brighter; they reported it to the tower, the controller saw it too and alerted the Air Force command post, and “Deputy General” Yousefi decided to scramble an F-4."
+    speaker: parviz-jafari
+    refs: [ inc-tehran-1976, ev-npc-2007 ]
   - t: "25:45"
     claims: [ tehran-1976-object ]
     basis: first-hand
@@ -54,6 +61,10 @@ moments:
     text: "Jafari: one object landed in an open area, radiating light bright enough to see the sand."
     speaker: parviz-jafari
     refs: [ inc-tehran-1976, doc-dia-tehran-1976 ]
+  - t: "27:20"
+    text: "Jafari: at his interview at headquarters after the incident an American officer took notes, but afterwards he could not find him to talk to."
+    speaker: parviz-jafari
+    refs: [ inc-tehran-1976 ]
   - t: "27:45"
     text: "Jafari notes that a DIA assessment released under FOIA documented the event in detail and called it “a classic” case."
     speaker: parviz-jafari

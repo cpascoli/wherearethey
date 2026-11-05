@@ -1,5 +1,5 @@
 ---
-name: "U.S. Defense Attaché / DIA report: UFO sighting in Iran, 19 September 1976 (NSA-released reproduction)"
+name: "U.S. Defense Attaché / DIA report: UFO sighting in Iran, 19 September 1976 (IUR reproduction, NSA release)"
 aka:
   - DIA Tehran report
 date: 1976-09
@@ -12,8 +12,9 @@ links:
 rel:
   - [ documents, inc-tehran-1976 ]
   - [ produced by, dia ]
+  - [ quotes, doc-dia-tehran-1976-cable, "reproduces the text of the U.S. Defense Attaché report" ]
 facts:
-  - text: An article released by the NSA that reproduces the text of the U.S. Defense Attaché report on the Tehran incident. It describes the two F-4 intercepts, the loss of instruments, weapons and communications, and the smaller objects separating from the main one. The original DIA routing slip and cable are on the NSA site (see links).
+  - text: "A page of the International UFO Reporter (IUR), released by the NSA, that reproduces the text of the U.S. Defense Attaché report on the Tehran incident, obtained by Charles Huffer under the FOIA. It describes the two F-4 intercepts, the loss of instruments, weapons and communications, and the smaller objects separating from the main one. It leaves out the name of the officer who ordered the scramble. The original cable, with the DIA routing slip and evaluation, is on file as doc-dia-tehran-1976-cable."
     status: documented
     source: library/docs/doc-dia-tehran-1976.pdf
   - text: "At the 2007 National Press Club panel Parviz Jafari, who as squadron commander flew the second F-4, said he locked on with radar at 25 miles, that the return was comparable to a 707 tanker, and that the object flashed red, green, orange and blue."
@@ -30,10 +31,10 @@ facts:
     basis: first-hand
 ---
 
-This NSA-released article reproduces the U.S. Defense Attaché report, circulated by the Defense Intelligence Agency, on the night of 19 September 1976 over Tehran. It records that after residents phoned in reports of a bright object, the Imperial Iranian Air Force sent two F-4 Phantoms to intercept it.
+This page of the International UFO Reporter, released by the NSA, reproduces the U.S. Defense Attaché report, circulated by the Defense Intelligence Agency, on the night of 19 September 1976 over Tehran. It records that after residents phoned in reports of a bright object, the Imperial Iranian Air Force sent two F-4 Phantoms to intercept it.
 
 The first jet lost its instruments and UHF and intercom communications as it closed in, and regained them when it turned away. The second tracked the object on radar; as its crew prepared to fire a missile, their weapons control panel and communications failed, and they reported smaller objects separating from the main one, one of which appeared to descend to the ground. The report describes the object's flashing coloured lights and its apparent speed.
 
-The report was distributed to the Joint Chiefs of Staff, the National Security Council, the White House and the CIA, and its evaluation rated it an outstanding case. Sceptics attribute the light to Jupiter and the failures to equipment faults.
+The magazine lists the offices that received the cable, among them the Secretary of State, the CIA, the White House, the Defense Intelligence Agency and the service chiefs. The original cable, with the DIA routing slip and the DIA evaluation form, is filed separately (doc-dia-tehran-1976-cable). Sceptics attribute the light to Jupiter and the failures to equipment faults.
 
-*Sources: NSA-released reproduction of the attaché report*
+*Sources: IUR reproduction of the attaché report (NSA release) · USDAO Tehran cable and DIA evaluation (NSA release)*

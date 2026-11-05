@@ -10,6 +10,7 @@ rel:
   - [ features, aj-gevaerd ]
   - [ features, anthony-choy ]
   - [ features, oscar-santa-maria ]
+  - [ features, ariel-sanchez-rios ]
 moments:
   - t: "8:41"
     text: "A. J. Gevaerd says Operação Prato began because people around Colares could not leave and “over a thousand people were attacked” by lights during that period, so community leaders asked the state of Pará for help."
@@ -74,8 +75,9 @@ moments:
   - t: "1:01:55"
     text: "Antonio Huneeus on the 1978 object that fell on the Bolivia–Argentina border: FOIA files include “a telex from secretary of state cyrus vance” and a Project Moon Dust visit by defense attaché officers from La Paz."
     speaker: antonio-huneeus
-  - t: "1:28:14"
-    text: "Col. Ariel Sánchez says that in 1993 small luminous spheres in Uruguay left marks whose soil, in laboratory tests, showed a loss of “phosphorus zinc” and other elements."
+  - t: "1:27:46"
+    text: "Col. Ariel Sánchez says that in 1993 small luminous spheres in Uruguay left marks whose soil, in laboratory tests, showed a loss of “phosphorus zinc”."
+    speaker: ariel-sanchez-rios
   - t: "1:40:18"
     text: "Alejandro Chionetti recalls that “in 1968 the president of argentina general longania” (Onganía) said he believed in flying saucers."
 ---
