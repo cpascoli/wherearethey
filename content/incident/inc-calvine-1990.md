@@ -4,6 +4,8 @@ aka: [Calvine UFO, Calvine sighting, Calvine photo, Pitlochry UFO]
 date: 1990-08-04
 place: { name: "Moors above Calvine, Perthshire, Scotland", lat: 56.7697, lng: -3.9565 }
 tags: [photo, international, military, secrecy]
+image: /assets/images/inc-calvine-1990-photo.jpg
+image_caption: "The Calvine photograph: the print Craig Lindsay kept from 1990, with the diamond-shaped object and the jet the MoD identified as a Harrier. Photographer unknown; scan published by David Clarke in 2022 with the permission of Sheffield Hallam University and Craig Lindsay."
 rel:
   - [ handled by, craig-lindsay ]
   - [ investigated by, david-clarke ]
