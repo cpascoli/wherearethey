@@ -4,7 +4,7 @@ aka: [Skywatcher Technologies, skywatcher.ai]
 match: [Sky Watcher]
 tags: [aerospace, crash-retrieval]
 rel:
-  - [ co-founded by, jake-barber, "Founded by Jake Barber with James Fowler, who led its technology team, and the investor Alex Klokus" ]
+  - [ co-founded by, jake-barber, "Founded by Jake Barber with James Fowler, who led its field operations until July 2025, and the investor Alex Klokus" ]
   - [ works with, garry-nolan, "Barber says Nolan is on the team; Skywatcher's site lists him" ]
   - [ about, remote-viewing, "Its “psionic” calling uses people trained, Barber says, in remote viewing and psychic abilities" ]
   - [ about, ce-5, "It said it summons UAP by machine signalling and by psionic calling" ]
@@ -42,6 +42,9 @@ facts:
     status: claimed
     by: don-paul-bales
     source: v-2025-01-27-why-military-veteran-don-paul-bales-believes-uap@23:39
+  - text: "James Fowler announced on X on 18 August 2025 that from August 2024 to July 2025 he had served “as a founder and consultant at Skywatcher, where I led field operations”, and that he was “stepping away from active involvement with Skywatcher, with my contributions now limited to my foundational work”, to focus on “a new venture in Aerial Intelligence”."
+    status: claimed
+    source: https://x.com/james_fowler_/status/1957510990897066133
   - text: "Ross Coulthart said in August 2026 that Skywatcher had posted nothing on X since Christmas Day 2025 and nothing on its site since James Fowler left in mid-August 2025, that it ran no field operations after July 2025, and that it appeared to have been dissolved as a business entity."
     status: claimed
     by: ross-coulthart
@@ -70,10 +73,10 @@ facts:
     source: https://www.wect.com/2026/02/11/faa-closes-airspace-around-el-paso-texas-10-days-grounding-all-flights-2
 ---
 
-Skywatcher is a private UAP research venture founded by Jake Barber, a former Air Force airman and helicopter pilot, with James Fowler, who led its technology team, and the investor Alex Klokus. It said it would validate UAP scientifically by calling them with machines (electromechanical signalling, the "dog whistle") and with trained people ("psionic" calling), and reported nine classes of UAP from field work at Sierra Blanca, southeast of El Paso, Texas. Garry Nolan and Don Paul Bales are among the people its site lists.
+Skywatcher is a private UAP research venture founded by Jake Barber, a former Air Force airman and helicopter pilot, with James Fowler, who by his own account was a founder and consultant from August 2024 and led its field operations until July 2025, and the investor Alex Klokus. It said it would validate UAP scientifically by calling them with machines (electromechanical signalling, the "dog whistle") and with trained people ("psionic" calling), and reported nine classes of UAP from field work at Sierra Blanca, southeast of El Paso, Texas. Garry Nolan and Don Paul Bales are among the people its site lists.
 
 Barber says Skywatcher summoned the egg he once retrieved, in August 2024, and briefed AARO's director on it, and that it supported a federal task force in New Jersey in December 2024. Nolan, who was there in August, says he did not see the object. No official record on file mentions Skywatcher.
 
-The group went quiet in 2025. In August 2026 Ross Coulthart reported, from confidential sources, that it had dissolved and that its methods had been taken up by a covert government operation at White Sands that summons and shoots down craft; he linked the El Paso airspace closure of February 2026 to it. The administration said that closure was about cartel drones, and the Associated Press reported an anti-drone laser used without coordination with the FAA.
+The group went quiet in 2025; Fowler stepped away that August for a new aerial-intelligence venture. In August 2026 Ross Coulthart reported, from confidential sources, that it had dissolved and that its methods had been taken up by a covert government operation at White Sands that summons and shoots down craft; he linked the El Paso airspace closure of February 2026 to it. The administration said that closure was about cartel drones, and the Associated Press reported an anti-drone laser used without coordination with the FAA.
 
-*Sources: skywatcher.ai (About) · NewsNation special (19 January 2025) · Interview with Jesse Michels (January 2025) · Don Paul Bales interview (January 2025) · Ross Coulthart, Reality Check Q&A (9 August 2026) · Associated Press (11 February 2026)*
+*Sources: skywatcher.ai (About) · NewsNation special (19 January 2025) · Interview with Jesse Michels (January 2025) · Don Paul Bales interview (January 2025) · James Fowler on X (18 August 2025) · Ross Coulthart, Reality Check Q&A (9 August 2026) · Associated Press (11 February 2026)*
