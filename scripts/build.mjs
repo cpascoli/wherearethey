@@ -226,9 +226,13 @@ export async function build({ check = false, quiet = false } = {}) {
   // ── Document full text: the extracted .txt next to each file (pdftotext/OCR), split into pages on form feeds ──
   const doctexts = new Map();
   let docPages = 0, optinDocs = 0, optinPages = 0;
-  for (const e of entities) {
+  // a file shared by a document and the PURSUE record it came from is indexed once, under the document
+  const indexedFiles = new Set();
+  for (const e of [...entities].sort((a, b) => (a.type === 'record') - (b.type === 'record'))) {
     const parts = [];
     for (const f of e.files) {
+      if (indexedFiles.has(f)) continue;
+      indexedFiles.add(f);
       const txt = path.join(ROOT, f.replace(/\.[^./]+$/, '.txt'));
       if (!fs.existsSync(txt)) continue;
       const pages = fs.readFileSync(txt, 'utf8').split('\f').map(p => p.replace(/(?:\s*[.·…_]){5,}/g, ' … ').replace(/\s+/g, ' ').trim());

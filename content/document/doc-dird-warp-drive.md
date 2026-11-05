@@ -1,6 +1,7 @@
 ---
 name: Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions
 date: 2010-04
+files: [library/pursue/dow-uap-d138.pdf]
 tags:
   - science
   - foia
@@ -24,4 +25,4 @@ According to AARO's official summary in PURSUE release 06, it asks whether warp 
 
 AARO notes that the concept "relies entirely on unverified assumptions" about the reality and controllability of extra dimensions, and that the paper "offers no viable engineering pathway toward a functioning propulsion system."
 
-*Sources: PURSUE record DOW-UAP-D138 (AARO summary)*
+*Sources: The paper (DIA, 2 April 2010, released as PURSUE record DOW-UAP-D138) · AARO's summary of it*

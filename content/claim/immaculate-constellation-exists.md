@@ -7,6 +7,7 @@ status_source: https://www.theblackvault.com/documentarchive/pentagon-says-it-ha
 tags: [secrecy]
 rel:
   - [ about, immaculate-constellation ]
+  - [ evidence for, doc-immaculate-constellation, "The whistleblower report itself, as entered into the House record; its author is unnamed" ]
   - [ narrower than, programs-hidden-from-congress ]
 ---
 

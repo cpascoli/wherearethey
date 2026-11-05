@@ -3,6 +3,7 @@ name: "Halt memo: Unexplained Lights"
 aka:
   - Halt memo
 date: 1981-01-13
+files: [library/docs/doc-halt-memo.pdf]
 tags:
   - air-force
   - foia
@@ -12,7 +13,14 @@ rel:
 facts:
   - text: An official memo from Deputy Base Commander Lt. Col. Charles Halt to the UK Ministry of Defence describing the Rendlesham events, including radiation readings in the depressions where the object had been seen. Released through FOIA in 1983.
     status: documented
-    source: https://commons.wikimedia.org/wiki/File:Halt_Memorandum.jpg
+    source: library/docs/doc-halt-memo.pdf
+  - text: "The copy on file is the MoD's own, page 7 of the National Archives file DEFE 24/1948 (UFO reports, Rendlesham Forest, December 1980), released in August 2009; the file holds further copies of the memo among the Ministry's later correspondence."
+    status: documented
+    source: library/docs/mod-ufo/defe-24-1948.pdf
+  - text: "It records that on the night of 29 December the area was checked for radiation: “Beta/gamma readings of 0.1 milliroentgens were recorded with peak readings in the three depressions and near the center of the triangle formed by the depressions.”"
+    status: documented
+    by: charles-halt
+    source: library/docs/doc-halt-memo.pdf
   - text: "Halt said in 2010 that Third Air Force decided it was a British affair, so he wrote a “cleaned-up memo” of unexplained lights for the MoD; he later learned that the airmen involved had been harshly interrogated."
     status: claimed
     by: charles-halt
@@ -34,4 +42,4 @@ It describes security patrolmen seeing lights in the forest in the early morning
 
 The memo was released under the U.S. Freedom of Information Act in 1983 and became the case's key document. The MoD concluded the events posed no threat to national security; sceptics attribute the lights to a fireball and the Orford Ness lighthouse.
 
-*Sources: Halt memo (1981) · Rendlesham incident record*
+*Sources: Halt memo, 13 January 1981 (MoD copy, National Archives DEFE 24/1948) · Rendlesham incident record*
