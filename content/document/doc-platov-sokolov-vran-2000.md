@@ -18,6 +18,9 @@ facts:
   - text: "The commission found that at that time the 26th Air Army was dropping illumination flares from about 10 km over a bombing range in the Belarusian Polesye, about 400 km to the north. Because the range lay below the observers' horizon, the authors infer rare super-refraction. They conclude the fault \"никакого отношения к наблюдавшимся явлениям не имела, кроме того, что совершенно случайно совпала с ними по времени\"."
     status: documented
     source: library/docs/doc-platov-sokolov-vran-2000.pdf
+  - text: "The authors name the Petrozavodsk phenomenon of 20 September 1977 as the formal occasion for setting up the research, and later attribute it to the launch of the satellite Kosmos-955 from Plesetsk, with some additional effects from an unsuccessful ballistic-missile test launched in the same region at practically the same time."
+    status: documented
+    source: library/docs/doc-platov-sokolov-vran-2000.pdf
 ---
 
 The history of the Soviet state programme on anomalous phenomena (Setka, 1978–1990), written by its two coordinators: physicist Yuli Platov of the Academy of Sciences and Col. Boris Sokolov of the Ministry of Defence. It was published in *Vestnik Rossiyskoy Akademii Nauk*, vol. 70, no. 6 (2000), pp. 507–515.
