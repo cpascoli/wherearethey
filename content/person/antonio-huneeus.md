@@ -12,6 +12,11 @@ links:
   - label: Antonio Huneeus, UFO journalist (podcast)
     url: https://globalplayer.com/podcasts/episodes/7DriSP1
 facts:
+  - text: "At the 2013 Citizen Hearing Huneeus cited the O'Hare sighting of 2006 as an air-safety case, saying the story leaked through the Chicago Tribune and “the FAA never made any kind of official investigation”."
+    status: claimed
+    by: antonio-huneeus
+    basis: relayed
+    source: v-2013-chd-global-2@14:23
   - text: "Huneeus says he worked on the Rockefeller-funded “UFO briefing document”, compiled in 1995 to be sent to members of Congress and world leaders."
     status: claimed
     by: antonio-huneeus

@@ -93,6 +93,16 @@ facts:
     by: fife-symington
     basis: relayed
     source: v-npc-2007-ufo-close-encounters@1:21:20
+  - text: "At the 2013 Citizen Hearing Richard Dolan cited the case, saying United “ordered its employees to silence” and that after denials United and the FAA had to acknowledge the employees' reports."
+    status: claimed
+    by: richard-dolan
+    basis: relayed
+    source: v-2013-chd-opening@18:42
+  - text: "At the same hearing Antonio Huneeus cited it as an air-safety case that leaked through the Chicago Tribune, saying “the FAA never made any kind of official investigation”."
+    status: claimed
+    by: antonio-huneeus
+    basis: relayed
+    source: v-2013-chd-global-2@14:23
 files: [library/docs/doc-narcap-ohare-2007.pdf]
 links:
   - label: Chicago Tribune, 1 January 2007

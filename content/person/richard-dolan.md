@@ -11,6 +11,11 @@ links:
   - label: Red Wheel/Weiser author page
     url: https://redwheelweiser.com/?p=106974
 facts:
+  - text: "At the 2013 Citizen Hearing Dolan cited the O'Hare sighting of November 2006, saying the disc “punched a hole through the cloud”, that United “ordered its employees to silence”, and that after denials United and the FAA had to acknowledge the employees' reports."
+    status: claimed
+    by: richard-dolan
+    basis: relayed
+    source: v-2013-chd-opening@18:42
   - text: "Dolan's two-volume history, *UFOs and the National Security State* (2000; 2009), covers 1941 to 1991; the first volume carries a foreword by Jacques Vallée."
     status: claimed
     by: richard-dolan

@@ -47,6 +47,11 @@ moments:
     text: "Dolan on Waldorf, Maryland, summer 2002: witnesses saw jets chase blue and orange objects; he says the Air Force admitted scrambling F-16s and tracking one object on radar, and concluded it could have been “any number of” things."
     speaker: richard-dolan
     refs: [ inc-andrews-2002 ]
+  - t: "18:42"
+    text: "Dolan cites O'Hare, November 2006: a dozen United employees, including at least one pilot on the ground, saw a hovering disc below the clouds that “punched a hole through the cloud”; he says United “ordered its employees to silence”, and that after denials United and the FAA had to acknowledge the reports."
+    speaker: richard-dolan
+    basis: relayed
+    refs: [ inc-ohare-2006 ]
   - t: "22:56"
     text: "Cameron: three years after closing Blue Book the Air Force, at the direction of its Secretary, contracted two documentary producers at the Pentagon and gave them “a film of extraterrestrials landing at Holloman Air Force Base”, of which they used 8 seconds in the final production; another film marked top secret was never returned, and a CIA agent was present throughout."
     speaker: grant-cameron
