@@ -5,7 +5,7 @@ date: 2006-11-07
 place: { name: "O'Hare International Airport, Chicago (United Airlines Concourse C)", lat: 41.97805, lng: -87.90611 }
 tags: [aviator, airport, faa, civil-aviation]
 image: /assets/images/inc-ohare-2006-illustration.jpg
-image_caption: "Illustration, not a photograph: an AI-generated scene after the witnesses' descriptions (a dark gray disc hovering below the overcast near gate C17 as a United jet pushed back). No authentic photograph or video of the object is known; NARCAP found most of the photos that circulated to be hoaxes."
+image_caption: "AI-generated illustration based on the witnesses' descriptions; no authentic photo of the object is known."
 outcome: disputed
 outcome_note: "The FAA did not investigate; its spokeswoman offered the theory that the sighting was a weather phenomenon, airport lights on a low cloud ceiling, which the witnesses and NARCAP's analysis reject."
 outcome_source: https://www.chicagotribune.com/2007/01/01/in-the-sky-a-bird-a-plane-a-ufo/
