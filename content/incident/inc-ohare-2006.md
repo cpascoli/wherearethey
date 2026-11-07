@@ -46,6 +46,43 @@ facts:
     status: claimed
     by: richard-haines
     source: library/docs/doc-narcap-ohare-2007.pdf
+  - text: "A United mechanic interviewed anonymously by CNN as “Joe” (NARCAP's witness B) said that while taxiing a jet to the hangar he and another mechanic saw “a dark gray object sitting above the terminal complex”: “I've never seen an object in my time that looked like this”; “it was not an airplane as we know it.”"
+    status: claimed
+    basis: first-hand
+    source: v-2007-01-cnn-ohare-witness-joe-hilkevitch@0:35
+  - text: "Joe confirmed a CNN sketch artist's drawing of a “dark gray oval” as what he saw; CNN reported that no photos had surfaced and that Joe knew of none."
+    status: claimed
+    basis: first-hand
+    source: v-2007-01-cnn-ohare-witness-joe-hilkevitch@1:27
+  - text: "United told CNN the sighting was not something it would investigate; the FAA said it had no power to investigate either, that radar did not pick up anything out of the ordinary, and that a weather phenomenon might have caused it."
+    status: documented
+    stance: disputes
+    source: v-2007-01-cnn-ohare-witness-joe-hilkevitch@2:19
+  - text: "Hilkevitch said he was told one of the 737's pilots “had a digital camera and snapped some pictures”; no such photograph has been published."
+    status: claimed
+    by: jon-hilkevitch
+    basis: relayed
+    source: v-2007-01-cnn-ohare-witness-joe-hilkevitch@4:36
+  - text: "Hilkevitch said United, “after first denying that they got any reports from employees about this sighting”, later said its employees had approached it immediately because of safety concerns."
+    status: claimed
+    by: jon-hilkevitch
+    basis: relayed
+    source: v-2007-01-cnn-ohare-witness-joe-hilkevitch@10:24
+  - text: "Hilkevitch said the story ran several weeks after the event because he had to track down the witnesses, pilots, ramp workers and mechanics who “all, down to a person, reported the exact same sighting.”"
+    status: claimed
+    by: jon-hilkevitch
+    basis: first-hand
+    source: v-2007-01-cnn-ohare-witness-joe-hilkevitch@12:04
+  - text: "Hilkevitch said he had correspondence from United managers to their bosses about the employees' reports, and that some employees were interviewed and asked to draw sketches of what they saw."
+    status: claimed
+    by: jon-hilkevitch
+    basis: first-hand
+    source: v-2007-01-cnn-ohare-witness-joe-hilkevitch@14:54
+  - text: "Hilkevitch named what weakens the case: “no air traffic controller saw it”, and nobody with a camera phone at O'Hare took a picture of it."
+    status: claimed
+    by: jon-hilkevitch
+    stance: disputes
+    source: v-2007-01-cnn-ohare-witness-joe-hilkevitch@15:47
 files: [library/docs/doc-narcap-ohare-2007.pdf]
 links:
   - label: Chicago Tribune, 1 January 2007
@@ -58,7 +95,7 @@ links:
 
 At about 4:30 p.m. on 7 November 2006, under an overcast at about 1,900 feet, United Airlines employees at Chicago O'Hare reported a dark gray, disc-like object hovering silently over gate C17 in Concourse C. A ramp worker directing a United plane back from the gate saw it first; according to NARCAP's list, mechanics taxiing a 777, supervisors, and the captain and first officer of a 737 near C17 were among the others who saw it. After several minutes it is said to have shot straight up through the clouds, leaving a clear hole that closed within minutes. A United supervisor phoned the FAA tower, whose controllers saw nothing.
 
-The story came out eight weeks later, when the Chicago Tribune's Jon Hilkevitch interviewed the workers, who all spoke anonymously. United said it had no record of the report, and the FAA, which had first said it knew nothing, found the supervisor's call when the paper filed a FOIA request. The FAA ran no investigation: radar showed nothing unusual, and its spokeswoman suggested airport lights on low cloud. The case is filed here because of the number of airline staff who agreed on what they saw and the FAA's own confirmation of the call; the witnesses remain unnamed.
+The story came out eight weeks later, when the Chicago Tribune's Jon Hilkevitch interviewed the workers, who all spoke anonymously; one of the mechanics, as “Joe”, then described the object on CNN, where a sketch artist drew it from his account. United said it had no record of the report, and the FAA, which had first said it knew nothing, found the supervisor's call when the paper filed a FOIA request. The FAA ran no investigation: radar showed nothing unusual, and its spokeswoman suggested airport lights on low cloud. The case is filed here because of the number of airline staff who agreed on what they saw and the FAA's own confirmation of the call; the witnesses remain unnamed.
 
 NARCAP, a private aviation-safety group whose chief scientist is the former NASA Ames researcher Richard Haines, obtained the tower recordings under FOIA. Its May 2007 report rejected a natural hole-punch cloud and treated the object as real and undetected by radar, a safety gap. It is an advocacy group's analysis, not an official finding.
 
