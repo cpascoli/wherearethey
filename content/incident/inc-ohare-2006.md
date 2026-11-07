@@ -38,6 +38,10 @@ facts:
     status: claimed
     by: richard-haines
     source: library/docs/doc-narcap-ohare-2007.pdf
+  - text: "NARCAP's transcription of the first FAA tower recording (4:30 pm) has a United ramp-tower controller phoning the tower's area supervisor: “Hey, did you see a flying disc out by C17?”, adding “that's what a pilot in the ramp area at C17 told us”. The supervisor laughs it off (“Hey, you guys been celebrating the holidays or anything”), then says “No, I have not seen any flying disc at gate C17” and that he will “keep an eye out”."
+    status: claimed
+    by: richard-haines
+    source: library/docs/doc-narcap-ohare-2007.pdf
   - text: "NARCAP lists nine United witnesses by job and position, among them a ramp mechanic beside a 737 at C17, two mechanics taxiing a 777, two supervisors, and the captain and first officer of a 737 near C17; their identities are withheld at their request."
     status: claimed
     by: richard-haines
