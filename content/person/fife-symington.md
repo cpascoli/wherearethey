@@ -7,6 +7,11 @@ credentials:
     role: Governor of Arizona (1991–1997); U.S. Air Force veteran
 tags: [government]
 facts:
+  - text: "At the November 2007 National Press Club conference Symington cited the O'Hare sighting of a year earlier, a disc that “shot straight up into the sky cut a hole in the sky”, which the FAA “apparently did not investigate”, and called on the government to reopen its official investigation."
+    status: claimed
+    by: fife-symington
+    basis: relayed
+    source: v-npc-2007-ufo-close-encounters@1:21:20
   - text: Moderated the November 12, 2007 National Press Club panel of international officials and pilots. He also says he personally saw the 1997 “Phoenix Lights”.
     status: claimed
     by: fife-symington

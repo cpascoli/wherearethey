@@ -10,6 +10,11 @@ tags: [aviator, international]
 rel:
   - [ witness, inc-alderney-2007 ]
 facts:
+  - text: "At the November 2007 National Press Club conference Bowyer said he had heard about the O'Hare sightings of 7 November 2006 and was surprised that “there was no investigation At All” by the FAA; he said pressure may have been applied to crew members by their company not to discuss it."
+    status: claimed
+    by: ray-bowyer
+    basis: relayed
+    source: v-npc-2007-ufo-close-encounters@51:49
   - text: "Captain Ray Bowyer recounted his 2007 sighting near Alderney and urged aircrew to report what they see."
     status: claimed
     by: ray-bowyer

@@ -83,6 +83,16 @@ facts:
     by: jon-hilkevitch
     stance: disputes
     source: v-2007-01-cnn-ohare-witness-joe-hilkevitch@15:47
+  - text: "At the National Press Club on 12 November 2007, the Alderney pilot Ray Bowyer said he was surprised that “there was no investigation At All” by the FAA, and that pressure may have been applied to crew members by their company not to discuss it."
+    status: claimed
+    by: ray-bowyer
+    basis: relayed
+    source: v-npc-2007-ufo-close-encounters@51:49
+  - text: "At the same conference former Arizona governor Fife Symington cited the case and said the FAA “apparently did not investigate” and dismissed the sightings as weather; he called on the government to reopen its official investigation."
+    status: claimed
+    by: fife-symington
+    basis: relayed
+    source: v-npc-2007-ufo-close-encounters@1:21:20
 files: [library/docs/doc-narcap-ohare-2007.pdf]
 links:
   - label: Chicago Tribune, 1 January 2007

@@ -88,6 +88,11 @@ moments:
     text: "Capt. Ray Bowyer recounts the 2007 Alderney sighting and urges aircrew to report what they see."
     speaker: ray-bowyer
     refs: [ inc-alderney-2007 ]
+  - t: "51:49"
+    text: "Bowyer turns to O'Hare: he was surprised that despite many pilots and airport staff seeing the object over the terminal “there was no investigation At All” by the FAA, and says pressure may have been applied to crew members by their company not to discuss it."
+    speaker: ray-bowyer
+    basis: relayed
+    refs: [ inc-ohare-2006 ]
   - t: "56:52"
     claims: [ rendlesham-craft-landed ]
     basis: first-hand
@@ -110,6 +115,11 @@ moments:
     text: "Symington: in 1997, during his second term as governor of Arizona, he saw “a massive delta-shaped craft that silently navigated over the Peak uh area in North Phoenix”, with huge embedded lights on its leading edge; as a pilot and former Air Force officer he says it resembled no man-made object and was “certainly not high flares”, because “I've never seen flares fly in formation”."
     speaker: fife-symington
     refs: [ inc-phoenix-lights-1997, ev-npc-2007 ]
+  - t: "1:21:20"
+    text: "Symington cites O'Hare a year earlier: pilots and other airline employees saw a metallic-looking disc over the United terminal that “shot straight up into the sky cut a hole in the sky”; the FAA “apparently did not investigate” and dismissed the sightings as weather. He calls on the government to reopen its official investigation."
+    speaker: fife-symington
+    basis: relayed
+    refs: [ inc-ohare-2006 ]
 date: 2007-11-12   # recorded / first broadcast (the YouTube upload is later)
 ---
 
