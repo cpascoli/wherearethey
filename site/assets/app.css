@@ -912,6 +912,7 @@ html:not(.js) .top, html:not(.js) .app, html:not(.js) .views, html:not(.js) .mor
 .tb-arrow.tb-next { background: var(--accent); border-color: var(--accent); color: #fff; }
 .tb-arrow.tb-next:hover { filter: brightness(1.08); color: #fff; }
 .tb-arrow.tb-close { color: var(--muted); }
+.tb-close-end { margin-left: 4px; } /* the ✕ after the pager, on every step after the first */
 .tb-dots { display: inline-flex; gap: 3px; }
 .tb-dot { width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--border); background: var(--panel); color: var(--muted); font: inherit; font-size: 11.5px; cursor: pointer; padding: 0; }
 .tb-dot.done { color: var(--text); border-color: color-mix(in srgb, var(--accent) 50%, var(--border)); }
