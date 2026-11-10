@@ -15,6 +15,9 @@ credentials:
 tags:
   - aviator
   - navy
+image: /assets/images/person-david-fravor.jpg
+portrait: /assets/images/person-david-fravor-portrait.jpg
+image_caption: "David Fravor answering questions at the House Oversight Subcommittee on National Security, the Border, and Foreign Affairs hearing, 26 July 2023. Still from the committee's own recording (public domain)."
 rel:
   - [ testified at, h-2023-07-26 ]
   - [ authored, doc-fravor-statement-2023-07-26 ]

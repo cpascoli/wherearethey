@@ -20,6 +20,9 @@ credentials:
 tags:
   - navy
   - whistleblower
+image: /assets/images/person-tim-gallaudet.jpg
+portrait: /assets/images/person-tim-gallaudet-portrait.jpg
+image_caption: "Rear Adm. Timothy Gallaudet, official U.S. Navy portrait, 2014 (public domain)."
 rel:
   - [ testified at, h-2025-05-01 ]
   - [ testified at, h-2024-11-13 ]
