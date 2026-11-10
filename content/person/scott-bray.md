@@ -8,6 +8,9 @@ credentials:
 tags:
   - intelligence
   - navy
+image: /assets/images/person-scott-bray.jpg
+portrait: /assets/images/person-scott-bray-portrait.jpg
+image_caption: "Scott Bray, Deputy Director of Naval Intelligence, testifying at the House Intelligence subcommittee's open hearing on UAP, 17 May 2022. Still from the committee's own recording (public domain)."
 rel:
   - [ asked about, inc-malmstrom-1967, "He said the task force had no official data on the reported Malmstrom shutdowns" ]
   - [ worked at, oni ]
