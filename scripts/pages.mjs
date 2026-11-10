@@ -152,6 +152,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     h.push(`<p class="ssr-kicker">${esc(kicker)}</p><h1>${esc(e.name)}</h1>`);
     if (e.aka?.length) h.push(`<p class="ssr-aka">Also known as ${e.aka.map(esc).join(', ')}</p>`);
     if (e.credentials?.length) h.push(`<ul class="ssr-creds">${e.credentials.map(c => `<li>${esc(c.role || c.category)}</li>`).join('')}</ul>`);
+    if (e.bio) h.push(`<p class="ssr-lead">${e.bio}</p>`); // a person's short bio, as in the app's header
     if (e.type === 'book') h.push(`<p>${[e.credits, e.publisher, e.pages && `${e.pages} pages`, e.isbn && `ISBN ${e.isbn}`].filter(Boolean).map(esc).join(' · ')}</p>`);
     if (e.glimpses?.length) h.push(`<h2>Glimpses</h2>${e.glimpses.map(g => `<blockquote${g.url ? ` cite="${esc(g.url)}"` : ''}><p>${esc(g.text)}</p><footer>${esc(g.where)}${g.url ? `${g.where ? ' · ' : ''}<a href="${esc(g.url)}" rel="noopener">${esc(g.via || 'source')}</a>` : ''}</footer></blockquote>`).join('\n')}`);
     if (e.type === 'film') h.push(`<p>${[e.credits, e.runtime && `${e.runtime} min`].filter(Boolean).map(esc).join(' · ')}</p>`);
@@ -251,7 +252,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     if (e.links.length) h.push(`<h2>Links</h2><ul>${e.links.map(l => `<li><a href="${esc(l.url)}" rel="noopener">${esc(l.label || l.url)}</a></li>`).join('')}</ul>`);
     if (e.files.length) h.push(`<h2>Files</h2><ul>${e.files.map(f => `<li><a href="${esc(fileUrl(f))}">${esc(f.split('/').pop())}</a></li>`).join('')}</ul>`);
 
-    const lead = leadSentences(text(e.body) || e.facts.map(f => f.text).join(' ') || (e.type === 'video' ? e.moments?.map(m => m.text).join(' ') || e.description || '' : '') || `${LABEL[e.type]} in the Where Are They UAP / NHI case archive.`);
+    const lead = leadSentences(text(e.bio) || text(e.body) || e.facts.map(f => f.text).join(' ') || (e.type === 'video' ? e.moments?.map(m => m.text).join(' ') || e.description || '' : '') || `${LABEL[e.type]} in the Where Are They UAP / NHI case archive.`);
     // the snippet says what the page holds: sourced claims and timestamped video moments
     const nMoments = e.type === 'video' ? (e.moments || []).length : (momentsAbout.get(e.id) || 0);
     const holds = [e.facts.length && `${e.facts.length} sourced claim${e.facts.length > 1 ? 's' : ''}`, nMoments && `${nMoments} timestamped video moment${nMoments > 1 ? 's' : ''}`].filter(Boolean);
@@ -284,7 +285,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
   const today = new Date().toISOString().slice(0, 10);
   const { featured, recent, added } = latestSplit(entities, today);
   const kindOf = e => (e.type === 'news' ? `${e.kind[0].toUpperCase()}${e.kind.slice(1)}` : LABEL[e.type]);
-  const summaryOf = e => clip(text(e.body) || e.facts[0]?.text || (e.moments || []).map(m => m.text).join(' ') || '', 220);
+  const summaryOf = e => clip(text(e.bio) || text(e.body) || e.facts[0]?.text || (e.moments || []).map(m => m.text).join(' ') || '', 220);
   const latestLi = (e, when) => `<li><span class="ssr-by">${esc(when)} · ${esc(kindOf(e))}</span> ${link(e.id)}${summaryOf(e) ? `<br><span class="ssr-note">${esc(summaryOf(e))}</span>` : ''}</li>`;
   const latestBody = `<h1>Latest</h1><p>What has happened recently in the UAP / NHI record (hearings, interviews, statements, official releases, new incidents), sorted by when it happened, followed by older material newly added to the archive. Subscribe with the <a href="/feed.xml">RSS feed</a>.</p>`
     + (featured.length ? `<h2>Featured</h2><ul>${featured.map(e => latestLi(e, fmtDate(e.date))).join('')}</ul>` : '')

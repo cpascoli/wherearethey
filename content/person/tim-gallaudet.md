@@ -97,9 +97,8 @@ facts:
     stance: disputes
     basis: relayed
     claim_by: sean-kirkpatrick
+bio: "Tim Gallaudet is a retired U.S. Navy rear admiral and PhD oceanographer. He served as Oceanographer of the Navy and commanded the Naval Meteorology and Oceanography Command, then was Assistant Secretary of Commerce for Oceans and Atmosphere and acting Administrator of NOAA (2017–2021). He says he never signed a non-disclosure agreement on UAP, which leaves him free to speak as a private citizen."
 ---
-
-Tim Gallaudet is a retired U.S. Navy rear admiral and PhD oceanographer. He served as Oceanographer of the Navy and commanded the Naval Meteorology and Oceanography Command, then was Assistant Secretary of Commerce for Oceans and Atmosphere and acting Administrator of NOAA (2017–2021). He says he never signed a non-disclosure agreement on UAP, which leaves him free to speak as a private citizen.
 
 His own involvement dates to January 2015, during the USS Theodore Roosevelt strike group's pre-deployment exercise off the East Coast. He received an "urgent safety of flight" email from Fleet Forces Command reporting multiple near mid-air collisions, with the GoFast video attached. The next day it had vanished from every recipient's inbox and was never discussed again. He concluded the subject was held in a compartmented intelligence program. Jay Stratton, who collected the video and email, later told him it had been treated as spillage. Ryan Graves's squadron flew in that exercise, and Gallaudet became an adviser to Graves's Americans for Safe Aerospace.
 

@@ -1177,7 +1177,7 @@
     return [...ids].map(id => byId.get(id)).sort((a, b) => (a.cred === 'credible' ? 0 : 1) - (b.cred === 'credible' ? 0 : 1)).slice(0, 6);
   }
   const latestSummary = e => {
-    const t = (e.body ? new DOMParser().parseFromString(e.body, 'text/html').body.textContent : '').replace(/\s+/g, ' ').trim() || e.facts[0]?.text || (e.moments || []).slice(0, 2).map(m => m.text).join(' ') || '';
+    const t = (e.bio || e.body ? new DOMParser().parseFromString(e.bio || e.body, 'text/html').body.textContent : '').replace(/\s+/g, ' ').trim() || e.facts[0]?.text || (e.moments || []).slice(0, 2).map(m => m.text).join(' ') || '';
     return t.length > 260 ? t.slice(0, 257).replace(/\s+\S*$/, '') + '…' : t;
   };
   // "new since your last visit": the previous visit's date, read once per page load
@@ -1334,7 +1334,7 @@
   function searchText(e) {
     if (!searchCache.has(e.id)) {
       searchCache.set(e.id, [e.name, ...e.aka, ...(e.match || []), e.place?.name, ...e.tags, ...(e.credentials || []).map(c => c.role),
-        ...e.facts.map(f => f.text), e.channel, e.body?.replace(/<[^>]+>/g, ' ')].filter(Boolean).join(' \n ').toLowerCase());
+        ...e.facts.map(f => f.text), e.channel, e.bio?.replace(/<[^>]+>/g, ' '), e.body?.replace(/<[^>]+>/g, ' ')].filter(Boolean).join(' \n ').toLowerCase());
     }
     return searchCache.get(e.id);
   }
@@ -1487,11 +1487,14 @@
     if (e.type === 'claim' && e.statusNote) hp(`<div class="p-outcome claim-${e.status}"><b>${CLAIM_STATUS[e.status].label}.</b> ${esc(e.statusNote)}${e.statusSource ? ` <span class="src">${e.statusSource.id ? (byId.get(e.statusSource.id)?.type === 'video' ? `<button class="ts" data-play="${e.statusSource.id}@${e.statusSource.t || 0}">▶ ${fmtT(e.statusSource.t || 0)}</button> ` : '') + chip(e.statusSource.id) : e.statusSource.url ? `<a href="${esc(e.statusSource.url)}" target="_blank" rel="noopener">source ↗</a>` : ''}</span>` : ''}</div>`);
     // credentials right under the name: on this archive they are the headline fact (they decide the source badge)
     if (e.credentials?.length) hp(`<ul class="cred-list p-creds">${e.credentials.map(c => `<li><span class="cred-cat">${esc(CRED_CAT[c.category] || c.category)}</span><span>${esc(c.role)}</span></li>`).join('')}</ul>`);
+    // a person's short bio sits in the header, beside the portrait; the Profile below keeps the details
+    if (e.bio) hp(`<p class="p-lead">${e.bio}</p>`);
     if (!offGraph(e.type) && !(state.trail && !state.trail.core && state.view === 'graph')) hp(`<button class="btn small p-explore" data-explore="${esc(e.id)}" title="Show only this file and its connections, then follow a trail">◎ Explore from here</button>`);
     if (e.aka.length) hp(`<div class="p-aka">Also: ${e.aka.map(esc).join(' · ')}</div>`);
     if (e.type === 'film' || e.type === 'book') hp(`<div class="p-meta">${esc([e.credits, shelfMeta(e), e.isbn ? `ISBN ${e.isbn}` : ''].filter(Boolean).join(' · '))}</div>`);
     if (e.cover) h.push(`<div class="p-head has-cover"><div class="p-head-main">${head.join('')}</div><img class="p-cover" src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" loading="lazy"></div>`);
-    if (portrait) h.push(`<div class="p-head has-portrait"><div class="p-head-main">${head.join('')}</div><figure class="p-portrait"><img src="${esc(e.portrait)}" alt="${esc(e.imageCaption || e.name)}">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure></div>`);
+    // the caption is clamped to two lines under the photo; the full text shows on hover
+    if (portrait) h.push(`<div class="p-head has-portrait"><div class="p-head-main">${head.join('')}</div><figure class="p-portrait"><img src="${esc(e.portrait)}" alt="${esc(e.imageCaption || e.name)}">${e.imageCaption ? `<figcaption title="${esc(e.imageCaption)}">${esc(e.imageCaption)}</figcaption>` : ''}</figure></div>`);
     if (e.image && !portrait) h.push(`<figure class="p-image"><img src="${esc(e.image)}" alt="${esc(e.imageCaption || e.name)}" loading="lazy">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>`);
     const meta = [e.type !== 'book' && e.type !== 'film' && fmtRange(e) && (e.type === 'video' ? 'Published ' : '') + fmtRange(e), e.place?.name, // books and films: the year is already in the credits line
       e.type === 'video' && [e.channel, fmtDur(e.duration)].filter(Boolean).join(' · ')].filter(Boolean);
@@ -1510,7 +1513,7 @@
         <div class="small muted" style="margin-top:6px">${e.transcript ? `${e.transcript.segments.toLocaleString()} transcript lines (${({ 'youtube-auto': 'auto captions', youtube: 'subtitles', whisper: 'Whisper transcript', 'whisper-translated': 'Whisper translation', translation: 'English translation of the published subtitles' })[e.transcript.source] || 'transcript'})` : 'No transcript yet'}${e.local ? ' · local copy' : ''}</div></div></div>`);
     }
     // the summary (a person's profile) comes before the videos
-    if (e.body) h.push(`<div class="p-sec"><h4>${e.type === 'person' ? 'Profile' : 'Summary'}</h4><div class="p-body p-bio">${e.body}</div></div>`);
+    if (e.body) h.push(`<div class="p-sec"><h4>${e.type === 'person' ? 'Profile' : 'Summary'}</h4><div class="p-body p-bio${e.bio ? ' after-lead' : ''}">${e.body}</div></div>`);
     // glimpses: short passages from the book itself, each linked to the authorized excerpt or review it was checked against
     if (e.glimpses?.length) h.push(`<div class="p-sec" id="sec-glimpses"><h4>Glimpses <span>${e.glimpses.length}</span></h4><div class="glimpses" data-collapse="4">${e.glimpses.map(g => `
       <blockquote class="glimpse"><p>${esc(g.text)}</p><footer>${esc(g.where)}${g.url ? `${g.where ? ' · ' : ''}<a href="${esc(g.url)}" target="_blank" rel="noopener">${esc(g.via || 'source')} ↗</a>` : g.via ? ` · ${esc(g.via)}` : ''}</footer></blockquote>`).join('')}</div></div>`);
@@ -2436,7 +2439,7 @@
       const vidSrc = f.source?.id && byId.get(f.source.id)?.type === 'video' ? `${f.source.id}@${f.source.t || 0}` : null;
       return { text: f.text, status: f.status, play: vidSrc };
     }
-    const bio = (e.body || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    const bio = (e.bio || e.body || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
     if (bio) return { text: bio.split(/(?<=\.)\s/)[0] };
     return { text: subtitle(e) || 'No notes filed yet.' };
   }

@@ -131,9 +131,10 @@ facts:
     status: claimed
     by: luis-elizondo
     source: v-jillian-michaels-elizondo@26:13
+bio: "Luis \"Lue\" Elizondo is a former U.S. Army counterintelligence special agent who worked in the Office of the Under Secretary of Defense for Intelligence from 2008. He became the public face of the Pentagon's UAP programs after he resigned in October 2017."
 ---
 
-Luis "Lue" Elizondo is a former U.S. Army counterintelligence special agent who became the public face of the Pentagon's UAP programs after he resigned in October 2017. He studied microbiology and immunology, served briefly in Army military intelligence, and became a civilian counterintelligence special agent and special agent in charge, working counterterrorism and counterespionage cases. From 2008 he worked in the Office of the Under Secretary of Defense for Intelligence, where he says his last role was managing a special access program for the White House and the National Security Council.
+He studied microbiology and immunology, served briefly in Army military intelligence, and became a civilian counterintelligence special agent and special agent in charge, working counterterrorism and counterespionage cases. At the Office of the Under Secretary of Defense for Intelligence, he says his last role was managing a special access program for the White House and the National Security Council.
 
 He says that around 2009 he was recruited into the DIA-run AAWSAP effort and its informal successor, AATIP. He says he worked on AATIP with James Lacatski and Jay Stratton, describing Stratton as his equal, and it was the AATIP effort that handled the Navy's GOFAST, GIMBAL and FLIR videos. The Pentagon has disputed his role. In 2019 a spokesperson said he had "no responsibilities with regard to the AATIP program" while in his office, and AARO's 2024 report calls AATIP an informal community of interest with no staff or budget. Fellow insiders, including Stratton and David Fravor, have described him as part of the effort.
 

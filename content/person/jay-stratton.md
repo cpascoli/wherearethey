@@ -110,9 +110,10 @@ facts:
     status: claimed
     by: jay-stratton
     source: v-2026-10-20-cuomo-jay-stratton@5:32
+bio: "Jay Stratton is a retired U.S. intelligence official who spent more than 16 years investigating unidentified anomalous phenomena for the government, and was chief of air and space warfare at the Defense Intelligence Agency."
 ---
 
-Jay Stratton is a retired U.S. intelligence official who spent more than 16 years investigating unidentified anomalous phenomena for the government. He joined the Army in 1989 and served almost 33 years across the military and the national intelligence community, rising to the Senior Executive Service. At the Defense Intelligence Agency he was chief of air and space warfare, responsible for emerging and disruptive aerospace technologies. He describes himself as an aerospace engineer, and spent much of his career with the Office of Naval Intelligence.
+He joined the Army in 1989 and served almost 33 years across the military and the national intelligence community, rising to the Senior Executive Service. At the Defense Intelligence Agency he was responsible for emerging and disruptive aerospace technologies. He describes himself as an aerospace engineer, and spent much of his career with the Office of Naval Intelligence.
 
 He was at the centre of every modern Pentagon UAP effort. In 2009, on loan to DIA, he worked on the Reid-funded AAWSAP and, by his account, helped found it. He contacted Commander David Fravor that year to investigate the 2004 Nimitz "Tic Tac" encounter. He then worked on AATIP, the informal successor, alongside Luis Elizondo, and says the Navy's Gimbal and GoFast videos reached his desk first. After the 2017 New York Times revelations he briefed Congress and became the first director of the Navy-led UAP Task Force (2020–2021). Its work fed the Director of National Intelligence's 2021 preliminary assessment, and David Grusch served as the NRO's liaison to it. AARO credits the task force with standardising and destigmatising UAP reporting. The same AARO report says AATIP was never an official program, with no staff or budget of its own.
 

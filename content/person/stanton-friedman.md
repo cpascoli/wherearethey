@@ -52,9 +52,10 @@ facts:
     by: stanton-friedman
     said: 1994
     source: v-1994-larry-king-ufo-cover-up-live@1:11:17
+bio: "Stanton Friedman (1934–2019) was an American-Canadian nuclear physicist who left industry in 1970 to research UFOs full time, calling himself \"the flying saucer physicist\"."
 ---
 
-Stanton Friedman (1934–2019) was an American-Canadian nuclear physicist who left industry in 1970 to research UFOs full time. For fourteen years he had worked on classified nuclear propulsion programmes for General Electric, Aerojet, Westinghouse, TRW and McDonnell Douglas, where he was hired for the company's late-1960s UFO propulsion study. Calling himself "the flying saucer physicist", he lectured at more than 600 colleges, submitted a statement to the 1968 House symposium on UFOs and appeared twice at the United Nations.
+For fourteen years he had worked on classified nuclear propulsion programmes for General Electric, Aerojet, Westinghouse, TRW and McDonnell Douglas, where he was hired for the company's late-1960s UFO propulsion study. He lectured at more than 600 colleges, submitted a statement to the 1968 House symposium on UFOs and appeared twice at the United Nations.
 
 He was the first civilian researcher to document the Roswell case: in 1978 a tip led him to Maj. Jesse Marcel, which opened the modern Roswell story, told in his *Crash at Corona* (with Don Berliner). He also championed the Betty and Barney Hill case and some of the MJ-12 papers, whose authenticity he defended while exposing others as hoaxes; that stance drew criticism from sceptics and from other Roswell researchers. At the 2013 Citizen Hearing he testified on documents, archives and Roswell.
 

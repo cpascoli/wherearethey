@@ -105,9 +105,10 @@ facts:
     status: claimed
     by: chris-mellon
     source: v-2025-04-22-cuomo-christopher-mellon@2:29
+bio: "Chris Mellon is a former Deputy Assistant Secretary of Defense for Intelligence, under Presidents Clinton and George W. Bush, and earlier minority staff director of the Senate Select Committee on Intelligence. He did more than anyone outside government to put the Navy UAP videos in front of the public and Congress."
 ---
 
-Chris Mellon is a former U.S. intelligence official who did more than anyone outside government to put the Navy UAP videos in front of the public and Congress. He spent nearly a decade on Capitol Hill, ending as minority staff director of the Senate Select Committee on Intelligence. He then served as Deputy Assistant Secretary of Defense for Intelligence under Presidents Clinton and George W. Bush. In that role he sat on the Pentagon committee that oversees special access programs, where he says he never saw anything related to UAP.
+He spent nearly a decade on Capitol Hill before moving to the Pentagon. As deputy assistant secretary he sat on the Pentagon committee that oversees special access programs, where he says he never saw anything related to UAP.
 
 Doing unpaid consulting for Navy intelligence around 2017, he met Luis Elizondo and learned of the Navy encounters and videos. When briefings to people close to Defense Secretary Mattis led nowhere, he joined Elizondo and Tom DeLonge in To The Stars Academy. He provided the three unclassified videos, Gimbal, FLIR and GoFast, for The New York Times story of December 2017. When the intelligence committees did not react, he turned to Senate staffer Kirk McConnell, who arranged the first Navy witness briefings in Congress.
 

@@ -73,9 +73,8 @@ facts:
     status: claimed
     by: tim-gallaudet
     source: v-jm-tim-gallaudet@10:14
+bio: "Jon T. Kosloski is a mathematician, physicist and engineer who spent most of his career at the National Security Agency leading research in optics, computing and cryptomathematics. He was named director of the Pentagon's All-domain Anomaly Resolution Office on 26 August 2024, succeeding founding director Sean Kirkpatrick and acting director Tim Phillips."
 ---
-
-Jon T. Kosloski is a mathematician, physicist and engineer who spent most of his career at the National Security Agency leading research in optics, computing and cryptomathematics. He was named director of the Pentagon's All-domain Anomaly Resolution Office on 26 August 2024, succeeding founding director Sean Kirkpatrick and acting director Tim Phillips.
 
 At his first public hearing, before Kirsten Gillibrand's Senate subcommittee on 19 November 2024, he struck a more open tone than his predecessor while keeping the same bottom line. AARO had more than 1,600 reports and had found "no verifiable evidence" of extraterrestrial beings or technology. Most resolved cases were balloons, birds, drones and Starlink flares. Yet he said AARO has "some very anomalous objects", described open cases such as a silent black object seen by a police officer and an airliner-sized cylinder seen by contractors, and invited witnesses of "potential historic or ongoing legacy programs" to come forward. He showed the office's work on the Aguadilla, GoFast and Mount Etna videos, publishing its calculations so the public can "check our math".
 

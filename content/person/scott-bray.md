@@ -67,9 +67,10 @@ facts:
     stance: context
     basis: first-hand
     source: v-2022-05-17-hearing@56:57
+bio: "Scott Bray was Deputy Director of Naval Intelligence and the official face of the Navy's UAP effort when Congress held its first open UAP hearing in more than 50 years, before the House Intelligence subcommittee on 17 May 2022."
 ---
 
-Scott Bray was Deputy Director of Naval Intelligence and the official face of the Navy's UAP effort when Congress held its first open UAP hearing in more than 50 years, before the House Intelligence subcommittee on 17 May 2022. The Navy had run the UAP Task Force since August 2020, building on aviators' reports from training ranges, and Bray had approved its security classification guide.
+The Navy had run the UAP Task Force since August 2020, building on aviators' reports from training ranges, and Bray had approved its security classification guide.
 
 He testified that sightings in military training areas are "frequent and continuing", that the database had grown to about 400 reports, and that there had been at least 11 near misses. He showed two videos. One was a sphere flashing past an F/A-18 that he could not explain. The other showed "triangles" that the task force had resolved as drones distorted by night-vision optics. He said no adversary was known to move objects without discernible propulsion, and that a small handful of cases show flight characteristics or signature management the data cannot explain. He named the 2004 Nimitz incident as one that "simply remains unresolved".
 

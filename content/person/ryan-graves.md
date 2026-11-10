@@ -73,9 +73,10 @@ facts:
     source: doc-aaro-gofast
 links:
   - { label: "‘Wow, What Is That?’ Navy Pilots Report Unexplained Flying Objects (The New York Times, 26 May 2019)", url: "https://www.nytimes.com/2019/05/26/us/politics/ufo-sightings-navy-pilots.html" }
+bio: "Ryan Graves is a former U.S. Navy F/A-18F pilot who flew with Strike Fighter Squadron 11, the \"Red Rippers\", out of NAS Oceana, Virginia. He became the leading public voice for aircrew reporting UAP."
 ---
 
-Ryan Graves is a former U.S. Navy F/A-18F pilot who became the leading public voice for aircrew reporting UAP. He joined the Navy in 2009, trained as an engineer, and flew with Strike Fighter Squadron 11, the "Red Rippers", out of NAS Oceana, Virginia, including deployments in Operations Enduring Freedom and Inherent Resolve.
+He joined the Navy in 2009, trained as an engineer, and deployed with the squadron in Operations Enduring Freedom and Inherent Resolve.
 
 From 2014, after his squadron's jets received the new APG-79 radar, he says crews began tracking objects off the East Coast almost daily. The tracks were confirmed on infrared and missile seekers, and the objects held position in hurricane-force winds and flew for hours. In one incident in warning area W-72, an object described as a dark cube inside a clear sphere passed between two jets, prompting a safety report. The encounters, during the USS Theodore Roosevelt's 2014–2015 workups, produced the Gimbal and GoFast videos, and Rear Admiral Tim Gallaudet says they reached the admirals as an urgent safety-of-flight issue. Graves was among the pilots who spoke to The New York Times in 2019.
 

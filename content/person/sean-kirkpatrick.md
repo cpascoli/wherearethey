@@ -82,9 +82,8 @@ facts:
     stance: disputes
     basis: relayed
     claim_by: sean-kirkpatrick
+bio: "Sean Kirkpatrick is a physicist and former intelligence-community scientist who was the founding director of AARO, the Pentagon's All-domain Anomaly Resolution Office, from July 2022 to December 2023. He is the most prominent official sceptic of the modern disclosure movement, and an essential counterpoint in this archive."
 ---
-
-Sean Kirkpatrick is a physicist and former intelligence-community scientist who was the founding director of AARO, the Pentagon's All-domain Anomaly Resolution Office, from July 2022 to December 2023. He is the most prominent official sceptic of the modern disclosure movement, and an essential counterpoint in this archive.
 
 In April 2023 he gave the Senate Armed Services Committee AARO's first public account of its work. The office held about 650 cases, mostly round objects of one to four metres reported over military ranges. Only a small percentage looked anomalous, some of those linked to foreign capabilities, and AARO had found "no credible evidence" of extraterrestrial activity or off-world technology. He insisted that extraordinary claims require extraordinary science and peer review, and showed both an unresolved case and a resolved one to illustrate the method. His office then prepared the first volume of the historical record report, released in March 2024. It found no evidence of crash retrieval or reverse engineering and traced those claims to a circle of AAWSAP veterans.
 

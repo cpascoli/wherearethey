@@ -37,9 +37,8 @@ facts:
     status: claimed
     by: donald-trump
     source: v-2026-11-08-60-minutes-trump-douthat@40:26
+bio: "Donald Trump is the 45th and 47th President of the United States. On 19 February 2026 he directed the Secretary of War and other agencies to identify and release government files on UAP, UFOs and extraterrestrial life, published since May 2026 as PURSUE."
 ---
-
-Donald Trump is the 45th and 47th President of the United States. On 19 February 2026 he directed the Secretary of War and other agencies to identify and release government files on UAP, UFOs and extraterrestrial life; the Department of War has published them since May 2026 as PURSUE, on war.gov/UFO.
 
 He says he is "not too much of a believer", but in interviews in October and November 2026 he described meetings with Air Force pilots, "really good, solid people", who told him of a round object passing their F-22s at several times their speed: four times on Newsmax, three times on *60 Minutes*. He has not named the pilots or said when or where the encounters happened.
 

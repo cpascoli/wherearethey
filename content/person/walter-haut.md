@@ -48,9 +48,10 @@ facts:
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Walter_Haut
+bio: "Walter Haut (1922–2005) was the public information officer of the 509th Bomb Group at Roswell Army Air Field in July 1947, and the officer who issued the base's announcement of 8 July that it had recovered a \"flying disc\", retracted the same day as a weather balloon."
 ---
 
-Walter Haut (1922–2005) was the public information officer of the 509th Bomb Group at Roswell Army Air Field in July 1947, and the officer who issued the base's announcement of 8 July that it had recovered a "flying disc", retracted the same day as a weather balloon. In the Second World War he flew 35 missions against Japan as a bombardier. In 1991 he co-founded the International UFO Museum and Research Center in Roswell.
+In the Second World War he flew 35 missions against Japan as a bombardier. In 1991 he co-founded the International UFO Museum and Research Center in Roswell.
 
 For decades he said he had only issued the release on the base commander's orders; asked on camera in 1990 whether he saw any of the wreckage, he answered "None whatsoever", while saying he believed it was a craft from outer space. A sealed affidavit dated December 2002, published after his death in *Witness to Roswell* (2007), goes much further: a craft "more of an egg shape" in a guarded hangar and two small bodies under a tarpaulin. The document was drafted for him by the ufologist Donald Schmitt, which critics note, and his earlier affidavit of 1993 says nothing of this. In October 2026 a redacted copy surfaced in the Pentagon's PURSUE release 07, as an appendix to a 2008 plan by BAASS, the contractor of the DIA's AAWSAP program; the release makes no finding on it.
 

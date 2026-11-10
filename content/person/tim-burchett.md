@@ -64,9 +64,10 @@ facts:
     status: claimed
     by: anna-paulina-luna
     source: v-jre-anna-paulina-luna@27:04
+bio: "Tim Burchett is a Republican U.S. Representative from Tennessee, in Congress since 2019 and before that mayor of Knox County. He is one of the most outspoken members of Congress on UAP secrecy."
 ---
 
-Tim Burchett is a Republican U.S. Representative from Tennessee, in Congress since 2019 and before that mayor of Knox County. He is one of the most outspoken members of Congress on UAP secrecy. He frames the issue less as "little green men" than as unaccounted-for taxpayer money and an executive branch that will not answer to Congress.
+He frames the issue less as "little green men" than as unaccounted-for taxpayer money and an executive branch that will not answer to Congress.
 
 At the July 2023 House Oversight hearing he put statements by George Knapp and Jeremy Corbell, and Hal Puthoff's DIA paper on metric engineering, into the record. He credited Knapp's reporting and Leslie Kean's New York Times story for what he knew, and pressed David Grusch on where recovered craft are kept. With Anna Paulina Luna and Matt Gaetz he visited Eglin Air Force Base in 2023 to see pilots' evidence and was stonewalled at first. At the November 2024 hearing he entered documents on legacy programs supplied by Corbell. He later joined Luna's Task Force on the Declassification of Federal Secrets.
 

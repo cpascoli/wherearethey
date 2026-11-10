@@ -67,9 +67,10 @@ facts:
     source: v-jre-david-grusch@29:16
     claims: [ recovered-non-human-craft ]
     basis: relayed
+bio: "Harry Reid was a Democratic U.S. Senator from Nevada (1987–2017) and Senate Majority Leader (2007–2015), and the politician most responsible for the Pentagon's modern UAP programs."
 ---
 
-Harry Reid was a Democratic U.S. Senator from Nevada (1987–2017) and Senate Majority Leader (2007–2015), and the politician most responsible for the Pentagon's modern UAP programs. By his own account his interest came from Robert Bigelow, the Las Vegas billionaire who was a longtime friend and, according to FEC records, a contributor to his campaign committee and leadership PAC from 1998 to 2010.
+By his own account his interest came from Robert Bigelow, the Las Vegas billionaire who was a longtime friend and, according to FEC records, a contributor to his campaign committee and leadership PAC from 1998 to 2010.
 
 In 2007–2008, with Senators Daniel Inouye and Ted Stevens, he directed $22 million in defense appropriations to the DIA. The money funded AAWSAP, which was contracted to Bigelow's BAASS, the company of his friend and donor, and later carried on informally as AATIP. In 2009 he asked for the effort to be made a special access program, and the Pentagon refused on James Clapper's advice. After DIA cancelled the program in 2012, he and Senator Joseph Lieberman backed the failed KONA BLUE proposal at DHS. AARO's 2024 report documents these steps, and describes the contractor's work at Skinwalker Ranch as UAP and paranormal research outside the program's official purpose.
 

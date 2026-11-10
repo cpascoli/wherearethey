@@ -44,9 +44,8 @@ facts:
     status: documented
     by: dylan-borland
     source: doc-transcript-2025-09-09
+bio: "Nancy Mace is a Republican U.S. Representative from South Carolina, in office since 2021. In the 118th Congress she chaired the House Oversight Subcommittee on Cybersecurity, Information Technology, and Government Innovation, and on 13 November 2024 she co-chaired the joint House hearing on UAP with Glenn Grothman."
 ---
-
-Nancy Mace is a Republican U.S. Representative from South Carolina, in office since 2021. In the 118th Congress she chaired the House Oversight Subcommittee on Cybersecurity, Information Technology, and Government Innovation.
 
 At the July 2023 hearing her questions drew David Grusch's best-known answer: that "biologics came with some of these recoveries" and were non-human. Grusch also offered her a list of cooperative and hostile witnesses. On 13 November 2024 she co-chaired, with Glenn Grothman, the joint hearing "Unidentified Anomalous Phenomena: Exposing the Truth", with Tim Gallaudet, Luis Elizondo, Michael Shellenberger and Michael Gold. She opened by saying some people had tried to stop the hearing, and entered into the record, and posted on her website, the whistleblower report on the alleged "Immaculate Constellation" program that Shellenberger brought.
 

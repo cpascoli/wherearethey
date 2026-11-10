@@ -125,6 +125,9 @@ export async function build({ check = false, quiet = false } = {}) {
     if (d.shelf_featured) e.shelfFeatured = true;
     // a picture for any file (site/assets/images/…): shown on its Latest card, at the top of its page and as its share image
     if (d.image) { e.image = String(d.image); if (d.image_caption) e.imageCaption = String(d.image_caption); }
+    // people: a short bio (2–3 sentences, who they are and the main reason they are on file) shown in the page header,
+    // beside the portrait; the body below keeps the details (testimony, evidence, connections)
+    if (d.bio) e.bio = marked.parseInline(String(d.bio).trim());
     if (d.portrait) e.portrait = String(d.portrait); // people: a head-and-shoulders crop (about 4:5) shown beside the name; `image` stays the 16:9 share picture
     // documents whose full text is searched on a page of their own, not in the main document search (the bulk MoD UFO files)
     if (d.search === 'optin') e.searchOptin = true;

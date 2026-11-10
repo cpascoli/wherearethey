@@ -69,9 +69,10 @@ facts:
     status: claimed
     by: eric-burlison
     source: v-2026-10-15-dr-phil-burlison-lure-ufos@43:44
+bio: "Eric Burlison is a Republican U.S. Representative from Missouri, in Congress since 2023, and a member of the House Oversight Committee. He has become the House's most persistent investigator of crash-retrieval allegations."
 ---
 
-Eric Burlison is a Republican U.S. Representative from Missouri, in Congress since 2023, and a member of the House Oversight Committee. He has become the House's most persistent investigator of crash-retrieval allegations. He describes himself as having no security clearance, relying instead on briefings, whistleblowers and sworn testimony.
+He describes himself as having no security clearance, relying instead on briefings, whistleblowers and sworn testimony.
 
 At the July 2023 hearing he asked David Grusch whether he had seen the bodies, and Grusch said he had not. In November 2024 he asked Luis Elizondo the same question about the United States, and Elizondo said yes. As a member of Anna Paulina Luna's declassification task force he played, in September 2025, the Yemen MQ-9 video of a Hellfire missile fired at an orb, footage the Pentagon has not authenticated. He says it reached him through a "dead drop". With Chris Mellon he has compiled lists of specific videos to release, and he has pressed for whistleblower immunity and the waiver of non-disclosure agreements.
 

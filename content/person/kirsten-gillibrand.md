@@ -49,9 +49,10 @@ facts:
     status: claimed
     by: kirsten-gillibrand
     source: v-2024-11-19-hearing@20:30
+bio: "Kirsten Gillibrand has been a Democratic U.S. Senator from New York since 2009. As chair of the Senate Armed Services Subcommittee on Emerging Threats and Capabilities, she is the legislator most responsible for the Pentagon's standing UAP office."
 ---
 
-Kirsten Gillibrand has been a Democratic U.S. Senator from New York since 2009. As chair of the Senate Armed Services Subcommittee on Emerging Threats and Capabilities, she is the legislator most responsible for the Pentagon's standing UAP office. Her bipartisan amendment, enacted in the FY2022 NDAA, set up the office that became AARO, with a mandate to take witness reports regardless of non-disclosure agreements.
+Her bipartisan amendment, enacted in the FY2022 NDAA, set up the office that became AARO, with a mandate to take witness reports regardless of non-disclosure agreements.
 
 She chaired AARO's first open Senate hearing in April 2023 with director Sean Kirkpatrick. Opening it, she said the work begun by Harry Reid had revealed "strong evidence of advanced technology" encountered by military pilots for years. She called the government's response to unknown objects "irresponsibly anemic and slow" because of the UFO stigma, and pressed for raw sensor data to be retained rather than filtered out. Along with Schumer and Rounds she backed the UAP records provisions of the FY2024 NDAA.
 

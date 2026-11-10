@@ -43,9 +43,10 @@ facts:
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Jesse_Marcel
+bio: "Jesse A. Marcel (1907–1986) was the intelligence officer of the 509th Bomb Group at Roswell Army Air Field, the U.S. atomic bomb unit, and the first officer sent to the Foster ranch in July 1947, where the Roswell debris was found."
 ---
 
-Jesse A. Marcel (1907–1986) was the intelligence officer of the 509th Bomb Group at Roswell Army Air Field, the U.S. atomic bomb unit, and the first officer sent to the Foster ranch in July 1947. With the counter-intelligence agent Sheridan Cavitt he collected the debris rancher Mac Brazel had found, and on 8 July the base announced that he had recovered a "flying disc". Flown to Fort Worth the same day, he was photographed with the wreckage in General Roger Ramey's office, where it was identified as a weather balloon and radar target; the Fort Worth Star-Telegram quoted him describing "the remnants of the kite and balloon".
+With the counter-intelligence agent Sheridan Cavitt he collected the debris rancher Mac Brazel had found, and on 8 July the base announced that he had recovered a "flying disc". Flown to Fort Worth the same day, he was photographed with the wreckage in General Roger Ramey's office, where it was identified as a weather balloon and radar target; the Fort Worth Star-Telegram quoted him describing "the remnants of the kite and balloon".
 
 He said nothing more in public for three decades. In 1978, retired in Louisiana, he told the researcher Stanton Friedman that the debris was like nothing he had seen and the balloon story a cover, which opened the modern Roswell story. In a long interview with the NBC reporter Lee Speigel about 1980 he described a debris field three quarters of a mile long, foil-thin metal no sledgehammer could dent and light members carrying pink-lavender symbols, said Ramey ordered him not to talk, and called an origin in outer space "a conjecture" he was nonetheless convinced of. His son, Jesse Marcel Jr., told the same story of the debris shown to the family that night until his death in 2013.
 

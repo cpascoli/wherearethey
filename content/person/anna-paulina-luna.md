@@ -92,9 +92,10 @@ facts:
     status: claimed
     by: anna-paulina-luna
     source: v-jre-anna-paulina-luna@29:37
+bio: "Anna Paulina Luna is a Republican U.S. Representative from Florida, elected in 2022, and a U.S. Air Force veteran. She is the House member who has done most to turn UAP into a standing oversight issue."
 ---
 
-Anna Paulina Luna is a Republican U.S. Representative from Florida, elected in 2022, and a U.S. Air Force veteran. She is the House member who has done most to turn UAP into a standing oversight issue. As an airfield manager with the Portland Air National Guard, she says she saw F-15 pilots refuse to talk about an incursion by something that had outperformed them.
+As an airfield manager with the Portland Air National Guard, she says she saw F-15 pilots refuse to talk about an incursion by something that had outperformed them.
 
 In 2023 she joined Reps. Matt Gaetz and Tim Burchett on a visit to Eglin Air Force Base after pilots alleged a cover-up. There, she says, the members were stonewalled on the grounds that they lacked access to a special access program. AARO later resolved an apparently matching Eglin case as very likely a balloon. She questioned witnesses at the July 2023 hearing. In February 2025 House Oversight chairman James Comer named her to lead the Task Force on the Declassification of Federal Secrets, which included UAP in its remit. The task force sponsored the May 2025 congressional UAP briefing and held the September 9, 2025 whistleblower hearing with Dylan Borland, Jeffrey Nuccetelli and Alexandro Wiggins, where the Yemen "Hellfire" video was shown.
 
