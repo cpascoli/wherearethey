@@ -16,6 +16,9 @@ credentials:
     role: U.S. Air Force veteran (airfield manager, Portland Air National Guard)
 tags:
   - congress
+image: /assets/images/person-anna-paulina-luna.jpg
+portrait: /assets/images/person-anna-paulina-luna-portrait.jpg
+image_caption: "Anna Paulina Luna, official House portrait, 2022 (public domain)."
 rel:
   - [ spoke at, h-2025-05-01, "opening remarks at the briefing sponsored by her task force" ]
   - [ chaired, task-force-declassification ]

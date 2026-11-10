@@ -7,6 +7,9 @@ credentials:
 date: 1907
 end: 1986
 tags: [military, intelligence, roswell, crash-retrieval]
+image: /assets/images/person-jesse-marcel.jpg
+portrait: /assets/images/person-jesse-marcel-portrait.jpg
+image_caption: "Maj. Jesse Marcel in 1947. Photo: Roswell Army Air Field (U.S. government, public domain)."
 rel:
   - [ witness, inc-roswell-1947, "As the 509th Bomb Group's intelligence officer he collected the debris on the Foster ranch and flew it to Fort Worth; from 1978 he said it was not from this earth" ]
   - [ family of, jesse-marcel-jr, "His son, who says that at eleven he handled the debris his father brought home in July 1947" ]

@@ -10,6 +10,9 @@ credentials:
 tags:
   - congress
   - disclosure
+image: /assets/images/person-tim-burchett.jpg
+portrait: /assets/images/person-tim-burchett-portrait.jpg
+image_caption: "Tim Burchett, official portrait, 119th Congress, 2025. Photo: House Creative Services (public domain)."
 rel:
   - [ testified at, h-2025-05-01 ]
   - [ member, task-force-declassification ]

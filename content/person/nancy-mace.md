@@ -13,6 +13,9 @@ credentials:
     role: U.S. Representative (R-SC); Chair, Oversight Subcommittee on Cybersecurity, IT, and Government Innovation (118th Congress)
 tags:
   - congress
+image: /assets/images/person-nancy-mace.jpg
+portrait: /assets/images/person-nancy-mace-portrait.jpg
+image_caption: "Nancy Mace, official portrait, 2020. Photo: Office of Congresswoman Nancy Mace (public domain)."
 rel:
   - [ raised, langley-afb, "Mace has pressed for answers on the Langley incursions" ]
   - [ chaired, h-2024-11-13 ]

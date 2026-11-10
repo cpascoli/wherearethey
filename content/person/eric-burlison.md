@@ -14,6 +14,9 @@ credentials:
 tags:
   - congress
   - crash-retrieval
+image: /assets/images/person-eric-burlison.jpg
+portrait: /assets/images/person-eric-burlison-portrait.jpg
+image_caption: "Eric Burlison, official portrait, 118th Congress, 2023. Photo: U.S. House of Representatives (public domain)."
 rel:
   - [ testified at, h-2025-05-01 ]
   - [ member, task-force-declassification ]

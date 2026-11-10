@@ -15,6 +15,9 @@ credentials:
 tags:
   - intelligence
   - disclosure
+image: /assets/images/person-chris-mellon.jpg
+portrait: /assets/images/person-chris-mellon-portrait.jpg
+image_caption: "Christopher Mellon in January 2023. Still from Max Moszkowicz's YouTube interview, CC BY 3.0, via Wikimedia Commons."
 rel:
   - [ testified at, h-2025-05-01 ]
   - [ commented on, langley-afb, "He described the drone incursions over Langley at the May 2025 congressional briefing" ]

@@ -10,6 +10,9 @@ credentials:
     role: Former research leader, National Security Agency (optics, computing, cryptomathematics)
 tags:
   - aaro
+image: /assets/images/person-jon-kosloski.jpg
+portrait: /assets/images/person-jon-kosloski-portrait.jpg
+image_caption: "Jon T. Kosloski, official AARO portrait, c. 2024 (public domain)."
 rel:
   - [ led, aaro, "Director from August 2024 (named August 26, 2024)" ]
   - [ testified at, h-2024-11-19 ]

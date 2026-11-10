@@ -14,6 +14,9 @@ credentials:
 tags:
   - intelligence
   - whistleblower
+image: /assets/images/person-luis-elizondo.jpg
+portrait: /assets/images/person-luis-elizondo-portrait.jpg
+image_caption: "Luis Elizondo in 2021. Still from Max Moszkowicz's YouTube interview, CC BY 3.0, via Wikimedia Commons."
 rel:
   - [ testified at, h-2024-11-13 ]
   - [ authored, book-imminent ]

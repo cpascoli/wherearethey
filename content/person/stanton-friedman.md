@@ -6,9 +6,10 @@ credentials:
     role: "UFO researcher and lecturer from 1970; earlier a nuclear physicist on classified nuclear-aircraft and space-propulsion programmes at General Electric, Aerojet, Westinghouse, TRW and McDonnell Douglas (1956–1970)"
 date: 1934-07-29
 end: 2019-05-13
+tags: [science, roswell, crash-retrieval]
 image: /assets/images/person-stanton-friedman.jpg
 image_caption: "Stanton Friedman. Photo via Wikimedia Commons, CC BY-SA 3.0."
-tags: [science, roswell, crash-retrieval]
+portrait: /assets/images/person-stanton-friedman-portrait.jpg
 rel:
   - [ testified at, h-2013-citizen-hearing ]
   - [ researched, inc-roswell-1947, "He was the first civilian researcher to document the Roswell case, after finding Jesse Marcel in 1978" ]

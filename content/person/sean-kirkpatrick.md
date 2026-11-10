@@ -11,6 +11,9 @@ credentials:
 tags:
   - aaro
   - sceptic
+image: /assets/images/person-sean-kirkpatrick.jpg
+portrait: /assets/images/person-sean-kirkpatrick-portrait.jpg
+image_caption: "Sean Kirkpatrick presenting at the public meeting of NASA's UAP independent study team, 31 May 2023. Photo: NASA/Joel Kowsky (public domain)."
 rel:
   - [ led, aaro, "AARO's first director. He set up the office before stepping down in December 2023" ]
   - [ testified at, h-2023-04-19 ]
@@ -87,4 +90,4 @@ In April 2023 he gave the Senate Armed Services Committee AARO's first public ac
 
 Since leaving, he has kept up his criticism in public. He calls the legacy program fictitious and accuses Jay Stratton of national-security violations, and witnesses say he has explained Gimbal as a balloon and the Tic Tac as a DARPA test. His critics are as vocal. David Grusch testified that Kirkpatrick ignored his concerns. Tim Gallaudet called a meeting with AARO's leadership an "influence operation", and Rep. Anna Paulina Luna has called him a liar and offered to subpoena him. No evidence presented publicly has settled the dispute either way.
 
-*Sources: April 19, 2023 Senate hearing (transcript) · July 26, 2023 and September 9, 2025 hearings · AARO historical report (2024) · PARADIGM (October 2026) · [Wikipedia](https://en.wikipedia.org/wiki/Sean_Kirkpatrick)*
+*Sources: April 19, 2023 Senate hearing (transcript) · July 26, 2023 and September 9, 2025 hearings · AARO historical report (2024) · PARADIGM (October 2026) · [Wikipedia](https://en.wikipedia.org/wiki/Sean_M._Kirkpatrick)*

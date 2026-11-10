@@ -17,6 +17,9 @@ tags:
   - whistleblower
   - crash-retrieval
   - intelligence
+image: /assets/images/person-david-grusch.jpg
+portrait: /assets/images/person-david-grusch-portrait.jpg
+image_caption: "David Grusch testifying before the House Oversight Subcommittee on National Security, the Border, and Foreign Affairs, 26 July 2023. Still from the official House recording (public domain)."
 rel:
   - [ testified at, h-2023-07-26 ]
   - [ worked at, nro ]

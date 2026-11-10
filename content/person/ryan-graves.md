@@ -9,6 +9,9 @@ credentials:
 tags:
   - aviator
   - navy
+image: /assets/images/person-ryan-graves.jpg
+portrait: /assets/images/person-ryan-graves-portrait.jpg
+image_caption: "Ryan Graves testifying before the House Oversight Subcommittee on National Security, the Border, and Foreign Affairs, 26 July 2023. Still from the official House recording (public domain)."
 rel:
   - [ testified at, h-2023-07-26 ]
   - [ authored, doc-graves-statement-2023-07-26 ]

@@ -9,6 +9,9 @@ credentials:
 tags:
   - skinwalker
   - contractor
+image: /assets/images/person-robert-bigelow.jpg
+portrait: /assets/images/person-robert-bigelow-portrait.jpg
+image_caption: "Robert Bigelow at a press conference at Bigelow Aerospace, 4 February 2011. Photo: NASA/Bill Ingalls (public domain)."
 rel:
   - [ founded, bigelow-aerospace ]
   - [ contractor for, aawsap, "His subsidiary BAASS won the $22 million AAWSAP contract" ]

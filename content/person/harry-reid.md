@@ -7,6 +7,9 @@ credentials:
     role: U.S. Senator (D-NV); Senate Majority Leader
 tags:
   - congress
+image: /assets/images/person-harry-reid.jpg
+portrait: /assets/images/person-harry-reid-portrait.jpg
+image_caption: "Harry Reid, official Senate portrait, 2009. Photo: United States Congress (public domain)."
 rel:
   - [ funded research at, skinwalker-ranch, "AARO says the AAWSAP contractor's work at the ranch was paranormal research outside the program's purpose" ]
   - [ sent investigator to, area-51, "Knapp says investigator Richard D'Amato, sent by Senators Byrd and Reid, got into Area 51" ]

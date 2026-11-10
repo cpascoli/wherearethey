@@ -7,6 +7,9 @@ credentials:
 date: 1922
 end: 2005
 tags: [military, roswell, crash-retrieval]
+image: /assets/images/person-walter-haut.jpg
+portrait: /assets/images/person-walter-haut-portrait.jpg
+image_caption: "1st Lt. Walter Haut in 1947. Photo: Roswell Army Air Field (U.S. government, public domain)."
 rel:
   - [ witness, inc-roswell-1947, "As base public information officer he put out the 8 July 1947 “flying disc” release; his sealed 2002 affidavit adds a craft and bodies" ]
   - [ quoted in, book-witness-to-roswell, "The book first published his sealed affidavit of 2002, in 2007" ]

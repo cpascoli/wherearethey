@@ -9,6 +9,9 @@ credentials:
 tags:
   - congress
   - aaro
+image: /assets/images/person-kirsten-gillibrand.jpg
+portrait: /assets/images/person-kirsten-gillibrand-portrait.jpg
+image_caption: "Kirsten Gillibrand, official photo, 116th Congress, 2019. Photo: U.S. Senate Photographic Studio (public domain)."
 rel:
   - [ asked about, inc-nimitz-2004, "She asked AARO to publish what it could on unresolved cases such as Nimitz" ]
   - [ legislated, aaro, "Her amendment in the FY2022 NDAA set up the office that became AARO" ]
