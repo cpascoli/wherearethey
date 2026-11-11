@@ -6,6 +6,7 @@ media: m2aC8lAOQbg
 tags: [interview]
 rel:
   - [ features, donald-trump ]
+  - [ recording of, 2026-11-08-trump-60-minutes-pilots-secret-program ]
   - [ about, pursue, "Douthat notes that the administration has spent a lot of time releasing UFO footage, which he calls “interesting but fuzzy”" ]
 links:
   - label: "Broadcast version (UFOs at 22:50)"
