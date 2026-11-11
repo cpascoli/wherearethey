@@ -889,6 +889,12 @@ html:not(.js) .top, html:not(.js) .app, html:not(.js) .views, html:not(.js) .mor
 
 /* ── exploration mode: trail bar, node menu ── */
 .p-explore { margin: 2px 0 10px; }
+/* over the graph: the type of each group of a file's connections, and "+N more" under a capped file */
+.row-marks { position: absolute; inset: 34px 0 0 0; z-index: 1; /* below the status line and the trail bar */ pointer-events: none; overflow: hidden; }
+.rm-lbl { position: absolute; transform: translate(-50%, -50%); font-family: var(--mono); font-size: 9.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; background: var(--bg); padding: 1px 4px; border-radius: 3px; }
+.rm-lbl:not(.rm-up) { transform: translate(-100%, -50%); }
+.rm-more { position: absolute; transform: translate(-50%, 0); pointer-events: auto; font: 600 11px/1 var(--sans, inherit); color: var(--accent); background: var(--panel); border: 1px solid var(--accent); border-radius: 999px; padding: 4px 9px; cursor: pointer; white-space: nowrap; }
+.rm-more:hover { background: var(--accent); color: var(--bg); }
 .trail-bar { position: absolute; z-index: 12; top: 40px; left: 16px; right: 16px; display: grid; gap: 6px; pointer-events: none; }
 .trail-bar > * { pointer-events: auto; }
 .tb-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }

@@ -457,7 +457,9 @@
     cy.on('mouseout', 'edge', () => { $('#cy').style.cursor = ''; if (!tip.classList.contains('pinned')) tip.hidden = true; });
     cy.on('tap', ev => { if (ev.target === cy || ev.target.isNode?.()) { tip.hidden = true; tip.classList.remove('pinned'); } });
     cy.on('viewport', () => { tip.hidden = true; tip.classList.remove('pinned'); });
-    $('#view-graph').insertAdjacentHTML('beforeend', '<div class="graph-hud" id="hud"></div>');
+    $('#view-graph').insertAdjacentHTML('beforeend', '<div class="graph-hud" id="hud"></div><div class="row-marks" id="row-marks"></div>');
+    cy.on('render', queueMarks);
+    $('#row-marks').addEventListener('click', e => { const b = e.target.closest('[data-more-conn]'); if (b) moreConnections(b.dataset.moreConn); });
     $('#legend').innerHTML = graphTypes.map(t => `<span><i style="background:${TYPES[t].color}"></i>${TYPES[t].plural}</span>`).join('');
     applyGraphFilter();
     layoutGraph(false, { instant: true }); // first draw: framed in place, not flown in
@@ -526,9 +528,19 @@
     for (const x of adj.get(id) || []) if (x.kind !== 'mention' && (x.kind !== 'moment' || x.label === 'speaks in' || fromVideo) && visible.has(x.other) && !offGraph(byId.get(x.other)?.type)) out.add(x.other);
     return out;
   }
+  // a busy file (AARO, Grusch) shows its 30 best-connected neighbours; "+N more" (under it on the graph, or in its
+  // menu) shows the rest. Files already on screen for another reason don't count against the cap.
+  const NEIGHBOUR_CAP = 30;
   function trailShown() {
-    const T = state.trail, shown = new Set([...T.steps, ...T.pinned]);
-    for (const id of T.open) for (const o of graphNeighbours(id)) shown.add(o);
+    const T = state.trail, shown = new Set([...T.steps, ...T.pinned]), over = [];
+    for (const id of T.open) {
+      const nb = [...graphNeighbours(id)];
+      if (nb.length <= NEIGHBOUR_CAP || T.uncapped?.has(id)) { for (const o of nb) shown.add(o); continue; }
+      nb.sort((a, b) => strongAdj(b).length - strongAdj(a).length || byId.get(a).name.localeCompare(byId.get(b).name));
+      for (const o of nb.slice(0, NEIGHBOUR_CAP)) shown.add(o);
+      over.push([id, nb]);
+    }
+    T.capped = new Map(over.map(([id, nb]) => [id, nb.filter(o => !shown.has(o)).length]).filter(([, n]) => n > 0));
     return shown;
   }
   // Extending a trail must not reshuffle it: files already on screen keep their place, new ones fan out around the
@@ -551,10 +563,13 @@
       const bb = before.boundingBox();
       fresh.forEach((n, k) => n.position({ x: bb.x2 + 140, y: (bb.y1 + bb.y2) / 2 + k * 70 }));
       head = fresh[0];
-    } else fanOut(head, fresh.not(head));
-    settle(before.filter(n => !n.hasClass('hidden')), fresh, head);
+      settle(before.filter(n => !n.hasClass('hidden')), fresh, head);
+      return;
+    }
+    // a file's connections: straight rows on the far side of it, grouped by type; they stay where they are put
+    rowOut(head, fresh.not(head));
+    showNew(fresh.union(head));
   }
-  // new neighbours on an arc facing away from the previous step (or from the centre of what's already shown)
   // Exploration layouts have far fewer files than the full network, so they can afford real room: nodes are sized
   // with their labels, repel strongly, and links to well-connected files are longer (busy hubs get more space).
   // The full network keeps its own options, in sync with the precomputed layout (scripts/layout.mjs).
@@ -577,29 +592,87 @@
     numIter: 2500,
     packComponents: false, tile: false, // files with no link among the key files (PURSUE, Rendlesham…) are pulled in by gravity, not set apart
   };
-  function fanOut(head, nodes) {
+  // A file's connections, laid out as straight rows on the far side of the file from the trail (from the previous
+  // step, or from the middle of what's on screen), along the nearest axis so they read left to right or top to
+  // bottom. Grouped by type (people, incidents, programs…), best-connected first, with the type named at the start
+  // of each group; a long list wraps into further rows. The block starts beyond every file already in its way, so it
+  // never lands on the trail.
+  const rowMarks = new Map(); // file → blocks of its connections: group labels, drawn over the graph (drawMarks)
+  function rowOut(head, nodes) {
     if (!nodes.length) return;
     const c = head.position(), steps = state.trail.steps, i = steps.indexOf(head.id());
     const from = i > 0 ? cy.getElementById(steps[i - 1]) : null;
     const others = cy.nodes().not('.hidden').not(nodes).not(head);
-    const ref = from?.length ? from.position() : others.length ? (b => ({ x: (b.x1 + b.x2) / 2, y: (b.y1 + b.y2) / 2 }))(others.boundingBox()) : { x: c.x, y: c.y + 1 };
-    const dir = Math.atan2(c.y - ref.y, c.x - ref.x) || 0;
-    // start beyond whatever is already on screen in that direction, so the new files don't land on the old ones
-    const ux = Math.cos(dir), uy = Math.sin(dir);
-    const clear = others.reduce((m, o) => { const q = o.position(); return Math.max(m, (q.x - c.x) * ux + (q.y - c.y) * uy); }, 0);
-    // stay on the far side (a half circle at most): more files go on further rings rather than wrapping round;
-    // spacing is sized for a node plus its two-line label
-    const arc = nodes.length <= 3 ? Math.PI / 2 : Math.PI * 0.9;
-    const r0 = Math.max(220, Math.min(clear + 140, 520));
-    let k = 0, ring = 0;
-    while (k < nodes.length) {
-      const r = r0 + ring * 160, cap = Math.max(1, Math.floor((arc * r) / 170)), n = Math.min(cap, nodes.length - k);
-      for (let j = 0; j < n; j++, k++) {
-        const a = dir + (n === 1 ? 0 : -arc / 2 + (arc * j) / (n - 1));
-        nodes[k].position({ x: c.x + r * Math.cos(a), y: c.y + r * Math.sin(a) });
-      }
-      ring++;
+    const ref = from?.length && !from.hasClass('hidden') ? from.position() : others.length ? (b => ({ x: (b.x1 + b.x2) / 2, y: (b.y1 + b.y2) / 2 }))(others.boundingBox()) : { x: c.x, y: c.y - 1 };
+    let ux = c.x - ref.x, uy = c.y - ref.y;
+    if (Math.abs(ux) >= Math.abs(uy)) { ux = Math.sign(ux) || 1; uy = 0; } else { uy = Math.sign(uy); ux = 0; }
+    const vx = Math.abs(uy), vy = Math.abs(ux), across = uy !== 0; // rows run left to right, columns top to bottom (each type named in the gap before it);
+    // across: a horizontal row (the block grows downwards or upwards)
+    // spacing sized for a node and its label (up to 190 px wide, two lines)
+    const sv = across ? 175 : 80, su = across ? 115 : 240, perRow = across ? 6 : 8;
+    const order = t => graphTypes.indexOf(t);
+    const list = nodes.toArray().sort((a, b) => order(byId.get(a.id()).type) - order(byId.get(b.id()).type) || strongAdj(b.id()).length - strongAdj(a.id()).length);
+    // pack the groups into rows: a group that fits in a row but not in what's left of this one starts a new row; a
+    // longer group runs on, and is named again where it continues
+    const groups = [];
+    for (const n of list) { const t = byId.get(n.id()).type; if (groups[groups.length - 1]?.t !== t) groups.push({ t, nodes: [] }); groups[groups.length - 1].nodes.push(n); }
+    const rows = [[]], labels = [], cur = () => rows[rows.length - 1];
+    for (const g of groups) {
+      if (cur().length && g.nodes.length <= perRow && cur().length + 1 + g.nodes.length > perRow) rows.push([]);
+      if (cur().length) cur().push(null); // a gap between types, where the next one is named
+      labels.push({ id: g.nodes[0].id(), text: `${TYPES[g.t].plural} · ${g.nodes.length}` });
+      g.nodes.forEach((n, k) => {
+        if (cur().length >= perRow) { rows.push([]); if (k) labels.push({ id: n.id(), text: `${TYPES[g.t].plural} (cont.)` }); }
+        cur().push(n);
+      });
     }
+    // start past every file already in the band the block will cover
+    const half = (Math.max(...rows.map(r => r.length)) * sv) / 2 + sv;
+    const clear = others.reduce((m, o) => {
+      const q = o.position(), du = (q.x - c.x) * ux + (q.y - c.y) * uy, dv = (q.x - c.x) * vx + (q.y - c.y) * vy;
+      return Math.abs(dv) <= half && du > 0 ? Math.max(m, du) : m;
+    }, 0);
+    const d0 = Math.max(across ? 190 : 260, clear ? clear + su : 0);
+    rows.forEach((r, ri) => r.forEach((n, j) => {
+      if (!n) return;
+      const d = d0 + ri * su, w = (j - (r.length - 1) / 2) * sv;
+      n.position({ x: c.x + ux * d + vx * w, y: c.y + uy * d + vy * w });
+    }));
+    if (nodes.length >= 4) (rowMarks.get(head.id()) || rowMarks.set(head.id(), []).get(head.id())).push({ labels, vx, vy, sv, su });
+  }
+  // the group labels of each block, and "+N more" under a file whose connections are capped; HTML over the canvas,
+  // redrawn as the graph pans, zooms or moves
+  let marksQueued = false;
+  function drawMarks() {
+    marksQueued = false;
+    const box = $('#row-marks'), T = state.trail;
+    if (!box || !cy) return;
+    const out = [];
+    if (T && !T.core && state.view === 'graph') {
+      const r = $('#cy').getBoundingClientRect(), g = box.getBoundingClientRect(), ox = r.left - g.left, oy = r.top - g.top, z = cy.zoom();
+      const at = id => { const n = cy.getElementById(id); return n.length && !n.hasClass('hidden') ? n : null; };
+      for (const [hid, blocks] of rowMarks) {
+        if (!T.open.has(hid)) continue;
+        for (const b of blocks) for (const l of b.labels) {
+          const n = at(l.id); if (!n) continue;
+          const p = n.renderedPosition(), off = b.sv * 0.55 * z;
+          // no wider than its column (or the gap before its row), so neighbours never overlap when zoomed out
+          out.push(`<span class="rm-lbl${b.vx ? '' : ' rm-up'}" style="left:${ox + p.x - b.vx * off}px;top:${oy + p.y - b.vy * off}px;max-width:${Math.max(24, (b.vx ? b.sv : b.su) * z - 12)}px" title="${esc(l.text)}">${esc(l.text)}</span>`);
+        }
+      }
+      for (const [id, n] of T.capped || []) {
+        const node = at(id); if (!node) continue;
+        const p = node.renderedPosition();
+        out.push(`<button class="rm-more" data-more-conn="${esc(id)}" style="left:${ox + p.x}px;top:${oy + p.y + (node.height() / 2 + 34) * z}px" title="Show all of ${esc(byId.get(id).name)}'s connections">+${n} more</button>`);
+      }
+    }
+    box.innerHTML = out.join('');
+  }
+  const queueMarks = () => { if (!marksQueued) { marksQueued = true; requestAnimationFrame(drawMarks); } };
+  function moreConnections(id) {
+    const T = state.trail; if (!T) return;
+    (T.uncapped ||= new Set()).add(id);
+    trailChanged(id);
   }
   // settle overlaps by moving only the new files; everything already on screen is pinned in place
   function settle(fixed, fresh, head) {
@@ -698,9 +771,10 @@
     T.open.add(id);
     T.pinned.delete(id);
     state.hiddenIds.delete(id);
+    if (state.sel !== id) select(id, { from: 'trail', noPanel: window.innerWidth <= 860 }); // its connections light up, not fade
     trailChanged(id);
   }
-  function collapseFile(id) { state.trail.open.delete(id); trailChanged(); } // stays on the trail
+  function collapseFile(id) { state.trail.open.delete(id); state.trail.uncapped?.delete(id); rowMarks.delete(id); trailChanged(); } // stays on the trail
   // Double-click: follow a file. Outside a trail it starts one; on the trail's edge it becomes the next step and the
   // earlier steps fold their connections away (the path stays); on an earlier step it goes back there and drops
   // the steps after it. "Show its connections" (menu) remains the additive way to open other directions.
@@ -799,6 +873,7 @@
       T && !T.steps.includes(id) && ['follow', '➜ Add to trail'],
       T && T.steps.includes(id) && T.steps[T.steps.length - 1] !== id && ['follow', '↩ Back to this step'],
       T && (T.open.has(id) ? ['collapse', '− Remove its connections'] : ['expand', '✚ Show its connections']),
+      T?.capped?.get(id) && ['more', `✚ Show ${T.capped.get(id)} more connections`],
       !(T && T.steps.length === 1 && T.steps[0] === id) && ['hide', '⊘ Hide this file'],
       ['path', '⇢ Find a path to…'],
     ].filter(Boolean);
@@ -821,6 +896,7 @@
     else if (k === 'follow') followFile(id);
     else if (k === 'expand') expandFile(id);
     else if (k === 'collapse') collapseFile(id);
+    else if (k === 'more') moreConnections(id);
     else if (k === 'hide') hideFile(id);
     else if (k === 'path') {
       select(id, { from: 'card' });
@@ -915,6 +991,7 @@
   const fadeIn = () => { const c = cy.container(); requestAnimationFrame(() => { c.style.transition = 'opacity .25s ease'; c.style.opacity = 1; }); };
   function layoutGraph(animate, { fresh = false, instant = false } = {}) {
     if (!cy) return;
+    rowMarks.clear(); // a full layout moves everything: the rows and their labels are gone
     cy.resize(); // the side panel may have just opened or closed
     if (instant) { instantFrame = true; const c = cy.container(); c.style.transition = 'none'; c.style.opacity = 0; }
     const eles = cy.elements().not('.hidden');
