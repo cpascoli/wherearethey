@@ -315,6 +315,24 @@ export async function build({ check = false, quiet = false } = {}) {
   // the two files already have an explicit link, which says how they are related; drawn on top, they would hide it
   const relPair = new Set([...edges.values()].filter(x => x.kind === 'rel').flatMap(x => [`${x.s}|${x.t}`, `${x.t}|${x.s}`]));
   for (const [k, x] of edges) if ((x.kind === 'fact' || x.kind === 'moment') && relPair.has(`${x.s}|${x.t}`)) edges.delete(k);
+  // the same link written in both files (the book "authored by" Elizondo, Elizondo "authored" the book) is one link:
+  // keep the first, with the longer note of the two
+  for (const [k, x] of edges) {
+    const back = x.kind === 'rel' && INVERSE[x.label] ? `${x.t}|${x.s}|${INVERSE[x.label]}` : null;
+    if (!back || back === k || !edges.has(back)) continue;
+    const y = edges.get(back);
+    if (y.note && (!x.note || y.note.length > x.note.length)) x.note = y.note;
+    edges.delete(back);
+  }
+  // the same link in other words (Grudge "preceded by" Sign, Sign "succeeded by" Grudge): one file should say it
+  if (check) {
+    const relBy = new Map();
+    for (const x of edges.values()) if (x.kind === 'rel') { const p = [x.s, x.t].sort().join('|'); (relBy.get(p) || relBy.set(p, []).get(p)).push(x); }
+    for (const xs of relBy.values()) {
+      const [a, b] = xs;
+      if (xs.length === 2 && a.s !== b.s) warnings.push(`${ent.get(a.s).file}: "${a.label} ${a.t}", and ${ent.get(b.s).file}: "${b.label} ${b.t}" — the same link in both files? keep it in one`);
+    }
+  }
 
   // ── Credibility (the project's sourcing rule) ──
   for (const e of entities.filter(e => e.type === 'person')) {

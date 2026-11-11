@@ -83,6 +83,15 @@
     adj.get(x.s)?.push({ ...x, other: x.t, dir: 'out' });
     adj.get(x.t)?.push({ ...x, other: x.s, dir: 'in' });
   }
+  // every link between two files, whichever file states it: the graph draws one edge per pair, and its tooltip and
+  // the connection panel list them all. The strongest link names the edge: an explicit link first, a generic
+  // "related to" after it, then links made from claims, quotes and video moments, transcript mentions last.
+  const pairKey = (a, b) => (a < b ? `${a}|${b}` : `${b}|${a}`);
+  const linkRank = x => (x.kind === 'rel' ? (x.label === 'related to' ? 1 : 0) : { claim: 2, fact: 3, moment: 4, text: 5 }[x.kind] ?? 6);
+  const pairLinks = new Map();
+  for (const x of KB.edges) { const k = pairKey(x.s, x.t); (pairLinks.get(k) || pairLinks.set(k, []).get(k)).push(x); }
+  for (const xs of pairLinks.values()) xs.sort((a, b) => linkRank(a) - linkRank(b));
+  const readFrom = (x, a) => (x.s === a ? x.label : (INVERSE[x.label] || x.label)); // a link's label read from file a
   const yearOf = d => (d ? parseInt(String(d).slice(0, 4), 10) : null);
   for (const e of ents) { e.y0 = yearOf(e.date); e.y1 = yearOf(e.end) ?? e.y0; }
   const NOW_Y = new Date().getFullYear();
@@ -355,13 +364,13 @@
       { selector: 'node.outside', style: { 'background-opacity': 0.45, 'border-width': 1.5, 'border-color': css('--outside'), 'border-style': 'dashed' } },
       { selector: 'node:selected', style: { 'border-width': 3, 'border-color': css('--accent'), 'border-style': 'solid', 'underlay-color': css('--accent'), 'underlay-opacity': 0.28, 'underlay-padding': 9, 'underlay-shape': 'ellipse' } }, // the open file: a ring and a soft halo
       { selector: 'edge', style: {
-        width: 1, 'line-color': css('--edge'), 'curve-style': 'straight', opacity: 0.85, 'overlay-opacity': 0,
+        width: 1, 'line-color': css('--edge'), 'curve-style': 'straight', opacity: 0.85, 'overlay-opacity': 0, 'overlay-padding': 5, 'text-events': 'yes', // a thin line, but an easy target (its label too)
         'target-arrow-shape': 'none', 'font-size': 8, color: css('--muted'), 'text-rotation': 'autorotate',
         'text-background-color': css('--bg'), 'text-background-opacity': 0.85, 'text-background-padding': 1,
       } },
       { selector: 'edge[kind="mention"]', style: { 'line-style': 'dashed', 'line-dash-pattern': [3, 3], opacity: 0.6 } },
       // generic links (“related to”) stay visible but recede, so the specific ones stand out
-      { selector: 'edge[label="related to"]', style: { 'line-style': 'dashed', 'line-dash-pattern': [4, 3], opacity: 0.45 } },
+      { selector: 'edge[?generic]', style: { 'line-style': 'dashed', 'line-dash-pattern': [4, 3], opacity: 0.45 } },
       { selector: '.faded', style: { opacity: 0.08 } },
       { selector: 'node.path', style: { 'border-width': 3, 'border-color': css('--accent'), 'border-style': 'solid', 'font-size': 11, 'font-weight': 600 } },
       { selector: 'edge.path', style: { 'line-color': css('--accent'), width: 2.4, label: 'data(label)', opacity: 1 } },
@@ -401,8 +410,11 @@
         id: e.id, label: twoLines(e.name), type: e.type,
         color: TYPES[e.type]?.color || '#999', shape: TYPES[e.type]?.shape || 'ellipse', size: Math.min(48, 12 + Math.sqrt(degree(e.id)) * 6),
       }, classes: e.cred === 'outside' ? 'outside' : '' })),
-      ...KB.edges.map((x, i) => [x, i]).filter(([x]) => !offGraph(byId.get(x.s)?.type) && !offGraph(byId.get(x.t)?.type))
-        .map(([x, i]) => ({ data: { id: 'e' + i, source: x.s, target: x.t, label: x.label, kind: x.kind, ...(x.note ? { tip: x.note } : {}) } })),
+      ...[...pairLinks.values()].map((xs, i) => [xs, i]).filter(([[x]]) => !offGraph(byId.get(x.s)?.type) && !offGraph(byId.get(x.t)?.type))
+        .map(([xs, i]) => {
+          const x = xs[0], more = xs.filter(y => y !== x && y.kind !== 'mention').length; // "+1": more links than the one named
+          return { data: { id: 'e' + i, source: x.s, target: x.t, label: x.label + (more ? `  +${more}` : ''), kind: x.kind, ...(x.label === 'related to' ? { generic: 1 } : {}) } };
+        }),
     ];
     cy = cytoscape({ container: $('#cy'), elements, style: graphStyle(), wheelSensitivity: 0.25, minZoom: 0.15, maxZoom: 3.5, boxSelectionEnabled: false });
     // tap: open the file's card. Double-tap / double-click: follow it (start a trail, or take the next step).
@@ -418,15 +430,19 @@
     });
     if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) window.__cy = cy; // for local UI tests
     cy.on('tap', ev => { if (ev.target === cy) select(null); });
-    cy.on('mouseover', 'node', ev => { $('#cy').style.cursor = 'pointer'; if (!state.sel) highlight(ev.target.id(), true); });
-    cy.on('mouseout', 'node', () => { $('#cy').style.cursor = ''; if (!state.sel) highlight(null); });
+    cy.on('mouseover', 'node', ev => { $('#cy').style.cursor = 'pointer'; if (!state.sel && !state.pair) highlight(ev.target.id(), true); });
+    cy.on('mouseout', 'node', () => { $('#cy').style.cursor = ''; if (!state.sel && !state.pair) highlight(null); });
     // full text of a link on hover (tap on touch screens): labels on the line stay a few words long
     const tip = document.createElement('div');
     tip.className = 'edge-tip'; tip.hidden = true;
     $('#view-graph').appendChild(tip);
     const showTip = ev => {
-      const ed = ev.target, a = byId.get(ed.data('source')), b = byId.get(ed.data('target'));
-      tip.innerHTML = `<b>${esc(a?.name || '')}</b> — ${esc(ed.data('label'))} — <b>${esc(b?.name || '')}</b>${ed.data('tip') ? `<div>${esc(ed.data('tip'))}</div>` : ''}`;
+      const ed = ev.target, a = ed.data('source'), b = ed.data('target'), xs = pairLinks.get(pairKey(a, b)) || [];
+      const named = xs.filter(x => x.kind !== 'mention'), heard = xs.filter(x => x.kind === 'mention');
+      const nm = id => `<b>${esc(byId.get(id)?.name || '')}</b>`;
+      tip.innerHTML = (named.length ? named : heard).map(x => `<p>${nm(a)} — ${esc(readFrom(x, a))} — ${nm(b)}${x.note ? `<span>${esc(x.note)}</span>` : ''}</p>`).join('')
+        + (named.length && heard.length ? `<p class="et-more">and named in ${heard.length === 1 ? 'its' : 'their'} transcript${heard.length > 1 ? 's' : ''}</p>` : '')
+        + `<button class="et-open" data-pair="${esc(a)}|${esc(b)}">${narrowScreen() ? 'Everything that connects them ›' : 'Click for everything that connects them'}</button>`;
       const r = $('#cy').getBoundingClientRect(), g = $('#view-graph').getBoundingClientRect(), p = ev.renderedPosition;
       tip.style.left = `${Math.min(r.left - g.left + p.x + 12, g.width - 300)}px`; tip.style.top = `${r.top - g.top + p.y + 12}px`;
       tip.hidden = false;
@@ -435,11 +451,12 @@
     cy.on('taphold', 'node', ev => { heldAt = Date.now(); openNodeMenu(ev.target.id(), ev.renderedPosition); });
     cy.on('viewport', closeNodeMenu);
     $('#cy').addEventListener('contextmenu', e => e.preventDefault());
-    cy.on('mouseover', 'edge', showTip);
-    cy.on('tap', 'edge', showTip);
-    cy.on('mouseout', 'edge', () => { tip.hidden = true; });
-    cy.on('tap', ev => { if (ev.target === cy || ev.target.isNode?.()) tip.hidden = true; });
-    cy.on('viewport', () => { tip.hidden = true; });
+    cy.on('mouseover', 'edge', ev => { $('#cy').style.cursor = 'pointer'; showTip(ev); });
+    cy.on('tap', 'edge', ev => { if (narrowScreen()) { showTip(ev); tip.classList.add('pinned'); } else { tip.hidden = true; openPair(ev.target.data('source'), ev.target.data('target')); } });
+    tip.addEventListener('click', e => { const b = e.target.closest('[data-pair]'); if (b) { tip.hidden = true; openPair(...b.dataset.pair.split('|')); } });
+    cy.on('mouseout', 'edge', () => { $('#cy').style.cursor = ''; if (!tip.classList.contains('pinned')) tip.hidden = true; });
+    cy.on('tap', ev => { if (ev.target === cy || ev.target.isNode?.()) { tip.hidden = true; tip.classList.remove('pinned'); } });
+    cy.on('viewport', () => { tip.hidden = true; tip.classList.remove('pinned'); });
     $('#view-graph').insertAdjacentHTML('beforeend', '<div class="graph-hud" id="hud"></div>');
     $('#legend').innerHTML = graphTypes.map(t => `<span><i style="background:${TYPES[t].color}"></i>${TYPES[t].plural}</span>`).join('');
     applyGraphFilter();
@@ -809,7 +826,7 @@
   document.addEventListener('pointerdown', e => { if ($('#node-menu') && !e.composedPath().includes($('#node-menu'))) closeNodeMenu(); }, true);
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('#node-menu')) { closeNodeMenu(); e.menuClosed = true; } });
   document.addEventListener('keydown', e => { // Escape closes a story (when no menu, card or field has it)
-    if (e.key !== 'Escape' || e.menuClosed || state.view !== 'graph' || !state.trail?.story || state.sel || e.target.closest('input, textarea, select, [contenteditable]')) return;
+    if (e.key !== 'Escape' || e.menuClosed || state.view !== 'graph' || !state.trail?.story || state.sel || state.pair || e.target.closest('input, textarea, select, [contenteditable]')) return;
     exitTrail();
   });
   document.addEventListener('keydown', e => { // ← → move through a story
@@ -1423,8 +1440,8 @@
   }
   document.addEventListener('keydown', e => {
     if (e.key === '/' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); $('#q').focus(); }
-    if (e.key === 'Escape' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName) && state.sel) { if (state.reading) setReading(false); else select(null); }
-    if ((e.key === 'r' || e.key === 'R') && !e.metaKey && !e.ctrlKey && !/INPUT|TEXTAREA/.test(document.activeElement.tagName) && state.sel && state.view !== 'home') { trackReading('key'); setReading(!state.reading); }
+    if (e.key === 'Escape' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName) && (state.sel || state.pair)) { if (state.reading) setReading(false); else select(null); }
+    if ((e.key === 'r' || e.key === 'R') && !e.metaKey && !e.ctrlKey && !/INPUT|TEXTAREA/.test(document.activeElement.tagName) && (state.sel || state.pair) && state.view !== 'home') { trackReading('key'); setReading(!state.reading); }
   });
 
   // ───────────── claims ─────────────
@@ -1648,16 +1665,18 @@
     if (e.tags.length) h.push(`<div class="p-sec p-side"><h4>Themes</h4><div class="chips">${e.tags.map(t => `<button class="chip ${state.tags.has(t) ? 'on' : ''}" data-filter-tag="${esc(t)}">${esc(t)}</button>`).join('')}</div></div>`);
     // notes & claims come last, after the videos and links
     if (e.facts.length) {
-      h.push(`<div class="p-sec" id="sec-claims"><h4>Notes & claims <span>${e.facts.length}</span></h4><ul class="facts" data-collapse="5" data-fixed>${e.facts.map(f => {
-        const src = f.source ? (f.source.file ? `<a href="${esc(fileUrl(f.source.file))}" target="_blank">📄 ${esc(f.source.file.split('/').pop())}</a>` : f.source.url ? `<a href="${esc(f.source.url)}" target="_blank" rel="noopener">source ↗</a>${archived(f.source.url)}`
-          : byId.get(f.source.id)?.type === 'video' ? `<button class="ts" data-play="${f.source.id}@${f.source.t || 0}">▶ ${f.source.t != null ? fmtT(f.source.t) : 'video'}</button> ${chip(f.source.id)}`
-          : `source: ${chip(f.source.id)}`) : '';
-        const needs = !f.source && f.status !== 'documented' ? `<span class="needs" title="Add a source: video timestamp, document or link">needs source</span>` : '';
-        return `<li class="fact" style="--st:var(--${f.status})"><div>${esc(f.text)}</div><div class="meta"><span class="stamp" title="${esc(STATUS[f.status].hint)}">${STATUS[f.status].label}</span>${f.by && f.by !== e.id ? `<span>by ${chip(f.by)}</span>` : ''}${src}${needs}</div></li>`;
-      }).join('')}</ul></div>`);
+      h.push(`<div class="p-sec" id="sec-claims"><h4>Notes & claims <span>${e.facts.length}</span></h4><ul class="facts" data-collapse="5" data-fixed>${e.facts.map(f => factHtml(f, e)).join('')}</ul></div>`);
     }
     h.push(`<div class="p-edit">Edit <code>${esc(e.file)}</code><button class="link" data-copy="${esc(e.file)}">copy path</button></div>`);
     return h.join('');
+  }
+  // one note or claim of a file (e), with its status, who said it and its source; `extra` adds to its last line
+  function factHtml(f, e, extra = '') {
+    const src = f.source ? (f.source.file ? `<a href="${esc(fileUrl(f.source.file))}" target="_blank">📄 ${esc(f.source.file.split('/').pop())}</a>` : f.source.url ? `<a href="${esc(f.source.url)}" target="_blank" rel="noopener">source ↗</a>${archived(f.source.url)}`
+      : byId.get(f.source.id)?.type === 'video' ? `<button class="ts" data-play="${f.source.id}@${f.source.t || 0}">▶ ${f.source.t != null ? fmtT(f.source.t) : 'video'}</button> ${chip(f.source.id)}`
+      : `source: ${chip(f.source.id)}`) : '';
+    const needs = !f.source && f.status !== 'documented' ? `<span class="needs" title="Add a source: video timestamp, document or link">needs source</span>` : '';
+    return `<li class="fact" style="--st:var(--${f.status})"><div>${esc(f.text)}</div><div class="meta"><span class="stamp" title="${esc(STATUS[f.status].hint)}">${STATUS[f.status].label}</span>${f.by && f.by !== e.id ? `<span>by ${chip(f.by)}</span>` : ''}${src}${needs}${extra}</div></li>`;
   }
   // ── connecting the dots ──
   const strongAdj = id => adj.get(id).filter(x => x.kind !== 'mention' && !offGraph(byId.get(x.other)?.type));
@@ -1760,7 +1779,96 @@
   // expand: arrows pointing out to the corners; back to the side panel: arrows pointing in
   const ICON_EXPAND = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>';
   const ICON_COLLAPSE = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7"/></svg>';
+  // ── a connection: everything that links two files (a click on an edge of the graph) ──
+  // the links on file, what each said about the other, the video moments with both, positions on the same claims,
+  // where both are named in transcripts (the dashed links, hidden by default), and the files both connect to
+  const momentKey = m => `${m.video}@${m.t}`;
+  function pairMoments(a, b) {
+    const A = byId.get(a), B = byId.get(b);
+    if (A.type === 'video' || B.type === 'video') { const [v, o] = A.type === 'video' ? [a, b] : [b, a]; return (momentsFor.get(o) || []).filter(m => m.video === v); }
+    const inB = new Set((momentsFor.get(b) || []).map(momentKey));
+    return (momentsFor.get(a) || []).filter(m => inB.has(momentKey(m)));
+  }
+  // transcripts that name both: in a video, the times it names the other file; otherwise every video that names both,
+  // with the times each is named, and how often they come up within the same minute
+  function pairMentions(a, b) {
+    const A = byId.get(a), B = byId.get(b), out = [];
+    if (A.type === 'video' || B.type === 'video') {
+      const [v, o] = A.type === 'video' ? [a, b] : [b, a];
+      const hits = (MENTIONS[o] || []).filter(m => m[0] === v).map(([, t, snip]) => [t, snip]);
+      if (hits.length) out.push({ vid: v, rows: [[o, hits]], together: 0 });
+      return out;
+    }
+    const hitsOf = (id, vid) => (MENTIONS[id] || []).filter(m => m[0] === vid).map(([, t, snip]) => [t, snip]);
+    for (const [vid, m] of videoMentions) {
+      const ta = m.get(a), tb = m.get(b);
+      if (!ta || !tb) continue;
+      out.push({ vid, rows: [[a, hitsOf(a, vid)], [b, hitsOf(b, vid)]], together: ta.filter(t => tb.some(u => Math.abs(u - t) <= 60)).length });
+    }
+    return out.sort((x, y) => y.together - x.together || (y.rows[0][1].length + y.rows[1][1].length) - (x.rows[0][1].length + x.rows[1][1].length));
+  }
+  function renderPair(a, b) {
+    const A = byId.get(a), B = byId.get(b), xs = pairLinks.get(pairKey(a, b)) || [];
+    const h = [], nm = id => `<b>${esc(byId.get(id).name)}</b>`;
+    const linksOn = xs.filter(x => x.kind === 'rel' || x.kind === 'text');
+    const facts = [];
+    for (const [holder, other] of [[A, b], [B, a]]) for (const f of holder.facts) if (f.by === other || f.source?.id === other) facts.push([f, holder]);
+    const ms = pairMoments(a, b);
+    const claims = ents.filter(c => c.type === 'claim').map(c => [c, (c.assertions || []).filter(x => x.by === a), (c.assertions || []).filter(x => x.by === b)]).filter(([, x, y]) => x.length && y.length);
+    const heard = pairMentions(a, b), oneVideo = A.type === 'video' || B.type === 'video';
+    const nb = id => new Set(strongAdj(id).map(x => x.other));
+    const nbB = nb(b), shared = [...nb(a)].filter(id => id !== b && id !== a && nbB.has(id) && visible.has(id)).sort((x, y) => strongAdj(y).length - strongAdj(x).length);
+    const t = id => TYPES[byId.get(id).type] || TYPES.concept;
+    const count = (n, w) => n && `${n} ${w}${n === 1 ? '' : 's'}`;
+    h.push(`<div class="dossier-strip"><span>Connection</span><span>${[count(linksOn.length, 'link'), count(facts.length, 'statement'), count(ms.length, 'moment'), count(heard.length, oneVideo ? 'transcript' : 'shared video')].filter(Boolean).join(' · ')}</span></div>`);
+    h.push(`<div class="pair-head">${[a, b].map(id => `<a class="pair-end" data-goto="${esc(id)}" href="${hrefOf(id)}"><span class="badge type" style="background:${t(id).color}">${t(id).label}</span><span class="pe-name">${esc(byId.get(id).name)}</span></a>`).join('<span class="pair-and" aria-hidden="true">↔</span>')}</div>`);
+    if (linksOn.length) h.push(`<div class="p-sec"><h4>Links on file <span>${linksOn.length}</span></h4><ul class="pair-links">${linksOn.map(x => `<li><div>${nm(a)} <span class="pl-lbl">${esc(readFrom(x, a))}</span> ${nm(b)}</div>${x.note ? `<div class="pl-note">${esc(x.note)}</div>` : x.kind === 'text' ? `<div class="pl-note">Named in the description of ${esc(byId.get(x.s).name)}.</div>` : ''}</li>`).join('')}</ul></div>`);
+    if (facts.length) h.push(`<div class="p-sec"><h4>What the files say <span>${facts.length}</span></h4><ul class="facts" data-collapse="5" data-fixed>${facts.map(([f, holder]) => factHtml(f, holder, `<span>in ${chip(holder.id)}</span>`)).join('')}</ul></div>`);
+    if (ms.length) h.push(`<div class="p-sec"><h4>Video moments <span>${ms.length}</span></h4><div data-collapse="8" data-fixed>${ms.sort((x, y) => x.video.localeCompare(y.video) || x.t - y.t).map(m => `
+      <div class="moment"><button class="ts" data-play="${m.video}@${m.t}">▶ ${fmtT(m.t)}</button><div><div>${esc(m.text)}</div><div class="who">${m.speaker ? chip(m.speaker) : ''}${m.video !== a && m.video !== b ? chip(m.video) : ''}</div></div></div>`).join('')}</div></div>`);
+    if (claims.length) h.push(`<div class="p-sec"><h4>On the same claims <span>${claims.length}</span></h4><ul class="rec-list">${claims.map(([c, x, y]) => `<li><a href="${hrefOf(c.id)}" data-goto="${esc(c.id)}">${esc(c.name)}</a><div class="small muted">${[[a, x], [b, y]].map(([id, as]) => `${esc(byId.get(id).name)}: ${esc([...new Set(as.map(q => STANCE[q.stance]))].join(', '))}`).join(' · ')}</div></li>`).join('')}</ul></div>`);
+    const tsRow = (vid, hits) => `${hits.slice(0, 8).map(([tt, sn]) => `<button class="ts" data-play="${vid}@${tt}" title="${esc(sn)}">${fmtT(tt)}</button>`).join('')}${hits.length > 8 ? `<span class="small muted">+${hits.length - 8}</span>` : ''}`;
+    if (heard.length) h.push(`<div class="p-sec p-side"><h4>${oneVideo ? 'Named in the transcript' : 'Named in the same videos'} <span>${heard.length}</span></h4>
+      <div class="small muted" style="margin:-4px 0 6px">Automatic name matches, shown as dashed links on the graph when transcript mentions are on.${oneVideo ? '' : ' “Together”: named within the same minute.'}</div>
+      <div data-collapse="4">${heard.map(({ vid, rows, together }) => `<div class="mention-video"><div class="mv-t" data-goto="${vid}">${esc(byId.get(vid).name)}${together ? `<span>together ${together}×</span>` : ''}</div>
+        ${rows.map(([id, hits]) => `<div class="mv-ts">${oneVideo ? '' : `<span class="mv-who">${esc(byId.get(id).name)}</span>`}${tsRow(vid, hits)}</div>`).join('')}
+        ${oneVideo && rows[0][1][0][1] ? `<div class="snip"><button class="ts" data-play="${vid}@${rows[0][1][0][0]}">${fmtT(rows[0][1][0][0])}</button><span>“…${esc(rows[0][1][0][1])}…”</span></div>` : ''}</div>`).join('')}</div></div>`);
+    if (shared.length) h.push(`<div class="p-sec p-side"><h4>Both connected to <span>${shared.length}</span></h4><div class="chips" data-collapse="16">${shared.map(id => chip(id)).join('')}</div></div>`);
+    if (!linksOn.length && !facts.length && !ms.length) h.push(`<p class="small muted">The link comes from ${esc(xs.map(x => x.label).join(', '))}.</p>`);
+    return h.join('');
+  }
+  function highlightPair(a, b) {
+    if (!cy) return;
+    cy.batch(() => {
+      cy.elements().removeClass('faded hl');
+      const ns = cy.getElementById(a).union(cy.getElementById(b)), ed = cy.getElementById(a).edgesWith(cy.getElementById(b));
+      cy.elements().not(ns.union(ed)).addClass('faded');
+      ns.addClass('hl'); ed.addClass('hl');
+      cy.nodes().unselect();
+    });
+  }
+  function openPair(a, b) {
+    if (!byId.has(a) || !byId.has(b)) return;
+    if (state.pair?.join('|') !== `${a}|${b}`) track('select_content', { content_type: 'connection', item_id: pairKey(a, b), method: 'graph_edge' });
+    const show = () => {
+      state.sel = null; state.pair = [a, b];
+      const body = $('#panel-body');
+      body.innerHTML = renderPair(a, b);
+      if (state.reading) layoutReading(body); else body.classList.remove('reading');
+      applyCollapse(body, state.reading ? 2 : 1);
+      $('#panel').hidden = false; $('#panel').scrollTop = 0;
+      $('#app').classList.add('has-panel'); $('#app').classList.toggle('reading', !!state.reading);
+      $('#panel-expand').innerHTML = state.reading ? ICON_COLLAPSE : ICON_EXPAND;
+      $('#panel-expand').title = state.reading ? 'Back to side panel (R)' : 'Reading view (R)';
+      applyPanelWidth(); afterResize();
+      if (state.trail) renderTrailBar();
+      highlightPair(a, b);
+      setHash();
+    };
+    if ($('#panel').hidden) panelTransition('open', show); else show();
+  }
   function openPanel(id) {
+    state.pair = null;
     const e = byId.get(id);
     if (!e) { closePanel(); return; }
     if (e.bodyLazy) loadRecordBodies().then(() => { if (state.sel === id && !$('#panel').hidden) openPanel(id); });
@@ -1827,6 +1935,7 @@
     panelTransition(on ? 'expand' : 'collapse', () => {
       state.reading = on;
       if (state.sel) openPanel(state.sel);
+      else if (state.pair) openPair(...state.pair);
       if (!on) { afterResize(); if (state.view === 'graph' && state.trail) setTimeout(() => frameTrail(), 80); } // the graph was laid out behind the file
     });
   }
@@ -2951,7 +3060,7 @@
   $('#local-video')?.addEventListener('ended', () => videoTick(state.video, 1, 1, true));
   function select(id, { from, noPanel = false } = {}) { // noPanel: select without opening the card (phones, while exploring)
     if (from !== 'auto') state.autoSel = null; // a real selection ends Latest's preview
-    state.sel = id;
+    state.sel = id; state.pair = null;
     if (id && !routing) track('select_content', { content_type: byId.get(id)?.type, item_id: id, method: clickCtx || from || 'link' });
     // exploring: a file opened from search or a link that isn't on screen is pinned there (no connections yet)
     if (state.trail && id && state.view === 'graph' && !offGraph(byId.get(id)?.type) && cy?.getElementById(id).hasClass('hidden') && visible.has(id)) {
