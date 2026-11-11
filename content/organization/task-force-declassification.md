@@ -11,13 +11,13 @@ rel:
   - [ part of, house-oversight ]
   - [ founded by, james-comer ]
   - [ chaired by, anna-paulina-luna ]
-  - [ member, tim-burchett ]
-  - [ member, nancy-mace ]
-  - [ member, eric-burlison ]
-  - [ member, jasmine-crockett ]
-  - [ member, raja-krishnamoorthi ]
-  - [ member, summer-lee ]
-  - [ member, dave-min ]
+  - [ members, tim-burchett ]
+  - [ members, nancy-mace ]
+  - [ members, eric-burlison ]
+  - [ members, jasmine-crockett ]
+  - [ members, raja-krishnamoorthi ]
+  - [ members, summer-lee ]
+  - [ members, dave-min ]
 facts:
   - text: Established on February 11, 2025, inside the House Oversight Committee by Chairman James Comer, who appointed Rep. Anna Paulina Luna as chair.
     status: documented

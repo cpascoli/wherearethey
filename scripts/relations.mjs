@@ -101,3 +101,12 @@ const PAIRS = [
 
 export const INVERSE = Object.fromEntries(PAIRS);
 export const KNOWN = new Set(PAIRS.flat());
+
+// Links that say the same thing in other words, when one file states it and the other file states it back:
+// [kept, dropped] means "A —kept→ B" in one file and "B —dropped→ A" in the other are one link. The build keeps the
+// first wording (the more specific, or the one that reads better), with the longer note of the two.
+export const SAME = [
+  ['succeeded by', 'preceded by'], // Sign "succeeded by" Grudge = Grudge "preceded by" Sign
+  ['testified at', 'testimony by'], ['documented in', 'about'], ['organized by', 'held'], ['led to', 'prompted by'],
+  ['releases', 'released in'], ['co-sponsored', 'sponsored by'], ['co-author of', 'authored by'], ['cleared in', 'about'],
+];

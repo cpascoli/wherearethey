@@ -10,7 +10,7 @@ import { ROOT, TYPES, STATUSES, readEntries, toSeconds, youtubeId } from './lib.
 import { computeLayouts } from './layout.mjs';
 import { assignPaths, writePages } from './pages.mjs';
 import { assignAdded } from './added.mjs';
-import { INVERSE, KNOWN } from './relations.mjs';
+import { INVERSE, KNOWN, SAME } from './relations.mjs';
 
 export const CREDIBLE = ['congress', 'government', 'intelligence', 'military', 'aviator', 'sensor-operator', 'academia', 'astronaut', 'aerospace', 'law-enforcement'];
 const REPORTER = ['journalist', 'policy-expert'];
@@ -315,22 +315,32 @@ export async function build({ check = false, quiet = false } = {}) {
   // the two files already have an explicit link, which says how they are related; drawn on top, they would hide it
   const relPair = new Set([...edges.values()].filter(x => x.kind === 'rel').flatMap(x => [`${x.s}|${x.t}`, `${x.t}|${x.s}`]));
   for (const [k, x] of edges) if ((x.kind === 'fact' || x.kind === 'moment') && relPair.has(`${x.s}|${x.t}`)) edges.delete(k);
-  // the same link written in both files (the book "authored by" Elizondo, Elizondo "authored" the book) is one link:
-  // keep the first, with the longer note of the two
+  // the same link written in both files is one link: an exact inverse (the book "authored by" Elizondo, Elizondo
+  // "authored" the book), or the same link in other words (SAME in relations.mjs: Sign "succeeded by" Grudge, Grudge
+  // "preceded by" Sign). Keep one, in the preferred wording, with the longer note of the two
+  const sameAs = new Map(); // label → [label the other file may use for the same link, keep this one?]
+  for (const [keep, drop] of SAME) { (sameAs.get(keep) || sameAs.set(keep, []).get(keep)).push([drop, true]); (sameAs.get(drop) || sameAs.set(drop, []).get(drop)).push([keep, false]); }
   for (const [k, x] of edges) {
-    const back = x.kind === 'rel' && INVERSE[x.label] ? `${x.t}|${x.s}|${INVERSE[x.label]}` : null;
-    if (!back || back === k || !edges.has(back)) continue;
-    const y = edges.get(back);
-    if (y.note && (!x.note || y.note.length > x.note.length)) x.note = y.note;
-    edges.delete(back);
+    if (x.kind !== 'rel' || !edges.has(k)) continue;
+    const backs = [...(INVERSE[x.label] ? [[INVERSE[x.label], true]] : []), ...(sameAs.get(x.label) || [])];
+    for (const [label, keepX] of backs) {
+      const back = `${x.t}|${x.s}|${label}`;
+      if (back === k || !edges.has(back)) continue;
+      const y = edges.get(back), [kept, gone, goneKey] = keepX ? [x, y, back] : [y, x, k];
+      if (gone.note && (!kept.note || gone.note.length > kept.note.length)) kept.note = gone.note;
+      edges.delete(goneKey);
+      break;
+    }
   }
-  // the same link in other words (Grudge "preceded by" Sign, Sign "succeeded by" Grudge): one file should say it
-  if (check) {
+  // links each file states to the other in different words, not known to be the same: two relationships (UAPTF
+  // "produced" the ODNI assessment, which is "about" UAPTF), or one to tidy (add the pair to SAME, or keep one).
+  // Listed by `npm run check -- --dupes`
+  if (check && process.argv.includes('--dupes')) {
     const relBy = new Map();
     for (const x of edges.values()) if (x.kind === 'rel') { const p = [x.s, x.t].sort().join('|'); (relBy.get(p) || relBy.set(p, []).get(p)).push(x); }
     for (const xs of relBy.values()) {
       const [a, b] = xs;
-      if (xs.length === 2 && a.s !== b.s) warnings.push(`${ent.get(a.s).file}: "${a.label} ${a.t}", and ${ent.get(b.s).file}: "${b.label} ${b.t}" — the same link in both files? keep it in one`);
+      if (xs.length === 2 && a.s !== b.s) warnings.push(`${ent.get(a.s).file}: "${a.label} ${a.t}", and ${ent.get(b.s).file}: "${b.label} ${b.t}": two relationships, or the same link twice?`);
     }
   }
 
