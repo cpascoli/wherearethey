@@ -151,6 +151,12 @@ facts:
     status: claimed
     by: bob-salas
     source: 2025-06-06-wsj-pentagon-ufo-disinformation
+  - text: "David Burkett, author of Lies Above (2026), disputes the EMP-test explanation: he says such a test needed concrete, towers and days of building, that Strategic Air Command would have known, and that the request for proposals for the system named went out four years after 1967."
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: opinion
+    status: claimed
+    by: david-burkett
+    source: v-2026-11-11-reality-check-david-burkett-lies-above@14:35
   - text: "At the 2013 Citizen Hearing Salas said the Air Force wanted a way out of investigating UFOs, and that if it had let him and fellow officers Figel and Meiwald speak to the Condon committee about their incident, it would have found a serious problem."
     claims: [ government-ufo-disinformation ]
     basis: opinion
