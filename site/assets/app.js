@@ -417,7 +417,7 @@
         }),
     ];
     cy = cytoscape({ container: $('#cy'), elements, style: graphStyle(), wheelSensitivity: 0.25, minZoom: 0.15, maxZoom: 3.5, boxSelectionEnabled: false });
-    // tap: open the file's card. Double-tap / double-click: follow it (start a trail, or take the next step).
+    // tap: open the file's card. Double-tap / double-click: follow it (start a trail, or add it to the trail).
     let heldAt = 0, lastTap = { id: null, at: 0 }; // a long-press opens the menu; the tap that ends it does nothing else
     cy.on('tap', 'node', ev => {
       const id = ev.target.id(), now = Date.now();
@@ -707,9 +707,13 @@
   function followFile(id) {
     if (!byId.has(id) || offGraph(byId.get(id).type)) return;
     if (!state.trail || state.trail.core) { if (state.trail?.core) track('explore_start', { item_id: id, method: 'key_files' }); startTrail(id); return; }
+    // the first file of a trail shows its connections (there is nothing to follow yet); after that, a double-click only
+    // adds the file to the trail and leaves the screen as it is: showing its connections is a separate, explicit step
+    // (right-click / long-press → "Show its connections"), so a busy file doesn't bury the trail. Going back to an
+    // earlier step reopens that step's connections, as before.
     const T = state.trail, i = T.steps.indexOf(id);
-    if (i >= 0) T.steps.length = i + 1; else T.steps.push(id);
-    T.open = new Set([id]);
+    if (i >= 0) { T.steps.length = i + 1; T.open = new Set([id]); }
+    else { T.steps.push(id); if (T.steps.length === 1) T.open = new Set([id]); }
     T.pinned.delete(id);
     state.hiddenIds.delete(id);
     if (state.sel !== id) select(id, { from: 'trail', noPanel: window.innerWidth <= 860 });
@@ -770,7 +774,7 @@
     })() : '';
     const steps = T ? T.steps.map(id => `<span class="tb-step ${state.sel === id ? 'on' : ''} ${T.open.has(id) ? '' : 'closed'}" style="--c:${TYPES[byId.get(id).type].color}"><button class="tb-name" data-trail-open="${esc(id)}" title="Open the file card">${esc(byId.get(id).name)}</button>${T.steps.length > 1 ? `<button class="tb-x" data-trail-pop="${esc(id)}" title="Take off the trail" aria-label="Take off the trail">×</button>` : ''}</span>`).join('<span class="tb-sep">›</span>') : '';
     bar.innerHTML = `${storyRows}${T.steps.length ? `<div class="tb-row"><span class="tb-lbl">Trail</span>${steps}</div>` : ''}
-      <div class="tb-row tb-tools">${story && !T.steps.length ? `<span class="tb-hint">${narrowScreen() ? 'Tap a file to read it · double-tap to follow it' : 'Click a file to read it · double-click to follow its connections · ← → to move through the story · Esc to close it'}</span>` : ''}${T && T.steps.length === 1 ? `<span class="tb-hint">${narrowScreen() ? 'Tap to read · double-tap to follow · hold for more' : 'Click a file to read it · double-click to follow it · right-click for more'}</span>` : ''}
+      <div class="tb-row tb-tools">${story && !T.steps.length ? `<span class="tb-hint">${narrowScreen() ? 'Tap a file to read it · double-tap to follow it' : 'Click a file to read it · double-click to start a trail from it · ← → to move through the story · Esc to close it'}</span>` : ''}${T && T.steps.length && T.steps.length <= 2 ? `<span class="tb-hint">${narrowScreen() ? 'Tap to read · double-tap to add to the trail · hold to show its connections' : 'Click a file to read it · double-click to add it to the trail · right-click to show its connections'}</span>` : ''}
         ${hiddenNote}
         ${story ? '' : '<button class="btn small" data-trail-exit>◎ Back to the key files</button>'}</div>`; // a story has its own way back (breadcrumb)
   }
@@ -791,7 +795,7 @@
     const e = byId.get(id), T = state.trail?.core ? null : state.trail;
     const items = [
       !T && ['explore', '◎ Explore from here'],
-      // same as a double-click: follow the file (a step already on the trail goes back to it)
+      // same as a double-click: add the file to the trail (a step already on the trail goes back to it)
       T && !T.steps.includes(id) && ['follow', '➜ Add to trail'],
       T && T.steps.includes(id) && T.steps[T.steps.length - 1] !== id && ['follow', '↩ Back to this step'],
       T && (T.open.has(id) ? ['collapse', '− Remove its connections'] : ['expand', '✚ Show its connections']),
