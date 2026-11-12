@@ -480,9 +480,9 @@
     "why": "nothing new in window 2026-10-29..11-01; no NDAA conference text, no hearing announced"
   },
   "https://www.sentinel-news.org/p/congress-eyes-a-new-uap-hearing": {
-    "d": "2026-10-31",
+    "d": "2026-11-02",
     "v": "skip",
-    "why": "2026-10-12, outside window; November Oversight hearing proposed, no date announced"
+    "why": "Comer wants post-election UAP hearing (10-12): outside window, no date set; keep watching"
   },
   "https://www.foxnews.com/us/former-pentagon-ufo-chief-disputes-fbi-black-triangle-sighting-says-reports-lack-evidence": {
     "d": "2026-11-02",
@@ -1013,5 +1013,75 @@
     "d": "2026-11-11",
     "v": "skip",
     "why": "nothing new in window 2026-11-08..11: no release 08, no NDAA conference text or vote, no hearing announced"
+  },
+  "https://avi-loeb.medium.com/a-new-galileo-project-observatory-for-high-resolution-imaging-and-spectroscopy-of-uap-d16daccd0cdb": {
+    "d": "2026-11-12",
+    "v": "runner-up",
+    "why": "Loeb/Weitsman Galileo Project radar+0.7 m telescope observatory in Ithaca; press release dated 2026-11-05 (outside window), plan already in the 11-10 Loeb item; score ~10 but out of window"
+  },
+  "https://avi-loeb.medium.com/can-a-spherical-object-speed-up-as-a-result-of-its-friction-on-air-2b45ce34ce80": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "Loeb blog 11-11: negative-mass speculation on Trump F-22 account; commentary, nothing new"
+  },
+  "https://www.aol.com/articles/didnt-wings-ex-navy-pilot-090359000.html": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "Soap Central/AOL write-up of Alex Dietrich on Sky History UK series; retells Nimitz 2004 account on file, nothing new"
+  },
+  "https://www.newsnationnow.com/latest-video/author-details-break-in-threat-against-uap-source-5zinlby_dna/": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "clip from the Reality Check Malmstrom/whistleblower episode t84b8Vyjek8, suggested 11-11; page captcha-blocked"
+  },
+  "https://www.einpresswire.com/article/955804169/society-for-uap-studies-sponsors-yale-symposium-on-extraordinary-claims-and-the-boundaries-of-knowledge": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "press release: SUAPS panel at Yale symposium Dec 4-5; organisation not on file, not anchored"
+  },
+  "https://www.leonarddavid.com/book-review-the-last-humans-ufos-global-security-and-the-threat-to-state-sovereignty/": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "book review; book not on file, commentary"
+  },
+  "news.google.com: Jellyfish UFO Alaska military base (Coast to Coast AM, Mashable India 11-11)": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "viral civilian video, no credible witness or official statement"
+  },
+  "news.google.com: Unisba 11-09 26-year air traffic controller Jason Judy / Graves": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "content farm re-post of a podcast clip; skipped 11-11"
+  },
+  "news.google.com: Trump 60 Minutes rewrites 11-09/10 (Fox affiliates, NY Post, SCMP, Hannity, Economic Times, UNILAD, IBT, Mathrubhumi, inkl, EurAsian Times)": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "duplicates of the 60 Minutes item (filed 11-10)"
+  },
+  "news.google.com: war.gov PURSUE page / DVIDS AARO unit page (11-09..11)": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "index pages re-crawled; no release 08 found"
+  },
+  "news.google.com: Daily Mail object accelerating (3I/ATLAS), Starlust Shostak, Debrief feed, SMBtech, NASA astronaut hiring, Disclosure Day, Bradley Walsh, Coast to Coast AM, Charisma Marzulli, Cybernews, Reason, ABC (misdated), Bol News": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "off-topic, entertainment, speculation, or repeats of items skipped 11-08..11"
+  },
+  "https://www.youtube.com/watch?v=dYPXINFcvmI": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "Joe Rogan #2560 David Grusch, uploaded 2026-09-30: outside window"
+  },
+  "https://www.youtube.com/watch?v=UHxJstZMVtg": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "MUFON Elizondo podcast uploaded 2026-10-07: outside window"
+  },
+  "web search 2026-11-12: AARO, war.gov release 08, UAPDA/FY2027 NDAA conference, House UAP hearing, ODNI/Gabbard, Grusch/Elizondo/Stratton/Graves/Fravor interviews, military pilot sightings": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "nothing new in window 2026-11-09..12: no release 08, no NDAA conference text or vote, no hearing announced, no AARO/ODNI statement"
   }
 }
