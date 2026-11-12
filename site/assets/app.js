@@ -785,14 +785,21 @@
     // adds the file to the trail and leaves the screen as it is: showing its connections is a separate, explicit step
     // (right-click / long-press → "Show its connections"), so a busy file doesn't bury the trail. Going back to an
     // earlier step reopens that step's connections, as before.
-    const T = state.trail, i = T.steps.indexOf(id);
+    // Moving on folds every step's connections away, so the screen shows the path itself: the steps (and any file
+    // pinned from search), with the links between them.
+    const T = state.trail, i = T.steps.indexOf(id), wasShown = cy?.getElementById(id).nonempty() && !cy.getElementById(id).hasClass('hidden');
     if (i >= 0) { T.steps.length = i + 1; T.open = new Set([id]); }
-    else { T.steps.push(id); if (T.steps.length === 1) T.open = new Set([id]); }
+    else {
+      T.steps.push(id);
+      T.open = T.steps.length === 1 ? new Set([id]) : new Set();
+      T.uncapped?.clear(); rowMarks.clear();
+    }
     T.pinned.delete(id);
     state.hiddenIds.delete(id);
     if (state.sel !== id) select(id, { from: 'trail', noPanel: window.innerWidth <= 860 });
     if (window.innerWidth <= 860) closePanel(); // phones: keep following in the graph; a single tap opens the card
     trailChanged(id);
+    if (i < 0 && wasShown && cy) showNew(cy.nodes('.trail').not('.hidden')); // the path stays where it was; just keep it in view
   }
   function popStep(id) {
     const T = state.trail;
