@@ -5,6 +5,8 @@ credentials:
   - category: policy-expert
     role: "Cybersecurity researcher, Corelight Labs; author of Lies Above (2026)"
 tags: [disclosure, secrecy]
+rel:
+  - [ authored, book-lies-above ]
 facts:
   - text: "On NewsNation's Reality Check (November 2026) he called the 1967 Malmstrom EMP-test explanation, reported by the Wall Street Journal in 2025 with Sean Kirkpatrick as one of its main sources in his view, impossible to square with the record: such a test needed concrete, towers and days of building, Strategic Air Command would have known, and the request for proposals for the system named went out four years later."
     status: claimed

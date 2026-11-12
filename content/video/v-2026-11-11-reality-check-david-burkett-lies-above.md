@@ -7,6 +7,7 @@ rel:
   - [ hosted by, ross-coulthart ]
   - [ features, david-burkett ]
   - [ about, inc-malmstrom-1967 ]
+  - [ about, book-lies-above ]
 moments:
   - t: "6:45"
     text: "Coulthart: two senior generals, one former and one serving, Gregory Guillot and Glen VanHerck, said after long investigation that they still had no explanation for the objects over Langley Air Force Base; he calls the White House statement that the New Jersey drones were FAA-authorised research drones \"a blatant lie\", which he says the FAA denied to him privately."
