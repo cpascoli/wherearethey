@@ -11,6 +11,8 @@ tags:
   - military
   - navy
   - intelligence
+image: /assets/images/uaptf-odni-preliminary-assessment-2021.jpg
+image_caption: "The executive summary of the ODNI's Preliminary Assessment: Unidentified Aerial Phenomena (25 June 2021), on what the UAP Task Force reviewed. Office of the Director of National Intelligence (public domain)."
 rel:
   - [ succeeded by, aoimsg ]
   - [ run by, oni ]

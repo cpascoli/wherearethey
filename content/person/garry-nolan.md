@@ -8,6 +8,9 @@ credentials:
     role: Professor of Pathology, Stanford University School of Medicine; immunologist and inventor
 tags:
   - science
+image: /assets/images/person-garry-nolan.jpg
+portrait: /assets/images/person-garry-nolan-portrait.jpg
+image_caption: "Garry Nolan in September 2022. Still from Whitley Strieber's YouTube interview, CC BY 3.0, via Wikimedia Commons."
 rel:
   - [ member of, galileo-project, "He later joined Avi Loeb's Galileo Project" ]
   - [ briefed by, luis-elizondo, "Elizondo and Mellon showed him the Navy videos about three weeks before they went public in 2017" ]

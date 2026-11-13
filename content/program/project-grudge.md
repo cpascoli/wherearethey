@@ -5,6 +5,8 @@ end: 1949-12
 tags:
   - air-force
   - foia
+image: /assets/images/project-grudge-report-1949.jpg
+image_caption: "Title page of the Project Grudge report, “Unidentified Flying Objects, Project ‘Grudge’” (Air Materiel Command technical report, August 1949), declassified by Capt. Edward Ruppelt on 1 August 1952. U.S. Air Force (public domain), via Wikimedia Commons."
 rel:
   - [ run by, department-of-war ]
   - [ preceded by, project-sign ]

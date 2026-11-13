@@ -5,6 +5,9 @@ credentials:
   - category: journalist
     role: Australian investigative journalist; NewsNation special correspondent
 tags: [journalist, disclosure]
+image: /assets/images/person-ross-coulthart.jpg
+portrait: /assets/images/person-ross-coulthart-portrait.jpg
+image_caption: "Ross Coulthart at Mosman Library with his book The Lost Diggers, 5 December 2012. Photo: Mosman Library, CC BY 2.0, via Wikimedia Commons."
 rel:
   - [ authored, book-in-plain-sight ]
   - [ interviewed, david-grusch ]

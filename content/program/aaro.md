@@ -9,6 +9,8 @@ date: 2022-07-15
 tags:
   - aaro
   - military
+image: /assets/images/aaro-establishment-memo-2022.jpg
+image_caption: "First page of the Deputy Secretary of Defense's memorandum of 15 July 2022 establishing the All-domain Anomaly Resolution Office. U.S. Department of Defense (public domain)."
 links:
   - label: aaro.mil
     url: https://www.aaro.mil/

@@ -7,6 +7,8 @@ place: { name: "University of Colorado, Boulder, Colorado", lat: 40.0076, lng: -
 tags:
   - air-force
   - science
+image: /assets/images/condon-committee-edward-condon.jpg
+image_caption: "Edward U. Condon, the physicist who later directed the University of Colorado UFO Project, at the National Bureau of Standards around 1945–1951. Photo: National Institute of Standards and Technology (public domain), via Wikimedia Commons."
 rel:
   - [ directed by, edward-condon ]
   - [ funded by, department-of-war, "U.S. Air Force contract F44620-67-C-0035, placed by the Air Force Office of Scientific Research" ]

@@ -10,6 +10,9 @@ credentials:
 tags:
   - air-force
   - whistleblower
+image: /assets/images/person-dylan-borland.jpg
+portrait: /assets/images/person-dylan-borland-portrait.jpg
+image_caption: "Dylan Borland testifying at the House Oversight Committee's hearing “Restoring Public Trust Through UAP Transparency and Whistleblower Protection”, 9 September 2025. Still from the committee's own recording (public domain)."
 rel:
   - [ witness at, langley-afb, "In 2012 he says he saw a silent triangle 100 to 150 feet across rise near the NASA hangar" ]
   - [ testified at, h-2025-09-09 ]

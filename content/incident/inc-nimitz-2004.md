@@ -18,6 +18,8 @@ tags:
   - aviator
   - radar
   - navy
+image: /assets/images/inc-nimitz-2004-flir1-frame.jpg
+image_caption: "A frame of FLIR1, the Navy's targeting-pod video from the Nimitz encounter of 14 November 2004 (TV mode), released by the Department of Defense on 27 April 2020. U.S. Navy (public domain)."
 rel:
   - [ discussed at, h-2023-07-26, "Fravor testified about the encounter under oath to the House Oversight Committee in July 2023" ]
   - [ discussed at, h-2022-05-17, "Bray cited it as the case that “simply remains unresolved”" ]

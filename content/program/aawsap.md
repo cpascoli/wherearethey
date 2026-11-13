@@ -9,6 +9,8 @@ tags:
   - science
   - skinwalker
   - crash-retrieval
+image: /assets/images/aawsap-dia-foia-dirds-2022.jpg
+image_caption: "From the Defense Intelligence Agency's FOIA response of 25 March 2022 releasing 37 Defense Intelligence Reference Documents (1,473 pages) produced under the program. Defense Intelligence Agency (public domain)."
 rel:
   - [ managed by, james-lacatski, "Lacatski's own account (Skinwalkers at the Pentagon); AARO says only that “a DIA employee set up and managed the contract”" ]
   - [ requested by, harry-reid, "AARO: the FY2008 and FY2010 appropriations for the work were made “At the direction of Senate Majority Leader Harry Reid”" ]

@@ -13,6 +13,8 @@ tags:
   - military
   - international
   - nuclear
+image: /assets/images/inc-rendlesham-1980-east-gate.jpg
+image_caption: "The East Gate of the former RAF Woodbridge, where the Rendlesham Forest events began, in November 2014. Photo: Taras Young, CC BY-SA 4.0, via Wikimedia Commons."
 facts:
   - text: Over several nights in late December 1980, U.S. Air Force personnel at RAF Woodbridge and Bentwaters reported unexplained lights in the adjacent Rendlesham Forest; Halt's memo records patrolmen approaching a glowing object they described as metallic and triangular, and three depressions found where it had been seen, with raised radiation readings.
     claims: [ rendlesham-craft-landed ]

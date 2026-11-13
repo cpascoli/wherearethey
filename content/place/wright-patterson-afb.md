@@ -10,6 +10,8 @@ place: { name: "Wright-Patterson Air Force Base, near Dayton, Ohio", lat: 39.826
 tags:
   - air-force
   - military
+image: /assets/images/wright-patterson-afb-aerial.jpg
+image_caption: "Wright-Patterson Air Force Base from the air, looking east-northeast, August 2008. Photo: Nyttend, released into the public domain, via Wikimedia Commons."
 rel:
   - [ named with, area-51, "Rep. Moskowitz said Congress should be allowed into Wright-Patterson, Dugway or Groom Lake" ]
   - [ used by, department-of-war ]

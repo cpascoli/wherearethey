@@ -8,6 +8,8 @@ tags:
 outcome: disputed
 outcome_note: "The Air Force traced the debris to a Project MOGUL balloon (1994) and the \"alien\" accounts to 1950s test dummies and accidents (1997); crash-retrieval claims dispute this."
 outcome_source: doc-af-roswell-case-closed-1997
+image: /assets/images/inc-roswell-1947-daily-record.jpg
+image_caption: "Top of the front page of the Roswell Daily Record, 8 July 1947: “RAAF Captures Flying Saucer On Ranch in Roswell Region”. Public domain (copyright not renewed), via Wikimedia Commons."
 rel:
   - [ claims by, philip-corso, "Corso made broader claims about recovered technology" ]
   - [ vouched for by, edgar-mitchell, "Mitchell, who grew up in Roswell, said the 1947 crash was genuine" ]

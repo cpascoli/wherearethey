@@ -9,6 +9,9 @@ credentials:
     role: Professor of Astrophysics, Harvard University; head of the Galileo Project
 tags:
   - science
+image: /assets/images/person-avi-loeb.jpg
+portrait: /assets/images/person-avi-loeb-portrait.jpg
+image_caption: "Avi Loeb in October 2023. Photo: Christopher Michel, CC BY-SA 4.0, via Wikimedia Commons."
 rel:
   - [ led, galileo-project ]
   - [ testified at, h-2025-05-01 ]

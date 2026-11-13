@@ -9,6 +9,8 @@ end: 1949-02
 tags:
   - air-force
   - foia
+image: /assets/images/project-sign-report-1949.jpg
+image_caption: "The abstract of the Project Sign report (Air Materiel Command, Technical Report No. F-TR-2274-IA, February 1949): “No definite evidence is yet available to confirm or disprove the actual existence of unidentified flying objects as new and unknown types of aircraft.” U.S. Air Force (public domain)."
 rel:
   - [ run by, department-of-war ]
   - [ succeeded by, project-grudge ]

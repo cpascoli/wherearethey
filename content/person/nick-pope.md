@@ -5,6 +5,9 @@ credentials:
   - category: government
     role: UK Ministry of Defence civil servant; ran the MoD's UFO desk (1991–1994)
 tags: [government, international]
+image: /assets/images/person-nick-pope.jpg
+portrait: /assets/images/person-nick-pope-portrait.jpg
+image_caption: "Nick Pope at Alien Snowfest in Big Bear, California, 2019. Photo: SMG2019, CC BY-SA 4.0, via Wikimedia Commons."
 rel:
   - [ investigated, inc-cosford-1993, "He ran the MoD's inquiry into the sightings of 30–31 March 1993: “I launched a full inquiry into this”, checking aircraft movements, satellite tracks, airships and weather balloons" ]
   - [ reviewed, inc-rendlesham-1980, "His cold-case review at the MoD found that “none of these theories fitted the facts”" ]

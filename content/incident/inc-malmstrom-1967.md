@@ -8,6 +8,8 @@ tags:
 outcome: disputed
 outcome_note: "The wing history says UFO rumours around Echo Flight were \"disproven\" and traces the shutdown to a noise pulse in the logic coupler; the Oscar Flight account rests on later testimony."
 outcome_source: doc-341smw-history-1967
+image: /assets/images/inc-malmstrom-1967-launch-control-facility.jpg
+image_caption: "A Minuteman launch control facility at Malmstrom Air Force Base just after construction, early 1960s; the photo does not identify which flight it served. U.S. Air Force photo (public domain), via Wikimedia Commons."
 rel:
   - [ account relayed by, dwynne-arneson, "Officer in charge of the 28th Air Division communications centre in Great Falls in March 1967: a message passed through his centre reporting that a UFO had shut down several missile silos in Montana" ]
   - [ discussed at, h-2022-05-17, "Rep. Gallagher asked whether the task force had looked at the reported Malmstrom shutdown; Bray: “I have heard stories. I have not seen the official data on that.”" ]

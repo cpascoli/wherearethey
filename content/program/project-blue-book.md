@@ -4,6 +4,8 @@ aka:
   - Blue Book
 date: "1952"
 end: "1969"
+image: /assets/images/project-blue-book-report-1966.jpg
+image_caption: "An original Project Blue Book report of 1 February 1966: its cover, and its statement of the program's objectives and conclusions. Photo: Steve Jurvetson, CC BY 2.0, via Wikimedia Commons."
 links:
   - label: Popular Mechanics — 50 Years Ago, the Air Force Tried to Make UFOs Go Away (2019)
     url: https://www.popularmechanics.com/military/research/a30257166/project-blue-book-anniversary/

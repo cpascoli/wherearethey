@@ -214,6 +214,7 @@ export async function build({ check = false, quiet = false } = {}) {
       if (e.name === e.id) e.name = m.title;
       e.date ||= m.date ? String(m.date).replace(/^(\d{4})(\d{2})(\d{2})$/, '$1-$2-$3') : m.date; // yt-dlp writes YYYYMMDD
       e.channel = m.channel;
+      if (m.date) e.uploaded = String(m.date).replace(/^(\d{4})(\d{2})(\d{2})$/, '$1-$2-$3'); // the upload's own day: schema.org uploadDate when `date` is only a month or a year
       if (!e.url && m.url) e.url = m.url;
       e.duration = m.duration;
       e.chapters = m.chapters || [];

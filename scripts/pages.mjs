@@ -265,9 +265,19 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     const title = e.seoTitle || autoTitle;
     let jsonld = null;
     if (e.type === 'person') jsonld = { '@type': 'Person', name: e.name, alternateName: e.aka?.length ? e.aka : undefined, jobTitle: e.credentials?.map(c => c.role).filter(Boolean).join('; ') || undefined, description, sameAs: e.links.map(l => l.url).filter(u => /wikipedia\.org/.test(u)) };
-    if (e.type === 'video' && thumbOf(e) && /^\d{4}-\d{2}-\d{2}$/.test(e.date || '')) {
-      jsonld = { '@type': 'VideoObject', name: e.name, description, thumbnailUrl: thumbOf(e), uploadDate: e.date, duration: isoDur(e.duration), embedUrl: e.youtube ? `https://www.youtube.com/embed/${e.youtube}` : undefined, url: SITE_URL + e.path };
+    const day = [e.date, e.uploaded].find(d => /^\d{4}-\d{2}-\d{2}$/.test(d || ''));
+    if (e.type === 'video' && thumbOf(e) && day) {
+      jsonld = { '@type': 'VideoObject', name: e.name, description, thumbnailUrl: thumbOf(e), uploadDate: day, duration: isoDur(e.duration), embedUrl: e.youtube ? `https://www.youtube.com/embed/${e.youtube}` : undefined, url: SITE_URL + e.path };
       if (t && FULL_TRANSCRIPT(e)) jsonld.transcript = clip(t.segments.map(s => s[1]).join(' '), 50000);
+      // curated moments as Clips, so search can show them as "key moments" that open the page at ?t=
+      const ms = [...(e.moments || [])].filter(m => m.t != null).sort((a, b) => a.t - b.t).filter((m, i, a) => i === 0 || Math.floor(m.t) > Math.floor(a[i - 1].t));
+      const end = e.duration ? Math.floor(e.duration) : Infinity;
+      const clips = ms.map((m, i) => {
+        const start = Math.floor(m.t), stop = Math.min(i + 1 < ms.length ? Math.floor(ms[i + 1].t) : start + 90, start + 300, end);
+        const who = m.speaker && byId.get(m.speaker)?.name;
+        return stop > start && { '@type': 'Clip', name: clip(who && !m.text.startsWith(who.split(' ').pop()) ? `${who}: ${m.text}` : m.text, 110), startOffset: start, endOffset: stop, url: `${SITE_URL}${e.path}?t=${start}` };
+      }).filter(Boolean);
+      if (clips.length) jsonld.hasPart = clips;
     }
     if (e.type === 'book') jsonld = { '@type': 'Book', name: e.name, isbn: e.isbn, numberOfPages: e.pages ? +e.pages : undefined, publisher: e.publisher, datePublished: e.date, description };
     if (e.type === 'film') jsonld = { '@type': 'Movie', name: e.name, dateCreated: e.date, description, image: imageOf(e) || undefined };

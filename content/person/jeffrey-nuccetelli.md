@@ -11,6 +11,9 @@ tags:
   - air-force
   - nuclear
   - whistleblower
+image: /assets/images/person-jeffrey-nuccetelli.jpg
+portrait: /assets/images/person-jeffrey-nuccetelli-portrait.jpg
+image_caption: "Jeffrey Nuccetelli testifying at the House Oversight Committee's hearing “Restoring Public Trust Through UAP Transparency and Whistleblower Protection”, 9 September 2025. Still from the committee's own recording (public domain)."
 rel:
   - [ served at, vandenberg-sfb, "He described five UAP incidents at Vandenberg between 2003 and 2005 to Congress" ]
   - [ testified at, h-2025-09-09 ]

@@ -9,6 +9,9 @@ credentials:
 tags:
   - nuclear
   - air-force
+image: /assets/images/person-bob-salas.jpg
+portrait: /assets/images/person-bob-salas-portrait.jpg
+image_caption: "Robert Salas in 2021. Still from Max Moszkowicz's YouTube interview, CC BY 3.0, via Wikimedia Commons."
 rel:
   - [ testified at, h-2013-citizen-hearing ]
   - [ witness, inc-malmstrom-1967 ]

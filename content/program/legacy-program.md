@@ -4,6 +4,8 @@ seo_title: "What is the Legacy Program? UAP crash-retrieval claims and evidence"
 seo_description: "The alleged decades-long U.S. program to recover and reverse-engineer non-human craft: who says it exists, what AARO found, and whether it is real."
 aka: [legacy program, legacy programs, UFO legacy program, crash retrieval program, multi-decade crash retrieval program]
 tags: [crash-retrieval, secrecy, disclosure]
+image: /assets/images/legacy-program-uapda-definition.jpg
+image_caption: "The definition of “legacy program” in the Schumer–Rounds UAP Disclosure Act of 2023 (Senate bill text, page 6). U.S. Congress (public domain)."
 rel:
   - [ defined in, doc-uap-disclosure-act-2023, "The Act defined a “legacy program” as all government, industry, academic and private endeavours to collect, exploit or reverse engineer technologies of unknown origin" ]
   - [ allegedly run as, usap, "The alleged structure is an unacknowledged and possibly waived SAP" ]

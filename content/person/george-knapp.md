@@ -7,6 +7,9 @@ credentials:
     role: Chief Investigative Reporter, KLAS-TV Las Vegas
 tags:
   - journalist
+image: /assets/images/person-george-knapp.jpg
+portrait: /assets/images/person-george-knapp-portrait.jpg
+image_caption: "George Knapp testifying at the House Oversight Committee's hearing “Restoring Public Trust Through UAP Transparency and Whistleblower Protection”, 9 September 2025. Still from the committee's own recording (public domain)."
 rel:
   - [ chronicled, skinwalker-ranch, "He became the public chronicler of the Skinwalker Ranch research" ]
   - [ testified at, h-2025-09-09 ]

@@ -7,6 +7,8 @@ tags: [aviator, air-force]
 outcome: disputed
 outcome_note: "The Air Force concluded the objects were a mirage, after an earlier analyst suggested known aircraft; Arnold maintained they were real objects."
 outcome_source: doc-bluebook-mt-rainier-1947
+image: /assets/images/inc-arnold-1947-letter-drawing.jpg
+image_caption: "Kenneth Arnold's own sketch of the objects, top and side views, from the account he sent to the Army Air Forces at Wright Field in July 1947, as kept in the Project Blue Book case file (National Archives, NARA ID 28929152). A witness drawing, not a photograph."
 rel:
   - [ investigated by, project-blue-book, "Blue Book's record card marks the conclusion “Other (MIRAGE)”" ]
 facts:

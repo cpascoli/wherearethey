@@ -6,6 +6,9 @@ credentials:
   - category: academia
     role: Computer scientist (PhD, Northwestern University), venture capitalist and author; ufologist since the 1960s
 tags: [academia, science]
+image: /assets/images/person-jacques-vallee.jpg
+portrait: /assets/images/person-jacques-vallee-portrait.jpg
+image_caption: "Jacques Vallée in December 2024. Photo: Christopher Michel, CC BY-SA 4.0, via Wikimedia Commons."
 rel:
   - [ advised, garry-nolan, "Nolan credits him with the idea of “kabuki” and with the rule to talk about data, not conclusions" ]
   - [ worked on, aawsap, "He designed the program's database, about “240,000 cases” in English for AI analysis; its team of 40 was let go when the project was cut" ]

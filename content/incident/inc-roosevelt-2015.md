@@ -14,6 +14,8 @@ tags:
 outcome: disputed
 outcome_note: "AARO (2025) placed the GoFast object at about 13,000 ft, moving at 72–161 mph, or 5–92 mph once the wind is removed, and never against the wind, with high confidence it showed no anomalous speed; NASA (2023) judged it most likely drifting with the wind. The squadron's other radar tracks, the near misses and Gimbal remain unexplained."
 outcome_source: doc-aaro-gofast
+image: /assets/images/inc-roosevelt-2015-gimbal-frame.jpg
+image_caption: "A frame of the Gimbal video, recorded in January 2015 by a Navy jet's infrared targeting pod off the U.S. East Coast and released by the Department of Defense on 27 April 2020. U.S. Navy (public domain)."
 rel:
   - [ reported to, tim-gallaudet, "As Oceanographer of the Navy he received the “urgent safety of flight” email with the GoFast video" ]
   - [ reported to, jay-stratton, "The Gimbal and GoFast videos “came across my desk. I was the first one to get them in the Pentagon because it was my job”" ]

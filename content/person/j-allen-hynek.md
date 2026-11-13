@@ -10,6 +10,8 @@ credentials:
 tags:
   - science
   - air-force
+image: /assets/images/person-j-allen-hynek.jpg
+image_caption: "J. Allen Hynek (left) with Jacques Vallée. Photo: U.S. Government (public domain), via Wikimedia Commons."
 rel:
   - [ testified at, h-1966-04-05, "He told the committee he had set aside “some 20 particularly well-reported UFO cases” he could not explain" ]
   - [ testified at, h-1968-07-29 ]
