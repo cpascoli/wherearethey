@@ -463,21 +463,18 @@
     applyGraphFilter();
     layoutGraph(false, { instant: true }); // first draw: framed in place, not flown in
   }
-  // The key-files map with the types narrowed (one type, or a few: double-click Programs, People…) shows every file of
-  // those types, not only the key ones, with the key files of the other types faded behind them as anchors: most links
-  // run between types, so without them a type alone is a scatter of unconnected dots. All types, or cleared: the key
-  // files. Capped so a narrowing that still covers most of the archive (all but videos, say) stays the key-files map.
+  // The key-files map with the types narrowed (one type, or a few: double-click Programs, People…) or a theme picked
+  // shows every file that matches, not only the key ones, and nothing else: the key files are the map for no filter.
+  // All types and no theme: the key files. Capped so a narrowing that still covers most of the archive (all but
+  // videos, say) stays the key-files map.
   const TYPE_VIEW_MAX = 450;
-  const typeView = () => !!state.trail?.core && state.types.size < graphTypes.length && visible.size <= TYPE_VIEW_MAX;
-  function typeAnchors() {
-    if (!typeView()) return null;
-    return new Set([...state.trail.pinned].filter(id => !visible.has(id) && !state.hiddenIds.has(id) && !(state.credibleOnly && byId.get(id)?.cred === 'outside')));
-  }
+  const typeView = () => !!state.trail?.core && (state.types.size < graphTypes.length || state.tags.size > 0) && visible.size <= TYPE_VIEW_MAX;
+  const typeAnchors = () => typeView() ? new Set() : null; // (the key files used to stay behind, faded: too busy)
   function applyGraphFilter() {
     if (!cy) return;
     const nv = visible.size, ne = KB.edges.filter(x => visible.has(x.s) && visible.has(x.t) && (x.kind !== 'mention' || state.showMentions)).length;
     if ($('#hud') && state.trail?.story) setTimeout(() => { $('#hud').innerHTML = `Story · <b>${cy.nodes().not('.hidden').length}</b> files · <b>${cy.edges().not('.hidden').length}</b> links between them`; });
-    else if ($('#hud') && typeView()) setTimeout(() => { $('#hud').innerHTML = `${[...state.types].map(t => TYPES[t].plural).join(', ')} · all <b>${cy.nodes('.tv').length}</b> files, with the key files faded for context · <b>${cy.edges().not('.hidden').length}</b> links`; });
+    else if ($('#hud') && typeView()) setTimeout(() => { $('#hud').innerHTML = !state.types.size ? 'No types selected · click a type to show its files' : `${[...(state.types.size < graphTypes.length ? [...state.types].map(t => TYPES[t].plural) : []), ...[...state.tags].map(t => `“${esc(t)}”`)].join(', ')} · all <b>${cy.nodes('.tv').length}</b> files · <b>${cy.edges().not('.hidden').length}</b> links`; });
     else if ($('#hud') && state.trail?.core) setTimeout(() => { $('#hud').innerHTML = `Key files · <b>${cy.nodes().not('.hidden').length}</b> files · <b>${cy.edges().not('.hidden').length}</b> links between them`; });
     else if ($('#hud') && state.trail) setTimeout(() => { $('#hud').innerHTML = `Exploring · <b>${cy.nodes().not('.hidden').length}</b> files on screen · <b>${cy.edges().not('.hidden').length}</b> links${state.credibleOnly ? ' · official sources only' : ''}`; });
     else if ($('#hud')) $('#hud').innerHTML = `Case network · <b>${nv}</b> files · <b>${ne}</b> links${state.credibleOnly ? ' · official sources only' : ''}`;
