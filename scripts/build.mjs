@@ -543,7 +543,7 @@ export async function build({ check = false, quiet = false } = {}) {
     return { ...e, body: '', bodyLazy: true };
   });
   fs.writeFileSync(path.join(out, 'records.js'), `window.KB_RECORD_BODIES=${JSON.stringify(recordBodies)};window.KBR&&KBR();\n`);
-  const kb = { built: new Date().toISOString(), filesBase: process.env.FILES_BASE || null, entities: kbEntities, edges: edgeList, inverse: INVERSE, explore: { core: explore.core || [], starts: explore.starts || [], stories: explore.stories || [] }, stats: { ...stats, generic: undefined }, warnings, errors };
+  const kb = { built: new Date().toISOString(), filesBase: process.env.FILES_BASE || null, entities: kbEntities, edges: edgeList, inverse: INVERSE, explore: { core: explore.core || [], starts: explore.starts || [], stories: explore.stories || [] }, stats: { ...stats, generic: undefined } }; // warnings and errors are printed by the build, not shipped (they were indexed as page text)
   fs.writeFileSync(path.join(out, 'kb.js'), `window.KB=${JSON.stringify(kb)};\n`);
   fs.writeFileSync(path.join(out, 'mentions.js'), `window.KB_MENTIONS=${JSON.stringify(mentions)};\nwindow.KB_TOGETHER=${JSON.stringify(together)};\n`);
   for (const [vid, t] of transcripts) {

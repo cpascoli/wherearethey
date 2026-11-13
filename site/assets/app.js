@@ -258,8 +258,7 @@
     renderHist();
     $('#f-mentions').checked = state.showMentions;
     const s = KB.stats;
-    $('#f-stats').innerHTML = `<b>${s.entities}</b> entries · <b>${s.edges}</b> links<br><b>${s.transcripts}</b> transcripts · <b>${s.transcriptHours}</b> hours · <b>${s.mentions.toLocaleString()}</b> mentions<br>Built ${new Date(KB.built).toLocaleString()}<div class="side-links">© ${new Date().getFullYear()} Carlo Pascoli · <a href="/about">About</a> · <a href="https://x.com/WhereAreTheyUAP" target="_blank" rel="noopener" data-social="x" data-placement="side-footer">X</a> · <a href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener" data-social="github" data-placement="side-footer">GitHub</a> · <a href="/privacy">Privacy &amp; cookies</a></div>` +
-      (KB.warnings.length ? `<details><summary>${KB.warnings.length} build warning${KB.warnings.length > 1 ? 's' : ''}</summary><ul>${KB.warnings.map(w => `<li>${esc(w)}</li>`).join('')}</ul></details>` : '');
+    $('#f-stats').innerHTML = `<b>${s.entities}</b> entries · <b>${s.edges}</b> links<br><b>${s.transcripts}</b> transcripts · <b>${s.transcriptHours}</b> hours · <b>${s.mentions.toLocaleString()}</b> mentions<br>Built ${new Date(KB.built).toLocaleString()}<div class="side-links">© ${new Date().getFullYear()} Carlo Pascoli · <a href="/about">About</a> · <a href="https://x.com/WhereAreTheyUAP" target="_blank" rel="noopener" data-social="x" data-placement="side-footer">X</a> · <a href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener" data-social="github" data-placement="side-footer">GitHub</a> · <a href="/privacy">Privacy &amp; cookies</a></div>`; // build warnings stay in the terminal (npm run check), never on the page
   }
   function renderHist() {
     const step = 5, start = Math.floor(MIN_Y / step) * step, n = Math.ceil((MAX_Y + 1 - start) / step);
