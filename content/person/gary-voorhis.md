@@ -51,12 +51,12 @@ facts:
     status: claimed
     by: gary-voorhis
     source: v-2019-09-21-nimitz-encounters-gary-voorhis@21:47
----
   - text: "Robert Powell says Voorhis, interviewed a month after Day and not then in touch with him, told him someone came aboard the Princeton, took the tapes and had him delete everything on the ship."
     status: claimed
     by: robert-powell
     basis: relayed
     source: v-2021-03-05-scu-nimitz-flight-characteristics-panel@25:40
+---
 
 Gary Voorhis was a U.S. Navy petty officer third class aboard the cruiser USS Princeton in 2004, near the end of six years' service that included two combat tours. He was the ship's only technician for its Cooperative Engagement Capability and AEGIS combat system, and so was responsible for the radars that tracked the "Tic Tac" objects.
 

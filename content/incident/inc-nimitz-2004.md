@@ -120,7 +120,6 @@ facts:
     status: claimed
     by: david-fravor
     source: v-lex-fridman-david-fravor@1:46:09
----
   - text: "A 2019 peer-reviewed paper in Entropy by the physicist Kevin Knuth, with Robert Powell and Peter Reali, estimates lower bounds on the Tic Tac's accelerations: about 5,370 g for the radar returns dropping 28,000 feet in 0.78 seconds as Kevin Day recalls them, about 150 g from Fravor's account, and about 76 g from the ATFLIR video. The authors had no radar data; the largest figure rests on Day's account."
     status: documented
     claims: [ tic-tac-beyond-known-technology ]
@@ -144,6 +143,7 @@ facts:
     claims: [ tic-tac-beyond-known-technology ]
     basis: relayed
     source: v-2021-03-05-scu-nimitz-flight-characteristics-panel@16:35
+---
 
 In November 2004, radar operators on the cruiser USS Princeton, part of the USS Nimitz carrier strike group training off southern California, tracked anomalous objects for about two weeks. On 14 November, F/A-18F Super Hornets led by Cmdr. David Fravor, with Lt. Cmdr. Alex Dietrich flying a second jet, were vectored to one of the contacts. The four aircrew watched a white, wingless object about 40 feet long, shaped like a Tic Tac, over a disturbance in the water for roughly five minutes; Fravor says it mirrored his descent and then accelerated out of sight.
 

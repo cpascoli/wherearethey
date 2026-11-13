@@ -45,6 +45,11 @@ facts:
     status: claimed
     by: tim-gallaudet
     source: v-2024-11-13-hearing-a@1:18:39
+  - text: "The physicist Kevin Knuth says the report \"would have failed peer review miserably\"."
+    status: claimed
+    by: kevin-knuth
+    basis: opinion
+    source: v-2025-06-scu-conference-kevin-knuth-scientific-study-of-uap@32:50
 ---
 
 AARO's *Historical Record Report, Volume 1* (March 2024), mandated by the FY2022 and FY2023 NDAAs, reviews U.S. government involvement with UAP since 1945, covering about two dozen investigative efforts from Project Blue Book to the present, and interviews with people who claimed knowledge of secret programmes.

@@ -87,6 +87,11 @@ facts:
     by: kevin-knuth
     basis: first-hand
     source: v-2026-09-08-reality-check-kevin-knuth@24:39
+  - text: "Kevin Knuth says Kirkpatrick's AARO historical report \"would have failed peer review miserably\"."
+    status: claimed
+    by: kevin-knuth
+    basis: opinion
+    source: v-2025-06-scu-conference-kevin-knuth-scientific-study-of-uap@32:50
 bio: "Sean Kirkpatrick is a physicist and former intelligence-community scientist who was the founding director of AARO, the Pentagon's All-domain Anomaly Resolution Office, from July 2022 to December 2023. He is the most prominent official sceptic of the modern disclosure movement, and an essential counterpoint in this archive."
 ---
 

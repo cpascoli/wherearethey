@@ -30,7 +30,6 @@ facts:
     status: claimed
     by: avi-loeb
     source: https://avi-loeb.medium.com/in-more-than-8-of-the-sensor-videos-declassified-by-pursue-the-uap-might-be-birds-17e9ebcbaf81
----
   - text: "Council member Kevin Knuth says its job is to study U.S. government UAP data and advise the President, the FBI and the ODNI, that members were told expressly they would see only unclassified material, and that they have asked to be briefed on the unredacted PURSUE files."
     status: claimed
     by: kevin-knuth
@@ -43,6 +42,7 @@ facts:
     stance: context
     basis: first-hand
     source: v-2026-09-08-reality-check-kevin-knuth@56:47
+---
 
 The UAP Science Advisory Council is a panel of scientists announced in June 2026 to bring open scientific analysis to UAP data. It is chaired by Harvard astrophysicist Avi Loeb. According to press reports, it was formed at the request of the White House in coordination with AARO, the ODNI and the FBI, and reports to an interagency UAP Governance Board.
 

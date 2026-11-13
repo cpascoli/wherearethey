@@ -19,9 +19,9 @@ const force = args.includes('--force');
 const lang = args.includes('--lang') ? args[args.indexOf('--lang') + 1] : 'auto';
 const MAX_LEN = 45; // max characters per segment
 // the media id is whatever isn't one of our options (YouTube ids may themselves start with "-" or "--")
-const OPTS = new Set(['--translate', '--force', '--lang']);
+const OPTS = new Set(['--translate', '--force', '--lang', '--no-context']);
 const id = args.find((a, i) => !OPTS.has(a) && args[i - 1] !== '--lang');
-if (!id) { console.log('usage: node scripts/transcribe.mjs <media-id> [--translate] [--lang xx] [--force]'); process.exit(1); }
+if (!id) { console.log('usage: node scripts/transcribe.mjs <media-id> [--translate] [--lang xx] [--force] [--no-context]'); process.exit(1); }
 
 const dir = path.join(ROOT, 'media', id);
 const video = ['video.mp4', 'video.webm', 'audio.m4a', 'audio.mp3'].map(f => path.join(dir, f)).find(f => fs.existsSync(f));
@@ -46,7 +46,9 @@ const prefix = path.join(tmp, 'out');
 console.log(`→ media/${id}: transcribing${translate ? ' + translating to English' : ''} (${lang})…`);
 // -ml/-sow: short segments split on word boundaries (~2–5 s, like YouTube captions), so moment timestamps
 // land on the quoted phrase rather than up to ~10 s before it
-execFileSync('whisper-cli', ['-m', model, '-f', wav, '-l', lang, ...(translate ? ['-tr'] : []), '-ml', String(MAX_LEN), '-sow', '-oj', '-of', prefix, '-np'], { stdio: ['ignore', 'ignore', 'inherit'] });
+// --no-context: don't feed earlier text back as a prompt (-mc 0); use it when Whisper gets stuck repeating a phrase and
+// drops the rest of a long recording
+execFileSync('whisper-cli', ['-m', model, '-f', wav, '-l', lang, ...(translate ? ['-tr'] : []), ...(args.includes('--no-context') ? ['-mc', '0'] : []), '-ml', String(MAX_LEN), '-sow', '-oj', '-of', prefix, '-np'], { stdio: ['ignore', 'ignore', 'inherit'] });
 const res = JSON.parse(fs.readFileSync(`${prefix}.json`, 'utf8'));
 const segments = (res.transcription || [])
   .map(s => [Math.round((s.offsets?.from || 0) / 100) / 10, String(s.text || '').trim()])

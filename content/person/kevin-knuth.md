@@ -59,6 +59,11 @@ facts:
     claims: [ tic-tac-beyond-known-technology ]
     basis: relayed
     source: v-2021-03-05-scu-nimitz-flight-characteristics-panel@16:35
+  - text: "In 2025 he said he had asked government officials how many craft operate around the Earth at any time, even to an order of magnitude, and was told \"We don't know\"; and that he was \"not convinced that much is known about UFOs or UAPs at all by anybody\"."
+    status: claimed
+    by: kevin-knuth
+    basis: first-hand
+    source: v-2025-06-scu-conference-kevin-knuth-scientific-study-of-uap@9:01
 bio: "Kevin Knuth is a professor of physics at the University at Albany (SUNY) and editor-in-chief of the journal Entropy, and a former NASA research scientist at Ames Research Center. He is the lead author of a 2019 peer-reviewed paper estimating the accelerations of the Nimitz Tic Tac and other craft, a member of the UAP Science Advisory Council and vice president of the UAPx sensor project."
 ---
 

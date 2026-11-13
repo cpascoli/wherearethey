@@ -67,6 +67,7 @@ moments:
   - t: "37:36"
     text: "Knuth describes UAPx's multi-camera site in Connecticut, where orbs are often reported: no object has been triangulated yet, and a radar and a radio-frequency spectrum analyser were due to be deployed in August."
     speaker: kevin-knuth
+    refs: [ uapx ]
     basis: first-hand
   - t: "41:17"
     text: "Knuth says scientists who work on recovered craft have signed strict NDAs; he has talked to some of them, has \"learned a bit about these craft\", and thinks it \"probably true\" that the U.S. has retrieved craft."

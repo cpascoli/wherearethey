@@ -54,12 +54,12 @@ facts:
   - text: "The paper had no external funding. It appeared in a special issue for the MaxEnt 2019 conference, whose organizers, as guest editors, made the decision to publish on the recommendations of three anonymous reviewers."
     status: documented
     source: library/docs/doc-knuth-2019-entropy-flight-characteristics.pdf
----
   - text: "Knuth says he first presented the work at the MaxEnt workshop at the Max Planck Institute for Plasma Physics; the organizers, as guest editors, decided on publication after review by three referees, not he as editor-in-chief."
     status: claimed
     by: kevin-knuth
     basis: first-hand
     source: v-2021-03-05-scu-nimitz-flight-characteristics-panel@52:15
+---
 
 A physics paper that treats the reported motions of unidentified craft as data. For four cases (a 1951 airliner encounter near Bethune, the 1986 Japan Air Lines sighting over Alaska and the 2004 Nimitz encounters, from Kevin Day's radar account, David Fravor's sighting and the ATFLIR video) it works out how fast the objects must have accelerated to do what witnesses and sensors describe, using deliberately conservative assumptions so that each figure is a lower bound. The estimates run from about 70 g to well over 5,000 g, far beyond any aircraft or missile, with no sonic boom or heat that such energies should produce.
 

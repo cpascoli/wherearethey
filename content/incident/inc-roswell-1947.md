@@ -147,6 +147,11 @@ facts:
     status: claimed
     by: larry-lemke
     source: v-2025-03-21-the-sol-forum-with-guests-hal-puthoff-jacques-val@1:41:07
+  - text: "The physicist Kevin Knuth calls the Project Mogul explanation nonsense, arguing that a balloon at 50,000 feet in the jet stream would not hang over one New Mexico county for weeks; he says no one really knows what happened at Roswell."
+    status: claimed
+    by: kevin-knuth
+    basis: opinion
+    source: v-2025-06-scu-conference-kevin-knuth-scientific-study-of-uap@31:45
 ---
 
 In early July 1947, rancher Mac Brazel found debris of tinfoil, paper, tape and sticks scattered across the Foster ranch near Corona, New Mexico. Maj. Jesse Marcel of Roswell Army Air Field collected it with the counter-intelligence agent Sheridan Cavitt, and on 8 July the base's public information officer, Walter Haut, put out a release saying it had recovered a "flying disc". Within hours Gen. Roger Ramey identified the material in Fort Worth as a weather balloon and radar target; the Star-Telegram quoted Marcel describing "the remnants of the kite and balloon", and the Roswell Daily Record printed Brazel's own account the next day.
