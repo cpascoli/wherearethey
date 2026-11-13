@@ -20,9 +20,11 @@
     "r2:check": "scripts/r2.sh check",
     "index:mod": "node scripts/mod-index.mjs",
     "r2:index": "scripts/r2.sh index",
-    "archive:sources": "node scripts/archive-sources.mjs"
+    "archive:sources": "node scripts/archive-sources.mjs",
+    "traffic": "node scripts/traffic.mjs"
   },
   "dependencies": {
+    "@netlify/blobs": "^11.1.9",
     "csv-parse": "^7.0.3",
     "cytoscape": "^3.30.2",
     "cytoscape-fcose": "^2.2.0",
