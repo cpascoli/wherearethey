@@ -23,6 +23,12 @@ facts:
     by: kevin-day
     source: v-2019-10-12-nimitz-encounters-kevin-day@33:26
 ---
+  - text: "He co-wrote the 2019 Entropy paper on the Nimitz accelerations; he says they never had the radar data, but trusts the conclusions because the Princeton sent the jets to the very position where they saw the object."
+    status: claimed
+    by: robert-powell
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: relayed
+    source: v-2021-03-05-scu-nimitz-flight-characteristics-panel@19:50
 
 Robert Powell is a founding board member of the Scientific Coalition for UAP Studies (SCU) and a member of the Society for Scientific Exploration, the UFODATA project and the National Space Society. He worked in engineering management in the semiconductor industry for nearly 30 years, and helped Advanced Micro Devices develop its first flash-memory technology.
 

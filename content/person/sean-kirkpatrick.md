@@ -82,6 +82,11 @@ facts:
     stance: disputes
     basis: relayed
     claim_by: sean-kirkpatrick
+  - text: "The physicist Kevin Knuth says UAPx met AARO about two months before Kirkpatrick's April 2023 Senate testimony urging peer-reviewed research, and that AARO had a copy of his 2019 peer-reviewed paper on the Tic Tac's accelerations: Kirkpatrick either misled Congress \"or forgot about our paper\"."
+    status: claimed
+    by: kevin-knuth
+    basis: first-hand
+    source: v-2026-09-08-reality-check-kevin-knuth@24:39
 bio: "Sean Kirkpatrick is a physicist and former intelligence-community scientist who was the founding director of AARO, the Pentagon's All-domain Anomaly Resolution Office, from July 2022 to December 2023. He is the most prominent official sceptic of the modern disclosure movement, and an essential counterpoint in this archive."
 ---
 

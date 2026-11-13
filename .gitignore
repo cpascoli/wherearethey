@@ -60,3 +60,6 @@ tmp/
 sources/excerpts/
 library/**/*.html
 site/pagefind-mod/
+
+# Local Netlify folder
+.netlify

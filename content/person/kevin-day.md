@@ -41,6 +41,22 @@ facts:
     by: kevin-day
     source: v-2019-10-12-nimitz-encounters-kevin-day@19:06
 ---
+  - text: "His account to the authors, of radar returns dropping from 28,000 feet to sea level in 0.78 seconds, is the basis of the 2019 Entropy paper's largest estimate, about 5,370 g; the authors thank him for answering their questions and note they had no detailed radar data."
+    status: documented
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: relayed
+    source: library/docs/doc-knuth-2019-entropy-flight-characteristics.pdf
+  - text: "Robert Powell says Day, whom he interviewed in January 2018, told him the ship's digital logs had been deleted the day after the encounter."
+    status: claimed
+    by: robert-powell
+    basis: relayed
+    source: v-2021-03-05-scu-nimitz-flight-characteristics-panel@25:40
+  - text: "Powell says the 0.78 seconds is the figure Day gave him for the drop to sea level; the authors also ran one, three and six seconds and found accelerations beyond any known capability in each case."
+    status: claimed
+    by: robert-powell
+    claims: [ tic-tac-beyond-known-technology ]
+    basis: relayed
+    source: v-2021-03-05-scu-nimitz-flight-characteristics-panel@27:40
 
 Kevin Day was the senior chief operations specialist in the Combat Information Center of the cruiser USS Princeton in November 2004, responsible for the air picture around the Nimitz strike group. "My job was to man the radars and ID everything that flew in the skies," he says. He is the radar operator at the start of the "Tic Tac" story.
 

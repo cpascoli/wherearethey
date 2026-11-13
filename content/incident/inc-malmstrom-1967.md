@@ -164,6 +164,18 @@ facts:
     by: bob-salas
     source: v-2013-chd-nuclear-tampering-2@40:22
 ---
+  - text: "The physicist Kevin Knuth says his wife's uncle, at Malmstrom in the early 1970s, told him UFO incursions at the missile sites \"used to happen all the time\" and shut down whole flights of missiles."
+    status: claimed
+    by: kevin-knuth
+    claims: [ uap-nuclear-sites ]
+    basis: relayed
+    source: v-2026-09-08-reality-check-kevin-knuth@18:57
+  - text: "Knuth proposes that a craft warping spacetime would disturb the missiles' constantly running navigation systems, which Salas noted were what failed, and thinks the shutdowns were probably an accident."
+    status: claimed
+    by: kevin-knuth
+    claims: [ malmstrom-ufo-missile-shutdown ]
+    basis: opinion
+    source: v-2026-09-08-reality-check-kevin-knuth@20:04
 
 In March 1967, two flights of Minuteman nuclear missiles at Malmstrom Air Force Base, Montana, went into a "no-go" (unlaunchable) condition. On 16 March all ten missiles of Echo Flight shut down within seconds of each other, an event the Air Force's own records document. Former launch officer Robert Salas says that eight days later, on 24 March, at Oscar Flight, where he was deputy crew commander under Fred Meiwald, the topside guards reported a glowing red oval object hovering above the front gate and his missiles then dropped offline one after another: six to eight of ten in his 2001 account, all ten in his 2013 testimony. He dated the event 16 March when he first told it in public, and says he told it for years as having happened at Echo until Meiwald corrected him in 1996.
 
