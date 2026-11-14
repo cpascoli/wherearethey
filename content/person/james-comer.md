@@ -22,9 +22,8 @@ facts:
     status: claimed
     by: eric-burlison
     source: v-2026-10-26-rebelliously-curious-burlison@35:03
+bio: "James Comer, a Republican U.S. Representative from Kentucky, chairs the House Committee on Oversight and Government Reform, the main investigative committee of the House. He is in the archive for the Task Force on the Declassification of Federal Secrets he created inside the committee in February 2025, with Rep. Anna Paulina Luna as chair, and for a planned UAP hearing."
 ---
-
-James Comer, a Republican U.S. Representative from Kentucky, chairs the House Committee on Oversight and Government Reform, the main investigative committee of the House. He is in the archive for the declassification task force he created and for a planned UAP hearing.
 
 On 11 February 2025 he created the Task Force on the Declassification of Federal Secrets inside the committee and appointed Rep. Anna Paulina Luna to chair it. Its mandate covers the JFK, RFK and MLK records, the Epstein files, COVID-19 origins, the 9/11 files and UAP.
 

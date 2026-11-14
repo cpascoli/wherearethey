@@ -39,9 +39,8 @@ facts:
     by: aj-gevaerd
     claims: [ colares-craft-observed ]
     basis: relayed
+bio: "Uyrangê Hollanda was a Brazilian Air Force captain, later colonel, who commanded Operação Prato, the Air Force's 1977 investigation of lights reported over the Amazon delta around Colares. His team investigated at least 130 cases over several months. In a 1997 interview, shortly before his death, he described far more than his cautious official report."
 ---
-
-Uyrangê Hollanda was a Brazilian Air Force captain, later colonel, who commanded Operação Prato, the Air Force's 1977 investigation of lights reported over the Amazon delta around Colares. His team investigated at least 130 cases over several months.
 
 His official final report was cautious and found no indication of extraterrestrial beings. In a long 1997 interview with ufologists, twenty years later and shortly before his death, he described much more: a dark object about 30 m across hovering some 200 m above his team at Baía do Sol, a craft he estimated at about 100 m long, and developed film showing an open door and a beam of light aimed at their boat. He says the team took about 400–500 photographs and film, which went to the Air Force General Staff, and that he never saw the films again.
 

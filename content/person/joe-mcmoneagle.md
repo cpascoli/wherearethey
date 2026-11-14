@@ -49,11 +49,10 @@ facts:
     status: claimed
     by: joe-mcmoneagle
     source: v-srs-joe-mcmoneagle@5:07:15
+bio: "Joe McMoneagle is a retired U.S. Army chief warrant officer who was recruited in 1978 as “Remote Viewer #001” for the Army's Grill Flame program, later Stargate. He retired in 1984 and later continued remote-viewing research with SRI and the Cognitive Sciences Laboratory. Most of what the archive holds comes from his long interview on the Shawn Ryan Show."
 ---
 
-Joe McMoneagle is a retired U.S. Army chief warrant officer recruited in 1978 as “Remote Viewer #001” for the Army's Grill Flame program, later Stargate. He retired in 1984 and later continued remote-viewing research with SRI and the Cognitive Sciences Laboratory. Most of what the archive holds comes from his long interview on the Shawn Ryan Show.
-
-There he says the program began as Gondola Wish before Grill Flame. He describes sessions he credits with results: a huge submarine at Severodvinsk that he says satellite photos showed 114 days later, the Dozier kidnapping, where he kept saying “Padua”, and Skylab's re-entry, which he placed about 60 miles off. He says his Legion of Merit was awarded half for intelligence work and half for remote viewing.
+On the Shawn Ryan Show he says the program began as Gondola Wish before Grill Flame. He describes sessions he credits with results: a huge submarine at Severodvinsk that he says satellite photos showed 114 days later, the Dozier kidnapping, where he kept saying “Padua”, and Skylab's re-entry, which he placed about 60 miles off. He says his Legion of Merit was awarded half for intelligence work and half for remote viewing.
 
 These are his own accounts; no declassified record in the archive confirms the Severodvinsk session. On UFOs he is cautious: targeting Skinwalker Ranch for Robert Bigelow, he “didn't come up with anything significant”, and he says “I happen to think the only aliens on our planet is us.”
 

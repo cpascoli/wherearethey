@@ -19,9 +19,8 @@ facts:
   - text: "The Devon UFO Research Organisation's report in the Ministry of Defence's case file records the account of the Lynton sergeant and constable without their names."
     status: documented
     source: doc-mod-defe-24-2086
+bio: "Gus Cottey was a police officer with Barnstaple Police in North Devon (Devon and Cornwall Constabulary). He was on patrol with Sgt. Barry Mitchell near Lynton at about 1.10 am on 31 March 1993, the night of the Cosford sightings, when the two officers stopped to watch bright lights cross from the Bristol Channel and pass over them."
 ---
-
-Gus Cottey was a police officer with Barnstaple Police in North Devon (Devon and Cornwall Constabulary). He was on patrol with Sgt. Barry Mitchell near Lynton at about 1.10 am on 31 March 1993 when the two officers stopped to watch bright lights cross from the Bristol Channel and pass over them.
 
 On camera for the U.S. television series *Sightings* in the mid-1990s, he said the two decided at first not to report what they had seen, until another officer in Cornwall came on the radio with the same sighting and others followed.
 

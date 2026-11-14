@@ -42,10 +42,11 @@ facts:
     status: claimed
     by: roberto-doz
     source: https://www.ufoepiloti.it/chi-siamo/
+bio: "Roberto Doz is a retired colonel of the Italian Air Force. By his own account he flew the Grumman S-2F carrier aircraft on anti-submarine missions with the 41° Stormo at Catania for fifteen years and later trained as a helicopter pilot. He says that on 13 December 1985 he and his wife saw a silent, rectangular object at the San Cesareo motorway toll booth south-east of Rome."
 ---
 
-Roberto Doz is a retired colonel of the Italian Air Force. By his own account he joined in 1970, flew the Grumman S-2F carrier aircraft on anti-submarine missions with the 41° Stormo at Catania for fifteen years, served at the Air Staff in Rome, trained on helicopters at the Air Force helicopter school at Frosinone, and spent ten years with the 1st Air Brigade at Padua before a last posting at Monte Venda. His own website credits him with more than 4,500 flying hours on jets, multi-engine aircraft and helicopters and with directing search and rescue for northern Italy. No official Air Force record of his career has been found: these credentials come from his interviews and his site.
+By his own account he joined the Italian Air Force in 1970; besides his years on the S-2F he served at the Air Staff in Rome, trained on helicopters at the Air Force helicopter school at Frosinone, and spent ten years with the 1st Air Brigade at Padua before a last posting at Monte Venda. His own website credits him with more than 4,500 flying hours on jets, multi-engine aircraft and helicopters and with directing search and rescue for northern Italy. No official Air Force record of his career has been found: these credentials come from his interviews and his site.
 
-On 13 December 1985, while training at the helicopter school, he and his wife saw a silent, rectangular object at the San Cesareo motorway toll booth south-east of Rome. He began investigating UFO reports while still in service, spoke about them in interviews and on television, and runs a group and website, "UFO e Piloti", that collects pilots' accounts.
+The San Cesareo sighting came while he was training at the helicopter school. He began investigating UFO reports while still in service, spoke about them in interviews and on television, and runs a group and website, "UFO e Piloti", that collects pilots' accounts.
 
 *Sources: Roberto Doz, interviews on the Simone Tommasini Podcast (2024) and with Sabrina Pieragostini (Extremamente, 2026) · ufoepiloti.it, "Chi siamo"*

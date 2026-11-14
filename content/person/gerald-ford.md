@@ -20,11 +20,10 @@ facts:
     status: claimed
     by: chris-mellon
     source: v-2021-05-05-former-intelligence-secretary-christopher-mellon@7:08
+bio: "Gerald Ford was House Minority Leader (R-Michigan) from 1965 to 1973 and later the 38th President of the United States. After the March 1966 sightings in southern Michigan, which the Air Force attributed to “swamp gas”, he called for a congressional investigation, which led to the first open congressional hearing on UFOs."
 ---
 
-Gerald Ford was House Minority Leader (R-Michigan) from 1965 to 1973 and later the 38th President of the United States. He is in the archive because his call for a congressional investigation in 1966 led to the first open congressional hearing on UFOs.
-
-After the March 1966 sightings in southern Michigan, which the Air Force attributed to “swamp gas”, Ford said in news footage of the time that Congress should investigate, because the public was “very alarmed”. The House Armed Services Committee, chaired by L. Mendel Rivers, held a one-day hearing on 5 April 1966 with Air Force Secretary Harold Brown, Blue Book chief Maj. Hector Quintanilla and the consultant J. Allen Hynek. It led to the Air Force's contract with the University of Colorado for the Condon study.
+In news footage of the time, Ford said that Congress should investigate the Michigan sightings, because the public was “very alarmed”. The House Armed Services Committee, chaired by L. Mendel Rivers, held a one-day hearing on 5 April 1966 with Air Force Secretary Harold Brown, Blue Book chief Maj. Hector Quintanilla and the consultant J. Allen Hynek. It led to the Air Force's contract with the University of Colorado for the Condon study.
 
 Chris Mellon said in 2021 that Hynek's “swamp gas” explanation angered the public and Ford, after which Congress took a fleeting interest.
 

@@ -32,8 +32,9 @@ facts:
     status: claimed
     by: tim-leach
     source: v-tim-leach-war-reporter-profile@16:35
+bio: "Tim Leach is a BBC and ITN cameraman and war reporter in southern Africa, a former head of the Foreign Correspondents' Association in Zimbabwe, and also a musician. On 19 September 1994, three days after the Ariel School sighting, he filmed interviews with the children for the BBC, among the earliest recorded accounts."
 ---
 
-Tim Leach is a BBC and ITN cameraman and war reporter in southern Africa, a former head of the Foreign Correspondents' Association in Zimbabwe, and also a musician. On 19 September 1994, three days after the Ariel School sighting, he filmed interviews with the children for the BBC, among the earliest recorded accounts. He appears in *Ariel Phenomenon* (2022), which presents his reporting on the case as having put his career at risk.
+He appears in *Ariel Phenomenon* (2022), which presents his reporting on the case as having put his career at risk.
 
 *Sources: BBC report (1994) · Ariel Phenomenon · “Moving to a war zone” profile (2016)*

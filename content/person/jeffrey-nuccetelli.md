@@ -49,11 +49,10 @@ facts:
     status: claimed
     by: ryan-graves
     source: v-2023-07-26-hearing-a@1:02:58
+bio: "Jeffrey Nuccetelli is a former U.S. Air Force military police officer with 16 years of active-duty service, much of it in Security Forces at Vandenberg Air Force Base, California, home of the national missile-defence interceptors. Testifying under oath to the House Oversight task force on 9 September 2025, he described five UAP incidents at Vandenberg between 2003 and 2005, one of which he witnessed himself."
 ---
 
-Jeffrey Nuccetelli is a former U.S. Air Force military police officer with 16 years of active-duty service, much of it in Security Forces at Vandenberg Air Force Base, California, home of the national missile-defence interceptors. Testifying under oath to the House Oversight task force on 9 September 2025, he described five UAP incidents at Vandenberg between 2003 and 2005. He witnessed one himself and investigated the others after fellow service members came to him.
-
-The series began on 14 October 2003, when Boeing contractors reported a huge glowing red square hovering silently over two missile-defence sites. Ryan Graves had already relayed that "Vandenberg red square" account to Congress in 2023. Nuccetelli says patrols later reported a triangular craft larger than a football field over an entry control point, and objects "like flying buildings". The one he saw himself was about 30 feet across. He says the objects seemed to respond to being watched.
+He investigated the others after fellow service members came to him. The series began on 14 October 2003, when Boeing contractors reported a huge glowing red square hovering silently over two missile-defence sites. Ryan Graves had already relayed that "Vandenberg red square" account to Congress in 2023. Nuccetelli says patrols later reported a triangular craft larger than a football field over an entry control point, and objects "like flying buildings". The one he saw himself was about 30 feet across. He says the objects seemed to respond to being watched.
 
 His testimony on the records is internally in tension. In his opening statement he said official Air Force records were held by AARO and the FBI. Later he said AARO had told him the records could not be found and had been destroyed under a three-year retention schedule for police records. No official account of the Vandenberg events has been published.
 

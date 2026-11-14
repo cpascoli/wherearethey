@@ -43,8 +43,9 @@ facts:
     claims: [ roswell-crashed-craft ]
     stance: context
     basis: first-hand
+bio: "Linda Moulton Howe (born 1942) is an American journalist and documentary maker, best known for reporting on UFOs and cattle mutilations through her Earthfiles site; Wikipedia describes her as an advocate of a variety of conspiracy theories. She testified at the 2013 Citizen Hearing, where she relayed an unnamed military man's account of a unit recovering craft and bodies."
 ---
 
-Linda Moulton Howe (born 1942) is an American journalist and documentary maker, best known for reporting on UFOs and cattle mutilations through her Earthfiles site; Wikipedia describes her as an advocate of a variety of conspiracy theories. According to Hal Puthoff, she received the bismuth–magnesium "Roswell" sample through the radio host Art Bell and had it analysed before To The Stars took it on. She testified at the 2013 Citizen Hearing. Former AFOSI agent Richard Doty says that in the 1980s he was ordered to show her a document that mixed truth with deception.
+According to Hal Puthoff, she received the bismuth–magnesium "Roswell" sample through the radio host Art Bell and had it analysed before To The Stars took it on. Former AFOSI agent Richard Doty says that in the 1980s he was ordered to show her a document that mixed truth with deception.
 
 *Sources: Joe Rogan Experience #2314 · Citizen Hearing (2013)*

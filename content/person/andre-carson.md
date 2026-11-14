@@ -15,9 +15,10 @@ facts:
     status: claimed
     by: andre-carson
     source: v-2022-05-17-hearing@3:03
+bio: "André Carson is a Democratic U.S. Representative from Indiana. In 2022 he chaired the House Intelligence Committee's Subcommittee on Counterterrorism, Counterintelligence, and Counterproliferation, which held the open hearing on UAP on 17 May 2022, the first public congressional hearing on the subject in over fifty years."
 ---
 
-André Carson, a Democrat from Indiana, chaired the House Intelligence Committee's Subcommittee on Counterterrorism, Counterintelligence, and Counterproliferation, which held the open hearing on UAP on 17 May 2022. It was the first public congressional hearing on the subject in over fifty years. The witnesses were Under Secretary of Defense Ronald Moultrie and Deputy Director of Naval Intelligence Scott Bray.
+The witnesses at that hearing were Under Secretary of Defense Ronald Moultrie and Deputy Director of Naval Intelligence Scott Bray.
 
 Opening the hearing, Carson said the Pentagon must show that people who report UAP are “treated as witnesses, not as kooks”. He said Congress had rewritten the charter of the UAP task force, “now called the Airborne Object Identification and Management Synchronization Group, or AOIMSG for short”, the third version of the task force.
 

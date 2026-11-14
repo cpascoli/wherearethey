@@ -49,11 +49,10 @@ facts:
     status: claimed
     by: karl-nell
     source: v-jm-karl-nell@20:53
+bio: "Karl Nell is a retired U.S. Army colonel and aerospace executive who was the Army's representative to the Pentagon's UAP Task Force. His career spanned command at every level of the Army up to brigade, the founding of Army Futures Command, and senior roles at Lockheed Martin and Northrop Grumman. After the task force he became one of the most senior former officials to state publicly that non-human intelligence exists."
 ---
 
-Karl Nell is a retired U.S. Army colonel and aerospace executive who was the Army's representative to the Pentagon's UAP Task Force. His career spanned command at every level of the Army up to brigade, the founding of Army Futures Command, and senior roles at Lockheed Martin and Northrop Grumman.
-
-After the task force he became one of the most senior former officials to state publicly that non-human intelligence exists. At the SALT iConnections conference in May 2024 he said it has been interacting with humanity for a long time, that unelected officials know it, and that he has "zero doubt". In public talks he lays out a case built on first principles, the testimony of officials from presidents to David Grusch, and data from the Navy videos to nuclear-site incidents. He also gives six reasons why governments have kept quiet, from national security and fear of societal disruption to covering up misdeeds. He traces the stigma to the 1953 Robertson Panel and the Condon study.
+At the SALT iConnections conference in May 2024 he said it has been interacting with humanity for a long time, that unelected officials know it, and that he has "zero doubt". In public talks he lays out a case built on first principles, the testimony of officials from presidents to David Grusch, and data from the Navy videos to nuclear-site incidents. He also gives six reasons why governments have kept quiet, from national security and fear of societal disruption to covering up misdeeds. He traces the stigma to the 1953 Robertson Panel and the Condon study.
 
 He counts David Grusch's testimony, which he presents alongside that of two Navy aviators, and the Schumer–Rounds UAP Disclosure Act among his evidence. He appears in *The Age of Disclosure* (2025). His statements are his own conclusions. Speaking in public, he limits himself to unclassified material and has not described any first-hand evidence.
 

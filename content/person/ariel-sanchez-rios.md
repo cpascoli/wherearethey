@@ -29,11 +29,10 @@ facts:
   - text: "As president of CRIDOVNI he signed its communiqué of May 2023 concluding that lights seen over Paysandú on 11 February 2023 were Starlink satellites."
     status: documented
     source: https://www.fau.mil.uy/noticias/473
+bio: "Ariel Sánchez Ríos is a retired colonel (navigator) of the Uruguayan Air Force and a long-serving member of CRIDOVNI, the Air Force's commission for reports of unidentified flying objects, whose 2023 communiqués he signed as president. At the 2013 Citizen Hearing on Disclosure he described the commission's history and method, and said about 3% of its cases had non-conventional characteristics."
 ---
 
-Ariel Sánchez Ríos is a retired colonel (navigator) of the Uruguayan Air Force and a long-serving member of CRIDOVNI, the Air Force's commission for reports of unidentified flying objects. A member of the commission described him in 2010 as its leader, and he signed its 2023 communiqués as president.
-
-At the 2013 Citizen Hearing on Disclosure in Washington he described the commission's history and method, and said about 3% of its cases had non-conventional characteristics. He also described a 1993 case of luminous spheres that left traces in the soil. These are his own accounts; the commission has not published its case files.
+A member of the commission described him in 2010 as its leader. At the 2013 hearing in Washington he also described a 1993 case of luminous spheres that left traces in the soil. These are his own accounts; the commission has not published its case files.
 
 The commission's published conclusions under his presidency were conventional ones, such as identifying the Paysandú lights of February 2023 as Starlink satellites.
 

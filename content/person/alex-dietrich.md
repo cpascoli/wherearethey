@@ -85,9 +85,10 @@ facts:
     source: v-2025-03-18-avc-alex-dietrich@10:56
     claims: [ tic-tac-beyond-known-technology ]
     basis: first-hand
+bio: "Alex Dietrich is a retired U.S. Navy lieutenant commander and F/A-18F pilot who served 20 years, including two combat deployments with VFA-41, the Black Aces, from USS Nimitz in 2005 and 2007. On 14 November 2004, as a junior wingman new to the squadron, she flew the second Super Hornet in David Fravor's flight during the USS Nimitz “Tic Tac” encounter."
 ---
 
-Alex Dietrich is a retired U.S. Navy lieutenant commander and F/A-18F pilot who served 20 years, including two combat deployments with VFA-41 over Iraq and Afghanistan. On 14 November 2004 she flew the second Super Hornet in David Fravor's flight during the USS Nimitz "Tic Tac" encounter. While Fravor spiralled down towards the object, she stayed high as cover, giving a second, overhead view of the white, wingless object over a patch of disturbed water before it shot away.
+Her combat deployments were over Iraq and Afghanistan. During the 2004 encounter, while Fravor spiralled down towards the object, she stayed high as cover, giving a second, overhead view of the white, wingless object over a patch of disturbed water before it shot away.
 
 She stayed in the Navy after the encounter and, by Fravor's account, was invited to the Pentagon several times to discuss it and view other UAP videos. Around 2016 she contacted Fravor, which led to Luis Elizondo reaching out to him. She went public in 2021, appearing with Fravor on CBS's *60 Minutes* ahead of the ODNI's preliminary UAP assessment. Later that year she went through the leaked event summary in a long conversation with the sceptic Mick West. She also appears in *The Age of Disclosure* (2025).
 

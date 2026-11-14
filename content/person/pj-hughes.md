@@ -40,9 +40,8 @@ facts:
     status: claimed
     by: pj-hughes
     source: v-2023-02-13-tim-ventura-pj-hughes@11:15
+bio: "P. J. Hughes served as an aviation electronics technician, a second class petty officer, with VAW-117, the E-2C Hawkeye airborne early-warning squadron aboard USS Nimitz, in 2004. One of his routine jobs was securing the aircraft's data recorders, which the crew call “bricks”. He says that after the November 2004 encounters those recorders were taken away by his commanding officer and two men he had not seen come aboard."
 ---
-
-P. J. Hughes was a U.S. Navy aviation technician with the USS Nimitz's E-2 Hawkeye airborne early-warning squadron in 2004. One of his routine jobs was securing the aircraft's data recorders, which the crew call "bricks".
 
 He says that on 14 November 2004 he locked away the recorders from the E-2 that Kevin Day had first used to try to intercept the objects. Soon afterwards his commanding officer arrived with two men Hughes had not seen come aboard and took the recorders away in bags. He also says an E-2 crew member told him he had to sign a non-disclosure agreement. His account parallels Gary Voorhis's description of AEGIS data being collected on the Princeton.
 

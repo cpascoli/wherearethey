@@ -62,9 +62,10 @@ facts:
     basis: first-hand
     by: dante-golinelli
     source: v-2018-10-29-golinelli-san-damiano-interview@14:16
+bio: "Dante Golinelli was a fighter pilot of the Italian Air Force who flew the F-84 for ten years, serving at San Damiano (Piacenza) with the 50° Stormo from about 1963 until 1970, and later flew for the airlines ATI and Alitalia. He says that in October 1966 he climbed his F-84 towards a large, bright, metallic triangle over Piacenza until fuel ran short."
 ---
 
-Dante Golinelli was a fighter pilot of the Italian Air Force. In a 2018 interview he said he had flown with an early aerobatic team, then with the 6ª Aerobrigata at Ghedi, and flew the F-84 for ten years, serving at San Damiano (Piacenza) with the 50° Stormo from about 1963 until 1970. Paolo Gianassi, the tower controller at San Damiano in 1966, names him among the base's six or seven NCO pilots, and the interview's publisher describes him as then a *maresciallo* (warrant officer) and fighter pilot. After leaving the Air Force he flew for the airlines ATI and Alitalia.
+In a 2018 interview he said that before San Damiano he had flown with an early aerobatic team, then with the 6ª Aerobrigata at Ghedi. Paolo Gianassi, the tower controller at San Damiano in 1966, names him among the base's six or seven NCO pilots, and the interview's publisher describes him as then a *maresciallo* (warrant officer) and fighter pilot.
 
 In October 1966, on his account, he broke off a low-level training sortie with a fuel problem, saw over Piacenza the "star" the pilots had noticed before take-off, and climbed his F-84 towards it until fuel ran short; he described a large, bright, metallic isosceles triangle. He told the story publicly for the first time in a 2018 interview with Alberto Negri of the Piacenza association Spazio Tesla, more than fifty years later.
 

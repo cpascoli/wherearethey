@@ -40,9 +40,10 @@ facts:
     status: claimed
     by: tim-gallaudet
     source: v-jm-tim-gallaudet@28:47
+bio: "Alexandro Wiggins is a U.S. Navy senior chief petty officer and operations specialist. He was one of three whistleblower witnesses at the House Oversight task force hearing on 9 September 2025, where he testified that on 15 February 2023, aboard the USS Jackson off southern California, he saw a self-luminous tic-tac-shaped object rise from near the ocean and join three others."
 ---
 
-Alexandro Wiggins is a U.S. Navy senior chief petty officer and operations specialist, one of three whistleblower witnesses at the House Oversight task force hearing on 9 September 2025. He testified that on 15 February 2023, at about 19:15, aboard the USS Jackson in the W-291 warning area off southern California, the ship's sensors and then his own eyes showed a self-luminous tic-tac-shaped object rise from near the ocean. It joined three similar objects and the four left together at what he estimated was Mach 1–2, with no sonic boom or exhaust.
+The encounter was at about 19:15 in the W-291 warning area; the ship's sensors and then his own eyes showed the object. It joined three similar objects and the four left together at what he estimated was Mach 1–2, with no sonic boom or exhaust.
 
 He tracked it on radar first and watched from the port bridge wing at seven to eight nautical miles. He conceded he could not visually confirm that it came out of the water. He says the encounter was reported to the tactical action officer but no debrief followed, and that full-resolution footage has been given to Congress. From years of operating there, he says such objects "reoccur" off southern California, an argument for stigma-free reporting rather than proof of what they are. Tim Gallaudet says he encouraged Wiggins to come forward. No official analysis of the Jackson encounter has been published.
 

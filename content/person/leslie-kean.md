@@ -51,9 +51,8 @@ facts:
     status: documented
     by: tim-burchett
     source: doc-transcript-2023-07-26
+bio: "Leslie Kean is an investigative journalist who has done more than any other reporter to move UFOs into mainstream news. She co-wrote The New York Times' December 2017 story that revealed the Pentagon's AATIP program and, with Ralph Blumenthal, broke David Grusch's account in The Debrief in June 2023. She is a reporter rather than a witness, and her work rests on the officials and pilots she interviews."
 ---
-
-Leslie Kean is an investigative journalist who has done more than any other reporter to move UFOs into mainstream news. She is a reporter rather than a witness, and her work rests on the officials and pilots she interviews.
 
 Through the Coalition for Freedom of Information, she and filmmaker James Fox organised the 2007 National Press Club panel, where military pilots and officials from several countries called for UFO investigations to be reopened. Her book *UFOs: Generals, Pilots, and Government Officials Go on the Record* (2010), with a foreword by John Podesta, collected first-person accounts from the same circle. In 2016 Chris Mellon gave her his first public comments on how a UAP program could be hidden inside a defense company.
 

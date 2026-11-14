@@ -15,9 +15,8 @@ facts:
     source: https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/
 rel:
   - [ witness, inc-nimitz-2004 ]
+bio: "Jason Turner was a U.S. Navy petty officer in the USS Nimitz carrier strike group in November 2004, at the time of the “Tic Tac” encounters. He is one of several strike-group members, with the Princeton radar operators Kevin Day and Gary Voorhis, P. J. Hughes and Ryan Weigelt, who have described related observations."
 ---
-
-Jason Turner was a U.S. Navy petty officer in the USS Nimitz carrier strike group in November 2004, at the time of the “Tic Tac” encounters. He is one of several strike-group members, with the Princeton radar operators Kevin Day and Gary Voorhis, P. J. Hughes and Ryan Weigelt, who have described related observations.
 
 Speaking to Popular Mechanics, he said he saw much longer footage of the object than the short clip released in 2017; Weigelt says the same. That is his own account: no longer footage is on file.
 

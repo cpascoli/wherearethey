@@ -54,11 +54,12 @@ facts:
 links:
   - label: "Space CuE: interview with Gen. Giulio Mainini (2024, Italian)"
     url: https://www.aerospacecue.it/2024/02/06/intervista-generale-di-squadra-aerea-giulio-mainini-associazione-arma-aeronautica-aviatori-italia/
+bio: "Giulio Mainini is a retired general (Generale di Squadra Aerea) of the Italian Air Force who flew over 3,800 hours, about 1,400 of them on the F-104, and commanded the Squadra Aerea in Rome from 2004 to 2007. In September 1978, as a lieutenant colonel commanding the 21° Gruppo at Cameri, he reported an intense light seen from his F-104, a story the press took up."
 ---
 
-Giulio Mainini is a retired *Generale di Squadra Aerea* of the Italian Air Force. Born at Galliate (Novara) in 1945, he attended the Air Force Academy from 1964 to 1967 as a pilot cadet and spent most of his operational career with the 53° Stormo caccia intercettori at Cameri on the F-104, where he commanded the 21° Gruppo. He went on to command the 51° Stormo at Istrana, the 1st Regional Operations Centre at Monte Venda, the Air Force Academy and the 1st Air Region, and was operational commander of the air forces and of NATO's CAOC 5, directing the air defence of Italian airspace after 11 September 2001. From 2004 to 2007 he commanded the Squadra Aerea in Rome. He has flown over 3,800 hours on 26 aircraft types, about 1,400 of them on the F-104, and later presided over the Associazione Arma Aeronautica.
+Born at Galliate (Novara) in 1945, he attended the Air Force Academy from 1964 to 1967 as a pilot cadet and spent most of his operational career with the 53° Stormo caccia intercettori at Cameri on the F-104, where he commanded the 21° Gruppo. He went on to command the 51° Stormo at Istrana, the 1st Regional Operations Centre at Monte Venda, the Air Force Academy and the 1st Air Region, and was operational commander of the air forces and of NATO's CAOC 5, directing the air defence of Italian airspace after 11 September 2001. He has flown 26 aircraft types and later presided over the Associazione Arma Aeronautica.
 
-In September 1978, as a lieutenant colonel commanding the 21° Gruppo, he reported an intense light seen from his F-104 south of Cameri, and the press took up the story. He has told it in several interviews since 2019. He also says that, at the Air Force's intelligence department, an office under him handled UFO reports and found no radar confirmation of any of them. He calls himself a non-believer.
+The 1978 light was seen south of Cameri. He has told the story in several interviews since 2019. He also says that, at the Air Force's intelligence department, an office under him handled UFO reports and found no radar confirmation of any of them. He calls himself a non-believer.
 
 The career details come from his biography in the description of the RONIN FILM PRODUCTION interview (2024) and from the Space CuE interview (2024). His 1978 rank and command come from La Stampa of 22 September 1978.
 

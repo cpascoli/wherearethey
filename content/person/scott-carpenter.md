@@ -20,10 +20,9 @@ facts:
     status: documented
     by: scott-carpenter
     source: v-1962-05-24-mercury-atlas-7-carpenter-snowflakes@0:00
+bio: "Scott Carpenter (1925–2013) was a U.S. Navy commander and pilot and one of the Mercury Seven astronauts. His Mercury-Atlas 7 flight in May 1962 was the second U.S. orbital flight. He is on file for the “fireflies” he described around his capsule on that flight, in audio NASA released in its PURSUE records."
 ---
 
-Scott Carpenter (1925–2013) was a U.S. Navy pilot and one of the Mercury Seven; his Mercury-Atlas 7 flight in May 1962 was the second U.S. orbital flight.
-
-On that flight he described white particles around the capsule that moved at random and looked "exactly like snowflakes", some faster than the spacecraft; NASA attributed these "fireflies" to frozen condensation from the spacecraft. The audio was released by NASA in PURSUE release 02.
+On his Mercury-Atlas 7 flight he described white particles around the capsule that moved at random and looked "exactly like snowflakes", some faster than the spacecraft; NASA attributed these "fireflies" to frozen condensation from the spacecraft. The audio was released by NASA in PURSUE release 02.
 
 *Sources: NASA PURSUE records · [Wikipedia](https://en.wikipedia.org/wiki/Scott_Carpenter)*

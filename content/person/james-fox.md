@@ -19,9 +19,8 @@ facts:
     by: james-fox
     claims: [ varginha-beings-captured ]
     basis: relayed
+bio: "James Fox is an American documentary filmmaker who has made films about UFOs since the 1990s, among them The Phenomenon (2020) and Moment of Contact (2022), about the Varginha case, both narrated by Peter Coyote. He is in the archive as a filmmaker and organiser of public events with official witnesses, at the National Press Club in 2007 and 2026, not as a witness himself."
 ---
-
-James Fox is an American documentary filmmaker who has made films about UFOs since the 1990s, among them *The Phenomenon* (2020) and *Moment of Contact* (2022), about the Varginha case, both narrated by Peter Coyote. He is in the archive as a filmmaker and organiser of public events with official witnesses, not as a witness himself.
 
 With Leslie Kean he brought together the 2007 National Press Club panel of officers, pilots and officials from seven countries, which he opened. In January 2026 he organised the Varginha press conference at the National Press Club for the updated cut of *Moment of Contact*. There he said that, according to multiple Brazilian officials, the debris and the beings, “likely one still living, were flown out of Brazil within days by US Air Force”.
 

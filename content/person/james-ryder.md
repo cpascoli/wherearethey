@@ -40,9 +40,8 @@ facts:
     claims: [ recovered-non-human-craft ]
     basis: relayed
     source: v-2025-09-09-hearing-a@2:20:24
+bio: "James T. Ryder was a vice president at Lockheed Martin. He is known in the UAP field almost entirely through allegations made by others, chiefly George Knapp's account, given to Congress in September 2025, that he negotiated to hand recovered material to Robert Bigelow's BAASS during the AAWSAP years. No statement by him on the subject has been verified."
 ---
-
-James T. Ryder was a vice president at Lockheed Martin. He is known in the UAP field almost entirely through allegations made by others, and no statement by him on the subject has been verified.
 
 George Knapp says Ryder, who was close to Skunk Works chief Ben Rich, negotiated during the AAWSAP years to hand Robert Bigelow's BAASS some recovered material, "leftovers, scraps" rather than a whole craft, in exchange for something Bigelow could offer. Knapp says the deal was all but done when Lockheed informed the CIA and Glenn Gaffney blocked it. In September 2025 Knapp named Ryder to Congress as one of the people who have kept the secret. He also said contractors were only doing what the government told them. Luis Elizondo has testified that a transfer to Bigelow was blocked, and Eric Davis tells a similar story without naming Ryder.
 

@@ -56,9 +56,10 @@ facts:
     status: claimed
     by: grant-cameron
     source: v-2013-chd-truth-lies-1@30:13
+bio: "Grant Cameron is a Canadian UFO researcher based in Winnipeg, Manitoba, who began in 1975 after the “Charlie Red Star” sightings near Carman, Manitoba. For two decades he researched what U.S. presidents knew about UFOs, and he has published the Canadian government's UFO files and the papers of Wilbert Smith, head of Canada's Project Magnet. He testified at the 2013 Citizen Hearing."
 ---
 
-Grant Cameron is a Canadian UFO researcher based in Winnipeg, Manitoba, who began in 1975 after the "Charlie Red Star" sightings near Carman, Manitoba, the subject of his book *Charlie Red Star* (Dundurn, 2017). For two decades he researched what U.S. presidents knew about UFOs, with many trips to the National Archives and the presidential libraries, and he has published the Canadian government's UFO files and the papers of Wilbert Smith, head of Canada's Project Magnet. Since 2012 his interest has moved towards consciousness and the phenomenon.
+The 1975 sightings are the subject of his book *Charlie Red Star* (Dundurn, 2017). His presidential research took him on many trips to the National Archives and the presidential libraries. Since 2012 his interest has moved towards consciousness and the phenomenon.
 
 At the 2013 Citizen Hearing he testified on the Clinton administration and Laurance Rockefeller's UFO initiative, on Smith's 1950 memo calling the subject "the most highly classified subject in the United States", and on Robert Sarbacher's letter about recovered craft and bodies. The documents he cites are real; what they show about recovered material is his reading of them.
 

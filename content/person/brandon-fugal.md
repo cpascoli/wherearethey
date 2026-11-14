@@ -22,10 +22,9 @@ facts:
     status: claimed
     by: james-lacatski
     source: v-2026-04-08-weaponized-lacatski-disclosure@47:07
+bio: "Brandon Fugal is a Utah commercial real-estate executive who acquired Skinwalker Ranch, a 512-acre property in Utah's Uinta Basin, in 2016, and announced in March 2020 that he was the owner behind the purchase. Under his ownership the ranch has been the subject of the History Channel series The Secret of Skinwalker Ranch since 2020."
 ---
 
-Brandon Fugal is a Utah commercial real-estate executive who acquired Skinwalker Ranch, a 512-acre property in Utah's Uinta Basin, in 2016. Robert Bigelow sold it that year to Adamantium Real Estate for around $500,000, and Fugal announced in March 2020 that he was the owner behind the purchase.
-
-The ranch is in the archive because Bigelow's National Institute for Discovery Science studied it for years, and because James Lacatski says his own visit there in the mid-2000s led to the creation of AAWSAP in 2008. Under Fugal it has been the subject of the History Channel series *The Secret of Skinwalker Ranch* since 2020. Fugal is not a witness in the archive, and no statement of his own is filed here.
+Robert Bigelow sold the ranch in 2016 to Adamantium Real Estate for around $500,000. It is in the archive because Bigelow's National Institute for Discovery Science studied it for years, and because James Lacatski says his own visit there in the mid-2000s led to the creation of AAWSAP in 2008. Fugal is not a witness in the archive, and no statement of his own is filed here.
 
 *Sources: Skinwalker Ranch record · [Wikipedia](https://en.wikipedia.org/wiki/Skinwalker_Ranch)*

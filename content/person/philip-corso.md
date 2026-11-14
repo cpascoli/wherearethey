@@ -48,9 +48,8 @@ facts:
     claims: [ area-51-alien-craft ]
     stance: disputes
     basis: opinion
+bio: "Philip J. Corso (1915–1998) was a U.S. Army lieutenant colonel who served on President Eisenhower's National Security Council staff and at the Foreign Technology Desk of Army Research and Development. In “The Day After Roswell” (1997, with William Birnes) he claimed he managed the reverse-engineering of artifacts recovered at Roswell and seeded them into U.S. industry."
 ---
-
-Philip J. Corso (1915–1998) was a U.S. Army lieutenant colonel who served on President Eisenhower's National Security Council staff and at the Foreign Technology Desk of Army Research and Development. In *The Day After Roswell* (1997, with William Birnes) he claimed he managed the reverse-engineering of artifacts recovered at Roswell and seeded them into U.S. industry.
 
 In a lecture of February 1998, filed here, he says he saw a body in a crate at Fort Riley, Kansas, that the artifacts were farmed out as ordinary R&D contracts with "No paper trail", and that "There was no government cover-up." He also contradicts parts of the lore: he calls Area 51 alien stories "greatly exaggerated" and underground bases "better than 90% fabrication".
 

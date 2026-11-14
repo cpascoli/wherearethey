@@ -14,8 +14,9 @@ facts:
     source: http://www.nicap.org/790516baependidir.htm
 rel:
   - [ witness, inc-baependi-1979 ]
+bio: "Arlindo Gabriel dos Santos was a farmer near Baependi, Minas Gerais, Brazil, who said that in May 1979, while hunting, he photographed a small object and was then taken aboard a second craft by a humanoid crew. His case was investigated by the ufologist Ubirajara Franco Rodrigues."
 ---
 
-Arlindo Gabriel dos Santos was a farmer near Baependi, Minas Gerais, Brazil, who said that in May 1979, while hunting, he photographed a small object and was then taken aboard a second craft by a humanoid crew. His case was investigated by the ufologist Ubirajara Franco Rodrigues. As a private individual his account is outside this archive's core sourcing criteria.
+As a private individual his account is outside this archive's core sourcing criteria.
 
 *Sources: Baependi incident record*

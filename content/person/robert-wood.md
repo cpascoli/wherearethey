@@ -40,9 +40,10 @@ facts:
     status: claimed
     by: robert-wood
     source: v-2013-chd-science-technology@9:01
+bio: "Robert M. Wood is an American aerospace engineer with a degree in aeronautical engineering from the University of Colorado and a PhD in physics from Cornell. He worked for 43 years at Douglas Aircraft and McDonnell Douglas, until 1993, managing research and development projects, radar work and studies for the space station. Since retiring he has worked on authenticating leaked UFO documents that critics regard as hoaxes."
 ---
 
-Robert M. Wood is an American aerospace engineer with a degree in aeronautical engineering from the University of Colorado and a PhD in physics from Cornell, who worked for 43 years at Douglas Aircraft and McDonnell Douglas, managing research and development projects, radar work and studies for the space station. In the late 1960s he ran a small company project on how UFOs might be propelled, which hired Stanton Friedman, and he later managed a remote-viewing study funded by the company's founder, James S. McDonnell.
+At McDonnell Douglas, in the late 1960s, he ran a small company project on how UFOs might be propelled, which hired Stanton Friedman, and he later managed a remote-viewing study funded by the company's founder, James S. McDonnell.
 
 After retiring in 1993 he turned to authenticating leaked UFO documents with his son Ryan, author of *Majic Eyes Only*; they publish the "Majestic Documents", including the 1954 SOM 1-01 manual, which they argue are genuine. Critics regard these papers as hoaxes, citing weak provenance and links to known hoaxers. He testified at the 2013 Citizen Hearing on the documents and on the McDonnell Douglas study. His engineering career is real; his document conclusions are disputed.
 

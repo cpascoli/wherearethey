@@ -17,9 +17,8 @@ facts:
   - text: "In his opening statement Garcia noted that AARO director Sean Kirkpatrick had testified that his unit found no evidence of extraterrestrial activity, and that NASA had said it had no evidence of extraterrestrial life."
     status: documented
     source: library/docs/doc-transcript-2023-07-26.pdf
+bio: "Robert Garcia is the Democratic U.S. Representative for California's 42nd district, in office since 2023, and a former mayor of Long Beach. As Ranking Member of the House Oversight Subcommittee on National Security, the Border, and Foreign Affairs he co-led the July 2023 UAP hearing at which David Grusch, David Fravor and Ryan Graves testified under oath."
 ---
-
-U.S. Representative for California's 42nd district (D) since 2023 and former mayor of Long Beach. As Ranking Member of the House Oversight Subcommittee on National Security, the Border, and Foreign Affairs he co-led the July 2023 UAP hearing.
 
 He called for a better system for pilots to report sightings, while noting the official findings that no evidence of extraterrestrial activity had been found. He asked David Grusch on the record whether the government possesses UAP; Grusch said “Absolutely.”
 

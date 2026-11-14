@@ -17,10 +17,9 @@ facts:
     by: frederick-valentich
     basis: first-hand
     source: library/docs/doc-dot-valentich-summary-1982.pdf
+bio: "Frederick Valentich was a 20-year-old private pilot with about 150 flying hours, who had obtained a Class Four instrument rating in May 1978, allowing him to fly at night in visual conditions. On 21 October 1978 he disappeared with his Cessna 182L over Bass Strait while describing to Melbourne Flight Service an unidentified object that he said was flying over his aircraft."
 ---
 
-Frederick Valentich was a 20-year-old private pilot with about 150 flying hours. He had obtained a Class Four instrument rating in May 1978, which allowed him to fly at night in visual conditions.
-
-On 21 October 1978 he disappeared with his Cessna 182L over Bass Strait while describing to Melbourne Flight Service an unidentified object that he said was flying over and hovering above his aircraft. The Department of Transport's summary report records his injury as presumed fatal and the reason for the disappearance as undetermined.
+He told Melbourne Flight Service that the object was flying over and hovering above his aircraft. The Department of Transport's summary report records his injury as presumed fatal and the reason for the disappearance as undetermined.
 
 *Sources: Department of Transport, Aircraft Accident Investigation Summary Report V116/783/1047 (National Archives of Australia, NAA: B1497, V116/783/1047)*

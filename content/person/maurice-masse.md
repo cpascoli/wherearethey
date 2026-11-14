@@ -27,8 +27,9 @@ facts:
     status: documented
     by: frederic-courtade
     source: v-2025-07-09-ina-valensole-geipan@3:05
+bio: "Maurice Masse was a lavender farmer at Valensole in Provence. On 1 July 1965, by his account to the gendarmerie, he came upon a small craft and two child-sized beings in his field, one of whom pointed an object at him and left him unable to move. GEIPAN classifies the case D, unexplained."
 ---
 
-Maurice Masse farmed lavender at Valensole in Provence. On 1 July 1965, by his account to the gendarmerie, he came upon a small craft and two child-sized beings in his field, one of whom pointed an object at him and left him unable to move; the ground where the craft had stood was marked and hardened. He told the story consistently in interviews in later years and said the lavender would not grow back on the spot. GEIPAN classifies the case D, unexplained.
+By his account, the ground where the craft had stood was marked and hardened. He told the story consistently in interviews in later years and said the lavender would not grow back on the spot.
 
 *Sources: GEIPAN case 1965-07-00050 · his own interview (video on file)*

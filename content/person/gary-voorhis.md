@@ -63,9 +63,8 @@ facts:
     status: claimed
     by: gary-voorhis
     source: v-2024-06-15-uap-phenomenon-gary-voorhis-huntsville-2024@11:15
+bio: "Gary Voorhis was a U.S. Navy petty officer third class aboard the cruiser USS Princeton in 2004, near the end of six years' service that included two combat tours. As the ship's only technician for its Cooperative Engagement Capability and AEGIS combat system, he was responsible for the radars that tracked the “Tic Tac” objects during the Nimitz encounter."
 ---
-
-Gary Voorhis was a U.S. Navy petty officer third class aboard the cruiser USS Princeton in 2004, near the end of six years' service that included two combat tours. He was the ship's only technician for its Cooperative Engagement Capability and AEGIS combat system, and so was responsible for the radars that tracked the "Tic Tac" objects.
 
 He says that when the new SPY-1B radar began showing unexplained tracks, the systems were taken down and recalibrated, and the tracks came back sharper. They sat at 60,000–80,000 feet or cruised at 30,000 feet and 100 knots, with no transponder codes. In the days before the intercept he says he watched distant objects through the bridge binoculars, hovering and darting away, glowing at night. After the encounter, he says, two men arrived by helicopter, he was ordered to hand over the AEGIS data recordings and wipe the rest, and he saw an eight-to-ten-minute version of the FLIR video on the ship's classified network.
 

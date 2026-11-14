@@ -33,9 +33,10 @@ facts:
     status: claimed
     by: grant-best
     source: v-2025-10-20-grant-best-vandenberg@46:22
+bio: "Grant Best served in U.S. Air Force Security Forces from December 1996 until about 2014, by his own account, including at Vandenberg Air Force Base from early 2002 until 2008, first on a regular Security Forces flight under Jeffrey Nuccetelli and later as a game warden on the base's horse patrol. He says that in October 2003 he called in a silent, lit object by the flight line."
 ---
 
-Grant Best served in U.S. Air Force Security Forces from December 1996 until about 2014, by his own account. He was stationed at Beale Air Force Base, at Howard Air Force Base in Panama for its handover, and at Altus on 11 September 2001, then at Vandenberg Air Force Base from early 2002 until 2008, first on a regular Security Forces flight under Jeffrey Nuccetelli and later as a game warden on the base's horse patrol. He deployed to Iraq at the end of October 2003.
+Before Vandenberg he was stationed at Beale Air Force Base, at Howard Air Force Base in Panama for its handover, and at Altus on 11 September 2001. He deployed to Iraq at the end of October 2003.
 
 On Nuccetelli's podcast in October 2025 he said that around 15 or 16 October 2003, alone on a foggy night patrol by the flight line, he called in an unauthorized aircraft: a silent, lit, layered object "like a Rubik's cube stretched out", close to the size of a football field, which came down near the flight line for about 15 seconds without landing and then left towards the coast. The next day, he says, three men in casual clothes who said they were OSI asked him routine questions; nothing followed.
 

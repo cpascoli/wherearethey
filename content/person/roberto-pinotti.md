@@ -26,9 +26,10 @@ facts:
     claims: [ recovered-non-human-craft, recovered-non-human-bodies ]
     basis: relayed
     source: v-2013-chd-global-1@1:19:01
+bio: "Roberto Pinotti is an Italian aerospace journalist and sociologist and president of the Centro Ufologico Nazionale (CUN), Italy's main civilian UFO organisation. Since 2000 he has published and promoted the alleged 1933 Magenta crash, from documents he and Alfredo Lissoni received from an anonymous sender in 1996; the documents have not been independently authenticated."
 ---
 
-Roberto Pinotti is an Italian aerospace journalist and sociologist and president of the Centro Ufologico Nazionale (CUN), Italy's main civilian UFO organisation. In 1996 he and Alfredo Lissoni received, from an anonymous sender, documents describing an alleged 1933 crash near Magenta and a secret study group, "Gabinetto RS/33", said to have been chaired by Guglielmo Marconi. He has published and promoted the case since 2000 and says a forensic test of one of the documents, a 1936 sheet, showed it dates from the period.
+In 1996 he and Alfredo Lissoni received, from an anonymous sender, documents describing an alleged 1933 crash near Magenta and a secret study group, "Gabinetto RS/33", said to have been chaired by Guglielmo Marconi. He has published and promoted the case since 2000 and says a forensic test of one of the documents, a 1936 sheet, showed it dates from the period.
 
 He is a researcher and reporter rather than a witness under this archive's criteria; his documents have not been independently authenticated, and other Italian researchers dispute them.
 

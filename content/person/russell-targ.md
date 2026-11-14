@@ -17,11 +17,10 @@ rel:
   - [ worked at, sri-international ]
   - [ worked with, hal-puthoff ]
 facts:
+bio: "Russell Targ is a physicist who, with Harold Puthoff, began the government-funded remote-viewing research at the Stanford Research Institute in 1972, the work that grew into the Stargate programme. Targ and Puthoff told the story in Mind-Reach (1977), which did not disclose that the CIA funded the research."
 ---
 
-Russell Targ is a physicist who, with Harold Puthoff, began the government-funded remote-viewing research at the Stanford Research Institute in 1972, the work that grew into the Stargate programme. Subjects such as Ingo Swann tried to describe distant places they could not see. Targ and Puthoff told the story in *Mind-Reach* (1977), which did not disclose that the CIA funded the research.
-
-Puthoff says Bell Labs replicated the SRI protocol before the two men's paper appeared in the Proceedings of the IEEE in 1976. The remote viewer Joe McMoneagle says his first session, at SRI's radio physics lab, was with Targ, and that Targ and Puthoff interviewed the Army candidates at Fort Meade from whom the unit's viewers were chosen.
+At SRI, subjects such as Ingo Swann tried to describe distant places they could not see. Puthoff says Bell Labs replicated the SRI protocol before the two men's paper appeared in the Proceedings of the IEEE in 1976. The remote viewer Joe McMoneagle says his first session, at SRI's radio physics lab, was with Targ, and that Targ and Puthoff interviewed the Army candidates at Fort Meade from whom the unit's viewers were chosen.
 
 These are the participants' own accounts. A CIA-commissioned review in 1995 concluded that remote viewing had never produced intelligence useful in operations, and the scientific community has generally rejected the SRI results.
 

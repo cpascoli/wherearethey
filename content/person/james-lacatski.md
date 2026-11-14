@@ -97,9 +97,10 @@ facts:
     status: claimed
     by: james-lacatski
     source: v-2026-04-08-weaponized-lacatski-disclosure@42:48
+bio: "James Lacatski is a retired Defense Intelligence Agency intelligence officer and rocket scientist who conceived and managed AAWSAP (2008–2012), the $22 million program funded at Senator Harry Reid's direction and contracted to Robert Bigelow's BAASS. He has told the program's story in four Pentagon-cleared books and in interviews, including his statement that the U.S. held a craft of unknown origin and had gained access to its interior."
 ---
 
-James Lacatski is a retired Defense Intelligence Agency intelligence officer and rocket scientist who conceived and managed AAWSAP (2008–2012), the $22 million program funded at Senator Harry Reid's direction and contracted to Robert Bigelow's BAASS. By the 8 News Now account, his interest followed a visit to Bigelow's Skinwalker Ranch in the mid-2000s, during which he reported a strange encounter of his own. Hal Puthoff says Lacatski issued the request for proposals that Bigelow's company won.
+By the 8 News Now account, his interest followed a visit to Bigelow's Skinwalker Ranch in the mid-2000s, during which he reported a strange encounter of his own. Hal Puthoff says Lacatski issued the request for proposals that Bigelow's company won.
 
 AAWSAP commissioned the Defense Intelligence Reference Documents on future technologies, but also, by AARO's account, UFO and paranormal research at the ranch that was not in the contract's statement of work, carried out "with the support of the DIA program manager". After the DIA ended the program in 2012, its supporters proposed continuing it at DHS as KONA BLUE, which was rejected.
 

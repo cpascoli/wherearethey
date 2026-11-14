@@ -23,9 +23,8 @@ facts:
     status: claimed
     by: cynthia-hind
     source: v-ariel-1994-bbc-report@3:38
+bio: "Cynthia Hind was a Zimbabwe-based UFO researcher and author, MUFON's representative for Africa and editor of the newsletter UFO Afrinews. She investigated the Ariel School sighting at Ruwa, Zimbabwe, in September 1994, visiting the school days afterwards to interview the children and collect their drawings."
 ---
-
-Cynthia Hind was a Zimbabwe-based UFO researcher and author, MUFON's representative for Africa and editor of the newsletter *UFO Afrinews*. She is in the archive for her investigation of the Ariel School sighting at Ruwa, Zimbabwe, in September 1994.
 
 By her own report she visited the school on 20 September 1994, four days after the sighting (the BBC footage that shows her arriving is dated the 19th), interviewed 10 to 12 older children and collected copies of their drawings, which she had suggested the headmaster ask for; the Harvard psychiatrist John Mack followed in November. In the original BBC report she arrives with a colleague carrying a home-made Geiger counter and metal detector, says she believes the children, and compares the case to Broad Haven in Wales. The drawings, she later wrote, were “similar enough for me to acknowledge that the children were obviously seeing the same object and yet diverse enough to realize that there had been no collaboration among them.”
 

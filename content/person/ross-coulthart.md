@@ -28,9 +28,8 @@ facts:
     status: documented
     by: ross-coulthart
     source: v-7news-coulthart-uk-ufos-pope-cosford@5:57
+bio: "Ross Coulthart is an Australian investigative journalist (born 1962) and, as of 2023, NewsNation's senior special investigations correspondent. He interviewed David Grusch for NewsNation in June 2023 and is the author of In Plain Sight (2021), on UFOs and alleged crash-retrieval programmes. He openly advocates for UFO disclosure."
 ---
-
-Ross Coulthart is an Australian investigative journalist (born 1962) and, as of 2023, NewsNation's senior special investigations correspondent. He interviewed David Grusch for NewsNation in June 2023 and is the author of *In Plain Sight* (2021), on UFOs and alleged crash-retrieval programmes. He openly advocates for UFO disclosure, so in this archive he is a reporter, not a witness.
 
 His earlier work for Australia's Seven Network is on file: a report on the British government's UFO files built around Nick Pope and the 1993 Cosford incident, which leaves out the Russian rocket re-entry that the MoD file says explained many of the high-level sightings. In the 2021 7NEWS Spotlight documentary he says two former and one serving senior U.S. defence and intelligence officials told him America has recovered extraterrestrial technology including spacecraft. That is his relay of unnamed sources; none of it is confirmed by a record.
 

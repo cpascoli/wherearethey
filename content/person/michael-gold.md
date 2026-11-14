@@ -37,9 +37,8 @@ facts:
     status: claimed
     by: michael-gold
     source: v-2025-05-01-hearing-a@3:20:18
+bio: "Michael Gold is a former NASA associate administrator. He served on the independent study team NASA convened on unidentified anomalous phenomena, which reported in September 2023, and has become the main advocate inside the space-science establishment for treating UAP as a normal scientific problem. He testified at the House Oversight hearing of 13 November 2024 and spoke at the May 2025 congressional briefing."
 ---
-
-Michael Gold is a former NASA associate administrator. He served on the independent study team NASA convened on unidentified anomalous phenomena, which reported in September 2023. He has become the main advocate inside the space-science establishment for treating UAP as a normal scientific problem.
 
 Testifying at the House Oversight hearing of 13 November 2024, alongside Tim Gallaudet, Luis Elizondo and Michael Shellenberger, he said that members of NASA's study team, especially academics, were "mocked and even threatened" just for taking part. He argued that science is the best tool for the problem and pressed for NASA's confidential Aviation Safety Reporting System to collect pilot reports. He was the most cautious of the four witnesses. Probably the vast majority of UAP are drones, experimental aircraft or weather, he said, and he does not know what the rest are, though he agreed that part of the government is concealing evidence.
 

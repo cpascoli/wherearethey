@@ -18,9 +18,8 @@ facts:
     status: claimed
     by: marik-von-rennenkampff
     source: v-2026-08-28-disclosure-forum-national-security@1:14:51
+bio: "Tim Phillips is a Defense Department official who became deputy director of the All-domain Anomaly Resolution Office (AARO) in October 2023. He led the office as acting director after Sean Kirkpatrick, its first director, retired in December 2023, until Jon Kosloski was named director in August 2024."
 ---
-
-Tim Phillips is a Defense Department official who became deputy director of the All-domain Anomaly Resolution Office in October 2023 and led it as acting director after Sean Kirkpatrick, its first director, retired in December 2023, until Jon Kosloski was named director in August 2024.
 
 He is quoted by others on what perplexed the office, notably fiery spheres and black triangles, and on the Dylan Borland case; those accounts are filed as relayed.
 

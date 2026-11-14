@@ -18,9 +18,8 @@ facts:
     source: library/docs/doc-transcript-2025-09-09.pdf
 rel:
   - [ testified at, h-2025-05-01 ]
+bio: "Nick Begich is a Republican U.S. Representative from Alaska. He joined the congressional briefing “Understanding UAP: Science, National Security & Innovation” on 1 May 2025 after its opening remarks, and was waived onto the House Task Force on the Declassification of Federal Secrets to question the witnesses at its UAP hearing of 9 September 2025."
 ---
-
-Nick Begich is a Republican U.S. Representative from Alaska. He joined the congressional briefing "Understanding UAP: Science, National Security & Innovation" on 1 May 2025 after its opening remarks, and was waived onto the House Task Force on the Declassification of Federal Secrets to question the witnesses at its UAP hearing of 9 September 2025.
 
 At that hearing he asked Dylan Borland under what authority a member of Congress could be kept from UAP information even in a SCIF; Borland said he did not know. He asked George Knapp for the annual budget of any reverse-engineering programme ("I would not have a clue") and for the names of "specific gatekeepers". Knapp named Dr. James Ryder at Lockheed and Glenn Gaffney of the CIA. Begich also asked about the "long game" of disclosure and the lines of control in the executive branch, where Knapp placed the programmes with the National Security Council.
 

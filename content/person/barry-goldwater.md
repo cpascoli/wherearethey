@@ -34,10 +34,9 @@ facts:
     status: claimed
     by: barry-goldwater
     source: v-1994-larry-king-ufo-cover-up-live@1:04:50
+bio: "Barry Goldwater (1909–1998) was a Republican U.S. Senator from Arizona for five terms, the Republican presidential candidate in 1964, and a member of the Senate Armed Services Committee. He flew with the Army Air Forces in the Second World War and retired as a major general in the Air Force Reserve. In 1994 he said he believed the Air Force kept what it knew about UFOs at Wright-Patterson."
 ---
 
-Barry Goldwater (1909–1998) was a Republican U.S. Senator from Arizona for five terms, the Republican presidential candidate in 1964, and a member of the Senate Armed Services Committee. He flew with the Army Air Forces in the Second World War and retired as a major general in the Air Force Reserve, so he spoke on military matters with unusual standing.
-
-He is the source of the best-known story about a secret room at Wright-Patterson Air Force Base. In a 1994 television interview he said he believed the Air Force kept what it knew about UFOs in certain places at Wright-Patterson, and that when he asked Gen. Curtis LeMay to let him into the room, LeMay angrily refused and told him never to ask again. Goldwater said he could not back up his belief and disclaimed any direct knowledge of UFOs; the account is his recollection of a private conversation, not a record.
+His military career gave him unusual standing on military matters, and he is the source of the best-known story about a secret room at Wright-Patterson Air Force Base. In a 1994 television interview he said he believed the Air Force kept what it knew about UFOs in certain places at Wright-Patterson, and that when he asked Gen. Curtis LeMay to let him into the room, LeMay angrily refused and told him never to ask again. Goldwater said he could not back up his belief and disclaimed any direct knowledge of UFOs; the account is his recollection of a private conversation, not a record.
 
 *Sources: U.S. Air Force biography (our copy) · Larry King's UFO Cover-Up Live (CNN/TNT, 1994)*

@@ -37,8 +37,9 @@ facts:
     status: claimed
     by: john-blitch
     source: v-michels-john-blitch-2025@7:40
+bio: "John Blitch is a retired U.S. Army lieutenant colonel and Special Forces officer who describes himself as a former DARPA robotics program manager and cognitive psychologist. In a 2025 interview with Jesse Michels he described two experiences he cannot dismiss as dreams: an episode of missing time in 1995 with a “praying mantis” being, and a night in 2013 after which he woke with bruises."
 ---
 
-John Blitch is a retired U.S. Army lieutenant colonel and Special Forces officer who describes himself as a former DARPA robotics programme manager and cognitive psychologist. In a 2025 interview with Jesse Michels he describes two experiences he cannot dismiss as dreams: a 1995 mountain-bike ride with a sudden nosebleed, immediate unconsciousness, at least five hours of missing time and a "praying mantis" being, and a night in 2013 after which he woke with bruises and no memory of what happened. He had one hypnotic regression, in 2018; he says he saw nothing at DARPA or at Wright-Patterson and was never read into any UAP program.
+In the interview he describes a 1995 mountain-bike ride with a sudden nosebleed, immediate unconsciousness, at least five hours of missing time and a "praying mantis" being, and a night in 2013 after which he woke with bruises and no memory of what happened. He had one hypnotic regression, in 2018; he says he saw nothing at DARPA or at Wright-Patterson and was never read into any UAP program.
 
 *Sources: Interview with Jesse Michels*

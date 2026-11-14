@@ -31,9 +31,8 @@ facts:
   - text: "A second witness at the base, Julio Chamorro, told TVPerú he saw a huge white object like a deflating balloon become a perfect sphere, turn silver and climb vertically as the Sukhoi took off."
     status: claimed
     source: v-2025-03-24-tvperu-oscar-santa-maria@5:50
+bio: "Oscar Santa María is a retired commander and pilot of the Peruvian Air Force. On the morning of 11 April 1980, by his account, flying a Sukhoi Su-22 from La Joya air base near Arequipa, he was ordered to shoot down a luminous, balloon-like object hovering in restricted airspace while hundreds of personnel watched from the ground. He is one of the few pilots on record as having fired on a UAP."
 ---
-
-Oscar Santa María is a retired Peruvian Air Force pilot. On the morning of 11 April 1980, flying a Sukhoi Su-22 from La Joya air base near Arequipa, he was ordered to shoot down a luminous, balloon-like object hovering in restricted airspace while hundreds of personnel watched from the ground. He is one of the few pilots on record as having fired on a UAP.
 
 At the 2007 National Press Club panel he said he fired a burst of 64 30-millimetre shells, some of which hit the object without any visible effect. It then climbed away, stopped dead at about 30,000 feet so that he had to veer to avoid it, and three times climbed vertically out of his sights just as he was about to fire again. He also described it in Leslie Kean's 2010 book.
 

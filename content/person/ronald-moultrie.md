@@ -22,11 +22,10 @@ facts:
     status: claimed
     by: ronald-moultrie
     source: v-2022-05-17-hearing@54:41
+bio: "Ronald Moultrie served as U.S. Under Secretary of Defense for Intelligence and Security, whose office ran the UAP Task Force with the Office of Naval Intelligence and then the AOIMSG. He was the senior Pentagon witness at the House Intelligence subcommittee's open hearing on UAP on 17 May 2022, alongside Deputy Director of Naval Intelligence Scott Bray."
 ---
 
-Ronald Moultrie was U.S. Under Secretary of Defense for Intelligence and Security, whose office ran the UAP Task Force with the Office of Naval Intelligence and then the AOIMSG. He testified that the Secretary of Defense had assigned the UAP effort to his office "because I am responsible for looking at intelligence matters."
-
-He was the senior Pentagon witness at the House Intelligence subcommittee's open hearing on UAP on 17 May 2022, alongside Deputy Director of Naval Intelligence Scott Bray. He defined UAP as "airborne objects that, when encountered, cannot be immediately identified", said the goal was to "eliminate the stigma" around reporting, and told Chairman André Carson, "we are open to all hypotheses."
+He testified that the Secretary of Defense had assigned the UAP effort to his office "because I am responsible for looking at intelligence matters." He defined UAP as "airborne objects that, when encountered, cannot be immediately identified", said the goal was to "eliminate the stigma" around reporting, and told Chairman André Carson, "we are open to all hypotheses."
 
 Asked by Rep. Mike Gallagher, he said he knew of Project Blue Book and AATIP but of no official Defense Department UAP study between them, and both witnesses denied knowledge of any contractor UAP technology programme. He said there is a repeatable process to rule out classified U.S. programmes as the source of sightings.
 

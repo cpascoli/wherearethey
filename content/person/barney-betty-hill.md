@@ -38,9 +38,8 @@ facts:
     source: v-betty-hill-1999-interview@18:12
 rel:
   - [ witness, inc-hill-1961 ]
+bio: "Barney Hill (1922–1969), a postal worker, and Betty Hill (1919–2004), a social worker, were a civil-rights-active couple from Portsmouth, New Hampshire. Their report of being followed by a craft in September 1961, and later of being taken aboard under hypnosis, became widely known through John G. Fuller's book The Interrupted Journey (1966)."
 ---
-
-Barney Hill (1922–1969), a postal worker, and Betty Hill (1919–2004), a social worker, were a civil-rights-active couple from Portsmouth, New Hampshire, whose report of being followed by a craft in September 1961, and later of being taken aboard under hypnosis, became widely known through John G. Fuller's *The Interrupted Journey* (1966).
 
 Their psychiatrist, Benjamin Simon, concluded the abduction was most likely a "singular psychological aberration". Recordings of their hypnosis sessions and a 1999 interview with Betty are filed here.
 

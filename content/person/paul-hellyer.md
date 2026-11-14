@@ -83,9 +83,10 @@ facts:
     status: claimed
     by: paul-hellyer
     source: v-hellyer-interview-2019@21:19
+bio: "Paul Hellyer was Canada's Minister of National Defence from 1963 to 1967, during the unification of the armed forces, and Minister of Transport from 1967 to 1969; he sat as a Member of Parliament for Davenport (1949–1957) and Trinity (1958–1974). Decades after leaving office he became one of the highest-ranking former officials anywhere to say publicly that extraterrestrials visit Earth."
 ---
 
-Canada's Minister of National Defence during the unification of the armed forces. Decades after leaving office, he became one of the highest-ranking former officials anywhere to say publicly that extraterrestrials visit Earth, beginning with his September 2005 Toronto speech and continuing at the 2013 Citizen Hearing until his death in 2021.
+His public statements began with his September 2005 Toronto speech and continued, at the 2013 Citizen Hearing and elsewhere, until his death in 2021.
 
 His official rank makes him an official source, but there is a caveat: he never claimed first-hand access to classified UFO information as minister. His statements came later and leaned on secondhand sources, some of which (such as Serpo) are known disinformation. Treat his testimony as an opinion on the record, not as evidence.
 

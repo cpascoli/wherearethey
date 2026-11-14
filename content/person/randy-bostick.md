@@ -110,9 +110,10 @@ facts:
     basis: opinion
     said: 2026-07
     source: v-2026-11-03-reality-check-randy-bostick-aaro@50:50
+bio: "Randy Bostick is a physicist who served as Science Advisor to the Pentagon's All-domain Anomaly Resolution Office (AARO), working in its science and technology group and on the case resolutions for GoFast, Mount Etna and Aguadilla. Before that he spent more than 20 years as an Air Force civilian scientist in image processing and remote sensing. He holds a PhD in physics (electro-optical engineering) from the Air Force Institute of Technology."
 ---
 
-Randy Bostick is a physicist who served as Science Advisor to the Pentagon's All-domain Anomaly Resolution Office (AARO), where he worked in its science and technology group and on the case resolutions for GoFast, Mount Etna and Aguadilla. Before that he spent more than 20 years as an Air Force civilian scientist in image processing and remote sensing, extracting intelligence from Defense Department and Intelligence Community sensor systems. He holds a PhD in physics (electro-optical engineering) from the Air Force Institute of Technology; the Naval Postgraduate School's spring 2026 UAP issue gives these credentials, and Ross Coulthart's introduction repeats them, citing his conference biography.
+As an Air Force civilian scientist he worked on extracting intelligence from Defense Department and Intelligence Community sensor systems. The Naval Postgraduate School's spring 2026 UAP issue gives his credentials, and Ross Coulthart's introduction repeats them, citing his conference biography.
 
 Now an independent consultant, he argues that UAP study needs vetted, calibrated sensor data rather than incidental collection and interpretation, and he defends AARO's GoFast finding that the object's speed was an effect of parallax. In a July 2026 interview at the Scientific Coalition for UAP Studies conference in Toronto he described AARO's Gremlin sensor system and the loss of military sensor data that is never saved.
 

@@ -18,8 +18,9 @@ facts:
     claims: [ ariel-school-landing ]
     stance: context
     basis: opinion
+bio: "Colin Mackie was the headmaster of Ariel School in Ruwa, Zimbabwe, in September 1994, when more than 60 of his pupils said they had seen a craft and beings land near the school. Asked by the BBC at the time, he said he was sure the children believed they had seen something, though he was “reluctant” to call it a UFO."
 ---
 
-Colin Mackie was the headmaster of Ariel School in Ruwa, Zimbabwe, in September 1994, when more than 60 of his pupils said they had seen a craft and beings land near the school. Asked by the BBC at the time, he said he was sure the children believed they had seen something, and that after asking them to draw it he was convinced they had, though he was "reluctant" to call it a UFO.
+He told the BBC that after asking the children to draw what they saw he was convinced they had seen something.
 
 *Sources: BBC report (1994)*

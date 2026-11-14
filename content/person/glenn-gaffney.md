@@ -38,11 +38,10 @@ facts:
   - text: "AARO's 2024 report found no evidence of any U.S. program to recover or reverse-engineer extraterrestrial technology and says the companies named by interviewees denied on the record holding any."
     status: documented
     source: doc-aaro-historical-record-report-v1
+bio: "Glenn Gaffney is a former Director of Science and Technology at the CIA. He has made no public statement on UAP that is on record; others have named him: George Knapp, Eric Davis and the journalist Chris Sharp say he blocked Lockheed from handing recovered material to Robert Bigelow's BAASS during the AAWSAP years."
 ---
 
-Glenn Gaffney is a former Director of Science and Technology at the CIA. He has made no public statement on UAP that this archive holds. He appears here because others have named him.
-
-George Knapp, Eric Davis and journalist Chris Sharp have named him as the CIA official who, during the AAWSAP years, blocked Lockheed from handing recovered material to Robert Bigelow's BAASS. Knapp says Gaffney was angry that Lockheed still held material it was supposed to have surrendered. Knapp named him to Congress in September 2025 as a gatekeeper of the legacy program, and Dylan Borland has echoed it. Michael Shellenberger says he has not been able to verify the claim.
+Knapp says Gaffney was angry that Lockheed still held material it was supposed to have surrendered. Knapp named him to Congress in September 2025 as a gatekeeper of the legacy program, and Dylan Borland has echoed it. Michael Shellenberger says he has not been able to verify the claim.
 
 The allegation rests on second-hand accounts. No document supporting it has been made public, and AARO's 2024 report found no evidence of any such program.
 

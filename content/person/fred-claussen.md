@@ -21,9 +21,10 @@ facts:
   - text: "He says that while flying the F-15 he intercepted a UFO and that his gun-camera film was immediately confiscated."
     status: claimed
     source: v-2026-01-20-newsnation-varginha-press-conference@2:07:50
+bio: "Fred Claussen is a retired U.S. Air Force colonel and fighter pilot who flew the F-105, F-4 and F-15, logged more than 4,000 flying hours, flew combat missions in Vietnam and was twice awarded the Distinguished Flying Cross. He says he intercepted a UFO in an F-15, and at a January 2026 press conference he presented an analysis of the alleged U.S. flight that took the Varginha beings out of Brazil."
 ---
 
-Fred Claussen is a retired U.S. Air Force colonel and fighter pilot with more than 4,000 flying hours, who flew combat missions in Vietnam. He contacted James Fox anonymously after Fox's 2022 film and later went public, first with his own UFO intercept and then, at the January 2026 press conference, with an analysis of the alleged U.S. flight that took the Varginha beings out of Brazil.
+He contacted James Fox anonymously after Fox's 2022 film and later went public, first with his own UFO intercept and then with the Varginha analysis.
 
 His account of the flight rests on a Brazilian controller's report; he describes what records it would have left, not records he has seen.
 

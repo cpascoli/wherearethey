@@ -21,10 +21,9 @@ facts:
     status: documented
     by: rob-wittman
     source: library/docs/doc-transcript-2024-04-17-hasc-air-force.pdf
+bio: "Rob Wittman is a Republican U.S. Representative from Virginia and vice chair of the House Armed Services Committee. At the committee's April 2024 Air Force budget hearing he raised the December 2023 drone incursions that forced operations at Langley Air Force Base, in his home state, to shut down."
 ---
 
-Rob Wittman is a Republican U.S. Representative from Virginia and vice chair of the House Armed Services Committee, listed as such in the committee roster of its April 2024 Air Force budget hearing.
-
-At that hearing he raised the December 2023 drone incursions that forced operations at Langley Air Force Base, in his home state, to shut down, and asked Secretary of the Air Force Frank Kendall whether Air Force bases are adequately protected. Kendall's answer dealt with threats to bases overseas and did not address Langley.
+The committee roster of that hearing lists him as vice chair. He asked Secretary of the Air Force Frank Kendall whether Air Force bases are adequately protected. Kendall's answer dealt with threats to bases overseas and did not address Langley.
 
 *Sources: House Armed Services hearing record (17 April 2024, local copy)*

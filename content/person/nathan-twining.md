@@ -17,9 +17,8 @@ facts:
   - text: "As commander of Air Materiel Command, Twining signed the 23 September 1947 letter stating that “the phenomenon reported is something real and not visionary or fictitious”, which led to Project Sign."
     status: documented
     source: doc-twining-memo-1947
+bio: "Nathan F. Twining was a U.S. Army Air Forces lieutenant general who commanded Air Materiel Command at Wright Field in 1947, and later became Air Force Chief of Staff and Chairman of the Joint Chiefs of Staff (1957–1960). He signed the earliest high-level official U.S. statement that the “flying discs” were a real physical phenomenon, the letter of 23 September 1947 that led to Project Sign."
 ---
-
-Lt. Gen. Nathan F. Twining commanded the Army Air Forces' Air Materiel Command at Wright Field in 1947, and later became Chairman of the Joint Chiefs of Staff (1957–1960). He signed the earliest high-level official U.S. statement that the "flying discs" were a real physical phenomenon.
 
 His letter of 23 September 1947 states that "the phenomenon reported is something real and not visionary or fictitious", describes objects "probably approximating the shape of a disc", and recommends "a priority, security classification and Code Name for a detailed study". That study became Project Sign. As Air Force Chief of Staff he also signed the 1954 revision of the UFO reporting regulation, AFR 200-2.
 

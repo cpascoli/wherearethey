@@ -66,9 +66,10 @@ facts:
     claims: [ area-51-alien-craft ]
     stance: disputes
     basis: opinion
+bio: "Bob Lazar says that in 1988–89 he worked on recovered alien craft at S-4, a site a few miles south of Area 51's Groom Lake base, for a Navy contractor. His account, first broadcast by George Knapp on KLAS-TV in Las Vegas in 1989, became the template for modern crash-retrieval stories; the MIT and Caltech degrees he claims have never been verified."
 ---
 
-Bob Lazar says that in 1988–89 he worked on recovered alien craft at S-4, a site a few miles south of Area 51's Groom Lake base. His account, first broadcast by George Knapp on KLAS-TV in Las Vegas in 1989, became the template for modern crash-retrieval stories. He sits outside this archive's credible-sources rule because his credentials have never been verified, but he is kept for reference because he is so widely cited.
+He sits outside this archive's credible-sources rule because his credentials have never been verified, but he is kept for reference because he is so widely cited.
 
 He first appeared in shadow as "Dennis", then under his own name. He described nine flying discs in connected hangars, one of which he called the "sport model", and propulsion by an antimatter reactor and "gravity amplifiers". Knapp's own reporting set out the problems. The schools where Lazar said he earned degrees had no record of him, and Los Alamos and EG&G denied employing him, yet a 1982 Los Alamos phone book and a local newspaper profile placed him at the lab. Polygraph results were mixed.
 

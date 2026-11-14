@@ -45,10 +45,11 @@ facts:
     status: claimed
     by: donald-schmitt
     source: v-2013-chd-roswell-2@29:34
+bio: "Donald Schmitt is an American Roswell researcher from Wisconsin, formerly with the J. Allen Hynek Center for UFO Studies, who has co-written several books on the 1947 case, first with Kevin Randle (UFO Crash at Roswell, 1991) and later with Tom Carey (Witness to Roswell). He testified on the Roswell panels of the 2013 Citizen Hearing on Disclosure."
 ---
 
-Donald Schmitt is an American Roswell researcher from Wisconsin, formerly with the J. Allen Hynek Center for UFO Studies, who has co-written several books on the 1947 case, first with Kevin Randle (*UFO Crash at Roswell*, 1991) and later with Tom Carey (*Witness to Roswell*). He says they have interviewed more than 600 people connected with the case, and he has led archaeological digs at the debris field.
+He says he and his co-researchers have interviewed more than 600 people connected with the case, and he has led archaeological digs at the debris field.
 
-His credibility was damaged in 1995, when a Milwaukee Magazine reporter found he had made false claims about his degrees and his job; Schmitt admitted them, and in September Randle ended their partnership. At the 2013 Citizen Hearing he testified for the Roswell panels on witness accounts, the Air Force's changing explanations and the retired Gen. Arthur Exon. His accounts relay what others told him, mostly decades later.
+His credibility was damaged in 1995, when a Milwaukee Magazine reporter found he had made false claims about his degrees and his job; Schmitt admitted them, and in September Randle ended their partnership. At the 2013 hearing his testimony covered witness accounts, the Air Force's changing explanations and the retired Gen. Arthur Exon. His accounts relay what others told him, mostly decades later.
 
 *Sources: Citizen Hearing on Disclosure (2013) · Philip J. Klass, *Skeptics UFO Newsletter* [#32](https://centerforinquiry.org/wp-content/uploads/sites/29/docs/SUN/SUN32.pdf), [#33](https://centerforinquiry.org/wp-content/uploads/sites/29/docs/SUN/SUN33.pdf), [#34](https://centerforinquiry.org/wp-content/uploads/sites/29/docs/SUN/SUN34.pdf) and [#36](https://centerforinquiry.org/wp-content/uploads/sites/29/docs/SUN/SUN36.pdf) (1995), quoting Milwaukee Magazine, the IUR and Randle's letter*

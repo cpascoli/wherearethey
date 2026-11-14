@@ -20,9 +20,8 @@ facts:
     status: documented
     by: jim-lovell
     source: v-1965-12-05-gemini-7-borman-bogey@3:13
+bio: "Jim Lovell (1928–2025) was a U.S. Navy captain and test pilot and a NASA astronaut who flew on Gemini 7, Gemini 12 and Apollo 8, and commanded Apollo 13. He is in the archive for the Gemini 7 audio of 5 December 1965, released by NASA in PURSUE release 01, in which he described the crew's spent booster while his crewmate Frank Borman reported a “bogey”."
 ---
-
-Jim Lovell (1928–2025) was a U.S. Navy test pilot and NASA astronaut who flew on Gemini 7, Gemini 12 and Apollo 8, and commanded Apollo 13. He is in the archive for the Gemini 7 audio released by NASA in PURSUE release 01.
 
 On 5 December 1965, four hours into the flight, his crewmate Frank Borman reported “a bogey at 10 o'clock high”, which the crew distinguished from their spent booster, then “hundreds of little particles” a few miles off. Lovell described the booster at his 2 o'clock position as “a brilliant body of the sun against the black background”, with “brilliant particles around it”.
 

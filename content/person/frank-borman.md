@@ -24,9 +24,8 @@ facts:
     status: documented
     by: frank-borman
     source: v-1965-12-05-gemini-7-borman-bogey@1:33
+bio: "Frank Borman (1928–2023) was a U.S. Air Force colonel, test pilot and NASA astronaut. He commanded Gemini 7, the two-week flight of December 1965 with Jim Lovell, and Apollo 8, the first crewed flight around the Moon, in 1968. He is on file for the “bogey” he reported on Gemini 7's second revolution."
 ---
-
-Frank Borman (1928–2023) was a U.S. Air Force test pilot and NASA astronaut. He commanded Gemini 7, the two-week flight of December 1965 with Jim Lovell, and Apollo 8, the first crewed flight around the Moon, in 1968.
 
 On Gemini 7's second revolution he reported "a bogey at 10 o'clock high", which NASA's public affairs commentary later called an unidentified object, seen besides the spent booster and a stream of particles. The audio was released by NASA in PURSUE release 01.
 

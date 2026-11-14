@@ -24,9 +24,8 @@ facts:
     status: documented
     by: wally-schirra
     source: v-1962-10-03-mercury-atlas-8-schirra-particles@2:22
+bio: "Walter “Wally” Schirra (1923–2007) was a U.S. Navy captain and test pilot and one of the Mercury Seven, the only astronaut to fly in the Mercury, Gemini and Apollo programmes. He is on file for what he described from his Mercury-Atlas 8 flight of October 1962, in audio NASA released in its PURSUE records."
 ---
-
-Walter "Wally" Schirra (1923–2007) was a U.S. Navy test pilot and one of the Mercury Seven, the only astronaut to fly in the Mercury, Gemini and Apollo programmes.
 
 On his Mercury-Atlas 8 flight in October 1962 he described small white particles drifting from the capsule, which he likened to John Glenn's "lathe shavings", and an unexplained burst of light in the window at sunset; the audio was released by NASA in PURSUE release 02.
 

@@ -35,11 +35,10 @@ facts:
     status: claimed
     by: garry-nolan
     source: v-lex-fridman-garry-nolan-2022@1:26:08
+bio: "Jeremy Corbell is a filmmaker and UFO investigative reporter who hosts the WEAPONIZED podcast with George Knapp. He directed Bob Lazar: Area 51 & Flying Saucers (2018) and has published leaked U.S. Navy UAP footage; his work has repeatedly moved material from inside the system into the public record. He is a reporter rather than a witness."
 ---
 
-Jeremy Corbell is a filmmaker and UFO investigative reporter who hosts the WEAPONIZED podcast with George Knapp. He is a reporter rather than a witness under this archive's criteria. His work has repeatedly moved material from inside the system into the public record.
-
-He directed *Bob Lazar: Area 51 & Flying Saucers* (2018), which revived Lazar's 1989 story and was released on Netflix. He has published leaked U.S. Navy UAP footage, including the USS Omaha "transmedium" video and images of triangular objects that were later explained as a lens artefact. In Congress, Rep. Tim Burchett entered Corbell's report "The UAP Puzzle" into the record in 2023, and in 2024 entered documents on legacy programs that Corbell supplied, crediting him with access to whistleblowers.
+The film revived Lazar's 1989 story and was released on Netflix. The leaked Navy footage he has published includes the USS Omaha "transmedium" video and images of triangular objects that were later explained as a lens artefact. In Congress, Rep. Tim Burchett entered Corbell's report "The UAP Puzzle" into the record in 2023, and in 2024 entered documents on legacy programs that Corbell supplied, crediting him with access to whistleblowers.
 
 With Knapp he released Jay Stratton's first on-camera interview in October 2026, and has relayed a claim from an unnamed ODNI official about Dylan Borland's testimony, which Borland disputes. Garry Nolan credits Corbell's documentaries while rejecting Lazar's story, a fair summary of how the field sees his work. It is valued for what it brings out, while the claims it carries still need independent checks.
 

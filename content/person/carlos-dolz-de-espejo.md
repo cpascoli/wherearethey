@@ -21,10 +21,9 @@ facts:
     status: claimed
     by: carlos-dolz-de-espejo
     source: v-1996-04-10-antena3-cita-con-la-vida-canarias@7:34
+bio: "Carlos Dolz de Espejo was a Spanish Air Force lieutenant general and pilot who commanded the Canary Islands Air Zone in 1976, when he ordered an official inquiry into a mass sighting over the islands. On 19 November 1976, piloting an Air Force T-12, he saw a huge luminous halo form over the sea, which he reported as an unidentified optical phenomenon."
 ---
 
-Carlos Dolz de Espejo was a Spanish Air Force lieutenant general who commanded the Canary Islands Air Zone in 1976. That June he ordered an official inquiry into a mass sighting over the islands. On 19 November 1976, piloting an Air Force T-12, he saw a huge luminous halo form over the sea, a sighting also seen from the Navy training ship *Juan Sebastián Elcano* and from an airliner.
-
-In his report to the Air Staff he called it an unidentified optical phenomenon, not a craft, and suggested foreign weapons tests. In later television appearances he described the sighting in detail, while saying no one had ever proved an extraterrestrial craft. Researchers have since matched the November sighting to a US Poseidon missile launch.
+He ordered that inquiry in June 1976. The November halo was also seen from the Navy training ship *Juan Sebastián Elcano* and from an airliner. In his report to the Air Staff he said it was not a craft, and suggested foreign weapons tests. In later television appearances he described the sighting in detail, while saying no one had ever proved an extraterrestrial craft. Researchers have since matched the November sighting to a US Poseidon missile launch.
 
 *Sources: Ejército del Aire, expediente 761119; Antena 3, Cita con la Vida, 10 April 1996*

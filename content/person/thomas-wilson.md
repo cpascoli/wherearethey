@@ -33,9 +33,8 @@ facts:
     source: v-2013-chd-truth-lies-1@1:14:25
     claims: [ programs-hidden-from-congress ]
     basis: relayed
+bio: "Thomas R. Wilson is a retired U.S. Navy vice admiral who directed the Defense Intelligence Agency from 1999 to 2002, after serving as the Joint Staff's director of intelligence (J-2). He is the subject of the leaked Wilson–Davis notes, an unconfirmed record of a 2002 conversation in which he is said to have traced an unacknowledged programme to an aerospace contractor."
 ---
-
-Thomas R. Wilson is a retired U.S. Navy vice admiral who directed the Defense Intelligence Agency from 1999 to 2002, after serving as the Joint Staff's director of intelligence (J-2). He is in the archive as the subject of the leaked Wilson–Davis notes.
 
 The 15 pages, headed "EWD NOTES: 10/16/02 — Eric Davis Meeting with Adm. Wilson", present themselves as the physicist Eric Davis's record of a 2002 conversation. According to them, Wilson traced an unacknowledged programme to an aerospace contractor, was told it was reverse-engineering a craft, and was refused access by its gatekeepers. Steven Greer told the 2013 Citizen Hearing that Wilson had found one of the programme compartments listed in a document in Greer's briefing and was told he had no need to know.
 

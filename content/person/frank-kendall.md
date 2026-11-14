@@ -15,9 +15,8 @@ facts:
     status: documented
     by: frank-kendall
     source: v-2024-04-17-hasc-air-force-budget@49:42
+bio: "Frank Kendall served as Secretary of the Air Force. He features in accounts of the December 2023 drone incursions over Langley Air Force Base, about which Rep. Rob Wittman questioned him at the House Armed Services Committee's hearing on the Air Force's FY2025 budget in April 2024."
 ---
-
-Frank Kendall served as Secretary of the Air Force. He appears in this archive in connection with the December 2023 drone incursions over Langley Air Force Base.
 
 At a House Armed Services Committee hearing on the Air Force's FY2025 budget on 17 April 2024, Rep. Rob Wittman asked him about counter-drone capability at Air Force bases, citing Langley: “because of a large number of UASs that were in that airspace, Langley had to close down.” Kendall answered with threats to air bases by theater: Chinese missiles in the Pacific, small UAVs in the Middle East and Europe. He said the Army is “generally the lead” for research on the small-UAV problem and that the Air Force is “not where we need to be yet”. He did not address the Langley incursions.
 

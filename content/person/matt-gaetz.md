@@ -49,9 +49,8 @@ facts:
     status: claimed
     by: anna-paulina-luna
     source: v-jre-anna-paulina-luna@1:16:46
+bio: "Matt Gaetz was a Republican U.S. Representative for Florida's 1st district from 2017 to 2024. His district includes Eglin Air Force Base, and he sat on the Armed Services Committee, including the subcommittee that oversees DARPA and advanced technologies. At the July 2023 House Oversight hearing he described a UAP encounter reported from Eglin that he said he could not attach to any human capability."
 ---
-
-Matt Gaetz was a Republican U.S. Representative for Florida's 1st district from 2017 to 2024. His district includes Eglin Air Force Base, and he sat on the Armed Services Committee, including the subcommittee that oversees DARPA and advanced technologies.
 
 In early 2023 his office received a protected disclosure from Eglin about a UAP encounter during a test mission over the Gulf of Mexico. He took Tim Burchett and Anna Paulina Luna to the base, where, he says, the delegation was at first refused the images, the radar data and the flight crew. After pressing the point, they saw a still image and met one crew member. At the July 26, 2023 House Oversight hearing he described four craft in a diamond formation on radar and an "orb" whose approach knocked out the pilot's radar and FLIR, and said he could not attach it to any human capability. He also drew from David Grusch the statement that nothing is classified "above top secret", and called for a classified session with Grusch and a subpoena for the Eglin data. The visit led to Luna's declassification task force.
 

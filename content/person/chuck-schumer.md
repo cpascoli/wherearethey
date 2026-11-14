@@ -38,9 +38,8 @@ facts:
     status: claimed
     by: ryan-graves
     source: v-jm-ryan-graves@1:00:58
+bio: "Chuck Schumer, a Democrat, has represented New York in the U.S. Senate since 1999 and was Senate Majority Leader from 2021 to 2025. In July 2023 he and Senator Mike Rounds introduced the UAP Disclosure Act, making him the most senior elected official to have written the possibility of non-human intelligence into proposed federal law."
 ---
-
-Chuck Schumer, a Democrat, has represented New York in the U.S. Senate since 1999 and was Senate Majority Leader from 2021 to 2025. He is the most senior elected official to have written the possibility of non-human intelligence into proposed federal law.
 
 In July 2023, days before David Grusch's House testimony, he and Republican Senator Mike Rounds introduced the UAP Disclosure Act as an amendment to the FY2024 defense bill. Modelled on the JFK Records Act, it declared that "credible evidence and testimony" showed undisclosed UAP records exist. It defined "non-human intelligence" and "technologies of unknown origin", proposed an independent, presidentially appointed review board to oversee "controlled disclosure", and would have let the government seize by eminent domain any recovered non-human technology or biological evidence held by private companies. Grusch says witnesses he brought to congressional staff helped give members the confidence to draft it.
 

@@ -37,9 +37,10 @@ facts:
     status: claimed
     by: chaz-king
     source: v-2025-09-26-chaz-king-eye-witness-to-the-vandenberg-uap-speak@1:08:28
+bio: "Chaz King served in U.S. Air Force Security Forces at Vandenberg Air Force Base, California, his first duty station, from about 2000 to 2007 by his account. He was on duty during the October 2003 “Red Square” incursions over the base's missile-defence sites, and says he and others saw a dark, silent object about the size of a football field hover off the coast before shooting away."
 ---
 
-Chaz King served in U.S. Air Force Security Forces at Vandenberg Air Force Base, California. He was on duty during the October 2003 incursions over the base's missile-defence sites, known as the Vandenberg "Red Square" incident, which began on 14 October when Boeing contractors reported a massive glowing red square hovering silently over two of the sites.
+The incursions began on 14 October 2003, when Boeing contractors reported a massive glowing red square hovering silently over two of the base's missile-defence sites.
 
 In the 2025 documentary *The Age of Disclosure* he said: “Later that night, myself and five security forces members, we observed a bright light approaching the base.” He described a craft about the size of a football field, almost rectangular, that shot off up the coast.
 

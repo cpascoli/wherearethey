@@ -13,9 +13,8 @@ facts:
     status: claimed
     by: otto-weyland
     source: https://en.wikipedia.org/wiki/Wonsan-Sunchon_UFO_incident
+bio: "Otto P. Weyland was a U.S. Air Force lieutenant general who commanded the Far East Air Forces during the Korean War. He is in the archive for his public comment on the Wonsan–Sunchon sightings of January 1952, when gunners on two B-29s over North Korea watched a light orange sphere hold a course near their bombers."
 ---
-
-Lt. Gen. Otto P. Weyland commanded the U.S. Far East Air Forces during the Korean War. He is in the archive for his public comment on the Wonsan–Sunchon sightings of January 1952.
 
 On the night of 29 January 1952, according to ATIC's analysis in the Project Blue Book file, gunners on two B-29s over North Korea watched a light orange sphere, "the color of the sun with an occasional bluish tint", hold a course near their bombers. Weyland told the press: "We can't say there's nothing to it, but unless we can get more data, I don't think we can expect a conclusive answer." His remark is known from a press report (Stars and Stripes, 22 February 1952) as relayed by Wikipedia, not from an official record.
 

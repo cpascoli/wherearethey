@@ -54,12 +54,11 @@ facts:
     status: claimed
     by: kirk-mcconnell
     source: https://www.paradigm.news/p/exclusive-ex-pentagon-ufo-lead-accuses
+bio: "Kirk McConnell is a former senior staff member of the Senate Armed Services and Senate Intelligence committees, with 37 years on Capitol Hill. Out of public view, he was the person who turned the 2017 revelations into congressional oversight, arranging the first meetings between senators and Navy aviators. Since retiring he has spoken at the May 2025 congressional briefing and the 2026 Disclosure Forum."
 ---
-
-Kirk McConnell is a former senior staff member of the Senate Armed Services and Senate Intelligence committees, with 37 years on Capitol Hill. Out of public view, he was the person who turned the 2017 revelations into congressional oversight.
 
 When the committees did not react to The New York Times story of December 2017, Chris Mellon called McConnell, who arranged the first meetings between senators and Navy aviators. The 2004 Tic Tac case, walked through with David Fravor and Alex Dietrich, convinced him the issue was real. Leslie Kean says he was in the room when credible sources briefed senators, including Marco Rubio, about recovered non-human bodies.
 
-Since retiring he has spoken at the May 2025 congressional briefing and the 2026 Disclosure Forum. He urges first-hand witnesses of the legacy crash-retrieval program to come forward, saying no one has been prosecuted for briefing Congress in a secure setting. He is also measured. He thinks the black triangles reported near U.S. bases are probably American, and said he did not recall Jay Stratton sharing his legacy-program claims with Senate staff, though he welcomed Stratton going public.
+He urges first-hand witnesses of the legacy crash-retrieval program to come forward, saying no one has been prosecuted for briefing Congress in a secure setting. He is also measured. He thinks the black triangles reported near U.S. bases are probably American, and said he did not recall Jay Stratton sharing his legacy-program claims with Senate staff, though he welcomed Stratton going public.
 
 *Sources: May 1, 2025 congressional briefing · Disclosure Forum 2026 · Capitol Hill press conference (June 2026) · PARADIGM (October 2026)*

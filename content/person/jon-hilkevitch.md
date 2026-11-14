@@ -41,10 +41,9 @@ facts:
 links:
   - label: NPR, 1 January 2007
     url: https://www.npr.org/transcripts/6707250
+bio: "Jon Hilkevitch covered transportation for the Chicago Tribune. His Tribune story of 1 January 2007 first reported that United Airlines employees had seen a disc-shaped object hover over gate C17 at O'Hare on 7 November 2006; he interviewed the witnesses anonymously and, through a Freedom of Information Act request, found that the FAA tower had in fact received a call about it."
 ---
 
-Jon Hilkevitch covered transportation for the Chicago Tribune, as NPR introduced him in January 2007. His Tribune story of 1 January 2007 first reported that United Airlines employees had seen a disc-shaped object hover over gate C17 at O'Hare on 7 November 2006; he interviewed the witnesses anonymously and, through a Freedom of Information Act request, found that the FAA tower had in fact received a call about it.
-
-The story was picked up worldwide, and he discussed it on NPR, CNN and local Chicago television in the following days. He is filed as a reporter: he relays what the witnesses and the records told him and did not see the object himself.
+The story was picked up worldwide, and he discussed it on NPR (which introduced him as the Tribune's transportation reporter), CNN and local Chicago television in the following days. He is filed as a reporter: he relays what the witnesses and the records told him and did not see the object himself.
 
 *Sources: [Chicago Tribune, 1 January 2007](https://www.chicagotribune.com/2007/01/01/in-the-sky-a-bird-a-plane-a-ufo/) · [NPR, 1 January 2007](https://www.npr.org/transcripts/6707250) · the TV interviews on file.*

@@ -29,10 +29,9 @@ facts:
     status: claimed
     by: sheridan-cavitt
     source: doc-af-roswell-report-1995
+bio: "Sheridan Cavitt was the Counter Intelligence Corps special agent at Roswell Army Air Field in July 1947, newly arrived from CIC school, and went with Maj. Jesse Marcel and MSgt. Lewis Rickett to collect the debris on the Foster ranch. He later retired as a lieutenant colonel in the U.S. Air Force, and in 1994 told the Air Force's investigator that he had taken the debris for a weather balloon."
 ---
 
-Sheridan Cavitt was the Counter Intelligence Corps special agent at Roswell Army Air Field in July 1947, newly arrived from CIC school, and the man who went with Maj. Jesse Marcel and MSgt. Lewis Rickett to collect the debris on the Foster ranch. In the Roswell literature he is often cast as the officer who kept the secret.
-
-Interviewed by Col. Richard Weaver in May 1994, with a written waiver from the Secretary of the Air Force releasing him from any security oath, he gave a sworn statement and a taped interview: the debris was a small amount of foil-like material and sticks that he took at the time, and still took, for a weather balloon, the same material as in the Fort Worth photographs. He is the only first-hand witness to the recovery who was still alive when the Air Force investigated.
+In the Roswell literature he is often cast as the officer who kept the secret. Interviewed by Col. Richard Weaver in May 1994, with a written waiver from the Secretary of the Air Force releasing him from any security oath, he gave a sworn statement and a taped interview: the debris was a small amount of foil-like material and sticks that he took at the time, and still took, for a weather balloon, the same material as in the Fort Worth photographs. He is the only first-hand witness to the recovery who was still alive when the Air Force investigated.
 
 *Sources: The Roswell Report: Fact vs. Fiction in the New Mexico Desert (U.S. Air Force, 1995), attachments 17–18*

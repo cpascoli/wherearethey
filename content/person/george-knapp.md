@@ -76,9 +76,10 @@ facts:
     stance: context
     basis: relayed
     source: v-bob-lazar-1989-knapp@10:09
+bio: "George Knapp is the chief investigative reporter at KLAS-TV in Las Vegas and a Peabody Award winner who has covered UFOs since 1987. He broke the Bob Lazar story in 1989, became the public chronicler of the Skinwalker Ranch research and the DIA's AAWSAP program, and testified to the House Oversight task force on September 9, 2025. He is a reporter rather than a witness."
 ---
 
-George Knapp is the chief investigative reporter at KLAS-TV in Las Vegas and a Peabody Award winner who has covered UFOs since 1987. He calls it "likely the biggest story I will ever cover". He is a reporter rather than a witness, and says belief has nothing to do with it. What drew him in, he says, was the FOIA paper trail of officials admitting "these things are real".
+He calls UFOs "likely the biggest story I will ever cover", and says belief has nothing to do with it. What drew him in, he says, was the FOIA paper trail of officials admitting "these things are real".
 
 In 1989 he broke the story of Bob Lazar, who claimed to have worked on alien craft at S4 near Area 51. Knapp reported the gaps in Lazar's records along with the evidence that he had worked at Los Alamos, and says he believes him. In the 1990s he reported from the former Soviet Union, obtaining military files on cases such as the 1982 Usovo missile-base incident. Through Robert Bigelow and the DIA's AAWSAP program he became the public chronicler of the Skinwalker Ranch research. He co-wrote *Hunt for the Skinwalker*, *Skinwalkers at the Pentagon* and *Inside the US Government Covert UFO Program* with James Lacatski and Colm Kelleher. With filmmaker Jeremy Corbell he runs the WEAPONIZED podcast, which released Jay Stratton's first interview.
 

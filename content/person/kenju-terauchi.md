@@ -32,9 +32,8 @@ facts:
     source: v-jal1628-archive-compilation@0:10
     claims: [ jal1628-unknown-craft ]
     basis: first-hand
+bio: "Kenju Terauchi was the captain of Japan Air Lines cargo flight 1628, a Boeing 747, with about 29 years' flying experience. On 17 November 1986, flying over Alaska from Iceland to Anchorage, he and his two crew members reported lights that paced the aircraft for many minutes; he described one as a much larger “mothership”, “two times carrier” in size."
 ---
-
-Kenju Terauchi was the captain of Japan Air Lines cargo flight 1628, a Boeing 747, with about 29 years' flying experience. On 17 November 1986, flying over Alaska from Iceland to Anchorage, he and his two crew members reported lights that paced the aircraft for many minutes.
 
 He told FAA investigators, through interpreters, that he saw three objects. Two came close in front of the cockpit with bright lights, and a much larger "mothership" was "two times carrier" in size. He made drawings for the FAA, and said he had seen similar lights before, including near Taiwan. Anchorage controllers at first thought they saw a target near his plane. After he spoke to Kyodo News in December 1986, Japan Air Lines grounded him and moved him to a desk job.
 

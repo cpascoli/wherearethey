@@ -22,9 +22,8 @@ facts:
     status: claimed
     by: vladimir-kovalyonok
     source: v-kovalyonok-ochevidets-nlo@7:55
+bio: "Vladimir Vasilyevich Kovalyonok is a Soviet cosmonaut and Air Force colonel general, twice Hero of the Soviet Union. He commanded three missions, including the long-duration Soyuz 29 / Salyut 6 flight of 1978 and Soyuz T-4 to Salyut 6 in 1981, and later headed the Zhukovsky Air Force Engineering Academy."
 ---
-
-Vladimir Vasilyevich Kovalyonok is a Soviet cosmonaut and Air Force colonel general, twice Hero of the Soviet Union. He commanded three missions, including the long-duration Soyuz 29 / Salyut 6 flight of 1978 and Soyuz T-4 to Salyut 6 in 1981, and later headed the Zhukovsky Air Force Engineering Academy.
 
 He has described on Russian television an object he watched from Salyut 6 in 1981 that seemed to contract and explode in two flashes. He insists that distance cannot be judged in orbit and believes the object was man-made, of terrestrial origin.
 

@@ -16,10 +16,9 @@ facts:
 links:
   - label: NARCAP Technical Report 10 (PDF)
     url: https://www.narcap.org/s/NARCAP_TR-10.pdf
+bio: "Richard F. Haines is a former chief of the Space Human Factors Office at NASA's Ames Research Center. He became chief scientist of the National Aviation Reporting Center on Anomalous Phenomena (NARCAP), a private group that studies pilots' reports of unidentified aerial phenomena as an air-safety problem, and investigated the November 2006 sighting over gate C17 at Chicago O'Hare."
 ---
 
-Richard F. Haines is a former chief of the Space Human Factors Office at NASA's Ames Research Center. He became chief scientist of the National Aviation Reporting Center on Anomalous Phenomena (NARCAP), a private group that studies pilots' reports of unidentified aerial phenomena as an air-safety problem.
-
-He investigated the November 2006 sighting over gate C17 at Chicago O'Hare. He told the Chicago Tribune that no weather balloons had been launched near the airport that day, and he was senior editor of NARCAP's report on the case (May 2007). The report argues that a solid object hovered over the United concourse for at least ten minutes without being detected by radar or by the tower. His conclusions are a private group's analysis, not an official finding.
+On the O'Hare case he told the Chicago Tribune that no weather balloons had been launched near the airport that day, and he was senior editor of NARCAP's report on the case (May 2007). The report argues that a solid object hovered over the United concourse for at least ten minutes without being detected by radar or by the tower. His conclusions are a private group's analysis, not an official finding.
 
 *Sources: Chicago Tribune, 1 January 2007 · NARCAP Technical Report 10 (2007)*

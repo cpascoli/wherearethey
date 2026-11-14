@@ -19,9 +19,8 @@ facts:
     status: claimed
     by: juan-ignacio-lorenzo
     source: v-1989-04-21-rtve-en-familia-ovnis@11:29
+bio: "Juan Ignacio Lorenzo was the Iberia captain of flight IB-249, whose crew radioed Barcelona Control about a large light between Valencia and Sagunto on 4 November 1968. Later accounts give his full name as Juan Ignacio Lorenzo Torres; the released Air Force file names no crew."
 ---
-
-Juan Ignacio Lorenzo was the Iberia captain of flight IB-249, whose crew radioed Barcelona Control about a large light between Valencia and Sagunto on 4 November 1968. Later accounts give his full name as Juan Ignacio Lorenzo Torres; the released Air Force file names no crew.
 
 On RTVE's *En familia* in 1989 he told a far more dramatic story than the 1968 radio transcript: the light came within 10 metres, he signalled to it with his lights, and he was shown a radar report. He said the experience convinced him that extraterrestrials exist.
 

@@ -67,9 +67,8 @@ facts:
     status: claimed
     by: bob-salas
     source: v-2013-chd-nuclear-tampering-2@40:22
+bio: "Robert Salas is a former U.S. Air Force captain who was a Minuteman missile launch officer at Malmstrom Air Force Base, Montana. He is the best-known witness to the claim that UFOs have interfered with American nuclear weapons: he says missiles in his launch capsule dropped off alert on 24 March 1967 while guards reported a red, pulsating oval object over the front gate."
 ---
-
-Robert Salas is a former U.S. Air Force captain who was a Minuteman missile launch officer at Malmstrom Air Force Base, Montana. He is the best-known witness to the claim that UFOs have interfered with American nuclear weapons.
 
 He says that on the night of March 24, 1967, as a first lieutenant and deputy crew commander in the Oscar Flight launch capsule, his topside guard reported strange lights. The guard then called back in terror about a red, pulsating oval object hovering over the front gate. As Salas woke his commander, Fred Meiwald, the missiles dropped off alert one after another with guidance and control failures. He has variously put the number at six to eight or all ten. He says the crew was made to sign non-disclosure statements and the squadron commander told them it was no exercise. He kept silent until 1994, when a FOIA request led the Air Force to declassify records of a similar shutdown of all ten missiles at Echo Flight eight days earlier. For years he believed his own event had been at Echo, until Meiwald corrected him in 1996.
 

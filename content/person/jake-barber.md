@@ -86,9 +86,10 @@ facts:
   - text: "NewsNation said it confirmed that in fall 2024 he met staffers of Senator Marco Rubio."
     status: claimed
     source: v-2025-01-19-newsnation-jake-barber-special@40:43
+bio: "Jake Barber is a former U.S. Air Force airman and helicopter pilot who says he later worked as a contractor for the intelligence community, running helicopter companies that waited on calls from a crash-retrieval program. He went public in a NewsNation special presented by Ross Coulthart on 19 January 2025, describing two retrievals he says he flew at a California desert test range."
 ---
 
-Jake Barber is a former U.S. Air Force airman and helicopter pilot who says he later worked as a contractor for the intelligence community, running helicopter companies that waited on calls from a crash-retrieval program. He went public in a NewsNation special presented by Ross Coulthart on 19 January 2025, and gave a fuller account in an interview with Jesse Michels later that month. He describes two retrievals at a California desert test range: a white “egg” about 20 feet long, and a dark eight-sectioned disc whose load was declared to carry “biologics”. He says he has never seen a non-human body, does not know where the egg went, and has no first-hand knowledge of the operation Michael Herrera described.
+He gave a fuller account in an interview with Jesse Michels later in January 2025. The two retrievals he describes are a white “egg” about 20 feet long, and a dark eight-sectioned disc whose load was declared to carry “biologics”. He says he has never seen a non-human body, does not know where the egg went, and has no first-hand knowledge of the operation Michael Herrera described.
 
 He says he approached the Senate Intelligence Committee, went through the Pentagon's prepublication review alongside David Grusch, and co-founded Skywatcher, a venture he says has summoned UAP and briefed AARO; it went quiet in 2025. He attributes a radiation-like illness to one escort mission. His account is his own testimony; no released official record supports it.
 

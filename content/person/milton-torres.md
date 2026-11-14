@@ -23,10 +23,9 @@ facts:
     status: claimed
     by: milton-torres
     source: https://www.nbcnews.com/news/amp/wbna27279684
+bio: "Milton Torres is a retired U.S. Air Force major who, as a lieutenant in the 514th Fighter Interceptor Squadron, flew the F-86D Sabre from RAF Manston in Kent. On the night of 20 May 1957, by his account, he was scrambled, ordered to fire a full salvo of 24 rockets at a radar target over East Anglia, and saw it leave his radar seconds before he could fire."
 ---
 
-Milton Torres was a lieutenant in the U.S. Air Force's 514th Fighter Interceptor Squadron, flying the F-86D Sabre from RAF Manston in Kent. On the night of 20 May 1957, by his account, he was scrambled, ordered to fire a full salvo of 24 rockets at a radar target over East Anglia, and saw it leave his radar seconds before he could fire. He says a civilian swore him to secrecy the next day.
-
-He kept quiet for some thirty years, until a reunion with his fellow pilots in May 1988, after which he wrote out his account; a British solicitor investigating the case sent it to the Ministry of Defence that July. The MoD released it, with his name redacted, at the National Archives in October 2008, when he spoke to the press from his home in Miami. A later interview introduces him as a retired major who became a professor of civil engineering.
+He says a civilian swore him to secrecy the next day. He kept quiet for some thirty years, until a reunion with his fellow pilots in May 1988, after which he wrote out his account; a British solicitor investigating the case sent it to the Ministry of Defence that July. The MoD released it, with his name redacted, at the National Archives in October 2008, when he spoke to the press from his home in Miami. A later interview introduces him as a retired major who became a professor of civil engineering.
 
 *Sources: MoD file DEFE 24/1931 (National Archives, released October 2008) · AP via NBC News, 20 October 2008 · [interview by Ron Laytner](https://www.youtube.com/watch?v=Xk0INH_DI1M)*

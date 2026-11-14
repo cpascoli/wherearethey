@@ -58,9 +58,10 @@ facts:
     claims: [ recovered-non-human-craft ]
     stance: context
     basis: opinion
+bio: "Avi Loeb is a professor of astrophysics at Harvard University, where he chaired the astronomy department from 2011 to 2020, and the founder and head of the Galileo Project, which watches the sky with open multi-sensor observatories. He spoke at the May 2025 congressional UAP briefing and in June 2026 became chair of the UAP Science Advisory Council."
 ---
 
-Avi Loeb is a Harvard astrophysicist who chaired the university's astronomy department from 2011 to 2020. He has become the leading academic voice for searching the sky for technological objects with open scientific instruments rather than relying on classified data or testimony.
+He has become the leading academic voice for searching the sky for technological objects with open scientific instruments rather than relying on classified data or testimony.
 
 He gained wide attention in 2018 by suggesting that ʻOumuamua, the first known interstellar object, might be a thin artificial light sail, based on its missing comet tail and unexplained push away from the sun. In 2021 he founded the Galileo Project, which runs multi-sensor observatories that watch the sky in infrared, optical, radio and audio, and which Garry Nolan joined. In 2023 he led an expedition off Papua New Guinea to recover spherules from the 2014 interstellar meteor, which he says include material unlike anything in the solar system. Both claims are contested by other astronomers.
 

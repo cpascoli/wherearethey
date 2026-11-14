@@ -21,11 +21,10 @@ facts:
     source: v-2013-chd-associated-phenomena@40:32
     claims: [ belgian-triangles ]
     basis: relayed
+bio: "Gary Heseltine is a retired British Transport Police detective who collects UFO reports made by police officers, in a database he started in 2002 with six cases. He is in the archive for his testimony at the 2013 Citizen Hearing on Disclosure, where he said it held “over 425 cases involving over 940 british police officers”."
 ---
 
-Gary Heseltine is a retired British Transport Police detective who collects UFO reports made by police officers. He is in the archive for his testimony at the 2013 Citizen Hearing on Disclosure.
-
-There he said his database, started in 2002 with six cases, held “over 425 cases involving over 940 british police officers”, more than 70% of them with several police witnesses. He cited the night of 30–31 March 1993 at Cosford, when, he said, more than 24 police officers tracked at least one object across six counties; two officers near RAF Northolt in October 1984 who saw a silent black triangle “the size of three football fields”; and Belgium between 1989 and 1991, when “hundreds of police officers observed large triangular objects”.
+More than 70% of those cases, he said, have several police witnesses. He cited the night of 30–31 March 1993 at Cosford, when, he said, more than 24 police officers tracked at least one object across six counties; two officers near RAF Northolt in October 1984 who saw a silent black triangle “the size of three football fields”; and Belgium between 1989 and 1991, when “hundreds of police officers observed large triangular objects”.
 
 He said that after investigation about 5% of reports stay unexplained, and of those “about three percent of hardcore cases” defy all explanation. These are his summaries of cases he collected; his database is not on file.
 

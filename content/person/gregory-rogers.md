@@ -56,8 +56,9 @@ facts:
     status: claimed
     by: gregory-rogers
     source: v-jm-greg-rogers@1:16:17
+bio: "Gregory Rogers is a retired U.S. Air Force major and flight surgeon who, by his account, was chief of aerospace medicine of the 45th Space Wing, covering Cape Canaveral Air Force Station, Patrick AFB and the Eastern Range, and senior flight surgeon of the astronaut rescue team at Kennedy Space Center. He is on file for a craft he says he saw on a closed-circuit security feed in 1992."
 ---
 
-Gregory Rogers is a retired U.S. Air Force major and flight surgeon who, by his account, was chief of aerospace medicine of the 45th Space Wing and senior flight surgeon of the astronaut rescue team at Kennedy Space Center. He says that around 1992 an Air Force major at Cape Canaveral showed him security footage of a white saucer about 20 feet wide levitating, on a closed-circuit feed that gave no location; no footage or record has been released.
+He says that around 1992 an Air Force major at Cape Canaveral showed him security footage of a white saucer about 20 feet wide levitating, on a closed-circuit feed that gave no location; no footage or record has been released.
 
 *Sources: Interview with Jesse Michels*

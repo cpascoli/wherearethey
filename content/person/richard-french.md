@@ -44,8 +44,9 @@ facts:
     status: claimed
     by: richard-french
     source: v-2013-chd-roswell-2@8:35
+bio: "Richard French is a retired U.S. Air Force lieutenant colonel and former fighter pilot who flew in Korea and Vietnam. He says that in March 1997 a silent craft nearly a mile long passed less than a hundred yards from him in north Scottsdale during the Phoenix Lights, and he testified at the 2013 Citizen Hearing on Disclosure."
 ---
 
-Richard French is a retired U.S. Air Force lieutenant colonel and former fighter pilot (Korea, Vietnam). At the 2013 Citizen Hearing on Disclosure, on its "History & Background" and "Pilots & Aviation Experts" panels, he testified that he was sent by the Air Force Office of Special Investigations district commander to investigate an object reported in the water off Newfoundland.
+At the 2013 Citizen Hearing on Disclosure, on its "History & Background" and "Pilots & Aviation Experts" panels, he testified that he was sent by the Air Force Office of Special Investigations district commander to investigate an object reported in the water off Newfoundland.
 
 *Sources: Citizen Hearing (2013)*

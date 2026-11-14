@@ -30,9 +30,8 @@ facts:
     claims: [ programs-hidden-from-congress ]
     stance: context
     basis: opinion
+bio: "Marco Rubio is a U.S. politician who represented Florida in the Senate from 2011 to 2025, where he was acting chair and then vice chair of the Senate Intelligence Committee, and has served as Secretary of State since 2025. As a senator he co-sponsored UAP provisions in the intelligence authorization bills that required the government to report on unidentified aerial phenomena."
 ---
-
-Marco Rubio is a U.S. politician who represented Florida in the Senate from 2011 to 2025, where he was acting chair and then vice chair of the Senate Intelligence Committee, and has served as Secretary of State since 2025. As a senator he co-sponsored UAP provisions in the intelligence authorization bills that required the government to report on unidentified aerial phenomena.
 
 In *The Age of Disclosure* (2025) he argues that UAP over restricted facilities are a national-security problem whoever is behind them, and that secret programs can be kept even from presidents, who also work on a need-to-know basis.
 

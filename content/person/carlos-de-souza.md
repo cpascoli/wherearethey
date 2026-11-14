@@ -17,9 +17,10 @@ facts:
     basis: first-hand
     by: carlos-de-souza
     source: v-2026-01-20-newsnation-varginha-press-conference@46:46
+bio: "Carlos de Souza is an ultralight pilot, former businessman and geography teacher, and a civilian witness in the Varginha case. He says that on 13 January 1996, driving through Minas Gerais to an ultralight meeting, he saw a damaged cigar-shaped craft crash outside Varginha and reached the site, where soldiers drove him away."
 ---
 
-Carlos de Souza says that on 13 January 1996, driving through Minas Gerais to an ultralight meeting, he saw a damaged cigar-shaped craft crash outside Varginha and reached the site, where soldiers drove him away. He gave one brief statement in 1996 and then stayed silent for 26 years, until James Fox's team found him.
+He gave one brief statement in 1996 and then stayed silent for 26 years, until James Fox's team found him.
 
 He is a civilian witness, filed outside the archive's criteria. His crash account appears in no official record; the Brazilian Army's 1997 inquiry found no military involvement in the case.
 

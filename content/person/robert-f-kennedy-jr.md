@@ -21,10 +21,9 @@ facts:
   - text: "He offered no evidence; Cybernews reports he said the group wanted him to go public, but that he already had “so many counts against me on conspiracy theories”."
     status: claimed
     source: https://cybernews.com/news/ufo-uap-kennedy-disclosure-whitehouse/
+bio: "Robert F. Kennedy Jr. is an American lawyer and politician who has served as U.S. Secretary of Health and Human Services since 2025. Before entering government he was an environmental lawyer and ran for president in 2024. He is on file for saying, in October 2026, that a NASA scientist and former special-forces members who had served on crash-retrieval teams approached him during the presidential transition to talk about UAP."
 ---
 
-Robert F. Kennedy Jr. is an American lawyer and politician who has served as U.S. Secretary of Health and Human Services since 2025. Before entering government he was an environmental lawyer and ran for president in 2024. He has promoted vaccine misinformation and conspiracy theories, which Wikipedia describes at length.
-
-In October 2026 he said in a conversation with Rep. Anna Paulina Luna that, during the presidential transition, a NASA scientist and former special-forces members who had served on crash-retrieval teams approached him to talk about UAP. His account is second-hand and came without evidence.
+In October 2026 he said in a conversation with Rep. Anna Paulina Luna that, during the presidential transition, a NASA scientist and former special-forces members who had served on crash-retrieval teams approached him to talk about UAP. His account is second-hand and came without evidence. He has also promoted vaccine misinformation and conspiracy theories, which Wikipedia describes at length.
 
 *Sources: [Wikipedia](https://en.wikipedia.org/wiki/Robert_F._Kennedy_Jr.) · [Cybernews (2026)](https://cybernews.com/news/ufo-uap-kennedy-disclosure-whitehouse/)*

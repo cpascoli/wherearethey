@@ -56,9 +56,8 @@ facts:
     stance: context
     basis: opinion
     source: v-2026-08-28-disclosure-forum-national-security@1:26:30
+bio: "Marik von Rennenkampff is a former analyst with the State Department's Bureau of International Security and Nonproliferation and a former appointee at the Department of Defense. He now writes and speaks about UAP as a national-security issue, including in opinion columns for The Hill. He is an analyst rather than a witness."
 ---
-
-Marik von Rennenkampff is a former analyst with the State Department's Bureau of International Security and Nonproliferation and a former appointee at the Department of Defense. He now writes and speaks about UAP as a national-security issue, including in opinion columns for The Hill. He is an analyst rather than a witness.
 
 On the national-security panel of Disclosure Forum 2026, alongside Chris Mellon, Tim Gallaudet and Kirk McConnell, he set out several lines of argument. One was the 17 nights of incursions over Langley in 2023, which he says even NORAD could not jam. Another was his reconstruction, with citizen scientists, of the Gimbal object's flight path, which supports the aircrew's account of a nearby object against Sean Kirkpatrick's balloon explanation and Mick West's lens-glare theory. He also sees a continuity of "fiery orb" reports from 1944 to the PURSUE releases, which he calls soft disclosure.
 

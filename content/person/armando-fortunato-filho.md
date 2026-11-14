@@ -21,9 +21,10 @@ facts:
     claims: [ uap-injuries ]
     stance: context
     basis: first-hand
+bio: "Armando Fortunato Filho is a physician with a law degree who worked for more than thirty years in forensic medicine for the Minas Gerais civil police, as a forensic pathologist and medical examiner, and served as Varginha's health secretary. He says he performed the autopsy of Marco Eli Chereze, the military police officer whom ufologists and his family link to the 1996 Varginha case."
 ---
 
-Armando Fortunato Filho is a physician with a law degree who worked for more than thirty years in forensic medicine for the Minas Gerais civil police, as a forensic pathologist and medical examiner, and served as president of Varginha's medical association and the city's health secretary.
+He also served as president of Varginha's medical association.
 
 At the January 2026 press conference in Washington he described the autopsy of Marco Eli Chereze, the young military police officer whom ufologists and his family link to the capture of a creature in Varginha. He described the cause of death; he did not say the infection came from a creature.
 

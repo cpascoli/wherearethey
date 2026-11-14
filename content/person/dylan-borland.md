@@ -82,9 +82,8 @@ facts:
     claims: [ recovered-non-human-bodies ]
     basis: relayed
     source: v-jm-dylan-borland@52:32
+bio: "Dylan Borland is a former U.S. Air Force geospatial intelligence specialist who served from 2010 to 2013 as an imagery analyst supporting special-operations ISR until his medical discharge, and later worked for BAE Systems and as a counter-WMD analyst at the Defense Threat Reduction Agency. He was one of three witnesses at the House Oversight task force's whistleblower hearing of September 9, 2025, where he described a triangular craft he says he saw at Langley Air Force Base in 2012."
 ---
-
-Dylan Borland is a former U.S. Air Force geospatial intelligence specialist and one of three witnesses at the House Oversight task force's whistleblower hearing on September 9, 2025. He served from 2010 to 2013 as an imagery analyst supporting special-operations ISR, was medically discharged, and then worked for BAE Systems and as a counter-WMD analyst at the Defense Threat Reduction Agency.
 
 In summer 2012, at about 1:30 a.m. at Langley Air Force Base, he says he saw a light rise near the NASA hangar and become a silent equilateral triangle 100 to 150 feet across. It stopped about 100 feet from him while his phone froze and the air smelled of a lightning storm, then climbed to airliner altitude in seconds. Years later, at BAE, he says colleagues assumed he was read into a program because of his sighting, and that this exposed him to a legacy crash-retrieval program. He filed with the Intelligence Community Inspector General and AARO in 2023, and says the complaint was found "credible, not urgent".
 

@@ -20,9 +20,8 @@ facts:
     status: documented
     by: gregory-guillot
     source: library/docs/doc-transcript-2024-03-14-sasc-northcom.pdf
+bio: "Gen. Gregory Guillot of the U.S. Air Force is commander of NORAD and U.S. Northern Command. He is in the archive for what he said about the December 2023 drone incursions over Langley Air Force Base, including his testimony to the Senate Armed Services Committee on 14 March 2024 that he “was not prepared for the number of incursions” he saw."
 ---
-
-Gen. Gregory Guillot of the U.S. Air Force is commander of NORAD and U.S. Northern Command. He is in the archive for what he said about the December 2023 drone incursions over Langley Air Force Base.
 
 Testifying before the Senate Armed Services Committee on 14 March 2024, asked by Sen. Tim Kaine about drone threats to U.S. bases, he said: “I was not prepared for the number of incursions that I see.” He had “gone into the events at Joint Base Langley-Eustis”, he said, and was using them as “the centerpiece” of his 90-day assessment of where NORAD and NORTHCOM can and should do more. He named the Department of Homeland Security, the Department of Justice, the individual services and the Department of Energy as his partners on the problem.
 

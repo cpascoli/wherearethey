@@ -24,11 +24,12 @@ facts:
     status: claimed
     by: benjamin-read
     source: v-2026-07-14-safe-aerospace-ben-read-houston@1:03:40
+bio: "Benjamin Read is a commercial airline captain and former U.S. Marine Corps pilot who was commissioned in 2001 and flew the F/A-18 Hornet for most of about 18 years in the Corps. He says that in May 2021, as first officer climbing out of Houston, he saw a large metallic object hover in his path and then streak away."
 ---
 
-Benjamin Read says he enlisted in the Marine Corps hoping to fly as aircrew, worked as an avionics technician on CH-53 helicopters, and was sent through an officer programme. He was commissioned in 2001 and flew the F/A-18 Hornet for most of about 18 years in the Corps, surviving a G-induced spinal injury during an air show in Thailand, and served as a general's aide and as air officer of Task Force Personnel Recovery in Iraq before taking early retirement. He then joined the airlines, where he is now a captain.
+He says he enlisted in the Marine Corps hoping to fly as aircrew, worked as an avionics technician on CH-53 helicopters, and was sent through an officer programme. As a Hornet pilot he survived a G-induced spinal injury during an air show in Thailand, and served as a general's aide and as air officer of Task Force Personnel Recovery in Iraq before taking early retirement and joining the airlines.
 
-He says he was "a full on skeptic" who assumed strange lights over the western U.S. were classified American programs. That changed in May 2021 when, as first officer climbing out of Houston, he saw a large metallic object hover in his path and then streak away, after the controller had called it as unidentified traffic. He reported it to Americans for Safe Aerospace about two years later, and told the story on Ryan Graves's podcast in July 2026.
+He says he was "a full on skeptic" who assumed strange lights over the western U.S. were classified American programs. That changed with the May 2021 sighting over Houston, which came after the controller had called the object as unidentified traffic. He reported it to Americans for Safe Aerospace about two years later, and told the story on Ryan Graves's podcast in July 2026.
 
 His account is his own: the captain has not spoken publicly, no photograph came out, and no ATC or radar record has been released.
 

@@ -31,9 +31,8 @@ facts:
     source: v-2026-03-08-sbt-venturelli-varginha@1:47
     claims: [ varginha-beings-captured ]
     basis: first-hand
+bio: "Ítalo Venturelli is a neurologist and neurosurgeon in Varginha, Minas Gerais, with nearly five decades of practice. In 2023 he told the filmmaker James Fox that he had seen a video of a non-human creature at the city's regional hospital in January 1996; in 2026, on Brazilian television and at a press conference in Washington, he went further and said he had seen the living being face to face."
 ---
-
-Ítalo Venturelli is a neurologist and neurosurgeon in Varginha with nearly five decades of practice. In 2023 he told the filmmaker James Fox that he had seen a video of a non-human creature at the city's regional hospital in January 1996; in 2026, on Brazilian television and at a press conference in Washington, he went further and said he had seen the living being face to face.
 
 His account has changed over time, as he acknowledges, and the colleague he says called him has since died. He is a physician, not an official, and is filed as a named first-hand witness outside the archive's criteria.
 

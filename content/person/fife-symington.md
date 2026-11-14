@@ -21,11 +21,10 @@ facts:
     source: v-npc-2007-ufo-close-encounters@1:17:54
 rel:
   - [ witness, inc-phoenix-lights-1997 ]
+bio: "Fife Symington, a U.S. Air Force veteran, was the Republican Governor of Arizona from 1991 to 1997. He says that in 1997, during his second term, he saw the “Phoenix Lights” himself, and on 12 November 2007 he moderated the National Press Club panel at which former military officers, pilots and officials from several countries described official cases."
 ---
 
-Fife Symington was the Republican Governor of Arizona from 1991 to 1997 and a U.S. Air Force veteran. He is in the archive as a witness to the 1997 "Phoenix Lights" and as moderator of the National Press Club panel of 12 November 2007, where former military officers, pilots and officials from several countries described official cases.
-
-At that event he said that in 1997, during his second term as governor, he saw “a massive delta-shaped craft that silently navigated over the Peak uh area in North Phoenix”, with huge embedded lights on its leading edge. As a pilot and former Air Force officer, he said, it resembled no man-made object and was “certainly not high flares”, because “I've never seen flares fly in formation”.
+At the 2007 Press Club event he said that in 1997 he saw “a massive delta-shaped craft that silently navigated over the Peak uh area in North Phoenix”, with huge embedded lights on its leading edge. As a pilot and former Air Force officer, he said, it resembled no man-made object and was “certainly not high flares”, because “I've never seen flares fly in formation”.
 
 The Maryland Air National Guard attributed the 10 p.m. lights that night to illumination flares, and sceptics attribute the earlier formation to A-10s; Symington rejects both. At the time he mocked the reports with a staffer in an alien costume.
 

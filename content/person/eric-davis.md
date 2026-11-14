@@ -88,9 +88,10 @@ facts:
     source: v-jre-hal-puthoff-2025@1:37:13
     claims: [ roswell-crashed-craft ]
     basis: relayed
+bio: "Eric W. Davis is an astrophysicist who has spent three decades in privately and government-funded research on UAP and advanced propulsion: at Robert Bigelow's National Institute for Discovery Science from 1996, with Hal Puthoff at EarthTech International, under the DIA's AAWSAP contract, and later at the Aerospace Corporation. At a May 2025 congressional briefing he said the U.S. holds recovered craft “not of this earth”."
 ---
 
-Eric W. Davis is an astrophysicist who has spent three decades in privately and government-funded research on UAP and advanced propulsion. In 1996 Robert Bigelow hired him at the National Institute for Discovery Science, whose advisers included Hal Puthoff and astronaut Edgar Mitchell. He then joined Puthoff at EarthTech International in Austin. Under the DIA's AAWSAP contract he wrote Defense Intelligence Reference Documents, including "Traversable Wormholes, Stargates, and Negative Energy", and Luis Elizondo has called him a chief scientist of AAWSAP/AATIP. More recently he worked for the Aerospace Corporation in Huntsville, supporting NASA's space nuclear propulsion office.
+The NIDS advisers included Hal Puthoff and astronaut Edgar Mitchell. Under AAWSAP he wrote Defense Intelligence Reference Documents, including "Traversable Wormholes, Stargates, and Negative Energy", and Luis Elizondo has called him a chief scientist of AAWSAP/AATIP. At the Aerospace Corporation he worked in Huntsville, supporting NASA's space nuclear propulsion office.
 
 He is the reported author of the 2002 notes of a conversation with former DIA director Adm. Thomas Wilson, which describe an intact craft held by an aerospace contractor. The notes surfaced from Edgar Mitchell's papers in 2019 and were entered into the House Intelligence Committee record in 2022, though neither man has confirmed them. In 2020 he told The New York Times he had briefed Defense Department and congressional staff on recovered off-world craft. He later briefed Senate committee staff in 2019 and 2022. At Jay Stratton's request he also spent two and a half days briefing David Grusch, which fed Grusch's Inspector General complaint.
 

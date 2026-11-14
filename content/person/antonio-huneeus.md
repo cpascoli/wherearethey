@@ -30,9 +30,10 @@ facts:
     claims: [ tehran-1976-object ]
     basis: documented
     source: v-2013-chd-global-2@16:21
+bio: "Antonio Huneeus is a Chilean-born journalist who studied at the Sorbonne and the University of Chile and has reported on UFOs internationally from New York for more than three decades, as a consulting editor of FATE and a writer for Open Minds. He helped edit the 1995 UFO Briefing Document funded by Laurance Rockefeller, and testified at the 2013 Citizen Hearing on Disclosure."
 ---
 
-Antonio Huneeus is a Chilean-born journalist who studied at the Sorbonne and the University of Chile and has reported on UFOs internationally for more than three decades, as a consulting editor of *FATE* and a writer for *Open Minds*, from New York. He helped edit the 1995 *UFO Briefing Document* funded by Laurance Rockefeller, and has specialised in official investigations abroad: Chile's CEFAA, France's GEIPAN, the Soviet files and the U.S. records on cases in other countries.
+He has specialised in official investigations abroad: Chile's CEFAA, France's GEIPAN, the Soviet files and the U.S. records on cases in other countries.
 
 At the 2013 Citizen Hearing he testified on the Rockefeller initiative, on official UFO bodies in South America and Europe, on the 1978 Bolivian fall and the Project Moon Dust telexes, and on the U.S.–Soviet 1971 accidents agreement. He is a reporter of others' cases and documents, not a witness.
 

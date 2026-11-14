@@ -28,8 +28,9 @@ facts:
     stance: context
     basis: first-hand
     source: v-abc-westall-australian-story@21:40
+bio: "Andrew Greenwood was a science teacher at Westall High School in 1966, teaching a Year 9 science class when a pupil burst in to say there was a flying saucer. He says he saw the object over the school grounds, and that RAAF officers afterwards pressured him to stay silent, threatening him with losing his job."
 ---
 
-Science teacher at Westall High School who saw the 1966 object after a pupil ran into his class. He gave interviews close to the time and again decades later (7NEWS Spotlight, 2021), and his account has stayed consistent: an object over the school grounds, followed by pressure from RAAF officers to stay silent. As a civilian he is not an official source, but Westall qualifies under the mass-sighting rule.
+He gave interviews close to the time and again decades later (7NEWS Spotlight, 2021), and his account has stayed consistent: an object over the school grounds, followed by pressure from RAAF officers to stay silent. As a civilian he is not an official source, but Westall qualifies under the mass-sighting rule.
 
 *Sources: 7NEWS Spotlight (2021) · “Phenom Westall ’66” (2010) · [Wikipedia — Westall UFO](https://en.wikipedia.org/wiki/Westall_UFO)*

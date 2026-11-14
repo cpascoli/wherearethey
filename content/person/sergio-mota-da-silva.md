@@ -13,9 +13,8 @@ facts:
     status: claimed
     by: sergio-mota-da-silva
     source: v-fantastico-noite-oficial-ovnis-2016@4:38
+bio: "Sérgio Mota da Silva was the Brazilian Air Force sergeant on duty as controller in the São José dos Campos tower on 19 May 1986, and gave the first alert of the “Official UFO Night”, when the Air Force scrambled jets from Santa Cruz and Anápolis after lights and radar contacts over southeastern Brazil. He later became a civil air traffic controller."
 ---
-
-Sérgio Mota da Silva was the Brazilian Air Force sergeant on duty as controller in the São José dos Campos tower on 19 May 1986, and gave the first alert of the "Official UFO Night", when the Air Force scrambled jets from Santa Cruz and Anápolis after lights and radar contacts over southeastern Brazil. He later became a civil air traffic controller.
 
 He gave his first television interview, without showing his face, to TV Globo's *Fantástico* in 2016. He says that to the naked eye the light looked like an aircraft, but through binoculars it was intensely scintillating and multicoloured, mostly orange, and that the objects moved away when he raised the runway lights and came closer when he dimmed them. The programme also plays the original tower recording of a controller reporting three lights the radar was not picking up.
 

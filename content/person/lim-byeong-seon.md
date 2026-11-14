@@ -25,9 +25,8 @@ facts:
   - text: "Korea JoongAng Daily reported that the incident was reported to the Air Force's top commanders, who decided not to investigate it as outside their area of expertise. No official Korean record of the case has been published."
     status: claimed
     source: https://www.koreajoongangdaily.com/korea/korean-air-force-jets-reportedly-engaged-a-ufo-in-1980-documentary-reveals/10530706
+bio: "Lim Byeong-seon is a retired major general of the Republic of Korea Air Force and a former F-4 Phantom pilot. In 1980, as a colonel commanding a squadron based at Daegu, he flew one of two Phantoms whose four crew reported watching an unidentified luminous object for about forty minutes on the night of 31 March, during the Korea–U.S. Team Spirit exercise."
 ---
-
-Lim Byeong-seon is a retired major general of the Republic of Korea Air Force and a former F-4 Phantom pilot. In 1980, as a colonel commanding a squadron based at Daegu, he flew one of two Phantoms whose four crew watched an unidentified luminous object for about forty minutes on the night of 31 March, during the Korea–U.S. Team Spirit exercise.
 
 He told the story in a JTBC documentary broadcast on 31 July 2016 (*Spotlight*), and appears in the Korean documentary film *UFO Sketch* (2021). By his account, the object was not on radar, stopped and rose vertically to 33,000 feet, and was the size of three Phantoms, and the sighting was reported to the Air Force's commanders and to the U.S. Air Force.
 

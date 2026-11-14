@@ -17,9 +17,10 @@ facts:
     claims: [ calvine-craft-photographed ]
     stance: context
     basis: first-hand
+bio: "Craig Lindsay is a retired Royal Air Force press officer for Scotland, based at RAF Pitreavie Castle near Edinburgh until 2000. In 1990 he handled the Calvine photograph for the RAF, and he kept a print of it for 32 years before donating it in 2022 to Sheffield Hallam University, the only surviving copy of any of the six photographs."
 ---
 
-Craig Lindsay was the Royal Air Force's press officer for Scotland, based at RAF Pitreavie Castle near Edinburgh. In late August 1990 the *Daily Record* sent him a print of the Calvine photograph; he faxed a copy to the MoD's UFO desk, Sec(AS), in London, spoke by phone with one of the two witnesses at a hotel in Pitlochry, and sent a written summary to the MoD.
+In late August 1990 the *Daily Record* sent him a print of the Calvine photograph; he faxed a copy to the MoD's UFO desk, Sec(AS), in London, spoke by phone with one of the two witnesses at a hotel in Pitlochry, and sent a written summary to the MoD.
 
 He kept the print for 32 years. When the researcher David Clarke tracked him down in 2021–22, he told him he had been waiting more than thirty years for someone to call about it, and in 2022 he donated the print to Special Collections at Sheffield Hallam University — the only surviving copy of any of the six photographs.
 

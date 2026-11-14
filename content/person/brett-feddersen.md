@@ -19,8 +19,9 @@ facts:
     status: claimed
     by: brett-feddersen
     source: v-2026-07-06-age-of-disclosure-air-safety@0:49
+bio: "Brett Feddersen is a former U.S. government official who, by his own description, served as director of aviation security on the National Security Council and as acting director of the Federal Aviation Administration's National Security Programs Office. In The Age of Disclosure (2025) he and the former Navy pilot Ryan Graves discuss UAP as a risk to the safety of military and civil aviation."
 ---
 
-Brett Feddersen is a former U.S. government official who, by his own description in *The Age of Disclosure*, served as director of aviation security on the National Security Council and as acting director of the Federal Aviation Administration's National Security Programs Office. In the film he and the former Navy pilot Ryan Graves discuss UAP as a risk to the safety of military and civil aviation.
+In the film he says “we are absolutely not alone in this universe”, and that what concerns him most is national security, because the technology “does stuff that we can't do”.
 
 *Sources: The Age of Disclosure (2025) · [Wikipedia — The Age of Disclosure](https://en.wikipedia.org/wiki/The_Age_of_Disclosure)*

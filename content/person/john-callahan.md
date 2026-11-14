@@ -50,12 +50,11 @@ facts:
     source: v-disclosure-project-2001-npc@14:26
     claims: [ jal1628-unknown-craft ]
     basis: relayed
+bio: "John Callahan was Division Chief of Accidents and Investigations at the Federal Aviation Administration in the 1980s, and the official behind the best-known claim of a government cover-up of radar data on a UFO: the replay of the radar and voice tapes of Japan Air Lines flight 1628 over Alaska in 1986, which he says a CIA officer confiscated. He told the story at the Disclosure Project press conference (2001), the National Press Club (2007) and the Citizen Hearing (2013)."
 ---
-
-John Callahan was Division Chief of Accidents and Investigations at the Federal Aviation Administration in the 1980s, and the official behind the best-known claim of a government cover-up of radar data on a UFO.
 
 In January 1987 the FAA's Alaska region asked headquarters what to tell reporters about Japan Air Lines flight 1628, whose crew said a gigantic object with yellow and white lights had paced their 747 over Alaska on 17 November 1986. Callahan says he had the radar data and controller tapes flown to the FAA Technical Center, replayed the scope in sync with the voice tapes, and filmed it. FAA Administrator Donald Engen saw the film and, by Callahan's account, went to brief President Reagan. Callahan says that at a later briefing for the President's scientific staff, a CIA officer declared "this event never happened, we were never here", confiscated the material and swore everyone to secrecy. Callahan kept his own copies, which he says he would swear to before Congress.
 
-He told the story at the Disclosure Project press conference (2001), the National Press Club (2007) and the Citizen Hearing (2013). The FAA's public conclusion differed. Its March 1987 release said it could not confirm the event, and attributed the second radar target to a split return from the 747 itself. Callahan says FAA engineers could not agree whether that was a hardware or a software fault. Only the three JAL crew members saw the object.
+The FAA's public conclusion differed. Its March 1987 release said it could not confirm the event, and attributed the second radar target to a split return from the 747 itself. Callahan says FAA engineers could not agree whether that was a hardware or a software fault. Only the three JAL crew members saw the object.
 
 *Sources: Disclosure Project press conference (2001) · National Press Club (2007) · Citizen Hearing (2013) · [FAA Alaskan Region release, 5 March 1987 (via The Black Vault)](https://documents.theblackvault.com/documents/ufos/jal1628/733667-001-022.pdf)*

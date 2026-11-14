@@ -43,10 +43,9 @@ facts:
     basis: first-hand
     by: paolo-gianassi
     source: v-2022-03-16-gianassi-san-damiano-control-tower@8:03
+bio: "Paolo Gianassi is a retired colonel of the Italian Air Force, named as such by the association Spazio Tesla, which recorded his testimony. On 17 October 1966 he was, on his own account, the air traffic controller on duty in the tower of the San Damiano airfield near Piacenza, home of the 50° Stormo, and followed on the radio an F-84 pilot's chase of a bright, silvery object."
 ---
 
-Paolo Gianassi is a retired colonel of the Italian Air Force, named as such by the association Spazio Tesla, which recorded his testimony. On 17 October 1966 he was, on his own account, the air traffic controller on duty in the tower of the San Damiano airfield near Piacenza, home of the 50° Stormo; he says he was not a pilot.
-
-In an interview with Alberto Negri, published in 2022, he recalled following on the radio a young pilot, Sottotenente Vittorino Bocca, who on an engine test flight in an F-84 chased a bright, silvery object that kept drawing away until the jet reached its ceiling. He places the episode at ten to fifteen minutes and recalls an article in the Gazzetta di Parma a few days later.
+He says he was not a pilot. In an interview with Alberto Negri, published in 2022, he recalled following on the radio a young pilot, Sottotenente Vittorino Bocca, who on an engine test flight in an F-84 chased a bright, silvery object that kept drawing away until the jet reached its ceiling. He places the episode at ten to fifteen minutes and recalls an article in the Gazzetta di Parma a few days later.
 
 *Sources: Testimony of Col. Paolo Gianassi to Alberto Negri (Spazio Tesla, YouTube, March 2022)*

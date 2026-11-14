@@ -17,9 +17,8 @@ facts:
   - text: "The Air Defence Command's report of 2 June 1986 concluded that “the phenomena are solid and reflect a certain intelligence”, “not necessarily crewed”, while stressing that its radars were built for air traffic control, tracking was manual, and many detections were too weak to establish tracks."
     status: documented
     source: doc-fab-noite-oficial-ovnis-1986
+bio: "Armindo de Sousa Viriato was a Brazilian Air Force captain and one of the fighter pilots scrambled during the “Official UFO Night” of 19–20 May 1986, when controllers at São José dos Campos and São Paulo reported moving coloured lights and radar contacts and the Air Force sent interceptors from Santa Cruz and Anápolis."
 ---
-
-Armindo de Sousa Viriato was a Brazilian Air Force captain and one of the fighter pilots scrambled during the "Official UFO Night" of 19–20 May 1986, when controllers at São José dos Campos and São Paulo reported moving coloured lights and radar contacts and the Air Force sent interceptors from Santa Cruz and Anápolis.
 
 Recordings of his intercept, with his missile armed and the target on radar before it pulls away at high speed, were released from Brazil's National Archives and broadcast by TV Globo's *Fantástico* in 2016. In the same programme he says the Brasília air-defence radar measured an acceleration equivalent to roughly 15,000 km/h.
 

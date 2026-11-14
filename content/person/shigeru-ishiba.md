@@ -21,11 +21,10 @@ facts:
     status: claimed
     by: shigeru-ishiba
     source: v-japan-sdf-ufo-protocol-news@1:52
+bio: "Shigeru Ishiba is a long-serving member of Japan's House of Representatives, a former Minister of Defense and Prime Minister of Japan (2024–2025). He was an adviser to the cross-party Diet league for UAP clarification when it was founded in June 2024, according to the South China Morning Post, and is on file for his part in Japan's parliamentary interest in UAP."
 ---
 
-Shigeru Ishiba is a long-serving member of Japan's House of Representatives, a former Minister of Defense and Prime Minister of Japan (2024–2025). He is in the archive for his part in Japan's parliamentary interest in UAP.
-
-He was an adviser to the cross-party Diet league for UAP clarification when it was founded in June 2024, according to the South China Morning Post. The league is chaired by Yasukazu Hamada, with Shinjiro Koizumi as secretary-general; its founding statement urges Japan to create an office like the Pentagon's AARO and share data with the United States. A news report filed here on the Self-Defense Forces' 2020 UAP reporting instructions recalls that, after the defence ministry said in 2015 it had never encountered alien spacecraft, Ishiba said in his personal opinion there were no grounds to deny they exist.
+The league is chaired by Yasukazu Hamada, with Shinjiro Koizumi as secretary-general; its founding statement urges Japan to create an office like the Pentagon's AARO and share data with the United States. A news report filed here on the Self-Defense Forces' 2020 UAP reporting instructions recalls that, after the defence ministry said in 2015 it had never encountered alien spacecraft, Ishiba said in his personal opinion there were no grounds to deny they exist.
 
 That is a personal view, not a government finding, and the archive holds no statement by him in his own words.
 

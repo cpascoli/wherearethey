@@ -17,9 +17,8 @@ facts:
     by: liliane-silva
     claims: [ varginha-beings-captured ]
     basis: first-hand
+bio: "Liliane Silva is a pre-school teacher and a civilian witness in the Varginha case. On 20 January 1996, aged 16, she was walking home with her sister Valquíria and their friend Kátia Xavier when, she says, she saw a creature crouching under graffiti on a wall in Jardim Andere, Varginha."
 ---
-
-On 20 January 1996, aged 16, she was walking home with her sister Valquíria and their friend Kátia Xavier when she saw a creature crouching under graffiti on a wall in Jardim Andere, Varginha. She is now a pre-school teacher.
 
 She is a civilian witness, filed outside the archive's criteria; her account is the core of the case, and the Brazilian Army's 1997 inquiry judged that what the three women saw was most likely a local man crouched in the rain.
 

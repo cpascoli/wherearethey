@@ -24,9 +24,8 @@ facts:
   - text: "The RNZAF concluded that the radar and visual sightings “are the result of natural but unusual atmospheric phenomena”, including an unusually bright Venus and spurious radar returns; an independent study in the same file disputes this for the radar-tracked object."
     status: documented
     source: doc-rnzaf-air-1080-6-897-kaikoura
+bio: "Bill Startup was a captain with Safe Air, the New Zealand freight airline, and the pilot of the Argosy freighter on the night of 30–31 December 1978, when a Melbourne television crew led by the reporter Quentin Fogarty flew with him between Wellington and Christchurch and filmed the bright lights known as the Kaikōura lights, with radar contacts reported."
 ---
-
-Bill Startup was a captain with Safe Air, the New Zealand freight airline, and the pilot of the Argosy freighter on the night of 30–31 December 1978. A Melbourne television crew led by the reporter Quentin Fogarty flew with him between Wellington and Christchurch and filmed the bright lights known as the Kaikōura lights, with radar contacts reported.
 
 Interviewed the next day, he rejected Venus as an explanation: the object, he said, appeared on his own aircraft's radar at a range of 12 to 15 miles, and he could think of no rational explanation. With Neil Illingworth he wrote *The Kaikoura UFOs* (1980), which rejects the squid-boat explanation.
 
