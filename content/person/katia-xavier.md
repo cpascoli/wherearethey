@@ -5,6 +5,8 @@ credentials:
   - category: civilian
     role: "Witness in the Varginha case (aged 22 in 1996)"
 tags: [international, south-america]
+image: /assets/images/person-katia-xavier.jpg
+image_caption: "Kátia Xavier. Still from a TV report, “Caso Varginha: ‘Eu falo até onde eu posso’, afirma testemunha Kátia Xavier”."
 rel:
   - [ witness, inc-varginha-1996 ]
 facts:

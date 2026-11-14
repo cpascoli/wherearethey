@@ -4,6 +4,9 @@ credentials:
   - category: civilian
     role: Farmer, Baependi (1979)
 tags: [abduction]
+image: /assets/images/person-arlindo-gabriel-dos-santos.jpg
+portrait: /assets/images/person-arlindo-gabriel-dos-santos-portrait.jpg
+image_caption: "Arlindo Gabriel dos Santos. Archive photo (c. 1979), as shown by TV Alterosa."
 facts:
   - text: "Dos Santos said that in May 1979, while hunting near Baependi, he photographed a small object and was then taken aboard a second craft by a humanoid crew."
     status: claimed

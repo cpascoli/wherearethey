@@ -6,6 +6,9 @@ credentials:
   - category: military
     role: "Colonel, U.S. Air Force (ret.); fighter pilot (F-105, F-4, F-15), twice awarded the Distinguished Flying Cross"
 tags: [international, south-america, aviator]
+image: /assets/images/person-fred-claussen.jpg
+portrait: /assets/images/person-fred-claussen-portrait.jpg
+image_caption: "Fred Claussen. Official U.S. Air Force portrait, as shown by Somewhere in the Skies (2026)."
 rel:
   - [ investigated, inc-varginha-1996, "He traced the paper trail an alleged U.S. Air Force flight to Campinas in January 1996 would have left" ]
 facts:

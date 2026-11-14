@@ -7,6 +7,9 @@ credentials:
     role: Commercial real-estate executive; owner of Skinwalker Ranch
 tags:
   - skinwalker
+image: /assets/images/person-brandon-fugal.jpg
+portrait: /assets/images/person-brandon-fugal-portrait.jpg
+image_caption: "Brandon Fugal. Still from “Brandon Fugal - Owner of the Mysterious Skinwalker Ranch Reveals UAP/UFO Encounters | SRS #70”, Shawn Ryan Show."
 facts:
   - text: "Fugal acquired Skinwalker Ranch in 2016."
     status: claimed

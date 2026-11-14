@@ -7,6 +7,8 @@ credentials:
     role: Shipyard worker
 tags:
   - abduction
+image: /assets/images/person-charles-hickson.jpg
+image_caption: "Charles Hickson. Still from a filmed interview (1970s)."
 facts:
   - text: "In his recorded statement to the Jackson County sheriff's officers in October 1973, Hickson said three beings floated him into a craft hovering near the pier where he and Calvin Parker were fishing."
     status: claimed

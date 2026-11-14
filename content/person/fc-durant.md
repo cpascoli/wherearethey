@@ -8,6 +8,9 @@ credentials:
     role: Rocket engineer and CIA consultant; author of the Robertson Panel report (later a Smithsonian space historian)
 tags:
   - science
+image: /assets/images/person-fc-durant.jpg
+portrait: /assets/images/person-fc-durant-portrait.jpg
+image_caption: "Frederick C. Durant. Photo at the International Astronautical Congress, Copenhagen (1955), published in The Space Review."
 facts:
   - text: "Frederick C. Durant of Arthur D. Little wrote the report of the Robertson Panel's meetings in January 1953, known as the Durant Report."
     status: documented

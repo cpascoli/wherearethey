@@ -4,6 +4,9 @@ credentials:
   - category: military
     role: Royal Air Force press officer for Scotland, RAF Pitreavie Castle (retired 2000)
 tags: [international, air-force]
+image: /assets/images/person-craig-lindsay.jpg
+portrait: /assets/images/person-craig-lindsay-portrait.jpg
+image_caption: "Craig Lindsay. Photo: David Clarke, May 2022."
 rel:
   - [ handled, inc-calvine-1990 ]
 facts:

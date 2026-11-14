@@ -4,6 +4,9 @@ credentials:
   - category: journalist
     role: Filmmaker, director of Ariel Phenomenon (2022)
 tags: [journalist]
+image: /assets/images/person-randall-nickerson.jpg
+portrait: /assets/images/person-randall-nickerson-portrait.jpg
+image_caption: "Randall Nickerson. Photo: Ariel Phenomenon official site (arielphenomenon.com), director portrait, 2022."
 facts:
   - text: "Nickerson directed Ariel Phenomenon, a documentary made over about 15 years about the 1994 Ariel School sighting, released on 20 May 2022."
     status: claimed

@@ -5,6 +5,9 @@ credentials:
   - category: government
     role: "Head of GEIPAN, the UAP office of the French space agency CNES"
 tags: [government, science, international]
+image: /assets/images/person-frederic-courtade.jpg
+portrait: /assets/images/person-frederic-courtade-portrait.jpg
+image_caption: "Frédéric Courtade. Still from “Portrait d’Espace Frédéric Courtade, Directeur du Geipan”, Odyssée Spatiale."
 rel:
   - [ worked at, geipan ]
 facts:

@@ -5,6 +5,9 @@ credentials:
   - category: government
     role: "SATCOM network engineer, Defense Information Systems Agency contractor (Network Operations Center, Hill AFB), about 2023–24"
 tags: [military, international]
+image: /assets/images/person-kevin-campbell.jpg
+portrait: /assets/images/person-kevin-campbell-portrait.jpg
+image_caption: "Kevin Campbell. Still from “Former DISA Contractor Saw a UAP Live on an MQ-9 Feed Over East Asia | Kevin Campbell” (2025), Safe Aerospace Podcast (Americans for Safe Aerospace)."
 rel:
   - [ witness, inc-east-asia-us-military-uap-2021-2025, "He says he saw three UAP events on MQ-9 feeds over the East China Sea and Yellow Sea, one of them live" ]
 facts:

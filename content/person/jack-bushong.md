@@ -2,6 +2,8 @@
 name: Jack Bushong
 credentials: [{ category: sensor-operator, role: "Meteorologist and radar operator, National Weather Service, Muskegon (Michigan)" }]
 tags: [sensor-operator, radar]
+image: /assets/images/person-jack-bushong.jpg
+image_caption: "Jack Bushong. Still from “Lights Over West Michigan | 1994 UFO Sighting Special” (2023), 13 ON YOUR SIDE (WZZM)."
 rel:
   - [ witness, inc-holland-michigan-1994 ]
 facts:

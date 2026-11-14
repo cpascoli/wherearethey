@@ -12,6 +12,9 @@ tags:
   - air-force
   - implant
   - missing-time
+image: /assets/images/person-terry-lovelace.jpg
+portrait: /assets/images/person-terry-lovelace-portrait.jpg
+image_caption: "Terry Lovelace. Still from “Incident at Devils Den - Terry Lovelace - 2023”, Ozark Mountain Publishing."
 facts:
   - text: "In his book Incident at Devils Den, Lovelace says that in 1975 he and an airman saw a silent triangular craft over a nuclear missile silo at Whiteman AFB, and that in 1977 he had a UFO encounter with missing time while camping in Arkansas."
     status: claimed

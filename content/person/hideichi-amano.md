@@ -4,6 +4,8 @@ credentials:
   - category: civilian
     role: Snack-bar owner and ham-radio operator, Sayama (1978)
 tags: [abduction]
+image: /assets/images/person-hideichi-amano.jpg
+image_caption: "Hideichi Amano. Still from a Japanese TV programme (1978), as reproduced in Flying Saucer Review (1979)."
 facts:
   - text: "Amano said that on 3 October 1978, parked above Sayama with his young daughter, a bright light filled his car, the engine and headlights failed, and a humanoid figure appeared for several minutes."
     status: claimed

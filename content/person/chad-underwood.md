@@ -8,6 +8,8 @@ credentials:
 tags:
   - aviator
   - navy
+image: /assets/images/person-chad-underwood.jpg
+image_caption: "Chad Underwood. Still from “MYSTERY WIRE - Chad Underwood - Pilot who recorded the Tic Tac interviewed - Highlights”, Mystery Wire."
 rel:
   - [ witness, inc-nimitz-2004 ]
   - [ fellow witness, david-fravor, "About an hour after Fravor's encounter he flew the next sortie and recorded the FLIR1 video" ]

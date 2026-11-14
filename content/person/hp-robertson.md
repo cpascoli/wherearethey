@@ -8,6 +8,8 @@ credentials:
     role: Mathematical physicist, California Institute of Technology; chair of the 1953 CIA Scientific Advisory Panel on UFOs
 tags:
   - science
+image: /assets/images/person-hp-robertson.jpg
+image_caption: "H.P. Robertson. Photo: MacTutor History of Mathematics archive (University of St Andrews), portrait of Howard Percy Robertson."
 facts:
   - text: "Caltech physicist H. P. Robertson chaired the CIA-convened scientific panel that met on 14–18 January 1953 and concluded UFOs posed no direct threat to national security."
     status: documented

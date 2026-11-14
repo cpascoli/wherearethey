@@ -5,6 +5,9 @@ credentials:
   - category: civilian
     role: "Witness in the Varginha case (aged 16 in 1996); pre-school teacher"
 tags: [international, south-america]
+image: /assets/images/person-liliane-silva.jpg
+portrait: /assets/images/person-liliane-silva-portrait.jpg
+image_caption: "Liliane Silva. Still from the documentary “Moment of Contact” (2022)."
 rel:
   - [ witness, inc-varginha-1996 ]
 facts:

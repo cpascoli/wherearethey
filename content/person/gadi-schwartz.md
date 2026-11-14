@@ -9,6 +9,9 @@ credentials:
     role: Correspondent, NBC News
 tags:
   - disclosure
+image: /assets/images/person-gadi-schwartz.jpg
+portrait: /assets/images/person-gadi-schwartz-portrait.jpg
+image_caption: "Gadi Schwartz. Still from “Catching up with whistleblowers on secret government UFO programs”, NBC News."
 rel:
   - [ moderated, ev-disclosure-forum-2026 ]
 facts:

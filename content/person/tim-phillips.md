@@ -5,6 +5,9 @@ credentials:
   - category: government
     role: "Deputy director of the All-domain Anomaly Resolution Office (AARO) from October 2023; acting director between Sean Kirkpatrick and Jon Kosloski"
 tags: [aaro]
+image: /assets/images/person-tim-phillips.jpg
+portrait: /assets/images/person-tim-phillips-portrait.jpg
+image_caption: "Tim Phillips. Still from “Investigating UFOs for the Government”, Total Disclosure Podcast."
 rel:
   - [ led, aaro, "Deputy director from October 2023, and acting director after Kirkpatrick retired in December 2023" ]
 facts:

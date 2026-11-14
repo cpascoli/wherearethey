@@ -3,6 +3,8 @@ name: Delbert C. Newhouse
 aka: [Newhouse, Delbert Newhouse]
 credentials: [{ category: military, role: "Chief Warrant Officer 4, U.S. Navy; Navy photographer (Photographer's Mate)" }]
 tags: [navy, film]
+image: /assets/images/person-delbert-newhouse.jpg
+image_caption: "Delbert C. Newhouse. Still from the film “Unidentified Flying Objects: The True Story of Flying Saucers” (1956)."
 rel:
   - [ witness, inc-tremonton-1952 ]
   - [ documented in, dow-uap-d104 ]

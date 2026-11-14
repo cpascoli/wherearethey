@@ -8,6 +8,9 @@ credentials:
   - category: military
     role: Captain (later Colonel), Brazilian Air Force; commander of Operação Prato (1977)
 tags: [air-force, international]
+image: /assets/images/person-uyrange-hollanda.jpg
+portrait: /assets/images/person-uyrange-hollanda-portrait.jpg
+image_caption: "Uyrangê Hollanda. Still from his interview with Ademar Gevaerd for Revista UFO (1997)."
 rel:
 facts:
   - text: "Hollanda said that in 1977 his commander handed him the case file on lights over the Amazon, and he led the Brazilian Air Force investigation code-named Operation Prato (“plate”)."

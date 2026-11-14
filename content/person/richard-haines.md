@@ -5,6 +5,9 @@ credentials:
   - category: academia
     role: "Former chief of the Space Human Factors Office, NASA Ames Research Center; chief scientist, National Aviation Reporting Center on Anomalous Phenomena (NARCAP)"
 tags: [science, aviation]
+image: /assets/images/person-richard-haines.jpg
+portrait: /assets/images/person-richard-haines-portrait.jpg
+image_caption: "Richard F. Haines. Photo from his NASA Ames years, as shown in “Interview with NARCAP founder Dr. Richard Haines” (2013), AirSafe.com."
 facts:
   - text: "Haines told the Chicago Tribune that safety appears to have been implicated in documented cases, and that “more and more we are coming to the point of view that we are dealing with an intelligent phenomenon … We must be proactive before an aircraft goes down.”"
     status: claimed

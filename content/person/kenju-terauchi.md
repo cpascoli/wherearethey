@@ -5,6 +5,9 @@ credentials:
   - category: aviator
     role: Captain, Japan Air Lines (Boeing 747 cargo flight 1628); about 29 years' flying experience in 1986
 tags: [aviator, international]
+image: /assets/images/person-kenju-terauchi.jpg
+portrait: /assets/images/person-kenju-terauchi-portrait.jpg
+image_caption: "Kenju Terauchi. Press photo (1987), as shown in a TV segment on JAL Flight 1628."
 rel:
   - [ case briefed by, john-callahan, "Callahan says the FAA data on the sighting was briefed to the CIA, who declared it “never happened”" ]
   - [ witness, inc-jal-1628-1986 ]

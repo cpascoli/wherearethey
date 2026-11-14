@@ -5,6 +5,9 @@ credentials:
     role: Petty Officer, U.S. Navy (Nimitz strike group)
 tags:
   - navy
+image: /assets/images/person-jason-turner.jpg
+portrait: /assets/images/person-jason-turner-portrait.jpg
+image_caption: "Jason Turner. Still from “Tic Tac Witness Jason Turner Interview” (The Nimitz Encounters)."
 facts:
   - text: "Turner, then a petty officer in the Nimitz strike group, says he saw much longer footage of the 2004 object than the short clip released in 2017."
     status: claimed

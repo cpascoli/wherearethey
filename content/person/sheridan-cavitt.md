@@ -5,6 +5,9 @@ credentials:
   - category: intelligence
     role: "Counter Intelligence Corps special agent, Roswell Army Air Field (1947); Lt. Col., USAF (ret.)"
 tags: [military, intelligence, roswell, counter-evidence]
+image: /assets/images/person-sheridan-cavitt.jpg
+portrait: /assets/images/person-sheridan-cavitt-portrait.jpg
+image_caption: "Sheridan Cavitt. Photo: Kevin Randle, 1990 (published on his blog A Different Perspective)."
 rel:
   - [ witness, inc-roswell-1947, "He went to the ranch with Maj. Jesse Marcel and MSgt. Lewis Rickett to recover the debris in July 1947" ]
   - [ investigated with, jesse-marcel, "Marcel checked out the jeep; Cavitt thought the request to come along came from Marcel" ]

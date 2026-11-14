@@ -7,6 +7,9 @@ credentials:
     role: Former Director of Science & Technology, CIA
 tags:
   - intelligence
+image: /assets/images/person-glenn-gaffney.jpg
+portrait: /assets/images/person-glenn-gaffney-portrait.jpg
+image_caption: "Glenn Gaffney. Photo: AALD advisory board."
 rel:
   - [ worked at, cia ]
   - [ named as gatekeeper of, legacy-program, "Knapp named him to Congress as a gatekeeper of the legacy program; no official record confirms it" ]

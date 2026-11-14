@@ -5,6 +5,9 @@ credentials:
   - category: congress
     role: Member of the House of Representatives; former Minister of the Environment; secretary-general of the Diet UAP league (2024)
 tags: [congress, international]
+image: /assets/images/person-shinjiro-koizumi.jpg
+portrait: /assets/images/person-shinjiro-koizumi-portrait.jpg
+image_caption: "Shinjiro Koizumi. Photo: Prime Minister's Office of Japan (首相官邸), 2020."
 facts:
   - text: "Koizumi became secretary-general of the cross-party Diet league for UAP clarification when it was founded on 6 June 2024."
     status: claimed

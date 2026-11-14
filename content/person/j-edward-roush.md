@@ -5,6 +5,8 @@ credentials:
     role: U.S. Representative (D-IN); chaired the 1968 UFO symposium
 tags:
   - congress
+image: /assets/images/person-j-edward-roush.jpg
+image_caption: "J. Edward Roush. Official portrait, U.S. House of Representatives."
 facts:
   - text: "Roush chaired the 29 July 1968 symposium of the House Committee on Science and Astronautics, opening it by saying the committee approached UFOs “as purely a scientific problem, one of unanswered questions.”"
     status: documented

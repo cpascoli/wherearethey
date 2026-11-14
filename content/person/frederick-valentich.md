@@ -6,6 +6,9 @@ credentials:
     role: "Private pilot (Class Four instrument rating), about 150 hours; flying Cessna 182L VH-DSJ, 1978"
 date: 1978-10-21
 tags: [aviator, international]
+image: /assets/images/person-frederick-valentich.jpg
+portrait: /assets/images/person-frederick-valentich-portrait.jpg
+image_caption: "Frederick Valentich. Photo: Australian Department of Transport (accident investigation report), 1978."
 rel:
   - [ witness, inc-valentich-1978, "Described an unidentified object to Melbourne Flight Service before his aircraft vanished over Bass Strait" ]
 facts:

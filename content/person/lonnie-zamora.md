@@ -3,6 +3,9 @@ name: Lonnie Zamora
 aka: [Zamora]
 credentials: [{ category: law-enforcement, role: "Police officer, Socorro, New Mexico" }]
 tags: [law-enforcement]
+image: /assets/images/person-lonnie-zamora.jpg
+portrait: /assets/images/person-lonnie-zamora-portrait.jpg
+image_caption: "Lonnie Zamora. Photo: U.S. Air Force, Project Blue Book Socorro case file (official photographs), 1964."
 rel:
   - [ witness, inc-socorro-1964 ]
 facts:

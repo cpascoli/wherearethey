@@ -6,6 +6,8 @@ credentials:
   - category: military
     role: "Colonel (ret.), Soviet Ministry of Defence; coordinator of anomalous-phenomena research for the Ministry of Defence and USSR Academy of Sciences, 1978–1989"
 tags: [military, international]
+image: /assets/images/person-boris-sokolov.jpg
+image_caption: "Boris Sokolov. Still from a George Knapp report for KLAS-TV (1990s)."
 rel:
   - [ worked on, setka ]
   - [ investigated, inc-usovo-1982 ]

@@ -5,6 +5,9 @@ credentials:
   - category: civilian
     role: "Witness in the Varginha case; ultralight pilot, former businessman and geography teacher"
 tags: [international, south-america]
+image: /assets/images/person-carlos-de-souza.jpg
+portrait: /assets/images/person-carlos-de-souza-portrait.jpg
+image_caption: "Carlos de Souza. Still from “AE NA ESTRADA #19: Entrevista com o PROFESSOR Carlos de Souza, TESTEMUNHA ocular no CASO VARGINHA”, Arquivo Estranho."
 rel:
   - [ witness, inc-varginha-1996 ]
 facts:

@@ -4,6 +4,8 @@ credentials:
   - category: civilian
     role: Forestry worker, Heilongjiang (1994)
 tags: [abduction]
+image: /assets/images/person-meng-zhaoguo.jpg
+image_caption: "Meng Zhaoguo. Still from a Tage TV interview (2024)."
 facts:
   - text: "Meng said that in June 1994 he saw an object crash on a mountainside in Heilongjiang and was struck by a beam of light when he approached."
     status: claimed

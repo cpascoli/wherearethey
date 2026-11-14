@@ -5,6 +5,9 @@ credentials:
   - category: civilian
     role: Founder of Paradigm Research Group; registered lobbyist for UFO disclosure
 tags: [civilian, disclosure]
+image: /assets/images/person-stephen-bassett.jpg
+portrait: /assets/images/person-stephen-bassett-portrait.jpg
+image_caption: "Stephen Bassett. Still from a WUSA9 segment on World UFO Disclosure Day."
 rel:
   - [ organized, h-2013-citizen-hearing ]
 facts:

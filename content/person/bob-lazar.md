@@ -8,6 +8,9 @@ credentials:
     role: Says he worked on recovered craft at “S-4” near Area 51 (1988–89) for a Navy contractor; claimed MIT/Caltech degrees have never been verified
 tags:
   - crash-retrieval
+image: /assets/images/person-bob-lazar.jpg
+portrait: /assets/images/person-bob-lazar-portrait.jpg
+image_caption: "Bob Lazar. Still from “Bob Lazar Tells me Everything in NEW Interview - DEBRIEFED ep. 83”, Area52."
 rel:
   - [ claims about, area-51, "He says he worked on recovered alien craft at S-4, a few miles south of Groom Lake; his account is unverified" ]
   - [ claims about, crash-retrieval, "His 1989 account on KLAS-TV became the template for modern crash-retrieval stories" ]

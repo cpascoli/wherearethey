@@ -5,6 +5,8 @@ credentials:
   - category: aviator
     role: Captain, Aerolíneas Argentinas (Boeing 727, flight 674, 1995)
 tags: [aviator, international]
+image: /assets/images/person-jorge-polanco.jpg
+image_caption: "Jorge Polanco. Still from an interview by Jorge Luis Sucksdorf, “Caso Bariloche: entrevista completa al piloto Jorge Polanco”."
 rel:
   - [ described in, doc-cefae-informe-2018, "The report notes that only Captain Polanco described a solid body" ]
   - [ witness, inc-bariloche-1995 ]

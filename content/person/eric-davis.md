@@ -11,6 +11,9 @@ credentials:
 tags:
   - crash-retrieval
   - science
+image: /assets/images/person-eric-davis.jpg
+portrait: /assets/images/person-eric-davis-portrait.jpg
+image_caption: "Eric Davis. Still from “Dr. Eric Davis \"Space-Time & Species Types\" - UAP Hearing May 1, 2025” (2025), Inside the Hall of Mirrors / MUFON."
 rel:
   - [ testified at, h-2025-05-01 ]
   - [ claims about, inc-roswell-1947, "He says the grays he knows of came from the crash near Corona, New Mexico, which he says is misnamed Roswell" ]

@@ -7,6 +7,9 @@ credentials:
   - category: aviator
     role: "F-4 Phantom pilot, Republic of Korea Air Force"
 tags: [aviator, air-force, military, international]
+image: /assets/images/person-lim-byeong-seon.jpg
+portrait: /assets/images/person-lim-byeong-seon-portrait.jpg
+image_caption: "Lim Byeong-seon. Still from interview footage shown by the Korean UFO research centre KUFOS (2020)."
 rel:
   - [ witness, inc-rokaf-phantoms-1980, "He flew one of the two F-4 Phantoms that circled the object on the night of 31 March 1980" ]
 facts:

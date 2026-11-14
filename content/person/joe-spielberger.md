@@ -8,6 +8,9 @@ credentials:
 tags:
   - whistleblower
   - secrecy
+image: /assets/images/person-joe-spielberger.jpg
+portrait: /assets/images/person-joe-spielberger-portrait.jpg
+image_caption: "Joe Spielberger. Still from the House Oversight Task Force on the Declassification of Federal Secrets hearing (9 September 2025)."
 rel:
   - [ testified at, h-2025-09-09 ]
 facts:

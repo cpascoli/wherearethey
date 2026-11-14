@@ -6,6 +6,8 @@ credentials:
   - category: civilian
     role: Artist and psychic; subject of the SRI remote-viewing research (from 1972)
 tags: [remote-viewing]
+image: /assets/images/person-ingo-swann.jpg
+image_caption: "Ingo Swann. Still from “IRVA 2006 Ingo Swann (Keynote Speaker) - A Conversation With Ingo Swann” (2006), IRVA."
 rel:
   - [ studied at, sri-international ]
   - [ part of, remote-viewing ]

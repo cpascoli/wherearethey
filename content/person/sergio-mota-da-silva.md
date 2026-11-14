@@ -3,6 +3,9 @@ name: Sérgio Mota da Silva
 aka: [Sérgio Mota]
 credentials: [{ category: sensor-operator, role: "Air traffic controller (sergeant), São José dos Campos tower, Brazilian Air Force" }]
 tags: [sensor-operator, international]
+image: /assets/images/person-sergio-mota-da-silva.jpg
+portrait: /assets/images/person-sergio-mota-da-silva-portrait.jpg
+image_caption: "Sérgio Mota da Silva. Still from “40th Anniversary Special with SÉRGIO MOTA | The Official Night of the UFOs” (2026), Suable."
 rel:
   - [ witness, inc-noite-oficial-ovnis-1986 ]
 facts:

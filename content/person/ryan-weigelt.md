@@ -7,6 +7,9 @@ credentials:
     role: U.S. Navy (Nimitz strike group)
 tags:
   - navy
+image: /assets/images/person-ryan-weigelt.jpg
+portrait: /assets/images/person-ryan-weigelt-portrait.jpg
+image_caption: "Ryan Weigelt. Photo shown with “Tic Tac Witness Ryan Weigelt Interview”, The Nimitz Encounters."
 facts:
   - text: Like Jason Turner, says he saw much longer footage than the short clip released in 2017.
     status: claimed

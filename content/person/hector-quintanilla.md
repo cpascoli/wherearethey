@@ -7,6 +7,8 @@ credentials:
     role: Major (later Lt. Col.), U.S. Air Force; head of Project Blue Book (1963–1969)
 tags:
   - air-force
+image: /assets/images/person-hector-quintanilla.jpg
+image_caption: "Hector Quintanilla. Photo: Fortean / TopFoto (1960s)."
 rel:
   - [ testified at, h-1966-04-05 ]
   - [ led, project-blue-book ]

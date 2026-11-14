@@ -9,6 +9,9 @@ credentials:
 tags:
   - contractor
   - consciousness
+image: /assets/images/person-james-ryder.jpg
+portrait: /assets/images/person-james-ryder-portrait.jpg
+image_caption: "James T. Ryder. Still from “The Garment of God” (talk given in New York, 2018), Lucis Trust."
 rel:
   - [ worked at, lockheed-martin ]
   - [ untraced quote on, remote-viewing, "A telepathy remark attributed to Ryder online has not been traced to any recording" ]

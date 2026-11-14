@@ -11,6 +11,8 @@ credentials:
     role: "UFO researcher and author (CRIFO, MUFON); WWII Army Air Forces intelligence officer (self-reported)"
 tags:
   - crash-retrieval
+image: /assets/images/person-leonard-stringfield.jpg
+image_caption: "Leonard Stringfield. Still from a 1991 interview (courtesy of Keith Chester)."
 rel:
   - [ collected cases of, crash-retrieval, "From 1978 he published dozens of retrieval accounts; he said himself his cases could be considered hearsay" ]
   - [ claims about, wright-patterson-afb, "Many of his retrieval accounts are set at Wright-Patterson; he said his cases could be considered hearsay" ]

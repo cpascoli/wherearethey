@@ -5,6 +5,9 @@ credentials:
   - category: law-enforcement
     role: "Forensic medical examiner, Minas Gerais civil police (more than three decades); former municipal health secretary of Varginha"
 tags: [international, south-america]
+image: /assets/images/person-armando-fortunato-filho.jpg
+portrait: /assets/images/person-armando-fortunato-filho-portrait.jpg
+image_caption: "Armando Fortunato Filho. Still from “Exclusivo: legista de Marco Chereze fala pela primeira vez em 27 anos” (2023), Marco Leal."
 rel:
   - [ claims about, inc-varginha-1996, "He performed the autopsy of military police officer Marco Eli Chereze" ]
 facts:

@@ -5,6 +5,9 @@ credentials:
   - category: law-enforcement
     role: "Sergeant, Devon and Cornwall Constabulary (Barnstaple Police, Devon), 1993"
 tags: [law-enforcement, police, uk]
+image: /assets/images/person-barry-mitchell.jpg
+portrait: /assets/images/person-barry-mitchell-portrait.jpg
+image_caption: "Barry Mitchell. Still from a Sightings TV segment on the Cosford flap (c. 1996)."
 rel:
   - [ witness, inc-cosford-1993, "On patrol near Lynton, North Devon, with Officer Gus Cottey, he saw lights come in over the Bristol Channel at about 1.10 am on 31 March 1993" ]
 facts:

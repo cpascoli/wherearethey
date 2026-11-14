@@ -8,6 +8,8 @@ credentials:
 tags:
   - science
   - school
+image: /assets/images/person-john-mack.jpg
+image_caption: "John Mack. Still from “John Mack: 1994 Interview on Alien Abduction and Human Encounters” (1994), GBH Archives (T.G.I.F.)."
 facts:
   - text: Interviewed the Ariel School children in late 1994.
     status: claimed

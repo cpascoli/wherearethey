@@ -6,6 +6,8 @@ credentials:
   - category: journalist
     role: Australian TV reporter (Channel 0) who filmed the Kaikōura lights in 1978
 tags: [journalist, international]
+image: /assets/images/person-quentin-fogarty.jpg
+image_caption: "Quentin Fogarty. Photo: published with “Obituary: Quentin Fogarty”, Television.AU (2020); photographer unknown."
 rel:
   - [ witness, inc-kaikoura-1978 ]
 facts:

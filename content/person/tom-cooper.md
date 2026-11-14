@@ -4,6 +4,8 @@ credentials:
   - category: journalist
     role: Aviation historian and author on Middle Eastern air forces (incl. Iranian F-14 units)
 tags: [journalist, international]
+image: /assets/images/person-tom-cooper.jpg
+image_caption: "Tom Cooper. Still from “Operation Sindoor: 'Yes, IAF Struck Kirana Hills Nuclear Depot,' Says Tom Cooper” (2025), NDTV."
 facts:
   - text: "Through interviews with Iranian aircrew, Cooper reported a 2004 Iranian air-defence task force set up to protect nuclear sites, and an F-14 crew's encounter with a glowing spherical object near the Arak heavy-water plant; no official Iranian documents are available."
     status: claimed

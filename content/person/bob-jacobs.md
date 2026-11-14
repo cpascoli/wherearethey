@@ -10,6 +10,8 @@ credentials:
 tags:
   - nuclear
   - air-force
+image: /assets/images/person-bob-jacobs.jpg
+image_caption: "Robert Jacobs. Still from ““A UFO Interfered With Our Nuclear Missile Test” — Dr Bob Jacobs”, The Agenda Podcast UK."
 facts:
   - text: "Jacobs says his team's telescope film of a September 1964 Atlas missile test from Vandenberg showed a disc-shaped object circle the dummy warhead and fire beams of light at it; project engineer Kingston George disputed this interpretation."
     status: claimed

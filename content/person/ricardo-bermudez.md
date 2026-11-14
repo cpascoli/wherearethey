@@ -5,6 +5,8 @@ credentials:
   - category: military
     role: "General (ret.); director of CEFAA, Chile's official committee for anomalous aerial phenomena, from 1997 to 2016"
 tags: [international, military]
+image: /assets/images/person-ricardo-bermudez.jpg
+image_caption: "Ricardo Bermúdez. Still from “Ricardo Bermúdez analizó el fenómeno OVNI y las FF.AA - Tolerancia Cero” (2014), Chilevisión."
 rel:
   - [ led, cefaa, "Director from its creation in 1997 until he retired on 1 January 2017" ]
   - [ investigated, inc-chilean-navy-2014, "He and a CEFAA scientist interviewed the two Navy officers at their base" ]

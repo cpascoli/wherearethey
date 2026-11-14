@@ -5,6 +5,8 @@ credentials:
   - category: aviator
     role: "Colonel, Republic of Korea Air Force (retired 1989); F-4 Phantom flight leader, about 3,500 flying hours"
 tags: [aviator, air-force, military, international]
+image: /assets/images/person-lee-seung-bae.jpg
+image_caption: "Lee Seung-bae. Photo from his air-force years, as shown by the Korean UFO research centre KUFOS (2020)."
 rel:
   - [ witness, inc-rokaf-phantoms-1980, "He led the two-Phantom formation as a lieutenant colonel" ]
 facts:

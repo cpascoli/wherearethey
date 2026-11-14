@@ -8,6 +8,9 @@ credentials:
     role: U.S. Representative (R-AK)
 tags:
   - congress
+image: /assets/images/person-nick-begich.jpg
+portrait: /assets/images/person-nick-begich-portrait.jpg
+image_caption: "Nick Begich. Photo: House Creative Services, official portrait of Rep. Nick Begich III, 2024."
 facts:
   - text: "At the September 2025 hearing Begich asked the witnesses to name gatekeepers of UAP programs; George Knapp named James Ryder of Lockheed and Glenn Gaffney of the CIA, and said he had no idea of any program budget."
     status: documented
