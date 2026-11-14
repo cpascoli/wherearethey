@@ -8,6 +8,9 @@ credentials:
     role: Brigadier General, U.S. Air Force; Deputy Director of Development (1969)
 tags:
   - air-force
+image: /assets/images/person-ch-bolender.jpg
+portrait: /assets/images/person-ch-bolender-portrait.jpg
+image_caption: "Carroll H. Bolender, official U.S. Air Force portrait. Photo: U.S. Air Force, public domain, via Wikimedia Commons."
 rel:
   - [ recommended end of, project-blue-book, "His 1969 memo recommended ending Project Blue Book" ]
 facts:

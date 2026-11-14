@@ -7,6 +7,9 @@ credentials:
     role: Under Secretary of Defense for Intelligence and Security
 tags:
   - intelligence
+image: /assets/images/person-ronald-moultrie.jpg
+portrait: /assets/images/person-ronald-moultrie-portrait.jpg
+image_caption: "Ronald Moultrie, official portrait as Under Secretary of Defense for Intelligence and Security. Photo: U.S. Department of Defense, public domain, via Wikimedia Commons."
 rel:
   - [ testified at, h-2022-05-17 ]
   - [ led, ousd-is ]

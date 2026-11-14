@@ -5,6 +5,9 @@ credentials:
     role: U.S. Representative (D-PA)
 tags:
   - congress
+image: /assets/images/person-summer-lee.jpg
+portrait: /assets/images/person-summer-lee-portrait.jpg
+image_caption: "Summer Lee, official portrait, 118th Congress. Photo: U.S. House of Representatives, public domain, via Wikimedia Commons."
 facts:
   - text: "At the 9 September 2025 UAP hearing of the Task Force on the Declassification of Federal Secrets, Lee urged members not to “get distracted by sensational stories” and to focus on protecting whistleblowers."
     status: documented

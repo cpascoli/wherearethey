@@ -5,6 +5,8 @@ credentials:
   - category: government
     role: Defence Minister of India (2006–2014)
 tags: [government, international]
+image: /assets/images/person-ak-antony.jpg
+image_caption: "A.K. Antony, as Defence Minister of India, 2013. Photo: Ministry of Defence (India), Government Open Data License – India, via Wikimedia Commons."
 facts:
   - text: "Asked in the Lok Sabha in November 2012 whether the Army's 14 Corps had reported UFOs over the India–China border, Antony said there was \"no conclusive proof\" of such sightings."
     status: claimed

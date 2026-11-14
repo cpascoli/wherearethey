@@ -7,6 +7,9 @@ credentials:
   - category: congress
     role: Member of the House of Representatives (National Diet)
 tags: [government, international]
+image: /assets/images/person-taro-kono.jpg
+portrait: /assets/images/person-taro-kono-portrait.jpg
+image_caption: "Taro Kono, in 2010. Photo: Prime Minister's Office of Japan, CC BY 4.0, via Wikimedia Commons."
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Taro_Kono

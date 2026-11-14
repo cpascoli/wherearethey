@@ -8,6 +8,8 @@ credentials:
 tags:
   - journalist
   - whistleblower
+image: /assets/images/person-michael-shellenberger.jpg
+image_caption: "Michael Shellenberger, in 2016. Photo: Michael Shellenberger, CC BY-SA 4.0, via Wikimedia Commons."
 rel:
   - [ authored, doc-shellenberger-testimony ]
   - [ submitted, doc-immaculate-constellation ]

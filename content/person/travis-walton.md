@@ -8,6 +8,9 @@ credentials:
 tags:
   - abduction
   - missing-time
+image: /assets/images/person-travis-walton.jpg
+portrait: /assets/images/person-travis-walton-portrait.jpg
+image_caption: "Travis Walton, in 2019. Photo: SMG2019, CC BY-SA 4.0, via Wikimedia Commons."
 facts:
   - text: "Six days after his disappearance in November 1975, Walton said he was struck by “a physical blow” from a craft and woke on a table with beings “a lot like men but … not quite human” leaning over him."
     status: claimed

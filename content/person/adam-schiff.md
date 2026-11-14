@@ -7,6 +7,8 @@ credentials:
     role: Chair, House Permanent Select Committee on Intelligence (2022)
 tags:
   - congress
+image: /assets/images/person-adam-schiff.jpg
+image_caption: "Adam Schiff, official congressional portrait, 111th Congress. Photo: U.S. Congress, public domain, via Wikimedia Commons."
 facts:
   - text: "At the 2022 HPSCI hearing Schiff called objects measured by multiple instruments, which “seem to move in directions that are inconsistent with what we know of physics”, among the most fascinating questions."
     status: claimed

@@ -7,6 +7,9 @@ credentials:
     role: U.S. Representative (D-IN); Chair, HPSCI Subcommittee on Counterterrorism, Counterintelligence, and Counterproliferation (2022)
 tags:
   - congress
+image: /assets/images/person-andre-carson.jpg
+portrait: /assets/images/person-andre-carson-portrait.jpg
+image_caption: "André Carson, official portrait, 2009. Photo: U.S. Congress, public domain, via Wikimedia Commons."
 facts:
   - text: "Opening the 2022 HPSCI hearing, Carson said the Pentagon must show that people who report UAP are “treated as witnesses, not as kooks”, and that it was the first such hearing in half a century."
     status: claimed

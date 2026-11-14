@@ -5,6 +5,8 @@ credentials:
     role: U.S. Representative (D-SC); Chairman, House Armed Services Committee (1965–1970)
 tags:
   - congress
+image: /assets/images/person-l-mendel-rivers.jpg
+image_caption: "L. Mendel Rivers, at the White House, 7 March 1968. Photo: Yoichi R. Okamoto, White House Press Office, public domain, via Wikimedia Commons."
 facts:
   - text: "Chairing the 5 April 1966 House Armed Services hearing on UFOs, Rivers said: “We can't just write them off. There are too many responsible people who are concerned.”"
     status: documented

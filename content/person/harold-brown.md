@@ -7,6 +7,9 @@ credentials:
     role: Physicist
 tags:
   - air-force
+image: /assets/images/person-harold-brown.jpg
+portrait: /assets/images/person-harold-brown-portrait.jpg
+image_caption: "Harold Brown, as Secretary of the Air Force. Photo: U.S. Department of Defense, public domain, via Wikimedia Commons."
 facts:
   - text: "Asked in 1966 what the Air Force was hiding, Secretary of the Air Force Brown said: “We have not been hiding anything; the investigations have been made public.”"
     status: claimed

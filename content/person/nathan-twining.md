@@ -8,6 +8,9 @@ credentials:
     role: Lieutenant General, U.S. Army Air Forces; Commander, Air Materiel Command (1947); later Chairman of the Joint Chiefs of Staff (1957–1960)
 tags:
   - air-force
+image: /assets/images/person-nathan-twining.jpg
+portrait: /assets/images/person-nathan-twining-portrait.jpg
+image_caption: "Nathan F. Twining, official U.S. Air Force portrait. Photo: U.S. Air Force, public domain, via Wikimedia Commons."
 rel:
   - [ led to, project-sign ]
 facts:

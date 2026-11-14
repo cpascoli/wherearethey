@@ -5,6 +5,9 @@ credentials:
   - category: congress
     role: U.S. Senator (R-SD)
 tags: [congress, disclosure]
+image: /assets/images/person-mike-rounds.jpg
+portrait: /assets/images/person-mike-rounds-portrait.jpg
+image_caption: "Mike Rounds, official portrait, 2004. Photo: Office of Governor Mike Rounds, public domain, via Wikimedia Commons."
 rel:
   - [ co-sponsored, doc-uap-disclosure-act-2023 ]
 facts:

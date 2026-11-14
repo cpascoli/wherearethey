@@ -6,6 +6,8 @@ credentials:
   - category: civilian
     role: "Lawyer and university lecturer in Varginha; ufologist who first investigated the Varginha case"
 tags: [international, south-america]
+image: /assets/images/person-ubirajara-rodrigues.jpg
+image_caption: "Ubirajara Rodrigues, in 2006. Photo: Sociedade Forteana Brasileira, CC BY-SA 4.0, via Wikimedia Commons."
 rel:
   - [ investigated, inc-varginha-1996 ]
 facts:

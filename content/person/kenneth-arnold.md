@@ -5,6 +5,9 @@ credentials:
   - category: aviator
     role: "Private pilot and businessman, Boise, Idaho (1947)"
 tags: [aviator]
+image: /assets/images/person-kenneth-arnold.jpg
+portrait: /assets/images/person-kenneth-arnold-portrait.jpg
+image_caption: "Kenneth Arnold, in July 1947. Photo: Associated Press, public domain, via Wikimedia Commons."
 rel:
   - [ witness, inc-arnold-1947, "He saw the nine objects from his own plane near Mount Rainier on 24 June 1947" ]
 facts:

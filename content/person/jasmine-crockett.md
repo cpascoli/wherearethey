@@ -5,6 +5,9 @@ credentials:
     role: U.S. Representative (D-TX)
 tags:
   - congress
+image: /assets/images/person-jasmine-crockett.jpg
+portrait: /assets/images/person-jasmine-crockett-portrait.jpg
+image_caption: "Jasmine Crockett, official portrait, 118th Congress. Photo: U.S. House of Representatives, public domain, via Wikimedia Commons."
 facts:
   - text: "As ranking member of the Task Force on the Declassification of Federal Secrets, Crockett said at the September 2025 hearing that “There is good reason to believe that most UAPs have origins far closer to home”, noting that NASA had found no evidence of an extraterrestrial origin."
     status: documented

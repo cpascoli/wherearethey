@@ -7,6 +7,8 @@ credentials:
     role: Astronomer (then at Harvard, later Cornell)
 tags:
   - science
+image: /assets/images/person-carl-sagan.jpg
+image_caption: "Carl Sagan, c. 1980. Photo: NASA/JPL, public domain, via Wikimedia Commons."
 facts:
   - text: "At the 1968 House symposium Sagan said he did not think the evidence “is at all persuasive, that UFO's are of intelligent extraterrestrial origin nor do I think the evidence is convincing that no UFO's are of intelligent extraterrestrial origin.”"
     status: documented

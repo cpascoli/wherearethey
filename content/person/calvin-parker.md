@@ -5,6 +5,8 @@ credentials:
     role: Shipyard worker
 tags:
   - abduction
+image: /assets/images/person-calvin-parker.jpg
+image_caption: "Calvin Parker, in 2019. Photo: SMG2019, CC BY-SA 4.0, via Wikimedia Commons."
 facts:
   - text: "Parker, 19 at the time of the 1973 Pascagoula encounter, says he was carried aboard a craft by three beings, and kept the account to himself for close to four decades, until 2018."
     status: claimed

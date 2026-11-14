@@ -9,6 +9,9 @@ credentials:
 tags:
   - consciousness
   - science
+image: /assets/images/person-russell-targ.jpg
+portrait: /assets/images/person-russell-targ-portrait.jpg
+image_caption: "Russell Targ, in 2014. Photo: Patricia Targ, public domain, via Wikimedia Commons."
 rel:
   - [ co-founded, stargate ]
   - [ worked at, sri-international ]

@@ -7,6 +7,9 @@ credentials:
 date: 1928
 end: 2023
 tags: [astronaut, air-force, nasa]
+image: /assets/images/person-frank-borman.jpg
+portrait: /assets/images/person-frank-borman-portrait.jpg
+image_caption: "Frank Borman, official NASA portrait, 1964. Photo: NASA, public domain, via Wikimedia Commons."
 rel:
   - [ worked at, nasa ]
 links:

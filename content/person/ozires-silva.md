@@ -3,6 +3,9 @@ name: Ozires Silva
 aka: [Ozires Silva, Osires Silva]
 credentials: [{ category: aerospace, role: "Founder and president of Embraer; Brazilian Air Force colonel and pilot; president of Petrobras (1986)" }]
 tags: [aerospace, aviator, international]
+image: /assets/images/person-ozires-silva.jpg
+portrait: /assets/images/person-ozires-silva-portrait.jpg
+image_caption: "Ozires Silva, in 2011. Photo: José Cruz/Agência Brasil, CC BY 3.0 br, via Wikimedia Commons."
 rel:
   - [ witness, inc-noite-oficial-ovnis-1986 ]
 facts:

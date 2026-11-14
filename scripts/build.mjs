@@ -555,7 +555,7 @@ export async function build({ check = false, quiet = false } = {}) {
   }
   const pageStats = writePages({ entities, edges: edgeList, transcripts, stats, filesBase: process.env.FILES_BASE || null });
   if (!quiet) {
-    console.log(`built ${stats.entities} entries, ${stats.edges} links, ${stats.transcripts} transcripts (${stats.transcriptHours} h), ${stats.documents} documents (${stats.documentPages} pages), ${stats.mentions} mentions, ${pageStats.pages} pages (${pageStats.indexed} indexable) — ${Date.now() - t0} ms`);
+    console.log(`built ${stats.entities} entries, ${stats.edges} links, ${stats.transcripts} transcripts (${stats.transcriptHours} h), ${stats.documents} documents (${stats.documentPages} pages), ${stats.mentions} mentions, ${pageStats.pages} pages (${pageStats.indexed} indexable), ${pageStats.cards} share cards (${pageStats.cardsRendered} rendered) — ${Date.now() - t0} ms`);
   }
   return { errors, warnings, stats };
 }

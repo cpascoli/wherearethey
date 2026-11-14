@@ -7,6 +7,9 @@ credentials:
 date: 1925
 end: 2013
 tags: [astronaut, navy, nasa]
+image: /assets/images/person-scott-carpenter.jpg
+portrait: /assets/images/person-scott-carpenter-portrait.jpg
+image_caption: "Scott Carpenter, NASA portrait, 1964. Photo: NASA, public domain, via Wikimedia Commons."
 rel:
   - [ worked at, nasa ]
 links:

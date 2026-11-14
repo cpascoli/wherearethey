@@ -10,6 +10,9 @@ credentials:
 tags:
   - congress
   - drones
+image: /assets/images/person-rob-wittman.jpg
+portrait: /assets/images/person-rob-wittman-portrait.jpg
+image_caption: "Rob Wittman, official portrait, 118th Congress. Photo: Brian Thorpe, House Creative Services, public domain, via Wikimedia Commons."
 rel:
   - [ questioned, frank-kendall ]
   - [ raised, inc-langley-2023, "Wittman said Langley “had to close down” because of the drones in its airspace" ]

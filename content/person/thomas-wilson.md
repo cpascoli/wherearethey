@@ -12,6 +12,9 @@ tags:
   - intelligence
   - secrecy
   - crash-retrieval
+image: /assets/images/person-thomas-wilson.jpg
+portrait: /assets/images/person-thomas-wilson-portrait.jpg
+image_caption: "Thomas R. Wilson, official U.S. Navy portrait. Photo: U.S. Navy, public domain, via Wikimedia Commons."
 rel:
   - [ led, dia ]
 facts:

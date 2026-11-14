@@ -5,6 +5,9 @@ credentials:
   - category: government
     role: "U.S. Secretary of Health and Human Services (from 2025)"
 tags: [government, crash-retrieval]
+image: /assets/images/person-robert-f-kennedy-jr.jpg
+portrait: /assets/images/person-robert-f-kennedy-jr-portrait.jpg
+image_caption: "Robert F. Kennedy Jr., official portrait as Secretary of Health and Human Services, 2025. Photo: U.S. Department of Health and Human Services, public domain, via Wikimedia Commons."
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Robert_F._Kennedy_Jr.

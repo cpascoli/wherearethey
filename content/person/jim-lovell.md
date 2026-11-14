@@ -7,6 +7,9 @@ credentials:
 date: 1928
 end: 2025
 tags: [astronaut, navy, nasa]
+image: /assets/images/person-jim-lovell.jpg
+portrait: /assets/images/person-jim-lovell-portrait.jpg
+image_caption: "Jim Lovell, official NASA portrait, 1969. Photo: NASA, public domain, via Wikimedia Commons."
 rel:
   - [ worked at, nasa ]
 links:

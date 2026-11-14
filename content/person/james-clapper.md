@@ -9,6 +9,9 @@ credentials:
     role: Lt. Gen., U.S. Air Force (ret.)
 tags:
   - intelligence
+image: /assets/images/person-james-clapper.jpg
+portrait: /assets/images/person-james-clapper-portrait.jpg
+image_caption: "James Clapper, official portrait as Director of National Intelligence, 2010. Photo: ODNI, public domain, via Wikimedia Commons."
 rel:
   - [ commented on, area-51, "In The Age of Disclosure he says the activity over Area 51 is real" ]
   - [ led, dia ]

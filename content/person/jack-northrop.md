@@ -7,6 +7,8 @@ credentials:
 date: 1895-11-10
 end: 1981-02-18
 tags: [aerospace]
+image: /assets/images/person-jack-northrop.jpg
+image_caption: "Jack Northrop, in 1948. Photo: U.S. Air Force, public domain, via Wikimedia Commons."
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Jack_Northrop

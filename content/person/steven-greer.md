@@ -5,6 +5,9 @@ credentials:
   - category: civilian
     role: Former emergency-room physician; founder of CSETI (1990) and the Disclosure Project (1993)
 tags: [civilian, disclosure, contact]
+image: /assets/images/person-steven-greer.jpg
+portrait: /assets/images/person-steven-greer-portrait.jpg
+image_caption: "Steven Greer. Photo: Energy Artist, public domain, via Wikimedia Commons."
 rel:
   - [ founded, cseti ]
   - [ founded, disclosure-project ]

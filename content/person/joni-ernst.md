@@ -7,6 +7,9 @@ credentials:
     role: U.S. Senator (R-IA); Ranking member, SASC Emerging Threats subcommittee (2024)
 tags:
   - congress
+image: /assets/images/person-joni-ernst.jpg
+portrait: /assets/images/person-joni-ernst-portrait.jpg
+image_caption: "Joni Ernst, official Senate portrait, 116th Congress. Photo: U.S. Senate Photographic Studio, public domain, via Wikimedia Commons."
 facts:
   - text: "As ranking member at the November 2024 hearing, Ernst asked whether UAP reflect foreign adversaries such as China or Russia using advanced technologies, or unknown scientific phenomena."
     status: claimed

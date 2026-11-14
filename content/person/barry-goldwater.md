@@ -12,6 +12,9 @@ credentials:
 tags:
   - congress
   - air-force
+image: /assets/images/person-barry-goldwater.jpg
+portrait: /assets/images/person-barry-goldwater-portrait.jpg
+image_caption: "Barry Goldwater, in 1962. Photo: Marion S. Trikosko, U.S. News & World Report, public domain, via Wikimedia Commons."
 rel:
   - [ claims about, wright-patterson-afb, "He believed the Air Force kept what it knows about UFOs in a room at Wright-Patterson; Gen. LeMay refused him access" ]
 links:

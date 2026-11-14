@@ -4,6 +4,8 @@ credentials:
   - category: congress
     role: Member of the National Diet of Japan; member of the Diet UAP league
 tags: [congress, international]
+image: /assets/images/person-yoshiharu-asakawa.jpg
+image_caption: "Yoshiharu Asakawa, campaigning in 2021. Photo: Noukei314, CC BY-SA 4.0, via Wikimedia Commons."
 facts:
   - text: "At the June 2024 launch of the Diet league for UAP clarification, Asakawa said he had personally seen a UFO."
     status: claimed

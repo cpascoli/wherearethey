@@ -7,6 +7,7 @@ import path from 'node:path';
 import { ROOT } from './lib.mjs';
 import { pageDates } from './lastmod.mjs';
 import { INVERSE } from './relations.mjs';
+import { writeCards } from './cards.mjs';
 
 const DEFAULT_IMAGE = '/assets/images/share-default.jpg';
 export const SITE_URL = (process.env.SITE_URL || 'https://wherearethey.info').replace(/\/$/, '');
@@ -143,6 +144,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
   for (const v of entities) for (const m of v.moments || []) for (const id of new Set([m.speaker, ...(m.refs || [])].filter(Boolean))) momentsAbout.set(id, (momentsAbout.get(id) || 0) + 1);
 
   const pages = []; // { path, title, description, body, jsonld, image, noindex, type }
+  const cardJobs = [];
   const nav = `<nav class="ssr-nav">${Object.entries({ Home: '/', Latest: '/latest', Explore: '/explore', Timeline: '/timeline', World: '/world', Videos: '/videos', Documentaries: '/documentaries', Books: '/books', 'A–Z index': '/a-z', Claims: '/claims', About: '/about' }).map(([l, h]) => `<a href="${h}">${l}</a>`).join(' · ')}</nav>`;
 
   for (const e of entities) {
@@ -283,8 +285,23 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     if (e.type === 'film') jsonld = { '@type': 'Movie', name: e.name, dateCreated: e.date, description, image: imageOf(e) || undefined };
     const crumbs = { '@type': 'BreadcrumbList', itemListElement: [['Home', '/'], [PLURAL[e.type], `/a-z#${e.type}`], [e.name, e.path]].map(([name, p], i) => ({ '@type': 'ListItem', position: i + 1, name, item: SITE_URL + p })) };
     jsonld = jsonld ? [jsonld, crumbs] : [crumbs];
-    pages.push({ path: e.path, file: e.file, title, description, body: h.join('\n'), jsonld, image: imageOf(e), noindex: e.type === 'record', type: e.type === 'video' ? 'video.other' : 'article' });
+    // a share card for files without a picture of their own (scripts/cards.mjs)
+    let image = imageOf(e);
+    if (!image && e.type !== 'record') {
+      const seen = new Set([e.id]);
+      const neighbours = (near.get(e.id) || []).filter(x => x.kind !== 'mention' && byId.get(x.other) && !['record', 'news'].includes(byId.get(x.other).type) && !seen.has(x.other) && seen.add(x.other))
+        .map(x => byId.get(x.other)).sort((a, b) => (a.type === 'video') - (b.type === 'video') || (near.get(b.id)?.length || 0) - (near.get(a.id)?.length || 0)).slice(0, 8).map(o => ({ name: o.name, type: o.type }));
+      const when = [fmtDate(e.date) + (e.end ? ` – ${fmtDate(e.end)}` : ''), e.place?.name].filter(Boolean).join(' · ');
+      const line = e.type === 'person' ? (e.credentials || []).map(c => c.role).filter(Boolean).slice(0, 2).join('; ') : e.type === 'claim' ? (CLAIM_LABEL[e.status] || '') : when || (lead.match(/^.*?[.!?](\s|$)/)?.[0] || lead).trim();
+      const nLinks = new Set((near.get(e.id) || []).map(x => x.other)).size;
+      const holdsCard = [...holds, nLinks && `${nLinks} connection${nLinks > 1 ? 's' : ''}`].filter(Boolean);
+      const file = `cards${e.path}.png`;
+      cardJobs.push({ file, card: { type: e.type, label: LABEL[e.type].replace(/ \(PURSUE\)$/, ''), name: e.name, line, holds: holdsCard, neighbours } });
+      image = `${SITE_URL}/${file}`;
+    }
+    pages.push({ path: e.path, file: e.file, title, description, body: h.join('\n'), jsonld, image, noindex: e.type === 'record', type: e.type === 'video' ? 'video.other' : 'article' });
   }
+  const cardsRendered = writeCards(site, cardJobs);
 
   // ── views ──
   const listOf = (items, extra = () => '') => `<ul>${items.map(e => `<li>${link(e.id)}${extra(e)}</li>`).join('')}</ul>`;
@@ -358,5 +375,5 @@ ${feedItems.map(e => `<item><title>${esc(`${kindOf(e)}: ${e.name}${e.date ? ` ($
   const lastmod = pageDates([...indexed, ...statics]);
   fs.writeFileSync(path.join(site, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${[...indexed, ...statics].map(p => `  <url><loc>${SITE_URL}${p.path}</loc><lastmod>${lastmod.get(p.path) || today}</lastmod></url>`).join('\n')}\n</urlset>\n`);
   fs.writeFileSync(path.join(site, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
-  return { pages: pages.length, indexed: indexed.length + 2 };
+  return { pages: pages.length, indexed: indexed.length + 2, cards: cardJobs.length, cardsRendered };
 }

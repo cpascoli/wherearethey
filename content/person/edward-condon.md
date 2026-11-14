@@ -5,6 +5,8 @@ credentials:
   - category: academia
     role: "Physicist; professor of physics and astrophysics, University of Colorado; former director of the National Bureau of Standards; scientific director of the University of Colorado UFO study (1966–1968)"
 tags: [science]
+image: /assets/images/person-edward-condon.jpg
+image_caption: "Edward U. Condon. Photo: U.S. government photo, public domain, via Wikimedia Commons."
 rel:
   - [ directed, condon-committee ]
   - [ authored, doc-condon-report-1969, "He wrote its Section I, “Conclusions and Recommendations”" ]

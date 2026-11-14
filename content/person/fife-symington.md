@@ -6,6 +6,9 @@ credentials:
   - category: government
     role: Governor of Arizona (1991–1997); U.S. Air Force veteran
 tags: [government]
+image: /assets/images/person-fife-symington.jpg
+portrait: /assets/images/person-fife-symington-portrait.jpg
+image_caption: "Fife Symington, in 2017. Photo: Gage Skidmore, CC BY-SA 3.0, via Wikimedia Commons."
 facts:
   - text: "At the November 2007 National Press Club conference Symington cited the O'Hare sighting of a year earlier, a disc that “shot straight up into the sky cut a hole in the sky”, which the FAA “apparently did not investigate”, and called on the government to reopen its official investigation."
     status: claimed

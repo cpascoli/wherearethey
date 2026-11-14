@@ -7,6 +7,9 @@ credentials:
     role: U.S. Representative (D-IL)
 tags:
   - congress
+image: /assets/images/person-raja-krishnamoorthi.jpg
+portrait: /assets/images/person-raja-krishnamoorthi-portrait.jpg
+image_caption: "Raja Krishnamoorthi, official portrait, 2016. Photo: Eric Connolly, public domain, via Wikimedia Commons."
 facts:
   - text: "Krishnamoorthi is listed as a Democratic member of the House Oversight Task Force on the Declassification of Federal Secrets in the record of its 9 September 2025 UAP hearing."
     status: documented

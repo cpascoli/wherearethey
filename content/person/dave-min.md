@@ -5,6 +5,9 @@ credentials:
     role: U.S. Representative (D-CA)
 tags:
   - congress
+image: /assets/images/person-dave-min.jpg
+portrait: /assets/images/person-dave-min-portrait.jpg
+image_caption: "Dave Min, official portrait, 2020. Photo: Office of Dave Min, public domain, via Wikimedia Commons."
 facts:
   - text: "Min is listed as a Democratic member of the House Oversight Task Force on the Declassification of Federal Secrets in the record of its 9 September 2025 UAP hearing."
     status: documented

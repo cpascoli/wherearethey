@@ -5,6 +5,9 @@ credentials:
   - category: congress
     role: U.S. Senator (D-NY); Senate Majority Leader (2021–2025)
 tags: [congress, disclosure]
+image: /assets/images/person-chuck-schumer.jpg
+portrait: /assets/images/person-chuck-schumer-portrait.jpg
+image_caption: "Chuck Schumer, official Senate portrait, 2017. Photo: U.S. Senate Photographic Studio/Jeff McEvoy, public domain, via Wikimedia Commons."
 rel:
   - [ sponsored, doc-uap-disclosure-act-2023 ]
   - [ co-sponsored with, mike-rounds, "They introduced the UAP Disclosure Act in July 2023 as an amendment to the FY2024 NDAA" ]

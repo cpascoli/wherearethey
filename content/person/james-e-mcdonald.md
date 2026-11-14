@@ -5,6 +5,8 @@ credentials:
     role: Atmospheric physicist, University of Arizona
 tags:
   - science
+image: /assets/images/person-james-e-mcdonald.jpg
+image_caption: "James E. McDonald. Photo: U.S. government photo, public domain, via Wikimedia Commons."
 facts:
   - text: "At the 1968 House symposium, University of Arizona atmospheric physicist McDonald said he had interviewed several hundred witnesses and believed UFOs were “a matter of extraordinary scientific importance.”"
     status: documented

@@ -10,6 +10,9 @@ credentials:
     role: U.S. Representative (R-FL), 2017–2024
 tags:
   - congress
+image: /assets/images/person-matt-gaetz.jpg
+portrait: /assets/images/person-matt-gaetz-portrait.jpg
+image_caption: "Matt Gaetz, official portrait, 117th Congress. Photo: Ike Hayman, public domain, via Wikimedia Commons."
 rel:
   - [ questioned at, h-2023-07-26 ]
   - [ member of, house-oversight ]

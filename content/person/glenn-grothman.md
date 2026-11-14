@@ -7,6 +7,8 @@ credentials:
     role: U.S. Representative (R-WI); Chair, Subcommittee on National Security, the Border, and Foreign Affairs
 tags:
   - congress
+image: /assets/images/person-glenn-grothman.jpg
+image_caption: "Glenn Grothman, in 2010. Photo: WisPolitics.com, CC BY-SA 2.0, via Wikimedia Commons."
 rel:
   - [ raised, langley-afb, "He described the December 2023 swarm as drones about 20 feet long, flying over 100 mph" ]
   - [ member of, house-oversight ]

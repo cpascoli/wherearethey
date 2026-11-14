@@ -3,6 +3,9 @@ name: Jared Moskowitz
 aka: [Moskowitz, Rep. Moskowitz]
 credentials: [{ category: congress, role: "U.S. Representative (D-FL); House Oversight Committee member" }]
 tags: [congress]
+image: /assets/images/person-jared-moskowitz.jpg
+portrait: /assets/images/person-jared-moskowitz-portrait.jpg
+image_caption: "Jared Moskowitz, official portrait, 118th Congress. Photo: U.S. House of Representatives, public domain, via Wikimedia Commons."
 rel:
   - [ spoke at, h-2024-11-13 ]
   - [ commented on, luis-elizondo, "On Elizondo's crash-retrieval non-disclosure document: “you cannot talk about fight club if there is no fight club”" ]

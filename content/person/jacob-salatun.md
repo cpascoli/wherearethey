@@ -7,6 +7,9 @@ credentials:
   - category: government
     role: Founder of LAPAN, Indonesia's National Institute of Aeronautics and Space (1963)
 tags: [international, science]
+image: /assets/images/person-jacob-salatun.jpg
+portrait: /assets/images/person-jacob-salatun-portrait.jpg
+image_caption: "Jacob Salatun, official portrait. Photo: LAPAN (National Institute of Aeronautics and Space), public domain, via Wikimedia Commons."
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Jacob_Salatun

@@ -8,6 +8,9 @@ credentials:
   - category: military
     role: "Colonel General, Soviet Air Force; former head of the Zhukovsky Air Force Engineering Academy"
 tags: [astronaut, military, international]
+image: /assets/images/person-vladimir-kovalyonok.jpg
+portrait: /assets/images/person-vladimir-kovalyonok-portrait.jpg
+image_caption: "Vladimir Kovalyonok, in 2011. Photo: Pavel Sergeev, CC0, via Wikimedia Commons."
 rel:
   - [ witness, inc-salyut-6-1981 ]
 facts:

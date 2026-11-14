@@ -5,6 +5,9 @@ credentials:
   - category: journalist
     role: Investigative journalist and documentary maker (Earthfiles); ufologist
 tags: [journalist]
+image: /assets/images/person-linda-moulton-howe.jpg
+portrait: /assets/images/person-linda-moulton-howe-portrait.jpg
+image_caption: "Linda Moulton Howe, with her Emmy for A Strange Harvest, 1981. Photo: Larry W. Howe, CC BY 4.0, via Wikimedia Commons."
 rel:
   - [ testified at, h-2013-citizen-hearing ]
   - [ held, sample-bismuth-magnesium ]

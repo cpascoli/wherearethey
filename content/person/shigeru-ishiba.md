@@ -7,6 +7,9 @@ credentials:
   - category: congress
     role: Member of the House of Representatives; adviser to the Diet UAP league (2024)
 tags: [government, international]
+image: /assets/images/person-shigeru-ishiba.jpg
+portrait: /assets/images/person-shigeru-ishiba-portrait.jpg
+image_caption: "Shigeru Ishiba, official portrait as Prime Minister, 2024. Photo: Cabinet Public Relations Office, Japan, CC BY 4.0, via Wikimedia Commons."
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Shigeru_Ishiba

@@ -9,6 +9,8 @@ credentials:
   - category: academia
     role: Visiting professor of aeronautics and astronautics; doctorate in aeronautical engineering
 tags: [international]
+image: /assets/images/person-haim-eshed.jpg
+image_caption: "Haim Eshed, in 2008. Photo: Fisher Institute for Air and Space Strategic Studies, CC BY-SA 2.5, via Wikimedia Commons."
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Haim_Eshed

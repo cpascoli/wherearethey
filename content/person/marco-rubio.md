@@ -7,6 +7,9 @@ credentials:
   - category: government
     role: "U.S. Secretary of State (from 2025)"
 tags: [congress, intelligence]
+image: /assets/images/person-marco-rubio.jpg
+portrait: /assets/images/person-marco-rubio-portrait.jpg
+image_caption: "Marco Rubio, official portrait as Secretary of State, 2025. Photo: U.S. Department of State, public domain, via Wikimedia Commons."
 rel:
   - [ appears in, film-age-of-disclosure ]
 links:

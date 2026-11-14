@@ -7,6 +7,9 @@ credentials:
     role: U.S. Representative (R-KY); Chairman, House Oversight Committee
 tags:
   - congress
+image: /assets/images/person-james-comer.jpg
+portrait: /assets/images/person-james-comer-portrait.jpg
+image_caption: "James Comer, in 2025. Photo: Gage Skidmore, CC BY-SA 2.0, via Wikimedia Commons."
 facts:
   - text: Created the Task Force on the Declassification of Federal Secrets and appointed Rep. Luna as chair (February 11, 2025).
     status: documented

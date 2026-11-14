@@ -7,6 +7,8 @@ credentials:
   - category: academia
     role: "Molecular cardiologist; former Vice-President of Research, University of Ottawa"
 tags: [canada, science, international]
+image: /assets/images/person-mona-nemer.jpg
+image_caption: "Mona Nemer, in 2008. Photo: Phillip Jeffrey, CC BY-SA 2.0, via Wikimedia Commons."
 rel:
   - [ led, sky-canada-project, "“The Chief Science Advisor launched the Sky Canada Project in the fall of 2022”" ]
 facts:

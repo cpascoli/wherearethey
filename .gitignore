@@ -63,3 +63,4 @@ site/pagefind-mod/
 
 # Local Netlify folder
 .netlify
+site/cards/

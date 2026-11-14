@@ -7,6 +7,8 @@ credentials:
   - category: academia
     role: Professor, Tel Aviv University
 tags: [international]
+image: /assets/images/person-isaac-ben-israel.jpg
+image_caption: "Isaac Ben-Israel, in 2008. Photo: Yuval Ben-Israel, public domain, via Wikimedia Commons."
 facts:
   - text: "As chairman of the Israel Space Agency, Ben-Israel told The Times of Israel in December 2020 that Haim Eshed had gone too far with his claims and that human–alien encounters were unlikely."
     status: claimed

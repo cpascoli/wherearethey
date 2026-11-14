@@ -7,6 +7,9 @@ credentials:
   - category: congress
     role: Member of the House of Representatives; chair of the Diet UAP league (2024)
 tags: [government, international]
+image: /assets/images/person-yasukazu-hamada.jpg
+portrait: /assets/images/person-yasukazu-hamada-portrait.jpg
+image_caption: "Yasukazu Hamada, as Minister of Defense, 2022. Photo: Cabinet Public Relations Office, Japan, CC BY 4.0, via Wikimedia Commons."
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Yasukazu_Hamada

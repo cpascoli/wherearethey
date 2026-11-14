@@ -7,6 +7,9 @@ credentials:
     role: House Minority Leader (R-MI), 1965–1973; later 38th President of the United States
 tags:
   - congress
+image: /assets/images/person-gerald-ford.jpg
+portrait: /assets/images/person-gerald-ford-portrait.jpg
+image_caption: "Gerald Ford, official presidential portrait, 1974. Photo: David Hume Kennerly, Gerald R. Ford Library, public domain, via Wikimedia Commons."
 facts:
   - text: After the March 1966 Michigan sightings, which the Air Force attributed to “swamp gas”, he called for a congressional investigation. This led to the April 5, 1966 House Armed Services hearing.
     status: documented

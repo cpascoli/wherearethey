@@ -5,6 +5,9 @@ credentials:
   - category: journalist
     role: "Documentary filmmaker (Out of the Blue, I Know What I Saw, The Phenomenon, Moment of Contact, The Program)"
 tags: [international]
+image: /assets/images/person-james-fox.jpg
+portrait: /assets/images/person-james-fox-portrait.jpg
+image_caption: "James Fox, in 2024. Photo: OldDominionVA89, CC BY-SA 4.0, via Wikimedia Commons."
 rel:
   - [ directed film, film-moment-of-contact ]
   - [ directed film, film-the-phenomenon ]

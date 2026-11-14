@@ -8,6 +8,8 @@ credentials:
     role: Apollo 14 lunar module pilot; sixth person to walk on the Moon
 tags:
   - disclosure
+image: /assets/images/person-edgar-mitchell.jpg
+image_caption: "Edgar Mitchell, official NASA portrait, 1970. Photo: NASA, public domain, via Wikimedia Commons."
 rel:
   - [ testified at, h-2013-citizen-hearing ]
   - [ friend of, paul-hellyer, "Hellyer called him “my friend Edgar Mitchell”; they opened the 2013 Citizen Hearing together" ]

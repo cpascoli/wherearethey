@@ -4,6 +4,8 @@ credentials:
   - category: aviator
     role: Captain and pilot, Chilean Army aviation; involved in Chile's official UAP committee (CEFAA)
 tags: [aviator, international]
+image: /assets/images/person-rodrigo-bravo.jpg
+image_caption: "Rodrigo Bravo, at the launch of his book Ufología aeronáutica, 2013. Photo: Loremulatti, CC BY-SA 3.0, via Wikimedia Commons."
 rel:
   - [ worked with, cefaa ]
 facts:

@@ -7,6 +7,9 @@ credentials:
 date: 1923
 end: 2007
 tags: [astronaut, navy, nasa]
+image: /assets/images/person-wally-schirra.jpg
+portrait: /assets/images/person-wally-schirra-portrait.jpg
+image_caption: "Wally Schirra, NASA portrait. Photo: NASA, public domain, via Wikimedia Commons."
 rel:
   - [ worked at, nasa ]
 links:

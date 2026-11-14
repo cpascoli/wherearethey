@@ -7,6 +7,9 @@ credentials:
   - category: congress
     role: Member of the House of Representatives (National Diet)
 tags: [government, international]
+image: /assets/images/person-minoru-kihara.jpg
+portrait: /assets/images/person-minoru-kihara-portrait.jpg
+image_caption: "Minoru Kihara, as Minister of Defense, 2023. Photo: Ministry of Defense (Japan), CC BY 4.0, via Wikimedia Commons."
 links:
   - label: Wikipedia
     url: https://en.wikipedia.org/wiki/Minoru_Kihara
