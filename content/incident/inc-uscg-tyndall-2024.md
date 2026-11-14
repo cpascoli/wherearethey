@@ -20,7 +20,7 @@ facts:
     source: dow-uap-pr065
 ---
 
-On 24 April 2024 a U.S. Coast Guard HC-144 patrol aircraft near Tyndall Air Force Base, on the Florida Panhandle, filmed in infrared an object the uploader titled "TIC TAC" and "IR hot", that is, warm against its background in infrared.
+On 24 April 2024 a U.S. Coast Guard HC-144 patrol aircraft near Tyndall Air Force Base, on the Florida Panhandle, filmed in infrared an object the uploader titled "TIC TAC IR hot"; "IR hot" means warm against its background in infrared.
 
 Two short clips were uploaded to a classified network that June and released in PURSUE release 02; they were items 13 and 14 on the House Oversight Task Force's list. AARO's descriptions record the sensor failing to keep up with the object on one pass and holding it for half a minute on another; they make no assessment, and no report from the crew has been released.
 

@@ -39,12 +39,27 @@ moments:
     text: "Grusch: informed in the course of his official duties of a multi-decade UAP crash retrieval and reverse-engineering program, to which he was denied access."
     speaker: david-grusch
     refs: [ crash-retrieval, h-2023-07-26 ]
+  - t: "33:49"
+    basis: relayed
+    text: "Fravor: the Princeton's controller told them the objects had been observed for over two weeks, coming down from over 80,000 feet to 20,000 feet, staying for hours and going straight back up."
+    speaker: david-fravor
+    refs: [ inc-nimitz-2004 ]
   - t: "34:29"
     text: "Fravor describes looking down from his F/A-18 at the small white “Tic Tac” object in 2004."
     speaker: david-fravor
     refs: [ inc-nimitz-2004, h-2023-07-26 ]
     claims: [ tic-tac-beyond-known-technology ]
     basis: first-hand
+  - t: "34:55"
+    basis: first-hand
+    text: "Fravor: as he descended, the object “suddenly shifted its longitudinal axis, aligned it with my aircraft and began to climb”; when he pulled nose on at about half a mile, “it rapidly accelerated in front of us and disappeared”, and his wingman lost it too."
+    speaker: david-fravor
+    refs: [ inc-nimitz-2004 ]
+  - t: "35:34"
+    basis: relayed
+    text: "Fravor: as they turned back, the controller said the object was at their CAP point, “roughly 60 miles away in less than a minute”."
+    speaker: david-fravor
+    refs: [ inc-nimitz-2004 ]
   - t: "35:52"
     text: "Fravor: the radar tape of the object jamming the APG-73 radar was never released, and “the incident was never investigated”; none of his crew was questioned."
     speaker: david-fravor
@@ -72,7 +87,7 @@ moments:
     speaker: david-grusch
     refs: [ tim-burchett ]
   - t: "54:34"
-    text: "Fravor says the crew launched after his flight saw significant jamming of its APG-73 radar, which split the lock, so the video was taken on the passive targeting pod."
+    text: "Fravor: the crew that launched after his flight landed “experienced significant jamming” of its APG-73 radar; the targeting pod is passive, and that is what got the video."
     speaker: david-fravor
     refs: [ inc-nimitz-2004, chad-underwood ]
   - t: "59:07"

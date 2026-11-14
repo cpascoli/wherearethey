@@ -464,7 +464,11 @@ export async function build({ check = false, quiet = false } = {}) {
         // "National Archives of Brazil" names a different body than "National Archives": skip "<term> of <Name>"
         if (/^\s+of\s+\p{Lu}/u.test(text.slice(m.index + m[0].length))) continue;
         const key = norm(m[1]).replace(/\s+/g, ' ').trim();
-        for (const id of termMap.get(lower ? key.toLowerCase() : key) || []) if (id !== e.id) found.add(id);
+        for (const id of termMap.get(lower ? key.toLowerCase() : key) || []) {
+          if (id === e.id) continue;
+          if (unmatch.has(id) && unmatch.get(id).some(u => text.slice(m.index, m.index + 80).replace(/\s+/g, ' ').toLowerCase().startsWith(u))) continue;
+          found.add(id);
+        }
       }
     }
     const implied = e.type === 'record' ? new Set(['aaro', 'pursue', 'department-of-war']) : new Set(); // annotators/publishers of every record
