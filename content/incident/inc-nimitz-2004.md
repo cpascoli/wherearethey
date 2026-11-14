@@ -14,6 +14,7 @@ aka:
   - tic-tac
   - FLIR1
 date: 2004-11-14
+featured: 2026-11-16   # 22nd anniversary: pinned on Latest and the homepage strip through Monday
 place: { name: "Pacific Ocean, off San Diego / Baja California", lat: 31.5, lng: -117.8 }
 tags:
   - aviator
