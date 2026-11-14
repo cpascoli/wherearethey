@@ -5,6 +5,8 @@ credentials:
   - category: congress
     role: "U.S. Representative for New Mexico's 1st district (R), 1989–1998"
 tags: [congress]
+image: /assets/images/person-steven-schiff.jpg
+image_caption: "Steven Schiff. Still from “UFO Cover-Up Live with Larry King” (1994)."
 rel:
   - [ requested, doc-gao-roswell-1995, "The GAO's 1995 report on the Roswell records is addressed to him, in answer to his request" ]
 links:

@@ -4,6 +4,8 @@ credentials:
   - category: military
     role: Sergeant First Class, U.S. Army (ret.)
 tags: [military, crash-retrieval, disclosure-project]
+image: /assets/images/person-clifford-stone.jpg
+image_caption: "Clifford Stone. Still from “Disclosure Project press conference, National Press Club (May 9, 2001), full event”."
 rel:
   - [ testified at, ev-disclosure-project-2001 ]
   - [ claims about, crash-retrieval ]

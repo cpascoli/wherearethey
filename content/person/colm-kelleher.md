@@ -5,6 +5,9 @@ credentials:
   - category: aerospace
     role: Biochemist; worked alongside James Lacatski within AAWSAP at Bigelow Aerospace Advanced Space Studies (BAASS), the program's contractor
 tags: [aerospace, aawsap, skinwalker]
+image: /assets/images/person-colm-kelleher.jpg
+portrait: /assets/images/person-colm-kelleher-portrait.jpg
+image_caption: "Colm Kelleher. Still from “Lacatski, Kelleher and Knapp on ‘Skinwalkers at the Pentagon’” (2021)."
 rel:
   - [ researched, skinwalker-ranch, "He worked on the BAASS research for Bigelow and co-wrote Skinwalkers at the Pentagon" ]
   - [ worked on, aawsap ]

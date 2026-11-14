@@ -5,6 +5,8 @@ credentials:
   - category: military
     role: "Lieutenant Colonel, Soviet Strategic Rocket Forces; missile engineer"
 tags: [military, international, nuclear]
+image: /assets/images/person-vladimir-platunov.jpg
+image_caption: "Vladimir Platunov. Still from “Byelokorovichi 1982: George Knapp's 1994 field report with Lt. Col. Vladimir Platunov”."
 rel:
   - [ witness, inc-usovo-1982 ]
 facts:

@@ -5,6 +5,9 @@ credentials:
   - category: journalist
     role: Investigative journalist; co-author of The New York Times' 2017 AATIP story and The Debrief's 2023 Grusch story
 tags: [journalist, disclosure]
+image: /assets/images/person-leslie-kean.jpg
+portrait: /assets/images/person-leslie-kean-portrait.jpg
+image_caption: "Leslie Kean. Still from “The UFO Phenomenon | Full Documentary 2021 | 7NEWS Spotlight”."
 rel:
   - [ reported on, inc-nimitz-2004, "Her 2017 New York Times story is how Rep. Burchett says he learned of the Tic Tac" ]
   - [ authored, book-kean-ufos-on-the-record ]

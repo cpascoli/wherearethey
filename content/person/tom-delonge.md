@@ -6,6 +6,8 @@ credentials:
   - category: civilian
     role: Musician (Blink-182); co-founder of To The Stars Academy of Arts & Science
 tags: [disclosure]
+image: /assets/images/person-tom-delonge.jpg
+image_caption: "Tom DeLonge performing at the Soundwave festival, Sydney, 2013. Photo: Wudumindif, CC BY-SA 3.0, via Wikimedia Commons."
 rel:
   - [ founded, to-the-stars ]
 facts:

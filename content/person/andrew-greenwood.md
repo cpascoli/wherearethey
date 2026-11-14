@@ -5,6 +5,9 @@ credentials:
   - category: civilian
     role: Science teacher, Westall High School (1966)
 tags: [school]
+image: /assets/images/person-andrew-greenwood.jpg
+portrait: /assets/images/person-andrew-greenwood-portrait.jpg
+image_caption: "Andrew Greenwood. Still from “Schoolyard witnesses in mass UFO sighting demand answers | Australian Story” (2026)."
 rel:
   - [ witness, inc-westall-1966 ]
 facts:

@@ -10,6 +10,9 @@ credentials:
   - category: academia
     role: "PhD in physics (electro-optical engineering), Air Force Institute of Technology"
 tags: [aaro, sensor]
+image: /assets/images/person-randy-bostick.jpg
+portrait: /assets/images/person-randy-bostick-portrait.jpg
+image_caption: "Randy Bostick. Still from “Inside the Pentagon's UFO Office: Ross Coulthart with former AARO science advisor Randy Bostick” (2026)."
 rel:
   - [ worked at, aaro, "Science Advisor to AARO; hired by Sean Kirkpatrick, worked in its science and technology group" ]
   - [ analysed, inc-roosevelt-2015, "Worked on AARO's GoFast case resolution: the object “was not moving as fast as it appeared to be”" ]

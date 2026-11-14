@@ -5,6 +5,9 @@ credentials:
   - category: aviator
     role: Commander, Peruvian Air Force; Sukhoi Su-22 pilot (1980)
 tags: [aviator, international]
+image: /assets/images/person-oscar-santa-maria.jpg
+portrait: /assets/images/person-oscar-santa-maria-portrait.jpg
+image_caption: "Oscar Santa María Huertas. Still from “TVPerú: the former Peruvian pilot who chased and fired on a UFO over Arequipa speaks” (2025)."
 rel:
   - [ testified at, h-2013-citizen-hearing ]
   - [ witness, inc-la-joya-1980 ]

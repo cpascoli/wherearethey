@@ -5,6 +5,8 @@ credentials:
   - category: journalist
     role: "Founding board member, Scientific Coalition for UAP Studies (SCU); engineer, nearly 30 years in semiconductor engineering management"
 tags: [science]
+image: /assets/images/person-robert-powell.jpg
+image_caption: "Robert Powell. Still from “Estimating the flight characteristics of the 2004 Nimitz encounter: SCU panel with Kevin Knuth, Robert Powell and Peter Reali” (2021)."
 rel:
   - [ authored, book-ufos-scientist-explains ]
 links:

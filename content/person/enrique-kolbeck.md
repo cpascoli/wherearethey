@@ -5,6 +5,8 @@ credentials:
   - category: sensor-operator
     role: Radar air traffic controller, Mexico City International Airport
 tags: [sensor-operator, radar, international, disclosure-project]
+image: /assets/images/person-enrique-kolbeck.jpg
+image_caption: "Enrique Kolbeck. Still from “Disclosure Project press conference, National Press Club (May 9, 2001), full event”."
 rel:
   - [ witness, inc-mexico-city-radar-1992 ]
   - [ testified at, ev-disclosure-project-2001 ]

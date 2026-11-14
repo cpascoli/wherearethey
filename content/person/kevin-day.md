@@ -6,6 +6,9 @@ credentials:
 tags:
   - radar
   - navy
+image: /assets/images/person-kevin-day.jpg
+portrait: /assets/images/person-kevin-day-portrait.jpg
+image_caption: "Kevin Day. Still from “Tic Tac witness Kevin Day: interview for The Nimitz Encounters” (2019)."
 rel:
   - [ witness, inc-nimitz-2004 ]
   - [ sent to intercept, david-fravor, "Day's decision put Fravor's flight onto the object" ]

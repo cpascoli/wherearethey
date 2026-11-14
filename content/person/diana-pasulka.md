@@ -6,6 +6,9 @@ credentials:
   - category: academia
     role: Professor of religious studies, University of North Carolina Wilmington; author of American Cosmic
 tags: [academia]
+image: /assets/images/person-diana-pasulka.jpg
+portrait: /assets/images/person-diana-pasulka-portrait.jpg
+image_caption: "Diana Walsh Pasulka. Still from “The Biblical Truth of UFOs & Angels (Ft. Karl Nell & Diana Pasulka)” (2024)."
 rel:
   - [ commented on, crash-retrieval, "Hal Puthoff says Pasulka told him that some craft were described to her as “donations”" ]
 facts:

@@ -5,6 +5,9 @@ credentials:
   - category: aviator
     role: "Lieutenant and F-86D pilot, 514th Fighter Interceptor Squadron, U.S. Air Force, RAF Manston (1957); later Major (ret.)"
 tags: [aviator, usaf, uk]
+image: /assets/images/person-milton-torres.jpg
+portrait: /assets/images/person-milton-torres-portrait.jpg
+image_caption: "Milton Torres. Still from “Milton Torres interview: ordered to fire 24 rockets at a UFO over England” (2009)."
 rel:
   - [ witness, inc-manston-1957, "Scrambled from RAF Manston on 20 May 1957 and ordered to fire a full salvo of 24 rockets at a radar target" ]
 facts:

@@ -7,6 +7,9 @@ tags:
   - nuclear
   - air-force
   - whistleblower
+image: /assets/images/person-mario-woods.jpg
+portrait: /assets/images/person-mario-woods-portrait.jpg
+image_caption: "Mario Woods. Still from “Nuclear guard speaks out about UFO abduction: Mario Woods” (2025)."
 rel:
   - [ witness, inc-ellsworth-1977 ]
   - [ testified to, aaro ]

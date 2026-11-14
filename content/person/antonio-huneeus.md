@@ -5,6 +5,9 @@ credentials:
   - category: journalist
     role: "Chilean-born journalist covering UFOs internationally (FATE, Open Minds)"
 tags: [international]
+image: /assets/images/person-antonio-huneeus.jpg
+portrait: /assets/images/person-antonio-huneeus-portrait.jpg
+image_caption: "Antonio Huneeus. Still from “Citizen Hearing 2013: A Global Phenomenon, Part 2”."
 rel:
   - [ testified at, h-2013-citizen-hearing ]
   - [ authored, doc-ufo-briefing-document-1995, "He helped edit and expand the Rockefeller-funded UFO briefing document" ]

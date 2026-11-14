@@ -7,6 +7,9 @@ credentials:
     role: U.S. Representative (D-CA); Ranking Member, House Oversight Subcommittee on National Security (2023)
 tags:
   - congress
+image: /assets/images/person-robert-garcia.jpg
+portrait: /assets/images/person-robert-garcia-portrait.jpg
+image_caption: "Robert Garcia. Still from “House holds hearing on UFOs, government transparency | full video” (2023)."
 rel:
   - [ questioned at, h-2023-07-26 ]
   - [ member of, house-oversight ]

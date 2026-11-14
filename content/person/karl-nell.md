@@ -14,6 +14,9 @@ credentials:
 tags:
   - military
   - disclosure
+image: /assets/images/person-karl-nell.jpg
+portrait: /assets/images/person-karl-nell-portrait.jpg
+image_caption: "Karl Nell. Still from “‘Zero Doubt’ Non-Human Intelligence on Earth - Col. Karl Nell & Alex” (2024)."
 rel:
   - [ cites, inc-malmstrom-1967, "He counts the Malmstrom ICBM shutdowns among his data" ]
   - [ represented on, uaptf, "He was the Army's representative to the UAP Task Force" ]

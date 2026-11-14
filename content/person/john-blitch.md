@@ -5,6 +5,9 @@ credentials:
   - category: military
     role: Lieutenant Colonel, U.S. Army (ret.); Special Forces officer; former DARPA program manager (robotics) and cognitive psychologist (self-described, 2025)
 tags: [military, abduction, experiencer]
+image: /assets/images/person-john-blitch.jpg
+portrait: /assets/images/person-john-blitch-portrait.jpg
+image_caption: "John Blitch. Still from “Meet the DARPA scientist abducted by an alien: Lt. Col. John Blitch” (2025)."
 facts:
   - text: "Describes a personal abduction experience in 1995: a sudden nosebleed while mountain biking, immediate unconsciousness, at least five hours of missing time, and a “praying mantis” being."
     status: claimed

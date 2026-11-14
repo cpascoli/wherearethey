@@ -5,6 +5,9 @@ credentials:
   - category: law-enforcement
     role: Former British police detective (British Transport Police)
 tags: [law-enforcement, international]
+image: /assets/images/person-gary-heseltine.jpg
+portrait: /assets/images/person-gary-heseltine-portrait.jpg
+image_caption: "Gary Heseltine. Still from “Citizen Hearing 2013: Associated Phenomena”."
 rel:
   - [ testified at, h-2013-citizen-hearing ]
 facts:

@@ -8,6 +8,9 @@ credentials:
 tags:
   - radar
   - navy
+image: /assets/images/person-gary-voorhis.jpg
+portrait: /assets/images/person-gary-voorhis-portrait.jpg
+image_caption: "Gary Voorhis. Still from “Tic Tac witness Gary Voorhis: interview for The Nimitz Encounters” (2019)."
 rel:
   - [ witness, inc-nimitz-2004 ]
   - [ served with, kevin-day, "Both served aboard the cruiser USS Princeton in November 2004" ]

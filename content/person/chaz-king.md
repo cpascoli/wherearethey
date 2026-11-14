@@ -5,6 +5,9 @@ credentials:
     role: "U.S. Air Force Security Forces, Vandenberg AFB (about 2000–2007, by his account)"
 tags:
   - air-force
+image: /assets/images/person-chaz-king.jpg
+portrait: /assets/images/person-chaz-king-portrait.jpg
+image_caption: "Chaz King. Still from “Chaz King, eye-witness to the Vandenberg UAP, with Jeff Nuccetelli” (2025)."
 rel:
   - [ witness, inc-vandenberg-2003 ]
   - [ appears in, film-age-of-disclosure ]

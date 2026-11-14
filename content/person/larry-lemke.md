@@ -6,6 +6,9 @@ credentials:
   - category: aerospace
     role: "Former NASA aerospace engineer (propulsion, planetary missions); Stanford graduate work in aerospace engineering"
 tags: [nasa, materials]
+image: /assets/images/person-larry-lemke.jpg
+portrait: /assets/images/person-larry-lemke-portrait.jpg
+image_caption: "Larry Lemke. Still from “The Sol Forum #1: Hal Puthoff, Jacques Vallée and Larry Lemke” (2025)."
 rel:
   - [ worked with, garry-nolan, "Joined Jacques Vallée and Garry Nolan's analysis of alleged UAP materials after retiring from NASA" ]
   - [ worked with, jacques-vallee, "Answered Vallée's call for help with his collection of alleged UAP samples" ]

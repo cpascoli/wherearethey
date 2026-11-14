@@ -2,6 +2,8 @@
 name: Patrick McDonough
 credentials: [{ category: military, role: "Former USAF geodetic surveyor, 1381st Geodetic Survey Squadron (1962–1966)" }]
 tags: [air-force, nuclear]
+image: /assets/images/person-patrick-mcdonough.jpg
+image_caption: "Patrick McDonough. Still from “UFOs and Nukes press conference, National Press Club” (2010)."
 facts:
   - text: "He says that in September 1966, while surveying a new Minuteman site southeast of Conrad, Montana, a round object about 50 ft across stopped about 300 ft above the open silo, shining a white light into it, and then shot off to the east. He says the highway patrolman who attended their truck accident that night told them his dispatch had received over 20 UFO reports."
     status: claimed

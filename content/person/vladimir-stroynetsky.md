@@ -6,6 +6,9 @@ credentials:
   - category: military
     role: "Major, serving officer in a Soviet military unit near Moscow (1990)"
 tags: [military, international]
+image: /assets/images/person-vladimir-stroynetsky.jpg
+portrait: /assets/images/person-vladimir-stroynetsky-portrait.jpg
+image_caption: "Vladimir Stroynetsky. Still from “‘UFOs over Moscow’: Vremya, Soviet Central Television, 30 April 1990”."
 rel:
   - [ witness, inc-pereslavl-zalessky-1990, "He described a huge mass rimmed with welding-like flashes rising silently over the forest at his unit" ]
 facts:

@@ -5,6 +5,9 @@ credentials:
   - category: aerospace
     role: "Engineer and research manager, Douglas Aircraft / McDonnell Douglas, for 43 years (to 1993); PhD in physics, Cornell"
 tags: [aerospace, science]
+image: /assets/images/person-robert-wood.jpg
+portrait: /assets/images/person-robert-wood-portrait.jpg
+image_caption: "Robert M. Wood. Still from “Citizen Hearing 2013: Documents & Proof”."
 rel:
   - [ testified at, h-2013-citizen-hearing ]
   - [ employed by, boeing, "He worked 43 years for Douglas Aircraft and McDonnell Douglas, now part of Boeing" ]

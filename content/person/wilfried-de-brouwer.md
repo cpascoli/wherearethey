@@ -8,6 +8,8 @@ credentials:
   - category: military
     role: Colonel, then Major General, Belgian Air Force; head of operations during the 1989–90 wave
 tags: [air-force, international]
+image: /assets/images/person-wilfried-de-brouwer.jpg
+image_caption: "Wilfried De Brouwer. Still from “National Press Club - November 12th, 2007. UFO Close Encounters”."
 rel:
   - [ investigated, inc-belgian-wave-1989 ]
 facts:

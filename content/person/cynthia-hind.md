@@ -5,6 +5,9 @@ credentials:
   - category: journalist
     role: UFO researcher and author; MUFON representative for Africa
 tags: [journalist, international]
+image: /assets/images/person-cynthia-hind.jpg
+portrait: /assets/images/person-cynthia-hind-portrait.jpg
+image_caption: "Cynthia Hind. Still from “Ariel School, 1994: original BBC news report”."
 rel:
   - [ investigated, inc-ariel-1994 ]
 facts:

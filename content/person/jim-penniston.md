@@ -8,6 +8,8 @@ credentials:
     role: Staff Sergeant, U.S. Air Force Security Police, RAF Woodbridge
 tags:
   - air-force
+image: /assets/images/person-jim-penniston.jpg
+image_caption: "Jim Penniston. Still from “National Press Club - November 12th, 2007. UFO Close Encounters”."
 rel:
   - [ witness, inc-rendlesham-1980 ]
   - [ testified at, h-2013-citizen-hearing ]

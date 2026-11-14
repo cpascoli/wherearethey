@@ -7,6 +7,9 @@ credentials:
   - category: academia
     role: Historian and journalism academic, Sheffield Hallam University; consultant to the UK National Archives on the release of MoD UFO files (2008–2013)
 tags: [science, international]
+image: /assets/images/person-david-clarke.jpg
+portrait: /assets/images/person-david-clarke-portrait.jpg
+image_caption: "David Clarke. Still from “The Great UFO Hoax '67: the hoaxers and a witness, fifty years on” (2017)."
 links:
   - label: drdavidclarke.co.uk
     url: https://drdavidclarke.co.uk/

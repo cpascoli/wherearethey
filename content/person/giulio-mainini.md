@@ -5,6 +5,9 @@ credentials:
   - { category: military, role: "Generale di Squadra Aerea (ret.), Italian Air Force; Commander of the Squadra Aerea 2004–2007" }
   - { category: aviator, role: "F-104 fighter pilot; in 1978 commander of the 21° Gruppo, 53° Stormo caccia intercettori, Cameri" }
 tags: [aviator, air-force, international]
+image: /assets/images/person-giulio-mainini.jpg
+portrait: /assets/images/person-giulio-mainini-portrait.jpg
+image_caption: "Giulio Mainini. Still from “F-104 insegue un UFO | La testimonianza del Gen. S.A. Giulio Mainini – Ep. 2” (2024)."
 rel:
   - [ witness, inc-cameri-1978, "Said he saw an intense light while flying an F-104 out of Cameri in September 1978" ]
 facts:

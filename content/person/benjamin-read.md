@@ -6,6 +6,9 @@ credentials:
   - category: aviator
     role: "Former U.S. Marine Corps F/A-18 Hornet pilot (18 years); commercial airline captain"
 tags: [aviator, marines]
+image: /assets/images/person-benjamin-read.jpg
+portrait: /assets/images/person-benjamin-read-portrait.jpg
+image_caption: "Benjamin Read. Still from “Marine fighter pilot Ben Read on the 737-sized object over Houston” (2026)."
 rel:
   - [ witness, inc-houston-2021 ]
 facts:

@@ -6,6 +6,8 @@ credentials:
   - category: aviator
     role: Commander, U.S. Navy (ret.), pilot with a top secret clearance
 tags: [aviator, military, disclosure-project]
+image: /assets/images/person-graham-bethune.jpg
+image_caption: "Graham Bethune. Still from “Disclosure Project press conference, National Press Club (May 9, 2001), full event”."
 rel:
   - [ witness, inc-gander-1951 ]
   - [ testified at, ev-disclosure-project-2001 ]

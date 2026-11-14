@@ -5,6 +5,9 @@ credentials:
   - category: military
     role: Technical Sergeant, U.S. Air Force security police; 91st Missile Security Squadron, Minot AFB (1974)
 tags: [military, nuclear]
+image: /assets/images/person-david-scott.jpg
+portrait: /assets/images/person-david-scott-portrait.jpg
+image_caption: "David Scott. Still from “Citizen Hearing 2013: Nuclear Tampering, Part 1”."
 rel:
   - [ testified at, h-2013-citizen-hearing ]
 facts:

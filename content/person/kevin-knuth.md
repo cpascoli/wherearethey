@@ -6,6 +6,9 @@ credentials:
   - category: academia
     role: "Professor of Physics, University at Albany (SUNY); former NASA Ames research scientist; editor-in-chief of the journal Entropy"
 tags: [science]
+image: /assets/images/person-kevin-knuth.jpg
+portrait: /assets/images/person-kevin-knuth-portrait.jpg
+image_caption: "Kevin Knuth. Still from “Physicist Kevin Knuth on the Tic Tac's accelerations: Ross Coulthart” (2026)."
 rel:
   - [ authored, doc-knuth-2019-entropy-flight-characteristics ]
   - [ member of, uap-science-advisory-council, "Knuth says members were told they would see only unclassified material" ]

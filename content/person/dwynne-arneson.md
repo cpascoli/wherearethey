@@ -6,6 +6,8 @@ credentials:
   - category: military
     role: Colonel, U.S. Air Force (ret.); communications-electronics officer for 26 years, top secret SCI clearance (self-described, 2001)
 tags: [military, intelligence, disclosure-project]
+image: /assets/images/person-dwynne-arneson.jpg
+image_caption: "Dwynne Arneson. Still from “Disclosure Project press conference, National Press Club (May 9, 2001), full event”."
 rel:
   - [ testified at, ev-disclosure-project-2001 ]
 facts:

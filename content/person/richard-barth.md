@@ -5,6 +5,9 @@ credentials:
   - category: military
     role: U.S. Air Force veteran; security guard at a Vandenberg AFB missile site (self-described)
 tags: [military, abduction, nuclear]
+image: /assets/images/person-richard-barth.jpg
+portrait: /assets/images/person-richard-barth-portrait.jpg
+image_caption: "Richard Barth. Still from “Meet the nuclear missile guard abducted by aliens: Richard Barth” (2026)."
 facts:
   - text: "Says a hooded being paralysed him while he was guarding a Vandenberg missile site, and that he found himself aboard a craft over the base with four other beings. He says they told him they were inspecting the missiles to understand how they worked, to prevent nuclear war."
     status: claimed

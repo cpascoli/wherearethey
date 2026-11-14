@@ -5,6 +5,9 @@ credentials:
   - category: journalist
     role: "Roswell researcher and author"
 tags: [roswell, crash-retrieval]
+image: /assets/images/person-donald-schmitt.jpg
+portrait: /assets/images/person-donald-schmitt-portrait.jpg
+image_caption: "Donald Schmitt. Still from “Citizen Hearing 2013: Roswell, Part 1”."
 rel:
   - [ testified at, h-2013-citizen-hearing ]
   - [ researched, inc-roswell-1947, "He says he and Tom Carey have interviewed more than 600 people connected with the case" ]

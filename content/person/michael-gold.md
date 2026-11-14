@@ -5,6 +5,9 @@ credentials:
     role: Former NASA Associate Administrator; member of NASA’s UAP independent study team
 tags:
   - science
+image: /assets/images/person-michael-gold.jpg
+portrait: /assets/images/person-michael-gold-portrait.jpg
+image_caption: "Michael Gold. Still from “Unidentified Anomalous Phenomena: Exposing the Truth” (2024)."
 rel:
   - [ testified at, h-2024-11-13 ]
   - [ testified at, h-2025-05-01 ]

@@ -5,6 +5,9 @@ credentials:
   - category: military
     role: Captain, U.S. Air Force (ret.); ICBM launch control officer, Minot AFB (1966)
 tags: [military, nuclear]
+image: /assets/images/person-david-schindele.jpg
+portrait: /assets/images/person-david-schindele-portrait.jpg
+image_caption: "David Schindele. Still from “Citizen Hearing 2013: Nuclear Tampering, Part 1”."
 rel:
   - [ testified at, h-2013-citizen-hearing ]
 facts:

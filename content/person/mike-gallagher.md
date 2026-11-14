@@ -10,6 +10,8 @@ credentials:
     role: U.S. Marine Corps intelligence officer
 tags:
   - congress
+image: /assets/images/person-mike-gallagher.jpg
+image_caption: "Mike Gallagher. Still from “Congressional hearings on military reports of Unexplained Aerial Phenomena (UAP) - May 17th, 2022”."
 rel:
   - [ questioned witnesses at, h-2022-05-17 ]
 facts:

@@ -5,6 +5,9 @@ credentials:
   - category: government
     role: Division Chief, Accidents and Investigations, Federal Aviation Administration (1980s)
 tags: [government, radar]
+image: /assets/images/person-john-callahan.jpg
+portrait: /assets/images/person-john-callahan-portrait.jpg
+image_caption: "John Callahan. Still from “JAL 1628 archive compilation: 1987 news report, Nippon TV reconstruction and John Callahan (Eyes On Cinema)” (2023)."
 rel:
   - [ testified at, h-2013-citizen-hearing ]
   - [ investigated, inc-jal-1628-1986 ]

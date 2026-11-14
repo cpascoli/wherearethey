@@ -6,6 +6,8 @@ credentials:
   - category: journalist
     role: "Filmmaker, writer and composer; vice president at Grey Advertising in 1973; writer of the 1974 documentary UFOs: Past, Present, and Future"
 tags: [disinformation]
+image: /assets/images/person-robert-emenegger.jpg
+image_caption: "Robert Emenegger. Still from “UFO Cover-Up?: Live! (1988 television special)”."
 rel:
   - [ reported, inc-holloman-1964 ]
 facts:

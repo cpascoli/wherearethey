@@ -4,6 +4,8 @@ credentials:
   - category: government
     role: Founding member of Peru's Office for the Investigation of Anomalous Aerial Phenomena (OIFAA), Peruvian Air Force
 tags: [government, international]
+image: /assets/images/person-anthony-choy.jpg
+image_caption: "Anthony Choy. Still from “National Press Club - November 12th, 2007. UFO Close Encounters”."
 facts:
   - text: "Choy, a founding member of the Peruvian Air Force's office for anomalous aerial phenomena (OIFAA), testified at the 2013 Citizen Hearing on Disclosure."
     status: documented

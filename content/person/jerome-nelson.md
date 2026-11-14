@@ -3,6 +3,8 @@ name: Jerome Nelson
 aka: [Jerry Nelson]
 credentials: [{ category: military, role: "Former USAF Atlas F ICBM deputy missile combat crew commander, 579th Strategic Missile Squadron, Walker AFB (1962–1965)" }]
 tags: [air-force, nuclear]
+image: /assets/images/person-jerome-nelson.jpg
+image_caption: "Jerome Nelson. Still from “UFOs and Nukes press conference, National Press Club” (2010)."
 facts:
   - text: "He says that in the winter of 1963–64, on alert in the launch control center at Atlas site 9 west of Roswell, his topside guard reported a fully illuminated round object hovering silently over the silo and shining a light down on it. He says it happened several more times, and that the base command post's response was dismissive."
     status: claimed

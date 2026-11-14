@@ -6,6 +6,8 @@ credentials:
     role: "UFO researcher and author of UFOs and Nukes (2008, 2nd ed. 2017); has interviewed more than 160 military veterans about UFOs at nuclear weapons sites"
 date: 1950-05-06
 tags: [nuclear, air-force]
+image: /assets/images/person-robert-hastings.jpg
+image_caption: "Robert Hastings. Still from “UFOs and Nukes press conference, National Press Club” (2010)."
 rel:
   - [ organized, ev-ufo-nukes-press-conference-2010, "He hosted the press conference and introduced the seven former Air Force personnel" ]
   - [ authored, book-ufos-and-nukes ]

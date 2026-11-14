@@ -14,6 +14,9 @@ credentials:
 tags:
   - consciousness
   - science
+image: /assets/images/person-hal-puthoff.jpg
+portrait: /assets/images/person-hal-puthoff-portrait.jpg
+image_caption: "Hal Puthoff. Still from “Joe Rogan Experience #2314: Hal Puthoff” (2025)."
 rel:
   - [ commented on, inc-nimitz-2004, "He says the program also interviewed the Nimitz pilots" ]
   - [ claims about, inc-roswell-1947, "Puthoff says Battelle worked on foil-like material reportedly from Roswell, and that a layered sample came from Roswell debris" ]

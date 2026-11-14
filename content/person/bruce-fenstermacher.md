@@ -5,6 +5,8 @@ credentials:
   - category: military
     role: Captain, U.S. Air Force (ret.); ICBM missile officer
 tags: [military, nuclear]
+image: /assets/images/person-bruce-fenstermacher.jpg
+image_caption: "Bruce Fenstermacher. Still from “UFOs and Nukes press conference, National Press Club” (2010)."
 rel:
   - [ witness, inc-warren-1976 ]
   - [ testified at, h-2013-citizen-hearing ]

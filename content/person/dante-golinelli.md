@@ -4,6 +4,9 @@ aka: [Comandante Golinelli, Golinelli]
 match: [Giolinelli, Colinelli]
 credentials: [{ category: aviator, role: "Fighter pilot (NCO), 50° Stormo, Italian Air Force, San Damiano (Piacenza), F-84; later an airline pilot with ATI and Alitalia" }]
 tags: [aviator, air-force, international]
+image: /assets/images/person-dante-golinelli.jpg
+portrait: /assets/images/person-dante-golinelli-portrait.jpg
+image_caption: "Dante Golinelli. Still from “Dante Golinelli on the San Damiano object of October 1966” (2018)."
 rel:
   - [ witness, inc-san-damiano-1966, "Chased the object in an F-84 to about 33–34,000 ft" ]
 facts:

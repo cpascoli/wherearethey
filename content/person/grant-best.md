@@ -5,6 +5,9 @@ credentials:
   - category: military
     role: "U.S. Air Force Security Forces (1996 to about 2014, by his account); patrolman and later game warden at Vandenberg AFB, about 2002–2008"
 tags: [air-force]
+image: /assets/images/person-grant-best.jpg
+portrait: /assets/images/person-grant-best-portrait.jpg
+image_caption: "Grant Best. Still from “Grant Best, Air Force Security Forces: Vandenberg UAP eye-witness encounters” (2025)."
 rel:
   - [ witness, inc-vandenberg-2003 ]
   - [ worked with, jeffrey-nuccetelli, "Nuccetelli was his supervisor in Vandenberg's Security Forces" ]

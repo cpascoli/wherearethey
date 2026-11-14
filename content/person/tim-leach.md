@@ -5,6 +5,9 @@ credentials:
   - category: journalist
     role: BBC and ITN cameraman and war reporter in southern Africa; former head of the Foreign Correspondents' Association in Zimbabwe
 tags: [journalist, international, school]
+image: /assets/images/person-tim-leach.jpg
+portrait: /assets/images/person-tim-leach-portrait.jpg
+image_caption: "Tim Leach. Still from “War reporterTim Leach;  moving to a war zone” (2016)."
 rel:
   - [ reported on, inc-ariel-1994 ]
   - [ appears in, film-ariel-phenomenon ]

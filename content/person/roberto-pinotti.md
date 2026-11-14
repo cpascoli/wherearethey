@@ -4,6 +4,9 @@ aka: [Pinotti]
 match: [Penotei, Pinoti]
 credentials: [{ category: journalist, role: "Aerospace journalist and sociologist; president of Italy's Centro Ufologico Nazionale (CUN)" }]
 tags: [international, crash-retrieval]
+image: /assets/images/person-roberto-pinotti.jpg
+portrait: /assets/images/person-roberto-pinotti-portrait.jpg
+image_caption: "Roberto Pinotti. Still from “Citizen Hearing 2013: A Global Phenomenon, Part 2”."
 rel:
   - [ reported on, inc-magenta-1933 ]
 facts:

@@ -6,6 +6,8 @@ credentials:
   - category: government
     role: "Former security manager and chief of requirements for the audiovisual program, Norton Air Force Base, California"
 tags: [air-force]
+image: /assets/images/person-paul-shartle.jpg
+image_caption: "Paul Shartle. Still from “UFO Cover-Up?: Live! (1988 television special)”."
 rel:
   - [ reported, inc-holloman-1964 ]
 facts:

@@ -7,6 +7,9 @@ credentials:
   - category: law-enforcement
     role: "Former full-time police officer; 25 years combined military and law-enforcement service (by his account)"
 tags: [military]
+image: /assets/images/person-don-paul-bales.jpg
+portrait: /assets/images/person-don-paul-bales-portrait.jpg
+image_caption: "Don Paul Bales. Still from “Whistleblower reveals UAP retrieval program: Jake Barber's first public account” (2025)."
 rel:
   - [ member of, skywatcher, "Skywatcher's site lists him among its people, and he speaks of its public work" ]
   - [ vouches for, jake-barber, "He says he has known Barber since 1996, served with him, and confirms Barber's account of being diverted into a covert intelligence role" ]

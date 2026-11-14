@@ -7,6 +7,9 @@ credentials:
     role: Airman First Class, U.S. Air Force Security Police, RAF Woodbridge
 tags:
   - air-force
+image: /assets/images/person-john-burroughs.jpg
+portrait: /assets/images/person-john-burroughs-portrait.jpg
+image_caption: "John Burroughs. Still from “Citizen Hearing 2013: Rendlesham Forest Encounter, Part 1”."
 facts:
   - text: "Burroughs, then with the 81st Tactical Fighter Wing at RAF Bentwaters, says that after the December 1980 incident his gums turned white and a doctor later found a heart murmur, though his entry physical had been clean."
     status: claimed

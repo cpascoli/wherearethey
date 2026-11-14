@@ -5,6 +5,9 @@ credentials:
   - category: journalist
     role: "Historian and author, *UFOs and the National Security State* (2000, 2009)"
 tags: [secrecy, disclosure]
+image: /assets/images/person-richard-dolan.jpg
+portrait: /assets/images/person-richard-dolan-portrait.jpg
+image_caption: "Richard Dolan. Still from “Citizen Hearing 2013: Closing Remarks”."
 rel:
   - [ testified at, h-2013-citizen-hearing ]
 links:

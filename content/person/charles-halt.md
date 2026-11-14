@@ -9,6 +9,9 @@ credentials:
     role: Lieutenant Colonel, U.S. Air Force; Deputy Base Commander, RAF Bentwaters/Woodbridge (later Colonel)
 tags:
   - air-force
+image: /assets/images/person-charles-halt.jpg
+portrait: /assets/images/person-charles-halt-portrait.jpg
+image_caption: "Charles Halt. Still from “Rendlesham Forest UFO sighting: Eyewitness Colonel Charles Halt” (2024)."
 rel:
   - [ authored, doc-halt-memo ]
   - [ witness, inc-rendlesham-1980 ]

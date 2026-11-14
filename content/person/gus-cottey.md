@@ -6,6 +6,9 @@ credentials:
   - category: law-enforcement
     role: "Police officer, Devon and Cornwall Constabulary (Barnstaple Police, Devon), 1993"
 tags: [law-enforcement, police, uk]
+image: /assets/images/person-gus-cottey.jpg
+portrait: /assets/images/person-gus-cottey-portrait.jpg
+image_caption: "Gus Cottey. Still from “Sightings: the 1993 UK triangle wave that changed Nick Pope's mind, with the Devon police witnesses” (1996)."
 rel:
   - [ witness, inc-cosford-1993, "On patrol near Lynton, North Devon, with Sgt. Barry Mitchell, he saw lights come in over the Bristol Channel at about 1.10 am on 31 March 1993" ]
 facts:

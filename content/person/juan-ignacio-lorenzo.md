@@ -5,6 +5,9 @@ credentials:
   - category: aviator
     role: "Captain, Iberia (flight IB-249, 4 November 1968)"
 tags: [aviator, international]
+image: /assets/images/person-juan-ignacio-lorenzo.jpg
+portrait: /assets/images/person-juan-ignacio-lorenzo-portrait.jpg
+image_caption: "Juan Ignacio Lorenzo. Still from “En familia: OVNIs (RTVE, 1989), with Lt. Gen. Carlos Dolz de Espejo and Iberia captain Juan Ignacio Lorenzo”."
 rel:
   - [ witness, inc-valencia-sagunto-1968 ]
 facts:

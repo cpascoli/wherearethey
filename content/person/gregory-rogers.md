@@ -10,6 +10,9 @@ credentials:
     role: "Flight surgeon; chief of aerospace medicine, 45th Space Wing, and senior flight surgeon of the astronaut rescue team at Kennedy Space Center (by his account)"
 tags:
   - air-force
+image: /assets/images/person-gregory-rogers.jpg
+portrait: /assets/images/person-gregory-rogers-portrait.jpg
+image_caption: "Gregory Rogers. Still from “NASA Doctor: ‘I Saw This UFO In A Secret Hangar!’ (Ft. Greg Rogers)” (2025)."
 rel:
   - [ worked at, nasa ]
   - [ witness, inc-cape-canaveral-1992 ]

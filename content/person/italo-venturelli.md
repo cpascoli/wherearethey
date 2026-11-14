@@ -6,6 +6,9 @@ credentials:
   - category: civilian
     role: "Neurosurgeon, Varginha (Minas Gerais); witness in the Varginha case"
 tags: [international, south-america]
+image: /assets/images/person-italo-venturelli.jpg
+portrait: /assets/images/person-italo-venturelli-portrait.jpg
+image_caption: "Ítalo Venturelli. Still from “SBT News: 30 years on, a doctor says he examined the Varginha creature” (2026)."
 rel:
   - [ witness, inc-varginha-1996 ]
 facts:

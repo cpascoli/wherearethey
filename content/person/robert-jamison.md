@@ -2,6 +2,9 @@
 name: Robert Jamison
 credentials: [{ category: military, role: "Former USAF nuclear missile targeting officer, Malmstrom AFB (1967)" }]
 tags: [air-force, nuclear]
+image: /assets/images/person-robert-jamison.jpg
+portrait: /assets/images/person-robert-jamison-portrait.jpg
+image_caption: "Robert Jamison. Still from “‘This UFO Shut Down 10 Nukes!’ - Air Force Officer Robert Salas” (2025)."
 rel:
   - [ responded to, inc-malmstrom-1967, "He says his targeting team went out to Oscar Flight and restarted three or four missiles" ]
 facts:

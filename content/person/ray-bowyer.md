@@ -7,6 +7,8 @@ credentials:
   - category: aviator
     role: Captain, Aurigny Air Services (18 years' flying experience in 2007)
 tags: [aviator, international]
+image: /assets/images/person-ray-bowyer.jpg
+image_caption: "Ray Bowyer. Still from “National Press Club - November 12th, 2007. UFO Close Encounters”."
 rel:
   - [ witness, inc-alderney-2007 ]
 facts:

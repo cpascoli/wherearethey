@@ -6,6 +6,9 @@ credentials:
   - category: government
     role: "Former director of aviation security, National Security Council; former acting director of the FAA's National Security Programs Office (as he describes himself)"
 tags: [aviator, government]
+image: /assets/images/person-brett-feddersen.jpg
+portrait: /assets/images/person-brett-feddersen-portrait.jpg
+image_caption: "Brett Feddersen. Still from “The UAP threat to air safety: Brett Feddersen (The Age of Disclosure, clip)” (2026)."
 rel:
   - [ appears in, film-age-of-disclosure ]
 links:

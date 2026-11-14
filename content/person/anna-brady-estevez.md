@@ -5,6 +5,9 @@ credentials:
     role: American Deep Tech; NSF
 tags:
   - science
+image: /assets/images/person-anna-brady-estevez.jpg
+portrait: /assets/images/person-anna-brady-estevez-portrait.jpg
+image_caption: "Anna Brady-Estevez. Still from “Understanding UAP: Science, National Security & Innovation (House Oversight and Government Reform)” (2025)."
 facts:
   - text: "Brady-Estevez said that while at the National Science Foundation she funded companies working on what entrepreneurs called “UAP adjacent or UAP inspired technologies”."
     status: claimed

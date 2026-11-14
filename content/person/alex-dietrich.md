@@ -8,6 +8,9 @@ credentials:
 tags:
   - aviator
   - navy
+image: /assets/images/person-alex-dietrich.jpg
+portrait: /assets/images/person-alex-dietrich-portrait.jpg
+image_caption: "Alex Dietrich. Still from “UFOs and the Military: A Combat Pilot's Experience with the Unknown — Alex Dietrich” (2025)."
 rel:
   - [ witness, inc-nimitz-2004 ]
   - [ flew with, david-fravor, "She flew the second Super Hornet in Fravor's flight during the 2004 Tic Tac encounter" ]

@@ -8,6 +8,9 @@ credentials:
     role: General, U.S. Air Force; Commander, NORAD & U.S. Northern Command
 tags:
   - air-force
+image: /assets/images/person-gregory-guillot.jpg
+portrait: /assets/images/person-gregory-guillot-portrait.jpg
+image_caption: "Gen. Gregory M. Guillot, official U.S. Air Force portrait, 2024. Photo: U.S. Air Force, public domain, via Wikimedia Commons."
 facts:
   - text: "Guillot has said unidentified drones or aircraft violated restricted airspace over Langley AFB on 17 nights in a row in December 2023."
     status: claimed

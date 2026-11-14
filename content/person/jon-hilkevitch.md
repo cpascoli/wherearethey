@@ -6,6 +6,9 @@ credentials:
   - category: journalist
     role: "Transportation reporter, Chicago Tribune"
 tags: [journalist]
+image: /assets/images/person-jon-hilkevitch.jpg
+portrait: /assets/images/person-jon-hilkevitch-portrait.jpg
+image_caption: "Jon Hilkevitch. Still from “O'Hare UFO 2006: CNN's interview with United mechanic ‘Joe’, and Tribune reporter Jon Hilkevitch” (2007)."
 rel:
   - [ reported on, inc-ohare-2006, "His Tribune story of 1 January 2007 broke the O'Hare sighting" ]
 facts:

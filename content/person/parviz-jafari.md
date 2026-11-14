@@ -9,6 +9,8 @@ credentials:
   - category: military
     role: Retired General, Iranian Air Force
 tags: [aviator, international]
+image: /assets/images/person-parviz-jafari.jpg
+image_caption: "Parviz Jafari. Still from “National Press Club - November 12th, 2007. UFO Close Encounters”."
 rel:
   - [ described in, doc-dia-tehran-1976, "The attaché report describes the two F-4 intercepts and the loss of instruments and weapons" ]
   - [ described in, doc-dia-tehran-1976-cable, "the failure of its weapons control panel as the pilot tried to fire an AIM-9" ]

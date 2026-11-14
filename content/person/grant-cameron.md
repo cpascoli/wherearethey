@@ -5,6 +5,9 @@ credentials:
   - category: journalist
     role: "UFO researcher (Winnipeg) on presidents, the White House and the Canadian government files"
 tags: [international, foia]
+image: /assets/images/person-grant-cameron.jpg
+portrait: /assets/images/person-grant-cameron-portrait.jpg
+image_caption: "Grant Cameron. Still from “Citizen Hearing 2013: Truth, Lies & the Cover-up, Part 2”."
 rel:
   - [ testified at, h-2013-citizen-hearing ]
   - [ researched, project-magnet, "He has published the Canadian government and Wilbert Smith papers" ]

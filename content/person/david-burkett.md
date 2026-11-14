@@ -5,6 +5,9 @@ credentials:
   - category: policy-expert
     role: "Cybersecurity researcher, Corelight Labs; author of Lies Above (2026)"
 tags: [disclosure, secrecy]
+image: /assets/images/person-david-burkett.jpg
+portrait: /assets/images/person-david-burkett-portrait.jpg
+image_caption: "David Burkett. Still from “Whistleblowers 'fear being murdered': Ross Coulthart with David Burkett, author of Lies Above” (2026)."
 rel:
   - [ authored, book-lies-above ]
 facts:

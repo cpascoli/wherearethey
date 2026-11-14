@@ -6,6 +6,9 @@ credentials:
   - category: military
     role: "Colonel (navigator), Uruguayan Air Force (ret.); president of CRIDOVNI"
 tags: [military, international]
+image: /assets/images/person-ariel-sanchez-rios.jpg
+portrait: /assets/images/person-ariel-sanchez-rios-portrait.jpg
+image_caption: "Ariel Sánchez Ríos. Still from “Citizen Hearing 2013: South American Encounters, Part 1”."
 rel:
   - [ led, cridovni, "Signed CRIDOVNI's communiqué 4/2023 as \"Presidente de la CRIDOVNI\"" ]
   - [ testified at, h-2013-citizen-hearing ]

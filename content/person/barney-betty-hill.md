@@ -9,6 +9,9 @@ credentials:
 tags:
   - abduction
   - missing-time
+image: /assets/images/person-barney-betty-hill.jpg
+portrait: /assets/images/person-barney-betty-hill-portrait.jpg
+image_caption: "Barney & Betty Hill. Still from “Betty Hill: the ‘lost’ 1999 interview (Portsmouth, NH)”."
 facts:
   - text: "Betty Hill retold the September 1961 White Mountains encounter in a 1999 interview, including the “star map” later linked to Zeta Reticuli."
     status: claimed

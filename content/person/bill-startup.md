@@ -6,6 +6,9 @@ credentials:
   - category: aviator
     role: Captain, Safe Air (Argosy freighter), pilot on the December 30–31, 1978 Kaikōura flight
 tags: [aviator, international]
+image: /assets/images/person-bill-startup.jpg
+portrait: /assets/images/person-bill-startup-portrait.jpg
+image_caption: "Bill Startup. Still from “The Kaikoura UFOs - 1978” (2020)."
 rel:
   - [ described in, doc-rnzaf-air-1080-6-897-kaikoura ]
   - [ witness, inc-kaikoura-1978 ]

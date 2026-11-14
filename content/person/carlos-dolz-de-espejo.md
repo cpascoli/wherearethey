@@ -8,6 +8,9 @@ credentials:
   - category: aviator
     role: "Air Force pilot"
 tags: [military, aviator, international]
+image: /assets/images/person-carlos-dolz-de-espejo.jpg
+portrait: /assets/images/person-carlos-dolz-de-espejo-portrait.jpg
+image_caption: "Carlos Dolz de Espejo. Still from “En familia: OVNIs (RTVE, 1989), with Lt. Gen. Carlos Dolz de Espejo and Iberia captain Juan Ignacio Lorenzo”."
 rel:
   - [ witness, inc-canarias-1976 ]
 facts:

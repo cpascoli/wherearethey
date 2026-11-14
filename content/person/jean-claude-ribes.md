@@ -4,6 +4,8 @@ credentials:
   - category: academia
     role: Astronomer, French National Centre for Space Studies (CNES); member of GEIPAN's steering committee
 tags: [science, international]
+image: /assets/images/person-jean-claude-ribes.jpg
+image_caption: "Jean-Claude Ribes. Still from “National Press Club - November 12th, 2007. UFO Close Encounters”."
 rel:
   - [ member of, geipan ]
 facts:

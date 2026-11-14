@@ -7,6 +7,9 @@ credentials:
     role: Secretary of the Air Force
 tags:
   - air-force
+image: /assets/images/person-frank-kendall.jpg
+portrait: /assets/images/person-frank-kendall-portrait.jpg
+image_caption: "Frank Kendall. Still from “House Armed Services Committee: Department of the Air Force FY2025 budget request” (2024)."
 facts:
   - text: "Asked by Rep. Rob Wittman at a House Armed Services hearing on 17 April 2024 about the drone incursions that forced Langley AFB to shut down, Kendall answered with threats to air bases by theater (Chinese missiles in the Pacific, small UAVs in the Middle East and Europe) and the Army-led air base defence study, without addressing Langley."
     status: documented

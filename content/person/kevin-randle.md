@@ -6,6 +6,8 @@ credentials:
     role: "UFO researcher and author; Lt. Col., Iowa Army National Guard (ret. 2009), formerly an Army helicopter pilot in Vietnam and an Air Force and Army intelligence officer"
 date: 1949-06-04
 tags: [roswell, military]
+image: /assets/images/person-kevin-randle.jpg
+image_caption: "Kevin Randle. Still from “UFO Cover-Up Live with Larry King” (1994)."
 rel:
   - [ testified at, h-2013-citizen-hearing ]
   - [ researched, inc-roswell-1947, "Co-author of UFO Crash at Roswell (1991) and many later books on the case" ]

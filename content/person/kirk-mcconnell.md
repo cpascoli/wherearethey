@@ -8,6 +8,9 @@ credentials:
 tags:
   - congress
   - intelligence
+image: /assets/images/person-kirk-mcconnell.jpg
+portrait: /assets/images/person-kirk-mcconnell-portrait.jpg
+image_caption: "Kirk McConnell. Still from “Understanding UAP: Science, National Security & Innovation (House Oversight and Government Reform)” (2025)."
 rel:
   - [ testified at, h-2025-05-01 ]
   - [ commented on, langley-afb, "He thinks triangles seen near bases such as Langley are “probably ours”" ]

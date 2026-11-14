@@ -5,6 +5,8 @@ credentials:
   - category: military
     role: Colonel (flight surgeon), U.S. Army National Guard; son of Roswell intelligence officer Maj. Jesse Marcel
 tags: [military, roswell]
+image: /assets/images/person-jesse-marcel-jr.jpg
+image_caption: "Jesse Marcel Jr.. Still from “Roswell reunion interviews, July 1990: Jesse Marcel Jr., Vern Maltais and Robert Porter (National Archives, ‘Roswell Reports, Volume 6’)”."
 rel:
   - [ witness, inc-roswell-1947 ]
   - [ testified at, h-2013-citizen-hearing ]

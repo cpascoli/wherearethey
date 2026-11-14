@@ -3,6 +3,9 @@ name: Armindo de Sousa Viriato
 aka: [Armindo Viriato, Viriato]
 credentials: [{ category: aviator, role: "Captain and fighter pilot, Brazilian Air Force" }]
 tags: [aviator, air-force, international]
+image: /assets/images/person-armindo-viriato.jpg
+portrait: /assets/images/person-armindo-viriato-portrait.jpg
+image_caption: "Armindo de Sousa Viriato. Still from “Fantástico: A Noite Oficial dos OVNIs — 30 anos depois” (2016)."
 rel:
   - [ witness, inc-noite-oficial-ovnis-1986 ]
   - [ described in, doc-fab-noite-oficial-ovnis-1986, "The Brazilian Air Force report records the interceptor pilots' radar contacts and lights" ]

@@ -10,6 +10,9 @@ credentials:
 tags:
   - navy
   - radar
+image: /assets/images/person-pj-hughes.jpg
+portrait: /assets/images/person-pj-hughes-portrait.jpg
+image_caption: "P.J. Hughes. Still from “P.J. Hughes: the E-2 Hawkeye's data recorders taken after the Tic Tac encounter” (2019)."
 rel:
   - [ witness, inc-nimitz-2004 ]
   - [ disputed by, david-fravor, "Fravor rejects the idea that anyone came to the ships or that witnesses signed NDAs" ]

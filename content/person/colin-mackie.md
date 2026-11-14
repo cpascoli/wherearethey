@@ -5,6 +5,9 @@ credentials:
   - category: civilian
     role: Headmaster, Ariel School, Ruwa (1994)
 tags: [school]
+image: /assets/images/person-colin-mackie.jpg
+portrait: /assets/images/person-colin-mackie-portrait.jpg
+image_caption: "Colin Mackie. Still from “Ariel School, 1994: original BBC news report”."
 rel:
   - [ witness, inc-ariel-1994 ]
 facts:

@@ -5,6 +5,9 @@ credentials:
   - category: civilian
     role: "Lavender farmer at Valensole, Alpes-de-Haute-Provence"
 tags: [international]
+image: /assets/images/person-maurice-masse.jpg
+portrait: /assets/images/person-maurice-masse-portrait.jpg
+image_caption: "Maurice Masse. Still from “Maurice Masse interviewed on the Valensole encounter, about ten years on” (1975)."
 rel:
   - [ witness, inc-valensole-1965, "Found a small craft and two beings in his lavender field on 1 July 1965; heard by the gendarmerie on 2 July and 18 August" ]
 facts:

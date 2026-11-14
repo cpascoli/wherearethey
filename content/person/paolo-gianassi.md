@@ -3,6 +3,9 @@ name: Paolo Gianassi
 aka: [Colonnello Gianassi, Gianassi]
 credentials: [{ category: military, role: "Colonel, Italian Air Force; in 1966 air traffic controller in the tower at San Damiano (Piacenza)" }]
 tags: [air-force, international]
+image: /assets/images/person-paolo-gianassi.jpg
+portrait: /assets/images/person-paolo-gianassi-portrait.jpg
+image_caption: "Paolo Gianassi. Still from “Paolo Gianassi, tower controller at San Damiano on 17 October 1966” (2022)."
 rel:
   - [ witness, inc-san-damiano-1966, "Controller on duty in the San Damiano tower; followed Sottotenente Bocca's chase on the radio" ]
   - [ served with, dante-golinelli, "Names Golinelli among the six or seven NCO pilots at San Damiano in 1966" ]

@@ -6,6 +6,8 @@ credentials:
   - category: military
     role: U.S. Air Force intelligence officer and aircrew (ret.), with nearly 5,000 flying hours (self-described, 2001)
 tags: [military, intelligence, disclosure-project]
+image: /assets/images/person-george-filer.jpg
+image_caption: "George Filer III. Still from “Disclosure Project press conference, National Press Club (May 9, 2001), full event”."
 rel:
   - [ testified at, h-2013-citizen-hearing ]
   - [ testified at, ev-disclosure-project-2001 ]

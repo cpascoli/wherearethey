@@ -5,6 +5,9 @@ credentials:
   - category: military
     role: Lieutenant Colonel, U.S. Air Force (ret.)
 tags: [military, aviator]
+image: /assets/images/person-richard-french.jpg
+portrait: /assets/images/person-richard-french-portrait.jpg
+image_caption: "Richard French. Still from “Citizen Hearing 2013: Pilots & Aviation Experts”."
 rel:
   - [ witness, inc-phoenix-lights-1997 ]
   - [ testified at, h-2013-citizen-hearing ]

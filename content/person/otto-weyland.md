@@ -5,6 +5,9 @@ credentials:
   - category: military
     role: Lieutenant General, U.S. Air Force; Commander, Far East Air Forces (Korean War)
 tags: [air-force]
+image: /assets/images/person-otto-weyland.jpg
+portrait: /assets/images/person-otto-weyland-portrait.jpg
+image_caption: "Maj. Gen. Otto P. Weyland, commanding the XIX Tactical Air Command, 1943. Photo: U.S. Air Force, public domain, via Wikimedia Commons."
 facts:
   - text: "Weyland told the press after the January 1952 B-29 sightings: “We can't say there's nothing to it, but unless we can get more data, I don't think we can expect a conclusive answer.”"
     status: claimed

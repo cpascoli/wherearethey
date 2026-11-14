@@ -7,6 +7,9 @@ credentials:
     role: Senior Chief Petty Officer, U.S. Navy
 tags:
   - navy
+image: /assets/images/person-alexandro-wiggins.jpg
+portrait: /assets/images/person-alexandro-wiggins-portrait.jpg
+image_caption: "Alexandro Wiggins. Still from “Restoring Public Trust Through UAP Transparency and Whistleblower Protection” (2025)."
 rel:
   - [ testified at, h-2025-09-09 ]
   - [ encouraged by, tim-gallaudet, "Gallaudet says he encouraged Wiggins to come forward" ]

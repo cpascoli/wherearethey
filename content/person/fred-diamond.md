@@ -5,6 +5,9 @@ credentials:
   - category: law-enforcement
     role: Sheriff, Jackson County, Mississippi (1973)
 tags: [law-enforcement]
+image: /assets/images/person-fred-diamond.jpg
+portrait: /assets/images/person-fred-diamond-portrait.jpg
+image_caption: "Fred Diamond. Still from “Pascagoula on CTV's W5: Hickson, Parker and Sheriff Diamond” (1974)."
 rel:
   - [ investigated, inc-pascagoula-1973 ]
 facts:

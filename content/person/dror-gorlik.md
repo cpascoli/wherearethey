@@ -5,6 +5,9 @@ credentials:
   - category: aviator
     role: "Former Israeli Air Force fighter pilot (Skyhawk, Kfir, F-15) and commander of two squadrons; later El Al pilot for 27 years"
 tags: [aviator, international]
+image: /assets/images/person-dror-gorlik.jpg
+portrait: /assets/images/person-dror-gorlik-portrait.jpg
+image_caption: "Dror Gorlik. Still from “Israeli fighter pilot: ‘I saw a UFO over Israel's skies’ (Dror Gorlik, Anomaly)” (2026)."
 rel:
   - [ witness, inc-tel-nof-1998 ]
 facts:

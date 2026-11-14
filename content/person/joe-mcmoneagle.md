@@ -8,6 +8,9 @@ credentials:
 tags:
   - consciousness
   - intelligence
+image: /assets/images/person-joe-mcmoneagle.jpg
+portrait: /assets/images/person-joe-mcmoneagle-portrait.jpg
+image_caption: "Joe McMoneagle. Still from “Joe McMoneagle - CIA's Project Stargate | SRS #95” (2024)."
 rel:
   - [ worked at, stargate ]
 facts:

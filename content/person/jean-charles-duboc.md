@@ -5,6 +5,8 @@ credentials:
   - category: aviator
     role: Captain, Air France (flight AF 3532, 1994); former French Air Force pilot
 tags: [aviator, international]
+image: /assets/images/person-jean-charles-duboc.jpg
+image_caption: "Jean-Charles Duboc. Still from “National Press Club - November 12th, 2007. UFO Close Encounters”."
 rel:
   - [ described in, doc-geipan-af3532, "GEIPAN's file records the captain and copilot describing a brown or dark red disc" ]
   - [ witness, inc-air-france-3532-1994 ]

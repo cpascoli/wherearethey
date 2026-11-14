@@ -8,6 +8,9 @@ credentials:
   - category: military
     role: 27 years in the U.S. Air Force; Air Vehicle Program Manager, F/A-22 System Program Office; Chief, F-16 System Program Office
 tags: [aviator, air-force, nuclear]
+image: /assets/images/person-dan-isbell.jpg
+portrait: /assets/images/person-dan-isbell-portrait.jpg
+image_caption: "Dan Isbell. Still from “Air Force Test Pilot Saw a Silent Triangular Craft Over an English Golf Course | Dan Isbell Part I” (2026)."
 rel:
   - [ helped by, ryan-graves, "He came forward to Graves's Americans for Safe Aerospace, and Graves arranged an FBI interview" ]
   - [ links to, inc-rendlesham-1980, "He links his own sighting that night to the Rendlesham Forest incident" ]

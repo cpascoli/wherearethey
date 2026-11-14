@@ -8,6 +8,9 @@ credentials:
 tags:
   - whistleblower
   - crash-retrieval
+image: /assets/images/person-jake-barber.jpg
+portrait: /assets/images/person-jake-barber-portrait.jpg
+image_caption: "Jake Barber. Still from “‘I Retrieved a UFO With My Helicopter!’ Jake Barber with Jesse Michels” (2025)."
 rel:
   - [ alleges, crash-retrieval, "Says he flew a helicopter on a classified mission to retrieve a UAP" ]
 facts:

@@ -10,6 +10,9 @@ tags:
   - intelligence
   - crash-retrieval
   - skinwalker
+image: /assets/images/person-james-lacatski.jpg
+portrait: /assets/images/person-james-lacatski-portrait.jpg
+image_caption: "James Lacatski. Still from “‘He ran the Pentagon's secret UFO program, and says we've been played’: James Lacatski, part 1” (2025)."
 rel:
   - [ worked at, dia ]
   - [ contracted, robert-bigelow, "Bigelow's BAASS won the contract for AAWSAP, which Lacatski ran" ]

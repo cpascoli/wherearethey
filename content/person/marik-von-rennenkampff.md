@@ -13,6 +13,9 @@ credentials:
     role: UAP analyst and columnist
 tags:
   - disclosure
+image: /assets/images/person-marik-von-rennenkampff.jpg
+portrait: /assets/images/person-marik-von-rennenkampff-portrait.jpg
+image_caption: "Marik von Rennenkampff. Still from “UAP & National Security: Mellon, Gallaudet, von Rennenkampff & McConnell at Disclosure Forum 2026”."
 rel:
   - [ disputes, sean-kirkpatrick, "He says Kirkpatrick twice told him the Gimbal object was a balloon reflecting sunlight, and rejects it" ]
   - [ endorsed by, michael-shellenberger, "Shellenberger says von Rennenkampff has won the Gimbal argument against Mick West's lens-glare explanation" ]

@@ -5,6 +5,8 @@ credentials:
   - category: military
     role: Lieutenant Colonel, U.S. Air Force (ret.); Air Force Office of Special Investigations (late 1940s); later U.S. Foreign Service (self-described, 2001)
 tags: [military, disclosure-project]
+image: /assets/images/person-charles-brown.jpg
+image_caption: "Charles L. Brown. Still from “Disclosure Project press conference, National Press Club (May 9, 2001), full event”."
 rel:
   - [ testified at, ev-disclosure-project-2001 ]
 facts:

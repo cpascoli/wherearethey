@@ -8,6 +8,9 @@ credentials:
     role: Lt. Col., U.S. Army; Foreign Technology Desk, Army Research & Development
 tags:
   - crash-retrieval
+image: /assets/images/person-philip-corso.jpg
+portrait: /assets/images/person-philip-corso-portrait.jpg
+image_caption: "Philip J. Corso. Still from “Col. Philip J. Corso: The Day After Roswell lecture ‘at the Ranch’” (1998)."
 rel:
   - [ alleges, crash-retrieval, "Claimed he managed the reverse-engineering of artifacts recovered at Roswell" ]
 facts:

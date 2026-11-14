@@ -13,6 +13,9 @@ credentials:
 tags:
   - intelligence
   - disinformation
+image: /assets/images/person-richard-doty.jpg
+portrait: /assets/images/person-richard-doty-portrait.jpg
+image_caption: "Richard Doty. Still from “Rick Doty with George Knapp, part 2: MJ-12, the FBI and UFO cover stories for secret aircraft (Mystery Wire, 2019 interview)” (2020)."
 rel:
   - [ served at, area-51, "He says he served twice at Area 51 as a counterintelligence officer" ]
   - [ named in, doc-fbi-majestic-12, "AFOSI called the MJ-12 papers “completely bogus”; Doty says the FBI cleared him and that they were “based on actual documents”" ]

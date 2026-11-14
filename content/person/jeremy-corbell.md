@@ -5,6 +5,9 @@ credentials:
   - category: journalist
     role: Filmmaker and UFO investigative reporter (WEAPONIZED podcast, with George Knapp)
 tags: [journalist]
+image: /assets/images/person-jeremy-corbell.jpg
+portrait: /assets/images/person-jeremy-corbell-portrait.jpg
+image_caption: "Jeremy Corbell. Still from “‘The Government UFO Boss’: James Lacatski, part 2, on New Insights” (2025)."
 rel:
   - [ made film on, area-51, "He directed Bob Lazar: Area 51 & Flying Saucers (2018)" ]
   - [ interviewed, jay-stratton, "With Knapp he released Stratton's first on-camera interview in October 2026" ]

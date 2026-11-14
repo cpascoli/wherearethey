@@ -4,6 +4,9 @@ aka: [Col. Roberto Doz, colonnello Doz, Doz]
 match: [Doss, Dozzi]
 credentials: [{ category: aviator, role: "Colonel (ret.), Italian Air Force; S-2F anti-submarine pilot (41° Stormo, Catania) and helicopter pilot" }]
 tags: [aviator, air-force, international]
+image: /assets/images/person-roberto-doz.jpg
+portrait: /assets/images/person-roberto-doz-portrait.jpg
+image_caption: "Roberto Doz. Still from “L'UFO del colonnello Doz: Roberto Doz on his 1985 sighting” (2026)."
 rel:
   - [ witness, inc-san-cesareo-1985, "Saw the object from his car at the San Cesareo toll booth on 13 December 1985, driving home from the helicopter school at Frosinone" ]
   - [ member of, aeronautica-militare, "Joined the Air Force in 1970; retired as a colonel" ]
