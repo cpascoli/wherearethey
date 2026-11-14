@@ -125,6 +125,17 @@ facts:
     status: claimed
     by: jason-turner
     source: https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/
+  - text: "Gary Voorhis says he too saw a longer, clearer version of the ATFLIR video on the Princeton's Top Secret network: “I definitely saw video that was roughly eight to 10 minutes long and a lot more clear.”"
+    status: claimed
+    by: gary-voorhis
+    basis: first-hand
+    source: https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/
+  - text: "In January 2020 Pentagon spokesperson Susan Gough told Vice that the Navy has the video, and that “the length of the video that's been circulating since 2007 is the same as the length of the source video”; she would not say whether the source copy is of higher resolution or carries other data, and said the Pentagon does not expect to release it."
+    claims: [ tic-tac-beyond-known-technology ]
+    stance: context
+    basis: documented
+    status: claimed
+    source: https://www.vice.com/en/article/the-navy-has-secret-classified-video-of-an-infamous-ufo-incident/
   - text: "Fravor told the House Oversight Committee that “the incident was never investigated, none of my crew ever questioned, tapes were never taken”, and that no one contacted him until Jay Stratton did in 2009."
     status: claimed
     by: david-fravor
@@ -150,6 +161,23 @@ facts:
     status: claimed
     by: david-fravor
     source: v-lex-fridman-david-fravor@1:55:21
+  - text: "Ryan Weigelt says two men arrived on the Princeton by helicopter in generic flight suits, flew off in one of his detachment's SH-60B helicopters and came back with “a bunch of bags”, then went to the Admiral's Quarters with a guard outside the door."
+    status: claimed
+    by: ryan-weigelt
+    basis: first-hand
+    source: https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/
+  - text: "A Navy briefing slide on the case, released in January 2023, says “Pilots reported the incident through Intelligence Personnel, there was a large amount of harassment and ridicule throughout the Nimitz. Reporting terminated at 3rd Fleet, there was no process to share the reporting.”"
+    status: documented
+    source: doc-navy-tic-tac-slide-2004
+  - text: "The same slide concludes: “Although the debriefs of aircrew and other personnel within the Strike Group validated the event, there was very limited data to support technical analysis.”"
+    status: documented
+    source: doc-navy-tic-tac-slide-2004
+  - text: "In a response to a FOIA request from the researcher Christian Lambright, reported by Vice in January 2020, the Office of Naval Intelligence said it had found briefing slides on the incident classified TOP SECRET, whose release “would cause exceptionally grave damage to the National Security of the United States”, and that it “possesses a video classified SECRET” for which it is not the classification authority. It released neither."
+    status: claimed
+    source: https://www.vice.com/en/article/the-navy-has-secret-classified-video-of-an-infamous-ufo-incident/
+  - text: "The Defense Intelligence Agency's FOIA log for fiscal year 2018 records a request from Robert Powell (FOIA-00119-2018) for all information on the VAW-117 E-2 Hawkeye that tracked the unknown, “all radar information and radar contact logs from the USS Princeton related to the unknown object”, the CIC watch logs, ship-to-aircraft audio and the messages of 10–16 November 2004. The log does not record what, if anything, was released."
+    status: documented
+    source: https://documents2.theblackvault.com/documents/foia/DIA-FOIA_Request_Log_2018.pdf
   - text: "On the other aircrew, Fravor says the back-seater of his wingman's jet has talked but is “off the grid”; the pilot of that jet had appeared on television without her name being released; and the pilot of the jet that took the video barely recalls the flight."
     status: claimed
     by: david-fravor
@@ -229,8 +257,8 @@ facts:
 
 On 14 November 2004, two F/A-18F Super Hornets from the USS Nimitz, led by Cmdr. David Fravor with Alex Dietrich, a junior pilot new to the squadron, flying the second jet, were pulled off a training exercise off southern California and sent by the cruiser USS Princeton to an unknown contact. The Princeton's radar operators say they had been tracking such objects for days: from about 10 November in Kevin Day's account, for over two weeks in what the controller told Fravor. Fravor testified under oath that the four aircrew saw a small white object shaped like a Tic Tac, with no wings, rotors or exhaust, moving over a patch of churning water; it turned to meet his descending jet, then “rapidly accelerated in front of us and disappeared”, and the Princeton reported it moments later at the jets' CAP point, about 60 miles away. Dietrich, who saw it for about 10 seconds, confirms the object and the CAP-point call.
 
-About an hour later a second Black Aces crew launched with Lt. Chad Underwood, who recorded the object on the jet's infrared targeting pod after, he and Fravor say, the radar was jammed. That 76-second video, FLIR1, leaked in 2007, was published by *The New York Times* in December 2017 with the first reporting on the Pentagon's AATIP, and officially released by the Department of Defense on 27 April 2020, which said the objects in the videos remain “unidentified”. Radar operators Kevin Day and Gary Voorhis, Hawkeye technician P. J. Hughes and sailors Jason Turner and Ryan Weigelt have described related observations. Accounts of what happened to the data differ: Fravor says the incident was never investigated and the tapes were never seized; Hughes says the Hawkeye's data recorders were taken away and never came back; Voorhis relays a second-hand story of sonar crews made to sign NDAs. Fravor says no one asked him about it until 2009, when Jay Stratton investigated the case for the DIA's AAWSAP program, its first, according to George Knapp.
+About an hour later a second Black Aces crew launched with Lt. Chad Underwood, who recorded the object on the jet's infrared targeting pod after, he and Fravor say, the radar was jammed. That 76-second video, FLIR1, leaked in 2007, was published by *The New York Times* in December 2017 with the first reporting on the Pentagon's AATIP, and officially released by the Department of Defense on 27 April 2020, which said the objects in the videos remain “unidentified”. Radar operators Kevin Day and Gary Voorhis, Hawkeye technician P. J. Hughes and sailors Jason Turner and Ryan Weigelt have described related observations. Accounts of what happened to the data differ: Fravor says the incident was never investigated and the tapes were never seized; Hughes says the Hawkeye's data recorders were taken away and never came back; Voorhis relays a second-hand story of sonar crews made to sign NDAs. Fravor says no one asked him about it until 2009, when Jay Stratton investigated the case for the DIA's AAWSAP program, its first, according to George Knapp. The Navy's own briefing slide, released in 2023, says the debriefs “validated the event” but there was “very limited data to support technical analysis”, and that the reporting stopped at 3rd Fleet. In 2020 the Office of Naval Intelligence said it holds TOP SECRET briefing slides and a SECRET video on the incident, and withheld both; the Pentagon says its source video is no longer than the clip that leaked in 2007, while Voorhis, Turner and Weigelt say they saw a much longer one.
 
 The case is officially open. In May 2022 Deputy Director of Naval Intelligence Scott Bray told Congress under oath that Nimitz “simply remains unresolved”, while saying he could not point to anything that “definitively was not man-made”; AARO has published no resolution. Tim Gallaudet says AARO suggested the Tic Tac was American technology, and that Sean Kirkpatrick called it a DARPA experiment in a talk, which Kirkpatrick has not said on the record; Fravor doubts a secret of that kind could be kept for so long. Dietrich, more cautious than Fravor, first suspected a missile on a live range, a possibility she says the Pentagon has ruled out, and calls Mick West's parallax theory “just as plausible as any of the others”. A 2019 peer-reviewed paper led by the physicist Kevin Knuth estimates accelerations from about 76 g to over 5,000 g, but from witness accounts and the video: no radar data has been released.
 
-*Sources: [DoD statement on the release of the Navy videos (27 April 2020)](https://www.war.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/) · House Oversight hearing of 26 July 2023 (transcript) · [Fravor's written statement for the hearing](https://oversight.house.gov/wp-content/uploads/2023/07/David-Fravor-Statement-for-House-Oversight-Committee.pdf) · House Intelligence subcommittee hearing of 17 May 2022 (Bray) · interviews with Dietrich (2021, 2025), Underwood (2020), Day and Voorhis (2019, 2024) on file · Knuth et al., *Entropy* (2019)*
+*Sources: [DoD statement on the release of the Navy videos (27 April 2020)](https://www.war.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/) · House Oversight hearing of 26 July 2023 (transcript) · [Fravor's written statement for the hearing](https://oversight.house.gov/wp-content/uploads/2023/07/David-Fravor-Statement-for-House-Oversight-Committee.pdf) · House Intelligence subcommittee hearing of 17 May 2022 (Bray) · interviews with Dietrich (2021, 2025), Underwood (2020), Day and Voorhis (2019, 2024) on file · Knuth et al., *Entropy* (2019) · Navy “Tic Tac” briefing slide (released 2023) · [Vice on the ONI FOIA response (January 2020)](https://www.vice.com/en/article/the-navy-has-secret-classified-video-of-an-infamous-ufo-incident/) · [Popular Mechanics (2019)](https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/) · [DIA FOIA log, FY2018](https://documents2.theblackvault.com/documents/foia/DIA-FOIA_Request_Log_2018.pdf)*
