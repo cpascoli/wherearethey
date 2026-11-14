@@ -33,6 +33,20 @@ facts:
     status: claimed
     by: gary-voorhis
     source: v-2019-09-21-nimitz-encounters-gary-voorhis@2:22
+  - text: "In 2024 Voorhis said the tracks he saw dropped from 28,000 feet to sea level only after the intercept; before it they sat at about 30,000 feet doing one to 100 knots, and the ship tracked them for seven days before sending an F/A-18 (in 2019 he had said three to five days)."
+    status: claimed
+    by: gary-voorhis
+    basis: first-hand
+    source: v-2024-06-15-uap-phenomenon-gary-voorhis-huntsville-2024@12:38
+  - text: "Voorhis says the ship never treated the objects as a threat: no general quarters, no threat assessment, as there would be for any unknown aircraft without IFF; the radar team was told to check its systems, and the tracks stayed."
+    status: claimed
+    by: gary-voorhis
+    source: v-2024-06-15-uap-phenomenon-gary-voorhis-huntsville-2024@24:44
+  - text: "Voorhis says the radar data was taken without his being asked to sign a non-disclosure agreement, but relays, from a sonar-room sailor he says had been drinking (“take it with a grain of salt”), that the sonar team caught a passive acoustic track of the object and were made to sign NDAs under threat of jail."
+    status: claimed
+    by: gary-voorhis
+    basis: relayed
+    source: v-2024-06-15-uap-phenomenon-gary-voorhis-huntsville-2024@10:12
   - text: "On 14 November, F/A-18Fs led by Cmdr. David Fravor were vectored to one of the contacts; Fravor testified that he looked down from his jet at a small white “Tic Tac” object moving over a patch of white water."
     claims: [ tic-tac-beyond-known-technology ]
     stance: supports

@@ -4,6 +4,7 @@ aka: [UAPx]
 tags: [science]
 rel:
   - [ member, kevin-knuth, "Vice president; a co-author of its first field results" ]
+  - [ member, gary-voorhis, "Co-founder; a Princeton technician during the 2004 Nimitz encounters" ]
 links:
   - label: "UAlbany physicists test scientific approach to UAP research (University at Albany, via EurekAlert, June 2025)"
     url: https://www.eurekalert.org/news-releases/1086369
@@ -29,10 +30,15 @@ facts:
     by: kevin-knuth
     basis: first-hand
     source: v-2025-06-scu-conference-kevin-knuth-scientific-study-of-uap@13:14
+  - text: "Gary Voorhis says UAPx met AARO's director Sean Kirkpatrick and briefed him on its first expedition; Kirkpatrick asked technical questions, such as whether they had checked with NOAA, but UAPx never heard back."
+    status: claimed
+    by: gary-voorhis
+    basis: first-hand
+    source: v-2024-06-15-uap-phenomenon-gary-voorhis-huntsville-2024@29:40
 ---
 
 UAPx is a non-profit scientific research organization, working with physicists at the University at Albany, that takes cameras, infrared imagers, radiation detectors and other sensors into the field to record UAP with instruments rather than rely on eyewitness accounts. Its first field expedition, in 2021 to Laguna Beach, California, was published in 2025 in a special issue of *Progress in Aerospace Sciences*: the team explained all but one of the potential anomalies it recorded and found no evidence of non-human intelligence.
 
-Kevin Knuth is its vice president. It now watches a site in Connecticut and, by Knuth's account, was adding radar and radio-frequency sensors in 2026.
+Kevin Knuth is its vice president; Gary Voorhis, a radar technician on the USS Princeton during the 2004 Nimitz encounters, is a co-founder, and says UAPx briefed AARO's director Sean Kirkpatrick on its first expedition but never heard back. It now watches a site in Connecticut and, by Knuth's account, was adding radar and radio-frequency sensors in 2026.
 
-*Sources: University at Albany press release (June 2025); NewsNation Reality Check interview with Kevin Knuth (September 2026)*
+*Sources: University at Albany press release (June 2025); NewsNation Reality Check interview with Kevin Knuth (September 2026); Gary Voorhis at the SCU conference (2024)*

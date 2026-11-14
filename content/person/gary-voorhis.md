@@ -59,6 +59,10 @@ facts:
     by: robert-powell
     basis: relayed
     source: v-2021-03-05-scu-nimitz-flight-characteristics-panel@25:40
+  - text: "In 2024 he said that all he can honestly say is that he saw technology he can't explain, and that he had only recently heard of the ballistic-missile warning in Kevin Day's account, a question for Day."
+    status: claimed
+    by: gary-voorhis
+    source: v-2024-06-15-uap-phenomenon-gary-voorhis-huntsville-2024@11:15
 ---
 
 Gary Voorhis was a U.S. Navy petty officer third class aboard the cruiser USS Princeton in 2004, near the end of six years' service that included two combat tours. He was the ship's only technician for its Cooperative Engagement Capability and AEGIS combat system, and so was responsible for the radars that tracked the "Tic Tac" objects.
@@ -67,4 +71,6 @@ He says that when the new SPY-1B radar began showing unexplained tracks, the sys
 
 David Fravor has publicly rejected parts of these accounts. He says no one came to the ships, there were no non-disclosure agreements and no ten-minute video, and that the tapes were probably reused by accident. No official record of any data seizure has been released.
 
-*Sources: [Popular Mechanics (2019)](https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/) · Nimitz incident record*
+He later co-founded UAPx, which takes cameras and sensors into the field. Interviewed at the Scientific Coalition for UAP Studies conference in 2024, he said the tracks dropped to sea level only after the intercept, that the ship never treated the objects as a threat, and that UAPx had briefed AARO's Sean Kirkpatrick without hearing back.
+
+*Sources: [Popular Mechanics (2019)](https://www.popularmechanics.com/military/research/a29771548/navy-ufo-witnesses-tell-truth/) · interview at the SCU conference (2024) · Nimitz incident record*
