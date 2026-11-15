@@ -266,7 +266,9 @@
       Promise.all(files.map(read)).then(function (codes) {
         return ready.then(function () {
           clearTimeout(shown); boot.remove();
-          codes.forEach(function (code, i) { var s = document.createElement('script'); s.textContent = code + '\n//# sourceURL=' + files[i][0]; document.body.appendChild(s); });
+          // one script per task, so the page can paint and answer input in between (instead of one long task)
+          var run = function (i) { if (i >= codes.length) return; var s = document.createElement('script'); s.textContent = codes[i] + '\n//# sourceURL=' + files[i][0]; document.body.appendChild(s); setTimeout(function () { run(i + 1); }, 0); };
+          run(0);
         });
       }, function () { ready.then(function () { clearTimeout(shown); boot.remove(); plain(); }); });
     })();
