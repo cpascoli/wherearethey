@@ -876,7 +876,7 @@ html:not(.js) .top, html:not(.js) .app, html:not(.js) .views, html:not(.js) .mor
 .ssr-pre a { color: var(--accent); text-decoration: none; }
 .ssr-pre figure { margin: 14px 0; }
 .ssr-pre figure img { display: block; width: 100%; max-width: 720px; height: auto; border-radius: 4px; }
-.ssr-pre .ssr-portrait img { max-width: 240px; aspect-ratio: 4 / 5; object-fit: cover; }
+.ssr-pre .ssr-portrait img { max-width: 260px; aspect-ratio: 4 / 5; object-fit: cover; } /* not smaller than the app's portrait (240px), or the app's copy counts as a later largest paint */
 .ssr-pre figcaption { font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.4; max-width: 720px; }
 .ssr-pre ul, .ssr-pre ol { padding-left: 20px; }
 .ssr-pre .ssr-creds { list-style: none; padding: 0; color: var(--muted); font-size: 13px; }
