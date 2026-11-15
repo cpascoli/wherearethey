@@ -1595,6 +1595,15 @@
     return links.length ? `<div class="p-sec p-side"><h4>How the people making it are connected <span>${links.length}</span></h4><ul class="cl-links" data-collapse="5">${links.map(x => `<li>${chip(x.s)}<span class="cl-lbl">${esc(x.label)}</span>${chip(x.t)}${x.note ? `<div class="small muted">${esc(x.note)}</div>` : ''}</li>`).join('')}</ul></div>` : '';
   }
   // ───────────── detail panel ─────────────
+  // books: the summary's opening paragraph, shown in the header beside the cover; the Summary keeps the rest, or is left
+  // out when only its Sources line remains (`only`: that line goes under the lead). Same rule as bookLead() in pages.mjs.
+  function bookLead(e) {
+    if (e.type !== 'book' || !e.body) return null;
+    const m = String(e.body).match(/^\s*<p>([\s\S]*?)<\/p>\s*/);
+    if (!m || /^<em>Sources?:/.test(m[1])) return null;
+    const rest = e.body.slice(m[0].length).trim();
+    return { lead: m[1], rest, only: !rest || /^<p><em>Sources?:[\s\S]*<\/p>$/.test(rest) && rest.split('<p>').length === 2 };
+  }
   function renderPanel(e) {
     const t = TYPES[e.type] || TYPES.concept;
     const h = [];
@@ -1615,6 +1624,9 @@
     if (!offGraph(e.type) && !(state.trail && !state.trail.core && state.view === 'graph')) hp(`<button class="btn small p-explore" data-explore="${esc(e.id)}" title="Show only this file and its connections, then follow a trail">◎ Explore from here</button>`);
     if (e.aka.length) hp(`<div class="p-aka">Also: ${e.aka.map(esc).join(' · ')}</div>`);
     if (e.type === 'film' || e.type === 'book') hp(`<div class="p-meta">${esc([e.credits, shelfMeta(e), e.isbn ? `ISBN ${e.isbn}` : ''].filter(Boolean).join(' · '))}</div>`);
+    // books: the summary's opening paragraph sits in the header beside the cover, as a person's bio does (bookLead)
+    const lead = bookLead(e);
+    if (lead) hp(`<p class="p-lead">${lead.lead}</p>${lead.only ? `<div class="p-lead-src">${lead.rest}</div>` : ''}`);
     if (e.cover) h.push(`<div class="p-head has-cover"><div class="p-head-main">${head.join('')}</div><img class="p-cover" src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" loading="lazy"></div>`);
     // the caption is clamped to two lines under the photo; the full text shows on hover
     if (portrait) h.push(`<div class="p-head has-portrait"><div class="p-head-main">${head.join('')}</div><figure class="p-portrait"><img src="${esc(e.portrait)}" alt="${esc(e.imageCaption || e.name)}">${e.imageCaption ? `<figcaption title="${esc(e.imageCaption)}">${esc(e.imageCaption)}</figcaption>` : ''}</figure></div>`);
@@ -1636,7 +1648,8 @@
         <div class="small muted" style="margin-top:6px">${e.transcript ? `${e.transcript.segments.toLocaleString()} transcript lines (${({ 'youtube-auto': 'auto captions', youtube: 'subtitles', whisper: 'Whisper transcript', 'whisper-translated': 'Whisper translation', translation: 'English translation of the published subtitles' })[e.transcript.source] || 'transcript'})` : 'No transcript yet'}${e.local ? ' · local copy' : ''}</div></div></div>`);
     }
     // the summary (a person's profile) comes before the videos
-    if (e.body) h.push(`<div class="p-sec"><h4>${e.type === 'person' ? 'Profile' : 'Summary'}</h4><div class="p-body p-bio${e.bio ? ' after-lead' : ''}">${e.body}</div></div>`);
+    const body = lead ? (lead.only ? '' : lead.rest) : e.body; // a book's opening paragraph is in the header already
+    if (body) h.push(`<div class="p-sec"><h4>${e.type === 'person' ? 'Profile' : 'Summary'}</h4><div class="p-body p-bio${e.bio || lead ? ' after-lead' : ''}">${body}</div></div>`);
     // glimpses: short passages from the book itself, each linked to the authorized excerpt or review it was checked against
     if (e.glimpses?.length) h.push(`<div class="p-sec" id="sec-glimpses"><h4>Glimpses <span>${e.glimpses.length}</span></h4><div class="glimpses" data-collapse="4">${e.glimpses.map(g => `
       <blockquote class="glimpse"><p>${esc(g.text)}</p><footer>${esc(g.where)}${g.url ? `${g.where ? ' · ' : ''}<a href="${esc(g.url)}" target="_blank" rel="noopener">${esc(g.via || 'source')} ↗</a>` : g.via ? ` · ${esc(g.via)}` : ''}</footer></blockquote>`).join('')}</div></div>`);

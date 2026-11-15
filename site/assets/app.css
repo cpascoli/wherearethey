@@ -772,6 +772,9 @@ body.resizing iframe { pointer-events: none; }
 .p-lead { font-size: 14.5px; line-height: 1.65; margin: 10px 0 12px; max-width: 72ch; }
 #panel-body.reading .p-lead { font-size: 16px; }
 #panel-body.reading .p-head.has-portrait .p-title { margin-top: 2px; }
+/* a book whose summary is one paragraph: that paragraph is the lead, and its Sources line follows it in the header */
+.p-lead-src { font-size: 13px; line-height: 1.5; color: var(--muted); margin: -4px 0 12px; max-width: 72ch; }
+.p-lead-src p { margin: 0; }
 /* a narrow side panel (dragged smaller) behaves like a phone: name and credentials first, the photo or cover below */
 @container panel (max-width: 520px) {
   #panel-body .p-head.has-portrait, #panel-body .p-head.has-cover { grid-template-columns: 1fr; gap: 4px; }
@@ -879,6 +882,19 @@ html:not(.js) .top, html:not(.js) .app, html:not(.js) .views, html:not(.js) .mor
 /* a person's header: name, credentials and bio on the left, the portrait on the right, as in the app's reading view (.p-head.has-portrait) */
 .ssr-head.has-portrait { display: grid; grid-template-columns: minmax(0, 1fr) 200px; gap: 0 40px; align-items: start; }
 .ssr-head.has-portrait .ssr-portrait { margin: 6px 0 0; }
+/* a book's header: title, details and the summary's opening paragraph on the left, the cover on the right, as in the reading view (.p-head.has-cover) */
+.ssr-head.has-cover { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 0 48px; align-items: start; }
+.ssr-pre .ssr-cover { display: block; width: 100%; max-width: 200px; height: auto; margin: 6px 0 12px 33px; border-radius: 3px; box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+.ssr-pre .ssr-head .ssr-meta { color: var(--muted); font-size: 13px; line-height: 1.5; margin: 6px 0 4px; } /* as .p-meta */
+.ssr-pre .ssr-lead-src { font-size: 13px; line-height: 1.5; color: var(--muted); margin: -4px 0 12px; max-width: 72ch; }
+.ssr-pre .ssr-lead-src p { margin: 0; }
+/* the app's “Explore from here” button, in the same place (here a link that does the same) */
+.ssr-pre .ssr-explore { margin: 2px 0 10px; line-height: 1; }
+.ssr-pre .ssr-explore a { display: inline-block; padding: 4px 10px; font-size: 12px; font-weight: 500; line-height: 1.5; border: 1px solid var(--border); border-radius: 7px; background: var(--panel-2); color: var(--text); }
+/* an explanation note above the title, as the app's .p-outcome */
+.ssr-pre .ssr-outcome { margin: 10px 0 4px; padding: 8px 10px; border-left: 3px solid var(--muted); background: var(--panel-2, rgba(127,127,127,.08)); font-size: 15px; line-height: 1.45; max-width: none; }
+.ssr-pre .ssr-outcome.outcome-disputed { border-left-color: #c9a227; }
+.ssr-pre .ssr-outcome.outcome-hoax { border-left-color: var(--outside); }
 /* the summary in the reading view's text size and column (.p-bio in the left column of .rd-grid), so it doesn't reflow when the app takes over */
 .ssr-pre .ssr-head + h2, .ssr-pre .ssr-lead + h2 { margin-top: 64px; } /* room for the app's section links above the summary */
 .ssr-pre .ssr-body { font-size: 15.5px; line-height: 1.65; max-width: 72ch; }
@@ -888,9 +904,17 @@ html:not(.js) .top, html:not(.js) .app, html:not(.js) .views, html:not(.js) .mor
 .ssr-pre .ssr-head .ssr-aka { color: var(--muted); font-size: 13px; }
 .ssr-pre .ssr-head figcaption { font-size: 11px; line-height: 1.35; margin-top: 5px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; } /* two lines, as the app's */
 .ssr-pre .ssr-portrait img { max-width: 260px; aspect-ratio: 4 / 5; object-fit: cover; } /* not smaller than the app's portrait, or the app's copy counts as a later largest paint */
+@media (min-width: 601px) and (max-width: 860px) { /* tablets: the app's panel is not the reading view here, so match .p-head's narrower columns */
+  .ssr-head.has-cover { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 24px; }
+  .ssr-pre .ssr-cover { justify-self: end; max-width: 240px; margin: 6px 0 12px; }
+  .ssr-head.has-portrait { grid-template-columns: minmax(0, 1fr) minmax(96px, 150px); gap: 18px; }
+  .ssr-head.has-portrait .ssr-portrait { justify-self: end; width: 100%; }
+}
 @media (max-width: 600px) { /* phones: the photo centred below, as in the app */
   .ssr-head.has-portrait { grid-template-columns: 1fr; }
   .ssr-head.has-portrait .ssr-portrait { justify-self: center; width: 100%; max-width: 260px; margin: 8px 0 12px; }
+  .ssr-head.has-cover { grid-template-columns: 1fr; }
+  .ssr-pre .ssr-cover { justify-self: center; max-width: 180px; margin: 8px 0 14px; }
   .ssr-pre .ssr-head figcaption { display: block; overflow: visible; }
   .ssr-pre .ssr-head .ssr-lead { font-size: 14.5px; } /* as .p-lead on phones */
 }

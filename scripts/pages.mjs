@@ -96,6 +96,17 @@ const leadSentences = (s, n = 150) => {
 };
 // what a searcher gets from a file, appended to its title (kept short so the whole title shows in results)
 // /claims order: statements made first-hand or from documents, then volume (keep in sync with app.js)
+const offGraph = t => t === 'record' || t === 'news' || t === 'claim'; // not graph nodes (as in app.js)
+// books: the summary's opening paragraph is shown in the header, beside the cover (as a person's bio is), so the space
+// beside the cover isn't left empty; the Summary keeps the rest, or is left out when only its Sources line remains
+// (`only`: the rest is shown under the lead). Same rule as bookLead() in app.js.
+export function bookLead(e) {
+  if (e.type !== 'book' || !e.body) return null;
+  const m = String(e.body).match(/^\s*<p>([\s\S]*?)<\/p>\s*/);
+  if (!m || /^<em>Sources?:/.test(m[1])) return null;
+  const rest = e.body.slice(m[0].length).trim();
+  return { lead: m[1], rest, only: !rest || /^<p><em>Sources?:[\s\S]*<\/p>$/.test(rest) && rest.split('<p>').length === 2 };
+}
 const claimWeight = c => c.assertions.filter(a => a.basis === 'first-hand' || a.basis === 'documented').length;
 const claimOrder = (a, b) => claimWeight(b) - claimWeight(a) || b.assertions.length - a.assertions.length;
 const CLAIM_LABEL = { open: 'Open', disputed: 'Disputed', supported: 'Supported by records', refuted: 'Refuted' };
@@ -152,35 +163,40 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     const kicker = [LABEL[e.type], fmtDate(e.date) + (e.end ? ` – ${fmtDate(e.end)}` : ''), e.place?.name].filter(Boolean).join(' · ');
     h.push(`<nav class="ssr-crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/a-z#${e.type}">${PLURAL[e.type]}</a> › ${esc(e.name)}</nav>`);
     h.push(`<p class="ssr-kicker">${esc(kicker)}</p>`);
-    // people with a portrait: name, credentials and bio on the left, the photo on the right (below on phones), as in the app's header,
-    // so the page doesn't rearrange itself when the app takes over
+    // as in the app, an explanation note sits above the title, so the picture below doesn't move down when the app takes over
+    if (e.outcome && e.outcome !== 'open') {
+      const lbl = { disputed: 'Partly explained', explained: 'Explained', hoax: 'Hoax' }[e.outcome];
+      const src = e.outcomeSource?.id ? ` (${link(e.outcomeSource.id)})` : e.outcomeSource?.url ? ` (<a href="${esc(e.outcomeSource.url)}" rel="noopener">source</a>)` : '';
+      h.push(`<p class="ssr-outcome outcome-${e.outcome}"><strong>${lbl}.</strong> ${esc(e.outcomeNote || '')}${src}</p>`);
+    }
+    // people with a portrait, and books with a cover: the title block on the left, the picture on the right (below on phones),
+    // as in the app's header, so the page doesn't rearrange itself when the app takes over
+    const bLead = bookLead(e); // books: the summary's opening paragraph, shown beside the cover (as a person's bio is)
     const head = [];
     head.push(`<h1>${esc(e.name)}</h1>`);
     if (e.credentials?.length) head.push(`<ul class="ssr-creds">${e.credentials.map(c => `<li>${esc(c.role || c.category)}</li>`).join('')}</ul>`);
     if (e.bio) head.push(`<p class="ssr-lead">${e.bio}</p>`); // a person's short bio, as in the app's header
+    if (!offGraph(e.type)) head.push(`<p class="ssr-explore"><a href="${e.path}?explore">◎ Explore from here</a></p>`); // as the app's button (same place, same height)
     if (e.aka?.length) head.push(`<p class="ssr-aka">Also known as ${e.aka.map(esc).join(', ')}</p>`);
-    const portraitHtml = e.portrait ? `<figure class="ssr-portrait"><img src="${esc(e.portrait)}" alt="${esc(e.imageCaption || e.name)}" width="220" height="275">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>` : '';
-    h.push(portraitHtml ? `<div class="ssr-head has-portrait"><div class="ssr-head-main">${head.join('')}</div>${portraitHtml}</div>` : head.join(''));
-    if (e.type === 'book') h.push(`<p>${[e.credits, e.publisher, e.pages && `${e.pages} pages`, e.isbn && `ISBN ${e.isbn}`].filter(Boolean).map(esc).join(' · ')}</p>`);
-    if (e.glimpses?.length) h.push(`<h2>Glimpses</h2>${e.glimpses.map(g => `<blockquote${g.url ? ` cite="${esc(g.url)}"` : ''}><p>${esc(g.text)}</p><footer>${esc(g.where)}${g.url ? `${g.where ? ' · ' : ''}<a href="${esc(g.url)}" rel="noopener">${esc(g.via || 'source')}</a>` : ''}</footer></blockquote>`).join('\n')}`);
-    if (e.type === 'film') h.push(`<p>${[e.credits, e.runtime && `${e.runtime} min`].filter(Boolean).map(esc).join(' · ')}</p>`);
-    if (e.cover) h.push(`<img src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" width="200">`);
+    if (e.type === 'book') head.push(`<p class="ssr-meta">${[e.credits, e.publisher, e.pages && `${e.pages} pages`, e.isbn && `ISBN ${e.isbn}`].filter(Boolean).map(esc).join(' · ')}</p>`);
+    if (e.type === 'film') head.push(`<p class="ssr-meta">${[e.credits, e.runtime && `${e.runtime} min`].filter(Boolean).map(esc).join(' · ')}</p>`);
+    if (bLead) head.push(`<p class="ssr-lead">${bLead.lead}</p>${bLead.only ? `<div class="ssr-lead-src">${bLead.rest}</div>` : ''}`);
+    const pic = e.portrait ? `<figure class="ssr-portrait"><img src="${esc(e.portrait)}" alt="${esc(e.imageCaption || e.name)}" width="220" height="275">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>`
+      : e.cover ? `<img class="ssr-cover" src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" width="200">` : '';
+    h.push(pic ? `<div class="ssr-head ${e.portrait ? 'has-portrait' : 'has-cover'}"><div class="ssr-head-main">${head.join('')}</div>${pic}</div>` : `<div class="ssr-head">${head.join('')}</div>`);
     if (!e.portrait && e.image) h.push(`<figure><img src="${esc(e.image)}" alt="${esc(e.imageCaption || e.name)}" width="800">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>`);
     if (e.type === 'video') {
       const url = videoUrl(e);
       h.push(`<p>${[e.channel, fmtDate(e.date), e.duration && `${Math.round(e.duration / 60)} min`].filter(Boolean).map(esc).join(' · ')}${url ? ` · <a href="${esc(url)}" rel="noopener">Watch the original</a>` : ''}</p>`);
     }
     if (e.type === 'news' && e.url) h.push(`<p>${[e.kind, e.outlet].filter(Boolean).map(esc).join(' · ')} · <a href="${esc(e.url)}" rel="noopener">Original source</a></p>`);
-    if (e.outcome && e.outcome !== 'open') {
-      const lbl = { disputed: 'Partly explained', explained: 'Explained', hoax: 'Hoax' }[e.outcome];
-      const src = e.outcomeSource?.id ? ` (${link(e.outcomeSource.id)})` : e.outcomeSource?.url ? ` (<a href="${esc(e.outcomeSource.url)}" rel="noopener">source</a>)` : '';
-      h.push(`<p class="ssr-outcome"><strong>${lbl}.</strong> ${esc(e.outcomeNote || '')}${src}</p>`);
-    }
     if (e.type === 'claim') {
       const src = e.statusSource?.id ? ` (${link(e.statusSource.id)})` : e.statusSource?.url ? ` (<a href="${esc(e.statusSource.url)}" rel="noopener">source</a>)` : '';
       h.push(`<p class="ssr-outcome"><strong>${CLAIM_LABEL[e.status]}.</strong> ${esc(e.statusNote || '')}${src}</p>`);
     }
-    if (e.body) h.push(`<h2>${e.type === 'person' ? 'Profile' : 'Summary'}</h2><div class="ssr-body">${e.body}</div>`); // headed as in the app
+    const body = bLead ? (bLead.only ? '' : bLead.rest) : e.body; // a book's opening paragraph is in the header already
+    if (body) h.push(`<h2>${e.type === 'person' ? 'Profile' : 'Summary'}</h2><div class="ssr-body">${body}</div>`); // headed as in the app
+    if (e.glimpses?.length) h.push(`<h2>Glimpses</h2>${e.glimpses.map(g => `<blockquote${g.url ? ` cite="${esc(g.url)}"` : ''}><p>${esc(g.text)}</p><footer>${esc(g.where)}${g.url ? `${g.where ? ' · ' : ''}<a href="${esc(g.url)}" rel="noopener">${esc(g.via || 'source')}</a>` : ''}</footer></blockquote>`).join('\n')}`);
     if (e.type === 'claim') {
       // the evidence filed on the claim, and its links to other claims (as on the claim page in the app)
       const rels = (near.get(e.id) || []).filter(x => x.kind === 'rel');
