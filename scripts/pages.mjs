@@ -299,7 +299,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       cardJobs.push({ file, card: { type: e.type, label: LABEL[e.type].replace(/ \(PURSUE\)$/, ''), name: e.name, line, holds: holdsCard, neighbours } });
       image = `${SITE_URL}/${file}`;
     }
-    pages.push({ path: e.path, file: e.file, title, description, body: h.join('\n'), jsonld, image, noindex: e.type === 'record', type: e.type === 'video' ? 'video.other' : 'article' });
+    pages.push({ path: e.path, file: e.file, title, description, body: h.join('\n'), jsonld, image, noindex: e.type === 'record', type: e.type === 'video' ? 'video.other' : 'article', pre: e.type !== 'video' });
   }
   const cardsRendered = writeCards(site, cardJobs);
 
@@ -334,6 +334,13 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
 
   // ── write ──
   for (const dir of [...new Set(Object.values(SEG))]) fs.rmSync(path.join(site, dir), { recursive: true, force: true });
+  // the landing page's first screen (the hero) is static apart from the file count: copy it from app.js's renderHome
+  // so it paints before the archive has loaded; the app then draws the same markup over it
+  const appSrc = fs.readFileSync(path.join(site, 'assets', 'app.js'), 'utf8');
+  const heroA = appSrc.indexOf('      <div class="hero">'), heroB = appSrc.indexOf('      <div class="home-wrap">');
+  let heroHtml = heroA > 0 && heroB > heroA ? appSrc.slice(heroA, heroB).trim() : '';
+  heroHtml = heroHtml.replace('${ents.length}', String(entities.length));
+  if (/\$\{/.test(heroHtml)) throw new Error('pages.mjs: the hero markup in renderHome has a new ${…}: render it here too');
   const render = p => {
     const url = SITE_URL + (p.path === '/' ? '/' : p.path);
     const fullTitle = p.view === 'home' || p.title.length > 50 ? p.title : `${p.title} — Where Are They`; // long titles keep their words, not the brand
@@ -351,7 +358,8 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       .replace(/<title>[\s\S]*?<\/title>\s*/, '')
       .replace(/<meta name="description"[^>]*>\s*/, '')
       .replace('<!--HEAD-->', head)
-      .replace('<!--SSR-->', `<main id="ssr" class="ssr">${nav}<article>${p.body}</article></main>`);
+      .replace('<section class="view home" id="view-home"></section>', p.view === 'home' && heroHtml ? `<section class="view home" id="view-home">${heroHtml}</section>` : '<section class="view home" id="view-home"></section>')
+      .replace('<!--SSR-->', `<main id="ssr" class="ssr"${p.pre ? ' data-pre="1"' : ''}${p.view === 'home' && heroHtml ? ' data-hero="1"' : ''}>${nav}<article>${p.body}</article></main>`); // data-pre: shown at once while the app loads (templates/app.html)
   };
   for (const p of pages) {
     const file = p.path === '/' ? 'index.html' : `${p.path.slice(1)}.html`;

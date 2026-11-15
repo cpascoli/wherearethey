@@ -539,6 +539,7 @@ export async function build({ check = false, quiet = false } = {}) {
   const degree = new Map();
   for (const x of edgeList) if (x.kind !== 'mention' && !isRecord.has(x.s) && !isRecord.has(x.t)) for (const id of [x.s, x.t]) degree.set(id, (degree.get(id) || 0) + 1);
   const layouts = await computeLayouts(entities, edgeList, id => degree.get(id) || 0);
+  layouts.hero = heroLayout(entities, edgeList); // the landing page's drifting network, computed once here, not on every visit
   fs.writeFileSync(path.join(out, 'layout.js'), `window.KB_LAYOUT=${JSON.stringify(layouts)};\n`);
   // PURSUE record summaries load on demand (records.js), keeping the first download small
   const recordBodies = {};
@@ -574,4 +575,29 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`${stats.entities} entries · ${warnings.length} warnings · ${errors.length} errors`);
   }
   process.exit(errors.length ? 1 : 0);
+}
+
+// The landing page's hero picture: a force layout of the archive's network (the app's former buildHeroLayout,
+// O(n²) × 260 iterations: seconds of main thread on a phone). Same node choice, seed and steps; positions rounded.
+// Shipped in layout.js as { ids, xy }; app.js startHero() draws it.
+function heroLayout(entities, edgeList) {
+  const nodes = entities.filter(e => !['record', 'news', 'video', 'source'].includes(e.type) && !(e.cred === 'outside'));
+  const idx = new Map(nodes.map((e, i) => [e.id, i]));
+  const links = edgeList.filter(x => x.kind !== 'mention' && idx.has(x.s) && idx.has(x.t)).map(x => [idx.get(x.s), idx.get(x.t)]);
+  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const P = nodes.map(() => ({ x: rnd() * 2 - 1, y: rnd() * 2 - 1, vx: 0, vy: 0 }));
+  for (let it = 0; it < 260; it++) {
+    const k = 0.0009, cool = 1 - it / 260;
+    for (let i = 0; i < P.length; i++) for (let j = i + 1; j < P.length; j++) {
+      const dx = P[i].x - P[j].x, dy = P[i].y - P[j].y, d2 = dx * dx + dy * dy + 0.0004;
+      const f = k / d2; P[i].vx += dx * f; P[i].vy += dy * f; P[j].vx -= dx * f; P[j].vy -= dy * f;
+    }
+    for (const [a, b] of links) {
+      const dx = P[b].x - P[a].x, dy = P[b].y - P[a].y; const f = 0.012;
+      P[a].vx += dx * f; P[a].vy += dy * f; P[b].vx -= dx * f; P[b].vy -= dy * f;
+    }
+    for (const p of P) { p.vx -= p.x * 0.004; p.vy -= p.y * 0.004; p.x += Math.max(-.05, Math.min(.05, p.vx)) * cool; p.y += Math.max(-.05, Math.min(.05, p.vy)) * cool; p.vx *= .5; p.vy *= .5; }
+  }
+  const ext = P.map(p => Math.max(Math.abs(p.x), Math.abs(p.y))).sort((a, b) => a - b)[Math.floor(P.length * .95)] || 1;
+  return { ids: nodes.map(e => e.id), xy: P.flatMap(p => [Math.round(p.x / ext * 1e4) / 1e4, Math.round(p.y / ext * 1e4) / 1e4]) };
 }

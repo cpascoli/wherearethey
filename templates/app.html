@@ -46,6 +46,17 @@
 </head>
 <body>
   <!--SSR-->
+  <script>
+    // A file's page shows its server-rendered article at once, under the header, while the archive loads; the app
+    // replaces it with the file's own view when it is ready. Not when the address opens the graph (?explore, or
+    // ?panel=side on desktop): the article would cover it.
+    (function () {
+      var s = document.getElementById('ssr'), q = location.search;
+      if (s && s.getAttribute('data-hero')) { document.documentElement.className += ' pre'; return; } // the landing page's hero is in the page already: just a thin loading bar
+      if (!s || !s.getAttribute('data-pre') || /[?&]explore(=(?!0)|&|$)/.test(q) || (/[?&]panel=side/.test(q) && innerWidth > 860)) return;
+      s.className += ' ssr-pre'; document.documentElement.className += ' pre';
+    })();
+  </script>
   <div class="boot" id="boot" hidden role="progressbar" aria-label="Loading the archive" aria-valuemin="0" aria-valuemax="100"><div class="boot-bar"><i></i></div><p>Loading the archive… <span>0%</span></p></div>
   <header class="top">
     <button class="icon-btn only-mobile" id="btn-side" aria-label="Filters">☰</button>

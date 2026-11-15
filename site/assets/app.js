@@ -1618,7 +1618,7 @@
     if (e.cover) h.push(`<div class="p-head has-cover"><div class="p-head-main">${head.join('')}</div><img class="p-cover" src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" loading="lazy"></div>`);
     // the caption is clamped to two lines under the photo; the full text shows on hover
     if (portrait) h.push(`<div class="p-head has-portrait"><div class="p-head-main">${head.join('')}</div><figure class="p-portrait"><img src="${esc(e.portrait)}" alt="${esc(e.imageCaption || e.name)}">${e.imageCaption ? `<figcaption title="${esc(e.imageCaption)}">${esc(e.imageCaption)}</figcaption>` : ''}</figure></div>`);
-    if (e.image && !portrait) h.push(`<figure class="p-image"><img src="${esc(e.image)}" alt="${esc(e.imageCaption || e.name)}" loading="lazy">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>`);
+    if (e.image && !portrait) h.push(`<figure class="p-image"><img src="${esc(e.image)}" alt="${esc(e.imageCaption || e.name)}" width="1600" height="900" fetchpriority="high">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>`);
     const meta = [e.type !== 'book' && e.type !== 'film' && fmtRange(e) && (e.type === 'video' ? 'Published ' : '') + fmtRange(e), e.place?.name, // books and films: the year is already in the credits line
       e.type === 'video' && [e.channel, fmtDur(e.duration)].filter(Boolean).join(' · ')].filter(Boolean);
     if (meta.length) h.push(`<div class="p-meta">${meta.map(m => `<span>${esc(m)}</span>`).join('')}</div>`);
@@ -2539,6 +2539,7 @@
   ];
   function renderHome() {
     const el = $('#view-home');
+    const typed = $('#hq')?.value || '', typing = document.activeElement?.id === 'hq'; // the pre-rendered hero's search box (scripts/pages.mjs)
     const today = new Date().toISOString().slice(0, 10);
     const ld = latestData(), latest = [...ld.featured, ...ld.recent].slice(0, 6);
     el.innerHTML = `
@@ -2613,12 +2614,25 @@
           <div class="home-links">© ${new Date().getFullYear()} Carlo Pascoli · <a href="/about">About</a> · <a class="foot-social" href="https://x.com/WhereAreTheyUAP" target="_blank" rel="noopener" data-social="x" data-placement="home-footer"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> @WhereAreTheyUAP</a> · <a class="foot-social" href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener" data-social="github" data-placement="home-footer"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg> GitHub</a> · <a href="/privacy">Privacy &amp; cookies</a></div>
         </footer>
       </div>`;
+    if (typed || typing) { const q = $('#hq'); q.value = typed; if (typing) q.focus(); if (typed) q.dispatchEvent(new Event('input', { bubbles: true })); }
     startHero();
   }
 
   // hero: a live, slowly drifting rendering of the archive's own network
   let heroRaf = null, heroData = null;
   function buildHeroLayout() {
+    // precomputed by the build (heroLayout in scripts/build.mjs); the loop below is only the fallback
+    const H = LAYOUT?.hero;
+    if (H?.ids?.length) {
+      const nodes = H.ids.map(id => byId.get(id)).filter(Boolean);
+      if (nodes.length === H.ids.length) {
+        const idx = new Map(nodes.map((e, i) => [e.id, i]));
+        const links = KB.edges.filter(x => x.kind !== 'mention' && idx.has(x.s) && idx.has(x.t)).map(x => [idx.get(x.s), idx.get(x.t)]);
+        const P = nodes.map((e, i) => ({ x: H.xy[2 * i], y: H.xy[2 * i + 1], vx: 0, vy: 0 }));
+        const deg = new Array(nodes.length).fill(0); for (const [a, b] of links) { deg[a]++; deg[b]++; }
+        return { nodes, P, links, deg, pulses: [] };
+      }
+    }
     const nodes = ents.filter(e => !['record', 'news', 'video', 'source'].includes(e.type) && !(e.cred === 'outside'));
     const idx = new Map(nodes.map((e, i) => [e.id, i]));
     const links = KB.edges.filter(x => x.kind !== 'mention' && idx.has(x.s) && idx.has(x.t)).map(x => [idx.get(x.s), idx.get(x.t)]);
@@ -3440,10 +3454,14 @@
     history.replaceState({ view: state.view, sel: state.sel, video: state.video }, '', urlFor() + (state.view === 'videos' && state.video ? searchFor() : location.search));
   }
   window.addEventListener('popstate', () => { applyRoute(false); trackView(); }); // Back/Forward count as page views too
-  document.getElementById('ssr')?.remove(); // the server-rendered article is for crawlers and no-JS readers
+  // the server-rendered article is for crawlers and no-JS readers, and on a file's page it shows while the app loads:
+  // the app's own view replaces it, at about the same place if the reader had scrolled
+  const ssr = document.getElementById('ssr'), ssrPre = ssr?.classList.contains('ssr-pre'), ssrAt = ssrPre && ssr.scrollHeight > ssr.clientHeight ? ssr.scrollTop / (ssr.scrollHeight - ssr.clientHeight) : 0;
+  ssr?.remove(); document.documentElement.classList.remove('pre');
   // the logo returns home without a page reload
   $('.brand').addEventListener('click', e => { e.preventDefault(); go('home'); });
   applyRoute(true);
+  if (ssrAt > 0 && !$('#panel').hidden) { const pn = $('#panel'); pn.scrollTop = ssrAt * (pn.scrollHeight - pn.clientHeight); }
   window.trackView = trackView; // the consent banner records the current page once the visitor accepts
   trackView();
 })();
