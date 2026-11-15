@@ -876,7 +876,24 @@ html:not(.js) .top, html:not(.js) .app, html:not(.js) .views, html:not(.js) .mor
 .ssr-pre a { color: var(--accent); text-decoration: none; }
 .ssr-pre figure { margin: 14px 0; }
 .ssr-pre figure img { display: block; width: 100%; max-width: 720px; height: auto; border-radius: 4px; }
-.ssr-pre .ssr-portrait img { max-width: 260px; aspect-ratio: 4 / 5; object-fit: cover; } /* not smaller than the app's portrait (240px), or the app's copy counts as a later largest paint */
+/* a person's header: name, credentials and bio on the left, the portrait on the right, as in the app's reading view (.p-head.has-portrait) */
+.ssr-head.has-portrait { display: grid; grid-template-columns: minmax(0, 1fr) 200px; gap: 0 40px; align-items: start; }
+.ssr-head.has-portrait .ssr-portrait { margin: 6px 0 0; }
+/* the summary in the reading view's text size and column (.p-bio in the left column of .rd-grid), so it doesn't reflow when the app takes over */
+.ssr-pre .ssr-head + h2, .ssr-pre .ssr-lead + h2 { margin-top: 64px; } /* room for the app's section links above the summary */
+.ssr-pre .ssr-body { font-size: 15.5px; line-height: 1.65; max-width: 72ch; }
+@media (min-width: 1001px) { .ssr-pre .ssr-body { max-width: min(72ch, calc((100% - 48px) * 1.35 / 2.35)); } }
+.ssr-pre .ssr-head .ssr-lead { font-size: 16px; line-height: 1.65; margin: 10px 0 12px; max-width: 72ch; } /* as .p-lead in the reading view */
+.ssr-pre .ssr-head .ssr-creds { color: var(--text); font-size: 15px; margin: 4px 0 0; }
+.ssr-pre .ssr-head .ssr-aka { color: var(--muted); font-size: 13px; }
+.ssr-pre .ssr-head figcaption { font-size: 11px; line-height: 1.35; margin-top: 5px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; } /* two lines, as the app's */
+.ssr-pre .ssr-portrait img { max-width: 260px; aspect-ratio: 4 / 5; object-fit: cover; } /* not smaller than the app's portrait, or the app's copy counts as a later largest paint */
+@media (max-width: 600px) { /* phones: the photo centred below, as in the app */
+  .ssr-head.has-portrait { grid-template-columns: 1fr; }
+  .ssr-head.has-portrait .ssr-portrait { justify-self: center; width: 100%; max-width: 260px; margin: 8px 0 12px; }
+  .ssr-pre .ssr-head figcaption { display: block; overflow: visible; }
+  .ssr-pre .ssr-head .ssr-lead { font-size: 14.5px; } /* as .p-lead on phones */
+}
 .ssr-pre figcaption { font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.4; max-width: 720px; }
 .ssr-pre ul, .ssr-pre ol { padding-left: 20px; }
 .ssr-pre .ssr-creds { list-style: none; padding: 0; color: var(--muted); font-size: 13px; }
@@ -885,7 +902,7 @@ html.pre .boot { inset: var(--top-h) 0 auto 0; z-index: 41; display: block; gap:
 html.pre .boot[hidden] { display: none; }
 html.pre .boot-bar { width: 100%; height: 2px; border-radius: 0; background: transparent; }
 html.pre .boot p { display: none; }
-@media (max-width: 860px) { .ssr-pre > article { padding: 20px 16px 110px; } .ssr-pre h1 { font-size: 24px; } }
+@media (max-width: 860px) { .ssr-pre > article { padding: 20px 16px 110px; } .ssr-pre h1 { font-size: 24px; } .ssr-pre .ssr-body { font-size: 14.5px; } }
 
 /* full text of a graph link (hover / tap) */
 .edge-tip { position: absolute; z-index: 30; max-width: 300px; padding: 7px 10px; border-radius: 6px; background: var(--panel); border: 1px solid var(--border); box-shadow: var(--shadow); font-size: 12px; line-height: 1.4; color: var(--text); pointer-events: none; }

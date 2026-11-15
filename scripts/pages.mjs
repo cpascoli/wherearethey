@@ -151,16 +151,21 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     const h = [];
     const kicker = [LABEL[e.type], fmtDate(e.date) + (e.end ? ` – ${fmtDate(e.end)}` : ''), e.place?.name].filter(Boolean).join(' · ');
     h.push(`<nav class="ssr-crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/a-z#${e.type}">${PLURAL[e.type]}</a> › ${esc(e.name)}</nav>`);
-    h.push(`<p class="ssr-kicker">${esc(kicker)}</p><h1>${esc(e.name)}</h1>`);
-    if (e.aka?.length) h.push(`<p class="ssr-aka">Also known as ${e.aka.map(esc).join(', ')}</p>`);
-    if (e.credentials?.length) h.push(`<ul class="ssr-creds">${e.credentials.map(c => `<li>${esc(c.role || c.category)}</li>`).join('')}</ul>`);
-    if (e.bio) h.push(`<p class="ssr-lead">${e.bio}</p>`); // a person's short bio, as in the app's header
+    h.push(`<p class="ssr-kicker">${esc(kicker)}</p>`);
+    // people with a portrait: name, credentials and bio on the left, the photo on the right (below on phones), as in the app's header,
+    // so the page doesn't rearrange itself when the app takes over
+    const head = [];
+    head.push(`<h1>${esc(e.name)}</h1>`);
+    if (e.credentials?.length) head.push(`<ul class="ssr-creds">${e.credentials.map(c => `<li>${esc(c.role || c.category)}</li>`).join('')}</ul>`);
+    if (e.bio) head.push(`<p class="ssr-lead">${e.bio}</p>`); // a person's short bio, as in the app's header
+    if (e.aka?.length) head.push(`<p class="ssr-aka">Also known as ${e.aka.map(esc).join(', ')}</p>`);
+    const portraitHtml = e.portrait ? `<figure class="ssr-portrait"><img src="${esc(e.portrait)}" alt="${esc(e.imageCaption || e.name)}" width="220" height="275">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>` : '';
+    h.push(portraitHtml ? `<div class="ssr-head has-portrait"><div class="ssr-head-main">${head.join('')}</div>${portraitHtml}</div>` : head.join(''));
     if (e.type === 'book') h.push(`<p>${[e.credits, e.publisher, e.pages && `${e.pages} pages`, e.isbn && `ISBN ${e.isbn}`].filter(Boolean).map(esc).join(' · ')}</p>`);
     if (e.glimpses?.length) h.push(`<h2>Glimpses</h2>${e.glimpses.map(g => `<blockquote${g.url ? ` cite="${esc(g.url)}"` : ''}><p>${esc(g.text)}</p><footer>${esc(g.where)}${g.url ? `${g.where ? ' · ' : ''}<a href="${esc(g.url)}" rel="noopener">${esc(g.via || 'source')}</a>` : ''}</footer></blockquote>`).join('\n')}`);
     if (e.type === 'film') h.push(`<p>${[e.credits, e.runtime && `${e.runtime} min`].filter(Boolean).map(esc).join(' · ')}</p>`);
     if (e.cover) h.push(`<img src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" width="200">`);
-    if (e.portrait) h.push(`<figure class="ssr-portrait"><img src="${esc(e.portrait)}" alt="${esc(e.imageCaption || e.name)}" width="220" height="275">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>`);
-    else if (e.image) h.push(`<figure><img src="${esc(e.image)}" alt="${esc(e.imageCaption || e.name)}" width="800">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>`);
+    if (!e.portrait && e.image) h.push(`<figure><img src="${esc(e.image)}" alt="${esc(e.imageCaption || e.name)}" width="800">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>`);
     if (e.type === 'video') {
       const url = videoUrl(e);
       h.push(`<p>${[e.channel, fmtDate(e.date), e.duration && `${Math.round(e.duration / 60)} min`].filter(Boolean).map(esc).join(' · ')}${url ? ` · <a href="${esc(url)}" rel="noopener">Watch the original</a>` : ''}</p>`);
@@ -175,7 +180,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       const src = e.statusSource?.id ? ` (${link(e.statusSource.id)})` : e.statusSource?.url ? ` (<a href="${esc(e.statusSource.url)}" rel="noopener">source</a>)` : '';
       h.push(`<p class="ssr-outcome"><strong>${CLAIM_LABEL[e.status]}.</strong> ${esc(e.statusNote || '')}${src}</p>`);
     }
-    if (e.body) h.push(`<div class="ssr-body">${e.body}</div>`);
+    if (e.body) h.push(`<h2>${e.type === 'person' ? 'Profile' : 'Summary'}</h2><div class="ssr-body">${e.body}</div>`); // headed as in the app
     if (e.type === 'claim') {
       // the evidence filed on the claim, and its links to other claims (as on the claim page in the app)
       const rels = (near.get(e.id) || []).filter(x => x.kind === 'rel');
