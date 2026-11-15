@@ -11,6 +11,22 @@
   # Switch to a custom domain later by changing this one value.
   FILES_BASE = "https://pub-86f038fb92684457b9683cd2fd44620e.r2.dev"
 
+# Security headers on every response.
+# CSP: scripts only from our own origin and the few hosts the app loads code from (the graph and map libraries on
+# cdnjs/jsdelivr, pinned with integrity hashes in templates/app.html; Google Analytics; YouTube's player API; X's embed
+# script). Inline scripts stay allowed (the boot loader, the geo edge function's country line, JSON-LD), and
+# 'wasm-unsafe-eval' is for Pagefind's search (/mod-files). Pictures, video, embeds and fetches may come from any
+# https host (R2, DVIDS, archive.org, YouTube, Wayback…), so those lists don't break when a new source is filed.
+# frame-ancestors / X-Frame-Options: other sites can't show our pages inside a frame (clickjacking).
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.youtube.com https://platform.twitter.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https:; media-src 'self' blob: https:; frame-src https:; connect-src 'self' https:; worker-src 'self' blob:; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+
 # The app's code and data are requested with a content hash (?v=…, scripts/pages.mjs), so a deploy changes their
 # URLs: data can be kept for a year. Pages themselves are never cached (the geo edge function marks them no-store).
 [[headers]]

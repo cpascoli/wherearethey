@@ -12,6 +12,20 @@ import { assignPaths, writePages } from './pages.mjs';
 import { assignAdded } from './added.mjs';
 import { INVERSE, KNOWN, SAME } from './relations.mjs';
 
+// Markdown in content (bodies, bios) is rendered as-is into the pages and the app, so it may not carry markup or script:
+// raw HTML is shown as text (no file uses any), and a link or image whose address is not http(s), mailto, relative or
+// an anchor (javascript:, data:…, also when disguised with entities or control characters) points nowhere. The daily
+// Latest bot writes news bodies from outside pages: this keeps a hostile page from planting script through one.
+const escHtml = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const SAFE_URL = /^(https?:|mailto:|\/|#|\.{0,2}\/|[^:]*$)/i;
+export const safeUrl = href => SAFE_URL.test(String(href)
+  .replace(/&#x([0-9a-f]+);?/gi, (_, h) => String.fromCodePoint(parseInt(h, 16))).replace(/&#(\d+);?/g, (_, d) => String.fromCodePoint(+d))
+  .replace(/&colon;?/gi, ':').replace(/&(tab|newline);?/gi, '').replace(/[\u0000- \u007f]/g, ''));
+marked.use({
+  renderer: { html({ text }) { return escHtml(text); } },
+  walkTokens(t) { if ((t.type === 'link' || t.type === 'image') && !safeUrl(t.href)) t.href = '#'; },
+});
+
 export const CREDIBLE = ['congress', 'government', 'intelligence', 'military', 'aviator', 'sensor-operator', 'academia', 'astronaut', 'aerospace', 'law-enforcement'];
 const REPORTER = ['journalist', 'policy-expert'];
 export const MASS_MIN_WITNESSES = 50;
