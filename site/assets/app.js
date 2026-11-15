@@ -348,8 +348,24 @@
   $('#btn-relayout').addEventListener('click', () => layoutGraph(true, { fresh: true }));
 
   // ───────────── graph ─────────────
-  let cy = null, layoutTimer = null, hasFcose = false;
-  try { if (window.cytoscapeFcose) { cytoscape.use(window.cytoscapeFcose); hasFcose = true; } } catch { hasFcose = !!window.cytoscapeFcose; }
+  let cy = null, layoutTimer = null, hasFcose = false, fcoseTried = false;
+  const useFcose = () => { if (fcoseTried) return; fcoseTried = true; try { if (window.cytoscapeFcose) { cytoscape.use(window.cytoscapeFcose); hasFcose = true; } } catch { hasFcose = !!window.cytoscapeFcose; } };
+  // The graph is built only when it can be seen: a file opened at its own address covers it (reading view on desktop,
+  // the full-screen card on phones), and building it there cost seconds of main thread for nothing. Its library
+  // (cytoscape + fcose) loads on demand too (window.loadLib in templates/app.html).
+  let bootCover = false; // the first route opens a file over the graph: don't build it underneath
+  const graphHidden = () => bootCover || (!$('#panel').hidden && (state.reading || narrowScreen()));
+  function ensureGraph(force = false) {
+    if (cy || state.view !== 'graph') return !!cy;
+    if (!force && graphHidden()) return false;
+    if (!window.cytoscape) {
+      (window.loadLib ? window.loadLib('graph') : Promise.reject(new Error('no loader'))).then(
+        () => { if (!cy && state.view === 'graph' && (force || !graphHidden())) { useFcose(); initGraph(); highlight(state.sel); } },
+        () => { if (!cy) $('#cy').innerHTML = '<p class="muted" style="padding:24px">The graph library failed to load (offline?).</p>'; });
+      return false;
+    }
+    useFcose(); initGraph(); return true;
+  }
   const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
   function graphStyle() {
     return [
@@ -543,7 +559,7 @@
   // file that revealed them (away from the previous step), a short settle pass moves only the new ones, and the
   // camera pans just enough to show them. A full layout happens only for a new trail (or a filter change).
   function trailChanged(anchorId, { relayout = false } = {}) {
-    if (!cy) return;
+    if (!cy && !ensureGraph(true)) return; // (once its library arrives, the graph is built with the trail as it stands)
     const before = cy.nodes().not('.hidden');
     const prev = new Set(before.map(n => n.id()));
     applyGraphFilter();
@@ -1101,7 +1117,11 @@
     }).addTo(map);
   }
   function renderMap() {
-    if (!window.L) { $('#map').innerHTML = '<p class="muted" style="padding:24px">Map library failed to load (offline?).</p>'; return; }
+    if (!window.L) {
+      if (!window.loadLib) { $('#map').innerHTML = '<p class="muted" style="padding:24px">Map library failed to load (offline?).</p>'; return; }
+      window.loadLib('map').then(() => { if (state.view === 'map') renderMap(); }, () => { $('#map').innerHTML = '<p class="muted" style="padding:24px">Map library failed to load (offline?).</p>'; });
+      return;
+    }
     if (!map) {
       map = L.map('map', { worldCopyJump: true, zoomControl: true }).setView([32, -40], 3);
       setTiles();
@@ -2043,7 +2063,7 @@
     $('#app').classList.remove('has-panel');
     afterResize();
   }
-  function afterResize() { requestAnimationFrame(() => { cy?.resize(); map?.invalidateSize(); }); }
+  function afterResize() { requestAnimationFrame(() => { if (!cy) ensureGraph(); cy?.resize(); map?.invalidateSize(); }); } // a graph uncovered for the first time is built now
   $('#panel-close').addEventListener('click', () => select(null));
   // claims page: a click opens the claim beside the list, a double-click opens it full width (the reading view)
   document.addEventListener('dblclick', e => {
@@ -3199,7 +3219,7 @@
   }
   function refreshView(filtersChangedFlag) {
     if (state.view === 'graph') {
-      if (!cy) initGraph();
+      if (!cy) ensureGraph();
       else {
         cy.resize();
         if (filtersChangedFlag) { applyGraphFilter(); clearTimeout(layoutTimer); layoutTimer = setTimeout(() => layoutGraph(true), 350); }
@@ -3396,6 +3416,10 @@
     const r = history.state?.view && !location.hash ? { ...history.state, t: fromUrl.t } : fromUrl;
     routing = true;
     const shelfChanged = fromUrl.shelf && fromUrl.shelf !== shelfTab;
+    if (initial && r.sel && r.view === 'graph') { // a file's own address covers the graph (unless ?explore or ?panel=side on desktop)
+      const q0 = new URLSearchParams(location.search), ex0 = q0.has('explore') && q0.get('explore') !== '0';
+      bootCover = !ex0 && (innerWidth <= 860 || q0.get('panel') !== 'side');
+    }
     if (fromUrl.shelf) shelfTab = fromUrl.shelf; // the address picks Documentaries or Books
     try {
       if (r.view !== state.view || initial || shelfChanged) go(r.view);
@@ -3410,7 +3434,7 @@
       else if (initial && r.view === 'graph' && !r.sel && storyById(qs.get('story'))) { track('explore_start', { item_id: qs.get('story'), method: 'url' }); startStory(qs.get('story')); }
       if (r.view === 'videos' && r.video && byId.has(r.video) && (r.video !== state.video || r.t || initial)) openVideo(r.video, r.t || 0, false);
       else if (r.view === 'videos' && !r.video && state.video) closeVideo();
-    } finally { routing = false; }
+    } finally { routing = false; if (bootCover) { bootCover = false; if (!cy && state.view === 'graph') ensureGraph(); } }
     if (state.view === 'latest' && !state.sel) setTimeout(previewLatest); // Back to Latest shows its preview again
     // store the state on this entry
     history.replaceState({ view: state.view, sel: state.sel, video: state.video }, '', urlFor() + (state.view === 'videos' && state.video ? searchFor() : location.search));

@@ -38,8 +38,10 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@1,400;1,500&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- the fonts don't hold up the first paint (display=swap: the system font shows until they arrive) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@1,400;1,500&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@1,400;1,500&display=swap"></noscript>
   <link rel="stylesheet" href="/assets/app.css?v=/*V:app.css*/">
 </head>
 <body>
@@ -210,8 +212,29 @@
 
   <script>
     // Boot loader: fetch the archive's data and the app (versioned by content hash, filled in by scripts/pages.mjs)
-    // with a progress bar, then run them in order once the libraries below have loaded.
+    // with a progress bar, then run them in order.
     // Without fetch streaming, or if a fetch fails, it falls back to plain script tags.
+    // The graph (Explore) and map (World) libraries load only when a view needs them: window.loadLib('graph' | 'map')
+    // returns a promise; the scripts of one library run in order.
+    (function () {
+      var LIBS = {
+        graph: ['https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.2/cytoscape.min.js', 'https://cdn.jsdelivr.net/npm/layout-base@2.0.1/layout-base.js', 'https://cdn.jsdelivr.net/npm/cose-base@2.2.0/cose-base.js', 'https://cdn.jsdelivr.net/npm/cytoscape-fcose@2.2.0/cytoscape-fcose.js'],
+        map: ['https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js'],
+      };
+      var CSS = { map: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css' };
+      var loading = {};
+      window.loadLib = function (name) {
+        if (loading[name]) return loading[name];
+        if (CSS[name]) { var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = CSS[name]; document.head.appendChild(l); }
+        return loading[name] = Promise.all(LIBS[name].map(function (src) {
+          return new Promise(function (res, rej) { var s = document.createElement('script'); s.src = src; s.async = false; s.onload = res; s.onerror = function () { delete loading[name]; rej(new Error(src)); }; document.head.appendChild(s); });
+        }));
+      };
+      // a view that needs a library at once starts fetching it beside the data
+      var path = location.pathname, q = location.search;
+      if (/^\/explore\/?$/.test(path) || /[?&]explore(=(?!0)|&|$)/.test(q) || (/[?&]panel=side/.test(q) && innerWidth > 860)) window.loadLib('graph');
+      if (/^\/world\/?$/.test(path)) window.loadLib('map');
+    })();
     (function () {
       window.BUILD = '/*BUILD*/';
       var files = /*BOOT_FILES*/[], total = 0, got = 0, boot = document.getElementById('boot');
@@ -237,11 +260,6 @@
       }, function () { ready.then(function () { clearTimeout(shown); boot.remove(); plain(); }); });
     })();
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.2/cytoscape.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/layout-base@2.0.1/layout-base.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/cose-base@2.2.0/cose-base.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/cytoscape-fcose@2.2.0/cytoscape-fcose.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
   <div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden>
     <p>We'd like to use Google Analytics cookies to count visits and see which pages are useful. No ads, no selling of data. Analytics stays off unless you accept. <a href="/privacy">Privacy &amp; cookies</a></p>
     <div class="consent-actions"><button class="btn small" data-consent="denied">Reject</button><button class="btn small primary" data-consent="granted">Accept</button></div>
