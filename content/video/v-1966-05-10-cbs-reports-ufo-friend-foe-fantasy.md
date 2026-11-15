@@ -20,6 +20,7 @@ moments:
   - t: "7:39"
     text: "At NICAP's news conference, Maj. Donald Keyhoe: “We are being observed by some type of device which is ahead of us, far ahead of us, and is probably controlled by a highly advanced, superior civilization”; he says the Air Force “at one time had a top-secret estimate that these things were interplanetary spaceships.”"
     speaker: donald-keyhoe
+    refs: [ nicap ]
   - t: "8:41"
     text: "The Air Force, “called before a congressional committee, said it was hiding nothing”. A longer cut of Air Force Secretary Harold Brown's statement after the 5 April 1966 hearing: “We have not been hiding anything… The hearing this morning was public for just that reason. In those cases where, for lack of data or lack of a convincing hypothesis, the sighting has been kept in the unidentified category, we've been perfectly willing to say that, too.”"
     speaker: harold-brown

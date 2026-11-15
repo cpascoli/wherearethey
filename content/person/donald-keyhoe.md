@@ -21,6 +21,9 @@ facts:
   - text: "From 1957 to 1969 he directed the National Investigations Committee on Aerial Phenomena (NICAP), the largest civilian UFO group in the United States in that period, which pressed for congressional hearings."
     status: claimed
     source: https://en.wikipedia.org/wiki/Donald_Keyhoe
+  - text: "NICAP's report The UFO Evidence (May 1964) names Keyhoe as NICAP's director on its masthead and credits him as editorial consultant."
+    status: documented
+    source: library/docs/doc-nicap-ufo-evidence-1964.pdf
   - text: "On CBS Reports in May 1966 Keyhoe said Air Force spokesmen “are simply following orders to explain away all UFO sightings as quickly as possible when they become public and deny that UFOs really exist.”"
     claims: [ government-ufo-disinformation ]
     basis: opinion
@@ -33,4 +36,4 @@ Donald Keyhoe (1897–1988) was a U.S. Marine Corps aviator, a Naval Academy gra
 
 Keyhoe argued that the saucers were interplanetary and that the Air Force was hiding what it knew, a charge he pressed in later books such as *The Flying Saucer Conspiracy* (1955). As director of NICAP from 1957 to 1969 he led the main civilian campaign for open investigation and congressional hearings, until the organisation's finances collapsed and its board forced him out. He is a reporter and advocate, not a witness.
 
-*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Donald_Keyhoe) · Keyhoe, The Flying Saucers Are Real (1950, Project Gutenberg) · Ruppelt, The Report on Unidentified Flying Objects*
+*Sources: [Wikipedia](https://en.wikipedia.org/wiki/Donald_Keyhoe) · The UFO Evidence (NICAP, 1964) · Keyhoe, The Flying Saucers Are Real (1950, Project Gutenberg) · Ruppelt, The Report on Unidentified Flying Objects*
