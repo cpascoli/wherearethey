@@ -379,6 +379,9 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       .replace(/<title>[\s\S]*?<\/title>\s*/, '')
       .replace(/<meta name="description"[^>]*>\s*/, '')
       .replace('<!--HEAD-->', head)
+      // the landing page starts as the app leaves it (body.is-home hides the filters button, body.hero-q the header
+      // search behind the hero's own), so neither shows and then vanishes while the app loads
+      .replace(/^<body>$/m, p.view === 'home' && heroHtml ? '<body class="is-home hero-q">' : '<body>') // the tag's own line (a comment above also says <body>)
       .replace('<section class="view home" id="view-home"></section>', p.view === 'home' && heroHtml ? `<section class="view home" id="view-home">${heroHtml}</section>` : '<section class="view home" id="view-home"></section>')
       .replace('<!--SSR-->', `<main id="ssr" class="ssr"${p.pre ? ' data-pre="1"' : ''}${p.view === 'home' && heroHtml ? ' data-hero="1"' : ''}>${nav}<article>${p.body}</article></main>`); // data-pre: shown at once while the app loads (templates/app.html)
   };
