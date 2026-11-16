@@ -2630,15 +2630,24 @@
     { kicker: 'Provenance · 2002', title: 'The Wilson memo', text: 'Entered into the congressional record in 2022. What that proves, and what it doesn’t: provenance kept separate from claims.', action: 'data-home-goto="doc-wilson-memo"', need: 'doc-wilson-memo', cta: 'Read the dossier' },
     { kicker: 'Official record · 1947 → 2026', title: 'From Twining to PURSUE', text: '“Something real and not visionary or fictitious.” Eighty years of official statements, from the first Air Force opinion to the 2026 releases.', action: `data-preset='{"view":"timeline","types":["document","event","program","hearing"]}'`, cta: 'Walk the timeline' },
   ];
-  const WAYS_IN = [
-    ['graph', 'Explore', 'Every person, program and incident, and how they connect. Trace the path between any two.'],
-    ['timeline', 'Timeline', 'Eighty years of events, documents and hearings, decade by decade.'],
-    ['map', 'World', 'Where it happened: bases, ships, schools and hearing rooms.'],
-    ['videos', 'Videos', 'Hearings and interviews with synced transcripts. Search every word spoken.'],
-    ['shelf', 'Documentaries', 'Films featuring the people on record, with trailers and where to watch them.'],
-    ['claims', 'Claims', 'The key propositions of the debate, each open, disputed, supported or refuted, with who said it and the evidence.'],
-    ['index', 'Index', 'All files, by type, filterable.'],
-  ];
+  // The day's file for the home page: a case or hearing that happened on this date (or within three days of it) in an
+  // earlier year, the best connected first; failing that the entry pinned on Latest. With a clip when one is on file.
+  function onThisDay(today) {
+    const y = today.slice(0, 4), ms = Date.parse(today);
+    const gap = e => Math.round(Math.abs(Date.parse(y + e.date.slice(4)) - ms) / 864e5);
+    const c = ents.filter(e => ['incident', 'hearing', 'event'].includes(e.type) && /^\d{4}-\d{2}-\d{2}$/.test(String(e.date || '')) && e.date.slice(0, 4) < y && e.cred !== 'outside' && !resolved(e) && gap(e) <= 3)
+      .sort((a, b) => gap(a) - gap(b) || adj.get(b.id).length - adj.get(a.id).length)[0];
+    if (c) return { e: c, label: gap(c) ? `This week in ${c.date.slice(0, 4)}` : `On this day in ${c.date.slice(0, 4)}` };
+    const f = latestData().featured[0];
+    return f ? { e: f, label: 'Featured' } : null;
+  }
+  function clipFor(e) {
+    const ms = momentsFor.get(e.id) || [];
+    const m = keyMoments(e, ms)[0] || ms.find(x => x.speaker && byId.get(x.speaker)?.cred === 'credible') || ms[0];
+    if (m) return { video: m.video, t: m.t, text: m.text, speaker: m.speaker };
+    const v = adj.get(e.id).map(x => byId.get(x.other)).find(o => o?.type === 'video');
+    return v ? { video: v.id, t: 0 } : null;
+  }
   function renderHome() {
     const el = $('#view-home');
     const typed = $('#hq')?.value || '', typing = document.activeElement?.id === 'hq';
@@ -2646,6 +2655,9 @@
     el.dataset.drawn = '1';
     const today = new Date().toISOString().slice(0, 10);
     const ld = latestData(), latest = [...ld.featured, ...ld.recent].slice(0, 6);
+    const day = onThisDay(today), clip = day && clipFor(day.e);
+    const claims = ents.filter(e => e.type === 'claim').sort(claimOrder).slice(0, 3);
+    const sum = e => { const t = latestSummary(e); return t.length > 190 ? t.slice(0, 187).replace(/\s+\S*$/, '') + '…' : t; };
     const html = `
       <div class="hero">
         <canvas id="hero-canvas" aria-hidden="true"></canvas>
@@ -2653,69 +2665,71 @@
         <div class="hero-inner">
           <div class="hero-kicker"><span class="dot-live"></span> Case archive · UAP · NHI · <b>${ents.length}</b> files</div>
           <h1>Where are they?</h1>
-          <p class="hero-tagline">Connecting the dots</p>
-          <p class="hero-qualifier">All that we know so far.</p>
-          <p class="hero-lede">An open, sourced archive of what officials, pilots, radar operators, intelligence officers and scientists have said <em>on the record</em> about unidentified anomalous phenomena and non-human intelligence.</p>
+          <p class="hero-lede">What officials, pilots, radar operators, intelligence officers and scientists have said <em>on the record</em> about unidentified anomalous phenomena and non-human intelligence, each statement with its source.</p>
           <div class="hero-search">
             <input id="hq" type="search" placeholder="Search a person, program or case: Grusch, AARO, Tic Tac, Roswell…" autocomplete="off" spellcheck="false">
             <div id="hq-dd" class="dropdown" hidden></div>
           </div>
-          <div class="hero-cta">
-            <a class="btn primary" href="/explore" data-home-view="graph">Explore the network</a>
-            <a class="btn" href="/videos" data-home-view="videos">Watch the testimony</a>
-          </div>
         </div>
-        <div class="hero-scroll" aria-hidden="true">↓</div>
       </div>
 
       <div class="home-wrap">
-        <section class="home-stats">${homeStats().map(([n, l, s]) => `<div class="hs"><b>${n}</b><span>${l}</span><small>${s}</small></div>`).join('')}</section>
+        <div class="home-top">
+          ${day ? `<section class="home-day" style="--c:${TYPES[day.e.type].color}">
+            <div class="home-kicker">${esc(day.label)} · ${esc(fmtRange(day.e))}</div>
+            ${clip ? `<button class="hd-clip" data-play="${esc(clip.video)}@${clip.t}" title="Play"><img src="${vthumb(byId.get(clip.video))}" alt="" fetchpriority="high"><span class="wplay">▶</span>${clip.text ? `<span class="hd-quote">${esc(clip.speaker && byId.get(clip.speaker) ? byId.get(clip.speaker).name + ': ' : '')}${esc(clip.text.length > 150 ? clip.text.slice(0, 147).replace(/\s+\S*$/, '') + '…' : clip.text)}</span>` : ''}</button>`
+              : day.e.image ? `<a class="hd-clip" href="${hrefOf(day.e.id)}" data-home-file="${esc(day.e.id)}"><img src="${esc(day.e.image)}" alt="${esc(day.e.imageCaption || day.e.name)}"></a>` : ''}
+            <h2><a href="${hrefOf(day.e.id)}" data-home-file="${esc(day.e.id)}">${esc(day.e.name)}</a></h2>
+            <p>${esc(sum(day.e))}</p>
+            <div class="hd-meta">${day.e.outcome && day.e.outcome !== 'open' ? `<span class="badge outcome-${day.e.outcome}">${OUTCOME[day.e.outcome].label}</span>` : day.e.type === 'incident' ? '<span class="badge outcome-open">Open</span>' : ''}<a class="btn small" href="${hrefOf(day.e.id)}" data-home-file="${esc(day.e.id)}">Open the file →</a></div>
+          </section>` : ''}
+          <section class="home-latest">
+            <div class="home-kicker">Latest on the record</div>
+            <div class="latest">${latest.filter(e => e !== day?.e).slice(0, 5).map(e => `
+              <a class="latest-item" href="${hrefOf(e.id)}" data-home-latest="${e.id}" style="--c:${TYPES[e.type].color}">
+                <span class="li-date">${esc(fmtRange(e))}${String(e.date) > today ? ' <em>upcoming</em>' : ''}</span>
+                <span class="li-type">${e.type === 'news' ? esc(NEWS_KIND[e.kind]?.label || 'News') : TYPES[e.type].label}</span><span class="li-name">${esc(e.name)}</span>
+              </a>`).join('') || '<p class="muted">Nothing in the last few months yet.</p>'}</div>
+            <p class="home-more"><a href="/latest" data-home-view="latest">See everything on Latest →</a> · <a href="/feed.xml" target="_blank" rel="noopener">RSS feed</a></p>
+          </section>
+        </div>
 
-        <section class="home-rule">
-          <div>
-            <div class="home-kicker">How to read this archive</div>
-            <h2>Official sources only.</h2>
-            <p>Every claim here is tied to a named person with an official role: members of Congress, government and intelligence officials, military personnel, fighter pilots, radar operators, scientists. Civilian-only accounts, disputed figures and known forgeries are kept, but hidden by default and clearly marked.</p>
-            <p>Each claim carries one of three stamps, and every stamp can be traced to its source:</p>
-          </div>
-          <ul class="stamps">
-            <li style="--st:var(--documented)"><span class="stamp">Documented</span><p>Backed by an official record or primary document: a hearing transcript, a declassified file.</p></li>
-            <li style="--st:var(--claimed)"><span class="stamp">On record</span><p>Stated publicly by a named person, under oath, in an interview or in writing, and linked to that moment.</p></li>
-            <li style="--st:var(--unverified)"><span class="stamp">Unverified</span><p>Reported but not yet tied to a source. Shown so the gaps are visible, not hidden.</p></li>
-          </ul>
-        </section>
+        ${(EXPLORE.stories || []).length ? `<section class="home-sec">
+          <div class="home-kicker">Start with a story</div>
+          <h2>The record, told in steps</h2>
+          <div class="home-row stories">${EXPLORE.stories.map(st => `
+            <a class="path-card" href="/explore?story=${esc(st.id)}" data-home-story="${esc(st.id)}">
+              <div class="pc-kicker">Story · ${st.steps.length} steps</div><h3>${esc(st.title)}</h3><p>${esc(st.blurb || '')}</p><span class="pc-cta">Follow it →</span>
+            </a>`).join('')}</div>
+        </section>` : ''}
+
+        ${claims.length ? `<section class="home-sec">
+          <div class="home-kicker">The big questions</div>
+          <h2>What is claimed, and where it stands</h2>
+          <div class="home-claims">${claims.map(c => { const n = k => c.assertions.filter(a => a.stance === k).length; return `
+            <a class="claim-card" href="${hrefOf(c.id)}" data-home-claim="${esc(c.id)}"><div class="cc-top"><span class="badge claim-${c.status}">${CLAIM_STATUS[c.status].label}</span><span class="muted small">${n('supports')} say so · ${n('disputes')} dispute it</span></div><div class="cc-name">${esc(c.name)}</div></a>`; }).join('')}</div>
+          <p class="home-more"><a href="/claims" data-home-view="claims">All ${ents.filter(e => e.type === 'claim').length} claims →</a></p>
+        </section>` : ''}
 
         <section class="home-sec">
-          <div class="home-kicker">Start here</div>
-          <h2>Six threads to pull</h2>
-          <div class="paths">${START_HERE.filter(p => !p.need || byId.has(p.need)).map(p => `
+          <div class="home-kicker">Or pull a thread</div>
+          <h2>Six places to begin</h2>
+          <div class="home-row paths">${START_HERE.filter(p => !p.need || byId.has(p.need)).map(p => `
             <a class="path-card" href="#" ${p.action}>
               <div class="pc-kicker">${esc(p.kicker)}</div><h3>${esc(p.title)}</h3><p>${esc(p.text)}</p><span class="pc-cta">${esc(p.cta)} →</span>
             </a>`).join('')}</div>
         </section>
 
-        <section class="home-sec">
-          <div class="home-kicker">Ways in</div>
-          <h2>Navigate the complexity</h2>
-          <div class="ways">${WAYS_IN.map(([v, t, d], i) => `
-            <a class="way" href="${VIEW_PATH[v]}" data-home-view="${v}"><span class="way-n">0${i + 1}</span><b>${t}</b><span>${d}</span></a>`).join('')}</div>
-        </section>
-
-        <section class="home-sec">
-          <div class="home-kicker">Latest</div>
-          <h2>What's happening on the record</h2>
-          <div class="latest">${latest.map(e => `
-            <a class="latest-item" href="${hrefOf(e.id)}" data-home-latest="${e.id}" style="--c:${TYPES[e.type].color}">
-              <span class="li-date">${esc(fmtRange(e))}${String(e.date) > today ? ' <em>upcoming</em>' : ''}</span>
-              <span class="li-type">${e.type === 'news' ? esc(NEWS_KIND[e.kind]?.label || 'News') : TYPES[e.type].label}</span><span class="li-name">${esc(e.name)}</span>
-            </a>`).join('') || '<p class="muted">Nothing in the last few months yet.</p>'}</div>
-          <p class="home-more"><a href="/latest" data-home-view="latest">See everything on Latest →</a> · <a href="/feed.xml" target="_blank" rel="noopener">RSS feed</a></p>
+        <section class="home-how">
+          <div class="home-kicker">How this archive works</div>
+          <p>Every statement is tied to a named person with an official role, and carries one of three stamps: <span class="stamp" style="--st:var(--documented)">Documented</span> backed by an official record, <span class="stamp" style="--st:var(--claimed)">On record</span> stated publicly by a named person, <span class="stamp" style="--st:var(--unverified)">Unverified</span> not yet tied to a source. Explained cases and counter-evidence are kept. <a href="/about">More about the archive →</a></p>
+          <p class="home-stats-line">${homeStats().map(([n, l]) => `<span><b>${n}</b> ${l}</span>`).join('')}</p>
         </section>
 
         <footer class="home-foot">
           <div><b>WHERE ARE THEY</b> is a personal research archive. It collects public, on-record statements and official documents. It does not make claims of its own: every statement is attributed, and every status can be checked against its source.</div>
           <div class="muted">Built ${new Date(KB.built).toLocaleDateString()} · ${KB.stats.entities} files · ${KB.stats.edges.toLocaleString()} links · sources include congressional records, war.gov/UFO (PURSUE), the CIA and FBI reading rooms, NARA and The Black Vault.</div>
-          <div class="home-links">© ${new Date().getFullYear()} Carlo Pascoli · <a href="/about">About</a> · <a class="foot-social" href="https://x.com/WhereAreTheyUAP" target="_blank" rel="noopener" data-social="x" data-placement="home-footer"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> @WhereAreTheyUAP</a> · <a class="foot-social" href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener" data-social="github" data-placement="home-footer"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg> GitHub</a> · <a href="/privacy">Privacy &amp; cookies</a></div>
+          <div class="home-links">© ${new Date().getFullYear()} Carlo Pascoli · <a href="/about">About</a> · <a class="foot-social" href="https://x.com/WhereAreTheyUAP" target="_blank" rel="noopener" data-social="x" data-placement="home-footer">X @WhereAreTheyUAP</a> · <a class="foot-social" href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener" data-social="github" data-placement="home-footer">GitHub</a> · <a href="/privacy">Privacy &amp; cookies</a></div>
         </footer>
       </div>`;
     // the pre-rendered hero stays in place, untouched (same markup; replacing or even moving it would count as a new,
@@ -2951,6 +2965,12 @@
   $('#view-home').addEventListener('click', e => {
     const pr = e.target.closest('[data-preset]');
     if (pr) { e.preventDefault(); applyPreset(JSON.parse(pr.dataset.preset)); return; }
+    const hs = e.target.closest('[data-home-story]');
+    if (hs) { e.preventDefault(); track('explore_start', { item_id: hs.dataset.homeStory, method: 'home' }); startStory(hs.dataset.homeStory); return; }
+    const hc = e.target.closest('[data-home-claim]');
+    if (hc) { e.preventDefault(); go('claims'); select(hc.dataset.homeClaim, { from: 'home' }); return; }
+    const hf = e.target.closest('[data-home-file]');
+    if (hf) { e.preventDefault(); go('graph'); select(hf.dataset.homeFile, { from: 'home' }); if (innerWidth > 860) setReading(true); return; }
     const hv = e.target.closest('[data-home-view]');
     if (hv) { e.preventDefault(); go(hv.dataset.homeView); return; }
     const hl = e.target.closest('[data-home-latest]');
