@@ -1171,3 +1171,63 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
 /* archived copy of a web source (Wayback Machine), beside the original link */
 .arch { color: var(--muted); font-size: .92em; margin-left: 2px; }
 .arch:hover { color: var(--accent); }
+
+/* ───────── UX overhaul (docs/2026-11-16-ux-review.md) ───────── */
+/* a filter narrowing Explore, the Timeline or the World map says so on the view itself */
+.filter-note { position: absolute; left: 50%; bottom: 46px; transform: translateX(-50%); z-index: 1050; display: flex; gap: 10px; align-items: center; max-width: calc(100% - 24px);
+  padding: 7px 12px; border-radius: 999px; background: var(--panel); border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--border)); box-shadow: var(--shadow); font-size: 13px; white-space: nowrap; }
+.filter-note[hidden] { display: none; }
+.filter-note span { overflow: hidden; text-overflow: ellipsis; }
+.filter-note .link { font-family: inherit; text-transform: none; letter-spacing: 0; font-size: 13px; flex: none; }
+
+/* the foot of a file: where to go next */
+.p-next { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--border); }
+.p-next h4 { margin: 0 0 10px; }
+.pn-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.pn-card { display: flex; flex-direction: column; gap: 3px; padding: 12px 14px; border: 1px solid var(--border); border-left: 3px solid var(--c, var(--accent)); border-radius: 6px; background: var(--panel-2); color: var(--text); }
+.pn-card:hover { text-decoration: none; border-color: var(--c, var(--accent)); }
+.pn-card b { font-size: 15px; line-height: 1.3; }
+.pn-k { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.pn-t { font-size: 13px; color: var(--muted); line-height: 1.45; }
+.pn-story { --c: var(--accent); background: color-mix(in srgb, var(--accent) 7%, var(--panel)); }
+.p-edit > span:first-child { flex-basis: 100%; font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; }
+.panel-back { display: none; }
+
+@media (max-width: 860px) {
+  :root { --tab-h: calc(54px + env(safe-area-inset-bottom, 0px)); }
+  .filter-note { bottom: calc(var(--tab-h) + 12px); }
+  /* the header names the site, and the search folds into an icon that opens over it */
+  .brand .brand-text { display: flex; }
+  .brand .brand-text small { display: none; }
+  .brand .brand-text b { font-size: 12px; letter-spacing: .14em; }
+  .top .social-btn { display: none; } /* X is in the More menu */
+  .top .search { flex: 0 0 36px; max-width: none; margin-left: auto; position: static; }
+  .top .search input { padding: 0; color: transparent; cursor: pointer; caret-color: transparent;
+    background: var(--panel-2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238b98a8' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-3.6-3.6'/%3E%3C/svg%3E") center / 17px no-repeat; }
+  .top .search input::placeholder { color: transparent; }
+  .top .search:focus-within, .top .search:has(input:not(:placeholder-shown)) { position: absolute; left: 8px; right: 8px; top: 11px; z-index: 6; }
+  .top .search:focus-within input, .top .search input:not(:placeholder-shown) { padding: 0 12px; color: var(--text); cursor: text; caret-color: auto; background-image: none; background-color: var(--panel-2); }
+  .top .search:focus-within input::placeholder { color: var(--muted); }
+  body.has-panel #btn-side { display: none; }
+  /* a file is a page between the header and the tab bar, not a sheet over them */
+  .panel { inset: var(--top-h) 0 var(--tab-h) 0; z-index: 1100; padding-top: 0; }
+  .panel-tools { display: none; }
+  .panel-back { display: block; margin: 10px 0 0 10px; padding: 6px 10px; border: 0; border-radius: 6px; background: none; color: var(--accent); font: inherit; font-size: 14px; cursor: pointer; }
+  #panel-body { padding: 8px 16px 40px; }
+  .pn-list { grid-template-columns: 1fr; }
+  /* Latest: rows to scan, about three to a screen; the pinned one keeps its summary */
+  .lt-card { grid-template-columns: 1fr 104px; gap: 10px; padding: 10px 12px; }
+  .lt-card:not(:has(.lt-thumb)) { grid-template-columns: 1fr; }
+  .lt-card:has(.lt-cover) { grid-template-columns: 1fr 64px; }
+  .lt-thumb:not(.lt-cover) { order: 2; }
+  .lt-thumb .wplay { font-size: 18px; }
+  .lt-thumb .wdur { font-size: 10px; right: 3px; bottom: 3px; }
+  .lt-card h3 { font-size: 15px; margin: 4px 0 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .lt-sum, .lt-people, .lt-actions { display: none; }
+  .lt-card.is-featured .lt-sum { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin: 6px 0 0; }
+  .lt-kicker { font-size: 10.5px; gap: 4px 8px; }
+}
+.p-crumbs { font-size: 13px; color: var(--muted); margin-bottom: 8px; padding-right: 84px; min-height: 20px; }
+.p-crumbs a { color: var(--muted); }
+.p-crumbs a:hover { color: var(--accent); }
+@media (max-width: 860px) { .p-crumbs { display: none; } }

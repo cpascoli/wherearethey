@@ -13,6 +13,13 @@
     get(k, d) { try { const v = localStorage.getItem('wat:' + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
     set(k, v) { try { localStorage.setItem('wat:' + k, JSON.stringify(v)); } catch { /* storage unavailable */ } },
   };
+  // filters (types, themes, years) last for the visit only: a type isolated last week must not empty the Timeline
+  // today. Settings (official sources only, hide explained, theme) stay in `store`.
+  const visit = {
+    get(k, d) { try { const v = sessionStorage.getItem('wat:' + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+    set(k, v) { try { sessionStorage.setItem('wat:' + k, JSON.stringify(v)); } catch { /* storage unavailable */ } },
+  };
+  try { for (const k of ['types', 'typesSeen', 'tags', 'yr']) localStorage.removeItem('wat:' + k); } catch { /* filters saved by earlier versions */ }
 
   // ───────────── vocabulary ─────────────
   const TYPES = {
@@ -193,11 +200,11 @@
     credibleOnly: store.get('credibleOnly', true),
     hideExplained: store.get('hideExplained', true),
     // types added since a visitor saved their filters (e.g. film, book) are switched on for them
-    types: new Set(store.get('types', null) ? [...store.get('types'), ...allTypes.filter(t => !offGraph(t) && !store.get('typesSeen', TYPES_BEFORE_SHELF).includes(t))] : allTypes.filter(t => !offGraph(t))),
-    tags: new Set(store.get('tags', [])),
+    types: new Set(visit.get('types', null) || allTypes.filter(t => !offGraph(t))),
+    tags: new Set(visit.get('tags', [])),
     // Open-ended ends are stored as null so new earlier/later files stay in range. Older saves stored the
     // full range as numbers (lower end 1940, the old floor); treat those as open too.
-    yr: (([a, b] = []) => [a == null || a === 1940 ? MIN_Y : a, b == null || b >= NOW_Y ? MAX_Y : b])(store.get('yr', null) || []),
+    yr: (([a, b] = []) => [a == null || a === 1940 ? MIN_Y : a, b == null || b >= NOW_Y ? MAX_Y : b])(visit.get('yr', null) || []),
     showMentions: store.get('showMentions', false),
     video: null,
     trail: null,                                  // exploration mode: { steps: [ids], open: Set (connections shown), pinned: Set }; core: true = the key-files map
@@ -275,10 +282,30 @@
     }).join('');
     $('#f-yr-label').textContent = (state.yr[0] <= MIN_Y && state.yr[1] >= MAX_Y ? 'all' : `${state.yr[0]}–${state.yr[1]}`) + ` · ${total} dated`;
   }
+  // Filters live in the side panel, which on phones is a closed drawer: when one is narrowing Explore, the Timeline or
+  // the World map, say so on the view itself, with a way out.
+  const FILTER_VIEWS = new Set(['graph', 'timeline', 'map']);
+  function filterSummary() {
+    const on = [];
+    const list = state.view === 'timeline' ? graphTypes.filter(t => !OFF_TIMELINE.has(t)) : graphTypes;
+    const sel = list.filter(t => state.types.has(t));
+    if (sel.length < list.length) on.push(!sel.length ? 'no types' : sel.length <= 2 ? sel.map(t => TYPES[t].plural).join(' and ') + ' only' : `${sel.length} of ${list.length} types`);
+    if (state.tags.size) on.push(`theme${state.tags.size > 1 ? 's' : ''}: ${[...state.tags].join(', ')}`);
+    if (state.yr[0] > MIN_Y || state.yr[1] < MAX_Y) on.push(`${state.yr[0]}–${state.yr[1]}`);
+    return on.join(' · ');
+  }
+  function renderFilterNote() {
+    const el = $('#filter-note'); if (!el) return;
+    const txt = FILTER_VIEWS.has(state.view) && !(state.view === 'graph' && state.trail && !state.trail.core) ? filterSummary() : '';
+    el.hidden = !txt;
+    if (txt) el.innerHTML = `<span>Showing ${esc(txt)}</span><button class="link" data-clear-filters>Show everything</button>`;
+  }
+  function resetFilters() { state.types = new Set(graphTypes); state.tags.clear(); state.yr = [MIN_Y, MAX_Y]; filtersChanged(); }
+  document.addEventListener('click', e => { if (e.target.closest('[data-clear-filters]')) resetFilters(); });
   function filtersChanged() {
     clearTimeout(filtersChanged.t); filtersChanged.t = setTimeout(() => track('filter_change', { credible_only: state.credibleOnly, hide_explained: state.hideExplained, types: [...state.types].sort().join(','), tags: [...state.tags].join(',') || 'none' }), 1500);
-    store.set('credibleOnly', state.credibleOnly); store.set('hideExplained', state.hideExplained); store.set('types', [...state.types]); store.set('typesSeen', allTypes); store.set('tags', [...state.tags]);
-    store.set('yr', [state.yr[0] <= MIN_Y ? null : state.yr[0], state.yr[1] >= MAX_Y ? null : state.yr[1]]); store.set('showMentions', state.showMentions);
+    store.set('credibleOnly', state.credibleOnly); store.set('hideExplained', state.hideExplained); visit.set('types', [...state.types]); visit.set('tags', [...state.tags]);
+    visit.set('yr', [state.yr[0] <= MIN_Y ? null : state.yr[0], state.yr[1] >= MAX_Y ? null : state.yr[1]]); store.set('showMentions', state.showMentions);
     computeVisible();
     renderFilters();
     refreshView(true);
@@ -1092,7 +1119,7 @@
   function renderTimeline() {
     // videos (upload dates) and people (birth dates) aren't events: they appear through the events they're part of
     const items = ents.filter(e => e.y0 && !OFF_TIMELINE.has(e.type) && visible.has(e.id)).sort((a, b) => String(a.date).localeCompare(String(b.date)) || a.name.localeCompare(b.name));
-    if (!items.length) { $('#timeline').innerHTML = '<p class="muted" style="padding:24px">Nothing dated matches the current filters.</p>'; return; }
+    if (!items.length) { $('#timeline').innerHTML = '<p class="muted" style="padding:24px">Nothing dated matches the current filters. <button class="link" data-clear-filters>Show everything</button></p>'; return; }
     const groups = new Map();
     for (const e of items) { const d = Math.floor(e.y0 / 10) * 10; if (!groups.has(d)) groups.set(d, []); groups.get(d).push(e); }
     $('#timeline').innerHTML = [...groups].map(([d, list]) => `
@@ -1311,6 +1338,13 @@
   const LT_WHEN_KEYS = ['upcoming', 'recent', 'added'];
   let ltCats = new Set(LT_CAT_KEYS), ltWhen = new Set(LT_WHEN_KEYS), latestShowAll = false;
   const ltFiltered = () => ltCats.size < LT_CAT_KEYS.length || ltWhen.size < LT_WHEN_KEYS.length;
+  // a pinned entry says why it is there: an anniversary ("22 years ago this week") or simply featured
+  function pinLabel(e, today) {
+    const d = String(e.date || '');
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(d) || d.slice(0, 4) >= today.slice(0, 4)) return 'featured';
+    const years = +today.slice(0, 4) - +d.slice(0, 4), gap = Math.abs(Date.parse(today.slice(0, 4) + d.slice(4)) - Date.parse(today)) / 864e5;
+    return gap < 1 ? `on this day, ${years} years ago` : gap <= 7 ? `${years} years ago this week` : 'featured';
+  }
   function renderLatest() {
     const { featured, recent, added, folded, today } = latestData();
     const isNew = e => LATEST_SEEN && e.added > LATEST_SEEN;
@@ -1348,7 +1382,7 @@
       return `<article class="lt-card ${isNew(e) ? 'is-new' : ''} ${pinned ? 'is-featured' : ''}" style="--c:${TYPES[e.type].color}" data-file="${esc(e.id)}">${cover}
         ${rec ? `<div class="lt-thumb" data-play="${rec.id}@0" title="Play"><img src="${vthumb(rec)}" alt="" loading="lazy"><span class="wplay">▶</span>${rec.duration ? `<span class="wdur">${fmtDur(rec.duration)}</span>` : ''}</div>` : ''}
         <div class="lt-body">
-          <div class="lt-kicker"><span class="lt-date">${esc(fmtRange(e))}</span>${pinned ? '<em class="lt-tag feat">featured</em>' : ''}${e.date > today ? '<em class="lt-tag up">upcoming</em>' : ''}${isNew(e) ? '<em class="lt-tag new">new</em>' : ''}<span class="lt-kind">${esc(kind)}</span>${e.type === 'video' && e.channel ? `<span class="lt-src">${esc(e.channel)}</span>` : e.outlet ? `<span class="lt-src">${esc(e.outlet)}</span>` : ''}</div>
+          <div class="lt-kicker"><span class="lt-date">${esc(fmtRange(e))}</span>${pinned ? `<em class="lt-tag feat">${esc(pinLabel(e, today))}</em>` : ''}${e.date > today ? '<em class="lt-tag up">upcoming</em>' : ''}${isNew(e) ? '<em class="lt-tag new">new</em>' : ''}<span class="lt-kind">${esc(kind)}</span>${e.type === 'video' && e.channel ? `<span class="lt-src">${esc(e.channel)}</span>` : e.outlet ? `<span class="lt-src">${esc(e.outlet)}</span>` : ''}</div>
           <h3><a href="${hrefOf(e.id)}" data-goto="${esc(e.id)}">${esc(e.name)}</a></h3>
           ${latestSummary(e) ? `<p class="lt-sum">${esc(latestSummary(e))}</p>` : ''}
           ${people.length ? `<div class="lt-people">${people.map(p => chip(p.id)).join('')}</div>` : ''}
@@ -1608,7 +1642,8 @@
     const t = TYPES[e.type] || TYPES.concept;
     const h = [];
     const nFacts = e.facts.length, nDoc = e.facts.filter(f => f.status === 'documented').length;
-    h.push(`<div class="dossier-strip"><span>File <b>${fileNo(e)}</b></span><span>${e.type === 'claim' ? `${e.assertions.length} statements` : nFacts ? `${nDoc}/${nFacts} documented` : 'no claims filed'}</span></div>`);
+    // where this file sits (the file code that stood here is now at the foot); the same line as the early page's breadcrumb
+    h.push(`<nav class="p-crumbs" aria-label="Breadcrumb"><a href="/" data-view="home">Home</a> › <a href="${e.type === 'claim' ? '/claims' : e.type === 'video' ? '/videos' : e.type === 'film' ? '/documentaries' : e.type === 'book' ? '/books' : e.type === 'news' ? '/latest' : '/a-z'}" data-view="${e.type === 'claim' ? 'claims' : e.type === 'video' ? 'videos' : e.type === 'film' || e.type === 'book' ? 'shelf' : e.type === 'news' ? 'latest' : 'index'}"${e.type === 'film' || e.type === 'book' ? ` data-shelf="${e.type}"` : ''}>${esc(t.plural)}</a></nav>`);
     h.push(`<div class="p-kicker"><span class="badge type" style="background:${t.color}">${t.label}</span>${e.cred ? `<span class="badge ${e.cred}" title="${esc(CRED[e.cred].hint)}">${CRED[e.cred].label}</span>` : ''}${e.outcome && e.outcome !== 'open' ? `<span class="badge outcome-${e.outcome}" title="${esc(OUTCOME[e.outcome].hint)}">${OUTCOME[e.outcome].label}</span>` : ''}${e.type === 'claim' ? `<span class="badge claim-${e.status}" title="${esc(CLAIM_STATUS[e.status].hint)}">${CLAIM_STATUS[e.status].label}</span>` : ''}</div>`);
     if (e.outcome && e.outcome !== 'open' && e.outcomeNote) h.push(`<div class="p-outcome outcome-${e.outcome}"><b>${OUTCOME[e.outcome].label}.</b> ${esc(e.outcomeNote)}${e.outcomeSource ? ` <span class="src">${e.outcomeSource.id ? chip(e.outcomeSource.id) : e.outcomeSource.url ? `<a href="${esc(e.outcomeSource.url)}" target="_blank" rel="noopener">source ↗</a>` : ''}</span>` : ''}</div>`);
     // books and films with a cover: the title block on the left, the cover beside it (stacked on phones)
@@ -1784,8 +1819,23 @@
     if (e.facts.length) {
       h.push(`<div class="p-sec" id="sec-claims"><h4>Notes & claims <span>${e.facts.length}</span></h4><ul class="facts" data-collapse="5" data-fixed>${e.facts.map(f => factHtml(f, e)).join('')}</ul></div>`);
     }
-    h.push(`<div class="p-edit">Edit <code>${esc(e.file)}</code><button class="link" data-copy="${esc(e.file)}">copy path</button></div>`);
+    h.push(nextStep(e));
+    h.push(`<div class="p-edit"><span>File ${fileNo(e)} · ${e.type === 'claim' ? `${e.assertions.length} statements` : nFacts ? `${nDoc} of ${nFacts} statements documented` : 'no statements filed'}</span>Edit <code>${esc(e.file)}</code><button class="link" data-copy="${esc(e.file)}">copy path</button></div>`);
     return h.join('');
+  }
+  // The foot of a file: one next step, so a page reached from a search engine or an assistant doesn't end in nothing.
+  // The story the file belongs to (content/explore.json), else the files it is most directly tied to: a case first.
+  function nextStep(e) {
+    if (e.type === 'record' || e.type === 'news') return '';
+    const story = (EXPLORE.stories || []).find(st => st.steps.some(x => x.ids.includes(e.id)));
+    const rank = { incident: 0, hearing: 1, program: 2, person: 3, document: 4, organization: 5, concept: 6, event: 7 };
+    const seen = new Set([e.id]);
+    const near = adj.get(e.id).filter(x => x.kind === 'rel' && !WEAK_LINKS.has(x.label))
+      .map(x => byId.get(x.other)).filter(o => o && o.type in rank && !(state.credibleOnly && o.cred === 'outside') && !seen.has(o.id) && seen.add(o.id))
+      .sort((a, b) => rank[a.type] - rank[b.type] || adj.get(b.id).length - adj.get(a.id).length).slice(0, story ? 2 : 3);
+    if (!story && !near.length) return '';
+    const card = o => `<a class="pn-card" href="${hrefOf(o.id)}" data-goto="${esc(o.id)}" style="--c:${TYPES[o.type].color}"><span class="pn-k">${TYPES[o.type].label}${fmtRange(o) ? ` · ${esc(fmtRange(o))}` : ''}</span><b>${esc(o.name)}</b></a>`;
+    return `<div class="p-next"><h4>Keep reading</h4><div class="pn-list">${story ? `<a class="pn-card pn-story" href="/explore?story=${esc(story.id)}" data-story-start="${esc(story.id)}"><span class="pn-k">Story · ${story.steps.length} steps</span><b>${esc(story.title)}</b><span class="pn-t">${esc(story.blurb || '')}</span></a>` : ''}${near.map(card).join('')}</div></div>`;
   }
   // one note or claim of a file (e), with its status, who said it and its source; `extra` adds to its last line
   function factHtml(f, e, extra = '') {
@@ -1996,6 +2046,8 @@
     $('#panel').hidden = false;
     $('#panel').scrollTop = 0;
     $('#app').classList.add('has-panel');
+    document.body.classList.add('has-panel'); // the header sits outside #app
+    $('#panel-back').textContent = history.state?.n > 0 ? '‹ Back' : '‹ Home';
     $('#app').classList.toggle('reading', !!state.reading);
     $('#panel-expand').innerHTML = state.reading ? ICON_COLLAPSE : ICON_EXPAND;
     $('#panel-expand').title = state.reading ? 'Back to side panel (R)' : 'Reading view (R)';
@@ -2074,8 +2126,11 @@
     $('#app').classList.remove('reading');
     $('#panel').hidden = true;
     $('#app').classList.remove('has-panel');
+    document.body.classList.remove('has-panel');
     afterResize();
   }
+  // phones: back to where the visitor came from; a file that was the first page of the visit goes to the home page
+  $('#panel-back').addEventListener('click', () => { if (history.state?.n > 0) history.back(); else go('home', { keepSel: false }); });
   function afterResize() { requestAnimationFrame(() => { if (!cy) ensureGraph(); cy?.resize(); map?.invalidateSize(); }); } // a graph uncovered for the first time is built now
   $('#panel-close').addEventListener('click', () => select(null));
   // claims page: a click opens the claim beside the list, a double-click opens it full width (the reading view)
@@ -2091,6 +2146,8 @@
   function trackReading(method) { track('reading_view', { action: state.reading ? 'collapse' : 'expand', method, content_type: byId.get(state.sel)?.type, item_id: state.sel }); }
   $('#panel-expand').addEventListener('click', () => { trackReading('button'); setReading(!state.reading); });
   $('#panel').addEventListener('click', e => {
+    const cr = e.target.closest('.p-crumbs a[data-view]');
+    if (cr) { e.preventDefault(); if (cr.dataset.shelf) shelfTab = cr.dataset.shelf; go(cr.dataset.view, { keepSel: false }); return; }
     const j = e.target.closest('[data-jump]');
     if (j) { e.preventDefault(); $('#' + j.dataset.jump)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
   });
@@ -3128,10 +3185,11 @@
   }
   function setHash({ replace = false } = {}) {
     if (routing) return;
-    const target = urlFor(), st = { view: state.view, sel: state.sel, video: state.video };
+    const target = urlFor(), st = { view: state.view, sel: state.sel, video: state.video, n: history.state?.n || 0 };
     if (newBuild && !replace && !state.sel && !state.video && target !== location.pathname) { location.assign(target); return; }
     const search = state.view === 'videos' && state.video ? searchFor() : null; // elsewhere keep what the address had (e.g. ?explore)
     if (location.pathname === target && !location.hash) { history.replaceState(st, '', target + (search ?? location.search)); return; }
+    if (!replace) st.n++; // how far into the visit this entry is: the phone's Back button uses it
     history[replace ? 'replaceState' : 'pushState'](st, '', target + (search ?? ''));
     trackView();
   }
@@ -3247,7 +3305,7 @@
     $('#app').classList.toggle('is-home', view === 'home');
     document.body.classList.toggle('is-home', view === 'home'); // the header sits outside #app
     if (state.autoSel && view !== 'latest') { if (state.sel === state.autoSel) state.sel = null; state.autoSel = null; } // Latest's preview stays on Latest
-    if (view === 'home') { $('#panel').hidden = true; $('#app').classList.remove('has-panel'); }
+    if (view === 'home') { $('#panel').hidden = true; $('#app').classList.remove('has-panel'); document.body.classList.remove('has-panel'); }
     else if (state.sel) openPanel(state.sel);
     else if (!state.sel) closePanel();
     $('#filters').hidden = view === 'videos' || view === 'latest'; // Latest and Videos have their own side panels
@@ -3258,7 +3316,6 @@
     if (!keepSel) select(null);
     setHash(); // push the new view's history entry first, so views that adjust it (e.g. default video) replace their own entry
     refreshView(false);
-    if (view === 'latest') setTimeout(previewLatest); // after any route has applied its own selection
     requestAnimationFrame(heroSearchInView); // the header search hides behind the landing page's own
   }
   function refreshView(filtersChangedFlag) {
@@ -3281,6 +3338,7 @@
       if (!state.video) showBrowse();
     }
     if (filtersChangedFlag && cy && state.view !== 'graph') applyGraphFilter();
+    renderFilterNote();
   }
 
   // swap a DVIDS poster for a player: our <video> on DVIDS's MP4 (starts at once), or DVIDS's embed player if there is
@@ -3340,6 +3398,8 @@
       openVideo(vid, +t || 0, true);
       return;
     }
+    const st = e.target.closest('#panel [data-story-start]');
+    if (st) { e.preventDefault(); track('explore_start', { item_id: st.dataset.storyStart, method: 'file' }); state.reading = false; select(null); startStory(st.dataset.storyStart); return; }
     const ex = e.target.closest('[data-explore]');
     if (ex) {
       e.preventDefault();
@@ -3479,9 +3539,8 @@
       if (r.view === 'videos' && r.video && byId.has(r.video) && (r.video !== state.video || r.t || initial)) openVideo(r.video, r.t || 0, false);
       else if (r.view === 'videos' && !r.video && state.video) closeVideo();
     } finally { routing = false; if (bootCover) { bootCover = false; if (!cy && state.view === 'graph') ensureGraph(); } }
-    if (state.view === 'latest' && !state.sel) setTimeout(previewLatest); // Back to Latest shows its preview again
     // store the state on this entry
-    history.replaceState({ view: state.view, sel: state.sel, video: state.video }, '', urlFor() + (state.view === 'videos' && state.video ? searchFor() : location.search));
+    history.replaceState({ view: state.view, sel: state.sel, video: state.video, n: history.state?.n || 0 }, '', urlFor() + (state.view === 'videos' && state.video ? searchFor() : location.search));
   }
   window.addEventListener('popstate', () => { applyRoute(false); trackView(); }); // Back/Forward count as page views too
   // the server-rendered article is for crawlers and no-JS readers, and on a file's page it shows while the app loads:
