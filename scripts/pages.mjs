@@ -362,6 +362,75 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
   let heroHtml = heroA > 0 && heroB > heroA ? appSrc.slice(heroA, heroB).trim() : '';
   heroHtml = heroHtml.replace('${ents.length}', String(entities.length));
   if (/\$\{/.test(heroHtml)) throw new Error('pages.mjs: the hero markup in renderHome has a new ${…}: render it here too');
+  // The home page's first screen also holds the day's file (app.js: onThisDay, clipFor, keyMoments, and the
+  // .home-day block of renderHome: keep the four in step). The app draws it only once the archive has loaded, far too
+  // late for the largest paint, so it is written here for today and the next three weeks; a line of script in the
+  // page picks the visitor's date, and the app leaves the block as it finds it.
+  const homeDays = (() => {
+    const color = Object.fromEntries([...appSrc.matchAll(/^\s+(\w+): \{ label: '[^']*', plural: '[^']*', color: '(#\w+)'/gm)].map(m => [m[1], m[2]]));
+    const OUT = { disputed: 'Partly explained', explained: 'Explained', hoax: 'Hoax' };
+    const adjOf = id => near.get(id) || [];
+    const resolved = e => e.outcome === 'explained' || e.outcome === 'hoax';
+    const recordingOf = v => adjOf(v.id).find(x => x.dir === 'out' && x.label === 'recording of' && ['hearing', 'event', 'news'].includes(byId.get(x.other)?.type))?.other;
+    const recordedDate = v => { const of = recordingOf(v); return (of && byId.get(of)?.date) || v.date; };
+    const momentsFor = new Map();
+    for (const v of entities) {
+      if (v.type !== 'video') continue;
+      const of = adjOf(v.id).filter(x => x.dir === 'out' && x.label === 'recording of' && ['hearing', 'event', 'news'].includes(byId.get(x.other)?.type)).map(x => x.other);
+      for (const m of v.moments || []) for (const id of new Set([...(m.refs || []), m.speaker, ...of].filter(Boolean))) (momentsFor.get(id) || momentsFor.set(id, []).get(id)).push({ video: v.id, ...m });
+    }
+    const keyMoments = (e, ms) => {
+      if (['video', 'claim', 'hearing', 'event', 'news', 'document'].includes(e.type) || ms.length < 5) return [];
+      const sworn = m => (byId.get(recordingOf(byId.get(m.video)))?.type === 'hearing' ? 1 : 0);
+      const pool = (e.type === 'person' ? ms.filter(m => m.speaker === e.id) : ms.filter(m => m.speaker && byId.get(m.speaker)?.cred === 'credible'))
+        .sort((a, b) => (b.key ? 1 : 0) - (a.key ? 1 : 0) || sworn(b) - sworn(a) || String(recordedDate(byId.get(a.video))).localeCompare(String(recordedDate(byId.get(b.video)))) * (e.type === 'person' ? -1 : 1) || a.t - b.t);
+      const out = [], seen = new Set();
+      for (const m of pool) { const k = e.type === 'person' ? m.video : m.speaker; if (seen.has(k)) continue; seen.add(k); out.push(m); if (out.length === 3) break; }
+      return out.length >= 2 ? out : [];
+    };
+    const clipFor = e => {
+      const ms = momentsFor.get(e.id) || [];
+      const m = keyMoments(e, ms)[0] || ms.find(x => x.speaker && byId.get(x.speaker)?.cred === 'credible') || ms[0];
+      if (m) return { video: m.video, t: m.t, text: m.text, speaker: m.speaker };
+      const v = adjOf(e.id).map(x => byId.get(x.other)).find(o => o?.type === 'video');
+      return v ? { video: v.id, t: 0 } : null;
+    };
+    const onThisDay = today => {
+      const y = today.slice(0, 4), ms = Date.parse(today);
+      const gap = e => Math.round(Math.abs(Date.parse(y + e.date.slice(4)) - ms) / 864e5);
+      const c = entities.filter(e => ['incident', 'hearing', 'event'].includes(e.type) && /^\d{4}-\d{2}-\d{2}$/.test(String(e.date || '')) && e.date.slice(0, 4) < y && e.cred !== 'outside' && !resolved(e) && gap(e) <= 3)
+        .sort((a, b) => gap(a) - gap(b) || adjOf(b.id).length - adjOf(a.id).length)[0];
+      if (c) return { e: c, label: gap(c) ? `This week in ${c.date.slice(0, 4)}` : `On this day in ${c.date.slice(0, 4)}` };
+      const f = latestSplit(entities, today).featured[0];
+      return f ? { e: f, label: 'Featured' } : null;
+    };
+    const cut = (t, n) => (t.length > n ? t.slice(0, n - 3).replace(/\s+\S*$/, '') + '…' : t);
+    const sum = e => cut(cut(text(e.bio || e.body) || e.facts?.[0]?.text || (e.moments || []).slice(0, 2).map(m => m.text).join(' ') || '', 260), 190);
+    const range = e => (e.end && e.end !== e.date ? `${fmtDate(String(e.date))} – ${fmtDate(String(e.end))}` : fmtDate(String(e.date || '')));
+    const vthumb = v => (v.youtube ? `https://i.ytimg.com/vi/${v.youtube}/mqdefault.jpg` : v.thumb ? fileUrl(v.thumb) : v.dvids?.poster || '');
+    const block = today => {
+      const day = onThisDay(today); if (!day) return '';
+      const e = day.e, clip = clipFor(e), v = clip && byId.get(clip.video);
+      if (clip && !vthumb(v)) return ''; // no picture to show yet: the app draws its placeholder
+      return `<section class="home-day" data-pre="${today}" style="--c:${color[e.type] || '#888'}">
+            <div class="home-kicker">${esc(day.label)} · ${esc(range(e))}</div>
+            ${clip ? `<button class="hd-clip" data-play="${esc(clip.video)}@${clip.t}" title="Play"><img src="${esc(vthumb(v))}" alt="" fetchpriority="high"><span class="wplay">▶</span>${clip.text ? `<span class="hd-quote">${esc(clip.speaker && byId.get(clip.speaker) ? byId.get(clip.speaker).name + ': ' : '')}${esc(clip.text.length > 150 ? clip.text.slice(0, 147).replace(/\s+\S*$/, '') + '…' : clip.text)}</span>` : ''}</button>`
+              : e.image ? `<a class="hd-clip" href="${e.path}" data-home-file="${esc(e.id)}"><img src="${esc(e.image)}" alt="${esc(e.imageCaption || e.name)}" fetchpriority="high"></a>` : ''}
+            <h2><a href="${e.path}" data-home-file="${esc(e.id)}">${esc(e.name)}</a></h2>
+            <p>${esc(sum(e))}</p>
+            <div class="hd-meta">${e.outcome && e.outcome !== 'open' ? `<span class="badge outcome-${e.outcome}">${OUT[e.outcome]}</span>` : e.type === 'incident' ? '<span class="badge outcome-open">Open</span>' : ''}<a class="btn small" href="${e.path}" data-home-file="${esc(e.id)}">Open the file →</a></div>
+          </section>`;
+    };
+    const html = [], dates = {};
+    for (let i = -1; i <= 21; i++) {
+      const d = dayOffset(today, i), h = block(d).replace(/ data-pre="[^"]*"/, ' data-pre="1"');
+      if (!h) continue;
+      if (!html.includes(h)) html.push(h);
+      dates[d] = html.indexOf(h);
+    }
+    return { html, dates };
+  })();
+  const homePre = `<div class="home-wrap"><div class="home-top"></div></div><script type="application/json" id="home-days">${JSON.stringify(homeDays).replace(/</g, '\\u003c')}</script><script>(function(){try{var d=JSON.parse(document.getElementById('home-days').textContent),i=d.dates[new Date().toISOString().slice(0,10)];if(i!=null)document.querySelector('#view-home .home-top').innerHTML=d.html[i]}catch(e){}})()</script>`;
   const render = p => {
     const url = SITE_URL + (p.path === '/' ? '/' : p.path);
     const fullTitle = p.view === 'home' || p.title.length > 50 ? p.title : `${p.title} — Where Are They`; // long titles keep their words, not the brand
@@ -382,7 +451,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       // the landing page starts as the app leaves it (body.is-home hides the filters button, body.hero-q the header
       // search behind the hero's own), so neither shows and then vanishes while the app loads
       .replace(/^<body>$/m, p.view === 'home' && heroHtml ? '<body class="is-home hero-q">' : '<body>') // the tag's own line (a comment above also says <body>)
-      .replace('<section class="view home" id="view-home"></section>', p.view === 'home' && heroHtml ? `<section class="view home" id="view-home">${heroHtml}</section>` : '<section class="view home" id="view-home"></section>')
+      .replace('<section class="view home" id="view-home"></section>', p.view === 'home' && heroHtml ? `<section class="view home" id="view-home">${heroHtml}${homePre}</section>` : '<section class="view home" id="view-home"></section>')
       .replace('<!--SSR-->', `<main id="ssr" class="ssr"${p.pre ? ' data-pre="1"' : ''}${p.view === 'home' && heroHtml ? ' data-hero="1"' : ''}>${nav}<article>${p.body}</article></main>`); // data-pre: shown at once while the app loads (templates/app.html)
   };
   for (const p of pages) {

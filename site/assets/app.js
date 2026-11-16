@@ -2708,10 +2708,14 @@
     const el = $('#view-home');
     const typed = $('#hq')?.value || '', typing = document.activeElement?.id === 'hq';
     const preHero = !el.dataset.drawn && el.querySelector(':scope > .hero'); // written into index.html by scripts/pages.mjs
-    el.dataset.drawn = '1';
     const today = new Date().toISOString().slice(0, 10);
     const ld = latestData(), latest = [...ld.featured, ...ld.recent].slice(0, 6);
-    const day = onThisDay(today), clip = day && clipFor(day.e);
+    // the day's file comes written in index.html (scripts/pages.mjs, for the visitor's date): it is the largest thing
+    // on the first screen, so it stays exactly as it was painted, for the whole visit
+    const preDay = !el.dataset.drawn && el.querySelector(':scope > .home-wrap .home-day[data-pre]');
+    if (preDay) homeDayPre = { date: today, html: preDay.outerHTML };
+    const kept = homeDayPre?.date === today ? homeDayPre.html : '';
+    const day = kept ? null : onThisDay(today), clip = day && clipFor(day.e);
     const claims = ents.filter(e => e.type === 'claim').sort(claimOrder).slice(0, 3);
     const sum = e => { const t = latestSummary(e); return t.length > 190 ? t.slice(0, 187).replace(/\s+\S*$/, '') + '…' : t; };
     const html = `
@@ -2732,7 +2736,7 @@
 
       <div class="home-wrap">
         <div class="home-top">
-          ${day ? `<section class="home-day" style="--c:${TYPES[day.e.type].color}">
+          ${kept}${day ? `<section class="home-day" style="--c:${TYPES[day.e.type].color}">
             <div class="home-kicker">${esc(day.label)} · ${esc(fmtRange(day.e))}</div>
             ${clip ? `<button class="hd-clip" data-play="${esc(clip.video)}@${clip.t}" title="Play"><img src="${vthumb(byId.get(clip.video))}" alt="" fetchpriority="high"><span class="wplay">▶</span>${clip.text ? `<span class="hd-quote">${esc(clip.speaker && byId.get(clip.speaker) ? byId.get(clip.speaker).name + ': ' : '')}${esc(clip.text.length > 150 ? clip.text.slice(0, 147).replace(/\s+\S*$/, '') + '…' : clip.text)}</span>` : ''}</button>`
               : day.e.image ? `<a class="hd-clip" href="${hrefOf(day.e.id)}" data-home-file="${esc(day.e.id)}"><img src="${esc(day.e.image)}" alt="${esc(day.e.imageCaption || day.e.name)}"></a>` : ''}
@@ -2787,7 +2791,18 @@
       </div>`;
     // the pre-rendered hero stays in place, untouched (same markup; replacing or even moving it would count as a new,
     // later paint): only what follows it is added
-    if (preHero) { const t = document.createElement('template'); t.innerHTML = html; t.content.querySelector('.hero').remove(); el.append(t.content); if (typed) $('#hq').dispatchEvent(new Event('input', { bubbles: true })); }
+    el.dataset.drawn = '1';
+    if (preHero) {
+      const t = document.createElement('template'); t.innerHTML = html; t.content.querySelector('.hero').remove();
+      const wrap = el.querySelector(':scope > .home-wrap'), nw = t.content.querySelector('.home-wrap');
+      if (wrap && preDay) { // the rest is added around the day's file
+        nw.querySelector('.home-top > .home-day')?.remove();
+        wrap.querySelector('.home-top').append(...nw.querySelector('.home-top').childNodes);
+        nw.querySelector('.home-top').remove();
+        wrap.append(...nw.childNodes);
+      } else { wrap?.remove(); el.querySelector('#home-days')?.remove(); el.append(t.content); }
+      if (typed) $('#hq').dispatchEvent(new Event('input', { bubbles: true }));
+    }
     else {
       el.innerHTML = html;
       if (typed || typing) { const q = $('#hq'); q.value = typed; if (typing) q.focus(); if (typed) q.dispatchEvent(new Event('input', { bubbles: true })); }
@@ -3007,6 +3022,7 @@
   // the views that scroll as a whole keep theirs as their last element; the home page and the timeline write it
   // with their content, and a file's page has it under the file
   for (const sel of ['#view-latest', '#view-videos', '#view-claims', '#view-shelf', '#view-index', '#panel']) $(sel)?.insertAdjacentHTML('beforeend', siteFoot('footer'));
+  var homeDayPre = null; // the day's file as index.html drew it
   var homeQ = '', homeAt = 0; // the home page's search and scroll position, for Back
   function exploreFrom(id, { open = false } = {}) {
     const ent = byId.get(id);
