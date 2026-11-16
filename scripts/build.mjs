@@ -193,6 +193,7 @@ export async function build({ check = false, quiet = false } = {}) {
       if (d.youtube && !e.youtube) errors.push(`${r.file}: invalid "youtube" value`);
       e.moments = arr(d.moments).map(m => claimTags({
         t: toSeconds(m.t), text: m.text || '', speaker: m.speaker || null, refs: arr(m.refs).map(String),
+        ...(m.key ? { key: true } : {}), // chosen by hand for a file's “Key testimony” (keyMoments in app.js)
       }, m, r.file));
       for (const m of e.moments) {
         if (m.t == null) errors.push(`${r.file}: moment has an invalid time`);

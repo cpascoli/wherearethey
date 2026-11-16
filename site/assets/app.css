@@ -1321,3 +1321,4 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
 .tl-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .tl-date .lt-tag { display: inline-block; margin-top: 4px; }
 @media (max-width: 860px) { .tl-views { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin: 0 -16px; padding: 12px 16px 2px; } .tl-views .chip { flex: none; } }
+#panel-body.reading .p-crumbs { margin-bottom: 14px; } /* with the early page (.ssr-crumbs): the title lands within a few pixels of where it was drawn */
