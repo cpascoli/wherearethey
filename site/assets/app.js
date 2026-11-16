@@ -2712,7 +2712,8 @@
         <div class="hero-inner">
           <div class="hero-kicker"><span class="dot-live"></span> Case archive · UAP · NHI · <b>${ents.length}</b> files</div>
           <h1>Where are they?</h1>
-          <p class="hero-lede">What officials, pilots, radar operators, intelligence officers and scientists have said <em>on the record</em> about unidentified anomalous phenomena and non-human intelligence, each statement with its source.</p>
+          <p class="hero-tagline">Connecting the dots on UAP disclosure</p>
+          <p class="hero-lede">What officials, pilots, radar operators, intelligence officers and scientists have said <em>on the record</em> about unidentified anomalous phenomena and non-human intelligence.</p>
           <div class="hero-search">
             <input id="hq" type="search" placeholder="Search a person, program or case: Grusch, AARO, Tic Tac, Roswell…" autocomplete="off" spellcheck="false">
             <div id="hq-dd" class="dropdown" hidden></div>

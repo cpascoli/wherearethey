@@ -1328,3 +1328,15 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
 .tl-order:hover { border-color: var(--accent); }
 .tl-order span { color: var(--accent); }
 @media (max-width: 860px) { .tl-bar { align-items: stretch; flex-direction: column; gap: 0; } .tl-order { align-self: flex-start; margin: 8px 0 0; } }
+/* the masthead, a little taller, with its tagline back */
+.hero-inner { padding: 60px 40px 54px; }
+.hero h1 { font-size: clamp(40px, 5.4vw, 72px); margin: 16px 0 10px; }
+.hero-tagline { font-size: clamp(21px, 2.3vw, 30px); margin: 0 0 18px; }
+.hero-lede { font-size: 16.5px; margin: 0 0 22px; }
+@media (max-width: 860px) {
+  .hero-inner { padding: 30px 16px 28px; }
+  .hero h1 { font-size: 36px; margin: 12px 0 6px; }
+  .hero-tagline { font-size: 20px; margin: 0 0 12px; }
+  .hero-lede { font-size: 15px; margin-bottom: 16px; }
+}
+.hero-inner > .hero-lede { max-width: 740px; } /* two lines on a desktop screen */
