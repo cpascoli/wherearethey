@@ -770,13 +770,17 @@
     highlight(state.sel);
     layoutGraph(true);
   }
-  function startTrail(id) {
+  // open: the visitor asked for the file itself (a search result), so on phones its page shows, with the trail ready
+  // behind it: the Explore tab or "Explore from here" uncovers the graph, centred on the file
+  function startTrail(id, { open = false } = {}) {
     if (!byId.has(id)) return;
+    const cover = open && window.innerWidth <= 860;
     state.trail = { steps: [id], open: new Set([id]), pinned: new Set() };
     state.hiddenIds.delete(id);
-    if (state.view !== 'graph') go('graph');
-    if (state.sel !== id) select(id, { from: 'trail', noPanel: window.innerWidth <= 860 });
-    if (window.innerWidth <= 860) closePanel(); // on a phone the panel would cover the graph you're exploring
+    if (state.view !== 'graph') { if (state.sel !== id) quiet(() => go('graph')); else go('graph'); }
+    if (state.sel !== id) select(id, { from: 'trail', noPanel: window.innerWidth <= 860 && !open });
+    else if (cover && $('#panel').hidden) openPanel(id);
+    if (window.innerWidth <= 860 && !open) closePanel(); // on a phone the panel would cover the graph you're exploring
     trailChanged(id, { relayout: true });
   }
   // Stories (content/explore.json `stories`): a trail that opens with all of a story's files on screen, told step by
@@ -1705,7 +1709,7 @@
     if (e.credentials?.length) hp(`<ul class="cred-list p-creds">${e.credentials.map(c => `<li><span class="cred-cat">${esc(CRED_CAT[c.category] || c.category)}</span><span>${esc(c.role)}</span></li>`).join('')}</ul>`);
     // a person's short bio sits in the header, beside the portrait; the Profile below keeps the details
     if (e.bio) hp(`<p class="p-lead">${e.bio}</p>`);
-    if (!offGraph(e.type) && !(state.trail && !state.trail.core && state.view === 'graph')) hp(`<button class="btn small p-explore" data-explore="${esc(e.id)}" title="Show only this file and its connections, then follow a trail">◎ Explore from here</button>`);
+    if (!offGraph(e.type) && (narrowScreen() || !(state.trail && !state.trail.core && state.view === 'graph'))) hp(`<button class="btn small p-explore" data-explore="${esc(e.id)}" title="Show only this file and its connections, then follow a trail">◎ Explore from here</button>`);
     if (e.aka.length) hp(`<div class="p-aka">Also: ${e.aka.map(esc).join(' · ')}</div>`);
     if (e.type === 'film' || e.type === 'book') hp(`<div class="p-meta">${esc([e.credits, shelfMeta(e), e.isbn ? `ISBN ${e.isbn}` : ''].filter(Boolean).join(' · '))}</div>`);
     // books: the summary's opening paragraph sits in the header beside the cover, as a person's bio does (bookLead)
@@ -2993,12 +2997,13 @@
   // From the home page into Explore: start clean every time (no leftover type/theme/year filters or hidden
   // files) and make the chosen file the first step of a trail. "Official sources only" stays on unless the
   // file itself is outside the criteria, which would otherwise hide it.
-  function exploreFrom(id) {
+  var homeQ = '', homeAt = 0; // the home page's search and scroll position, for Back
+  function exploreFrom(id, { open = false } = {}) {
     const ent = byId.get(id);
     if (!ent) return;
-    if (offGraph(ent.type)) { go(ent.type === 'news' ? 'latest' : ent.type === 'claim' ? 'claims' : 'graph'); select(id); return; } // records and news aren't graph nodes: just open the card
+    if (offGraph(ent.type)) { quiet(() => go(ent.type === 'news' ? 'latest' : ent.type === 'claim' ? 'claims' : 'graph')); select(id); return; } // records and news aren't graph nodes: just open the card
     clearFilters(ent);
-    startTrail(id);
+    startTrail(id, { open });
   }
   function clearFilters(ent) {
     state.types = new Set(graphTypes);
@@ -3016,13 +3021,13 @@
     const hs = e.target.closest('[data-home-story]');
     if (hs) { e.preventDefault(); track('explore_start', { item_id: hs.dataset.homeStory, method: 'home' }); startStory(hs.dataset.homeStory); return; }
     const hc = e.target.closest('[data-home-claim]');
-    if (hc) { e.preventDefault(); go('claims'); select(hc.dataset.homeClaim, { from: 'home' }); return; }
+    if (hc) { e.preventDefault(); quiet(() => go('claims')); select(hc.dataset.homeClaim, { from: 'home' }); return; }
     const hf = e.target.closest('[data-home-file]');
-    if (hf) { e.preventDefault(); go('graph'); select(hf.dataset.homeFile, { from: 'home' }); if (innerWidth > 860) setReading(true); return; }
+    if (hf) { e.preventDefault(); quiet(() => go('graph')); select(hf.dataset.homeFile, { from: 'home' }); if (innerWidth > 860) setReading(true); return; }
     const hv = e.target.closest('[data-home-view]');
     if (hv) { e.preventDefault(); go(hv.dataset.homeView); return; }
     const hl = e.target.closest('[data-home-latest]');
-    if (hl) { e.preventDefault(); go('latest'); select(hl.dataset.homeLatest); return; }
+    if (hl) { e.preventDefault(); quiet(() => go('latest')); select(hl.dataset.homeLatest); return; }
     const hg = e.target.closest('[data-home-goto]');
     if (hg) {
       e.preventDefault();
@@ -3050,7 +3055,7 @@
   $('#view-home').addEventListener('mousedown', e => {
     const it = e.target.closest('[data-hq]');
     const tq = e.target.closest('[data-hq-t]');
-    if (it) { e.preventDefault(); exploreFrom(it.dataset.hq); } // a home search starts a clean trail
+    if (it) { e.preventDefault(); homeQ = $('#hq').value; exploreFrom(it.dataset.hq, { open: true }); } // a home search opens the file, with a clean trail behind it
     if (tq) { e.preventDefault(); searchVideosFor($('#hq').value); }
     if (e.target.closest('[data-hq-d]')) { e.preventDefault(); showDocResults($('#hq').value, $('#hq-dd'), '#hq'); }
     if (e.target.closest('#hq-dd [data-dd-back]')) { e.preventDefault(); requestAnimationFrame(() => $('#hq').dispatchEvent(new Event('input', { bubbles: true }))); }
@@ -3250,6 +3255,10 @@
   const SHELF_PATH = { '/documentaries': 'film', '/books': 'book' }; // one page component, two lists
   const byPath = new Map(ents.filter(e => e.path).map(e => [e.path, e.id]));
   let routing = false; // true while applying a URL, so the steps don't push history entries of their own
+  // one move, one history entry: opening a file from another page changes the view first, and that step must not
+  // leave an entry of its own (Back from the file would land on an empty Explore instead of where the visitor was)
+  let holdHash = false;
+  const quiet = fn => { const was = holdHash; holdHash = true; try { fn(); } finally { holdHash = was; } };
   function urlFor() {
     if (state.view === 'videos' && state.video) return hrefOf(state.video); // the video's page
     if (state.sel && state.view === 'latest' && state.sel === state.autoSel) return VIEW_PATH.latest; // Latest's preview, not a chosen file
@@ -3284,7 +3293,7 @@
     return q.length ? `?${q.join('&')}` : '';
   }
   function setHash({ replace = false } = {}) {
-    if (routing) return;
+    if (routing || holdHash) return;
     const target = urlFor(), st = { view: state.view, sel: state.sel, video: state.video, n: history.state?.n || 0 };
     if (newBuild && !replace && !state.sel && !state.video && target !== location.pathname) { location.assign(target); return; }
     const search = state.view === 'videos' && state.video ? searchFor() : null; // elsewhere keep what the address had (e.g. ?explore)
@@ -3395,6 +3404,7 @@
     }
     if (view === 'timeline' && state.view !== 'timeline' && !routing) tlView = 'all'; // from the menu: the whole timeline (its address has no ?view)
     if (view === 'home' && state.view !== 'home') teardownApp();
+    if (state.view === 'home' && view !== 'home') homeAt = $('#view-home').scrollTop;
     if (state.reading && view !== state.view) { state.reading = false; $('#app').classList.remove('reading'); } // e.g. ▶ from reading view
     state.view = view;
     $('#side').classList.remove('open'); // close the mobile filter drawer on navigation
@@ -3433,7 +3443,14 @@
     else if (state.view === 'shelf') renderShelf();
     else if (state.view === 'claims') renderClaims();
     else if (state.view === 'latest') renderLatest();
-    else if (state.view === 'home') renderHome();
+    else if (state.view === 'home') {
+      renderHome();
+      // Back to the home page: where the visitor was, with their search and its results
+      if (routing) {
+        if (homeQ && $('#hq')) { $('#hq').value = homeQ; $('#hq').dispatchEvent(new Event('input', { bubbles: true })); }
+        else $('#view-home').scrollTop = homeAt;
+      } else { homeQ = ''; homeAt = 0; }
+    }
     else if (state.view === 'videos') {
       renderVidSide();
       if (!state.video) showBrowse();
@@ -3521,14 +3538,14 @@
       if (fromSearch && ent && !offGraph(ent.type)) {
         if (!visible.has(ent.id)) clearFilters(ent);
         else if (!state.types.has(ent.type)) { state.types.add(ent.type); filtersChanged(); }
-        startTrail(ent.id);
+        startTrail(ent.id, { open: true });
         if (window.innerWidth > 860) readFromSearch(); // desktop: the file opens full width, the trail ready behind it
         else $('#side').classList.remove('open');
         return;
       }
       if (fromSearch && ent && offGraph(ent.type)) {
         const a = graphAnchor(ent.id);
-        if (a) { startTrail(a); select(ent.id, { from: 'link', noPanel: window.innerWidth <= 860 }); if (window.innerWidth > 860) readFromSearch(); else $('#side').classList.remove('open'); return; }
+        if (a) { quiet(() => startTrail(a)); select(ent.id, { from: 'link' }); if (window.innerWidth > 860) readFromSearch(); else $('#side').classList.remove('open'); return; }
       }
       if (state.view === 'home' || (fromSearch && state.view !== 'graph')) go('graph'); // records: Explore with the card open
       // following a link from the reading view stays in the reading view: the new file opens full width
