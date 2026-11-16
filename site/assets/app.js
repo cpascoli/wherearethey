@@ -1149,8 +1149,10 @@
   }
   function renderTimeline() {
     const newest = tlNewestFirst();
+    // phones: the readings fold into a dropdown, so the order button shares their row
     const chips = `<div class="tl-bar"><div class="tl-views" role="tablist" aria-label="What the timeline shows">${TL_VIEWS.map(([k, l]) => `<button role="tab" aria-selected="${k === tlView}" class="chip ${k === tlView ? 'on' : ''}" data-tl-view="${k}">${l}</button>`).join('')}</div>
-      <button class="tl-order" data-tl-order aria-pressed="${newest}" title="Reverse the order (remembered on this device)"><span aria-hidden="true">${newest ? '↓' : '↑'}</span> ${newest ? 'Newest first' : 'Oldest first'}</button></div>`;
+      <select class="tl-pick" aria-label="What the timeline shows">${TL_VIEWS.map(([k, l]) => `<option value="${k}"${k === tlView ? ' selected' : ''}>${l}</option>`).join('')}</select>
+      <button class="tl-order" data-tl-order aria-label="${newest ? 'Newest first: switch to oldest first' : 'Oldest first: switch to newest first'}" title="${newest ? 'Newest first' : 'Oldest first'}: tap to reverse (remembered on this device)"><span class="tl-arrows" aria-hidden="true"><i class="${newest ? '' : 'on'}">↑</i><i class="${newest ? 'on' : ''}">↓</i></span><span class="tl-order-l">${newest ? 'Newest first' : 'Oldest first'}</span></button></div>`;
     const pick = TL_PICK[tlView], today = isoToday();
     // videos (upload dates) and people (birth dates) aren't events: they appear through the events they're part of
     const items = (pick ? ents.filter(e => e.y0 && pick(e) && !(state.credibleOnly && e.cred === 'outside') && !(state.hideExplained && resolved(e)))
@@ -1176,12 +1178,15 @@
       track('filter_change', { view: 'timeline', timeline_order: tlNewest ? 'newest' : 'oldest' });
       renderTimeline(); $('#timeline').scrollTop = 0; return;
     }
-    const b = e.target.closest('[data-tl-view]'); if (!b) return;
-    tlView = b.dataset.tlView;
+    const b = e.target.closest('[data-tl-view]'); if (b) setTlView(b.dataset.tlView);
+  });
+  $('#timeline').addEventListener('change', e => { if (e.target.matches('.tl-pick')) setTlView(e.target.value); });
+  function setTlView(v) {
+    tlView = v;
     history.replaceState(history.state, '', tlView === 'all' ? '/timeline' : `/timeline?view=${tlView}`);
     track('filter_change', { view: 'timeline', timeline_view: tlView });
     renderTimeline(); renderFilterNote(); $('#timeline').scrollTop = 0;
-  });
+  }
 
   // ───────────── world map ─────────────
   let map = null, mapLayer = null, tileLayer = null, mapFitted = false;

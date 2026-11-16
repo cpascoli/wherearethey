@@ -1326,8 +1326,20 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
 .tl-bar { display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
 .tl-order { flex: none; margin: 14px 0 2px; padding: 5px 10px; border: 1px solid var(--border); border-radius: 6px; background: var(--panel-2); color: var(--text); font: inherit; font-size: 13px; cursor: pointer; white-space: nowrap; }
 .tl-order:hover { border-color: var(--accent); }
-.tl-order span { color: var(--accent); }
-@media (max-width: 860px) { .tl-bar { align-items: stretch; flex-direction: column; gap: 0; } .tl-order { align-self: flex-start; margin: 8px 0 0; } }
+.tl-order { display: inline-flex; align-items: center; gap: 7px; }
+.tl-arrows { display: inline-flex; gap: 1px; font-size: 14px; line-height: 1; }
+.tl-arrows i { font-style: normal; color: var(--muted); opacity: .45; }
+.tl-arrows i.on { color: var(--accent); opacity: 1; font-weight: 700; }
+.tl-pick { display: none; }
+/* phones: one row, a dropdown for what the timeline shows and the two arrows for its order */
+@media (max-width: 860px) {
+  .tl-bar { flex-wrap: nowrap; align-items: center; padding-top: 12px; }
+  .tl-views { display: none; }
+  .tl-pick { display: block; flex: 1; min-width: 0; height: 40px; padding: 0 34px 0 12px; border: 1px solid var(--border); border-radius: 6px; background: var(--panel-2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23889' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 12px center; color: var(--text); font: inherit; font-size: 16px; appearance: none; -webkit-appearance: none; }
+  .tl-order { margin: 0; height: 40px; padding: 0 12px; }
+  .tl-order-l { display: none; }
+  .tl-arrows { font-size: 17px; gap: 3px; }
+}
 /* the masthead, a little taller, with its tagline back */
 .hero-inner { padding: 60px 40px 54px; }
 .hero h1 { font-size: clamp(40px, 5.4vw, 72px); margin: 16px 0 10px; }
