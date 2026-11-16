@@ -2970,12 +2970,18 @@
     const frame = now => {
       if (state.view !== 'home' || !document.body.contains(cv)) return;
       const dpr = Math.min(2, devicePixelRatio || 1), W = cv.clientWidth, H = cv.clientHeight;
-      if (cv.width !== W * dpr || cv.height !== H * dpr) { cv.width = W * dpr; cv.height = H * dpr; }
+      if (cv.width !== W * dpr || cv.height !== H * dpr) {
+        cv.width = W * dpr; cv.height = H * dpr;
+        const s = hero.querySelector('.hero-search'); // where the text column ends: the cloud keeps clear of it
+        heroData.uiRight = s ? s.getBoundingClientRect().right - cv.getBoundingClientRect().left : 0;
+      }
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.clearRect(0, 0, W, H);
       const t = (now - t0) / 1000;
       const narrow = W < 860;
-      const cx = narrow ? W * .5 : W * .74, cy = H * .5, scale = Math.min(W * (narrow ? .45 : .27), H * .44);
+      const s0 = Math.min(W * (narrow ? .45 : .27), H * .44), cy = H * .5;
+      const scale = narrow ? s0 : Math.min(s0, Math.max(s0 * .75, (W - (heroData.uiRight || 0)) / 2.3)); // narrow desktops: a little smaller beside the text
+      const cx = narrow ? W * .5 : Math.min(W - scale * 1.1, Math.max(W * .74, (heroData.uiRight || 0) + scale * 1.15));
       // rotation pauses while a card is open or a dot is hovered, so things stay where you're looking
       if (!reduce && heroData.selected == null && !(heroData.hover >= 0)) heroData.rot += (now - lastT) / 1000 * 0.018;
       lastT = now;

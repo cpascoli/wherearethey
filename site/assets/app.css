@@ -1357,7 +1357,12 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
   .hero-tagline { font-size: 20px; margin: 0 0 12px; }
   .hero-lede { font-size: 15px; margin-bottom: 16px; }
 }
-.hero-inner > .hero-lede { max-width: 740px; } /* two lines on a desktop screen */
+/* desktop: a taller masthead (the dot cloud's size follows the hero's height, startHero), and the lede wraps to the
+   search box's width */
+@media (min-width: 861px) {
+  .hero-inner { padding: 104px 40px 100px; }
+  .hero-inner > .hero-lede, .hero-inner > .hero-search { max-width: 660px; }
+}
 
 /* the footer every page ends with: copyright, X, GitHub */
 .site-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; margin: 56px 24px 0; padding: 18px 0 28px; border-top: 1px dashed var(--border-strong); font-size: 12.5px; color: var(--muted); }
