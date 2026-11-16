@@ -1352,3 +1352,24 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
   .hero-lede { font-size: 15px; margin-bottom: 16px; }
 }
 .hero-inner > .hero-lede { max-width: 740px; } /* two lines on a desktop screen */
+
+/* the footer every page ends with: copyright, X, GitHub */
+.site-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; margin: 56px 24px 0; padding: 18px 0 28px; border-top: 1px dashed var(--border-strong); font-size: 12.5px; color: var(--muted); }
+.site-foot a { color: inherit; text-decoration: none; } .site-foot a:hover { color: var(--accent); }
+.home-wrap > .site-foot, .timeline > .site-foot { margin-left: 0; margin-right: 0; }
+.latest-page + .site-foot { max-width: 932px; margin-left: auto; margin-right: auto; }
+.latest-page { padding-bottom: 24px; }
+.timeline { padding-bottom: 0; }
+.side-links { display: flex; flex-wrap: wrap; gap: 4px 12px; }
+/* a file's page: under the file in the reading view and on phones, not in the narrow side panel */
+.panel > .site-foot { display: none; }
+.app.reading .panel > .site-foot { display: flex; max-width: 1180px; margin: 40px auto 0; padding-left: 24px; padding-right: 24px; }
+/* while a video plays, the page is the player */
+#view-videos:has(#vid-browse[hidden]) > .site-foot { display: none; }
+.sp-links { display: flex; gap: 14px; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); font-size: 12.5px; }
+.sp-links a { color: var(--muted); } .sp-links a:hover { color: var(--accent); }
+@media (max-width: 860px) {
+  .site-foot { margin: 40px 16px 0; padding-bottom: 24px; }
+  .panel > .site-foot { display: flex; }
+  .view > .site-foot, .timeline > .site-foot { padding-bottom: calc(var(--tab-h) + 22px); } /* these pages run under the tab bar */
+}

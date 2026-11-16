@@ -265,7 +265,7 @@
     renderHist();
     $('#f-mentions').checked = state.showMentions;
     const s = KB.stats;
-    $('#f-stats').innerHTML = `<b>${s.entities}</b> entries · <b>${s.edges}</b> links<br><b>${s.transcripts}</b> transcripts · <b>${s.transcriptHours}</b> hours · <b>${s.mentions.toLocaleString()}</b> mentions<br>Built ${new Date(KB.built).toLocaleString()}<div class="side-links">© ${new Date().getFullYear()} Carlo Pascoli · <a href="/about">About</a> · <a href="https://x.com/WhereAreTheyUAP" target="_blank" rel="noopener" data-social="x" data-placement="side-footer">X</a> · <a href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener" data-social="github" data-placement="side-footer">GitHub</a> · <a href="/privacy">Privacy &amp; cookies</a></div>`; // build warnings stay in the terminal (npm run check), never on the page
+    $('#f-stats').innerHTML = `<b>${s.entities}</b> entries · <b>${s.edges}</b> links<br><b>${s.transcripts}</b> transcripts · <b>${s.transcriptHours}</b> hours · <b>${s.mentions.toLocaleString()}</b> mentions<br>Built ${new Date(KB.built).toLocaleString()}${siteFoot('side-footer', 'side-links')}`; // build warnings stay in the terminal (npm run check), never on the page
   }
   function renderHist() {
     const step = 5, start = Math.floor(MIN_Y / step) * step, n = Math.ceil((MAX_Y + 1 - start) / step);
@@ -1170,7 +1170,7 @@
           <div><div><span class="tl-type">${TYPES[e.type].label}</span><span class="tl-name">${esc(e.name)}</span></div>
           <div class="tl-desc">${esc([e.place?.name, e.facts?.[0]?.text].filter(Boolean).join(' — '))}</div>
           ${tlView === 'congress' && e.type === 'hearing' ? hearingCard(e) : ''}</div>
-        </div>`).join('')}</div>`).join('');
+        </div>`).join('')}</div>`).join('') + siteFoot('footer');
   }
   $('#timeline').addEventListener('click', e => {
     if (e.target.closest('[data-tl-order]')) {
@@ -2783,11 +2783,7 @@
           <p class="home-stats-line">${homeStats().map(([n, l]) => `<span><b>${n}</b> ${l}</span>`).join('')}</p>
         </section>
 
-        <footer class="home-foot">
-          <div><b>WHERE ARE THEY</b> is a personal research archive. It collects public, on-record statements and official documents. It does not make claims of its own: every statement is attributed, and every status can be checked against its source.</div>
-          <div class="muted">Built ${new Date(KB.built).toLocaleDateString()} · ${KB.stats.entities} files · ${KB.stats.edges.toLocaleString()} links · sources include congressional records, war.gov/UFO (PURSUE), the CIA and FBI reading rooms, NARA and The Black Vault.</div>
-          <div class="home-links">© ${new Date().getFullYear()} Carlo Pascoli · <a href="/about">About</a> · <a class="foot-social" href="https://x.com/WhereAreTheyUAP" target="_blank" rel="noopener" data-social="x" data-placement="home-footer">X @WhereAreTheyUAP</a> · <a class="foot-social" href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener" data-social="github" data-placement="home-footer">GitHub</a> · <a href="/privacy">Privacy &amp; cookies</a></div>
-        </footer>
+        ${siteFoot('home-footer')}
       </div>`;
     // the pre-rendered hero stays in place, untouched (same markup; replacing or even moving it would count as a new,
     // later paint): only what follows it is added
@@ -3002,6 +2998,15 @@
   // From the home page into Explore: start clean every time (no leftover type/theme/year filters or hidden
   // files) and make the chosen file the first step of a trail. "Official sources only" stays on unless the
   // file itself is outside the criteria, which would otherwise hide it.
+  // The footer every page ends with: the copyright and where to follow the project. What the archive is belongs on
+  // About; privacy and cookies are under Settings.
+  function siteFoot(placement, cls = 'site-foot') {
+    const X_ICON = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>';
+    return `<${cls === 'site-foot' ? 'footer' : 'div'} class="${cls}"><span>© ${new Date().getFullYear()} Carlo Pascoli</span><a class="foot-social" href="https://x.com/WhereAreTheyUAP" target="_blank" rel="noopener" data-social="x" data-placement="${placement}">${X_ICON} @WhereAreTheyUAP</a><a href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener" data-social="github" data-placement="${placement}">GitHub</a></${cls === 'site-foot' ? 'footer' : 'div'}>`;
+  }
+  // the views that scroll as a whole keep theirs as their last element; the home page and the timeline write it
+  // with their content, and a file's page has it under the file
+  for (const sel of ['#view-latest', '#view-videos', '#view-claims', '#view-shelf', '#view-index', '#panel']) $(sel)?.insertAdjacentHTML('beforeend', siteFoot('footer'));
   var homeQ = '', homeAt = 0; // the home page's search and scroll position, for Back
   function exploreFrom(id, { open = false } = {}) {
     const ent = byId.get(id);
@@ -3580,7 +3585,7 @@
   });
   document.addEventListener('click', e => { if (!moreMenu.hidden && !e.composedPath().includes(moreMenu)) setMore(false); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !moreMenu.hidden) setMore(false); });
-  if (!window.GA_ID) moreMenu.querySelector('.mm-consent')?.remove();
+  if (!window.GA_ID) $('.sp-consent')?.remove();
   $('#btn-side').addEventListener('click', e => { e.stopPropagation(); $('#side').classList.toggle('open'); });
   // tapping outside the open drawer closes it. Use the event path recorded at dispatch: filter clicks re-render the
   // list, so by now e.target may be detached and closest('#side') would wrongly say "outside".
