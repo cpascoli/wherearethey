@@ -6,6 +6,7 @@
 
 - **Audience** (Google Analytics, 18 October to 15 November; a floor, since it runs only after consent in Europe): 1,043 users, about 250 new a week and flat, 2.2 views and 37 seconds per user.
 - **Returning visitors**: 2–4% of each weekly cohort came back the following week, and the share is falling. Nothing on the site lets a visitor subscribe or follow; the only return paths are RSS and X.
+- **Devices**: 69% phones (iOS 47%, Android 23%), 30% desktop, a third of that automated. Design for an iPhone at 390 wide first.
 - **Where visitors come from**: ChatGPT about 26% of sessions, Reddit 11%, Google 3%, X 2%; the rest is "direct", about a tenth of it from data centres. The two spikes were PURSUE Release 07 (23 October) and the O'Hare anniversary (7 November).
 - **What they read**: video pages first (658 views against 528 for all file pages). The home page loses 60% of its visitors. Book pages get almost none: the most viewed had 8 views.
 - **Search**: 20 clicks from Google in the first four weeks, and impressions fell from 200–440 a day to under 10 on 25 October. Cause unknown.

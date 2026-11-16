@@ -197,6 +197,7 @@ From the exports of 16 November, covering 18 October to 15 November (29 days). A
 | Average engagement per user | 37 seconds |
 | Home page | 419 views, 322 users, 60% bounce |
 | United States | 640 users (61%) |
+| Phones | 751 users (69%); desktop 321 (30%), tablet 11. iOS 510, Android 251 |
 
 Sessions by source:
 
@@ -220,6 +221,7 @@ What this says:
 - **Some of "Direct" is not people.** Data-centre cities (Ashburn 37, Council Bluffs 26, North Charleston 13, Prineville, Boardman, and probably part of Singapore's 36) account for roughly 100 users, about 10%.
 - **13 November recorded no users at all.** No commit of that week explains it. It looks like a gap in tracking and should be checked.
 - **Measurement gaps.** No key events are configured, and the exports carry no breakdown by event, so depth (video plays, moment clicks, outbound and sponsored links) cannot be read from them although the app sends those events.
+- **Most readers are on a phone, mainly an iPhone.** About 100 of the desktop users have screen sizes that only automated browsers report (800×600, 1280×1280, 2000×2000), so the real phone share is about three quarters. The commonest screen is 390×844. See the UX review.
 - **Languages.** 82% of users browse in English; a few page titles arrived machine-translated into Japanese, Chinese and Korean. Demand for translations is modest so far.
 
 ## 7. What this review does not yet assess
