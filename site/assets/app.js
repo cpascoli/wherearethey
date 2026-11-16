@@ -3691,10 +3691,27 @@
   // the server-rendered article is for crawlers and no-JS readers, and on a file's page it shows while the app loads:
   // the app's own view replaces it, at about the same place if the reader had scrolled
   const ssr = document.getElementById('ssr'), ssrPre = ssr?.classList.contains('ssr-pre'), ssrAt = ssrPre && ssr.scrollHeight > ssr.clientHeight ? ssr.scrollTop / (ssr.scrollHeight - ssr.clientHeight) : 0;
+  // The app redraws what the early page showed. An element it paints even one row of pixels larger counts as a new,
+  // later largest paint, and the same paragraph comes out a row taller or shorter depending on the fraction of a
+  // pixel it starts at. So the fractions are noted here and the app's copies are put on the same ones (phaseLock).
+  const phase = el => { if (!el) return null; const t = el.getBoundingClientRect().top; return t - Math.floor(t); };
+  const prePhase = ssrPre ? { lead: phase(ssr.querySelector('.ssr-lead')), img: phase(ssr.querySelector('article > figure img, .ssr-head > figure img')), body: phase(ssr.querySelector('.ssr-body p')), fact: phase(ssr.querySelector('article > ul > li, article > ol > li')) } : null;
+  function phaseLock() {
+    if (!prePhase || $('#panel').hidden) return;
+    const body = $('#panel-body');
+    for (const [k, sel] of [['lead', '.p-lead'], ['img', '.p-image img'], ['body', '.p-bio p'], ['fact', '.facts .fact']]) {
+      const el = body.querySelector(sel); if (!el || prePhase[k] == null) continue;
+      const up = (((phase(el) - prePhase[k]) % 1) + 1) % 1; // how far to lift it, under a pixel
+      if (up < 0.02 || up > 0.98) continue;
+      const host = k === 'img' ? el.closest('.p-image') : k === 'body' ? el.closest('.p-bio') : k === 'fact' ? el.closest('.facts') : el;
+      host.style.marginTop = `${parseFloat(getComputedStyle(host).marginTop) - up}px`;
+    }
+  }
   ssr?.remove(); document.documentElement.classList.remove('pre');
   // the logo returns home without a page reload
   $('.brand').addEventListener('click', e => { e.preventDefault(); go('home'); });
   applyRoute(true);
+  phaseLock();
   if (ssrAt > 0 && !$('#panel').hidden) { const pn = $('#panel'); pn.scrollTop = ssrAt * (pn.scrollHeight - pn.clientHeight); }
   window.trackView = trackView; // the consent banner records the current page once the visitor accepts
   trackView();

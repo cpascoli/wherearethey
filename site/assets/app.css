@@ -379,8 +379,10 @@ mark { background: rgba(227, 179, 65, .4); color: inherit; border-radius: 3px; p
 .fact { border-left-width: 2px; }
 .cred-cat { border-radius: 2px; font-weight: 500; letter-spacing: .04em; }
 .p-bio { font-size: 14.5px; line-height: 1.65; }
-.p-bio p:first-child::first-line { font-weight: 500; }
-.p-bio.after-lead p:first-child::first-line { font-weight: inherit; } /* the bio above already opens the page */
+/* the profile's first line in medium: only in the desktop side panel. Where the early page (.ssr-pre) is drawn first
+   (the reading view, phones) the app's paragraph must wrap exactly as the early one did, or it paints larger and
+   counts as a later largest paint */
+@media (min-width: 861px) { #panel-body:not(.reading) .p-bio:not(.after-lead) p:first-child::first-line { font-weight: 500; } }
 .p-bio blockquote { margin: 10px 0; padding: 4px 0 4px 12px; border-left: 2px solid var(--accent); color: var(--text); font-style: italic; }
 .glimpses { display: grid; gap: 12px; }
 .glimpse { margin: 0; padding: 2px 0 2px 14px; border-left: 2px solid var(--accent); }
@@ -1372,4 +1374,20 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
   .site-foot { margin: 40px 16px 0; padding-bottom: 24px; }
   .panel > .site-foot { display: flex; }
   .view > .site-foot, .timeline > .site-foot { padding-bottom: calc(var(--tab-h) + 22px); } /* these pages run under the tab bar */
+}
+/* The early page must not sit lower than the app's page: a paragraph cut by the bottom of the screen would show more
+   of itself once the app redraws it, and count as a later largest paint. Lines that wrapped only on the early page: */
+.ssr-pre .ssr-crumbs, .ssr-pre .ssr-kicker { max-width: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ssr-pre h1 { margin-bottom: 5px; font-weight: 600; letter-spacing: -.01em; line-height: 1.25; } /* as .p-title */
+.ssr-pre figure img { max-width: 721px; } /* a pixel wider than the app's picture: never the smaller of the two */
+.ssr-pre .ssr-explore { margin-bottom: 8px; }
+.ssr-pre .ssr-head + figure { margin-top: 0; }
+.ssr-pre .ssr-head + h2, .ssr-pre .ssr-lead + h2 { margin-top: 58px; }
+.ssr-pre .ssr-body p { margin: 0 0 10px; }
+.ssr-pre .ssr-head .ssr-creds { max-width: none; }
+@media (max-width: 860px) { .ssr-pre > article { padding-right: 17px; } } /* the app's column is a pixel narrower (the panel's border): wrap as it does */
+@media (max-width: 860px) { .ssr-pre figure img { width: calc(100% + 2px); max-width: calc(100% + 2px); } } /* and the picture a touch wider than the app's, never narrower */
+@media (max-width: 860px) {
+  .ssr-pre h1 { font-size: 22px; letter-spacing: -.02em; font-weight: 700; } /* as .p-title on phones */
+  .ssr-pre .ssr-head .ssr-aka { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 }
