@@ -296,7 +296,7 @@
   }
   function renderFilterNote() {
     const el = $('#filter-note'); if (!el) return;
-    const txt = FILTER_VIEWS.has(state.view) && !(state.view === 'graph' && state.trail && !state.trail.core) ? filterSummary() : '';
+    const txt = FILTER_VIEWS.has(state.view) && !(state.view === 'graph' && state.trail && !state.trail.core) && !(state.view === 'timeline' && tlView !== 'all') ? filterSummary() : '';
     el.hidden = !txt;
     if (txt) el.innerHTML = `<span>Showing ${esc(txt)}</span><button class="link" data-clear-filters>Show everything</button>`;
   }
@@ -1116,21 +1116,57 @@
   }
 
   // ───────────── timeline ─────────────
+  // The Timeline has four readings, picked by the chips above the list: everything (what the side filters let through),
+  // Congress (hearings, legislation and members' events, newest first, each hearing with its witnesses and moments),
+  // official documents and releases, and incidents. The address records the choice: /timeline?view=congress.
+  const TL_VIEWS = [['all', 'Everything'], ['congress', 'Congress'], ['releases', 'Documents & releases'], ['incidents', 'Incidents']];
+  const tlFromUrl = () => { const v = new URLSearchParams(location.search).get('view'); return TL_VIEWS.some(x => x[0] === v) ? v : 'all'; };
+  let tlView = tlFromUrl();
+  const foldedInHearing = e => adj.get(e.id).some(x => x.dir === 'out' && ['submitted to', 'transcript of'].includes(x.label)); // statements and transcripts show on the hearing's card
+  const TL_PICK = {
+    congress: e => (e.type === 'hearing' && !/citizen/.test(e.id)) || (['event', 'document'].includes(e.type) && e.tags.includes('congress') && !foldedInHearing(e)),
+    releases: e => (e.type === 'document' && !foldedInHearing(e)) || (e.type === 'event' && /^ev-pursue-release/.test(e.id)),
+    incidents: e => e.type === 'incident',
+  };
+  function hearingCard(e) {
+    const into = adj.get(e.id).filter(x => x.dir === 'in');
+    const witnesses = [...new Set(into.filter(x => x.label === 'testified at').map(x => x.other))].filter(id => byId.get(id)?.type === 'person');
+    const members = new Set(into.filter(x => /questioned|spoke at|chaired/.test(x.label)).map(x => x.other)).size;
+    const rec = into.map(x => x.label === 'recording of' && byId.get(x.other)).find(v => v?.type === 'video');
+    const ms = (momentsFor.get(e.id) || []).slice().sort((a, b) => (b.hi ? 1 : 0) - (a.hi ? 1 : 0) || a.t - b.t).slice(0, 3);
+    const link = e.links?.[0];
+    return `${witnesses.length ? `<div class="tl-who"><span class="tl-lbl">Witnesses</span>${witnesses.slice(0, 8).map(id => chip(id)).join('')}${members ? `<span class="tl-lbl">· ${members} member${members > 1 ? 's' : ''} on file</span>` : ''}</div>` : ''}
+      ${ms.length ? `<div class="tl-moments">${ms.map(m => `<div class="moment"><button class="ts" data-play="${m.video}@${m.t}">▶ ${fmtT(m.t)}</button><div>${esc(m.text)}</div></div>`).join('')}</div>` : ''}
+      <div class="tl-links">${rec ? `<button class="btn small primary" data-play="${rec.id}@0">▶ Recording${rec.moments?.length ? ` · ${rec.moments.length} moments` : ''}</button>` : ''}<a class="btn small" href="${hrefOf(e.id)}" data-goto="${esc(e.id)}">Open the file</a>${link ? `<a class="btn small" href="${esc(link.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Official record ↗</a>` : ''}</div>`;
+  }
   function renderTimeline() {
+    const chips = `<div class="tl-views" role="tablist" aria-label="What the timeline shows">${TL_VIEWS.map(([k, l]) => `<button role="tab" aria-selected="${k === tlView}" class="chip ${k === tlView ? 'on' : ''}" data-tl-view="${k}">${l}</button>`).join('')}</div>`;
+    const pick = TL_PICK[tlView], today = isoToday();
     // videos (upload dates) and people (birth dates) aren't events: they appear through the events they're part of
-    const items = ents.filter(e => e.y0 && !OFF_TIMELINE.has(e.type) && visible.has(e.id)).sort((a, b) => String(a.date).localeCompare(String(b.date)) || a.name.localeCompare(b.name));
-    if (!items.length) { $('#timeline').innerHTML = '<p class="muted" style="padding:24px">Nothing dated matches the current filters. <button class="link" data-clear-filters>Show everything</button></p>'; return; }
+    const items = (pick ? ents.filter(e => e.y0 && pick(e) && !(state.credibleOnly && e.cred === 'outside') && !(state.hideExplained && resolved(e)))
+      : ents.filter(e => e.y0 && !OFF_TIMELINE.has(e.type) && visible.has(e.id))).sort((a, b) => String(a.date).localeCompare(String(b.date)) || a.name.localeCompare(b.name));
+    if (tlView === 'congress') items.reverse(); // a tracker reads from the latest back
+    if (!items.length) { $('#timeline').innerHTML = chips + '<p class="muted" style="padding:24px 0">Nothing dated matches the current filters. <button class="link" data-clear-filters>Show everything</button></p>'; return; }
     const groups = new Map();
     for (const e of items) { const d = Math.floor(e.y0 / 10) * 10; if (!groups.has(d)) groups.set(d, []); groups.get(d).push(e); }
-    $('#timeline').innerHTML = [...groups].map(([d, list]) => `
+    const intro = tlView === 'congress' ? `<p class="tl-intro">Hearings, legislation and members' events on file, the latest first. Each hearing lists its witnesses, its strongest moments and the official record.</p>` : '';
+    $('#timeline').innerHTML = chips + intro + [...groups].map(([d, list]) => `
       <div class="tl-decade">${d}s <small>${list.length} ${list.length === 1 ? 'entry' : 'entries'}</small></div>
       <div class="tl-items">${list.map(e => `
-        <div class="tl-item ${state.sel === e.id ? 'sel' : ''}" data-goto="${e.id}" style="--c:${TYPES[e.type].color}">
-          <div class="tl-date">${esc(fmtRange(e))}</div>
+        <div class="tl-item ${state.sel === e.id ? 'sel' : ''}${tlView === 'congress' && e.type === 'hearing' ? ' tl-rich' : ''}" data-goto="${e.id}" style="--c:${TYPES[e.type].color}">
+          <div class="tl-date">${esc(fmtRange(e))}${String(e.date) > today ? '<em class="lt-tag up">upcoming</em>' : ''}</div>
           <div><div><span class="tl-type">${TYPES[e.type].label}</span><span class="tl-name">${esc(e.name)}</span></div>
-          <div class="tl-desc">${esc([e.place?.name, e.facts?.[0]?.text].filter(Boolean).join(' — '))}</div></div>
+          <div class="tl-desc">${esc([e.place?.name, e.facts?.[0]?.text].filter(Boolean).join(' — '))}</div>
+          ${tlView === 'congress' && e.type === 'hearing' ? hearingCard(e) : ''}</div>
         </div>`).join('')}</div>`).join('');
   }
+  $('#timeline').addEventListener('click', e => {
+    const b = e.target.closest('[data-tl-view]'); if (!b) return;
+    tlView = b.dataset.tlView;
+    history.replaceState(history.state, '', tlView === 'all' ? '/timeline' : `/timeline?view=${tlView}`);
+    track('filter_change', { view: 'timeline', timeline_view: tlView });
+    renderTimeline(); renderFilterNote(); $('#timeline').scrollTop = 0;
+  });
 
   // ───────────── world map ─────────────
   let map = null, mapLayer = null, tileLayer = null, mapFitted = false;
@@ -3345,6 +3381,7 @@
       try { yt?.pauseVideo?.(); } catch { /* not ready */ }
       $('#local-video').pause?.();
     }
+    if (view === 'timeline' && state.view !== 'timeline' && !routing) tlView = 'all'; // from the menu: the whole timeline (its address has no ?view)
     if (view === 'home' && state.view !== 'home') teardownApp();
     if (state.reading && view !== state.view) { state.reading = false; $('#app').classList.remove('reading'); } // e.g. ▶ from reading view
     state.view = view;
@@ -3577,6 +3614,7 @@
       bootCover = !ex0 && (innerWidth <= 860 || q0.get('panel') !== 'side');
     }
     if (fromUrl.shelf) shelfTab = fromUrl.shelf; // the address picks Documentaries or Books
+    if (r.view === 'timeline' && tlView !== tlFromUrl()) { tlView = tlFromUrl(); if (state.view === 'timeline') renderTimeline(); }
     try {
       if (r.view !== state.view || initial || shelfChanged) go(r.view);
       // a file's own address (/person/eric-davis) opens it full width on desktop, like on phones;
