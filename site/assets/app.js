@@ -2129,7 +2129,6 @@
     $('#panel').scrollTop = 0;
     $('#app').classList.add('has-panel');
     document.body.classList.add('has-panel'); // the header sits outside #app
-    $('#panel-back').textContent = history.state?.n > 0 ? '‹ Back' : '‹ Home';
     $('#app').classList.toggle('reading', !!state.reading);
     $('#panel-expand').innerHTML = state.reading ? ICON_COLLAPSE : ICON_EXPAND;
     $('#panel-expand').title = state.reading ? 'Back to side panel (R)' : 'Reading view (R)';
@@ -2217,8 +2216,21 @@
     document.body.classList.remove('has-panel');
     afterResize();
   }
-  // phones: back to where the visitor came from; a file that was the first page of the visit goes to the home page
-  $('#panel-back').addEventListener('click', () => { if (history.state?.n > 0) history.back(); else go('home', { keepSel: false }); });
+  // Phones: an open file (or connection) is a sheet over the page whose tab is lit (Explore, Latest, Videos…).
+  // "Done" closes it and shows that page; "‹ Back" shows only when there is an earlier file in the sheet, or the
+  // visitor came from the home page, and steps back one entry. Each history entry of a sheet carries (sheetFields):
+  // d = the entry Done returns to, c = whether that entry is the first file itself (the page underneath has no entry of
+  // its own: a direct link, or a file opened from the home page), so it is closed there, in place; k = Back shows.
+  // Done rewinds the history rather than adding an entry, so the phone's own back gesture after it doesn't reopen the file.
+  // Tested by tests/phone-sheet.test.mjs.
+  let closeOnArrive = false;
+  $('#panel-back').addEventListener('click', () => history.back());
+  $('#panel-done').addEventListener('click', () => {
+    const h = history.state || {}, n = h.n || 0;
+    if (h.sh && h.d < n) { closeOnArrive = !!h.c; history.go(h.d - n); return; }
+    select(null, { replace: true });
+  });
+  function syncSheetBar() { $('#panel-back').hidden = !history.state?.k; }
   function afterResize() { requestAnimationFrame(() => { if (!cy) ensureGraph(); cy?.resize(); map?.invalidateSize(); }); } // a graph uncovered for the first time is built now
   $('#panel-close').addEventListener('click', () => select(null));
   // claims page: a click opens the claim beside the list, a double-click opens it full width (the reading view)
@@ -3323,10 +3335,23 @@
     const target = urlFor(), st = { view: state.view, sel: state.sel, video: state.video, n: history.state?.n || 0 };
     if (newBuild && !replace && !state.sel && !state.video && target !== location.pathname) { location.assign(target); return; }
     const search = state.view === 'videos' && state.video ? searchFor() : null; // elsewhere keep what the address had (e.g. ?explore)
-    if (location.pathname === target && !location.hash) { history.replaceState(st, '', target + (search ?? location.search)); return; }
-    if (!replace) st.n++; // how far into the visit this entry is: the phone's Back button uses it
-    history[replace ? 'replaceState' : 'pushState'](st, '', target + (search ?? ''));
+    if (location.pathname === target && !location.hash) { history.replaceState(sheetFields(st, false), '', target + (search ?? location.search)); syncSheetBar(); return; }
+    if (!replace) st.n++; // how far into the visit this entry is
+    history[replace ? 'replaceState' : 'pushState'](sheetFields(st, !replace), '', target + (search ?? ''));
+    syncSheetBar();
     trackView();
+  }
+  // the phone sheet's fields for a new or replaced history entry (see #panel-done): prev is the entry before it
+  // (pushing) or the entry it replaces
+  function sheetFields(st, push) {
+    const prev = history.state || {};
+    if (!(state.sel || state.pair)) return st;
+    st.sh = true;
+    if (!push) Object.assign(st, prev.sh ? { d: prev.d ?? st.n, c: prev.c ?? true, k: !!prev.k } : { d: st.n, c: true, k: false });
+    else if (prev.sh && prev.view === st.view) Object.assign(st, { d: prev.d ?? prev.n ?? 0, c: prev.c ?? true, k: true }); // another file inside the sheet
+    else if (prev.view === st.view) Object.assign(st, { d: prev.n ?? 0, c: false, k: false }); // opened from the page underneath
+    else Object.assign(st, { d: st.n, c: true, k: !!prev.view }); // opened from another page (the home page): Back returns there
+    return st;
   }
   // Google Analytics: one page_view per in-app view, with the hash route turned into a readable path
   // (the page's own path, e.g. /person/david-fravor). Replaced history entries don't count twice.
@@ -3399,7 +3424,7 @@
     videoTick(state.video, cur, dur, false);
   }, 5000);
   $('#local-video')?.addEventListener('ended', () => videoTick(state.video, 1, 1, true));
-  function select(id, { from, noPanel = false } = {}) { // noPanel: select without opening the card (phones, while exploring)
+  function select(id, { from, noPanel = false, replace = false } = {}) { // noPanel: select without opening the card (phones, while exploring)
     if (from !== 'auto') state.autoSel = null; // a real selection ends Latest's preview
     state.sel = id; state.pair = null;
     if (id && !routing) track('select_content', { content_type: byId.get(id)?.type, item_id: id, method: clickCtx || from || 'link' });
@@ -3418,7 +3443,7 @@
     if (state.view === 'graph') highlight(id);
     if (state.view === 'map') markMapSel();
     if (state.view === 'timeline') $$('.tl-item').forEach(el => el.classList.toggle('sel', el.dataset.goto === id));
-    setHash();
+    setHash({ replace });
   }
   function go(view, { keepSel = true } = {}) {
     // leaving Videos pauses the player and remembers where it stopped: coming back shows the same video at that point,
@@ -3685,9 +3710,14 @@
       else if (r.view === 'videos' && !r.video && state.video) closeVideo();
     } finally { routing = false; if (bootCover) { bootCover = false; if (!cy && state.view === 'graph') ensureGraph(); } }
     // store the state on this entry
-    history.replaceState({ view: state.view, sel: state.sel, video: state.video, n: history.state?.n || 0 }, '', urlFor() + (state.view === 'videos' && state.video ? searchFor() : location.search));
+    history.replaceState(sheetFields({ view: state.view, sel: state.sel, video: state.video, n: history.state?.n || 0 }, false), '', urlFor() + (state.view === 'videos' && state.video ? searchFor() : location.search));
+    syncSheetBar();
   }
-  window.addEventListener('popstate', () => { applyRoute(false); trackView(); }); // Back/Forward count as page views too
+  window.addEventListener('popstate', () => {
+    applyRoute(false);
+    if (closeOnArrive) { closeOnArrive = false; select(null, { replace: true }); } // Done: back at the first file, close it in place
+    trackView();
+  }); // Back/Forward count as page views too
   // the server-rendered article is for crawlers and no-JS readers, and on a file's page it shows while the app loads:
   // the app's own view replaces it, at about the same place if the reader had scrolled
   const ssr = document.getElementById('ssr'), ssrPre = ssr?.classList.contains('ssr-pre'), ssrAt = ssrPre && ssr.scrollHeight > ssr.clientHeight ? ssr.scrollTop / (ssr.scrollHeight - ssr.clientHeight) : 0;
