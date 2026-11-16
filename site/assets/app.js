@@ -1641,6 +1641,8 @@
   function renderPanel(e) {
     const t = TYPES[e.type] || TYPES.concept;
     const h = [];
+    // the sections below the header are collected by name and put in reading order at the end (see `order`)
+    const S = {}, put = (k, html) => { S[k] = (S[k] || '') + html; };
     const nFacts = e.facts.length, nDoc = e.facts.filter(f => f.status === 'documented').length;
     // where this file sits (the file code that stood here is now at the foot); the same line as the early page's breadcrumb
     h.push(`<nav class="p-crumbs" aria-label="Breadcrumb"><a href="/" data-view="home">Home</a> › <a href="${e.type === 'claim' ? '/claims' : e.type === 'video' ? '/videos' : e.type === 'film' ? '/documentaries' : e.type === 'book' ? '/books' : e.type === 'news' ? '/latest' : '/a-z'}" data-view="${e.type === 'claim' ? 'claims' : e.type === 'video' ? 'videos' : e.type === 'film' || e.type === 'book' ? 'shelf' : e.type === 'news' ? 'latest' : 'index'}"${e.type === 'film' || e.type === 'book' ? ` data-shelf="${e.type}"` : ''}>${esc(t.plural)}</a></nav>`);
@@ -1684,16 +1686,16 @@
     }
     // the summary (a person's profile) comes before the videos
     const body = lead ? (lead.only ? '' : lead.rest) : e.body; // a book's opening paragraph is in the header already
-    if (body) h.push(`<div class="p-sec"><h4>${e.type === 'person' ? 'Profile' : 'Summary'}</h4><div class="p-body p-bio${e.bio || lead ? ' after-lead' : ''}">${body}</div></div>`);
+    if (body) put('body', `<div class="p-sec"><h4>${e.type === 'person' ? 'Profile' : 'Summary'}</h4><div class="p-body p-bio${e.bio || lead ? ' after-lead' : ''}">${body}</div></div>`);
     // glimpses: short passages from the book itself, each linked to the authorized excerpt or review it was checked against
-    if (e.glimpses?.length) h.push(`<div class="p-sec" id="sec-glimpses"><h4>Glimpses <span>${e.glimpses.length}</span></h4><div class="glimpses" data-collapse="4">${e.glimpses.map(g => `
+    if (e.glimpses?.length) put('body', `<div class="p-sec" id="sec-glimpses"><h4>Glimpses <span>${e.glimpses.length}</span></h4><div class="glimpses" data-collapse="4">${e.glimpses.map(g => `
       <blockquote class="glimpse"><p>${esc(g.text)}</p><footer>${esc(g.where)}${g.url ? `${g.where ? ' · ' : ''}<a href="${esc(g.url)}" target="_blank" rel="noopener">${esc(g.via || 'source')} ↗</a>` : g.via ? ` · ${esc(g.via)}` : ''}</footer></blockquote>`).join('')}</div></div>`);
-    if (e.type === 'claim') h.push(claimSections(e));
+    if (e.type === 'claim') put('claim', claimSections(e));
     // a person's positions on the claims (from the assertions tagged on their facts and moments)
     if (e.type === 'person') {
       const pos = new Map();
       for (const c of ents.filter(c => c.type === 'claim')) for (const a of c.assertions) if (a.by === e.id) (pos.get(c.id) || pos.set(c.id, []).get(c.id)).push(a);
-      if (pos.size) h.push(`<div class="p-sec p-side"><h4>Positions on claims <span>${pos.size}</span></h4><ul class="rec-list">${[...pos].map(([cid, as]) => {
+      if (pos.size) put('positions', `<div class="p-sec p-side"><h4>Where they stand <span>${pos.size} claim${pos.size > 1 ? 's' : ''}</span></h4><ul class="rec-list">${[...pos].map(([cid, as]) => {
         const c = byId.get(cid), st = [...new Set(as.map(a => STANCE[a.stance]))].join(', ');
         return `<li><a href="${hrefOf(cid)}" data-goto="${esc(cid)}">${esc(c.name)}</a><div class="small muted">${esc(st)} · ${as.length} statement${as.length > 1 ? 's' : ''} · <span class="claim-st claim-${c.status}">${esc(CLAIM_STATUS[c.status].label)}</span></div></li>`;
       }).join('')}</ul></div>`);
@@ -1713,7 +1715,7 @@
       if (vids.size) {
         const list = [...vids].map(([id, label]) => [byId.get(id), label])
           .sort((a, b) => { const rank = l => (l === 'Trailer' ? 0 : l === 'Recording' ? 1 : 2); return rank(a[1]) - rank(b[1]) || String(b[0].date).localeCompare(String(a[0].date)); });
-        h.push(`<div class="p-sec"><h4>Watch <span>${list.length} video${list.length > 1 ? 's' : ''}</span></h4><div class="watch">${list.map(([v, label]) => `
+        put('watch', `<div class="p-sec"><h4>Watch <span>${list.length} video${list.length > 1 ? 's' : ''}</span></h4><div class="watch">${list.map(([v, label]) => `
           <div class="watch-item" data-play="${v.id}@0" title="Play with synced transcript">
             <div class="wthumb"><img src="${vthumb(v)}" alt="" loading="lazy"><span class="wplay">▶</span>${v.duration ? `<span class="wdur">${fmtDur(v.duration)}</span>` : ''}</div>
             <div><div class="wt">${esc(v.name)}</div><div class="ws">${esc([label, v.channel, fmtD(v.date)].filter(Boolean).join(' · '))}</div>
@@ -1730,7 +1732,7 @@
       // an agency that released a large share of the records (the Department of War) would get a catalogue, not evidence: none there
       if (foot.length && !(e.type === 'organization' && foot.length > 20)) {
         const many = foot.length > 24; // past that, a counter instead of dots
-        h.push(`<div class="p-sec" id="sec-footage"><h4>Official footage <span>${foot.length} video${foot.length > 1 ? 's' : ''} · DVIDS</span></h4><div class="dv-car" tabindex="-1"><div class="dv-track">${foot.map((r, i) => `
+        put('watch', `<div class="p-sec" id="sec-footage"><h4>Official footage <span>${foot.length} video${foot.length > 1 ? 's' : ''} · DVIDS</span></h4><div class="dv-car" tabindex="-1"><div class="dv-track">${foot.map((r, i) => `
           <div class="dv-slide" aria-roledescription="slide" aria-label="${i + 1} of ${foot.length}">${dvidsPlayer(r.pursue, r.name)}<div class="dv-cap"><a class="wt" href="${hrefOf(r.id)}" data-goto="${esc(r.id)}">${esc(r.pursue.title || r.name)}</a><div class="ws">${esc([r.pursue.code, r.pursue.incident_location, r.pursue.incident_date].filter(Boolean).join(' · '))}</div>${momentsBtn(recVideo(r.id)) ? `<div class="wlinks">${momentsBtn(recVideo(r.id))}</div>` : ''}</div></div>`).join('')}</div>${foot.length > 1 ? `
           <div class="dv-nav"><button class="dv-prev" aria-label="Previous video" disabled>‹</button><span class="dv-dots">${many ? '' : foot.map((_, i) => `<button class="dv-dot${i ? '' : ' on'}" data-dv-at="${i}" aria-label="Video ${i + 1}"></button>`).join('')}<span class="dv-count">1 / ${foot.length}</span></span><button class="dv-next" aria-label="Next video">›</button></div>` : ''}</div></div>`);
       }
@@ -1739,8 +1741,12 @@
     const ms = e.type === 'video' ? (e.moments || []).map(m => ({ video: e.id, ...m })) : (momentsFor.get(e.id) || []);
     if (ms.length) {
       // highlights first (moments tagged to the hearing or event itself), then the rest in session order
-      const part = id => byId.get(id)?.part || 0;
-      h.push(`<div class="p-sec"><h4>Video moments <span>${ms.length}</span></h4><div data-collapse="10" data-fixed>${ms.sort((a, b) => (b.hi ? 1 : 0) - (a.hi ? 1 : 0) || part(a.video) - part(b.video) || a.video.localeCompare(b.video) || a.t - b.t).map(m => `
+      const part = id => byId.get(id)?.part || 0, own = m => (e.type === 'person' && m.speaker !== e.id ? 1 : 0); // a person's own words before what others say of them
+      const key = keyMoments(e, ms);
+      if (key.length) put('key', `<div class="p-sec${e.type === 'person' ? ' p-rd-side' : ''}" id="sec-key"><h4>Key testimony</h4><div class="key-list">${key.map(m => { const v = byId.get(m.video); return `
+        <button class="key-m" data-play="${m.video}@${m.t}" title="Play this moment"><span class="km-thumb"><img src="${vthumb(v)}" alt="" loading="lazy"><span class="wplay">▶</span></span>
+        <span class="km-body"><span class="km-text">${esc(m.text)}</span><span class="km-src">${esc([m.speaker && m.speaker !== e.id ? byId.get(m.speaker)?.name : '', v.name.length > 64 ? v.name.slice(0, 62).replace(/\s+\S*$/, '') + '…' : v.name, fmtD(recordedDate(v)), `at ${fmtT(m.t)}`].filter(Boolean).join(' · '))}</span></span></button>`; }).join('')}</div></div>`);
+      put('moments', `<div class="p-sec"><h4>${key.length ? 'All video moments' : 'Video moments'} <span>${ms.length}</span></h4><div data-collapse="${key.length ? 5 : 10}" data-fixed>${ms.sort((a, b) => (b.hi ? 1 : 0) - (a.hi ? 1 : 0) || own(a) - own(b) || part(a.video) - part(b.video) || a.video.localeCompare(b.video) || a.t - b.t).map(m => `
         <div class="moment${m.hi ? ' hi' : ''}"><button class="ts" data-play="${m.video}@${m.t}">▶ ${fmtT(m.t)}</button><div><div>${esc(m.text)}</div>
         <div class="who">${m.speaker && m.speaker !== e.id ? chip(m.speaker) : ''}${e.type !== 'video' ? chip(m.video) : m.refs.map(r => chip(r)).join('')}</div></div></div>`).join('')}</div></div>`);
     }
@@ -1754,18 +1760,18 @@
     }
     if (e.links.length || e.files.length) {
       const amzP = e.type === 'book' && amazonLink(e.isbn);
-      h.push(`<div class="p-sec p-side" id="sec-links"><h4>Sources, links & files</h4><ul class="p-links">${amzP ? `<li><a href="${esc(amzP.url)}" target="_blank" rel="noopener sponsored">Buy on Amazon (${esc(amzP.store)}) ↗</a></li>` : ''}${e.links.map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.url)} ↗</a></li>`).join('')}${e.files.map(f => `<li><a href="${esc(fileUrl(f))}" target="_blank">📄 ${esc(f.split('/').pop())}</a></li>`).join('')}</ul></div>`);
+      put('links', `<div class="p-sec p-side" id="sec-links"><h4>Sources, links & files</h4><ul class="p-links">${amzP ? `<li><a href="${esc(amzP.url)}" target="_blank" rel="noopener sponsored">Buy on Amazon (${esc(amzP.store)}) ↗</a></li>` : ''}${e.links.map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.url)} ↗</a></li>`).join('')}${e.files.map(f => `<li><a href="${esc(fileUrl(f))}" target="_blank">📄 ${esc(f.split('/').pop())}</a></li>`).join('')}</ul></div>`);
     }
     // news items linked to this entry (either direction), newest first
     if (e.type !== 'news') {
       const news = [...new Set(adj.get(e.id).filter(x => x.kind !== 'mention' && byId.get(x.other)?.type === 'news').map(x => x.other))].map(id => byId.get(id)).sort((a, b) => String(b.date).localeCompare(String(a.date)));
-      if (news.length) h.push(`<div class="p-sec p-side"><h4>In the news <span>${news.length}</span></h4><ul class="rec-list" data-collapse="6">${news.map(n => `<li><a href="${hrefOf(n.id)}" data-goto="${esc(n.id)}">${esc(n.name)}</a><div class="small muted">${esc([fmtD(n.date), NEWS_KIND[n.kind]?.label, n.outlet].filter(Boolean).join(' · '))}${n.url ? ` · <a href="${esc(n.url)}" target="_blank" rel="noopener">source ↗</a>` : ''}</div></li>`).join('')}</ul></div>`);
+      if (news.length) put('news', `<div class="p-sec p-side"><h4>In the news <span>${news.length}</span></h4><ul class="rec-list" data-collapse="6">${news.map(n => `<li><a href="${hrefOf(n.id)}" data-goto="${esc(n.id)}">${esc(n.name)}</a><div class="small muted">${esc([fmtD(n.date), NEWS_KIND[n.kind]?.label, n.outlet].filter(Boolean).join(' · '))}${n.url ? ` · <a href="${esc(n.url)}" target="_blank" rel="noopener">source ↗</a>` : ''}</div></li>`).join('')}</ul></div>`);
     }
     // official records (PURSUE) linked to this entry
     const recs = [...new Set(adj.get(e.id).filter(x => x.kind !== 'mention' && byId.get(x.other)?.type === 'record').map(x => x.other))]
       .map(id => byId.get(id)).sort((a, b) => String(a.pursue?.released || a.date || '').localeCompare(String(b.pursue?.released || b.date || '')) || a.name.localeCompare(b.name));
     if (recs.length) {
-      h.push(`<div class="p-sec p-side" id="sec-records"><h4>${e.type === 'record' ? 'Related records' : 'Official records'} <span>${recs.length}</span></h4><ul class="rec-list" data-collapse="8">${recs.map(r => {
+      put('records', `<div class="p-sec p-side" id="sec-records"><h4>${e.type === 'record' ? 'Related records' : 'Official records'} <span>${recs.length}</span></h4><ul class="rec-list" data-collapse="8">${recs.map(r => {
         const pu = r.pursue || {};
         return `<li><a href="${hrefOf(r.id)}" data-goto="${esc(r.id)}">${esc(r.name)}</a><div class="small muted">${esc([pu.agency, pu.released && `released ${fmtD(pu.released)}`].filter(Boolean).join(' · '))}${pu.file ? ` · <a href="${esc(pu.file)}" target="_blank" rel="noopener">official file ↗</a>` : ''}</div></li>`;
       }).join('')}</ul></div>`);
@@ -1786,7 +1792,7 @@
     for (const [label, ids] of groups) if (WEAK_LINKS.has(label)) { for (const id of ids) if (placed.has(id)) ids.delete(id); else placed.add(id); if (!ids.size) groups.delete(label); }
     if (groups.size) {
       const nConn = new Set([...groups.values()].flatMap(ids => [...ids])).size;
-      h.push(`<div class="p-sec p-side" id="sec-connections"><h4>Connections <span>${nConn}</span></h4>${[...groups].map(([label, ids]) => {
+      put('conn', `<div class="p-sec p-side" id="sec-connections"><h4>Connections <span>${nConn}</span></h4>${[...groups].map(([label, ids]) => {
         // links with a note say how: one per line, note beside the chip; the rest stay as a row of chips
         const noted = [...ids].filter(id => notes.has(`${label}|${id}`)), plain = [...ids].filter(id => !notes.has(`${label}|${id}`));
         return `<div class="conn-group"><div class="lbl">${esc(label)}</div>${noted.length ? `<ul class="conn-notes" data-collapse="5">${noted.map(id => `<li>${chip(id)}<span>${esc(notes.get(`${label}|${id}`))}</span></li>`).join('')}</ul>` : ''}${plain.length ? `<div class="chips" data-collapse="10">${plain.map(id => chip(id)).join('')}</div>` : ''}</div>`;
@@ -1795,14 +1801,14 @@
     // transcript mentions
     if (e.type === 'video') {
       const vm = videoMentions.get(e.id);
-      if (vm?.size) h.push(`<div class="p-sec"><h4>Mentioned in this video <span>${vm.size}</span></h4><div class="chips">${[...vm].sort((a, b) => b[1].length - a[1].length).map(([id, ts]) => chip(id, `<span class="n">${ts.length}</span>`)).join('')}</div></div>`);
+      if (vm?.size) put('more', `<div class="p-sec"><h4>Mentioned in this video <span>${vm.size}</span></h4><div class="chips">${[...vm].sort((a, b) => b[1].length - a[1].length).map(([id, ts]) => chip(id, `<span class="n">${ts.length}</span>`)).join('')}</div></div>`);
     } else {
       const list = MENTIONS[e.id] || [];
       if (list.length) {
         const byVid = new Map();
         for (const [vid, t, snip] of list) { if (!byVid.has(vid)) byVid.set(vid, []); byVid.get(vid).push([t, snip]); }
         const sorted = [...byVid].sort((a, b) => b[1].length - a[1].length);
-        h.push(`<div class="p-sec p-side" id="sec-mentions"><h4>Mentioned in transcripts <span>${list.length} in ${byVid.size} video${byVid.size > 1 ? 's' : ''}</span></h4>
+        put('more', `<div class="p-sec p-side" id="sec-mentions"><h4>Mentioned in transcripts <span>${list.length} in ${byVid.size} video${byVid.size > 1 ? 's' : ''}</span></h4>
           <div class="small muted" style="margin:-4px 0 6px">Automatic name matches; click a time to jump there.</div>
           <div data-collapse="3">${sorted.map(([vid, hits]) => {
             const v = byId.get(vid);
@@ -1812,16 +1818,36 @@
           }).join('')}</div></div>`);
       }
     }
-    h.push(renderDots(e));
-    if (e.type === 'claim') h.push(claimPeople(e));
-    if (e.tags.length) h.push(`<div class="p-sec p-side"><h4>Themes</h4><div class="chips">${e.tags.map(t => `<button class="chip ${state.tags.has(t) ? 'on' : ''}" data-filter-tag="${esc(t)}">${esc(t)}</button>`).join('')}</div></div>`);
-    // notes & claims come last, after the videos and links
+    put('more', renderDots(e));
+    if (e.type === 'claim') put('claimPeople', claimPeople(e));
+    if (e.tags.length) put('more', `<div class="p-sec p-side"><h4>Themes</h4><div class="chips">${e.tags.map(t => `<button class="chip ${state.tags.has(t) ? 'on' : ''}" data-filter-tag="${esc(t)}">${esc(t)}</button>`).join('')}</div></div>`);
+    // the sourced statements: what this file puts on the record, each with its status and source
     if (e.facts.length) {
-      h.push(`<div class="p-sec" id="sec-claims"><h4>Notes & claims <span>${e.facts.length}</span></h4><ul class="facts" data-collapse="5" data-fixed>${e.facts.map(f => factHtml(f, e)).join('')}</ul></div>`);
+      put('facts', `<div class="p-sec" id="sec-claims"><h4>Statements <span>${nDoc ? `${nDoc} of ${e.facts.length} documented` : e.facts.length}</span></h4><ul class="facts" data-collapse="5" data-fixed>${e.facts.map(f => factHtml(f, e)).join('')}</ul></div>`);
     }
+    // Reading order: what was said and what is on the record first, then how it connects, then where to look
+    // further; the tools (transcript mentions, possible connections, the trace) are folded away at the end.
+    const order = e.type === 'person' ? ['key', 'body', 'facts', 'positions', 'watch', 'moments', 'conn', 'news', 'records', 'links']
+      : e.type === 'claim' ? ['body', 'claim', 'facts', 'conn', 'claimPeople', 'news', 'records', 'links']
+      : ['body', 'key', 'facts', 'watch', 'moments', 'conn', 'news', 'records', 'links'];
+    for (const k of order) if (S[k]) h.push(S[k]);
+    if (S.more) h.push(`<details class="p-more"><summary>More about this file <span>transcript mentions, possible connections, themes</span></summary>${S.more}</details>`);
     h.push(nextStep(e));
     h.push(`<div class="p-edit"><span>File ${fileNo(e)} · ${e.type === 'claim' ? `${e.assertions.length} statements` : nFacts ? `${nDoc} of ${nFacts} statements documented` : 'no statements filed'}</span>Edit <code>${esc(e.file)}</code><button class="link" data-copy="${esc(e.file)}">copy path</button></div>`);
     return h.join('');
+  }
+  // Key testimony: the few moments to watch first. A person: their own words, sworn testimony (a hearing's recording)
+  // before interviews, one per video. A case or program: one per speaker, official sources first. Files with only a
+  // handful of moments show them all in the list instead.
+  const recordedDate = v => { const of = recordingOf(v); return (of && byId.get(of)?.date) || v.date; };
+  function keyMoments(e, ms) {
+    if (['video', 'claim', 'hearing', 'event', 'news', 'document'].includes(e.type) || ms.length < 5) return [];
+    const sworn = m => (byId.get(recordingOf(byId.get(m.video)))?.type === 'hearing' ? 1 : 0);
+    const pool = (e.type === 'person' ? ms.filter(m => m.speaker === e.id) : ms.filter(m => m.speaker && byId.get(m.speaker)?.cred === 'credible'))
+      .sort((a, b) => (b.key ? 1 : 0) - (a.key ? 1 : 0) || sworn(b) - sworn(a) || String(recordedDate(byId.get(a.video))).localeCompare(String(recordedDate(byId.get(b.video)))) * (e.type === 'person' ? -1 : 1) || a.t - b.t);
+    const out = [], seen = new Set();
+    for (const m of pool) { const k = e.type === 'person' ? m.video : m.speaker; if (seen.has(k)) continue; seen.add(k); out.push(m); if (out.length === 3) break; }
+    return out.length >= 2 ? out : [];
   }
   // The foot of a file: one next step, so a page reached from a search engine or an assistant doesn't end in nothing.
   // The story the file belongs to (content/explore.json), else the files it is most directly tied to: a case first.
@@ -2021,7 +2047,7 @@
       state.sel = null; state.pair = [a, b];
       const body = $('#panel-body');
       body.innerHTML = renderPair(a, b);
-      if (state.reading) layoutReading(body); else body.classList.remove('reading');
+      if (state.reading) layoutReading(body); else { body.classList.remove('reading'); sectionNav(body); }
       applyCollapse(body, state.reading ? 2 : 1);
       $('#panel').hidden = false; $('#panel').scrollTop = 0;
       $('#app').classList.add('has-panel'); $('#app').classList.toggle('reading', !!state.reading);
@@ -2069,24 +2095,30 @@
       box.after(btn);
     }
   }
+  // Jump links to a file's sections, under its header: a row in the reading view, a strip that scrolls sideways in
+  // the side panel and on phones. Short files (fewer than three sections) don't need them.
+  function sectionNav(body) {
+    const secs = [...body.querySelectorAll(':scope > .p-sec')];
+    if (secs.length < 3) return;
+    const nav = document.createElement('nav');
+    nav.className = 'rd-nav';
+    nav.innerHTML = secs.map((sec, i) => { sec.id ||= `sec-${i}`; const h = sec.querySelector('h4'); return h ? `<a href="#" data-jump="${sec.id}">${esc(h.childNodes[0].textContent.trim())}</a>` : ''; }).join('');
+    body.insertBefore(nav, secs[0]);
+  }
   // Reading view: header across the top, jump links, main content left, connections/mentions right
   function layoutReading(body) {
     body.classList.add('reading');
     const secs = [...body.querySelectorAll(':scope > .p-sec')];
     const left = document.createElement('div'), right = document.createElement('div');
     left.className = 'rd-main'; right.className = 'rd-side';
-    const nav = document.createElement('nav');
-    nav.className = 'rd-nav';
-    nav.innerHTML = secs.map((sec, i) => { sec.id ||= `sec-${i}`; const h = sec.querySelector('h4'); return h ? `<a href="#" data-jump="${sec.id}">${esc(h.childNodes[0].textContent.trim())}${h.querySelector('span') ? ` <span>${esc(h.querySelector('span').textContent)}</span>` : ''}</a>` : ''; }).join('');
-    const firstSec = secs[0];
-    if (firstSec) body.insertBefore(nav, firstSec);
+    sectionNav(body);
     const grid = document.createElement('div');
     grid.className = 'rd-grid';
     grid.append(left, right);
     body.append(grid);
-    for (const sec of secs) (sec.classList.contains('p-side') ? right : left).append(sec);
-    const edit = body.querySelector(':scope > .p-edit');
-    if (edit) left.append(edit); // keep the edit hint at the end of the main column
+    // a person's key testimony heads the right-hand column, so the profile stays where the early page drew it
+    for (const sec of secs) (sec.classList.contains('p-side') || sec.classList.contains('p-rd-side') ? right : left).append(sec);
+    for (const sel of ['.p-more', '.p-next', '.p-edit']) { const el = body.querySelector(`:scope > ${sel}`); if (el) left.append(el); } // the folded tools and the foot end the main column
   }
   // Panel animations: the browser's View Transitions morph the panel between its old and new box (narrow ↔ reading
   // view, slide in/out on open/close; a sheet on phones). Without support, or with reduced motion, changes are instant.

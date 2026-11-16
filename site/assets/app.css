@@ -1231,3 +1231,25 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
 .p-crumbs a { color: var(--muted); }
 .p-crumbs a:hover { color: var(--accent); }
 @media (max-width: 860px) { .p-crumbs { display: none; } }
+/* key testimony: the moments to watch first */
+.key-list { display: grid; gap: 8px; }
+.key-m { display: grid; grid-template-columns: 112px 1fr; gap: 12px; align-items: start; text-align: left; padding: 10px; border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 6px; background: var(--panel-2); color: var(--text); font: inherit; cursor: pointer; }
+.key-m:hover { border-color: var(--accent); }
+.km-thumb { position: relative; aspect-ratio: 16 / 9; border-radius: 4px; overflow: hidden; background: #000; }
+.km-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.km-thumb .wplay { position: absolute; inset: 0; display: grid; place-items: center; font-size: 20px; color: #fff; text-shadow: 0 1px 8px #000; }
+.km-body { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+.km-text { font-size: 14.5px; line-height: 1.45; }
+.km-src { font-size: 12px; color: var(--muted); line-height: 1.4; }
+#panel-body.reading .km-text { font-size: 15.5px; }
+/* the tools, folded away at the end of a file */
+.p-more { margin-top: 30px; border-top: 1px solid var(--border); padding-top: 14px; }
+.p-more > summary { cursor: pointer; font-family: var(--mono); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.p-more > summary span { color: var(--muted); text-transform: none; letter-spacing: 0; font-family: var(--sans); font-size: 12.5px; margin-left: 8px; }
+/* section links outside the reading view: one line that scrolls sideways */
+#panel-body:not(.reading) .rd-nav { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; white-space: nowrap; margin: 12px -22px 0; padding: 10px 22px; gap: 4px 18px; }
+#panel-body:not(.reading) .rd-nav::-webkit-scrollbar { display: none; }
+@media (max-width: 860px) {
+  #panel-body:not(.reading) .rd-nav { margin: 10px -16px 0; padding: 11px 16px; font-size: 12px; }
+  .key-m { grid-template-columns: 88px 1fr; gap: 10px; }
+}
