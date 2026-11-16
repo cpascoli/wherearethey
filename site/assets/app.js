@@ -2223,13 +2223,27 @@
   // its own: a direct link, or a file opened from the home page), so it is closed there, in place; k = Back shows.
   // Done rewinds the history rather than adding an entry, so the phone's own back gesture after it doesn't reopen the file.
   // Tested by tests/phone-sheet.test.mjs.
-  let closeOnArrive = false;
+  // On Explore, Done leaves the graph centred on the file that was open: lit in place when it is on screen, else
+  // shown with its connections as a trail (as "Explore from here", without a history entry of its own).
+  let closeOnArrive = false, focusOnArrive = null;
   $('#panel-back').addEventListener('click', () => history.back());
   $('#panel-done').addEventListener('click', () => {
-    const h = history.state || {}, n = h.n || 0;
-    if (h.sh && h.d < n) { closeOnArrive = !!h.c; history.go(h.d - n); return; }
+    const h = history.state || {}, n = h.n || 0, id = state.sel;
+    if (h.sh && h.d < n) { closeOnArrive = !!h.c; focusOnArrive = id; history.go(h.d - n); return; }
     select(null, { replace: true });
+    focusFile(id);
   });
+  function focusFile(id) {
+    if (!id || state.view !== 'graph' || state.sel || state.pair) return;
+    const g = byId.has(id) && offGraph(byId.get(id).type) ? graphAnchor(id) : id;
+    if (!g || !byId.has(g)) return;
+    const n = cy?.getElementById(g);
+    if (n?.length && !n.hasClass('hidden')) { highlight(g, true); requestAnimationFrame(() => frameEles(n.closedNeighborhood().nodes().not('.hidden'), true, false, n)); return; }
+    state.trail = { steps: [g], open: new Set([g]), pinned: new Set() };
+    state.hiddenIds.delete(g);
+    renderTrailBar();
+    trailChanged(g, { relayout: true });
+  }
   function syncSheetBar() { $('#panel-back').hidden = !history.state?.k; }
   function afterResize() { requestAnimationFrame(() => { if (!cy) ensureGraph(); cy?.resize(); map?.invalidateSize(); }); } // a graph uncovered for the first time is built now
   $('#panel-close').addEventListener('click', () => select(null));
@@ -3716,6 +3730,7 @@
   window.addEventListener('popstate', () => {
     applyRoute(false);
     if (closeOnArrive) { closeOnArrive = false; select(null, { replace: true }); } // Done: back at the first file, close it in place
+    if (focusOnArrive) { const id = focusOnArrive; focusOnArrive = null; focusFile(id); }
     trackView();
   }); // Back/Forward count as page views too
   // the server-rendered article is for crawlers and no-JS readers, and on a file's page it shows while the app loads:

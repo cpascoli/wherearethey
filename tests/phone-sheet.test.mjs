@@ -63,8 +63,19 @@ const openLinked = async p => {
   await wait(1200);
 };
 const goBack = async p => { await p.evaluate(() => history.back()); await wait(1200); };
+const openId = p => p.evaluate(() => history.state?.sel);
+// after Done on Explore: the file that was open is on the graph, near the middle of the screen
+async function assertCentred(p, id) {
+  await p.waitForFunction(i => { const n = window.__cy?.getElementById(i); return n?.length && !n.hasClass('hidden'); }, { timeout: 20000 }, id);
+  await wait(1200); // the camera moves for 450 ms, a new trail lays out first
+  const r = await p.evaluate(i => {
+    const n = window.__cy.getElementById(i), c = window.__cy.container().getBoundingClientRect(), q = n.renderedPosition();
+    return { x: q.x / c.width, y: q.y / c.height };
+  }, id);
+  assert.ok(r.x > 0.2 && r.x < 0.8 && r.y > 0.15 && r.y < 0.85, `${id} is near the middle of the graph (at ${r.x.toFixed(2)}, ${r.y.toFixed(2)})`);
+}
 
-test('direct link: no Back, Done shows the graph without adding a history entry', { skip }, async () => {
+test('direct link: no Back, Done shows the graph, centred on the file, without adding a history entry', { skip }, async () => {
   const p = await phone(FILE);
   let s = await look(p);
   assert.equal(s.path, FILE); assert.ok(s.sheet); assert.equal(s.back, false); assert.ok(s.done); assert.equal(s.tab, 'graph');
@@ -73,6 +84,14 @@ test('direct link: no Back, Done shows the graph without adding a history entry'
   s = await look(p);
   assert.equal(s.path, '/explore'); assert.equal(s.sheet, false); assert.equal(s.tab, 'graph');
   assert.equal(await p.evaluate(() => history.length), len, 'Done replaces the entry, it does not push one');
+  await p.close();
+});
+
+test('direct link to a file that is not on the key-files map: Done shows it, with its connections', { skip }, async () => {
+  const p = await phone('/person/kevin-knuth');
+  await tap(p, '#panel-done');
+  assert.equal((await look(p)).sheet, false);
+  await assertCentred(p, 'kevin-knuth');
   await p.close();
 });
 
@@ -100,9 +119,11 @@ test('from the home page: Back returns home, Done stays on Explore', { skip }, a
   s = await look(p);
   assert.equal(s.path, '/'); assert.equal(s.sheet, false);
   await tap(p, '[data-home-file]');
+  const id = await openId(p);
   await tap(p, '#panel-done');
   s = await look(p);
   assert.equal(s.path, '/explore'); assert.equal(s.sheet, false); assert.equal(s.tab, 'graph');
+  await assertCentred(p, id);
   await goBack(p);
   assert.equal((await look(p)).path, '/', 'the back gesture after Done goes home, it does not reopen the file');
   await p.close();
@@ -129,11 +150,19 @@ test('from the graph: a tapped file has no Back, Done returns to the graph', { s
   await wait(1500); // phones wait 400 ms for a second tap
   let s = await look(p);
   assert.ok(s.sheet); assert.equal(s.back, false); assert.ok(s.done);
+  const first = await openId(p);
+  await tap(p, '#panel-done');
+  assert.equal((await look(p)).sheet, false);
+  await assertCentred(p, first);
+  await p.evaluate(i => window.__cy.getElementById(i).emit('tap'), first);
+  await wait(1500);
   await openLinked(p);
   assert.ok((await look(p)).back);
+  const second = await openId(p);
   await tap(p, '#panel-done');
   s = await look(p);
   assert.equal(s.path, '/explore'); assert.equal(s.sheet, false); assert.equal(s.n, 0);
+  if (await p.evaluate(i => !!window.__cy.getElementById(i).length, second)) await assertCentred(p, second); // (a record or news item lights its file instead)
   await p.close();
 });
 
