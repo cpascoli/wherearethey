@@ -1322,3 +1322,9 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
 .tl-date .lt-tag { display: inline-block; margin-top: 4px; }
 @media (max-width: 860px) { .tl-views { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin: 0 -16px; padding: 12px 16px 2px; } .tl-views .chip { flex: none; } }
 #panel-body.reading .p-crumbs { margin-bottom: 14px; } /* with the early page (.ssr-crumbs): the title lands within a few pixels of where it was drawn */
+/* the timeline's bar: what it shows on the left, its order on the right */
+.tl-bar { display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.tl-order { flex: none; margin: 14px 0 2px; padding: 5px 10px; border: 1px solid var(--border); border-radius: 6px; background: var(--panel-2); color: var(--text); font: inherit; font-size: 13px; cursor: pointer; white-space: nowrap; }
+.tl-order:hover { border-color: var(--accent); }
+.tl-order span { color: var(--accent); }
+@media (max-width: 860px) { .tl-bar { align-items: stretch; flex-direction: column; gap: 0; } .tl-order { align-self: flex-start; margin: 8px 0 0; } }

@@ -1122,6 +1122,10 @@
   const TL_VIEWS = [['all', 'Everything'], ['congress', 'Congress'], ['releases', 'Documents & releases'], ['incidents', 'Incidents']];
   const tlFromUrl = () => { const v = new URLSearchParams(location.search).get('view'); return TL_VIEWS.some(x => x[0] === v) ? v : 'all'; };
   let tlView = tlFromUrl();
+  // Order: oldest first, or the latest first. The visitor's choice is remembered (a setting, not a filter); until they
+  // choose, the Congress tracker reads from the latest back and the rest from the beginning.
+  let tlNewest = store.get('tlNewest', null);
+  const tlNewestFirst = () => tlNewest ?? tlView === 'congress';
   const foldedInHearing = e => adj.get(e.id).some(x => x.dir === 'out' && ['submitted to', 'transcript of'].includes(x.label)); // statements and transcripts show on the hearing's card
   const TL_PICK = {
     congress: e => (e.type === 'hearing' && !/citizen/.test(e.id)) || (['event', 'document'].includes(e.type) && e.tags.includes('congress') && !foldedInHearing(e)),
@@ -1140,16 +1144,18 @@
       <div class="tl-links">${rec ? `<button class="btn small primary" data-play="${rec.id}@0">▶ Recording${rec.moments?.length ? ` · ${rec.moments.length} moments` : ''}</button>` : ''}<a class="btn small" href="${hrefOf(e.id)}" data-goto="${esc(e.id)}">Open the file</a>${link ? `<a class="btn small" href="${esc(link.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Official record ↗</a>` : ''}</div>`;
   }
   function renderTimeline() {
-    const chips = `<div class="tl-views" role="tablist" aria-label="What the timeline shows">${TL_VIEWS.map(([k, l]) => `<button role="tab" aria-selected="${k === tlView}" class="chip ${k === tlView ? 'on' : ''}" data-tl-view="${k}">${l}</button>`).join('')}</div>`;
+    const newest = tlNewestFirst();
+    const chips = `<div class="tl-bar"><div class="tl-views" role="tablist" aria-label="What the timeline shows">${TL_VIEWS.map(([k, l]) => `<button role="tab" aria-selected="${k === tlView}" class="chip ${k === tlView ? 'on' : ''}" data-tl-view="${k}">${l}</button>`).join('')}</div>
+      <button class="tl-order" data-tl-order aria-pressed="${newest}" title="Reverse the order (remembered on this device)"><span aria-hidden="true">${newest ? '↓' : '↑'}</span> ${newest ? 'Newest first' : 'Oldest first'}</button></div>`;
     const pick = TL_PICK[tlView], today = isoToday();
     // videos (upload dates) and people (birth dates) aren't events: they appear through the events they're part of
     const items = (pick ? ents.filter(e => e.y0 && pick(e) && !(state.credibleOnly && e.cred === 'outside') && !(state.hideExplained && resolved(e)))
       : ents.filter(e => e.y0 && !OFF_TIMELINE.has(e.type) && visible.has(e.id))).sort((a, b) => String(a.date).localeCompare(String(b.date)) || a.name.localeCompare(b.name));
-    if (tlView === 'congress') items.reverse(); // a tracker reads from the latest back
+    if (newest) items.reverse();
     if (!items.length) { $('#timeline').innerHTML = chips + '<p class="muted" style="padding:24px 0">Nothing dated matches the current filters. <button class="link" data-clear-filters>Show everything</button></p>'; return; }
     const groups = new Map();
     for (const e of items) { const d = Math.floor(e.y0 / 10) * 10; if (!groups.has(d)) groups.set(d, []); groups.get(d).push(e); }
-    const intro = tlView === 'congress' ? `<p class="tl-intro">Hearings, legislation and members' events on file, the latest first. Each hearing lists its witnesses, its strongest moments and the official record.</p>` : '';
+    const intro = tlView === 'congress' ? `<p class="tl-intro">Hearings, legislation and members' events on file. Each hearing lists its witnesses, its strongest moments and the official record.</p>` : '';
     $('#timeline').innerHTML = chips + intro + [...groups].map(([d, list]) => `
       <div class="tl-decade">${d}s <small>${list.length} ${list.length === 1 ? 'entry' : 'entries'}</small></div>
       <div class="tl-items">${list.map(e => `
@@ -1161,6 +1167,11 @@
         </div>`).join('')}</div>`).join('');
   }
   $('#timeline').addEventListener('click', e => {
+    if (e.target.closest('[data-tl-order]')) {
+      tlNewest = !tlNewestFirst(); store.set('tlNewest', tlNewest);
+      track('filter_change', { view: 'timeline', timeline_order: tlNewest ? 'newest' : 'oldest' });
+      renderTimeline(); $('#timeline').scrollTop = 0; return;
+    }
     const b = e.target.closest('[data-tl-view]'); if (!b) return;
     tlView = b.dataset.tlView;
     history.replaceState(history.state, '', tlView === 'all' ? '/timeline' : `/timeline?view=${tlView}`);
