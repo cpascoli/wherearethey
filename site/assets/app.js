@@ -787,8 +787,10 @@
   // step: the current step is outlined with its links to the earlier ones, later steps wait faded. Following or
   // opening a file works as in any trail, and the story stays on screen. /explore?story=<id> opens one.
   function storyById(id) { return (EXPLORE.stories || []).find(s => s.id === id); }
-  function startStory(id, at = 0) {
+  // push: started from a file (Keep reading), so the story gets its own history entry and Back returns to the file
+  function startStory(id, at = 0, { push = false } = {}) {
     const s = storyById(id); if (!s) return;
+    push &&= state.view === 'graph'; // from another view, go('graph') below adds the entry
     const ids = s.steps.flatMap(st => st.ids).filter(x => byId.has(x));
     clearFilters(null);
     if (ids.some(x => byId.get(x).cred === 'outside')) state.credibleOnly = false;
@@ -796,7 +798,8 @@
     state.full = false;
     state.trail = { story: id, at: Math.max(0, Math.min(at, s.steps.length - 1)), steps: [], open: new Set(), pinned: new Set(ids) };
     if (state.view !== 'graph') go('graph');
-    history.replaceState(history.state, '', `/explore?story=${encodeURIComponent(id)}`);
+    if (push) history.pushState({ view: 'graph', sel: null, video: state.video, n: (history.state?.n || 0) + 1 }, '', `/explore?story=${encodeURIComponent(id)}`);
+    else history.replaceState(history.state, '', `/explore?story=${encodeURIComponent(id)}`);
     if (window.innerWidth <= 860) closePanel();
     trailChanged(null, { relayout: true });
   }
@@ -1343,6 +1346,10 @@
     ['releases', 'Official releases'], ['research', 'Research & analysis'], ['incidents', 'Incidents'], ['press', 'In the press'], ['media', 'Books & films'],
   ];
   const isoToday = () => new Date().toISOString().slice(0, 10);
+  // the visitor's own date (the home page's "On this day"; index.html's inline script picks its block the same way)
+  const localToday = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
+  // days between a date's anniversary and today, across New Year too (30 Dec is 3 days from 2 Jan)
+  const annivGap = (date, today) => { const y = +today.slice(0, 4), ms = Date.parse(today); return Math.min(...[y - 1, y, y + 1].map(k => Math.abs(Date.parse(k + date.slice(4)) - ms) / 864e5)); };
   const dayOffset = (iso, days) => new Date(Date.parse(iso) + days * 864e5).toISOString().slice(0, 10);
   const dateEnd = d => /^\d{4}-\d{2}-\d{2}$/.test(d) ? d : /^\d{4}-\d{2}$/.test(d) ? new Date(Date.UTC(+d.slice(0, 4), +d.slice(5, 7), 0)).toISOString().slice(0, 10) : null;
   const recordingOf = v => adj.get(v.id).find(x => x.dir === 'out' && x.label === 'recording of' && ['hearing', 'event', 'news'].includes(byId.get(x.other)?.type))?.other;
@@ -1398,8 +1405,8 @@
   function pinLabel(e, today) {
     const d = String(e.date || '');
     if (!/^\d{4}-\d{2}-\d{2}$/.test(d) || d.slice(0, 4) >= today.slice(0, 4)) return 'featured';
-    const years = +today.slice(0, 4) - +d.slice(0, 4), gap = Math.abs(Date.parse(today.slice(0, 4) + d.slice(4)) - Date.parse(today)) / 864e5;
-    return gap < 1 ? `on this day, ${years} years ago` : gap <= 7 ? `${years} years ago this week` : 'featured';
+    const years = +today.slice(0, 4) - +d.slice(0, 4), gap = annivGap(d, today), ago = years === 1 ? '1 year ago' : `${years} years ago`;
+    return gap < 1 ? `on this day, ${ago}` : gap <= 7 ? `${ago} this week` : 'featured';
   }
   function renderLatest() {
     const { featured, recent, added, folded, today } = latestData();
@@ -2715,8 +2722,8 @@
   // The day's file for the home page: a case or hearing that happened on this date (or within three days of it) in an
   // earlier year, the best connected first; failing that the entry pinned on Latest. With a clip when one is on file.
   function onThisDay(today) {
-    const y = today.slice(0, 4), ms = Date.parse(today);
-    const gap = e => Math.round(Math.abs(Date.parse(y + e.date.slice(4)) - ms) / 864e5);
+    const y = today.slice(0, 4);
+    const gap = e => Math.round(annivGap(e.date, today));
     const c = ents.filter(e => ['incident', 'hearing', 'event'].includes(e.type) && /^\d{4}-\d{2}-\d{2}$/.test(String(e.date || '')) && e.date.slice(0, 4) < y && e.cred !== 'outside' && !resolved(e) && gap(e) <= 3)
       .sort((a, b) => gap(a) - gap(b) || adj.get(b.id).length - adj.get(a.id).length)[0];
     if (c) return { e: c, label: gap(c) ? `This week in ${c.date.slice(0, 4)}` : `On this day in ${c.date.slice(0, 4)}` };
@@ -2734,12 +2741,12 @@
     const el = $('#view-home');
     const typed = $('#hq')?.value || '', typing = document.activeElement?.id === 'hq';
     const preHero = !el.dataset.drawn && el.querySelector(':scope > .hero'); // written into index.html by scripts/pages.mjs
-    const today = new Date().toISOString().slice(0, 10);
+    const today = localToday();
     const ld = latestData(), latest = [...ld.featured, ...ld.recent].slice(0, 6);
     // the day's file comes written in index.html (scripts/pages.mjs, for the visitor's date): it is the largest thing
     // on the first screen, so it stays exactly as it was painted, for the whole visit
     const preDay = !el.dataset.drawn && el.querySelector(':scope > .home-wrap .home-day[data-pre]');
-    if (preDay) homeDayPre = { date: today, html: preDay.outerHTML };
+    if (preDay) homeDayPre = { date: today, html: preDay.outerHTML, id: preDay.querySelector('[data-home-file]')?.dataset.homeFile };
     const kept = homeDayPre?.date === today ? homeDayPre.html : '';
     const day = kept ? null : onThisDay(today), clip = day && clipFor(day.e);
     const claims = ents.filter(e => e.type === 'claim').sort(claimOrder).slice(0, 3);
@@ -2772,7 +2779,7 @@
           </section>` : ''}
           <section class="home-latest">
             <div class="home-kicker">Latest on the record</div>
-            <div class="latest">${latest.filter(e => e !== day?.e).slice(0, 5).map(e => `
+            <div class="latest">${latest.filter(e => e.id !== (day ? day.e.id : homeDayPre?.id)).slice(0, 5).map(e => `
               <a class="latest-item" href="${hrefOf(e.id)}" data-home-latest="${e.id}" style="--c:${TYPES[e.type].color}">
                 <span class="li-date">${esc(fmtRange(e))}${String(e.date) > today ? ' <em>upcoming</em>' : ''}</span>
                 <span class="li-type">${e.type === 'news' ? esc(NEWS_KIND[e.kind]?.label || 'News') : TYPES[e.type].label}</span><span class="li-name">${esc(e.name)}</span>
@@ -3588,7 +3595,7 @@
       return;
     }
     const st = e.target.closest('#panel [data-story-start]');
-    if (st) { e.preventDefault(); track('explore_start', { item_id: st.dataset.storyStart, method: 'file' }); state.reading = false; select(null); startStory(st.dataset.storyStart); return; }
+    if (st) { e.preventDefault(); track('explore_start', { item_id: st.dataset.storyStart, method: 'file' }); state.reading = false; quiet(() => select(null)); startStory(st.dataset.storyStart, 0, { push: true }); return; } // Back returns to the file
     const ex = e.target.closest('[data-explore]');
     if (ex) {
       e.preventDefault();

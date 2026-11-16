@@ -4,45 +4,11 @@
 //   "‹ Back" (top left) shows only when there is an earlier file in the sheet, or the visitor came from the home
 //   page, and steps back one entry.
 // The rules live in app.js (#panel-done, sheetFields). Run after a build: `npm run build && npm test`.
-import { test, before, after } from 'node:test';
+import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import http from 'node:http';
-import fs from 'node:fs';
-import path from 'node:path';
-import puppeteer from 'puppeteer-core';
+import { skip, wait, phone } from './helpers.mjs';
 
-const ROOT = path.resolve(import.meta.dirname, '../site');
-const CHROME = process.env.CHROME || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const FILE = '/person/david-fravor';
-const skip = !fs.existsSync(path.join(ROOT, 'index.html')) ? 'site/ is not built (npm run build)' : !fs.existsSync(CHROME) ? 'Chrome not found (set CHROME)' : false;
-
-let server, browser, base;
-const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.woff2': 'font/woff2' };
-before(async () => {
-  if (skip) return;
-  server = http.createServer((req, res) => {
-    const p = decodeURIComponent(req.url.split('?')[0].replace(/^\/+/, '/'));
-    const f = [p, p + '.html', path.join(p, 'index.html')].map(c => path.join(ROOT, c)).find(c => c.startsWith(ROOT) && fs.existsSync(c) && fs.statSync(c).isFile());
-    if (!f) { res.writeHead(404); return res.end(); }
-    res.writeHead(200, { 'content-type': TYPES[path.extname(f)] || 'application/octet-stream' });
-    fs.createReadStream(f).pipe(res);
-  });
-  await new Promise(r => server.listen(0, 'localhost', r));
-  base = `http://localhost:${server.address().port}`;
-  browser = await puppeteer.launch({ executablePath: CHROME, headless: 'new' });
-});
-after(async () => { await browser?.close(); server?.close(); });
-
-const wait = ms => new Promise(r => setTimeout(r, ms));
-async function phone(url) {
-  const p = await browser.newPage();
-  await p.setUserAgent('Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1');
-  await p.setViewport({ width: 390, height: 844, isMobile: true, hasTouch: true });
-  await p.goto(base + url, { waitUntil: 'networkidle2' });
-  await p.waitForFunction(() => window.BUILD && document.querySelector('#views'), { timeout: 20000 });
-  await wait(1200);
-  return p;
-}
 // what the visitor sees: the address, whether a sheet is open, its buttons, the lit tab, how deep into the visit
 const look = p => p.evaluate(() => {
   const shown = el => !!el && !el.hidden && el.getClientRects().length > 0 && getComputedStyle(el).visibility !== 'hidden';

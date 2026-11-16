@@ -399,7 +399,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     };
     const onThisDay = today => {
       const y = today.slice(0, 4), ms = Date.parse(today);
-      const gap = e => Math.round(Math.abs(Date.parse(y + e.date.slice(4)) - ms) / 864e5);
+      const gap = e => Math.round(Math.min(...[+y - 1, +y, +y + 1].map(k => Math.abs(Date.parse(k + e.date.slice(4)) - ms) / 864e5))); // as annivGap in app.js
       const c = entities.filter(e => ['incident', 'hearing', 'event'].includes(e.type) && /^\d{4}-\d{2}-\d{2}$/.test(String(e.date || '')) && e.date.slice(0, 4) < y && e.cred !== 'outside' && !resolved(e) && gap(e) <= 3)
         .sort((a, b) => gap(a) - gap(b) || adjOf(b.id).length - adjOf(a.id).length)[0];
       if (c) return { e: c, label: gap(c) ? `This week in ${c.date.slice(0, 4)}` : `On this day in ${c.date.slice(0, 4)}` };
@@ -432,7 +432,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     }
     return { html, dates };
   })();
-  const homePre = `<div class="home-wrap"><div class="home-top"></div></div><script type="application/json" id="home-days">${JSON.stringify(homeDays).replace(/</g, '\\u003c')}</script><script>(function(){try{var d=JSON.parse(document.getElementById('home-days').textContent),i=d.dates[new Date().toISOString().slice(0,10)];if(i!=null)document.querySelector('#view-home .home-top').innerHTML=d.html[i]}catch(e){}})()</script>`;
+  const homePre = `<div class="home-wrap"><div class="home-top"></div></div><script type="application/json" id="home-days">${JSON.stringify(homeDays).replace(/</g, '\\u003c')}</script><script>(function(){try{var d=JSON.parse(document.getElementById('home-days').textContent),n=new Date(),i=d.dates[n.getFullYear()+'-'+String(n.getMonth()+1).padStart(2,'0')+'-'+String(n.getDate()).padStart(2,'0')];if(i!=null)document.querySelector('#view-home .home-top').innerHTML=d.html[i]}catch(e){}})()</script>`;
   const render = p => {
     const url = SITE_URL + (p.path === '/' ? '/' : p.path);
     const fullTitle = p.view === 'home' || p.title.length > 50 ? p.title : `${p.title} — Where Are They`; // long titles keep their words, not the brand
