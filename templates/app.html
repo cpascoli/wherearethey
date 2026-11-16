@@ -39,7 +39,8 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- The text face comes from our own site, preloaded, and the first paint waits for it (font-display: block): a
+  <!-- The text face comes from our own site, preloaded, and the first paint of body text waits for it (font-display: block; the 600 weight swaps in, so titles such as the
+       home page's are not held back): a
        page first painted in the system font and redrawn by the app in Plex paints its main paragraph about 1% larger
        the second time, and that later moment then counts as the page's largest paint. Made from scripts/fonts with
        pyftsubset (Latin and Latin Extended, woff). The other weights and faces still come from Google and don't hold
@@ -47,7 +48,7 @@
   <link rel="preload" href="/assets/fonts/plex-sans-400.woff" as="font" type="font/woff" crossorigin>
   <style>
     @font-face { font-family: "IBM Plex Sans"; font-weight: 400; font-style: normal; font-display: block; src: url("/assets/fonts/plex-sans-400.woff") format("woff"); }
-    @font-face { font-family: "IBM Plex Sans"; font-weight: 600; font-style: normal; font-display: block; src: url("/assets/fonts/plex-sans-600.woff") format("woff"); }
+    @font-face { font-family: "IBM Plex Sans"; font-weight: 600; font-style: normal; font-display: swap; src: url("/assets/fonts/plex-sans-600.woff") format("woff"); }
   </style>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@1,400;1,500&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@1,400;1,500&display=swap"></noscript>

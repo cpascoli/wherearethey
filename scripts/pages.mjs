@@ -181,10 +181,10 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     if (e.type === 'book') head.push(`<p class="ssr-meta">${[e.credits, e.publisher, e.pages && `${e.pages} pages`, e.isbn && `ISBN ${e.isbn}`].filter(Boolean).map(esc).join(' · ')}</p>`);
     if (e.type === 'film') head.push(`<p class="ssr-meta">${[e.credits, e.runtime && `${e.runtime} min`].filter(Boolean).map(esc).join(' · ')}</p>`);
     if (bLead) head.push(`<p class="ssr-lead">${bLead.lead}</p>${bLead.only ? `<div class="ssr-lead-src">${bLead.rest}</div>` : ''}`);
-    const pic = e.portrait ? `<figure class="ssr-portrait"><img src="${esc(e.portrait)}" alt="${esc(e.imageCaption || e.name)}" width="220" height="275">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>`
+    const pic = e.portrait ? `<figure class="ssr-portrait"><img src="${esc(e.portrait)}" alt="${esc(e.imageCaption || e.name)}" width="220" height="275" fetchpriority="high">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>`
       : e.cover ? `<img class="ssr-cover" src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" width="200">` : '';
     h.push(pic ? `<div class="ssr-head ${e.portrait ? 'has-portrait' : 'has-cover'}"><div class="ssr-head-main">${head.join('')}</div>${pic}</div>` : `<div class="ssr-head">${head.join('')}</div>`);
-    if (!e.portrait && e.image) h.push(`<figure><img src="${esc(e.image)}" alt="${esc(e.imageCaption || e.name)}" width="800">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>`);
+    if (!e.portrait && e.image) h.push(`<figure><img src="${esc(e.image)}" alt="${esc(e.imageCaption || e.name)}" width="800" fetchpriority="high">${e.imageCaption ? `<figcaption>${esc(e.imageCaption)}</figcaption>` : ''}</figure>`);
     if (e.type === 'video') {
       const url = videoUrl(e);
       h.push(`<p>${[e.channel, fmtDate(e.date), e.duration && `${Math.round(e.duration / 60)} min`].filter(Boolean).map(esc).join(' · ')}${url ? ` · <a href="${esc(url)}" rel="noopener">Watch the original</a>` : ''}</p>`);
@@ -320,7 +320,9 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       cardJobs.push({ file, card: { type: e.type, label: LABEL[e.type].replace(/ \(PURSUE\)$/, ''), name: e.name, line, holds: holdsCard, neighbours } });
       image = `${SITE_URL}/${file}`;
     }
-    pages.push({ path: e.path, file: e.file, title, description, body: h.join('\n'), jsonld, image, noindex: e.type === 'record', type: e.type === 'video' ? 'video.other' : 'article', pre: e.type !== 'video' });
+    pages.push({ path: e.path, file: e.file, title, description, body: h.join('\n'), jsonld, image, noindex: e.type === 'record', type: e.type === 'video' ? 'video.other' : 'article', pre: e.type !== 'video',
+      // a long title over a short text, with no picture: the title is the page's largest paint, so its face (600) must be there for the first paint too
+      boldFirst: !e.portrait && !e.image && !e.cover && (e.name.length > 60 || text(e.body).length < 350) });
   }
   const cardsRendered = writeCards(site, cardJobs);
 
@@ -452,6 +454,8 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       // search behind the hero's own), so neither shows and then vanishes while the app loads
       .replace(/^<body>$/m, p.view === 'home' && heroHtml ? '<body class="is-home hero-q">' : '<body>') // the tag's own line (a comment above also says <body>)
       .replace('<section class="view home" id="view-home"></section>', p.view === 'home' && heroHtml ? `<section class="view home" id="view-home">${heroHtml}${homePre}</section>` : '<section class="view home" id="view-home"></section>')
+      .replace('font-weight: 600; font-style: normal; font-display: swap;', p.boldFirst ? 'font-weight: 600; font-style: normal; font-display: block;' : 'font-weight: 600; font-style: normal; font-display: swap;')
+      .replace('<link rel="preload" href="/assets/fonts/plex-sans-400.woff" as="font" type="font/woff" crossorigin>', m => m + (p.boldFirst ? '\n  <link rel="preload" href="/assets/fonts/plex-sans-600.woff" as="font" type="font/woff" crossorigin>' : ''))
       .replace('<!--SSR-->', `<main id="ssr" class="ssr"${p.pre ? ' data-pre="1"' : ''}${p.view === 'home' && heroHtml ? ' data-hero="1"' : ''}>${nav}<article>${p.body}</article></main>`); // data-pre: shown at once while the app loads (templates/app.html)
   };
   for (const p of pages) {
