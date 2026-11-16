@@ -2123,7 +2123,7 @@
     if (e.bodyLazy) loadRecordBodies().then(() => { if (state.sel === id && !$('#panel').hidden) openPanel(id); });
     const body = $('#panel-body');
     body.innerHTML = renderPanel(e);
-    if (state.reading) layoutReading(body); else body.classList.remove('reading');
+    if (state.reading) layoutReading(body); else { body.classList.remove('reading'); sectionNav(body); } // section links on every layout
     applyCollapse(body, state.reading ? 2 : 1);
     $('#panel').hidden = false;
     $('#panel').scrollTop = 0;
@@ -3699,11 +3699,11 @@
   function phaseLock() {
     if (!prePhase || $('#panel').hidden) return;
     const body = $('#panel-body');
-    for (const [k, sel] of [['lead', '.p-lead'], ['img', '.p-image img'], ['body', '.p-bio p'], ['fact', '.facts .fact']]) {
+    for (const [k, sel] of [['lead', '.p-lead'], ['img', '.p-image img'], ['body', '.p-body p'], ['fact', '.facts .fact']]) {
       const el = body.querySelector(sel); if (!el || prePhase[k] == null) continue;
       const up = (((phase(el) - prePhase[k]) % 1) + 1) % 1; // how far to lift it, under a pixel
       if (up < 0.02 || up > 0.98) continue;
-      const host = k === 'img' ? el.closest('.p-image') : k === 'body' ? el.closest('.p-bio') : k === 'fact' ? el.closest('.facts') : el;
+      const host = k === 'img' ? el.closest('.p-image') : k === 'body' ? el.closest('.p-body') : k === 'fact' ? el.closest('.facts') : el;
       host.style.marginTop = `${parseFloat(getComputedStyle(host).marginTop) - up}px`;
     }
   }
