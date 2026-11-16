@@ -2757,7 +2757,7 @@
 
         ${(EXPLORE.stories || []).length ? `<section class="home-sec">
           <div class="home-kicker">Start with a story</div>
-          <h2>The record, told in steps</h2>
+          <h2>Explore the top stories on record, step by step</h2>
           <div class="home-row stories">${EXPLORE.stories.map(st => `
             <a class="path-card" href="/explore?story=${esc(st.id)}" data-home-story="${esc(st.id)}">
               <div class="pc-kicker">Story · ${st.steps.length} steps</div><h3>${esc(st.title)}</h3><p>${esc(st.blurb || '')}</p><span class="pc-cta">Follow it →</span>

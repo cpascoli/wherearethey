@@ -522,6 +522,85 @@
           "text": "AARO's 2024 report, overseen by Sean Kirkpatrick, found no empirical evidence of reverse-engineered extraterrestrial technology; his successor Jon Kosloski reported “no verifiable evidence” of extraterrestrial beings or technology."
         }
       ]
+    },
+    {
+      "id": "road-to-pursue",
+      "label": "The road to PURSUE",
+      "title": "Disclosure: the road to PURSUE, 2017–2026",
+      "blurb": "From a newspaper story to hearings, a records law and a presidential order: how U.S. government UAP files came to be published, and what the releases leave open.",
+      "steps": [
+        {
+          "title": "A secret program becomes public, 2017–2020",
+          "ids": [
+            "ev-nyt-2017",
+            "aatip",
+            "ev-dod-videos-2020"
+          ],
+          "text": "In December 2017 the New York Times revealed that the Pentagon had run a secret program to study UFOs, which the story called AATIP. In April 2020 the Department of Defense officially released three Navy videos, and the Navy confirmed they show unidentified aerial phenomena."
+        },
+        {
+          "title": "A task force and a first report, 2020–21",
+          "ids": [
+            "uaptf",
+            "ev-uaptf-report-2021",
+            "doc-odni-2021-preliminary-assessment"
+          ],
+          "text": "In August 2020 the Pentagon set up the UAP Task Force. In June 2021 the Office of the Director of National Intelligence published the first unclassified U.S. government report on the subject: of 144 reports, only one was identified."
+        },
+        {
+          "title": "Congress holds a hearing, 2022",
+          "ids": [
+            "h-2022-05-17",
+            "scott-bray",
+            "aaro"
+          ],
+          "text": "In May 2022 the House Intelligence Committee held the first open congressional hearing on UFOs in more than 50 years. Deputy Director of Naval Intelligence Scott Bray testified: “We have not had a collision. We have had at least 11 near misses.” That July the Pentagon established AARO, its UAP office."
+        },
+        {
+          "title": "Under oath, July 2023",
+          "ids": [
+            "h-2023-07-26",
+            "david-grusch",
+            "doc-aaro-historical-record-report-v1"
+          ],
+          "text": "Before the House Oversight Committee, David Grusch testified that he was informed of “a multi-decade UAP crash retrieval and reverse engineering program”. AARO's 2024 report found no empirical evidence of reverse-engineered extraterrestrial technology."
+        },
+        {
+          "title": "A law for the records, December 2023",
+          "ids": [
+            "ev-ndaa-fy2024",
+            "chuck-schumer",
+            "mike-rounds",
+            "nara"
+          ],
+          "text": "The defense act for 2024 required federal agencies to identify their UAP records and transfer them to a new collection at the National Archives, with a presumption that they be disclosed. It was a scaled-back version of the UAP Disclosure Act proposed by Senators Chuck Schumer and Mike Rounds: the final law dropped its independent review board."
+        },
+        {
+          "title": "The President's order, February 2026",
+          "ids": [
+            "pursue",
+            "donald-trump",
+            "department-of-war"
+          ],
+          "text": "On 19 February 2026 President Trump directed the Secretary of War and other agencies to identify and release government files on UAP, UFOs and extraterrestrial life. The Department of War, supported by ODNI, runs the release system, PURSUE."
+        },
+        {
+          "title": "The releases, from May 2026",
+          "ids": [
+            "ev-pursue-release-01",
+            "ev-pursue-release-07"
+          ],
+          "text": "The first tranche, 158 records, was published on 8 May 2026. Seven releases through October 2026 have published 478 records, among them a 2026 sighting by federal agents of a silent, matte black triangular craft."
+        },
+        {
+          "title": "Evidence, not proof",
+          "ids": [
+            "garry-nolan",
+            "avi-loeb"
+          ],
+          "text": "The records are unresolved cases: the government could not make a definitive determination about what was observed, and AARO notes that many of the materials lack a substantiated chain of custody. Garry Nolan: “This is evidence. It's not proof yet.” Avi Loeb says the data in the tranches is “not good enough” for scientists to reach conclusions."
+        }
+      ]
     }
   ]
 }
