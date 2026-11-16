@@ -1345,7 +1345,7 @@
       const pinned = featured.includes(e);
       const cover = !rec && e.cover ? `<div class="lt-thumb lt-cover" data-goto="${esc(e.id)}"><img src="${esc(e.cover)}" alt="Cover of ${esc(e.name)}" loading="lazy"></div>`
         : !rec && e.image ? `<div class="lt-thumb lt-image" data-goto="${esc(e.id)}" title="${esc(e.imageCaption || '')}"><img src="${esc(e.image)}" alt="${esc(e.imageCaption || e.name)}" loading="lazy"></div>` : '';
-      return `<article class="lt-card ${isNew(e) ? 'is-new' : ''} ${pinned ? 'is-featured' : ''}" style="--c:${TYPES[e.type].color}"${e.type === 'book' ? ` data-book="${esc(e.id)}"` : ''}>${cover}
+      return `<article class="lt-card ${isNew(e) ? 'is-new' : ''} ${pinned ? 'is-featured' : ''}" style="--c:${TYPES[e.type].color}" data-file="${esc(e.id)}">${cover}
         ${rec ? `<div class="lt-thumb" data-play="${rec.id}@0" title="Play"><img src="${vthumb(rec)}" alt="" loading="lazy"><span class="wplay">▶</span>${rec.duration ? `<span class="wdur">${fmtDur(rec.duration)}</span>` : ''}</div>` : ''}
         <div class="lt-body">
           <div class="lt-kicker"><span class="lt-date">${esc(fmtRange(e))}</span>${pinned ? '<em class="lt-tag feat">featured</em>' : ''}${e.date > today ? '<em class="lt-tag up">upcoming</em>' : ''}${isNew(e) ? '<em class="lt-tag new">new</em>' : ''}<span class="lt-kind">${esc(kind)}</span>${e.type === 'video' && e.channel ? `<span class="lt-src">${esc(e.channel)}</span>` : e.outlet ? `<span class="lt-src">${esc(e.outlet)}</span>` : ''}</div>
@@ -1420,7 +1420,7 @@
         : `<div class="sc-spine" style="--c:${TYPES[e.type].color}"><b>${esc(e.name)}</b><span>${esc(e.credits || '')}</span></div>`;
       const amz = e.type === 'book' && amazonLink(e.isbn);
       const actions = `<div class="sc-actions">${tr ? `<button class="btn small primary" data-play="${tr.id}@0">▶ Trailer</button>` : ''}<button class="btn small" data-goto="${e.id}">File card</button>${amz ? `<a class="btn small sc-btn-buy" href="${esc(amz.url)}" target="_blank" rel="noopener sponsored" title="Opens ${amz.store}">Buy on Amazon ↗</a>` : ''}${e.links.slice(0, 2).map(l => `<a class="btn small" href="${esc(l.url)}" target="_blank" rel="noopener" title="${esc(l.label)}">${esc(btnLabel(l.label))} ↗</a>`).join('')}</div>`;
-      return `<article class="shelf-card ${e.type}${e.shelfFeatured ? ' is-featured' : ''}" data-book="${e.type === 'book' ? esc(e.id) : ''}">
+      return `<article class="shelf-card ${e.type}${e.shelfFeatured ? ' is-featured' : ''}" data-file="${esc(e.id)}">
         <div class="sc-left">
           <div class="sc-cover" ${tr ? `data-play="${tr.id}@0" title="Play the trailer"` : `data-goto="${e.id}"`}>${cover}</div>
           ${e.type === 'book' ? '' : actions}
@@ -1528,7 +1528,7 @@
     const pages = r.dOut.reduce((n, x) => n + x[1].length, 0);
     requestAnimationFrame(() => {
       dd.innerHTML = `<div class="dd-head dd-doc-head"><button class="link" data-dd-back>‹ Back</button><span>${r.dTotal ? `${r.dTotal} matches on ${pages} page${pages > 1 ? 's' : ''} in ${r.dOut.length} document${r.dOut.length > 1 ? 's' : ''}` : `No document mentions “${esc(q)}”`}</span></div>`
-        + r.dOut.slice(0, 15).map(([d, hits]) => `<div class="dd-doc"><a class="dd-doc-t" href="${hrefOf(d.id)}" data-goto="${esc(d.id)}">${esc(d.name)}<span>${hits.length} p.</span></a>`
+        + r.dOut.slice(0, 15).map(([d, hits]) => `<div class="dd-doc" data-file="${esc(d.id)}"><a class="dd-doc-t" href="${hrefOf(d.id)}" data-goto="${esc(d.id)}">${esc(d.name)}<span>${hits.length} p.</span></a>`
           + hits.slice(0, 3).map(h => `<a class="dd-doc-hit" href="${esc(fileUrl(h.file))}#page=${h.page}" target="_blank" title="Open the PDF at page ${h.page}"><span class="ts">p.${h.page}</span><span>${hl(h.snip)}${h.n > 1 ? ` <span class="muted">(${h.n}×)</span>` : ''}</span></a>`).join('')
           + (hits.length > 3 ? `<div class="small muted dd-doc-more">+${hits.length - 3} more pages</div>` : '') + '</div>').join('')
         + (r.dOut.length > 15 ? `<div class="small muted dd-doc-more">+${r.dOut.length - 15} more documents</div>` : '')
@@ -3161,14 +3161,17 @@
     let url; try { url = new URL(a.href); } catch { return; }
     // our X and GitHub links: which network, and where on the page (header, more-menu, home-footer, side-footer)
     if (a.dataset.social) { track('social_click', { network: a.dataset.social, placement: a.dataset.placement || clickCtx || state.view }); return; }
-    if (/\.pdf(#|$)/i.test(href)) track('file_open', { file_name: url.pathname.split('/').pop(), page: (href.match(/#page=(\d+)/) || [])[1], context: clickCtx || state.view });
-    else if (/^https?:$/.test(url.protocol) && url.host !== location.host) track('link_out', { link_domain: url.host.replace(/^www\./, ''), link_url: a.href, context: clickCtx || state.view });
-    // Amazon links for books (our "Buy on Amazon" buttons and any Amazon link a book file carries): which book, which
-    // store. The book is the card's (data-book: Books page, Latest) or else the file open in the panel
-    if (/(^|\.)amazon\.[a-z.]+$/.test(url.host)) {
-      const book = a.closest('[data-book]')?.dataset.book || (byId.get(state.sel)?.type === 'book' ? state.sel : '');
-      if (book) track('amazon_click', { item_id: book, item_name: byId.get(book)?.name, store: url.host.replace(/^www\./, ''), link_url: a.href, context: clickCtx || state.view });
-    }
+    // the file the link belongs to: the card or search result it sits in (data-file: Latest, Books/Documentaries,
+    // document search), else the file open in the panel, else the video playing beside its details
+    const fid = a.closest('[data-file]')?.dataset.file || (t.closest('#panel') && state.sel) || (t.closest('#vid-detail') && state.video) || '';
+    const file = fid ? { item_id: fid, content_type: byId.get(fid)?.type } : {};
+    // file_open: a PDF of ours (the dev server, or R2 via filesBase); a PDF on another site is a link_out like any other
+    const own = url.host === location.host || (KB.filesBase && a.href.startsWith(KB.filesBase));
+    if (own && /\.pdf(#|$)/i.test(href)) track('file_open', { file_name: url.pathname.split('/').pop(), page: (href.match(/#page=(\d+)/) || [])[1], context: clickCtx || state.view, ...file });
+    else if (/^https?:$/.test(url.protocol) && url.host !== location.host) track('link_out', { link_domain: url.host.replace(/^www\./, ''), link_url: a.href, context: clickCtx || state.view, ...file });
+    // Amazon links for books (our "Buy on Amazon" buttons and any Amazon link a book file carries): which book, which store
+    if (/(^|\.)amazon\.[a-z.]+$/.test(url.host) && file.content_type === 'book')
+      track('amazon_click', { item_id: fid, item_name: byId.get(fid)?.name, store: url.host.replace(/^www\./, ''), link_url: a.href, context: clickCtx || state.view });
   }, true);
   // searches: reported once the visitor stops typing (≥ 3 characters), one event per distinct term and box
   var searchSent = {}, searchTimers = {};
