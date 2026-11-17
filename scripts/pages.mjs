@@ -414,14 +414,14 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       const day = onThisDay(today); if (!day) return '';
       const e = day.e, clip = clipFor(e), v = clip && byId.get(clip.video);
       if (clip && !vthumb(v)) return ''; // no picture to show yet: the app draws its placeholder
-      return `<section class="home-day" data-pre="${today}" style="--c:${color[e.type] || '#888'}">
-            <div class="home-kicker">${esc(day.label)} · ${esc(range(e))}</div>
+      const kicker = `${day.label} · ${range(e)}`;
+      return `<div class="home-car dv-car" tabindex="-1"><div class="hc-head"><div class="home-kicker hc-kicker">${esc(kicker)}</div><div class="dv-nav hc-nav"></div></div><div class="dv-track hc-track"><section class="home-day hc-slide" data-pre="${today}" data-kicker="${esc(kicker)}" style="--c:${color[e.type] || '#888'}">
             ${clip ? `<button class="hd-clip" data-play="${esc(clip.video)}@${clip.t}" title="Play"><img src="${esc(vthumb(v))}" alt="" fetchpriority="high"><span class="wplay">▶</span>${clip.text ? `<span class="hd-quote">${esc(clip.speaker && byId.get(clip.speaker) ? byId.get(clip.speaker).name + ': ' : '')}${esc(clip.text.length > 150 ? clip.text.slice(0, 147).replace(/\s+\S*$/, '') + '…' : clip.text)}</span>` : ''}</button>`
               : e.image ? `<a class="hd-clip" href="${e.path}" data-home-file="${esc(e.id)}"><img src="${esc(e.image)}" alt="${esc(e.imageCaption || e.name)}" fetchpriority="high"></a>` : ''}
             <h2><a href="${e.path}" data-home-file="${esc(e.id)}">${esc(e.name)}</a></h2>
             <p>${esc(sum(e))}</p>
             <div class="hd-meta">${e.outcome && e.outcome !== 'open' ? `<span class="badge outcome-${e.outcome}">${OUT[e.outcome]}</span>` : e.type === 'incident' ? '<span class="badge outcome-open">Open</span>' : ''}<a class="btn small" href="${e.path}" data-home-file="${esc(e.id)}">Open the file →</a></div>
-          </section>`;
+          </section></div></div>`;
     };
     const html = [], dates = {};
     for (let i = -1; i <= 21; i++) {

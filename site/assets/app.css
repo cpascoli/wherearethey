@@ -1403,3 +1403,25 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
   .ssr-pre h1 { font-size: 22px; letter-spacing: -.02em; font-weight: 700; } /* as .p-title on phones */
   .ssr-pre .ssr-head .ssr-aka { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 }
+
+/* the home page's carousel (renderHome, homeSlides; the first slide comes written in index.html by pages.mjs):
+   a header row with the slide's label and ‹ dots ›, its height reserved so nothing moves when the app adds them;
+   swipe on phones, where the dots sit on the picture */
+.home-car { position: relative; min-width: 0; outline: none; }
+.hc-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 34px; margin-bottom: 8px; }
+.hc-head .home-kicker { margin: 0; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dv-nav.hc-nav { flex: none; margin: 0; max-width: none; gap: 8px; }
+.hc-nav > button { width: 30px; height: 30px; font-size: 18px; }
+.hc-track { align-items: flex-start; gap: 32px; } /* the gap keeps the next slide's edge out of view */
+.hc-slide { flex: 0 0 100%; min-width: 0; scroll-snap-align: start; }
+.hc-slide h2, .hc-slide > p { display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
+.hc-slide h2 { -webkit-line-clamp: 2; }
+.hc-slide > p { -webkit-line-clamp: 3; }
+@media (max-width: 860px) {
+  .hc-head { min-height: 0; }
+  .dv-nav.hc-nav { position: absolute; top: 34px; right: 8px; z-index: 2; padding: 6px 8px; border-radius: 12px; background: rgba(0, 0, 0, .55); }
+  .hc-nav:empty { display: none; }
+  .hc-nav > .dv-prev, .hc-nav > .dv-next { display: none; }
+  .hc-nav .dv-dot { background: rgba(255, 255, 255, .45); }
+  .hc-nav .dv-dot.on { background: #fff; }
+}

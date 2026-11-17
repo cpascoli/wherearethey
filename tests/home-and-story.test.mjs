@@ -60,3 +60,25 @@ for (const phone of [false, true]) {
     await p.close();
   });
 }
+
+test('the home carousel: the painted first slide stays, the others join it, none is repeated in Latest', { skip }, async () => {
+  for (const phone of [false, true]) {
+    const p = await open('/', { phone });
+    const s = await p.evaluate(() => ({
+      cars: document.querySelectorAll('#view-home .home-car').length,
+      slides: [...document.querySelectorAll('#view-home .hc-slide')].map(x => ({ id: x.querySelector('[data-home-file]')?.dataset.homeFile, kicker: x.dataset.kicker, pre: x.hasAttribute('data-pre') })),
+      dots: document.querySelectorAll('#view-home .hc-nav .dv-dot').length,
+      latest: [...document.querySelectorAll('#view-home [data-home-latest]')].map(a => a.dataset.homeLatest),
+    }));
+    assert.equal(s.cars, 1, 'one carousel');
+    assert.ok(s.slides.length >= 2, 'more than the day\'s file');
+    assert.ok(s.slides[0].pre, 'the first slide is the one index.html painted (largest paint)');
+    assert.equal(new Set(s.slides.map(x => x.id)).size, s.slides.length, 'no slide twice');
+    assert.equal(s.dots, s.slides.length, 'a dot per slide');
+    for (const x of s.slides) assert.ok(!s.latest.includes(x.id), `${x.id} is on the carousel and in Latest`);
+    await p.evaluate(() => document.querySelector('#view-home .hc-nav .dv-dot[data-dv-at="1"]').click());
+    await wait(900);
+    assert.equal(await p.evaluate(() => document.querySelector('#view-home .hc-kicker').textContent), s.slides[1].kicker, 'the label names the slide shown');
+    await p.close();
+  }
+});

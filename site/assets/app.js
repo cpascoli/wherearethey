@@ -2730,6 +2730,24 @@
     const f = latestData().featured[0];
     return f ? { e: f, label: 'Featured' } : null;
   }
+  // The home page's carousel: the day's file first (drawn by index.html), then the next anniversary this week, the
+  // latest from Congress and the featured documentary's trailer, each only when it has a picture.
+  function homeSlides(today, firstId) {
+    const used = new Set([firstId]), out = [];
+    const pic = (e, clip) => { const v = clip && vthumb(byId.get(clip.video)); return e.image || (v !== VIDEO_PLACEHOLDER && v) || ''; }; // a real picture, not the placeholder
+    const add = (e, label, clip = clipFor(e)) => { if (!e || used.has(e.id) || !pic(e, clip)) return false; used.add(e.id); out.push({ e, label: `${label} · ${fmtRange(e)}`, clip, img: pic(e, clip) }); return true; };
+    const y = today.slice(0, 4), gap = e => Math.round(annivGap(e.date, today));
+    const full = e => /^\d{4}-\d{2}-\d{2}$/.test(String(e.date || ''));
+    ents.filter(e => ['incident', 'hearing', 'event'].includes(e.type) && full(e) && e.date.slice(0, 4) < y && e.cred !== 'outside' && !resolved(e) && gap(e) <= 7)
+      .sort((a, b) => (b.type === 'incident') - (a.type === 'incident') || adj.get(b.id).length - adj.get(a.id).length) // a case before a hearing, then the best connected
+      .find(e => add(e, gap(e) ? `This week in ${e.date.slice(0, 4)}` : `On this day in ${e.date.slice(0, 4)}`));
+    ents.filter(e => (e.type === 'hearing' || CONGRESS_EVENTS.has(e.id)) && full(e) && e.date <= today && !e.noLatest) // as the Videos page's Congress hearings
+      .sort((a, b) => b.date.localeCompare(a.date))
+      .find(e => add(e, 'Latest from Congress'));
+    const film = ents.find(e => e.type === 'film' && e.shelfFeatured), tr = film && trailerOf(film);
+    if (film) add(film, 'Featured documentary', tr ? { video: tr.id, t: 0 } : clipFor(film));
+    return out;
+  }
   function clipFor(e) {
     const ms = momentsFor.get(e.id) || [];
     const m = keyMoments(e, ms)[0] || ms.find(x => x.speaker && byId.get(x.speaker)?.cred === 'credible') || ms[0];
@@ -2746,9 +2764,22 @@
     // the day's file comes written in index.html (scripts/pages.mjs, for the visitor's date): it is the largest thing
     // on the first screen, so it stays exactly as it was painted, for the whole visit
     const preDay = !el.dataset.drawn && el.querySelector(':scope > .home-wrap .home-day[data-pre]');
-    if (preDay) homeDayPre = { date: today, html: preDay.outerHTML, id: preDay.querySelector('[data-home-file]')?.dataset.homeFile };
+    if (preDay) homeDayPre = { date: today, html: preDay.outerHTML, id: preDay.querySelector('[data-home-file]')?.dataset.homeFile, kicker: preDay.dataset.kicker };
     const kept = homeDayPre?.date === today ? homeDayPre.html : '';
     const day = kept ? null : onThisDay(today), clip = day && clipFor(day.e);
+    const firstId = day ? day.e.id : kept ? homeDayPre.id : null, kicker1 = day ? `${day.label} · ${fmtRange(day.e)}` : kept ? homeDayPre.kicker : '';
+    const more = homeSlides(today, firstId), onCar = new Set([firstId, ...more.map(s => s.e.id)]);
+    const badge = e => e.outcome && e.outcome !== 'open' ? `<span class="badge outcome-${e.outcome}">${OUTCOME[e.outcome].label}</span>` : e.type === 'incident' ? '<span class="badge outcome-open">Open</span>' : '';
+    const quote = c => c.text ? `<span class="hd-quote">${esc(c.speaker && byId.get(c.speaker) ? byId.get(c.speaker).name + ': ' : '')}${esc(c.text.length > 150 ? c.text.slice(0, 147).replace(/\s+\S*$/, '') + '…' : c.text)}</span>` : '';
+    const slide = s => `<section class="home-day hc-slide" data-kicker="${esc(s.label)}" style="--c:${TYPES[s.e.type].color}">
+            ${s.clip ? `<button class="hd-clip" data-play="${esc(s.clip.video)}@${s.clip.t}" title="Play"><img src="${esc(s.img)}" alt="" fetchpriority="low"><span class="wplay">▶</span>${quote(s.clip)}</button>`
+              : `<a class="hd-clip" href="${hrefOf(s.e.id)}" data-home-file="${esc(s.e.id)}"><img src="${esc(s.img)}" alt="${esc(s.e.imageCaption || s.e.name)}" fetchpriority="low"></a>`}
+            <h2><a href="${hrefOf(s.e.id)}" data-home-file="${esc(s.e.id)}">${esc(s.e.name)}</a></h2>
+            <p>${esc(sum(s.e))}</p>
+            <div class="hd-meta">${badge(s.e)}<a class="btn small" href="${hrefOf(s.e.id)}" data-home-file="${esc(s.e.id)}">Open the file →</a></div>
+          </section>`;
+    const n = (kept || day ? 1 : 0) + more.length;
+    const nav = n > 1 ? `<button class="dv-prev" aria-label="Previous" disabled>‹</button><span class="dv-dots">${Array.from({ length: n }, (_, i) => `<button class="dv-dot${i ? '' : ' on'}" data-dv-at="${i}" aria-label="Slide ${i + 1} of ${n}"></button>`).join('')}</span><button class="dv-next" aria-label="Next">›</button>` : '';
     const claims = ents.filter(e => e.type === 'claim').sort(claimOrder).slice(0, 3);
     const sum = e => { const t = latestSummary(e); return t.length > 190 ? t.slice(0, 187).replace(/\s+\S*$/, '') + '…' : t; };
     const html = `
@@ -2769,17 +2800,16 @@
 
       <div class="home-wrap">
         <div class="home-top">
-          ${kept}${day ? `<section class="home-day" style="--c:${TYPES[day.e.type].color}">
-            <div class="home-kicker">${esc(day.label)} · ${esc(fmtRange(day.e))}</div>
+          ${n ? `<div class="home-car dv-car" tabindex="-1"><div class="hc-head"><div class="home-kicker hc-kicker">${esc(kicker1 || more[0].label)}</div><div class="dv-nav hc-nav">${nav}</div></div><div class="dv-track hc-track">` : ''}${kept}${day ? `<section class="home-day hc-slide" data-kicker="${esc(kicker1)}" style="--c:${TYPES[day.e.type].color}">
             ${clip ? `<button class="hd-clip" data-play="${esc(clip.video)}@${clip.t}" title="Play"><img src="${vthumb(byId.get(clip.video))}" alt="" fetchpriority="high"><span class="wplay">▶</span>${clip.text ? `<span class="hd-quote">${esc(clip.speaker && byId.get(clip.speaker) ? byId.get(clip.speaker).name + ': ' : '')}${esc(clip.text.length > 150 ? clip.text.slice(0, 147).replace(/\s+\S*$/, '') + '…' : clip.text)}</span>` : ''}</button>`
               : day.e.image ? `<a class="hd-clip" href="${hrefOf(day.e.id)}" data-home-file="${esc(day.e.id)}"><img src="${esc(day.e.image)}" alt="${esc(day.e.imageCaption || day.e.name)}"></a>` : ''}
             <h2><a href="${hrefOf(day.e.id)}" data-home-file="${esc(day.e.id)}">${esc(day.e.name)}</a></h2>
             <p>${esc(sum(day.e))}</p>
             <div class="hd-meta">${day.e.outcome && day.e.outcome !== 'open' ? `<span class="badge outcome-${day.e.outcome}">${OUTCOME[day.e.outcome].label}</span>` : day.e.type === 'incident' ? '<span class="badge outcome-open">Open</span>' : ''}<a class="btn small" href="${hrefOf(day.e.id)}" data-home-file="${esc(day.e.id)}">Open the file →</a></div>
-          </section>` : ''}
+          </section>` : ''}${more.map(slide).join('')}${n ? '</div></div>' : ''}
           <section class="home-latest">
             <div class="home-kicker">Latest on the record</div>
-            <div class="latest">${latest.filter(e => e.id !== (day ? day.e.id : homeDayPre?.id)).slice(0, 5).map(e => `
+            <div class="latest">${latest.filter(e => !onCar.has(e.id)).slice(0, 5).map(e => `
               <a class="latest-item" href="${hrefOf(e.id)}" data-home-latest="${e.id}" style="--c:${TYPES[e.type].color}">
                 <span class="li-date">${esc(fmtRange(e))}${String(e.date) > today ? ' <em>upcoming</em>' : ''}</span>
                 <span class="li-type">${e.type === 'news' ? esc(NEWS_KIND[e.kind]?.label || 'News') : TYPES[e.type].label}</span><span class="li-name">${esc(e.name)}</span>
@@ -2829,6 +2859,12 @@
       const t = document.createElement('template'); t.innerHTML = html; t.content.querySelector('.hero').remove();
       const wrap = el.querySelector(':scope > .home-wrap'), nw = t.content.querySelector('.home-wrap');
       if (wrap && preDay) { // the rest is added around the day's file
+        const preCar = wrap.querySelector('.home-car'), nCar = nw.querySelector('.home-car');
+        if (preCar && nCar) { // the carousel: the other slides join the painted first one, and its ‹ dots › fill the reserved row
+          preCar.querySelector('.hc-track').append(...[...nCar.querySelectorAll('.hc-track > .hc-slide')].slice(1));
+          preCar.querySelector('.hc-nav').innerHTML = nCar.querySelector('.hc-nav').innerHTML;
+          nCar.remove();
+        }
         nw.querySelector('.home-top > .home-day')?.remove();
         wrap.querySelector('.home-top').append(...nw.querySelector('.home-top').childNodes);
         nw.querySelector('.home-top').remove();
@@ -3555,11 +3591,12 @@
   }
   function stopDvids(el) { el.querySelector('video')?.pause(); el.querySelectorAll('video, iframe').forEach(x => x.remove()); el.dataset.dvids = el.dataset.was; delete el.dataset.was; el.classList.remove('playing'); }
   // the footage carousel: one video at a time, ‹ › and dots (or a counter), swipe on phones (scroll snap)
-  const carAt = car => { const t = car.querySelector('.dv-track'); return Math.round(t.scrollLeft / (t.clientWidth || 1)); };
+  const carStep = t => (t.children[1] ? t.children[1].offsetLeft - t.children[0].offsetLeft : t.clientWidth) || 1; // a slide and the gap after it
+  const carAt = car => { const t = car.querySelector('.dv-track'); return Math.round(t.scrollLeft / carStep(t)); };
   function carGo(car, i) {
     const t = car.querySelector('.dv-track'), n = t.children.length;
     i = Math.max(0, Math.min(n - 1, i));
-    t.scrollTo({ left: i * t.clientWidth, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    t.scrollTo({ left: i * carStep(t), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     carMark(car, i);
   }
   function carMark(car, i) {
@@ -3568,6 +3605,10 @@
     const c = car.querySelector('.dv-count'); if (c) c.textContent = `${i + 1} / ${n}`;
     const p = car.querySelector('.dv-prev'), x = car.querySelector('.dv-next');
     if (p) p.disabled = i === 0; if (x) x.disabled = i === n - 1;
+    const k = car.querySelector('.hc-kicker'), sl = t.children[i];
+    if (k && sl?.dataset.kicker) k.textContent = sl.dataset.kicker; // the home carousel: the label names the slide
+    if (car.classList.contains('home-car') && car._at !== i && (car._at != null || i)) track('home_carousel', { slide: i + 1, item_id: sl?.querySelector('[data-home-file]')?.dataset.homeFile });
+    car._at = i;
     [...t.children].forEach((s, k) => { if (k !== i) s.querySelectorAll('.dv-frame.playing').forEach(stopDvids); }); // a video left behind stops
   }
   document.addEventListener('scroll', e => {
