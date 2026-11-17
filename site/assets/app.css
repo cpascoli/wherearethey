@@ -379,6 +379,28 @@ mark { background: rgba(227, 179, 65, .4); color: inherit; border-radius: 3px; p
 .fact { border-left-width: 2px; }
 .cred-cat { border-radius: 2px; font-weight: 500; letter-spacing: .04em; }
 .p-bio { font-size: 14.5px; line-height: 1.65; }
+/* the PURSUE explainer (program/pursue): figures, a table of every release, questions; the early page uses the same classes */
+.pu { container-type: inline-size; }
+.pu-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 4px 0 14px; }
+.pu-stats > div { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; background: var(--panel-2); min-width: 0; }
+.pu-stats b { display: block; font-size: 20px; font-weight: 600; line-height: 1.2; }
+.pu-stats span { display: block; font-size: 12px; line-height: 1.4; color: var(--muted); margin-top: 3px; }
+.pu-table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 0 0 8px; }
+.pu-table th { text-align: left; font-weight: 500; font-size: 11.5px; color: var(--muted); font-family: var(--mono); text-transform: uppercase; letter-spacing: .05em; padding: 6px 8px 6px 0; border-bottom: 1px solid var(--border-strong); }
+.pu-table td { padding: 7px 8px 7px 0; border-bottom: 1px solid var(--border); vertical-align: top; white-space: nowrap; }
+.pu-table .n { text-align: right; font-variant-numeric: tabular-nums; }
+.pu-table td.pu-ag { white-space: normal; color: var(--muted); font-size: 12.5px; padding-left: 12px; }
+.pu-table th.pu-wide:last-child { padding-left: 12px; }
+.pu-note { font-size: 12.5px; color: var(--muted); line-height: 1.5; margin: 6px 0 0; }
+.faq { margin: 0; }
+.faq dt { font-weight: 600; margin: 14px 0 4px; line-height: 1.4; }
+.faq dt:first-child { margin-top: 2px; }
+.faq dd { margin: 0; line-height: 1.6; }
+@container (max-width: 560px) {
+  .pu-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pu-table .pu-wide { display: none; }
+}
+
 /* the profile's first line in medium: only in the desktop side panel. Where the early page (.ssr-pre) is drawn first
    (the reading view, phones) the app's paragraph must wrap exactly as the early one did, or it paints larger and
    counts as a later largest paint */

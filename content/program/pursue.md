@@ -2,8 +2,30 @@
 name: PURSUE — Presidential Unsealing and Reporting System for UAP Encounters
 seo_title: "PURSUE: the U.S. government's UAP file releases, explained"
 seo_description: "PURSUE, the Presidential Unsealing and Reporting System for UAP Encounters: the U.S. government's declassified UAP files, every release, searchable."
+bio: "PURSUE, the Presidential Unsealing and Reporting System for UAP Encounters, is the U.S. government's program for declassifying and publishing its files on UAP and UFOs, ordered by President Trump on 19 February 2026. The Department of War, supported by the ODNI, publishes the records in numbered releases on [war.gov/UFO](https://www.war.gov/UFO/), the first on 8 May 2026."
 aka:
   - PURSUE
+faq:
+  - q: What does PURSUE stand for?
+    a: "The Presidential Unsealing and Reporting System for UAP Encounters: the U.S. government's program for declassifying and publishing its records on UAP (unidentified anomalous phenomena, the official term for UFOs)."
+  - q: Who ordered it, and when did it start?
+    a: "President Trump directed the Secretary of War and other agencies on 19 February 2026 to identify and release government files on UAP, UFOs and extraterrestrial life. The Department of War publishes them, supported by the Office of the Director of National Intelligence (ODNI). The first release came out on {firstDate}."
+  - q: How many files have been released?
+    a: "{records} records in {releases} releases, as of Release {latest} on {latestDate}: {documents} documents, {videos} videos, {audio} audio recordings and {images} images."
+  - q: When is the next PURSUE release?
+    a: "No date has been announced. Releases have come {gapMin} to {gapMax} days apart (median {gapMedian} days), so on past form Release {next} would come between {nextEarliest} and {nextLatest}, most likely around {nextLikely}. That is our estimate from the dates so far, not an official schedule."
+  - q: Where are the official files?
+    a: "On the Department of War's portal, [war.gov/UFO](https://www.war.gov/UFO/). This archive keeps a page for every record, with the agency's own description and a link to the official file: they are listed under each release and in the [A–Z index](/a-z#record)."
+  - q: Which agencies' records are included?
+    a: "By number of records: {agencies}, as labelled on war.gov."
+  - q: Do the files explain what was seen?
+    a: "No. The records are unresolved cases, ones where the government could not make a definitive determination about what was observed. Department of War records such as DOW-UAP-PR077 also carry AARO's caveat that many of the materials, found on a classified network after a House request, “lack a substantiated chain-of-custody.”"
+  - q: What do scientists make of them?
+    a: "Garry Nolan calls the releases “evidence” but “not proof yet”, because the redactions remove how, where and when the data were collected. Avi Loeb says the data in the tranches are “not good enough” for conclusions. Their words, with the video moments, are under Statements."
+  - q: Who is behind it?
+    a: "The Department of War runs it with the ODNI; AARO found much of the material. Rep. Eric Burlison says Stephen Miller leads the effort at the White House, and that many of the released files answer letters his office sent to contractors and agencies."
+  - q: How does this archive cover PURSUE?
+    a: "Every record has a page here, and {aboutCount} files of the archive (cases, programs, documents, people and places) are linked to the records that concern them, so a case's page lists its official records beside the testimony. To see how it came about, follow [the road to PURSUE](/explore?story=road-to-pursue), 2017–2026."
 date: 2026-02-19
 tags:
   - disclosure
@@ -67,7 +89,7 @@ facts:
     source: v-2026-08-28-disclosure-forum-national-security@1:09:14
 ---
 
-PURSUE, the Presidential Unsealing and Reporting System for UAP Encounters, is the U.S. government's public release of declassified UAP files. It follows a directive from President Trump on 19 February 2026 ordering the Secretary of War and other agencies to identify and release government files on UAP, UFOs and extraterrestrial life. The Department of War, supported by the ODNI, publishes the records in tranches on war.gov/UFO, starting on 8 May 2026: seven releases through release 07 (October 2026) have published 478 records, 284 of them from the Department of War, 105 from the FBI, 40 from NASA and 23 from the CIA, with the rest from the State Department, local law enforcement, the Department of Energy, the ODNI and the Executive Office of the President. Rep. Eric Burlison says Stephen Miller leads the effort at the White House and that many of the files answer letters his office sent to contractors and agencies.
+The Department of War, supported by the ODNI, publishes the records on war.gov/UFO in numbered releases, each a few weeks after the last. They come from the Department of War, the FBI, NASA and the CIA, with smaller numbers from the State Department, local law enforcement, the Department of Energy, the ODNI and the Executive Office of the President. Rep. Eric Burlison says Stephen Miller leads the effort at the White House and that many of the files answer letters his office sent to contractors and agencies.
 
 The records are unresolved cases: incidents for which the government could not make a definitive determination about what was observed, from a 1944–45 batch of fiery-orb reports to the late-2025 orb sightings by intelligence and law-enforcement personnel at a western installation. The Department of War's records carry AARO's caveat that many of the materials, found on a classified network after a House request, lack a substantiated chain of custody, and Tim Gallaudet says an ODNI memo waives non-disclosure agreements so people can report to the PURSUE team or AARO.
 

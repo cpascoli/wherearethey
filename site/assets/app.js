@@ -1701,6 +1701,26 @@
     const rest = e.body.slice(m[0].length).trim();
     return { lead: m[1], rest, only: !rest || /^<p><em>Sources?:[\s\S]*<\/p>$/.test(rest) && rest.split('<p>').length === 2 };
   }
+  // The PURSUE explainer (program/pursue, `pursueStats` from the build): the figures, every release, the window for the
+  // next one, and the files here the records concern. The early page draws the same (pursueHtml in pages.mjs).
+  const PU_AGENCY = { 'Department of War': 'War', 'Department of State': 'State', 'Department of Energy': 'Energy', 'Office of the Director of National Intelligence': 'ODNI', 'Executive Office of the President': 'White House', 'Local Law Enforcement': 'Local police', 'Intelligence Community Agency': 'IC agency', 'U.S. Government': 'U.S. Gov.' };
+  function pursueNext(s, today) { // the next release, from the gaps so far: before its window, inside it, or past it
+    const x = s.next; if (!x) return '';
+    return today < x.earliest ? `next, not announced; on past form ${fmtD(x.earliest).replace(/ \d{4}$/, '')} – ${fmtD(x.latest)}`
+      : today <= x.latest ? `next, not announced; on past form due by ${fmtD(x.latest)}`
+      : `next, not announced; later than any gap so far (${s.gaps.max} days)`;
+  }
+  function pursueSections(e) {
+    const s = e.pursueStats, last = s.releases.at(-1);
+    const stats = `<div class="pu"><div class="pu-stats"><div><b>${s.releases.length}</b><span>releases</span></div><div><b>${s.total}</b><span>records</span></div><div><b>Release ${last.n}</b><span>latest, ${fmtD(last.date)}</span></div><div><b>Release ${s.next ? s.next.n : last.n + 1}</b><span>${esc(pursueNext(s, localToday()))}</span></div></div>`;
+    const rows = [...s.releases].reverse().map(r => `<tr><td>${r.event ? `<a href="${hrefOf(r.event)}" data-goto="${esc(r.event)}">Release ${r.n}</a>` : `Release ${r.n}`}</td><td>${fmtD(r.date)}</td><td class="n">${r.records}</td><td class="n">${r.video}</td><td class="n pu-wide">${r.gap ?? '–'}</td><td class="pu-wide pu-ag">${r.agencies.map(([a, n]) => `<span title="${esc(a)}">${esc(PU_AGENCY[a] || a)} ${n}</span>`).join(' · ')}</td></tr>`).join('');
+    const table = `<table class="pu-table"><thead><tr><th>Release</th><th>Date</th><th class="n">Records</th><th class="n">Video &amp; audio</th><th class="n pu-wide">Gap (days)</th><th class="pu-wide">From</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+    const main = `<div class="p-sec" id="sec-pursue"><h4>Every release <span>${s.total} records</span></h4>${stats}${table}<p class="pu-note">Counted from the records on war.gov/UFO, each with a page here. ${s.gaps ? `Releases have come ${s.gaps.min} to ${s.gaps.max} days apart (median ${s.gaps.median}); the window for the next is our estimate, not an official schedule.` : ''}</p></div>`;
+    const about = s.about.filter(([id]) => byId.has(id));
+    return { main, about: about.length ? `<div class="p-sec p-side" id="sec-pursue-about"><h4>What the records concern <span>${about.length} files</span></h4><div class="chips" data-collapse="16">${about.map(([id, n]) => chip(id, ` <span class="n">${n}</span>`)).join('')}</div></div>` : '' };
+  }
+  const faqHtml = e => `<div class="p-sec" id="sec-faq"><h4>Questions <span>${e.faq.length}</span></h4><dl class="faq">${e.faq.map(q => `<dt>${esc(q.q)}</dt><dd>${q.a}</dd>`).join('')}</dl></div>`;
+
   function renderPanel(e) {
     const t = TYPES[e.type] || TYPES.concept;
     const h = [];
@@ -1748,6 +1768,8 @@
         <div class="small muted" style="margin-top:6px">${e.transcript ? `${e.transcript.segments.toLocaleString()} transcript lines (${({ 'youtube-auto': 'auto captions', youtube: 'subtitles', whisper: 'Whisper transcript', 'whisper-translated': 'Whisper translation', translation: 'English translation of the published subtitles' })[e.transcript.source] || 'transcript'})` : 'No transcript yet'}${e.local ? ' · local copy' : ''}</div></div></div>`);
     }
     // the summary (a person's profile) comes before the videos
+    if (e.pursueStats?.releases?.length) { const pu = pursueSections(e); put('pursue', pu.main); put('records', pu.about); }
+    if (e.faq?.length) put('faq', faqHtml(e));
     const body = lead ? (lead.only ? '' : lead.rest) : e.body; // a book's opening paragraph is in the header already
     if (body) put('body', `<div class="p-sec"><h4>${e.type === 'person' ? 'Profile' : 'Summary'}</h4><div class="p-body p-bio${e.bio || lead ? ' after-lead' : ''}">${body}</div></div>`);
     // glimpses: short passages from the book itself, each linked to the authorized excerpt or review it was checked against
@@ -1892,7 +1914,7 @@
     // further; the tools (transcript mentions, possible connections, the trace) are folded away at the end.
     const order = e.type === 'person' ? ['key', 'body', 'facts', 'positions', 'watch', 'moments', 'conn', 'news', 'records', 'links']
       : e.type === 'claim' ? ['body', 'claim', 'facts', 'conn', 'claimPeople', 'news', 'records', 'links']
-      : ['body', 'key', 'facts', 'watch', 'moments', 'conn', 'news', 'records', 'links'];
+      : ['body', 'pursue', 'faq', 'key', 'facts', 'watch', 'moments', 'conn', 'news', 'records', 'links'];
     for (const k of order) if (S[k]) h.push(S[k]);
     if (S.more) h.push(`<details class="p-more"><summary>More about this file <span>transcript mentions, possible connections, themes</span></summary>${S.more}</details>`);
     h.push(nextStep(e));

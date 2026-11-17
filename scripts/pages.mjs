@@ -113,6 +113,17 @@ const CLAIM_LABEL = { open: 'Open', disputed: 'Disputed', supported: 'Supported 
 const STANCE_LABEL = { supports: 'says so', disputes: 'disputes it', context: 'context' };
 const TITLE_SUFFIX = { person: 'testimony & sources', program: 'claims & evidence', incident: 'witnesses & evidence', hearing: 'testimony & transcript', document: 'text & key findings', video: 'transcript & key moments', claim: 'who said it, and the evidence' };
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+// the PURSUE explainer, as the app draws it (pursueSections in app.js); the next release's window as of the build
+const PU_AGENCY = { 'Department of War': 'War', 'Department of State': 'State', 'Department of Energy': 'Energy', 'Office of the Director of National Intelligence': 'ODNI', 'Executive Office of the President': 'White House', 'Local Law Enforcement': 'Local police', 'Intelligence Community Agency': 'IC agency', 'U.S. Government': 'U.S. Gov.' };
+function pursueHtml(s, today = new Date().toISOString().slice(0, 10)) {
+  const last = s.releases.at(-1), x = s.next;
+  const next = !x ? '' : today < x.earliest ? `next, not announced; on past form ${fmtDate(x.earliest).replace(/ \d{4}$/, '')} – ${fmtDate(x.latest)}`
+    : today <= x.latest ? `next, not announced; on past form due by ${fmtDate(x.latest)}` : `next, not announced; later than any gap so far (${s.gaps.max} days)`;
+  const rows = [...s.releases].reverse().map(r => `<tr><td>${r.event ? `<a href="${r.eventPath}">Release ${r.n}</a>` : `Release ${r.n}`}</td><td>${fmtDate(r.date)}</td><td class="n">${r.records}</td><td class="n">${r.video}</td><td class="n pu-wide">${r.gap ?? '–'}</td><td class="pu-wide pu-ag">${r.agencies.map(([a, n]) => `<span title="${esc(a)}">${esc(PU_AGENCY[a] || a)} ${n}</span>`).join(' · ')}</td></tr>`).join('');
+  return `<h2>Every release</h2><div class="pu"><div class="pu-stats"><div><b>${s.releases.length}</b><span>releases</span></div><div><b>${s.total}</b><span>records</span></div><div><b>Release ${last.n}</b><span>latest, ${fmtDate(last.date)}</span></div><div><b>Release ${x ? x.n : last.n + 1}</b><span>${esc(next)}</span></div></div>`
+    + `<table class="pu-table"><thead><tr><th>Release</th><th>Date</th><th class="n">Records</th><th class="n">Video &amp; audio</th><th class="n pu-wide">Gap (days)</th><th class="pu-wide">From</th></tr></thead><tbody>${rows}</tbody></table></div>`
+    + `<p class="pu-note">Counted from the records on war.gov/UFO, each with a page here. ${s.gaps ? `Releases have come ${s.gaps.min} to ${s.gaps.max} days apart (median ${s.gaps.median}); the window for the next is our estimate, not an official schedule.` : ''}</p>`;
+}
 const fmtDate = d => { if (!d) return ''; const [y, m, day] = d.split('-'); return [day && +day, m && MONTHS[+m - 1], y].filter(Boolean).join(' '); };
 const hms = t => { t = Math.floor(t); const h = Math.floor(t / 3600), m = Math.floor(t / 60) % 60, s = t % 60; return (h ? `${h}:${String(m).padStart(2, '0')}` : `${m}`) + `:${String(s).padStart(2, '0')}`; };
 const isoDur = s => s ? `PT${Math.floor(s / 3600) ? Math.floor(s / 3600) + 'H' : ''}${Math.floor(s / 60) % 60}M${Math.floor(s % 60)}S` : undefined;
@@ -196,6 +207,12 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     }
     const body = bLead ? (bLead.only ? '' : bLead.rest) : e.body; // a book's opening paragraph is in the header already
     if (body) h.push(`<h2>${e.type === 'person' ? 'Profile' : 'Summary'}</h2><div class="ssr-body">${body}</div>`); // headed as in the app
+    if (e.pursueStats?.releases?.length) {
+      for (const r of e.pursueStats.releases) r.eventPath = r.event && byId.get(r.event)?.path;
+      h.push(pursueHtml(e.pursueStats));
+    }
+    if (e.faq?.length) h.push(`<h2>Questions</h2><dl class="faq">${e.faq.map(q => `<dt>${esc(q.q)}</dt><dd>${q.a}</dd>`).join('')}</dl>`);
+    if (e.pursueStats?.about?.length) h.push(`<h2>What the records concern</h2><ul>${e.pursueStats.about.filter(([id]) => byId.has(id)).map(([id, n]) => `<li>${link(id)} <span class="ssr-by">(${n} record${n > 1 ? 's' : ''})</span></li>`).join('')}</ul>`);
     if (e.glimpses?.length) h.push(`<h2>Glimpses</h2>${e.glimpses.map(g => `<blockquote${g.url ? ` cite="${esc(g.url)}"` : ''}><p>${esc(g.text)}</p><footer>${esc(g.where)}${g.url ? `${g.where ? ' · ' : ''}<a href="${esc(g.url)}" rel="noopener">${esc(g.via || 'source')}</a>` : ''}</footer></blockquote>`).join('\n')}`);
     if (e.type === 'claim') {
       // the evidence filed on the claim, and its links to other claims (as on the claim page in the app)
@@ -303,9 +320,10 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       if (clips.length) jsonld.hasPart = clips;
     }
     if (e.type === 'book') jsonld = { '@type': 'Book', name: e.name, isbn: e.isbn, numberOfPages: e.pages ? +e.pages : undefined, publisher: e.publisher, datePublished: e.date, description };
+    const faq = e.faq?.length && { '@type': 'FAQPage', mainEntity: e.faq.map(q => ({ '@type': 'Question', name: q.q, acceptedAnswer: { '@type': 'Answer', text: text(q.a) } })) };
     if (e.type === 'film') jsonld = { '@type': 'Movie', name: e.name, dateCreated: e.date, description, image: imageOf(e) || undefined };
     const crumbs = { '@type': 'BreadcrumbList', itemListElement: [['Home', '/'], [PLURAL[e.type], `/a-z#${e.type}`], [e.name, e.path]].map(([name, p], i) => ({ '@type': 'ListItem', position: i + 1, name, item: SITE_URL + p })) };
-    jsonld = jsonld ? [jsonld, crumbs] : [crumbs];
+    jsonld = [jsonld, faq, crumbs].filter(Boolean);
     // a share card for files without a picture of their own (scripts/cards.mjs)
     let image = imageOf(e);
     if (!image && e.type !== 'record') {

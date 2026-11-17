@@ -152,7 +152,10 @@ export async function build({ check = false, quiet = false } = {}) {
     for (const k of ['credits', 'publisher', 'isbn', 'pages']) if (d[k] != null) e[k] = String(d[k]);
     if (d.runtime != null) e.runtime = Number(d.runtime);
     // books: short verbatim passages from authorized excerpts (publisher, author or quoted in a review), each with its source
-    if (d.glimpses) e.glimpses = arr(d.glimpses).filter(g => g && g.text).map(g => ({ text: String(g.text), where: g.where ? String(g.where) : '', via: g.via ? String(g.via) : '', url: g.url ? String(g.url) : '' }));
+    // questions and answers shown as an FAQ (and FAQPage structured data); answers are inline Markdown, and on the PURSUE
+    // file may use {placeholders} filled from the release statistics (pursueStats below), so they stay current
+    if (d.faq) e.faq = arr(d.faq).filter(f => f && f.q && f.a).map(f => ({ q: String(f.q).trim(), a: String(f.a).trim() }));
+    if (d.glimpses) e.glimpses =arr(d.glimpses).filter(g => g && g.text).map(g => ({ text: String(g.text), where: g.where ? String(g.where) : '', via: g.via ? String(g.via) : '', url: g.url ? String(g.url) : '' }));
     // books & films: a cover image saved as site/assets/covers/<id>.jpg is picked up automatically
     if (['book', 'film'].includes(r.type) && fs.existsSync(path.join(ROOT, 'site', 'assets', 'covers', `${r.id}.jpg`))) e.cover = `/assets/covers/${r.id}.jpg`;
     // videos we host ourselves on R2 (only with an explicit decision): stream file and thumbnail, relative to FILES_BASE
@@ -549,6 +552,7 @@ export async function build({ check = false, quiet = false } = {}) {
   fs.mkdirSync(path.join(out, 'transcripts'), { recursive: true });
   fs.mkdirSync(path.join(out, 'doctext'), { recursive: true });
   const edgeList = [...edges.values()];
+  renderFaq(entities, pursueStats(entities, edgeList));
   // graph layout, precomputed (node size = links to other graph nodes, as in the app)
   const isRecord = new Set(entities.filter(e => OFF_GRAPH.has(e.type)).map(e => e.id));
   const degree = new Map();
@@ -595,6 +599,70 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 // The landing page's hero picture: a force layout of the archive's network (the app's former buildHeroLayout,
 // O(n²) × 260 iterations: seconds of main thread on a phone). Same node choice, seed and steps; positions rounded.
 // Shipped in layout.js as { ids, xy }; app.js startHero() draws it.
+// The PURSUE explainer (program/pursue): every release with its records counted by format and agency, the gaps between
+// releases and the window for the next one, and the files on this archive the records document. Counted from the
+// imported records (content/record/, `pursue:`), so a new release updates the page with the next import.
+function pursueStats(entities, edgeList) {
+  const pu = entities.find(e => e.id === 'pursue');
+  if (!pu) return {};
+  const recs = entities.filter(e => e.type === 'record' && e.pursue?.release);
+  const byId = new Map(entities.map(e => [e.id, e]));
+  const FMT = { pdf: 'doc', vid: 'video', aud: 'audio', img: 'image' };
+  const tally = (m, k, n = 1) => m.set(k, (m.get(k) || 0) + n);
+  const sorted = m => [...m].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  const rel = new Map(), agencies = new Map(), formats = new Map();
+  for (const r of recs) {
+    const n = Number(r.pursue.release);
+    if (!rel.has(n)) rel.set(n, { n, date: '', records: 0, formats: new Map(), agencies: new Map() });
+    const x = rel.get(n), f = FMT[r.pursue.format] || 'doc', ag = String(r.pursue.agency || 'Unknown');
+    x.records++; tally(x.formats, f); tally(x.agencies, ag); tally(formats, f); tally(agencies, ag);
+    const d = r.pursue.released instanceof Date ? r.pursue.released.toISOString().slice(0, 10) : String(r.pursue.released || '');
+    if (d && (!x.date || d < x.date)) x.date = d;
+  }
+  const events = entities.filter(e => e.type === 'event' && /^ev-pursue-release-\d+$/.test(e.id));
+  const releases = [...rel.values()].sort((a, b) => a.n - b.n).map((x, i, a) => ({
+    n: x.n, date: x.date, records: x.records, event: events.find(e => +e.id.match(/\d+$/)[0] === x.n)?.id || null,
+    video: (x.formats.get('video') || 0) + (x.formats.get('audio') || 0), formats: Object.fromEntries(x.formats), agencies: sorted(x.agencies),
+    gap: i ? Math.round((Date.parse(x.date) - Date.parse(a[i - 1].date)) / 864e5) : null,
+  }));
+  if (!releases.length) return {};
+  const gaps = releases.map(r => r.gap).filter(g => g != null).sort((a, b) => a - b);
+  const median = gaps.length ? (gaps.length % 2 ? gaps[(gaps.length - 1) / 2] : Math.round((gaps[gaps.length / 2 - 1] + gaps[gaps.length / 2]) / 2)) : null;
+  const last = releases.at(-1), plus = d => new Date(Date.parse(last.date) + d * 864e5).toISOString().slice(0, 10);
+  // the files on this archive that the records are about (cases, programs, documents, people), by number of records
+  const recIds = new Set(recs.map(r => r.id)), about = new Map();
+  for (const x of edgeList) {
+    if (x.kind !== 'rel') continue;
+    for (const [a, b] of [[x.s, x.t], [x.t, x.s]]) {
+      const o = byId.get(b);
+      if (!recIds.has(a) || !o || ['record', 'organization', 'video', 'news'].includes(o.type) || o.id === 'pursue' || events.some(e => e.id === o.id)) continue;
+      (about.get(b) || about.set(b, new Set()).get(b)).add(a);
+    }
+  }
+  pu.pursueStats = {
+    releases, total: recs.length, formats: Object.fromEntries(formats), agencies: sorted(agencies),
+    gaps: gaps.length ? { min: gaps[0], max: gaps.at(-1), median } : null,
+    next: gaps.length ? { n: last.n + 1, earliest: plus(gaps[0]), likely: plus(median), latest: plus(gaps.at(-1)) } : null,
+    about: [...about].map(([id, s]) => [id, s.size]).sort((a, b) => b[1] - a[1] || byId.get(a[0]).name.localeCompare(byId.get(b[0]).name)),
+  };
+  // the values the FAQ's answers can quote
+  const fmt = d => new Date(d + 'T12:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+  const list = xs => xs.length > 1 ? `${xs.slice(0, -1).join(', ')} and ${xs.at(-1)}` : xs.join('');
+  const s = pu.pursueStats, f = s.formats;
+  const vars = {
+    releases: releases.length, records: s.total, latest: last.n, latestDate: fmt(last.date), latestRecords: last.records,
+    firstDate: fmt(releases[0].date), videos: (f.video || 0), audio: f.audio || 0, images: f.image || 0, documents: f.doc || 0,
+    agencies: list(s.agencies.map(([a, n]) => `${a === 'Local Law Enforcement' ? 'local law enforcement' : a === 'U.S. Government' ? 'the wider U.S. Government' : a === 'Intelligence Community Agency' ? 'an intelligence community agency' : /^(Department|Executive|Office)/.test(a) ? 'the ' + a : a} (${n})`)),
+    next: s.next ? s.next.n : '', nextEarliest: s.next ? fmt(s.next.earliest).replace(s.next.earliest.slice(0, 4) === s.next.latest.slice(0, 4) ? / \d{4}$/ : /$^/, '') : '', nextLikely: s.next ? fmt(s.next.likely) : '', nextLatest: s.next ? fmt(s.next.latest) : '',
+    gapMin: s.gaps?.min ?? '', gapMax: s.gaps?.max ?? '', gapMedian: s.gaps?.median ?? '', aboutCount: s.about.length,
+  };
+  return { pursue: vars };
+}
+// FAQ answers to HTML; on the PURSUE file the {placeholders} are filled first (an unknown one is left as written)
+function renderFaq(entities, vars) {
+  for (const e of entities) if (e.faq) e.faq = e.faq.map(q => ({ q: q.q, a: marked.parseInline(vars[e.id] ? q.a.replace(/\{(\w+)\}/g, (m, k) => (k in vars[e.id] ? String(vars[e.id][k]) : m)) : q.a) }));
+}
+
 function heroLayout(entities, edgeList) {
   const nodes = entities.filter(e => !['record', 'news', 'video', 'source'].includes(e.type) && !(e.cred === 'outside'));
   const idx = new Map(nodes.map((e, i) => [e.id, i]));
