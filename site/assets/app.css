@@ -1357,11 +1357,14 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
   .hero-tagline { font-size: 20px; margin: 0 0 12px; }
   .hero-lede { font-size: 15px; margin-bottom: 16px; }
 }
-/* desktop: a taller masthead (the dot cloud's size follows the hero's height, startHero), and the lede wraps to the
-   search box's width */
+/* desktop: a tall masthead (the dot cloud's size follows the hero's height, startHero). The text column is as wide as
+   the title: the lede (two lines) and the search box take the title's width (width 0 + min-width: they don't widen the
+   column themselves), never under 490px; the search box sits midway between the lede and the hero's bottom edge */
 @media (min-width: 861px) {
-  .hero-inner { padding: 104px 40px 100px; }
-  .hero-inner > .hero-lede, .hero-inner > .hero-search { max-width: 660px; }
+  .hero-inner { display: grid; grid-template-columns: max-content; justify-content: start; padding: 96px 40px 84px; }
+  .hero-inner > * { max-width: none; }
+  .hero-inner > .hero-lede, .hero-inner > .hero-search { width: 0; min-width: max(100%, 490px); max-width: none; }
+  .hero-inner > .hero-lede { margin-bottom: 84px; }
 }
 
 /* the footer every page ends with: copyright, X, GitHub */
