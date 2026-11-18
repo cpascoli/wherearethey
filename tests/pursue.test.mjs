@@ -73,3 +73,20 @@ test('the release highlights: top picks first, a release row shows that release\
     await p.close();
   }
 });
+
+test('More opens with PURSUE releases, which opens the explainer; Back returns', { skip }, async () => {
+  for (const phone of [false, true]) {
+    const p = await open('/timeline', { phone });
+    await p.evaluate(() => document.getElementById('btn-more').click());
+    await new Promise(r => setTimeout(r, 300));
+    assert.equal(await p.evaluate(() => [...document.querySelectorAll('#more-menu a')].find(a => a.getClientRects().length)?.dataset.goto), 'pursue', 'the first item');
+    await p.evaluate(() => document.querySelector('#more-menu a[data-goto="pursue"]').click());
+    await new Promise(r => setTimeout(r, 1500));
+    assert.equal(await p.evaluate(() => location.pathname), '/program/pursue');
+    assert.ok(await p.evaluate(() => document.getElementById('more-menu').hidden && !!document.querySelector('#sec-pu-hl')), 'the menu closes, the explainer shows');
+    await p.evaluate(() => history.back());
+    await new Promise(r => setTimeout(r, 1500));
+    assert.equal(await p.evaluate(() => location.pathname), '/timeline');
+    await p.close();
+  }
+});

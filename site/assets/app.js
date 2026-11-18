@@ -3715,7 +3715,7 @@
     if (g && g.matches('a[href^="/"]') && (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1)) return; // new tab / window
     if (g) {
       e.preventDefault();
-      const fromSearch = !!g.closest('#q-results'), ent = byId.get(g.dataset.goto);
+      const fromSearch = !!g.closest('#q-results, #more-menu'), ent = byId.get(g.dataset.goto); // a More item (PURSUE) opens as a search pick does
       $('#q-results').hidden = true;
       // a search result picked from any page opens Explore and starts a trail from it: the first step, ready to
       // follow (filters are cleared if they would hide it)
