@@ -63,6 +63,10 @@ test('the release highlights: top picks first, a release row shows that release\
     assert.equal(s.on, '0', 'Top picks is the first view');
     assert.ok(s.slides.length >= 5, 'several top picks');
     assert.equal(s.dots, s.slides.length, 'a dot per pick');
+    // the dots belong to the carousel: beside its label on desktop, under the slides on phones (not over the sheet's bar)
+    const at = await p.evaluate(() => { const r = s => document.querySelector(s).getBoundingClientRect(), n = r('#sec-pu-hl .hc-nav'), t = r('#sec-pu-hl .hc-track'), c = r('#sec-pu-hl .pu-car'); return { inside: n.top >= c.top && n.bottom <= c.bottom + 1, below: n.top >= t.bottom }; });
+    assert.ok(at.inside, 'the dots sit inside the carousel');
+    if (phone) assert.ok(at.below, 'phones: the dots under the slides');
     for (const x of s.slides) { assert.ok(x.file, 'each pick links to its file'); assert.match(x.text, /^[“"‘(A-Z0-9]/, `${x.file}: the line starts a sentence`); }
     const row = await p.evaluate(() => document.querySelector('#sec-pursue tr[data-pu-row]')?.dataset.puRow);
     await p.evaluate(r => document.querySelector(`#sec-pursue tr[data-pu-row="${r}"] td:nth-child(2)`).click(), row);
