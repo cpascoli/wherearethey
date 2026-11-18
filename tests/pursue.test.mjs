@@ -50,3 +50,26 @@ test('the PURSUE page carries its FAQ as structured data, with the figures fille
   for (const q of faq.mainEntity) assert.doesNotMatch(q.acceptedAnswer.text, /\{\w+\}/, `a placeholder left in "${q.name}"`);
   assert.match(html, /class="pu-table"/, 'the early page has the release table');
 });
+
+test('the release highlights: top picks first, a release row shows that release\'s picks', { skip }, async () => {
+  for (const phone of [false, true]) {
+    const p = await open('/program/pursue', { phone });
+    const picks = () => p.evaluate(() => ({
+      on: document.querySelector('#sec-pu-hl .pu-filter .chip.on')?.dataset.puRel,
+      slides: [...document.querySelectorAll('#sec-pu-hl .pu-slide')].map(s => ({ kicker: s.dataset.kicker, file: s.querySelector('h3 a')?.dataset.goto, text: s.querySelector('p')?.textContent.trim() })),
+      dots: document.querySelectorAll('#sec-pu-hl .dv-dot').length,
+    }));
+    let s = await picks();
+    assert.equal(s.on, '0', 'Top picks is the first view');
+    assert.ok(s.slides.length >= 5, 'several top picks');
+    assert.equal(s.dots, s.slides.length, 'a dot per pick');
+    for (const x of s.slides) { assert.ok(x.file, 'each pick links to its file'); assert.match(x.text, /^[“"‘(A-Z0-9]/, `${x.file}: the line starts a sentence`); }
+    const row = await p.evaluate(() => document.querySelector('#sec-pursue tr[data-pu-row]')?.dataset.puRow);
+    await p.evaluate(r => document.querySelector(`#sec-pursue tr[data-pu-row="${r}"] td:nth-child(2)`).click(), row);
+    await new Promise(r => setTimeout(r, 600));
+    s = await picks();
+    assert.equal(s.on, row, 'the row picks its release');
+    assert.ok(s.slides.length > 0 && s.slides.every(x => x.kicker.startsWith(`Release ${row} `)), 'only that release\'s picks');
+    await p.close();
+  }
+});

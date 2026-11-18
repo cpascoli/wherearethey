@@ -154,6 +154,8 @@ export async function build({ check = false, quiet = false } = {}) {
     // books: short verbatim passages from authorized excerpts (publisher, author or quoted in a review), each with its source
     // questions and answers shown as an FAQ (and FAQPage structured data); answers are inline Markdown, and on the PURSUE
     // file may use {placeholders} filled from the release statistics (pursueStats below), so they stay current
+    // the PURSUE file's carousel of picks (resolved in pursueStats): { release, file, top, why }
+    if (d.highlights) e.highlightsRaw = arr(d.highlights).filter(h => h && h.file && h.release != null);
     if (d.faq) e.faq = arr(d.faq).filter(f => f && f.q && f.a).map(f => ({ q: String(f.q).trim(), a: String(f.a).trim() }));
     if (d.glimpses) e.glimpses =arr(d.glimpses).filter(g => g && g.text).map(g => ({ text: String(g.text), where: g.where ? String(g.where) : '', via: g.via ? String(g.via) : '', url: g.url ? String(g.url) : '' }));
     // books & films: a cover image saved as site/assets/covers/<id>.jpg is picked up automatically
@@ -542,6 +544,7 @@ export async function build({ check = false, quiet = false } = {}) {
     for (const w of warnings) console.warn(`  warn  ${w}`);
     for (const er of errors) console.error(`  ERROR ${er}`);
   }
+  renderFaq(entities, pursueStats(entities, [...edges.values()], warnings)); // the PURSUE explainer's figures and picks (warns in --check too)
   if (check) return { errors, warnings, stats };
 
   // ── Write site/data ──
@@ -552,7 +555,6 @@ export async function build({ check = false, quiet = false } = {}) {
   fs.mkdirSync(path.join(out, 'transcripts'), { recursive: true });
   fs.mkdirSync(path.join(out, 'doctext'), { recursive: true });
   const edgeList = [...edges.values()];
-  renderFaq(entities, pursueStats(entities, edgeList));
   // graph layout, precomputed (node size = links to other graph nodes, as in the app)
   const isRecord = new Set(entities.filter(e => OFF_GRAPH.has(e.type)).map(e => e.id));
   const degree = new Map();
@@ -602,7 +604,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 // The PURSUE explainer (program/pursue): every release with its records counted by format and agency, the gaps between
 // releases and the window for the next one, and the files on this archive the records document. Counted from the
 // imported records (content/record/, `pursue:`), so a new release updates the page with the next import.
-function pursueStats(entities, edgeList) {
+function pursueStats(entities, edgeList, warnings = []) {
   const pu = entities.find(e => e.id === 'pursue');
   if (!pu) return {};
   const recs = entities.filter(e => e.type === 'record' && e.pursue?.release);
@@ -639,7 +641,27 @@ function pursueStats(entities, edgeList) {
       (about.get(b) || about.set(b, new Set()).get(b)).add(a);
     }
   }
+  // the carousel's picks: each a file here and the records of one release that concern it (footage first), with a
+  // picture (the file's own, else a record's DVIDS poster or war.gov thumbnail) and a line (`why`, else the file's lead)
+  const plain = h => String(h || '').replace(/<[^>]+>/g, ' ').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+  // whole sentences up to about 260 characters; a full stop after an initial or a title (U.S., J., Lt.) ends none
+  const ABBR = /(\b[A-Z]\.|\b(Lt|Col|Gen|Maj|Capt|Cmdr|Cdr|Adm|Sgt|Rep|Sen|Dr|Mr|Mrs|Ms|St|No|Jr|Sr|vs|approx|ca)\.)$/;
+  const sentences = t => { const out = []; let from = 0; for (const m of t.matchAll(/[.!?]["”’)]*\s+(?=["“‘(]?[A-Z0-9])/g)) { const end = m.index + m[0].length; if (ABBR.test(t.slice(from, m.index + 1))) continue; out.push(t.slice(from, end)); from = end; } if (from < t.length) out.push(t.slice(from)); return out; };
+  const leadOf = e => { let out = ''; for (const x of sentences(plain(e.bio || e.body))) { if (out && (out + x).length > 260) break; out += x; } return out.trim(); };
+  const highlights = [];
+  for (const h of pu.highlightsRaw || []) {
+    const f = byId.get(String(h.file)), n = Number(h.release);
+    if (!f) { warnings.push(`program/pursue: highlight ${h.file} is not a file`); continue; }
+    const rs = [...(about.get(f.id) || [])].map(id => byId.get(id)).filter(r => Number(r.pursue.release) === n)
+      .sort((a, b) => !!b.pursue.dvidsId - !!a.pursue.dvidsId || a.id.localeCompare(b.id));
+    if (!rs.length) { warnings.push(`program/pursue: highlight ${f.id} has no records in release ${n}`); continue; }
+    const foot = rs.find(r => r.pursue.dvidsId), thumb = rs.find(r => r.pursue.thumbnail)?.pursue.thumbnail;
+    highlights.push({ release: n, file: f.id, top: !!h.top, why: h.why ? String(h.why) : leadOf(f), records: rs.map(r => r.id),
+      image: f.image || null, foot: !f.image && foot ? foot.id : null, thumb: !f.image && !foot ? thumb || null : null });
+  }
+  delete pu.highlightsRaw;
   pu.pursueStats = {
+    highlights,
     releases, total: recs.length, formats: Object.fromEntries(formats), agencies: sorted(agencies),
     gaps: gaps.length ? { min: gaps[0], max: gaps.at(-1), median } : null,
     next: gaps.length ? { n: last.n + 1, earliest: plus(gaps[0]), likely: plus(median), latest: plus(gaps.at(-1)) } : null,

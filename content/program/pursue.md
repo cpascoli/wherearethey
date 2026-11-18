@@ -5,6 +5,33 @@ seo_description: "PURSUE, the Presidential Unsealing and Reporting System for UA
 bio: "PURSUE, the Presidential Unsealing and Reporting System for UAP Encounters, is the U.S. government's program for declassifying and publishing its files on UAP and UFOs, ordered by President Trump on 19 February 2026. The Department of War, supported by the ODNI, publishes the records in numbered releases on [war.gov/UFO](https://www.war.gov/UFO/), the first on 8 May 2026."
 aka:
   - PURSUE
+# the carousel under the releases table: a file on this archive and the release whose records concern it; `top` puts it
+# under "All"; `why` replaces the file's own opening lines (keep it to what the records or the release's file say)
+highlights:
+  - { release: 7, file: inc-western-us-triangle-2026, top: true }
+  - { release: 7, file: aawsap, top: true, why: "Ten records add AAWSAP's working files from the BAASS contract (2008–2010): its project management plan, the Project Capella database plan, monthly reports from 2009 and an April 2010 investigation report on the Utah ranch." }
+  - { release: 7, file: crash-retrieval, why: "A 1962–64 file of Executive Branch correspondence on recovering U.S. and Soviet space material: public messaging named NASA as the holder of foreign materials, while private correspondence described a parallel plan to exploit them for technical analysis." }
+  - { release: 6, file: doc-dirds, top: true }
+  - { release: 6, file: inc-tremonton-1952 }
+  - { release: 6, file: doc-ruppelt-presentation-1952 }
+  - { release: 5, file: inc-gulf-of-oman-ac130-2021, top: true }
+  - { release: 5, file: inc-pacific-uaptf-2019, top: true }
+  - { release: 5, file: doc-twining-memo-1947 }
+  - { release: 4, file: inc-us-domestic-uap-1996-2026, top: true }
+  - { release: 4, file: inc-pantex-2015, top: true }
+  - { release: 4, file: inc-east-asia-us-military-uap-2021-2025 }
+  - { release: 4, file: doc-robertson-panel-1953 }
+  - { release: 3, file: gordon-cooper, top: true, why: "In a November 1962 interview excerpt released by NASA, Walter Cronkite asks the Mercury astronaut about UFOs; Cooper says “a large number of exceptionally well-qualified people have seen objects” without a “logical explanation”." }
+  - { release: 3, file: project-magnet }
+  - { release: 3, file: inc-harare-airport-2008 }
+  - { release: 2, file: inc-uscg-tyndall-2024, top: true }
+  - { release: 2, file: inc-western-us-orbs-2025, top: true }
+  - { release: 2, file: inc-lake-huron-2023 }
+  - { release: 2, file: inc-karaganda-airport-2022 }
+  - { release: 1, file: inc-greece-aegean-2023, top: true }
+  - { release: 1, file: inc-tehran-1976, top: true }
+  - { release: 1, file: inc-centcom-uap-2013-2025 }
+  - { release: 1, file: doc-cometa-report-1999 }
 faq:
   - q: What does PURSUE stand for?
     a: "The Presidential Unsealing and Reporting System for UAP Encounters: the U.S. government's program for declassifying and publishing its records on UAP (unidentified anomalous phenomena, the official term for UFOs)."

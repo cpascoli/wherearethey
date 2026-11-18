@@ -1703,7 +1703,7 @@
   }
   // The PURSUE explainer (program/pursue, `pursueStats` from the build): the figures, every release, the window for the
   // next one, and the files here the records concern. The early page draws the same (pursueHtml in pages.mjs).
-  const PU_AGENCY = { 'Department of War': 'War', 'Department of State': 'State', 'Department of Energy': 'Energy', 'Office of the Director of National Intelligence': 'ODNI', 'Executive Office of the President': 'White House', 'Local Law Enforcement': 'Local police', 'Intelligence Community Agency': 'IC agency', 'U.S. Government': 'U.S. Gov.' };
+  const PU_AGENCY = { 'Department of War': 'DoW', 'Department of State': 'State Dept.', 'Department of Energy': 'Energy', 'Office of the Director of National Intelligence': 'ODNI', 'Executive Office of the President': 'White House', 'Local Law Enforcement': 'Local police', 'Intelligence Community Agency': 'IC agency', 'U.S. Government': 'U.S. Gov.' };
   function pursueNext(s, today) { // the next release, from the gaps so far: before its window, inside it, or past it
     const x = s.next; if (!x) return '';
     return today < x.earliest ? `next, not announced; on past form ${fmtD(x.earliest).replace(/ \d{4}$/, '')} – ${fmtD(x.latest)}`
@@ -1713,13 +1713,55 @@
   function pursueSections(e) {
     const s = e.pursueStats, last = s.releases.at(-1);
     const stats = `<div class="pu"><div class="pu-stats"><div><b>${s.releases.length}</b><span>releases</span></div><div><b>${s.total}</b><span>records</span></div><div><b>Release ${last.n}</b><span>latest, ${fmtD(last.date)}</span></div><div><b>Release ${s.next ? s.next.n : last.n + 1}</b><span>${esc(pursueNext(s, localToday()))}</span></div></div>`;
-    const rows = [...s.releases].reverse().map(r => `<tr><td>${r.event ? `<a href="${hrefOf(r.event)}" data-goto="${esc(r.event)}">Release ${r.n}</a>` : `Release ${r.n}`}</td><td>${fmtD(r.date)}</td><td class="n">${r.records}</td><td class="n">${r.video}</td><td class="n pu-wide">${r.gap ?? '–'}</td><td class="pu-wide pu-ag">${r.agencies.map(([a, n]) => `<span title="${esc(a)}">${esc(PU_AGENCY[a] || a)} ${n}</span>`).join(' · ')}</td></tr>`).join('');
-    const table = `<table class="pu-table"><thead><tr><th>Release</th><th>Date</th><th class="n">Records</th><th class="n">Video &amp; audio</th><th class="n pu-wide">Gap (days)</th><th class="pu-wide">From</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+    const picks = n => (s.highlights || []).filter(h => h.release === n).length;
+    const rows = [...s.releases].reverse().map(r => `<tr${picks(r.n) ? ` class="pu-row" data-pu-row="${r.n}"` : ''}><td>${r.event ? `<a href="${hrefOf(r.event)}" data-goto="${esc(r.event)}">Release ${r.n}</a>` : `Release ${r.n}`}</td><td>${fmtD(r.date)}</td><td class="n">${r.records}</td><td class="n">${r.video}</td><td class="n pu-wide">${r.gap ?? '–'}</td><td class="pu-wide pu-ag">${r.agencies.map(([a, n]) => `<span title="${esc(a)}">${esc(PU_AGENCY[a] || a)} ${n}</span>`).join(' · ')}</td><td class="n">${picks(r.n) ? `<button class="pu-pick" data-pu-row="${r.n}" aria-label="Highlights of release ${r.n}">${picks(r.n)} ›</button>` : ''}</td></tr>`).join('');
+    const table = `<table class="pu-table"><thead><tr><th>Release</th><th>Date</th><th class="n">Records</th><th class="n">Video &amp; audio</th><th class="n pu-wide">Gap (days)</th><th class="pu-wide">From</th><th class="n">Picks</th></tr></thead><tbody>${rows}</tbody></table></div>`;
     const main = `<div class="p-sec" id="sec-pursue"><h4>Every release <span>${s.total} records</span></h4>${stats}${table}<p class="pu-note">Counted from the records on war.gov/UFO, each with a page here. ${s.gaps ? `Releases have come ${s.gaps.min} to ${s.gaps.max} days apart (median ${s.gaps.median}); the window for the next is our estimate, not an official schedule.` : ''}</p></div>`;
     const about = s.about.filter(([id]) => byId.has(id));
-    return { main, about: about.length ? `<div class="p-sec p-side" id="sec-pursue-about"><h4>What the records concern <span>${about.length} files</span></h4><div class="chips" data-collapse="16">${about.map(([id, n]) => chip(id, ` <span class="n">${n}</span>`)).join('')}</div></div>` : '' };
+    return { main, hl: puHighlights(e), about: about.length ? `<div class="p-sec p-side" id="sec-pursue-about"><h4>What the records concern <span>${about.length} files</span></h4><div class="chips" data-collapse="16">${about.map(([id, n]) => chip(id, ` <span class="n">${n}</span>`)).join('')}</div></div>` : '' };
   }
-  const faqHtml = e => `<div class="p-sec" id="sec-faq"><h4>Questions <span>${e.faq.length}</span></h4><dl class="faq">${e.faq.map(q => `<dt>${esc(q.q)}</dt><dd>${q.a}</dd>`).join('')}</dl></div>`;
+  // Highlights from the releases: a carousel of picks (`highlights:` on program/pursue, resolved by the build), the top
+  // ones under "All", or one release's (its chip, or its row in the table). Each slide: the file's picture or the record's
+  // footage, the release and agencies, the file's name and a line, the records, and the file.
+  function puSlide(h) {
+    const f = byId.get(h.file); if (!f) return '';
+    const recs = h.records.map(id => byId.get(id)).filter(Boolean), t = TYPES[f.type] || TYPES.concept;
+    const ags = [...new Set(recs.map(r => PU_AGENCY[r.pursue.agency] || r.pursue.agency))];
+    const kicker = `Release ${h.release} · ${recs.length} record${recs.length > 1 ? 's' : ''} · ${ags.join(', ')}`;
+    const foot = h.foot && byId.get(h.foot);
+    const media = h.image ? `<a class="pu-media" href="${hrefOf(f.id)}" data-goto="${esc(f.id)}"><img src="${esc(h.image)}" alt="${esc(f.imageCaption || f.name)}" loading="lazy"></a>`
+      : foot ? `<div class="pu-media">${dvidsPlayer(foot.pursue, foot.name)}</div>`
+      : h.thumb ? `<a class="pu-media pu-doc" href="${hrefOf(recs[0].id)}" data-goto="${esc(recs[0].id)}" title="${esc(recs[0].name)}"><img src="${esc(h.thumb)}" alt="" loading="lazy" referrerpolicy="no-referrer"></a>`
+      : `<a class="pu-media pu-none" href="${hrefOf(f.id)}" data-goto="${esc(f.id)}" style="--c:${t.color}"><span>${esc(t.label)}</span></a>`;
+    const shown = recs.slice(0, 3).map(r => `<a href="${hrefOf(r.id)}" data-goto="${esc(r.id)}">${esc(r.pursue.code || r.name)}</a>`).join(' · ');
+    return `<section class="hc-slide pu-slide" data-kicker="${esc(kicker)}">${media}<div class="pu-text">
+      <div class="pu-badges"><span class="badge type" style="background:${t.color}">${esc(t.label)}</span>${f.outcome && f.outcome !== 'open' ? `<span class="badge outcome-${f.outcome}" title="${esc(OUTCOME[f.outcome].hint)}">${OUTCOME[f.outcome].label}</span>` : ''}</div>
+      <h3><a href="${hrefOf(f.id)}" data-goto="${esc(f.id)}">${esc(f.name)}</a></h3>
+      <p>${esc(h.why)}</p>
+      <div class="pu-recs">Record${recs.length > 1 ? 's' : ''}: ${shown}${recs.length > 3 ? ` · +${recs.length - 3} more on the file` : ''}</div>
+      <a class="btn small" href="${hrefOf(f.id)}" data-goto="${esc(f.id)}">Open the file →</a></div></section>`;
+  }
+  function puCar(e, rel = 0) {
+    const hs = e.pursueStats.highlights.filter(h => (rel ? h.release === rel : h.top) && byId.has(h.file)), n = hs.length;
+    if (!n) return '';
+    const nav = n > 1 ? `<button class="dv-prev" aria-label="Previous" disabled>‹</button><span class="dv-dots">${hs.map((_, i) => `<button class="dv-dot${i ? '' : ' on'}" data-dv-at="${i}" aria-label="Pick ${i + 1} of ${n}"></button>`).join('')}</span><button class="dv-next" aria-label="Next">›</button>` : '';
+    const slides = hs.map(puSlide);
+    return `<div class="pu-car dv-car" tabindex="-1"><div class="hc-head"><div class="home-kicker hc-kicker">${slides[0].match(/data-kicker="([^"]*)"/)[1]}</div><div class="dv-nav hc-nav">${nav}</div></div><div class="dv-track hc-track">${slides.join('')}</div></div>`;
+  }
+  function puHighlights(e, rel = 0) {
+    const hs = e.pursueStats.highlights || [], rels = [...new Set(hs.map(h => h.release))].sort((a, b) => b - a);
+    if (!hs.length) return '';
+    return `<div class="p-sec" id="sec-pu-hl"><h4>Highlights from the releases <span>${hs.length} picks</span></h4>
+      <div class="chips pu-filter" role="tablist">${[0, ...rels].map(r => `<button class="chip${r === rel ? ' on' : ''}" role="tab" aria-selected="${r === rel}" data-pu-rel="${r}">${r ? `Release ${r}` : 'Top picks'}</button>`).join('')}</div>${puCar(e, rel)}</div>`;
+  }
+  // a release chip, or a release's row in the table: show its picks (from the table, scroll down to them)
+  function puPick(rel, fromTable) {
+    const sec = document.querySelector('#sec-pu-hl'), e = byId.get('pursue'); if (!sec || !e) return;
+    sec.querySelectorAll('.pu-filter .chip').forEach(c => { const on = +c.dataset.puRel === rel; c.classList.toggle('on', on); c.setAttribute('aria-selected', on); });
+    sec.querySelector('.pu-car')?.replaceWith(Object.assign(document.createElement('div'), { innerHTML: puCar(e, rel) }).firstElementChild);
+    if (fromTable) sec.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+  }
+  const faqHtml = e =>`<div class="p-sec" id="sec-faq"><h4>Questions <span>${e.faq.length}</span></h4><dl class="faq">${e.faq.map(q => `<dt>${esc(q.q)}</dt><dd>${q.a}</dd>`).join('')}</dl></div>`;
 
   function renderPanel(e) {
     const t = TYPES[e.type] || TYPES.concept;
@@ -1768,7 +1810,7 @@
         <div class="small muted" style="margin-top:6px">${e.transcript ? `${e.transcript.segments.toLocaleString()} transcript lines (${({ 'youtube-auto': 'auto captions', youtube: 'subtitles', whisper: 'Whisper transcript', 'whisper-translated': 'Whisper translation', translation: 'English translation of the published subtitles' })[e.transcript.source] || 'transcript'})` : 'No transcript yet'}${e.local ? ' · local copy' : ''}</div></div></div>`);
     }
     // the summary (a person's profile) comes before the videos
-    if (e.pursueStats?.releases?.length) { const pu = pursueSections(e); put('pursue', pu.main); put('records', pu.about); }
+    if (e.pursueStats?.releases?.length) { const pu = pursueSections(e); put('pursue', pu.main + pu.hl); put('records', pu.about); }
     if (e.faq?.length) put('faq', faqHtml(e));
     const body = lead ? (lead.only ? '' : lead.rest) : e.body; // a book's opening paragraph is in the header already
     if (body) put('body', `<div class="p-sec"><h4>${e.type === 'person' ? 'Profile' : 'Summary'}</h4><div class="p-body p-bio${e.bio || lead ? ' after-lead' : ''}">${body}</div></div>`);
@@ -3646,6 +3688,8 @@
   document.addEventListener('click', e => {
     const dv = e.target.closest('.dv-frame[data-dvids]');
     if (dv) { e.preventDefault(); playDvids(dv); return; }
+    const pr = e.target.closest('#sec-pu-hl [data-pu-rel], #sec-pursue [data-pu-row]');
+    if (pr && !(e.target.closest('a') && !pr.matches('a'))) { puPick(+(pr.dataset.puRel ?? pr.dataset.puRow), pr.dataset.puRow != null); return; }
     const cb = e.target.closest('.dv-prev, .dv-next, .dv-dot');
     if (cb) { const car = cb.closest('.dv-car'); carGo(car, cb.dataset.dvAt != null ? +cb.dataset.dvAt : carAt(car) + (cb.classList.contains('dv-next') ? 1 : -1)); return; }
     const play = e.target.closest('[data-play]');

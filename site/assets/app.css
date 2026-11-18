@@ -392,6 +392,30 @@ mark { background: rgba(227, 179, 65, .4); color: inherit; border-radius: 3px; p
 .pu-table td.pu-ag { white-space: normal; color: var(--muted); font-size: 12.5px; padding-left: 12px; }
 .pu-table th.pu-wide:last-child { padding-left: 12px; }
 .pu-note { font-size: 12.5px; color: var(--muted); line-height: 1.5; margin: 6px 0 0; }
+/* Highlights from the releases: a carousel under the table (picture or footage beside the text; stacked when narrow) */
+.pu-row { cursor: pointer; }
+.pu-row:hover td { background: var(--accent-soft); }
+.pu-pick { font: inherit; font-size: 12.5px; color: var(--accent); background: none; border: 1px solid var(--border); border-radius: 12px; padding: 1px 8px; cursor: pointer; white-space: nowrap; }
+.pu-pick:hover { border-color: var(--accent); }
+.pu-filter { margin: 2px 0 12px; }
+.pu-car { container-type: inline-size; }
+.pu-car .hc-track { gap: 32px; }
+.pu-slide { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; align-content: start; }
+@container (max-width: 599px) { .pu-text p { -webkit-line-clamp: 4; } }
+@container (min-width: 600px) { .pu-slide { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 18px; } }
+.pu-media { display: block; aspect-ratio: 16/9; border-radius: 6px; overflow: hidden; background: #000; position: relative; }
+.pu-media > img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pu-media .dv-frame { height: 100%; border-radius: 0; }
+.pu-doc { background: var(--panel-2); }
+.pu-doc > img { object-fit: cover; object-position: top; }
+.pu-none { display: grid; place-items: center; background: color-mix(in srgb, var(--c) 18%, var(--panel-2)); border: 1px solid var(--border); text-decoration: none; }
+.pu-none span { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--c); }
+.pu-text { min-width: 0; }
+.pu-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+.pu-text h3 { font-size: 18px; line-height: 1.3; margin: 8px 0 6px; }
+.pu-text h3 a { color: var(--text); }
+.pu-text p { margin: 0 0 8px; font-size: 14.5px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+.pu-recs { font-size: 12.5px; color: var(--muted); margin: 0 0 10px; line-height: 1.5; }
 .faq { margin: 0; }
 .faq dt { font-weight: 600; margin: 14px 0 4px; line-height: 1.4; }
 .faq dt:first-child { margin-top: 2px; }
@@ -399,6 +423,7 @@ mark { background: rgba(227, 179, 65, .4); color: inherit; border-radius: 3px; p
 @container (max-width: 560px) {
   .pu-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pu-table .pu-wide { display: none; }
+  .pu-table th, .pu-table td { padding-right: 6px; }
 }
 
 /* the profile's first line in medium: only in the desktop side panel. Where the early page (.ssr-pre) is drawn first

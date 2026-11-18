@@ -114,14 +114,15 @@ const STANCE_LABEL = { supports: 'says so', disputes: 'disputes it', context: 'c
 const TITLE_SUFFIX = { person: 'testimony & sources', program: 'claims & evidence', incident: 'witnesses & evidence', hearing: 'testimony & transcript', document: 'text & key findings', video: 'transcript & key moments', claim: 'who said it, and the evidence' };
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 // the PURSUE explainer, as the app draws it (pursueSections in app.js); the next release's window as of the build
-const PU_AGENCY = { 'Department of War': 'War', 'Department of State': 'State', 'Department of Energy': 'Energy', 'Office of the Director of National Intelligence': 'ODNI', 'Executive Office of the President': 'White House', 'Local Law Enforcement': 'Local police', 'Intelligence Community Agency': 'IC agency', 'U.S. Government': 'U.S. Gov.' };
+const PU_AGENCY = { 'Department of War': 'DoW', 'Department of State': 'State Dept.', 'Department of Energy': 'Energy', 'Office of the Director of National Intelligence': 'ODNI', 'Executive Office of the President': 'White House', 'Local Law Enforcement': 'Local police', 'Intelligence Community Agency': 'IC agency', 'U.S. Government': 'U.S. Gov.' };
 function pursueHtml(s, today = new Date().toISOString().slice(0, 10)) {
   const last = s.releases.at(-1), x = s.next;
   const next = !x ? '' : today < x.earliest ? `next, not announced; on past form ${fmtDate(x.earliest).replace(/ \d{4}$/, '')} – ${fmtDate(x.latest)}`
     : today <= x.latest ? `next, not announced; on past form due by ${fmtDate(x.latest)}` : `next, not announced; later than any gap so far (${s.gaps.max} days)`;
-  const rows = [...s.releases].reverse().map(r => `<tr><td>${r.event ? `<a href="${r.eventPath}">Release ${r.n}</a>` : `Release ${r.n}`}</td><td>${fmtDate(r.date)}</td><td class="n">${r.records}</td><td class="n">${r.video}</td><td class="n pu-wide">${r.gap ?? '–'}</td><td class="pu-wide pu-ag">${r.agencies.map(([a, n]) => `<span title="${esc(a)}">${esc(PU_AGENCY[a] || a)} ${n}</span>`).join(' · ')}</td></tr>`).join('');
+  const picks = n => (s.highlights || []).filter(h => h.release === n).length;
+  const rows = [...s.releases].reverse().map(r => `<tr><td>${r.event ? `<a href="${r.eventPath}">Release ${r.n}</a>` : `Release ${r.n}`}</td><td>${fmtDate(r.date)}</td><td class="n">${r.records}</td><td class="n">${r.video}</td><td class="n pu-wide">${r.gap ?? '–'}</td><td class="pu-wide pu-ag">${r.agencies.map(([a, n]) => `<span title="${esc(a)}">${esc(PU_AGENCY[a] || a)} ${n}</span>`).join(' · ')}</td><td class="n">${picks(r.n) ? `<a href="#highlights-${r.n}">${picks(r.n)}</a>` : ''}</td></tr>`).join('');
   return `<h2>Every release</h2><div class="pu"><div class="pu-stats"><div><b>${s.releases.length}</b><span>releases</span></div><div><b>${s.total}</b><span>records</span></div><div><b>Release ${last.n}</b><span>latest, ${fmtDate(last.date)}</span></div><div><b>Release ${x ? x.n : last.n + 1}</b><span>${esc(next)}</span></div></div>`
-    + `<table class="pu-table"><thead><tr><th>Release</th><th>Date</th><th class="n">Records</th><th class="n">Video &amp; audio</th><th class="n pu-wide">Gap (days)</th><th class="pu-wide">From</th></tr></thead><tbody>${rows}</tbody></table></div>`
+    + `<table class="pu-table"><thead><tr><th>Release</th><th>Date</th><th class="n">Records</th><th class="n">Video &amp; audio</th><th class="n pu-wide">Gap (days)</th><th class="pu-wide">From</th><th class="n">Picks</th></tr></thead><tbody>${rows}</tbody></table></div>`
     + `<p class="pu-note">Counted from the records on war.gov/UFO, each with a page here. ${s.gaps ? `Releases have come ${s.gaps.min} to ${s.gaps.max} days apart (median ${s.gaps.median}); the window for the next is our estimate, not an official schedule.` : ''}</p>`;
 }
 const fmtDate = d => { if (!d) return ''; const [y, m, day] = d.split('-'); return [day && +day, m && MONTHS[+m - 1], y].filter(Boolean).join(' '); };
@@ -210,6 +211,9 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     if (e.pursueStats?.releases?.length) {
       for (const r of e.pursueStats.releases) r.eventPath = r.event && byId.get(r.event)?.path;
       h.push(pursueHtml(e.pursueStats));
+      // the carousel's picks, as a list per release (the app shows them as a carousel)
+      const hs = (e.pursueStats.highlights || []).filter(x => byId.has(x.file));
+      if (hs.length) h.push(`<h2>Highlights from the releases</h2>${[...new Set(hs.map(x => x.release))].sort((a, b) => b - a).map(n => `<h3 id="highlights-${n}">Release ${n}</h3><ul>${hs.filter(x => x.release === n).map(x => `<li>${link(x.file)}: ${esc(x.why)} <span class="ssr-by">(record${x.records.length > 1 ? 's' : ''}: ${x.records.slice(0, 3).map(id => link(id)).join(', ')}${x.records.length > 3 ? `, +${x.records.length - 3} more` : ''})</span></li>`).join('')}</ul>`).join('')}`);
     }
     if (e.faq?.length) h.push(`<h2>Questions</h2><dl class="faq">${e.faq.map(q => `<dt>${esc(q.q)}</dt><dd>${q.a}</dd>`).join('')}</dl>`);
     if (e.pursueStats?.about?.length) h.push(`<h2>What the records concern</h2><ul>${e.pursueStats.about.filter(([id]) => byId.has(id)).map(([id, n]) => `<li>${link(id)} <span class="ssr-by">(${n} record${n > 1 ? 's' : ''})</span></li>`).join('')}</ul>`);
