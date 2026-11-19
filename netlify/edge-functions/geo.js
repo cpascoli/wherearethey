@@ -19,4 +19,4 @@ export default async (request, context) => {
 };
 
 // every page (each view and file has its own HTML page); static data and assets skip the function
-export const config = { path: '/*', excludedPath: ['/assets/*', '/data/*', '/sitemap.xml', '/robots.txt'] };
+export const config = { path: '/*', excludedPath: ['/assets/*', '/data/*', '/sitemap.xml', '/robots.txt', '/__seen'] };

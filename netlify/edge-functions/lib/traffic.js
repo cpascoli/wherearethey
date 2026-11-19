@@ -1,6 +1,11 @@
 // Cookieless traffic counter (called from geo.js). Every HTML page load is filed under one anonymous visitor
 // record per month in the Netlify Blobs store "traffic":
-//   v/<YYYY-MM>/<hash>  →  { k: kind, b: bot name, c: country, d: { day: loads }, p: { path: loads }, e: { path: 404s } }
+//   v/<YYYY-MM>/<hash>  →  { k: kind, b: bot name, c: country, d: { day: loads }, p: { path: loads }, e: { path: 404s },
+//                             s: { day: 1 } }
+// `s` marks the days a real browser was seen: the page sends one POST to /__seen (seen.js) when the visitor scrolls,
+// taps, clicks or types, or has the page in view for 10 s, and not when the browser says it is automated
+// (navigator.webdriver). Scripts posing as browsers rarely run the page and almost never interact with it, so
+// `npm run traffic` counts a 'human' record as a person only when it carries `s`.
 // The hash is SHA-256 of a random salt for the month + IP + user agent. The salt (salt/<YYYY-MM>) is created on the
 // first visit of a month and the previous month's is deleted then, so a past month's records cannot be linked to an
 // IP any more: what is left is anonymous. Nothing is set in the browser. `npm run traffic` reads the store.
@@ -59,6 +64,24 @@ async function sha256(text) {
 
 const bump = (o, k, max) => { if (k in o || Object.keys(o).length < max) o[k] = (o[k] || 0) + 1; };
 
+const visitorKey = async (request, context, month) =>
+  `v/${month}/${await sha256(`${await saltFor(month)}|${context.ip || request.headers.get('x-nf-client-connection-ip') || ''}|${request.headers.get('user-agent') || ''}`)}`;
+
+// the page's "seen" signal (seen.js): same visitor key as the page load (same IP and browser, same month)
+export async function markSeen(request, context, country) {
+  const url = new URL(request.url);
+  if (!/(^|\.)wherearethey\.info$/.test(url.hostname)) return;
+  const origin = request.headers.get('origin') || '';
+  if (origin && !/^https:\/\/([\w-]+\.)?wherearethey\.info$/.test(origin)) return; // not posted from another site
+  const { kind } = classify(request);
+  const now = new Date(), month = now.toISOString().slice(0, 7), day = now.toISOString().slice(8, 10);
+  const s = store(), key = await visitorKey(request, context, month);
+  const rec = (await s.get(key, { type: 'json' })) || { k: kind, c: country, d: {}, p: {}, e: {} };
+  if ((rec.s ||= {})[day]) return;
+  rec.s[day] = 1;
+  await s.setJSON(key, rec);
+}
+
 export async function countVisit(request, context, status, country) {
   if (request.method !== 'GET') return;
   const url = new URL(request.url);
@@ -67,9 +90,7 @@ export async function countVisit(request, context, status, country) {
   if (/prefetch|prerender/i.test(purpose)) return;
   const { kind, name } = classify(request);
   const now = new Date(), month = now.toISOString().slice(0, 7), day = now.toISOString().slice(8, 10);
-  const ip = context.ip || request.headers.get('x-nf-client-connection-ip') || '';
-  const id = await sha256(`${await saltFor(month)}|${ip}|${request.headers.get('user-agent') || ''}`);
-  const s = store(), key = `v/${month}/${id}`;
+  const s = store(), key = await visitorKey(request, context, month);
   const rec = (await s.get(key, { type: 'json' })) || { k: kind, c: country, d: {}, p: {}, e: {} };
   if (name) rec.b = name;
   bump(rec.d, day, 31);

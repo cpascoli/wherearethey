@@ -3794,6 +3794,21 @@
   document.addEventListener('click', e => { if (!setPop.hidden && !e.composedPath().includes(setPop)) setOpen(false); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !setPop.hidden) { setOpen(false); setBtn.focus(); } });
 
+  // the cookieless counter (netlify/edge-functions/lib/traffic.js): one anonymous "seen" signal per page load, once the
+  // visitor scrolls, taps, clicks or types, or has had the page in view for 10 s, so the count can tell people from
+  // scripts that only fetch the page. Not on the dev server or deploy previews, nor from automated browsers.
+  if (/(^|\.)wherearethey\.info$/.test(location.hostname) && !navigator.webdriver) {
+    let sent = false, shown = 0, timer;
+    const evs = ['pointerdown', 'keydown', 'scroll', 'touchstart', 'wheel'];
+    const seen = () => {
+      if (sent) return; sent = true; clearInterval(timer);
+      evs.forEach(t => removeEventListener(t, seen, true));
+      try { navigator.sendBeacon('/__seen'); } catch { /* the count simply misses this visit */ }
+    };
+    evs.forEach(t => addEventListener(t, seen, { capture: true, passive: true }));
+    timer = setInterval(() => { if (document.visibilityState === 'visible' && ++shown >= 10) seen(); }, 1000);
+  }
+
   // live reload from the dev server
   if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
     try { const es = new EventSource('/__events'); es.onmessage = ev => { if (ev.data === 'reload') location.reload(); }; es.onerror = () => es.close(); } catch { /* no dev server */ }
