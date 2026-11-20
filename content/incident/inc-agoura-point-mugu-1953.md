@@ -4,6 +4,8 @@ aka: [Agoura 1953, Point Mugu 1953, Kelly Johnson sighting, Lockheed WV-2 sighti
 date: 1953-12-16
 place: { name: "Off Point Mugu, seen from Agoura and from the air, California", lat: 34.12, lng: -118.95 }
 tags: [aerospace, aviator, air-force, pursue]
+image: /assets/images/pursue-08-johnson-sketch.jpg
+image_caption: "Kelly Johnson's own sketch of the object he saw on 16 December 1953, a long ellipse with a length-to-thickness ratio of 7:1 to 10:1, attached to his report to the Air Force (DOW-UAP-D206, page 8). A drawing, not a photograph."
 outcome: disputed
 outcome_note: "The Air Force's record card concludes “Lenticular Cloud”; the witnesses had considered a cloud and rejected it, and the case is filed among PURSUE's unresolved records."
 outcome_source: dow-uap-d206

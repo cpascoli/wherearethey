@@ -6,6 +6,9 @@ credentials:
   - category: aerospace
     role: "Chief Engineer, Lockheed Aircraft Corporation, California Division (1953); designer of the U-2 and SR-71, founder of Lockheed's Skunk Works"
 tags: [aerospace, air-force]
+image: /assets/images/person-kelly-johnson.jpg
+portrait: /assets/images/person-kelly-johnson-portrait.jpg
+image_caption: "Kelly Johnson beside a U-2 (N803X), 1950s. U.S. Air Force photo, public domain, via Wikimedia Commons."
 rel:
   - [ witness, inc-agoura-point-mugu-1953, "Watched the object from his ranch near Agoura with eight-power binoculars and reported it to ATIC with his test crew's accounts" ]
   - [ employed by, lockheed-martin, "Chief Engineer of Lockheed's California Division at Burbank" ]

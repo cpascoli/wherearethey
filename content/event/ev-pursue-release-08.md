@@ -4,6 +4,8 @@ aka:
   - PURSUE Release 08
 date: 2026-11-20
 featured: 2026-12-04
+image: /assets/images/pursue-08-johnson-sketch.jpg
+image_caption: "Kelly Johnson's own sketch of the object he saw on 16 December 1953, a long ellipse with a length-to-thickness ratio of 7:1 to 10:1, attached to his report to the Air Force (DOW-UAP-D206, page 8). A drawing, not a photograph."
 tags:
   - disclosure
   - foia
