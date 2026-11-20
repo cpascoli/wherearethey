@@ -7,6 +7,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-D007 — Mission Report, Arabian Gulf, 2020
+date: "2020"
 pursue:
   code: DOW-UAP-D007
   title: Mission Report, Arabian Gulf, 2020

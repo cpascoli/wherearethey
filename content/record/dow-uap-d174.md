@@ -22,7 +22,6 @@ pursue:
   format: pdf
   incident_date: March, April 2010
   incident_location: Las Vegas, Nevada
-  featured: true
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D174-Utah_Ranch_Investigation_Report_April_2010.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release-07/thumbnails/DOW-UAP-D174-Utah_Ranch_Investigation_Report_April_2010.jpg

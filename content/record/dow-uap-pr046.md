@@ -5,6 +5,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR046 — Unresolved UAP Report, INDOPACOM, 2024
+date: "2024"
 place: { name: East China Sea, lat: 29, lng: 125 }
 pursue:
   code: DOW-UAP-PR046

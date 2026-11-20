@@ -5,6 +5,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR028 — Unresolved UAP Report, Greece, January 2024
+date: 2024-01
 place: { name: Greece, lat: 38.9954, lng: 21.9877 }
 pursue:
   code: DOW-UAP-PR028

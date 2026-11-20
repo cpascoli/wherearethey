@@ -7,7 +7,7 @@ tags:
   - pursue
 name: FBI Photo B015 — FBI Photo B015
 date: "2025"
-place: { name: Western United States, lat: 43.3381, lng: -75.3897 }
+place: { name: Western United States, lat: 39.5, lng: -116.5 }
 pursue:
   code: FBI Photo B015
   title: FBI Photo B015

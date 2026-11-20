@@ -10,7 +10,7 @@ tags:
   - pursue
 name: FBI-UAP-D043 — FD-302, Unidentified Aerial Object Observation Report, 2026
 date: 2026-06
-place: { name: Western United States, lat: 43.3381, lng: -75.3897 }
+place: { name: Western United States, lat: 39.5, lng: -116.5 }
 pursue:
   code: FBI-UAP-D043
   title: FD-302, Unidentified Aerial Object Observation Report, 2026
@@ -20,7 +20,6 @@ pursue:
   format: pdf
   incident_date: June, 2026
   incident_location: Western United States
-  featured: true
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release-07/documents/FBI-UAP-D043-FD_302_Unidentified_Aerial_Object_Observation_Report-2026.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release-07/thumbnails/FBI-UAP-D043-FD_302_Unidentified_Aerial_Object_Observation_Report-2026.jpg

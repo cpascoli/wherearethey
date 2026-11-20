@@ -5,6 +5,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR043 — Unresolved UAP Report, Africa, 2025
+date: "2025"
 place: { name: Djibouti, lat: 11.8146, lng: 42.8453 }
 pursue:
   code: DOW-UAP-PR043

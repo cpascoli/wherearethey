@@ -7,6 +7,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-D006 — Mission Report, Arabian Gulf, 2020
+date: "2020"
 place: { name: Pacific Ocean, lat: -0.7031, lng: -120.9375 }
 pursue:
   code: DOW-UAP-D006

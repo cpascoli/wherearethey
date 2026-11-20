@@ -26,6 +26,10 @@ fs.mkdirSync(OUT, { recursive: true });
 const CHROME = process.env.CHROME || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Safari/537.36';
 
+// war.gov's catalog sometimes gives two-digit years (12/30/47, from Release 08 on): write them in full, 19xx unless
+// the year would be in the future
+const fullYear = d => String(d || '').replace(/^(\d{1,2}\/\d{1,2}\/)(\d{2})$/, (_, md, yy) => md + (+yy > new Date().getFullYear() % 100 ? '19' : '20') + yy);
+
 let browser, page;
 async function openBrowser() {
   if (page) return page;
@@ -66,10 +70,16 @@ function toIso(d) {
 }
 // a catalogue date that cannot be right (a future year: NASA-UAP-D013 is catalogued "5/24/2962" for the 1962 Mercury-Atlas 7
 // flight its title names) is replaced by a date found in the record's title, or dropped
-function saneDate(d, title) {
+function saneDate(d, title, titleWins = false) {
   const y = d && parseInt(String(d).slice(0, 4), 10);
-  if (d && y >= 1800 && y <= new Date().getFullYear() + 1) return d;
   const t = String(title || '');
+  // from Release 08 the catalog's date field is sometimes plainly wrong ("7/15/05" on a report titled 2023, "12/10/26" on
+  // a memo of December 2010): for those releases, where the title ends in a year and the date's year differs, the
+  // title wins. Not for earlier releases, whose titles often give the report's year rather than the incident's
+  // (Gemini 4, 1965, debriefed in a 1967 report)
+  const ty = t.match(/\b((?:19|20)\d{2})\s*$/)?.[1];
+  if (titleWins && d && ty && y !== +ty) return looseDate(t);
+  if (d && y >= 1800 && y <= new Date().getFullYear() + 1) return d;
   const months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
   const m = t.toLowerCase().match(/\b([a-z]+) (\d{1,2}), (\d{4})\b/);
   if (m && months.includes(m[1])) return `${m[3]}-${String(months.indexOf(m[1]) + 1).padStart(2, '0')}-${m[2].padStart(2, '0')}`;
@@ -95,6 +105,18 @@ const AGENCY = {
 // Geocoding a bare catalog location can land in the wrong place; pin these records by code (checked against the document).
 const PLACE_FIX = {
   'State Department UAP Cable 003': { name: 'Kodori Gorge, Abkhazia, Georgia', lat: 43.07, lng: 41.53 },
+  // Release 08: the catalog's location is a state or wrong; the documents give the place
+  'DOW-UAP-D191': { name: 'Levelland, Texas', lat: 33.59, lng: -102.38 },
+  'DOW-UAP-D193': { name: 'White Sands Proving Ground (Stallion Site), New Mexico', lat: 33.82, lng: -106.65 },
+  'DOW-UAP-D195': { name: 'Kirtland Air Force Base, Albuquerque, New Mexico', lat: 35.04, lng: -106.61 },
+  'DOW-UAP-D196': { name: 'Larson Air Force Base, Moses Lake, Washington', lat: 47.21, lng: -119.32 },
+  'DOW-UAP-D203': { name: 'Upland, California', lat: 34.1, lng: -117.65 },
+  'DOW-UAP-D205': { name: 'Near Ube, Yamaguchi, Japan', lat: 33.95, lng: 131.25 },
+  'DOW-UAP-D206': { name: 'Agoura and Point Mugu, California', lat: 34.12, lng: -118.95 },
+};
+// the catalog's incident date is wrong, by the document itself
+const DATE_FIX = {
+  'DOW-UAP-D193': '1957-11-03', // the patrols' sightings; 13 Nov 1957 is the report's date
 };
 // The official catalog occasionally reuses a code for two different records; disambiguate those by title.
 const codeCounts = new Map();
@@ -168,11 +190,12 @@ for (const r of rows) {
   const pairs = [r['Video Pairing'], r['PDF Pairing']].join('|').split('|').map(s => s.trim()).filter(Boolean);
   const own = {
     name: `${code} — ${title}`,
-    date: saneDate(looseDate(r['Incident Date']), title) || undefined,
+    date: DATE_FIX[code] || saneDate(looseDate(r['Incident Date']), title, release >= 8) || undefined,
     place: PLACE_FIX[code] || (g ? { name: loc, lat: g.lat, lng: g.lng } : undefined),
     pursue: {
       code, title, agency: r.Agency, release, released: toIso(r['Release Date']), format: type,
-      incident_date: r['Incident Date'] || undefined, incident_location: loc || undefined,
+      // incident_date is war.gov's own value, left as written (two-digit year) where it contradicts the title
+      incident_date: (release >= 8 && /\b(?:19|20)\d{2}\s*$/.test(title) && !fullYear(r['Incident Date']).includes(title.match(/(\d{4})\s*$/)?.[1]) ? r['Incident Date'] : fullYear(r['Incident Date'])) || undefined, incident_location: loc || undefined,
       featured: /yes/i.test(r.Featured) || undefined, redaction: r.Redaction || undefined,
       file: fileUrl || undefined, thumbnail: r['Modal Image'] || undefined,
       dvids: r['DVIDS Video ID'] ? `https://www.dvidshub.net/video/${r['DVIDS Video ID']}` : undefined,

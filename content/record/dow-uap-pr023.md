@@ -5,6 +5,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR023 — Unresolved UAP Report, Iraq, December 2022
+date: 2022-12
 place: { name: Iraq, lat: 33.0956, lng: 44.175 }
 pursue:
   code: DOW-UAP-PR023

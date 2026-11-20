@@ -11,7 +11,7 @@ tags:
   - pursue
 name: DOW-UAP-D176 — Triangular UAP AARO Memorandum for Record, 2026
 date: 2026-06
-place: { name: Western United States, lat: 43.3381, lng: -75.3897 }
+place: { name: Western United States, lat: 39.5, lng: -116.5 }
 pursue:
   code: DOW-UAP-D176
   title: Triangular UAP AARO Memorandum for Record, 2026
@@ -21,7 +21,6 @@ pursue:
   format: pdf
   incident_date: June, 2026
   incident_location: Western United States
-  featured: true
   redaction: "TRUE"
   file: https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D176-Triangular_UAP_AARO_MFR_2026.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release-07/thumbnails/DOW-UAP-D176-Triangular_UAP_AARO_MFR_2026.jpg

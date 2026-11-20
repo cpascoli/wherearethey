@@ -38,6 +38,9 @@ facts:
   - text: Declassified and approved for release in 2013 (CIA reading room). Earlier versions were released in redacted form from the 1970s.
     status: documented
     source: https://www.cia.gov/readingroom/document/cia-rdp79b00752a000300100010-4
+  - text: "Late in 1952 H. Marshall Chadwell, the CIA's Assistant Director for Scientific Intelligence, asked approval for an external research project through MIT's Center for International Studies: an ad hoc panel of top-level scientists to evaluate the evidence, assisting the OSI task force “which has been working on this problem in cooperation with the Air Force at the request of the DCI since 20 August 1952.” “The proposed project would cost approximately $5,000”."
+    status: documented
+    source: cia-uap-d024
 ---
 
 The report of the CIA's Scientific Advisory Panel on Unidentified Flying Objects, chaired by the Caltech physicist H. P. Robertson, which met on 14–18 January 1953 to review Air Force UFO cases and films, written up by Frederick C. Durant.

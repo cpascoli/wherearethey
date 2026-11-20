@@ -5,6 +5,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR064 — AFSOC Kabul UAP Jul 2017
+date: "2017"
 place: { name: CENTCOM, lat: 10.3357, lng: 123.9012 }
 pursue:
   code: DOW-UAP-PR064

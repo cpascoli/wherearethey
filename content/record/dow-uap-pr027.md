@@ -5,6 +5,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR027 — Unresolved UAP Report, United Arab Emirates, October 2023
+date: 2023-10
 place: { name: United Arab Emirates, lat: 24.0002, lng: 53.9995 }
 pursue:
   code: DOW-UAP-PR027

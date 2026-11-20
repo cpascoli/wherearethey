@@ -7,7 +7,7 @@ tags:
   - pursue
 name: "DOW-UAP-D077 — AARO Unresolved Case Analysis Update: Western United States Event"
 date: "2023"
-place: { name: Western United States, lat: 43.3381, lng: -75.3897 }
+place: { name: Western United States, lat: 39.5, lng: -116.5 }
 pursue:
   code: DOW-UAP-D077
   title: "AARO Unresolved Case Analysis Update: Western United States Event"

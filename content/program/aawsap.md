@@ -2,7 +2,7 @@
 name: Advanced Aerospace Weapon System Applications Program
 aka:
   - AAWSAP
-date: "2009"
+date: 2008-09-22
 end: "2012"
 tags:
   - military
@@ -79,9 +79,30 @@ facts:
     stance: context
     basis: first-hand
     source: v-jre-hal-puthoff-2025@1:00:11
+  - text: "DIA's talking paper for its director before Senator Reid's visit of January 2009 records: “DIA received only one bid, from Bigelow Aerospace Advanced Space Studies (BAASS), in response to the RFP.”"
+    status: documented
+    source: dow-uap-d187
+  - text: "BAASS's ten-month report gives the date the contract began: “BAASS received notification that contract# HHM402-08-C-0072 was awarded on September 22, 2008.”"
+    status: documented
+    source: dow-uap-d172
+  - text: "DIA Director Ronald Burgess wrote in 2010: “The Advanced Aerospace Threat Identification Program was first sponsored in the Fiscal Year (FY) 2008 Defense Supplemental Appropriation Act by Senators Reid and Inouye with a $10 million add.” BAASS produced 26 technical reports by June 2009, and “The FY 2010 Defense Appropriations Act included a $12 million add for the project. Twelve additional reports were produced and delivered.”"
+    status: documented
+    source: dow-uap-d186
+  - text: "Burgess's verdict: “In November, 2009, Deputy Secretary of Defense Lynn and I met with Senator Reid to discuss this program. At that time, we determined the reports were of limited value to DIA.”"
+    status: documented
+    stance: disputes
+    source: dow-uap-d186
+  - text: "The DIA office that ran the contract had reported to the Director in October 2009 that of the first-year papers' peer reviews, “five were performed by outside reviewers, including three research staff members at Sandia National Laboratories”, and that “all of the reviews were positive, some exceptionally so.”"
+    status: documented
+    source: dow-uap-d188
+  - text: "In July 2009 BAASS reported plans for a highly secure underground vault at Bigelow Aerospace, citing “a BAASS priority to pursue and acquire recovered hardware and biological samples from the corporate world and/or from private individuals and groups located elsewhere, including Brazil.”"
+    status: documented
+    claims: [ recovered-non-human-craft ]
+    stance: context
+    source: dow-uap-d172
 ---
 
-The Advanced Aerospace Weapon System Applications Program was a $22 million Defense Intelligence Agency program, funded in the 2008 and 2010 defense appropriations at Senator Harry Reid's direction, established in 2009 and ended in 2012. Its contractor, which AARO leaves unnamed, was BAASS, a subsidiary of Robert Bigelow's Bigelow Aerospace, as its own monthly reports in the PURSUE release show. AARO says the contract covered research in 12 aerospace-technology areas and did not specify UFO investigation, but the contractor studied UFO reports and related phenomena, including at Bigelow's Skinwalker Ranch in Utah, with the support of the DIA program manager, by his own account James Lacatski. AARO also says it was the same program as AATIP.
+The Advanced Aerospace Weapon System Applications Program was a $22 million Defense Intelligence Agency program, funded in the 2008 and 2010 defense appropriations at Senator Harry Reid's direction, contracted in September 2008 (AARO says established in 2009) and ended in 2012. Its contractor, which AARO leaves unnamed, was BAASS, a subsidiary of Robert Bigelow's Bigelow Aerospace, as its own monthly reports in the PURSUE release show. AARO says the contract covered research in 12 aerospace-technology areas and did not specify UFO investigation, but the contractor studied UFO reports and related phenomena, including at Bigelow's Skinwalker Ranch in Utah, with the support of the DIA program manager, by his own account James Lacatski. AARO also says it was the same program as AATIP.
 
 It commissioned 38 technical papers, the DIRDs, on subjects such as traversable wormholes, warp drives, negative energy and high-frequency gravitational-wave communications, and became public, under the name AATIP, through *The New York Times* on 16 December 2017. In books cleared by the Pentagon's pre-publication review, Lacatski has stated that the U.S. possesses a UFO and has gained access to its interior; an alleged plan to transfer a recovered craft to Bigelow Aerospace remains unverified.
 

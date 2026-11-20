@@ -71,6 +71,19 @@ facts:
     claim_by: aaro
     status: documented
     source: library/docs/doc-aaro-historical-record-report-v1.pdf
+  - text: "An informal CIA memo of 1 August 1952 by Edward Tauss, acting chief of OSI's Weapons and Equipment Division, counted fewer than 100 reasonably credible unexplained reports of 1,000 to 2,000 received by ATIC, and recommended continued coverage: “It is strongly urged, however, that no indication of CIA interest or concern reach the press or public, in view of their probable alarmist tendencies to accept such interest as “confirmatory” of the soundness of “unpublished facts” in the hands of the U. S. Government.”"
+    status: documented
+    source: cia-uap-d026
+  - text: "OSI's briefing of 14 August 1952 warned that “outside knowledge of Agency interest in Flying Saucers carries the risk of making the problem even more serious in the public mind than it already is, which we and Air Force agree must be avoided.”"
+    status: documented
+    source: cia-uap-d027
+  - text: "DCI Walter B. Smith wrote to the Director of the Psychological Strategy Board in October 1952: “I suggest that we discuss at an early board meeting the possible offensive or defensive utilization of these phenomena for psychological warfare purposes.”"
+    status: documented
+    source: cia-uap-d025
+  - text: "James Q. Reber, the CIA's Assistant Director for Intelligence Coordination, wrote on 13 October 1952 that the Air Force had provided an explanation “on all but 20 per cent of the total 1500 reported sightings of Flying Saucers”, and that OSI's “review of existing information does not lead to the conclusion that the saucers are USSR” devices."
+    status: documented
+    stance: disputes
+    source: cia-uap-d028
 ---
 
 The Central Intelligence Agency is the main U.S. foreign-intelligence agency. Its UAP record begins in its own files: after the summer 1952 wave over Washington, its Office of Scientific Intelligence asked whether "flying saucers" had national-security implications, H. Marshall Chadwell told the DCI in December that "something was going on that must have immediate attention", and in January 1953 the Agency convened the Robertson Panel, which found no direct threat and recommended a public "debunking" effort. The Agency kept its sponsorship of the panel secret, and its 1997 history by Gerald Haines says this later cost it credibility. That history also records that U-2 and OXCART flights accounted for over half of UFO reports from the late 1950s through the 1960s, and that the Air Force made "misleading and deceptive statements" to protect them, while concluding that the CIA itself paid "only limited and peripheral attention" to the subject after the early 1950s. The Agency also funded the remote-viewing research at SRI that grew into Stargate, and its FOIA collection holds material such as a 1990 press note on Soviet air-defence sightings.

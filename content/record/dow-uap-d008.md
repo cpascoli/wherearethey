@@ -7,6 +7,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-D008 — Mission Report, Djibouti, 2025
+date: "2025"
 place: { name: Mediterranean Sea, lat: 35, lng: 20 }
 pursue:
   code: DOW-UAP-D008

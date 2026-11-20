@@ -253,6 +253,18 @@ facts:
     claims: [ tic-tac-beyond-known-technology ]
     basis: relayed
     source: v-2021-03-05-scu-nimitz-flight-characteristics-panel@16:35
+  - text: "BAASS's ten-month report to DIA of July 2009 includes a case report on the encounter: “This incident is considered a sentinel case for BAASS in that it directly intersects national security issues; the case is being exhaustively and aggressively investigated by a team of BAASS collaborators, located on the East Coast.”"
+    status: documented
+    source: dow-uap-d172
+  - text: "The case report's first-person account, by the commanding officer of the Marine squadron VMFA-232 at the time (name redacted), describes flying over the disturbance in the water: “I did not see any object or vessel associated with the disturbance - above the surface, on the surface, or below the surface.”"
+    status: claimed
+    basis: first-hand
+    source: dow-uap-d172
+  - text: "The same report relays that a later F/A-18F crew's radar showed jamming and could not hold a track, while the aircraft “maintained ATFLIR track of the object for 2-3 minutes and recorded the ATFLIR display.”"
+    status: claimed
+    basis: relayed
+    claims: [ tic-tac-beyond-known-technology ]
+    source: dow-uap-d172
 ---
 
 On 14 November 2004, two F/A-18F Super Hornets from the USS Nimitz, led by Cmdr. David Fravor with Alex Dietrich, a junior pilot new to the squadron, flying the second jet, were pulled off a training exercise off southern California and sent by the cruiser USS Princeton to an unknown contact. The Princeton's radar operators say they had been tracking such objects for days: from about 10 November in Kevin Day's account, for over two weeks in what the controller told Fravor. Fravor testified under oath that the four aircrew saw a small white object shaped like a Tic Tac, with no wings, rotors or exhaust, moving over a patch of churning water; it turned to meet his descending jet, then “rapidly accelerated in front of us and disappeared”, and the Princeton reported it moments later at the jets' CAP point, about 60 miles away. Dietrich, who saw it for about 10 seconds, confirms the object and the CAP-point call.

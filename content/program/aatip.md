@@ -59,6 +59,17 @@ facts:
     claims: [ recovered-non-human-craft ]
     basis: first-hand
     source: v-jre-david-grusch@41:19
+  - text: "Senator Reid's letter of 24 June 2009 to Deputy Secretary of Defense William Lynn asked: “I require your assistance in establishing a Restricted Special-Access-Program (S/\\P) with a Bigoted Access List for specific portions of the AATIP.” Its attachment gives “Advanced Aerospace Threat Identification Program” as the proposed program's unclassified nickname."
+    status: documented
+    by: harry-reid
+    claims: [ aatip-official-program ]
+    stance: context
+    source: dow-uap-d183-correspondence-from-senator-harry-reid
+  - text: "DIA Director Ronald Burgess's 2010 information memorandum on the AAWSAP contract is titled “Advanced Aerospace Threat and Identification Program”, and opens: “The Advanced Aerospace Threat Identification Program was first sponsored in the Fiscal Year (FY) 2008 Defense Supplemental Appropriation Act by Senators Reid and Inouye with a $10 million add.”"
+    status: documented
+    claims: [ aatip-official-program ]
+    stance: context
+    source: dow-uap-d186
 ---
 
 AATIP, the Advanced Aerospace Threat Identification Program, is the name under which the Pentagon's UFO work became public when *The New York Times* revealed it in December 2017. In that account, and in Luis Elizondo's, it was a Pentagon effort funded at Senator Harry Reid's request that studied military encounters; the Times told the 2004 Nimitz "Tic Tac" case alongside it.

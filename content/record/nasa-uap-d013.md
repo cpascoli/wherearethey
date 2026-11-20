@@ -13,7 +13,7 @@ pursue:
   release: 2
   released: 2026-05-22
   format: aud
-  incident_date: 5/24/2962
+  incident_date: 5/24/1962
   incident_location: Low Earth Orbit
   dvids: https://www.dvidshub.net/video/1007879
 links:

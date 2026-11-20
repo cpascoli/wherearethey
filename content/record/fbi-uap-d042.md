@@ -8,7 +8,7 @@ tags:
   - pursue
 name: FBI-UAP-D042 — Digital Rendering 2, “Multiple Red Lights,” 2026
 date: "2026"
-place: { name: Western United States, lat: 43.3381, lng: -75.3897 }
+place: { name: Western United States, lat: 39.5, lng: -116.5 }
 pursue:
   code: FBI-UAP-D042
   title: Digital Rendering 2, “Multiple Red Lights,” 2026

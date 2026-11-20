@@ -8,6 +8,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR039 — Unresolved UAP Report, Middle East, 2020
+date: "2020"
 place: { name: Arabian Gulf, lat: 27.2381, lng: 51.1972 }
 pursue:
   code: DOW-UAP-PR039

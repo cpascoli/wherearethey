@@ -5,6 +5,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR020 — Unresolved UAP Report, Kuwait, May 2022
+date: 2022-05
 place: { name: Iraq, lat: 33.0956, lng: 44.175 }
 pursue:
   code: DOW-UAP-PR020

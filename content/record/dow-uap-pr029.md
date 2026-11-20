@@ -5,6 +5,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR029 — Unresolved UAP Report, United Arab Emirates, June 2024
+date: 2024-06
 place: { name: Gulf of Oman, lat: 24.2138, lng: 58.9846 }
 pursue:
   code: DOW-UAP-PR029

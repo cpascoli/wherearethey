@@ -6,7 +6,7 @@ tags:
   - pursue
 name: FBI-UAP-D033 — FD-302, “Thermally Elevated Aerial Object,” 2026
 date: "2026"
-place: { name: Western United States, lat: 43.3381, lng: -75.3897 }
+place: { name: Western United States, lat: 39.5, lng: -116.5 }
 pursue:
   code: FBI-UAP-D033
   title: FD-302, “Thermally Elevated Aerial Object,” 2026

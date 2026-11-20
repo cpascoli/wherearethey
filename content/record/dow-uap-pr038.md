@@ -5,7 +5,8 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR038 — Unresolved UAP Report, Middle East, 2013
-place: { name: Middle East, lat: 39.3014, lng: -76.5888 }
+date: "2013"
+place: { name: Middle East, lat: 27.5, lng: 49.5 }
 pursue:
   code: DOW-UAP-PR038
   title: Unresolved UAP Report, Middle East, 2013

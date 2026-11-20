@@ -5,6 +5,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR049 — Unresolved UAP Report, Department of the Army, 2026
+date: "2026"
 place: { name: North America, lat: 51, lng: -109 }
 pursue:
   code: DOW-UAP-PR049

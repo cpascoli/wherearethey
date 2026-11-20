@@ -6,7 +6,7 @@ tags:
   - pursue
 name: DOW-UAP-PR134 — Unresolved UAP Report, Middle East, 2025
 date: "2025"
-place: { name: Middle East, lat: 39.3014, lng: -76.5888 }
+place: { name: Middle East, lat: 27.5, lng: 49.5 }
 pursue:
   code: DOW-UAP-PR134
   title: Unresolved UAP Report, Middle East, 2025

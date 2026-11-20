@@ -16,7 +16,6 @@ pursue:
   format: pdf
   incident_date: 1/18/1957
   incident_location: Saudi Arabia
-  featured: true
   file: https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D155-Air_Intelligence_Information_Report_Saudi_Arabia-1957.pdf
   thumbnail: https://www.war.gov/medialink/ufo/release-07/thumbnails/DOW-UAP-D155_Air_Intelligence_Information_Report_Saudi_Arabia-1957.jpg
 links:

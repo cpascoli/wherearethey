@@ -8,7 +8,7 @@ tags:
   - pursue
 name: FBI-UAP-PR005 — Digital Recreation, Narrative Statement 3-1, Western United States Event, 2023
 date: 2023-10
-place: { name: Western United States, lat: 43.3381, lng: -75.3897 }
+place: { name: Western United States, lat: 39.5, lng: -116.5 }
 pursue:
   code: FBI-UAP-PR005
   title: Digital Recreation, Narrative Statement 3-1, Western United States Event, 2023

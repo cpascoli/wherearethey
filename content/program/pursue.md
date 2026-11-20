@@ -8,6 +8,12 @@ aka:
 # the carousel under the releases table: a file on this archive and the release whose records concern it; `top` puts it
 # under "All"; `why` replaces the file's own opening lines (keep it to what the records or the release's file say)
 highlights:
+  - { release: 8, file: inc-agoura-point-mugu-1953, top: true }
+  - { release: 8, file: aawsap, top: true, why: "Senator Reid's 2009 letter asking for a restricted special access program for “the AATIP”, DIA's finding that nothing justified one, and the DIA Director's verdict that the reports were “of limited value to DIA”; with BAASS's 539-page ten-month report." }
+  - { release: 8, file: inc-levelland-1957, top: true }
+  - { release: 8, file: inc-nimitz-2004, why: "BAASS's July 2009 report to DIA calls the Tic Tac “a sentinel case for BAASS”, with a first-person account by the commander of a Marine squadron who flew over the disturbance in the water." }
+  - { release: 8, file: doc-robertson-panel-1953, why: "Six CIA memos of 1952, from the July Washington sightings to Chadwell's request for an ad hoc panel of top-level scientists, about $5,000 through MIT: the panel met in January 1953." }
+  - { release: 8, file: inc-kirtland-1957 }
   - { release: 7, file: inc-western-us-triangle-2026, top: true }
   - { release: 7, file: aawsap, top: true, why: "Ten records add AAWSAP's working files from the BAASS contract (2008–2010): its project management plan, the Project Capella database plan, monthly reports from 2009 and an April 2010 investigation report on the Utah ranch." }
   - { release: 7, file: crash-retrieval, why: "A 1962–64 file of Executive Branch correspondence on recovering U.S. and Soviet space material: public messaging named NASA as the holder of foreign materials, while private correspondence described a parallel plan to exploit them for technical analysis." }
@@ -77,7 +83,7 @@ facts:
   - text: The Department of War, supported by ODNI, releases declassified unresolved-case records in tranches every few weeks. The first tranche was released on May 8, 2026.
     status: documented
     source: https://www.war.gov/UFO/
-  - text: "Seven releases through release 07 (October 2026) have published 478 records: 158 on 8 May, 64 on 22 May, 72 on 12 June, 40 on 10 July, 41 on 7 August, 75 on 18 September and 28 on 23 October 2026. The Department of War contributed 284, the FBI 105, NASA 40 and the CIA 23; the State Department nine, local law enforcement eight, the Department of Energy five, and the ODNI and the Executive Office of the President two each."
+  - text: "Eight releases through release 08 (November 2026) have published 521 records: 158 on 8 May, 64 on 22 May, 72 on 12 June, 40 on 10 July, 41 on 7 August, 75 on 18 September, 28 on 23 October and 43 on 20 November 2026. By the catalog's agency labels, the Department of War contributed 319, the FBI 105, NASA 40 and the CIA 29; the State Department nine, local law enforcement eight, the Department of Energy five, the Executive Office of the President and the “U.S. Government” two each, and the ODNI and an “Intelligence Community Agency” one each."
     status: documented
     source: https://www.war.gov/UFO/
   - text: "Records in the archive are unresolved cases: the government could not make a definitive determination about the nature of the observed phenomena."

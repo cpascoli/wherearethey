@@ -5,6 +5,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR034 — Unresolved UAP Report, Greece, October 2023
+date: 2023-10
 place: { name: Greece, lat: 38.9954, lng: 21.9877 }
 pursue:
   code: DOW-UAP-PR034

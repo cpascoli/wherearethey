@@ -52,6 +52,14 @@ facts:
     status: claimed
     by: david-grusch
     source: v-jre-david-grusch@29:16
+  - text: "BAASS's ten-month report to DIA (July 2009) gives its Capella data warehouse as holding about 237,000 reports: “The Data Warehouse currently contains approximately 237 thousand sighting and investigative reports on UAP events that occurred.”"
+    status: documented
+    source: dow-uap-d172
+  - text: "The same report describes an oral-history project seeking contacts “who have personal first-hand knowledge of the programs involving material obtained from advanced aerospace vehicles of unknown origin.”"
+    status: documented
+    claims: [ recovered-non-human-craft ]
+    stance: context
+    source: dow-uap-d172
 ---
 
 Bigelow Aerospace is the Las Vegas space-habitat company founded by the hotel entrepreneur Robert Bigelow in 1999. Its subsidiary BAASS (Bigelow Aerospace Advanced Space Studies) was the contractor for the Defense Intelligence Agency's AAWSAP program from 2008 to 2012: the DIA's solicitation and original order of September 2008, BAASS's Project Management Plan, its monthly reports, its Utah Ranch Investigation Report of 2010 and its self-assessment of November 2010 are all in the PURSUE releases. Hal Puthoff, whose EarthTech was a BAASS subcontractor, says the company won an open broad area announcement; George Knapp says it hired 50 investigators within weeks, built a database of more than 240,000 cases and made the 2004 Nimitz "Tic Tac" its first case. The biochemist Colm Kelleher worked on its UAP research.

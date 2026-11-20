@@ -5,6 +5,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR048 — Unresolved UAP Report, INDOPACOM, 2024
+date: "2024"
 pursue:
   code: DOW-UAP-PR048
   title: Unresolved UAP Report, INDOPACOM, 2024

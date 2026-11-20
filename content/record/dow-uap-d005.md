@@ -7,6 +7,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-D005 — Mission Report, Arabian Gulf, 2020
+date: "2020"
 place: { name: Mediterranean Sea, lat: 35, lng: 20 }
 pursue:
   code: DOW-UAP-D005

@@ -5,6 +5,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR067 — Multiple Spherical UAP USO near Sub. [CALLSIGN] 2022/03/25 in and out of water
+date: "2022"
 pursue:
   code: DOW-UAP-PR067
   title: Multiple Spherical UAP USO near Sub. [CALLSIGN] 2022/03/25 in and out of water

@@ -5,6 +5,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR045 — Unresolved UAP Report, Middle East, 2020
+date: "2020"
 place: { name: Southern United States, lat: 34.0219, lng: -118.2859 }
 pursue:
   code: DOW-UAP-PR045

@@ -6,6 +6,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR140 — Unresolved UAP Report, Middle East, 2022
+date: "2022"
 pursue:
   code: DOW-UAP-PR140
   title: Unresolved UAP Report, Middle East, 2022

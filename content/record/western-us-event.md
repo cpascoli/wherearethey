@@ -25,7 +25,7 @@ tags:
   - pursue
 name: Western US Event — Western US Event
 date: "2023"
-place: { name: Western United States, lat: 43.3381, lng: -75.3897 }
+place: { name: Western United States, lat: 39.5, lng: -116.5 }
 pursue:
   code: Western US Event
   title: Western US Event

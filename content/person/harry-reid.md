@@ -67,6 +67,15 @@ facts:
     source: v-jre-david-grusch@29:16
     claims: [ recovered-non-human-craft ]
     basis: relayed
+  - text: "In his letter of 24 June 2009 asking the Deputy Secretary of Defense for a restricted special access program, Reid wrote that the program had identified several highly sensitive, unconventional aerospace-related findings, and: “Given the current rate of success, the continued study of these subjects will likely lead to technology advancements that in the immediate near-term will require extraordinary protection.”"
+    status: claimed
+    basis: relayed
+    by: harry-reid
+    source: dow-uap-d183-correspondence-from-senator-harry-reid
+  - text: "DIA's assessment of the request, in November 2009: “In reviewing the deliverables to date and looking ahead to planned production in fiscal year (FY) 2010, DIA cannot find adequate justification to establish a restricted SAP.” DIA added that it was “unaware of any report containing information sufficiently sensitive and vulnerable to require extra protection associated with either ACCM or a restricted SAP”."
+    status: documented
+    stance: disputes
+    source: dow-uap-d185
 bio: "Harry Reid was a Democratic U.S. Senator from Nevada (1987–2017) and Senate Majority Leader (2007–2015), and the politician most responsible for the Pentagon's modern UAP programs."
 ---
 

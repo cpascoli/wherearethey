@@ -1,8 +1,8 @@
 ---
-name: U.S. military UAP reports across CENTCOM (2013–2025)
+name: U.S. military UAP reports across CENTCOM (2013–2026)
 aka: [CENTCOM UAP, Middle East UAP reports, Persian Gulf UAP, Syria UAP, Iraq UAP]
 date: 2013
-end: 2025
+end: 2026
 place: { name: "Persian Gulf, Iraq, Syria, Gulf of Aden and Afghanistan — USCENTCOM", lat: 27.24, lng: 51.2 }
 tags: [military, pursue, international]
 rel:
@@ -99,8 +99,11 @@ rel:
   - [ documented in, dow-uap-pr096 ]
   - [ documented in, dow-uap-pr097 ]
   - [ documented in, dow-uap-pr099 ]
+  - [ documented in, dow-uap-pr166 ]
+  - [ documented in, dow-uap-pr168 ]
+  - [ documented in, dow-uap-pr169 ]
 facts:
-  - text: The PURSUE releases include about 96 unresolved U.S. military UAP records from the U.S. Central Command area — mission reports, range-fouler forms and sensor videos from the Arabian Gulf and Strait of Hormuz, Iraq, Syria, the Gulf of Aden, the Gulf of Oman and Afghanistan, dated from 2013 to 2025.
+  - text: The PURSUE releases include about 99 unresolved U.S. military UAP records from the U.S. Central Command area — mission reports, range-fouler forms and sensor videos from the Arabian Gulf and Strait of Hormuz, Iraq, Syria, the Gulf of Aden, the Gulf of Oman and Afghanistan, dated from 2013 to 2026.
     status: documented
     source: https://www.war.gov/UFO/
   - text: Some of the videos come from a collection AARO located on a classified network after a March 2026 House request; AARO warns that many of those materials lack a substantiated chain of custody, and several carry only uploader-defined titles.
@@ -111,7 +114,7 @@ facts:
     source: dow-uap-d101
 ---
 
-One of the largest regional groups of records in the PURSUE releases comes from the U.S. Central Command area: mission reports, range-fouler forms and sensor videos from U.S. aircraft and drones over the Arabian Gulf and Strait of Hormuz, Iraq, Syria, the Gulf of Aden and Afghanistan, from a 2013 infrared clip to reports filed in 2025. The densest stretch is August to November 2020, with reports and videos from the Gulf every few days.
+One of the largest regional groups of records in the PURSUE releases comes from the U.S. Central Command area: mission reports, range-fouler forms and sensor videos from U.S. aircraft and drones over the Arabian Gulf and Strait of Hormuz, Iraq, Syria, the Gulf of Aden and Afghanistan, from a 2013 infrared clip to a 2026 video released in November 2026. The densest stretch is August to November 2020, with reports and videos from the Gulf every few days.
 
 Most describe brief encounters — small spheres or points of contrast crossing an infrared sensor, or objects the operator judged fast — and few contain more than an operator's estimate of speed or shape. Two sources are mixed here: reports formally submitted to AARO by CENTCOM, often with a mission report paired to the video, and clips AARO found on a classified network, many without a chain of custody. The best-documented single case, the AC-130 gunship sortie over the Gulf of Oman in September 2021, has its own entry.
 

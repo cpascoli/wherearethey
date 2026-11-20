@@ -5,6 +5,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR047 — Unresolved UAP Report, INDOPACOM, 2023
+date: "2023"
 place: { name: Japan, lat: 36.5748, lng: 139.2394 }
 pursue:
   code: DOW-UAP-PR047

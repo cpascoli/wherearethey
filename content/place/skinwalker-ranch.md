@@ -31,6 +31,9 @@ facts:
     source: v-jre-david-grusch@29:16
     claims: [ recovered-non-human-craft ]
     basis: relayed
+  - text: "BAASS's ten-month report to DIA (July 2009) names the Utah ranch, owned by the BAASS administrator, as the main site of its Project Engagement, and describes a three-day visit in June–July 2009 by three observers from the Air Force, Navy and Marine Corps: “One observer reported the presence of a shadowy humanoid figure near the old homestead ahead and felt an u nwelcome presence.” The observers later found fresh cigarettes, energy-drink cans and boot prints at the spot on the mesa where they had seen a light."
+    status: documented
+    source: dow-uap-d172
 ---
 
 Skinwalker Ranch is a 512-acre property in Utah's Uinta Basin with a long local reputation for strange lights, cattle mutilations and other reported phenomena. Robert Bigelow bought it in 1996 and his National Institute for Discovery Science studied it for years; Brandon Fugal acquired it in 2016.

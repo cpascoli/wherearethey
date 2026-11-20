@@ -5,6 +5,7 @@ rel:
 tags:
   - pursue
 name: DOW-UAP-PR032 — Unresolved UAP Report, Syria, October 2024
+date: 2024-10
 place: { name: Syria, lat: 34.6402, lng: 39.0494 }
 pursue:
   code: DOW-UAP-PR032
