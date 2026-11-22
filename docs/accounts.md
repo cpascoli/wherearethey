@@ -1,6 +1,6 @@
 # Accounts and alerts: specification
 
-22 November 2026. **Status: for the owner's review. Nothing here is built.** Companion to [the roadmap](roadmap.md) (0.3, 1.2, 2.7).
+22 November 2026, revised the same day after review. **Status: approved by the owner with these revisions. Step 1 is built in the working tree (22 November) and tested locally; nothing is deployed, and the owner's setup (section 11) and the gates on production (section 15) are still to do.** Companion to [the roadmap](roadmap.md) (0.3, 1.2, 2.7).
 
 Step 1 is specified in full. Later steps are outlined, so that step 1 doesn't get in their way; each gets its own spec.
 
@@ -15,7 +15,7 @@ How to read the claims about services:
 3. **No passwords.** An emailed code first; passkeys, Google and Apple in step 2. Facebook and Reddit are not planned.
 4. **The archive stays static and open.** Nothing needs an account to read. If every account service is down, the archive works.
 5. **The content and the members never mix.** `content/` stays the source of truth for the archive. Member data is never in git, the build, a page's HTML or a deploy preview. What members write is never a source.
-6. **Collect the least.** An email address and what the person asked for. No names, photos, IP addresses or user agents on accounts. Nothing about accounts goes to Google Analytics or the traffic counter.
+6. **Collect the least.** An email address and what the person asked for. No names, photos, IP addresses or user agents on accounts. Nothing that identifies an account goes to Google Analytics or the traffic counter. Links in an email carry one `utm_source`, the same for every reader, so Analytics can tell that a visit came from an alert, never whose.
 7. **A person sends every broadcast.** Scripts make drafts; the owner presses Send.
 
 ## 2. Steps
@@ -23,9 +23,10 @@ How to read the claims about services:
 | Step | What ships | Condition to start |
 |---|---|---|
 | **1** | Email-code sign-up and sign-in, the PURSUE release alert, unsubscribe, delete account | This spec approved |
+| 1b | The weekly digest as a second topic, offered to members and in the sign-up's confirmation, never switched on for them | Step 1 live; the first digest drafted (roadmap 1.1) |
 | 2 | Passkeys (offered after sign-in), Google, then Apple | Step 1 stable through one release alert |
 | 3 | Bookmarks and Follow, private to the member | Step 1 stable |
-| 4 | Email alerts for followed files; more topics (hearings, the weekly digest) | A per-file change list in the build |
+| 4 | Email alerts for followed files; hearing alerts | A per-file change list in the build |
 | 5 | Private "suggest a source or correction" | A review queue the owner has time for |
 | 6 | Public comments | **A separate decision** (section 14) |
 
@@ -33,13 +34,13 @@ How to read the claims about services:
 
 **Goal:** live by **3 December 2026**. Our estimate for Release 9, from the gaps so far, is 4 December to 1 January, most likely around 18 December. It is not an official schedule.
 
-**The promise:** "An email within a day of each PURSUE release, with the files that matter."
+**The promise:** "An email usually within a day of each PURSUE release, with the files that matter." "Usually", because one person sends it and the date isn't known in advance.
 
 **In:** the sign-up block, code sign-in, `/account`, one topic (`pursue`), the draft script for the alert, unsubscribe, deletion, the privacy text.
 
 **Out:** other topics, follows, bookmarks, OAuth, passkeys, profiles, display names, any member-written text, an admin UI.
 
-**Measures:** confirmed subscribers; share of codes sent that are verified; delivery, bounce and complaint rates of the first alert; unsubscribes.
+**Measures:** confirmed subscribers; share of codes sent that are verified; delivery, bounce and complaint rates of the first alert; visits arriving from it; unsubscribes.
 
 ## 4. Screens
 
@@ -54,8 +55,8 @@ One component, never a pop-up (UX review 5.4), in this order of priority:
 ```
 ┌──────────────────────────────────────────────┐
 │ Get the next PURSUE release by email         │
-│ Within a day of each release, the files that │
-│ matter.                                      │
+│ Usually within a day of each release, the    │
+│ files that matter.                           │
 │ [ you@example.com            ] [ Alert me ]  │
 │ Creates your free account (16+). Unsubscribe │
 │ in one click. Privacy                        │
@@ -79,7 +80,8 @@ One component, never a pop-up (UX review 5.4), in this order of priority:
 - Signed in and subscribed: the block is one quiet line. Signed in and not subscribed: one button, no code.
 - The release number comes from `pursueStats`, never typed by hand.
 - The block is drawn below the fold and must not become a page's largest paint. It adds no history entry.
-- Errors are said in place and announced (`aria-live`): wrong code, expired, too many tries, "email is busy, try again later".
+- Errors are said in place and announced (`aria-live`): wrong code, expired, too many tries, "email is busy, try again later". If the address is suppressed, the sign-in succeeds and the block says alerts can't be delivered to it, as `/account` does.
+- From step 1b the confirmation offers the digest with one button. It is never switched on by the sign-up itself.
 
 ### 4.2 `/account`
 
@@ -88,7 +90,7 @@ A standalone page, like `/privacy`: no Analytics, no third-party script or font,
 - **Signed out:** "Sign in or create an account": email, then code. No alert is switched on from here unless its box, unticked by default, is ticked.
 - **Signed in:** the masked address; a switch for "PURSUE releases"; Sign out; Sign out everywhere; Delete account.
 - **Delete:** asks for a fresh code, says what is deleted and what remains (section 9), then signs out.
-- **Suppressed address** (bounce or complaint): says alerts can't be delivered and gives the contact address. It never clears a suppression by itself.
+- **Suppressed address** (bounce or complaint): says alerts can't be delivered and gives the contact address. It never clears a suppression by itself. If Resend also refuses to send sign-in codes to a suppressed address (**to prove**), that member can't sign in at all: the sign-in form then gives the contact address, and the owner deletes the account on request.
 
 The entry point is "Account" under Settings (the cog) and in the More menu, below "PURSUE releases", which stays first.
 
@@ -97,7 +99,7 @@ The entry point is "Account" under Settings (the cog) and in the More menu, belo
 | Email | Sent through | Content |
 |---|---|---|
 | Code | Resend, transactional | Subject "Your Where Are They code" (the code is not in the subject), the code, "expires in 10 minutes", "ignore this if it wasn't you". No links, no tracking. |
-| Release alert | Resend Broadcast, topic `pursue` | What was released, three to five files with one sourced line each, the release's page, why you get this, unsubscribe, the sender's identity and postal address (section 13). |
+| Release alert | Resend Broadcast, topic `pursue` | What was released, three to five files with one sourced line each, the release's page, why you get this, unsubscribe (links carry `utm_source=alert`, the same for everyone), the sender's identity and postal address (section 13). |
 
 From `alerts@wherearethey.info`, Reply-To `wherearetheyinfo@proton.me`. Open and click tracking are off. There is no welcome email.
 
@@ -113,12 +115,14 @@ Resend ──signed webhook──► /api/hooks/resend
 owner's Mac: npm run alert ──► reconcile, then a Broadcast DRAFT ──► owner sends
 ```
 
-- **Better Auth**, pinned to an exact version, with the email OTP plugin. Only our routes are public; they call it server-side. Its catch-all handler is not mounted, so endpoints we don't use don't exist.
-- **Neon**, not Netlify Database: the latter copies production data into each deploy preview. Previews get a separate Neon *project* with no real data, because a branch would copy it too.
+- **Better Auth**, pinned to an exact version, with the email OTP plugin. Only our routes are public; they call it server-side. Its catch-all handler is not mounted, so endpoints we don't use don't exist. In step 1 it gives us the codes and the sessions; we replace its limiter, its routes and its deletion flow. It earns its place in step 2 (passkeys, Google, Apple), and the two things we need from it now were tried on 22 November with version 1.7.27 and its in-memory adapter: the cookie comes out as `Path=/api; HttpOnly; Secure; SameSite=Lax` with no `Domain` (`advanced.defaultCookieAttributes`), and sessions are stored with no IP or user agent (a `databaseHooks.session.create.before` hook). The code is stored hashed, and after three wrong tries it is dead, the right one included. Still to see on Postgres.
+- **Neon**, not Netlify Database: the latter copies production data into each deploy preview. There is one Neon project, production. **The API is off outside production**: previews and branch deploys have no database and no keys, every route answers `404` there, and the block isn't shown.
+- **Handlers are plain functions** (`Request` in, `Response` out) in `api/`, wrapped by one Netlify Function. `npm run dev` mounts the same handlers at `/api/*` with PGlite (Postgres in the Node process) and a fake Resend that prints the code in the terminal. The tests call the handlers directly, on PGlite too. No Docker, no cloud database for development.
+- **A scheduled function, once a day**, purges expired codes, sessions, limit counters and webhook ids (section 9) and retries failed contact syncs and deletions (**to prove**: that our plan runs scheduled functions; otherwise the purge runs at the start of `/api/code`, at most once an hour).
 - **Resend in a team of its own**, so that other projects don't share its quota, contacts, suppression list or keys.
 - **Pages never vary by member.** The browser keeps a non-identifying `wat:member` flag and calls `/api/me` after first paint only when it is set. This also protects the plan's 125,000 function calls a month.
 - `geo.js` excludes `/api/*` and `/account`, so the traffic counter can't tie its visitor code to having an account.
-- `ACCOUNTS_ENABLED` switches the API and the block off without removing the archive.
+- **Two switches.** `ACCOUNTS_ENABLED` turns the API on (production only). `SIGNUP_SHOWN` shows the block and the Account links to everyone; while it is off they show only in a browser where the owner has set a local flag. So the launch gates are run on production, with the real origin, cookie and mail, before any reader sees the form. Either switch off leaves the archive as it is.
 
 ## 6. Data
 
@@ -129,10 +133,10 @@ Our tables:
 ```sql
 create table subscription (
   user_id         text not null references "user"(id) on delete cascade,
-  topic           text not null check (topic in ('pursue')),
-  status          text not null check (status in ('on','off','suppressed')),
+  topic           text not null check (topic in ('pursue')),   -- a migration adds each topic (1b: 'digest')
+  status          text not null check (status in ('on','off')),
   changed_at      timestamptz not null default now(),
-  changed_by      text not null check (changed_by in ('member','email_link','bounce','complaint','owner')),
+  changed_by      text not null check (changed_by in ('member','email_link','owner')),
   primary key (user_id, topic)
 );
 
@@ -149,7 +153,9 @@ create table consent_event (          -- append-only; the proof of consent
 create table mail_contact (           -- the mirror in Resend
   user_id           text primary key references "user"(id) on delete cascade,
   resend_contact_id text unique,
-  synced_at         timestamptz       -- null: needs a sync
+  synced_at         timestamptz,      -- null: needs a sync
+  suppressed_at     timestamptz,      -- the address, not a topic: no alert of any kind is sent
+  suppressed_reason text check (suppressed_reason in ('bounce','complaint','manual'))
 );
 
 create table contact_deletion (       -- survives the user until Resend confirms
@@ -172,7 +178,9 @@ create table webhook_event (
 
 `placement` is the kind of place, never the file. Which file someone signed up from says what they read.
 
-The runtime database role can read and write rows and cannot change the schema. Migrations are run by the owner with another role.
+A suppression belongs to the address, so it is on `mail_contact` and leaves the member's choices in `subscription` as they were.
+
+The runtime database role can read and write rows and cannot change the schema; on `consent_event` it can only insert and read (rows go with the account through the cascade, which runs as the table's owner). Migrations are run by the owner with another role. Deleting an account deletes its consent events: erasure comes before keeping proof.
 
 ## 7. Endpoints
 
@@ -188,6 +196,8 @@ JSON only, `Cache-Control: no-store`, bodies up to 4 KB (the webhook 64 KB). Eve
 | `POST /api/account/code` | none | Sends a code to the session's own address | `202` |
 | `DELETE /api/account` | `code` | Verifies the fresh code; deletes the account; queues and attempts the contact's deletion | `204` |
 | `POST /api/hooks/resend` | signed event | Verifies over the raw body, ignores repeats, applies it | `204`; `400` bad signature |
+
+`placement` and `wording` are checked against the lists the server knows; anything else is `400`. Addresses are trimmed and lower-cased, nothing more.
 
 ## 8. Rules
 
@@ -210,7 +220,9 @@ The IP is `context.ip`, never a header the client can set. Our counters replace 
 **Subscriptions.**
 - The Resend topic's default is **opt-out**, so a contact gets it only when subscribed. Resend can't change this default later.
 - Postgres is the truth for consent. Unsubscribes, bounces and complaints from Resend always win over an older "on".
-- A sync never turns a subscription on again. Only the member does, by an explicit action.
+- A sync never turns a subscription on again. Only the member does, by an explicit action: on our pages, or on Resend's own preferences page (the topic is public), which reaches us as `contact.topics.updated` and is recorded as a consent event with the wording `resend-preferences`.
+- A suppression is set by a permanent bounce, a complaint or `suppression.added`, and cleared only by `suppression.removed`, which is the owner removing it at Resend.
+- A refused request for a code counts toward the limits like any other.
 - Signing in never changes a subscription.
 
 **Sending an alert.** `npm run alert -- pursue 9`:
@@ -228,15 +240,15 @@ The owner sends a test to themself, reads it, then sends from Resend.
 | Email, account id, created date | Neon | The account is deleted |
 | Subscriptions, consent events | Neon | The account is deleted |
 | Sessions | Neon | 90 days without use, sign-out or deletion |
-| Codes | Neon, hashed | Expiry; purged within a day |
+| Codes | Neon, hashed, beside the address they were sent to (a typed address that is never confirmed included) | Expiry; purged within a day |
 | Limit counters | Neon, HMAC only | 2 days |
 | Webhook ids | Neon | 30 days |
 | Contact and topic | Resend | The account is deleted |
 | Delivery logs, suppression entries | Resend | Resend's retention; a suppression remains so we don't mail that address again |
 | Database history | Neon free plan | Up to 6 hours |
-| Backups | Encrypted `pg_dump`, off the repo, before each migration and weekly | 30 days |
+| Backups | Encrypted `pg_dump` on the owner's Mac, outside the repo and any synced folder | 30 days |
 
-After restoring a backup, deletions made since it was taken must be applied again before anything is sent. Export on request is by email in step 1.
+The purges are the daily scheduled function's (section 5). Backups are `npm run backup`: run by a weekly job on the Mac (launchd) and by the migration script before it changes anything; it also deletes dumps older than 30 days. After restoring a backup, deletions made since it was taken must be applied again before anything is sent. Export on request is by email in step 1.
 
 ## 10. Threat model
 
@@ -245,16 +257,16 @@ What we protect, in order: **who is a member** (some may be military, cleared or
 | # | Threat | Response | Left over |
 |---|---|---|---|
 | T1 | Finding out whether someone is a member | Same response and email flow for new and known addresses; sending happens after the response (`waitUntil`); no public profiles or counts per file | Someone who can read the inbox |
-| T2 | Guessing a code | Section 8 | About 1 in 9,000 a year for a targeted address |
+| T2 | Guessing a code | Section 8 | About 1 in 9,000 a year for a targeted address. Someone who asks for codes to a member's address can use up its 10 a day and replace a code in use: a nuisance to one member, who can still write to us |
 | T3 | Using the form to bomb an inbox, or exhaust the 100 codes a day | Per-address and per-IP limits, the breaker, the kill switch; Resend Pro if it happens | Distributed abuse can pause sign-in. The archive is unaffected |
 | T4 | Bots filling the list | No contact and no consent until a code is verified | Bots with real inboxes |
 | T5 | Subscribing someone else | Needs their code | None known |
 | T6 | Cross-site requests | Exact Origin check, JSON only, SameSite, no CORS | A hostile subdomain is same-site; host nothing untrusted on one |
 | T7 | Script injection on our origin. **Today:** the CSP allows inline scripts and any jsDelivr package, and the app builds HTML with `innerHTML` | No member text in step 1; HttpOnly; `/api/me` gives only a masked address; deletion needs a fresh code; `/account` has a strict CSP | Injected script could read a masked address, change a subscription or read what is typed. The CSP must be tightened before step 5 |
-| T8 | **The R2 proxy. Checked:** `/pagefind-mod/*` serves the bucket from our origin, the app imports JavaScript from it, and the proxied response has no CSP. Whoever can write to the bucket can run script as the site | **Before launch:** ship Pagefind's loader and code with the site, proxy only the index data; test that HTML and JS can't be served through the proxy; narrow the rclone token | Altered search data |
+| T8 | **The R2 proxy. Checked:** `/pagefind-mod/*` serves the bucket from our origin, the app imports JavaScript from it, and the proxied response has no CSP. Whoever can write to the bucket can run script as the site | **Before launch: remove the proxy.** A redirect can't filter by content type, so proxying "only the index" would still serve an HTML file put under that path from our origin. Ship Pagefind's loader with the site, versioned like our other scripts, and have it fetch the index and its WebAssembly from the bucket's own address (`basePath`; the bucket must allow it by CORS, and **checked** on 22 November: it sends no such header yet). Delete the `/pagefind-mod/*` redirect; narrow the rclone token. The search page also put the index's excerpts and links into the page as HTML: it now keeps their text and `<mark>`s only, and links only to our pages or `https`. **Done in the working tree on 22 November** (`tests/mod-search.test.mjs`); it must not be deployed before the bucket's CORS rule is set, or the MoD search stops | Altered search results or a broken search. The WebAssembly comes from the bucket but can't touch the page |
 | T9 | Third-party scripts in the app (Analytics, YouTube, X) share the page with the form | No account data in the DOM beyond the field; Analytics' automatic collection of user-provided data confirmed off; `/account` loads none | A compromised vendor could read what is typed into the block |
 | T10 | Secrets read during a build. **Checked:** our plan has no variable scopes, so builds see Functions' secrets | Values set for the Production context only and marked secret; untrusted deploys stay on "require approval" (it is); lockfile and `npm ci`; dependency updates reviewed | Code merged to main runs with the secrets, the Latest bot's PRs included: read the diff outside `content/` and `sources/` before merging |
-| T11 | Real data in previews | A separate empty project and no Resend key; the API refuses to send unless `context.deploy.context` is production | None known |
+| T11 | Real data in previews | No database and no keys outside production; the API answers `404` unless `context.deploy.context` is production | None known |
 | T12 | Forged or replayed webhooks | Signature over the raw body, timestamp tolerance, `svix-id` once | None known |
 | T13 | A stolen Resend key. Contacts need a `full_access` key, which can also send and export the list | Two keys: send-only (domain-restricted) for codes, full access for contacts; never logged; rotation written down | The full key is powerful |
 | T14 | A mistaken or repeated broadcast | Draft only; the count shown; one draft per release; a test first | Human error |
@@ -270,16 +282,19 @@ Never paste a key or connection string into a chat or commit one. Enter them in 
 **Before the build, by 25 November**
 - [ ] Two-factor on Netlify, Neon, Resend, GitHub, DNS and Proton.
 - [ ] Netlify → Billing: check this month's build minutes and what happens past 300 (section 12). Don't switch to a credit plan without doing the sums there.
-- [ ] Neon: project `wherearethey-prod` and a separate `wherearethey-preview`, both AWS us-east-2.
+- [ ] Neon: one project, `wherearethey-prod`, AWS us-east-2. None for previews: the API is off there.
 - [ ] Resend: a team for this site; add `wherearethey.info`; tracking off.
 - [ ] DNS (Netlify): the records Resend shows, and `_dmarc` TXT `v=DMARC1; p=none`.
 - [ ] Resend: segment "Members"; topic "PURSUE releases", **default opt-out**, public.
 - [ ] Decide the open questions (section 13).
 
 **Before launch, by 1 December**
-- [ ] Resend: the two keys; the webhook to `https://wherearethey.info/api/hooks/resend` for `email.bounced`, `email.complained`, `suppression.added`, `contact.updated`, `contact.deleted`, `contact.topics.updated`.
-- [ ] Netlify variables, Production context only, marked secret: `DATABASE_URL`, `BETTER_AUTH_SECRET`, `LIMIT_HMAC_KEY`, `RESEND_SEND_KEY`, `RESEND_CONTACTS_KEY`, `RESEND_WEBHOOK_SECRET`. Not secret: `ACCOUNTS_ENABLED`.
-- [ ] On the Mac, in the Keychain: the migration connection string and the key for `npm run alert`.
+- [ ] Resend: the two keys; the webhook to `https://wherearethey.info/api/hooks/resend` for `email.bounced`, `email.complained`, `suppression.added`, `suppression.removed`, `contact.updated`, `contact.deleted`, `contact.topics.updated`.
+- [ ] Netlify variables, Production context only, marked secret: `DATABASE_URL`, `BETTER_AUTH_SECRET`, `LIMIT_HMAC_KEY`, `RESEND_SEND_KEY`, `RESEND_CONTACTS_KEY`, `RESEND_WEBHOOK_SECRET`. Not secret: `RESEND_TOPIC_PURSUE` and `RESEND_SEGMENT` (the ids of the topic and of the "Members" segment), `ACCOUNTS_ENABLED`, and `SIGNUP_SHOWN` (off until the gates pass; it is read by the build, so changing it needs a deploy).
+- [ ] Neon: two roles. The owner role runs migrations and backups from the Mac; a second role with no rights of its own is the one in the function's `DATABASE_URL` (use the pooled address). `npm run accounts:migrate` creates the tables and gives that role its rights (`ACCOUNTS_RUNTIME_ROLE` = its name).
+- [ ] On the Mac, in the Keychain (`security add-generic-password -a "$USER" -s <name> -w`): `wherearethey-migrate` (the owner role's connection string), `wherearethey-resend` (the full-access key, for `npm run alert`) and `wherearethey-backup` (a passphrase for backups). In the shell profile: `ACCOUNTS_BACKUP_DIR` (outside the repo and any synced folder), `ACCOUNTS_RUNTIME_ROLE`, `RESEND_TOPIC_PURSUE`, `RESEND_SEGMENT` and `ALERT_ADDRESS` (open question 1). Install the weekly job for `npm run accounts:backup`; it needs `pg_dump` (`brew install libpq`).
+- [ ] To see the block before launch, in your own browser's console on the site: `localStorage.setItem('wat:signup', 'true')`.
+- [ ] R2 → the bucket → Settings → CORS policy: allow `GET` and `HEAD` from any origin (the bucket is public already, so this opens nothing; it also keeps the search working on previews). **Do this before the next push**: the T8 fix reads the search index from the bucket directly.
 - [ ] Accept the processing agreements of Neon, Resend and Netlify.
 - [ ] Analytics admin: user-provided data collection off.
 - [ ] Send yourself a code and a test broadcast on Gmail, iCloud and Proton.
@@ -294,12 +309,12 @@ Never paste a key or connection string into a chat or commit one. Enter them in 
 | Netlify (legacy Starter) | 300 build minutes, 125,000 function calls, 100 GB a month; no variable scopes | See below |
 | Apple (step 2) | Developer Program, about $99 a year | Not needed for step 1 |
 
-**Build minutes are already tight.** Netlify's deploy records for 1–22 November add up to about 346 minutes of deploy time: 214 production, 64 previews, 68 branch deploys. That may not equal billed minutes or the billing cycle, so check Billing. This work will add deploys: test locally and push in batches.
+**Build minutes are already tight.** Netlify's deploy records for 1–22 November add up to about 346 minutes of deploy time: 214 production, 64 previews, 68 branch deploys. That may not equal billed minutes or the billing cycle, so check Billing. This work will add deploys: test locally (the dev server runs the whole API) and push in batches. A site built on the Mac and uploaded with the Netlify CLI uses no build minutes; keep that for a month that runs out, since such a deploy doesn't come from a reviewed commit.
 
 ## 13. Open questions for the owner
 
 1. **Postal address in the alerts.** CAN-SPAM requires one in commercial email (a registered PO box or private mailbox qualifies). An alert alone may not be commercial; a request for support may make it so. Recommended: get a mailbox address and don't use a home address.
-2. **Where the controller is established.** The privacy text must name who is responsible. Outside the EU and UK, GDPR Article 27 and its UK equivalent may require a representative, and the local law applies too. Not researched here; take advice.
+2. **Where the controller is established.** The privacy text must name who is responsible. Outside the EU and UK, GDPR Article 27 and its UK equivalent may require a representative, and the local law applies too. Not researched here; take advice. Advice won't arrive by 25 November, so decide whether it holds the launch. Recommended: it doesn't. Step 1 ships with the text naming the person responsible and the contact address, and advice is taken before step 3 or 500 members, whichever is first.
 3. **Minimum age.** 16 is proposed.
 
 None of this is legal advice.
@@ -320,31 +335,37 @@ None of this is legal advice.
 - No account, consent or contact before verification; signing in alone subscribes to nothing.
 - Wrong, expired, replaced and fourth-attempt codes fail; every limit returns 429.
 - A wrong or missing Origin fails on every write.
-- The cookie has exactly the attributes in section 8 (**to prove**: that Better Auth takes `Path=/api`).
-- Session rows have no IP or user agent (**to prove**: through its database hook).
+- The cookie has exactly the attributes in section 8 (tried on 22 November, section 5).
+- Session rows have no IP or user agent (tried the same day).
 - An unsubscribe survives a sign-in and a reconcile; a repeated webhook does nothing.
 - Deletion removes every row and retries the contact.
+- An unknown `placement` or `wording` is refused; the runtime role can't update or delete a consent event.
+- A bounce or complaint marks the address, leaves the member's choices, and turning a topic on returns `409`.
+- The daily purge removes what section 9 says and nothing else.
+- Outside production every route answers `404`.
 - The block works at 390 px, survives a reload at the code step, adds no history entry and isn't the largest paint.
 - The existing tests still pass.
 
-**By hand, before launch**
+**By hand, before launch** (on production, with `SIGNUP_SHOWN` off)
 - The Reddit and X in-app browsers on an iPhone, and Safari: leave for Mail, return, finish.
 - SPF, DKIM and DMARC pass in a received message.
 - A broadcast carries `List-Unsubscribe` and `List-Unsubscribe-Post`, and one click updates Postgres (**to prove**: Resend's documentation doesn't state that it adds them).
 - A contact without the topic doesn't receive a topic broadcast (**to prove**).
-- A preview can neither send nor reach production data.
-- T8 is closed.
+- Whether a suppressed address still gets a sign-in code (**to prove**; if not, the sign-in form gives the contact address).
+- The scheduled function runs (**to prove**).
+- A preview answers `404` on `/api/*` and has no secrets in its environment.
+- T8 is closed: `/pagefind-mod/` on our origin is a 404, an HTML file put in the bucket can't be opened from our origin, and the MoD search works on `/mod-files` and in the top search (Pagefind loading its index from another origin passes locally; to see on production once CORS is set).
 - The privacy page is updated in the same deploy as the form.
 
 ## 16. Build order
 
 | By | Work |
 |---|---|
-| 25 Nov | Spec approved; owner's setup; T8 fixed |
-| 28 Nov | Migrations, API, webhook, tests |
-| 30 Nov | Block, `/account`, privacy text, alert script |
-| 2 Dec | Gates passed |
-| 3 Dec | Live |
+| 25 Nov | Owner's setup; T8 fixed; Better Auth's two points proved (or dropped for step 1) |
+| 28 Nov | Migrations, API, webhook, the daily purge, tests, the dev server's `/api` |
+| 30 Nov | Block, `/account`, privacy text, alert and backup scripts |
+| 2 Dec | API on in production with the block hidden; gates passed there |
+| 3 Dec | `SIGNUP_SHOWN` on: live |
 
 If it slips, cut placements (home, then Latest) before cutting a gate. If Release 9 comes first, launch afterwards; don't rush it out on the day.
 
@@ -352,7 +373,9 @@ If it slips, cut placements (home, then Latest) before cutting a gate. If Releas
 
 Not before: until then "no accounts… no newsletter" is true.
 
-> **Accounts and email alerts.** You don't need an account to read the archive. If you create one, we store your email address, when you created it, the alerts you chose and when you chose them. We use them to sign you in and to send what you asked for, nothing else. We don't ask your name, don't store your IP address with your account, and don't send account information to Google Analytics. To limit abuse we keep a scrambled code of your IP and email address for up to two days. Signing in sets one cookie, needed to keep you signed in. Neon (database), Resend (email) and Netlify (hosting) process this data for us, mainly in the United States. Unsubscribe from any alert in one click. Delete your account at /account; copies in backups expire within 30 days, and our email provider keeps a record of addresses that bounced or reported spam so they aren't mailed again. For a copy of your data or any other request, write to wherearetheyinfo@proton.me.
+> **Accounts and email alerts.** You don't need an account to read the archive. If you create one, we store your email address, when you created it, the alerts you chose and when you chose them. We use them to sign you in and to send what you asked for, nothing else: the account because you asked for it, each alert because you agreed to it, and you can withdraw that at any time. We don't ask your name, don't store your IP address with your account, and don't send anything that identifies your account to Google Analytics; links in our emails are marked as coming from an alert, the same for every reader. To limit abuse we keep a scrambled code of your IP and email address for up to two days. An address that is typed in and never confirmed is deleted within a day. Signing in sets one cookie, needed to keep you signed in. Neon (database), Resend (email) and Netlify (hosting) process this data for us, mainly in the United States. Unsubscribe from any alert in one click. Delete your account at /account; copies in backups expire within 30 days, and our email provider keeps a record of addresses that bounced or reported spam so they aren't mailed again. You can ask for a copy of your data, a correction or its deletion by writing to wherearetheyinfo@proton.me, and if you are in the EU or the UK you can complain to your data protection authority.
+
+It also names who is responsible for the data (open question 2).
 
 The first paragraph's "no accounts, no ads and no newsletter" becomes "no ads", and the table gains Neon and Resend.
 

@@ -56,9 +56,18 @@
   const $ = s => document.querySelector(s);
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const PAGE = 10;
-  const pf = await import('/pagefind-mod/pagefind.js').catch(() => null);
+  // The loader is our own copy; the index is read as data from the R2 bucket's own address (FILES_BASE in netlify.toml:
+  // change both together), or from site/pagefind-mod on the dev server. Nothing in the bucket runs as script here, and
+  // what the index says is treated as text: see `excerpt` and `link` below.
+  const INDEX = globalThis.MOD_INDEX || (/^(localhost|127\.0\.0\.1)$/.test(location.hostname) ? '/pagefind-mod/' : 'https://pub-86f038fb92684457b9683cd2fd44620e.r2.dev/pagefind-mod/');
+  const pf = await import('/assets/mod-search/pagefind.js?v=1.4.0').catch(() => null);
   if (!pf) { $('#mf-status').textContent = 'The search index could not be loaded. Please try again later.'; throw new Error('pagefind-mod missing'); }
-  await pf.options({ excerptLength: 40 });
+  await pf.options({ basePath: INDEX, excerptLength: 40 });
+  // an excerpt is HTML made by Pagefind from the index: keep its text and its <mark>s, nothing else
+  const excerpt = html => [...new DOMParser().parseFromString(html, 'text/html').body.childNodes]
+    .map(n => (n.nodeName === 'MARK' ? `<mark>${esc(n.textContent)}</mark>` : esc(n.textContent))).join('');
+  // a link from the index: only to a page of ours or an https address
+  const link = u => (/^(https:\/\/|\/(?!\/))/.test(u || '') ? esc(u) : '#');
   const sel = { release: new Set(), series: new Set() };
   let results = [], shown = 0, seq = 0;
 
@@ -96,9 +105,9 @@
     shown += batch.length;
     $('#mf-res').insertAdjacentHTML('beforeend', batch.map(d => {
       const m = d.meta;
-      return `<li><div class="t"><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(m.title)}</a></div>
-        <div class="m">${esc(m.desc || '')}${m.dates ? ` · ${esc(m.dates)}` : ''} · <a href="${esc(m.doc)}">released ${esc(m.release)}</a></div>
-        <div class="x">…${d.excerpt}…</div>${m.also ? `<div class="m">Also filed as ${esc(m.also)}</div>` : ''}</li>`;
+      return `<li><div class="t"><a href="${link(d.url)}" target="_blank" rel="noopener">${esc(m.title)}</a></div>
+        <div class="m">${esc(m.desc || '')}${m.dates ? ` · ${esc(m.dates)}` : ''} · <a href="${link(m.doc)}">released ${esc(m.release)}</a></div>
+        <div class="x">…${excerpt(d.excerpt)}…</div>${m.also ? `<div class="m">Also filed as ${esc(m.also)}</div>` : ''}</li>`;
     }).join(''));
     $('#mf-more').hidden = shown >= results.length;
   }

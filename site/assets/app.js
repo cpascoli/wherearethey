@@ -1460,7 +1460,7 @@
         <button class="btn small only-mobile vb-open-side" data-open-side>Filters${ltFiltered() ? ' · on' : ''}</button>
         ${ltFiltered() ? `<p class="lt-filtering">Filtered: ${esc(on.join(' · '))} <button class="link" data-lt-clear>show everything</button></p>` : ''}
       </header>
-      ${ltWhen.has('upcoming') || ltWhen.has('recent') ? `<div class="lt-list">${list.map(card).join('') || `<p class="muted">Nothing matches these filters in the last ${LATEST.windowDays} days.</p>`}</div>` : ''}
+      ${ltWhen.has('upcoming') || ltWhen.has('recent') ? `<div class="lt-list">${list.map((e, i) => card(e) + (i === Math.min(4, list.length - 1) ? signupBlock('latest') : '')).join('') || `<p class="muted">Nothing matches these filters in the last ${LATEST.windowDays} days.</p>`}</div>` : ''}
       ${added.length && ltWhen.has('added') ? `<section class="lt-added">
         <div class="home-kicker">Recently added to the archive</div>
         <h2>New to the archive, from the record</h2>
@@ -1612,9 +1612,12 @@
   });
   // document full text, shown in the top dropdown: the matching pages of each document, each opening the PDF there.
   // Rendered on the next frame, so the click that asked for it is not taken as a click outside the search box.
-  // MoD UFO files: a Pagefind index (site/pagefind-mod, built by scripts/mod-index.mjs) fetched in small pieces per query
+  // MoD UFO files: a Pagefind index (built by scripts/mod-index.mjs) fetched in small pieces per query. The loader is
+  // our own copy (/assets/mod-search); only the index data comes from R2 (or site/pagefind-mod on the dev server), read
+  // as data from the bucket's own address: nothing in the bucket is ever served from, or run as script on, our origin.
   let modPf = null;
-  const modFilesCount = q => (modPf ||= import('/pagefind-mod/pagefind.js').catch(() => null))
+  const MOD_INDEX = KB.filesBase ? `${KB.filesBase.replace(/\/$/, '')}/pagefind-mod/` : '/pagefind-mod/';
+  const modFilesCount = q => (modPf ||= import(`/assets/mod-search/pagefind.js${window.BUILD ? `?v=${window.BUILD}` : ''}`).then(async pf => { await pf.options({ basePath: MOD_INDEX }); return pf; }).catch(() => null))
     .then(pf => pf ? pf.search(q.trim()) : null).then(r => r?.results.length || 0).catch(() => 0);
   async function showDocResults(q, dd = $('#q-results'), input = '#q') {
     requestAnimationFrame(() => { dd.innerHTML = `<div class="dd-head">Searching ${KB.stats.documents} documents for “${esc(q)}”…</div>`; dd.hidden = false; });
@@ -1716,7 +1719,7 @@
     const picks = n => (s.highlights || []).filter(h => h.release === n).length;
     const rows = [...s.releases].reverse().map(r => `<tr${picks(r.n) ? ` class="pu-row" data-pu-row="${r.n}"` : ''}><td>${r.event ? `<a href="${hrefOf(r.event)}" data-goto="${esc(r.event)}">Release ${r.n}</a>` : `Release ${r.n}`}</td><td>${fmtD(r.date)}</td><td class="n">${r.records}</td><td class="n">${r.video}</td><td class="n pu-wide">${r.gap ?? '–'}</td><td class="pu-wide pu-ag">${r.agencies.map(([a, n]) => `<span title="${esc(a)}">${esc(PU_AGENCY[a] || a)} ${n}</span>`).join(' · ')}</td><td class="n">${picks(r.n) ? `<button class="pu-pick" data-pu-row="${r.n}" aria-label="Highlights of release ${r.n}">${picks(r.n)} ›</button>` : ''}</td></tr>`).join('');
     const table = `<table class="pu-table"><thead><tr><th>Release</th><th>Date</th><th class="n">Records</th><th class="n">Video &amp; audio</th><th class="n pu-wide">Gap (days)</th><th class="pu-wide">From</th><th class="n">Picks</th></tr></thead><tbody>${rows}</tbody></table></div>`;
-    const main = `<div class="p-sec" id="sec-pursue"><h4>Every release <span>${s.total} records</span></h4>${stats}${table}<p class="pu-note">Counted from the records on war.gov/UFO, each with a page here. ${s.gaps ? `Releases have come ${s.gaps.min} to ${s.gaps.max} days apart (median ${s.gaps.median}); the window for the next is our estimate, not an official schedule.` : ''}</p></div>`;
+    const main = `<div class="p-sec" id="sec-pursue"><h4>Every release <span>${s.total} records</span></h4>${stats}${table}<p class="pu-note">Counted from the records on war.gov/UFO, each with a page here. ${s.gaps ? `Releases have come ${s.gaps.min} to ${s.gaps.max} days apart (median ${s.gaps.median}); the window for the next is our estimate, not an official schedule.` : ''}</p>${signupBlock('pursue')}</div>`;
     const about = s.about.filter(([id]) => byId.has(id));
     return { main, hl: puHighlights(e), about: about.length ? `<div class="p-sec p-side" id="sec-pursue-about"><h4>What the records concern <span>${about.length} files</span></h4><div class="chips" data-collapse="16">${about.map(([id, n]) => chip(id, ` <span class="n">${n}</span>`)).join('')}</div></div>` : '' };
   }
@@ -1960,6 +1963,7 @@
     for (const k of order) if (S[k]) h.push(S[k]);
     if (S.more) h.push(`<details class="p-more"><summary>More about this file <span>transcript mentions, possible connections, themes</span></summary>${S.more}</details>`);
     h.push(nextStep(e));
+    if (!e.pursueStats?.releases?.length) h.push(signupBlock('file')); // the PURSUE explainer has it under its table
     h.push(`<div class="p-edit"><span>File ${fileNo(e)} · ${e.type === 'claim' ? `${e.assertions.length} statements` : nFacts ? `${nDoc} of ${nFacts} statements documented` : 'no statements filed'}</span>Edit <code>${esc(e.file)}</code><button class="link" data-copy="${esc(e.file)}">copy path</button></div>`);
     return h.join('');
   }
@@ -2881,6 +2885,7 @@
             <p class="home-more"><a href="/latest" data-home-view="latest">See everything on Latest →</a> · <a href="/feed.xml" target="_blank" rel="noopener">RSS feed</a></p>
           </section>
         </div>
+        ${signupBlock('home')}
 
         ${(EXPLORE.stories || []).length ? `<section class="home-sec">
           <div class="home-kicker">Start with a story</div>
@@ -3152,6 +3157,94 @@
   // From the home page into Explore: start clean every time (no leftover type/theme/year filters or hidden
   // files) and make the chosen file the first step of a trail. "Official sources only" stays on unless the
   // file itself is outside the criteria, which would otherwise hide it.
+  // ───────────── the sign-up block (docs/accounts.md, section 4.1) ─────────────
+  // One component, drawn in place and never as a pop-up: on the PURSUE explainer, at the foot of a file, on Latest and
+  // on the home page. An email address, then the emailed code, creates the account and switches the release alert
+  // on. It talks to /api only, adds no history entry, and sends nothing to Analytics. The words a person agrees to
+  // are versioned: when the promise or the small print below changes, add a version here and to WORDINGS in api/app.mjs.
+  const SU_WORDING = '2026-12-a';
+  // shown to everyone once the build says so (SIGNUP_SHOWN); before that only on the dev server, or in a browser
+  // where the owner has set localStorage "wat:signup" to true
+  const SU_ON = !!KB.signup || store.get('signup', false) === true || /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+  let suMe = null, suJust = false; // what /api/me said; whether the alert was switched on in this visit
+  let su = (() => { const v = visit.get('su', null); return v && v.step === 'code' && Date.now() - v.at < 600000 ? v : { step: 'form' }; })(); // the code step survives a reload for 10 minutes
+  const suKeep = () => visit.set('su', su.step === 'code' ? { step: 'code', email: su.email, placement: su.placement, at: su.at, sent: su.sent } : null);
+  const suRelease = () => { const s = byId.get('pursue')?.pursueStats; return s?.releases?.length ? (s.next ? s.next.n : s.releases.at(-1).n + 1) : null; };
+  const suMask = email => String(email).replace(/^(.)[^@]*/, '$1…');
+  const suApi = (method, path, body) => fetch(path, { method, credentials: 'same-origin', headers: body ? { 'content-type': 'application/json' } : {}, body: body ? JSON.stringify(body) : undefined })
+    .then(async r => ({ status: r.status, body: await r.json().catch(() => null) })).catch(() => ({ status: 0, body: null }));
+  const SU_ERR = { email: "That doesn't look like an email address.", 'too-many': 'Too many tries for now. Wait a few minutes and try again.', busy: 'Email is busy, try again later.',
+    invalid: "That code isn't right. Check the latest email.", expired: 'That code has expired. Send a new one.', attempts: 'Too many tries with that code. Send a new one.',
+    suppressed: "Alerts can't be delivered to your address.", off: "Sign-up isn't available right now. Please try again later." };
+  const suSay = r => SU_ERR[r.body?.error] || SU_ERR.off;
+  const suWait = () => Math.max(0, 60 - Math.floor((Date.now() - (su.sent || 0)) / 1000));
+  const suClock = n => `0:${String(n).padStart(2, '0')}`;
+  function suInner() {
+    const err = su.error ? `<p class="su-err" role="alert">${esc(su.error)}</p>` : '';
+    const n = suRelease(), head = '<h4>Get the next PURSUE release by email</h4><p class="su-p">Usually within a day of each release, the files that matter.</p>';
+    if (suMe?.signedIn) {
+      if (suMe.suppressed) return `<p class="su-quiet">Alerts can't be delivered to ${esc(suMe.maskedEmail)}. <a href="/account">Your account</a></p>`;
+      if (suMe.topics?.pursue) return `<p class="su-quiet"><span class="su-ok">✓</span> ${suJust ? `You'll hear from us when ${n ? `Release ${n}` : 'the next release'} is out.` : 'You get an email when a PURSUE release is out.'} <a href="/account">Manage your account</a></p>`;
+      return `${head}<div class="su-form"><button class="btn primary" data-su-on>Alert me</button><span class="su-small">Signed in as ${esc(suMe.maskedEmail)} · <a href="/account">Account</a></span></div>${err}`;
+    }
+    if (su.step === 'code') return `<h4>Enter the 8-digit code sent to ${esc(suMask(su.email))}</h4>
+      <form class="su-form" data-su-form="code" novalidate><input name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="9" placeholder="1234 5678" aria-label="The 8-digit code" required><button class="btn primary">Confirm</button></form>${err}
+      <p class="su-small">Use the latest email · <button class="link" data-su-again${suWait() ? ' disabled' : ''}>${suWait() ? `Send again in ${suClock(suWait())}` : 'Send again'}</button> · <button class="link" data-su-change>Change address</button></p>`;
+    return `${head}<form class="su-form" data-su-form="email" novalidate><input type="email" name="email" autocomplete="email" placeholder="you@example.com" aria-label="Your email address" required><button class="btn primary">Alert me</button></form>${err}
+      <p class="su-small">Creates your free account (16+). Unsubscribe in one click. <a href="/privacy">Privacy</a></p>`;
+  }
+  function signupBlock(placement) { return SU_ON ? `<section class="su" data-su="${placement}" aria-live="polite">${suInner()}</section>` : ''; }
+  // redraw every block on the page after a change of state; `focus` puts the cursor in the block that was used
+  function suDraw(focus) {
+    suKeep();
+    for (const el of $$('.su')) el.innerHTML = suInner();
+    if (focus?.isConnected) focus.querySelector('input')?.focus({ preventScroll: true });
+  }
+  let suBusy = false;
+  async function suDo(el, work) { // one request at a time; the button says so
+    if (suBusy) return;
+    suBusy = true; su.error = '';
+    const b = el.querySelector('button.primary'); if (b) b.disabled = true;
+    try { await work(); } finally { suBusy = false; suDraw(el); }
+  }
+  const suSend = email => suApi('POST', '/api/code', { email });
+  if (SU_ON) {
+    document.addEventListener('submit', e => {
+      const f = e.target.closest?.('[data-su-form]'); if (!f) return;
+      e.preventDefault();
+      const el = f.closest('.su');
+      if (f.dataset.suForm === 'email') {
+        const email = f.elements.email.value.trim();
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@.]+$/.test(email)) { su.error = SU_ERR.email; return suDraw(el); }
+        suDo(el, async () => {
+          const r = await suSend(email);
+          if (r.status === 202) su = { step: 'code', email, placement: el.dataset.su, at: Date.now(), sent: Date.now() }; else su.error = suSay(r);
+        });
+      } else {
+        const code = f.elements.code.value.replace(/\D/g, '');
+        if (code.length !== 8) { su.error = 'The code has 8 digits.'; return suDraw(el); }
+        suDo(el, async () => {
+          const r = await suApi('POST', '/api/session', { email: su.email, code, subscribe: true, placement: su.placement || el.dataset.su, wording: SU_WORDING });
+          if (r.status === 200) { suMe = r.body; suJust = !!r.body.topics?.pursue; store.set('member', true); su = { step: 'form' }; } else su.error = suSay(r);
+        });
+      }
+    });
+    document.addEventListener('click', e => {
+      const el = e.target.closest?.('.su'); if (!el) return;
+      if (e.target.closest('[data-su-change]')) { su = { step: 'form' }; suDraw(el); }
+      else if (e.target.closest('[data-su-again]')) suDo(el, async () => { const r = await suSend(su.email); if (r.status === 202) su.sent = Date.now(); else su.error = suSay(r); });
+      else if (e.target.closest('[data-su-on]')) suDo(el, async () => {
+        const r = await suApi('PUT', '/api/subscriptions/pursue', { on: true, placement: el.dataset.su, wording: SU_WORDING });
+        if (r.status === 200) { suMe = r.body; suJust = true; } else if (r.status === 401) { suMe = null; store.set('member', false); } else su.error = suSay(r);
+      });
+    });
+    // the countdown on "Send again": only its own text changes, so what is being typed stays
+    setInterval(() => { if (su.step !== 'code') return; for (const b of $$('[data-su-again]')) { const w = suWait(); b.disabled = !!w; b.textContent = w ? `Send again in ${suClock(w)}` : 'Send again'; } }, 1000);
+    // Pages are the same for everyone: a browser that has signed in before asks who it is after the first paint
+    if (store.get('member', false)) setTimeout(() => suApi('GET', '/api/me').then(r => { if (r.status !== 200) return; suMe = r.body; if (!r.body.signedIn) store.set('member', false); suDraw(); }), 1500);
+    for (const a of $$('[data-account]')) a.hidden = false;
+  }
+
   // The footer every page ends with: the copyright and where to follow the project. What the archive is belongs on
   // About; privacy and cookies are under Settings.
   function siteFoot(placement, cls = 'site-foot') {

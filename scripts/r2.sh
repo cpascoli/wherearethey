@@ -7,7 +7,8 @@
 #   npm run r2:pull     download everything from R2 into library/ (e.g. on a new machine)
 #   npm run r2:check    compare local and remote without transferring
 #   npm run r2:index    rebuild the MoD UFO files search index (scripts/mod-index.mjs) with PDF links to R2 and
-#                       sync it to R2 under pagefind-mod/ (Netlify proxies /pagefind-mod/* there; see netlify.toml)
+#                       sync it to R2 under pagefind-mod/ (data only; pages fetch it from the bucket, which must allow
+#                       our origin by CORS; the loader is site/assets/mod-search/pagefind.js: commit it when it changes)
 #
 # One-time setup: an rclone remote named "r2" (override with R2_REMOTE) and a bucket
 # named "wherearethey" (override with R2_BUCKET). See README → "Heavy files (R2)".

@@ -106,5 +106,10 @@ for (const pg of out) {
 fs.rmSync(OUT, { recursive: true, force: true });
 await index.writeFiles({ outputPath: OUT });
 await pagefind.close();
+// The loader ships with the site (committed, so it is reviewed like our own code); the bucket holds data only.
+// Pages read the index from the bucket's own address and never run or serve anything from it (docs/accounts.md, T8).
+fs.mkdirSync(path.join(ROOT, 'site/assets/mod-search'), { recursive: true });
+fs.copyFileSync(path.join(OUT, 'pagefind.js'), path.join(ROOT, 'site/assets/mod-search/pagefind.js'));
+for (const f of fs.readdirSync(OUT)) if (/\.(js|css)$/.test(f)) fs.rmSync(path.join(OUT, f));
 const size = dir => fs.readdirSync(dir, { withFileTypes: true }).reduce((a, e) => a + (e.isDirectory() ? size(path.join(dir, e.name)) : fs.statSync(path.join(dir, e.name)).size), 0);
 console.log(`MoD index: ${pages.toLocaleString('en-US')} pages from ${files.length - skipped} files (${blank.toLocaleString('en-US')} blank or boilerplate-only and ${dups.toLocaleString('en-US')} duplicate pages left out; ${skipped} files not OCR'd), ${(size(OUT) / 1e6).toFixed(1)} MB in site/pagefind-mod — ${Date.now() - t0} ms`);

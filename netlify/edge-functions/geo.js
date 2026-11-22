@@ -18,5 +18,6 @@ export default async (request, context) => {
   return new Response(html, { status: res.status, headers });
 };
 
-// every page (each view and file has its own HTML page); static data and assets skip the function
-export const config = { path: '/*', excludedPath: ['/assets/*', '/data/*', '/sitemap.xml', '/robots.txt', '/__seen'] };
+// every page (each view and file has its own HTML page); static data and assets skip the function. So do the accounts
+// API and /account: the traffic count must never be able to tie a visitor to having an account (docs/accounts.md).
+export const config = { path: '/*', excludedPath: ['/assets/*', '/data/*', '/sitemap.xml', '/robots.txt', '/__seen', '/api/*', '/account'] };

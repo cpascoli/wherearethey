@@ -26,7 +26,20 @@ function resolve(urlPath) {
   return file;
 }
 
+// The accounts API, as in production but on Postgres inside this process (kept in .cache/accounts-db) and with the
+// codes printed here instead of emailed (api/serve.mjs). Started on the first /api request.
+let api;
+const accountsApi = () => (api ||= import('../api/dev.mjs').then(async m => {
+  const origin = `http://localhost:${PORT}`;
+  const { app } = await m.development({ origin, dir: path.join(ROOT, '.cache', 'accounts-db') });
+  return m.nodeListener(app, origin);
+}));
+
 const server = http.createServer((req, res) => {
+  if (req.url.startsWith('/api/')) {
+    accountsApi().then(h => h(req, res)).catch(e => { console.error('accounts API:', e.message); api = null; res.writeHead(500); res.end(); });
+    return;
+  }
   if (req.url === '/__events') {
     res.writeHead(200, { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache', Connection: 'keep-alive' });
     res.write(': connected\n\n');

@@ -27,6 +27,21 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
 
+# /account (docs/accounts.md, 4.2) runs under a policy of its own, on top of the one above (a browser enforces both):
+# only our own files, no inline script or style, nothing from another site, no framing. Keep ACCOUNT_CSP in
+# tests/helpers.mjs the same: the UI tests load the page under it.
+[[headers]]
+  for = "/account"
+  [headers.values]
+    Content-Security-Policy = "default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+    Cache-Control = "no-store"
+    X-Robots-Tag = "noindex"
+# the API's answers are never cached, by anything
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Cache-Control = "no-store"
+
 # The app's code and data are requested with a content hash (?v=…, scripts/pages.mjs), so a deploy changes their
 # URLs: data can be kept for a year. Pages themselves are never cached (the geo edge function marks them no-store).
 [[headers]]
@@ -46,11 +61,9 @@
     Cache-Control = "no-store"
 
 # The MoD UFO files search index (scripts/mod-index.mjs, ~37,000 small files) lives on R2, uploaded with
-# `npm run r2:index`, so the Netlify build stays fast; served from our own origin for the /mod-files page and the app.
-[[redirects]]
-  from = "/pagefind-mod/*"
-  to = "https://pub-86f038fb92684457b9683cd2fd44620e.r2.dev/pagefind-mod/:splat"
-  status = 200
+# `npm run r2:index`, so the Netlify build stays fast. The /mod-files page and the app fetch it from the bucket's own
+# address (FILES_BASE; the bucket allows our origin by CORS) with the loader in /assets/mod-search. It is NOT proxied
+# through our origin: a proxy would serve whatever is in the bucket, HTML and scripts included, as wherearethey.info.
 
 # removed duplicates: old links point to the version we kept
 [[redirects]]

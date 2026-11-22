@@ -28,7 +28,7 @@ Baselines are from Google Analytics for the first four weeks; targets are for th
 | Goal | Measure | Baseline | Target, end of April | Source |
 |---|---|---|---|---|
 | Reach | Users per month; sessions from assistants, Reddit and Google | 1,043; 310, 135, 37 | 5,000 | GA, Search Console, `npm run traffic` once trustworthy |
-| Return | Share of a weekly cohort back the next week; digest subscribers; open and click rate | 2–4%; 0 | 10%; 500 | GA, the accounts database, Resend |
+| Return | Share of a weekly cohort back the next week; digest subscribers; visits arriving from an alert or digest | 2–4%; 0 | 10%; 500 | GA (one `utm_source` per email, the same for every reader; open and click tracking are off), the accounts database |
 | Depth | Views per user; engagement time; share of visits that play a video or open a second file | 2.2; 37 s; not exported | 3; 60 s | GA events already sent (`select_content`, `video_start`) |
 | Conversion | Share of visitors who sign up; home page bounce | 0; 60% | 2%; 45% | Sign-ups from the accounts database, the rest from GA key events (0.7) |
 | Income | Monthly recurring support; affiliate revenue; share of cash costs ($200 a month) covered | 0; 0; 0% | First supporters; cash costs covered by month 12 | Payment provider, Amazon |
@@ -41,7 +41,7 @@ Nothing later works without these.
 |---|---|---|
 | 0.1 | **Diagnose the search drop.** Search Console: Pages report (indexed vs "crawled, not indexed"), URL Inspection with the rendered view on a person, a video and a claim page, and the crawl stats around 24–26 October. | It decides whether the fix is technical (rendering, the loader) or simply patience. Google is 3% of sessions, so this no longer blocks the rest. |
 | 0.2 | **Make the traffic counter trustworthy.** Separate crawl-shaped visitors (one load, no assets or data fetched, deep landing page) from readers, for example by counting a visitor as a person only once the app has booted. Make `npm run traffic` fast: it took 25 minutes for three days of records. | Analytics misses visitors who decline or block it; the counter should cross-check it, and today its "people" figure is mostly a crawler. |
-| 0.3 | **Email sign-up that creates an account** (decided 22 November; [specification](accounts.md), step 1): one field and an emailed code, with a concrete promise: **an alert within a day of each PURSUE release, with the files that matter**. Built on our own accounts, with Resend for sending; hearing alerts and the weekly digest follow as separate subscriptions on the same account. In the foot of every file and video, on the PURSUE explainer, Latest and the home page. Live by 3 December, with the privacy page updated in the same deploy. | The single largest gap for returning visitors, and the base for follows, bookmarks and contributions. Most ChatGPT and Reddit visitors land on a deep page, so the sign-up must be there. |
+| 0.3 | **Email sign-up that creates an account** (decided 22 November; [specification](accounts.md), step 1): one field and an emailed code, with a concrete promise: **an alert usually within a day of each PURSUE release, with the files that matter**. Built on our own accounts, with Resend for sending; the weekly digest follows as the second subscription on the same account (step 1b), hearing alerts later. In the foot of every file and video, on the PURSUE explainer, Latest and the home page. Live by 3 December, with the privacy page updated in the same deploy. | The single largest gap for returning visitors, and the base for follows, bookmarks and contributions. Most ChatGPT and Reddit visitors land on a deep page, so the sign-up must be there. |
 | 0.4 | **A proper 404 page**: "not found", search, and the nearest matching files. | Wrong links currently land on the home page with no explanation. |
 | 0.5 | **Legal basics**: a copyright and corrections contact on About, a licence file (code and content separately), an affiliate disclosure line. | Needed before any income, and cheap. |
 | 0.6 | **CI**: run the full build on every pull request; make dangling references errors. | The daily bot opens pull requests with no automated gate beyond `check:news`. |
@@ -54,17 +54,17 @@ Nothing later works without these.
 ## Phase 1: reasons to return (to end of January 2027)
 
 ### 1.1 The weekly digest
-One email a week, assembled from Latest: the three to five items that mattered, one "moment of the week" with its clip link, what was newly filed, and the next scheduled hearing. Draft it from `content/news/` and `added.json`; a person approves and sends. It is its own subscription on the account: people who signed up for release alerts are asked, never added. Count returning visitors properly by adding a "seen in a previous week" flag to the monthly counter record.
+One email a week, assembled from Latest: the three to five items that mattered, one "moment of the week" with its clip link, what was newly filed, and the next scheduled hearing. Draft it from `content/news/` and `added.json`; a person approves and sends. It is its own subscription on the account ([specification](accounts.md), step 1b), needing only the sign-up to be live, and is offered in the sign-up's confirmation: people who signed up for release alerts are asked, never added. Count returning visitors properly by adding a "seen in a previous week" flag to the monthly counter record.
 
 The digest is also the product that income is built on (Phase 3): the support request goes in every issue, and the supporter tier is a paid level of the same list.
 
 ### 1.2 Accounts: sign-in, bookmarks and follows
 Brought forward from gate 3 on 22 November, in the steps of [the specification](accounts.md), one at a time:
 
-1. the sign-up and release alert (0.3);
+1. the sign-up and release alert (0.3), then the weekly digest as a second subscription (step 1b, with 1.1);
 2. passkeys, Google, then Apple;
 3. bookmarks and "Follow" on a person, case or claim, private to the member;
-4. alerts for followed files, and more topics (hearings, the digest).
+4. alerts for followed files, and hearing alerts.
 
 Step 4 needs a per-file change list from the build ("3 new facts, 1 new video moment"): `lastmod.json` also changes when only wording or rendering does. We don't record which file someone signed up from, as it says what they read.
 

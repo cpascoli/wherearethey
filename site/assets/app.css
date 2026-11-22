@@ -1478,3 +1478,24 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
   .pu-car .hc-track { order: 1; min-width: 0; }
   .pu-car .dv-nav.hc-nav { order: 2; justify-content: center; margin-top: 12px; }
 }
+
+/* ── the sign-up block (docs/accounts.md, 4.1): one component, the same in a file's foot, on Latest, the home page
+   and the PURSUE explainer. Fields are 16px so iOS doesn't zoom. ── */
+.su { margin-top: 26px; padding: 16px 18px; border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 6px; background: var(--panel-2); max-width: 620px; }
+.su h4 { margin: 0 0 4px; font-size: 16px; font-weight: 600; text-transform: none; letter-spacing: 0; color: var(--text); display: block; }
+.su-p { margin: 0 0 12px; color: var(--muted); font-size: 14px; line-height: 1.45; }
+.su-form { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 10px 0 0; }
+.su-form input { flex: 1 1 200px; min-width: 0; font: inherit; font-size: 16px; padding: 9px 11px; background: var(--panel); color: var(--text); border: 1px solid var(--border); border-radius: 6px; }
+.su-form input:focus { outline: none; border-color: var(--accent); }
+.su-form input[name="code"] { flex: 0 1 190px; letter-spacing: .12em; font-variant-numeric: tabular-nums; }
+.su-form .btn { font-size: 15px; padding: 9px 16px; }
+.su-form .btn:disabled { opacity: .6; cursor: default; }
+.su-small { margin: 10px 0 0; font-size: 12.5px; color: var(--muted); line-height: 1.5; }
+.su-small .link { font-size: inherit; }
+.su-small .link:disabled { color: var(--muted); cursor: default; }
+.su-err { margin: 8px 0 0; font-size: 13.5px; color: var(--disputed, #e07a5f); }
+.su-quiet { margin: 0; font-size: 14px; color: var(--muted); }
+.su:has(> .su-quiet:only-child) { background: none; border-color: transparent; border-left-color: var(--border); padding: 4px 14px; }
+.su-ok { color: var(--accent); font-weight: 600; }
+.home-wrap > .su { margin-top: 34px; }
+.lt-list > .su { margin-top: 0; max-width: none; }
