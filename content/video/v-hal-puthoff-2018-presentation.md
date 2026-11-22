@@ -30,6 +30,10 @@ moments:
     text: "Puthoff on To The Stars Academy's principals: Tom DeLonge, the Blink-182 rock star with “a lifelong interest in the UFO area”, was “the action-oriented person” who asked why not set something up and make this more available to the public."
     speaker: hal-puthoff
     refs: [ tom-delonge, to-the-stars ]
+  - t: "29:51"
+    text: "Puthoff introduces two more of To The Stars Academy's principals: Jim Semivan, with a 25-year career in the CIA's Directorate of Operations, and Steve Justice, who had just retired as program director for billion-dollar programs at Lockheed Martin's Skunk Works."
+    speaker: hal-puthoff
+    refs: [ jim-semivan, steve-justice, to-the-stars ]
   - t: "34:49"
     text: "Puthoff notes that Garry Nolan's genome analysis showed the Atacama skeleton to be human, not evidence of ET."
     speaker: hal-puthoff

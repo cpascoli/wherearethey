@@ -27,6 +27,9 @@ facts:
     status: claimed
     basis: first-hand
     source: dow-uap-d206
+  - text: "Wimmer's and Thoren's reports both list a fifth man aboard, flight engineer Charlie Grugan, who filed no report of his own; Colman, who wrote that he was in the pilot's compartment with Thoren, Ware and Wimmer, is not in either list of the flight crew."
+    status: documented
+    source: dow-uap-d206
   - text: "The Air Force's record card for the case, on a later Foreign Technology Division form, gives the observation as “ground & air visual” and its conclusion as “Lenticular Cloud.”"
     status: documented
     stance: disputes
