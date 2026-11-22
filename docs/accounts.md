@@ -350,7 +350,7 @@ None of this is legal advice.
 **By hand, before launch** (on production, with `SIGNUP_SHOWN` off)
 - The Reddit and X in-app browsers on an iPhone, and Safari: leave for Mail, return, finish.
 - SPF, DKIM and DMARC pass in a received message.
-- A broadcast carries `List-Unsubscribe` and `List-Unsubscribe-Post`, and one click updates Postgres (**to prove**: Resend's documentation doesn't state that it adds them).
+- A broadcast carries `List-Unsubscribe` and `List-Unsubscribe-Post`, and one click updates Postgres. **Passed on 22 November** with the first test broadcast (Release 8, to the owner only): SPF, DKIM and DMARC pass, both headers are present, and the unsubscribe reached Postgres through the webhook within seconds. It also showed that Resend's unsubscribe page marks the whole contact "unsubscribed", so switching an alert back on now clears that mark.
 - A contact without the topic doesn't receive a topic broadcast (**to prove**).
 - Whether a suppressed address still gets a sign-in code (**to prove**; if not, the sign-in form gives the contact address).
 - The scheduled function runs (**to prove**).

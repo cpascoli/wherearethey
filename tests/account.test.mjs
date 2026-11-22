@@ -86,6 +86,7 @@ test('/account under its own policy: sign in without an alert, switch it on and 
   await p.$eval('#ac form', f => f.requestSubmit());
   await p.waitForSelector('#ac .ac-switch');
   assert.match(await text(p, '#ac'), /Signed in as m…@example\.com/);
+  assert.deepEqual(await p.$eval('#ac .ac-badge', el => [el.textContent, /^rgb\(/.test(getComputedStyle(el).backgroundColor), getComputedStyle(el).backgroundColor !== 'rgba(0, 0, 0, 0)', document.images.length]), ['M', true, true, 0], 'a letter on a colour, no picture');
   assert.equal(await p.$eval('#ac .ac-switch', b => b.getAttribute('aria-checked')), 'false');
   const { app, mail } = await accounts(), q = app.q;
   assert.equal((await q`select 1 from subscription where user_id = (select id from "user" where email = ${email})`).length, 0);

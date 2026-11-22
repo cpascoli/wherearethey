@@ -303,10 +303,10 @@ test('switching an alert on again also clears the "unsubscribed" mark Resend set
   const fetch = async (url, init) => { calls.push(`${init.method} ${new URL(url).pathname} ${init.body || ''}`); return new Response(JSON.stringify({ id: 'c1' }), { status: 200 }); };
   const mail = resendMail({ sendKey: 's', contactsKey: 'c', topics: { pursue: 't1' }, segment: 'seg', fetch });
   assert.equal(await mail.syncContact({ email: 'a@example.com', contactId: 'c1', on: { pursue: true } }), 'c1');
-  assert.deepEqual(calls, ['PATCH /contacts/c1/topics {"topics":[{"id":"t1","subscription":"opt_in"}]}', 'PATCH /contacts/c1 {"unsubscribed":false}']);
+  assert.deepEqual(calls, ['PATCH /contacts/c1/topics [{"id":"t1","subscription":"opt_in"}]', 'PATCH /contacts/c1 {"unsubscribed":false}']);
   calls.length = 0;
   await mail.syncContact({ email: 'a@example.com', contactId: 'c1', on: { pursue: false } });
-  assert.deepEqual(calls, ['PATCH /contacts/c1/topics {"topics":[{"id":"t1","subscription":"opt_out"}]}']);
+  assert.deepEqual(calls, ['PATCH /contacts/c1/topics [{"id":"t1","subscription":"opt_out"}]']);
   calls.length = 0;
   await mail.syncContact({ email: 'a@example.com', on: { pursue: true } });
   assert.deepEqual(calls, ['POST /contacts {"email":"a@example.com","unsubscribed":false,"segments":[{"id":"seg"}],"topics":[{"id":"t1","subscription":"opt_in"}]}']);

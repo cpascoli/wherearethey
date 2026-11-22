@@ -49,7 +49,7 @@ export function resendMail({ sendKey, contactsKey, topics = {}, segment, fetch =
           contactId = (await call(contactsKey, 'GET', `/contacts/${encodeURIComponent(email)}`)).id;
         }
       }
-      await call(contactsKey, 'PATCH', `/contacts/${contactId}/topics`, { topics: topicList(on) });
+      await call(contactsKey, 'PATCH', `/contacts/${contactId}/topics`, topicList(on)); // the body is the bare list: Resend answers 422 to { topics: [...] } (tried on 22 November)
       // Resend's unsubscribe page also marks the whole contact "unsubscribed", which blocks every broadcast whatever
       // the topics say. A member who switches an alert on again, on our pages, has undone that.
       if (Object.values(on).some(Boolean)) await call(contactsKey, 'PATCH', `/contacts/${contactId}`, { unsubscribed: false });

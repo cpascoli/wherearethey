@@ -35,6 +35,15 @@
   };
   const say = r => ERR[r.body?.error] || "That didn't work. Please try again later.";
   const mask = email => String(email).replace(/^(.)[^@]*/, '$1…');
+  // A badge to tell accounts apart at a glance: the first letter of the address, on a colour worked out from what
+  // /api/me gives us (the masked address). No picture is stored or fetched from anywhere. The colour is set through
+  // the style object, which the page's policy allows; a style attribute in markup it would refuse.
+  function badge(masked) {
+    let n = 0; for (const ch of String(masked)) n = (n * 31 + ch.codePointAt(0)) % 360;
+    const el = h('span.ac-badge', { 'aria-hidden': 'true' }, (String(masked).match(/[a-z0-9]/i)?.[0] || '?').toUpperCase());
+    el.style.backgroundColor = `hsl(${n} 45% 38%)`;
+    return el;
+  }
   const mailto = () => h('a', { href: `mailto:${CONTACT}` }, CONTACT);
 
   let me = null, error = '', busy = false;
@@ -103,7 +112,7 @@
       me.suppressed && h('div.ac-card.ac-warn', {}, h('h2', {}, "Alerts can't be delivered to this address"),
         h('p', {}, 'An email to you bounced, or one was reported as spam, so our email provider no longer sends to this address. If that is a mistake, write to ', mailto(), '.')),
       h('div.ac-card', {},
-        h('p', {}, 'Signed in as ', h('b', {}, me.maskedEmail)),
+        h('p.ac-who', {}, badge(me.maskedEmail), h('span', {}, 'Signed in as ', h('b', {}, me.maskedEmail))),
         h('div.ac-row', {},
           h('div', {}, h('b', {}, 'PURSUE releases'), h('small', {}, 'An email usually within a day of each release, with the files that matter.')),
           h('button.ac-switch', { type: 'button', role: 'switch', 'aria-checked': String(on), 'aria-label': 'PURSUE release alerts', disabled: me.suppressed && !on, onclick: () => act(async () => {
