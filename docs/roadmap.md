@@ -1,6 +1,6 @@
 # Where Are They: roadmap
 
-15 November 2026, revised 16 November with the Google Analytics baseline. Based on [the project review](2026-11-15-project-review.md). The design of the interface changes (home page, file pages, phone layout, where the sign-up goes) is in [the UX review](2026-11-16-ux-review.md). Goals: more visitors, more of them returning, a stickier product, and income that does not cost the archive its credibility.
+15 November 2026, revised 16 November with the Google Analytics baseline and on 22 November to bring accounts forward ([specification](accounts.md)). Based on [the project review](2026-11-15-project-review.md). The design of the interface changes (home page, file pages, phone layout, where the sign-up goes) is in [the UX review](2026-11-16-ux-review.md). Goals: more visitors, more of them returning, a stickier product, and income that does not cost the archive its credibility.
 
 ## Where we start
 
@@ -12,7 +12,7 @@
 - **Search**: 20 clicks from Google in the first four weeks, and impressions fell from 200–440 a day to under 10 on 25 October. Cause unknown.
 - **Cookieless counter**: data from 13 November only. It reports 9,816 "people" in three days, but the pattern (7,773 on one day, 1.07 pages each, spread evenly over deep video pages) is a crawl, not readers. It cannot yet cross-check Analytics.
 - **Income**: none. Book pages already carry "Buy on Amazon" links marked `rel="sponsored"`, but `AMAZON_TAGS` in `app.js` is empty, so they earn nothing.
-- **Running costs** (owner's figures, 16 November): hosting is free on Netlify's free plan; AI subscriptions about $200 a month, shared with other projects; the owner's time, unpaid for now as a side project, about two hours a day at $200 for a full day, so about $1,500 a month (60 hours at $25, counting every day of the month). That gives two break-even lines: **cash, about $200 a month**, and **full, about $1,700 a month ($20,000 a year)**. Full-time work on the archive would be about $5,200 a month ($62,000 a year); that is not the plan today. Hosting and email costs will appear with growth but stay small beside the time.
+- **Running costs** (owner's figures, 16 November): hosting is free on Netlify's free plan; AI subscriptions about $200 a month, shared with other projects; the owner's time, unpaid for now as a side project, about two hours a day at $200 for a full day, so about $1,500 a month (60 hours at $25, counting every day of the month). That gives two break-even lines: **cash, about $200 a month**, and **full, about $1,700 a month ($20,000 a year)**. Full-time work on the archive would be about $5,200 a month ($62,000 a year); that is not the plan today. Hosting and email costs will appear with growth but stay small beside the time ([accounts, section 12](accounts.md#12-cost-and-limits); the free plan's 300 build minutes are already tight).
 - **Asset**: 1,739 sourced files, 201 hours of searchable testimony, 2,783 timestamped moments, a daily news routine. The content is ahead of the audience.
 
 The plan follows from this. **Build one loop and switch income on as the audience passes set sizes:**
@@ -28,9 +28,9 @@ Baselines are from Google Analytics for the first four weeks; targets are for th
 | Goal | Measure | Baseline | Target, end of April | Source |
 |---|---|---|---|---|
 | Reach | Users per month; sessions from assistants, Reddit and Google | 1,043; 310, 135, 37 | 5,000 | GA, Search Console, `npm run traffic` once trustworthy |
-| Return | Share of a weekly cohort back the next week; digest subscribers; open and click rate | 2–4%; 0 | 10%; 500 | GA, email tool |
+| Return | Share of a weekly cohort back the next week; digest subscribers; open and click rate | 2–4%; 0 | 10%; 500 | GA, the accounts database, Resend |
 | Depth | Views per user; engagement time; share of visits that play a video or open a second file | 2.2; 37 s; not exported | 3; 60 s | GA events already sent (`select_content`, `video_start`) |
-| Conversion | Share of visitors who sign up; home page bounce | 0; 60% | 2%; 45% | GA key events (0.7) |
+| Conversion | Share of visitors who sign up; home page bounce | 0; 60% | 2%; 45% | Sign-ups from the accounts database, the rest from GA key events (0.7) |
 | Income | Monthly recurring support; affiliate revenue; share of cash costs ($200 a month) covered | 0; 0; 0% | First supporters; cash costs covered by month 12 | Payment provider, Amazon |
 
 ## Phase 0: foundations (two weeks)
@@ -41,27 +41,32 @@ Nothing later works without these.
 |---|---|---|
 | 0.1 | **Diagnose the search drop.** Search Console: Pages report (indexed vs "crawled, not indexed"), URL Inspection with the rendered view on a person, a video and a claim page, and the crawl stats around 24–26 October. | It decides whether the fix is technical (rendering, the loader) or simply patience. Google is 3% of sessions, so this no longer blocks the rest. |
 | 0.2 | **Make the traffic counter trustworthy.** Separate crawl-shaped visitors (one load, no assets or data fetched, deep landing page) from readers, for example by counting a visitor as a person only once the app has booted. Make `npm run traffic` fast: it took 25 minutes for three days of records. | Analytics misses visitors who decline or block it; the counter should cross-check it, and today its "people" figure is mostly a crawler. |
-| 0.3 | **Email sign-up**, one field, with a concrete promise, as UAP Insight does ("Get the next PURSUE release in your inbox… within a day"): **an alert within a day of each release or hearing, with the files and the moments, plus the weekly digest** ("The week on the record"). On every video and file page in context ("Get an email when this case changes"), on Latest and on the landing page. Two ways to run it without a backend: a hosted newsletter tool that also takes paid subscriptions (confirm before choosing; Buttondown and Ghost are candidates), or Resend, which the owner already uses, with a payment link for supporters and the supporter list kept by hand while it is short. Cost is small either way; choose by which takes less of the owner's time each week. Update the privacy page. | The single largest gap for returning visitors. Most ChatGPT and Reddit visitors land on a deep page, so the sign-up must be there. |
+| 0.3 | **Email sign-up that creates an account** (decided 22 November; [specification](accounts.md), step 1): one field and an emailed code, with a concrete promise: **an alert within a day of each PURSUE release, with the files that matter**. Built on our own accounts, with Resend for sending; hearing alerts and the weekly digest follow as separate subscriptions on the same account. In the foot of every file and video, on the PURSUE explainer, Latest and the home page. Live by 3 December, with the privacy page updated in the same deploy. | The single largest gap for returning visitors, and the base for follows, bookmarks and contributions. Most ChatGPT and Reddit visitors land on a deep page, so the sign-up must be there. |
 | 0.4 | **A proper 404 page**: "not found", search, and the nearest matching files. | Wrong links currently land on the home page with no explanation. |
 | 0.5 | **Legal basics**: a copyright and corrections contact on About, a licence file (code and content separately), an affiliate disclosure line. | Needed before any income, and cheap. |
 | 0.6 | **CI**: run the full build on every pull request; make dangling references errors. | The daily bot opens pull requests with no automated gate beyond `check:news`. |
-| 0.7 | **Fix measurement in Analytics.** Mark sign-up, support click and sponsored link click as key events. Pull the landing page by source report to see which pages ChatGPT and Reddit send people to. Find out why 13 November recorded no users. Exclude known data-centre traffic. | Without key events the loop cannot be measured, and the pages assistants cite are where the sign-up matters most. |
+| 0.7 | **Fix measurement in Analytics.** Mark support click and sponsored link click as key events (sign-ups are counted in our own database: nothing about accounts goes to Analytics). Pull the landing page by source report to see which pages ChatGPT and Reddit send people to. Find out why 13 November recorded no users. Exclude known data-centre traffic. | Without key events the loop cannot be measured, and the pages assistants cite are where the sign-up matters most. |
 | 0.8 | **Answer engines, now** (was 2.5). A plain two-sentence answer at the top of the pages assistants already cite and of the ten program pages, and an `llms.txt` pointing at the claims and key files. Start with `program/pursue`: turn it into the explainer people and assistants ask for (what PURSUE is, a table of the seven releases with dates and file counts, when the next is expected, where the official files are, an FAQ with structured data). UAP Insight's `/pursue` page is the model, and it holds that ground today: our 478 record pages are `noindex`. Decide whether the release pages should list their files in indexed form. Each month, ask the assistants the ten most common questions and note whether they cite the archive. | ChatGPT is the largest identifiable source of readers, about eight times Google. It is also a dependence on one channel, so watch it. |
 | 0.9 | **On this day, with Reddit and X** (was 1.5). A daily card from the exact dates on file, on the landing page and as a ready post. Post each anniversary and release where the case is discussed, linking to the exact page or moment; never bulk-post. | Both spikes so far were a release and an anniversary. It costs almost nothing. |
 | 0.10 | **A "Support the archive" link** that states the running costs (recorded in "Where we start"): what is paid in cash and that the work is unpaid. Beside it, the independence promise in one line: support never buys a file, a status or a place in the archive. | Covering the cash costs is the first income target (Phase 3, gates 1 and 2). |
-| 0.11 | **Be ready for PURSUE Release 8.** Releases have come 14 to 42 days apart (median 28); Release 7 was on 23 October, so Release 8 is likely by about 4 December and could come any day. Before it: the sign-up live (0.3), the PURSUE explainer (0.8), key events (0.7). On the day: import the records, file the release with its strongest files and footage, send the alert, post to Reddit and X. Afterwards: record users, sign-ups and sources against Release 7 (98 new users on the day). | Release 7 was the largest traffic day so far. This is the first measured run of the loop, and of 2.3. |
+| 0.11 | **Be ready for PURSUE Release 9.** Release 8 came on 20 November, before the sign-up was live. Releases have come 14 to 42 days apart (median 28), so Release 9 is likely between 4 December and 1 January, most likely around 18 December (our estimate). Before it: the sign-up live (0.3), key events (0.7). On the day: import the records, file the release with its strongest files and footage, send the alert, post to Reddit and X. Afterwards: record users, sign-ups and sources against Releases 7 and 8. | Releases are the largest traffic days. This will be the first run of the whole loop, and of 2.3. |
 
 ## Phase 1: reasons to return (to end of January 2027)
 
 ### 1.1 The weekly digest
-One email a week, assembled from Latest: the three to five items that mattered, one "moment of the week" with its clip link, what was newly filed, and the next scheduled hearing. Draft it from `content/news/` and `added.json`; a person approves and sends. Count returning visitors properly by adding a "seen in a previous week" flag to the monthly counter record.
+One email a week, assembled from Latest: the three to five items that mattered, one "moment of the week" with its clip link, what was newly filed, and the next scheduled hearing. Draft it from `content/news/` and `added.json`; a person approves and sends. It is its own subscription on the account: people who signed up for release alerts are asked, never added. Count returning visitors properly by adding a "seen in a previous week" flag to the monthly counter record.
 
 The digest is also the product that income is built on (Phase 3): the support request goes in every issue, and the supporter tier is a paid level of the same list.
 
-### 1.2 Follow a file
-Start without accounts: the in-context sign-up (0.3) records which file the reader subscribed from, and the digest carries a "changes to files you follow" block. Per-file alerts for any file need the backend and wait for gate 3.
+### 1.2 Accounts: sign-in, bookmarks and follows
+Brought forward from gate 3 on 22 November, in the steps of [the specification](accounts.md), one at a time:
 
-"Follow" on a person, case or claim, delivered by email. `lastmod.json` already detects when a page's content changes; the build can emit a per-file change list ("3 new facts, 1 new video moment") and the digest tool sends it to that file's followers. Start with claims and the 28 key files.
+1. the sign-up and release alert (0.3);
+2. passkeys, Google, then Apple;
+3. bookmarks and "Follow" on a person, case or claim, private to the member;
+4. alerts for followed files, and more topics (hearings, the digest).
+
+Step 4 needs a per-file change list from the build ("3 new facts, 1 new video moment"): `lastmod.json` also changes when only wording or rendering does. We don't record which file someone signed up from, as it says what they read.
 
 ### 1.3 "What changed" on every page
 A short dated change log per file, generated from the same data. It shows the archive is alive and gives a returning visitor something new to read. It also strengthens credibility: corrections become visible.
@@ -72,8 +77,8 @@ Hearings, document releases, book and film dates, as an "upcoming" strip on the 
 ### 1.5 On this day
 Started in Phase 0 (0.9). Here: put the card in the digest, and label anniversary pins on Latest as such.
 
-### 1.6 Remember the visitor (deferred)
-In the browser only, no account: continue watching, recently opened files, a saved reading list, and "new since your last visit" marks on Latest. With 2–4% of visitors returning, there is almost nobody to remember yet. Revisit at gate 2.
+### 1.6 Remember the visitor (partly deferred)
+The saved reading list becomes bookmarks on the account (1.2). The rest stays deferred until gate 2, and in the browser only, with no account: continue watching, recently opened files, and "new since your last visit" marks on Latest. With 2–4% of visitors returning, there is almost nobody to remember yet.
 
 ### 1.7 Deep pages lead with the testimony, and with a next step
 Move the counter strip down. Open with the two or three strongest statements and their clips, then positions on claims, then the rest. Video and file pages are where most visitors arrive: each should end with one next step (the case's story, a related video) and the sign-up.
@@ -118,8 +123,10 @@ Started in Phase 0 (0.8). Here: extend the plain answers to every program, conce
 ### 2.6 More guided stories
 Seven stories exist. Add one a fortnight (the AARO reports, the UK files, Brazil 1977 and 1996, the nuclear cases, the 1952 Washington flap), each ending with "follow this story" and the next story. Track completions.
 
-### 2.7 Contributions
-A "suggest a correction or source" form on every file that opens a GitHub issue, and a public page of credited contributors. No comments: moderation cost is high and the subject attracts noise.
+### 2.7 Contributions and community
+A private "suggest a correction or source" form on every file for signed-in members ([accounts](accounts.md), step 5), reviewed under the normal sourcing rule, and a public page of contributors who ask to be credited. Not a public GitHub issue: that would expose who sent it.
+
+Public comments are the direction, as a separate decision (step 6), not yet taken: moderation cost is high, the subject attracts noise, and they bring legal duties. The conditions are in the specification, section 14.
 
 ### 2.8 Languages (deferred)
 A third of incidents are from France, Italy, Latin America and Brazil, but 82% of users browse in English; Spanish and Portuguese are about 3% each. Revisit at gate 3: translate the story pages and the cases of one language first and measure before going further.
@@ -137,7 +144,7 @@ A third of incidents are from France, Italy, Latin America and Brazil, but 82% o
 | # | Source | What it takes | Realistic at this size |
 |---|---|---|---|
 | 1 | **Reader support**: one-off and monthly, via GitHub Sponsors, Ko-fi or Open Collective. A "Support the archive" link in the footer and the digest, with the running costs stated. | A day | Small but immediate; covers hosting first |
-| 2 | **Supporter tier of the digest**: a paid level of the same email list, so no backend. Supporters get things that cost little to give and take nothing from the public archive: a monthly research note, a briefing within 24 hours of each hearing or release, their name on the supporters page, a say in what is filed next. | The digest running, and a list tool with paid subscriptions (0.3) | The main recurring line. At 2–4% of subscribers paying, 500 subscribers is 10–20 supporters |
+| 2 | **Supporter tier of the digest**: a paid level of the same account, marked by hand from the payment link while the list is short. Supporters get things that cost little to give and take nothing from the public archive: a monthly research note, a briefing within 24 hours of each hearing or release, their name on the supporters page, a say in what is filed next. | The digest running, accounts (0.3) and a payment link | The main recurring line. At 2–4% of subscribers paying, 500 subscribers is 10–20 supporters |
 | 3 | **Book affiliates**: fill in `AMAZON_TAGS`, add Bookshop.org as the alternative, show the disclosure. | An hour once approved by Amazon | Close to nothing today: the most viewed book page had 8 views in a month. Amazon has closed new accounts that make no sales in their first 180 days (check the current terms), so apply only when book pages have traffic |
 | 4 | **Grants**: open-government, public-records and digital-archive funds. Present the archive as a records project (the MoD files, PURSUE, primary documents, the open repository), not as UAP journalism, which few journalism funders will back from a solo site. | Applications; a named legal entity; a track record | Uncertain; perhaps one chance in eight within a year, but can be the largest single amount |
 | 5 | **Research tools for professionals**: an API and bulk export with support, saved searches across transcripts and documents with alerts, for journalists, documentary researchers and academics. Paid by organisations, free for individuals. | The backend work in "Technical" below | Later; depends on reputation |
@@ -156,7 +163,7 @@ Each income line switches on when the audience reaches a size, and each gate nam
 |---|---|---|---|---|
 | 1 | Now | Support link with the running costs stated (0.10) | First supporters | Phase 0 |
 | 2 | 500 digest subscribers | Supporter tier of the digest; affiliate tags once book pages have traffic | Toward the cash costs ($200 a month); covered at about 1,000–1,500 subscribers | 0.3, 0.8, 0.9, 1.1, 1.7, 1.8, 2.3 |
-| 3 | 2,000 subscribers | One marked sponsor per digest issue; grant applications (prepare from January, cycles are slow) | A few hundred dollars a month | 2.1–2.6; follow alerts with accounts; the legal review (principle 4) |
+| 3 | 2,000 subscribers | One marked sponsor per digest issue; grant applications (prepare from January, cycles are slow) | A few hundred dollars a month | 2.1–2.6; the legal review (principle 4) |
 | 4 | 10,000 users a month, the legal review done | Research tools, licensing and commissions | Income from organisations: what would pay for more than two hours a day | The backend; outreach (2.4) |
 
 ### What to expect
@@ -196,7 +203,7 @@ These are assumptions, not measurements: the Analytics baseline of about 1,000 u
 | Serve HTML statically; fetch the country from a tiny endpoint; `onError: 'bypass'`; exclude `/cards/*`, `/version.json`, `/feed.xml` | Cacheable pages, resilience on spike days |
 | `files.wherearethey.info` on R2 | Files and the MoD search survive real traffic |
 | One shared vocabulary module for the build and the app | Fewer hand-synced constants; safer changes |
-| A small backend (accounts for followers, API keys). Deferred to gate 3: the supporter tier runs on the email tool | Follow alerts for any file and the research tools; the plain files stay the source of truth |
+| A small backend for accounts (brought forward on 22 November, [specification](accounts.md)). API keys still wait for gate 4; the plain files stay the source of truth | The sign-up, follows, alerts and contributions, later the research tools |
 
 ## Content work that the plan depends on
 
@@ -226,6 +233,7 @@ Looked at on 16 November 2026. None publishes audience or income figures.
 | Search does not recover | 0.1; Google is 3% of sessions today, and the plan builds email, assistants and Reddit anyway |
 | ChatGPT stops citing the archive | It is a quarter of sessions. Monthly citation check (0.8); turn those visitors into subscribers (0.3) so the audience does not depend on it |
 | The audience stays near 1,000 a month | Income stays at gate 1. Keep costs low, hold the deferred work back, and review the plan at the end of April against the targets |
+| Member data leaks, or accounts take the owner's two hours a day | Hold the least, the threat model and launch gates in [the specification](accounts.md), one step at a time, comments last |
 | A takedown or complaint | The contact line and a written policy (0.5); trim full transcripts of commercial shows to excerpts with moments if asked |
 | One-person dependency | CI, a contributor guide drawn from `CLAUDE.md`, operations documented off the one Mac |
 | Daily bot files something wrong | CI gate, quote check already in place, human merge stays |
@@ -233,7 +241,7 @@ Looked at on 16 November 2026. None publishes audience or income figures.
 
 ## The first ten things to do
 
-1. Email sign-up live on video and file pages, with the release-and-hearing alert promise, before PURSUE Release 8 (0.3, 0.11); then the first digest (1.1).
+1. Email sign-up with an account live, with the release-alert promise, before PURSUE Release 9's window opens on 4 December (0.3, 0.11); then the first digest (1.1).
 2. Analytics key events, the landing page by source report, and the 13 November gap (0.7).
 3. The PURSUE explainer with FAQ, plain answers on the pages assistants cite and the ten program pages, and `llms.txt` (0.8).
 4. On this day, posted daily to Reddit and X (0.9).
@@ -244,4 +252,4 @@ Looked at on 16 November 2026. None publishes audience or income figures.
 9. 404 page and CI on pull requests (0.4, 0.6).
 10. Deep pages lead with testimony and end with a next step; the landing page test (1.7, 1.8).
 
-Next after these: the Congress tracker (1.9), the `kb.js` split, and follow a file (1.2).
+Next after these: the Congress tracker (1.9), the `kb.js` split, and the next steps of accounts (1.2).
