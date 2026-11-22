@@ -46,11 +46,12 @@ How to read the claims about services:
 
 ### 4.1 The sign-up block
 
-One component, never a pop-up (UX review 5.4), in this order of priority:
+One component, never a pop-up (UX review 5.4), in three places (the owner's choice on 22 November, after seeing it at the foot of every file: a PURSUE prompt doesn't belong on a file that has nothing to do with PURSUE):
 1. the PURSUE explainer, under the release table;
-2. the foot of every file and video, after the next step;
-3. Latest, after the fifth item;
-4. the home page, after the first block.
+2. the foot of each PURSUE release's page, after the next step;
+3. the home page, after the first block.
+
+Not on other files, and not on Latest. A prompt on every file waits for step 4, where it is about that file ("follow this case").
 
 ```
 ┌──────────────────────────────────────────────┐
@@ -367,7 +368,7 @@ None of this is legal advice.
 | 2 Dec | API on in production with the block hidden; gates passed there |
 | 3 Dec | `SIGNUP_SHOWN` on: live |
 
-If it slips, cut placements (home, then Latest) before cutting a gate. If Release 9 comes first, launch afterwards; don't rush it out on the day.
+If it slips, cut the home placement before cutting a gate. If Release 9 comes first, launch afterwards; don't rush it out on the day.
 
 ## 17. Privacy text to publish at launch
 

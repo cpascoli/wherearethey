@@ -4,16 +4,17 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { open, phone, skip, wait, accounts, origin } from './helpers.mjs';
 
-const FILE = '/incident/uss-nimitz-tic-tac-encounter-2004';
+const FILE = '/event/pursue-release-08-reids-aatip-letter-baasss-tic-tac-report-kelly-2026'; // a PURSUE release's page
+const OTHER = '/incident/uss-nimitz-tic-tac-encounter-2004';
 const text = (p, sel) => p.$eval(sel, el => el.textContent.replace(/\s+/g, ' ').trim());
 const until = (p, fn, ...args) => p.waitForFunction(fn, { timeout: 15000 }, ...args);
 const code = async email => { const { mail } = await accounts(); for (let i = 0; i < 50 && !mail.last(email); i++) await wait(100); return mail.last(email); };
 // a page of the standalone kind (no app to wait for)
 async function plain(p, url) { await p.goto(origin() + url, { waitUntil: 'networkidle2' }); return p; }
 
-test('the block at the foot of a file: email, code after a reload, done; no history entry, no page scroll sideways', { skip }, async () => {
+test('the block at the foot of a release page: email, code after a reload, done; no history entry, no page scroll sideways', { skip }, async () => {
   const p = await phone(FILE), email = 'reader@example.com';
-  await p.waitForSelector('#panel .su[data-su="file"] input[type=email]');
+  await p.waitForSelector('#panel .su[data-su="pursue"] input[type=email]');
   const before = await p.evaluate(() => ({ n: history.length, url: location.href }));
   assert.match(await text(p, '#panel .su'), /Get the next PURSUE release by email.*Usually within a day.*Creates your free account \(16\+\)/);
   assert.equal(await p.$eval('#panel .su input', el => parseFloat(getComputedStyle(el).fontSize) >= 16), true, 'no zoom on iOS');
@@ -44,7 +45,7 @@ test('the block at the foot of a file: email, code after a reload, done; no hist
   assert.equal(after.member, 'true');
   assert.doesNotMatch(after.cookie, /session/, 'the session cookie is not readable by the page');
   const { q } = (await accounts()).app;
-  assert.deepEqual(await q`select placement, granted from consent_event`, [{ placement: 'file', granted: true }]);
+  assert.deepEqual(await q`select placement, granted from consent_event`, [{ placement: 'pursue', granted: true }]);
   // another page, later: the same browser is recognised and sees one quiet line, no form
   const p2 = await p.browser().newPage(); await p2.setViewport({ width: 390, height: 844, isMobile: true, hasTouch: true });
   await p2.goto(origin() + '/program/pursue', { waitUntil: 'networkidle2' });
@@ -53,11 +54,15 @@ test('the block at the foot of a file: email, code after a reload, done; no hist
   await p2.close(); await p.close();
 });
 
-test('the block is on the home page and Latest too, and is never the first thing on the screen', { skip }, async () => {
-  for (const [url, sel] of [['/', '.su[data-su="home"]'], ['/latest', '.su[data-su="latest"]']]) {
-    const p = await open(url);
-    await p.waitForSelector(sel);
-    assert.ok(await p.$eval(sel, el => el.getBoundingClientRect().top + scrollY > innerHeight * 0.6), `${url}: below the first screen`);
+test('the block is on the home page, below the first screen, and not on Latest or on any other file', { skip }, async () => {
+  let p = await open('/');
+  await p.waitForSelector('.su[data-su="home"]');
+  assert.ok(await p.$eval('.su[data-su="home"]', el => el.getBoundingClientRect().top + scrollY > innerHeight * 0.6), 'below the first screen');
+  await p.close();
+  for (const url of ['/latest', OTHER, '/person/david-fravor']) {
+    p = await open(url);
+    await wait(500);
+    assert.equal(await p.$('.su'), null, `${url}: no sign-up block`);
     await p.close();
   }
 });

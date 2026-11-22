@@ -1460,7 +1460,7 @@
         <button class="btn small only-mobile vb-open-side" data-open-side>Filters${ltFiltered() ? ' · on' : ''}</button>
         ${ltFiltered() ? `<p class="lt-filtering">Filtered: ${esc(on.join(' · '))} <button class="link" data-lt-clear>show everything</button></p>` : ''}
       </header>
-      ${ltWhen.has('upcoming') || ltWhen.has('recent') ? `<div class="lt-list">${list.map((e, i) => card(e) + (i === Math.min(4, list.length - 1) ? signupBlock('latest') : '')).join('') || `<p class="muted">Nothing matches these filters in the last ${LATEST.windowDays} days.</p>`}</div>` : ''}
+      ${ltWhen.has('upcoming') || ltWhen.has('recent') ? `<div class="lt-list">${list.map(card).join('') || `<p class="muted">Nothing matches these filters in the last ${LATEST.windowDays} days.</p>`}</div>` : ''}
       ${added.length && ltWhen.has('added') ? `<section class="lt-added">
         <div class="home-kicker">Recently added to the archive</div>
         <h2>New to the archive, from the record</h2>
@@ -1963,7 +1963,8 @@
     for (const k of order) if (S[k]) h.push(S[k]);
     if (S.more) h.push(`<details class="p-more"><summary>More about this file <span>transcript mentions, possible connections, themes</span></summary>${S.more}</details>`);
     h.push(nextStep(e));
-    if (!e.pursueStats?.releases?.length) h.push(signupBlock('file')); // the PURSUE explainer has it under its table
+    // only the pages of the PURSUE releases themselves carry it (the explainer has it under its table): never every file
+    if (byId.get('pursue')?.pursueStats?.releases?.some(r => r.event === e.id)) h.push(signupBlock('pursue'));
     h.push(`<div class="p-edit"><span>File ${fileNo(e)} · ${e.type === 'claim' ? `${e.assertions.length} statements` : nFacts ? `${nDoc} of ${nFacts} statements documented` : 'no statements filed'}</span>Edit <code>${esc(e.file)}</code><button class="link" data-copy="${esc(e.file)}">copy path</button></div>`);
     return h.join('');
   }
@@ -3158,8 +3159,8 @@
   // files) and make the chosen file the first step of a trail. "Official sources only" stays on unless the
   // file itself is outside the criteria, which would otherwise hide it.
   // ───────────── the sign-up block (docs/accounts.md, section 4.1) ─────────────
-  // One component, drawn in place and never as a pop-up: on the PURSUE explainer, at the foot of a file, on Latest and
-  // on the home page. An email address, then the emailed code, creates the account and switches the release alert
+  // One component, drawn in place and never as a pop-up: on the home page, on the PURSUE explainer and at the foot of
+  // each PURSUE release's page (the owner's choice, 22 November: not on every file). An email address, then the emailed code, creates the account and switches the release alert
   // on. It talks to /api only, adds no history entry, and sends nothing to Analytics. The words a person agrees to
   // are versioned: when the promise or the small print below changes, add a version here and to WORDINGS in api/app.mjs.
   const SU_WORDING = '2026-12-a';
