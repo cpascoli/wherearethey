@@ -50,6 +50,9 @@ export function resendMail({ sendKey, contactsKey, topics = {}, segment, fetch =
         }
       }
       await call(contactsKey, 'PATCH', `/contacts/${contactId}/topics`, { topics: topicList(on) });
+      // Resend's unsubscribe page also marks the whole contact "unsubscribed", which blocks every broadcast whatever
+      // the topics say. A member who switches an alert on again, on our pages, has undone that.
+      if (Object.values(on).some(Boolean)) await call(contactsKey, 'PATCH', `/contacts/${contactId}`, { unsubscribed: false });
       return contactId;
     },
     async deleteContact(contactId) {

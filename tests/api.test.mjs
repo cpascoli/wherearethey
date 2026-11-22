@@ -296,3 +296,18 @@ test('the runtime role can add and read consent events, not change them, and can
     assert.equal((await q`select 1 from consent_event`).length, 0);
   } finally { await q`reset role`; }
 });
+
+test('switching an alert on again also clears the "unsubscribed" mark Resend sets on the contact; switching off does not touch it', async () => {
+  const { resendMail } = await import('../api/mail.mjs');
+  const calls = [];
+  const fetch = async (url, init) => { calls.push(`${init.method} ${new URL(url).pathname} ${init.body || ''}`); return new Response(JSON.stringify({ id: 'c1' }), { status: 200 }); };
+  const mail = resendMail({ sendKey: 's', contactsKey: 'c', topics: { pursue: 't1' }, segment: 'seg', fetch });
+  assert.equal(await mail.syncContact({ email: 'a@example.com', contactId: 'c1', on: { pursue: true } }), 'c1');
+  assert.deepEqual(calls, ['PATCH /contacts/c1/topics {"topics":[{"id":"t1","subscription":"opt_in"}]}', 'PATCH /contacts/c1 {"unsubscribed":false}']);
+  calls.length = 0;
+  await mail.syncContact({ email: 'a@example.com', contactId: 'c1', on: { pursue: false } });
+  assert.deepEqual(calls, ['PATCH /contacts/c1/topics {"topics":[{"id":"t1","subscription":"opt_out"}]}']);
+  calls.length = 0;
+  await mail.syncContact({ email: 'a@example.com', on: { pursue: true } });
+  assert.deepEqual(calls, ['POST /contacts {"email":"a@example.com","unsubscribed":false,"segments":[{"id":"seg"}],"topics":[{"id":"t1","subscription":"opt_in"}]}']);
+});
