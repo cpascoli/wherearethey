@@ -1,0 +1,6 @@
+/* /account as a page of its own (docs/accounts.md, 4.2). With page.css and account.css; the text face is our own
+   copy of Plex, nothing from another site. */
+@font-face { font-family: 'IBM Plex Sans'; font-weight: 400; font-display: swap; src: url('/assets/fonts/plex-sans-400.woff') format('woff'); }
+@font-face { font-family: 'IBM Plex Sans'; font-weight: 600; font-display: swap; src: url('/assets/fonts/plex-sans-600.woff') format('woff'); }
+main { max-width: 560px; }
+.ac-kicker { margin-top: 22px; }

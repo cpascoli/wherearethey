@@ -74,6 +74,72 @@ test('the block is on the home page, below the first screen, and not on Latest o
   }
 });
 
+test('the top-right button opens one dialog: settings without signing in, the account beside them, the badge once signed in', { skip }, async () => {
+  for (const narrow of [false, true]) {
+    const p = narrow ? await phone('/') : await open('/'), email = narrow ? 'pocket@example.com' : 'desk@example.com';
+    await (await p.createCDPSession()).send('Network.clearBrowserCookies');
+    await p.evaluate(() => { localStorage.clear(); sessionStorage.clear(); });
+    await (await accounts()).app.q`delete from limit_counter`;
+    await p.reload({ waitUntil: 'networkidle2' });
+    await p.waitForSelector('#btn-me');
+    assert.equal(await p.$('#btn-settings'), null, 'the cog is gone');
+    assert.equal(await p.$eval('#btn-me', b => b.getBoundingClientRect().right > innerWidth - 80 && b.getBoundingClientRect().top < 60), true, 'top right');
+    assert.equal(await p.$eval('#btn-me .me-badge', b => b.hidden), true);
+    await p.click('#btn-me');
+    await p.waitForSelector('#me-modal[open] #me-ac input[type=email]');
+    await wait(400); // on a phone the sheet slides up
+    // the settings are there for someone who never signs in, and work
+    assert.equal(await p.$eval('#me-modal .me-set', el => el.getBoundingClientRect().height > 0 && !!el.querySelector('#f-credible') && !!el.querySelector('[data-theme-set="light"]')), true);
+    await p.click('#me-modal [data-theme-set="light"]');
+    assert.equal(await p.evaluate(() => document.documentElement.dataset.theme), 'light');
+    await p.click('#me-modal [data-theme-set="dark"]');
+    const box = await p.$eval('#me-modal', d => { const r = d.getBoundingClientRect(); return { w: r.width, h: r.height, vw: innerWidth, vh: innerHeight, wide: document.documentElement.scrollWidth > innerWidth + 1 }; });
+    if (narrow) {
+      assert.ok(box.w === box.vw && box.h > box.vh - 80 && box.h < box.vh && !box.wide, 'a sheet on a phone: full width, a strip of the page above');
+      // a short drag springs back; a long one down from the header closes it, as sheets do on an iPhone
+      const drag = async by => { await p.touchscreen.touchStart(195, 70); for (let y = 20; y <= by; y += 20) { await p.touchscreen.touchMove(195, 70 + y); await wait(30); } await p.touchscreen.touchEnd(); await wait(400); };
+      await drag(60);
+      assert.deepEqual(await p.$eval('#me-modal', d => [d.open, d.style.transform]), [true, '']);
+      await drag(260);
+      assert.equal(await p.$eval('#me-modal', d => d.open), false, 'dragged down: closed');
+      await p.click('#btn-me');
+      await p.waitForSelector('#me-modal[open] #me-ac input[type=email]');
+      await wait(300);
+    }
+    else assert.ok(box.w < box.vw - 200 && box.w >= 480, 'a dialog in the middle on desktop');
+    // sign in there, without an alert
+    await p.type('#me-ac input[type=email]', email);
+    await p.$eval('#me-ac form', f => f.requestSubmit());
+    await p.waitForSelector('#me-ac input[name=code]');
+    // leaving for the mail app and coming back to a reloaded page: the dialog is open again on the code step
+    await p.reload({ waitUntil: 'networkidle2' });
+    await p.waitForSelector('#me-modal[open] #me-ac input[name=code]');
+    await p.type('#me-ac input[name=code]', await code(email));
+    await p.$eval('#me-ac form', f => f.requestSubmit());
+    await p.waitForSelector('#me-ac .ac-switch');
+    assert.match(await text(p, '#me-ac-title'), /Your account/);
+    assert.deepEqual(await p.$eval('#btn-me', b => [b.classList.contains('signed'), b.querySelector('.me-badge').textContent, b.querySelector('.me-badge').hidden]), [true, email[0].toUpperCase(), false]);
+    // the alert switched on in the dialog reaches the page behind it: the home page then shows a subscriber nothing
+    await p.click('#me-ac .ac-switch');
+    await until(p, () => document.querySelector('#me-ac .ac-switch')?.getAttribute('aria-checked') === 'true');
+    await until(p, () => document.querySelector('.su[data-su="home"]')?.hidden === true);
+    // Esc or ✕ closes; a link to /account in the page opens the dialog
+    await p.click('#me-close');
+    assert.equal(await p.$eval('#me-modal', d => d.open), false);
+    await p.goto(origin() + '/program/pursue', { waitUntil: 'networkidle2' });
+    await until(p, () => !document.querySelector('#btn-me .me-badge')?.hidden);
+    await p.waitForSelector('.su[data-su="pursue"] a[href="/account"]');
+    const url = await p.evaluate(() => location.href);
+    await p.$eval('.su[data-su="pursue"] a[href="/account"]', a => a.click());
+    await p.waitForSelector('#me-modal[open] #me-ac .ac-switch');
+    assert.equal(await p.evaluate(() => location.href), url);
+    await p.evaluate(() => [...document.querySelectorAll('#me-ac button')].find(b => b.textContent === 'Sign out').click());
+    await p.waitForSelector('#me-ac input[type=email]');
+    assert.equal(await p.$eval('#btn-me .me-badge', b => b.hidden), true, 'signed out: the plain icon again');
+    await p.close();
+  }
+});
+
 test('/account under its own policy: sign in without an alert, switch it on and off, sign out, delete', { skip }, async () => {
   const p = await open('/'), email = 'member@example.com', blocked = [], asked = [];
   p.on('console', m => { if (/Content Security Policy|Refused to/.test(m.text())) blocked.push(m.text()); });

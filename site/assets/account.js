@@ -1,12 +1,13 @@
 // /account (docs/accounts.md, section 4.2): sign in with an emailed code, choose the alerts, sign out, delete the
 // account. A file of its own, with no inline script, so the page can run under a strict Content-Security-Policy.
 // The page is built with DOM nodes and textContent only: nothing here turns a string into HTML.
+// The same code draws the account part of the app's "Account and settings" dialog (app.js loads this file when the
+// dialog first opens and calls watAccount.mount): there it runs under the app's looser policy, the owner's choice of
+// 23 November, since the sign-up block already takes the address and the code in the app.
 (() => {
   'use strict';
   const WORDING = '2026-12-a'; // the version of the words agreed to (WORDINGS in api/app.mjs)
   const CONTACT = 'wherearetheyinfo@proton.me';
-  const root = document.getElementById('ac'), title = document.getElementById('ac-title');
-  try { const th = localStorage.getItem('wat:theme'); if (th) document.documentElement.dataset.theme = JSON.parse(th); } catch { /* no storage */ }
 
   // h('p.cls', { attr }, child, 'text', …)
   function h(tag, attrs, ...kids) {
@@ -46,19 +47,23 @@
   }
   const mailto = () => h('a', { href: `mailto:${CONTACT}` }, CONTACT);
 
-  let me = null, error = '', busy = false;
+  // mount(root, title, { page }): root gets the forms, title the heading. On the page of its own the cursor goes
+  // into the first field at once; in the app's dialog only after the visitor has done something there (on a phone
+  // a focused field opens the keyboard over the settings below).
+  function mount(root, title, { page = false } = {}) {
+  let me = null, error = '', busy = false, touched = page;
   let step = pending.get() || { name: 'email' }; // signed out: email → code. signed in: null → delete
-  const draw = (...nodes) => { root.replaceChildren(...nodes.flat().filter(Boolean)); root.querySelector('[data-focus]')?.focus({ preventScroll: true }); };
+  const draw = (...nodes) => { root.replaceChildren(...nodes.flat().filter(Boolean)); if (touched) root.querySelector('[data-focus]')?.focus({ preventScroll: true }); };
   const errLine = () => error && h('p.ac-err', { role: 'alert' }, error);
   // run one request at a time, then draw again
-  async function act(work) { if (busy) return; busy = true; error = ''; for (const b of root.querySelectorAll('button')) b.disabled = true; try { await work(); } finally { busy = false; render(); } }
+  async function act(work) { if (busy) return; busy = true; touched = true; error = ''; for (const b of root.querySelectorAll('button')) b.disabled = true; try { await work(); } finally { busy = false; render(); } }
 
   function codeForm(label, onCode, again) {
     const wait = () => Math.max(0, 60 - Math.floor((Date.now() - (step.sent || 0)) / 1000));
     const againBtn = h('button.plain', { type: 'button', disabled: !!wait(), onclick: () => act(again) }, wait() ? `Send again in 0:${String(wait()).padStart(2, '0')}` : 'Send again');
     const tick = setInterval(() => { if (!againBtn.isConnected) return clearInterval(tick); const w = wait(); againBtn.disabled = !!w || busy; againBtn.textContent = w ? `Send again in 0:${String(w).padStart(2, '0')}` : 'Send again'; }, 1000);
     return [
-      h('form.ac-form', { novalidate: true, onsubmit: e => { e.preventDefault(); const code = e.target.elements.code.value.replace(/\D/g, ''); if (code.length !== 8) { error = 'The code has 8 digits.'; return render(); } act(() => onCode(code)); } },
+      h('form.ac-form', { novalidate: true, onsubmit: e => { e.preventDefault(); const code = e.target.elements.code.value.replace(/\D/g, ''); if (code.length !== 8) { error = 'The code has 8 digits.'; touched = true; return render(); } act(() => onCode(code)); } },
         h('input', { name: 'code', inputmode: 'numeric', autocomplete: 'one-time-code', maxlength: '9', placeholder: '1234 5678', 'aria-label': 'The 8-digit code', required: true, 'data-focus': true }),
         h('button.primary', {}, label)),
       errLine(),
@@ -74,13 +79,13 @@
         const r = await api('POST', '/api/session', { email: step.email, code, ...(step.alert && { subscribe: true, placement: 'account', wording: WORDING }) });
         if (r.status === 200) { me = r.body; remember(true); step = null; pending.set(null); } else error = say(r);
       }, async () => { const r = await api('POST', '/api/code', { email: step.email }); if (r.status === 202) { step.sent = Date.now(); pending.set(step); } else error = say(r); }),
-      h('p.ac-small', {}, h('button.plain', { type: 'button', onclick: () => { step = { name: 'email' }; pending.set(null); error = ''; render(); } }, 'Change address'))));
+      h('p.ac-small', {}, h('button.plain', { type: 'button', onclick: () => { step = { name: 'email' }; pending.set(null); error = ''; touched = true; render(); } }, 'Change address'))));
     draw(h('div.ac-card', {},
       h('p', {}, 'Enter your email address and we send you a code. There is no password.'),
       h('form.ac-form', { novalidate: true, onsubmit: e => {
         e.preventDefault();
         const email = e.target.elements.email.value.trim(), alert = e.target.elements.alert.checked;
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@.]+$/.test(email)) { error = ERR.email; return render(); }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@.]+$/.test(email)) { error = ERR.email; touched = true; return render(); }
         act(async () => {
           const r = await api('POST', '/api/code', { email });
           if (r.status === 202) { step = { name: 'code', email, alert, at: Date.now(), sent: Date.now() }; pending.set(step); }
@@ -128,18 +133,42 @@
   }
   const signOut = everywhere => act(async () => { await api('DELETE', '/api/session', { everywhere }); me = { signedIn: false }; remember(false); step = { name: 'email' }; });
 
+  // the app keeps its own picture of who is signed in (the header badge, the sign-up blocks): tell it what we know
+  let told = '';
+  function tell() {
+    if (!me || me.off) return;
+    const detail = me.signedIn ? { signedIn: true, maskedEmail: me.maskedEmail, topics: me.topics || {}, suppressed: !!me.suppressed } : { signedIn: false };
+    const key = JSON.stringify(detail); if (key === told) return; told = key;
+    document.dispatchEvent(new CustomEvent('wat:me', { detail }));
+  }
   function render() {
+    tell();
     if (!me) return draw(h('p.muted', {}, 'Loading…'));
     if (me.off) return draw(h('div.ac-card', {}, h('p', {}, "Accounts aren't available right now. The archive needs none: everything is open to read."), h('p', {}, h('a', { href: '/' }, '← Back to the archive'))));
     if (me.signedIn) return signedIn();
     if (me.deleted) { me = { signedIn: false }; signedOut(); root.prepend(h('div.ac-card', {}, h('p', {}, 'Your account is deleted.'))); return; }
     signedOut();
   }
+  // ask who is signed in (again, when the dialog reopens: the sign-up block may have signed the visitor in since)
+  function refresh() {
+    if (busy) return;
+    return api('GET', '/api/me').then(r => {
+      if (busy) return;
+      me = r.status === 200 ? r.body : { off: true };
+      if (r.status === 200) remember(me.signedIn);
+      if (me.signedIn) { if (step?.name !== 'delete') step = null; pending.set(null); } else if (!step || step.name === 'delete') step = { name: 'email' };
+      render();
+    });
+  }
   render();
-  api('GET', '/api/me').then(r => {
-    me = r.status === 200 ? r.body : { off: true };
-    if (r.status === 200) remember(me.signedIn);
-    if (me.signedIn) { step = null; pending.set(null); } else if (!step) step = { name: 'email' };
-    render();
-  });
+  refresh();
+  return { refresh };
+  }
+
+  window.watAccount = { mount, pending: () => !!pending.get() };
+  const page = document.querySelector('#ac[data-page]');
+  if (page) {
+    try { const th = localStorage.getItem('wat:theme'); if (th) document.documentElement.dataset.theme = JSON.parse(th); } catch { /* no storage */ }
+    mount(page, document.getElementById('ac-title'), { page: true });
+  }
 })();

@@ -1,28 +1,26 @@
-/* /account (docs/accounts.md, 4.2). With page.css; the text face is our own copy of Plex, nothing from another site. */
-@font-face { font-family: 'IBM Plex Sans'; font-weight: 400; font-display: swap; src: url('/assets/fonts/plex-sans-400.woff') format('woff'); }
-@font-face { font-family: 'IBM Plex Sans'; font-weight: 600; font-display: swap; src: url('/assets/fonts/plex-sans-600.woff') format('woff'); }
-main { max-width: 560px; }
-.ac-kicker { margin-top: 22px; }
+/* The account forms (account.js), on /account and in the app's "Account and settings" dialog. Everything is under
+   .ac-root, and says all it needs, so neither page's own button styles leak in or out. */
+.ac-root p { margin: 6px 0; }
+.ac-root a { color: var(--accent); }
 .ac-card { margin: 18px 0; padding: 18px 20px; border: 1px solid var(--border); border-radius: 6px; background: var(--panel); }
-.ac-card h2 { margin: 0 0 6px; font-size: 17px; }
-.ac-card p { margin: 6px 0; }
+.ac-card h2 { margin: 0 0 6px; font-size: 17px; font-weight: 600; letter-spacing: 0; text-transform: none; font-family: inherit; color: var(--text); }
 .ac-form { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 4px; }
 .ac-form input[type="email"], .ac-form input[name="code"] { flex: 1 1 220px; min-width: 0; font: inherit; font-size: 16px; padding: 10px 12px; background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 6px; }
 .ac-form input[name="code"] { flex: 0 1 200px; letter-spacing: .12em; font-variant-numeric: tabular-nums; }
 .ac-form input:focus { outline: none; border-color: var(--accent); }
-button { font-size: 15px; padding: 9px 16px; border-radius: 6px; }
-button.primary { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600; }
-button.danger { color: #e07a5f; }
-button.plain { background: none; border: 0; padding: 0; color: var(--accent); font-size: inherit; }
-button:disabled { opacity: .6; cursor: default; }
+.ac-root button { font: inherit; font-size: 15px; padding: 9px 16px; border-radius: 6px; background: var(--panel); color: var(--text); border: 1px solid var(--border); cursor: pointer; }
+.ac-root button.primary { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600; }
+.ac-root button.danger { color: #e07a5f; }
+.ac-root button.plain { background: none; border: 0; padding: 0; color: var(--accent); font-size: inherit; }
+.ac-root button:disabled { opacity: .6; cursor: default; }
 .ac-check { display: flex; gap: 10px; align-items: flex-start; margin: 10px 0 0; font-size: 14px; color: var(--muted); flex-basis: 100%; }
 .ac-check input { width: 18px; height: 18px; margin-top: 2px; }
 .ac-row { display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 12px 0; border-top: 1px solid var(--border); }
 .ac-row:first-of-type { border-top: 0; }
 .ac-row b { display: block; }
 .ac-row small { color: var(--muted); font-size: 13px; }
-.ac-switch { flex: none; min-width: 64px; }
-.ac-switch[aria-checked="true"] { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600; }
+.ac-root .ac-switch { flex: none; min-width: 64px; }
+.ac-root .ac-switch[aria-checked="true"] { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600; }
 .ac-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
 .ac-small { font-size: 13px; color: var(--muted); }
 .ac-err { color: #e07a5f; font-size: 14px; }

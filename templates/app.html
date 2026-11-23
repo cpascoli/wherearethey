@@ -89,7 +89,6 @@
     </nav>
     <div class="more-menu" id="more-menu" role="menu" hidden>
       <a role="menuitem" data-goto="pursue" href="/program/pursue"><b>PURSUE releases</b><small>Every official UAP release so far, and the highlights</small></a>
-      <a role="menuitem" href="/account" data-account hidden><b>Account</b><small>Sign in, and choose the email alerts you get</small></a>
       <a role="menuitem" class="mm-narrow" data-view="latest" href="/latest"><b>Latest</b><small>What happened recently, and what is newly filed</small></a>
       <a role="menuitem" class="mm-narrow" data-view="map" href="/world"><b>World map</b><small>Where it happened: bases, ships, schools, hearing rooms</small></a>
       <a role="menuitem" data-view="shelf" data-shelf="film" href="/documentaries"><b>Documentaries</b><small>Films featuring people on record</small></a>
@@ -102,23 +101,35 @@
     </div>
     <a class="top-about" href="/about">About</a>
     <a class="icon-btn social-btn" href="https://x.com/WhereAreTheyUAP" target="_blank" rel="noopener" aria-label="Where Are They on X" title="Follow @WhereAreTheyUAP on X" data-social="x" data-placement="header"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-    <button class="icon-btn" id="btn-settings" aria-label="Settings" aria-haspopup="dialog" aria-expanded="false" aria-controls="settings-pop" title="Settings"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1.08-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1.08 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg><i class="set-dot" hidden></i></button>
-    <div class="settings-pop" id="settings-pop" role="dialog" aria-label="Settings" hidden>
-      <h4>Settings</h4>
-      <label class="switch">
-        <input type="checkbox" id="f-credible" checked>
-        <span class="track"></span>
-        <span><b>Official sources only</b><small>Officials, military, pilots, intelligence, academia, Congress</small></span>
-      </label>
-      <label class="switch">
-        <input type="checkbox" id="f-explained" checked>
-        <span class="track"></span>
-        <span><b>Hide explained cases</b><small>Incidents with a credible conventional explanation, or exposed as hoaxes</small></span>
-      </label>
-      <div class="set-theme"><b>Theme</b><div class="seg" id="set-theme" role="radiogroup" aria-label="Theme"><button data-theme-set="dark" role="radio">Dark</button><button data-theme-set="light" role="radio">Light</button></div></div>
-      <p class="sp-note">Saved in this browser.</p>
-      <div class="sp-links"><a href="/account" data-account hidden>Account</a><a href="/privacy">Privacy &amp; cookies</a><a href="#" class="sp-consent" data-open-consent>Cookie settings</a></div>
-    </div>
+    <button class="icon-btn" id="btn-me" aria-label="Account and settings" aria-haspopup="dialog" aria-expanded="false" aria-controls="me-modal" title="Account and settings"><svg class="me-ic-user" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.2" r="3.7"/><path d="M4.8 20c.9-3.6 3.7-5.6 7.2-5.6s6.3 2 7.2 5.6"/></svg><svg class="me-ic-cog" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1.08-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1.08 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg><b class="me-badge" hidden></b><i class="set-dot" hidden></i></button>
+    <!-- Account and settings: one dialog behind the top-right button. The account part is drawn by account.js,
+         loaded when the dialog first opens; the settings are kept in this browser, never in the account. -->
+    <dialog class="me" id="me-modal" aria-labelledby="me-title">
+      <div class="me-in">
+        <div class="me-head"><h3 id="me-title">Account &amp; settings</h3><button class="icon-btn" id="me-close" aria-label="Close">✕</button></div>
+        <section class="me-acct" id="me-acct" hidden>
+          <h4 id="me-ac-title">Account</h4>
+          <div id="me-ac" class="ac-root" aria-live="polite"><p class="sp-note">Loading…</p></div>
+          <p class="sp-note">You don't need an account to read the archive. An account is an email address and the alerts you chose: no name, no password.</p>
+        </section>
+        <section class="me-set">
+          <h4>Settings</h4>
+          <label class="switch">
+            <input type="checkbox" id="f-credible" checked>
+            <span class="track"></span>
+            <span><b>Official sources only</b><small>Officials, military, pilots, intelligence, academia, Congress</small></span>
+          </label>
+          <label class="switch">
+            <input type="checkbox" id="f-explained" checked>
+            <span class="track"></span>
+            <span><b>Hide explained cases</b><small>Incidents with a credible conventional explanation, or exposed as hoaxes</small></span>
+          </label>
+          <div class="set-theme"><b>Theme</b><div class="seg" id="set-theme" role="radiogroup" aria-label="Theme"><button data-theme-set="dark" role="radio">Dark</button><button data-theme-set="light" role="radio">Light</button></div></div>
+          <p class="sp-note">Saved in this browser.</p>
+        </section>
+        <div class="sp-links"><a href="/privacy">Privacy &amp; cookies</a><a href="#" class="sp-consent" data-open-consent>Cookie settings</a></div>
+      </div>
+    </dialog>
   </header>
 
   <div class="app is-home" id="app">

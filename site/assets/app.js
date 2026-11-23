@@ -235,7 +235,7 @@
   function renderFilters() {
     $('#f-credible').checked = state.credibleOnly;
     $('#f-explained').checked = state.hideExplained;
-    $('#btn-settings .set-dot').hidden = state.credibleOnly && state.hideExplained; // a dot on the cog when a setting is off its default
+    $('#btn-me .set-dot').hidden = state.credibleOnly && state.hideExplained; // a dot on the cog when a setting is off its default
     // Faceted counts: each list is counted against the *other* list's selection,
     // so picking types narrows the themes and picking themes narrows the types.
     const credOk = e => !(state.credibleOnly && e.cred === 'outside') && !(state.hideExplained && resolved(e));
@@ -3200,7 +3200,7 @@
   function signupBlock(placement) { if (!SU_ON) return ''; const inner = suInner(placement); return `<section class="su" data-su="${placement}" aria-live="polite"${inner ? '' : ' hidden'}>${inner}</section>`; }
   // redraw every block on the page after a change of state; `focus` puts the cursor in the block that was used
   function suDraw(focus) {
-    suKeep();
+    suKeep(); meBadge();
     for (const el of $$('.su')) { el.innerHTML = suInner(el.dataset.su); el.hidden = !el.innerHTML; }
     if (focus?.isConnected) focus.querySelector('input')?.focus({ preventScroll: true });
   }
@@ -3246,11 +3246,10 @@
     setInterval(() => { if (su.step !== 'code') return; for (const b of $$('[data-su-again]')) { const w = suWait(); b.disabled = !!w; b.textContent = w ? `Send again in ${suClock(w)}` : 'Send again'; } }, 1000);
     // Pages are the same for everyone: a browser that has signed in before asks who it is after the first paint
     if (store.get('member', false)) setTimeout(() => suApi('GET', '/api/me').then(r => { if (r.status !== 200) return; suMe = r.body; if (!r.body.signedIn) store.set('member', false); suDraw(); }), 1500);
-    for (const a of $$('[data-account]')) a.hidden = false;
   }
 
   // The footer every page ends with: the copyright and where to follow the project. What the archive is belongs on
-  // About; privacy and cookies are under Settings.
+  // About; privacy and cookies are in the Account & settings dialog.
   function siteFoot(placement, cls = 'site-foot') {
     const X_ICON = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>';
     return `<${cls === 'site-foot' ? 'footer' : 'div'} class="${cls}"><span>© ${new Date().getFullYear()} Carlo Pascoli</span><a class="foot-social" href="https://x.com/WhereAreTheyUAP" target="_blank" rel="noopener" data-social="x" data-placement="${placement}">${X_ICON} @WhereAreTheyUAP</a><a href="https://github.com/cpascoli/wherearethey" target="_blank" rel="noopener" data-social="github" data-placement="${placement}">GitHub</a></${cls === 'site-foot' ? 'footer' : 'div'}>`;
@@ -3849,7 +3848,7 @@
   const setMore = open => {
     if (open && innerWidth > 860) moreMenu.style.right = Math.max(8, innerWidth - moreBtn.getBoundingClientRect().right) + 'px'; else moreMenu.style.right = '';
     moreMenu.hidden = !open; moreBtn.setAttribute('aria-expanded', String(open)); moreBtn.classList.toggle('open', open); };
-  moreBtn.addEventListener('click', e => { e.stopPropagation(); if (moreMenu.hidden && narrowNav() && state.sel) select(null); if (moreMenu.hidden) setOpen(false); setMore(moreMenu.hidden); });
+  moreBtn.addEventListener('click', e => { e.stopPropagation(); if (moreMenu.hidden && narrowNav() && state.sel) select(null); setMore(moreMenu.hidden); });
   moreMenu.addEventListener('click', e => {
     const a = e.target.closest('a'); if (!a) return;
     if (a.dataset.view) { e.preventDefault(); if (a.dataset.shelf) shelfTab = a.dataset.shelf; go(a.dataset.view, { keepSel: !(narrowNav() && state.sel) }); }
@@ -3880,16 +3879,81 @@
   const syncThemeSeg = () => $$('#set-theme [data-theme-set]').forEach(b => { const on = (b.dataset.themeSet === 'light') !== isDark(); b.classList.toggle('on', on); b.setAttribute('aria-checked', String(on)); });
   $('#set-theme').addEventListener('click', e => { const b = e.target.closest('[data-theme-set]'); if (!b) return; applyTheme(b.dataset.themeSet); syncThemeSeg(); });
   $('#side-close').addEventListener('click', () => $('#side').classList.remove('open'));
-  // settings: a small panel under the cog (choices are kept in localStorage by filtersChanged)
-  const setPop = $('#settings-pop'), setBtn = $('#btn-settings');
-  const setOpen = open => {
-    if (open && innerWidth > 860) setPop.style.right = Math.max(8, innerWidth - setBtn.getBoundingClientRect().right) + 'px'; else setPop.style.right = '';
-    setPop.hidden = !open; setBtn.setAttribute('aria-expanded', String(open));
-    if (open) { setMore(false); setPop.querySelector('input')?.focus(); }
+  // Account and settings: one dialog behind the header's top-right button (the owner's choice, 23 November). The
+  // account part is the same code as /account (account.js, loaded when the dialog first opens); the settings are
+  // kept in this browser by filtersChanged, never in the account, and need no sign-in. A signed-in browser shows the
+  // account's initial on the button. Before sign-up is shown to everyone the button is the cog, for settings only.
+  const meDlg = $('#me-modal'), meBtn = $('#btn-me');
+  let meAcct = null, meLoad = null;
+  function meBadge() {
+    const b = meBtn.querySelector('.me-badge'), m = suMe?.signedIn ? String(suMe.maskedEmail || '') : '';
+    b.hidden = !m; meBtn.classList.toggle('signed', !!m);
+    if (!m) return;
+    let n = 0; for (const ch of m) n = (n * 31 + ch.codePointAt(0)) % 360; // the same letter and colour as badge() in account.js
+    b.textContent = (m.match(/[a-z0-9]/i)?.[0] || '?').toUpperCase(); b.style.backgroundColor = `hsl(${n} 45% 38%)`;
+  }
+  function meOpen() {
+    if (meDlg.open) return;
+    setMore(false);
+    if (meDlg.showModal) meDlg.showModal(); else meDlg.setAttribute('open', '');
+    meBtn.setAttribute('aria-expanded', 'true');
+    if (!SU_ON) return;
+    if (meAcct) return void meAcct.refresh();
+    const v = window.BUILD ? `?v=${window.BUILD}` : '';
+    meLoad ||= Promise.all([
+      new Promise((ok, no) => { const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = `/assets/account.css${v}`; l.onload = ok; l.onerror = no; document.head.append(l); }),
+      new Promise((ok, no) => { const sc = document.createElement('script'); sc.src = `/assets/account.js${v}`; sc.onload = ok; sc.onerror = no; document.head.append(sc); }),
+    ]).then(() => { meAcct = window.watAccount.mount($('#me-ac'), $('#me-ac-title')); })
+      .catch(() => { meLoad = null; $('#me-ac').textContent = "Accounts aren't available right now."; });
+  }
+  const meClose = () => { if (meDlg.close) meDlg.close(); else meDlg.removeAttribute('open'); };
+  meBtn.classList.toggle('no-acct', !SU_ON);
+  $('#me-acct').hidden = !SU_ON;
+  if (!SU_ON) { $('#me-title').textContent = 'Settings'; for (const k of ['aria-label', 'title']) meBtn.setAttribute(k, 'Settings'); }
+  meBtn.addEventListener('click', meOpen);
+  $('#me-close').addEventListener('click', meClose);
+  meDlg.addEventListener('click', e => { if (e.target === meDlg || e.target.closest('[data-open-consent]')) meClose(); }); // the backdrop; and the cookie banner would open under a dialog
+  meDlg.addEventListener('close', () => meBtn.setAttribute('aria-expanded', 'false'));
+  // On phones the dialog is a sheet, closed as sheets are on an iPhone: by dragging it down. From its header at any
+  // time; from the body only when it is scrolled to the top (otherwise the finger scrolls it). Past 120 px, or a
+  // quick flick, it goes; a shorter drag springs back. A browser has no gesture of its own for this.
+  let meDrag = null;
+  meDlg.addEventListener('touchstart', e => {
+    if (innerWidth > 860 || e.touches.length !== 1) return;
+    if (!e.target.closest('.me-head') && (meDlg.scrollTop > 0 || e.target.closest('input:not([type=checkbox])'))) return;
+    meDrag = { x: e.touches[0].clientX, y: e.touches[0].clientY, t: Date.now(), on: false, dy: 0 };
+  }, { passive: true });
+  meDlg.addEventListener('touchmove', e => {
+    if (!meDrag) return;
+    const dx = e.touches[0].clientX - meDrag.x, dy = e.touches[0].clientY - meDrag.y;
+    if (!meDrag.on) {
+      if (dy < -8 || Math.abs(dx) > 12) { meDrag = null; return; } // scrolling up, or sideways: not ours
+      if (dy < 8) return;
+      meDrag.on = true; meDlg.style.transition = 'none';
+    }
+    if (e.cancelable) e.preventDefault();
+    meDrag.dy = Math.max(0, dy); meDlg.style.transform = `translateY(${meDrag.dy}px)`;
+  }, { passive: false });
+  const meDrop = () => {
+    const d = meDrag; meDrag = null; if (!d?.on) return;
+    const gone = d.dy > 120 || (d.dy > 40 && d.dy / Math.max(1, Date.now() - d.t) > 0.5);
+    meDlg.style.transition = 'transform .18s ease-out'; meDlg.style.transform = gone ? 'translateY(100%)' : '';
+    setTimeout(() => { if (gone) meClose(); meDlg.style.transition = meDlg.style.transform = ''; }, 190);
   };
-  setBtn.addEventListener('click', e => { e.stopPropagation(); setOpen(setPop.hidden); });
-  document.addEventListener('click', e => { if (!setPop.hidden && !e.composedPath().includes(setPop)) setOpen(false); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !setPop.hidden) { setOpen(false); setBtn.focus(); } });
+  meDlg.addEventListener('touchend', meDrop);
+  meDlg.addEventListener('touchcancel', meDrop);
+  // what the dialog learns about who is signed in, the sign-up blocks and the button show too
+  document.addEventListener('wat:me', e => { suMe = e.detail; if (!e.detail.signedIn) suJust = false; suDraw(); });
+  if (SU_ON) {
+    // "Manage your account" and the like open the dialog; /account stays a page for links from emails and the privacy page
+    document.addEventListener('click', e => {
+      const a = e.target.closest?.('a[href="/account"]');
+      if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.button) return;
+      e.preventDefault(); e.stopPropagation(); meOpen();
+    }, true);
+    // someone who left for the mail app in the middle of signing in finds the code step open again
+    try { const v = JSON.parse(sessionStorage.getItem('wat:ac')); if (v?.name === 'code' && Date.now() - v.at < 600000) setTimeout(meOpen, 0); } catch { /* no storage */ }
+  }
 
   // the cookieless counter (netlify/edge-functions/lib/traffic.js): one anonymous "seen" signal per page load, once the
   // visitor scrolls, taps, clicks or types, or has had the page in view for 10 s, so the count can tell people from

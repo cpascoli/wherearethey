@@ -12,15 +12,16 @@
   <!-- This page loads nothing from anywhere else: no Analytics, no fonts or scripts from other sites, and no inline
        script (its Content-Security-Policy in netlify.toml forbids them). docs/accounts.md, section 4.2. -->
   <link rel="stylesheet" href="/assets/page.css">
-  <link rel="stylesheet" href="/assets/account.css?v=2">
-  <script src="/assets/account.js?v=2" defer></script>
+  <link rel="stylesheet" href="/assets/account-page.css?v=3">
+  <link rel="stylesheet" href="/assets/account.css?v=3">
+  <script src="/assets/account.js?v=3" defer></script>
 </head>
 <body>
 <main>
   <a class="back" href="/">← Where Are They</a>
   <div class="kicker ac-kicker">Account</div>
   <h1 id="ac-title">Your account</h1>
-  <div id="ac" aria-live="polite"><p class="muted">Loading…</p></div>
+  <div id="ac" class="ac-root" data-page aria-live="polite"><p class="muted">Loading…</p></div>
   <noscript><p>This page needs JavaScript to sign you in. The archive itself needs no account.</p></noscript>
   <p class="notes">You don't need an account to read the archive. An account is an email address and the alerts you chose: no name, no password. <a href="/privacy">Privacy &amp; cookies</a></p>
 </main>

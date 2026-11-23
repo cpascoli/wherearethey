@@ -93,7 +93,7 @@ A standalone page, like `/privacy`: no Analytics, no third-party script or font,
 - **Delete:** asks for a fresh code, says what is deleted and what remains (section 9), then signs out.
 - **Suppressed address** (bounce or complaint): says alerts can't be delivered and gives the contact address. It never clears a suppression by itself. If Resend also refuses to send sign-in codes to a suppressed address (**to prove**), that member can't sign in at all: the sign-in form then gives the contact address, and the owner deletes the account on request.
 
-The entry point is "Account" under Settings (the cog) and in the More menu, below "PURSUE releases", which stays first.
+The entry point (the owner's choice, 23 November) is the button in the top-right corner of the header, in place of the settings cog: a person icon, or the account's initial once signed in. It opens one dialog, "Account & settings" (a dialog in the middle on desktop; on phones a sheet that comes up from the bottom and is dragged down to close, as on an iPhone), with the account forms and, below them, the settings, which need no sign-in and stay in the browser, never in the account. The forms are the same code as this page (`account.js`, mounted in the dialog), so there they run under the app's looser policy: accepted, since the sign-up block already takes the address and the code in the app, the session cookie can't be read by a script, and deletion needs a fresh code. Links to `/account` inside the app open the dialog; the page stays for links from emails and the privacy page. A reader who left for the mail app in the middle of signing in finds the dialog open again on the code step.
 
 ### 4.3 The emails
 
