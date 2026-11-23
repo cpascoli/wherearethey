@@ -1,64 +1,4 @@
 {
-  "https://www.newsnationnow.com/politics/pentagon-ufo-hunter-jay-stratton-aliens/": {
-    "d": "2026-10-23",
-    "v": "news",
-    "why": "Stratton on CUOMO 2026-10-20: humanoid at his window; score 12"
-  },
-  "https://www.ibtimes.co.uk/ross-coulthart-trump-ufo-retrieval-programme-claims-1827289": {
-    "d": "2026-10-23",
-    "v": "runner-up",
-    "why": "Coulthart on Reality Check: Trump knows of legacy program; unnamed sources, repeats his May 2026 claim, show date unconfirmed; score 8"
-  },
-  "https://cybernews.com/news/trump-uap-ufo-ross-coulthart/": {
-    "d": "2026-10-23",
-    "v": "skip",
-    "why": "duplicate of Coulthart Reality Check story, write-up"
-  },
-  "https://www.bundestag.de/presse/hib/kurzmeldungen-1229446": {
-    "d": "2026-10-23",
-    "v": "suggest",
-    "why": "German government answer to AfD UAP inquiry (Drucksache 21/8662, 16 Oct): no findings on UAP; official, but nothing on file to anchor and outside window"
-  },
-  "https://curiosmos.com/grusch-human-looking-beings/": {
-    "d": "2026-10-23",
-    "v": "skip",
-    "why": "content farm; Grusch on JRE #2560 was 2026-09-30, outside window"
-  },
-  "https://curiosmos.com/ellsworth-veterans-reunion/": {
-    "d": "2026-10-23",
-    "v": "skip",
-    "why": "content farm; Woods/Johnson reunion aired Sept 2026 (American Alchemy), outside window"
-  },
-  "https://thehill.com/video-clips/5939109-watch-live-washington-talks-ufos-at-uap-disclosure-forum/": {
-    "d": "2026-10-23",
-    "v": "skip",
-    "why": "Disclosure Forum 2026 was 25 June, already on file"
-  },
-  "https://www.liberationtimes.com/home/trump-leaves-door-open-to-ufo-disclosure-announcement-im-looking": {
-    "d": "2026-10-23",
-    "v": "skip",
-    "why": "2026-10-16, outside window"
-  },
-  "https://www.8newsnow.com/investigators/former-intelligence-official-breaks-silence-on-govt-ufo-investigations/": {
-    "d": "2026-10-23",
-    "v": "skip",
-    "why": "KLAS Stratton book feature: same book promotion, nothing beyond the CUOMO item"
-  },
-  "news.google.com: 'Humanoid predator' near US border (Maussan; Daily Mail, UNILAD, Times of India)": {
-    "d": "2026-10-23",
-    "v": "skip",
-    "why": "not credible, not anchored"
-  },
-  "news.google.com: Daily Mail 'UFO cloud over Washington DC' / 'Glowing UFOs over Atlantic'": {
-    "d": "2026-10-23",
-    "v": "skip",
-    "why": "tabloid, no credible witness"
-  },
-  "news.google.com: Patricia Cornwell 'Orbs over the Cape' Instagram": {
-    "d": "2026-10-23",
-    "v": "skip",
-    "why": "civilian video, not anchored"
-  },
   "https://avi-loeb.medium.com/the-triangular-uap-in-the-7th-tranche-of-pursue-781dc0d27b92": {
     "d": "2026-10-24",
     "v": "runner-up",
@@ -1013,5 +953,565 @@
     "d": "2026-11-11",
     "v": "skip",
     "why": "nothing new in window 2026-11-08..11: no release 08, no NDAA conference text or vote, no hearing announced"
+  },
+  "https://avi-loeb.medium.com/a-new-galileo-project-observatory-for-high-resolution-imaging-and-spectroscopy-of-uap-d16daccd0cdb": {
+    "d": "2026-11-12",
+    "v": "runner-up",
+    "why": "Loeb/Weitsman Galileo Project radar+0.7 m telescope observatory in Ithaca; press release dated 2026-11-05 (outside window), plan already in the 11-10 Loeb item; score ~10 but out of window"
+  },
+  "https://avi-loeb.medium.com/can-a-spherical-object-speed-up-as-a-result-of-its-friction-on-air-2b45ce34ce80": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "Loeb blog 11-11: negative-mass speculation on Trump F-22 account; commentary, nothing new"
+  },
+  "https://www.aol.com/articles/didnt-wings-ex-navy-pilot-090359000.html": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "Soap Central/AOL write-up of Alex Dietrich on Sky History UK series; retells Nimitz 2004 account on file, nothing new"
+  },
+  "https://www.newsnationnow.com/latest-video/author-details-break-in-threat-against-uap-source-5zinlby_dna/": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "clip from the Reality Check Malmstrom/whistleblower episode t84b8Vyjek8, suggested 11-11; page captcha-blocked"
+  },
+  "https://www.einpresswire.com/article/955804169/society-for-uap-studies-sponsors-yale-symposium-on-extraordinary-claims-and-the-boundaries-of-knowledge": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "press release: SUAPS panel at Yale symposium Dec 4-5; organisation not on file, not anchored"
+  },
+  "https://www.leonarddavid.com/book-review-the-last-humans-ufos-global-security-and-the-threat-to-state-sovereignty/": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "book review; book not on file, commentary"
+  },
+  "news.google.com: Jellyfish UFO Alaska military base (Coast to Coast AM, Mashable India 11-11)": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "viral civilian video, no credible witness or official statement"
+  },
+  "news.google.com: Unisba 11-09 26-year air traffic controller Jason Judy / Graves": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "content farm re-post of a podcast clip; skipped 11-11"
+  },
+  "news.google.com: Trump 60 Minutes rewrites 11-09/10 (Fox affiliates, NY Post, SCMP, Hannity, Economic Times, UNILAD, IBT, Mathrubhumi, inkl, EurAsian Times)": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "duplicates of the 60 Minutes item (filed 11-10)"
+  },
+  "news.google.com: war.gov PURSUE page / DVIDS AARO unit page (11-09..11)": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "index pages re-crawled; no release 08 found"
+  },
+  "news.google.com: Daily Mail object accelerating (3I/ATLAS), Starlust Shostak, Debrief feed, SMBtech, NASA astronaut hiring, Disclosure Day, Bradley Walsh, Coast to Coast AM, Charisma Marzulli, Cybernews, Reason, ABC (misdated), Bol News": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "off-topic, entertainment, speculation, or repeats of items skipped 11-08..11"
+  },
+  "https://www.youtube.com/watch?v=dYPXINFcvmI": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "Joe Rogan #2560 David Grusch, uploaded 2026-09-30: outside window"
+  },
+  "https://www.youtube.com/watch?v=UHxJstZMVtg": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "MUFON Elizondo podcast uploaded 2026-10-07: outside window"
+  },
+  "web search 2026-11-12: AARO, war.gov release 08, UAPDA/FY2027 NDAA conference, House UAP hearing, ODNI/Gabbard, Grusch/Elizondo/Stratton/Graves/Fravor interviews, military pilot sightings": {
+    "d": "2026-11-12",
+    "v": "skip",
+    "why": "nothing new in window 2026-11-09..12: no release 08, no NDAA conference text or vote, no hearing announced, no AARO/ODNI statement"
+  },
+  "https://www.youtube.com/watch?v=a9TwEqpYDK0": {
+    "d": "2026-11-13",
+    "v": "suggest",
+    "why": "Safe Aerospace Podcast 11-12 (83 min): former Army imagery analyst Trevor Gardner, 2025-04-12 object over JB Pearl Harbor-Hickam, photos/video, security responded; no matching entry on file"
+  },
+  "https://www.youtube.com/watch?v=_Oak6Syr7y8": {
+    "d": "2026-11-13",
+    "v": "skip",
+    "why": "1-min Safe Aerospace clip of the Gardner interview (suggested)"
+  },
+  "https://youtu.be/_9l3QjwGhZw": {
+    "d": "2026-11-13",
+    "v": "skip",
+    "why": "UFOs Around The World 11-12: YouTuber on an X Space about Jake Barber's connections; civilian commentary, unverified"
+  },
+  "https://www.theideasletter.org/essay/unifying-flying-objects/": {
+    "d": "2026-11-13",
+    "v": "skip",
+    "why": "The Ideas Letter 11-12 essay; opinion, nothing new"
+  },
+  "https://newsnationnow.com/us-news/west/tentacled-ufo-alaska": {
+    "d": "2026-11-13",
+    "v": "skip",
+    "why": "Alaska 'jellyfish' civilian video, experts suggest balloon/kite; no credible witness (also FOX 8, Soap Central, GhanaWeb rewrites)"
+  },
+  "news.google.com: Daily Journal 11-12 UFO investigator explores 'swamp gas' incident": {
+    "d": "2026-11-13",
+    "v": "skip",
+    "why": "local talk on the 1966 Michigan case; history, nothing new"
+  },
+  "news.google.com: El Cronista 11-12 PURSUE triangle; Fox News 1998 KY26; Polymarket alien bets; Accidental Truth screening; Loeb Medium Q&A": {
+    "d": "2026-11-13",
+    "v": "skip",
+    "why": "rewrite of FBI triangle item on file, off-topic, trivia, commentary"
+  },
+  "https://www.youtube.com/watch?v=_HaAWzcK718": {
+    "d": "2026-11-13",
+    "v": "skip",
+    "why": "NewsNation 11-10 clip from Coulthart Q&A (skipped 11-09): what he would ask Trump; commentary"
+  },
+  "https://www.youtube.com/watch?v=maxJSjV_1Qc": {
+    "d": "2026-11-13",
+    "v": "skip",
+    "why": "re-upload of Rogan #2495 Burchett clip; old material"
+  },
+  "https://www.youtube.com/watch?v=vvZiSfzlHYU": {
+    "d": "2026-11-13",
+    "v": "skip",
+    "why": "Corbell/Knapp with Matt Laslo 11-08 on midterms and UAP; commentary, legislation: no vote yet"
+  },
+  "https://www.youtube.com/watch?v=YOLJwl0PjM0": {
+    "d": "2026-11-13",
+    "v": "skip",
+    "why": "The SCIF 11-09 midterms explainer; commentary"
+  },
+  "youtube search 2026-11-13: Backscroll compilations, Reality Check Rewind, Grusch/Elizondo re-cuts, Forbidden Files Elizondo 2024 hearing clip": {
+    "d": "2026-11-13",
+    "v": "skip",
+    "why": "compilations, re-uploads, fan channels"
+  },
+  "web search 2026-11-13: AARO, war.gov release 08, UAPDA/FY2027 NDAA conference, House UAP hearing, ODNI/Gabbard": {
+    "d": "2026-11-13",
+    "v": "skip",
+    "why": "nothing new in window 2026-11-10..13: no release 08, no NDAA conference text or vote, no hearing announced, no AARO/ODNI statement"
+  },
+  "news.google.com: NewsNation/The Hill 11-13 What happens to UAP investigation when House Oversight control changes / new Democratic majority": {
+    "d": "2026-11-14",
+    "v": "skip",
+    "why": "video segment on post-midterm House control; page unreachable (403), no new on-record statement found; Carson select-committee story already judged (runner-up 11-02)"
+  },
+  "news.google.com: NewsNation/AOL 11-12..13 New UFO-spotting telescope planned, Avi Loeb says": {
+    "d": "2026-11-14",
+    "v": "skip",
+    "why": "same story as the Galileo observatory runner-up of 11-12 (Loeb Medium release); other outlet, nothing new"
+  },
+  "news.google.com: Alaska jellyfish UFO (Fox News, Fox 8, inkl, Mashable India, HackerNoon, GhanaWeb, NewsGhana, Soap Central 11-12..13)": {
+    "d": "2026-11-14",
+    "v": "skip",
+    "why": "viral civilian video, no credible witness or official statement; skipped 11-12..13"
+  },
+  "news.google.com: Daily Wire 11-13 Wired In Live with Tim Burchett": {
+    "d": "2026-11-14",
+    "v": "skip",
+    "why": "political talk show; no UAP content found"
+  },
+  "news.google.com: NewsNation Backscroll 11-13 (Trump UFO files; Fringe to Mainstream)": {
+    "d": "2026-11-14",
+    "v": "skip",
+    "why": "compilations (Backscroll)"
+  },
+  "news.google.com: Cybernews AI-generated UFO videos, WRMF podcast, Rolling Stone MH370, Polymarket, Disclosure Day, Accidental Truth, Debrief feed, SMBtech, NASA/SpaceX 11-11..13": {
+    "d": "2026-11-14",
+    "v": "skip",
+    "why": "commentary, entertainment, off-topic, content farms"
+  },
+  "web search 2026-11-14: AARO, war.gov release 08, UAPDA/FY2027 NDAA conference, House UAP hearing, YouTube interviews, pilot reports": {
+    "d": "2026-11-14",
+    "v": "skip",
+    "why": "nothing new in window 2026-11-11..14: no release 08, no NDAA conference text or vote, no hearing announced, no new on-record interview found"
+  },
+  "https://www.foxnews.com/us/pentagons-former-ufo-investigator-offers-simple-theory-mysterious-jellyfish-shaped-object-video": {
+    "d": "2026-11-15",
+    "v": "runner-up",
+    "why": "Kirkpatrick to Fox News Digital 11-14: Alaska jellyfish video motion resembles a kite with streamers, social media poor data; credible voice but subject (civilian viral video) not on file; score 9"
+  },
+  "news.google.com: Kirkpatrick jellyfish rewrites 11-14 (Yahoo, IBTimes, Mezha, RedState, WRGA, Jingletree, 10bmnews)": {
+    "d": "2026-11-15",
+    "v": "skip",
+    "why": "duplicates of the Fox News Kirkpatrick runner-up"
+  },
+  "news.google.com: Alaska jellyfish UFO (Fox 8, Nacionale, Mashable India, GhanaWeb, Fox News 11-12..14)": {
+    "d": "2026-11-15",
+    "v": "skip",
+    "why": "viral civilian video, no credible witness or official statement; skipped 11-12..14"
+  },
+  "news.google.com: ABC News 11-14 Pentagon releases declassified UFO files from various federal agencies": {
+    "d": "2026-11-15",
+    "v": "skip",
+    "why": "re-crawled ABC story of 2026-05-08 (release 01), outside window"
+  },
+  "news.google.com: war.gov PURSUE page re-crawled 11-14": {
+    "d": "2026-11-15",
+    "v": "skip",
+    "why": "index page; war.gov 403, no release 08 found in search"
+  },
+  "news.google.com: Nacionale 11-14 How do you report a UFO sighting / Britannica Robertson Panel / Gospel Coalition / stupidDOPE / Cybernews AI videos": {
+    "d": "2026-11-15",
+    "v": "skip",
+    "why": "content farms, explainers, commentary"
+  },
+  "news.google.com: NewsNation/AOL/Soap Central/FOX One 11-12..14 Loeb telescope; Loeb Medium Q&A": {
+    "d": "2026-11-15",
+    "v": "skip",
+    "why": "same Galileo observatory story already judged (runner-up 11-12, skip 11-14)"
+  },
+  "news.google.com: The Hill/NewsNation 11-13 House Oversight control change; Daily Wire Burchett 11-13; Backscroll 11-13": {
+    "d": "2026-11-15",
+    "v": "skip",
+    "why": "judged 11-14: no new on-record statement / political talk / compilations"
+  },
+  "https://bialikbreakdown.substack.com/p/ufo-expert-we-have-government-proof": {
+    "d": "2026-11-15",
+    "v": "skip",
+    "why": "Mayim Bialik Breakdown 11-13 re-release of an older Elizondo episode; re-upload"
+  },
+  "news.google.com: El Cronista PURSUE triangle, KY26, Starship, SMBtech, Debrief feed, Disclosure Day, Coast to Coast AM 11-12..14": {
+    "d": "2026-11-15",
+    "v": "skip",
+    "why": "rewrites of items on file, off-topic, entertainment"
+  },
+  "web search 2026-11-15: AARO, war.gov release 08, UAPDA/FY2027 NDAA conference, upcoming UAP hearing, NewsNation, YouTube interviews, pilot reports": {
+    "d": "2026-11-15",
+    "v": "skip",
+    "why": "nothing new in window 2026-11-12..15: no release 08, no NDAA conference text or vote, no hearing announced, no new on-record interview found"
+  },
+  "https://www.newsnationnow.com/politics/trump-ufo-legacy-program-avi-loeb/": {
+    "d": "2026-11-16",
+    "v": "runner-up",
+    "why": "Loeb to NewsNation 11-14/15: doubts a legacy program could be hidden from Trump; opinion/commentary on the 60 Minutes item, page 403 (primary unreachable); score 9"
+  },
+  "news.google.com: NewsNation Reality Check 11-15 What does Stephen Miller as chief of staff mean for UFO disclosure?": {
+    "d": "2026-11-16",
+    "v": "skip",
+    "why": "podcast commentary (Coulthart); no new on-record statement; Miller reporting unverified"
+  },
+  "news.google.com: Fox Weather/FOX One 11-15 Avi Loeb discusses Pentagon videos of jellyfish UFOs; AOL 11-15 Loeb dark comet 1998 KY26; wrganews Loeb vs NASA chief": {
+    "d": "2026-11-16",
+    "v": "skip",
+    "why": "Loeb commentary on viral/astronomical items, nothing new about entries on file"
+  },
+  "news.google.com: UNILAD 11-15 FAA grounded flights UFO theory; Daily Mail 11-13 FAA halts flights": {
+    "d": "2026-11-16",
+    "v": "skip",
+    "why": "online speculation; no official or credible link to UAP"
+  },
+  "news.google.com: Coast to Coast AM 11-14 UFOs at Military Installations; 11-13..15 other shows": {
+    "d": "2026-11-16",
+    "v": "skip",
+    "why": "radio talk show; nothing new on record found"
+  },
+  "news.google.com: Kirkpatrick jellyfish rewrites, Alaska jellyfish, Loeb telescope, Hill/NewsNation House Oversight control, Backscroll, Daily Wire Burchett (11-13..14)": {
+    "d": "2026-11-16",
+    "v": "skip",
+    "why": "judged 11-14..15: runner-up/duplicates/compilations/no new on-record statement"
+  },
+  "news.google.com: Coventry Telegraph sightings list, Unisba Greer/Reality Check re-posts, Britannica, Gospel Coalition, Nacionale, Cybernews, HackerNoon, SMBtech, Starlust, Debrief feed 11-13..16": {
+    "d": "2026-11-16",
+    "v": "skip",
+    "why": "local list, content farms, explainers, off-topic"
+  },
+  "web search 2026-11-16: AARO, war.gov release 08, UAPDA/FY2027 NDAA conference, upcoming UAP hearing, Grusch/Elizondo/Stratton/Gallaudet/Graves/Mellon interviews, FAA/pilot reports": {
+    "d": "2026-11-16",
+    "v": "skip",
+    "why": "nothing new in window 2026-11-13..16: no release 08, no NDAA conference text or vote, no hearing announced, no new on-record interview found"
+  },
+  "web search 2026-11-17: AARO, war.gov release 08, UAPDA/FY2027 NDAA conference, upcoming UAP hearing, ODNI/Gabbard, Grusch/Elizondo/Stratton/Mellon/Burchett interviews, NewsNation": {
+    "d": "2026-11-17",
+    "v": "skip",
+    "why": "nothing new in window 2026-11-14..17: no release 08, no NDAA conference text or vote, no hearing announced, no new on-record statement"
+  },
+  "news.google.com: NewsNation 11-16 Ross Coulthart wants closer look at Alaska jellyfish UFO": {
+    "d": "2026-11-17",
+    "v": "skip",
+    "why": "journalist commentary on viral civilian video (skipped 11-12..16); no credible witness or official statement"
+  },
+  "news.google.com: Herald.Wales 11-15 Broad Haven UFO mystery could resurface after Trump pledges files": {
+    "d": "2026-11-17",
+    "v": "skip",
+    "why": "local recap of the 1977 case on file; speculation, nothing new"
+  },
+  "news.google.com: Daily Observer 11-16 So, aliens are real then?; Coast to Coast AM 11-15..16 (Federal Secrets/NHI, Chile saucer, telescope)": {
+    "d": "2026-11-17",
+    "v": "skip",
+    "why": "opinion column, radio talk shows; nothing new on record"
+  },
+  "news.google.com: Starlust Shostak 11-14/16, Soap Central KY26 11-15, Mashable/Zamin jellyfish 11-16, Gospel Coalition, UNILAD FAA, SMBtech, Starship": {
+    "d": "2026-11-17",
+    "v": "skip",
+    "why": "commentary, viral video rewrites, off-topic, content farms; repeats of items skipped 11-14..16"
+  },
+  "news.google.com: NewsNation/Fox One 11-15 Loeb legacy program / jellyfish; Fox News Kirkpatrick jellyfish rewrites": {
+    "d": "2026-11-17",
+    "v": "skip",
+    "why": "already judged 11-15..16 (runner-ups)"
+  },
+  "https://www.newsnationnow.com/podcasts-newsnation/reality-check/trump-administration-covert-ufo-program/amp/": {
+    "d": "2026-11-17",
+    "v": "skip",
+    "why": "Coulthart Skywatcher/covert-program column, months old, anonymous sources; outside window"
+  },
+  "https://www.foxnews.com/video/6399755953112": {
+    "d": "2026-11-17",
+    "v": "skip",
+    "why": "Hannity podcast with Burchett/Elizondo aired 2026-06-30; outside window"
+  },
+  "https://www.cnn.com/2026/11/15/politics/army-soldier-whistleblower-complaint": {
+    "d": "2026-11-17",
+    "v": "skip",
+    "why": "Army whistleblower on Kuwait drone strike; not UAP"
+  },
+  "https://www.liberationtimes.com/home/behind-the-white-houses-ufo-silence-alleged-briefings-investigations-and-an-uncertain-path-to-disclosure": {
+    "d": "2026-11-18",
+    "v": "runner-up",
+    "why": "Liberation Times (Sharp) 11-17 recap: WH spokesperson only refers to Trump 60 Minutes comments; Flowers (Disclosure Foundation) backs Carson select committee; mostly anonymous sources and known material. Score 9"
+  },
+  "news.google.com: EIN Presswire 11-16 Scientific Coalition for UAP Studies $100,000 camera-station campaign": {
+    "d": "2026-11-18",
+    "v": "runner-up",
+    "why": "SCU fundraising press release (peripheral entry); release text unreachable (EIN 404), no official action. Score 8"
+  },
+  "news.google.com: Gazeta Express 11-16 Charles Duke UFOs demonic; Ideas Letter 11-16 Unifying Flying Objects": {
+    "d": "2026-11-18",
+    "v": "skip",
+    "why": "rewrite of older Duke remarks; essay/commentary"
+  },
+  "news.google.com: NewsNation Backscroll 11-17 Airport sightings": {
+    "d": "2026-11-18",
+    "v": "skip",
+    "why": "compilation (Backscroll)"
+  },
+  "news.google.com: BroBible 11-17 Oregon family UFO; Pajiba/Coast to Coast pterodactyls; Coast to Coast AM 11-16..17": {
+    "d": "2026-11-18",
+    "v": "skip",
+    "why": "civilian anecdote, entertainment, radio talk shows"
+  },
+  "news.google.com: Loeb KY26/JAXA (Medium, Mashable India, Soap Central, WRGA, AOL 11-15..17)": {
+    "d": "2026-11-18",
+    "v": "skip",
+    "why": "interstellar-object commentary, not about an entry-specific UAP event"
+  },
+  "news.google.com: Coulthart jellyfish, Loeb legacy program, Reality Check, ABC re-crawl, Herald.Wales, Starlust, SMBtech, Debrief feed 11-14..17": {
+    "d": "2026-11-18",
+    "v": "skip",
+    "why": "already judged 11-14..17 / off-topic / content farms"
+  },
+  "web search 2026-11-18: AARO, war.gov release 08, UAPDA/FY2027 NDAA conference, upcoming UAP hearing, ODNI/Gabbard, Grusch/Elizondo/Gallaudet/Graves/Mellon interviews, NewsNation": {
+    "d": "2026-11-18",
+    "v": "skip",
+    "why": "nothing new in window 2026-11-15..18: no release 08, no NDAA conference text or vote, no hearing scheduled, no new on-record interview"
+  },
+  "https://burlison.house.gov/media/press-releases/burlison-names-uap-whistleblower-jake-barber-senior-adviser": {
+    "d": "2026-11-19",
+    "v": "news",
+    "why": "Burlison office press release 11-18: Jake Barber named senior adviser on UAP; filed (score 13)"
+  },
+  "news.google.com: Quiver Quantitative / Newstalk KZRG 11-18 Burlison names Barber senior adviser": {
+    "d": "2026-11-19",
+    "v": "skip",
+    "why": "duplicates of the Burlison press release (filed)"
+  },
+  "https://askapoluaps.com/p/stephen-miller-promotion-unfortunate-for-uap": {
+    "d": "2026-11-19",
+    "v": "runner-up",
+    "why": "Ask a Pol (Laslo) 11-13, Burlison interview 11-10 on hiring Barber and Stephen Miller as chief of staff; outside window, superseded by the 11-18 official announcement. Score 9"
+  },
+  "news.google.com: NewsNation/IBTimes/AOL/inkl/Coast to Coast 11-18 Australian desert / Bass Strait orb summoning": {
+    "d": "2026-11-19",
+    "v": "skip",
+    "why": "TV/entertainment summoning attempt near Valentich area; no credible witness or official action"
+  },
+  "news.google.com: Coulthart Alaska jellyfish, SCU $100k campaign, ABC re-crawl, Backscroll 11-17, BroBible Oregon, Duke/Gazeta, Ideas Letter, Shostak/Starlust": {
+    "d": "2026-11-19",
+    "v": "skip",
+    "why": "already judged 11-14..18"
+  },
+  "news.google.com: Loeb KY26/JAXA Medium & Mashable India 11-16..18, HackerNoon jellyfish list, Foro3D 1952 Washington, Voyager 1, DeFi Rate/SMBtech noise": {
+    "d": "2026-11-19",
+    "v": "skip",
+    "why": "off-topic, commentary, history recaps, content farms"
+  },
+  "web search 2026-11-19: AARO, war.gov release 08, UAPDA/FY2027 NDAA conference, upcoming UAP hearing": {
+    "d": "2026-11-19",
+    "v": "skip",
+    "why": "nothing new in window 2026-11-16..19: no release 08, no NDAA conference text or vote, no hearing scheduled"
+  },
+  "news.google.com: Cybernews 11-19 White House UAP advisor says aliens may not stop work": {
+    "d": "2026-11-20",
+    "v": "skip",
+    "why": "Loeb commentary (council adviser) rehashing earlier remarks; no new on-record statement about an entry"
+  },
+  "news.google.com: Starlust 11-19 Trump recalls very strange UFO sightings by Air Force pilots": {
+    "d": "2026-11-20",
+    "v": "skip",
+    "why": "rewrite of Trump 60 Minutes remarks of 11-08, already filed"
+  },
+  "news.google.com: MLB.com 11-19 1961 UFO encounter and Double-A New Hampshire alternate identity": {
+    "d": "2026-11-20",
+    "v": "skip",
+    "why": "sports-marketing trivia about the 1961 Hill case; nothing new"
+  },
+  "https://www.theblackvault.com/documentarchive/faa-releases-records-on-major-northeast-air-traffic-control-outage-but-key-technical-details-remain-missing/": {
+    "d": "2026-11-20",
+    "v": "skip",
+    "why": "FAA ATC outage records; not UAP"
+  },
+  "https://www.newsnationnow.com/latest-video/ufo-community-infighting-mkeb5mmojgq/": {
+    "d": "2026-11-20",
+    "v": "skip",
+    "why": "Coulthart commentary backing Barber, 11-16; outside window, journalist opinion"
+  },
+  "news.google.com: JRE #2583 Bob Gymlan, DeFi Rate, SMBtech, Charisma, Disclosure Day gallery, DW Voyager, ISS city lights 11-19": {
+    "d": "2026-11-20",
+    "v": "skip",
+    "why": "off-topic / entertainment / content farms"
+  },
+  "news.google.com: Barber-Burlison rewrites (KZRG, Wisevoter, Quiver), Bass Strait orbs, jellyfish, KY26, Ideas Letter, Coast to Coast 11-17..19": {
+    "d": "2026-11-20",
+    "v": "skip",
+    "why": "already judged 11-17..19"
+  },
+  "web search 2026-11-20: AARO, war.gov release 08, UAPDA/FY2027 NDAA conference, upcoming UAP hearing, NewsNation, pilot/FAA reports": {
+    "d": "2026-11-20",
+    "v": "skip",
+    "why": "nothing new in window 2026-11-17..20: no release 08, no NDAA conference text or vote, no hearing announced, no new on-record testimony"
+  },
+  "https://www.war.gov/News/Releases/Release/Article/4655441/department-of-war-publishes-eighth-release-of-unidentified-anomalous-phenomena/": {
+    "d": "2026-11-21",
+    "v": "skip",
+    "why": "DoW press release 11-20 on PURSUE release 08 (Parnell); already filed by the owner as ev-pursue-release-08 with its records"
+  },
+  "news.google.com: release 08 coverage 11-20 (CBS vault for exotic material, Fox/Yahoo 1952 CIA report, NewsNation Mach 2.5 radar, Newsweek three videos, Daily Mail/Independent/AOL warship video, Debrief Engineer-Senator-Scientist, Inside Outer Space, iHeart, tippinsights, Wisevoter, Foro3D)": {
+    "d": "2026-11-21",
+    "v": "skip",
+    "why": "write-ups of PURSUE release 08, already on file (event, records, AAWSAP/BAASS and CIA facts); no on-record reaction from a credible person found"
+  },
+  "news.google.com: Soap Central/AOL 11-20 Age of Disclosure director Dan Farah on unacknowledged special access": {
+    "d": "2026-11-21",
+    "v": "skip",
+    "why": "filmmaker commentary rewritten by a content site; nothing new on record"
+  },
+  "news.google.com: AOL 11-20 Law enforcement meets the unknown with UAP-PD": {
+    "d": "2026-11-21",
+    "v": "skip",
+    "why": "feature on a retired officers' nonprofit (since 2022); not about an entry, nothing new"
+  },
+  "news.google.com: UNILAD Air Force One phones, Burchett GTA 6, Pensacola UFO house GTA 6, SMBtech, Economic Times, Eurasia Review, celebrities list, PAPER, Google UAP cloud": {
+    "d": "2026-11-21",
+    "v": "skip",
+    "why": "off-topic / trivia / content farms"
+  },
+  "news.google.com: Loeb KY26 solar panels 11-20, Cybernews Loeb 11-19, Starlust Trump pilots, MLB 1961 Hill, Barber-Burlison rewrites, Bass Strait orbs, jellyfish, Foro3D cattle mutilations": {
+    "d": "2026-11-21",
+    "v": "skip",
+    "why": "already judged 11-17..20 / commentary / rewrites"
+  },
+  "web search 2026-11-21: AARO, UAPDA/FY2027 NDAA conference, upcoming UAP hearing, lawmaker reactions to release 08, NewsNation interviews": {
+    "d": "2026-11-21",
+    "v": "skip",
+    "why": "nothing new in window 2026-11-18..21 beyond release 08: no NDAA conference text or vote, no hearing announced, no new on-record testimony found"
+  },
+  "https://avi-loeb.medium.com/the-engineer-the-senator-and-the-scientist-in-the-8th-uap-data-release-by-the-u-s-government-d99347e4b596": {
+    "d": "2026-11-22",
+    "v": "news",
+    "why": "Loeb/UAP Science Advisory Council 11-20: PR168, PR169 objects flicker like birds; filed (score 12)"
+  },
+  "https://avi-loeb.medium.com/science-and-counterintelligence-have-complementary-perspectives-on-uap-d8365b62ec7d": {
+    "d": "2026-11-22",
+    "v": "skip",
+    "why": "Loeb essay 11-21; repeats the release-08 bird finding (saved as second source of the filed item)"
+  },
+  "https://www.youtube.com/watch?v=eYrlgSLqnDw": {
+    "d": "2026-11-22",
+    "v": "runner-up",
+    "why": "NewsNation Jesse Weber Live 11-21 Loeb on release-08 birds; same story as filed item, YouTube refused transcript (video to file)"
+  },
+  "https://www.newsnationnow.com/space/ufo/ufo-videos-likely-birds-avi-loeb/": {
+    "d": "2026-11-22",
+    "v": "skip",
+    "why": "write-up of the Loeb interview; same story as filed item; site blocks scripts"
+  },
+  "https://www.youtube.com/watch?v=3wgQQ7FKdrM": {
+    "d": "2026-11-22",
+    "v": "runner-up",
+    "why": "NewsNation CUOMO 11-21 implants in release-08 files; speaker unclear, page blocked, no transcript"
+  },
+  "https://www.newsnationnow.com/politics/skinwalker-ranch-mystery-ufo-files/": {
+    "d": "2026-11-22",
+    "v": "skip",
+    "why": "author commentary on release-08 Skinwalker material already on file"
+  },
+  "news.google.com: KUTV/AOL 11-20..21 Brandon Fugal calls release landmark, recounts sighting": {
+    "d": "2026-11-22",
+    "v": "skip",
+    "why": "Fugal on file as civilian (outside criteria); commentary"
+  },
+  "https://www.newsnationnow.com/space/ufo/eight-uap-radar-analysis-object-mach-2-5/": {
+    "d": "2026-11-22",
+    "v": "skip",
+    "why": "write-up of release-08 record D165, already on file"
+  },
+  "news.google.com: release 08 coverage 11-20..21 (CBS vault, HuffPost, NY Post Mach 2.5, BBC, Euronews, Sun, Times of India, Fox astrophysicist, Newsweek, Daily Mail, SMBtech, Marca, UNILAD, inkl Elizondo implants)": {
+    "d": "2026-11-22",
+    "v": "skip",
+    "why": "write-ups of PURSUE release 08, already on file"
+  },
+  "news.google.com: Ross Coulthart Q&A 11-21, Coast to Coast AM, USDA Bigfoot files, Burchett GTA 6, Ideas Letter, UAP-PD, Cybernews Loeb, MLB 1961": {
+    "d": "2026-11-22",
+    "v": "skip",
+    "why": "journalist commentary / off-topic / already judged"
+  },
+  "web search 2026-11-22: AARO, UAPDA/FY2027 NDAA conference, upcoming UAP hearing, NewsNation, Black Vault, Liberation Times": {
+    "d": "2026-11-22",
+    "v": "skip",
+    "why": "nothing new in window 2026-11-19..22 beyond release 08: no NDAA conference text or vote, no hearing, no AARO release"
+  },
+  "news.google.com: Daily Mail 11-22 Former Pentagon contractor claims aliens are living among us": {
+    "d": "2026-11-23",
+    "v": "skip",
+    "why": "Daily Mail unreachable here (blocked; Google News link does not resolve), speaker unidentified; tabloid write-up, no primary source"
+  },
+  "news.google.com: inkl 11-21 Pentagon UFO Files detail alien chip implant as Luis Elizondo speaks out": {
+    "d": "2026-11-23",
+    "v": "skip",
+    "why": "rewrite of NewsNation release-08 implant segment (runner-up 11-22) plus Elizondo 2024 implant claims already on file; no new on-record statement found"
+  },
+  "news.google.com: NewsNation 11-22 Trump is being briefed on UAPs | Reality Check Q&A; Coulthart Q&A 11-21": {
+    "d": "2026-11-23",
+    "v": "skip",
+    "why": "journalist commentary (Coulthart), no named source or official action"
+  },
+  "news.google.com: NewsNation Jesse Weber Live full show 11-22 (Loeb on release 08)": {
+    "d": "2026-11-23",
+    "v": "skip",
+    "why": "same Loeb birds story as the item filed 11-22 (runner-up video already listed)"
+  },
+  "news.google.com: release 08 coverage 11-22 (EarthSky radar track analysis, Zamin, 1956 encounter content farm, YouTube overview, SMBtech BAASS/CIA)": {
+    "d": "2026-11-23",
+    "v": "skip",
+    "why": "write-ups of PURSUE release 08, already on file"
+  },
+  "news.google.com: Free Beacon 11-22 Is the Truth Really Out There?": {
+    "d": "2026-11-23",
+    "v": "skip",
+    "why": "opinion/essay; article not found by search, no new on-record statement"
+  },
+  "news.google.com: NewsBreak 11-20 SHOCK MOVE AS CONGRESS SEEKS UFO DATA CONTROL": {
+    "d": "2026-11-23",
+    "v": "skip",
+    "why": "aggregator headline; legislation: no vote yet (no FY2027 NDAA conference text or vote found)"
+  },
+  "news.google.com: Project Unity Jay Anderson 11-21, NW Arkansas club news MUFON 11-22, Bigfoot USDA files, AOL Loeb KY26, FBI database breach": {
+    "d": "2026-11-23",
+    "v": "skip",
+    "why": "civilian / off-topic / commentary"
+  },
+  "web search 2026-11-23: AARO, UAPDA/FY2027 NDAA conference, upcoming UAP hearing, Elizondo, Daily Mail contractor": {
+    "d": "2026-11-23",
+    "v": "skip",
+    "why": "nothing new in window 2026-11-20..23 beyond release 08 (already judged): no AARO statement, no NDAA conference text or vote, no hearing announced"
   }
 }
