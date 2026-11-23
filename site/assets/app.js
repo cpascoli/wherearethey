@@ -1132,7 +1132,7 @@
   // Order: oldest first, or the latest first. The visitor's choice is remembered (a setting, not a filter); until they
   // choose, the Congress tracker reads from the latest back and the rest from the beginning.
   let tlNewest = store.get('tlNewest', null);
-  const tlNewestFirst = () => tlNewest ?? tlView === 'congress';
+  const tlNewestFirst = () => tlNewest ?? true; // newest first in every reading (the owner's choice, 23 November) until the visitor picks an order, which is kept
   const foldedInHearing = e => adj.get(e.id).some(x => x.dir === 'out' && ['submitted to', 'transcript of'].includes(x.label)); // statements and transcripts show on the hearing's card
   const TL_PICK = {
     congress: e => (e.type === 'hearing' && !/citizen/.test(e.id)) || (['event', 'document'].includes(e.type) && e.tags.includes('congress') && !foldedInHearing(e)),
@@ -3666,7 +3666,16 @@
     if (state.view === 'graph') highlight(id);
     if (state.view === 'map') markMapSel();
     if (state.view === 'timeline') $$('.tl-item').forEach(el => el.classList.toggle('sel', el.dataset.goto === id));
+    navLit();
     setHash({ replace });
+  }
+  // The lit item of the bar: the view; or the file that has a place of its own in the bar (PURSUE, on desktop) while
+  // it is open, instead of Explore, which is only where its page happens to sit.
+  function navLit() {
+    const narrow = matchMedia('(max-width: 860px)').matches, view = state.view; // the bottom tab bar folds Timeline into More
+    const file = !narrow && state.sel && view !== 'home' && $(`#views [data-goto="${CSS.escape(state.sel)}"]`);
+    $$('#views [data-group], #views [data-view]').forEach(a => a.classList.toggle('active', !file && [...(a.dataset.group || a.dataset.view).split(' '), ...(narrow && a.dataset.groupNarrow ? a.dataset.groupNarrow.split(' ') : [])].includes(view)));
+    $$('#views [data-goto]').forEach(a => a.classList.toggle('active', a === file));
   }
   function go(view, { keepSel = true } = {}) {
     // leaving Videos pauses the player and remembers where it stopped: coming back shows the same video at that point,
@@ -3685,8 +3694,7 @@
     store.set('view', view);
     renderFilters(); // the Types list depends on the view (the timeline offers only the types it shows)
     for (const v of VIEWS) $('#view-' + v).hidden = v !== view;
-    const narrow = matchMedia('(max-width: 860px)').matches; // the bottom tab bar folds Timeline into More
-    $$('#views [data-group], #views [data-view]').forEach(a => a.classList.toggle('active', [...(a.dataset.group || a.dataset.view).split(' '), ...(narrow && a.dataset.groupNarrow ? a.dataset.groupNarrow.split(' ') : [])].includes(view)));
+    navLit();
     $('#app').classList.toggle('is-home', view === 'home');
     document.body.classList.toggle('is-home', view === 'home'); // the header sits outside #app
     if (state.autoSel && view !== 'latest') { if (state.sel === state.autoSel) state.sel = null; state.autoSel = null; } // Latest's preview stays on Latest
@@ -3811,7 +3819,7 @@
     if (g && g.matches('a[href^="/"]') && (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1)) return; // new tab / window
     if (g) {
       e.preventDefault();
-      const fromSearch = !!g.closest('#q-results, #more-menu'), ent = byId.get(g.dataset.goto); // a More item (PURSUE) opens as a search pick does
+      const fromSearch = !!g.closest('#q-results, #more-menu, #views'), ent = byId.get(g.dataset.goto); // PURSUE in the bar (on phones: under More) opens as a search pick does
       $('#q-results').hidden = true;
       // a search result picked from any page opens Explore and starts a trail from it: the first step, ready to
       // follow (filters are cleared if they would hide it)

@@ -78,16 +78,26 @@ test('the release highlights: top picks first, a release row shows that release\
   }
 });
 
-test('More opens with PURSUE releases, which opens the explainer; Back returns', { skip }, async () => {
+test('PURSUE is in the bar after Latest on desktop and first under More on phones; it opens the explainer; Back returns', { skip }, async () => {
   for (const phone of [false, true]) {
     const p = await open('/timeline', { phone });
+    const shown = sel => p.evaluate(s => [...document.querySelectorAll(s)].filter(a => a.getClientRects().length).map(a => a.dataset.goto || a.dataset.view || a.getAttribute('href')), sel);
     await p.evaluate(() => document.getElementById('btn-more').click());
     await new Promise(r => setTimeout(r, 300));
-    assert.equal(await p.evaluate(() => [...document.querySelectorAll('#more-menu a')].find(a => a.getClientRects().length)?.dataset.goto), 'pursue', 'the first item');
-    await p.evaluate(() => document.querySelector('#more-menu a[data-goto="pursue"]').click());
+    if (phone) {
+      assert.equal((await shown('#more-menu a'))[0], 'pursue', 'the first item under More');
+      await p.evaluate(() => document.querySelector('#more-menu a[data-goto="pursue"]').click());
+    } else {
+      assert.deepEqual((await shown('#views a')).slice(0, 3), ['latest', 'pursue', 'graph'], 'in the bar, between Latest and Explore');
+      assert.ok(!(await shown('#more-menu a')).includes('pursue') && (await shown('#more-menu a')).at(-1) === '/about', 'not under More, where About is');
+      assert.equal(await p.$('.top-about'), null, 'About is no longer in the bar');
+      await p.evaluate(() => document.getElementById('btn-more').click());
+      await p.evaluate(() => document.querySelector('#views a[data-goto="pursue"]').click());
+    }
     await new Promise(r => setTimeout(r, 1500));
     assert.equal(await p.evaluate(() => location.pathname), '/program/pursue');
     assert.ok(await p.evaluate(() => document.getElementById('more-menu').hidden && !!document.querySelector('#sec-pu-hl')), 'the menu closes, the explainer shows');
+    if (!phone) assert.deepEqual(await p.evaluate(() => [...document.querySelectorAll('#views a.active, #views button.active')].map(a => a.dataset.goto || a.dataset.view)), ['pursue'], 'PURSUE is the lit item, not Explore');
     await p.evaluate(() => history.back());
     await new Promise(r => setTimeout(r, 1500));
     assert.equal(await p.evaluate(() => location.pathname), '/timeline');

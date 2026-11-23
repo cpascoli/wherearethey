@@ -82,3 +82,22 @@ test('the home carousel: the painted first slide stays, the others join it, none
     await p.close();
   }
 });
+
+test('the timeline starts from the latest in every reading, and keeps the order the visitor picks', { skip }, async () => {
+  const p = await open('/timeline');
+  const decades = () => p.$$eval('#timeline .tl-decade', els => els.map(el => parseInt(el.textContent, 10)));
+  await p.evaluate(() => localStorage.removeItem('wat:tlNewest'));
+  await p.reload({ waitUntil: 'networkidle2' });
+  await p.waitForSelector('#timeline .tl-decade');
+  let d = await decades();
+  assert.ok(d.length > 3 && d[0] > d.at(-1), `newest first by default: ${d[0]} … ${d.at(-1)}`);
+  await p.click('#timeline [data-tl-order]');
+  d = await decades();
+  assert.ok(d[0] < d.at(-1), 'reversed by the button');
+  await p.reload({ waitUntil: 'networkidle2' });
+  await p.waitForSelector('#timeline .tl-decade');
+  d = await decades();
+  assert.ok(d[0] < d.at(-1), 'and remembered');
+  await p.evaluate(() => localStorage.removeItem('wat:tlNewest'));
+  await p.close();
+});

@@ -897,8 +897,6 @@ body.resizing iframe { pointer-events: none; }
 .views .nv-more:hover, .views .nv-more.open { color: var(--text); }
 .views .nv-more.active { background: var(--panel); color: var(--text); }
 .views a .nv-short, .views a .nv-full { display: none; }
-.top-about { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-left: 4px; }
-.top-about:hover { color: var(--accent); text-decoration: none; }
 .more-menu { position: fixed; z-index: 70; top: calc(var(--top-h) - 4px); right: 64px; min-width: 260px; background: var(--panel); border: 1px solid var(--border); border-radius: 6px; box-shadow: var(--shadow); padding: 6px; display: grid; }
 .more-menu[hidden] { display: none; }
 .more-menu a { display: grid; padding: 8px 10px; border-radius: 4px; color: var(--text); font-size: 13.5px; }
@@ -911,7 +909,6 @@ body.resizing iframe { pointer-events: none; }
 .social-btn { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
 .social-btn:hover { color: var(--text); text-decoration: none; }
 .foot-social { display: inline-flex; align-items: center; gap: 5px; vertical-align: -2px; }
-@media (min-width: 861px) { .more-menu .mm-about { display: none; } } /* desktop shows About in the top bar */
 /* the bottom tab bar holds five: Latest, Explore, World, Videos, More (Timeline moves into More); desktop keeps Timeline as a tab */
 @media (min-width: 861px) { .more-menu .mm-narrow { display: none; } }
 @media (max-width: 860px) { .views .nv-wide { display: none; } }
@@ -925,7 +922,6 @@ body.resizing iframe { pointer-events: none; }
   .views .nv-more.active, .views .nv-more.open { background: var(--accent-soft); color: var(--text); }
   .views .nv-more.active .nv-ic, .views .nv-more.open .nv-ic { stroke: var(--accent); }
   .nv-caret { display: none; }
-  .top-about { display: none; }
   .more-menu { top: auto; left: 8px; right: 8px; bottom: calc(64px + env(safe-area-inset-bottom)); min-width: 0; padding: 8px; }
   .more-menu a { padding: 11px 12px; font-size: 15px; }
 }
@@ -933,7 +929,7 @@ body.resizing iframe { pointer-events: none; }
 /* ── server-rendered article (scripts/pages.mjs): for crawlers and no-JS readers; the app removes it on boot ── */
 .js .ssr { display: none; }
 html:not(.js) body { overflow: auto; height: auto; }
-html:not(.js) .top, html:not(.js) .app, html:not(.js) .views, html:not(.js) .more-menu, html:not(.js) .top-about, html:not(.js) #btn-me { display: none; }
+html:not(.js) .top, html:not(.js) .app, html:not(.js) .views, html:not(.js) .more-menu, html:not(.js) #btn-me { display: none; }
 .ssr { max-width: 760px; margin: 0 auto; padding: 24px 16px 60px; line-height: 1.6; }
 .ssr-nav { font-size: 13px; margin-bottom: 24px; }
 .ssr-kicker { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
