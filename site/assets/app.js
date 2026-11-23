@@ -3180,11 +3180,14 @@
   const suSay = r => SU_ERR[r.body?.error] || SU_ERR.off;
   const suWait = () => Math.max(0, 60 - Math.floor((Date.now() - (su.sent || 0)) / 1000));
   const suClock = n => `0:${String(n).padStart(2, '0')}`;
-  function suInner() {
+  function suInner(placement) {
     const err = su.error ? `<p class="su-err" role="alert">${esc(su.error)}</p>` : '';
     const n = suRelease(), head = '<h4>Get the next PURSUE release by email</h4><p class="su-p">Usually within a day of each release, the files that matter.</p>';
     if (suMe?.signedIn) {
       if (suMe.suppressed) return `<p class="su-quiet">Alerts can't be delivered to ${esc(suMe.maskedEmail)}. <a href="/account">Your account</a></p>`;
+      // on the home page a subscriber sees nothing (the owner's choice): the state of the alert is on /account.
+      // The confirmation right after subscribing there still shows, for that visit.
+      if (placement === 'home' && suMe.topics?.pursue && !suJust) return '';
       if (suMe.topics?.pursue) return `<p class="su-quiet"><span class="su-ok">✓</span> ${suJust ? `You'll hear from us when ${n ? `Release ${n}` : 'the next release'} is out.` : 'You get an email when a PURSUE release is out.'} <a href="/account">Manage your account</a></p>`;
       return `${head}<div class="su-form"><button class="btn primary" data-su-on>Alert me</button><span class="su-small">Signed in as ${esc(suMe.maskedEmail)} · <a href="/account">Account</a></span></div>${err}`;
     }
@@ -3194,11 +3197,11 @@
     return `${head}<form class="su-form" data-su-form="email" novalidate><input type="email" name="email" autocomplete="email" placeholder="you@example.com" aria-label="Your email address" required><button class="btn primary">Alert me</button></form>${err}
       <p class="su-small">Creates your free account (16+). Unsubscribe in one click. <a href="/privacy">Privacy</a></p>`;
   }
-  function signupBlock(placement) { return SU_ON ? `<section class="su" data-su="${placement}" aria-live="polite">${suInner()}</section>` : ''; }
+  function signupBlock(placement) { if (!SU_ON) return ''; const inner = suInner(placement); return `<section class="su" data-su="${placement}" aria-live="polite"${inner ? '' : ' hidden'}>${inner}</section>`; }
   // redraw every block on the page after a change of state; `focus` puts the cursor in the block that was used
   function suDraw(focus) {
     suKeep();
-    for (const el of $$('.su')) el.innerHTML = suInner();
+    for (const el of $$('.su')) { el.innerHTML = suInner(el.dataset.su); el.hidden = !el.innerHTML; }
     if (focus?.isConnected) focus.querySelector('input')?.focus({ preventScroll: true });
   }
   let suBusy = false;

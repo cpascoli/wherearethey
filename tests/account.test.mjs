@@ -51,12 +51,19 @@ test('the block at the foot of a release page: email, code after a reload, done;
   await p2.goto(origin() + '/program/pursue', { waitUntil: 'networkidle2' });
   await until(p2, () => /You get an email when a PURSUE release is out/.test(document.querySelector('.su[data-su="pursue"]')?.textContent || ''));
   assert.equal(await p2.$('.su form'), null);
+  // on the home page a subscriber sees nothing at all in that place
+  await p2.goto(origin() + '/', { waitUntil: 'networkidle2' });
+  await until(p2, () => { const el = document.querySelector('.su[data-su="home"]'); return el && el.hidden && !el.textContent.trim(); });
   await p2.close(); await p.close();
 });
 
 test('the block is on the home page, below the first screen, and not on Latest or on any other file', { skip }, async () => {
   let p = await open('/');
-  await p.waitForSelector('.su[data-su="home"]');
+  // as a visitor who has never signed in (the tests share one browser)
+  await (await p.createCDPSession()).send('Network.clearBrowserCookies');
+  await p.evaluate(() => { localStorage.clear(); sessionStorage.clear(); });
+  await p.reload({ waitUntil: 'networkidle2' });
+  await p.waitForSelector('.su[data-su="home"] form');
   assert.ok(await p.$eval('.su[data-su="home"]', el => el.getBoundingClientRect().top + scrollY > innerHeight * 0.6), 'below the first screen');
   await p.close();
   for (const url of ['/latest', OTHER, '/person/david-fravor']) {
