@@ -78,7 +78,7 @@ Not on other files, and not on Latest. A prompt on every file waits for step 4, 
 
 - Fields are at least 16 px (no zoom on iOS). Use `type="email"`, `autocomplete="email"`, and for the code `inputmode="numeric" autocomplete="one-time-code"`.
 - The pending step is kept in `sessionStorage` for 10 minutes, because readers in an in-app browser leave it to fetch the code.
-- Signed in and subscribed: the block is one quiet line. Signed in and not subscribed: one button, no code.
+- Signed in and subscribed: the block is one quiet line; on the home page it is nothing at all (the owner's choice: the state of an alert is on `/account`), except the confirmation right after subscribing there. Signed in and not subscribed: one button, no code.
 - The release number comes from `pursueStats`, never typed by hand.
 - The block is drawn below the fold and must not become a page's largest paint. It adds no history entry.
 - Errors are said in place and announced (`aria-live`): wrong code, expired, too many tries, "email is busy, try again later". If the address is suppressed, the sign-in succeeds and the block says alerts can't be delivered to it, as `/account` does.
@@ -293,7 +293,7 @@ Never paste a key or connection string into a chat or commit one. Enter them in 
 - [ ] Resend: the two keys; the webhook to `https://wherearethey.info/api/hooks/resend` for `email.bounced`, `email.complained`, `suppression.added`, `suppression.removed`, `contact.updated`, `contact.deleted`, `contact.topics.updated`.
 - [ ] Netlify variables, Production context only, marked secret: `DATABASE_URL`, `BETTER_AUTH_SECRET`, `LIMIT_HMAC_KEY`, `RESEND_SEND_KEY`, `RESEND_CONTACTS_KEY`, `RESEND_WEBHOOK_SECRET`. Not secret: `RESEND_TOPIC_PURSUE` and `RESEND_SEGMENT` (the ids of the topic and of the "Members" segment), `ACCOUNTS_ENABLED`, and `SIGNUP_SHOWN` (off until the gates pass; it is read by the build, so changing it needs a deploy).
 - [ ] Neon: two roles. The owner role runs migrations and backups from the Mac; a second role with no rights of its own is the one in the function's `DATABASE_URL` (use the pooled address). `npm run accounts:migrate` creates the tables and gives that role its rights (`ACCOUNTS_RUNTIME_ROLE` = its name).
-- [ ] On the Mac, in the Keychain (`security add-generic-password -a "$USER" -s <name> -w`): `wherearethey-migrate` (the owner role's connection string), `wherearethey-resend` (the full-access key, for `npm run alert`) and `wherearethey-backup` (a passphrase for backups). In the shell profile: `ACCOUNTS_BACKUP_DIR` (outside the repo and any synced folder), `ACCOUNTS_RUNTIME_ROLE`, `RESEND_TOPIC_PURSUE`, `RESEND_SEGMENT` and `ALERT_ADDRESS` (open question 1). Install the weekly job for `npm run accounts:backup`; it needs `pg_dump` (`brew install libpq`).
+- [ ] On the Mac, in the Keychain (`security add-generic-password -a "$USER" -s <name> -w`): `wherearethey-migrate` (the owner role's connection string), `wherearethey-resend` (the full-access key, for `npm run alert`) and `wherearethey-backup` (a passphrase for backups). In the shell profile: `ACCOUNTS_BACKUP_DIR` (outside the repo and any synced folder), `ACCOUNTS_RUNTIME_ROLE`, `RESEND_TOPIC_PURSUE`, `RESEND_SEGMENT` (and `ALERT_ADDRESS` only if a postal address is ever used; section 13). Install the weekly job for `npm run accounts:backup`; it needs `pg_dump` (`brew install libpq`).
 - [ ] To see the block before launch, in your own browser's console on the site: `localStorage.setItem('wat:signup', 'true')`.
 - [ ] R2 → the bucket → Settings → CORS policy: allow `GET` and `HEAD` from any origin (the bucket is public already, so this opens nothing; it also keeps the search working on previews). **Do this before the next push**: the T8 fix reads the search index from the bucket directly.
 - [ ] Accept the processing agreements of Neon, Resend and Netlify.
@@ -314,9 +314,9 @@ Never paste a key or connection string into a chat or commit one. Enter them in 
 
 ## 13. Open questions for the owner
 
-1. **Postal address in the alerts.** CAN-SPAM requires one in commercial email (a registered PO box or private mailbox qualifies). An alert alone may not be commercial; a request for support may make it so. Recommended: get a mailbox address and don't use a home address.
-2. **Where the controller is established.** The privacy text must name who is responsible. Outside the EU and UK, GDPR Article 27 and its UK equivalent may require a representative, and the local law applies too. Not researched here; take advice. Advice won't arrive by 25 November, so decide whether it holds the launch. Recommended: it doesn't. Step 1 ships with the text naming the person responsible and the contact address, and advice is taken before step 3 or 500 members, whichever is first.
-3. **Minimum age.** 16 is proposed.
+1. **Postal address in the alerts.** *Decided on 23 November: none. The owner has no fixed address; the alerts carry his name and the contact address. To revisit before any email asks for support or sells anything, when a mailbox address would be needed.* CAN-SPAM requires one in commercial email (a registered PO box or private mailbox qualifies). An alert alone may not be commercial; a request for support may make it so. Recommended: get a mailbox address and don't use a home address.
+2. **Where the controller is established.** *Decided on 23 November: the privacy text names Carlo Pascoli; advice on a representative is still to take, as recommended below.* The privacy text must name who is responsible. Outside the EU and UK, GDPR Article 27 and its UK equivalent may require a representative, and the local law applies too. Not researched here; take advice. Advice won't arrive by 25 November, so decide whether it holds the launch. Recommended: it doesn't. Step 1 ships with the text naming the person responsible and the contact address, and advice is taken before step 3 or 500 members, whichever is first.
+3. **Minimum age.** 16 is proposed. *Decided on 23 November: 16.*
 
 None of this is legal advice.
 
@@ -351,7 +351,7 @@ None of this is legal advice.
 - The Reddit and X in-app browsers on an iPhone, and Safari: leave for Mail, return, finish.
 - SPF, DKIM and DMARC pass in a received message.
 - A broadcast carries `List-Unsubscribe` and `List-Unsubscribe-Post`, and one click updates Postgres. **Passed on 22 November** with the first test broadcast (Release 8, to the owner only): SPF, DKIM and DMARC pass, both headers are present, and the unsubscribe reached Postgres through the webhook within seconds. It also showed that Resend's unsubscribe page marks the whole contact "unsubscribed", so switching an alert back on now clears that mark.
-- A contact without the topic doesn't receive a topic broadcast (**to prove**).
+- A contact without the topic doesn't receive a topic broadcast. **Passed on 23 November** with a second test broadcast and two members: one with the alert on, one who had switched it on and off again (a contact in the segment, opted out of the topic). Only the first received it. A member who never asked for an alert is not a contact at Resend at all.
 - Whether a suppressed address still gets a sign-in code (**to prove**; if not, the sign-in form gives the contact address).
 - The scheduled function runs (**to prove**).
 - A preview answers `404` on `/api/*` and has no secrets in its environment.
@@ -372,11 +372,11 @@ If it slips, cut the home placement before cutting a gate. If Release 9 comes fi
 
 ## 17. Privacy text to publish at launch
 
-Not before: until then "no accounts… no newsletter" is true.
+Published on 23 November 2026 in `site/privacy.html`, with the launch.
 
 > **Accounts and email alerts.** You don't need an account to read the archive. If you create one, we store your email address, when you created it, the alerts you chose and when you chose them. We use them to sign you in and to send what you asked for, nothing else: the account because you asked for it, each alert because you agreed to it, and you can withdraw that at any time. We don't ask your name, don't store your IP address with your account, and don't send anything that identifies your account to Google Analytics; links in our emails are marked as coming from an alert, the same for every reader. To limit abuse we keep a scrambled code of your IP and email address for up to two days. An address that is typed in and never confirmed is deleted within a day. Signing in sets one cookie, needed to keep you signed in. Neon (database), Resend (email) and Netlify (hosting) process this data for us, mainly in the United States. Unsubscribe from any alert in one click. Delete your account at /account; copies in backups expire within 30 days, and our email provider keeps a record of addresses that bounced or reported spam so they aren't mailed again. You can ask for a copy of your data, a correction or its deletion by writing to wherearetheyinfo@proton.me, and if you are in the EU or the UK you can complain to your data protection authority.
 
-It also names who is responsible for the data (open question 2).
+It also names who is responsible for the data: Carlo Pascoli.
 
 The first paragraph's "no accounts, no ads and no newsletter" becomes "no ads", and the table gains Neon and Resend.
 

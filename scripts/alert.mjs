@@ -6,7 +6,7 @@
 // 3. writes the email from the release's event and its highlights on the PURSUE file, in those files' own words,
 // 4. creates the draft, prints how many people it would reach, and refuses a second draft for the same release.
 // Needs in the Keychain "wherearethey-migrate" (database) and "wherearethey-resend" (the full-access key), and in
-// the environment RESEND_TOPIC_PURSUE, RESEND_SEGMENT and ALERT_ADDRESS (the sender's postal address).
+// the environment RESEND_TOPIC_PURSUE, RESEND_SEGMENT, and optionally ALERT_ADDRESS (a postal address for the footer; the owner has none, see docs/accounts.md, section 13).
 import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT, readEntries } from './lib.mjs';
@@ -85,7 +85,6 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   try {
     if (topic !== 'pursue' || !Number.isInteger(n)) throw new Error('usage: npm run alert -- pursue <release number> [--dry]');
     const address = process.env.ALERT_ADDRESS;
-    if (!address && !flags.includes('--no-address')) throw new Error('set ALERT_ADDRESS (the postal address shown in the email; docs/accounts.md, open question 1), or pass --no-address on purpose');
     const d = draft(n, { address });
     const live = await fetch(d.page, { redirect: 'manual' });
     if (live.status !== 200) throw new Error(`the release's page is not live (${live.status}): ${d.page}. Push the release first.`);
