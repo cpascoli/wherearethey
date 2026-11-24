@@ -1,7 +1,7 @@
 // Cookieless traffic counter (called from geo.js). Every HTML page load is filed under one anonymous visitor
 // record per month in the Netlify Blobs store "traffic":
 //   v/<YYYY-MM>/<hash>  →  { k: kind, b: bot name, c: country, d: { day: loads }, p: { path: loads }, e: { path: 404s },
-//                             s: { day: 1 } }
+//                             s: { day: 1 }, r: { 'day domain': loads from a link on that site } }
 // `s` marks the days a real browser was seen: the page sends one POST to /__seen (seen.js) when the visitor scrolls,
 // taps, clicks or types, or has the page in view for 10 s, and not when the browser says it is automated
 // (navigator.webdriver). Scripts posing as browsers rarely run the page and almost never interact with it, so
@@ -96,5 +96,18 @@ export async function countVisit(request, context, status, country) {
   bump(rec.d, day, 31);
   const path = decodeURIComponent(url.pathname).slice(0, 200);
   if (status === 404) bump(rec.e, path, 20); else if (status < 400) bump(rec.p, path, kind === 'human' ? 100 : 30);
+  const from = referrer(request);
+  if (from && status < 400) bump(rec.r ||= {}, `${day} ${from}`, 30);
   await s.setJSON(key, rec);
+}
+
+// The site that linked here: its domain only (never the page or its query), and not our own pages. Apps on Android
+// name themselves instead (android-app://com.reddit.frontpage → com.reddit.frontpage). Many apps and private
+// browsers send nothing, so this is a floor, not the whole picture.
+export function referrer(request) {
+  let host;
+  try { host = new URL(request.headers.get('referer') || '').hostname; } catch { return ''; }
+  host = host.toLowerCase().replace(/^(www|m|l|lm|old|out|amp)\./, '');
+  if (!/^[a-z0-9.-]{3,60}$/.test(host) || /(^|\.)wherearethey\.info$/.test(host)) return '';
+  return host;
 }

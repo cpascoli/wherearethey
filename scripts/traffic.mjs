@@ -43,7 +43,7 @@ const top = (o, n) => Object.entries(o).sort((a, b) => b[1] - a[1]).slice(0, n);
 const browserLike = r => r.k === 'human' || (r.k === 'bot' && r.b === 'browser-like script');
 const kindOf = (r, seen) => browserLike(r) ? (seen ? 'person' : r.k === 'human' ? 'unconfirmed' : 'bot') : KINDS.includes(r.k) ? r.k : 'bot';
 
-const out = { month, signalSince: null, kinds: {}, days: {}, pages: {}, notFound: {}, countries: {}, unconfirmedPages: {}, bots: {} };
+const out = { month, signalSince: null, kinds: {}, days: {}, pages: {}, notFound: {}, countries: {}, unconfirmedPages: {}, bots: {}, referrers: {}, referrersByDay: {} };
 for (const k of KINDS) out.kinds[k] = { visitors: 0, loads: 0 };
 for (const r of recs) {
   const k = kindOf(r, r.s && Object.keys(r.s).length), loads = sum(r.d);
@@ -57,6 +57,7 @@ for (const r of recs) {
     for (const [p, n] of Object.entries(r.p || {})) add(out.pages, p, n);
     for (const [p, n] of Object.entries(r.e || {})) add(out.notFound, p, n);
     add(out.countries, r.c || '??', 1);
+    for (const [key, n] of Object.entries(r.r || {})) { const [d, host] = key.split(' '); add(out.referrers, host, n); add(out.referrersByDay[d] ||= {}, host, n); }
   } else if (k === 'unconfirmed') for (const [p, n] of Object.entries(r.p || {})) add(out.unconfirmedPages, p, n);
   else add(out.bots, `${LABEL[k]}: ${r.b || '?'}`, loads);
 }
@@ -75,6 +76,8 @@ for (const d of Object.keys(out.days).sort()) {
 const list = (title, o, n) => { const t = top(o, n); if (!t.length) return; console.log(`\n${title}`); for (const [k, v] of t) console.log(`  ${num(v, 6)}  ${k}`); };
 list('Top landing pages (people)', out.pages, 25);
 list('Countries (people, unique)', out.countries, 15);
+list('Sites that sent people (loads; the domain only, and many apps send none)', out.referrers, 20);
+for (const d of Object.keys(out.referrersByDay).sort().slice(-3)) list(`  on ${month}-${d}`, out.referrersByDay[d], 8);
 list('Top pages, unconfirmed visitors', out.unconfirmedPages, 10);
 list('Bots by name (loads)', out.bots, 25);
 list('Not found (people)', out.notFound, 15);
