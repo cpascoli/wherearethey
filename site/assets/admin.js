@@ -48,11 +48,35 @@
   const tile = (n, label, warn) => h(`div.ow-tile${warn ? '.warn' : ''}`, {}, h('b', {}, String(n)), h('span', {}, label));
   const TOPIC = { pursue: 'PURSUE release alert', digest: 'Weekly digest' };
   const PLACE = { home: 'the home page', pursue: 'the PURSUE pages', account: 'the account page', file: 'a file', latest: 'Latest' };
+  // The first screen's outline as this browser last drew it (how many tiles, bars and digests; no figure, no
+  // subject), so the placeholder shown while the server answers has the height of what replaces it.
+  const shape = {
+    get() { try { const v = JSON.parse(localStorage.getItem('wat:ow-shape')); return v && typeof v === 'object' ? v : null; } catch { return null; } },
+    set(v) { try { localStorage.setItem('wat:ow-shape', JSON.stringify(v)); } catch { /* no storage */ } },
+  };
+  // a view as a placeholder: the same nodes, the text as grey bars (account.css, .ac-skel), nothing reachable
+  function skeleton(nodes) {
+    const box = h('div.ac-skel', { inert: true, 'aria-hidden': 'true' }, nodes);
+    const walk = document.createTreeWalker(box, NodeFilter.SHOW_TEXT), texts = [];
+    while (walk.nextNode()) texts.push(walk.currentNode);
+    for (const t of texts) if (t.nodeValue.trim()) { const bar = h('span.ac-sk'); t.replaceWith(bar); bar.append(t); }
+    return [h('p.ac-sr', { role: 'status' }, 'Loading…'), box];
+  }
+  function homeSkeleton() {
+    const o = shape.get(), n = k => Array.from({ length: Math.min(60, Math.max(0, o[k] | 0)) });
+    const s = { members: 0, new7: 0, new30: 0, noAlert: 0, off30: 0, suppressed: 0, sessions: 0, codesToday: 0, unsynced: o.unsynced, deletions: o.deletions,
+      topics: Object.fromEntries((Array.isArray(o.topics) ? o.topics : []).filter(t => Array.isArray(t) && TOPIC[t[0]]).map(([k, less]) => [k, { on: 1, reach: less ? 0 : 1 }])),
+      days: n('days').map(() => ['2026-01-01', 1]), placements: o.place ? { home: 1 } : {} };
+    return skeleton(homeNodes(s, { topic: !!o.topic, recipients: 0, digests: n('digests').map((_, i) => ({ id: i, status: 'draft', subject: 'Where Are They: the week in the record', updatedAt: '2026-01-01T12:00:00Z' })) }));
+  }
   function home() {
     title.textContent = 'Admin';
-    const s = stats, max = Math.max(1, ...(s?.days || []).map(x => x[1]));
-    draw(
-      line(),
+    if (stats && list) shape.set({ topics: Object.entries(stats.topics).map(([k, v]) => [k, v.reach !== v.on ? 1 : 0]), days: stats.days.length, place: Object.keys(stats.placements).length ? 1 : 0, unsynced: stats.unsynced ? 1 : 0, deletions: stats.deletions ? 1 : 0, topic: list.topic ? 1 : 0, digests: list.digests.length });
+    draw(line(), homeNodes(stats, list));
+  }
+  function homeNodes(s, list) {
+    const max = Math.max(1, ...(s?.days || []).map(x => x[1]));
+    return [
       h('h2', {}, 'Members'),
       s ? [
         h('div.ow-tiles', {},
@@ -77,7 +101,7 @@
         list.digests.length ? h('ul.ow-list', {}, list.digests.map(x => h('li', {}, h('button', { type: 'button', onclick: () => act(() => open(x.id)) },
           h('span', {}, h(`span.ow-chip.${x.status}`, {}, x.status), x.subject),
           h('small', {}, x.status === 'sent' ? `sent ${when(x.sentAt)}` : x.status === 'scheduled' ? `for ${when(x.scheduledAt)}` : `saved ${when(x.updatedAt)}`))))) : h('p.ac-small', {}, 'No digests yet.'),
-      ] : h('p.muted', {}, 'Loading…'));
+      ] : h('p.muted', {}, 'Loading…')];
   }
   async function load() {
     const [a, b] = await Promise.all([api('GET', '/api/admin/stats'), api('GET', '/api/admin/digests')]);
@@ -211,12 +235,14 @@
 
   let me = null;
   function render() {
-    if (!me) return draw(h('p.muted', {}, 'Loading…'));
+    // before the server has answered: in the owner's browser, the first screen as a placeholder of the same height
+    if (!me) return draw(shape.get() ? homeSkeleton() : h('p.muted', {}, 'Loading…'));
     if (!me.admin) { title.textContent = 'Not found'; return draw(h('div.ac-card', {}, h('p', {}, 'There is nothing here.'), h('p', {}, me.signedIn ? h('a', { href: '/' }, '← Back to the archive') : h('a', { href: '/account' }, 'Sign in'))));
     }
     return d ? edit() : home();
   }
   window.addEventListener('beforeunload', e => { if (d && dirty) e.preventDefault(); });
   render();
-  api('GET', '/api/me').then(async r => { me = r.status === 200 ? r.body : { signedIn: false }; if (me.admin) await load(); render(); });
+  // everything is asked for at once (the figures answer 404 to anyone else), and shown together
+  Promise.all([api('GET', '/api/me'), load()]).then(([r]) => { me = r.status === 200 ? r.body : { signedIn: false }; if (!me.admin) { try { localStorage.removeItem('wat:ow-shape'); } catch { /* no storage */ } } render(); });
 })();

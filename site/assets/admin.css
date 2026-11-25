@@ -5,7 +5,7 @@ main.ow-main { max-width: 760px; }
 .ow-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; margin: 10px 0; }
 .ow-tile { padding: 12px 14px; border: 1px solid var(--border); border-radius: 6px; background: var(--panel); }
 .ow-tile b { display: block; font-size: 26px; line-height: 1.15; font-variant-numeric: tabular-nums; }
-.ow-tile span { font-size: 13px; color: var(--muted); display: block; line-height: 1.35; }
+.ow-tile > span { font-size: 13px; color: var(--muted); display: block; line-height: 1.35; }
 .ow-tile.warn { border-left: 3px solid #e07a5f; }
 .ow-bars { font-size: 13px; color: var(--muted); margin: 6px 0; }
 .ow-bars div { display: grid; grid-template-columns: 62px 1fr 28px; gap: 8px; align-items: center; height: 18px; }
@@ -14,6 +14,8 @@ main.ow-main { max-width: 760px; }
 .ow-list li { border-top: 1px solid var(--border); }
 .ow-root .ow-list button { display: flex; width: 100%; gap: 10px; align-items: baseline; justify-content: space-between; text-align: left; background: none; border: 0; border-radius: 0; padding: 11px 2px; }
 .ow-list small { color: var(--muted); flex: none; }
+/* a subject stays on one line, so a row is the same height whatever it says */
+.ow-list button > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .ow-chip { font-size: 12px; padding: 1px 8px; border-radius: 10px; border: 1px solid var(--border); color: var(--muted); margin-right: 6px; }
 .ow-chip.scheduled, .ow-chip.sent { color: var(--accent); border-color: var(--accent); }
 .ow-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 10px 0; }
@@ -32,3 +34,4 @@ main.ow-main { max-width: 760px; }
 .ow-ok { color: var(--accent); font-size: 14px; }
 .ow-bar { position: sticky; bottom: 0; background: var(--bg); border-top: 1px solid var(--border); padding: 10px 0; margin-top: 18px; z-index: 2; }
 .ow-bar .ow-row { margin: 0; }
+.ac-skel .ow-bars i { background: var(--border); }

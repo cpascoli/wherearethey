@@ -27,4 +27,19 @@
 .ac-warn { border-left: 3px solid #e07a5f; }
 .ac-list { margin: 8px 0; padding-left: 20px; font-size: 14px; }
 .ac-who { display: flex; align-items: center; gap: 12px; }
+.ac-who > span { display: grid; min-width: 0; line-height: 1.3; }
+.ac-who small { color: var(--muted); font-size: 13px; }
+.ac-who b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .ac-badge { flex: none; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-weight: 600; font-size: 18px; line-height: 1; }
+/* A view as a placeholder while the server answers (skeleton() in account.js and admin.js): the same nodes, so the
+   same height, with the text as grey bars. */
+.ac-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.ac-skel { pointer-events: none; user-select: none; animation: ac-pulse 1.4s ease-in-out infinite; }
+.ac-skel .ac-sk { color: transparent; background: var(--border); border-radius: 3px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.ac-root .ac-skel button, .ac-root .ac-skel .ac-switch[aria-checked] { background: var(--border); border-color: transparent; opacity: 1; }
+.ac-skel button .ac-sk { background: none; }
+.ac-skel .ac-badge { background: var(--border) !important; }
+.ac-skel .ac-warn { border-left-color: var(--border); }
+@keyframes ac-pulse { 50% { opacity: .55; } }
+@media (prefers-reduced-motion: reduce) { .ac-skel { animation: none; } }
+.ac-skel a { text-decoration: none; }

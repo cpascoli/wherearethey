@@ -80,3 +80,42 @@ test('the admin page uses no name an ad blocker hides', async () => {
   const fs = await import('node:fs'), path = await import('node:path'), dir = path.resolve(import.meta.dirname, '../site');
   for (const f of ['admin.html', 'assets/admin.css', 'assets/admin.js']) assert.doesNotMatch(fs.readFileSync(path.join(dir, f), 'utf8'), /(?<![a-zA-Z])ads?[-_][a-z]|id="ads?"|#ads?\b/i, f);
 });
+
+// While the server answers, /account and /admin show the coming view as a placeholder (grey bars) of the same height,
+// so nothing moves when the real one replaces it. The API's answers are held back to look at the placeholder.
+async function placeholderThenView(p, url, root) {
+  const held = [], hold = r => (/\/api\//.test(r.url()) ? held.push(r) : r.continue());
+  await p.setRequestInterception(true); p.on('request', hold);
+  await p.goto(origin() + url, { waitUntil: 'domcontentloaded' });
+  await p.waitForSelector(`${root} .ac-skel`);
+  await wait(300); // fonts
+  const size = () => p.$eval(root, el => ({ h: Math.round(el.getBoundingClientRect().height), reachable: el.querySelectorAll('.ac-skel:not([inert])').length, text: el.querySelector('.ac-sr')?.textContent }));
+  const before = await size();
+  p.off('request', hold); for (const r of held) r.continue(); await p.setRequestInterception(false);
+  await p.waitForFunction(r => !document.querySelector(`${r} .ac-skel`) && document.querySelector(`${r} button`), { timeout: 15000 }, root);
+  return { before, after: await size() };
+}
+test('the placeholders on /account and /admin have the height of the view that replaces them', { skip }, async () => {
+  const first = await open('/timeline');
+  for (const [width, height] of [[390, 844], [1280, 900]]) {
+    const p = await first.browser().newPage();
+    await p.setViewport({ width, height });
+    await p.goto(origin() + '/account', { waitUntil: 'networkidle2' });
+    await call(p, 'DELETE', '/api/session', {});
+    await p.evaluate(() => localStorage.clear());
+    // signed out, nothing remembered: the sign-in form is there at once, with no placeholder
+    await p.goto(origin() + '/account', { waitUntil: 'domcontentloaded' });
+    await p.waitForSelector('#ac input[type=email]');
+    await signIn(p, DEV_ADMIN);
+    for (const [url, root] of [['/account', '#ac'], ['/admin', '#ow']]) {
+      await p.goto(origin() + url, { waitUntil: 'networkidle2' }); // the first visit remembers the outline
+      await p.waitForFunction(r => !document.querySelector(`${r} .ac-skel`) && document.querySelector(`${r} button`), {}, root);
+      const { before, after } = await placeholderThenView(p, url, root);
+      assert.equal(before.reachable, 0, 'nothing in the placeholder can be used');
+      assert.equal(before.text, 'Loading…');
+      assert.ok(Math.abs(before.h - after.h) <= 1, `${url} at ${width}: placeholder ${before.h}px, view ${after.h}px`);
+      assert.ok(after.h > 150, 'the view is there');
+    }
+    await p.close();
+  }
+});

@@ -24,7 +24,23 @@
   }
   const api = (method, path, body) => fetch(path, { method, credentials: 'same-origin', headers: body ? { 'content-type': 'application/json' } : {}, body: body ? JSON.stringify(body) : undefined })
     .then(async r => ({ status: r.status, body: await r.json().catch(() => null) })).catch(() => ({ status: 0, body: null }));
-  const remember = on => { try { localStorage.setItem('wat:member', JSON.stringify(!!on)); } catch { /* no storage */ } };
+  const remember = on => { try { localStorage.setItem('wat:member', JSON.stringify(!!on)); if (!on) localStorage.removeItem('wat:ac-shape'); } catch { /* no storage */ } };
+  const member = () => { try { return JSON.parse(localStorage.getItem('wat:member')) === true; } catch { return false; } };
+  // The outline of the signed-in view as this browser last drew it (which alerts, how many extra lines; nothing about
+  // who), so the placeholder shown while the server answers is the same height as what replaces it.
+  const shape = {
+    get() { try { const v = JSON.parse(localStorage.getItem('wat:ac-shape')); return v && Array.isArray(v.t) ? v : null; } catch { return null; } },
+    set(v) { try { localStorage.setItem('wat:ac-shape', JSON.stringify(v)); } catch { /* no storage */ } },
+  };
+  // A view drawn as a placeholder: the same nodes, so the same height, with every piece of text turned into a grey
+  // bar (account.css, .ac-skel), nothing in it reachable, and "Loading" said once for screen readers.
+  function skeleton(nodes) {
+    const box = h('div.ac-skel', { inert: true, 'aria-hidden': 'true' }, nodes.flat(Infinity).filter(Boolean));
+    const walk = document.createTreeWalker(box, NodeFilter.SHOW_TEXT), texts = [];
+    while (walk.nextNode()) texts.push(walk.currentNode);
+    for (const t of texts) if (t.nodeValue.trim()) { const bar = h('span.ac-sk'); t.replaceWith(bar); bar.append(t); }
+    return [h('p.ac-sr', { role: 'status' }, 'Loading…'), box];
+  }
   const pending = {
     get() { try { const v = JSON.parse(sessionStorage.getItem('wat:ac')); return v && Date.now() - v.at < 600000 ? v : null; } catch { return null; } },
     set(v) { try { v ? sessionStorage.setItem('wat:ac', JSON.stringify(v)) : sessionStorage.removeItem('wat:ac'); } catch { /* no storage */ } },
@@ -76,6 +92,7 @@
     if (step.name === 'code') return draw(h('div.ac-card', {},
       h('h2', {}, `Enter the 8-digit code sent to ${mask(step.email)}`),
       codeForm('Confirm', async code => {
+        title.textContent = 'Your account'; draw(profileSkeleton()); // what comes next, at its height, while the server checks the code
         const r = await api('POST', '/api/session', { email: step.email, code, ...(step.alert && { subscribe: true, placement: 'account', wording: WORDING }) });
         if (r.status === 200) { me = r.body; remember(true); step = null; pending.set(null); } else error = say(r);
       }, async () => { const r = await api('POST', '/api/code', { email: step.email }); if (r.status === 202) { step.sent = Date.now(); pending.set(step); } else error = say(r); }),
@@ -112,25 +129,29 @@
         if (r.status === 204) { me = { signedIn: false, deleted: true }; remember(false); step = { name: 'email' }; } else error = say(r);
       }, async () => { const r = await api('POST', '/api/account/code', {}); if (r.status === 202) step.sent = Date.now(); else error = say(r); }),
       h('p.ac-small', {}, h('button.plain', { type: 'button', onclick: () => { step = null; error = ''; render(); } }, 'Keep my account'))));
-    // one switch per alert the server offers (the digest only once it exists there)
-    const ALERTS = {
-      pursue: ['PURSUE releases', 'An email usually within a day of each release, with the files that matter.'],
-      digest: ['Weekly digest', 'About one email a week: what mattered, a moment worth watching, what was newly filed.'],
-    };
+    shape.set({ t: Object.keys(me.topics || {}).filter(t => ALERTS[t]), x: me.admin ? 1 : 0, w: me.suppressed ? 1 : 0 });
+    draw(profile(me));
+  }
+  // one switch per alert the server offers (the digest only once it exists there)
+  const ALERTS = {
+    pursue: ['PURSUE releases', 'An email usually within a day of each release, with the files that matter.'],
+    digest: ['Weekly digest', 'About one email a week: what mattered, a moment worth watching, what was newly filed.'],
+  };
+  function profile(me) {
     const row = topic => {
       const on = !!me.topics[topic], [name, what] = ALERTS[topic];
       return h('div.ac-row', {},
         h('div', {}, h('b', {}, name), h('small', {}, what)),
         h('button.ac-switch', { type: 'button', role: 'switch', 'aria-checked': String(on), 'aria-label': name, 'data-topic': topic, disabled: me.suppressed && !on, onclick: () => act(async () => {
           const r = await api('PUT', `/api/subscriptions/${topic}`, { on: !on, placement: 'account', wording: WORDING });
-          if (r.status === 200) me = r.body; else if (r.status === 401) { me = { signedIn: false }; remember(false); step = { name: 'email' }; } else error = say(r);
+          if (r.status === 200) setMe(r.body); else if (r.status === 401) { setMe({ signedIn: false }); remember(false); step = { name: 'email' }; } else error = say(r);
         }) }, on ? 'On' : 'Off'));
     };
-    draw(
+    return [
       me.suppressed && h('div.ac-card.ac-warn', {}, h('h2', {}, "Alerts can't be delivered to this address"),
         h('p', {}, 'An email to you bounced, or one was reported as spam, so our email provider no longer sends to this address. If that is a mistake, write to ', mailto(), '.')),
       h('div.ac-card', {},
-        h('p.ac-who', {}, badge(me.maskedEmail), h('span', {}, 'Signed in as ', h('b', {}, me.maskedEmail))),
+        h('p.ac-who', {}, badge(me.maskedEmail), h('span', {}, h('small', {}, 'Signed in as '), h('b', {}, me.maskedEmail))), // two lines that never wrap, so the row is the same height for any address
         Object.keys(me.topics || {}).filter(t => ALERTS[t]).map(row),
         errLine(),
         h('div.ac-actions', {},
@@ -138,8 +159,11 @@
           h('button', { type: 'button', onclick: () => signOut(true) }, 'Sign out everywhere'),
           h('button.danger', { type: 'button', onclick: () => act(async () => { const r = await api('POST', '/api/account/code', {}); if (r.status === 202) step = { name: 'delete', sent: Date.now() }; else error = say(r); }) }, 'Delete account…'))),
       h('p.ac-small', {}, 'For a copy of your data, or anything else, write to ', mailto(), '.'),
-      me.admin && h('p.ac-small', {}, h('a', { href: '/admin' }, 'Admin: members and the weekly digest')));
+      me.admin && h('p.ac-small', {}, h('a', { href: '/admin' }, 'Admin: members and the weekly digest'))];
   }
+  const setMe = v => { me = v; };
+  // the signed-in view as a placeholder, from the outline remembered here (else both alerts)
+  const profileSkeleton = () => { const o = shape.get() || { t: Object.keys(ALERTS) }; return skeleton(profile({ signedIn: true, maskedEmail: 'm…@example.com', topics: Object.fromEntries(o.t.filter(t => ALERTS[t]).map(t => [t, false])), suppressed: !!o.w, admin: !!o.x })); };
   const signOut = everywhere => act(async () => { await api('DELETE', '/api/session', { everywhere }); me = { signedIn: false }; remember(false); step = { name: 'email' }; });
 
   // the app keeps its own picture of who is signed in (the header badge, the sign-up blocks): tell it what we know
@@ -152,7 +176,10 @@
   }
   function render() {
     tell();
-    if (!me) return draw(h('p.muted', {}, 'Loading…'));
+    // Before the server has said who this is: the view this browser last had, as a placeholder of the same height
+    // (the signed-in one), or the sign-in form itself, which needs no answer to be used.
+    if (!me && member()) { title.textContent = 'Your account'; return draw(profileSkeleton()); }
+    if (!me) return signedOut();
     if (me.off) return draw(h('div.ac-card', {}, h('p', {}, "Accounts aren't available right now. The archive needs none: everything is open to read."), h('p', {}, h('a', { href: '/' }, '← Back to the archive'))));
     if (me.signedIn) return signedIn();
     if (me.deleted) { me = { signedIn: false }; signedOut(); root.prepend(h('div.ac-card', {}, h('p', {}, 'Your account is deleted.'))); return; }
