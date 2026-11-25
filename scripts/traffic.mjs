@@ -2,6 +2,7 @@
 //   npm run traffic                 this month
 //   npm run traffic -- 2026-11      a given month
 //   npm run traffic -- 2026-11 --json
+//   npm run traffic -- --fresh      fetch every record again, ignoring the local copy
 // Reads the Netlify Blobs store "traffic" with the Netlify CLI's login token (or NETLIFY_AUTH_TOKEN).
 import { getStore } from '@netlify/blobs';
 import fs from 'node:fs';
@@ -21,16 +22,36 @@ function token() {
 }
 
 const store = getStore({ name: 'traffic', siteID: SITE_ID, token: token() });
-const keys = [];
-for await (const page of store.list({ prefix: `v/${month}/`, paginate: true })) keys.push(...page.blobs.map(b => b.key));
-// one record per request: a few thousand of them, so retry a failed one (a dropped DNS lookup used to end the run)
-const get = async (k, n = 0) => { try { return await store.get(k, { type: 'json' }); } catch (e) { if (n >= 4) throw e; await new Promise(r => setTimeout(r, 500 * 2 ** n)); return get(k, n + 1); } };
-const recs = [];
-for (let i = 0; i < keys.length; i += 25) {
-  recs.push(...(await Promise.all(keys.slice(i, i + 25).map(k => get(k)))).filter(Boolean));
-  if (!json && process.stderr.isTTY) process.stderr.write(`\r${recs.length} / ${keys.length} records`);
-}
-if (!json && process.stderr.isTTY) process.stderr.write('\n');
+const listed = [];
+for await (const page of store.list({ prefix: `v/${month}/`, paginate: true })) listed.push(...page.blobs);
+// One record per request, and a month holds tens of thousands (mostly bots), so keep a copy of each in
+// .cache/traffic/<month>.json with the etag the listing gives: a run fetches only the records that are new or have
+// changed since the last one. `--fresh` ignores the copy. The records are the anonymous ones described in traffic.js.
+const cacheFile = path.join(path.dirname(new URL(import.meta.url).pathname), '..', '.cache', 'traffic', `${month}.json`);
+let cache = {};
+if (!args.includes('--fresh')) try { cache = JSON.parse(fs.readFileSync(cacheFile, 'utf8')); } catch {}
+const save = () => { fs.mkdirSync(path.dirname(cacheFile), { recursive: true }); fs.writeFileSync(cacheFile + '.tmp', JSON.stringify(cache)); fs.renameSync(cacheFile + '.tmp', cacheFile); };
+const kept = {};
+for (const b of listed) if (b.etag && cache[b.key]?.[0] === b.etag) kept[b.key] = cache[b.key];
+cache = kept; // records that are gone from the store leave the copy too
+const todo = listed.filter(b => !cache[b.key]);
+// retry a failed request (a dropped DNS lookup used to end the run), and one that gets no answer in 15 s: a
+// connection that stalls never fails by itself, and used to hold the whole run for minutes
+const late = ms => new Promise((_, no) => setTimeout(() => no(new Error('no answer')), ms).unref());
+const get = async (k, n = 0) => { try { return await Promise.race([store.get(k, { type: 'json' }), late(15000)]); } catch (e) { if (n >= 5) throw e; await new Promise(r => setTimeout(r, 500 * 2 ** n)); return get(k, n + 1); } };
+const note = s => { if (!json) process.stderr.write(s); };
+note(`${listed.length} records, ${todo.length} to fetch\n`);
+let next = 0, done = 0;
+await Promise.all(Array.from({ length: 40 }, async () => {
+  while (next < todo.length) {
+    const b = todo[next++], rec = await get(b.key);
+    if (rec) cache[b.key] = [b.etag, rec];
+    if (++done % 2000 === 0) save(); // an interrupted run keeps what it has fetched
+    if (process.stderr.isTTY && done % 50 === 0) note(`\r${done} / ${todo.length}`);
+  }
+}));
+if (todo.length) { save(); if (process.stderr.isTTY) note(`\r${done} / ${todo.length}\n`); }
+const recs = listed.map(b => cache[b.key]?.[1]).filter(Boolean);
 
 // a 'human' record (browser-like, by its headers) counts as a person only once the page has sent its "seen" signal
 // (`s`, see netlify/edge-functions/lib/traffic.js); until then it is unconfirmed, which is mostly scripts posing as
@@ -82,3 +103,4 @@ list('Top pages, unconfirmed visitors', out.unconfirmedPages, 10);
 list('Bots by name (loads)', out.bots, 25);
 list('Not found (people)', out.notFound, 15);
 console.log('');
+process.exit(0); // don't wait for a stalled connection that was given up on

@@ -3849,6 +3849,14 @@
     const a = e.target.closest('a[data-view]');
     if (!a) return;
     e.preventDefault();
+    // Explore, while a file covers the graph (the reading view): the click must show the graph. A file with its own
+    // item in the bar (PURSUE) is another place than Explore, so it closes and the key files show; any other file
+    // shrinks to the side panel, the graph centred on it.
+    if (a.dataset.view === 'graph' && state.view === 'graph' && state.reading && !narrowNav()) {
+      if (state.sel && $(`#views [data-goto="${CSS.escape(state.sel)}"]`)) { select(null); enterCore(); }
+      else setReading(false);
+      return;
+    }
     go(a.dataset.view, { keepSel: !(narrowNav() && state.sel) });
   });
   // "More": dropdown on desktop, bottom sheet on phones. Holds Index, Claims, About and site links.

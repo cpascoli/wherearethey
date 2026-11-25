@@ -98,6 +98,15 @@ test('PURSUE is in the bar after Latest on desktop and first under More on phone
     assert.equal(await p.evaluate(() => location.pathname), '/program/pursue');
     assert.ok(await p.evaluate(() => document.getElementById('more-menu').hidden && !!document.querySelector('#sec-pu-hl')), 'the menu closes, the explainer shows');
     if (!phone) assert.deepEqual(await p.evaluate(() => [...document.querySelectorAll('#views a.active, #views button.active')].map(a => a.dataset.goto || a.dataset.view)), ['pursue'], 'PURSUE is the lit item, not Explore');
+    if (!phone) { // Explore, clicked over the explainer, shows the graph with the key files, not the explainer still
+      await p.evaluate(() => document.querySelector('#views a[data-view="graph"]').click());
+      await new Promise(r => setTimeout(r, 1500));
+      assert.deepEqual(await p.evaluate(() => [location.pathname, document.getElementById('panel').hidden, document.getElementById('app').classList.contains('reading'), !!document.querySelector('[data-core], [data-trail-exit]')]), ['/explore', true, false, false], 'Explore alone, on the key files');
+      assert.deepEqual(await p.evaluate(() => [...document.querySelectorAll('#views a.active, #views button.active')].map(a => a.dataset.goto || a.dataset.view)), ['graph'], 'Explore is lit');
+      await p.evaluate(() => history.back());
+      await new Promise(r => setTimeout(r, 1500));
+      assert.equal(await p.evaluate(() => location.pathname), '/program/pursue', 'Back returns to the explainer');
+    }
     await p.evaluate(() => history.back());
     await new Promise(r => setTimeout(r, 1500));
     assert.equal(await p.evaluate(() => location.pathname), '/timeline');
