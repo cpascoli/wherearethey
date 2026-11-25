@@ -405,7 +405,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
     }
     const keyMoments = (e, ms) => {
       if (['video', 'claim', 'hearing', 'event', 'news', 'document'].includes(e.type) || ms.length < 5) return [];
-      const sworn = m => (byId.get(recordingOf(byId.get(m.video)))?.type === 'hearing' ? 1 : 0);
+      const sworn = m => { const h = byId.get(recordingOf(byId.get(m.video))); return h?.type === 'hearing' && h.id !== 'h-2013-citizen-hearing' ? 1 : 0; }; // the 2013 Citizen Hearing was a public forum, not testimony under oath
       const pool = (e.type === 'person' ? ms.filter(m => m.speaker === e.id) : ms.filter(m => m.speaker && byId.get(m.speaker)?.cred === 'credible'))
         .sort((a, b) => (b.key ? 1 : 0) - (a.key ? 1 : 0) || sworn(b) - sworn(a) || String(recordedDate(byId.get(a.video))).localeCompare(String(recordedDate(byId.get(b.video)))) * (e.type === 'person' ? -1 : 1) || a.t - b.t);
       const out = [], seen = new Set();

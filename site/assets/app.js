@@ -1870,13 +1870,18 @@
     // curated moments
     const ms = e.type === 'video' ? (e.moments || []).map(m => ({ video: e.id, ...m })) : (momentsFor.get(e.id) || []);
     if (ms.length) {
-      // highlights first (moments tagged to the hearing or event itself), then the rest in session order
-      const part = id => byId.get(id)?.part || 0, own = m => (e.type === 'person' && m.speaker !== e.id ? 1 : 0); // a person's own words before what others say of them
+      // Highlights first (moments tagged to the hearing or event itself). Then by weight: a person's own words before
+      // what others say of them, sworn testimony before interviews, credible speakers before the rest; then by date
+      // (a person's latest first, a case's earliest first, as in keyMoments), each video's moments kept together in order.
+      const part = id => byId.get(id)?.part || 0, own = m => (e.type === 'person' && m.speaker !== e.id ? 1 : 0);
+      const ranked = !['video', 'hearing', 'event', 'news', 'document', 'claim'].includes(e.type);
+      const oath = m => { const h = byId.get(recordingOf(byId.get(m.video))); return h?.type === 'hearing' && h.id !== 'h-2013-citizen-hearing'; }, sworn = m => (ranked && oath(m) ? 0 : 1), cred = m => (ranked && byId.get(m.speaker)?.cred !== 'credible' ? 1 : 0);
+      const when = (a, b) => (ranked ? String(recordedDate(byId.get(a.video)) || '').localeCompare(String(recordedDate(byId.get(b.video)) || '')) * (e.type === 'person' ? -1 : 1) : 0);
       const key = keyMoments(e, ms);
       if (key.length) put('key', `<div class="p-sec${e.type === 'person' ? ' p-rd-side' : ''}" id="sec-key"><h4>Key testimony</h4><div class="key-list">${key.map(m => { const v = byId.get(m.video); return `
         <button class="key-m" data-play="${m.video}@${m.t}" title="Play this moment"><span class="km-thumb"><img src="${vthumb(v)}" alt="" loading="lazy"><span class="wplay">▶</span></span>
         <span class="km-body"><span class="km-text">${esc(m.text)}</span><span class="km-src">${esc([m.speaker && m.speaker !== e.id ? byId.get(m.speaker)?.name : '', v.name.length > 64 ? v.name.slice(0, 62).replace(/\s+\S*$/, '') + '…' : v.name, fmtD(recordedDate(v)), `at ${fmtT(m.t)}`].filter(Boolean).join(' · '))}</span></span></button>`; }).join('')}</div></div>`);
-      put('moments', `<div class="p-sec"><h4>${key.length ? 'All video moments' : 'Video moments'} <span>${ms.length}</span></h4><div data-collapse="${key.length ? 5 : 10}" data-fixed>${ms.sort((a, b) => (b.hi ? 1 : 0) - (a.hi ? 1 : 0) || own(a) - own(b) || part(a.video) - part(b.video) || a.video.localeCompare(b.video) || a.t - b.t).map(m => `
+      put('moments', `<div class="p-sec"><h4>${key.length ? 'All video moments' : 'Video moments'} <span>${ms.length}</span></h4><div data-collapse="${key.length ? 5 : 10}" data-fixed>${ms.sort((a, b) => (b.hi ? 1 : 0) - (a.hi ? 1 : 0) || own(a) - own(b) || sworn(a) - sworn(b) || cred(a) - cred(b) || when(a, b) || part(a.video) - part(b.video) || a.video.localeCompare(b.video) || a.t - b.t).map(m => `
         <div class="moment${m.hi ? ' hi' : ''}"><button class="ts" data-play="${m.video}@${m.t}">▶ ${fmtT(m.t)}</button><div><div>${esc(m.text)}</div>
         <div class="who">${m.speaker && m.speaker !== e.id ? chip(m.speaker) : ''}${e.type !== 'video' ? chip(m.video) : m.refs.map(r => chip(r)).join('')}</div></div></div>`).join('')}</div></div>`);
     }
@@ -1974,7 +1979,7 @@
   const recordedDate = v => { const of = recordingOf(v); return (of && byId.get(of)?.date) || v.date; };
   function keyMoments(e, ms) {
     if (['video', 'claim', 'hearing', 'event', 'news', 'document'].includes(e.type) || ms.length < 5) return [];
-    const sworn = m => (byId.get(recordingOf(byId.get(m.video)))?.type === 'hearing' ? 1 : 0);
+    const sworn = m => { const h = byId.get(recordingOf(byId.get(m.video))); return h?.type === 'hearing' && h.id !== 'h-2013-citizen-hearing' ? 1 : 0; }; // the 2013 Citizen Hearing was a public forum, not testimony under oath
     const pool = (e.type === 'person' ? ms.filter(m => m.speaker === e.id) : ms.filter(m => m.speaker && byId.get(m.speaker)?.cred === 'credible'))
       .sort((a, b) => (b.key ? 1 : 0) - (a.key ? 1 : 0) || sworn(b) - sworn(a) || String(recordedDate(byId.get(a.video))).localeCompare(String(recordedDate(byId.get(b.video)))) * (e.type === 'person' ? -1 : 1) || a.t - b.t);
     const out = [], seen = new Set();
