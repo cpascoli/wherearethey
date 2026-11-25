@@ -66,6 +66,10 @@ facts:
     claims: [ area-51-alien-craft ]
     stance: disputes
     basis: opinion
+  - text: "Asked whether Lazar's account of the craft's technology lined up with anything he came across in 16 years of government UAP work, Jay Stratton answered: “Not at all.”"
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@24:03
 bio: "Bob Lazar says that in 1988–89 he worked on recovered alien craft at S-4, a site a few miles south of Area 51's Groom Lake base, for a Navy contractor. His account, first broadcast by George Knapp on KLAS-TV in Las Vegas in 1989, became the template for modern crash-retrieval stories; the MIT and Caltech degrees he claims have never been verified."
 ---
 

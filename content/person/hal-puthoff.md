@@ -116,6 +116,10 @@ facts:
     status: claimed
     by: hal-puthoff
     source: v-jre-hal-puthoff-2025@1:44:02
+  - text: "Jay Stratton says Puthoff, one of his chief scientists at AAWSAP, introduced him to James Ryder of Lockheed Martin in 2009."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@15:30
 bio: "Harold “Hal” Puthoff is an American physicist and former naval intelligence officer at the NSA who has been at the centre of government-funded research into the anomalous for half a century. At SRI International in the early 1970s he began the CIA-funded remote-viewing research that grew into the Stargate program, and from 2008 his company EarthTech International was a subcontractor on the DIA's AAWSAP program."
 ---
 

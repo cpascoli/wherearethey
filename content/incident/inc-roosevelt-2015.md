@@ -108,6 +108,16 @@ facts:
     status: claimed
     by: marik-von-rennenkampff
     source: v-2026-08-28-disclosure-forum-national-security@1:18:44
+  - text: "Jay Stratton says that when the East Coast videos reached him in 2015 in an email headed “UFO?”, he told recipients not to reply, checked that the object was not American, and had the email scrubbed from the system."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@32:27
+  - text: "Stratton says the Gimbal crew's radar showed five objects moving in a line towards the carrier, and that after Travis Taylor's analysis of the infrared video “we ruled that still to be anomalous”."
+    status: claimed
+    by: jay-stratton
+    claims: [ gimbal-gofast-not-conventional ]
+    basis: first-hand
+    source: v-2026-11-24-osbourne-jay-stratton@1:29:42
 ---
 
 In 2014–2015, Navy F/A-18 crews from the USS Theodore Roosevelt carrier strike group, training off the U.S. East Coast, reported frequent encounters with unidentified objects, including near-midair collisions. Lt. Ryan Graves, an F/A-18F pilot in the group, says the objects appeared when the squadron's jets received the APG-79 radar, were first taken for false tracks, and were then also picked up by the targeting pod and missile seekers; he testified that they held stationary in hurricane-force winds and then accelerated past Mach 1, and that a cube inside a sphere passed within 50 feet of a two-ship, after which a safety report and a survey found four other unreported near misses.

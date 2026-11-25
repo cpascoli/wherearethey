@@ -100,6 +100,14 @@ facts:
     claims: [ recovered-non-human-craft ]
     stance: context
     source: dow-uap-d172
+  - text: "Jay Stratton says the program's name and description had no “UFO” anywhere in them, to protect the work from stigma and ridicule."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@4:14
+  - text: "Stratton says a craft from Lockheed's inventory was to be moved into AAWSAP under a special access program, and that the CIA, as its owner, refused: “That's where everything stopped”."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@17:20
 ---
 
 The Advanced Aerospace Weapon System Applications Program was a $22 million Defense Intelligence Agency program, funded in the 2008 and 2010 defense appropriations at Senator Harry Reid's direction, contracted in September 2008 (AARO says established in 2009) and ended in 2012. Its contractor, which AARO leaves unnamed, was BAASS, a subsidiary of Robert Bigelow's Bigelow Aerospace, as its own monthly reports in the PURSUE release show. AARO says the contract covered research in 12 aerospace-technology areas and did not specify UFO investigation, but the contractor studied UFO reports and related phenomena, including at Bigelow's Skinwalker Ranch in Utah, with the support of the DIA program manager, by his own account James Lacatski. AARO also says it was the same program as AATIP.

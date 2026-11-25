@@ -85,6 +85,10 @@ facts:
     source: v-2025-03-18-avc-alex-dietrich@10:56
     claims: [ tic-tac-beyond-known-technology ]
     basis: first-hand
+  - text: "Jay Stratton says that when he first called her in 2009 to investigate the encounter “she hung up the phone”, and that when he called back she was glad someone was finally investigating."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@8:53
 bio: "Alex Dietrich is a retired U.S. Navy lieutenant commander and F/A-18F pilot who served 20 years, including two combat deployments with VFA-41, the Black Aces, from USS Nimitz in 2005 and 2007. On 14 November 2004, as a junior wingman new to the squadron, she flew the second Super Hornet in David Fravor's flight during the USS Nimitz “Tic Tac” encounter."
 ---
 

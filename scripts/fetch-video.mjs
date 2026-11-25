@@ -45,8 +45,9 @@ for (const [i, input] of inputs.entries()) {
         '-o', path.join(dir, 'src.%(ext)s'), url,
       ], { stdio: ['ignore', 'inherit', 'inherit'] });
     } catch {
-      console.warn(`! yt-dlp failed for ${id}`);
-      continue;
+      // YouTube often refuses one caption track (HTTP 429) after serving another: go on with what was saved
+      if (!fs.readdirSync(dir).some(f => f.startsWith('src.') && f.endsWith('.vtt'))) { console.warn(`! yt-dlp failed for ${id}`); continue; }
+      console.warn(`! yt-dlp failed on a caption track for ${id}: using the one already saved`);
     }
     const infoPath = path.join(dir, 'src.info.json');
     if (fs.existsSync(infoPath)) {

@@ -265,6 +265,10 @@ facts:
     basis: relayed
     claims: [ tic-tac-beyond-known-technology ]
     source: dow-uap-d172
+  - text: "Jay Stratton says he learned of the encounter in 2009, and that when he first called Alex Dietrich about it “she hung up the phone”."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@8:53
 ---
 
 On 14 November 2004, two F/A-18F Super Hornets from the USS Nimitz, led by Cmdr. David Fravor with Alex Dietrich, a junior pilot new to the squadron, flying the second jet, were pulled off a training exercise off southern California and sent by the cruiser USS Princeton to an unknown contact. The Princeton's radar operators say they had been tracking such objects for days: from about 10 November in Kevin Day's account, for over two weeks in what the controller told Fravor. Fravor testified under oath that the four aircrew saw a small white object shaped like a Tic Tac, with no wings, rotors or exhaust, moving over a patch of churning water; it turned to meet his descending jet, then “rapidly accelerated in front of us and disappeared”, and the Princeton reported it moments later at the jets' CAP point, about 60 miles away. Dietrich, who saw it for about 10 seconds, confirms the object and the CAP-point call.

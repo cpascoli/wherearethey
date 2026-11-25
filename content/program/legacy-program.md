@@ -169,6 +169,20 @@ facts:
     status: claimed
     by: larry-lemke
     source: v-2025-03-21-the-sol-forum-with-guests-hal-puthoff-jacques-val@1:41:07
+  - text: "Stratton says he learned of the Legacy Program in 2009 from James Ryder of Lockheed Martin, to whom Hal Puthoff had introduced him."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@15:30
+  - text: "Asked whether he was ever read into anything from the Legacy Program, Stratton answered: “If I was I couldn't talk about it.”"
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@1:03:35
+  - text: "Stratton says the program has not briefed the Gang of Eight as special access programs must, and that at the UAP Task Force he tried to follow the money to find where it is hidden, but “we really never got to that point” before he retired."
+    status: claimed
+    by: jay-stratton
+    claims: [ programs-hidden-from-congress ]
+    basis: relayed
+    source: v-2026-11-24-osbourne-jay-stratton@1:14:45
 ---
 
 "Legacy program" is the name given since 2023 to the alleged long-running, highly compartmented effort, government and contractor, to retrieve and reverse-engineer craft and biological remains of non-human origin, said to date back to the 1940s and to be hidden from Congress. The term entered proposed law in the UAP Disclosure Act of July 2023, which defined a "legacy program" as all government, industry, academic and private endeavours to collect, exploit or reverse-engineer technologies of unknown origin or examine non-human biological evidence; the enacted FY2024 NDAA kept only a narrower records requirement. The program's existence has not been officially confirmed. This entry describes what is alleged; the people who make the wider allegation, and the official answers to it, are under [crash retrieval](/concept/crash-retrieval).

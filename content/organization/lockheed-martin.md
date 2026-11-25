@@ -41,6 +41,16 @@ facts:
     claims: [ recovered-non-human-craft ]
     stance: context
     basis: opinion
+  - text: "Jay Stratton says James Ryder told him Lockheed held twelve craft: “12 is what he said for Lockheed.”"
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@19:27
+  - text: "Stratton says Ryder wanted to move one craft from Lockheed's inventory to his program at the Defense Intelligence Agency, and that the CIA, as owner, refused."
+    status: claimed
+    by: jay-stratton
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
+    source: v-2026-11-24-osbourne-jay-stratton@15:58
 ---
 
 Lockheed Martin is the largest U.S. defence contractor; its Skunk Works division built secret aircraft such as the U-2 and SR-71.

@@ -70,6 +70,13 @@ facts:
     claims: [ aatip-official-program ]
     stance: context
     source: dow-uap-d186
+  - text: "Jay Stratton says he put together “this interagency working group called AATIP” after the 2015 East Coast reports: “it wasn't really a program, this was working group.”"
+    status: claimed
+    by: jay-stratton
+    claims: [ aatip-official-program ]
+    stance: context
+    basis: first-hand
+    source: v-2026-11-24-osbourne-jay-stratton@33:04
 ---
 
 AATIP, the Advanced Aerospace Threat Identification Program, is the name under which the Pentagon's UFO work became public when *The New York Times* revealed it in December 2017. In that account, and in Luis Elizondo's, it was a Pentagon effort funded at Senator Harry Reid's request that studied military encounters; the Times told the 2004 Nimitz "Tic Tac" case alongside it.

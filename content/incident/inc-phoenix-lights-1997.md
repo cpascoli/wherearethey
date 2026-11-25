@@ -29,6 +29,10 @@ facts:
   - text: "Answering a Freedom of Information Act request on 1 May 1997, Luke Air Force Base wrote: “In summary, we have no records to give you”, adding that its aircraft “were not involved in any way” with what was seen over Phoenix that night and that its public-affairs staff had not said the lights were flares."
     status: documented
     source: library/docs/doc-luke-afb-foia-phoenix-1997.pdf
+  - text: "Jay Stratton says there were two things that night: a very large boomerang-shaped craft that many people saw, and A-10s dropping parachute flares, which got the attention and gave the Air Force a convenient explanation."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@1:20:21
 ---
 
 On the evening of 13 March 1997 lights were reported across some 300 miles of Arizona and southern Nevada, from the Nevada line through Phoenix to the edge of Tucson. Many witnesses described a huge V- or carpenter's-square-shaped object with five lights passing slowly and silently overhead; later, around 10 p.m., a large number of people in the Phoenix area saw a row of brilliant lights hanging in the sky. Among the witnesses were the sitting governor, Fife Symington, a former Air Force officer and pilot, and Lt. Col. Richard French, who said the craft passed within a hundred yards of him.

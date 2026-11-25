@@ -154,6 +154,12 @@ facts:
     by: kevin-knuth
     basis: opinion
     source: v-2025-06-scu-conference-kevin-knuth-scientific-study-of-uap@31:45
+  - text: "Jay Stratton says he never investigated Roswell and never received a Roswell file; the only evidence he has is that Lockheed's James Ryder confirmed it, based on the origin of at least one of the craft."
+    status: claimed
+    by: jay-stratton
+    claims: [ roswell-crashed-craft ]
+    basis: relayed
+    source: v-2026-11-24-osbourne-jay-stratton@22:32
 ---
 
 In early July 1947, rancher Mac Brazel found debris of tinfoil, paper, tape and sticks scattered across the Foster ranch near Corona, New Mexico. Maj. Jesse Marcel of Roswell Army Air Field collected it with the counter-intelligence agent Sheridan Cavitt, and on 8 July the base's public information officer, Walter Haut, put out a release saying it had recovered a "flying disc". Within hours Gen. Roger Ramey identified the material in Fort Worth as a weather balloon and radar target; the Star-Telegram quoted Marcel describing "the remnants of the kite and balloon", and the Roswell Daily Record printed Brazel's own account the next day.

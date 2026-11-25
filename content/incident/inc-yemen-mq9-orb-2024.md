@@ -20,6 +20,10 @@ facts:
   - text: The clip entered the public record through a member of Congress; the Department of Defense and AARO have not released or authenticated it, and its origin and chain of custody are not public.
     status: claimed
     source: library/docs/doc-transcript-2025-09-09.pdf
+  - text: "Jay Stratton, who says he was shown the video before it became public, is “still kind of on the fence”: it looks potentially like the fraying of a balloon, which would give the missile nothing to detonate on."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@1:34:25
 ---
 
 At the House Oversight task force's hearing on 9 September 2025, Rep. Eric Burlison played a video he said he had been given. He described it as filmed on 30 October 2024 by an MQ-9 Reaper tracking an orb-like object off the coast of Yemen, while a second, unseen MQ-9 fired a Hellfire missile at it. In the clip a missile streaks in, appears to strike the object, and the object keeps moving.

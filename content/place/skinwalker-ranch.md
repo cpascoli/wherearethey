@@ -34,6 +34,14 @@ facts:
   - text: "BAASS's ten-month report to DIA (July 2009) names the Utah ranch, owned by the BAASS administrator, as the main site of its Project Engagement, and describes a three-day visit in June–July 2009 by three observers from the Air Force, Navy and Marine Corps: “One observer reported the presence of a shadowy humanoid figure near the old homestead ahead and felt an u nwelcome presence.” The observers later found fresh cigarettes, energy-drink cans and boot prints at the spot on the mesa where they had seen a light."
     status: documented
     source: dow-uap-d172
+  - text: "Jay Stratton says that on his first day at the ranch in 2009, on official duty for the DIA, he saw a narrow black triangle over the mesa, silent and “moving super fast”."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@40:11
+  - text: "Stratton says his and Travis Taylor's working theory is that a transmedium craft failed and is stuck inside the mesa, and stresses: “we don't know any of this. All theory.”"
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@44:47
 ---
 
 Skinwalker Ranch is a 512-acre property in Utah's Uinta Basin with a long local reputation for strange lights, cattle mutilations and other reported phenomena. Robert Bigelow bought it in 1996 and his National Institute for Discovery Science studied it for years; Brandon Fugal acquired it in 2016.

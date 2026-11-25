@@ -67,6 +67,10 @@ facts:
     stance: context
     basis: first-hand
     source: v-2021-06-15-alex-dietrich-the-nimitz-event-summary-time-diffe@39:29
+  - text: "Jay Stratton says the task force came from the Deputy Director of Naval Intelligence and that he recruited “50 plus agencies and organizations”, including the FBI for cases outside the military."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@34:02
 ---
 
 The Unidentified Aerial Phenomena Task Force was formally established by Deputy Secretary of Defense David Norquist in August 2020, approved on 4 August and announced on 14 August, under the Under Secretary of Defense for Intelligence and Security with the Office of Naval Intelligence. Its job was to detect, analyse and catalogue UAP that could threaten U.S. national security. Scott Bray told the House in 2022 that it was built on the Navy's initial efforts to respond to aviators' reports from the training ranges, and AARO's historical report says the Navy was asked to lead it. Its work produced the ODNI's *Preliminary Assessment* of June 2021: 144 reports, one of them identified.

@@ -110,6 +110,54 @@ facts:
     status: claimed
     by: jay-stratton
     source: v-2026-10-20-cuomo-jay-stratton@5:32
+  - text: "On Jack Osbourne's podcast in November 2026 he said Hal Puthoff introduced him in 2009 to James Ryder of Lockheed Martin, from whom he learned about the Legacy Program and Lockheed's role in it."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@15:30
+  - text: "He says Ryder wanted “to take a craft from their inventory and move it over to me” at AAWSAP."
+    status: claimed
+    by: jay-stratton
+    claims: [ recovered-non-human-craft ]
+    basis: relayed
+    source: v-2026-11-24-osbourne-jay-stratton@15:58
+  - text: "He says the owner of the craft, the CIA's Directorate of Science and Technology, refused the transfer: one bureaucrat, whom he does not name, “slammed the door in my face”."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@17:20
+  - text: "Asked how many craft Ryder spoke of: “12 is what he said for Lockheed.”"
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@19:27
+  - text: "He says he worked at Area 51 in his normal job and “never saw anything there”; he guesses the material is kept at a contractor facility."
+    status: claimed
+    by: jay-stratton
+    claims: [ area-51-alien-craft ]
+    stance: context
+    basis: first-hand
+    source: v-2026-11-24-osbourne-jay-stratton@19:45
+  - text: "Asked whether Bob Lazar's account of the craft's technology lined up with anything he came across, he answered: “Not at all.”"
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@24:03
+  - text: "He says he put together “this interagency working group called AATIP” after the 2015 East Coast reports: “it wasn't really a program, this was working group.”"
+    status: claimed
+    by: jay-stratton
+    claims: [ aatip-official-program ]
+    stance: context
+    basis: first-hand
+    source: v-2026-11-24-osbourne-jay-stratton@33:04
+  - text: "Asked whether he ever came across debris or artifacts, he said “No”, but that he has been “very convincingly told where it was and what it was”."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@1:07:17
+  - text: "He says he has never testified at a public hearing: “I have not done a public hearing”, though he spent hours briefing Congress, under oath and not."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@1:24:38
+  - text: "On the “Hellfire” video shown in Congress he said “I'm still kind of on the fence, honestly”: it looks potentially like the fraying of a balloon, which would not make the missile explode."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@1:34:25
 bio: "Jay Stratton is a retired U.S. intelligence official who spent more than 16 years investigating unidentified anomalous phenomena for the government, and was chief of air and space warfare at the Defense Intelligence Agency."
 ---
 
@@ -119,4 +167,6 @@ He was at the centre of every modern Pentagon UAP effort. In 2009, on loan to DI
 
 Stratton gave his first on-camera interview in 2022 and appeared in *The Age of Disclosure* (2025). His memoir *Out of the Shadows* (October 2026) debuted at No. 3 on The New York Times hardcover nonfiction list. In it, and on television, he says a "legacy program" has hidden recovered non-human craft for 80 years. He also says he has personally seen non-human craft and beings, the latter at his family home, which Jeremy Corbell says he has since clarified was a personal encounter, not one in an official capacity. He describes an operation that used a nuclear submarine as bait to draw in a UAP, says that where secrets matter enough "steps have been taken to remove the problem and the people", and says he first briefed Congress, Senator Reid, in 2007. AARO's founding director, Sean Kirkpatrick, calls the program "fictitious" and accuses Stratton of national-security violations. Knapp and Corbell report that the book confirms he is "Axelrod", the intelligence official in *Skinwalkers at the Pentagon* whose family experienced phenomena at home.
 
-*Sources: Out of the Shadows (publisher's biography) · Fox News Special Report, 13 Oct 2026 · Fox News Jesse Watters Primetime, 16 Oct 2026 · NewsNation (Cuomo), 20 Oct 2026 · WEAPONIZED (2022 interview; 21 Oct 2026) · Gallaudet and Fravor testimony (2024, 2023) · AARO historical report (2024) · Elizondo, Newsweek (2024)*
+On Jack Osbourne's podcast in November 2026 he gave his fullest account of how he says he learned of the program: Hal Puthoff introduced him in 2009 to James Ryder of Lockheed Martin, who spoke of twelve craft and wanted to move one to AAWSAP, until the CIA, as owner, refused. He said he never saw a craft or debris himself, that he worked at Area 51 and saw nothing there, that AATIP "wasn't really a program" but a working group he put together, and that he has never testified at a public hearing.
+
+*Sources: Out of the Shadows (publisher's biography) · Fox News Special Report, 13 Oct 2026 · Fox News Jesse Watters Primetime, 16 Oct 2026 · NewsNation (Cuomo), 20 Oct 2026 · WEAPONIZED (2022 interview; 21 Oct 2026) · Gallaudet and Fravor testimony (2024, 2023) · AARO historical report (2024) · Elizondo, Newsweek (2024) · Trying Not To Die with Jack Osbourne, 24 Nov 2026*

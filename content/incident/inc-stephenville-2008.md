@@ -40,6 +40,10 @@ facts:
   - text: "A radar study by Glen Schulze and Robert Powell (MUFON's director of research), from 2.8 million FAA radar returns and a redacted 457th Fighter Squadron logbook obtained under FOIA, places ten F-16s from Carswell in the area at 15,000–17,000 feet, most in the Brownwood MOAs, and reports unidentified primary returns without transponders north of Selden at about 6:15 p.m. in the direction the Selden witnesses described; if two returns were one object, it moved at about 2,100 mph."
     status: claimed
     source: library/docs/doc-mufon-stephenville-radar-2008.pdf
+  - text: "Jay Stratton says he went to Carswell in 2008 to ask about F-16s scrambled near President Bush's ranch, and that the men told him they could not talk because the Air Force Office of Special Investigations had them sign non-disclosure agreements."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@1:21:22
 ---
 
 On the evening of 8 January 2008, residents of Stephenville, Selden and Dublin in Erath County, Texas, about 100 miles south-west of Dallas, reported a large, silent, brightly lit object that hovered and then moved off at great speed; several said fighter jets chased it. Witnesses quoted at the time included a private pilot, Steve Allen, and a constable, Lee Roy Gaitan. The local Stephenville Empire-Tribune broke the story and counted about 40 witnesses.

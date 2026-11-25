@@ -84,6 +84,10 @@ facts:
     status: documented
     stance: disputes
     source: cia-uap-d028
+  - text: "Jay Stratton says a craft Lockheed's James Ryder wanted to pass to his DIA program could move only with “the permission of the owner. And the owner was the Central Intelligence Agency, specifically the Directorate of Science and Technology”, which refused."
+    status: claimed
+    by: jay-stratton
+    source: v-2026-11-24-osbourne-jay-stratton@16:54
 ---
 
 The Central Intelligence Agency is the main U.S. foreign-intelligence agency. Its UAP record begins in its own files: after the summer 1952 wave over Washington, its Office of Scientific Intelligence asked whether "flying saucers" had national-security implications, H. Marshall Chadwell told the DCI in December that "something was going on that must have immediate attention", and in January 1953 the Agency convened the Robertson Panel, which found no direct threat and recommended a public "debunking" effort. The Agency kept its sponsorship of the panel secret, and its 1997 history by Gerald Haines says this later cost it credibility. That history also records that U-2 and OXCART flights accounted for over half of UFO reports from the late 1950s through the 1960s, and that the Air Force made "misleading and deceptive statements" to protect them, while concluding that the CIA itself paid "only limited and peripheral attention" to the subject after the early 1950s. The Agency also funded the remote-viewing research at SRI that grew into Stargate, and its FOIA collection holds material such as a 1990 press note on Soviet air-defence sightings.
