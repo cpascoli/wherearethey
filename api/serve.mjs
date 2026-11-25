@@ -12,9 +12,11 @@ export async function production(env) {
   const [{ pgDb }, { resendMail }] = await Promise.all([import('./db.mjs'), import('./mail.mjs')]);
   for (const k of ['DATABASE_URL', 'BETTER_AUTH_SECRET', 'LIMIT_HMAC_KEY', 'RESEND_SEND_KEY', 'RESEND_CONTACTS_KEY', 'RESEND_WEBHOOK_SECRET', 'RESEND_TOPIC_PURSUE', 'RESEND_SEGMENT'])
     if (!env[k]) throw new Error(`missing ${k}`); // the name only, never a value
-  const db = await pgDb(env.DATABASE_URL), topics = { pursue: env.RESEND_TOPIC_PURSUE };
+  // optional: RESEND_TOPIC_DIGEST (the weekly digest exists for members once it is set) and ADMIN_EMAIL (the owner's
+  // address: the one account that gets the admin routes; unset, there are none)
+  const db = await pgDb(env.DATABASE_URL), topics = { pursue: env.RESEND_TOPIC_PURSUE, digest: env.RESEND_TOPIC_DIGEST || undefined };
   const mail = resendMail({ sendKey: env.RESEND_SEND_KEY, contactsKey: env.RESEND_CONTACTS_KEY, topics, segment: env.RESEND_SEGMENT });
-  const app = createApp({ db, mail, env: { origin: 'https://wherearethey.info', secret: env.BETTER_AUTH_SECRET, limitKey: env.LIMIT_HMAC_KEY, webhookSecret: env.RESEND_WEBHOOK_SECRET, topics } });
+  const app = createApp({ db, mail, env: { origin: 'https://wherearethey.info', secret: env.BETTER_AUTH_SECRET, limitKey: env.LIMIT_HMAC_KEY, webhookSecret: env.RESEND_WEBHOOK_SECRET, topics, admin: env.ADMIN_EMAIL } });
   return { app, db, mail };
 }
 

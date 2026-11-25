@@ -6,7 +6,7 @@
 // 23 November, since the sign-up block already takes the address and the code in the app.
 (() => {
   'use strict';
-  const WORDING = '2026-12-a'; // the version of the words agreed to (WORDINGS in api/app.mjs)
+  const WORDING = '2026-12-b'; // the version of the words agreed to (WORDINGS in api/app.mjs)
   const CONTACT = 'wherearetheyinfo@proton.me';
 
   // h('p.cls', { attr }, child, 'text', …)
@@ -112,24 +112,33 @@
         if (r.status === 204) { me = { signedIn: false, deleted: true }; remember(false); step = { name: 'email' }; } else error = say(r);
       }, async () => { const r = await api('POST', '/api/account/code', {}); if (r.status === 202) step.sent = Date.now(); else error = say(r); }),
       h('p.ac-small', {}, h('button.plain', { type: 'button', onclick: () => { step = null; error = ''; render(); } }, 'Keep my account'))));
-    const on = !!me.topics?.pursue;
+    // one switch per alert the server offers (the digest only once it exists there)
+    const ALERTS = {
+      pursue: ['PURSUE releases', 'An email usually within a day of each release, with the files that matter.'],
+      digest: ['Weekly digest', 'About one email a week: what mattered, a moment worth watching, what was newly filed.'],
+    };
+    const row = topic => {
+      const on = !!me.topics[topic], [name, what] = ALERTS[topic];
+      return h('div.ac-row', {},
+        h('div', {}, h('b', {}, name), h('small', {}, what)),
+        h('button.ac-switch', { type: 'button', role: 'switch', 'aria-checked': String(on), 'aria-label': name, 'data-topic': topic, disabled: me.suppressed && !on, onclick: () => act(async () => {
+          const r = await api('PUT', `/api/subscriptions/${topic}`, { on: !on, placement: 'account', wording: WORDING });
+          if (r.status === 200) me = r.body; else if (r.status === 401) { me = { signedIn: false }; remember(false); step = { name: 'email' }; } else error = say(r);
+        }) }, on ? 'On' : 'Off'));
+    };
     draw(
       me.suppressed && h('div.ac-card.ac-warn', {}, h('h2', {}, "Alerts can't be delivered to this address"),
         h('p', {}, 'An email to you bounced, or one was reported as spam, so our email provider no longer sends to this address. If that is a mistake, write to ', mailto(), '.')),
       h('div.ac-card', {},
         h('p.ac-who', {}, badge(me.maskedEmail), h('span', {}, 'Signed in as ', h('b', {}, me.maskedEmail))),
-        h('div.ac-row', {},
-          h('div', {}, h('b', {}, 'PURSUE releases'), h('small', {}, 'An email usually within a day of each release, with the files that matter.')),
-          h('button.ac-switch', { type: 'button', role: 'switch', 'aria-checked': String(on), 'aria-label': 'PURSUE release alerts', disabled: me.suppressed && !on, onclick: () => act(async () => {
-            const r = await api('PUT', '/api/subscriptions/pursue', { on: !on, placement: 'account', wording: WORDING });
-            if (r.status === 200) me = r.body; else if (r.status === 401) { me = { signedIn: false }; remember(false); step = { name: 'email' }; } else error = say(r);
-          }) }, on ? 'On' : 'Off')),
+        Object.keys(me.topics || {}).filter(t => ALERTS[t]).map(row),
         errLine(),
         h('div.ac-actions', {},
           h('button', { type: 'button', onclick: () => signOut(false) }, 'Sign out'),
           h('button', { type: 'button', onclick: () => signOut(true) }, 'Sign out everywhere'),
           h('button.danger', { type: 'button', onclick: () => act(async () => { const r = await api('POST', '/api/account/code', {}); if (r.status === 202) step = { name: 'delete', sent: Date.now() }; else error = say(r); }) }, 'Delete account…'))),
-      h('p.ac-small', {}, 'For a copy of your data, or anything else, write to ', mailto(), '.'));
+      h('p.ac-small', {}, 'For a copy of your data, or anything else, write to ', mailto(), '.'),
+      me.admin && h('p.ac-small', {}, h('a', { href: '/admin' }, 'Admin: members and the weekly digest')));
   }
   const signOut = everywhere => act(async () => { await api('DELETE', '/api/session', { everywhere }); me = { signedIn: false }; remember(false); step = { name: 'email' }; });
 

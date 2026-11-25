@@ -2,6 +2,8 @@
 
 22 November 2026, revised the same day after review. **Status: approved by the owner with these revisions. Step 1 is built in the working tree (22 November) and tested locally; nothing is deployed, and the owner's setup (section 11) and the gates on production (section 15) are still to do.** Companion to [the roadmap](roadmap.md) (0.3, 1.2, 2.7).
 
+**25 November: step 1b (the weekly digest) and an owner's admin page are built in the working tree and tested locally; not deployed. They are section 18, which also lists the owner's setup for them.**
+
 Step 1 is specified in full. Later steps are outlined, so that step 1 doesn't get in their way; each gets its own spec.
 
 How to read the claims about services:
@@ -16,7 +18,7 @@ How to read the claims about services:
 4. **The archive stays static and open.** Nothing needs an account to read. If every account service is down, the archive works.
 5. **The content and the members never mix.** `content/` stays the source of truth for the archive. Member data is never in git, the build, a page's HTML or a deploy preview. What members write is never a source.
 6. **Collect the least.** An email address and what the person asked for. No names, photos, IP addresses or user agents on accounts. Nothing that identifies an account goes to Google Analytics or the traffic counter. Links in an email carry one `utm_source`, the same for every reader, so Analytics can tell that a visit came from an alert, never whose.
-7. **A person sends every broadcast.** Scripts make drafts; the owner presses Send.
+7. **A person sends every broadcast.** Scripts and the admin page make drafts; the owner presses Send, or picks the time it goes (section 18).
 
 ## 2. Steps
 
@@ -38,7 +40,7 @@ How to read the claims about services:
 
 **In:** the sign-up block, code sign-in, `/account`, one topic (`pursue`), the draft script for the alert, unsubscribe, deletion, the privacy text.
 
-**Out:** other topics, follows, bookmarks, OAuth, passkeys, profiles, display names, any member-written text, an admin UI.
+**Out:** other topics, follows, bookmarks, OAuth, passkeys, profiles, display names, any member-written text, an admin UI. (The digest topic and an admin page for the owner came with step 1b: section 18.)
 
 **Measures:** confirmed subscribers; share of codes sent that are verified; delivery, bounce and complaint rates of the first alert; visits arriving from it; unsubscribes.
 
@@ -274,6 +276,7 @@ What we protect, in order: **who is a member** (some may be military, cleared or
 | T15 | Spoofed mail from the domain. **Checked:** no DKIM record at `resend._domainkey` and no DMARC record today | SPF, DKIM, DMARC at `p=none`, then `quarantine` after two clean weeks | Look-alike domains |
 | T16 | Personal data in logs | Log route, status and a request id only; never bodies, addresses, codes or provider error bodies | The host's own request logs |
 | T17 | Owner's accounts taken over (Netlify, Neon, Resend, GitHub, DNS, Proton) | Two-factor on all six | One-person dependency |
+| T19 | The owner's account taken over, or a script on our origin using the owner's session. The admin routes can send to every member | The routes answer 404 to everyone else; they return counts, never an address; a send needs a fresh emailed code and the version of the draft that was reviewed; the email is written on the server from structured text, with links to our own pages only; three sends a day at most; `/admin` has a strict CSP | Someone who reads the owner's inbox can sign in and send. Two-factor on the mailbox (T17) |
 | T18 | A legal demand for the member list | Hold little; delete for real; don't promise anonymity | Email addresses can identify people |
 
 ## 11. Your setup checklist
@@ -379,6 +382,42 @@ Published on 23 November 2026 in `site/privacy.html`, with the launch.
 It also names who is responsible for the data: Carlo Pascoli.
 
 The first paragraph's "no accounts, no ads and no newsletter" becomes "no ads", and the table gains Neon and Resend.
+
+## 18. Step 1b: the weekly digest, and the owner's admin page
+
+Built on 25 November 2026 at the owner's request: the digest, and a page to run it from any device instead of the command line.
+
+**The digest for members.** A second topic, `digest` (migration `002_digest.sql`). It exists for members only once `RESEND_TOPIC_DIGEST` is set: until then `/api/me` doesn't list it, the switch isn't drawn and the route refuses it. `/account` and the dialog show one switch per topic. The sign-up block offers it once, in the confirmation right after subscribing ("Want the weekly digest too, about one email a week?"), with one button; signing up never switches it on. The promise is "about one email a week", since a person sends it. Wording version `2026-12-b`. Links carry `utm_source=digest`, the same for every reader.
+
+**Who the owner is.** The one address in `ADMIN_EMAIL` (Netlify, Production context; not in the repository, which is public). That account signs in like any other. `/api/me` adds `admin: true` for it alone, and `/account` then shows a link to `/admin`. With the variable unset there is no admin.
+
+**`/admin`** (`site/admin.html`, `site/assets/admin.js`, `admin.css`): a standalone page like `/account`, under its own policy (no inline script, nothing from another site; inline styles allowed for the email preview, which sits in a sandboxed frame that can run nothing). The page holds no data: everything comes from `/api/admin/*`.
+
+- **Figures:** accounts, new in 7 and 30 days, each alert's count and how many of those can be reached, members with no alert, switched off in 30 days, suppressed addresses, sign-ins in use, codes sent today, choices not yet at Resend, sign-ups per day, and where alerts were switched on by kind of place. Counts only: no address, id or list of members is ever returned. Readers and referrers stay in Analytics and `npm run traffic`.
+- **Compose:** a proposal made in the browser from `/latest.json` (written by the build: the last three weeks of Latest, with up to three moments per video): this week, newly filed, coming up, one moment. The owner edits everything: subject, opening, sections, items (title, link, line), the moment, closing.
+- **Save:** drafts are rows in `broadcast_draft`, as structured text (`api/digest.mjs`), never HTML. Each save raises the version; an older copy can't overwrite a newer one.
+- **Review:** the email as the server wrote it from the saved draft, HTML and plain text, and "Send me a test", which goes to the owner's own address only.
+- **Send:** now, or at a date and time (Resend's `scheduled_at`, up to 30 days ahead). It needs a fresh emailed code and the version reviewed. Before it, members' choices that haven't reached Resend are pushed, and the send stops if any remain. A scheduled digest can be taken back (the broadcast is deleted at Resend) and becomes a draft again.
+
+| Endpoint | Does |
+|---|---|
+| `GET /api/admin/stats` | The figures |
+| `GET /api/admin/digests`, `POST` | List; create a draft |
+| `GET`, `PUT`, `DELETE /api/admin/digests/:id` | Read with the rendered email; save (`version`); delete a draft |
+| `POST /api/admin/digests/:id/test` | The email to the owner alone (10 an hour) |
+| `POST /api/admin/code` | A code to confirm a send |
+| `POST /api/admin/digests/:id/send` | `code, version, at?`: send or schedule (3 a day) |
+| `POST /api/admin/digests/:id/cancel` | Take a scheduled one back |
+
+All answer `404` unless the session is the owner's.
+
+**Not in it:** the PURSUE release alert (still `npm run alert`, which reads the content files), delivery figures (Resend's API gives none; they are on its dashboard), a support request in the digest (it would need a postal address first: section 13), and reader statistics.
+
+**Owner's setup, in this order**
+- [ ] Resend: a topic "Weekly digest", **default opt-out**, public.
+- [ ] `npm run accounts:migrate` (backs up, applies `002_digest.sql`, grants the function's role the new table). Before the deploy: the new code reads the table only on the admin routes, so the order is safe either way, but the digest switch fails until it has run.
+- [ ] Netlify, Production context: `ADMIN_EMAIL` (your sign-in address, marked secret) and `RESEND_TOPIC_DIGEST` (the topic's id). Set `RESEND_TOPIC_DIGEST` last: it is what shows the digest to members.
+- [ ] Deploy, sign in, open `/admin`, compose a draft, send yourself a test, then schedule one to yourself and take it back.
 
 ## References
 

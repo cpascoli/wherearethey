@@ -15,6 +15,8 @@ let server, browser, base;
 const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.woff2': 'font/woff2', '.woff': 'font/woff' };
 // /account's own policy, as in netlify.toml (keep the two the same)
 export const ACCOUNT_CSP = "default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'";
+// /admin's, as in netlify.toml (keep the two the same)
+export const ADMIN_CSP = "default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'";
 // The accounts API, as on the dev server: Postgres in memory and a stand-in for Resend, started on the first /api
 // request. `accounts()` gives the tests its mail (the codes "sent") and its database.
 let api;
@@ -25,6 +27,7 @@ before(async () => {
   server = http.createServer((req, res) => {
     if (req.url.startsWith('/api/')) return void accounts().then(a => a.listen(req, res)).catch(() => { res.writeHead(500); res.end(); });
     if (req.url.split('?')[0] === '/account') res.setHeader('content-security-policy', ACCOUNT_CSP);
+    if (req.url.split('?')[0] === '/admin') res.setHeader('content-security-policy', ADMIN_CSP);
     const p = decodeURIComponent(req.url.split('?')[0].replace(/^\/+/, '/'));
     const f = [p, p + '.html', path.join(p, 'index.html')].map(c => path.join(ROOT, c)).find(c => c.startsWith(ROOT) && fs.existsSync(c) && fs.statSync(c).isFile());
     if (!f) { res.writeHead(404); return res.end(); }

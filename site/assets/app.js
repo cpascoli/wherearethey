@@ -3163,7 +3163,7 @@
   // each PURSUE release's page (the owner's choice, 22 November: not on every file). An email address, then the emailed code, creates the account and switches the release alert
   // on. It talks to /api only, adds no history entry, and sends nothing to Analytics. The words a person agrees to
   // are versioned: when the promise or the small print below changes, add a version here and to WORDINGS in api/app.mjs.
-  const SU_WORDING = '2026-12-a';
+  const SU_WORDING = '2026-12-b';
   // shown to everyone once the build says so (SIGNUP_SHOWN); before that only on the dev server, or in a browser
   // where the owner has set localStorage "wat:signup" to true
   const SU_ON = !!KB.signup || store.get('signup', false) === true || /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
@@ -3188,7 +3188,10 @@
       // on the home page a subscriber sees nothing (the owner's choice): the state of the alert is on /account.
       // The confirmation right after subscribing there still shows, for that visit.
       if (placement === 'home' && suMe.topics?.pursue && !suJust) return '';
-      if (suMe.topics?.pursue) return `<p class="su-quiet"><span class="su-ok">✓</span> ${suJust ? `You'll hear from us when ${n ? `Release ${n}` : 'the next release'} is out.` : 'You get an email when a PURSUE release is out.'} <a href="/account">Manage your account</a></p>`;
+      // right after subscribing, the weekly digest is offered with one button; it is never switched on by itself
+      const digest = !suJust || !('digest' in (suMe.topics || {})) ? '' : suMe.topics.digest ? ' <span class="su-ok">✓</span> And the weekly digest.'
+        : ' Want the weekly digest too, about one email a week? <button class="link" data-su-digest>Yes, send it</button>';
+      if (suMe.topics?.pursue) return `<p class="su-quiet"><span class="su-ok">✓</span> ${suJust ? `You'll hear from us when ${n ? `Release ${n}` : 'the next release'} is out.` : 'You get an email when a PURSUE release is out.'}${digest} <a href="/account">Manage your account</a></p>${err}`;
       return `${head}<div class="su-form"><button class="btn primary" data-su-on>Alert me</button><span class="su-small">Signed in as ${esc(suMe.maskedEmail)} · <a href="/account">Account</a></span></div>${err}`;
     }
     if (su.step === 'code') return `<h4>Enter the 8-digit code sent to ${esc(suMask(su.email))}</h4>
@@ -3237,6 +3240,10 @@
       const el = e.target.closest?.('.su'); if (!el) return;
       if (e.target.closest('[data-su-change]')) { su = { step: 'form' }; suDraw(el); }
       else if (e.target.closest('[data-su-again]')) suDo(el, async () => { const r = await suSend(su.email); if (r.status === 202) su.sent = Date.now(); else su.error = suSay(r); });
+      else if (e.target.closest('[data-su-digest]')) suDo(el, async () => {
+        const r = await suApi('PUT', '/api/subscriptions/digest', { on: true, placement: el.dataset.su, wording: SU_WORDING });
+        if (r.status === 200) suMe = r.body; else if (r.status === 401) { suMe = null; store.set('member', false); } else su.error = suSay(r);
+      });
       else if (e.target.closest('[data-su-on]')) suDo(el, async () => {
         const r = await suApi('PUT', '/api/subscriptions/pursue', { on: true, placement: el.dataset.su, wording: SU_WORDING });
         if (r.status === 200) { suMe = r.body; suJust = true; } else if (r.status === 401) { suMe = null; store.set('member', false); } else su.error = suSay(r);

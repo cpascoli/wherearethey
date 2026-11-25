@@ -198,3 +198,21 @@ test('/account under its own policy: sign in without an alert, switch it on and 
   assert.deepEqual(asked, [], 'the page asked nothing of any other site');
   await p.close();
 });
+
+test('right after subscribing, the weekly digest is offered with one button and is not on until it is pressed', { skip }, async () => {
+  const p = await phone(FILE), email = 'digest-reader@example.com';
+  const { app } = await accounts();
+  await app.q`delete from limit_counter`;
+  await p.waitForSelector('#panel .su[data-su="pursue"] input[type=email]');
+  await p.type('#panel .su input', email);
+  await p.$eval('#panel .su form', f => f.requestSubmit());
+  await p.waitForSelector('#panel .su input[name=code]');
+  await p.type('#panel .su input[name=code]', await code(email));
+  await p.$eval('#panel .su form', f => f.requestSubmit());
+  await p.waitForSelector('#panel .su [data-su-digest]');
+  assert.deepEqual(await app.q`select s.topic from subscription s join "user" u on u.id = s.user_id where u.email = ${email} and s.status = 'on'`, [{ topic: 'pursue' }]);
+  await p.click('#panel .su [data-su-digest]');
+  await until(p, () => /And the weekly digest/.test(document.querySelector('#panel .su')?.textContent || ''));
+  assert.deepEqual((await app.q`select s.topic from subscription s join "user" u on u.id = s.user_id where u.email = ${email} and s.status = 'on' order by 1`).map(r => r.topic), ['digest', 'pursue']);
+  assert.deepEqual(await app.q`select c.placement, c.wording_version from consent_event c join "user" u on u.id = c.user_id where u.email = ${email} and c.topic = 'digest'`, [{ placement: 'pursue', wording_version: '2026-12-b' }]);
+});

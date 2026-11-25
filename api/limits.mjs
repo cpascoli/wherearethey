@@ -8,6 +8,8 @@ export const RULES = {
   codeAddress: [[MIN, 1], [HOUR, 5], [DAY, 10]],
   codeIp: [[HOUR, 10], [DAY, 30]],
   verifyIp: [[HOUR, 30]],
+  adminTest: [[HOUR, 10]],   // test emails of a draft, to the owner
+  adminSend: [[DAY, 3]],     // broadcasts sent or scheduled from the admin page
 };
 export const ALL_CODES = { warn: 60, stop: 95 }; // a day, on Resend's free plan (100 a day)
 
@@ -21,8 +23,14 @@ export function makeLimits({ db, key, now = Date.now }) {
       on conflict (key, window_start) do update set n = limit_counter.n + 1 returning n`;
     return row.n;
   }
+  // the count so far in the current window, without adding to it
+  async function peek(kind, value, seconds) {
+    const start = new Date(Math.floor(now() / (seconds * 1000)) * seconds * 1000);
+    const k = createHmac('sha256', key).update(`${kind}:${seconds}:${value}`).digest('base64url');
+    return (await q`select n from limit_counter where key = ${k} and window_start = ${start}`)[0]?.n || 0;
+  }
   return {
-    count,
+    count, peek,
     // true when `value` is still within every window of the rule (each call counts as one)
     async allow(rule, value) {
       let ok = true;

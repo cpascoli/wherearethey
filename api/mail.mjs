@@ -5,7 +5,7 @@ export const FROM = 'Where Are They <alerts@wherearethey.info>';
 export const REPLY_TO = 'wherearetheyinfo@proton.me';
 
 const codeText = (code, minutes, type) => [
-  type === 'delete' ? `Your code to delete your Where Are They account: ${code}` : `Your Where Are They code: ${code}`,
+  type === 'delete' ? `Your code to delete your Where Are They account: ${code}` : type === 'confirm' ? `Your code to confirm sending an email to members: ${code}` : `Your Where Are They code: ${code}`,
   '', `It expires in ${minutes} minutes. Enter it on the page where you asked for it.`,
   '', "If it wasn't you, ignore this email: nothing happens without the code.",
   '', 'Where Are They · wherearethey.info',
@@ -32,7 +32,7 @@ export function resendMail({ sendKey, contactsKey, topics = {}, segment, fetch =
     async sendCode({ email, code, minutes, type, idempotencyKey }) {
       await call(sendKey, 'POST', '/emails', {
         from: FROM, to: [email], reply_to: REPLY_TO,
-        subject: type === 'delete' ? 'Your code to delete your account' : 'Your Where Are They code',
+        subject: type === 'delete' ? 'Your code to delete your account' : type === 'confirm' ? 'Your code to confirm sending' : 'Your Where Are They code',
         text: codeText(code, minutes, type),
       }, idempotencyKey ? { 'idempotency-key': idempotencyKey } : {});
     },
@@ -58,6 +58,21 @@ export function resendMail({ sendKey, contactsKey, topics = {}, segment, fetch =
     async deleteContact(contactId) {
       try { await call(contactsKey, 'DELETE', `/contacts/${contactId}`); } catch (e) { if (e.status !== 404) throw e; }
     },
+    // ── for the owner's admin page (api/admin.mjs) ──
+    async sendTest({ to, subject, html, text }) {
+      await call(sendKey, 'POST', '/emails', { from: FROM, to: [to], reply_to: REPLY_TO, subject, html, text });
+    },
+    // a broadcast to the members who chose `topic`, made as a draft; returns its id
+    async createBroadcast({ name, topic, subject, html, text }) {
+      if (!topics[topic] || !segment) throw new MailError(0, 'no-topic');
+      return (await call(contactsKey, 'POST', '/broadcasts', { name, segment_id: segment, topic_id: topics[topic], from: FROM, reply_to: REPLY_TO, subject, html, text, send: false })).id;
+    },
+    // at: an ISO time to send it at; none = now
+    async sendBroadcast(id, at) { await call(contactsKey, 'POST', `/broadcasts/${id}/send`, at ? { scheduled_at: at } : {}); },
+    // a draft or a scheduled one (which cancels it); one already gone is fine
+    async deleteBroadcast(id) { try { await call(contactsKey, 'DELETE', `/broadcasts/${id}`); } catch (e) { if (e.status !== 404) throw e; } },
+    // { status, … } as Resend has it, or null when it has none by that id
+    async getBroadcast(id) { try { return await call(contactsKey, 'GET', `/broadcasts/${id}`); } catch (e) { if (e.status === 404) return null; throw e; } },
     call: (method, path, body) => call(contactsKey, method, path, body), // for scripts/alert.mjs
   };
 }
@@ -65,11 +80,11 @@ export function resendMail({ sendKey, contactsKey, topics = {}, segment, fetch =
 // The stand-in: remembers what it was asked to do. `print` shows codes in the terminal (the dev server).
 export function fakeMail({ print = false, fail = {} } = {}) {
   const m = {
-    codes: [], contacts: new Map(), deleted: [], owner: [], fail, n: 0,
+    codes: [], contacts: new Map(), deleted: [], owner: [], tests: [], broadcasts: new Map(), fail, n: 0,
     async sendCode({ email, code, type }) {
       if (m.fail.send) throw new MailError(500);
       m.codes.push({ email, code, type });
-      if (print) console.log(`\n  ✉  code for ${email}${type === 'delete' ? ' (delete account)' : ''}: ${code}\n`);
+      if (print) console.log(`\n  ✉  code for ${email}${type === 'delete' ? ' (delete account)' : type === 'confirm' ? ' (confirm sending)' : ''}: ${code}\n`);
     },
     async notifyOwner(subject, text) { m.owner.push({ subject, text }); if (print) console.log(`  ✉  to the owner: ${subject}`); },
     async syncContact({ email, contactId, on }) {
@@ -78,6 +93,11 @@ export function fakeMail({ print = false, fail = {} } = {}) {
       m.contacts.set(id, { email, on: { ...on } });
       return id;
     },
+    async sendTest(e) { if (m.fail.send) throw new MailError(500); m.tests.push(e); if (print) console.log(`  ✉  test email to ${e.to}: ${e.subject}`); },
+    async createBroadcast(b) { if (m.fail.broadcast) throw new MailError(500); const id = `broadcast_${++m.n}`; m.broadcasts.set(id, { ...b, status: 'draft' }); return id; },
+    async sendBroadcast(id, at) { if (m.fail.sendBroadcast) throw new MailError(500); const b = m.broadcasts.get(id); b.status = at ? 'scheduled' : 'sent'; b.at = at; if (print) console.log(`  ✉  broadcast "${b.subject}" ${at ? `scheduled for ${at}` : 'sent'}`); },
+    async deleteBroadcast(id) { m.broadcasts.delete(id); },
+    async getBroadcast(id) { return m.broadcasts.get(id) || null; },
     async deleteContact(id) { if (m.fail.delete) throw new MailError(500); m.contacts.delete(id); m.deleted.push(id); },
     last: email => m.codes.findLast(c => c.email === email)?.code,
   };

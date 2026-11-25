@@ -24,8 +24,19 @@ export function backup() {
   const url = keychain('wherearethey-migrate'), pass = keychain('wherearethey-backup');
   const out = path.join(full, `accounts-${new Date().toISOString().replace(/[:.]/g, '-')}.dump.enc`);
   // the connection string and the passphrase travel in the environment, never on a command line
-  const dump = spawnSync('pg_dump', ['--format=custom', '--no-owner', '--dbname', url], { maxBuffer: 1 << 30 });
-  if (dump.status !== 0) throw new Error('pg_dump failed');
+  const u = new URL(url), part = v => decodeURIComponent(v);
+  const env = { ...process.env, PGHOST: u.hostname, PGPORT: u.port || '5432', PGUSER: part(u.username), PGPASSWORD: part(u.password), PGDATABASE: part(u.pathname.slice(1)), PGSSLMODE: u.searchParams.get('sslmode') || 'require' };
+  // Homebrew's libpq is not on the PATH by default
+  const bin = spawnSync('which', ['pg_dump']).status === 0 ? 'pg_dump' : ['/opt/homebrew/opt/libpq/bin/pg_dump', '/usr/local/opt/libpq/bin/pg_dump'].find(f => fs.existsSync(f)) || 'pg_dump';
+  const dump = spawnSync(bin, ['--format=custom', '--no-owner'], { maxBuffer: 1 << 30, env });
+  if (dump.error?.code === 'ENOENT') throw new Error('pg_dump not found (brew install libpq)');
+  if (dump.status !== 0) {
+    // say why only where the reason names nothing: never print pg_dump's own message (it can carry the host and role)
+    const err = String(dump.stderr || '');
+    const why = /server version mismatch|aborting because of server version/.test(err) ? `the server is newer than this pg_dump (${(err.match(/server version: ([\d.]+)/) || [])[1] || '?'} against ${(err.match(/pg_dump version: ([\d.]+)/) || [])[1] || '?'}): brew upgrade libpq`
+      : /certificate|SSL/i.test(err) ? 'the TLS check failed' : /authentication|password/i.test(err) ? 'the database refused the sign-in' : /could not translate host|timeout|Connection refused/i.test(err) ? 'the database could not be reached' : dump.error?.code || 'unknown reason';
+    throw new Error(`pg_dump failed: ${why}`);
+  }
   const enc = spawnSync('openssl', ['enc', '-aes-256-cbc', '-pbkdf2', '-iter', '600000', '-salt', '-pass', 'env:BACKUP_PASS', '-out', out], { input: dump.stdout, env: { ...process.env, BACKUP_PASS: pass } });
   if (enc.status !== 0) throw new Error('encryption failed');
   fs.chmodSync(out, 0o600);

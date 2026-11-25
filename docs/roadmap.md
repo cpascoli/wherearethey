@@ -56,6 +56,8 @@ Nothing later works without these.
 ### 1.1 The weekly digest
 One email a week, assembled from Latest: the three to five items that mattered, one "moment of the week" with its clip link, what was newly filed, and the next scheduled hearing. Draft it from `content/news/` and `added.json`; a person approves and sends. It is its own subscription on the account ([specification](accounts.md), step 1b), needing only the sign-up to be live, and is offered in the sign-up's confirmation: people who signed up for release alerts are asked, never added. Count returning visitors properly by adding a "seen in a previous week" flag to the monthly counter record.
 
+Built on 25 November ([specification](accounts.md), section 18): the `digest` topic, and an admin page (`/admin`, the owner only) that proposes the week from Latest and lets the owner edit, save, preview, test and send or schedule it from any device. Not yet in it: the upcoming-hearing strip beyond Latest's own upcoming entries, the returning-visitor flag, and the support request.
+
 The digest is also the product that income is built on (Phase 3): the support request goes in every issue, and the supporter tier is a paid level of the same list.
 
 ### 1.2 Accounts: sign-in, bookmarks and follows

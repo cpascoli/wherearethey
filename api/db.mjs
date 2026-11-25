@@ -41,7 +41,7 @@ export async function grantRuntime(db, role) {
     sql`revoke all on all tables in schema public from ${r}`,
     sql`revoke create on schema public from ${r}`,
     sql`grant usage on schema public to ${r}`,
-    sql`grant select, insert, update, delete on "user", "session", "account", "verification", subscription, mail_contact, contact_deletion, limit_counter, webhook_event to ${r}`,
+    sql`grant select, insert, update, delete on "user", "session", "account", "verification", subscription, mail_contact, contact_deletion, limit_counter, webhook_event, broadcast_draft to ${r}`,
     sql`grant select, insert on consent_event to ${r}`,
   ]) await s.execute(db);
 }

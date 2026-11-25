@@ -32,6 +32,7 @@ site/books.html
 site/a-z.html
 site/claims.html
 site/latest.html
+site/latest.json
 site/feed.xml
 site/sitemap.xml
 site/robots.txt

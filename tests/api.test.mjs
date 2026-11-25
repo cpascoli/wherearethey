@@ -12,9 +12,9 @@ const SECRET = 'whsec_' + Buffer.from('a-webhook-secret-for-tests').toString('ba
 const W = WORDINGS[0];
 
 // a fresh database, mail and clock per test; `client()` is one browser (it keeps its cookie)
-async function setup() {
+async function setup(extra = {}) {
   const db = await devDb(), mail = fakeMail(), clock = { t: Date.parse('2026-12-01T10:00:00Z') };
-  const app = createApp({ db, mail, now: () => clock.t, env: { origin: ORIGIN, secret: 's'.repeat(48), limitKey: 'k'.repeat(32), webhookSecret: SECRET, topics: { pursue: 'topic_pursue' } } });
+  const app = createApp({ db, mail, now: () => clock.t, env: { origin: ORIGIN, secret: 's'.repeat(48), limitKey: 'k'.repeat(32), webhookSecret: SECRET, topics: { pursue: 'topic_pursue' }, ...extra } });
   const q = app.q;
   function client(ip = '198.51.100.1') {
     let cookie = '';
@@ -310,4 +310,112 @@ test('switching an alert on again also clears the "unsubscribed" mark Resend set
   calls.length = 0;
   await mail.syncContact({ email: 'a@example.com', on: { pursue: true } });
   assert.deepEqual(calls, ['POST /contacts {"email":"a@example.com","unsubscribed":false,"segments":[{"id":"seg"}],"topics":[{"id":"t1","subscription":"opt_in"}]}']);
+});
+
+// ── step 1b and the owner's routes (docs/accounts.md, section 18) ──
+const OWNER = 'owner@example.com';
+const withDigest = { topics: { pursue: 'topic_pursue', digest: 'topic_digest' }, admin: OWNER };
+const W2 = WORDINGS.at(-1);
+const DIGEST = { subject: 'The week in the record', content: { intro: 'Hello.\n\nSecond paragraph <b>.', sections: [{ title: 'This week', items: [
+  { title: 'A hearing & its record', url: 'https://wherearethey.info/hearing/x', line: 'What was said.', meta: 'Hearing · 1 Dec' }, { title: '', url: '', line: 'dropped: no title' }] }],
+  moment: { quote: 'We saw it.', who: 'A pilot', url: 'https://wherearethey.info/video/y?t=10' }, outro: '' } };
+
+test('the digest is a topic only where it has an id at Resend, and is never switched on by signing up', async () => {
+  const off = await setup();
+  const a = off.client(); await a.signIn('a@example.com', sub);
+  assert.equal((await a('PUT', '/api/subscriptions/digest', { on: true, placement: 'account', wording: W2 })).status, 400);
+  const { client, q, mail } = await setup(withDigest);
+  const c = client(), r = await c.signIn('b@example.com', sub);
+  assert.deepEqual(r.body.topics, { pursue: true, digest: false });
+  assert.equal(r.body.admin, undefined);
+  const on = await c('PUT', '/api/subscriptions/digest', { on: true, placement: 'home', wording: W2 });
+  assert.deepEqual(on.body.topics, { pursue: true, digest: true });
+  assert.deepEqual([...mail.contacts.values()][0].on, { pursue: true, digest: true });
+  assert.equal((await q`select 1 from consent_event where topic = 'digest' and granted and wording_version = ${W2}`).length, 1);
+});
+
+test('the admin routes exist for the owner alone', async () => {
+  const { client } = await setup(withDigest);
+  const out = client(), member = client('198.51.100.2'), owner = client('198.51.100.3');
+  await member.signIn('m@example.com');
+  for (const c of [out, member]) for (const [m, p] of [['GET', '/api/admin/stats'], ['GET', '/api/admin/digests'], ['POST', '/api/admin/digests'], ['GET', '/api/admin/digests/1'], ['POST', '/api/admin/digests/1/send'], ['POST', '/api/admin/code']])
+    assert.deepEqual([(await c(m, p, m === 'GET' ? undefined : DIGEST)).status, m, p], [404, m, p]);
+  assert.equal((await owner.signIn(OWNER)).body.admin, true);
+  assert.equal((await owner('GET', '/api/admin/stats')).status, 200);
+  assert.equal((await owner('POST', '/api/admin/digests', DIGEST, { origin: 'https://evil.example' })).status, 403);
+  const none = await setup(); // no owner configured: nobody is one
+  const x = none.client(); await x.signIn(OWNER);
+  assert.equal((await x('GET', '/api/admin/stats')).status, 404);
+});
+
+test('the figures are counts and name nobody', async () => {
+  const { client, hook } = await setup(withDigest);
+  const owner = client('198.51.100.9'); await owner.signIn(OWNER);
+  const a = client('198.51.100.1'), b = client('198.51.100.2');
+  await a.signIn('a@example.com', sub); await a('PUT', '/api/subscriptions/digest', { on: true, placement: 'account', wording: W2 });
+  await b.signIn('b@example.com', sub); await b('PUT', '/api/subscriptions/pursue', { on: false, placement: 'account', wording: W2 });
+  await hook('email.complained', { to: ['a@example.com'] });
+  const r = await owner('GET', '/api/admin/stats');
+  assert.equal(r.body.members, 3); assert.equal(r.body.new7, 3);
+  assert.deepEqual(r.body.topics, { pursue: { on: 1, reach: 0 }, digest: { on: 1, reach: 0 } });
+  assert.equal(r.body.suppressed, 1); assert.equal(r.body.noAlert, 2); assert.equal(r.body.off30, 1); assert.equal(r.body.codesToday, 3);
+  assert.deepEqual(r.body.placements, { pursue: 2, account: 1 });
+  assert.deepEqual(r.body.days, [[new Date().toISOString().slice(0, 10), 3]]); // accounts are dated by the real clock
+  assert.ok(!/example\.com|@/.test(JSON.stringify(r.body)), 'no address in the figures');
+});
+
+test('a digest draft: saved as structured text, the email written from it, links to our pages only', async () => {
+  const { client, q } = await setup(withDigest);
+  const owner = client(); await owner.signIn(OWNER);
+  assert.equal((await owner('POST', '/api/admin/digests', { ...DIGEST, subject: ' ' })).body.error, 'subject');
+  const bad = structuredClone(DIGEST); bad.content.sections[0].items[0].url = 'https://evil.example/x';
+  assert.equal((await owner('POST', '/api/admin/digests', bad)).body.error, 'link');
+  const d = (await owner('POST', '/api/admin/digests', DIGEST)).body;
+  assert.equal(d.status, 'draft'); assert.equal(d.version, 1); assert.equal(d.content.sections[0].items.length, 1);
+  assert.match(d.html, /A hearing &amp; its record/); assert.match(d.html, /Second paragraph &lt;b&gt;\./);
+  assert.match(d.html, /href="https:\/\/wherearethey\.info\/video\/y\?t=10&amp;utm_source=digest&amp;utm_medium=email"/);
+  assert.match(d.text, /Unsubscribe: \{\{\{RESEND_UNSUBSCRIBE_URL\}\}\}/);
+  const saved = await owner('PUT', `/api/admin/digests/${d.id}`, { ...DIGEST, subject: 'Second take', version: 1 });
+  assert.deepEqual([saved.status, saved.body.version, saved.body.subject], [200, 2, 'Second take']);
+  assert.equal((await owner('PUT', `/api/admin/digests/${d.id}`, { ...DIGEST, version: 1 })).body.error, 'stale', 'an older copy cannot overwrite a newer one');
+  assert.equal((await owner('GET', '/api/admin/digests')).body.digests.length, 1);
+  assert.equal((await owner('DELETE', `/api/admin/digests/${d.id}`)).status, 204);
+  assert.equal((await q`select 1 from broadcast_draft`).length, 0);
+});
+
+test('sending a digest needs a fresh code and the version reviewed; scheduling can be taken back', async () => {
+  const { client, mail, clock, q } = await setup(withDigest);
+  const owner = client('198.51.100.9'); await owner.signIn(OWNER);
+  const d = (await owner('POST', '/api/admin/digests', DIGEST)).body;
+  const send = extra => owner('POST', `/api/admin/digests/${d.id}/send`, { version: 1, ...extra });
+  const code = async () => { clock.t += 3600000; assert.equal((await owner('POST', '/api/admin/code', {})).status, 202); return mail.last(OWNER); };
+  assert.equal((await send({ code: '00000000' })).status, 400);
+  const c1 = await code();
+  assert.equal(mail.codes.at(-1).type, 'confirm');
+  assert.equal((await send({ code: c1 })).body.error, 'nobody', 'nobody has asked for the digest yet');
+  assert.equal((await send({ code: c1 })).body.error, 'invalid', 'a code confirms one send');
+  const m = client('198.51.100.1'); await m.signIn('m@example.com'); await m('PUT', '/api/subscriptions/digest', { on: true, placement: 'account', wording: W2 });
+  assert.equal((await send({ code: await code(), version: 7 })).body.error, 'stale');
+  assert.equal((await send({ code: await code(), at: new Date(clock.t + 40 * 86400000).toISOString() })).body.error, 'when');
+  // a test goes to the owner only
+  assert.equal((await owner('POST', `/api/admin/digests/${d.id}/test`, {})).status, 202);
+  assert.deepEqual([mail.tests.length, mail.tests[0].to, mail.broadcasts.size], [1, OWNER, 0]);
+  // a member's choice that hasn't reached Resend stops the send
+  mail.fail.sync = true;
+  await m('PUT', '/api/subscriptions/digest', { on: false, placement: 'account', wording: W2 });
+  await m('PUT', '/api/subscriptions/digest', { on: true, placement: 'account', wording: W2 });
+  assert.equal((await send({ code: await code() })).body.error, 'unsynced');
+  mail.fail.sync = false;
+  const at = new Date(clock.t + 3 * 86400000).toISOString();
+  const ok = await send({ code: await code(), at });
+  assert.deepEqual([ok.status, ok.body.status, ok.body.recipients], [200, 'scheduled', 1]);
+  const [b] = [...mail.broadcasts.values()];
+  assert.deepEqual([b.status, b.topic, b.subject], ['scheduled', 'digest', DIGEST.subject]);
+  assert.equal((await owner('PUT', `/api/admin/digests/${d.id}`, { ...DIGEST, version: 1 })).body.error, 'not-a-draft');
+  const back = await owner('POST', `/api/admin/digests/${d.id}/cancel`, {});
+  assert.deepEqual([back.status, back.body.status, mail.broadcasts.size], [200, 'draft', 0]);
+  const now = await send({ code: await code() });
+  assert.deepEqual([now.status, now.body.status], [200, 'sent']);
+  assert.equal((await owner('DELETE', `/api/admin/digests/${d.id}`)).status, 409);
+  assert.equal((await q`select 1 from verification where identifier like '%forget-password%'`).length, 0);
 });

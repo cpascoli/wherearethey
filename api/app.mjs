@@ -1,17 +1,20 @@
 // The accounts API (docs/accounts.md, section 7): plain functions, a Request in and a Response out, so the same code
 // runs in the Netlify Function, on the dev server and in the tests.
 //   createApp({ db, mail, env }) → handle(request, { ip, waitUntil })
-// env: { origin, secret, limitKey, webhookSecret, topics: { pursue: '<resend topic id>' }, secure }
+// env: { origin, secret, limitKey, webhookSecret, topics: { pursue: '<resend topic id>', digest: … }, admin, secure }
+// A topic exists for members only once it has an id at Resend (env.topics). env.admin is the owner's address: the one
+// account that gets the routes in api/admin.mjs.
 import { createHmac, timingSafeEqual } from 'node:crypto';
 import { query } from './db.mjs';
 import { makeAuth, CODE_MINUTES } from './auth.mjs';
 import { makeLimits, ALL_CODES } from './limits.mjs';
+import { adminRoutes } from './admin.mjs';
 
-export const TOPICS = ['pursue'];
+export const TOPICS = ['pursue', 'digest'];
 export const PLACEMENTS = ['pursue', 'file', 'latest', 'home', 'account'];
 // The wording a person agreed to, by version: the text itself is the sign-up block's and /account's, in git under
 // this name. Add a version when the promise or the small print changes; never edit one.
-export const WORDINGS = ['2026-12-a'];
+export const WORDINGS = ['2026-12-a', '2026-12-b']; // b: the weekly digest is offered beside the release alert
 
 const json = (status, body, headers) => new Response(body === undefined ? null : JSON.stringify(body), {
   status, headers: { ...(body !== undefined && { 'content-type': 'application/json' }), 'cache-control': 'no-store', ...headers },
@@ -23,10 +26,12 @@ export const mask = email => email.replace(/^(.)[^@]*/, '$1…');
 export function createApp({ db, mail, env, now = Date.now }) {
   const q = query(db);
   const limits = makeLimits({ db, key: env.limitKey, now });
+  const topics = TOPICS.filter(t => env.topics?.[t]); // the ones members can choose
+  const admin = typeof env.admin === 'string' && env.admin.trim().toLowerCase() || null;
   const auth = makeAuth({
     db, secret: env.secret, origin: env.origin, secure: env.secure !== false,
     sendCode: ({ email, code, type }) => mail.sendCode({
-      email, code, minutes: CODE_MINUTES, type: type === 'email-verification' ? 'delete' : 'sign-in',
+      email, code, minutes: CODE_MINUTES, type: type === 'email-verification' ? 'delete' : type === 'forget-password' ? 'confirm' : 'sign-in',
       idempotencyKey: createHmac('sha256', env.limitKey).update(`code:${email}:${code}`).digest('base64url'),
     }),
   });
@@ -48,7 +53,7 @@ export function createApp({ db, mail, env, now = Date.now }) {
   async function state(user) {
     const subs = await q`select topic from subscription where user_id = ${user.id} and status = 'on'`;
     const [mc] = await q`select suppressed_at from mail_contact where user_id = ${user.id}`;
-    return { signedIn: true, maskedEmail: mask(user.email), topics: Object.fromEntries(TOPICS.map(t => [t, subs.some(s => s.topic === t)])), suppressed: !!mc?.suppressed_at };
+    return { signedIn: true, maskedEmail: mask(user.email), topics: Object.fromEntries(topics.map(t => [t, subs.some(s => s.topic === t)])), suppressed: !!mc?.suppressed_at, ...(admin && user.email === admin && { admin: true }) };
   }
   // tell Resend what the database says for this member; a failure leaves synced_at empty for the daily retry
   async function sync(user) {
@@ -120,7 +125,7 @@ export function createApp({ db, mail, env, now = Date.now }) {
       const s = await session(request);
       if (!s) return fail(401, 'signed-out');
       const b = await body(request);
-      if (!TOPICS.includes(topic) || typeof b?.on !== 'boolean' || !PLACEMENTS.includes(b.placement) || !WORDINGS.includes(b.wording)) return fail(400, 'consent');
+      if (!topics.includes(topic) || typeof b?.on !== 'boolean' || !PLACEMENTS.includes(b.placement) || !WORDINGS.includes(b.wording)) return fail(400, 'consent');
       if (b.on && await suppressed(s.user.id)) return fail(409, 'suppressed');
       await choose(s.user.id, topic, b.on, b);
       await sync(s.user);
@@ -177,6 +182,8 @@ export function createApp({ db, mail, env, now = Date.now }) {
     },
   };
 
+  Object.assign(routes, adminRoutes({ db, mail, env: { ...env, admin }, auth, limits, session, body, json, fail, withCookies, sendCode, sync, now }));
+
   async function dropContact(id) {
     try { await mail.deleteContact(id); await q`delete from contact_deletion where resend_contact_id = ${id}`; } catch { /* retried by api/purge.mjs */ }
   }
@@ -217,8 +224,9 @@ export function createApp({ db, mail, env, now = Date.now }) {
   async function handle(request, ctx = {}) {
     const url = new URL(request.url);
     let key = `${request.method} ${url.pathname.replace(/\/$/, '')}`, arg;
-    const m = key.match(/^PUT \/api\/subscriptions\/([a-z]+)$/);
-    if (m) { key = 'PUT /api/subscriptions/:topic'; arg = m[1]; }
+    let m;
+    if ((m = key.match(/^PUT \/api\/subscriptions\/([a-z]+)$/))) { key = 'PUT /api/subscriptions/:topic'; arg = m[1]; }
+    else if ((m = key.match(/^(GET|PUT|DELETE|POST) \/api\/admin\/digests\/(\d{1,12})(\/[a-z]+)?$/))) { key = `${m[1]} /api/admin/digests/:id${m[3] || ''}`; arg = Number(m[2]); }
     const route = routes[key];
     if (!route) return fail(404, 'not-found');
     // every write but the signed webhook must come from our own pages

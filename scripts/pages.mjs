@@ -497,6 +497,16 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
 ${feedItems.map(e => `<item><title>${esc(`${kindOf(e)}: ${e.name}${e.date ? ` (${fmtDate(e.date)})` : ''}`)}</title><link>${SITE_URL}${e.path}</link><guid isPermaLink="true">${SITE_URL}${e.path}</guid><pubDate>${rfc(e.added)}</pubDate><description>${esc(summaryOf(e))}</description></item>`).join('\n')}
 </channel></rss>
 `);
+  // latest.json: the last three weeks of Latest and what is coming, as data: what the owner's admin page proposes a
+  // weekly digest from (site/assets/admin.js). Public already, on Latest and in the feed; nothing else reads it.
+  const since3w = dayOffset(today, -21);
+  const digestItem = e => ({ id: e.id, kind: kindOf(e), name: e.name, date: e.date || null, added: e.added || null, url: `${SITE_URL}${e.path}`, summary: summaryOf(e),
+    moments: (e.moments || []).filter(m => m.text && m.speaker && byId.get(m.speaker)).sort((x, y) => (y.key ? 1 : 0) - (x.key ? 1 : 0)).slice(0, 3)
+      .map(m => ({ quote: m.text, who: byId.get(m.speaker).name, url: `${SITE_URL}${e.path}?t=${Math.floor(m.t)}` })) });
+  fs.writeFileSync(path.join(site, 'latest.json'), JSON.stringify({ today,
+    upcoming: [...featured, ...recent].filter(e => e.date > today).sort((x, y) => String(x.date).localeCompare(String(y.date))).map(digestItem),
+    recent: [...featured, ...recent].filter(e => e.date <= today && dateEnd(e.end || e.date) >= since3w).sort((x, y) => String(y.date).localeCompare(String(x.date))).map(digestItem),
+    added: added.filter(e => e.added >= since3w).map(digestItem) }));
   // <lastmod>: when each page's visible content last changed (frozen in content/lastmod.json), not the build date
   const statics = ['about', 'privacy'].map(n => ({ path: `/${n}`, file: `site/${n}.html`, title: n, description: '', body: fs.readFileSync(path.join(site, `${n}.html`), 'utf8') }));
   const lastmod = pageDates([...indexed, ...statics]);

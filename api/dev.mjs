@@ -6,8 +6,10 @@ import { fakeMail } from './mail.mjs';
 export { nodeListener } from './serve.mjs';
 
 // dir: where to keep the data between runs (none: in memory)
-export async function development({ origin, dir, print = true }) {
+// admin: the address that gets the admin page here (any address signs in: the code is printed)
+export const DEV_ADMIN = 'owner@wherearethey.test';
+export async function development({ origin, dir, print = true, admin = process.env.ADMIN_EMAIL || DEV_ADMIN }) {
   const db = await devDb(dir), mail = fakeMail({ print });
-  const app = createApp({ db, mail, env: { origin, secure: false, secret: 'dev-only-secret-not-used-anywhere-else-0123456789', limitKey: 'dev-only-limit-key', webhookSecret: 'whsec_' + Buffer.from('dev').toString('base64'), topics: { pursue: 'dev-topic-pursue' } } });
+  const app = createApp({ db, mail, env: { origin, secure: false, secret: 'dev-only-secret-not-used-anywhere-else-0123456789', limitKey: 'dev-only-limit-key', webhookSecret: 'whsec_' + Buffer.from('dev').toString('base64'), topics: { pursue: 'dev-topic-pursue', digest: 'dev-topic-digest' }, admin } });
   return { app, db, mail };
 }

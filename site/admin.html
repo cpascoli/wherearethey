@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin · Where Are They</title>
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="same-origin">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <!-- The owner's page (docs/accounts.md, section 18). Like /account it loads nothing from anywhere else and has no
+       inline script (its Content-Security-Policy in netlify.toml). The page itself holds nothing: everything it shows
+       comes from /api/admin/*, which answers 404 to everyone but the owner. -->
+  <link rel="stylesheet" href="/assets/page.css">
+  <link rel="stylesheet" href="/assets/account-page.css?v=3">
+  <link rel="stylesheet" href="/assets/account.css?v=4">
+  <link rel="stylesheet" href="/assets/admin.css?v=1">
+  <script src="/assets/admin.js?v=1" defer></script>
+</head>
+<body>
+<main class="ad-main">
+  <a class="back" href="/">← Where Are They</a>
+  <div class="kicker ac-kicker">Admin</div>
+  <h1 id="ad-title">Admin</h1>
+  <div id="ad" class="ac-root ad-root" aria-live="polite"><p class="muted">Loading…</p></div>
+  <noscript><p>This page needs JavaScript.</p></noscript>
+</main>
+</body>
+</html>

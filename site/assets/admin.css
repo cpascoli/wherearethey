@@ -1,0 +1,33 @@
+/* The owner's admin page (admin.js), on top of page.css and account.css. */
+main.ad-main { max-width: 760px; }
+.ad-root h2 { font-size: 19px; margin: 30px 0 8px; }
+.ad-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; margin: 10px 0; }
+.ad-tile { padding: 12px 14px; border: 1px solid var(--border); border-radius: 6px; background: var(--panel); }
+.ad-tile b { display: block; font-size: 26px; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.ad-tile span { font-size: 13px; color: var(--muted); display: block; line-height: 1.35; }
+.ad-tile.warn { border-left: 3px solid #e07a5f; }
+.ad-bars { font-size: 13px; color: var(--muted); margin: 6px 0; }
+.ad-bars div { display: grid; grid-template-columns: 62px 1fr 28px; gap: 8px; align-items: center; height: 18px; }
+.ad-bars i { display: block; height: 8px; background: var(--accent); border-radius: 2px; min-width: 2px; }
+.ad-list { list-style: none; padding: 0; margin: 8px 0; }
+.ad-list li { border-top: 1px solid var(--border); }
+.ad-root .ad-list button { display: flex; width: 100%; gap: 10px; align-items: baseline; justify-content: space-between; text-align: left; background: none; border: 0; border-radius: 0; padding: 11px 2px; }
+.ad-list small { color: var(--muted); flex: none; }
+.ad-chip { font-size: 12px; padding: 1px 8px; border-radius: 10px; border: 1px solid var(--border); color: var(--muted); margin-right: 6px; }
+.ad-chip.scheduled, .ad-chip.sent { color: var(--accent); border-color: var(--accent); }
+.ad-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 10px 0; }
+.ad-root label { display: block; font-size: 13px; color: var(--muted); margin: 12px 0 3px; }
+.ad-root input[type="text"], .ad-root input[type="url"], .ad-root input[type="datetime-local"], .ad-root textarea, .ad-root select {
+  width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; padding: 8px 10px; background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 6px; }
+.ad-root textarea { resize: vertical; line-height: 1.45; }
+.ad-root input:focus, .ad-root textarea:focus, .ad-root select:focus { outline: none; border-color: var(--accent); }
+.ad-root input[type="datetime-local"] { width: auto; }
+.ad-sec { margin: 18px 0; padding: 12px 14px 14px; border: 1px solid var(--border); border-radius: 6px; }
+.ad-item { margin: 12px 0 0; padding: 10px 12px; border-radius: 6px; background: var(--panel); border: 1px solid var(--border); }
+.ad-item .ad-row { margin: 8px 0 0; }
+.ad-root button.small { font-size: 13px; padding: 4px 10px; }
+.ad-frame { width: 100%; height: 620px; border: 1px solid var(--border); border-radius: 6px; background: #fff; }
+.ad-text { white-space: pre-wrap; font: 13px/1.5 ui-monospace, Menlo, monospace; padding: 12px; border: 1px solid var(--border); border-radius: 6px; overflow-x: auto; }
+.ad-ok { color: var(--accent); font-size: 14px; }
+.ad-bar { position: sticky; bottom: 0; background: var(--bg); border-top: 1px solid var(--border); padding: 10px 0; margin-top: 18px; z-index: 2; }
+.ad-bar .ad-row { margin: 0; }
