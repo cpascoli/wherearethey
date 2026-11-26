@@ -56,9 +56,10 @@ test('the admin page: nothing for others; figures, compose, save, preview, sched
   assert.deepEqual([mail.tests.length, mail.tests[0].to, mail.broadcasts.size], [1, DEV_ADMIN, 0]);
   // schedule it two days ahead, confirmed with a code
   await app.q`delete from limit_counter`;
-  await p.$eval('#ow-at', el => { const t = new Date(Date.now() + 2 * 864e5 - new Date().getTimezoneOffset() * 60000); el.value = t.toISOString().slice(0, 16); });
+  await p.$eval('#ow-at', el => { const t = new Date(Date.now() + 2 * 864e5 - new Date().getTimezoneOffset() * 60000); el.value = t.toISOString().slice(0, 16); el.dispatchEvent(new Event('input', { bubbles: true })); });
+  assert.ok(await p.$$eval('#ow .ow-bar button', bs => bs.some(b => b.textContent === 'Send or schedule…')), 'the bar at the bottom says where sending is');
   const n = mail.codes.length;
-  await click(p, 'Continue…');
+  await click(p, 'Schedule…');
   await p.waitForSelector('#ow input[name=code]');
   for (let i = 0; i < 50 && mail.codes.length === n; i++) await wait(100);
   assert.equal(mail.codes.at(-1).type, 'confirm');

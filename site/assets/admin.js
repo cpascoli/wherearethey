@@ -188,17 +188,18 @@
     h('details', {}, h('summary', {}, 'The plain-text version'), h('pre.ow-text', {}, d.text)),
   ];
   function sendBox() {
-    if (!step) return h('div.ow-sec', {},
+    if (!step) return h('div.ow-sec', { id: 'ow-send' },
       h('b', {}, 'Send'),
       h('p.ac-small', {}, `It goes to the members who asked for the digest: ${people(d.recipients)} now. Send yourself a test first and read it in your mail.`),
       h('div.ow-row', {}, h('button', { type: 'button', onclick: () => act(async () => { if (!await saved()) return; const r = await api('POST', `/api/admin/digests/${d.id}/test`, {}); if (r.status === 202) note = 'Test sent to your own address.'; else err = say(r); }) }, 'Send me a test')),
       h('label', {}, 'When (your local time; leave empty to send at once)'),
-      h('div.ow-row', {}, h('input', { type: 'datetime-local', id: 'ow-at' }),
-        h('button.primary', { type: 'button', onclick: () => {
+      h('div.ow-row', {}, h('input', { type: 'datetime-local', id: 'ow-at', oninput: e => { root.querySelector('#ow-go').textContent = e.target.value ? 'Schedule…' : 'Send now…'; } }),
+        h('button.primary', { type: 'button', id: 'ow-go', onclick: () => {
           const v = root.querySelector('#ow-at').value, at = v ? new Date(v) : null;
           if (at && !(at.getTime() - Date.now() > 3 * 60000)) { err = ERR.when; return render(); }
           act(async () => { if (!await saved()) return; const r = await api('POST', '/api/admin/code', {}); if (r.status === 202) step = { at: at ? at.toISOString() : null }; else err = say(r); });
-        } }, 'Continue…')));
+        } }, 'Send now…')),
+      h('p.ac-small', {}, 'Nothing is sent yet: the next step asks for a code emailed to you.'));
     return h('div.ow-sec.ac-warn', {},
       h('b', {}, step.at ? `Schedule for ${when(step.at)}` : 'Send now'),
       h('p', {}, `“${d.subject}” will go to ${people(d.recipients)}${step.at ? '' : ', at once, and cannot be taken back'}. To confirm, enter the code just sent to your address.`),
@@ -229,6 +230,7 @@
       sendBox(), preview(),
       h('div.ow-bar', {}, h('div.ow-row', {},
         h('button.primary', { type: 'button', onclick: () => act(async () => { if (await save()) note = 'Saved.'; }) }, 'Save draft'),
+        !step && h('button', { type: 'button', onclick: () => root.querySelector('#ow-send')?.scrollIntoView({ block: 'center', behavior: 'smooth' }) }, 'Send or schedule…'),
         (state = h('span.ac-small', {}, dirty ? 'Unsaved changes' : `Saved ${when(d.updatedAt)}`)),
         h('button.danger', { type: 'button', onclick: () => { if (!sure) { sure = true; return render(); } act(async () => { const r = await api('DELETE', `/api/admin/digests/${d.id}`); if (r.status === 204) { d = null; sure = false; note = 'Draft deleted.'; await load(); } else err = say(r); }); } }, sure ? 'Really delete it?' : 'Delete draft'))));
   }
