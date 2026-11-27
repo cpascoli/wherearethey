@@ -25,7 +25,7 @@ How to read the claims about services:
 | Step | What ships | Condition to start |
 |---|---|---|
 | **1** | Email-code sign-up and sign-in, the PURSUE release alert, unsubscribe, delete account | This spec approved |
-| 1b | The weekly digest as a second topic, offered to members and in the sign-up's confirmation, never switched on for them | Step 1 live; the first digest drafted (roadmap 1.1) |
+| 1b | The weekly digest as a second topic, offered to members and in the sign-up's confirmation; switched on by a sign-up only where the block offers both (section 4.1) | Step 1 live; the first digest drafted (roadmap 1.1) |
 | 2 | Passkeys (offered after sign-in), Google, then Apple | Step 1 stable through one release alert |
 | 3 | Bookmarks and Follow, private to the member | Step 1 stable |
 | 4 | Email alerts for followed files; hearing alerts | A per-file change list in the build |
@@ -84,7 +84,8 @@ Not on other files, and not on Latest. A prompt on every file waits for step 4, 
 - The release number comes from `pursueStats`, never typed by hand.
 - The block is drawn below the fold and must not become a page's largest paint. It adds no history entry.
 - Errors are said in place and announced (`aria-live`): wrong code, expired, too many tries, "email is busy, try again later". If the address is suppressed, the sign-in succeeds and the block says alerts can't be delivered to it, as `/account` does.
-- From step 1b the confirmation offers the digest with one button. It is never switched on by the sign-up itself.
+- From step 1b the confirmation offers the digest with one button.
+- **From 26 November 2026 (the owner's decision, wording `2026-12-c`): one button for both.** On the home page, at the top of Latest and under a video's title (one quiet line that opens the form; placement `file`) the block offers the weekly digest and the release alert together, says so above the button ("Subscribe"), and the sign-up switches both on: `POST /api/session` takes `topics: ['pursue', 'digest']`, recorded as one consent event per topic. On the PURSUE explainer and the release pages the block still promises the release alert only and offers the digest after. A member subscribed to either email sees nothing in the three places (the rest is on `/account`). The home page's masthead has one line that scrolls to its block, shown only while the block is.
 
 ### 4.2 `/account`
 
@@ -192,7 +193,7 @@ JSON only, `Cache-Control: no-store`, bodies up to 4 KB (the webhook 64 KB). Eve
 | Endpoint | Body | Does | Returns |
 |---|---|---|---|
 | `POST /api/code` | `email` | Checks limits, sends a sign-in code | `202`, the same for new and known addresses |
-| `POST /api/session` | `email, code, subscribe?, placement?, wording?` | Verifies; creates the account if new; only then, if `subscribe`, records consent and syncs the contact | `200` and the cookie; `400` invalid or expired; `429` |
+| `POST /api/session` | `email, code, subscribe?, placement?, wording?, topics?` | Verifies; creates the account if new; only then, if `subscribe`, records consent and syncs the contact | `200` and the cookie; `400` invalid or expired; `429` |
 | `GET /api/me` | none | Reads the session | `{ signedIn, maskedEmail, topics }`, never the full address or the id |
 | `PUT /api/subscriptions/pursue` | `on, placement, wording` | Changes it, appends a consent event, syncs | `200`; `409` if suppressed |
 | `DELETE /api/session` | `everywhere?` | Revokes this session or all | `204` |
@@ -387,7 +388,7 @@ The first paragraph's "no accounts, no ads and no newsletter" becomes "no ads", 
 
 Built on 25 November 2026 at the owner's request: the digest, and a page to run it from any device instead of the command line.
 
-**The digest for members.** A second topic, `digest` (migration `002_digest.sql`). It exists for members only once `RESEND_TOPIC_DIGEST` is set: until then `/api/me` doesn't list it, the switch isn't drawn and the route refuses it. `/account` and the dialog show one switch per topic. The sign-up block offers it once, in the confirmation right after subscribing ("Want the weekly digest too, about one email a week?"), with one button; signing up never switches it on. The promise is "about one email a week", since a person sends it. Wording version `2026-12-b`. Links carry `utm_source=digest`, the same for every reader.
+**The digest for members.** A second topic, `digest` (migration `002_digest.sql`). It exists for members only once `RESEND_TOPIC_DIGEST` is set: until then `/api/me` doesn't list it, the switch isn't drawn and the route refuses it. `/account` and the dialog show one switch per topic. The sign-up block offers it once, in the confirmation right after subscribing ("Want the weekly digest too, about one email a week?"), with one button; a sign-up switches it on only from a block that offers both emails and says so (section 4.1, wording `2026-12-c`). The promise is "about one email a week", since a person sends it. Wording version `2026-12-b`. Links carry `utm_source=digest`, the same for every reader.
 
 **Who the owner is.** The one address in `ADMIN_EMAIL` (Netlify, Production context; not in the repository, which is public). That account signs in like any other. `/api/me` adds `admin: true` for it alone, and `/account` then shows a link to `/admin`. With the variable unset there is no admin.
 

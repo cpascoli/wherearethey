@@ -320,6 +320,22 @@ const DIGEST = { subject: 'The week in the record', content: { intro: 'Hello.\n\
   { title: 'A hearing & its record', url: 'https://wherearethey.info/hearing/x', line: 'What was said.', meta: 'Hearing · 1 Dec' }, { title: '', url: '', line: 'dropped: no title' }] }],
   moment: { quote: 'We saw it.', who: 'A pilot', url: 'https://wherearethey.info/video/y?t=10' }, outro: '' } };
 
+test('a block that offers both emails switches both on with one sign-up; a topic not set up is left out; a made-up one is refused', async () => {
+  const both = { subscribe: true, placement: 'home', wording: WORDINGS.at(-1), topics: ['pursue', 'digest'] };
+  let { client, mail, q } = await setup(withDigest);
+  const r = await client().signIn('a@example.com', both);
+  assert.deepEqual(r.body.topics, { pursue: true, digest: true });
+  assert.deepEqual(await q`select topic, granted, wording_version, placement from consent_event order by topic`, [
+    { topic: 'digest', granted: true, wording_version: WORDINGS.at(-1), placement: 'home' }, { topic: 'pursue', granted: true, wording_version: WORDINGS.at(-1), placement: 'home' }]);
+  assert.deepEqual([...mail.contacts.values()][0].on, { pursue: true, digest: true });
+  ({ client, mail, q } = await setup());
+  assert.deepEqual((await client().signIn('b@example.com', both)).body.topics, { pursue: true });
+  assert.deepEqual((await q`select topic from consent_event`), [{ topic: 'pursue' }]);
+  const c = client('198.51.100.9');
+  for (const topics of [['pursue', 'everything'], [], 'digest']) assert.equal((await c.signIn(`c${String(topics).length}@example.com`, { ...both, topics })).status, 400);
+  assert.equal((await q`select 1 from "user"`).length, 1, 'refused before the code is spent or an account made');
+});
+
 test('the digest is a topic only where it has an id at Resend, and is never switched on by signing up', async () => {
   const off = await setup();
   const a = off.client(); await a.signIn('a@example.com', sub);

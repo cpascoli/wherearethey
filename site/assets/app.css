@@ -1517,5 +1517,12 @@ html[data-vt="close"]::view-transition-old(panel) { animation-name: vt-out-right
 .su-quiet { margin: 0; font-size: 14px; color: var(--muted); }
 .su:has(> .su-quiet:only-child) { background: none; border-color: transparent; border-left-color: var(--border); padding: 4px 14px; }
 .su-ok { color: var(--accent); font-weight: 600; }
-.home-wrap > .su { margin-top: 34px; }
+.home-top > .su { grid-column: 1 / -1; order: 1; margin-top: 0; } /* below the carousel and the latest five; on phones between them */
+@media (max-width: 860px) { .home-top > .su { order: 0; } }
+.vd-head > .su { margin-top: 12px; }
+.lt-list > .su { grid-column: 1 / -1; }
+.hero-su { margin: 12px 0 0; }
+.hero-su .link { font-size: 14px; }
+/* the masthead's line shows only while the home page's block does (not before the app draws it, not to a subscriber); it keeps its place either way */
+#view-home:not(:has(.su[data-su="home"]:not([hidden]))) .hero-su { visibility: hidden; }
 .lt-list > .su { margin-top: 0; max-width: none; }

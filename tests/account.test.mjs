@@ -57,21 +57,66 @@ test('the block at the foot of a release page: email, code after a reload, done;
   await p2.close(); await p.close();
 });
 
-test('the block is on the home page, below the first screen, and not on Latest or on any other file', { skip }, async () => {
-  let p = await open('/');
-  // as a visitor who has never signed in (the tests share one browser)
-  await (await p.createCDPSession()).send('Network.clearBrowserCookies');
-  await p.evaluate(() => { localStorage.clear(); sessionStorage.clear(); });
-  await p.reload({ waitUntil: 'networkidle2' });
-  await p.waitForSelector('.su[data-su="home"] form');
-  assert.ok(await p.$eval('.su[data-su="home"]', el => el.getBoundingClientRect().top + scrollY > innerHeight * 0.6), 'below the first screen');
+test('the home page, Latest and videos offer both emails with one button; other files have no block', { skip }, async () => {
+  for (const narrow of [false, true]) {
+    const p = narrow ? await phone('/') : await open('/');
+    // as a visitor who has never signed in (the tests share one browser)
+    await (await p.createCDPSession()).send('Network.clearBrowserCookies');
+    await p.evaluate(() => { localStorage.clear(); sessionStorage.clear(); });
+    await p.reload({ waitUntil: 'networkidle2' });
+    await p.waitForSelector('.su[data-su="home"] form');
+    assert.match(await text(p, '.su[data-su="home"]'), /The UAP record, by email.*weekly digest.*PURSUE release.*Subscribe.*Creates your free account \(16\+\)/);
+    // on phones between the day's file and the latest five, on desktop below both
+    const at = await p.evaluate(() => { const y = s => document.querySelector(s).getBoundingClientRect().top; return { su: y('.su[data-su="home"]'), car: y('.home-top > :first-child'), latest: y('.home-latest') }; });
+    assert.ok(at.su > at.car && (narrow ? at.su < at.latest : at.su > at.latest), JSON.stringify(at));
+    // the masthead's line takes the visitor there, cursor in the field, and adds no history entry
+    const n = await p.evaluate(() => history.length);
+    assert.equal(await p.$eval('.hero-su', el => getComputedStyle(el).visibility), 'visible');
+    await p.click('.hero-su [data-su-jump]');
+    await until(p, () => document.activeElement?.matches('.su[data-su="home"] input') && (r => r.top >= 0 && r.bottom <= innerHeight)(document.querySelector('.su[data-su="home"]').getBoundingClientRect()));
+    assert.equal(await p.evaluate(() => history.length), n);
+    await p.close();
+  }
+  let p = await open('/latest');
+  await p.waitForSelector('.lt-list > .su[data-su="latest"]:first-child form');
+  assert.match(await text(p, '.su[data-su="latest"]'), /This page, once a week, by email/);
   await p.close();
-  for (const url of ['/latest', OTHER, '/person/david-fravor']) {
+  for (const url of [OTHER, '/person/david-fravor']) {
     p = await open(url);
     await wait(500);
     assert.equal(await p.$('.su'), null, `${url}: no sign-up block`);
     await p.close();
   }
+});
+
+test('under a video one quiet line opens the form; one sign-up switches on the digest and the release alert, and the block then goes', { skip }, async () => {
+  const p = await open('/video/flir1-the-nimitz-tic-tac-video-official-u-s-navy-release'), email = 'viewer@example.com';
+  const { app } = await accounts();
+  await app.q`delete from limit_counter`;
+  await (await p.createCDPSession()).send('Network.clearBrowserCookies');
+  await p.evaluate(() => { localStorage.clear(); sessionStorage.clear(); });
+  await p.reload({ waitUntil: 'networkidle2' });
+  await p.waitForSelector('#vid-detail .su[data-su="file"] [data-su-open]');
+  assert.equal(await p.$('#vid-detail .su form'), null, 'no form until it is asked for');
+  await p.click('#vid-detail .su [data-su-open]');
+  await p.waitForSelector('#vid-detail .su input[type=email]');
+  await p.type('#vid-detail .su input', email);
+  await p.$eval('#vid-detail .su form', f => f.requestSubmit());
+  await p.waitForSelector('#vid-detail .su input[name=code]');
+  await p.type('#vid-detail .su input[name=code]', await code(email));
+  await p.$eval('#vid-detail .su form', f => f.requestSubmit());
+  await until(p, () => /You're subscribed: the weekly digest, and an alert when/.test(document.querySelector('#vid-detail .su')?.textContent || ''));
+  assert.deepEqual(await app.q`select c.topic, c.placement, c.wording_version from consent_event c join "user" u on u.id = c.user_id where u.email = ${email} and c.granted order by 1`,
+    [{ topic: 'digest', placement: 'file', wording_version: '2026-12-c' }, { topic: 'pursue', placement: 'file', wording_version: '2026-12-c' }]);
+  // later, the same browser: nothing in these places, and no line in the masthead
+  await p.goto(origin() + '/', { waitUntil: 'networkidle2' });
+  await until(p, () => { const el = document.querySelector('.su[data-su="home"]'); return el && el.hidden && !el.textContent.trim(); });
+  assert.equal(await p.$eval('.hero-su', el => getComputedStyle(el).visibility), 'hidden');
+  // the tests share one browser and one database: leave it signed out, with the sign-in limits as they were
+  await app.q`delete from limit_counter`;
+  await (await p.createCDPSession()).send('Network.clearBrowserCookies');
+  await p.evaluate(() => { localStorage.clear(); sessionStorage.clear(); });
+  await p.close();
 });
 
 test('the top-right button opens one dialog: settings without signing in, the account beside them, the badge once signed in', { skip }, async () => {
@@ -116,7 +161,7 @@ test('the top-right button opens one dialog: settings without signing in, the ac
     await p.waitForSelector('#me-modal[open] #me-ac input[name=code]');
     await p.type('#me-ac input[name=code]', await code(email));
     await p.$eval('#me-ac form', f => f.requestSubmit());
-    await p.waitForSelector('#me-ac .ac-switch');
+    await p.waitForSelector('#me-ac .ac-switch:not(.ac-skel *)');
     assert.match(await text(p, '#me-ac-title'), /Your account/);
     assert.deepEqual(await p.$eval('#btn-me', b => [b.classList.contains('signed'), b.querySelector('.me-badge').textContent, b.querySelector('.me-badge').hidden]), [true, email[0].toUpperCase(), false]);
     // the alert switched on in the dialog reaches the page behind it: the home page then shows a subscriber nothing
@@ -131,7 +176,7 @@ test('the top-right button opens one dialog: settings without signing in, the ac
     await p.waitForSelector('.su[data-su="pursue"] a[href="/account"]');
     const url = await p.evaluate(() => location.href);
     await p.$eval('.su[data-su="pursue"] a[href="/account"]', a => a.click());
-    await p.waitForSelector('#me-modal[open] #me-ac .ac-switch');
+    await p.waitForSelector('#me-modal[open] #me-ac .ac-switch:not(.ac-skel *)');
     assert.equal(await p.evaluate(() => location.href), url);
     await p.evaluate(() => [...document.querySelectorAll('#me-ac button')].find(b => b.textContent === 'Sign out').click());
     await p.waitForSelector('#me-ac input[type=email]');
@@ -157,7 +202,7 @@ test('/account under its own policy: sign in without an alert, switch it on and 
   await p.waitForSelector('#ac input[name=code]');
   await p.type('#ac input[name=code]', await code(email));
   await p.$eval('#ac form', f => f.requestSubmit());
-  await p.waitForSelector('#ac .ac-switch');
+  await p.waitForSelector('#ac .ac-switch:not(.ac-skel *)'); // the view itself, not the placeholder drawn while the server answers
   assert.match(await text(p, '#ac'), /Signed in as m…@example\.com/);
   assert.deepEqual(await p.$eval('#ac .ac-badge', el => [el.textContent, /^rgb\(/.test(getComputedStyle(el).backgroundColor), getComputedStyle(el).backgroundColor !== 'rgba(0, 0, 0, 0)', document.images.length]), ['M', true, true, 0], 'a letter on a colour, no picture');
   assert.equal(await p.$eval('#ac .ac-switch', b => b.getAttribute('aria-checked')), 'false');
@@ -170,7 +215,7 @@ test('/account under its own policy: sign in without an alert, switch it on and 
   await until(p, () => document.querySelector('#ac .ac-switch')?.getAttribute('aria-checked') === 'false');
   // a reload keeps the session; signing out ends it
   await plain(p, '/account');
-  await p.waitForSelector('#ac .ac-switch');
+  await p.waitForSelector('#ac .ac-switch:not(.ac-skel *)');
   await p.evaluate(() => [...document.querySelectorAll('#ac button')].find(b => b.textContent === 'Sign out').click());
   await p.waitForSelector('#ac input[type=email]');
   assert.equal(await p.evaluate(() => fetch('/api/me').then(r => r.json()).then(j => j.signedIn)), false);
@@ -182,7 +227,7 @@ test('/account under its own policy: sign in without an alert, switch it on and 
   const before = mail.codes.length;
   await p.type('#ac input[name=code]', await code(email));
   await p.$eval('#ac form', f => f.requestSubmit());
-  await p.waitForSelector('#ac .ac-switch');
+  await p.waitForSelector('#ac .ac-switch:not(.ac-skel *)');
   await q`delete from limit_counter`;
   await p.evaluate(() => [...document.querySelectorAll('#ac button')].find(b => /^Delete account/.test(b.textContent)).click());
   await p.waitForSelector('#ac .ac-warn input[name=code]');
@@ -214,5 +259,5 @@ test('right after subscribing, the weekly digest is offered with one button and 
   await p.click('#panel .su [data-su-digest]');
   await until(p, () => /And the weekly digest/.test(document.querySelector('#panel .su')?.textContent || ''));
   assert.deepEqual((await app.q`select s.topic from subscription s join "user" u on u.id = s.user_id where u.email = ${email} and s.status = 'on' order by 1`).map(r => r.topic), ['digest', 'pursue']);
-  assert.deepEqual(await app.q`select c.placement, c.wording_version from consent_event c join "user" u on u.id = c.user_id where u.email = ${email} and c.topic = 'digest'`, [{ placement: 'pursue', wording_version: '2026-12-b' }]);
+  assert.deepEqual(await app.q`select c.placement, c.wording_version from consent_event c join "user" u on u.id = c.user_id where u.email = ${email} and c.topic = 'digest'`, [{ placement: 'pursue', wording_version: '2026-12-c' }]);
 });

@@ -14,7 +14,7 @@ export const TOPICS = ['pursue', 'digest'];
 export const PLACEMENTS = ['pursue', 'file', 'latest', 'home', 'account'];
 // The wording a person agreed to, by version: the text itself is the sign-up block's and /account's, in git under
 // this name. Add a version when the promise or the small print changes; never edit one.
-export const WORDINGS = ['2026-12-a', '2026-12-b']; // b: the weekly digest is offered beside the release alert
+export const WORDINGS = ['2026-12-a', '2026-12-b', '2026-12-c']; // b: the weekly digest is offered beside the release alert; c: one button for both on the home page, Latest and videos
 
 const json = (status, body, headers) => new Response(body === undefined ? null : JSON.stringify(body), {
   status, headers: { ...(body !== undefined && { 'content-type': 'application/json' }), 'cache-control': 'no-store', ...headers },
@@ -103,7 +103,9 @@ export function createApp({ db, mail, env, now = Date.now }) {
       const b = await body(request), email = cleanEmail(b?.email), code = typeof b?.code === 'string' ? b.code.replace(/\s+/g, '') : '';
       if (!email || !/^\d{8}$/.test(code)) return fail(400, 'invalid');
       const subscribe = b.subscribe === true;
-      if (subscribe && (!PLACEMENTS.includes(b.placement) || !WORDINGS.includes(b.wording))) return fail(400, 'consent');
+      // what the block the person used promises: the release alert, or `topics` when it names them (both, since 2026-12-c)
+      const want = !subscribe ? [] : b.topics === undefined ? ['pursue'] : b.topics;
+      if (subscribe && (!PLACEMENTS.includes(b.placement) || !WORDINGS.includes(b.wording) || !Array.isArray(want) || !want.length || want.some(t => !TOPICS.includes(t)))) return fail(400, 'consent');
       if (!await limits.allow('verifyIp', ctx.ip)) return fail(429, 'too-many');
       const r = await auth.api.signInEmailOTP({ body: { email, otp: code }, asResponse: true }).catch(e => e);
       if (!(r instanceof Response) || !r.ok) {
@@ -112,7 +114,7 @@ export function createApp({ db, mail, env, now = Date.now }) {
       }
       const { user } = await r.json();
       // only now, with the address proven, is anything recorded about alerts
-      if (subscribe && !await suppressed(user.id)) { await choose(user.id, 'pursue', true, b); await sync(user); }
+      if (subscribe && !await suppressed(user.id)) { for (const t of new Set(want)) if (topics.includes(t)) await choose(user.id, t, true, b); await sync(user); } // a topic not set up yet is left out
       return withCookies(json(200, await state(user)), r.headers.getSetCookie());
     },
 

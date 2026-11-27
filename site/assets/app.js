@@ -1460,7 +1460,7 @@
         <button class="btn small only-mobile vb-open-side" data-open-side>Filters${ltFiltered() ? ' · on' : ''}</button>
         ${ltFiltered() ? `<p class="lt-filtering">Filtered: ${esc(on.join(' · '))} <button class="link" data-lt-clear>show everything</button></p>` : ''}
       </header>
-      ${ltWhen.has('upcoming') || ltWhen.has('recent') ? `<div class="lt-list">${list.map(card).join('') || `<p class="muted">Nothing matches these filters in the last ${LATEST.windowDays} days.</p>`}</div>` : ''}
+      ${ltWhen.has('upcoming') || ltWhen.has('recent') ? `<div class="lt-list">${signupBlock('latest')}${list.map(card).join('') || `<p class="muted">Nothing matches these filters in the last ${LATEST.windowDays} days.</p>`}</div>` : ''}
       ${added.length && ltWhen.has('added') ? `<section class="lt-added">
         <div class="home-kicker">Recently added to the archive</div>
         <h2>New to the archive, from the record</h2>
@@ -2636,7 +2636,7 @@
       ${vsource(v).url ? `<a href="${esc(vsource(v).url)}" target="_blank" rel="noopener">${vsource(v).label} ↗</a>` : ''}
       <a href="${hrefOf(v.id)}" data-goto="${v.id}">Details</a></div>
       ${seriesNav(v)}
-      ${people.length ? `<div class="chips" style="margin-top:8px">${[...new Set(people)].map(id => chip(id)).join('')}</div>` : ''}</div>
+      ${people.length ? `<div class="chips" style="margin-top:8px">${[...new Set(people)].map(id => chip(id)).join('')}</div>` : ''}${signupBlock('file')}</div>
       <div class="tabs">${tabs.map(([k, l]) => `<button data-tab="${k}" class="${curTab === k ? 'on' : ''}">${l}</button>`).join('')}</div>
       <div class="tab-body" id="tab-body"></div>`;
     await renderTab(v);
@@ -2869,6 +2869,7 @@
             <input id="hq" type="search" placeholder="Search a person, program or case: Grusch, AARO, Tic Tac…" autocomplete="off" spellcheck="false">
             <div id="hq-dd" class="dropdown" hidden></div>
           </div>
+          <p class="hero-su"><button class="link" data-su-jump>Get the weekly digest and PURSUE release alerts by email →</button></p>
         </div>
       </div>
 
@@ -2881,6 +2882,7 @@
             <p>${esc(sum(day.e))}</p>
             <div class="hd-meta">${day.e.outcome && day.e.outcome !== 'open' ? `<span class="badge outcome-${day.e.outcome}">${OUTCOME[day.e.outcome].label}</span>` : day.e.type === 'incident' ? '<span class="badge outcome-open">Open</span>' : ''}<a class="btn small" href="${hrefOf(day.e.id)}" data-home-file="${esc(day.e.id)}">Open the file →</a></div>
           </section>` : ''}${more.map(slide).join('')}${n ? '</div></div>' : ''}
+          ${signupBlock('home')}
           <section class="home-latest">
             <div class="home-kicker">Latest on the record</div>
             <div class="latest">${latest.filter(e => !onCar.has(e.id)).slice(0, 5).map(e => `
@@ -2891,7 +2893,6 @@
             <p class="home-more"><a href="/latest" data-home-view="latest">See everything on Latest →</a> · <a href="/feed.xml" target="_blank" rel="noopener">RSS feed</a></p>
           </section>
         </div>
-        ${signupBlock('home')}
 
         ${(EXPLORE.stories || []).length ? `<section class="home-sec">
           <div class="home-kicker">Start with a story</div>
@@ -3164,11 +3165,17 @@
   // files) and make the chosen file the first step of a trail. "Official sources only" stays on unless the
   // file itself is outside the criteria, which would otherwise hide it.
   // ───────────── the sign-up block (docs/accounts.md, section 4.1) ─────────────
-  // One component, drawn in place and never as a pop-up: on the home page, on the PURSUE explainer and at the foot of
-  // each PURSUE release's page (the owner's choice, 22 November: not on every file). An email address, then the emailed code, creates the account and switches the release alert
-  // on. It talks to /api only, adds no history entry, and sends nothing to Analytics. The words a person agrees to
+  // One component, drawn in place and never as a pop-up: on the home page (with a line in the masthead that scrolls
+  // to it), at the top of Latest, as one quiet line under a video's title (placement "file"), on the PURSUE explainer
+  // and at the foot of each PURSUE release's page (the owner's choice: not on other files). An email address, then
+  // the emailed code, creates the account and switches on what the block says: on the home page, Latest and videos
+  // the weekly digest and the release alert with one button (the owner's choice, 26 November; SU_BOTH), on the
+  // PURSUE pages the release alert, with the digest offered after. It talks to /api only, adds no history entry, and sends nothing to Analytics. The words a person agrees to
   // are versioned: when the promise or the small print below changes, add a version here and to WORDINGS in api/app.mjs.
-  const SU_WORDING = '2026-12-b';
+  const SU_WORDING = '2026-12-c';
+  const SU_BOTH = new Set(['home', 'latest', 'file']);
+  const SU_PITCH = "A weekly digest of what's new on the record: hearings, statements, documents. Plus an alert when the government publishes a new PURSUE release.";
+  const SU_HEAD = { home: 'The UAP record, by email', file: 'The UAP record, by email', latest: 'This page, once a week, by email' };
   // shown to everyone once the build says so (SIGNUP_SHOWN); before that only on the dev server, or in a browser
   // where the owner has set localStorage "wat:signup" to true
   const SU_ON = !!KB.signup || store.get('signup', false) === true || /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
@@ -3187,23 +3194,32 @@
   const suClock = n => `0:${String(n).padStart(2, '0')}`;
   function suInner(placement) {
     const err = su.error ? `<p class="su-err" role="alert">${esc(su.error)}</p>` : '';
-    const n = suRelease(), head = '<h4>Get the next PURSUE release by email</h4><p class="su-p">Usually within a day of each release, the files that matter.</p>';
+    const both = SU_BOTH.has(placement), n = suRelease();
+    const head = both ? `<h4>${SU_HEAD[placement]}</h4><p class="su-p">${SU_PITCH}</p>` : '<h4>Get the next PURSUE release by email</h4><p class="su-p">Usually within a day of each release, the files that matter.</p>';
+    const go = both ? 'Subscribe' : 'Alert me';
     if (suMe?.signedIn) {
-      if (suMe.suppressed) return `<p class="su-quiet">Alerts can't be delivered to ${esc(suMe.maskedEmail)}. <a href="/account">Your account</a></p>`;
-      // on the home page a subscriber sees nothing (the owner's choice): the state of the alert is on /account.
-      // The confirmation right after subscribing there still shows, for that visit.
-      if (placement === 'home' && suMe.topics?.pursue && !suJust) return '';
-      // right after subscribing, the weekly digest is offered with one button; it is never switched on by itself
-      const digest = !suJust || !('digest' in (suMe.topics || {})) ? '' : suMe.topics.digest ? ' <span class="su-ok">✓</span> And the weekly digest.'
+      if (suMe.suppressed) return both && placement !== 'home' ? '' : `<p class="su-quiet">Alerts can't be delivered to ${esc(suMe.maskedEmail)}. <a href="/account">Your account</a></p>`;
+      const t = suMe.topics || {}, hasDigest = 'digest' in t;
+      if (both) {
+        // a subscriber to either email sees nothing in these places (the owner's choice): the rest is on /account.
+        // The confirmation right after subscribing still shows, for that visit.
+        if (t.pursue || t.digest) return suJust ? `<p class="su-quiet"><span class="su-ok">✓</span> You're subscribed: ${[t.digest && 'the weekly digest', t.pursue && `an alert when ${n ? `Release ${n}` : 'the next PURSUE release'} is out`].filter(Boolean).join(', and ')}. <a href="/account">Manage your account</a></p>${err}` : '';
+        if (placement === 'file' && su.open !== placement) return `<p class="su-quiet"><button class="link" data-su-open>Get the weekly digest and PURSUE release alerts by email</button></p>`;
+        return `${head}<div class="su-form"><button class="btn primary" data-su-on>${go}</button><span class="su-small">Signed in as ${esc(suMe.maskedEmail)} · <a href="/account">Account</a></span></div>${err}`;
+      }
+      // on the PURSUE pages, right after subscribing, the weekly digest is offered with one button
+      const digest = !suJust || !hasDigest ? '' : t.digest ? ' <span class="su-ok">✓</span> And the weekly digest.'
         : ' Want the weekly digest too, about one email a week? <button class="link" data-su-digest>Yes, send it</button>';
-      if (suMe.topics?.pursue) return `<p class="su-quiet"><span class="su-ok">✓</span> ${suJust ? `You'll hear from us when ${n ? `Release ${n}` : 'the next release'} is out.` : 'You get an email when a PURSUE release is out.'}${digest} <a href="/account">Manage your account</a></p>${err}`;
-      return `${head}<div class="su-form"><button class="btn primary" data-su-on>Alert me</button><span class="su-small">Signed in as ${esc(suMe.maskedEmail)} · <a href="/account">Account</a></span></div>${err}`;
+      if (t.pursue) return `<p class="su-quiet"><span class="su-ok">✓</span> ${suJust ? `You'll hear from us when ${n ? `Release ${n}` : 'the next release'} is out.` : 'You get an email when a PURSUE release is out.'}${digest} <a href="/account">Manage your account</a></p>${err}`;
+      return `${head}<div class="su-form"><button class="btn primary" data-su-on>${go}</button><span class="su-small">Signed in as ${esc(suMe.maskedEmail)} · <a href="/account">Account</a></span></div>${err}`;
     }
     if (su.step === 'code') return `<h4>Enter the 8-digit code sent to ${esc(suMask(su.email))}</h4>
       <form class="su-form" data-su-form="code" novalidate><input name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="9" placeholder="1234 5678" aria-label="The 8-digit code" required><button class="btn primary">Confirm</button></form>${err}
       <p class="su-small">Use the latest email · <button class="link" data-su-again${suWait() ? ' disabled' : ''}>${suWait() ? `Send again in ${suClock(suWait())}` : 'Send again'}</button> · <button class="link" data-su-change>Change address</button></p>`;
-    return `${head}<form class="su-form" data-su-form="email" novalidate><input type="email" name="email" autocomplete="email" placeholder="you@example.com" aria-label="Your email address" required><button class="btn primary">Alert me</button></form>${err}
-      <p class="su-small">Creates your free account (16+). Unsubscribe in one click. <a href="/privacy">Privacy</a></p>`;
+    // under a video the block is one quiet line until it is asked for
+    if (placement === 'file' && su.open !== placement) return `<p class="su-quiet"><button class="link" data-su-open>Get the weekly digest and PURSUE release alerts by email</button></p>`;
+    return `${head}<form class="su-form" data-su-form="email" novalidate><input type="email" name="email" autocomplete="email" placeholder="you@example.com" aria-label="Your email address" required><button class="btn primary">${go}</button></form>${err}
+      <p class="su-small">${both ? 'About one email a week. ' : ''}Creates your free account (16+). Unsubscribe in one click. <a href="/privacy">Privacy</a></p>`;
   }
   function signupBlock(placement) { if (!SU_ON) return ''; const inner = suInner(placement); return `<section class="su" data-su="${placement}" aria-live="polite"${inner ? '' : ' hidden'}>${inner}</section>`; }
   // redraw every block on the page after a change of state; `focus` puts the cursor in the block that was used
@@ -3236,12 +3252,17 @@
         const code = f.elements.code.value.replace(/\D/g, '');
         if (code.length !== 8) { su.error = 'The code has 8 digits.'; return suDraw(el); }
         suDo(el, async () => {
-          const r = await suApi('POST', '/api/session', { email: su.email, code, subscribe: true, placement: su.placement || el.dataset.su, wording: SU_WORDING });
+          const r = await suApi('POST', '/api/session', { email: su.email, code, subscribe: true, placement: su.placement || el.dataset.su, wording: SU_WORDING, ...(SU_BOTH.has(su.placement || el.dataset.su) && { topics: ['pursue', 'digest'] }) });
           if (r.status === 200) { suMe = r.body; suJust = !!r.body.topics?.pursue; store.set('member', true); su = { step: 'form' }; } else su.error = suSay(r);
         });
       }
     });
     document.addEventListener('click', e => {
+      if (e.target.closest?.('[data-su-jump]')) { // the masthead's line: to the home page's block, cursor in its field
+        const b = $('.su[data-su="home"]'); if (!b) return;
+        b.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center' });
+        return void b.querySelector('input')?.focus({ preventScroll: true });
+      }
       const el = e.target.closest?.('.su'); if (!el) return;
       if (e.target.closest('[data-su-change]')) { su = { step: 'form' }; suDraw(el); }
       else if (e.target.closest('[data-su-again]')) suDo(el, async () => { const r = await suSend(su.email); if (r.status === 202) su.sent = Date.now(); else su.error = suSay(r); });
@@ -3249,9 +3270,14 @@
         const r = await suApi('PUT', '/api/subscriptions/digest', { on: true, placement: el.dataset.su, wording: SU_WORDING });
         if (r.status === 200) suMe = r.body; else if (r.status === 401) { suMe = null; store.set('member', false); } else su.error = suSay(r);
       });
+      else if (e.target.closest('[data-su-open]')) { su.open = el.dataset.su; suDraw(el); }
       else if (e.target.closest('[data-su-on]')) suDo(el, async () => {
-        const r = await suApi('PUT', '/api/subscriptions/pursue', { on: true, placement: el.dataset.su, wording: SU_WORDING });
-        if (r.status === 200) { suMe = r.body; suJust = true; } else if (r.status === 401) { suMe = null; store.set('member', false); } else su.error = suSay(r);
+        // the block's own promise: both emails where it offers both, whichever of them is not on yet
+        const t = suMe?.topics || {}, want = ['pursue', ...(SU_BOTH.has(el.dataset.su) && 'digest' in t ? ['digest'] : [])].filter(k => !t[k]);
+        for (const k of want) {
+          const r = await suApi('PUT', `/api/subscriptions/${k}`, { on: true, placement: el.dataset.su, wording: SU_WORDING });
+          if (r.status === 200) { suMe = r.body; suJust = true; } else if (r.status === 401) { suMe = null; store.set('member', false); break; } else { su.error = suSay(r); break; }
+        }
       });
     });
     // the countdown on "Send again": only its own text changes, so what is being typed stays
