@@ -8,6 +8,7 @@ rel:
   - [ about, inc-wright-patterson-2024 ]
   - [ about, fbi ]
   - [ mentions, wright-patterson-afb ]
+  - [ about, doc-fbi-afosi-wright-patterson-2024, "The released records are on file as this document" ]
 facts:
   - text: "Three Air Force Office of Special Investigations (AFOSI) investigative communications, released by the FBI under FOIPA request 1708151-000 (cover letter dated 13 November 2026), cover drone activity over Wright-Patterson AFB on 11–12, 13–14 and 16–17 December 2024; each concludes that the operators were not identified. The 13–14 December report summarises that the sUAS were seen either singly or in a four-drone formation with synchronized movements, and that “due to the presence of the sUAS, the WPAFB Airfield closed operations.”"
     status: documented
