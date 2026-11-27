@@ -1,0 +1,684 @@
+Source: https://documents2.theblackvault.com/documents/fbifiles/1708151-000.pdf
+Fetched: 2026-11-27
+Note: text extracted with pdftotext from the FBI FOIPA release 1708151-000 (AFOSI records), as posted by The Black Vault
+
+                                                                              U.S. Department of Justice
+                                                                              Federal Bureau of Investigation
+                                                                              Washington D.C. 20535-0001
+
+                                                                          November 13, 2026
+
+MR. JOHN GREENEWALD JR.
+THE BLACK VAULT INC.
+SUITE 1203
+27305 WEST LIVE OAK ROAD
+CASTAIC, CA 91384-4520
+
+                                                                          FOIPA Request No.: 1708151-000
+                                                                          AFOSI Tracking No.: 2025-00121-A
+                                                                          Subject: Drone Incursions Over Wright-
+                                                                          Patterson Air Force Base
+
+Dear Mr. Greenewald:
+
+         While processing your Freedom of Information/Privacy Acts (FOIPA) request, the Air Force Office of Special
+Investigations (AFOSI) located FBI information in their records. This material was referred to the FBI for direct
+response to you.
+
+         The enclosed documents were reviewed under the FOIPA, Title 5, United States Code, Section(s) 552/552a
+as noted below. Below you will find check boxes under the appropriate statute headings which indicate the types of
+exemptions asserted to protect information which is exempt from disclosure. The appropriate exemptions are noted
+on the enclosed pages next to redacted information. In addition, a deleted page information sheet was inserted to
+indicate where pages were withheld entirely and identify which exemptions were applied. The checked exemptions
+boxes used to withhold information are further explained in the enclosed Explanation of Exemptions.
+
+                        Section 552                                             Section 552a
+         ◻ (b)(1)                                ◻ (b)(7)(A)                    ◻ (d)(5)
+         ◻ (b)(2)                                ◻ (b)(7)(B)                    ◻ (j)(2)
+         ◻ (b)(3)                                ☑ (b)(7)(C)                    ◻ (k)(1)
+                                                 ◻ (b)(7)(D)                    ◻ (k)(2)
+                                                 ☑ (b)(7)(E)                    ◻ (k)(3)
+                                                 ◻ (b)(7)(F)                    ◻ (k)(4)
+         ◻ (b)(4)                                ◻ (b)(8)                       ◻ (k)(5)
+         ◻ (b)(5)                                ◻ (b)(9)                       ◻ (k)(6)
+         ☑ (b)(6)                                                               ◻ (k)(7)
+
+
+        7 pages were reviewed and 7 pages are being released.
+
+        The appropriate redactions were made by the Air Force Office of Special Investigations (AFOSI).
+
+       Please see the paragraphs below for relevant information specific to your request and the enclosed FBI
+FOIPA Addendum for standard responses applicable to all requests.
+
+         This is the final release of information responsive to your FOIPA request. This material is being provided to
+you at no charge.
+
+         Please refer to the enclosed FBI FOIPA Addendum for additional standard responses applicable to your
+request. “Part 1” of the Addendum includes standard responses that apply to all requests. “Part 2” includes
+additional standard responses that apply to all requests for records about yourself or any third-party individuals. “Part
+3” includes general information about FBI records that you may find useful. Enclosed for your information is a copy of
+the FBI/DOJ Explanation of Exemptions.
+
+           Additional information about the FOIPA can be found at www.fbi.gov/foia. Should you have questions
+regarding your request, you may contact fbi.foia@fbi.gov, referencing your assigned FOIPA Request Number. This
+will help the FBI identify your request and aid in a timelier response.
+           If you are not satisfied with the FBI’s determination in response to this request, you may proceed under any
+or all of the following options:
+
+         •     You may seek support through the FBI’s dispute resolution services through our FOIA Public Liaison by
+               emailing fbi.foia@fbi.gov. The subject heading should clearly state “Dispute Resolution Services.”
+               Please also include the FOIPA Request Number assigned to your request.
+
+         •     You may seek additional support by sending mail to the Office of Government Information Services,
+               (OGIS) National Archives and Records Administration, 8601 Adelphi Road-OGIS, College Park,
+               Maryland 20740-6001; by sending an e-mail to ogis@nara.gov; by telephone at 202-741-5770 or toll
+               free at 1-877-684-6448. Congress created OGIS to complement existing FOIPA practice and
+               procedure. OGIS provides mediation services to resolve disputes between FOIPA requesters and
+               federal agencies.
+
+         •     You may file an administrative appeal by writing to the Director, Office of Information Policy (OIP),
+               United States Department of Justice, 441 G Street, NW, 6th Floor, Washington, D.C. 20530, or you may
+               submit an appeal through OIP's FOIA STAR portal by creating an account following the instructions on
+               OIP’s website: https://www.justice.gov/oip/submit-and-track-request-or-appeal. Pursuant to 28 C.F.R. §
+               16.8(a), your appeal must be postmarked or electronically transmitted within ninety (90) days of
+               the date of this response to your request. If you submit your appeal by mail, both the letter and the
+               envelope should be clearly marked "Freedom of Information Act Appeal." Please reference the FOIPA
+               Request Number listed above in your correspondence so it may be easily identified. If possible, please
+               provide a copy of your original request and this response letter with your appeal.
+
+         Note: Utilizing the FBI’s dispute resolution services or requesting mediation through OGIS does not toll the
+ninety (90) day limit to file a timely appeal with OIP.
+
+
+
+
+                                                                Sincerely,
+
+
+
+
+                                                                Melissa A. Corcoran
+                                                                Section Chief
+                                                                Record/Information Dissemination Section
+                                                                Information Management Division
+
+Enclosure(s)
+                                                              FBI FOIPA Addendum
+
+As referenced in our letter responding to your Freedom of Information/Privacy Acts (FOIPA) request, the FBI FOIPA Addendum
+provides information applicable to your request. Part 1 of the Addendum includes standard responses that apply to all requests.
+Part 2 includes standard responses that apply to requests for records about individuals to the extent your request seeks the
+listed information. Part 3 includes general information about FBI records, searches, and programs.
+
+Part 1: The standard responses below apply to all requests:
+
+(i)     5 U.S.C. § 552(c). Congress excluded three categories of law enforcement and national security records from the requirements
+        of the FOIPA [5 U.S.C. § 552(c)]. FBI responses are limited to those records subject to the requirements of the FOIPA.
+        Additional information about the FBI and the FOIPA can be found on the www.fbi.gov/foia website.
+
+(ii)    Intelligence Records. To the extent your request seeks records of intelligence sources, methods, or activities, the FBI can
+        neither confirm nor deny the existence of records pursuant to FOIA exemptions (b)(1), (b)(3), and as applicable to requests for
+        records about individuals, PA exemption (j)(2) [5 U.S.C. §§ 552/552a (b)(1), (b)(3), and (j)(2)]. The mere acknowledgment of the
+        existence or nonexistence of such records is itself a classified fact protected by FOIA exemption (b)(1) and/or would reveal
+        intelligence sources, methods, or activities protected by exemption (b)(3) [50 USC § 3024(h)(1)]. This is a standard response and
+        should not be read to indicate that any such records do or do not exist.
+
+Part 2: The standard responses below apply to all requests for records on individuals:
+
+(i)     Requests for Records about any Individual—Watch Lists. The FBI can neither confirm nor deny the existence of any
+        individual’s name on a watch list pursuant to FOIA exemption (b)(7)(E) and PA exemption (j)(2) [5 U.S.C. §§ 552/552a (b)(7)(E),
+        (j)(2)]. This is a standard response and should not be read to indicate that watch list records do or do not exist.
+
+(ii)    Requests for Records about any Individual—Witness Security Program Records. The FBI can neither confirm nor deny
+        the existence of records which could identify any participant in the Witness Security Program pursuant to FOIA exemption (b)(3)
+        and PA exemption (j)(2) [5 U.S.C. §§ 552/552a (b)(3), 18 U.S.C. 3521, and (j)(2)]. This is a standard response and should not
+        be read to indicate that such records do or do not exist.
+
+(iii)   Requests for Confidential Informant Records. The FBI can neither confirm nor deny the existence of confidential
+        informant records pursuant to FOIA exemptions (b)(7)(D), (b)(7)(E), and (b)(7)(F) [5 U.S.C.§ § 552 (b)(7)(D), (b)(7)(E), and
+        (b)(7)(F)] and Privacy Act exemption (j)(2) [5 U.S.C.§ 552a (j)(2)]. The mere acknowledgment of the existence or nonexistence of
+        such records would reveal confidential informant identities and information, expose law enforcement techniques, and endanger the
+        life or physical safety of individuals. This is a standard response and should not be read to indicate that such records do or do not
+        exist.
+
+Part 3: General Information:
+
+(i)     Record Searches and Standard Search Policy. The Record/Information Dissemination Section (RIDS) searches for reasonably
+        described records by searching systems, such as the Central Records System (CRS), or locations where responsive records would
+        reasonably be found. The CRS is an extensive system of records consisting of applicant, investigative, intelligence, personnel,
+        administrative, and general files compiled by the FBI per its law enforcement, intelligence, and administrative functions. The CRS
+        spans the entire FBI organization, comprising records of FBI Headquarters, FBI Field Offices, and FBI Legal Attaché Offices
+        (Legats) worldwide; Electronic Surveillance (ELSUR) records are included in the CRS. The standard search policy is a search for
+        main entity records in the CRS. Unless specifically requested, a standard search does not include a search for reference entity
+        records or administrative records of previous FOIPA requests.
+             a.   Main Entity Records – created for individuals or non-individuals who are the subjects or the focus of an
+                  investigation
+             b.   Reference Entity Records- created for individuals or non-individuals who are associated with a case but are
+                  not known subjects or the focus of an investigation
+
+(ii)    FBI Records. Founded in 1908, the FBI carries out a dual law enforcement and national security mission. As part of this dual
+        mission, the FBI creates and maintains records on various subjects; however, the FBI does not maintain records on every person,
+        subject, or entity.
+
+(iii)   Foreseeable Harm Standard. As amended in 2016, the Freedom of Information Act provides that a federal agency may withhold
+        responsive records only if: (1) the agency reasonably foresees that disclosure would harm an interest protected by one of the nine
+        exemptions that FOIA enumerates, or (2) disclosure is prohibited by law (5 United States Code, Section 552(a)(8)(A)(i)). The FBI
+        considers this foreseeable harm standard in the processing of its requests.
+
+(iv)    Requests for Criminal History Records or Rap Sheets. The Criminal Justice Information Services (CJIS) Division provides
+        Identity History Summary Checks – often referred to as a criminal history record or rap sheet. These criminal history records are
+        not the same as material in an investigative “FBI file.” An Identity History Summary Check is a listing of information taken from
+        fingerprint cards and documents submitted to the FBI in connection with arrests, federal employment, naturalization, or military
+        service. For a fee, individuals can request a copy of their Identity History Summary Check. Forms and directions can be
+        accessed at www.fbi.gov/services/cjis. Additionally, requests can be submitted electronically at www.edo.cjis.gov. For additional
+        information, please contact CJIS directly at (304) 625-5590.
+                                                       EXPLANATION OF EXEMPTIONS
+
+         SUBSECTIONS OF TITLE 5, UNITED STATES CODE, SECTION 552
+
+(b)(1)   (A) specifically authorized under criteria established by an Executive order to be kept secret in the interest of national defense or foreign
+         policy and (B) are in fact properly classified to such Executive order;
+
+(b)(2)   related solely to the internal personnel rules and practices of an agency;
+
+(b)(3)   specifically exempted from disclosure by statute (other than section 552b of this title), if that statute (A)(i) requires that the matters be
+         withheld from the public in such a manner as to leave no discretion on the issue, or (ii) establishes particular criteria for withholding or
+         refers to particular types of matters to be withheld; and (B) if enacted after the date of enactment of the Open FOIA Act of 2009,
+         specifically cites to this paragraph.
+
+(b)(4)   trade secrets and commercial or financial information obtained from a person and privileged or confidential;
+
+(b)(5)   inter-agency or intra-agency memorandums or letters which would not be available by law to a party other than an agency in litigation with
+         the agency, provided that the deliberative process privilege shall not apply to records created 25 years or more before the date on which the
+         records were requested;
+
+(b)(6)   personnel and medical files and similar files the disclosure of which would constitute a clearly unwarranted invasion of personal privacy;
+
+(b)(7)   records or information compiled for law enforcement purposes, but only to the extent that the production of such law enforcement records
+         or information (A) could reasonably be expected to interfere with enforcement proceedings, (B) would deprive a person of a right to a fair
+         trial or an impartial adjudication, (C) could reasonably be expected to constitute an unwarranted invasion of personal privacy, (D) could
+         reasonably be expected to disclose the identity of a confidential source, including a State, local, or foreign agency or authority or any
+         private institution which furnished information on a confidential basis, and, in the case of record or information compiled by a criminal law
+         enforcement authority in the course of a criminal investigation or by an agency conducting a lawful national security intelligence
+         investigation, information furnished by a confidential source, (E) would disclose techniques and procedures for law enforcement
+         investigations or prosecutions, or would disclose guidelines for law enforcement investigations or prosecutions if such disclosure could
+         reasonably be expected to risk circumvention of the law, or (F) could reasonably be expected to endanger the life or physical safety of any
+         individual;
+
+(b)(8)   contained in or related to examination, operating, or condition reports prepared by, on behalf of, or for the use of an agency responsible for
+         the regulation or supervision of financial institutions; or
+
+(b)(9)   geological and geophysical information and data, including maps, concerning wells.
+
+         SUBSECTIONS OF TITLE 5, UNITED STATES CODE, SECTION 552a
+
+(d)(5)   information compiled in reasonable anticipation of a civil action proceeding;
+
+(j)(2)   material reporting investigative efforts pertaining to the enforcement of criminal law including efforts to prevent, control, or reduce crime
+         or apprehend criminals;
+
+(k)(1)   information which is currently and properly classified pursuant to an Executive order in the interest of national defense or foreign policy,
+         for example, information involving intelligence sources or methods;
+
+(k)(2)   investigatory material compiled for law enforcement purposes, other than criminal, which did not result in loss of a right, benefit, or
+         privilege under Federal law, or which would identify a source who furnished information pursuant to a promise that his/her identity would
+         be held in confidence;
+
+(k)(3)   material maintained in connection with providing protective services to the President of the United States or any other individual pursuant
+         to the authority of Title 18, United States Code, Section 3056;
+
+(k)(4)   required by statute to be maintained and used solely as statistical records;
+
+(k)(5)   investigatory material compiled solely for the purpose of determining suitability, eligibility, or qualifications for Federal civilian
+         employment or for access to classified information, the disclosure of which would reveal the identity of the person who furnished
+         information pursuant to a promise that his/her identity would be held in confidence;
+
+(k)(6)   testing or examination material used to determine individual qualifications for appointment or promotion in Federal service, the release of
+         which would compromise the testing or examination process;
+
+(k)(7)   material used to determine potential for promotion in the armed services, the disclosure of which would reveal the identity of the person
+         who furnished the material pursuant to a promise that his/her identity would be held in confidence.
+
+                                                                                                                                                  FBI/DOJ
+Thi
+  sdocumenti
+           smadeavail
+                    abl
+                      ethrought
+                              hedeclassi
+                                       fi
+                                        cat
+                                          ionef
+                                              for
+                                                ts
+       andr
+          esear
+              chofJohnGreenewal
+                              d,Jr
+                                 .,cr
+                                    eatorof
+                                          :
+
+
+  T
+  heB
+    lac
+      kVa
+        ult
+     TheBlackVaultist
+                    helargestonli
+                                neFreedom ofI
+                                            nfor
+                                               mationAct(FOIA)
+      documentcl
+               ear i
+                   nghouseintheworld.Theresearcheff
+                                                  ort
+                                                    shereare
+     responsi
+            blef
+               orthedec l
+                        assi
+                           fi
+                            cati
+                               onofhundredsofthousandsofpages
+               releasedbytheU. S.Government&Mi l
+                                               it
+                                                ary
+                                                  .
+
+
+         Di
+          scovert
+                heTr
+                   uthat
+                       :ht
+                         tp:
+                           //
+                            www.
+                               thebl
+                                   ackvaul
+                                         t.com
+                                                                AFOSI INVESTIGATIVE COMMUNICATION                                                                                                 ]
+
+Law s:!)torcemER™rffiaw6.^LE,§|LThis information, is marked LES. It is the orop&cy of the /VOS! and may La d!skcu$a£d^^T^n,^&^Gayemme^ (and                           |"/m,LiL- kj‘ AcnqiAcpn 1
+its authorized contractors.) so iaw onfcroer^rrt^eK^-pi^^            detection, ar.d in'el'igenc^.^.sl^^t^r'^ir^             Distribution to other entities without   ri'i 4^^lu was*         1
+prior AFOSi euxhanzaduri is prahihitoc, Precautions wd be takefnp'^E£t^-*fti^±^                 is v.eweii srarifirn:^, stored, arid destroyed ;n a manner that       n^/Hu^k^^^                  1
+precludes unau’hurisen access, imorrn^nJisaR^^-ti:^^                      may not bs used in re^r^e&aditiajt.^itnDui prior -author;ration from, the originator.       ^’^J^.‘^.;ldy”11        |
+.^ecjjieris^c^ghjL^w                         distributing and posting infarrrialbn marked LtS on ary websits or rK^cwi2?T!rnc^*s^               __                    PD^'Af^O^M^^^-------- *
+
+1. FILE NUMBER                                                                                                         2. DATE OF TRANSMITTAL
+[365732434710540027                                                                                                    20250908
+
+3. TO
+
+10 FIS/CC 5125 Thurlow Street, Bldg. 70 Wright-Patterson AFB, OH
+
+4. FROM
+
+10 FIS/CIB 5125 Thurlow Street, Bldg. 70 Wright-Patterson AFB, OH
+5. SUBJECT
+ (FBI-Lead) UNK (S); Department of the Air Force (V) - 10 U.S. Code §)30i Protection of Certain Facilities and Assets From
+[Unmanned Aircraft (12 Dec 24)                                                                                                                                                                |
+6. REFERENCES
+
+
+
+                                                          ITEM(S) CHECKED ARE APPLICABLE W ABOVE SUBJECT
+
+          INVESTIGATION HAS BEEN INITIATED AND REPORTS WILL BE FORWARDED AS SOON AS POSSIBLE
+
+       8. THIS MATTER IS                                                                       ■LGSED
+
+            IEQUEST REPORT OF ACTION TAKEN (DAFI 7MD1V1).
+
+       10. NOTE RESTRICTIVE LEGENDS ON FRONT OF THE ATTACHMENT®.
+
+       IT REQUEST INSTRUCTIONS AS TO DISPOSITION OF EVIDENCE LISTED BELOW.
+
+       12. ATTACHED IS FORWARDED FOR:                            ^      INFORMATION               [‘“] ACTION
+
+       13. INVESTIGATIOWSUMMARY ATTACHED.
+
+       14. REQUEST STATUS OF THIS MATTER AND/OR DATE REPORT MAY BE EXPECTED.
+
+□      15. REFER ATTACHED TO INTERESTED COMMANDER FOR INFORMATION OR ACTION IF NOT PREVIOUSLY REPORTED.
+
+       16. WHEN ATTACHMENT® IS/ARE REMOVED, THE CLASSIFICATION OF THIS CORRESPONDENCE WILL BE:
+
+         |" ] RETAINED            □ DOWNGRADED TO                                                                                                    i—i MARKED "CONTROLLED
+                                                                                                                            J CANCELED
+                                                                                                                                                     *—* UNCLASSIFIED INFORMATION"
+17. REMARKS             _____________________________________________________ ...... _______________________________
+Summary: From 11 - 12 Dec 24, several small Unmanned Aerial Systems (sUAS) were spotted by Wright-Patterson AFB, OH,
+personnel, flying over several locations on Area A, WPAFB, OH. The operatorfs) of the sUAS were not identified.
+
+Activities:
+
+On 11 Dec 24 at 2336 hours, Security Forces Squadron (SFS) Patrols, 8Sth SFS, WPAFB, OH, spotted a small Unmanned Aerial
+System (sUAS) in the vicinity of (IVO) the WPAFB Area A Fire Training Site, WPAFB, OH, near Riverview Drive and the
+installation Flightline,                          The sUAS was initially seen hovering over the SFS Working Dog Kennel,                                                                               b7E
+WPAFB, OH.
+
+At 2337 hours, SFS Patrols followed the sUAS from the kennels to vicinity of the WPAFB Scout Camp, WPAFB, OH, and then the
+sUAS proceeded in a northeast direction for approximately .25 miles, at an approximate altitude of 100-200 feet, toward Mad River.
+SFS Patrols lost site of the sUAS at 0000 hours, 12 Dec 24, flying southwest toward the installation flightline. SFS Patrols were not
+able to provide a specific flightpath of the sUAS.
+
+SFS Patrols conducted a sweep on the installation and an external sweep down highways 444 and 235 for packages or suspicious
+personnel wim negative results.
+
+AFOSi Form 158, 20250810; p™sin5ffirE£1|K:AresiMAN?M2i PREVIOUS EDITIONS ARE OBSOLETE                                                                                             Page 1 of
+      RELEASABILITY: /Access to this form is restricted: sriy the OPR and the Executive uirec'or, AFOSI, Enterprise Management and Resource
+                                   Directorate (AFOSI/ER) can approve requests for access fa this pubfcation.
+
+
+
+
+                                                                                                                                                                                                            1
+At 0009 hours, BDOC contacted Air Force Material Command (AFMC) who relayed the Base Operations Center was not tracking
+anything in the area and did not have any scheduled sUAS events.
+
+[Interview of SFS personnel disclosed that the sUAS displayed steady arid flashing red, white, and green lights, and they did not sec
+[visible cameras or payloads on the sUAS. The SFS personnel did not observe the sUAS drop anything within the installation.
+
+!At approximately 0030 hours, OSI 10th Field Invest! gat ions Squadron (FIS), WPAFB, OH, was notified by BDOC that that multiple
+<SFS Patrols spotted a sUAS flying over WPAFB, OH. Initial reports indicated that the sUAS was approximately five by six feet and
+ion erated using four rotors.
+
+:At 0058 hours, incident response was terminated with negative findings.
+
+iOn 12 Dec 24 at 1027 hours, Federal Aviation Administration (FAA) Columbus, OH, and FAA Cincinnati, OH, relayed neither
+{office was aware of any sUAS flights matching the given description.
+
+ 'he operator(s) of the sUAS was not identified.
+IS. NAM            AND TITLE                SIGNATURE                           20. ATOCHMEmS)             21. COPIESTO:
+p)©; (bX^XC)                            [b!® feh7){G)
+'Commander
+
+
+
+
+AFOSI Form 158, 2025061 Qt Prescribing Birectvs: A 1=0 SI MANTI-121 PREVIOUS EDITIONS ARE OBSOLETE                              Page 2 of 2
+     RELEASABILiTY: Access to this form is restricted: only tne OPR and the Executive Director, AFOSI, Enterprise Management and Resource
+                                 Directorate (AFGSliER) can approve requests for access to this publication.
+
+
+
+
+                                                                                                                                              2
+i                                                                                                                                                                                                               il
+
+
+                                                                     AFOSI INVESTIGATIVE COMMUNICATION
+                                                                                                                                                                             Cu.Tolied by: DAF
+    Law E::fGrceffl^3wi(kf^^^.Thi3 infcumafsn is marked LES. it is ths properly of fps AFOSi 3"d may De d i st ri Duje d w iihi/fJ^rdcnf^ymrnont land C envoi i ad by: AFGSI/XRG
+    ’is Eu'hcnzDd san!radars) to law enfarcfe?^nVoritHtf>-pyblki.^5ty^^             ano 'nigijj^criua ugL^al.s-wilft-s-trgcfi'Io ^gw. Distribution tn othnr onliiios withnu!
+                                                                                                                                                                             CUI Cois^ry'W^^Wr^
+    priii." A!:CS' ajrarizalon is prehibifed. Precsutions w li tie takE^Io-gpiass®*#^^                isj/iowBcJ. i-arsmi'Jsd, stored, arid cie^raysd in a ns "in sr that Cistobu ti n n/l5i s s smm alien
+    preludes unauthorized access. infeiTOli^haaw^irf^                         may not he usekI in ~cg.i.rtroce^wc£.aithegf prior autoctozafiori from too originator,
+    Rc3pie.ntsj^j^o£Jl&3^efn-^^^                 aialnbirting and passing infonraticr. marked LES an any website or non-governnT&TlTie^H^^__..._ _
+                                                                                                                                                                             ?^fb®W?iic)                        1
+    1. FILE NUMBER                                                                                                          : 2. DATE OF TRANSMITTAL
+
+    365732434913260056                                                                                                     1 20250908
+
+    3. TO
+
+TO FIS/CC 5125 Thurlow Street, Bldg. 70 Wright-Patterson AFB, OH.
+
+4. FROM
+
+    10 FIS/CIB 5125 Thurlow Street, Bldg. 70 Wright-Patterson AFB, OH
+    5. SUBJECT
+UNK (S); Department of the .Air Force (V) - 10 U.S. Code §1301 Protection of Certain Facilities and Asset From Unmanned                                                                                         i
+Aircraft (13 Dec 24)
+    6. REFERENCES
+
+
+
+                                                                ITEM(S) CHECKED ARE APPLICABLE TO ABOVE SUBJECT
+□          7. INVESTIGATION HAS BEEN INITIATED AMD REPORTS WILL SE FORWARDED AS SOON AS POSSIBLE
+
+^|         8. THIS MATTER IS                                   FT PENDING                          CLOSED
+
+QJ ; S.RtQUESTREPORTOFAClION TAKEN (DAH 7'i“10lV‘!).
+
+Q 1 । CL NOTE RlS i RIC 1 IVh LtGENDS GN fiRON [ OF 1 HE. A M AGHMEN ; ^j)
+
+□          11. REQUEST INSTRUCTIONS AS TO DISPOSITION OF EVIDENCE LISTED BELOW.
+
+^12. ATTACHED IS FORWARDED FOR:                                       ^       INFORMATION               Tj ACTION
+
+□          13. I WESTlGAT I OfUSUM MARY ATTACHED,                                                                                          ‘
+
+□          14. REQUEST STATUS OF THIS MATTER AND/OR DATE REPORT MAY BE EXPECTED.
+
+n I 15. REFER ATTACHED TO INTERESTED COMMANDER FOR INFORMATION OR ACTION IF NOT PREVIOUSLY REPORTED.
+
+□          16. WHEN ATTACH MENT(S) IS/ARE REMOVED, THE CLASSIFICATION OF THIS CORRESPONDENCE WILL BE:
+                                      „                                      I;------------------------------------------------ 1            i—s MARKED ''CUN TROLLED
+             □ RETAINED               I I DOWNGRADED TO                       i|                                                I □ CANCELED LJ UNCLASSIFIED INFORMATION'1
+
+    17. REMARKS
+iSummary: From 13 -14 Dec 24, multiple small Unmanned Aerial Systems (sUAS) were spotted over Wright-Patterson AFB
+i( WPAFB), QH. The sUAS were described as having 4-rotors surrounded by rotor guards and were scon flying either in a 4-sUAS
+^formation with synchronized movements or as a single sUAS. The sUAS were seen in various locations over Area A, WPAFB, OH,
+land due to the presence of the sUAS, the WPAFB Airfield closed operations. The opcrator(s) of the sUAS were not identified.
+
+Activities:
+
+I On 13 Dec 24 at. 2210 hours, OSI 10 th Field Investigations Squadron (FIS), Wright-Patterson AFB (WPAFB), OH, were notified by
+Ithe Base Defense Operations Center (BDOC), 88th Security Forces Squadron (SFS), WPAFB, Oil, that WPAFB Air Traffic Control
+i(ATC) and SFS Patrols spotted multiple small Unmanned Aerial Systems (sUAS) flying over Area A, WPAFB, OH.
+
+iAt 2208 hours, one sUAS, described as a single black sUAS with four rotors surrounded bv rotor guards, was spotted near Fire
+i Station #2, WPAFB, OH, and the installation flightline in the vicinity of___________________________The sUAS hovered at an                                                                                         b7E
+^estimated 50-75 feet above ground level (AGL) while drifting westbound. SFS Patrols lost sight as the sUAS continued westbound
+I pa st the tree line.
+
+I At 2218 hours, four sUAS, matching the same description as the sUAS spotted at 2208 hours, 13 Dec 24, were spotted flying tn a
+
+AFOSI Farm 158, 20250610; prescribing Directs afosimanzi.w previous editions are obsolete                                                                                                         Page t of 2
+           RELEASABILITY: Access to this form is restricted; only ths OPR and (he Executive Director. AFOSI, Enterprise Management and Resource
+                                       Directorate (AFOSiER) can approve requests for access to this publication.
+
+
+
+
+                                                                                                                                                                                                                           T
+Bg£t3Iantoi«nonni^                                                                                       ^TSPSTatToTH^                       b7E
+vehicle mounted, spotlight to illuminate the sUAS and identified the sUAS formation was flying in a synchronized manner at a lower
+altitude, and then the sUAS formation regained altitude and accelerated speed until 88 SI'S Patrols lost sight.
+
+At 2230 hours, WPAFB ATC closed WPAFB’s airspace due to the sUAS sightings.
+
+At 2231 hours, OSI 10 FIS positioned teams outside of Area A. WPAFB. OH,
+
+On 14 Dec 24, Federal Bureau of Investigations (FBI) Dayton, OH. and OS1 10 FIS interviewed 88 SFS members, who verbally
+relayed essentially the following information: On 13 Dec 24, at approximately 2208 hours, ar. 88 SFS member viewed a sUAS over
+the WPAFB, OH, installation; however, upon further investigation, it was identified that the member was mistaken and a sUAS was
+not viewed.
+
+Shortly thereafter, a separate 88 S.FS member, who was positioned at the WPAFB West Ramp, saw a sUAS flying. The 88 SFS
+member described the sUAS as being approximately l-to-2 feet in length, traveling between 30-40 mph at an approximate altitude
+of the tree fine. The sUAS had one red and green light on the back. The 88 SFS member utilized a spotlight on the sUAS, and
+observed that the sUAS had a dark gray clover-shaped body, with four propellers housed by black protectors. The 88 SFS member
+saw the sUAS make a vertical loop, as if the sUAS was “performing tricks.” The 88 SFS member lost sight of the sUAS, but
+eventually re-acquired sight of the sUAS after approximately four to five minutes, and then lost site of it again near Mitchell Drive.
+At approximately .2040, 13 Dec 24, the same 88 SFS member spotted 4-sUAS flying in a diamond formation, with approximately a
+foot between each sUAS. at an elevation near the street-light level. The 88 SFS member shined their vehicle spotlight on the sUAS
+formation, and observed that one sUAS was in the front, with two behind, side-by-side, and the fourth sUAS in the rear. The lead
+sUAS had two red/green lights on the back, arid the three others had two rsFgreen lights on their fronts and two red/green lights on
+their back. The sUAS appeared to be of similar make and model as the first sUAS sited. The 88 SFS member stated that when they
+spotlighted the sUAS formation, the sUAS lights turned off, and they simultaneously banked to the right, accelerated, gaining
+altitude to an estimated 200 feet, and then flew away in the direction of Highway 4. The 88 SFS member stated the entire sighting
+lasted approximately 7 seconds. The 88 SFS member stated that during both sightings, they were approximately 80 feet from the
+sUAS, and while the sUAS were near, they were not able to utilize their radio, in that they were not able to send a signal and the
+only sound from the radio was muffled and distorted. The 88 SFS member’s partner also experienced the same radio issues. After
+the sUASs departed, their radios functioned properly.
+
+The operator(s) of the sL’AS was not identified.
+
+to. NAME. GRADE. AND TITLE                19. SIGNATURE                        20. ATTACHMENTS)           21. COPIES TO:
+                                              iblfXC;
+| Commander______                     i
+
+
+
+
+AFQSI Form 158, 20250610; preying di^b™: afossi^^                previous editions are obsolete                                Page 2 of 2
+    RELEASABILITY: Access to this form is restricted: only the OPR and the Executive Director, AFOSI, Enterprise Management and Resource
+                                Directorate AFCSI/ER) can approve requests for access to this publication.
+                                                             AFOSI INVESTIGATIVE COMMUNICATION
+                                                                                                                                                                    C&itcilE^ by: DAF
+  Law EnforcernWt^rt5#w4^iJ=§^^             information is maixefi i.ES li is the property of ths AFOSi and may ho distri^'oilJAtfe^^                  minont (and
+; its authorized conKocfora) to iaw Gnfo.TaTf^rrt“w^                    protection, and intel rg^nce G^^ith-s-^iTokrinw. DidHbjton to other entities wuwui P^a'lstS by AFOSi/XRG
+  prior AHOS! authonration is prohibited. Precautions will bs tii^Q l£jSjjStste-£i^                  is viawed, transmitted, stored, and dc&Uoya<3 in a manner that C'Ji Cslsoofxi
+  precludes knauthori^cd access. info.Tna^^J^ciA^-^-hr&S markina nay not be used in i^”pr58ft5v^.)vitfxiu: prior authorization from ths originator. Di stri hu&rVij s&a ui in atian
+  Recipients c^n^j&kvl#®?^                     distributing ano' posting infa’maLan merged LES an any website ar nori'^ovB'TTncrn^^            __
+                                                                                                                                                           MiiI® IMOTO
+ 1. FILE NUMBER                                                                                                 2. DATE OF TRANSMITTAL
+
+ 340132435210370055                                                                                             20250908
+
+
+ 10 FIS/CC 5125 Thurlow Street, Bldg. 70 Wright-Pat!erson AFB, OH
+
+ 4. FROM
+
+ 10 FIS/CIB 5125 Thurlow Street, Bldg. 70 Wright-Patterson ATB, OH
+ 5. SUBJECT
+ (FBI-Lead) UNKNOWN INDIVIDUAL - 32613 (S); Department of the Air Force (V) - 10 U.S. Code § 1301 Protection of Certain
+ Facilities and Assets From Unmanned /Aircraft (16 Dec 24)
+ 6. REFERENCES
+
+
+
+                                                        ITEM(S) CHECKED ARE APPLICABLE TO ABOVE SUBJECT
+□ 1 7. INVESTIGATION HAS BEEN INITIATED AND REPORTS WILL BE FORWARDED AS SOON AS POSSIBLE
+
+IX] | 8. THIS MATTER IS                                Q PENDING                 ^      CLOSED
+
+□       8, REQUEST REPORT OF ACTION TAKEN (DAFI 71-1D1V1).
+KJ | 10. NOTE RESTRICTIVE LEGENDS ON FRONT OF THE ATTACHMENT^).
+
+Fl 1 11- REQUEST INSTRUCTIONS AS TO DISPOSITION OF EVIDENCE LISTED BELOW.
+g] j 12. ATTACHED IS FORWARDED FOR:                           ^      INFORMATION             [‘“] ACTION
+
+
+□      13. INVESTIGATION/SUMMARY ATTACHED.
+n | 14. REQUEST STATUS OF THIS MATTER AND/OR DATE REPORT MAY BE EXPECTED.
+
+r] j 15. REFER ATTACHED TO INTERESTED COMMANDER FOR INFORMATION OR ACTION IF NOT PREVIOUSLY REPORTED,
+
+□       16. WHEN ATTACHMENT(S) IS/ARE REMOVED, THE CLASSIFICATION OF THIS CORRESPONDENCE WILL BE:
+
+         !□ RETAINED Q DOWNGRADED TO                                  ^                                              n                            MARKED’CONTROLLED
+                                                                                                                     UJ                           UNCLASSIFIED INFORMATION"
+ 17. REMARKS
+ Summary: On 16 Dec 26, OSI iOth Field Investigations Squadron (FIS), Wright •Patterson AFB (WPAFB), OH, was notified by the |
+ Base Defense Operations Center (BDOC), 88th Security Forces Squadron (SFS) , WPAFB, OH, that a small Unmanned Aerial
+ System (sUAS) was spotted by multiple 88 SFS personnel flying over locations on Area A, WPAFB, OH, and Area B, WPAFB,                <
+ OH. Multiple WPAFB affiliated personnel and non-base affiliated personnel rep orted sUAS sightings from 2138 hours, 16 Dec 24, 1
+ to 0011 hours, 17 Dec 24. OSI 10 FIS coordinated with local and federal law en "orceinent, and air traffic control entities, who did i
+ not provide any additional information. The operator(s) of the sUAS were not id entitled.
+
+I Activities:
+
+pa 16 Dec 24, OSI 10th Field Investigations Squadron (FIS), ’Wright-Patterson APB (WPAFB), OH, were notified by the Base
+Defense Operations Center (BDOC), 88th Security Forces Squadron (SFS), WPAFB, OH that a small Unmanned Aerial System         i
+(sUAS) was identified by multiple 88 SFS Patrol Officers flying over WPAFB, OH. The sUAS were spotted at the below times and i
+ locations.
+
+
+(At 2138 hours, BDOC received a report from a civilian who saw two to three sUAS flying "several hundred feet" above Area B,                                                                i
+ WPAFB, OH.                                                                       ’
+
+
+AFOSI Form 158, 20250610; Pressig o«c&e.A^^                                               previous editions are obsolete                                                      Page 1 of 3
+       RELEASABILITY: Access to this form is restrictes; only the OPR and the Executive Director, AFOSI, Enterprise Management and Resource
+                                   Directorate (AFOSI,ERI can approve requests for access to this publication.
+AiTiZTTiaurO’^rFiyhnniFrejwtonu^^
+the instal lation airfield                              I                                                                                  i
+
+At2I53 hours, 88 SFS Patrols viewed approximately 4-W-6 sUAS hovering above the National Museum of the United States Air
+Force (NMUSAF), WPAFB, PHI                                 |        "
+
+                                                                                                                                                b7E
+At 2222 hours, 8 8 SFS Patrols reported observing a flight of 2 sUAS hovering over WPAFB Gate 22B.
+
+
+At 2230 hours, 88 SFS Patrols reported observing a fliphtof at least 3 sUAS flying at an estimated 600-800 feet above ground level
+(AGL) near WPAFB Gate 26A|                                    ]
+
+At 2237 hours, OSI 10 FIS reported visually observing at least 6 sUAS loitering over Area A, WPAFB, OH.
+
+At 2309 hours, 88 SFS Patrols reported a single sUAS spotted flying near WPAFB Gate I A, heading towards the 88th Medical
+Group, WPAFB, OH]                                  |              '                            '
+
+At 2310 hours, Metro Park Police, Dayton, OH, notified OSI 10 FIS that their patrols observed a sUAS fly from the direction of              i
+Colonel Glen Highway, Beavercreek, OH, towards Area B, WPAFB, OH, in the general direction towards the NMUSAF.                             ;
+
+At. 2311 hours, WPAFB Fire Department personnel reported that he observed via thermal imaging a flight of 4 sUAS loitering over I
+Area A, WPAFB, OH, with 3 of the sUAS spotted near WPAFB Gate 26 A, and another spotted in the general area near the National I
+Air and Space Intelligence Center (NASIC), WPAFB, OH. WPAFB Fire Department personnel also reported sighting a personal                  j
+vehicle off the installation parked on the side of Sandhill Road, Fairborn, OH, facing the installation airfield. Due io visual quality i
+on thermal imaging, they were not able to ascertain a make and model of the vehicle, but stated it appeared to be a Nissan Murano ar'
+similar style vehicle.                                                                                                                  |
+
+At 2330 hours, 88 SFS Patrols reported spotting 2 sUAS flying over NASIC.                                                                  I
+
+At 2334 hours, multiple 88 SFS Patrols reported an airplane enter the airspace immediately above the WPAFB runway. The aircraft
+came in for a low approach until it reached an estimated 500 AGL, and then gained altitude, making a northbound banking
+maneuver. 88 SFS members provided a 16 second video of the suspected sUAS which showed an object in the sky illuminated with
+what appeared to be red and green wingtips, and a red flashing beacon light similar to one on an aircraft indicating the engines arc
+on. Dialog within the video described the suspected sUAS to be above the Hope Hotel, 10823 Chidlaw Rd Stc A, WPAFB, OH.
+
+At 2336, 88 SFS Patrols observed a single sUAS near Hope Hotel, WPAFB. OH,                                             at an estimated          b7E
+250-300 feet AGL heading towards WPAFB Gate 1A.
+
+At 2353 hours, 88 SFS Patrols observed 2 sUAS over the eastern side of the WPAFB airfield, heading towards the southwest.
+
+At 0007 hours, 17 Dec 24, 88 SFS Patrols sighted of a single sUAS hovering overArst A, WPAFB, OH, near Skecl Avenue.
+
+At 0011 hours, 88 SFS Patrols sighted 5 sUAS flying off the installation toward Huber Heights, OH.
+
+During the course of the sUAS sightings, OSI 10 FIS coordinated with Fairbora Police Department, Fairborn, OH, and relayed that
+none of their patrols spotted any sUAS activity.
+
+OSI 10 FIS coordinated with Metro Parks Police, Dayton, OH, who relayed that none of their patrols spotted any sUAS activity.
+
+BDOC, 88 SFS, coordinated with Riverside Police Department, Riverside, OH, who relayed that none of their patrols spotted any
+sUAS activity.
+
+OSI 10 FIS coordinated with WPAFB Airfield Management Operations (AMOPS), WPAFB, OH, and WPAFB Air Traffic Control
+(ATC), WPAFB, OH, who both relayed they did not see any aircraft or sUAS in the airspace during the incident, AMOPS clarified
+that they began their shift at approximately 2300 hours, 16 'Dec 24.
+
+BDOC, 88 SFS, reviewed Flock Safety camera footage to gather information pertaining to the vehicle identified by WPAFB Fire
+AFOSI Form 158, 2D250618; prescribe Directs aposi^^^      previous editions are obsolete                            Page 2 of 3
+    RELEASABILITY: Access to this form is restricted; only the OPR and the Executive Director, AFOSi, Enterprise Management and Resource
+                                Directorate (AFOS7ER) can approve requests; for access to this publication.
+Ob 18 Dec 24, OSI 10 FIS received information about a ^^                                      ] parked in the puli off area located off-
+base across the air ^eldadjacenttojChambersburg Rd, Fairborn, OH. A check of the vehicle descrijjtion within Flock Safety
+(FLOCK) revealed ajibX^rfcXt^                        the description and nosition of the reports dp#}""*" An interview was
+completed of the registered owner who stated they lend the vehicle ,oggj~~~j The registered' owner mentioned they own a
+small bobby drone approximately 6 to 8 inches in size but was unaware of any drone a ivitv within, the WPAFB area. An interview
+w^dioconductejioffhej^                                1 who typically drove [K®” and relayed that they worked at|Bi^
+                              d they were not in the area on 16 Dec 24.
+18. NAME, GRADE, AND TITLE                  19. SIGNATURE                         i 29. ATTACHMENTS)               21. COPIES TO:
+■M>;; (bX/RG}                          1   (bX^K ;b)F)‘C;
+
+Commander
+
+
+
+
+AFOS1 Form 158, 20250610; Prescribe Directa; afosisuwi-izi PREVIOUS EDITIONS ARE OBSOLETE                                            Page 3 of 3
+    ^£Lk£AS^SI^iI J-^■ Z\ccsss io this form is restricted; only the OPR and i.ne Executive Director, AFOSi, Enterprise Management and Resource
+                                    Directorate (AFOSt'ER) can approve requests for access to Sitis publication.
+
+                                                                    juws-
+
