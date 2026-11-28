@@ -36,6 +36,10 @@ facts:
   - text: "AARO's 2024 report says the executives, scientists and chief technology officers of the companies named by interviewees met its director and “denied on the record that they have ever recovered, possessed, or engaged in reverse-engineering of extraterrestrial technology”."
     status: documented
     source: doc-aaro-historical-record-report-v1
+  - text: "AARO's 2024 report says it interviewed “the former CIA official who was specifically named by AARO interviewees” as having stopped a transfer of alleged off-world material from industry to the government in 2009–2010, and that he “stated he had no knowledge of any aspect of this allegation”, denied the allegations and signed a memorandum for the record attesting to the truthfulness of his statements. The report names neither the official nor the company."
+    status: documented
+    stance: disputes
+    source: doc-aaro-historical-record-report-v1
   - text: "Asked at the September 2025 hearing to name gatekeepers, Knapp named Dr. James Ryder at Lockheed, and said the CIA primarily gave contractors the material and told them to keep it quiet."
     status: claimed
     by: george-knapp
@@ -87,6 +91,6 @@ George Knapp says Ryder, who was close to Skunk Works chief Ben Rich, negotiated
 
 Jay Stratton, who ran AAWSAP's government side, gave his own account in November 2026. He says Hal Puthoff introduced him to Ryder in 2009, and that over months of conversations Ryder told him about the Legacy Program and Lockheed's part in it, spoke of twelve craft held by Lockheed, and wanted to move one into Stratton's program so that new people could work on it. Stratton says the CIA's Directorate of Science and Technology, as owner, refused; he does not name the official. He adds that Ryder confirmed Roswell to him and described a craft with no sign of manufacture, no controls and no observable power source, but that he was shown no craft, pictures or videos. Knapp speaks of "leftovers, scraps", Stratton of a craft.
 
-None of this has been documented. AARO says the executives of the companies named by its interviewees denied on the record ever holding or reverse-engineering non-human technology. A telepathy remark attributed to Ryder online has not been traced to any recording.
+None of this has been documented. AARO says the executives of the companies named by its interviewees denied on the record ever holding or reverse-engineering non-human technology. Its report also says the former CIA official its interviewees named as having stopped a transfer of material from industry, whom it does not identify, signed a memorandum stating he had no knowledge of the allegation. A telepathy remark attributed to Ryder online has not been traced to any recording.
 
 *Sources: September 9, 2025 hearing (Knapp) · WEAPONIZED (October 2026) · Trying Not To Die with Jack Osbourne (Stratton, November 2026) · American Alchemy interview (Davis) · AARO historical report (2024)*
