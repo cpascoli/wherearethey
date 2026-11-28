@@ -2793,18 +2793,19 @@
     { kicker: 'Provenance · 2002', title: 'The Wilson memo', text: 'Entered into the congressional record in 2022. What that proves, and what it doesn’t: provenance kept separate from claims.', action: 'data-home-goto="doc-wilson-memo"', need: 'doc-wilson-memo', cta: 'Read the dossier' },
     { kicker: 'Official record · 1947 → 2026', title: 'From Twining to PURSUE', text: '“Something real and not visionary or fictitious.” Eighty years of official statements, from the first Air Force opinion to the 2026 releases.', action: `data-preset='{"view":"timeline","types":["document","event","program","hearing"]}'`, cta: 'Walk the timeline' },
   ];
-  // The day's file for the home page: a case or hearing that happened on this date (or within three days of it) in an
-  // earlier year, the best connected first; failing that the entry pinned on Latest. With a clip when one is on file.
+  // The home page's first slide: the entry pinned on Latest (`featured:`) while one is pinned, since the owner pinned it
+  // for a reason; otherwise a case or hearing that happened on this date (or within three days of it) in an earlier
+  // year, the best connected first. With a clip when one is on file.
   function onThisDay(today) {
+    const f = latestData().featured[0];
+    if (f) return { e: f, label: 'Featured' };
     const y = today.slice(0, 4);
     const gap = e => Math.round(annivGap(e.date, today));
     const c = ents.filter(e => ['incident', 'hearing', 'event'].includes(e.type) && /^\d{4}-\d{2}-\d{2}$/.test(String(e.date || '')) && e.date.slice(0, 4) < y && e.cred !== 'outside' && !resolved(e) && gap(e) <= 3)
       .sort((a, b) => gap(a) - gap(b) || adj.get(b.id).length - adj.get(a.id).length)[0];
-    if (c) return { e: c, label: gap(c) ? `This week in ${c.date.slice(0, 4)}` : `On this day in ${c.date.slice(0, 4)}` };
-    const f = latestData().featured[0];
-    return f ? { e: f, label: 'Featured' } : null;
+    return c ? { e: c, label: gap(c) ? `This week in ${c.date.slice(0, 4)}` : `On this day in ${c.date.slice(0, 4)}` } : null;
   }
-  // The home page's carousel: the day's file first (drawn by index.html), then the entry pinned on Latest, the next
+  // The home page's carousel: the first slide (drawn by index.html: the pinned entry, else the day's file), then an
   // anniversary this week, the latest from Congress and the featured documentary's trailer, each only when it has a picture.
   function homeSlides(today, firstId) {
     const used = new Set([firstId]), out = [];
@@ -2812,7 +2813,6 @@
     const add = (e, label, clip = clipFor(e)) => { if (!e || used.has(e.id) || !pic(e, clip)) return false; used.add(e.id); out.push({ e, label: `${label} · ${fmtRange(e)}`, clip, img: pic(e, clip) }); return true; };
     const y = today.slice(0, 4), gap = e => Math.round(annivGap(e.date, today));
     const full = e => /^\d{4}-\d{2}-\d{2}$/.test(String(e.date || ''));
-    const pin = latestData().featured[0]; if (pin) add(pin, 'Featured'); // the entry pinned on Latest (`featured:`), when an anniversary has the first slide
     ents.filter(e => ['incident', 'hearing', 'event'].includes(e.type) && full(e) && e.date.slice(0, 4) < y && e.cred !== 'outside' && !resolved(e) && gap(e) <= 7)
       .sort((a, b) => (b.type === 'incident') - (a.type === 'incident') || adj.get(b.id).length - adj.get(a.id).length) // a case before a hearing, then the best connected
       .find(e => add(e, gap(e) ? `This week in ${e.date.slice(0, 4)}` : `On this day in ${e.date.slice(0, 4)}`));

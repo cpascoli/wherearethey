@@ -421,13 +421,13 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       return v ? { video: v.id, t: 0 } : null;
     };
     const onThisDay = today => {
+      const f = latestSplit(entities, today).featured[0]; // the pinned entry has the first slide, as in app.js
+      if (f) return { e: f, label: 'Featured' };
       const y = today.slice(0, 4), ms = Date.parse(today);
       const gap = e => Math.round(Math.min(...[+y - 1, +y, +y + 1].map(k => Math.abs(Date.parse(k + e.date.slice(4)) - ms) / 864e5))); // as annivGap in app.js
       const c = entities.filter(e => ['incident', 'hearing', 'event'].includes(e.type) && /^\d{4}-\d{2}-\d{2}$/.test(String(e.date || '')) && e.date.slice(0, 4) < y && e.cred !== 'outside' && !resolved(e) && gap(e) <= 3)
         .sort((a, b) => gap(a) - gap(b) || adjOf(b.id).length - adjOf(a.id).length)[0];
-      if (c) return { e: c, label: gap(c) ? `This week in ${c.date.slice(0, 4)}` : `On this day in ${c.date.slice(0, 4)}` };
-      const f = latestSplit(entities, today).featured[0];
-      return f ? { e: f, label: 'Featured' } : null;
+      return c ? { e: c, label: gap(c) ? `This week in ${c.date.slice(0, 4)}` : `On this day in ${c.date.slice(0, 4)}` } : null;
     };
     const cut = (t, n) => (t.length > n ? t.slice(0, n - 3).replace(/\s+\S*$/, '') + '…' : t);
     const sum = e => cut(cut(text(e.bio || e.body) || e.facts?.[0]?.text || (e.moments || []).slice(0, 2).map(m => m.text).join(' ') || '', 260), 190);
