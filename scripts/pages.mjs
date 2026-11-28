@@ -413,6 +413,7 @@ export function writePages({ entities, edges, transcripts, stats, filesBase }) {
       return out.length >= 2 ? out : [];
     };
     const clipFor = e => {
+      if (e.type === 'video') { const k = (e.moments || []).find(m => m.key); return k ? { video: e.id, t: k.t, text: k.text, speaker: k.speaker } : { video: e.id, t: 0 }; } // as in app.js
       const ms = momentsFor.get(e.id) || [];
       const m = keyMoments(e, ms)[0] || ms.find(x => x.speaker && byId.get(x.speaker)?.cred === 'credible') || ms[0];
       if (m) return { video: m.video, t: m.t, text: m.text, speaker: m.speaker };

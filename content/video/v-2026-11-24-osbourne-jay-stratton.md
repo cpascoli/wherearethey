@@ -1,6 +1,7 @@
 ---
 name: "Jay Stratton with Jack Osbourne: Lockheed's Jim Ryder, twelve craft and a transfer the CIA refused (24 November 2026)"
 date: 2026-11-24
+featured: 2026-12-05   # the Ryder story: pinned on Latest and on the home carousel for a week
 youtube: FLsJjxsoW6s
 tags: [intelligence, crash-retrieval, contractor]
 rel:

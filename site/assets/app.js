@@ -2804,14 +2804,15 @@
     const f = latestData().featured[0];
     return f ? { e: f, label: 'Featured' } : null;
   }
-  // The home page's carousel: the day's file first (drawn by index.html), then the next anniversary this week, the
-  // latest from Congress and the featured documentary's trailer, each only when it has a picture.
+  // The home page's carousel: the day's file first (drawn by index.html), then the entry pinned on Latest, the next
+  // anniversary this week, the latest from Congress and the featured documentary's trailer, each only when it has a picture.
   function homeSlides(today, firstId) {
     const used = new Set([firstId]), out = [];
     const pic = (e, clip) => { const v = clip && vthumb(byId.get(clip.video)); return e.image || (v !== VIDEO_PLACEHOLDER && v) || ''; }; // a real picture, not the placeholder
     const add = (e, label, clip = clipFor(e)) => { if (!e || used.has(e.id) || !pic(e, clip)) return false; used.add(e.id); out.push({ e, label: `${label} · ${fmtRange(e)}`, clip, img: pic(e, clip) }); return true; };
     const y = today.slice(0, 4), gap = e => Math.round(annivGap(e.date, today));
     const full = e => /^\d{4}-\d{2}-\d{2}$/.test(String(e.date || ''));
+    const pin = latestData().featured[0]; if (pin) add(pin, 'Featured'); // the entry pinned on Latest (`featured:`), when an anniversary has the first slide
     ents.filter(e => ['incident', 'hearing', 'event'].includes(e.type) && full(e) && e.date.slice(0, 4) < y && e.cred !== 'outside' && !resolved(e) && gap(e) <= 7)
       .sort((a, b) => (b.type === 'incident') - (a.type === 'incident') || adj.get(b.id).length - adj.get(a.id).length) // a case before a hearing, then the best connected
       .find(e => add(e, gap(e) ? `This week in ${e.date.slice(0, 4)}` : `On this day in ${e.date.slice(0, 4)}`));
@@ -2823,6 +2824,7 @@
     return out;
   }
   function clipFor(e) {
+    if (e.type === 'video') { const k = (e.moments || []).find(m => m.key); return k ? { video: e.id, t: k.t, text: k.text, speaker: k.speaker } : { video: e.id, t: 0 }; } // a video plays itself, from its first key moment
     const ms = momentsFor.get(e.id) || [];
     const m = keyMoments(e, ms)[0] || ms.find(x => x.speaker && byId.get(x.speaker)?.cred === 'credible') || ms[0];
     if (m) return { video: m.video, t: m.t, text: m.text, speaker: m.speaker };
