@@ -1,34 +1,4 @@
 {
-  "https://www.theedgeofus.com/p/congressman-eric-burlison-on-uap-5f2": {
-    "d": "2026-10-28",
-    "v": "news",
-    "why": "Burlison on Rebelliously Curious 2026-10-26: Grusch left in September, letters to Lockheed/CIA/FBI, still chasing the Nordic footage; score 13"
-  },
-  "https://cybernews.com/news/burlison-trail-ufo-uap-disclosure-nordic-alien-grusch/": {
-    "d": "2026-10-28",
-    "v": "skip",
-    "why": "write-up of the Burlison Rebelliously Curious episode (filed from the original); Cloudflare-blocked"
-  },
-  "https://www.foxnews.com/media/retired-navy-admiral-warns-decades-long-uap-cover-up-points-deep-ocean-ultimate-hiding-spot": {
-    "d": "2026-10-28",
-    "v": "runner-up",
-    "why": "Gallaudet on Hang Out with Sean Hannity 2026-10-27: ocean as hiding place, USS Omaha, silent objects; repeats what is on file; score 9"
-  },
-  "news.google.com: PURSUE release 07 day-5 coverage (MeriTalk, ABC, IFLScience, Catalina Island, Skinwalker, Roswell affidavit, black triangle)": {
-    "d": "2026-10-28",
-    "v": "skip",
-    "why": "release 07 (2026-10-23) already on file as ev-pursue-release-07; recaps"
-  },
-  "news.google.com: Peter Levenda UFO over his car (Soap Central); Paul Bock (Charisma); Bradley Walsh Sky History; Coast to Coast AM": {
-    "d": "2026-10-28",
-    "v": "skip",
-    "why": "author anecdote / religion commentary / TV promo / talk radio: not credible, not anchored"
-  },
-  "web search: AARO, ODNI, UAPDA/NDAA conference, House UAP hearing, YouTube interviews (Grusch, Elizondo, Gallaudet, Burlison)": {
-    "d": "2026-10-28",
-    "v": "skip",
-    "why": "nothing new in window 2026-10-25..28; NDAA conference text not yet published; no hearing announced"
-  },
   "https://www.newsnationnow.com/space/ufo/uap-committees-dems-midterms-burlison/": {
     "d": "2026-10-29",
     "v": "skip",
@@ -1518,5 +1488,55 @@
     "d": "2026-11-27",
     "v": "skip",
     "why": "nothing new in window 2026-11-24..27: no AARO statement, no release 09, no NDAA conference text or vote, no hearing announced"
+  },
+  "news.google.com: Avi Loeb Medium 11-25..26 drone swarms vs birds in UAP data, missile vs warp bubble, 1998 KY26": {
+    "d": "2026-11-28",
+    "v": "skip",
+    "why": "Loeb commentary essays; follow-up to release-08 birds item filed 11-20, nothing new on record"
+  },
+  "news.google.com: Newsweek/NY Post/Breitbart/Economic Times/inkl/Wisevoter/Unboxholics/Bankingnews 11-26..27 Nevada UFO bunker": {
+    "d": "2026-11-28",
+    "v": "skip",
+    "why": "rewrites of Fox News bunker story (release 08 BAASS report), judged 11-27"
+  },
+  "news.google.com: John Gallagher (Buffalo News, Lee papers) 11-27 Pentagon latest UFO release will settle no arguments": {
+    "d": "2026-11-28",
+    "v": "skip",
+    "why": "opinion column on release 08"
+  },
+  "news.google.com: ABC News 11-27 Pentagon releases declassified UFO files from various federal agencies": {
+    "d": "2026-11-28",
+    "v": "skip",
+    "why": "re-indexed May 8 2026 article on release 01; outside window"
+  },
+  "news.google.com: Gizmodo 11-27 electrical engineer builds UFO detection tools": {
+    "d": "2026-11-28",
+    "v": "skip",
+    "why": "profile; subject not on file, not anchored"
+  },
+  "news.google.com: Daily Mail/AOL 11-27 pastors at UFO meeting warn of 2027 contact; Todayville 11-25 Luna task force; Luna GTA6": {
+    "d": "2026-11-28",
+    "v": "skip",
+    "why": "not credible / old (2025 task force) / trivia"
+  },
+  "news.google.com: Curiosmos/ThePrint/Yahoo 11-26 release 08 write-ups and disclosure timeline": {
+    "d": "2026-11-28",
+    "v": "skip",
+    "why": "write-ups of PURSUE release 08, already on file"
+  },
+  "news.google.com: Mars structures, PS1 NASA UFO videos, IGN Blue Files game, Witcher/WoW mods, FIBA, SMBtech tags 11-25..27": {
+    "d": "2026-11-28",
+    "v": "skip",
+    "why": "off-topic / trivia / content farms"
+  },
+  "web search 2026-11-28: AARO, war.gov release 09, UAPDA/FY2027 NDAA conference, NewsNation, upcoming hearing": {
+    "d": "2026-11-28",
+    "v": "skip",
+    "why": "nothing new in window 2026-11-25..28: no AARO statement, no release 09, no NDAA conference text or vote"
+  },
+  "https://thedebrief.org/feed/": {
+    "d": "2026-11-28",
+    "v": "skip",
+    "why": "feed returned an HTML page (unreachable as RSS) on 2026-11-28"
   }
 }
